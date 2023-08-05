@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+orthoproj/__init__.py
+orthoproj/orthogonal_projection.py
+orthoproj/version.py
+orthoproj.egg-info/PKG-INFO
+orthoproj.egg-info/SOURCES.txt
+orthoproj.egg-info/dependency_links.txt
+orthoproj.egg-info/requires.txt
+orthoproj.egg-info/top_level.txt
