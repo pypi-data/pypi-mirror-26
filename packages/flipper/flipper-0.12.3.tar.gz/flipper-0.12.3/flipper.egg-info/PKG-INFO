@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: flipper
+Version: 0.12.3
+Summary: For manipulating curves and measured laminations on surfaces and producing mapping tori.
+Home-page: https://bitbucket.org/Mark_Bell/flipper
+Author: Mark Bell
+Author-email: mcbell@illinois.edu
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: 
+        Flipper is a program for computing the action of mapping classes on laminations
+        on punctured surfaces using ideal triangulation coordinates. It can decide the
+        Nielsen-Thurston type of a given mapping class and, for pseudo-Anosov mapping
+        classes, construct a layered, veering triangulation of their mapping torus, as
+        described by Agol.
+        
+        See http://flipper.readthedocs.io for the full README, LICENCE and documentation.
+        
+        
+Platform: UNKNOWN
