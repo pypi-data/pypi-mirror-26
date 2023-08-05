@@ -1,0 +1,210 @@
+language: python
+
+# use container-based infrastructure
+sudo : false
+dist: trusty
+
+# liblgfw2 is not whitelisted by Travis, so we don't try using it here (not usable anyway)
+addons:
+  apt:
+    packages:
+    - &mesa_apt [libgl1-mesa-dri]
+    - &full_apt [libegl1-mesa, cmake, xorg-dev, libglu1-mesa-dev, mercurial, libdbus-1-dev, libgl1-mesa-dev, libglu1-mesa-dev, libpulse-dev, libx11-dev, libxcursor-dev, libxext-dev, libxi-dev, libxinerama-dev, libxrandr-dev, libxss-dev, libxt-dev, libxv-dev, libxxf86vm-dev, libasound2-dev, libts-dev, libudev-dev, libsdl2-2.0-0]
+
+# Size testing can be skipped by adding "[size skip]" within a commit message.
+
+matrix:
+  include:
+    - env: PYTHON=3.6 DEPS=minimal TEST=standard
+      os: osx
+      language: generic
+    - env: PYTHON=3.6 DEPS=full TEST=standard
+      os: osx
+      language: generic
+# Travis Examples are extremely slow for OSX (times out)
+#    - env: PYTHON=3.6 DEPS=full TEST=examples
+#      os: osx
+#      language: generic
+    - env: PYTHON=3.6 DEPS=minimal TEST=standard  # also tests file sizes, style, line endings
+      addons:
+        apt:
+          packages:
+    - env: PYTHON=3.6 DEPS=full TEST=standard
+      addons:
+        apt:
+          packages:
+            - *mesa_apt
+            - *full_apt
+    - env: PYTHON=3.6 DEPS=full TEST=examples  # test examples
+      addons:
+        apt:
+          packages:
+            - *mesa_apt
+            - *full_apt
+    - env: PYTHON=2.7 DEPS=full TEST=standard
+      addons:
+        apt:
+          packages:
+            - *mesa_apt
+            - *full_apt
+    # OSMesa requires a specific Travis run because since the system also
+    # has (on-screen) OpenGL installed, we need to setup environment variable
+    # to avoid having the linker load the wrong libglapi.so which would cause
+    # OSMesa to crash
+    - env: PYTHON=2.7 DEPS=full TEST=osmesa
+      addons:
+        apt:
+          packages:
+            - *full_apt
+
+
+before_install:
+    - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+        wget -q http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh;
+      else
+        wget -q http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh;
+      fi;
+
+    - chmod +x miniconda.sh
+    - ./miniconda.sh -b -p ~/anaconda
+    - export PATH=~/anaconda/bin:$PATH
+    - conda config --add channels conda-forge
+    - conda update --yes --quiet conda
+
+    - SRC_DIR=$(pwd)
+    # file size checks run on minimal build for time
+    - if [ "${DEPS}" == "minimal" ]; then
+        if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
+          GIT_TARGET_EXTRA="+refs/heads/${TRAVIS_BRANCH}";
+          GIT_SOURCE_EXTRA="+refs/pull/${TRAVIS_PULL_REQUEST}/merge";
+        else
+          GIT_TARGET_EXTRA="";
+          GIT_SOURCE_EXTRA="";
+        fi;
+        cd ~;
+        mkdir target-size-clone && cd target-size-clone;
+        git init && git remote add -t ${TRAVIS_BRANCH} origin git://github.com/${TRAVIS_REPO_SLUG}.git;
+        git fetch origin ${GIT_TARGET_EXTRA} && git checkout -qf FETCH_HEAD;
+        git tag travis-merge-target;
+        git gc --aggressive;
+        TARGET_SIZE=`du -s . | sed -e "s/[[:space:]].*//"`;
+        git pull origin ${GIT_SOURCE_EXTRA};
+        git gc --aggressive;
+        MERGE_SIZE=`du -s . | sed -e "s/[[:space:]].*//"`;
+        if [ "${MERGE_SIZE}" != "${TARGET_SIZE}" ]; then
+          SIZE_DIFF=`expr \( ${MERGE_SIZE} - ${TARGET_SIZE} \)`;
+        else
+          SIZE_DIFF=0;
+        fi;
+      fi;
+
+
+install:
+    # Install numpy, flake
+    - conda create -n testenv --yes --quiet pip python=$PYTHON;
+    - source activate testenv;
+    - conda install --yes --quiet numpy$NUMPY nose pytest;
+    - pip install -q coveralls pytest-cov pytest-sugar flake8
+
+    # On Python3, install system-wide copies of bundled libraries instead
+    # Also install PyQt4, imaging (PIL or pillow), scipy, mpl, egl
+    # On conda, can't install pyside-pyzo b/c it conflicts with pyqt4,
+    # which is required by matplotlib :(
+    # wxpython available from conda-forge but not for OSX:
+    #     https://github.com/conda-forge/wxpython-feedstock/issues/2
+    # If we only need a single backend (DEPS=backend), then use PyQT4
+    # Don't test Pyglet because it currently segfaults (but AppVeyor checks it)
+    # PyQt5 is currently broken, but will be installed on 3.6 so don't do it
+    - if [ "${DEPS}" == "full" ]; then
+        conda install --yes pyopengl scipy numpy$NUMPY networkx;
+        pip install -q numpydoc PySDL2;
+        if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+          conda install --yes wxpython matplotlib jupyter pyqt=4 pillow decorator six;
+          if [ "${PYTHON}" == "3.6" ]; then
+            pip install -q freetype-py husl pypng cassowary imageio;
+            rm -rf ${SRC_DIR}/vispy/ext/_bundled;
+          else
+            pip install -q mock;
+          fi;
+        else
+          conda install --yes matplotlib jupyter pyqt=4;
+          pip install -q mock;
+        fi;
+      fi;
+
+    # Install vispy
+    - cd ${SRC_DIR}
+    - python setup.py install
+    - python setup.py develop
+    - cd ~
+
+    # Install glfw (fails with virtual buffer on OSX)
+    - if [ "${DEPS}" == "full" ] && [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+        git clone git://github.com/glfw/glfw.git;
+        cd glfw;
+        cmake -DCMAKE_INSTALL_PREFIX=$HOME -DBUILD_SHARED_LIBS=true -DGLFW_BUILD_EXAMPLES=false -DGLFW_BUILD_TESTS=false -DGLFW_BUILD_DOCS=false .;
+        make install;
+        cd ~;
+        if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+          export GLFW_LIBRARY=${HOME}/lib/libglfw.so;
+        else
+          export GLFW_LIBRARY=${HOME}/lib/libglfw.dylib;
+        fi;
+      fi
+
+    # Install OSMesa
+    - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+        wget https://github.com/vispy/demo-data/raw/master/osmesa/osmesa_11.0.0_12.04.tar.bz2 -O /tmp/osmesa.tar.bz2;
+        mkdir $HOME/osmesa; tar -xvjf /tmp/osmesa.tar.bz2 -C $HOME/osmesa;
+      fi;
+
+
+before_script:
+    # We need to create a (fake) display on Travis, let's use a funny resolution
+    # For OSX: https://github.com/travis-ci/travis-ci/issues/7313#issuecomment-279914149
+    - if [ "${TEST}" != "osmesa" ]; then
+        export DISPLAY=:99.0;
+        if [ "${TRAVIS_OS_NAME}" = "osx" ]; then ( sudo Xvfb :99 -ac -screen 0 1400x900x24 +render +iglx; echo ok )& fi;
+        if [ "${TRAVIS_OS_NAME}" = "linux" ]; then
+          /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -screen 0 1400x900x24 -ac +extension GLX +render;
+        fi;
+      fi;
+    - if [ "${TEST}" == "osmesa" ]; then
+        export LD_LIBRARY_PATH=$HOME/osmesa/lib;
+        export LIBRARY_PATH=$HOME/osmesa/lib;
+      fi;
+
+
+script:
+    - cd ${SRC_DIR}
+    - python -c "import vispy; print(vispy.sys_info())"
+    - if [ "${TEST}" == "standard" ]; then
+        make unit;
+      fi;
+    - if [ "${TEST}" == "examples" ] || [ "${DEPS}" == "minimal" ]; then
+        make examples;
+      fi;
+    - if [ "${DEPS}" == "minimal" ]; then
+        make extra;
+      fi;
+    - if [ "${TEST}" == "osmesa" ]; then
+        make osmesa;
+      fi;
+    # Each line must be run in a separate line to ensure exit code accuracy
+    - if [ "${DEPS}" == "minimal" ]; then
+        echo "Size difference ${SIZE_DIFF} kB";
+        if git log --format=%B -n 2 | grep -q "\[size skip\]"; then
+          echo "Skipping size test";
+        else
+          test ${SIZE_DIFF} -lt 100;
+        fi;
+      fi;
+
+
+after_success:
+    # Need to run from source dir to execute appropriate "git" commands
+    - if [ "${TEST}" == "standard" ]; then
+        COVERAGE_FILE=.vispy-coverage coverage combine;
+        mv .vispy-coverage .coverage;
+        coveralls;
+      fi;
