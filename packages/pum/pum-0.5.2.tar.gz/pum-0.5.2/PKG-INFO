@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pum
+Version: 0.5.2
+Summary: Postgres upgrade manager
+Home-page: https://github.com/opengisch/pum
+Author: Mario Baranzini
+Author-email: mario@opengis.ch
+License: UNKNOWN
+Download-URL: https://github.com/opengisch/pum/archive/0.5.2.tar.gz
+Description: UNKNOWN
+Keywords: postgres,migration,upgrade
+Platform: UNKNOWN
+Requires: psycopg2 (>=2.7.3)
