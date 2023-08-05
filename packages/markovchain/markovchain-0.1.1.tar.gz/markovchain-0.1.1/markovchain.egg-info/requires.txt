@@ -1,0 +1,11 @@
+tqdm
+ijson
+
+[dev]
+pillow
+coverage
+sphinx
+sphinx_rtd_theme
+
+[image]
+pillow
