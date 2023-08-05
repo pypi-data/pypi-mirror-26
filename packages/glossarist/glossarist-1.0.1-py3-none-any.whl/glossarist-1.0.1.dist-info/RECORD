@@ -1,0 +1,12 @@
+glossarist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glossarist/cli.py,sha256=y823e1b7CElroVJMY4tm8XSKIA25cBADfzeSnCq4JXw,2306
+glossarist/errors.py,sha256=HHkC7HGwDK5-KRo4UTBqT4aZz6whVAM1gjw0zQb9-6A,43
+glossarist/utils.py,sha256=DcJ-CCMHsyJvRRVm0GVLPU1VHm6Hu8XPp10l3fmPsko,4970
+glossarist/word.py,sha256=suWLAXPcYCSb50QbgYs4O_1t3n4A4bjxVyo2_A85Sys,7673
+glossarist-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+glossarist-1.0.1.dist-info/METADATA,sha256=XJ12PKPqLsDHZvJsSudzx3VknlsIt2t4tZX9D-KRRgo,807
+glossarist-1.0.1.dist-info/RECORD,,
+glossarist-1.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+glossarist-1.0.1.dist-info/entry_points.txt,sha256=KJlNv1g9oKqrJ1gWkrvjG88eM3d0CEulFwjcRupTLKM,58
+glossarist-1.0.1.dist-info/metadata.json,sha256=MyX5SbOuR9iSWmHVH_smIPAVOIoGF5n7DGNIX1FLeuk,1117
+glossarist-1.0.1.dist-info/top_level.txt,sha256=J3qORsGVZGi8mfsyC84KLQrExiKY-W75ZgQ25HVZx-M,11
