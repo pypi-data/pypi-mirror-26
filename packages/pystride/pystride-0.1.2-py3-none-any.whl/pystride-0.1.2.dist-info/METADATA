@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: pystride
+Version: 0.1.2
+Summary: Python client for Atlassian Stride
+Home-page: https://bitbucket.org/dchevell/pystride
+Author: Dave Chevell
+Author-email: dchevell@atlassian.com
+License: MIT
+Keywords: atlassian,stride
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
