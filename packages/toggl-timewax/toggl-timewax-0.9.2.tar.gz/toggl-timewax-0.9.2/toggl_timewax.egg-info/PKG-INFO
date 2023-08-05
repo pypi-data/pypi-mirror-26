@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: toggl-timewax
+Version: 0.9.2
+Summary: UNKNOWN
+Home-page: https://www.github.com/jochemb/toggl-timewax/
+Author: Jochem Bijlard
+Author-email: j.bijlard@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jochemb/toggl-timewax/tarball/0.9.2/
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: toggl,timewax
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
