@@ -1,0 +1,12 @@
+#documentation
+recursive-include docs *
+
+#user-inteface
+include pysawit-ui.xlsm
+
+#examples
+recursive-include pysawit/examples *
+
+#misc
+include changes.txt
+include license.txt

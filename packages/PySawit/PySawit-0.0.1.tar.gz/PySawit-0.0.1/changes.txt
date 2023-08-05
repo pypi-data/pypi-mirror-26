@@ -1,0 +1,2 @@
+19 Oct 2017:
+Release of PySawit ver 0.0.1
