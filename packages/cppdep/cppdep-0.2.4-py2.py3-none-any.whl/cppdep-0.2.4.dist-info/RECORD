@@ -1,0 +1,12 @@
+cppdep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppdep/__main__.py,sha256=LRy9E2mPSPye-rEaSjdInufhwgWhmQbxQQ_NNq5xYVk,2942
+cppdep/config_schema.yml,sha256=vT7eoCbbUr8lnJnPsn5XFv1RDAM-o-TnbctCQGhrJLk,1813
+cppdep/cppdep.py,sha256=AMbqsNbXSU7MOz9Xh_kVqPGuVpfgFFguA_kDqduhn78,31478
+cppdep/graph.py,sha256=HZCNXS72ugmSyp6UIxgKornWQa2olmw8UB8h1sAQfZA,11397
+cppdep-0.2.4.dist-info/DESCRIPTION.rst,sha256=xTLz01D-GLS28b3MKuBc_DOQz-spLhNC3POFBXEobrI,2582
+cppdep-0.2.4.dist-info/METADATA,sha256=xrQk-JmE_fUe2ywf0LR6RoPhdU6WJr_JptZWw7rlOsQ,3722
+cppdep-0.2.4.dist-info/RECORD,,
+cppdep-0.2.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+cppdep-0.2.4.dist-info/entry_points.txt,sha256=_xAokH55dWeR2bzUmhKzbFlNTt7xLYqmc_Qwf-jUCNQ,49
+cppdep-0.2.4.dist-info/metadata.json,sha256=wzuRO11-ZuBrYbab5bmKUjhZVhEIITof7j6OSwlJEyg,1392
+cppdep-0.2.4.dist-info/top_level.txt,sha256=MhrnZrWG4Un1N7KGaNgtN9OfCxp2geVQhs_a4nMx8rk,7
