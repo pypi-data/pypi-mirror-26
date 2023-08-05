@@ -1,0 +1,11 @@
+README
+config-example.ini
+itop-inventory
+setup.py
+itop2inventory/__init__.py
+itop2inventory.egg-info/PKG-INFO
+itop2inventory.egg-info/SOURCES.txt
+itop2inventory.egg-info/dependency_links.txt
+itop2inventory.egg-info/not-zip-safe
+itop2inventory.egg-info/requires.txt
+itop2inventory.egg-info/top_level.txt
