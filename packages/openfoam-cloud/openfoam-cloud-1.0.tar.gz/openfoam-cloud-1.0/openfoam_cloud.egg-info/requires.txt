@@ -1,0 +1,9 @@
+Django
+djangorestframework
+python-openstackclient
+python-swiftclient
+requests
+Jinja2==2.0
+libvirt-python
+boto
+python-daemon==2.1.2
