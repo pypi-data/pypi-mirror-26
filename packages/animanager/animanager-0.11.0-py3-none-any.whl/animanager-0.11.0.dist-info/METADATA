@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: animanager
+Version: 0.11.0
+Summary: Command line program for advanced anime watching management
+Home-page: https://www.felesatra.moe/animanager/
+Author: Allen Li
+Author-email: darkfeline@felesatra.moe
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: apsw (~=3.9)
+Requires-Dist: tabulate (==0.8.1)
+Requires-Dist: wcwidth (==0.1.7)
+Requires-Dist: mir.anidb (~=1.0)
+Requires-Dist: mir.cp (~=1.0)
+Requires-Dist: mir.sqlite3m (~=1.0)
+Requires-Dist: SQLAlchemy (~=1.1)
+
+UNKNOWN
+
+
