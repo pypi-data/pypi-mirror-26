@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: launchdman
+Version: 0.1
+Summary: The launchd parser and manager for Python
+Home-page: https://github.com/casouri/launchdman
+Author: Yuan Fu
+Author-email: yuan.k.fu@gmail.com
+License: MIT
+Download-URL: https://github.com/casouri/launchdman/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
