@@ -1,0 +1,13 @@
+akad-0.10.dist-info/top_level.txt,sha256=unK7bSIGVCpNWApSetv3zMeNjueKWPaLcnU6Fv-wrTw,5
+akad-0.10.dist-info/DESCRIPTION.rst,sha256=VhOfMq2D_wFmCK_O4l0vC7-vCSFllrOu8GHo7jCUklU,45
+akad-0.10.dist-info/RECORD,,
+akad-0.10.dist-info/METADATA,sha256=fT_4QEELcbLL0tL4lJvda3hdr8LLSvLHeplcWKRpay8,1250
+akad-0.10.dist-info/metadata.json,sha256=cpLx_zwZeckfkRJmTuW4MaAg0gbDYzLbY8U-vhKs02g,1185
+akad-0.10.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+akad/TalkService.py,sha256=qvlbt2qyj1fqE_fsVEACHrh6kKzYMHlv_PdPDgvnOlQ,1372469
+akad/CallService.py,sha256=6qrWgP2WBmv64tGADG3xIBIMIqyS1wV3xS8W3IqLznw,30466
+akad/constants.py,sha256=zCbgjBMf7PgNdU_aZyI2i0Hvufo3o60_BwoUSax3bGM,326
+akad/__init__.py,sha256=aGnFQ-7fesP4Qu3lgia-X2Kb_ZqFi9IQHXJXtHdhFWY,121
+akad/ChannelService.py,sha256=cjRURmApGTPMts03LG42PebtczXH2bP2jl1zpbafSEQ,132778
+akad/ttypes.py,sha256=OBynJtlG1B_5AvdTGs-HCVpMquNbnkESghY-08K0JmQ,512809
+akad/MessageService.py,sha256=36jTKZS46-t6rr2sezmccsmcxq6Y6mawjtz3nARHEHY,24105
