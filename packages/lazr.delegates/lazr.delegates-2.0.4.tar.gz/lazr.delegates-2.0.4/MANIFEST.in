@@ -1,0 +1,3 @@
+include *.py *.txt *.rst MANIFEST.in *.ini
+recursive-include lazr *.rst
+exclude .bzrignore
