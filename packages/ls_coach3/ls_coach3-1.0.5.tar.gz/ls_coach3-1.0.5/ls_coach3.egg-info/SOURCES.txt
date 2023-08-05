@@ -1,0 +1,7 @@
+ls_coach3.py
+setup.cfg
+setup.py
+ls_coach3.egg-info/PKG-INFO
+ls_coach3.egg-info/SOURCES.txt
+ls_coach3.egg-info/dependency_links.txt
+ls_coach3.egg-info/top_level.txt
