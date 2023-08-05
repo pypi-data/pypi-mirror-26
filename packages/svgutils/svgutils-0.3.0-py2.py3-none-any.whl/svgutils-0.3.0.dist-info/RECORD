@@ -1,0 +1,11 @@
+svgutils/__init__.py,sha256=VOdOJIhZbXAIeOliu0Ytdubr9XiteJW5UzgRGFTovKU,33
+svgutils/compose.py,sha256=-LP3FzUx19UbGvkvWD4C-GG6suMe43Fk-Ov12OZ591U,9613
+svgutils/templates.py,sha256=bvRihAzwlzUMFTZtyUAUYHFk8MyMA39eJhqzMyid3rM,2146
+svgutils/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svgutils/transform.py,sha256=506Xbtr6NWbqw6_VhUtPQcsVA9nUAEmi20nmzK8-2oY,11076
+svgutils-0.3.0.dist-info/DESCRIPTION.rst,sha256=V0l6OJI84v58CMHatRvTMLJOb4myF7j-Q2lR0LDkLYE,267
+svgutils-0.3.0.dist-info/METADATA,sha256=ohDdRzLspF3vt4tEtwK7Z9_UYQq4vy-_g_GKnvvNznQ,1088
+svgutils-0.3.0.dist-info/RECORD,,
+svgutils-0.3.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+svgutils-0.3.0.dist-info/metadata.json,sha256=Rz5ZFA2hkqBLiQPD9dpOmg847iW_EmseO3IK7J8mVM0,953
+svgutils-0.3.0.dist-info/top_level.txt,sha256=Xzs5MUoHKBl8of2YYg5ZJLWQeRxanZ621IdW0XQbKLY,9
