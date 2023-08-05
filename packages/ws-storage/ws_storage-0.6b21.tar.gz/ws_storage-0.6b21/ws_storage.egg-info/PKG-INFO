@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ws-storage
+Version: 0.6b21
+Summary: pytohn binary storage
+Home-page: http://github.com/chuck1/ws_storage
+Author: Charles Rymal
+Author-email: charlesrymal@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
