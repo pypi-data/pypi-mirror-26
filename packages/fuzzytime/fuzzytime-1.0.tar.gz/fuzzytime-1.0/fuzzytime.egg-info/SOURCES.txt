@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+fuzzytime/__init__.py
+fuzzytime/helper.py
+fuzzytime.egg-info/PKG-INFO
+fuzzytime.egg-info/SOURCES.txt
+fuzzytime.egg-info/dependency_links.txt
+fuzzytime.egg-info/not-zip-safe
+fuzzytime.egg-info/top_level.txt
