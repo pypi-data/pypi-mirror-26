@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+classifiers.txt
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+bonobo_factories/__init__.py
+bonobo_factories/_version.py
+bonobo_factories/factory.py
+bonobo_factories.egg-info/PKG-INFO
+bonobo_factories.egg-info/SOURCES.txt
+bonobo_factories.egg-info/dependency_links.txt
+bonobo_factories.egg-info/requires.txt
+bonobo_factories.egg-info/top_level.txt
