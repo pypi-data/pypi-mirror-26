@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: oshino
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: zaibacu
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Jinja2 (==2.8)
+Requires-Dist: MarkupSafe (==0.23)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: aiohttp (==1.0.5)
+Requires-Dist: async-timeout (==1.1.0)
+Requires-Dist: chardet
+Requires-Dist: click (==6.6)
+Requires-Dist: coverage (==4.2)
+Requires-Dist: logbook (==1.0.0)
+Requires-Dist: multidict (==2.1.2)
+Requires-Dist: protobuf (==3.1.0.post1)
+Requires-Dist: python-dotenv (==0.6.0)
+Requires-Dist: raven
+Requires-Dist: requests
+Requires-Dist: riemann-client (==6.3.0)
+Requires-Dist: six (==1.10.0)
+
+UNKNOWN
+
+
