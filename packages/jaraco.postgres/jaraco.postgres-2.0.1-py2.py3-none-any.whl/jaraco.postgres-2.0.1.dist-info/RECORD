@@ -1,0 +1,14 @@
+jaraco.postgres-2.0.1-py3.6-nspkg.pth,sha256=Tr3Ap28XLzXVIejA1-jRQg4hHIGiCuCk-3j9JZMkTZA,539
+jaraco/postgres/__init__.py,sha256=H4mhOrQQbPxQe0Ex4v5ECWCRmgXK_tXQ3G55a5ON0vw,20001
+jaraco/postgres/fixtures.py,sha256=q8-K6-hgN1ZjMHfCh3K2MjON4oUmfQYU2W9uMLXeMxI,386
+jaraco.postgres-2.0.1.dist-info/DESCRIPTION.rst,sha256=Qat_P74zmub6sZahVPuiC_2-lGFMkAJtp7tEe2YsZbY,319
+jaraco.postgres-2.0.1.dist-info/METADATA,sha256=1zn_z1phdiEvLPwn7A5zcBSsYC5YAh7xicZOdZb71vM,1330
+jaraco.postgres-2.0.1.dist-info/RECORD,,
+jaraco.postgres-2.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+jaraco.postgres-2.0.1.dist-info/entry_points.txt,sha256=hSDw4Dl2W9u3HBZr0zWmOx5KPwILEk47D7XYckRPSTA,50
+jaraco.postgres-2.0.1.dist-info/metadata.json,sha256=pMz53WioH78D2DMV2Wz6sovF9XY5_Xm5HvaqJW3-fnI,1074
+jaraco.postgres-2.0.1.dist-info/namespace_packages.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.postgres-2.0.1.dist-info/top_level.txt,sha256=fEaqiBN_pusE4WSnMG01FE7SgMQ9hMFil1owm6gKSWc,13
+tests/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+tests/test_fixtures.py,sha256=mkbOUvAtgvlwlZ3U6XyYqsQNc2b9NSxdTbjxNtn5Ako,84
+tests/test_postgres.py,sha256=6UmSqaUqAUINA43p0u0Y8J2OsoT6VxmlmOr992ms8y4,2382
