@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+tempmailapi.egg-info/PKG-INFO
+tempmailapi.egg-info/SOURCES.txt
+tempmailapi.egg-info/dependency_links.txt
+tempmailapi.egg-info/requires.txt
+tempmailapi.egg-info/top_level.txt
