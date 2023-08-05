@@ -1,0 +1,10 @@
+README.rst
+setup.py
+uavro/__init__.py
+uavro/core.py
+uavro/reader.c
+uavro.egg-info/PKG-INFO
+uavro.egg-info/SOURCES.txt
+uavro.egg-info/dependency_links.txt
+uavro.egg-info/requires.txt
+uavro.egg-info/top_level.txt
