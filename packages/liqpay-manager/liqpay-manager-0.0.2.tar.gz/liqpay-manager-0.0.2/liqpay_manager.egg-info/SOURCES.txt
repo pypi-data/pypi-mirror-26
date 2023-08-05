@@ -1,0 +1,15 @@
+.env.example
+.gitignore
+LICENSE
+setup.cfg
+setup.py
+liqpay_manager.egg-info/PKG-INFO
+liqpay_manager.egg-info/SOURCES.txt
+liqpay_manager.egg-info/dependency_links.txt
+liqpay_manager.egg-info/entry_points.txt
+liqpay_manager.egg-info/requires.txt
+liqpay_manager.egg-info/top_level.txt
+lq_mgr/__init__.py
+lq_mgr/__main__.py
+lq_mgr/cli.py
+lq_mgr/manager.py
