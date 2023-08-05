@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: userbased-nc-bench
+Version: 0.1.2
+Summary: Tests read parallel read rates from NetCDF4 files using Python and C. Limited functional at current.
+Home-page: https://bitbucket.org/m_jones3/userbased-bench
+Author: Matthew Jones
+Author-email: m.jones3@pgr.reading.ac.uk
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
