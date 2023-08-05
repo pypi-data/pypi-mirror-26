@@ -1,0 +1,17 @@
+streamz/__init__.py,sha256=SUar5JytYjh2rf7FPIyTSGkzdTTgyHjFM59J4PFCcB4,229
+streamz/batch.py,sha256=OXR2Mks_ioN2c2KaQh1Scx0_w0Kr1pcguDdk5Bvl2W8,2368
+streamz/collection.py,sha256=v5zrurpTjYDQlZ-J5B7bpKbjvASyPbwhSciT1OhFKAo,9366
+streamz/compatibility.py,sha256=tkanoyWKNVWgwVvP_dph1upqGpZS10Qp7GuU3EwKHis,217
+streamz/core.py,sha256=O7xWUS5x8EthOdY3bodKZe6s9leZMlhqA5-lbGLnNt0,30924
+streamz/dask.py,sha256=9Azk1hPMgmWHCTSIPriSKoPWmJ36ukxxDGB1i3BxFiI,3291
+streamz/dataframe.py,sha256=qGKPFFsS-tl-MEA7PDrE-3m03tHuysOvyommC3FZiCQ,18482
+streamz/graph.py,sha256=3vDsk7FkMP8iGc4qHtAizyWqfdhliXiG_Yfba5RRuco,5943
+streamz/sources.py,sha256=kaxy_MfsyDiyMMcDVUVSJm-7KJ_tzhOM3Z1N1FWv_i0,4619
+streamz/utils.py,sha256=aDpjzIxyCzHn6EOVU4ObSF1D5F4Q8FSrdn8bsLtxzAQ,1184
+streamz/utils_test.py,sha256=u2D9hn2LW1c7dVPisH44sBtt7avEGqYvjXnrZGZBd-w,1743
+streamz-0.2.0.dist-info/DESCRIPTION.rst,sha256=dApAwjQt_27Wqu1NigU_IHE4wlJHZe45s3C9r9p71fI,604
+streamz-0.2.0.dist-info/METADATA,sha256=kXNEKsq9WSiDEhiYP8Vhc0v2_6WLSQoEjRSA1icE5Qg,890
+streamz-0.2.0.dist-info/RECORD,,
+streamz-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+streamz-0.2.0.dist-info/metadata.json,sha256=6_Rx3q--2IGGtQkDakqDJi3qB6SYOGvRpcVrY836pcc,491
+streamz-0.2.0.dist-info/top_level.txt,sha256=Mq_twv98p7RUu1flfGHxtR-jBFWWaprGWXimnCYMxWA,8
