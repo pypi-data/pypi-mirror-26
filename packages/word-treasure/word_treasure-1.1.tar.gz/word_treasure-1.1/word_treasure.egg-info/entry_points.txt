@@ -1,0 +1,3 @@
+[console_scripts]
+wt = word_treasure.word_treasure:main
+
