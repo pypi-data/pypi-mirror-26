@@ -1,0 +1,9 @@
+README.md
+setup.py
+coordstring/__init__.py
+coordstring/coordstring.pyx
+coordstring.egg-info/PKG-INFO
+coordstring.egg-info/SOURCES.txt
+coordstring.egg-info/dependency_links.txt
+coordstring.egg-info/requires.txt
+coordstring.egg-info/top_level.txt
