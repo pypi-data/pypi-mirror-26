@@ -1,0 +1,29 @@
+{% load widget_tweaks %}
+
+{% csrf_token %}
+<ul class="input-list">
+  {% for field in form %}
+  {% with field|field_type as type %}
+  <li class="input-wrapper {% if type == "booleanfield" %}input-skip{% endif %}">
+    {% if type == "booleanfield" %}
+    <label for="{{ field.id_for_label }}">
+      {{ field.label }}
+      {% render_field field class+="field" %}
+    </label>
+    {% else %}
+    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+    {% render_field field class+="field" autocomplete="off" autocapitalize="none" placeholder="" %}
+    {% endif %}
+    <div class="infos-spacer"></div>
+    <ul class="messages">
+      {% if field.help_text %}
+      <li>{{ field.help_text|safe }}</li>
+      {% endif %}
+      {% for error in field.errors %}
+      <li>{{ error }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endwith %}
+  {% endfor %}
+</ul>

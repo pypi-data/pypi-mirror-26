@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: django-allauth-ens
+Version: 0.0.1.dev1
+Summary: Providers for django-allauth allowing using the ENS' auth-systems.
+Home-page: https://git.eleves.ens.fr/cof-geek/django-allauth-ens
+Author: cof-geek
+Author-email: cof-geek@ens.fr
+License: MIT
+Description: ==================
+        django-allauth-ens
+        ==================
+        
+        Providers for django-allauth_ allowing using the ENS' auth-systems.
+        
+        
+        .. _django-allauth: https://www.intenct.nl/projects/django-allauth/
+        
+Keywords: django allauth cas authentication
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP

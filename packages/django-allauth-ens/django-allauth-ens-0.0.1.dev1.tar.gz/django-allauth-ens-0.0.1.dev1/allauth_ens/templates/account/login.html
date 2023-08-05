@@ -1,0 +1,79 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% load account socialaccount allauth_ens %}
+
+{% block title %}{% trans "Sign In" %}{% endblock %}
+{% block header-title %}{% trans "Sign In" %}{% endblock %}
+
+{% block messages-extra %}
+{% if form.errors or user.is_authenticated %}
+<div class="messages-container">
+  <ul class="messages-list">
+    {% if form.errors %}
+    <li class="message error">
+      {% blocktrans %}
+      Authentication failed. Please check your credentials and try again.
+      {% endblocktrans %}
+    </li>
+    {% endif %}
+    {% if user.is_authenticated %}
+    <li class="message warning">
+      {% blocktrans %}
+      You are unauthorized to view this page. Please sign in with an account
+      with the required permissions.
+      {% endblocktrans %}
+    </li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<section>
+  <p>
+    {% blocktrans %}
+    Please sign in with one of your existing third party accounts, or with the
+    form opposite.
+    {% endblocktrans %}
+  </p>
+  <ul class="method-list">
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+  </ul>
+</section>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+
+<div class="divider"></div>
+
+{% endif %}
+
+<section>
+  <ul class="actions">
+    <li><a href="{{ signup_url }}">{% trans "Sign Up" %}</a></li>
+    <li><a href="{% url "account_reset_password" %}">{% trans "Forgot Password?" %}</a>
+  </ul>
+  <form action="{% url "account_login" %}" method="post">
+    {% include "account/block-form.html" with form=form %}
+    <input type="submit" value="{% trans "Sign In" %}">
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+    {% endif %}
+  </form>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+
+{{ block.super }}
+
+<script type="text/javascript">
+  $( function() { prepareShorcuts(); } );
+</script>
+
+{% endblock %}

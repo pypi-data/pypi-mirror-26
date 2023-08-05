@@ -1,0 +1,75 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% load socialaccount allauth_ens_social %}
+
+{% block title %}{% trans "Account Connections" %}{% endblock %}
+{% block header-title %}{% trans "Account Connections" %}{% endblock %}
+
+{% block content %}
+
+<section>
+  <p>
+    {% if form.accounts %}
+      {% blocktrans %}
+      You can sign in to your account using any of the following third party accounts:
+      {% endblocktrans %}
+    {% else %}
+      {% blocktrans %}
+      You currently have no third party accounts connected to this account.
+      {% endblocktrans %}
+    {% endif %}
+  </p>
+  <ul class="provider-list">
+    {% get_accounts_by_providers user as accounts_by_providers %}
+
+    {% for provider, accounts in accounts_by_providers.items %}
+
+    <li class="provider">
+      <ul class="heading">
+        <li class="connect">
+          <a href="{% provider_login_url provider.id process="connect" scope=scope auth_params=auth_params %}">
+            <i class="fa fa-plus"></i>
+          </a>
+        </li>
+        <li class="name">
+          {{ provider.name }}
+        </li>
+      </ul>
+
+      {% if accounts %}
+
+      <ul class="connected-list">
+        {% for account in accounts %}
+
+        <li>
+          <span class="connected-delete">
+            <form action="{% url "socialaccount_connections" %}" method="post">
+              {% csrf_token %}
+              <input type="hidden" name="account" value="{{ account.id }}">
+              <button type="submit" class="link"><i class="fa fa-remove"></i></button>
+            </form>
+          </span>
+          <span class="connected-label">
+            <i class="fa fa-user"></i>
+            {% with account.get_profile_url as profile_url %}
+            {% trans "Connected Account - No ID" as fallback_label %}
+            {% firstof account.extra_data.name account.extra_data.username fallback_label as account_label %}
+            {% if profile_url %}
+              <a href="{{ profile_url }}" target="blank">{{ account_label }}</a>
+            {% else %}
+              {{ account_label }}
+            {% endif %}
+            {% endwith %}
+          </span>
+        </li>
+
+        {% endfor %}
+      </ul>
+
+      {% endif %}
+
+    {% endfor %}
+  </ul>
+</section>
+
+{% endblock %}
