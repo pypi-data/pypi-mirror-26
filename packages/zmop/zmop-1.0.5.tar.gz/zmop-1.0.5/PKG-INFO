@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: zmop
+Version: 1.0.5
+Summary: 芝麻信用sdk
+Home-page: https://b.zmxy.com.cn/technology/sdkDownload.htm
+Author: your_name
+Author-email: youremail@email.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
