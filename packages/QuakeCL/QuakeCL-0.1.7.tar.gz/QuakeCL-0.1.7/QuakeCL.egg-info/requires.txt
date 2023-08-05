@@ -1,0 +1,10 @@
+certifi
+chardet
+idna
+pkg-resources
+pkginfo
+requests
+requests-toolbelt
+tqdm
+twine
+urllib3
