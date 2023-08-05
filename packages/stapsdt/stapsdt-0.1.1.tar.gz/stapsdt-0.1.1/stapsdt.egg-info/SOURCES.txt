@@ -1,0 +1,7 @@
+README.md
+setup.py
+stapsdt.py
+stapsdt.egg-info/PKG-INFO
+stapsdt.egg-info/SOURCES.txt
+stapsdt.egg-info/dependency_links.txt
+stapsdt.egg-info/top_level.txt
