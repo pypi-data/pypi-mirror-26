@@ -1,0 +1,11 @@
+egtaonline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egtaonline/__main__.py,sha256=yKa-zbt5V21QV2eTkIKLCmqkCQCaKJFTf8wjyn5HphQ,18452
+egtaonline/api.py,sha256=x56mzv7v8gI7LI_YjsLMJY7snk9EgdHWIBykUWEPNpY,31195
+egtaonline/mockapi.py,sha256=EyvqO69ndzhVZ96jMKd8KtxrwIAVdkwoZeR_Izv258A,35562
+egtaonlineapi-0.2.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+egtaonlineapi-0.2.2.dist-info/METADATA,sha256=6BOM8Bb7d1zVvNUEzMf0VRbbr0gUyRAUzWLnpxiBUV4,448
+egtaonlineapi-0.2.2.dist-info/RECORD,,
+egtaonlineapi-0.2.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+egtaonlineapi-0.2.2.dist-info/entry_points.txt,sha256=_0nz0v-KKRId6a1iMGi0O4FDtwtuo9lYLPoI8_Bmzmw,49
+egtaonlineapi-0.2.2.dist-info/metadata.json,sha256=7GaNu80JcOWRDVAdcUClDk9wdLXTowcopeKRIBgdCIE,777
+egtaonlineapi-0.2.2.dist-info/top_level.txt,sha256=SCyrdpaGa87Wpzp95sqAJQC6zteGpMOuulB1i2QWxUU,11
