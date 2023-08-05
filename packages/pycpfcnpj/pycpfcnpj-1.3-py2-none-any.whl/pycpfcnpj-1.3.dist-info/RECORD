@@ -1,0 +1,13 @@
+pycpfcnpj/__init__.py,sha256=7eYRfsJBrjH8Dv6CHkEtE90_q5NJm1fMX0jsq02G1jk,51
+pycpfcnpj/calculation.py,sha256=8WDFUKM6CFN3YLN5qiVgnor-HibZJWrEBjYFMBRRftg,1411
+pycpfcnpj/cnpj.py,sha256=d9xo9ucn8_oEnnR2mhpFd5rY0OUntvheZWg1e_20llU,1058
+pycpfcnpj/compatible.py,sha256=qjV2wyL92ThWGdoE2BjuMzaOq5F2BzOlETOhCx4V9S0,294
+pycpfcnpj/cpf.py,sha256=8RV1ZZ3IF0DQnKKOXFtM66lwh-PkVzRvmJ2oOXUHIxw,1024
+pycpfcnpj/cpfcnpj.py,sha256=CRzwPmw2TnBQtH4YNdgkXOYFuJv5jsQAbqyu91GxVTc,798
+pycpfcnpj/gen.py,sha256=wDGaG0umAOq85l7LNHk_7JhiKlVG1_yCHwrwnr2duBU,887
+pycpfcnpj-1.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pycpfcnpj-1.3.dist-info/METADATA,sha256=qF91BFeZhbtT1BO9qg4o7dPWkPNOy0vr-qRvKrfmR3U,770
+pycpfcnpj-1.3.dist-info/metadata.json,sha256=DiPD07YXGwrcW4_6kQ0XjlTaHMX3LFzJwFApzjDp4SI,950
+pycpfcnpj-1.3.dist-info/RECORD,,
+pycpfcnpj-1.3.dist-info/top_level.txt,sha256=ooId6Z20WqFSD9TkDCfoxorSC4cdRJ2anYZjUyj53Q4,10
+pycpfcnpj-1.3.dist-info/WHEEL,sha256=54bVun1KfEBTJ68SHUmbxNPj80VxlQ0sHi4gZdGZXEY,92
