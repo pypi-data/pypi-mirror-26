@@ -1,0 +1,3 @@
+[console_scripts]
+dtm2text = dtm2text:main
+
