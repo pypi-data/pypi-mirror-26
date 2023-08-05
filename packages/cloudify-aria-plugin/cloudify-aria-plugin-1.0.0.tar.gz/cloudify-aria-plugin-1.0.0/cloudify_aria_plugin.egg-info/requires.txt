@@ -1,0 +1,4 @@
+apache-ariatosca[ssh]==0.1.1
+cloudify-plugins-common<=4.2
+wagon==0.6.1
+setuptools>=36.5.0
