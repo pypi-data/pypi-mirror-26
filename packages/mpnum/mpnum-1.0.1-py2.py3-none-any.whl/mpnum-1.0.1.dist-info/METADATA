@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: mpnum
+Version: 1.0.1
+Summary: matrix product representation library
+Home-page: https://github.com/dseuss/mpnum
+Author: Daniel Suess, Milan Holzäpfel
+Author-email: daniel@dsuess.me, mail@mjh.name
+License: BSD
+Platform: ALL
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: SciPy (>=0.15)
+Requires-Dist: NumPy (>=1.5.1)
+Requires-Dist: six (>=1.0)
+Provides-Extra: testdeps
+Requires-Dist: PyTest (>=3.0.1); extra == 'testdeps'
+Requires-Dist: h5py (>=2.4); extra == 'testdeps'
+Requires-Dist: pytest-benchmark (>=3); extra == 'testdeps'
+
+[MPNUM]
+
+A matrix product representation library for Python
+
+mpnum is a flexible, user-friendly, and expandable toolbox for the
+matrix product state/tensor train tensor format. mpnum provides:
+
+-   support for well-known matrix product representations, such as:
+-   matrix product states (MPS), also known as tensor trains (TT)
+-   matrix product operators (MPO)
+-   local purification matrix product states (PMPS)
+-   arbitrary matrix product arrays (MPA)
+-   arithmetic operations: addition, multiplication, contraction etc.
+-   compression, canonical forms, etc.
+-   finding extremal eigenvalues and eigenvectors of MPOs (DMRG)
+-   flexible tools for new matrix product algorithms
+
+
