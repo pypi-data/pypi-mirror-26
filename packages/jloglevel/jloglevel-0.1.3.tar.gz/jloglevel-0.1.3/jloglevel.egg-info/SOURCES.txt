@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+jloglevel/__init__.py
+jloglevel/__main__.py
+jloglevel.egg-info/PKG-INFO
+jloglevel.egg-info/SOURCES.txt
+jloglevel.egg-info/dependency_links.txt
+jloglevel.egg-info/entry_points.txt
+jloglevel.egg-info/requires.txt
+jloglevel.egg-info/top_level.txt
+jloglevel.egg-info/zip-safe
