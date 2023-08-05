@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: aiojsonflow
+Version: 0.0.1
+Summary: use json to program the flow of work steps, with async support.
+Home-page: https://github.com/myrfy001/aiojsonflow
+Author: myrfy001
+Author-email: UNKNOWN
+License: Apache
+Description: Write scripts in JSON format and run it. Easy to extend it by writting simple python functions. It's a way to let user run custom scripts in a flow.
+Keywords: json programming async
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
