@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+lecsim_data.egg-info/PKG-INFO
+lecsim_data.egg-info/SOURCES.txt
+lecsim_data.egg-info/dependency_links.txt
+lecsim_data.egg-info/top_level.txt
