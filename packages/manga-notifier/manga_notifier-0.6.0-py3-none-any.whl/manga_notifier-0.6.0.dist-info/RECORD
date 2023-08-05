@@ -1,0 +1,13 @@
+manga_notifier/__init__.py,sha256=JgErYkiskih8Y6oRwowALtR-rwQhAAdqOYWjQraRIPI,59
+manga_notifier/__version__.py,sha256=WGhe89Ognw7mURbEyZQg5PxCDA-vghiSKT0l2nuox8Q,18
+manga_notifier/cli.py,sha256=CIydM1rU2dprtjSJl4uya-NkG8_8HFFao87hRJ_VyCc,3413
+manga_notifier/mangastream.py,sha256=_NXUL3vBToKrqru85p1x3kIFlUbh_GV9OIwt9paL9Lk,1452
+manga_notifier/meow.py,sha256=Ul7HSCa_yjuMQO2O4pEuTTZwWCWZ0tVNZmG2p620M8I,2264
+manga_notifier/storage.py,sha256=-BC0j5oF9FzTQut5W_7hdtSOPH585NfJBayyoEh3z-w,1516
+manga_notifier-0.6.0.dist-info/DESCRIPTION.rst,sha256=6n1lfWhndxU49yBDq4rxDtDefjxBPE6g8hfK7mDY0Ms,937
+manga_notifier-0.6.0.dist-info/METADATA,sha256=1Ow6qNcPTduf_p1mOOirTvdcKY8lCP3_mNGJ06-UECo,1803
+manga_notifier-0.6.0.dist-info/RECORD,,
+manga_notifier-0.6.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+manga_notifier-0.6.0.dist-info/entry_points.txt,sha256=7Gkp6p3c81_swkz4TSxBcD0walIfDUMdMh0HAy0WFE4,55
+manga_notifier-0.6.0.dist-info/metadata.json,sha256=B4tUa3Pdji_-xJrMPaGOGSOCHqzQiohVVdoWBJrR4i8,1160
+manga_notifier-0.6.0.dist-info/top_level.txt,sha256=r-KWvqeL7wStVy6i_4RrOYr7T1tjVljY3dDtNfzseZk,15
