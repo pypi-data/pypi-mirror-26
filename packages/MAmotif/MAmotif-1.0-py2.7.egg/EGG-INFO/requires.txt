@@ -1,0 +1,2 @@
+MAnorm>=1.0
+motifscan>=1.1
