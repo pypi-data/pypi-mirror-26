@@ -1,0 +1,10 @@
+coordinator_data_tasks/__init__.py,sha256=vgxrxJ5zahuZpLm8owsO911GruQj8pCTMf3zXMHdrr4,163
+coordinator_data_tasks/cli.py,sha256=V8ujiWGf_VF0-hSSx2rdIjTq_g_9w9F8saA91ozVapQ,2884
+coordinator_data_tasks/coordinator_data_tasks.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+coordinator_data_tasks-0.0.5.dist-info/DESCRIPTION.rst,sha256=RtD3tebwIrb3RLf4aPEfv1n2H16XIftpcc94Zxps_cQ,3207
+coordinator_data_tasks-0.0.5.dist-info/METADATA,sha256=koYxO_qusk8iY6hO_6lPudoZfHJ0PhDjpzNgxr5n6I4,4328
+coordinator_data_tasks-0.0.5.dist-info/RECORD,,
+coordinator_data_tasks-0.0.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+coordinator_data_tasks-0.0.5.dist-info/entry_points.txt,sha256=VsvBXKuKHT78aPxf_a45maHDEO0zKyEK_uyrwP-SUWE,64
+coordinator_data_tasks-0.0.5.dist-info/metadata.json,sha256=co3kWrvcjKeeCK8r2Fqh8TbPl1FPD5p1k64ZQYq-Q2A,1361
+coordinator_data_tasks-0.0.5.dist-info/top_level.txt,sha256=re5f4ztRsZK-Ljii_pCQ36zDWQmKU37M7XMSKg7SoPU,23
