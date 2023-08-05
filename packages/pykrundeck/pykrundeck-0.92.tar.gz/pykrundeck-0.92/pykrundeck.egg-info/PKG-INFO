@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: pykrundeck
+Version: 0.92
+Summary: Python REST API client for Rundeck 2.6+
+Home-page: https://github.com/kalumkalac/pyrundeck
+Author: kalumkalac
+Author-email: delovan@gmail.com
+License: UNKNOWN
+Description: # Rundeck REST API client
+        
+        This is a Python REST API client for Rundeck 2.6+
+        
+        ## See also
+        
+        - https://github.com/marklap/rundeckrun
+        
+        ## LICENSE
+        
+        GPL3
+        
+Platform: UNKNOWN
