@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: dfskit
+Version: 0.0.3
+Summary: A suite of utilities for converting and working with data serialization formats
+Home-page: https://github.com/jamesridgway/dsfkit
+Author: James Ridgway
+Author-email: UNKNOWN
+License: MIT
+Description: dsfkit
+        ======
+        A suite of utilities for converting and working with data serialization formats
+Platform: UNKNOWN
