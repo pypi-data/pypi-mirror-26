@@ -1,0 +1,8 @@
+README.rst
+setup.py
+fastq_anonymous.egg-info/PKG-INFO
+fastq_anonymous.egg-info/SOURCES.txt
+fastq_anonymous.egg-info/dependency_links.txt
+fastq_anonymous.egg-info/entry_points.txt
+fastq_anonymous.egg-info/requires.txt
+fastq_anonymous.egg-info/top_level.txt
