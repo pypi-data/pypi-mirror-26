@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+lcom.egg-info/PKG-INFO
+lcom.egg-info/SOURCES.txt
+lcom.egg-info/dependency_links.txt
+lcom.egg-info/entry_points.txt
+lcom.egg-info/requires.txt
+lcom.egg-info/top_level.txt
+src/__init__.py
+src/command.py
+src/lcom.py
+src/reflection.py

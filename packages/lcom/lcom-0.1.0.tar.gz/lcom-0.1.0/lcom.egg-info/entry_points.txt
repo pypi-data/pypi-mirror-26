@@ -1,0 +1,3 @@
+[console_scripts]
+lcom = src.command:cmd
+
