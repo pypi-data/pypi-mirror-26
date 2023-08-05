@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+aiotimer/__init__.py
+aiotimer/timerfd.c
+aiotimer/timerfd.pyx
+aiotimer.egg-info/PKG-INFO
+aiotimer.egg-info/SOURCES.txt
+aiotimer.egg-info/dependency_links.txt
+aiotimer.egg-info/top_level.txt
