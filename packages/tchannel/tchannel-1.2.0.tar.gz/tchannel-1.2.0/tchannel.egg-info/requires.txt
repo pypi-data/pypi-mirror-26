@@ -1,0 +1,14 @@
+contextlib2
+futures
+crcmod>=1,<2
+tornado>=4.3,<5
+thriftrw>=0.4,<2
+threadloop>=1,<2
+opentracing>=1.1,<2
+opentracing_instrumentation>=2,<3
+six
+
+[vcr]
+PyYAML
+mock
+wrapt
