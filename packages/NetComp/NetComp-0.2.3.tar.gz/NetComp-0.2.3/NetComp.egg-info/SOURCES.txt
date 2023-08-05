@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+NetComp.egg-info/PKG-INFO
+NetComp.egg-info/SOURCES.txt
+NetComp.egg-info/dependency_links.txt
+NetComp.egg-info/requires.txt
+NetComp.egg-info/top_level.txt
+netcomp/__init__.py
+netcomp/exception.py
+netcomp/distance/__init__.py
+netcomp/distance/exact.py
+netcomp/distance/features.py
+netcomp/linalg/__init__.py
+netcomp/linalg/eigenstuff.py
+netcomp/linalg/fast_bp.py
+netcomp/linalg/matrices.py
+netcomp/linalg/resistance.py
