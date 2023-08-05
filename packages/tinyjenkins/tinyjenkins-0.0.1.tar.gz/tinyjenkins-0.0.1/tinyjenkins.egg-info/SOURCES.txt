@@ -1,0 +1,8 @@
+README
+setup.py
+tinyjenkins/__init__.py
+tinyjenkins.egg-info/PKG-INFO
+tinyjenkins.egg-info/SOURCES.txt
+tinyjenkins.egg-info/dependency_links.txt
+tinyjenkins.egg-info/requires.txt
+tinyjenkins.egg-info/top_level.txt

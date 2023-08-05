@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: tinyjenkins
+Version: 0.0.1
+Summary: A tiny jenkins client library
+Home-page: UNKNOWN
+Author: Josh Harlow
+Author-email: harlowja@gmail.com
+License: ASL
+Description-Content-Type: UNKNOWN
+Description: # tinyjenkins
+Keywords: jenkins
+Platform: UNKNOWN
