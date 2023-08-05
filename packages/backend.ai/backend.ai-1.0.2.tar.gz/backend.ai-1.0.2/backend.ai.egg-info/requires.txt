@@ -1,0 +1,14 @@
+backend.ai-common~=1.0.0
+backend.ai-client~=1.0.0
+
+[agent]
+backend.ai-agent~=1.0.0
+
+[ci]
+flake8
+
+[dev]
+pytest
+
+[manager]
+backend.ai-manager~=1.0.0
