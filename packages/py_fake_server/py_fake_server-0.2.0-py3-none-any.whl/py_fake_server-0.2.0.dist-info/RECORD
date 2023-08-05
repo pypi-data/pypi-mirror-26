@@ -1,0 +1,10 @@
+py_fake_server/__init__.py,sha256=iFNKVkkLtXbcRi9KCdUx_4u05UM5_GC6eGNFsKvKNkM,67
+py_fake_server/endpoint.py,sha256=Ry2Xf8JJKbJDHoGVw-yQDC1kqYjwDUcP7EUaKufccyw,4360
+py_fake_server/server.py,sha256=_x6DymgEU-UkicRGahvx8sr-1m-1jB7HanEzGo4Sx94,4400
+py_fake_server/statistic.py,sha256=VCqta2KC0L6EgR5ZoWpFZPoYzF2cD_DmTnxv7wQhOdU,8656
+py_fake_server-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+py_fake_server-0.2.0.dist-info/METADATA,sha256=cRbfxLscxilZKfzQcEUaQ67pdG-wwpigzLv0jaqySME,517
+py_fake_server-0.2.0.dist-info/RECORD,,
+py_fake_server-0.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+py_fake_server-0.2.0.dist-info/metadata.json,sha256=7rMagvRzLiJl3hks2aI8pF8ALg46OEWcxlb1VIyA4FU,780
+py_fake_server-0.2.0.dist-info/top_level.txt,sha256=S_yi9GLpHtRYnXJUlXYlrSF3yGmi0bkrkJI8fgBuGGg,15
