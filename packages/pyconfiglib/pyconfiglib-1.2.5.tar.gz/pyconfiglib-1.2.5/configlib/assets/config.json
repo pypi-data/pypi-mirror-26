@@ -1,0 +1,21 @@
+{
+    "age": 42,
+    "bald": true,
+    "colors": {
+        "castle": {
+            "east": "#ff420e",
+            "nord": "#abcdef",
+            "south": "#dcebfa",
+            "west": "#b7805c"
+        },
+        "light": "#ffffff",
+        "walls": {
+            "east": "#ff0000",
+            "nord": "#0000ff",
+            "south": "#000000",
+            "west": "#00ff00"
+        }
+    },
+    "documents": "~/Documents",
+    "name": "Archibald"
+}
