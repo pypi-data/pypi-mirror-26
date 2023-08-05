@@ -1,0 +1,13 @@
+
+#resources files
+include qordoba/resources/framework.*
+include qordoba/resources/language.*
+include qordoba/resources/vendor.*
+include qordoba/resources/documentation.*
+include qordoba/resources/ANC-all-count.*
+include qordoba/string-extractor/*.sh
+include qordoba/string-extractor/*.scala
+
+#Misc
+include LICENSE.md
+include README.md
