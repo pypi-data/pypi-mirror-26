@@ -1,0 +1,11 @@
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/sentry_test.py,sha256=dskOCmuP2Y5x7CqS2oOC1pexzpvFUNzwzH2lbiZArNI,376
+tidbits/__init__.py,sha256=kaqMWqdd0RxRDyZcPgXWqMsspoi5-i7abjUTm4tYZSY,121
+tidbits/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tidbits/integration/sentry.py,sha256=xezlv0w0oN6NDLNDQW8fE08tz4rskoqGXMST9Bn1OGA,137
+tidbits-0.1.0.dist-info/DESCRIPTION.rst,sha256=_2p-kOu6iDJHoot-oy2NYGjdabRIWEQwHMehcCbMyGM,1878
+tidbits-0.1.0.dist-info/METADATA,sha256=VRJvtSDHHH1vEityXewq9eLAaqhj6nMihiuB4hzOG00,2689
+tidbits-0.1.0.dist-info/RECORD,,
+tidbits-0.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+tidbits-0.1.0.dist-info/metadata.json,sha256=XZ-NhBimjv6uk-VerZJEGVyCsKOyvrYwSRnqQ9R9REI,889
+tidbits-0.1.0.dist-info/top_level.txt,sha256=JTWHx-ULZid5XDnWIitJEXX-abKw_DJV30wIQGQcguc,14
