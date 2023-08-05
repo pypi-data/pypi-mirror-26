@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: configstore
+Version: 0.2
+Summary: Retrieve config from different backends
+Home-page: https://github.com/caravancoop/configstore
+Author: Antoine Reversat
+Author-email: antoine@caravan.coop
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dotenv
+Requires-Dist: django-dotenv; extra == 'dotenv'
+
+
+configstore is a small pluggable library that lets you retrieve settings
+or secrets from a variety of storage systems to configure your app.
+
+
