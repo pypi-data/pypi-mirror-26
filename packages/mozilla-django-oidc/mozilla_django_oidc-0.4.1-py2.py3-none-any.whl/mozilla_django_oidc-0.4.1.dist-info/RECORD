@@ -1,0 +1,12 @@
+mozilla_django_oidc/__init__.py,sha256=qBs4HqYsPn6yUHWEuCN4rGUC05gABbl800d8LBd8h9w,22
+mozilla_django_oidc/auth.py,sha256=eD5KQRxNBghWseHIQ5kuHs3o23yiXwg7qUpTFGjUXjQ,7943
+mozilla_django_oidc/middleware.py,sha256=Z7YZ_O_Fj122rujYAXEnJI1RRvp6EpTeSE0bzRIGht4,3989
+mozilla_django_oidc/urls.py,sha256=BaP_8vv5MJ813BF34s8y72Q92phowITEPp-t4kALHLY,726
+mozilla_django_oidc/utils.py,sha256=_z3_bA3y9cT12BJc8E7thQze-zmUCKM6_oc-dKxeUCs,1174
+mozilla_django_oidc/views.py,sha256=lc_OK1s8Ebc-y2ZpO3aGSdvsypAdmWDCZJWnpv2m2-Q,5992
+mozilla_django_oidc-0.4.1.dist-info/DESCRIPTION.rst,sha256=LRSmnQihK6n11Q8KpcYdDtpC_-CfPMV0aAiMPo1Y20U,6990
+mozilla_django_oidc-0.4.1.dist-info/METADATA,sha256=ua6LejN8-nLidLQsEpqCaEwlp7RaC66r5PdAKsVsqbc,8311
+mozilla_django_oidc-0.4.1.dist-info/RECORD,,
+mozilla_django_oidc-0.4.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mozilla_django_oidc-0.4.1.dist-info/metadata.json,sha256=uXDIrWi33F_3w_wGyh05DvFYRmW1SCoasOCreXsf4_w,1378
+mozilla_django_oidc-0.4.1.dist-info/top_level.txt,sha256=83PYkmYdt4WCTqxxP8INCNRNxQsrkp7bVU1Mx5UFPeI,20
