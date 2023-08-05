@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nodebook
+Version: 0.2.1
+Summary: Nodebook Jupyter Extension
+Home-page: https://github.com/stitchfix/nodebook
+Author: Kevin Zielnicki
+Author-email: kzielnicki@stitchfix.com
+License: Stitch Fix 2017
+Description: Nodebook Jupyter Extension
+Platform: UNKNOWN
