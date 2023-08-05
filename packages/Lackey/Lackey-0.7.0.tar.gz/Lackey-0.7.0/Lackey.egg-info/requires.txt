@@ -1,0 +1,7 @@
+requests
+pillow
+numpy
+opencv-python
+keyboard
+pyperclip
+pyobjc
