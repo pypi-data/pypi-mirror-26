@@ -1,0 +1,12 @@
+whistle/__init__.py,sha256=rHpbzsGo90wiagsbCmYVvfdjQHACrB5Yl8MYyfx9PLg,73
+whistle/_version.py,sha256=KT-X8dbW6BXeFFZRWeR-cut-sZn8tRTx1kwdfh3kzx8,22
+whistle/event/__init__.py,sha256=gryGw0Wp4QHtQCDcmN4XpGfhxZxKxLXFrol41qMVP9Y,216
+whistle/event/_version.py,sha256=32caAjztRyh1Finvy57_XXlxT4AbUKwHvMZIEF9z9EM,23
+whistle/event/dispatcher.py,sha256=qW09Oll5oxXq7WjIjzfrC9bjSY6kGEyijPjh6K9qRRA,3322
+whistle/event/event.py,sha256=Ce_G9gBmoh0sjxwY_JSQRIEB8tQS4eegKQ-TnvbeKhA,192
+whistle-1.0a1.dist-info/DESCRIPTION.rst,sha256=KWQ9ksThlwEBsKKqbCagPV1ea7vstFl05GLu71BNTMc,744
+whistle-1.0a1.dist-info/METADATA,sha256=k9Hq-ue8pJCFOeJ3n3wHyV5_YjpC1btMMqtixsZuyN8,1338
+whistle-1.0a1.dist-info/RECORD,,
+whistle-1.0a1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+whistle-1.0a1.dist-info/metadata.json,sha256=Qp7T8pyUQPBeGrY1aXHwc-ItdpJU1YrcN13mo6HqRU4,727
+whistle-1.0a1.dist-info/top_level.txt,sha256=rMl5Ofoj0nL6p30xCc9SWK4tG4NoYfUc2mi9A7MoUes,8
