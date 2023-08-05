@@ -1,0 +1,14 @@
+manconfig.json
+manconfig.py
+setup.py
+man/__init__.py
+man/man.py
+man/manconfig.py
+man/version
+man.egg-info/PKG-INFO
+man.egg-info/SOURCES.txt
+man.egg-info/dependency_links.txt
+man.egg-info/entry_points.txt
+man.egg-info/requires.txt
+man.egg-info/top_level.txt
+test/test_are_missing.py

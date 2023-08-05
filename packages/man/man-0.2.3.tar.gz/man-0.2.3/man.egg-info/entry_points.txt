@@ -1,0 +1,3 @@
+[console_scripts]
+man = man:main
+

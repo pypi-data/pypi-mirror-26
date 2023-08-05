@@ -1,0 +1,27 @@
+{
+    "data_files": [
+        [
+            "",
+            [
+                "manconfig.json",
+                "manconfig.py"
+            ]
+        ]
+    ],
+    "dependancies": [
+        "pyconfiglib==1.*"
+    ],
+    "email": "diego.dorn@free.fr",
+    "fullname": "Diego Dorn",
+    "github_username": "ddorn",
+    "libname": "man",
+    "package_data": {
+        "man": [
+            "version"
+        ]
+    },
+    "packages": [
+        "man"
+    ],
+    "pypi_username": "ddorn"
+}
