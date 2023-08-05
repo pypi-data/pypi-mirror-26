@@ -1,0 +1,7 @@
+setup.py
+cplusnew/__init__.py
+cplusnew.egg-info/PKG-INFO
+cplusnew.egg-info/SOURCES.txt
+cplusnew.egg-info/dependency_links.txt
+cplusnew.egg-info/not-zip-safe
+cplusnew.egg-info/top_level.txt
