@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+tests/integration/__init__.py
+tests/integration/sentry_test.py
+tidbits/__init__.py
+tidbits.egg-info/PKG-INFO
+tidbits.egg-info/SOURCES.txt
+tidbits.egg-info/dependency_links.txt
+tidbits.egg-info/top_level.txt
+tidbits/integration/__init__.py
+tidbits/integration/sentry.py
