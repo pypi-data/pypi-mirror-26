@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: Flask-Stride
+Version: 0.2.0
+Summary: Flask adapter client for pystride
+Home-page: https://bitbucket.org/dchevell/flask_stride
+Author: Dave Chevell
+Author-email: dchevell@atlassian.com
+License: MIT
+Keywords: atlassian,stride,flask
+Platform: UNKNOWN
+Requires-Dist: pystride
+
+UNKNOWN
+
+
