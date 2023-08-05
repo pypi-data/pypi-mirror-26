@@ -1,0 +1,10 @@
+tap_awin/__init__.py,sha256=d2gA8GbacXr7HSaTn1GQY8rt_xYLRHYuO8U-w1F6jCc,4563
+tap_awin/schemas/merchants.json,sha256=lgfjxMPPLNCZGJ6zbesOqg0fVVYjUCWwn35S8hir6mM,1899
+tap_awin/schemas/transactions.json,sha256=_gdnvmm9Vm4-SOSWcZPv7Izbk-M9YACRowMqC3BlZY0,2217
+tap_awin-0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+tap_awin-0.0.2.dist-info/METADATA,sha256=APlpSZSL64W5YO3aJzyFEzp49JXson_01vTW7dP8ZQQ,444
+tap_awin-0.0.2.dist-info/RECORD,,
+tap_awin-0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+tap_awin-0.0.2.dist-info/entry_points.txt,sha256=YxmKBqZjgTZO0UN1wmGtI7zm1Vdfk3VWDjOAeAEW2D4,68
+tap_awin-0.0.2.dist-info/metadata.json,sha256=4NykMRhgewjnNTv-l-dCo2CIyuHn_LdjVZ43KDg5aZQ,741
+tap_awin-0.0.2.dist-info/top_level.txt,sha256=0GA_5wA5Se1QM7OW7iKZPVb65gWVgI14IFj8iYsMvMY,9
