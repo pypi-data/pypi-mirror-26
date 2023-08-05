@@ -1,0 +1,9 @@
+ckan_datapackage_tools/VERSION,sha256=BBiEjpP5wq77tXwbrYQXBNEvIXR25TDfRYzDhHUxG4c,12
+ckan_datapackage_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckan_datapackage_tools/converter.py,sha256=z9N4POIRN3q9HPcBBS-u8NNwcY1Q3oXN31FVg6Umpso,9262
+ckan_datapackage_tools-0.0.1a0.dist-info/DESCRIPTION.rst,sha256=1n8oBhfIHKzeHdHPbRAZ0pFEUMHvkwZxI1NGBPu0jWQ,1084
+ckan_datapackage_tools-0.0.1a0.dist-info/METADATA,sha256=BFdo7ql-CqtAjtbG2FSVke_JVbbcjU6iGnyqipPinFk,2092
+ckan_datapackage_tools-0.0.1a0.dist-info/RECORD,,
+ckan_datapackage_tools-0.0.1a0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ckan_datapackage_tools-0.0.1a0.dist-info/metadata.json,sha256=r6sJVkKUxzi06OOqueJQgnjpeN6054kFIKiauovK6zU,1126
+ckan_datapackage_tools-0.0.1a0.dist-info/top_level.txt,sha256=f09bvejDj0A06dWfCi8fmxAkMY4jEK02gK5T7NVnInY,23
