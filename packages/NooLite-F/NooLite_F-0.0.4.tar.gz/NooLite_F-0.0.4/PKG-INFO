@@ -1,0 +1,114 @@
+Metadata-Version: 1.1
+Name: NooLite_F
+Version: 0.0.4
+Summary: Module to work with NooLite_F (MTRF-64-USB)
+Home-page: https://github.com/SergejPr/NooLite-F
+Author: Sergey Prytkov
+Author-email: sergej.prytkov@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: NooLite-F
+        =========
+        
+        Python module to work with NooLite-F (MTRF-64-USB)
+        
+        Supported commands:
+        
+        * on - turn on the module
+        * off - turn off the module
+        * switch - switch module state
+        
+        * temporary_on - turn on the module for a specified time
+        * enable_temporary_on - enable "temporary on" mode
+        * disable_temporary_on - disable "temporary on" mode
+        
+        * bright_tune - start to increase/decrease brightness
+        * bright_tune_back - invert direction of the brightness change
+        * bright_tune_stop - stop brightness changing
+        * bright_tune_custom - start to increase/decrease brightness with a specified speed
+        * bright_step - increase/decrease brightness once with a specified step
+        * set_brightness - set brightness
+        
+        * load_preset - load saved module state from preset
+        * save_preset - save current module state as preset
+        
+        * roll_rgb_color - start color changing **(only for RGB Led modules)**
+        * switch_rgb_color - switch color  **(only for RGB Led modules)**
+        * switch_rgb_mode - switch color changing modes **(only for RGB Led modules)**
+        * switch_rgb_mode_speed - switch speed of the color changing **(only for RGB Led modules)**
+        * set_rgb_brightness - set brightness for each rgb color **(only for RGB Led modules)**
+        
+        * read_state - read module state **(only for NooLite-F modules)**
+        
+        * bind - send bind command to module
+        * unbind - send unbind command to module
+        * service_mode_on - turn on the service mode on module **(only for NooLite-F modules)**
+        * service_mode_off - turn off the service mode on module **(only for NooLite-F modules)**
+        
+        Each command can accept following parameters:
+        
+        * channel - the number of the channel for command. The command will be send to all modules that are binded with selected channel.
+        * broadcast - broadcast mode for command. If True then command will be send simultaneously to all modules that are binded with selected channel (default - False)
+        * mode - mode of the command sending. TX - for nooLite module (without feedback), TX_F - for nooLite-F modules (with feedback).
+        
+        Some commands require additional parameters. For more details see inline help.
+        
+        
+        In response for each command returns:
+        
+        * for **nooLite-F** modules returns array which contains command result and module info for each module that are binded with selected channel.
+        * for **nooLite** modules returns nothing.
+        
+        Command result equals True if command send successfully, otherwise False.
+        Module info contains information about module: type, firmware version, state (on/off/temporary on), current brightness and bind mode (on/off)::
+        
+            [
+                (True, <ModuleInfo (0x2e25b90), id: 0x52e9, type: 1, hardware: 3, state: 1, brightness: 1.0, mode: 0>),
+                (True, <ModuleInfo (0x2e25a90), id: 0x52e3, type: 1, hardware: 3, state: 1, brightness: 1.0, mode: 0>)
+            ]
+        
+        If command result is False, then module info is None.::
+        
+            [(False, None)]
+        
+        Note
+        ====
+        
+        Tested with MTRF-64-USB adapter and SLF-1-300, SD-1-180, SU-1-500 modules.
+        
+        Example
+        =======
+        
+        Example of usage::
+        
+            noolite = NooLiteService(port="COM3")
+            noolite.on(1)
+            noolite.set_brightness(1, 0.7)
+            noolite.off(1)
+        
+            noolite.on(2, mode = Mode.TX)
+            noolite.set_brightness(2, 0.7, mode = Mode.TX)
+            noolite.off(2)
+        
+        or::
+        
+            module = Dimmer("COM3", 1, ModuleType.NOOLITE_F, true)
+            module.on()
+            module.set_brightness(0.7)
+            module.off()
+        
+            module = Dimmer("COM3", 2, ModuleType.NOOLITE)
+            module.on()
+            module.set_brightness(0.7)
+            module.off()
+        
+        
+Keywords: noolite noolite-f noolitef
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
