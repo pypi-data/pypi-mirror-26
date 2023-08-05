@@ -1,0 +1,4 @@
+docopt
+gym>=0.8.1
+numpy
+pyzmq

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: gymz
+Version: 0.0.2
+Summary: A light-weight ZeroMQ wrapper for the OpenAI Gym.
+Home-page: https://github.com/INM-6/python-gymz
+Author: Jakob Jordan, Philipp Weidel
+Author-email: j.jordan@fz-juelich.de
+License: MIT
+Description: UNKNOWN
+Keywords: openai-gym reinforcement-learning zeromq zmq
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering
