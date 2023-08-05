@@ -1,0 +1,17 @@
+Products.ExternalMethod-4.0-py2.7-nspkg.pth,sha256=nq2GLEDBKV9G0i4LEhkEEQT0gMqQlG1ToxVfs90lBMs,549
+Products/ExternalMethod/ExternalMethod.py,sha256=3nEh9rXAy_oT6tvaRRlfEHkCnF_qC1afYSAUd2TakZs,8971
+Products/ExternalMethod/__init__.py,sha256=qDpOgcYJTz3dvvo9Xcq0GVMakjL9z7ZgKkX5txtkCrY,924
+Products/ExternalMethod/extmethod.gif,sha256=TQYrkXmSwP_lQClxghYY1Wm55UuQ1MapQpOXofODhNg,907
+Products/ExternalMethod/dtml/methodAdd.dtml,sha256=T7f9nZQabBZw61nkPBdUc0H7VyFD2VNa7QMBCuyXeLs,1688
+Products/ExternalMethod/dtml/methodEdit.dtml,sha256=Y9Ir5_6haINFTb45_w4N9CSa43FYSScFvGCqz4Qw5ro,1315
+Products/ExternalMethod/tests/__init__.py,sha256=P8ztEVfBeY-FpBcltdywE91W0fKETlx84lIPr88yeKs,642
+Products/ExternalMethod/tests/testExternalMethod.py,sha256=G24KQzMUvPi3V9Aj-M7gD17E2ogCIPaq0zJP11NV1lc,1864
+Products/ExternalMethod/tests/Extensions/Test.py,sha256=3ZKVm_Xwo0HyeTGxNolxcl_AzXmATDXM1oYU9QYVGAY,74
+Products/ExternalMethod/www/function.gif,sha256=_5QYe4UdHn_gOwuuy-07bssH6qTgWwwtG4121G3Na0M,895
+Products.ExternalMethod-4.0.dist-info/DESCRIPTION.rst,sha256=sN0fdSFOqcvqla26SaB74znpZz19R9i_J7aCsAZQWp8,659
+Products.ExternalMethod-4.0.dist-info/METADATA,sha256=oYq2ZfRB0UsupyXj1TD_blPbjDr6mWgcvVfxrVAR-cE,1828
+Products.ExternalMethod-4.0.dist-info/RECORD,,
+Products.ExternalMethod-4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Products.ExternalMethod-4.0.dist-info/metadata.json,sha256=ftAT924P8r6SjhYYpV2zB5usUWLYIgSjcI3N_dCUj-0,1219
+Products.ExternalMethod-4.0.dist-info/namespace_packages.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
+Products.ExternalMethod-4.0.dist-info/top_level.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
