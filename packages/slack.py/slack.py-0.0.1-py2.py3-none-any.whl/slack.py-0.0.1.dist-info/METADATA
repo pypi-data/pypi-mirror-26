@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: slack.py
+Version: 0.0.1
+Summary: A simple command line tool to interact with Slack
+Home-page: https://github.com/santiagobasulto/slack-cli
+Author: Santiago Basulto
+Author-email: santiago@rmotr.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click (==6.7)
+Requires-Dist: slackclient (==1.0.9)
+
+UNKNOWN
+
+

@@ -1,0 +1,13 @@
+slack.py-0.0.1.data/scripts/main.py,sha256=FiibSEUz3XE7oXdCKNZIYUmRbqVKnQ5px0Gf-32Z7TA,2959
+slack.py-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+slack.py-0.0.1.dist-info/METADATA,sha256=Y-N9c--H8l-GoLoMmCx9DjGSM8Q6lD9kMxSlCw0nYto,367
+slack.py-0.0.1.dist-info/RECORD,,
+slack.py-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+slack.py-0.0.1.dist-info/entry_points.txt,sha256=ji_KoTrmoB2-bPOu5m-eZnu5pMHnmKPstA5zi73Yudk,37
+slack.py-0.0.1.dist-info/metadata.json,sha256=5LmJFAx_TUU9NbJGIbK9_-tROehgawk8mu34XGBOLrQ,792
+slack.py-0.0.1.dist-info/top_level.txt,sha256=b1mhhz_FLD0Q5jb9Ql8um6JiOf49K6LG4oq7Dk7s9fA,10
+slack.py-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+slack_cli/__init__.py,sha256=3n1byPyUjB7Khb16j0ryLi9E2HMAz_uGjOWKvf0AZAo,203
+slack_cli/api.py,sha256=JaFRQEKiWzwUHsNCZSh1lsxXc4NmRSv6ZytRvCjim_o,2269
+slack_cli/cmd.py,sha256=vmmgmUGzm8LoLkQZ63WN3RBPsjJMDxAAkXnOu3zMprQ,3966
+slack_cli/utils.py,sha256=-GQJ-j0G7C_EA-A7162w8JxcJAurRgl4BDr_O84hviQ,217
