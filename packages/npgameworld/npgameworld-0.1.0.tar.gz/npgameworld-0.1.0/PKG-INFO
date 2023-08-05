@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: npgameworld
+Version: 0.1.0
+Summary: Simple pure python game engine
+Home-page: https://github.com/xxblx/npgameworld
+Author: Oleg Kozlov
+Author-email: xxblx@posteo.org
+License: zlib/libpng
+Description: NpGameWorld is very simple game engine in pure python
+        created for embedding. It is designed for games such as top-down shooters
+        where the player controls the hero, sending commands to the world.
+Keywords: games game world engine shooter
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Games/Entertainment
