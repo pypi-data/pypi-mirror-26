@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: lxdui
+Version: 1.0.1
+Summary: lxdui v1.0.1
+Home-page: https://github.com/adaptivescale/lxdui.git
+Author: AdaptiveScale, Inc.
+Author-email: info@adaptivescale.com
+License: Apache
+Description-Content-Type: UNKNOWN
+Description: lxdui v1.0.1
+Keywords: lxc lxc-containers lxd
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Framework :: Flask
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
