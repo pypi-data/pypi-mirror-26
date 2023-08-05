@@ -1,0 +1,7 @@
+Click
+pyrebase
+pyfiglet
+colorama
+requests
+inquirer
+terminaltables
