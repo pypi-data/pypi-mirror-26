@@ -1,0 +1,12 @@
+README.md
+setup.py
+setsuperuser/__init__.py
+setsuperuser/settings.py
+setsuperuser.egg-info/PKG-INFO
+setsuperuser.egg-info/SOURCES.txt
+setsuperuser.egg-info/dependency_links.txt
+setsuperuser.egg-info/top_level.txt
+setsuperuser.egg-info/zip-safe
+setsuperuser/management/__init__.py
+setsuperuser/management/commands/__init__.py
+setsuperuser/management/commands/setsuperuser.py
