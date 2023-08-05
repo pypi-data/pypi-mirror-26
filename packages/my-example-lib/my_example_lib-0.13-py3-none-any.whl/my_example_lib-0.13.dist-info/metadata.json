@@ -1,0 +1,1 @@
+{"description_content_type": "UNKNOWN", "extensions": {"python.details": {"contacts": [{"email": "intmainreturn@yandex.com", "name": "Alexander M.", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "generator": "bdist_wheel (0.30.0)", "license": "MIT", "metadata_version": "2.0", "name": "my-example-lib", "summary": "An example lib", "version": "0.13"}
