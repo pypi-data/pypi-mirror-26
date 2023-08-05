@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: aiida-codtools
+Version: 1.0.1
+Summary: The official AiiDA plugin for COD tools
+Home-page: https://github.com/aiidateam/aiida-codtools
+Author: The AiiDA team
+Author-email: developers@aiida.net
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 4 - Beta

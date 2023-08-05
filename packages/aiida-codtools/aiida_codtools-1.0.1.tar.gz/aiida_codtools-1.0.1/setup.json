@@ -1,0 +1,45 @@
+{
+    "author": "The AiiDA team",
+    "author_email": "developers@aiida.net",
+    "classifiers": [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 2.7",
+        "Development Status :: 4 - Beta"
+    ],
+    "description": "The official AiiDA plugin for COD tools",
+    "entry_points": {
+        "aiida.calculations": [
+            "codtools.ciffilter = aiida_codtools.calculations.ciffilter:CiffilterCalculation",
+            "codtools.cifcellcontents = aiida_codtools.calculations.cifcellcontents:CifcellcontentsCalculation",
+            "codtools.cifcodcheck = aiida_codtools.calculations.cifcodcheck:CifcodcheckCalculation",
+            "codtools.cifcoddeposit = aiida_codtools.calculations.cifcoddeposit:CifcoddepositCalculation",
+            "codtools.cifcodnumbers = aiida_codtools.calculations.cifcodnumbers:CifcodnumbersCalculation",
+            "codtools.cifsplitprimitive = aiida_codtools.calculations.cifsplitprimitive:CifsplitprimitiveCalculation"
+        ],
+        "aiida.parsers": [
+            "codtools.cifcellcontents = aiida_codtools.parsers.cifcellcontents:CifcellcontentsParser",
+            "codtools.cifcodcheck = aiida_codtools.parsers.cifcodcheck:CifcodcheckParser",
+            "codtools.cifcoddeposit = aiida_codtools.parsers.cifcoddeposit:CifcoddepositParser",
+            "codtools.cifcodnumbers = aiida_codtools.parsers.cifcodnumbers:CifcodnumbersParser",
+            "codtools.ciffilter = aiida_codtools.parsers.ciffilter:CiffilterParser",
+            "codtools.cifsplitprimitive = aiida_codtools.parsers.cifsplitprimitive:CifsplitprimitiveParser"
+        ]
+    },
+    "extras_require": {
+        "dev_precommit": [
+            "pre-commit"
+        ],
+        "docs": [
+            "Sphinx",
+            "docutils",
+            "sphinx_rtd_theme"
+        ]
+    },
+    "install_requires": [
+        "aiida-core>=0.10.0rc1"
+    ],
+    "license": "MIT License",
+    "name": "aiida_codtools",
+    "url": "https://github.com/aiidateam/aiida-codtools",
+    "version": "1.0.1"
+}
