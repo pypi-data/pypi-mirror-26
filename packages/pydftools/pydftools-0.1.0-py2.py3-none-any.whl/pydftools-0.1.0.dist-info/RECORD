@@ -1,0 +1,15 @@
+pydftools/__init__.py,sha256=Da6_0T5Sowl-2K10tFd1LM6GKTLXMnhzUwetMn69svk,307
+pydftools/cli.py,sha256=BSBtNhUUp61mf2HphngiUi9-SY9_YyUKw7Ggtaa3sL4,366
+pydftools/dffit.py,sha256=hUjnbZvazHFnfMoUKR2g6a4FO9TsUsJ0mzJpSS_0N-A,38127
+pydftools/mockdata.py,sha256=V4fhQgn3EkSURNqIFchMRmy4qT4FqzoIlo5FA9T8MXU,9358
+pydftools/model.py,sha256=YU31CuP8QZed3eSG3ThX63dhhP95DDFHbWvqUC0s9_0,4999
+pydftools/plotting.py,sha256=tJOf225Wj-2MlOLiz4TGrQHE5lDmJdwAxqwnEKc317o,22065
+pydftools/selection.py,sha256=YvRksFK72kPUNEHJgtHDOiD0Dh3i9l9MSkTqGijqXyY,17618
+pydftools/utils.py,sha256=MxpmXPxvdFJgHSUtf4Z2TyxPeKC7yQXhjsWe7-PgUYM,4118
+pydftools-0.1.0.dist-info/DESCRIPTION.rst,sha256=fUrlN9y6d10UvQlXDYDaFswccV4A3zTQf9UKvGn9mGY,2635
+pydftools-0.1.0.dist-info/METADATA,sha256=biw6EQKbJ9ALcxbePWqJKrdyktAq-oS5aE32QwgrNTg,3620
+pydftools-0.1.0.dist-info/RECORD,,
+pydftools-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pydftools-0.1.0.dist-info/entry_points.txt,sha256=rDWpeTxsX0A8x9IKvc-jyPGWcqcfF-4U_N6_9B6ZAFI,50
+pydftools-0.1.0.dist-info/metadata.json,sha256=8blGwUwfVtxK98KwRPgzFeeiJda2UpzgVxu_UsmZCo0,1267
+pydftools-0.1.0.dist-info/top_level.txt,sha256=Ycvn1BnYGbCHUrwB3f7GUIwjk5c-DR6dbaPTNo-zaMw,10
