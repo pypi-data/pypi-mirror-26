@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: rxt-backend-base
+Version: 0.4.0
+Summary: Base backend for RxTender
+Home-page: https://github.com/rxtender/rxt-backend-base
+Author: Romain Picard
+Author-email: romain.picard@oakbits.com
+License: MIT
+Description: 
+        # RxTender Base backend
+        
+        This is the base backend of [RxTender](http://rxtender.org). It contains
+        implementations of common programming languages for various serialization and
+        framing protocols.
+        
+        
+        The current implementation supports:
+        
+        - python3:
+            - serialization:
+                - json
+            - stream: source
+            - framing:
+                - json-lines
+        - es2015:
+            - serialization:
+                - json
+            - stream: sink
+            - framing:
+                - json-lines
+        
+        ## Running tests
+        
+        ### es2015
+        
+            cd test/es2015
+            npm run test
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
