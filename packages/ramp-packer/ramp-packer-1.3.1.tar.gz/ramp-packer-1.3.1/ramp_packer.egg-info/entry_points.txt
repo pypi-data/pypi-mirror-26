@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ramp-packer=RAMP.packer:package
+    
