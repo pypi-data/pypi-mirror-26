@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: wellcome_lambda_utils
+Version: 1.0.5
+Summary: Common lib for lambdas
+Home-page: https://github.com/wellcometrust/platform
+Author: Wellcome digital platform
+Author-email: wellcomedigitalplatform@wellcome.ac.uk
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: lambda,utils
+Platform: UNKNOWN
+Requires-Python: >=3.6
