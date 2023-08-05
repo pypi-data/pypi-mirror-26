@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: gesture-classifying-model
+Version: 0.1.2
+Summary: Classifying model for Sign Language Recognition System
+Home-page: https://github.com/kacper1095/gesture_classifying_model
+Author: Kacper Kania
+Author-email: kacper1095@gmail.com
+License: MIT
+Keywords: sign language classification
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: keras (==1.2.2)
+Requires-Dist: numpy (>=1.11.1)
+Requires-Dist: theano (==0.9.0)
+Requires-Dist: tqdm (>=4.11.2)
+Requires-Dist: wget (>=3.2)
+
+UNKNOWN
+
+
