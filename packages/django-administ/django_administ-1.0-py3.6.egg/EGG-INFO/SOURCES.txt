@@ -1,0 +1,7 @@
+setup.py
+administ/__init__.py
+administ/middleware.py
+django_administ.egg-info/PKG-INFO
+django_administ.egg-info/SOURCES.txt
+django_administ.egg-info/dependency_links.txt
+django_administ.egg-info/top_level.txt
