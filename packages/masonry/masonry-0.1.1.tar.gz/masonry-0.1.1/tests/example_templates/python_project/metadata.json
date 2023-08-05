@@ -1,0 +1,7 @@
+{
+    "default": "package", 
+    "dependencies": {
+        "pytest": ["package"],
+        "conda": ["pytest"]
+    }
+}
