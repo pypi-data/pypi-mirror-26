@@ -1,0 +1,16 @@
+README.md
+setup.py
+stylelens_feature/__init__.py
+stylelens_feature/feature_extract.py
+stylelens_feature.egg-info/PKG-INFO
+stylelens_feature.egg-info/SOURCES.txt
+stylelens_feature.egg-info/dependency_links.txt
+stylelens_feature.egg-info/requires.txt
+stylelens_feature.egg-info/top_level.txt
+test/__init__.py
+test/test_box_array.py
+test/test_box_object.py
+test/test_boxes_array.py
+test/test_detect_api.py
+test/test_detect_objects_response.py
+test/test_detect_objects_response_data.py
