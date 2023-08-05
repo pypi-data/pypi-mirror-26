@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: bonobo_factories
+Version: 0.1.0
+Summary: Bonobo Factories
+Home-page: UNKNOWN
+Author: Romain Dorgueil
+Author-email: romain@dorgueil.net
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Description: bonobo-factories
+        ================
+        
+        Transformation factories for Bonobo ETL
+        
+Platform: UNKNOWN
