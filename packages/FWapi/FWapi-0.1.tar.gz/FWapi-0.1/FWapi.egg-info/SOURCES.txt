@@ -1,0 +1,11 @@
+setup.py
+FWapi.egg-info/PKG-INFO
+FWapi.egg-info/SOURCES.txt
+FWapi.egg-info/dependency_links.txt
+FWapi.egg-info/requires.txt
+FWapi.egg-info/top_level.txt
+fwapi/__init__.py
+fwapi/base.py
+fwapi/film.py
+fwapi/person.py
+fwapi/utils.py
