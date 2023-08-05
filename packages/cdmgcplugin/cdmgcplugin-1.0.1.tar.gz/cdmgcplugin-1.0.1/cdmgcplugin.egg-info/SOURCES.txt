@@ -1,0 +1,12 @@
+ChangeLog
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cdmgcplugin.egg-info/PKG-INFO
+cdmgcplugin.egg-info/SOURCES.txt
+cdmgcplugin.egg-info/dependency_links.txt
+cdmgcplugin.egg-info/top_level.txt
+src/__init__.py
+src/configdlg.py
+src/garbagecollector.cdmp
