@@ -1,0 +1,65 @@
+# Config file for automatic testing at travis-ci.org
+# This file will be regenerated if you run travis_pypi_setup.py
+
+language: python
+
+os:
+    - linux
+    # - osx
+python:
+    - 3.6
+    - 3.5
+    - 3.4
+    - 2.7
+env:
+    - TWISTED=latest
+    - TWISTED=15.5.0
+    - TWISTED=16.0.0
+    - TWISTED=16.1.1
+    - TWISTED=16.2.0
+    - TWISTED=16.3.2
+    - TWISTED=16.4.1
+
+
+# command to install dependencies
+install:
+    # Upgrade to latest version of pip
+    - pip install -U pip pipenv
+    # install external service interface:
+    #   - codecov for to codecov.io; see after_success
+    #   - coveralls for coveralls.io
+    - pip install -U coveralls coverage codecov
+    - make dev
+    - |
+        # Overwrite twisted package for test
+        set -e
+        [ $TWISTED = latest ] || pipenv run pip install Twisted==$TWISTED
+
+# command to run tests
+script:
+    - make requirements
+    - make test
+
+after_success:
+    - coverage run --branch --source=txrwlock $(which trial) txrwlock && coverage report -m
+    - make doc
+    - |
+        # execute lint only on one build
+        echo "TRAVIS_OS_NAME=$TRAVIS_OS_NAME"
+        echo "TRAVIS_PYTHON_VERSION=$TRAVIS_PYTHON_VERSION"
+        echo "TWISTED=$TWISTED"
+        if [[ $TRAVIS_OS_NAME == "linux" && $TRAVIS_PYTHON_VERSION == "3.5" && $TWISTED == "latest" ]]; then
+            make pylint
+        fi
+    - coveralls
+    - codecov
+
+deploy:
+    provider: pypi
+    user: stibbons
+    password:
+        secure: H3e9XCo6PMnMhMETiEMxnZtof0LtoLc5a+QlMr371c62c3ZaGom5u1nWNe81BKs5/5k5i5oGPq4HiTc6WrXTqH1Dzxxw27zNJNqwtRDlFD9VNRELywYn9hk6Pzoe2l1wOz3JhHKNkfmqZbq/0VuaZAChpOfFoxe1vrl/lZlIcWxl0+Z70G1h2SsfPZtEfM2fuklAYrK7YhtvxyQZTj2FEXR4PMGyQvuWJ9+ZOWRqpADQkYuK4qoLXwA49j/oouFx674kiPgvr+GX59YVf662VQ+wFGoK8QzOb2rMTsWxg+dIqgAQcXNy0p/S9FdygpAfRrpfQSFO18U5QHKR54CwEPuuTzPwUtExFTkjpeVoB0TyvLnt5IuK5mBRkjdHEYOnSLx/J+Nonbx9BAN9IIJ2+Sj5DFiIteIVaM7toTpu+EDrk6+hD+JKdN0FaPnZmT3UtaNQZVTqCOoxYkZvDco0uwrC+KwlMY9WsxezWhWq1dSMZNilueQjPgbPgCGpXE7nHXBu8Le7k7tNZo5alIji6d7jumurltLYH9iPnzC2aHJsh2kaLZog6bAhEKUxMok3IwYlR/MkW9j4vuLDLDontTpG2JSFCvX+NfZ79lKWNRbhfCxjVXD6awUQOqw1BpAQO0g7oJMQC/PJOGHN0NEIEF77RGAyJ8M+DQA0fGS6OWU=
+    on:
+        tags: true
+        distributions: sdist bdist_wheel
+        repo: Stibbons/txrwlock
