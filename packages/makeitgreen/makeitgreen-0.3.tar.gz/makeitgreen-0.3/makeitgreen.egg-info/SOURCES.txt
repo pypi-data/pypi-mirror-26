@@ -1,0 +1,5 @@
+setup.py
+makeitgreen.egg-info/PKG-INFO
+makeitgreen.egg-info/SOURCES.txt
+makeitgreen.egg-info/dependency_links.txt
+makeitgreen.egg-info/top_level.txt
