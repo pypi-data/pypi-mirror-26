@@ -1,0 +1,16 @@
+multidict==3.3.0
+aiohttp==2.3.0
+chardet==3.0.4
+packaging==16.8
+six==1.11.0
+toml==0.9.3.1
+aiobotocore==0.4.5
+python-dateutil==2.6.1
+jmespath==0.9.3
+yarl==0.13.0
+async-patterns==0.3b14
+async-timeout==2.0.0
+wrapt==1.10.11
+docutils==0.14
+pyparsing==2.2.0
+botocore==1.7.5
