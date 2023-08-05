@@ -1,0 +1,20 @@
+six
+
+[dev]
+setuptools
+docutils
+Pygments
+coverage
+codecov
+codacy-coverage
+
+[docs]
+Sphinx
+sphinx-rtd-theme
+
+[test]
+PyYAML
+mock
+
+[test:implementation_name == "cpython"]
+lxml
