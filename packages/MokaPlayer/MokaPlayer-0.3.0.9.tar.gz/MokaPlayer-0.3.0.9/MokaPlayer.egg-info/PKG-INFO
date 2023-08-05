@@ -1,0 +1,36 @@
+Metadata-Version: 1.2
+Name: MokaPlayer
+Version: 0.3.0.9
+Summary: A simple music player (GTK)
+Home-page: https://github.com/vedard/MokaPlayer/
+Author: Vincent Bédard
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: MokaPlayer
+        ==========
+        
+        A simple music player written in python
+        
+        Features
+        --------
+        
+        -  Support all the most popular music file formats
+        -  Gapless playback
+        -  Resumes playback on startup
+        -  Automatically fetch:
+        
+           -  Album covers
+           -  Lyrics
+           -  ASCII and Guitar Pro tabs
+        
+        Screenshot
+        ----------
+        
+        .. figure:: https://raw.githubusercontent.com/vedard/MokaPlayer/master/mokaplayer/data/screenshot.png
+           :height: 500px
+           :alt: 
+        
+Keywords: mokaplayer music player tags tabs lyrics musicplayer gapless gtk
+Platform: UNKNOWN
+Requires-Python: >=3.6
