@@ -1,0 +1,3 @@
+include gym_morph/*.py
+include gym_morph/*.xml
+include README.md
