@@ -1,0 +1,4 @@
+netCDF4
+mpi4py
+numpy
+minio
