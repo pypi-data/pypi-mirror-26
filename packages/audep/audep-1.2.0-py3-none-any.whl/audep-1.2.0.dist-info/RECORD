@@ -1,0 +1,15 @@
+audep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audep/__main__.py,sha256=R9-wBGMgj2YxuqzIdXKV2aRbaJ6WdRTKf4mj_CEsAVk,78
+audep/deploy.py,sha256=zndaLjmXVeMqrZPu2fHt2eF-0e0XVZKd5ga0QmkvMco,9643
+audep/hdexceptions.py,sha256=ALOQznI6KExq0wP5Q5SVSLYCC6k8T8lIgQ0HCS12JSI,89
+audep/main.py,sha256=0pT1i6HmsWS8TUSVjulHA0XyUye9RvyU-HpzsvlwngY,2814
+audep-1.2.0.dist-info/DESCRIPTION.rst,sha256=YGPZFBqFdYCf1aJcJf63aKJbxI3Rm4IFSMOGWPRrl0A,97
+audep-1.2.0.dist-info/METADATA,sha256=laA5AS5lZ27v7wk_Oyi78OiEZgcqNBQSLAlBKXp5TVk,795
+audep-1.2.0.dist-info/RECORD,,
+audep-1.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+audep-1.2.0.dist-info/entry_points.txt,sha256=8mhqvFl9_w22nQwo3ZHSW64HFb0WJqEuCjc8qk-mMoM,42
+audep-1.2.0.dist-info/metadata.json,sha256=A1jiAJbnUiMerKVQ0nVRdkEfNjxxYZKjch8YAntCrCI,1043
+audep-1.2.0.dist-info/top_level.txt,sha256=NmhTecOrPQR6VoKV17WGM-0C9d2R5HYjW1We9SG-GN4,6
+hddep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hddep/__main__.py,sha256=jij0jOyUS2AoJjt9HRVkeox3o5BqFpowcR1Xuo1u0tc,39
+hddep/main.py,sha256=4wxbQIrUlT7RqOZqYteB2PbcxrjVAbXhYnd2pxmA51o,208
