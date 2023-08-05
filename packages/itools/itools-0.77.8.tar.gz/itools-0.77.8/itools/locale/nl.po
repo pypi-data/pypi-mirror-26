@@ -1,0 +1,1736 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.3.0\n"
+"POT-Creation-Date: 2017-04-19 10:04+CET\n"
+"PO-Revision-Date: 2017-04-19 09:54+0000\n"
+"Last-Translator: Florent Chenebault <florent.chenebault@bepatient.com>\n"
+"Language-Team: ??\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.9\n"
+
+#: ../xmlfile/i18n.py:66
+msgid " %s=\""
+msgstr " %s=\""
+
+#: ../xmlfile/i18n.py:71
+msgid " %s=\"%s\""
+msgstr " %s=\"%s\""
+
+#: ../xmlfile/i18n.py:69
+msgid "\""
+msgstr "\""
+
+#: ../validators/files.py:108
+msgid "%.01f Bytes"
+msgstr "%.01f Bytes"
+
+#: ../validators/files.py:113
+msgid "%.01f GB"
+msgstr "%.01f GB"
+
+#: ../validators/files.py:110
+msgid "%.01f KB"
+msgstr "%.01f KB"
+
+#: ../validators/files.py:112
+msgid "%.01f MB"
+msgstr "%.01f MB"
+
+#: ../tmx/tmx.py:229
+msgid "%s"
+msgstr "%s"
+
+#: ../database/catalog.py:866
+msgid "%s%s"
+msgstr "%s%s"
+
+#: ../database/catalog.py:80
+msgid "'"
+msgstr "'"
+
+#: ../i18n/locale_.py:71 ../i18n/locale_.py:154 ../i18n/locale_.py:155
+#: ../i18n/locale_.py:156
+msgid ","
+msgstr ","
+
+#: ../i18n/locale_.py:72 ../i18n/locale_.py:122 ../handlers/utils.py:58
+#: ../handlers/utils.py:59 ../handlers/utils.py:64 ../handlers/utils.py:65
+#: ../web/context.py:501
+msgid "-"
+msgstr "-"
+
+#: ../ical/icalendar.py:270
+msgid "-//hforge.org/NONSGML ikaaro icalendar V1.0//EN"
+msgstr "-//hforge.org/NONSGML ikaaro icalendar V1.0//EN"
+
+#: ../i18n/locale_.py:71 ../i18n/locale_.py:154 ../i18n/locale_.py:155
+#: ../handlers/utils.py:58
+msgid "."
+msgstr "."
+
+#: ../xmlfile/i18n.py:74
+msgid "/>"
+msgstr "/>"
+
+#: ../i18n/locale_.py:107 ../i18n/locale_.py:110
+msgid "0"
+msgstr "0"
+
+#: ../ical/icalendar.py:269
+msgid "2.0"
+msgstr "2.0"
+
+#: ../validators/test_view.py:36
+msgid "5+5 equals to ?"
+msgstr "5+5 is gelijk aan ?"
+
+#: ../xmlfile/i18n.py:179
+msgid "<!--%s-->"
+msgstr "<!--%s-->"
+
+#: ../xmlfile/i18n.py:54
+msgid "<%s"
+msgstr "<%s"
+
+#: ../gettext/po.py:143
+msgid "</g>"
+msgstr "</g>"
+
+#: ../gettext/po.py:139
+msgid "<g id='%d'>"
+msgstr "<g id='%d'>"
+
+#: ../gettext/po.py:137
+msgid "<x id='%d'/>"
+msgstr "<x id='%d'/>"
+
+#: ../xmlfile/i18n.py:76
+msgid ">"
+msgstr ">"
+
+#: ../i18n/languages.py:250
+msgid "???"
+msgstr "???"
+
+#: ../handlers/utils.py:58
+msgid "@"
+msgstr "@"
+
+#: ../database/catalog.py:61 ../database/catalog.py:62
+msgid "A"
+msgstr "A"
+
+#: ../handlers/utils.py:27
+msgid "AAAAAAAaaaaaaaaCcEEEEEeeeeegIIIIIiiiiiilNnOOOOOOOooooooooUUUUUuuuuuSstYYYyyyZz----"
+msgstr "AAAAAAAaaaaaaaaCcEEEEEeeeeegIIIIIiiiiiilNnOOOOOOOooooooooUUUUUuuuuuSstYYYyyyZz----"
+
+#: ../handlers/utils.py:35
+msgid "AE"
+msgstr "AE"
+
+#: ../i18n/languages.py:23
+msgid "Abkhazian"
+msgstr "Abchazisch"
+
+#: ../i18n/languages.py:22
+msgid "Afar"
+msgstr "Afar"
+
+#: ../i18n/languages.py:25
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: ../i18n/languages.py:26
+msgid "Akan"
+msgstr "Akaans"
+
+#: ../i18n/languages.py:185
+msgid "Albanian"
+msgstr "Albanees"
+
+#: ../i18n/languages.py:27
+msgid "Amharic"
+msgstr "Amhaars"
+
+#: ../i18n/languages.py:29
+msgid "Arabic"
+msgstr "Arabisch"
+
+#: ../i18n/languages.py:28
+msgid "Aragonese"
+msgstr "Aragonees"
+
+#: ../i18n/languages.py:97
+msgid "Armenian"
+msgstr "Armeens"
+
+#: ../i18n/languages.py:30
+msgid "Assamese"
+msgstr "Assamees"
+
+#: ../i18n/languages.py:31
+msgid "Avaric"
+msgstr "Avaars"
+
+#: ../i18n/languages.py:24
+msgid "Avestan"
+msgstr "Avestaans"
+
+#: ../i18n/languages.py:32
+msgid "Aymara"
+msgstr "Aymara"
+
+#: ../i18n/languages.py:33
+msgid "Azerbaijani"
+msgstr "Azerbeidzjaans"
+
+#: ../i18n/languages.py:39
+msgid "Bambara"
+msgstr "Bambara"
+
+#: ../i18n/languages.py:34
+msgid "Bashkir"
+msgstr "Bashkir"
+
+#: ../i18n/languages.py:72
+msgid "Basque"
+msgstr "Baskisch"
+
+#: ../i18n/languages.py:35
+msgid "Belarusian"
+msgstr "Belarussisch"
+
+#: ../i18n/languages.py:40
+msgid "Bengali"
+msgstr "Bengaals"
+
+#: ../i18n/languages.py:37
+msgid "Bihari"
+msgstr "Bihari"
+
+#: ../i18n/languages.py:38
+msgid "Bislama"
+msgstr "Bislama"
+
+#: ../i18n/languages.py:43
+msgid "Bosnian"
+msgstr "Bosnisch"
+
+#: ../i18n/languages.py:42
+msgid "Breton"
+msgstr "Bretons"
+
+#: ../i18n/languages.py:36
+msgid "Bulgarian"
+msgstr "Bulgaars"
+
+#: ../i18n/languages.py:144
+msgid "Burmese"
+msgstr "Birmaans"
+
+#: ../database/catalog.py:65
+msgid "C"
+msgstr "C"
+
+#: ../i18n/languages.py:44
+msgid "Catalan"
+msgstr "Catalaans"
+
+#: ../i18n/languages.py:46
+msgid "Chamorro"
+msgstr "Chamorro"
+
+#: ../i18n/languages.py:45
+msgid "Chechen"
+msgstr "Tsjetsjeens"
+
+#: ../i18n/languages.py:156
+msgid "Chichewa; Chewa; Nyanja"
+msgstr "Chichewa; Chewa; Nyanja"
+
+#: ../i18n/languages.py:219
+msgid "Chinese"
+msgstr "Chinees"
+
+#: ../i18n/languages.py:220
+msgid "Chinese/China"
+msgstr "Chinees/China"
+
+#: ../i18n/languages.py:221
+msgid "Chinese/Taiwan"
+msgstr "Chinees/Taiwan"
+
+#: ../i18n/languages.py:50
+msgid "Church Slavic"
+msgstr "Kerkslavisch"
+
+#: ../i18n/languages.py:51
+msgid "Chuvash"
+msgstr "Tsjoevasjisch"
+
+#: ../../scripts/ipkg-quality.py:44
+msgid "Code length"
+msgstr "Codelengte"
+
+#: ../i18n/languages.py:124
+msgid "Cornish"
+msgstr "Cornisch"
+
+#: ../i18n/languages.py:47
+msgid "Corsican"
+msgstr "Corsicaans"
+
+#: ../i18n/languages.py:48
+msgid "Cree"
+msgstr "Cree"
+
+#: ../i18n/languages.py:94
+msgid "Croatian"
+msgstr "Kroatisch"
+
+#: ../i18n/languages.py:49
+msgid "Czech"
+msgstr "Tsjechisch"
+
+#: ../i18n/languages.py:53
+msgid "Danish"
+msgstr "Deens"
+
+#: ../i18n/languages.py:58
+msgid "Divehi; Dhivehi; Maldivian"
+msgstr "Divehi; Dhivehi; Maldivisch"
+
+#: ../i18n/languages.py:150
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: ../i18n/languages.py:151
+msgid "Dutch/Belgium"
+msgstr "Nederlands/België"
+
+#: ../i18n/languages.py:59
+msgid "Dzongkha"
+msgstr "Dzongkha"
+
+#: ../database/catalog.py:67 ../database/catalog.py:68
+msgid "E"
+msgstr "E"
+
+#: ../i18n/languages.py:62
+msgid "English"
+msgstr "Engels"
+
+#: ../i18n/languages.py:63
+msgid "English/United Kingdom"
+msgstr "Engels/Verenigd Koninkrijk"
+
+#: ../i18n/languages.py:64
+msgid "English/United States"
+msgstr "Engels/Verenigde Staten"
+
+#: ../validators/base.py:189
+msgid "Ensure this value has at least {min_length} characters."
+msgstr "Deze waarde moet minstens {min_length} karakters tellen."
+
+#: ../validators/base.py:204
+msgid "Ensure this value has at most {max_length} characters."
+msgstr "Deze waarde mag hoogstens {max_length} karakters tellen."
+
+#: ../validators/base.py:132
+msgid "Ensure this value is greater than 0."
+msgstr "Deze waarde moet hoger zijn 0."
+
+#: ../validators/base.py:171
+msgid ""
+"Ensure this value is greater than or equal to {min_value} and value is less "
+"than or equal to {max_value}."
+msgstr ""
+"Deze waarde moet hoger dan of gelijk zijn aan {min_value} en lager dan of "
+"gelijk aan {max_value}."
+
+#: ../validators/base.py:157
+msgid "Ensure this value is greater than or equal to {min_value}."
+msgstr "Deze waarde moet hoger dan of gelijk zijn aan {min_value}."
+
+#: ../validators/base.py:144
+msgid "Ensure this value is less than or equal to {max_value}."
+msgstr "Deze waarde moet lager dan of gelijk zijn aan {max_value}."
+
+#: ../validators/base.py:120
+msgid "Ensure this value is positive."
+msgstr "Deze waarde moet positief zijn."
+
+#: ../validators/base.py:46
+msgid "Enter a valid value"
+msgstr "Voer een geldige waarde in."
+
+#: ../validators/base.py:113
+msgid "Enter a valid value."
+msgstr "Voer een geldige waarde in."
+
+#: ../i18n/languages.py:65
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: ../i18n/languages.py:71
+msgid "Estonian"
+msgstr "Estisch"
+
+#: ../i18n/languages.py:60
+msgid "Ewe"
+msgstr "Ewe"
+
+#: ../../scripts/ipkg-quality.py:57
+#, fuzzy
+msgid "Exception handling"
+msgstr "Exception handling"
+
+#: ../i18n/languages.py:77
+msgid "Faroese"
+msgstr "Faeröers"
+
+#: ../i18n/languages.py:76
+msgid "Fijian"
+msgstr "Fijisch"
+
+#: ../validators/files.py:37
+msgid ""
+"File extension '{extension}' is not allowed. Allowed extensions are: "
+"'{allowed_extensions}'."
+msgstr ""
+"Bestandsextensie '{extension}' wordt niet aanvaard. De aanvaarde "
+"bestandsextensies zijn: '{allowed_extensions}'."
+
+#: ../validators/test_view.py:70
+msgid "File extension (png)"
+msgstr "Bestandsextensie (png)"
+
+#: ../validators/files.py:67
+msgid ""
+"File mimetype '{mimetype}' is not allowed. Allowed mimetypes are: "
+"'{allowed_mimetypes}'."
+msgstr ""
+"Bestand mimetype '{mimetype}' wordt niet aanvaard. De aanvaarde mimetypes "
+"zijn: '{allowed_mimetypes}'."
+
+#: ../validators/test_view.py:73
+msgid "File mimetypes (image/png)"
+msgstr "Bestand mimetypes (afbeelding/png)"
+
+#: ../i18n/languages.py:75
+msgid "Finnish"
+msgstr "Fins"
+
+#: ../web/views.py:60
+msgid "Form values are invalid"
+msgstr "Ongeldige waardevormen"
+
+#: ../i18n/languages.py:78
+msgid "French"
+msgstr "Frans"
+
+#: ../i18n/languages.py:79
+msgid "French/Belgium"
+msgstr "Frans/België"
+
+#: ../i18n/languages.py:80
+msgid "French/Canada"
+msgstr "Frans/Canada"
+
+#: ../i18n/languages.py:81
+msgid "French/France"
+msgstr "Frans/Frankrijk"
+
+#: ../i18n/languages.py:82
+msgid "French/Switzerland"
+msgstr "Frans/Zwitserland"
+
+#: ../i18n/languages.py:83
+msgid "Frisian"
+msgstr "Fries"
+
+#: ../i18n/languages.py:74
+msgid "Fulah"
+msgstr "Fula"
+
+#: ../i18n/languages.py:85
+msgid "Gaelic"
+msgstr "Gaelisch"
+
+#: ../i18n/languages.py:86
+msgid "Galician"
+msgstr "Galicisch"
+
+#: ../i18n/languages.py:128
+msgid "Ganda"
+msgstr "Ganda"
+
+#: ../i18n/languages.py:111
+msgid "Georgian"
+msgstr "Georgisch"
+
+#: ../i18n/languages.py:54
+msgid "German"
+msgstr "Duits"
+
+#: ../i18n/languages.py:55
+msgid "German/Austria"
+msgstr "Duits/Oostenrijk"
+
+#: ../i18n/languages.py:56
+msgid "German/Germany"
+msgstr "Duits/Duitsland"
+
+#: ../i18n/languages.py:57
+msgid "German/Switzerland"
+msgstr "Duits/Zwitserland"
+
+#: ../validators/test_view.py:56
+msgid "Give a number (>=10 and <=20)"
+msgstr "Voer een nummer in (>=10 en <=20)"
+
+#: ../validators/test_view.py:50
+msgid "Give a number (max value 10)"
+msgstr "Voer een nummer in (maximumwaarde 10)"
+
+#: ../validators/test_view.py:53
+msgid "Give a number (min value 10)"
+msgstr "Voer een nummer in (minimumwaarde 10)"
+
+#: ../validators/test_view.py:44
+msgid "Give a positive number"
+msgstr "Voer een positief nummer in"
+
+#: ../validators/test_view.py:47
+msgid "Give a strict positive number"
+msgstr "Voer een uitsluitend positief nummer in"
+
+#: ../validators/test_view.py:65
+msgid "Give an email (unique in DB)"
+msgstr "Voer een e-mail in (uniek in DB)"
+
+#: ../validators/test_view.py:67
+msgid "Give be an email address !!!"
+msgstr "Voer een e-mailadres in !!!"
+
+#: ../validators/test_view.py:38
+msgid "Give me a 10 ;)"
+msgstr "Geef me een 10 ;)"
+
+#: ../validators/test_view.py:62
+msgid "Give text (max length: 5 characters)"
+msgstr "Geef tekst (max. lengte: 5 karakters)"
+
+#: ../validators/test_view.py:59
+msgid "Give text (min length: 3 characters)"
+msgstr "Geef tekst (min. lengte: 3 karakters)"
+
+#: ../i18n/languages.py:61
+msgid "Greek"
+msgstr "Grieks"
+
+#: ../i18n/languages.py:87
+msgid "Guarani"
+msgstr "Guarani"
+
+#: ../i18n/languages.py:88
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: ../i18n/languages.py:95
+msgid "Haitian"
+msgstr "Haïtiaans"
+
+#: ../i18n/languages.py:90
+msgid "Hausa"
+msgstr "Hausa"
+
+#: ../i18n/languages.py:91
+msgid "Hebrew"
+msgstr "Hebreeuws"
+
+#: ../i18n/languages.py:98
+msgid "Herero"
+msgstr "Herero"
+
+#: ../validators/test_view.py:41
+msgid "Hexadecimal color"
+msgstr "Hexadecimaal kleur"
+
+#: ../i18n/languages.py:92
+msgid "Hindi"
+msgstr "Hindi"
+
+#: ../i18n/languages.py:93
+msgid "Hiri Motu"
+msgstr "Hiri Motu"
+
+#: ../i18n/languages.py:96
+msgid "Hungarian"
+msgstr "Hongaars"
+
+#: ../database/catalog.py:73
+msgid "I"
+msgstr "I"
+
+#: ../i18n/languages.py:106
+msgid "Icelandic"
+msgstr "IJslands"
+
+#: ../i18n/languages.py:105
+msgid "Ido"
+msgstr "Ido"
+
+#: ../i18n/languages.py:102
+msgid "Igbo"
+msgstr "Igbo"
+
+#: ../validators/files.py:123
+msgid "Image contains errors."
+msgstr "De afbeelding bevat fouten."
+
+#: ../validators/files.py:122
+msgid "Image is too big."
+msgstr "De afbeelding is te groot."
+
+#: ../validators/test_view.py:76
+msgid "Image max pixels"
+msgstr "Max. pixels afbeelding"
+
+#: ../../scripts/ipkg-quality.py:64
+msgid "Import problems"
+msgstr "Problemen importeren"
+
+#: ../i18n/languages.py:100
+msgid "Indonesian"
+msgstr "Indonesisch"
+
+#: ../i18n/languages.py:99
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: ../i18n/languages.py:101
+msgid "Interlingue; Occidental"
+msgstr "Interlingue; Occidental"
+
+#: ../i18n/languages.py:108
+msgid "Inuktitut"
+msgstr "Inuktitut"
+
+#: ../i18n/languages.py:104
+msgid "Inupiak"
+msgstr "Inupiak"
+
+#: ../database/fields.py:33
+msgid "Invalid value."
+msgstr "Ongeldige waarde."
+
+#: ../i18n/languages.py:84
+msgid "Irish"
+msgstr "Iers"
+
+#: ../i18n/languages.py:107
+msgid "Italian"
+msgstr "Italiaans"
+
+#: ../i18n/languages.py:109
+msgid "Japanese"
+msgstr "Japans"
+
+#: ../i18n/languages.py:110
+msgid "Javanese"
+msgstr "Javaans"
+
+#: ../i18n/languages.py:116
+msgid "Kalaallisut; Greenlandic"
+msgstr "Kalaallisut; Groenlands"
+
+#: ../i18n/languages.py:118
+msgid "Kannada"
+msgstr "Kannada"
+
+#: ../i18n/languages.py:120
+msgid "Kanuri"
+msgstr "Kanuri"
+
+#: ../i18n/languages.py:121
+msgid "Kashmiri"
+msgstr "Kashmiri"
+
+#: ../i18n/languages.py:115
+msgid "Kazakh"
+msgstr "Kazachs"
+
+#: ../i18n/languages.py:117
+msgid "Khmer"
+msgstr "Khmer"
+
+#: ../i18n/languages.py:113
+msgid "Kikuyu; Gikuyu"
+msgstr "Kikuyu; Gikuyu"
+
+#: ../i18n/languages.py:173
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: ../i18n/languages.py:125
+msgid "Kirghiz; Kyrgyz"
+msgstr "Kirgizisch"
+
+#: ../i18n/languages.py:123
+msgid "Komi"
+msgstr "Komi"
+
+#: ../i18n/languages.py:112
+msgid "Kongo"
+msgstr "Kongo"
+
+#: ../i18n/languages.py:119
+msgid "Korean"
+msgstr "Koreaans"
+
+#: ../i18n/languages.py:114
+msgid "Kuanyama; Kwanyama"
+msgstr "Kuanyama; Kwanyama"
+
+#: ../i18n/languages.py:122
+msgid "Kurdish"
+msgstr "Koerdisch"
+
+#: ../i18n/languages.py:131
+msgid "Lao"
+msgstr "Laotiaans"
+
+#: ../i18n/languages.py:126
+msgid "Latin"
+msgstr "Latijn"
+
+#: ../i18n/languages.py:134
+msgid "Latvian"
+msgstr "Lets"
+
+#: ../i18n/languages.py:129
+msgid "Limburgan"
+msgstr "Limburgs"
+
+#: ../i18n/languages.py:130
+msgid "Lingala"
+msgstr "Lingala"
+
+#: ../i18n/languages.py:132
+msgid "Lithuanian"
+msgstr "Litouws"
+
+#: ../i18n/languages.py:133
+msgid "Luba-Katanga"
+msgstr "Luba-Katanga"
+
+#: ../i18n/languages.py:127
+msgid "Luxembourgish"
+msgstr "Luxemburgs"
+
+#: ../i18n/languages.py:138
+msgid "Macedonian"
+msgstr "Macedonisch"
+
+#: ../i18n/languages.py:135
+msgid "Malagasy"
+msgstr "Malagassisch"
+
+#: ../i18n/languages.py:142
+msgid "Malay"
+msgstr "Maleis"
+
+#: ../i18n/languages.py:139
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: ../i18n/languages.py:143
+msgid "Maltese"
+msgstr "Maltees"
+
+#: ../i18n/languages.py:89
+msgid "Manx"
+msgstr "Manx"
+
+#: ../i18n/languages.py:137
+msgid "Maori"
+msgstr "Maori"
+
+#: ../i18n/languages.py:141
+msgid "Marathi"
+msgstr "Marathi"
+
+#: ../i18n/languages.py:136
+msgid "Marshallese"
+msgstr "Marshallees"
+
+#: ../i18n/languages.py:140
+msgid "Mongolian"
+msgstr "Mongools"
+
+#: ../i18n/languages.py:145
+msgid "Nauru"
+msgstr "Nauru"
+
+#: ../i18n/languages.py:155
+msgid "Navajo; Navaho"
+msgstr "Navajo; Navaho"
+
+#: ../i18n/languages.py:147
+msgid "Ndebele, North"
+msgstr "Ndebele, Noord-"
+
+#: ../i18n/languages.py:154
+msgid "Ndebele, South"
+msgstr "Ndebele, Zuid-"
+
+#: ../i18n/languages.py:149
+msgid "Ndonga"
+msgstr "Ndonga"
+
+#: ../i18n/languages.py:148
+msgid "Nepali"
+msgstr "Nepalees"
+
+#: ../i18n/languages.py:153
+msgid "Norwegian"
+msgstr "Noors"
+
+#: ../i18n/languages.py:146
+msgid "Norwegian Bokmal"
+msgstr "Noors Bokmal"
+
+#: ../i18n/languages.py:152
+msgid "Norwegian Nyrnosk"
+msgstr "Noors Nyrnosk"
+
+#: ../validators/test_view.py:82
+msgid "Number >=5 and equals to 10"
+msgstr "Nummer >= 5 en gelijk aan 10"
+
+#: ../../scripts/ipkg-quality.py:45
+msgid "Number of lines"
+msgstr "Aantal rijen"
+
+#: ../../scripts/ipkg-quality.py:45
+msgid "Number of tokens"
+msgstr "Aantal tekens"
+
+#: ../handlers/utils.py:37
+msgid "OE"
+msgstr "OE"
+
+#: ../i18n/languages.py:157
+msgid "Occitan"
+msgstr "Occitaans"
+
+#: ../i18n/languages.py:158
+msgid "Ojibwa"
+msgstr "Ojibwe"
+
+#: ../../scripts/ipkg-quality.py:515
+msgid "Options --worse and --show-lines are mutually exclusive."
+msgstr "De opties --worse en --show-lines sluiten elkaar uit."
+
+#: ../i18n/languages.py:160
+msgid "Oriya"
+msgstr "Oriya"
+
+#: ../i18n/languages.py:159
+msgid "Oromo"
+msgstr "Oromo"
+
+#: ../i18n/languages.py:161
+msgid "Ossetian; Ossetic"
+msgstr "Osseets; Ossetisch"
+
+#: ../web/views.py:326
+msgid "PUT only allowed on files"
+msgstr "PUT alleen toegestaan voor bestanden"
+
+#: ../i18n/languages.py:163
+msgid "Pali"
+msgstr "Pali"
+
+#: ../i18n/languages.py:162
+msgid "Panjabi; Punjabi"
+msgstr "Panjabi; Punjabi"
+
+#: ../i18n/languages.py:73
+msgid "Persian"
+msgstr "Perzisch"
+
+#: ../../scripts/ipkg-quality.py:512
+msgid "Please give at least one file to analyse."
+msgstr "Selecteer ten minste één bestand om te analyseren."
+
+#: ../i18n/languages.py:164
+msgid "Polish"
+msgstr "Pools"
+
+#: ../i18n/languages.py:166
+msgid "Portuguese"
+msgstr "Portugees"
+
+#: ../i18n/languages.py:167
+msgid "Portuguese/Brazil"
+msgstr "Portugees/Brazilië"
+
+#: ../i18n/languages.py:165
+msgid "Pushto; Pashto"
+msgstr "Pushto; Pashto; Pasjtoe"
+
+#: ../i18n/languages.py:168
+msgid "Quechua"
+msgstr "Quechua"
+
+#: ../i18n/languages.py:171
+msgid "Romanian; Moldavian"
+msgstr "Roemeens; Moldavisch"
+
+#: ../i18n/languages.py:169
+msgid "Romansh"
+msgstr "Romaans"
+
+#: ../i18n/languages.py:170
+msgid "Rundi"
+msgstr "Rundi"
+
+#: ../i18n/languages.py:172
+msgid "Russian"
+msgstr "Russisch"
+
+#: ../i18n/languages.py:177
+msgid "Sami"
+msgstr "Samisch"
+
+#: ../i18n/languages.py:182
+msgid "Samoan"
+msgstr "Samoaans"
+
+#: ../i18n/languages.py:178
+msgid "Sango"
+msgstr "Sango"
+
+#: ../i18n/languages.py:174
+msgid "Sanskrit"
+msgstr "Sanskriet"
+
+#: ../i18n/languages.py:175
+msgid "Sardinian"
+msgstr "Sardijns"
+
+#: ../i18n/languages.py:186
+msgid "Serbian"
+msgstr "Servisch"
+
+#: ../i18n/languages.py:183
+msgid "Shona"
+msgstr "Shona"
+
+#: ../i18n/languages.py:103
+msgid "Sichuan Yi; Nuosu"
+msgstr "Sichuan Yi; Nuosu"
+
+#: ../i18n/languages.py:176
+msgid "Sindhi"
+msgstr "Sindhi"
+
+#: ../i18n/languages.py:179
+msgid "Sinhala; Sinhalese"
+msgstr "Sinhala; Singalees"
+
+#: ../i18n/languages.py:180
+msgid "Slovak"
+msgstr "Slowaaks"
+
+#: ../i18n/languages.py:181
+msgid "Slovenian"
+msgstr "Sloveens"
+
+#: ../i18n/languages.py:184
+msgid "Somali"
+msgstr "Somalisch"
+
+#: ../web/messages.py:47
+msgid ""
+"Some required fields are missing, or some values are not valid. Please "
+"correct them and continue."
+msgstr ""
+"Een aantal verplichte velden ontbreekt, of sommige waarden zijn ongeldig. "
+"Wijzig deze om door te gaan."
+
+#: ../i18n/languages.py:188
+msgid "Sotho"
+msgstr "Sotho"
+
+#: ../i18n/languages.py:66
+msgid "Spanish"
+msgstr "Spaans"
+
+#: ../i18n/languages.py:67
+msgid "Spanish/Argentina"
+msgstr "Spaans/Argentinië"
+
+#: ../i18n/languages.py:68
+msgid "Spanish/Colombia"
+msgstr "Spaans/Colombia"
+
+#: ../i18n/languages.py:69
+msgid "Spanish/Mexico"
+msgstr "Spaans/Mexico"
+
+#: ../i18n/languages.py:70
+msgid "Spanish/Spain"
+msgstr "Spaans/Spanje"
+
+#: ../validators/test_view.py:79
+msgid "Strong password"
+msgstr "Sterk wachtwoord"
+
+#: ../../scripts/ipkg-quality.py:49
+msgid "Style"
+msgstr "Stijl"
+
+#: ../i18n/languages.py:189
+msgid "Sundanese"
+msgstr "Soendanees"
+
+#: ../i18n/languages.py:191
+msgid "Swahili"
+msgstr "Swahili"
+
+#: ../i18n/languages.py:187
+msgid "Swati"
+msgstr "Swati"
+
+#: ../i18n/languages.py:190
+msgid "Swedish"
+msgstr "Zweeds"
+
+#: ../i18n/languages.py:198
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: ../i18n/languages.py:205
+msgid "Tahitian"
+msgstr "Tahitiaans"
+
+#: ../i18n/languages.py:194
+msgid "Tajik"
+msgstr "Tadzjieks"
+
+#: ../i18n/languages.py:192
+msgid "Tamil"
+msgstr "Tamils"
+
+#: ../i18n/languages.py:203
+msgid "Tatar"
+msgstr "Tataars"
+
+#: ../i18n/languages.py:193
+msgid "Telugu"
+msgstr "Telugu"
+
+#: ../validators/test_view.py:29
+msgid "Test validators"
+msgstr "Test"
+
+#: ../i18n/languages.py:195
+msgid "Thai"
+msgstr "Thais"
+
+#: ../validators/database.py:27
+msgid "The field should be unique."
+msgstr "Dit veld moet uniek zijn."
+
+#: ../../scripts/ipkg-quality.py:518
+msgid "The option --show-lines takes one file in parameter."
+msgstr "De optie --show-lines beslaat één bestand in parameter."
+
+#: ../web/views.py:236
+msgid "The query could not be processed."
+msgstr "Deze aanvraag kon niet worden verwerkt."
+
+#: ../validators/base.py:86
+msgid "The value should be equals to {base_value}"
+msgstr "De waarde moet gelijk zijn aan {base_value}"
+
+#: ../web/views.py:187
+msgid "There are errors, check below"
+msgstr "Er is iets fout gegaan, controleer hieronder."
+
+#: ../web/exceptions.py:127
+msgid "There are errors... XXX"
+msgstr "Er is iets fout gegaan... XXX"
+
+#: ../validators/test_view.py:68
+msgid "This address is already used"
+msgstr "Dit adres is reeds in gebruik"
+
+#: ../database/fields.py:34
+msgid "This field is required."
+msgstr "Dit is een verplicht veld."
+
+#: ../../scripts/ipkg-quality.py:392
+msgid "This file is perfect !"
+msgstr "Dit bestand is perfect!"
+
+#: ../validators/password.py:39
+msgid ""
+"This password is too short. It must contain at least {min_length} characters."
+msgstr ""
+"Dit wachtwoord is te kort. Het moet minstens  {min_length} karakters tellen."
+
+#: ../validators/password.py:40
+msgid "This password should contains at least one character."
+msgstr "Dit wachtwoord moet minstens één karakterteken tellen."
+
+#: ../validators/password.py:41
+msgid "This password should contains at least one number."
+msgstr "Dit wachtwoord moet minstens één cijfer bevatten."
+
+#: ../validators/password.py:42
+msgid "This password should contains at least one special character."
+msgstr "Dit wachtwoord moet minstens één speciaal karakterteken bevatten."
+
+#: ../i18n/languages.py:41
+msgid "Tibetan"
+msgstr "Tibetaans"
+
+#: ../i18n/languages.py:196
+msgid "Tigrinya"
+msgstr "Tigrinya"
+
+#: ../i18n/languages.py:200
+msgid "Tonga"
+msgstr "Tongaans"
+
+#: ../i18n/languages.py:202
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: ../i18n/languages.py:199
+msgid "Tswana"
+msgstr "Tswana"
+
+#: ../i18n/languages.py:201
+msgid "Turkish"
+msgstr "Turks"
+
+#: ../i18n/languages.py:197
+msgid "Turkmen"
+msgstr "Turkmeens"
+
+#: ../i18n/languages.py:204
+msgid "Twi"
+msgstr "Twi"
+
+#: ../i18n/languages.py:206
+msgid "Uighur; Uyghur"
+msgstr "Oeigoers"
+
+#: ../i18n/languages.py:207
+msgid "Ukrainian"
+msgstr "Oekraïens"
+
+#: ../i18n/languages.py:208
+msgid "Urdu"
+msgstr "Urdu"
+
+#: ../i18n/languages.py:209
+msgid "Uzbek"
+msgstr "Oezbeeks"
+
+#: ../i18n/languages.py:210
+msgid "Venda"
+msgstr "Venda"
+
+#: ../i18n/languages.py:211
+msgid "Vietnamese"
+msgstr "Vietnamees"
+
+#: ../i18n/languages.py:212
+msgid "Volapuk"
+msgstr "Volapuk"
+
+#: ../i18n/languages.py:213
+msgid "Walloon"
+msgstr "Waals"
+
+#: ../i18n/languages.py:52
+msgid "Welsh"
+msgstr "Welsh"
+
+#: ../i18n/languages.py:214
+msgid "Wolof"
+msgstr "Wolof"
+
+#: ../i18n/languages.py:215
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: ../i18n/languages.py:216
+msgid "Yiddish"
+msgstr "Jiddish"
+
+#: ../i18n/languages.py:217
+msgid "Yoruba"
+msgstr "Yoruba"
+
+#: ../validators/files.py:91
+msgid "Your file is too big. ({size})"
+msgstr "Het bestand is te groot. ({grootte})"
+
+#: ../i18n/languages.py:218
+msgid "Zhuang; Chuang"
+msgstr "Zhuang; Chuang"
+
+#: ../i18n/languages.py:222
+msgid "Zulu"
+msgstr "Zoeloe"
+
+#: ../handlers/utils.py:58
+msgid "_"
+msgstr "_"
+
+#: ../database/catalog.py:63 ../database/catalog.py:64
+msgid "a"
+msgstr "een"
+
+#: ../handlers/utils.py:34
+msgid "ae"
+msgstr "ae"
+
+#: ../i18n/oracle.py:262
+msgid "al"
+msgstr "al"
+
+#: ../../scripts/ipkg-quality.py:60
+msgid "all exceptions are catched"
+msgstr "alle uitzonderingen worden meegenomen"
+
+#: ../i18n/oracle.py:263
+msgid "an"
+msgstr "een"
+
+#: ../i18n/oracle.py:264
+msgid "and"
+msgstr "en"
+
+#: ../i18n/oracle.py:265
+msgid "are"
+msgstr "worden"
+
+#: ../i18n/oracle.py:266
+msgid "as"
+msgstr "als"
+
+#: ../i18n/oracle.py:267
+msgid "aux"
+msgstr "op de"
+
+#: ../../scripts/ipkg-quality.py:51
+msgid "bad indented"
+msgstr "niet goed ingesprongen"
+
+#: ../i18n/oracle.py:268
+msgid "but"
+msgstr "maar"
+
+#: ../database/catalog.py:66
+msgid "c"
+msgstr "c"
+
+#: ../i18n/oracle.py:269
+msgid "como"
+msgstr "como"
+
+#: ../i18n/oracle.py:270
+msgid "con"
+msgstr "met"
+
+#: ../i18n/oracle.py:271
+msgid "de"
+msgstr "van"
+
+#: ../i18n/oracle.py:272
+msgid "del"
+msgstr "van"
+
+#: ../i18n/oracle.py:273
+msgid "des"
+msgstr "van de"
+
+#: ../i18n/oracle.py:274
+msgid "donc"
+msgstr "dus"
+
+#: ../i18n/oracle.py:275 ../i18n/oracle.py:334
+msgid "du"
+msgstr "van de"
+
+#: ../database/catalog.py:69 ../database/catalog.py:70
+#: ../database/catalog.py:71 ../database/catalog.py:72
+msgid "e"
+msgstr "e"
+
+#: ../i18n/oracle.py:276
+msgid "el"
+msgstr "de"
+
+#: ../i18n/oracle.py:277
+msgid "elle"
+msgstr "ze"
+
+#: ../i18n/oracle.py:278
+msgid "elles"
+msgstr "ze"
+
+#: ../i18n/oracle.py:279
+msgid "es"
+msgstr "is"
+
+#: ../i18n/oracle.py:280
+msgid "est"
+msgstr "is"
+
+#: ../i18n/oracle.py:281
+msgid "está"
+msgstr "is"
+
+#: ../i18n/oracle.py:282
+msgid "et"
+msgstr "en"
+
+#: ../i18n/oracle.py:283
+msgid "from"
+msgstr "van"
+
+#: ../i18n/oracle.py:284
+msgid "hay"
+msgstr "is"
+
+#: ../i18n/oracle.py:285
+msgid "he"
+msgstr "hij"
+
+#: ../i18n/oracle.py:286 ../database/catalog.py:74 ../database/catalog.py:75
+msgid "i"
+msgstr "ik"
+
+#: ../i18n/oracle.py:287
+msgid "il"
+msgstr "hij"
+
+#: ../i18n/oracle.py:288
+msgid "ils"
+msgstr "ze"
+
+#: ../i18n/oracle.py:289
+msgid "in"
+msgstr "in"
+
+#: ../i18n/oracle.py:290
+msgid "is"
+msgstr "is"
+
+#: ../i18n/oracle.py:291
+msgid "it"
+msgstr "het"
+
+#: ../i18n/oracle.py:292
+msgid "je"
+msgstr "ik"
+
+#: ../i18n/oracle.py:293
+msgid "las"
+msgstr "de"
+
+#: ../i18n/oracle.py:294
+msgid "le"
+msgstr "de"
+
+#: ../i18n/oracle.py:296
+msgid "les"
+msgstr "de"
+
+#: ../i18n/oracle.py:295
+msgid "lo"
+msgstr "de"
+
+#: ../../scripts/ipkg-quality.py:52
+msgid "longer than 79 characters"
+msgstr "langer dan 79 karakters"
+
+#: ../i18n/oracle.py:297
+msgid "los"
+msgstr "de"
+
+#: ../i18n/oracle.py:298
+msgid "mais"
+msgstr "maar"
+
+#: ../stl/stl.py:143
+msgid "name '{}' not found in the namespace"
+msgstr "Naam '{}' niet gevonden in het naamveld"
+
+#: ../i18n/oracle.py:299
+msgid "no"
+msgstr "nee"
+
+#: ../i18n/oracle.py:300
+msgid "nous"
+msgstr "we"
+
+#: ../i18n/oracle.py:301
+msgid "nueva"
+msgstr "nieuw"
+
+#: ../i18n/oracle.py:302 ../database/catalog.py:76
+msgid "o"
+msgstr "o"
+
+#: ../handlers/utils.py:36
+msgid "oe"
+msgstr "oe"
+
+#: ../i18n/oracle.py:303
+msgid "of"
+msgstr "van"
+
+#: ../i18n/oracle.py:304
+msgid "on"
+msgstr "op"
+
+#: ../i18n/oracle.py:305
+msgid "or"
+msgstr "of"
+
+#: ../i18n/oracle.py:306
+msgid "où"
+msgstr "waar"
+
+#: ../i18n/oracle.py:307
+msgid "para"
+msgstr "voor"
+
+#: ../i18n/oracle.py:308
+msgid "pero"
+msgstr "maar"
+
+#: ../i18n/oracle.py:309
+msgid "por"
+msgstr "om"
+
+#: ../i18n/oracle.py:310
+msgid "que"
+msgstr "wat"
+
+#: ../i18n/oracle.py:311
+msgid "qué"
+msgstr "dat"
+
+#: ../i18n/oracle.py:312
+msgid "she"
+msgstr "ze"
+
+#: ../handlers/utils.py:38
+msgid "ss"
+msgstr "ss"
+
+#: ../../scripts/ipkg-quality.py:59
+msgid "string exceptions are used"
+msgstr "string-uitzonderingen worden gebruikt"
+
+#: ../i18n/oracle.py:313
+msgid "su"
+msgstr "zijn"
+
+#: ../i18n/oracle.py:314
+msgid "sur"
+msgstr "op"
+
+#: ../i18n/oracle.py:315
+msgid "that"
+msgstr "dat"
+
+#: ../i18n/oracle.py:316
+msgid "the"
+msgstr "de"
+
+#: ../csv/table.py:329
+msgid ""
+"the \"{field}\" field must be unique, the \"{value}\" value is  already used."
+msgstr ""
+"het \"{field}\"-veld moet uniek zijn, de waarde \"{value}\" is al gebruikt."
+
+#: ../i18n/oracle.py:317
+msgid "their"
+msgstr "hun"
+
+#: ../i18n/oracle.py:318
+msgid "this"
+msgstr "dit"
+
+#: ../i18n/oracle.py:319
+msgid "to"
+msgstr "om"
+
+#: ../i18n/oracle.py:320
+msgid "tu"
+msgstr "je"
+
+#: ../database/catalog.py:77 ../database/catalog.py:78
+#: ../database/catalog.py:79
+msgid "u"
+msgstr "u"
+
+#: ../i18n/oracle.py:321
+msgid "un"
+msgstr "een"
+
+#: ../i18n/oracle.py:322
+msgid "una"
+msgstr "een"
+
+#: ../i18n/oracle.py:323
+msgid "une"
+msgstr "een"
+
+#: ../i18n/oracle.py:324
+msgid "vous"
+msgstr "u"
+
+#: ../i18n/oracle.py:325
+msgid "when"
+msgstr "wanneer"
+
+#: ../i18n/oracle.py:326
+msgid "where"
+msgstr "waar"
+
+#: ../../scripts/ipkg-quality.py:50
+msgid "with tabulators"
+msgstr "met tabulators"
+
+#: ../../scripts/ipkg-quality.py:53
+msgid "with trailing whitespaces"
+msgstr "met volgspaties"
+
+#: ../i18n/oracle.py:327
+msgid "y"
+msgstr "en"
+
+#: ../i18n/oracle.py:328
+msgid "you"
+msgstr "u"
+
+#: ../i18n/oracle.py:329
+msgid "your"
+msgstr "uw"
+
+#: ../i18n/oracle.py:229
+msgid "¡"
+msgstr "!"
+
+#: ../i18n/oracle.py:230
+msgid "¿"
+msgstr "?"
+
+#: ../database/catalog.py:61
+msgid "À"
+msgstr "À"
+
+#: ../database/catalog.py:62
+msgid "Â"
+msgstr "Â"
+
+#: ../handlers/utils.py:25
+msgid ""
+"ÄÅÁÀÂÃĀäåáàâãāăÇçÉÈÊËĒéèêëēğÍÌÎÏĪíìîïīıļÑñÖÓÒÔÕØŌöóòôõøōőÜÚÙÛŪüúùûūŞşţÝŸȲýÿȳŽž"
+"°«»’"
+msgstr ""
+"ÄÅÁÀÂÃĀäåáàâãāăÇçÉÈÊËĒéèêëēğÍÌÎÏĪíìîïīıļÑñÖÓÒÔÕØŌöóòôõøōőÜÚÙÛŪüúùûūŞşţÝŸȲýÿȳŽž"
+"°«»’"
+
+#: ../handlers/utils.py:35
+msgid "Æ"
+msgstr "Æ"
+
+#: ../database/catalog.py:65
+msgid "Ç"
+msgstr "Ç"
+
+#: ../database/catalog.py:67
+msgid "É"
+msgstr "É"
+
+#: ../database/catalog.py:68
+msgid "Ê"
+msgstr "Ê"
+
+#: ../database/catalog.py:73
+msgid "Î"
+msgstr "Î"
+
+#: ../handlers/utils.py:38 ../i18n/oracle.py:232
+msgid "ß"
+msgstr "ß"
+
+#: ../i18n/oracle.py:261 ../database/catalog.py:64
+msgid "à"
+msgstr "à"
+
+#: ../database/catalog.py:63
+msgid "â"
+msgstr "â"
+
+#: ../i18n/oracle.py:231
+msgid "ä"
+msgstr "ä"
+
+#: ../handlers/utils.py:34
+msgid "æ"
+msgstr "æ"
+
+#: ../i18n/oracle.py:233 ../database/catalog.py:66
+msgid "ç"
+msgstr "ç"
+
+#: ../database/catalog.py:71
+msgid "è"
+msgstr "è"
+
+#: ../database/catalog.py:69
+msgid "é"
+msgstr "é"
+
+#: ../i18n/oracle.py:234 ../database/catalog.py:70
+msgid "ê"
+msgstr "ê"
+
+#: ../database/catalog.py:72
+msgid "ë"
+msgstr "ë"
+
+#: ../i18n/oracle.py:235
+msgid "í"
+msgstr "í"
+
+#: ../database/catalog.py:74
+msgid "î"
+msgstr "î"
+
+#: ../database/catalog.py:75
+msgid "ï"
+msgstr "ï"
+
+#: ../i18n/oracle.py:236
+msgid "ñ"
+msgstr "ñ"
+
+#: ../i18n/oracle.py:238
+msgid "ó"
+msgstr "ó"
+
+#: ../database/catalog.py:76
+msgid "ô"
+msgstr "ô"
+
+#: ../i18n/oracle.py:237
+msgid "ö"
+msgstr "ö"
+
+#: ../database/catalog.py:78
+msgid "ù"
+msgstr "ù"
+
+#: ../i18n/oracle.py:240
+msgid "ú"
+msgstr "ú"
+
+#: ../database/catalog.py:77
+msgid "û"
+msgstr "û"
+
+#: ../i18n/oracle.py:239 ../database/catalog.py:79
+msgid "ü"
+msgstr "ü"
+
+#: ../handlers/utils.py:37
+msgid "Œ"
+msgstr "Œ"
+
+#: ../handlers/utils.py:36
+msgid "œ"
+msgstr "œ"
+
+#: ../i18n/oracle.py:253
+msgid "、"
+msgstr "、"
+
+#: ../i18n/oracle.py:254
+msgid "。"
+msgstr "。"
+
+#: ../i18n/oracle.py:247
+msgid "が"
+msgstr "が"
+
+#: ../i18n/oracle.py:245
+msgid "で"
+msgstr "で"
+
+#: ../i18n/oracle.py:251
+msgid "と"
+msgstr "と"
+
+#: ../i18n/oracle.py:246
+msgid "に"
+msgstr "に"
+
+#: ../i18n/oracle.py:243
+msgid "の"
+msgstr "の"
+
+#: ../i18n/oracle.py:244
+msgid "は"
+msgstr "は"
+
+#: ../i18n/oracle.py:248
+msgid "へ"
+msgstr "へ"
+
+#: ../i18n/oracle.py:250
+msgid "や"
+msgstr "や"
+
+#: ../i18n/oracle.py:249
+msgid "を"
+msgstr "を"
+
+#~ msgid "(WW) CSS filename \"%s\" does not exist"
+#~ msgstr "(WW) CSS filename \"%s\" does not exist"
+
+#~ msgid "(WW) Cannot add an image inside a td without predefined size"
+#~ msgstr ""
+#~ "(WW) Kan een afbeelding niet toevoegen in een td zonder vooraf bepaalde "
+#~ "grootte"
+
+#~ msgid "(WW) Filename is None"
+#~ msgstr "(WW) Geen bestandsnaam"
+
+#~ msgid "(WW) The filename '%s' doesn't exist"
+#~ msgstr "(WW) Bestandsnaam '%s' bestaat niet"
+
+#~ msgid "Error, no action available"
+#~ msgstr "Error, geen actie beschikbaar"
+
+#~ msgid "image not valid : %s"
+#~ msgstr "afbeelding ongeldig: %s"
