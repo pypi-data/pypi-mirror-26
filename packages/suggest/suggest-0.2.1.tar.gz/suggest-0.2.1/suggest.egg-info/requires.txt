@@ -1,0 +1,9 @@
+peppercorn
+toml
+tabulate
+
+[dev]
+check-manifest
+
+[test]
+coverage

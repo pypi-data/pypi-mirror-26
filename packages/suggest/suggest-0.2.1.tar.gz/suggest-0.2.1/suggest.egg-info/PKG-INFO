@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: suggest
+Version: 0.2.1
+Summary: A tool that suggests imports for your projects based on what you are already using.
+Home-page: https://github.com/not-inept/suggest_imports
+Author: not-inept
+Author-email: notinept@gmail.com
+License: MIT
+Download-URL: https://github.com/not-inept/suggest_imports/archive/0.2.1.tar.gz
+Description: suggest imports
+        ===============
+        `suggest` should be called in a project folder, . Currently only Rust (Cargo)
+        projects are supported. This is an early version of something that will
+        hopefully increase awareness of available packages in Python, NodeJS, Rust, Go
+        and other languages.
+        
+Keywords: suggest find import package
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
