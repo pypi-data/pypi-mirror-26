@@ -1,0 +1,33 @@
+{% load champion_filter i18n %}
+{% if rank %}
+    <table class="table table-condensed table-striped table-hover">
+        <thead>
+        <tr>
+            <th>{% trans 'Team' %}</th>
+            {% with ''|center:20 as range %}
+                {% for _ in range %}
+                    <th>{{ forloop.counter }}</th>
+                {% endfor %}
+            {% endwith %}
+        </tr>
+        </thead>
+
+        {% for entry in rank %}
+            <tr>
+                <td>
+                    {% with team=entry.team %}
+                        <i class="flag2x {{ team.country.flag_css }}"></i>
+                        <a href="{{ team.get_absolute_url }}">{{ team }}</a>
+                    {% endwith %}
+
+                </td>
+                {% for position in entry.pos_list %}
+                    <td>{{ position }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+
+    </table>
+{% else %}
+    <p>No teams</p>
+{% endif %}

@@ -1,0 +1,46 @@
+{% load champion_filter i18n %}
+{% if rank %}
+    <table class="table table-condensed table-striped table-hover">
+        <thead>
+        <tr>
+            {% if by_season %}
+                <th class="col-md-1">{% trans 'Points' %}</th>
+                <th class="col-md-4">{% trans 'Driver' %}</th>
+                <th class="col-md-5">{% trans 'Team' %}</th>
+                <th class="col-md-2">{% trans 'Season' %}</th>
+            {% else %}
+
+                <th class="col-md-2">{% trans 'Points' %}</th>
+                <th class="col-md-5">{% trans 'Driver' %}</th>
+                <th class="col-md-5">{% trans 'Team' %}</th>
+            {% endif %}
+
+        </tr>
+        </thead>
+
+        {% for entry in rank %}
+            <tr>
+                <td id="points_{{ forloop.counter }}">{{ entry.points }}</td>
+                <td>
+                    {% with driver=entry.driver %}
+                        <i class="flag2x {{ driver.country.flag_css }}"></i>
+                        <a href="{{ driver.get_absolute_url }}">{{ driver }}</a>
+                    {% endwith %}
+                    {% if forloop.counter == 1 %}
+                        {{ season.pk | champion_filter | safe }}
+                    {% endif %}
+                </td>
+                <td>{{ entry.teams }}</td>
+                {% if by_season %}
+                    <td>{{ entry.season }}</td>
+
+                {% endif %}
+
+            </tr>
+        {% endfor %}
+
+    </table>
+
+{% else %}
+    <p>No drivers</p>
+{% endif %}
