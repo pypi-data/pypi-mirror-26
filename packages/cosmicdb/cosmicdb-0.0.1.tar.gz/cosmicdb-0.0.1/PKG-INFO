@@ -1,0 +1,51 @@
+Metadata-Version: 1.1
+Name: cosmicdb
+Version: 0.0.1
+Summary: An easy way to setup a database site.
+Home-page: https://bitbucket.org/davidbradleycole/cosmicdb
+Author: David Cole
+Author-email: davidbradleycole@gmail.com
+License: BSD License
+Description-Content-Type: UNKNOWN
+Description: ==========================
+        CosmicDB Django App
+        ==========================
+        
+        Install
+        =======
+        
+        - Run ``virtualenv demoenv --no-site-packages``
+        - Run ``demoenv\Scripts\activate``
+        - Run ``pip install Django``
+        - Run ``pip install -e git+davidbradleycole@bitbucket.org:davidbradleycole/cosmicdb.git``
+        
+        
+        Usage
+        =====
+        
+        1. Add ``cosmicdb`` to your INSTALLED_APPS setting like this::
+        
+               INSTALLED_APPS = (
+                   ...
+                   'cosmicdb',
+               )
+        
+        2. Run ``python manage.py migrate``
+        
+        Requirements
+        ============
+        
+        `Django>=1.11
+        <https://github.com/django/django/>`_
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
