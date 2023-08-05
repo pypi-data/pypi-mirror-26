@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: audep
+Version: 1.2.1
+Summary: 自动化部署平台
+Home-page: https://github.com/zhexiao/hddep.git
+Author: 肖哲
+Author-email: zhexiao@163.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: auto-deploy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3
+Requires-Dist: Fabric3
+
+# audep
+===========================
+
+超融合集群自动化部署方案
+
+.. image:: https://readthedocs.org/projects/audep/badge/?version=latest
+    :target: http://audep.readthedocs.io/en/latest/
+
+
+
