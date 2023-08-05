@@ -1,0 +1,9 @@
+[Unit]
+Description=web sheets calculation server
+
+[Service]
+ExecStart=/usr/local/bin/ws_sheets_server runserver simple --conf_dir=/etc/ws_sheets_server/conf
+
+[Install]
+WantedBy=multi-user.target
+
