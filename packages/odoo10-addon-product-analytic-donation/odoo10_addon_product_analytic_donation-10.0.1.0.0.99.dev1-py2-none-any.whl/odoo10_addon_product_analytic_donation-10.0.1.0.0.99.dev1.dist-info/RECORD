@@ -1,0 +1,15 @@
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/product_analytic_donation/README.rst,sha256=F2ow6FRRa-maB84W_zy5RP6Ruyh3xOuprLfs-X66KIw,1663
+odoo/addons/product_analytic_donation/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/product_analytic_donation/__manifest__.py,sha256=tOEm6yr8s8l1wnWmBy3SJXSU50MQLRqmQyRFD3sWbZ4,563
+odoo/addons/product_analytic_donation/models/__init__.py,sha256=VT8-YMdaRZ2VISaIWc2ItVq1iBAXr9V8AirmBSkAdUg,53
+odoo/addons/product_analytic_donation/models/donation_line.py,sha256=FOjHrnQyRrFO1TP6xqJFDEK_6B53Ku5Qc6xvfXyVDW0,1127
+odoo/addons/product_analytic_donation/tests/__init__.py,sha256=BriftTTTb6sQBcgTEWnSHkrsisYulLcTyvoDWkFjrf8,53
+odoo/addons/product_analytic_donation/tests/test_donation.py,sha256=pOayGFdQJW9vtEWtr13Jv-N0JnsMeYtDghElAQvnWaQ,2800
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/DESCRIPTION.rst,sha256=YtJ_PDuKZeQW9rTP6V-GGDzZXVhUYOmW5FkU6s8c-T8,1665
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/METADATA,sha256=bfrbYej7ay1awcooSQgMh3MJHXMHhQ7Vezj7Vg5k07Q,2273
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/RECORD,,
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/metadata.json,sha256=P0aP74Mnf3_kkDPHPPX9VUmbbHe3hFUJKUhfJwJxNjQ,801
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_product_analytic_donation-10.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
