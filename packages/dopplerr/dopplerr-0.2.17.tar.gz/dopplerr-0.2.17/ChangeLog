@@ -1,0 +1,80 @@
+CHANGES
+=======
+
+0.2.17
+------
+
+* Fix npm cache clean command for docker
+* fix docker layers
+* flake8
+* reorg npm build in docker
+* docker add npm
+* docker builds frontend
+* have frontend served by dopplerr
+* frontend in vue.js
+
+0.2.16
+------
+
+* update readme
+
+0.2.15
+------
+
+* pylint
+* fix pylint
+* pipenv update
+
+0.2.14
+------
+
+* pipenv lock
+* txrwlock >=1.0.0
+* DB model using Peewee
+* pipenv update
+* new dependency: txrwlock
+* docker build makefile en
+* typo in readme
+* make kill-docker
+* typo in README
+
+0.2.13
+------
+
+* yapf
+* pylint fix
+* propagate subliminal provider config
+* README: current limitations of Dopplerr
+* Bad return value
+* fix basedir undefined
+* multiline makefile
+* update README about basedir
+* Split downloaded into filters, response
+* make check does not sdist
+* base for db
+* define vectors for unit tests
+* docker run: debug file
+* Log during docker run
+
+0.2.12
+------
+
+* README: update about ports
+* new alias in Makefile
+* typo in readme
+* fix command line args
+* Housecleaning on docker run test and Makefile
+* update README
+* renane env var to SUBDLSRC\_ to DOPPLERR\_
+* new badge codeclimate
+* update title
+* updating readme
+* update badges
+* codecov on travis
+* merge 2 docker layer
+
+0.2.11
+------
+
+* reorg deps install in docker
+* remove ref to pyup
