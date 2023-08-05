@@ -1,0 +1,3 @@
+[console_scripts]
+meep = meep.meep:meep
+
