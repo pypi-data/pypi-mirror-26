@@ -1,0 +1,5 @@
+netCDF4
+mpi4py
+numpy
+minio
+s3-netcdf-python
