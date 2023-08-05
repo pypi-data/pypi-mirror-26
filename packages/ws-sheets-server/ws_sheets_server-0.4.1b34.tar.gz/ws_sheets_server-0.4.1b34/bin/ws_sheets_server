@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+import sys
+import ws_sheets_server
+
+ws_sheets_server.main(sys.argv)
+
