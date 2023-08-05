@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+inventorpy/__init__.py
+inventorpy/__version__.py
+inventorpy.egg-info/PKG-INFO
+inventorpy.egg-info/SOURCES.txt
+inventorpy.egg-info/dependency_links.txt
+inventorpy.egg-info/not-zip-safe
+inventorpy.egg-info/top_level.txt
