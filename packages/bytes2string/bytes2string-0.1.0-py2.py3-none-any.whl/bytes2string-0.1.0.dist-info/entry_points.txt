@@ -1,0 +1,3 @@
+[console_scripts]
+bytes2string = bytes2string:main
+
