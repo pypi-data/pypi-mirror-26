@@ -1,0 +1,9 @@
+setup.py
+foxquant/__init__.py
+foxquant/today.py
+foxquant/utils.py
+foxquant.egg-info/PKG-INFO
+foxquant.egg-info/SOURCES.txt
+foxquant.egg-info/dependency_links.txt
+foxquant.egg-info/requires.txt
+foxquant.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: foxquant
+Version: 0.0.0
+Summary: A quick data source for finance data
+Home-page: https://github.com/caviler/quick
+Author: caviler
+Author-email: caviler@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: finance data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
