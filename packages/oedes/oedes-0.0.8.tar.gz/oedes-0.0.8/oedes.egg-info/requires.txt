@@ -1,0 +1,4 @@
+numpy
+scipy
+sparsegrad>=0.0.2
+tmm>=0.1.7
