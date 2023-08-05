@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pybugger2/__init__.py
+pybugger2/pybugger2.py
+pybugger2/test.py
+pybugger2.egg-info/PKG-INFO
+pybugger2.egg-info/SOURCES.txt
+pybugger2.egg-info/dependency_links.txt
+pybugger2.egg-info/top_level.txt
