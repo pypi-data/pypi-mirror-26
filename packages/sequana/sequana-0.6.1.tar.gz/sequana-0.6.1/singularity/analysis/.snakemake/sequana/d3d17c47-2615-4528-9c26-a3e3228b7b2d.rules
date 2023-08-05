@@ -1,0 +1,10 @@
+
+rule copy_ref:
+    input:
+        src = __copy_ref__input
+    output:
+        dst = __copy_ref__output
+    shell:
+        """
+        cp {input.src} {output.dst}
+        """
