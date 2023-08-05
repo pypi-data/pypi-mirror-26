@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: sqlalchemy_monetdb
+Version: 1.0.0
+Summary: SQLAlchemy dialect for MonetDB
+Home-page: UNKNOWN
+Author: Gijs Molenaar
+Author-email: gijsmolenaar@gmail.com
+License: MIT
+Description: MonetDB dialect for SQLAlchemy
+        ==============================
+        
+        This is the MonetDB dialect driver for SQLAlchemy. It has support for Python 2.7, 3.3+ and even PyPy. It supports
+        SQLalchemy 1.0, 1.1 and 1.2.
+        
+        
+        Installation
+        ------------
+        
+        To install this dialect run::
+        
+            $ pip install sqlalchemy_monetdb
+        
+        or from the source folder::
+        
+            $ pip install .
+        
+        
+        Usage
+        -----
+        
+        To start using this dialect::
+        
+            from sqlalchemy import create_engine
+            engine = create_engine('monetdb:///demo:', echo=True)
+        
+        
+        MonetDB Lite (experimental)
+        ---------------------------
+        
+        We now have experimental support for MonetDB Lite! Note that this is experimental, and will probably break.
+        
+        First you need to manually install MonetDB Lite: https://github.com/hannesmuehleisen/MonetDBLite-Python
+        
+        To connect to a MonetDBLite database use this syntax::
+        
+            from sqlalchemy import create_engine
+            engine = create_engine('monetdb+lite:////tmp/monetdb_lite')
+        
+        
+        More info
+        ---------
+        
+         * http://www.sqlalchemy.org/
+         * http://www.monetdb.org/
+        
+        
+        Development
+        -----------
+        
+        .. image:: https://travis-ci.org/gijzelaerr/sqlalchemy-monetdb.png?branch=master
+          :target: https://travis-ci.org/gijzelaerr/sqlalchemy-monetdb
+        
+        
+        
+Keywords: MonetDB SQLAlchemy
+Platform: UNKNOWN
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Database :: Front-Ends

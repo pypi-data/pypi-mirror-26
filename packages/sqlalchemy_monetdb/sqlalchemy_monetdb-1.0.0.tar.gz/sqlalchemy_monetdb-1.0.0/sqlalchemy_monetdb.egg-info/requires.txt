@@ -1,0 +1,6 @@
+pymonetdb
+sqlalchemy
+
+[lite]
+numpy
+monetdblite
