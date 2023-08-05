@@ -1,0 +1,7 @@
+README.md
+setup.py
+iupick.egg-info/PKG-INFO
+iupick.egg-info/SOURCES.txt
+iupick.egg-info/dependency_links.txt
+iupick.egg-info/requires.txt
+iupick.egg-info/top_level.txt
