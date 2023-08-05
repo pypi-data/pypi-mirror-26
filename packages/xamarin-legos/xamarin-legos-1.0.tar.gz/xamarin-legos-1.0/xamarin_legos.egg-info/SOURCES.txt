@@ -1,0 +1,8 @@
+legos_command.py
+setup.py
+xamarin_legos.egg-info/PKG-INFO
+xamarin_legos.egg-info/SOURCES.txt
+xamarin_legos.egg-info/dependency_links.txt
+xamarin_legos.egg-info/entry_points.txt
+xamarin_legos.egg-info/requires.txt
+xamarin_legos.egg-info/top_level.txt
