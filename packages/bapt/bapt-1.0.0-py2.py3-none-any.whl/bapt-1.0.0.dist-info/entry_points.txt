@@ -1,0 +1,3 @@
+[console_scripts]
+bapt = bapt.cli:main
+
