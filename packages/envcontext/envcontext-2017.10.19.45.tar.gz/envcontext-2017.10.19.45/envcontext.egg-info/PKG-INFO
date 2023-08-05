@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: envcontext
+Version: 2017.10.19.45
+Summary: Context manager to update environment variables with preservation
+Home-page: https://github.com/sakurai-youhei/envcontext
+Author: Youhei Sakurai
+Author-email: sakurai.youhei@gmail.com
+License: MIT
+Description: See README on https://github.com/sakurai-youhei/envcontext
+Keywords: Context Manager,Environmental Variable
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
