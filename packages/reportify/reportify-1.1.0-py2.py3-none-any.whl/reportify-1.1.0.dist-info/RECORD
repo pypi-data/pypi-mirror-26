@@ -1,0 +1,12 @@
+reportify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reportify/embed_html.py,sha256=V5SA_oMD56HBe_6n6RXiUyB-pOWV5ys8TxODpCl2ilQ,2091
+reportify/reportify.py,sha256=PeNwlb7l74HdRd5wiEISG8BHR89mlltg2doiYo1Xo3k,3248
+reportify/data/no_code.tpl,sha256=8aPp7hDNRX9vOF23GqrAhZJ9mxKZAp0XxFMfkLWr9R0,332
+reportify/data/custom/custom.css,sha256=Qq5MvJUJHD3Juz_a8LUk5dJCD-j4bJRDK6YhsNUsvjE,1175
+reportify-1.1.0.dist-info/DESCRIPTION.rst,sha256=698MNblbJkYWUqzUMJKQPZuM3oPNQXmmLP-XqoKlo6o,1191
+reportify-1.1.0.dist-info/METADATA,sha256=StEuJqDY6qTyFQwMUHnESmaLXnGLzDccJYIv4hn1YXA,2190
+reportify-1.1.0.dist-info/RECORD,,
+reportify-1.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+reportify-1.1.0.dist-info/entry_points.txt,sha256=37o-zcK291G9Tw7zPEgnEjgWhXlZClRptjgrFPkeVMU,56
+reportify-1.1.0.dist-info/metadata.json,sha256=0h4YQSdlnEjwQ6b_QkUTAIIKpouoayROQCcdbdnplug,1271
+reportify-1.1.0.dist-info/top_level.txt,sha256=GZnt5xJpU8rBuJussVS6MrGMsIR_ZCc78UE9OWwRXnI,10
