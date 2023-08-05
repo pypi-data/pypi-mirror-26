@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: ws-storage
+Version: 0.6b20
+Summary: pytohn binary storage
+Home-page: http://github.com/chuck1/ws_storage
+Author: Charles Rymal
+Author-email: charlesrymal@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: aiobotocore (==0.4.5)
+Requires-Dist: aiohttp (==2.3.0)
+Requires-Dist: async-patterns (==0.3b14)
+Requires-Dist: async-timeout (==2.0.0)
+Requires-Dist: botocore (==1.7.5)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: docutils (==0.14)
+Requires-Dist: jmespath (==0.9.3)
+Requires-Dist: multidict (==3.3.0)
+Requires-Dist: packaging (==16.8)
+Requires-Dist: pyparsing (==2.2.0)
+Requires-Dist: python-dateutil (==2.6.1)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: toml (==0.9.3.1)
+Requires-Dist: wrapt (==1.10.11)
+Requires-Dist: yarl (==0.13.0)
+
+UNKNOWN
+
+

@@ -1,0 +1,9 @@
+[Unit]
+Description=python binary storage service
+
+[Service]
+ExecStart=/usr/local/bin/ws_storage runserver simple --conf_dir /etc/ws_storage/conf
+
+[Install]
+WantedBy=multi-user.target
+
