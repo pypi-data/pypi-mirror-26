@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: redisbloomfilter
+Version: 0.0.1
+Summary: 
+一个基于redis的布隆去重器
+
+Home-page: https://github.com/jeffreyzzh/redisbloomfilter
+Author: zhangzehui
+Author-email: 124303687@qq.com
+License: MIT
+Description: bloomfilter base on redis for python
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
