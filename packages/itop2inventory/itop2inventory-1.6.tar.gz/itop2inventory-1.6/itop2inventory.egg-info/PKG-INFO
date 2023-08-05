@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: itop2inventory
+Version: 1.6
+Summary: Make itop an inventory for ansible
+Home-page: https://github.com/support-capensis/itop2ansible.git
+Author: support-capensis
+Author-email: support@capensis.fr
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
