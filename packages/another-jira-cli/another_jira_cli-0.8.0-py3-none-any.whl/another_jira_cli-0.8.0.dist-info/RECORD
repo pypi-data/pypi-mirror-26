@@ -1,0 +1,13 @@
+another_jira_cli-0.8.0.dist-info/DESCRIPTION.rst,sha256=L-BZsMRjobIxvnPrn2zzCjucrjb8lpwEiSmNy7BH164,1328
+another_jira_cli-0.8.0.dist-info/METADATA,sha256=1xRsq1Bx_WMWYcYSnal9hP_Dre63tR2iDo1kRI5G9xA,2159
+another_jira_cli-0.8.0.dist-info/RECORD,,
+another_jira_cli-0.8.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+another_jira_cli-0.8.0.dist-info/entry_points.txt,sha256=131JvkCgURLWYXngWcSFz2t9AhSEc90wbYoUgcfRk74,93
+another_jira_cli-0.8.0.dist-info/metadata.json,sha256=ubiOTGog3mJRKvYvy8Tpzc4trrggM-kDpIr5YY7dAg8,1199
+another_jira_cli-0.8.0.dist-info/top_level.txt,sha256=3ycL6eamPSCf5GH6OcRwhfhYCbsCoDRdvJZmbgFNVho,9
+jira_cli/__init__.py,sha256=0v4wIYJqxK8fB2iAEu7ogfgQP2tKH0iPMUGwl-ygBMk,22700
+jira_cli/__main__.py,sha256=2O8YjaE2EMoGDgJreu1p_ATYk-LoO9-l4WA1A8Mp5Yo,17
+jira_cli/jirahelpers.py,sha256=z9M1OyvLfdQ7NjQfa--vp6quKGn5KFl3B9joV66Fm_Q,7182
+jira_cli/parsehelpers.py,sha256=KMnFhGQKPQ64o34W7G7yzWxRuztZnlpQbboOWCinAXU,1903
+jira_cli/tools.py,sha256=qvWmEB0KWcA5ZGNzaXaSgKCR1FlAL1RCXmbtvY7_Lso,3051
+jira_cli/workloghelpers.py,sha256=JuztSUBUOl_zdm5nDpdMh9jHCGJvvoJpVomHGledJuE,3694
