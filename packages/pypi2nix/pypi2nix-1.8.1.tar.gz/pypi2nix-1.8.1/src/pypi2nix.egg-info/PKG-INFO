@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pypi2nix
+Version: 1.8.1
+Summary: A tool that generates nix expressions for your python packages, so you don't have to.
+Home-page: https://github.com/NixOS/pypi2nix
+Author: Rok Garbas, Cillian de Róiste, Jaka Hudoklin
+Author-email: UNKNOWN
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: nixos nix packaging
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
