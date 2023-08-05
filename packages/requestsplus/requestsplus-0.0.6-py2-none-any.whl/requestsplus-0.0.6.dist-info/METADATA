@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: requestsplus
+Version: 0.0.6
+Summary: RequestsPlus is based on requests package, adding default retries, timeout, and auto-sleeping when requesting from a url
+Home-page: https://github.com/PhantomKidding/RequestsPlus
+Author: cchen
+Author-email: phantomkidding@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Keywords: requests,retries,web-scraping,auto-sleeping
+Platform: any
+Requires-Dist: requests (==2.11.1)
+
+UNKNOWN
+
+
