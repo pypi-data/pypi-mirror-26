@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: django-cprofile-middleware
+Version: 1.0
+Summary: Easily add cProfile profiling to django views.
+Home-page: https://github.com/omarish/django-cprofile-middleware/
+Author: Omar Bohsali
+Author-email: omar.bohsali@gmail.com
+License: MIT
+Download-URL: https://github.com/omarish/django-cprofile-middleware/tarball/v1.0
+Description: See https://github.com/omarish/django-cprofile-middleware/
+Keywords: django,profiling,cProfile
+Platform: UNKNOWN
+Classifier: Framework :: Django
