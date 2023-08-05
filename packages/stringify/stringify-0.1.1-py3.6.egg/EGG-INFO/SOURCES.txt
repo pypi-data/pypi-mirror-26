@@ -1,0 +1,9 @@
+setup.py
+stringify/__init__.py
+stringify/util.py
+stringify/version.py
+stringify.egg-info/PKG-INFO
+stringify.egg-info/SOURCES.txt
+stringify.egg-info/dependency_links.txt
+stringify.egg-info/not-zip-safe
+stringify.egg-info/top_level.txt
