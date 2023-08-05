@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: crawl-requests
+Version: 1.0.0
+Summary: crawl_requests provides api of User-Agent_pool and proxy_pool.
+Home-page: https://github.com/shinalone/crawl_requests
+Author: UlionTse
+Author-email: shinalone@outlook.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: translate,translate_api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
