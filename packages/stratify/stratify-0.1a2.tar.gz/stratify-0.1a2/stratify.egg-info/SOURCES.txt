@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+stratify/__init__.py
+stratify/_vinterp.c
+stratify.egg-info/PKG-INFO
+stratify.egg-info/SOURCES.txt
+stratify.egg-info/dependency_links.txt
+stratify.egg-info/not-zip-safe
+stratify.egg-info/pbr.json
+stratify.egg-info/requires.txt
+stratify.egg-info/top_level.txt
+stratify/tests/__init__.py
+stratify/tests/performance.py
+stratify/tests/test_vinterp.py
