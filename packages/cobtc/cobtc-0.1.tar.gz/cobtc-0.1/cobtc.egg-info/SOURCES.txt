@@ -1,0 +1,7 @@
+setup.py
+cobtc/__init__.py
+cobtc.egg-info/PKG-INFO
+cobtc.egg-info/SOURCES.txt
+cobtc.egg-info/dependency_links.txt
+cobtc.egg-info/not-zip-safe
+cobtc.egg-info/top_level.txt
