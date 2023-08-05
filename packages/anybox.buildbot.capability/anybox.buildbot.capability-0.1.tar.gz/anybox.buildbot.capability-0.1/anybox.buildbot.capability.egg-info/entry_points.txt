@@ -1,0 +1,3 @@
+[buildbot.steps]
+SetCapabilityProperties = anybox.buildbot.capability.steps:SetCapabilityProperties
+
