@@ -1,0 +1,13 @@
+python-memcached
+setuptools
+zope.component
+
+[libmc]
+libmc
+
+[pylibmc]
+pylibmc
+
+[test]
+interlude
+zope.testing
