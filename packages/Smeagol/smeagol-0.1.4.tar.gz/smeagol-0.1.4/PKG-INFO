@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: smeagol
+Version: 0.1.4
+Summary: A Python Wiki
+Home-page: https://github.com/josh-kaplan/smeagol
+Author: Josh Kaplan
+Author-email: contact@joshkaplan.org
+License: MIT
+Description: PYPI Release Notes 0.1.2
+        
+        Smeagol is a simple Python wiki designed to be compatible with Git wiki 
+        repos.
+        
+        SECURITY WARNING
+        This early release (version 0.1.2) is not fully functional. There are several 
+        known bugs and security issues that need to be addressed before version 1.0. 
+        This initial release is intended to be run in controlled or isolated 
+        environments. 
+        
+        KNOWN ISSUES
+        Known issues will be documented at https://github.com/josh-kaplan/smeagol/issues
+        
+        
+        
+        
+        
+Keywords: wiki
+Platform: UNKNOWN
