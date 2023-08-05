@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: vcardz-data
+Version: 0.9.2
+Summary: Python 3 vCard and deduplication
+Home-page: https://github.com/IdahoDataEngineers/vcardz
+Author: Idaho Data Engineers
+Author-email: info@idahodata.io
+License: GPLv2
+Download-URL: https://github.com/IdahoDataEngineers/vcardz/archive/v0.9.2.tar.gz
+Keywords: vcard,deduplication,entity resolution,swoosh,RFC6350
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: jellyfish (>=0.3.3)
+Requires-Dist: nameparser (>=0.3.3)
+Requires-Dist: networkx (>=1.9.1)
+Requires-Dist: requests (>=2.5.1)
+Requires-Dist: six (>=1.9.0)
+
+vcardz
+==========
+
+vcardz is a Python 3 library for managing vCard data and deduplication / entity resolution based on Swoosh.
+
+Project Home
+  `https://github.com/IdahoDataEngineers/vcardz <https://github.com/IdahoDataEngineers/vcardz>`_
+
+
+
+
