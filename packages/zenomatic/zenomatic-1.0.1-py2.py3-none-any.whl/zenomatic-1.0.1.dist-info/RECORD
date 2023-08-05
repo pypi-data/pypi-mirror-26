@@ -1,0 +1,13 @@
+zenomatic/__init__.py,sha256=FFuPIO3ELdfjgGaMRpEvchI3SUSCO0r09V4NfDDHCaM,214
+zenomatic/__main__.py,sha256=bvzmdPT4zyKfgZ1P_d8iUz29v7s1VT0sIkmcNSU8KhM,89
+zenomatic/quotes.py,sha256=RhriGSuXH8I0yHlFlsBU_ppxxZ3ji0tRP3QE7mYLVY8,2614
+zenomatic/run.py,sha256=T53qZG4JurYkQbJXBusEOYUHrfHLcyFHHTfoP5R1m5s,1196
+zenomatic/tests.py,sha256=zknVS5GvNiQsa7aT1uiDWiNh7w9JwnFDszhtSczxbnQ,1086
+zenomatic/utils.py,sha256=Fropb8Blrrk1P9JS8CEM1Gcci_wGuHeBoGGtBsanZ-M,1206
+zenomatic-1.0.1.dist-info/DESCRIPTION.rst,sha256=8Pt-3FiCq3yCvhLJXwMxOSECsmXhDnRAiSMGALM9qjg,683
+zenomatic-1.0.1.dist-info/METADATA,sha256=0Y2iXVy43Slooxje2jeaSRi9mKDr11S8epR-SARfUz0,1317
+zenomatic-1.0.1.dist-info/RECORD,,
+zenomatic-1.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+zenomatic-1.0.1.dist-info/entry_points.txt,sha256=_VJAgsmkrEdL2DNqf-6XEV2bjIWHCvZ2rg1cq3mgVr4,51
+zenomatic-1.0.1.dist-info/metadata.json,sha256=pnN-Cdi_oUnVhChzQZHY2MaB0D_CeekmSaUz8i3Yb98,924
+zenomatic-1.0.1.dist-info/top_level.txt,sha256=j2kh5JOcR8g9XH4wNeD_SrBvZZYrhyIYiFxWksNpPjo,10
