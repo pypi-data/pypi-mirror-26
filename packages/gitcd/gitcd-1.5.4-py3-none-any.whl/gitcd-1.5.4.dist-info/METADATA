@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: gitcd
+Version: 1.5.4
+Summary: Tool for continous delivery using git
+Home-page: https://github.com/claudio-walser/gitcd
+Author: Claudio Walser
+Author-email: claudio.walser@srf.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: argcomplete
+Requires-Dist: argparse
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+UNKNOWN
+
+
