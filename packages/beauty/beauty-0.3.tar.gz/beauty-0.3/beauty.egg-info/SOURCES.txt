@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+beauty/__init__.py
+beauty/beauty.py
+beauty/user_agents.py
+beauty.egg-info/PKG-INFO
+beauty.egg-info/SOURCES.txt
+beauty.egg-info/dependency_links.txt
+beauty.egg-info/entry_points.txt
+beauty.egg-info/requires.txt
+beauty.egg-info/top_level.txt
+test/__init__.py
+test/test_beauty.py
