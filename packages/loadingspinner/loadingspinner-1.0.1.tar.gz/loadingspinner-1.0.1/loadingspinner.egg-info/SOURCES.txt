@@ -1,0 +1,7 @@
+README.rst
+setup.py
+loadingspinner.egg-info/PKG-INFO
+loadingspinner.egg-info/SOURCES.txt
+loadingspinner.egg-info/dependency_links.txt
+loadingspinner.egg-info/requires.txt
+loadingspinner.egg-info/top_level.txt
