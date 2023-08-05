@@ -1,0 +1,13 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyexcel_pygal/__init__.py
+pyexcel_pygal/chart.py
+pyexcel_pygal.egg-info/PKG-INFO
+pyexcel_pygal.egg-info/SOURCES.txt
+pyexcel_pygal.egg-info/dependency_links.txt
+pyexcel_pygal.egg-info/not-zip-safe
+pyexcel_pygal.egg-info/requires.txt
+pyexcel_pygal.egg-info/top_level.txt
