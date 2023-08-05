@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: kkbox_developer_sdk
+Version: 1.0.0
+Summary: KKBOX Open API Developer SDK for Python
+Home-page: https://github.com/KKBOX/kkbox_openapi_developer_sdk
+Author: Sharon Yang
+Author-email: sharonyang@kkbox.com
+License: UNKNOWN
+Download-URL: https://github.com/KKBOX/kkbox_openapi_developer_sdk/tarball/v1.0.0
+Description: UNKNOWN
+Keywords: KKBOX,Open,API,OpenAPI
+Platform: UNKNOWN
