@@ -1,0 +1,5 @@
+samtools
+bamtools
+bcftools
+bedtools
+graphviz
