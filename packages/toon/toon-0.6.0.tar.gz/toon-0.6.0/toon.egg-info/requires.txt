@@ -1,0 +1,24 @@
+future
+numpy
+
+[birds]
+pyserial
+
+[force]
+
+[force:platform_system == "Windows"]
+nidaqmx
+
+[full]
+hidapi
+pyserial
+keyboard
+
+[full:platform_system == "Windows"]
+nidaqmx
+
+[hand]
+hidapi
+
+[keyboard]
+keyboard
