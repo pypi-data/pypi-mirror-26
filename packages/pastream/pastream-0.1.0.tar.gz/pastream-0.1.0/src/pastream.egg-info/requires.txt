@@ -1,0 +1,13 @@
+pa_ringbuffer>=0.1.2
+cffi>=1.0.0
+soundfile>=0.9.0
+sounddevice>=0.3.7
+
+[docs]
+sphinx
+sphinx_rtd_theme
+rst2pdf
+
+[examples]
+numpy
+matplotlib
