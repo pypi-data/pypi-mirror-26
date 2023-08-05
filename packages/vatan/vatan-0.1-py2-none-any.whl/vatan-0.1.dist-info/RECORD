@@ -1,0 +1,17 @@
+resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vatan/__init__.py,sha256=urhmq5QqBImvzUxNXw7VkCHllOx41xEyNenyZOWKYQQ,21
+vatan/__main__.py,sha256=68h9fGfQhk6iwqmX5hhAkgVXC3-Oib2cdA5wHzsB0iE,1273
+vatan/app.py,sha256=ZR8RJ609s9PUe_hS2fmYLcV9eOUzhAJstSIEu9ybu-o,84
+vatan/config.py,sha256=aSVbWpp8487FrOfTfffHzfJnDtlQ3jyZviosGbqM61E,490
+vatan/vatan.py,sha256=nRZ4-pRoMBpltVfQtYddZPaRLj6NIwFdI8Nkveg-hLs,6540
+vatan/notify/__init__.py,sha256=5IFJRYL90R5Cbc2-SQWq5SGjUrq_G0823qzPs3yYk0g,13
+vatan/notify/notify.py,sha256=M6kNFtzfLsMbX6KglYThmPFSftnx1t0i_TqLbSYbX48,1756
+vatan/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vatan/resources/mail,sha256=O84m864Lv3x3lxK4cC-uSBezxNPSNwgN7YlFjSmh-QM,198
+vatan-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+vatan-0.1.dist-info/METADATA,sha256=cku4-zrpz-TgTagVdR2RqkeG0O9C8zHT-DbvlCBkwqQ,238
+vatan-0.1.dist-info/RECORD,,
+vatan-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+vatan-0.1.dist-info/entry_points.txt,sha256=UEzCqzQsitVp-8iYnoAV0W5_YxHR_qnOvs3YuK8EsPs,47
+vatan-0.1.dist-info/metadata.json,sha256=NQui1FWgJ-ii_MSAvoDOETaBee0F8BwPnbuQBp21cWA,566
+vatan-0.1.dist-info/top_level.txt,sha256=cfFP4IqofZ7Y_VB-pS4A7WOYvqQKtGRBN0Dt3AfsgYg,6
