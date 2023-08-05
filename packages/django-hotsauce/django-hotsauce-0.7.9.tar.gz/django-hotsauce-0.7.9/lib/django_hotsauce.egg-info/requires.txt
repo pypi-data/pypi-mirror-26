@@ -1,0 +1,9 @@
+Mako>=1.0.6
+WebOb>=1.7.2
+argparse>=1.1
+cogen>=0.2.1
+configobj>=4.7.2
+demjson>=2.2.4
+docutils>=0.8.1
+python-memcached>=1.58
+pytidylib>=0.2.1
