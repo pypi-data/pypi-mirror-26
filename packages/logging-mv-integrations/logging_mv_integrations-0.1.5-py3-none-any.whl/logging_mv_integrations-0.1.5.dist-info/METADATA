@@ -1,0 +1,220 @@
+Metadata-Version: 2.0
+Name: logging-mv-integrations
+Version: 0.1.5
+Summary: Python logging package extensions for TUNE mv-integrations.
+Home-page: https://github.com/TuneLab/logging-mv-integrations
+Author: TUNE Inc., TuneLab
+Author-email: jefft@tune.com
+License: MIT License
+Download-URL: https://github.com/TuneLab/logging-mv-integrations/archive/v0.1.5.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: tune,reporting,tmc,api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: coloredlogs (>=7.3)
+Requires-Dist: python-json-logger (==0.1.8)
+Requires-Dist: pprintpp (==0.3.0)
+Requires-Dist: Pygments (==2.2.0)
+Requires-Dist: safe-cast (>=0.1.1)
+Requires-Dist: wheel (>=0.30.0)
+
+.. -*- mode: rst -*-
+
+
+Overview
+========
+
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - docs
+      - |license|
+    * - tests
+      - |travis| |coveralls|
+    * - package
+      - |version| |supported-versions|
+
+.. |docs| image:: https://readthedocs.org/projects/logging-mv-integrations/badge/?style=flat
+    :alt: Documentation Status
+    :target: https://readthedocs.org/projects/logging-mv-integrations
+
+.. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :alt: License Status
+    :target: https://opensource.org/licenses/MIT
+
+.. |travis| image:: https://travis-ci.org/TuneLab/logging-mv-integrations.svg?branch=master
+    :alt: Travis-CI Build Status
+    :target: https://travis-ci.org/TuneLab/logging-mv-integrations
+
+.. |coveralls| image:: https://coveralls.io/repos/TuneLab/logging-mv-integrations/badge.svg?branch=master&service=github
+    :alt: Code Coverage Status
+    :target: https://coveralls.io/r/TuneLab/logging-mv-integrations
+
+.. |requires| image:: https://requires.io/github/TuneLab/logging-mv-integrations/requirements.svg?branch=master
+    :alt: Requirements Status
+    :target: https://requires.io/github/TuneLab/logging-mv-integrations/requirements/?branch=master
+
+.. |version| image:: https://img.shields.io/pypi/v/logging_mv_integrations.svg?style=flat
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/logging_mv_integrations
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/tune_reporting.svg?style=flat
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/tune_reporting
+
+.. end-badges
+
+logging-mv-integrations
+=======================
+
+``logging-mv-integrations`` is a Python logging library for TUNE Multiverse Integrations.
+
+.. image:: ./images/logging_mv_integrations.png
+   :scale: 50 %
+   :alt: UML logging-mv-integrations
+
+Usage
+-----
+
+.. code-block:: python
+
+    import logging
+    from logging_mv_integrations import (TuneLoggingFormat, get_logger, __version__)
+
+    tune_logger = get_logger(
+        logger_name=__name__,
+        logger_version=__version__,
+        logger_format=TuneLoggingFormat.JSON,
+        logger_level=logging.DEBUG
+    )
+
+    tune_logger.info("logging: info", extra={'test': __name__})
+    tune_logger.debug("logging: debug", extra={'test': __name__})
+    tune_logger.warning("logging: warning", extra={'test': __name__})
+    tune_logger.error("logging: error", extra={'test': __name__})
+    tune_logger.critical("logging: critical", extra={'test': __name__})
+    tune_logger.exception("logging: exception", extra={'test': __name__})
+
+Example: Logging JSON Format
+----------------------------
+
+.. code-block:: python
+
+    import logging
+    from logging_mv_integrations import (TuneLoggingFormat, get_logger, __version__)
+
+    tune_logger = get_logger(
+        logger_name=__name__,
+        logger_version=__version__,
+        logger_format=TuneLoggingFormat.JSON,
+        logger_level=logging.DEBUG
+    )
+
+    tune_logger.info("logging: info", extra={'test': __name__})
+    tune_logger.debug("logging: debug", extra={'test': __name__})
+    tune_logger.warning("logging: warning", extra={'test': __name__})
+    tune_logger.error("logging: error", extra={'test': __name__})
+    tune_logger.critical("logging: critical", extra={'test': __name__})
+    tune_logger.exception("logging: exception", extra={'test': __name__})
+
+.. code-block:: bash
+
+    python3 examples/example_tune_logging_json.py
+
+    {"asctime": "2017-10-12 16:27:14 -0700", "levelname": "INFO", "name": "__main__", "version": "0.1.3", "message": "logging: info", "test": "__main__"}
+    {"asctime": "2017-10-12 16:27:14 -0700", "levelname": "DEBUG", "name": "__main__", "version": "0.1.3", "message": "logging: debug", "test": "__main__"}
+    {"asctime": "2017-10-12 16:27:14 -0700", "levelname": "WARNING", "name": "__main__", "version": "0.1.3", "message": "logging: warning", "test": "__main__"}
+    {"asctime": "2017-10-12 16:27:14 -0700", "levelname": "ERROR", "name": "__main__", "version": "0.1.3", "message": "logging: error", "test": "__main__"}
+    {"asctime": "2017-10-12 16:27:14 -0700", "levelname": "CRITICAL", "name": "__main__", "version": "0.1.3", "message": "logging: critical", "test": "__main__"}
+    {"asctime": "2017-10-12 16:27:14 -0700", "levelname": "ERROR", "name": "__main__", "version": "0.1.3", "message": "logging: exception", "exc_info": "NoneType: None", "test": "__main__"}
+
+Dependencies
+============
+
+``logging-mv-integrations`` module is built upon Python 3 and is build upon
+several custom modules that are held within PyPI: https://pypi.python.org/pypi
+
+.. code-block:: bash
+
+    make install
+
+or
+
+.. code-block:: bash
+
+    python3 -m pip uninstall --yes --no-input -r requirements.txt
+    python3 -m pip install --upgrade -r requirements.txt
+
+
+TUNE Multiverse Custom Support Packages
+---------------------------------------
+
+These packages provide support functionality but are not core
+to Multiverse. Thereby, test and documentation could be shared
+amongst the team.
+
+- safe-cast: https://pypi.python.org/pypi/safe-cast
+
+
+Support Packages
+----------------
+
+- coloredlogs: https://pypi.python.org/pypi/coloredlogs
+- pprintpp: https://pypi.python.org/pypi/pprintpp
+- python-json-logger: https://pypi.python.org/pypi/python-json-logger
+- Pygments: https://pypi.python.org/pypi/Pygments
+- wheel: https://pypi.python.org/pypi/wheel
+
+
+Reporting Issues
+================
+
+We definitely want to hear your feedback.
+
+Report issues using the `Github Issue Tracker`:
+https://github.com/TuneLab/tune-mv-integration-python/issues
+
+
+
+.. :changelog:
+
+Release History
+===============
+
+0.1.5 (2017-10-17)
+------------------
+- Fix standard format
+
+0.1.4 (2017-10-09)
+------------------
+- Multiple handlers fix
+
+0.1.3 (2017-09-12)
+------------------
+- Use python standard logging instead of tune_logging and remove all unneeded files
+
+0.1.2 (2017-02-03)
+------------------
+- Switch to using casting from safe-cast package
+
+0.1.1 (2017-02-03)
+------------------
+- Python 3.6 Upgrade
+
+0.0.1 (2016-11-19)
+------------------
+ - First Commit
+

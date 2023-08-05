@@ -1,0 +1,17 @@
+logging_mv_integrations/__init__.py,sha256=VTPq-KQEKTYrXR3MtBbu0MMF2RXvlObTBRl2-5jaaSI,627
+logging_mv_integrations/logger_adapter_custom.py,sha256=HHL2UHkLgdZsKs1finCb5xyVM6AHjBI56TtSf-pUllk,996
+logging_mv_integrations/logger_json_lexer.py,sha256=1yYlC-2S7FMCMt8m8hw46Y7cuLfLlVPnOzVIF85wKxU,4934
+logging_mv_integrations/logging_format.py,sha256=UT1wCAlT3pkiYR6RErBXODn9S9Kqbd09lx8tfrQa9E4,574
+logging_mv_integrations/logging_json_formatter.py,sha256=btfn3d161-Ei8M80WQQ7LNdF_EjB03Hq2Ti24P6HwJA,6880
+logging_mv_integrations/logging_output.py,sha256=_zwNAhSXdrbso6c_dYKSz80Ut-vK-tUE9X-GOoVlAyQ,669
+logging_mv_integrations/tune_logging.py,sha256=8Bouf02VtKp_a61K8Pxm1zQfFUi97E9LAgD-MIi2LQE,2192
+logging_mv_integrations/errors/__init__.py,sha256=sxXsz9kZGNz0HoifPvtcfW3A72GK0MZOD4Bi5c27_oA,276
+logging_mv_integrations/errors/errors_traceback.py,sha256=3ozd2dFu91pnJvnF-VW7umf-GjsQkkN_4sauYr4813o,1176
+logging_mv_integrations/support/__init__.py,sha256=LSUgGSHrKCTRcnDho0B1Ri3KSRaSi6pXrGBt5v7Mu-A,173
+logging_mv_integrations/support/singleton.py,sha256=wd9JD2hsPVdO6-Am8rKwDOBU19aWNv5pPCUFXsxa2BU,586
+logging_mv_integrations-0.1.5.dist-info/DESCRIPTION.rst,sha256=XXT2uRgf0MRGeW35pfA8BNuqMYzPXJUGvYp4ktBPKFU,6092
+logging_mv_integrations-0.1.5.dist-info/METADATA,sha256=ieTV132h6hBnpimvgRjEH9rwkBRi_yt6zdo7juu5qKI,7346
+logging_mv_integrations-0.1.5.dist-info/RECORD,,
+logging_mv_integrations-0.1.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+logging_mv_integrations-0.1.5.dist-info/metadata.json,sha256=TUiB_41vp9MCtmv5chisRLtTbCiEXuyh7kTz1RJsWtA,1351
+logging_mv_integrations-0.1.5.dist-info/top_level.txt,sha256=AD5drSS198J0FFPqphRI42SahFZ6YrukDEcw8Ir8EZw,24
