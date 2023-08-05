@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: pypatent
+Version: 1.0.0
+Summary: Search and retrieve USPTO patent data
+Home-page: http://github.com/dan457/pypatent
+Author: Dan Eads
+Author-email: 4708079+dan457@users.noreply.github.com
+License: GNU GPLv3
+Description-Content-Type: UNKNOWN
+Keywords: patent,uspto,scrape,scraping
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: bs4
+Requires-Dist: re
+Requires-Dist: requests
+
+UNKNOWN
+
+
