@@ -1,0 +1,7 @@
+setup.py
+my_example_lib.egg-info/PKG-INFO
+my_example_lib.egg-info/SOURCES.txt
+my_example_lib.egg-info/dependency_links.txt
+my_example_lib.egg-info/top_level.txt
+myexamplelib/__init__.py
+myexamplelib/myexamplelib.py
