@@ -1,0 +1,16 @@
+README.md
+setup.py
+MAnorm.egg-info/PKG-INFO
+MAnorm.egg-info/SOURCES.txt
+MAnorm.egg-info/dependency_links.txt
+MAnorm.egg-info/not-zip-safe
+MAnorm.egg-info/requires.txt
+MAnorm.egg-info/top_level.txt
+bin/manorm
+manorm/__init__.py
+manorm/cmdline.py
+manorm/logger.py
+manorm/workflow.py
+manorm/lib/__init__.py
+manorm/lib/io.py
+manorm/lib/peaks.py
