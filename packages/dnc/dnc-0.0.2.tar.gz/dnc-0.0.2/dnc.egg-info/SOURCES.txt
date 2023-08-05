@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+dnc/__init__.py
+dnc/copy_task.py
+dnc/dnc.py
+dnc/memory.py
+dnc/util.py
+dnc.egg-info/PKG-INFO
+dnc.egg-info/SOURCES.txt
+dnc.egg-info/dependency_links.txt
+dnc.egg-info/requires.txt
+dnc.egg-info/top_level.txt
