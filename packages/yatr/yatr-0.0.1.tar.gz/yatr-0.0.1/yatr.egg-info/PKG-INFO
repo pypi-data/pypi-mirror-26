@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: yatr
+Version: 0.0.1
+Summary: Yet Another Task Runner
+Home-page: https://github.com/mbodenhamer/yatr
+Author: Matt Bodenhamer
+Author-email: mbodenhamer@mbodenhamer.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: yatr
+        ====
+        
+        .. image:: https://travis-ci.org/mbodenhamer/yatr.svg?branch=master
+            :target: https://travis-ci.org/mbodenhamer/yatr
+            
+        .. image:: https://img.shields.io/coveralls/mbodenhamer/yatr.svg
+            :target: https://coveralls.io/r/mbodenhamer/yatr
+        
+        .. image:: https://readthedocs.org/projects/yatr/badge/?version=latest
+            :target: http://yatr.readthedocs.org/en/latest/?badge=latest
+        
+        Yet Another Task Runner.
+        
+Keywords: task,make,yaml
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
