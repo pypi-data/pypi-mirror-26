@@ -1,0 +1,9 @@
+README.rst
+setup.py
+pygfolder/__init__.py
+pygfolder.egg-info/PKG-INFO
+pygfolder.egg-info/SOURCES.txt
+pygfolder.egg-info/dependency_links.txt
+pygfolder.egg-info/not-zip-safe
+pygfolder.egg-info/requires.txt
+pygfolder.egg-info/top_level.txt
