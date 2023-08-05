@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/static/fonts/fontawesome-webfont.woff') format('woff');
+}
+
+#visual-preloader-wrapper {
+  position: relative;
+}
+
+#visual-layout{
+  width: 100%;
+  min-height: 600px;
+}
+
+.edge-bundle .node {
+  font: 10px sans-serif;
+}
+
+.edge-bundle .link {
+  stroke: steelblue;
+  stroke-opacity: 0.5;
+  fill: none;
+  pointer-events: none;
+}
+
+.hive .link{
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1.5px;
+}
+
+.hive .axis {
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.hive .axis text {
+  font-family: "Open Sans";
+}
+
+.hive .node {
+  fill: #fff;
+}
+
+.hive .node circle {
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.hive .node text {
+  stroke-width: 0;
+}
+
+.hive .active, .hive .selected {
+  stroke: #f00!important;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 5px 10px;
+  font: 12px sans-serif;
+  background: #fff;
+  border: 1px solid #000;
+  pointer-events: none;
+}

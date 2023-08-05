@@ -1,0 +1,27 @@
+
+pyyaml
+msgpack-python
+Flask
+Click
+
+# openstack requirements
+os_client_config
+python-cinderclient
+python-glanceclient
+python-heatclient
+python-keystoneclient
+python-novaclient
+python-neutronclient
+
+# kubernetes requirements
+pykube
+
+# tosca requirements
+tosca-parser
+
+# salt requirements
+salt-pepper
+
+# terraform requirements
+python-terraform
+graphviz

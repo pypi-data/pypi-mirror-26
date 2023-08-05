@@ -1,0 +1,13 @@
+{
+    "input-openstack": "infra_scraper.input.openstack.OpenStackInput",
+    "input-kubernetes": "infra_scraper.input.kubernetes.KubernetesInput",
+    "input-salt": "infra_scraper.input.saltstack.SaltStackInput",
+    "input-reclass": "infra_scraper.input.reclass.SaltReclassInput",
+    "input-terraform": "infra_scraper.input.terraform.TerraformInput",
+    "storage-file": "infra_scraper.storage.file.FileStorage",
+    "output-raw": "infra_scraper.output.raw.RawOutput",
+    "output-enc": "infra_scraper.output.enc.EncOutput",
+    "output-vis": "infra_scraper.output.vis.VisOutput",
+    "output-vis-hier": "infra_scraper.output.vis.VisHierOutput",
+    "output-count": "infra_scraper.output.count.CountOutput"
+}

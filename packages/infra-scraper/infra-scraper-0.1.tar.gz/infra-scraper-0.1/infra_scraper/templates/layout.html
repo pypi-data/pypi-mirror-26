@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+Layout {{ name }}
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col s12 m9">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Endpoint {{ name }}</span>
+        <div id="visual-layout-wrapper" class="{{ layout }}">
+          <div id="visual-layout"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m3">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Topology</span>
+        <ul class="collection">
+          <li class="collection-item">Visual Layout<span class="badge">{{ layout|capitalize }}</span></li>
+          <li class="collection-item">Endpoint Type<span class="badge">{{ config.kind|capitalize }}</span></li>
+          <li class="collection-item">Resources<span class="badge" id="countResources">N/A</span></li>
+          <li class="collection-item">Relations<span class="badge" id="countRelations">N/A</span></li>
+        </ul>
+      </div>
+      <div class="card-action right-align">
+        <a href="/">Close</a>
+        <a href="./{{ layout }}">Update</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Resource</span>
+        <div id="resource-detail">
+          None selected
+        <div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+
+var selector = '#visual-layout';
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log('DOM loaded.');
+  var changeDetailBox = function (node) {
+    var detailBoxTemplate = '<ul class="collection">' +
+     '<li class="collection-item">Name<span class="badge">{name}</span></li>' +
+     '<li class="collection-item">Kind<span class="badge">{kind}</span></li>' +
+     '</ul>';
+    $('#resource-detail').html(detailBoxTemplate.formatTemplate({
+      name: node.name,
+      kind: node.kind
+    }));
+  };
+  {% if layout == 'hive' %}
+  var dataSource = "/api/{{ name }}";
+  d3.json(dataSource, function(data) {
+    $("#countResources").html(Object.keys(data.resources).length);
+    $("#countRelations").html(data.relations.length);
+    HivePlot.init(selector, data, {nodeClickFn: changeDetailBox, selector: selector});
+  });
+  {% elif layout == 'edge-bundle' %}
+  var dataSource = "/api/{{ name }}/hier";
+  new RelationalPlot.hierarchicalEdgeBundling(dataSource, selector, 60).init();
+  {% elif layout == 'tree-map' %}
+  var dataSource = "/api/{{ name }}/hier";
+  new RelationalPlot.treeMap(dataSource, selector, 60).init();
+  {% endif %}
+});
+
+</script>
+{% endblock %}
