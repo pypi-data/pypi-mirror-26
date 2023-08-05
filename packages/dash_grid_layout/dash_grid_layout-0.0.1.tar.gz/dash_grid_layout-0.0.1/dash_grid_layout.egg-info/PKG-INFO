@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: dash-grid-layout
+Version: 0.0.1
+Summary: Dash UI Component for using the React Grid Layout library
+Home-page: https://github.com/flightdataservices/dash-grid-layout.git
+Author: FlightDataServices
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
