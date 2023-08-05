@@ -1,0 +1,8 @@
+cookiecutter>=1.6
+docopt
+schema
+inquirer
+ruamel.yaml>=0.15
+gitpython
+clint
+py
