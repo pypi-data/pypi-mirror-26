@@ -1,0 +1,40 @@
+Metadata-Version: 2.0
+Name: valid8
+Version: 1.0.0
+Summary: Validate function input *values* (not types, there is PEP484 for that) with decorators.
+Home-page: https://github.com/smarie/python-valid8
+Author: Sylvain Marié
+Author-email: sylvain.marie@schneider-electric.com
+License: BSD 3-Clause
+Download-URL: https://github.com/smarie/python-valid8/tarball/1.0.0
+Keywords: decorate decorator arg input function contract value check valid validate validator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: decorator
+
+python-validate (valid8)
+========================
+
+|Build Status| |Tests Status| |codecov| |Documentation| |PyPI|
+
+An extensible library to validate function inputs with built-in or
+custom validators. Originally from the
+`autoclass <https://smarie.github.io/python-autoclass/>`__ project.
+
+.. |Build Status| image:: https://travis-ci.org/smarie/python-valid8.svg?branch=master
+   :target: https://travis-ci.org/smarie/python-valid8
+.. |Tests Status| image:: https://smarie.github.io/python-valid8/junit/junit-badge.svg?dummy=8484744
+   :target: https://smarie.github.io/python-valid8/junit/report.html
+.. |codecov| image:: https://codecov.io/gh/smarie/python-valid8/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/smarie/python-valid8
+.. |Documentation| image:: https://img.shields.io/badge/docs-latest-blue.svg
+   :target: https://smarie.github.io/python-valid8/
+.. |PyPI| image:: https://img.shields.io/badge/PyPI-valid8-blue.svg
+   :target: https://pypi.python.org/pypi/valid8/
+
+
