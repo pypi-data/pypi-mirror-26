@@ -1,0 +1,12 @@
+six
+futures
+regex
+path.py
+braceexpand
+pyexcel
+pyexcel-io
+pyexcel-xls
+pyexcel-xlsx
+psutil
+dateparser
+simplejson

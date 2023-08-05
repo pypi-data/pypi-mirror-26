@@ -1,0 +1,79 @@
+Metadata-Version: 1.2
+Name: sandpaper
+Version: 0.0.1
+Summary: Simplified table-type data normalization
+Home-page: https://github.com/stephen-bunn/sandpaper
+Author: Stephen Bunn
+Author-email: stephen@bunn.io
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: =========
+        SandPaper
+        =========
+        
+        Simplified table data normalization.
+        
+        |
+        
+        .. image:: https://readthedocs.org/projects/sandpaper/badge/?version=latest
+           :target: http://sandpaper.readthedocs.io/en/latest/?badge=latest
+           :alt: Documentation Status
+        
+        .. image:: https://travis-ci.org/stephen-bunn/sandpaper.svg?branch=master
+           :target: https://travis-ci.org/stephen-bunn/sandpaper
+           :alt: Build Status
+        
+        .. image:: https://codecov.io/gh/stephen-bunn/sandpaper/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/stephen-bunn/sandpaper
+           :alt: Code Coverage
+        
+        .. image:: https://requires.io/github/stephen-bunn/sandpaper/requirements.svg?branch=master
+           :target: https://requires.io/github/stephen-bunn/sandpaper/requirements/?branch=master
+           :alt: Requirements Status
+        
+        
+        Basic Usage
+        -----------
+        
+        Learn more by reading the `documentation <https://sandpaper.readthedocs.io/en/latest/>`_!
+        
+        
+        .. code:: python
+        
+            from sandpaper import SandPaper
+        
+            paper = SandPaper('my-sandpaper').strip(  # strip whitespace from column comment
+                column_filter=r'comment'
+            ).translate_text(                         # get group id from column group
+                column_filter=r'group',
+                from_regex=r'^group_(\d+)$',
+                to_format='{0}'
+            ).translate_date(                         # normalize date from column date
+                column_filter=r'date',
+                from_formats=['%Y-%m-%d', '%m-%d'],
+                to_format='%c'
+            )
+        
+            for result in s.apply('~/Downloads/exported_data.{1..3}.{csv,xls{,x}}'):
+                # apply sandpaper rules to all files matching the brace expanded glob given
+                print(result)
+        
+Keywords: normalization,csv,excel
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=2.7
