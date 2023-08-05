@@ -1,0 +1,17 @@
+dothub/__init__.py,sha256=kifBFCV3YjtMlWITd5zEMaBSRvHx3csrFBnPnvYF46c,279
+dothub/__main__.py,sha256=tGijyJcRCayKjs4eziQDQhApaQunO248y7hp-oH-g84,259
+dothub/_version.py,sha256=v0NTmSx9E_r4wWkO-UdvuH1fI3XtgjoFi5IbuPS9pjY,23
+dothub/cli.py,sha256=Q3Md8463kJsXyp3zdOTFOZqzZtTit1zq0jmD05Em4MU,9048
+dothub/config.py,sha256=onODW7J46EpVtgqgOjYdcWF5JA0gekuSHvW9MNXEDKA,1870
+dothub/dict_diff.py,sha256=lhthS7-BseXhhTjUwyLj-0E8o7wnOscaabL93t4hDpE,605
+dothub/github_helper.py,sha256=vhKfORkkq6AH5aneNzm9h-DYibcl5cabnriJVcEAhjY,3921
+dothub/organization.py,sha256=MizKLNh721oa0x-sANOmk_VSz5U-llFMfC7k6N3gna8,10482
+dothub/repository.py,sha256=Q9AnudWLjKh2oOjOWRRZ66fhhtyw2B3cC-c_8sM-mBc,6609
+dothub/utils.py,sha256=ucuOBbmbVVhnxOjS1jFNsJAx7A_wAx5fihk2Yddz6p0,5097
+dothub-0.16.4.dist-info/DESCRIPTION.rst,sha256=pxI0aDW8RnLxw9FJUBgfs41NYxD3Ue5o75zqJpTCBPg,3613
+dothub-0.16.4.dist-info/METADATA,sha256=oyLLr38o5bE5acH6s764IpOcyQuS-y2-N9A-uCY7pn4,4703
+dothub-0.16.4.dist-info/RECORD,,
+dothub-0.16.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dothub-0.16.4.dist-info/entry_points.txt,sha256=kW8lvqQS8XVWsn-XfakgMbvmItQp1nh_wSmjze-xViM,49
+dothub-0.16.4.dist-info/metadata.json,sha256=Eo7-xLniWIOzrZHr4sweh6He10rlvAk-7fgUN0QXpy4,1301
+dothub-0.16.4.dist-info/top_level.txt,sha256=-AOJ5eztN37h_r6JyBSfTbY-2mVian4CkNTji9z1JvA,7
