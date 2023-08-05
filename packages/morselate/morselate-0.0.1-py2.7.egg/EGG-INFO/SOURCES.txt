@@ -1,0 +1,9 @@
+README.md
+setup.py
+morselate/__init__.py
+morselate/__main__.py
+morselate/morselate.py
+morselate.egg-info/PKG-INFO
+morselate.egg-info/SOURCES.txt
+morselate.egg-info/dependency_links.txt
+morselate.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: morselate
+Version: 0.0.1
+Summary: Yet another morse encoder/decoder
+Home-page: https://github.com/SamambaMan/morselate
+Author: Felipe Ferreira
+Author-email: felipe.gomes.ferreira@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: # morselate
+        Yet another morse encoder/decoder
+        
+Keywords: morsecode morse
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
