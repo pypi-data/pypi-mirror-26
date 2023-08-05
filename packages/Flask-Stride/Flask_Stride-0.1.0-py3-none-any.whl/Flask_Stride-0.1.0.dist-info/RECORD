@@ -1,0 +1,10 @@
+Flask_Stride-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+Flask_Stride-0.1.0.dist-info/METADATA,sha256=GcL0OpNeysBv7KpOl2ey1G3LwDjStaPCHzG0WwH61zE,311
+Flask_Stride-0.1.0.dist-info/RECORD,,
+Flask_Stride-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+Flask_Stride-0.1.0.dist-info/metadata.json,sha256=Smt7gho_JuhH8yUf7yJydxT1SOVojULf_NbN5dvVRLg,536
+Flask_Stride-0.1.0.dist-info/top_level.txt,sha256=RIvHjE4dJCmsWTepbJX4bZZTEXOmkT-WIJk6meYur_Q,13
+flask_stride/__init__.py,sha256=s73Oc8_2U6i6LviPw5pvG1Wq0Otn64ZhscH1bnahDJE,34
+flask_stride/chatbot.py,sha256=o46bTWxzG5T4qmoN8GI_AVC0uV3PA4zbxcDM8QeMmNk,301
+flask_stride/flask_stride.py,sha256=SEdv6K6NsXFIo814DtlXe6UP9OSvUWJ_x6BrrZacoEM,440
+flask_stride/module.py,sha256=a4r6_Hf8hrhzPmJh8qt70UCvyt0zX4b96wMo0u2PkVA,372
