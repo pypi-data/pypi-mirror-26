@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: XPandas
+Version: 1.0.2
+Summary: 1d/2d data container with map-reduce transformers
+Home-page: https://github.com/alan-turing-institute/xpandas
+Author: Vitaly Davydov (@iwitaly)
+Author-email: 1061040@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: data container sklearn pandas map reduce transformer
+Platform: UNKNOWN
