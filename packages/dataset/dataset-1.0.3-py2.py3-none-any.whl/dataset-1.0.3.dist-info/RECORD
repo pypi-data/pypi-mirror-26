@@ -1,0 +1,12 @@
+dataset/__init__.py,sha256=pgVCMw8xnao76_YMk3yjh6NSX3FUZH9FXk5_0Z7GXs8,1941
+dataset/database.py,sha256=JmlrfjGQpCBPfh-brOIa8XkMKE8IBb1tcnpnNuqohs4,9166
+dataset/table.py,sha256=q8cdGk6dWxEKeqqJE_8FBuQ3BANRE_xyNasKbX2I75s,20686
+dataset/types.py,sha256=VQKL7SUJcM0Lfsp0liPcEr8JBvUbhPWlJUk59fGS1kU,1109
+dataset/util.py,sha256=R9jA4nUvBfb_D_MjqR8ILNtT--w7oL2HxW3wsxvDNss,2811
+dataset-1.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dataset-1.0.3.dist-info/METADATA,sha256=qtSHUuKCHhL48w3xoxZjr-kUt7Q-sz2opgFl4YLGQ8A,928
+dataset-1.0.3.dist-info/RECORD,,
+dataset-1.0.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dataset-1.0.3.dist-info/metadata.json,sha256=BBXn4IQ4WSAdZ1SRlYT3fsZz7X7oIZwVb4vlVEiM_sw,1107
+dataset-1.0.3.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dataset-1.0.3.dist-info/top_level.txt,sha256=azD5Wy9MBv9bfMbTscYXdFdDxcIUlm2bl46qT0i1ra4,8
