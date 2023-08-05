@@ -1,0 +1,3 @@
+[console_scripts]
+codenamegenerator = codenamegenerator:__main__
+
