@@ -1,0 +1,8 @@
+setup.py
+autodiff/AdFloat.c
+autodiff/AdFloat_py.py
+autodiff/__init__.py
+autodiff.egg-info/PKG-INFO
+autodiff.egg-info/SOURCES.txt
+autodiff.egg-info/dependency_links.txt
+autodiff.egg-info/top_level.txt
