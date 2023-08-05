@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: iter8
+Version: 0.0.3
+Summary: More itertools
+Home-page: https://github.com/chbrown/iter8
+Author: Christopher Brown
+Author-email: io@henrian.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ``iter8``
+        =========
+        
+        |PyPI version|
+        
+        More ``itertools``!
+        
+        Install:
+        
+        ::
+        
+            pip install -U iter8
+        
+        License
+        -------
+        
+        Copyright (c) 2015-2017 Christopher Brown. `MIT
+        Licensed <https://raw.github.com/chbrown/iter8/master/LICENSE.txt>`__.
+        
+        .. |PyPI version| image:: https://badge.fury.io/py/iter8.svg
+           :target: https://pypi.python.org/pypi/iter8
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: General
