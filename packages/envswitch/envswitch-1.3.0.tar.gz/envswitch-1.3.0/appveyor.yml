@@ -1,0 +1,143 @@
+environment:
+
+  matrix:
+    # Unfortunately this does not work with miniconda 32 bit: resulting cx_freeze still contains 64/32
+#    - PYTHON_VERSION: "3.5"
+#      PYTHON: "C:\\Python35"
+#      MINICONDA: "C:\\Miniconda35"
+    - PYTHON_VERSION: "3.6"
+      MINICONDA: "C:\\Miniconda35-x64"
+      QT_DIR: "Qt5.6.3"
+      QT_ARCHIVE: Qt5.6.3_lgpl_minimal-Windows-x86_64-MinGW64
+      QT_URL: https://github.com/smarie/PyQt5-minimal/releases/download/0.2.0/Qt5.6.3_lgpl_minimal-Windows-x86_64-MinGW64.tar.gz
+      PYQT_DIR: "PyQt5"
+      PYQT_ARCHIVE: PyQt5.6_gpl_py3.6_minimal-Windows-x86_64-MinGW64
+      PYQT_URL: https://github.com/smarie/PyQt5-minimal/releases/download/0.2.0/PyQt5.6_gpl_py3.6_minimal-Windows-x86_64-MinGW64.tar.gz
+      # this version of pyqt is built using msys2/mingw64, it is therefore required on the path
+      MSYS2_DIR: "C:\\msys64"
+      MSYSTEM: MINGW64
+
+init:
+  - "ECHO %PYTHON_VERSION% %MINICONDA%"
+
+# **** Miniconda version ****
+install:
+  # we will need to put git first in path later on
+  - where git
+
+  # (a) setup msys2+mingw 64 (caching MSYS2 takes more time than installing it)
+  - echo "Setting up msys2 mingw 64 environment" & call ./ci_tools/setup_msys.bat
+  # make sure that the first git on the path is still the original one, otherwise setuptools_scm wont work
+  - "set PATH=C:\\Program Files\\Git\\cmd;%PATH%"
+
+  # (b) setup conda, see  https://www.appveyor.com/docs/build-environment/#miniconda and http://help.appveyor.com/discussions/questions/6802-appveyor-with-conda
+  - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%PATH%"
+  - conda config --set always_yes yes --set changeps1 no
+  # - conda update -q conda NO !!!!  #  conda info -a  # Use this to debug conda
+  # - conda env create -f "ci_tools/conda_env.yml" -n envswitch >> lets try differently
+
+  # (b2) base conda environment
+  - conda create -n envswitch python=%PYTHON_VERSION%
+  - activate envswitch
+  - conda install "sip" "pip>=9.0.1" "setuptools=36" -q
+  - conda install pypandoc pywin32 pytest -q
+
+  # (c) Install Qt in %APPVEYOR_BUILD_FOLDER%/%QT_DIR%
+  - cd "%APPVEYOR_BUILD_FOLDER%/.."  # in windows PyQt does not depend on absolute path against qt, just dynamic PATH
+  - echo "Downlading Qt" & appveyor DownloadFile %QT_URL% -FileName %QT_ARCHIVE%.tar.gz
+  - echo "Extracting Qt 1/2" & 7z x %QT_ARCHIVE%.tar.gz > nul
+  - echo "Extracting Qt 2/2" & 7z x %QT_ARCHIVE%.tar > nul
+  - echo "Adding Qt to PATH"
+  - "set PATH=%APPVEYOR_BUILD_FOLDER%\\..\\%QT_DIR%\\bin;%PATH%"
+  - "dir %APPVEYOR_BUILD_FOLDER%\\..\\%QT_DIR%\\bin"
+  - cd %APPVEYOR_BUILD_FOLDER%
+
+  # (d) Install PyQt5-minimal
+  - cd "%APPVEYOR_BUILD_FOLDER%/.."
+  - echo "Downlading PyQt5-Minimal" & appveyor DownloadFile %PYQT_URL% -FileName %PYQT_ARCHIVE%.tar.gz
+  - echo "Extracting PyQt5-Minimal 1/2" & 7z x %PYQT_ARCHIVE%.tar.gz > nul
+  - echo "Extracting PyQt5-Minimal 2/2" & 7z x %PYQT_ARCHIVE%.tar > nul
+  # new fast way: now simply move the folder in the right place
+  - "MOVE %PYQT_DIR% %MINICONDA%\\envs\\envswitch\\Lib\\site-packages"
+  # We cannot use 'mingw32-make install' because this is the version without the src, from https://github.com/smarie/PyQt5-minimal
+  - "set PYQT_INSTALL_DIR=%MINICONDA%\\envs\\envswitch\\Lib\\site-packages\\PyQt5"
+#  - echo "Installing PyQt5 package from %PYQT_DIR% to %PYQT_INSTALL_DIR%"
+#  - mkdir "%PYQT_INSTALL_DIR%" & cd "%PYQT_DIR%"
+#    # the for loop seems to include the following lines when this is all in the same command. Splitting.
+#  - echo "copy all interesting files *.pyi *.pyd"
+#  - for /r %%i in (*pyi *pyd) do xcopy /Y "%%i" "%PYQT_INSTALL_DIR%"
+#  - echo "copy __init__.py"
+#  - xcopy /Y .\__init__.py %PYQT_INSTALL_DIR%
+  - dir %PYQT_INSTALL_DIR%
+  - cd %APPVEYOR_BUILD_FOLDER%
+
+  # (e) All other python dependencies
+  - pip install -r ci_tools/requirements-test.txt
+  - pip install -r ci_tools/requirements-setup.txt
+  - pip install -r ci_tools/requirements-report.txt
+  - pip install -r ci_tools/requirements-doc.txt
+#  - conda list cx-Freeze
+  - pip install .
+
+build: off
+
+test_script:
+  # Put your test command here.
+  # If you don't need to build C extensions on 64-bit Python 3.3 or 3.4,
+  # you can remove "build.cmd" from the front of the command, as it's
+  # only needed to support those cases.
+  # Note that you must use the environment variable %PYTHON% to refer to
+  # the interpreter you're using - Appveyor does not do anything special
+  # to put the Python version you want to use on PATH.
+  # - "%PYTHON%\\python.exe setup.py test"
+  # - python setup.py test
+
+  # we use the -m "not skip_in_ci" to disable some tests that fail mysteriously
+  - pytest -m "not skip_in_ci" --junitxml=reports/junit/junit.xml --html=reports/junit/report.html --cov-report term-missing --cov=./envswitch -v envswitch/tests/
+
+after_test:
+  # ***packaging for releases***
+  # (a) source and wheel for PyPi >> this is already done in travis
+  # - "build.cmd %PYTHON%\\python.exe setup.py sdist bdist_wheel"
+
+  # (b) dist for github release
+  - python setup_cx_app.py build
+  # rename dist folder
+  - set /p VER=<VERSION__
+  - cd build
+  - for /D %%A IN (*) DO REN "%%~fA" "envswitch-%VER%-%%~nA%%~xA"
+  - cd ..
+
+  # (c) installer for github release
+  - python setup_cx_app.py bdist_msi
+
+  # ***reporting >> this is already done in travis ***
+  # ***documentation >> this is already done in travis ***
+
+artifacts:
+  # bdist_wheel puts your built wheel in the dist directory
+  - path: 'build\envswitch-%VER%-exe.win-amd64-%PYTHON_VERSION%'
+    type: zip
+
+  - path: 'build\envswitch-%VER%-exe.win32-%PYTHON_VERSION%'
+    type: zip
+
+  - path: dist\*
+
+on_success:
+#  You can use this step to upload your artifacts to a public website.
+#  See Appveyor's documentation for more details. Or you can simply
+#  access your wheels from the Appveyor "artifacts" tab for your build.
+
+deploy:
+  # release: myproduct-v$(appveyor_build_version)
+  description: ''
+  provider: GitHub
+  auth_token:
+    secure: 'SYd5+MMCyCHhSsQ8ZLPnbBC0KbUv/DVDUFTkdCkYd+wJCa2lsxo9w0HzA8Zg11iG' # encrypted token from GitHub
+  # artifact: /.*\.nupkg/            # upload all
+  draft: false
+  prerelease: false
+  on:
+    branch: master                 # release from master branch only
+    appveyor_repo_tag: true        # deploy on tag push only
