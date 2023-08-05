@@ -1,0 +1,129 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-10-17 11:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.calltoaction\n"
+
+#: ../browser/controlpanel.py:16
+#: ../profiles/default/controlpanel.xml
+msgid "Call to action settings"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:103
+msgid "Checking this option means everyone will get to see the new overlay. When not checked, visitors who have already seen the overlay will not see it again."
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:83
+msgid "Form"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:62
+msgid "Image"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:69
+msgid "Image size"
+msgstr ""
+
+#: ../configure.zcml:47
+msgid "Installs the collective.calltoaction add-on."
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:95
+msgid "Milliseconds until overlay"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:56
+msgid "Portlet header"
+msgstr ""
+
+#: ../interfaces.py:17
+msgid "Show always, even when already seen"
+msgstr ""
+
+#: ../interfaces.py:29
+msgid "Show global action"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:77
+msgid "Show image tilted"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:90
+msgid "Text"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:70
+msgid "The height and width in pixels. The image will be scaled to fit within the given height and width."
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:96
+msgid "The number of milliseconds we wait before showing the overlay."
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:91
+msgid "The text to render"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:102
+msgid "This is a new call to action"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:57
+msgid "Title of the rendered portlet"
+msgstr ""
+
+#: ../portlets/calltoactionportlet.py:78
+msgid "When checked the image will be displayed titled 7 degrees"
+msgstr ""
+
+#: ../configure.zcml:47
+msgid "collective.calltoaction"
+msgstr ""
+
+#: ../configure.zcml:54
+msgid "collective.calltoaction testfixture"
+msgstr ""
+
+#. Default: "This is handy when you are experimenting or developing. Otherwise you would need to clear your cookies or mark the portlet as a new version each time you change something."
+#: ../interfaces.py:18
+msgid "description_always_show"
+msgstr ""
+
+#. Default: "A portlet which displays a call to action overlay after waiting for some seconds."
+#: ../portlets/calltoactionportlet.py:301
+msgid "description_calltoaction_portlet"
+msgstr ""
+
+#. Default: "This looks for a portlet in the navigation root, which usually is the portal root. It shows it on every page. The timeout before showing the call to action, is calculated from the first page visit. The time spent on the site so far is stored on a cookie."
+#: ../interfaces.py:30
+msgid "description_global_action"
+msgstr ""
+
+#. Default: "Add call to action portlet"
+#: ../portlets/calltoactionportlet.py:298
+msgid "title_add_calltoaction_portlet"
+msgstr ""
+
+#. Default: "Call to action portlet"
+#: ../portlets/calltoactionportlet.py:117
+msgid "title_call_to_action_portlet"
+msgstr ""
+
+#. Default: "Edit call to action portlet"
+#: ../portlets/calltoactionportlet.py:322
+msgid "title_edit_calltoaction_portlet"
+msgstr ""

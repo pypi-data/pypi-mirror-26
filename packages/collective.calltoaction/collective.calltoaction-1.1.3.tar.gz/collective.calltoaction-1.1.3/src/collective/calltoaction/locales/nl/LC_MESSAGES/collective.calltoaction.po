@@ -1,0 +1,127 @@
+# Maurits van Rees <m.van.rees@zestsoftware.nl>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.calltoaction 1.0\n"
+"POT-Creation-Date: 2017-10-17 11:45+0000\n"
+"PO-Revision-Date: 2016-04-01 17:19+0200\n"
+"Last-Translator: Maurits van Rees <m.van.rees@zestsoftware.nl>\n"
+"Language-Team: Zest Software <info@zestsoftware.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Nederlands\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.calltoaction\n"
+
+#: ../browser/controlpanel.py:16
+#: ../profiles/default/controlpanel.xml
+msgid "Call to action settings"
+msgstr "Call-to-action instellingen"
+
+#: ../portlets/calltoactionportlet.py:103
+msgid "Checking this option means everyone will get to see the new overlay. When not checked, visitors who have already seen the overlay will not see it again."
+msgstr "Als deze optie is ingeschakeld, krijgt iedereen de nieuwe overlay te zien. Anders krijgen bezoekers die de overlay al een keer gezien hebben hem niet opnieuw te zien."
+
+#: ../portlets/calltoactionportlet.py:83
+msgid "Form"
+msgstr "Formulier"
+
+#: ../portlets/calltoactionportlet.py:62
+msgid "Image"
+msgstr "Afbeelding"
+
+#: ../portlets/calltoactionportlet.py:69
+msgid "Image size"
+msgstr "Breedte Afbeelding"
+
+#: ../configure.zcml:47
+msgid "Installs the collective.calltoaction add-on."
+msgstr "Installeert de collective.calltoaction add-on."
+
+#: ../portlets/calltoactionportlet.py:95
+msgid "Milliseconds until overlay"
+msgstr "Milliseconden vertraging voor tonen overlay"
+
+#: ../portlets/calltoactionportlet.py:56
+msgid "Portlet header"
+msgstr "Header"
+
+#: ../interfaces.py:17
+msgid "Show always, even when already seen"
+msgstr "Altijd tonen"
+
+#: ../interfaces.py:29
+msgid "Show global action"
+msgstr "Toon als globale actie."
+
+#: ../portlets/calltoactionportlet.py:77
+msgid "Show image tilted"
+msgstr "Toon afbeelding schuin"
+
+#: ../portlets/calltoactionportlet.py:90
+msgid "Text"
+msgstr "Tekst"
+
+#: ../portlets/calltoactionportlet.py:70
+msgid "The height and width in pixels. The image will be scaled to fit within the given height and width."
+msgstr "De breedte van de afbeelding in pixels. De afbeelding zal geschaald worden naar deze grootte."
+
+#: ../portlets/calltoactionportlet.py:96
+msgid "The number of milliseconds we wait before showing the overlay."
+msgstr "Het aantal milliseconden dat we wachten met het tonen van de overlay."
+
+#: ../portlets/calltoactionportlet.py:91
+msgid "The text to render"
+msgstr "De tekst onder de afbeelding"
+
+#: ../portlets/calltoactionportlet.py:102
+msgid "This is a new call to action"
+msgstr "Reset the call-to-action"
+
+#: ../portlets/calltoactionportlet.py:57
+msgid "Title of the rendered portlet"
+msgstr "Titel van de call-to-action"
+
+#: ../portlets/calltoactionportlet.py:78
+msgid "When checked the image will be displayed titled 7 degrees"
+msgstr "Indien aangevinkt wordt de afbeelding getoond in een hoek van 7 graden."
+
+#: ../configure.zcml:47
+msgid "collective.calltoaction"
+msgstr "collective.calltoaction"
+
+#: ../configure.zcml:54
+msgid "collective.calltoaction testfixture"
+msgstr "collective.calltoaction testfixture"
+
+#. Default: "This is handy when you are experimenting or developing. Otherwise you would need to clear your cookies or mark the portlet as a new version each time you change something."
+#: ../interfaces.py:18
+msgid "description_always_show"
+msgstr "Tijdens het opzetten van de call-to-action, kun je deze optie aanvinken om de banner nog een keer te tonen. "
+
+#. Default: "A portlet which displays a call to action overlay after waiting for some seconds."
+#: ../portlets/calltoactionportlet.py:301
+msgid "description_calltoaction_portlet"
+msgstr "Een portlet die na een aantal seconden een call-to-action toont in een overlay."
+
+#. Default: "This looks for a portlet in the navigation root, which usually is the portal root. It shows it on every page. The timeout before showing the call to action, is calculated from the first page visit. The time spent on the site so far is stored on a cookie."
+#: ../interfaces.py:30
+msgid "description_global_action"
+msgstr "Als deze optie is ingeschakeld wordt de call-to-action, na de ingestelde vertraging, getoond ongeacht welke pagina de bezoeker op dat moment ook bekijkt."
+
+#. Default: "Add call to action portlet"
+#: ../portlets/calltoactionportlet.py:298
+msgid "title_add_calltoaction_portlet"
+msgstr "Call-to-action toevoegen"
+
+#. Default: "Call to action portlet"
+#: ../portlets/calltoactionportlet.py:117
+msgid "title_call_to_action_portlet"
+msgstr "Call-to-action"
+
+#. Default: "Edit call to action portlet"
+#: ../portlets/calltoactionportlet.py:322
+msgid "title_edit_calltoaction_portlet"
+msgstr "Bewerk call-to-action"
