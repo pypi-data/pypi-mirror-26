@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: unicorm
+Version: 0.0.1
+Summary: A simple asynchronous ORM
+Home-page: https://github.com/LordFeratum/UnicORM
+Author: Enrique Piña Monserrat
+Author-email: lord.feratum@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/LordFeratum/UnicORM/archive/0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: async,orm,mysql
+Platform: UNKNOWN
