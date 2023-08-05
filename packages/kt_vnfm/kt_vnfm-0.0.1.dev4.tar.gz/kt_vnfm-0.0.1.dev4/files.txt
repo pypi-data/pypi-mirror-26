@@ -1,0 +1,9 @@
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/dependency_links.txt
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/pbr.json
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/top_level.txt
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/requires.txt
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/entry_points.txt
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/not-zip-safe
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/SOURCES.txt
+/usr/local/lib/python2.7/dist-packages/kt_vnfm_axgate-0.0.1.dev3.egg-info/PKG-INFO
+/usr/local/bin/kt_vnfm_axgate

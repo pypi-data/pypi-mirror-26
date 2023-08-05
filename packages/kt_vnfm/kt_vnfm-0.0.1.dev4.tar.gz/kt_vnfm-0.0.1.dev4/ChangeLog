@@ -1,0 +1,8 @@
+CHANGES
+=======
+
+* update for packaging
+* implement get\_sw\_version for VPN
+* ADD README + update setup.cfg
+* Initial commit
+* Initial commit

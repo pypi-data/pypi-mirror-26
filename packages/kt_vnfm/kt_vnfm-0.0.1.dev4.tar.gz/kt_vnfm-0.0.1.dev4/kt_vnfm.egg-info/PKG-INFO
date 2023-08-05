@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: kt-vnfm
+Version: 0.0.1.dev4
+Summary: AxGate VNF Manager for kt SDDC
+Home-page: http://www.kt.com/
+Author: Namgon Kim
+Author-email: ng.kim@kt.com
+License: Apache-2
+Description: AxGate VPN VNF Manager
+        
+        
+Keywords: setup
+distutils
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
