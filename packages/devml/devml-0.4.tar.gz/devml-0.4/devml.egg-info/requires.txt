@@ -1,0 +1,7 @@
+pandas
+click
+PyGithub
+gitpython
+sensible
+scipy
+numpy
