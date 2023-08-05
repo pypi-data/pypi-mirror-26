@@ -1,0 +1,27 @@
+# temporary until pystun creates a new release
+git+https://github.com/konradkonrad/pystun@develop#egg=pystun
+# temporary until new version of pyethereum is released, that supports interfaces
+git+https://github.com/LefterisJP/pyethereum@take_solidity_interface_into_account#egg=ethereum
+
+tinyrpc[gevent,httpclient,jsonext,websocket,wsgi]
+pysha3
+ipython<5.0.0
+rlp>=0.4.3,<0.6.0
+coincurve==4.5.1
+pycryptodome>=3.4.3
+miniupnpc
+networkx>=2.0.0
+ethereum-serpent
+repoze.lru
+gevent-websocket==0.9.4
+cachetools>=2.0.0,<3.0.0
+Flask>=0.11.1
+flask-restful
+webargs
+marshmallow_polyfield==3.0
+Flask-Cors==3.0.2
+pytest>=3.0.4
+psutil
+filelock
+netifaces
+ipaddress
