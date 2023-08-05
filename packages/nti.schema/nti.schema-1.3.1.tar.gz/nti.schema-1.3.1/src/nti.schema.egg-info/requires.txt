@@ -1,0 +1,15 @@
+Acquisition
+nti.i18n
+six
+setuptools
+zope.event
+zope.schema
+zope.i18n
+zope.i18nmessageid
+zope.vocabularyregistry
+zope.deferredimport
+
+[test]
+pyhamcrest
+nti.testing
+zope.testrunner
