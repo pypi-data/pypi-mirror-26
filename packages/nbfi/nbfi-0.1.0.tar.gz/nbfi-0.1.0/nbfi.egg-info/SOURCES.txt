@@ -1,0 +1,8 @@
+README.md
+setup.py
+nbfi/__init__.py
+nbfi/__main__.py
+nbfi.egg-info/PKG-INFO
+nbfi.egg-info/SOURCES.txt
+nbfi.egg-info/dependency_links.txt
+nbfi.egg-info/top_level.txt
