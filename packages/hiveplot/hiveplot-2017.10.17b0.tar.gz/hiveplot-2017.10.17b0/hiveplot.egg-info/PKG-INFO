@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: hiveplot
+Version: 2017.10.17b0
+Summary: Hive plots in Python!
+Home-page: https://github.com/ericmjl/hiveplot
+Author: Eric J. Ma
+Author-email: ericmajinglong@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: A utility for making hive plots in matplotlib.
+Keywords: network visualization,matplotlib,hiveplot
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Visualization
