@@ -1,0 +1,6 @@
+setup.py
+steamid/__init__.py
+steamid.egg-info/PKG-INFO
+steamid.egg-info/SOURCES.txt
+steamid.egg-info/dependency_links.txt
+steamid.egg-info/top_level.txt
