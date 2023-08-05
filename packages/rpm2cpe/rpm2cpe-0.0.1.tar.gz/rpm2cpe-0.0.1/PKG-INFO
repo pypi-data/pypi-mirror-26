@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: rpm2cpe
+Version: 0.0.1
+Summary: Tool to correlate RPM's with CVE's.
+Home-page: https://github.com/fedoraredteam/rpm2cpe
+Author: Kenneth Evensen
+Author-email: kevensen@redhat.com
+License: GPLv3
+Download-URL: https://github.com/fedoraredteam/rpm2cpe/archive/0.0.1.zip
+Description: UNKNOWN
+Keywords: cpe,rpm
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
