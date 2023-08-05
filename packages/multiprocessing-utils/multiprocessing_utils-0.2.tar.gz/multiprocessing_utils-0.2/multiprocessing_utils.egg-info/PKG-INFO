@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: multiprocessing-utils
+Version: 0.2
+Summary: Multiprocessing utils (shared locks and thread locals)
+Home-page: https://github.com/daggaz/python-multiprocessing-utils
+Author: Jamie Cockburn and Andrew Binnie
+Author-email: jamie_cockburn@hotmail.co.uk
+License: MIT
+Description: # python-multiprocessing-utils
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
