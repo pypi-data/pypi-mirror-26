@@ -1,0 +1,23 @@
+{
+    "data_files": [
+        [
+            "",
+            [
+                "manconfig.json",
+                "manconfig.py"
+            ]
+        ]
+    ],
+    "dependancies": [
+        "click==6.*",
+        "pygments==2.*"
+    ],
+    "package_data": {
+        "configlib": [
+            "version"
+        ]
+    },
+    "packages": [
+        "configlib"
+    ]
+}
