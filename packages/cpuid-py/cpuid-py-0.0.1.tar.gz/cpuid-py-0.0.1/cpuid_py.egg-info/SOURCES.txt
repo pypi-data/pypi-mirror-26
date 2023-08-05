@@ -1,0 +1,8 @@
+README.rst
+cpuid.py
+setup.py
+cpuid_py.egg-info/PKG-INFO
+cpuid_py.egg-info/SOURCES.txt
+cpuid_py.egg-info/dependency_links.txt
+cpuid_py.egg-info/requires.txt
+cpuid_py.egg-info/top_level.txt
