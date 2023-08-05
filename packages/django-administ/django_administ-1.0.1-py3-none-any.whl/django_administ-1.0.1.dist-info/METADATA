@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: django-administ
+Version: 1.0.1
+Summary: A simple way to protect your error trace message
+Home-page: https://github.com/bunseokbot/administ
+Author: bunseokbot
+Author-email: bunseokbot@gmail.com
+License: Apache License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3
+
+UNKNOWN
+
+
