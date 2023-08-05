@@ -1,0 +1,10 @@
+keras_trainer/__init__.py,sha256=WSzxaL4aAuiLPQDf8r_50Kp114u7sXvLO5KV_NJVkAU,55
+keras_trainer/parallel.py,sha256=kCmkw1KHGrB3eyEHtx5JPuSSX6Z7I8TNNbUrJC6EKRc,2796
+keras_trainer/run.py,sha256=lFdcM424GBTIAo7DyUMxnnV_0ucKWaJYzx_cakqxEeM,1047
+keras_trainer/trainer.py,sha256=hlRypBorPBYjcuHUvWrfPMTUi5PdUXl-5cDZGaf815s,7539
+keras_trainer-0.0.7.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+keras_trainer-0.0.7.dist-info/METADATA,sha256=tJqtJhnTjtQORIm-tN_KU2IjJ4MGSZjAiK5XXrOnTyE,355
+keras_trainer-0.0.7.dist-info/RECORD,,
+keras_trainer-0.0.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+keras_trainer-0.0.7.dist-info/metadata.json,sha256=DZJcQvX9uHw6CmFT4BVNZTbpZ_PyQYdZe3gkLUQFzEs,509
+keras_trainer-0.0.7.dist-info/top_level.txt,sha256=kic6RB9js8Fkzb1zvRudWqOiFGmA0XqYJmGtxXg-YHc,14
