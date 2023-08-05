@@ -1,0 +1,13 @@
+django_includes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_includes/_version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+django_includes/jinja2.py,sha256=AaSvR8qUg5HNrwRk5Re4F5hf2Umv4_omPUMnGVsFgb0,3263
+django_includes/middleware.py,sha256=G3L2mUXO39P0LZdTw-FPWDK8WO1HOG_IMPe9f4cFXz0,1306
+django_includes/settings.py,sha256=r-HQamI0kWSEz4VrB7d-XAx6zyUBFuL5fjHImCTzB8o,23
+django_includes/utils.py,sha256=PFobP0I9UZcyGg9tL7y3QI9n3Mg1Mt4PzysMeYccVQ8,357
+django_includes/views.py,sha256=Jrgxww9lsylBHobv2ymlnV2xoVfV5XiXnLuSy9Cxg8o,2899
+django_includes-0.2.0.dist-info/DESCRIPTION.rst,sha256=SNUbOi6CfuGv-1z9ge-TuYPC0JICcKnvIo3DGhelAV0,1162
+django_includes-0.2.0.dist-info/METADATA,sha256=pxpqVVSBiAI22dE1lTGvk-nq09mvVHEJ7NlxAPnxQBY,1971
+django_includes-0.2.0.dist-info/RECORD,,
+django_includes-0.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+django_includes-0.2.0.dist-info/metadata.json,sha256=3t2RaycaVEIIbQ2jAIxgOYCY63Wufp_W0cCYxu0htbc,926
+django_includes-0.2.0.dist-info/top_level.txt,sha256=hr-0-Rmd-dgchqszkyV_m-9WbN7KD4YB2qSRCBjjIao,16
