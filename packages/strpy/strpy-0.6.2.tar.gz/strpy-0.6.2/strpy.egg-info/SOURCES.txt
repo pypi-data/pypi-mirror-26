@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+strpy/__init__.py
+strpy.egg-info/PKG-INFO
+strpy.egg-info/SOURCES.txt
+strpy.egg-info/dependency_links.txt
+strpy.egg-info/requires.txt
+strpy.egg-info/top_level.txt
