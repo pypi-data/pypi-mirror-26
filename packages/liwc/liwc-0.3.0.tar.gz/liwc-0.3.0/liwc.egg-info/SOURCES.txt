@@ -1,0 +1,8 @@
+README.rst
+setup.py
+liwc/__init__.py
+liwc.egg-info/PKG-INFO
+liwc.egg-info/SOURCES.txt
+liwc.egg-info/dependency_links.txt
+liwc.egg-info/top_level.txt
+liwc.egg-info/zip-safe
