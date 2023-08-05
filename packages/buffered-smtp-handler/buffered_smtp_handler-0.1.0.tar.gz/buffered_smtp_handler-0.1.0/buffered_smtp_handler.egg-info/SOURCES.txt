@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+requirements-dev.txt
+setup.py
+buffered_smtp_handler.egg-info/PKG-INFO
+buffered_smtp_handler.egg-info/SOURCES.txt
+buffered_smtp_handler.egg-info/dependency_links.txt
+buffered_smtp_handler.egg-info/namespace_packages.txt
+buffered_smtp_handler.egg-info/top_level.txt
+pierky/__init__.py
+pierky/buffered_smtp_handler/__init__.py
+pierky/buffered_smtp_handler/version.py
+tests/test_lib.py
