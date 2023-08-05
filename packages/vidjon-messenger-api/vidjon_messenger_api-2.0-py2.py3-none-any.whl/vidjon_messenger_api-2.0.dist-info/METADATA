@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: vidjon-messenger-api
+Version: 2.0
+Summary: A simple API for sending and receiving messages with a registered user.
+Home-page: https://github.com/vidjon/messenger_v2
+Author: Vidar Jonsson
+Author-email: vidjon@gmail.com
+License: UNKNOWN
+Keywords: messenger_api,vidjon
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: flask
+Requires-Dist: flask-jwt
+Requires-Dist: flask-restplus
+Requires-Dist: flask-sqlalchemy
+
+UNKNOWN
+
+

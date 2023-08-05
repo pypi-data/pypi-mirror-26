@@ -1,0 +1,3 @@
+[console_scripts]
+vidjon_messenger_api = vidjon_messenger_api.app:main
+
