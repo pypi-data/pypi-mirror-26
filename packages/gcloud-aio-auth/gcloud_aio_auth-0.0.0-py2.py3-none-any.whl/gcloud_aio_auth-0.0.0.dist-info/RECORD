@@ -1,0 +1,13 @@
+gcloud_aio_auth-0.0.0-py3.6-nspkg.pth,sha256=bGEMtsEE-ubFTc0BV5U-qVH5QmXIvfU27SFd22s6zBk,1686
+gcloud/aio/auth/__init__.py,sha256=lOjmP-uTDV8cbdLN6nCk5PsqS_rsBFzozV8ARUS_-wI,178
+gcloud/aio/auth/auth.py,sha256=RZR5rR7X2bstiJDKtJATUizdmJYAzetQ6D2LQMNucDk,4550
+gcloud_aio_auth-0.0.0.dist-info/DESCRIPTION.rst,sha256=qSRDmqAicaOz8hvUSvlfhl-3RRHSUr6-4y4n4WSuddo,191
+gcloud_aio_auth-0.0.0.dist-info/METADATA,sha256=vNsc44_DOYX0FBLEBtlkrsoTOZf8xo8v4Ol84P54v3o,888
+gcloud_aio_auth-0.0.0.dist-info/RECORD,,
+gcloud_aio_auth-0.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gcloud_aio_auth-0.0.0.dist-info/metadata.json,sha256=k5S_oHVdQO-CUHh1RVfIopdyzAxi4AHA0l6hKt-ZDjo,864
+gcloud_aio_auth-0.0.0.dist-info/namespace_packages.txt,sha256=-g45M0lNSIP1YnGVZdmhV1skM4SizE4Y8TV1arz1_38,18
+gcloud_aio_auth-0.0.0.dist-info/top_level.txt,sha256=sox9WnuebKsnnDxekC1Pd7Q7wUz_DL8DRjlHhthn-ik,13
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/auth_test.py,sha256=w9qhJ-EP9VWcSJGmOfT4H9fgG2SwGUnLnYYs_Mqezgk,110

@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: gcloud-aio-auth
+Version: 0.0.0
+Summary: Auth Helpers for Asyncio Google Cloud Library
+Home-page: https://github.com/jomido/gcloud-aio
+Author: Jonathan Dobson
+Author-email: jon.m.dobson@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Requires-Dist: aiohttp (<2.0.0,>=1.0.0)
+Requires-Dist: gcloud-aio-core (<1.0.0,>=0.0.0)
+Requires-Dist: pyjwt (<2.0.0,>=1.5.3)
+
+Auth Helpers for Asyncio Google Cloud Library
+=============================================
+
+Installation
+------------
+
+.. code-block:: console
+
+    $ pip install --upgrade gcloud-aio-auth
+
+
