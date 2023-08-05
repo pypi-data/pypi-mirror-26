@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: gcloud-aio-core
+Version: 0.0.0
+Summary: Core Helpers for Asyncio Google Cloud Library
+Home-page: https://github.com/jomido/gcloud-aio
+Author: Jonathan Dobson
+Author-email: jon.m.dobson@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Core Helpers for Asyncio Google Cloud Library
+        =============================================
+        
+        Installation
+        ------------
+        
+        .. code-block:: console
+        
+            $ pip install --upgrade gcloud-aio-core
+        
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
