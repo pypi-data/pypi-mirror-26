@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST
+README.rst
+requirements.txt
+setup.py
+crawl_requests/__init__.py
+crawl_requests/req.py
+crawl_requests/config.py
