@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+nbcollate.egg-info/PKG-INFO
+nbcollate.egg-info/SOURCES.txt
+nbcollate.egg-info/dependency_links.txt
+nbcollate.egg-info/requires.txt
+nbcollate.egg-info/top_level.txt
+scripts/nbcollate

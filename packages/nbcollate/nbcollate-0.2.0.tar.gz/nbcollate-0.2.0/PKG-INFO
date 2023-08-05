@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: nbcollate
+Version: 0.2.0
+Summary: Collating Jupyter Notebooks
+Home-page: http://github.com/olin-computing/nbcollate
+Author: Paul Ruvolo, Oliver Steele
+Author-email: steele@osteele.com
+License: MIT
+Description: Collate Jupyter assignment notebooks
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
