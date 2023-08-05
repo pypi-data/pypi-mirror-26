@@ -1,0 +1,70 @@
+Metadata-Version: 2.0
+Name: unlzw
+Version: 0.1.1
+Summary: Bindings for Mark Adler's unlzw library.
+Home-page: https://github.com/ionelmc/python-unlzw
+Author: Ionel Cristian Mărieș
+Author-email: contact@ionelmc.ro
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Dist: cffi (>=1.0.0)
+
+========
+Overview
+========
+
+
+
+Bindings for Mark Adler's `unlzw
+<https://mathematica.stackexchange.com/questions/60531/how-can-i-read-compressed-z-file-automatically-by-mathematica/60879#60879>`_
+library.
+
+* Free software: BSD 3-Clause License
+
+Installation
+============
+
+::
+
+    pip install unlzw
+
+Documentation
+=============
+
+.. code-block:: python
+
+    from unlzw import unlzw
+
+    assert unlzw(b'\x1f\x9d\x90f\xde\xbc\x11\x13FN\xc0\x81\x05\x0f\x124(p\xa1\xc2\x82') == b'foobarfoobarfoobarfoobarfoobar'
+
+
+Changelog
+=========
+
+0.1.1 (2017-10-26)
+------------------
+
+* Removed junk from ``MANIFEST.in``.
+
+0.1.0 (2017-10-25)
+------------------
+
+* First release on PyPI.
+
+
