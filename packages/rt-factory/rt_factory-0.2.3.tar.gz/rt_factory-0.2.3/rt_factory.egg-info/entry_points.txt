@@ -1,0 +1,3 @@
+[console_scripts]
+rt_factory = rt_factory.cli:main
+
