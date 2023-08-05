@@ -1,0 +1,5 @@
+setuptools>=12.2
+urllib3==1.21.1
+dateparser==0.6.0
+terminaltables==3.1.0
+simplejson==3.11.1
