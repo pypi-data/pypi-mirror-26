@@ -1,0 +1,9 @@
+setup.py
+andyofmelbourne_pytemplate.egg-info/PKG-INFO
+andyofmelbourne_pytemplate.egg-info/SOURCES.txt
+andyofmelbourne_pytemplate.egg-info/dependency_links.txt
+andyofmelbourne_pytemplate.egg-info/not-zip-safe
+andyofmelbourne_pytemplate.egg-info/top_level.txt
+pytemplate/__init__.py
+pytemplate/hello_world.py
+pytemplate/python23.py
