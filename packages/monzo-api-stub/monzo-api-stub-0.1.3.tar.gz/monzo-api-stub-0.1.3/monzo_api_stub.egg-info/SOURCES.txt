@@ -1,0 +1,13 @@
+README.rst
+setup.py
+monzo_api_stub.egg-info/PKG-INFO
+monzo_api_stub.egg-info/SOURCES.txt
+monzo_api_stub.egg-info/dependency_links.txt
+monzo_api_stub.egg-info/entry_points.txt
+monzo_api_stub.egg-info/requires.txt
+monzo_api_stub.egg-info/top_level.txt
+monzoapistub/__init__.py
+monzoapistub/cli.py
+monzoapistub/database.py
+monzoapistub/datatypes.py
+monzoapistub/server.py
