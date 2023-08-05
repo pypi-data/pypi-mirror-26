@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: getsiteinfo
+Version: 0.1.1
+Summary: Get site information
+Home-page: https://github.com/kaywang26/getsiteinfo
+Author: Kay Wang
+Author-email: kay.wang26@gmail.com
+License: MIT
+Requires-Dist: bs4
+Requires-Dist: selenium
+
+| Get specific information of a URL.
+
+
