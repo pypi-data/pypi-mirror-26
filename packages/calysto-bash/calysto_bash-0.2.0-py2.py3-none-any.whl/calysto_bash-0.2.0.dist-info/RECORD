@@ -1,0 +1,15 @@
+calysto_bash/__init__.py,sha256=qtTq-r6u2KxbLxohZNTBPDpZ3TTFqSSx--QyVs0OZ0k,55
+calysto_bash/__main__.py,sha256=CxhOeXYXxU55YSV-PQtklUV752eBkPfPRDg37sMKnM4,89
+calysto_bash/kernel.json,sha256=lpF4zSpVjCHi61FkMvyx0bflmBXZ4dIYWGVfNS6Tdxk,219
+calysto_bash/kernel.py,sha256=LpRJJmfqAa6_Q9Uc42O5dsiUOgLsQSt-RZ8QflvkS5E,1800
+calysto_bash/images/logo-32x32.png,sha256=UP0iYmgeXl3LG537_sNyHeNdmuHNEry7EJSPjMlS0T0,2210
+calysto_bash/images/logo-64x64.png,sha256=5G3o5ALy6Vc-aZwRDSCUERq-8xAA5BuSvmQxT_eKzUg,3877
+calysto_bash-0.2.0.data/data/share/jupyter/kernels/calysto_bash/kernel.json,sha256=lpF4zSpVjCHi61FkMvyx0bflmBXZ4dIYWGVfNS6Tdxk,219
+calysto_bash-0.2.0.data/data/share/jupyter/kernels/calysto_bash/logo-32x32.png,sha256=UP0iYmgeXl3LG537_sNyHeNdmuHNEry7EJSPjMlS0T0,2210
+calysto_bash-0.2.0.data/data/share/jupyter/kernels/calysto_bash/logo-64x64.png,sha256=5G3o5ALy6Vc-aZwRDSCUERq-8xAA5BuSvmQxT_eKzUg,3877
+calysto_bash-0.2.0.dist-info/DESCRIPTION.rst,sha256=lNKF4TX-7h_njdm1dFVPA65DcFaK_qnAoLmik41NGAs,975
+calysto_bash-0.2.0.dist-info/METADATA,sha256=R-zzGiSKZZ500kFjNYEEkSm10FA0VaNnquYicrRL0Ks,1951
+calysto_bash-0.2.0.dist-info/RECORD,,
+calysto_bash-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+calysto_bash-0.2.0.dist-info/metadata.json,sha256=ZLuj9Qnlee_lpofzQsPcYfK-_UBIQ_Lgp6RVavd1eZQ,1084
+calysto_bash-0.2.0.dist-info/top_level.txt,sha256=gE7Cz3pxYRKx15qfqRhHiSEj4fQ2WaEtDBu7wlHMN_c,13
