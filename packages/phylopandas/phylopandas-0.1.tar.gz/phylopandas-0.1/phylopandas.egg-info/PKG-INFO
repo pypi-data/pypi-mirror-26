@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: phylopandas
+Version: 0.1
+Summary: Pandas for phylogenetics
+Home-page: https://github.com/Zsailer/phylopandas
+Author: Zachary Sailer
+Author-email: zachsailer@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        # PhyloPandas: Pandas for phylogenetics
+        
+        PhyloPandas brings the Pandas `DataFrame` to phylogenetics. 
+        
+        It provides `read_` methods from a large list of sequence formats and
+        a subclass of Panda's `DataFrame` for easy manipulation of phylogenetic data.
+        Boom! Phylogenetics for humans. 
+        
+        How does it work? There is no reinventing the wheel here. PhyloPandas simply provides a
+        bridge between BioPython (great for parsing/writing sequence data) and Pandas 
+        (great for human-accessible data storage).   
+        
+        # Basic Usage
+        
+        Read from any format:
+        
+        ```python
+        import phylopandas as phypd
+        
+        df = phypd.read_fasta('sequences.fasta')
+        df = phypd.read_phylip('sequences.phy')
+        
+        ```
+        
+        Convert formats:
+        
+        ```python
+        df = phypd.read_fasta('sequences.fasta')
+        df.to_phylip('sequences.phy')
+        ```
+        
+        # Install
+        
+        Install from source:
+        ```
+        git clone https://github.com/Zsailer/phylopandas
+        cd phylopandas
+        pip install -e .
+        ```
+        
+        # Dependencies
+        
+        * BioPython
+        * Pandas
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
