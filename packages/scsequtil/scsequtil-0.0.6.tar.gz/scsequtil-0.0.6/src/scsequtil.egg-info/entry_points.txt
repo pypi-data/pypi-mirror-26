@@ -1,0 +1,3 @@
+[console_scripts]
+Attach10xBarcodes = scsequtil.bam:attach_10x_barcodes
+
