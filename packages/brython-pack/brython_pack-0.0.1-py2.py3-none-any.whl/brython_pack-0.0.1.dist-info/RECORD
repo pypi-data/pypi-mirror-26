@@ -1,0 +1,13 @@
+brython_pack/__init__.py,sha256=WGRsb6BPy5he-1_lqismjpVQrGyJKFfz5kSpY6hLRgg,106
+brython_pack/_version.py,sha256=LIrhNc8EGX8Qp50d1jzBqEEMQOVDsG3UJCj8oD7mbh4,42
+brython_pack/main.py,sha256=ihCJm9ZOy4NWQP2215m0TThBoycgmW-H3-5AbUtxMhY,1650
+brython_pack/pack.py,sha256=WJDhM9an80wvLfLPE9729y8VyTKQK9Ivv3hamfEfaqw,1189
+brython_pack/stdlib.py,sha256=FtkaOsncXyv__r81RQD5ghnU6QB5hRfP4nZcf3E05Ac,933
+brython_pack/utils.py,sha256=NAeZezTf0nfGsa_z-SD8lDQ2PBBuPoftsfBlJ5V1uoA,1647
+brython_pack-0.0.1.dist-info/DESCRIPTION.rst,sha256=MOu_Rj2uMufHh33Qt_2ZcpDm1Nrn9QrnCeurZpD0Fxc,2329
+brython_pack-0.0.1.dist-info/METADATA,sha256=iGoFLrrA_d5jlg45v7jqjUVjjS8d-3fZtuivpwYtgj8,3185
+brython_pack-0.0.1.dist-info/RECORD,,
+brython_pack-0.0.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+brython_pack-0.0.1.dist-info/entry_points.txt,sha256=CDNcKlGJB1UyQ-rvgMIz2KMeH98V-QX0INt19XDQ59o,47
+brython_pack-0.0.1.dist-info/metadata.json,sha256=EDOTt_oKUWHp32WDPkOya8XEZfAsKoJ6lgPY3pcsjf4,1162
+brython_pack-0.0.1.dist-info/top_level.txt,sha256=fpt6RhT_hFOO2AT0EfqkHyT7jzEYnIOfMQ3K2QokFEk,13
