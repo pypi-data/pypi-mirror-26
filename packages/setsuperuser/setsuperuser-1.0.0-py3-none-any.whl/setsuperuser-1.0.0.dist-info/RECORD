@@ -1,0 +1,12 @@
+setsuperuser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setsuperuser/settings.py,sha256=ekPWZPifMCAFf9F25GhmmmU3KDThJoRxikwZbPi7Oa4,734
+setsuperuser/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setsuperuser/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setsuperuser/management/commands/setsuperuser.py,sha256=c_2m8dVWyBc00xxF-kXh_xKlKHketJkqBT4GC5wQymc,1196
+setsuperuser-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+setsuperuser-1.0.0.dist-info/METADATA,sha256=fNYGIgkUiDq9f0absy0AOx3s-20EDsNBHAIHVMuGalw,826
+setsuperuser-1.0.0.dist-info/RECORD,,
+setsuperuser-1.0.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+setsuperuser-1.0.0.dist-info/metadata.json,sha256=NnE3t_HW4_xPDdGG3zGe91Coi875vtqyf8-kwShFRp0,958
+setsuperuser-1.0.0.dist-info/top_level.txt,sha256=rq3czocogBiIFU9v0jmkPxOzQRo2sKic5eVzWqHVKzk,13
+setsuperuser-1.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2

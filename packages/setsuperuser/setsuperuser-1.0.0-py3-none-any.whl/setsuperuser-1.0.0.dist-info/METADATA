@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: setsuperuser
+Version: 1.0.0
+Summary: Command to set Django super user
+Home-page: https://github.com/gunthercox/setsuperuser
+Author: Gunther Cox
+Author-email: gunthercx@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: django,commands
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
+
