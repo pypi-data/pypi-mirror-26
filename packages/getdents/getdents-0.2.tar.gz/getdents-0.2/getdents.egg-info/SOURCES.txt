@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+getdents/__init__.py
+getdents/_getdents.c
+getdents.egg-info/PKG-INFO
+getdents.egg-info/SOURCES.txt
+getdents.egg-info/dependency_links.txt
+getdents.egg-info/not-zip-safe
+getdents.egg-info/requires.txt
+getdents.egg-info/top_level.txt
