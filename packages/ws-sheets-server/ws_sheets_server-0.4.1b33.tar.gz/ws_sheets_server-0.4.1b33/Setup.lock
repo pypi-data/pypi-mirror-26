@@ -1,0 +1,21 @@
+{
+    "license": "MIT",
+    "author": "Charles Rymal",
+    "description": "server for ws_sheets",
+    "name": "ws_sheets_server",
+    "url": "http://github.com/chuck1/ws_sheets_server",
+    "author_email": "charlesrymal@gmail.com",
+    "packages": [
+        "ws_sheets_server",
+        "ws_sheets_server.client",
+        "ws_sheets_server.tests"
+    ],
+    "package_data": {
+        "": [
+            "*.service"
+        ]
+    },
+    "scripts": [
+        "bin/ws_sheets_server"
+    ]
+}
