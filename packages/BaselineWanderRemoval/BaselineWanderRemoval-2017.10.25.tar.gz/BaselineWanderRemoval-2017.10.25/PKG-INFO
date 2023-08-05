@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: BaselineWanderRemoval
+Version: 2017.10.25
+Summary: Python port of BaselineWanderRemovalMedian.m from ECG-kit
+Home-page: https://bitbucket.org/atpage/baselinewanderremoval
+Author: Alex Page
+Author-email: alex.page@rochester.edu
+License: GPLv2
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: ECG EKG baseline wander
+Platform: UNKNOWN

@@ -1,0 +1,8 @@
+setup.py
+BaselineWanderRemoval/__init__.py
+BaselineWanderRemoval.egg-info/PKG-INFO
+BaselineWanderRemoval.egg-info/SOURCES.txt
+BaselineWanderRemoval.egg-info/dependency_links.txt
+BaselineWanderRemoval.egg-info/not-zip-safe
+BaselineWanderRemoval.egg-info/requires.txt
+BaselineWanderRemoval.egg-info/top_level.txt
