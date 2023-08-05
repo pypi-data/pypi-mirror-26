@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: steamid
+Version: 1.0.0
+Summary: The python port of node-steamid (created by McKay)
+Home-page: https://github.com/Zwork101/python-steamid
+Author: Zwork101
+Author-email: zwork101@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: steam id
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
