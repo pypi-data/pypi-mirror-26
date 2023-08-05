@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pynoaa
+Version: 0.1
+Summary: Python SDK for NOAA web API
+Home-page: http://github.com/lincis/pynoaa
+Author: Linards Kalvans
+Author-email: linards.kalvans@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
