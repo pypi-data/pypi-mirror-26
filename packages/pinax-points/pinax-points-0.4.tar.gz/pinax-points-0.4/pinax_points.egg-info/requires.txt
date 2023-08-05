@@ -1,0 +1,5 @@
+Django>=1.8
+
+[pytest]
+pytest
+pytest-django
