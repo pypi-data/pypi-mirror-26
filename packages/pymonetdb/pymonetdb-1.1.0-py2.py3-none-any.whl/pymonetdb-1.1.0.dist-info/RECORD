@@ -1,0 +1,16 @@
+pymonetdb/__init__.py,sha256=wdZ5UfReGckjQMRzEKZ7OueuC3xDt2iawtWTp3sz_Ws,1688
+pymonetdb/control.py,sha256=xC--0gc4xTKqB4ljT3o-_1ffIHXSS5BcqSka5BiTALQ,7798
+pymonetdb/exceptions.py,sha256=JvqLRsvKByRvAGsCrkFtDBlUwLRMuAxFvR3EBE24rAE,3035
+pymonetdb/mapi.py,sha256=DiWZceNZu7hlmzy9eYKJK-Y_81fgJbPdE1kgB-tki1Y,11976
+pymonetdb/sql/__init__.py,sha256=WuqX440xkka_LXk5uDIkXktrGUa4F38OB00ib1jZx-k,268
+pymonetdb/sql/connections.py,sha256=EVy9AgCt8jQVftyWGkXV8TLrsFC-E33ULbr3XSFyGaI,6161
+pymonetdb/sql/cursors.py,sha256=L3FGQK80Fm_lz-WnSefxikqM1pS650F1ZWirldq2DMk,28095
+pymonetdb/sql/monetize.py,sha256=omuYpUXT2Hfe2GrI0cICA8np7CD-jrb9ckR1sGGzrU0,1945
+pymonetdb/sql/pythonize.py,sha256=9uerpuYi9pYJXx67FDZX76zM74M4cSWcFxvokTIScXk,4606
+pymonetdb/sql/types.py,sha256=vGZS17bLk4HCoFzqpv5LAqORpcs7BlYNhap3UJsC0tE,2325
+pymonetdb-1.1.0.dist-info/DESCRIPTION.rst,sha256=jO32pN0K---81fwwaXfAz11yBjgWIaL_UiYTpox1hC8,1830
+pymonetdb-1.1.0.dist-info/METADATA,sha256=CZu3soZLkQlC48Nq_OoSXXBiudFQU2drUy5Bgg_ntgs,2798
+pymonetdb-1.1.0.dist-info/RECORD,,
+pymonetdb-1.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pymonetdb-1.1.0.dist-info/metadata.json,sha256=Wcezx0dZz3Rz6OAZool9h2ZDRJX2snP812BKN-FYFRM,1126
+pymonetdb-1.1.0.dist-info/top_level.txt,sha256=867eRtABXl2KjU1cpvtIVBhlSCfqxL5-S4DZeb2CQLk,10
