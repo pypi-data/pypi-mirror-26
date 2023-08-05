@@ -1,0 +1,9 @@
+setup.py
+pychecks/__init__.py
+pychecks/__main__.py
+pychecks.egg-info/PKG-INFO
+pychecks.egg-info/SOURCES.txt
+pychecks.egg-info/dependency_links.txt
+pychecks.egg-info/entry_points.txt
+pychecks.egg-info/requires.txt
+pychecks.egg-info/top_level.txt
