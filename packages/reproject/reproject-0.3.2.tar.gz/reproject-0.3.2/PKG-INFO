@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: reproject
+Version: 0.3.2
+Summary: Reproject astronomical images
+Home-page: http://reproject.readthedocs.io
+Author: Thomas Robitaille, Christoph Deil, Adam Ginsburg
+Author-email: thomas.robitaille@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: 
+        Astropy affiliated package for image reprojection (resampling).
+        
+Platform: UNKNOWN
