@@ -1,0 +1,9 @@
+recursive-include uavro *.py
+recursive-include uavro *.pyx
+recursive-include docs *.rst
+
+include setup.py
+include README.rst
+include LICENSE.txt
+include MANIFEST.in
+include requirements.txt

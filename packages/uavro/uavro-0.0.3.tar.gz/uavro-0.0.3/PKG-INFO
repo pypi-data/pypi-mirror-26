@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: uavro
+Version: 0.0.3
+Summary: Cython-optimized reader for tabular Avro data
+Home-page: https://github.com/martindurant/uavro/
+Author: Martin Durant
+Author-email: mdurant@continuum.io
+License: Apache License 2.0
+Description: uAvro
+        =====
+        
+        A cythonic acceleration of Avro tabular file reading
+        
+        
+        Use this library to read Avro files into Pandas dataframes, where there are
+        absolutely no nested structures in the data schema.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython

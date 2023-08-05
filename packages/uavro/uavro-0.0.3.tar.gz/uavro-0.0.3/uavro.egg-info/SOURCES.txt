@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+uavro/__init__.py
+uavro/core.py
+uavro/reader.c
+uavro/reader.pyx
+uavro.egg-info/PKG-INFO
+uavro.egg-info/SOURCES.txt
+uavro.egg-info/dependency_links.txt
+uavro.egg-info/requires.txt
+uavro.egg-info/top_level.txt
+uavro/tests/__init__.py
+uavro/tests/test_core.py
+uavro/tests/util.py
