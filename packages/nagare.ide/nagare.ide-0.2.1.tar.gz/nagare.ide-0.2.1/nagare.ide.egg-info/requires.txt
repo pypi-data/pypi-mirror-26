@@ -1,0 +1,6 @@
+Pygments
+nagare>=0.5.0
+
+[doc]
+sphinx
+sphinx_rtd_theme<0.3

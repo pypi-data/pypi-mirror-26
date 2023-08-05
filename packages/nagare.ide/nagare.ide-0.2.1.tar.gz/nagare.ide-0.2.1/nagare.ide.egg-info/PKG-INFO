@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: nagare.ide
+Version: 0.2.1
+Summary: Nagare Web IDE
+Home-page: http://www.nagare.org
+Author: Alain Poirier
+Author-email: alain.poirier@net-ng.com
+License: BSD
+Download-URL: http://www.nagare.org/download
+Description: Nagare IDE
+        ==========
+        
+        Nagare IDE is a pure Web Integrated Development Environment dedicated to the
+        Nagare Web framework.
+        
+        It offers the browsing of your projects, the edition of the sources,
+        the debugging of the raised exceptions and the consultation in real-time of the
+        applications logs.
+        
+        The full documentation with screenshots is available at
+        `http://nagareproject.github.io/ide <http://nagareproject.github.io/ide>`_
+        
+        
+Keywords: web nagare ide bespin ajax comet traceback yui
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: Microsoft :: Windows :: Windows NT/2000
+Classifier: Operating System :: Unix
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
