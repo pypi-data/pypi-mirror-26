@@ -1,0 +1,10 @@
+kong/__init__.py,sha256=uhHuLBQMIwzdm8KbTqmt60ydaj0YMv0R1l6QDHyMTmg,167
+kong/client.py,sha256=P7pSMozJ4T3ev4vECJ9PIJd6JxmddqPbi4euICYrnX8,1808
+kong/errors.py,sha256=ZRPGoguwlIFh75EZMykBXS1k3Ki9hmDHuvq_BsnXwOk,1157
+kong/request.py,sha256=HletaS1ETQZPJ_u6VioWI-2Js_QdFul2qepd3EEBreU,5916
+python_kong_management-0.2.3.dist-info/DESCRIPTION.rst,sha256=q2gUWntwBYy2qhhnZCtk2Den5i5Dnnp6kwxbMUFJL04,1142
+python_kong_management-0.2.3.dist-info/METADATA,sha256=Cq3JyPH6w_34TQTRXaI8ggsDa-7fDmmjDwZj7hjVmDM,1935
+python_kong_management-0.2.3.dist-info/RECORD,,
+python_kong_management-0.2.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+python_kong_management-0.2.3.dist-info/metadata.json,sha256=w4LU2GxMB7BYULMc7iseVip-gEslcyyLipwPliG5dJI,1020
+python_kong_management-0.2.3.dist-info/top_level.txt,sha256=e_HMfUQI3kiAnw9wvbjtnvEzSTiLOw0jecLWLSyL-IM,5
