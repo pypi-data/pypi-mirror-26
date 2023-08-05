@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/pyramid_objective/__init__.py
+src/pyramid_objective.egg-info/PKG-INFO
+src/pyramid_objective.egg-info/SOURCES.txt
+src/pyramid_objective.egg-info/dependency_links.txt
+src/pyramid_objective.egg-info/namespace_packages.txt
+src/pyramid_objective.egg-info/pbr.json
+src/pyramid_objective.egg-info/requires.txt
+src/pyramid_objective.egg-info/top_level.txt
