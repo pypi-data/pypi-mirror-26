@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+lwrf/__init__.py
+python_lwrf.egg-info/PKG-INFO
+python_lwrf.egg-info/SOURCES.txt
+python_lwrf.egg-info/dependency_links.txt
+python_lwrf.egg-info/top_level.txt
