@@ -1,0 +1,12 @@
+README.md
+setup.py
+lexpy/__init__.py
+lexpy/_constants.py
+lexpy/_utils.py
+lexpy/dawg.py
+lexpy/exceptions.py
+lexpy/trie.py
+lexpy.egg-info/PKG-INFO
+lexpy.egg-info/SOURCES.txt
+lexpy.egg-info/dependency_links.txt
+lexpy.egg-info/top_level.txt
