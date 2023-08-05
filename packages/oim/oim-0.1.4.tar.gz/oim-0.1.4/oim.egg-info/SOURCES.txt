@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+oim/__init__.py
+oim/xbrl-json-CR-2017-05-02-schema.json
+oim.egg-info/PKG-INFO
+oim.egg-info/SOURCES.txt
+oim.egg-info/dependency_links.txt
+oim.egg-info/entry_points.txt
+oim.egg-info/requires.txt
+oim.egg-info/top_level.txt

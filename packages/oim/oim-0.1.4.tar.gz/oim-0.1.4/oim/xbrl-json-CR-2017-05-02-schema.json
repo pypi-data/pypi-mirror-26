@@ -1,0 +1,156 @@
+{
+    "definitions": {
+        "documentType": {
+          "type": "string",
+          "const": "http://www.xbrl.org/CR/2017-05-02/oim" 
+        },
+        "dtsReference": {
+            "properties": {
+                "href": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["linkbase", "schema", "role", "arcrole"]
+                }
+            },
+            "required" : ["href", "type"],
+            "type": "object"
+        },
+        "dtsReferences" : {
+            "type" : "array",
+            "items" : { "$ref" : "#/definitions/dtsReference" },
+            "minItems" : 1
+        },
+        "accuracy" : {
+            "type" : "integer" 
+        },
+        "QName" : {
+            "type" : "string",
+            "pattern" : "^[^:]+:[^:]+$"
+        },
+        "entity" : {
+            "type" : "string"
+        },
+        "dateTime" : {
+            "type" : "string"
+        },
+        "concept" : {
+            "$ref" : "#/definitions/QName" 
+        },
+        "id" : {
+            "type" : "string"
+        },
+        "language" : {
+            "type" : "string"
+        },
+        "uri" : {
+            "type" : "string",
+            "format" : "uri"
+        },
+        "footnote" : {
+            "properties" : {
+                "group" : { "$ref" : "#/definitions/uri" },
+                "footnoteType" : { "$ref" : "#/definitions/uri" }
+            },
+            "required" : [
+                "group",
+                "footnoteType"
+            ],
+            "oneOf" : [
+                { "$ref" : "#/definitions/factFootnote" },
+                { "$ref" : "#/definitions/textFootnote" }
+            ]
+        },
+        "factFootnote" : {
+            "properties" : {
+                "factRef" : { "$ref" : "#/definitions/id" }
+            },
+            "required" : [
+                "factRef"
+            ]
+        },
+        "textFootnote" : {
+            "properties" : {
+                "footnote" : { "type" : "string" },
+                "language" : { "$ref" : "#/definitions/language" }
+            },
+            "required" : [
+                "footnote",
+                "language"
+            ]
+        },
+        "footnotes" : {
+             "type" : "array",
+            "items" : { "$ref" : "#/definitions/footnote" }
+        },
+        "valueOrNull" : {
+            "type" : [ "string", "null" ]
+        },
+        "aspects": {
+            "properties" : {
+                "xbrl:entity" : { "$ref" : "#/definitions/entity" },
+                "xbrl:periodStart" : { "$ref" : "#/definitions/dateTime" },
+                "xbrl:periodEnd" : { "$ref" : "#/definitions/dateTime" },
+                "xbrl:concept" : { "$ref" : "#/definitions/concept" },
+                "xbrl:tupleParent" : { "$ref" : "#/definitions/id" },
+                "xbrl:tupleOrder" : { "type" : "integer" },
+                "xbrl:unit" : { "type": "string" },
+                "xbrl:language" : { "$ref" : "#/definitions/language" }
+            },
+            "required" : ["xbrl:concept"],
+            "dependencies" : {
+                "xbrl:tupleParent" : {
+                    "required" : [ "xbrl:tupleOrder" ]
+                },
+                "xbrl:tupleOrder" : {
+                    "required" : [ "xbrl:tupleParent" ]
+                },
+                "xbrl:periodStart" : {
+                    "required" : [ "xbrl:periodEnd" ]
+                },
+                "xbrl:periodEnd" : {
+                    "required" : [ "xbrl:periodStart" ]
+                }
+            },
+            "patternProperties" : {
+                "^(?!xbrl:).*:.*" : {
+                    "description" : "Taxonomy-defined aspect",
+                    "$ref" : "#/definitions/valueOrNull" 
+                }
+            }
+        }, 
+        "fact" : {
+            "properties" : {
+                "id" : { "$ref" : "#/definitions/id" },
+                "footnotes" : { "$ref" : "#/definitions/footnotes" },
+                "accuracy" : { "$ref" : "#/definitions/accuracy" },
+                "aspects" : { "$ref" : "#/definitions/aspects" },
+                "value" : { "$ref" : "#/definitions/valueOrNull" }
+            },
+            "required" : ["aspects"]
+        },
+        "facts" : {
+            "type" : "array",
+            "items" : { "$ref" : "#/definitions/fact" }
+        },
+        "prefixes" : {
+            "type" : "object",
+            "patternProperties": {
+                ".*" : {
+                    "$ref" : "#/definitions/uri"
+               }
+            }
+        }
+    },
+    "properties": {
+        "dtsReferences": { "$ref" : "#/definitions/dtsReferences" },
+        "facts": { "$ref" : "#/definitions/facts" },
+        "prefixes": { "$ref" : "#/definitions/prefixes" },
+        "documentType": { "$ref" : "#/definitions/documentType" }
+    },
+    "required": [
+        "dtsReferences", "facts", "documentType"
+    ],
+    "type": "object"
+}

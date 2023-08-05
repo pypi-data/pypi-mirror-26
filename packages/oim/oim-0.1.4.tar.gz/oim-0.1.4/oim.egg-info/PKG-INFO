@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: oim
+Version: 0.1.4
+Summary: A library for working with the Open Information Model
+Home-page: UNKNOWN
+Author: Mark Goodhand
+Author-email: mrg-oim@corefiling.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: A Python library for working with the Open Information Model
+        ============================================================
+        
+        The `Open Information Model
+        <https://specifications.xbrl.org/spec-group-index-open-information-model.html>`_
+        is a standard from XBRL International that simplifies access to structured
+        dimensional data.
+        
+        This library and the accompanying CLI allow the Open Information Model to be
+        validated, queried and manipulated.
+        
+Keywords: oim xbrl
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
