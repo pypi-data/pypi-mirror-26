@@ -1,0 +1,11 @@
+PyMieScatt/CoreShell.py,sha256=dzr8MAQnsPSAzXfTLIYd4M_jf_Q-DxLEHdwpNYTkqEQ,4668
+PyMieScatt/Inverse.py,sha256=VBILzqc7K5qFAwdrGjA6zM4EVy7Qu_1deqaOLQNpt5E,31052
+PyMieScatt/Mie.py,sha256=7Emh3ZUdPXH7N5IDjrTP8P7PLSx4i3A7Em_rN-mQ1Pw,15415
+PyMieScatt/__init__.py,sha256=4A8jmyUpL4IJ7zBsY36oj9WRqEZ2yQYW3v3jt7IYLyg,690
+PyMieScatt/_version.py,sha256=XAgspOkl8VYV8AoNylmVSpdkZVfIg1w1SIuHEQi8_m0,23
+PyMieScatt-1.3.4.1.dist-info/DESCRIPTION.rst,sha256=jkSAWYjUuAqjcMZEB3Xt2qL8PQwtmH4N6fMg6f9q5Vc,266
+PyMieScatt-1.3.4.1.dist-info/METADATA,sha256=Zmyjg92mv6cQsw8FAFVuMvcgmiVTEUEYsAe0qZNRWU8,944
+PyMieScatt-1.3.4.1.dist-info/RECORD,,
+PyMieScatt-1.3.4.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+PyMieScatt-1.3.4.1.dist-info/metadata.json,sha256=NIWT5rLYk8MtNUMfOIeRanpiLly2gur05VsLIo_SBmQ,882
+PyMieScatt-1.3.4.1.dist-info/top_level.txt,sha256=AqtOaObSF5zsaIMaCm-K5emHVPkQ6QRKL0HC4c0K63A,11
