@@ -1,0 +1,11 @@
+pytest_needle/__init__.py,sha256=_2OaEh5hbrvEgFT-xGbvBDBOyAQH4PX_qw_kJ26kgFU,177
+pytest_needle/driver.py,sha256=eo_1kl92ibalz1J94BbLDo2D5zCdzL-j6YNx3FP3URY,9501
+pytest_needle/exceptions.py,sha256=pXPeVxRbO3-OSnYz8o3WsEdALw96GmIG0D5yDbTw2zg,487
+pytest_needle/plugin.py,sha256=vHnsOyABatZESsUqsXGBXtk-Z2kgU0ggjxHio-fL9fM,4046
+pytest_needle-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pytest_needle-0.3.0.dist-info/METADATA,sha256=XM2WBg7BAvY2gFi-KInhwRO-Ol4XLokVmyL8b0KMuE8,1045
+pytest_needle-0.3.0.dist-info/RECORD,,
+pytest_needle-0.3.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pytest_needle-0.3.0.dist-info/entry_points.txt,sha256=VujuI4sCylDRG9egJPO4q-G3kkIsb4m5gZDL4K0IR1w,42
+pytest_needle-0.3.0.dist-info/metadata.json,sha256=illbAD7VkP78yMj23FNbnUOmymNMxNiDMrsR3xULdxU,1246
+pytest_needle-0.3.0.dist-info/top_level.txt,sha256=K7zhyDdjMkdi03jnWWgpGc8VtfonktVuw8ySc9L75W4,14
