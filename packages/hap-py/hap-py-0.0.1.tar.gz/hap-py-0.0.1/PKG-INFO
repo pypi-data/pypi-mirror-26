@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: hap-py
+Version: 0.0.1
+Summary: A Python implementation of the HomeKit Application Protocol.
+Home-page: https://github.com/sixninetynine/happy
+Author: Loren M. Carvalho
+Author-email: me@loren.pizza
+License: MIT license
+Description: ===============================
+        happy
+        ===============================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/happy.svg
+                :target: https://pypi.python.org/pypi/happy
+        
+        .. image:: https://img.shields.io/travis/sixninetynine/happy.svg
+                :target: https://travis-ci.org/sixninetynine/happy
+        
+        .. image:: https://readthedocs.org/projects/happy/badge/?version=latest
+                :target: https://happy.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/sixninetynine/happy/shield.svg
+             :target: https://pyup.io/repos/github/sixninetynine/happy/
+             :alt: Updates
+        
+        
+        A Python implementation of the HomeKit Application Protocol.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://happy.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+Keywords: happy
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
