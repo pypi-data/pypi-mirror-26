@@ -1,0 +1,49 @@
+# MP-Flatpages
+
+Django flatpages app.
+
+### Installation
+
+Install with pip:
+
+```
+$ pip install django-mp-flatpages
+```
+
+Add flatpages to urls.py:
+
+```
+urlpatterns += i18n_patterns(
+    url(r'^(?P<url>.*)$', flatpage, name='flatpage'),
+)
+```
+
+Add flatpages to settings.py:
+```
+INSTALLED_APPS = [
+    'flatpages',
+]
+
+class SuitConfig(DjangoSuitConfig):
+
+    menu = (
+	    ...,
+	    ParentItem(app='flatpages'),
+    )
+```
+
+Run migrations:
+```
+$ python manage.py migrate
+```
+
+### Template
+
+You should create templates/flatpages/default.html template in your app.
+
+### Requirements
+
+App require this packages:
+
+* django-modeltranslation
+* django-ckeditor
