@@ -1,0 +1,6 @@
+setup.py
+Img2Vec.egg-info/PKG-INFO
+Img2Vec.egg-info/SOURCES.txt
+Img2Vec.egg-info/dependency_links.txt
+Img2Vec.egg-info/requires.txt
+Img2Vec.egg-info/top_level.txt

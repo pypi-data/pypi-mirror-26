@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Img2Vec
+Version: 1.0
+Summary: {'An implementation for Img2Vec.'}
+Home-page: https://github.com/fpsandnoob/img2vec
+Author: fpsandnoob
+Author-email: hzlxcc@gmail.com
+License: BSD License
+Description: UNKNOWN
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries
