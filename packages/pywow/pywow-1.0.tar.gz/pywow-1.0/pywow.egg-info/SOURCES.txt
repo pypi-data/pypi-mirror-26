@@ -1,0 +1,7 @@
+setup.py
+pywow.egg-info/PKG-INFO
+pywow.egg-info/SOURCES.txt
+pywow.egg-info/dependency_links.txt
+pywow.egg-info/requires.txt
+pywow.egg-info/top_level.txt
+wow/__init__.py
