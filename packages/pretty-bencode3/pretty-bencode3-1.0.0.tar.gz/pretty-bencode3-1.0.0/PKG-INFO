@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pretty-bencode3
+Version: 1.0.0
+Summary: The most easy-to-use bencode parser under Python3.
+Home-page: https://github.com/August-Ghost/pretty-bencode3
+Author: Ghost
+Author-email: august_wang_dev@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: BitTorrent,Bencode
+Platform: UNKNOWN
