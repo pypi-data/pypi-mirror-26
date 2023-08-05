@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: python-duco
+Version: 0.1.0
+Summary: Open-source Python 3 library that allows communication to the Duco Ventilation System.
+Home-page: https://github.com/luuloe/python-duco
+Author: Luuk Loeffen
+Author-email: luukloeffen@hotmail.com
+License: MIT License
+Download-URL: https://github.com/luuloe/python-duco/archive/0.1.0.zip
+Description-Content-Type: UNKNOWN
+Keywords: duco,ventilation
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pymodbus (==1.3.2)
+
+UNKNOWN
+
+
