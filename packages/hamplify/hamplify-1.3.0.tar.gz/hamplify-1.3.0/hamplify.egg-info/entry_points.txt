@@ -1,0 +1,3 @@
+[console_scripts]
+hamplify = scripts.hamplify:main
+
