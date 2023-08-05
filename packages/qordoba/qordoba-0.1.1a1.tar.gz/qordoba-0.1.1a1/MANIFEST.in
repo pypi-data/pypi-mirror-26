@@ -1,0 +1,14 @@
+#resources files
+include qordoba/resources/framework.*
+include qordoba/resources/language.*
+include qordoba/resources/vendor.*
+include qordoba/resources/documentation.*
+include qordoba/resources/ANC-all-count.*
+include qordoba/string-extractor/docker/Dockerfile_dev
+include qordoba/string-extractor/bin/start-container.*
+include qordoba/string-extractor/bin/qordoba-string-extractor.*
+
+
+#Misc
+include LICENSE.md
+include README.md
