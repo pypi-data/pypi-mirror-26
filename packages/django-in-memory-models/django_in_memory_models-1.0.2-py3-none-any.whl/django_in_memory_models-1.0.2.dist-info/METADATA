@@ -1,0 +1,82 @@
+Metadata-Version: 2.0
+Name: django-in-memory-models
+Version: 1.0.2
+Summary: In memory models for Django, store in memory, query with instance.attribute
+Home-page: https://github.com/oldcai/django-in-memory-models
+Author: oldcai
+Author-email: oldcai.com@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Database
+Requires-Dist: Django
+
+## Introduce
+For performance critical fields and models, and don't want to lose the convenience of getting them like attributes.
+
+You can adding user page view by `user.statistics.visits += 1` and get the value by `user.statistics.visits.value
+`
+
+## Backends
+
+- redis
+- ssdb
+
+## Install
+`pip install django-in-memory-models`
+
+
+## Example
+
+```
+from in_memory.ssdb.fields import IntegerField
+#from in_memory.redis.fields import IntegerField
+
+
+# InMemoryModel do not create tables when migrating.
+# You can add fields to django.db.models.Model directly.
+class IMAccountStatistics(InMemoryModel):
+    user = InMemoryOneToOneKey(User, related_name='total_statics')
+    total_subscription = IntegerField()
+
+    @classmethod
+    def get_by_user(cls, pk):
+        instance = cls(user_id=pk)
+        return instance
+
+s = User.objects.first().total_statics
+print(s)
+print(s.user)
+print(s.total_subscription.value)
+s.total_subscription += 1
+print(s.total_subscription.value)
+```
+
+Output
+
+```
+IMAccountStatistics object
+oldcai
+0
+1
+```
+
+## TODO
+
+- Django system cache backend
+
+
