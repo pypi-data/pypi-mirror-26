@@ -1,0 +1,10 @@
+README.md
+pymultitor.py
+setup.cfg
+setup.py
+PyMultitor.egg-info/PKG-INFO
+PyMultitor.egg-info/SOURCES.txt
+PyMultitor.egg-info/dependency_links.txt
+PyMultitor.egg-info/entry_points.txt
+PyMultitor.egg-info/requires.txt
+PyMultitor.egg-info/top_level.txt
