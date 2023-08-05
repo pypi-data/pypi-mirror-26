@@ -1,0 +1,12 @@
+webwhatsapi/__init__.py,sha256=vRtzD5kL5zgOmKasPbHVS-yQLs4vxXzVdFVtUnDIs04,4170
+webwhatsapi/js_scripts/contactfromnumber.js,sha256=B8CmWfqKqpRRj8KkBL4nirCNJ9nZ1HG57IuZj3gMAeM,930
+webwhatsapi/js_scripts/get_unread_messages.js,sha256=ICb4fXob4QjMDlCFUt7Db2RDJdEjKVDkt9gSanu2Kcc,1026
+webwhatsapi/js_scripts/send_message_to_phone_number.js,sha256=y4y2G217uOPSYzV6uMgPMM3Ju9AIwL4-X3-zOWpslTs,412
+webwhatsapi/js_scripts/send_message_to_whatsapp_id.js,sha256=WySy4IM-G34GJDWeyg2B1HmCQasXCgtX8TUKqOJEaJY,364
+webwhatsapi/js_scripts/temp,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webwhatsapi-1.0.2.dist-info/DESCRIPTION.rst,sha256=m_2lUhBP2zpmHk9RJZJyknzWr3U_DL9OeXWAS0o_Kjc,212
+webwhatsapi-1.0.2.dist-info/METADATA,sha256=c1hNSPsuX6dpvxOqAvgMzUjZi67Wsm_1c922Tc0MaQM,1022
+webwhatsapi-1.0.2.dist-info/RECORD,,
+webwhatsapi-1.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+webwhatsapi-1.0.2.dist-info/metadata.json,sha256=ZgmWCG2GSlAzEJDu4GkJd8n5W3X1k0A16hxfRbsCq1k,994
+webwhatsapi-1.0.2.dist-info/top_level.txt,sha256=qjHKqSia9m3Uaa3dcaPpazpuBCVCOWPtj3qjP8t4fzc,12
