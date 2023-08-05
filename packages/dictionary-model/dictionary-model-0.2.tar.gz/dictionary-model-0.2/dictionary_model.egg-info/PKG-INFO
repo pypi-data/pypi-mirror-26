@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dictionary-model
+Version: 0.2
+Summary: Model for tracking context of utterance and predicting future characters.
+Home-page: UNKNOWN
+Author: Michał Kosturek
+Author-email: eemkos@gmail.com
+License: Michał Kosturek
+Description: UNKNOWN
+Platform: UNKNOWN
