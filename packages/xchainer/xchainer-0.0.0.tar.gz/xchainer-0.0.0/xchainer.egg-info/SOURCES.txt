@@ -1,0 +1,5 @@
+setup.py
+xchainer.egg-info/PKG-INFO
+xchainer.egg-info/SOURCES.txt
+xchainer.egg-info/dependency_links.txt
+xchainer.egg-info/top_level.txt
