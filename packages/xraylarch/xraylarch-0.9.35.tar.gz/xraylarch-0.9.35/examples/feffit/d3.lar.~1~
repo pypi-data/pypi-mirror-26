@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+_ra, _ka = np.meshgrid(_r, _k)
+
+plot2 = get_display(2)
+surf = plot2.panel.axes.plot_surface(_ra, _ka, dset.daata_wcauchy_mag,
+                                     cmap=cm.coolwarm,
+                                     linewidth=0, antialiased=False)
+plot2.panel.show()

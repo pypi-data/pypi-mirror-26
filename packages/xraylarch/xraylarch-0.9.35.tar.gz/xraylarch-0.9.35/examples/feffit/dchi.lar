@@ -1,0 +1,39 @@
+## examples/feffit/doc_feffit1.lar
+
+
+# read data
+cu_data  = read_ascii('../xafsdata/cu_metal_rt.xdi', labels='energy i0 i1 mu')
+autobk(cu_data, rbkg=1.0, kw=2, e0=8982)
+
+rbkgs = linspace(0, 2, 41) + 0.1
+
+ftopts = dict(kmin=2, kmax=17, kweight=2, dk=5, window='kaiser')
+
+trans = feffit_transform(fitspace='w', rmin=1.4, rmax=3.2, **ftopts)
+
+dset = feffit_dataset(data=cu_data,  transform=trans)
+
+dset.estimate_noise(cu_data.chi)
+
+print dset.epsilon_k
+
+
+def show_rbkg(rbkg=1, e0=8984):
+    autobk(cu_data, rbkg=rbkg, kw=2, e0=e0)
+    estimate_noise(cu_data, **ftopts)
+    cu_err = group(k=cu_data.k, chi=cu_data.delta_chi)
+
+    xftf(cu_err, **ftopts)
+    xftf(cu_data, **ftopts)
+
+    plot_chik(cu_data, kweight=2)
+
+    #    plot(cu_data.k, 100*cu_data.delta_chi*cu_data.k**2*cu_data.kwin, label='delta_chi (x100)')
+
+    err = (cu_data.delta_chi * cu_data.k**2 * cu_data.kwin)
+    print(" Rbkg = {:1f},  err_sum={:3f}  ".format(rbkg, err.sum()))
+
+    plot_chir(cu_data, show_mag=False, show_imag=True, win=2)
+    plot(cu_err.r, 100*cu_err.chir_im, label='delta_chi (x100)', win=2)
+
+#enddef

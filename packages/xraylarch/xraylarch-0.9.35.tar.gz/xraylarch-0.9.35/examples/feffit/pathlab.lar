@@ -1,0 +1,17 @@
+
+from base64 import b64encode
+
+def b64hash(obj):
+    """return a base64 hash of a hashable object"""
+    phash = hex(hash(obj))[2:]
+    if len(phash) %2 != 0:
+        phash = phash + '0'
+    #endif
+    tmp = []
+    for i in range(int(len(phash)/2.0)):
+        c0 = int(phash[2*i], base=16)
+        c1 = int(phash[2*i + 1], base=16)
+        tmp.append(chr(c0*16 + c1))
+    #endfor
+    return b64encode(''.join(tmp))
+#enddef
