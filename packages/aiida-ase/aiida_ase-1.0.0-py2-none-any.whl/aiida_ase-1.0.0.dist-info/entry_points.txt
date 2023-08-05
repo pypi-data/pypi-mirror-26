@@ -1,0 +1,6 @@
+[aiida.calculations]
+ase.ase = aiida_ase.calculations.ase:AseCalculation
+
+[aiida.parsers]
+ase.ase = aiida_ase.parsers.ase:AseParser
+
