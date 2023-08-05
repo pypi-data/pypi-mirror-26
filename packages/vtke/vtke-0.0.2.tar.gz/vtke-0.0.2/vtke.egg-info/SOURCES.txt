@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tests/__init__.py
+tests/test_data_array.py
+vtke/__init__.py
+vtke/data_array.py
+vtke/format.py
+vtke/utils.py
+vtke.egg-info/PKG-INFO
+vtke.egg-info/SOURCES.txt
+vtke.egg-info/dependency_links.txt
+vtke.egg-info/top_level.txt
