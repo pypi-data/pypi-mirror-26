@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}, "project_urls": {"Home": "https://github.com/lxpollara/pyvpic"}}}, "generator": "bdist_wheel (0.29.0)", "license": "GNU", "metadata_version": "2.0", "name": "vpicwrapper", "summary": "A minimal wrapper around the the NHTSA's VIN decoder API. https://vpic.nhtsa.dot.gov/", "version": "0.1"}
