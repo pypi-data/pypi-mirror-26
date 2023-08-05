@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: query-understanding
+Version: 1.0.2
+Summary: Universal encoding detector
+Home-page: https://github.com/DataEngg/Query-Understanding
+Author: Kunal Gupta and Moghira Rahman
+Author-email: kunal1340@iiitd.ac.in
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jellyfish
+Requires-Dist: fuzzywuzzy
+Requires-Dist: nltk
+
+UNKNOWN
+
+
