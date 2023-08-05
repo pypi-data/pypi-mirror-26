@@ -1,0 +1,3 @@
+[console_scripts]
+pytdx-update = update_bcolz_data.update_min_data:run
+
