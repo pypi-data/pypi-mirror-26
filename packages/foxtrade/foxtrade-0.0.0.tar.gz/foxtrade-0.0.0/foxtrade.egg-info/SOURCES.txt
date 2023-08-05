@@ -1,0 +1,9 @@
+setup.py
+foxtrade/__init__.py
+foxtrade/today.py
+foxtrade/utils.py
+foxtrade.egg-info/PKG-INFO
+foxtrade.egg-info/SOURCES.txt
+foxtrade.egg-info/dependency_links.txt
+foxtrade.egg-info/requires.txt
+foxtrade.egg-info/top_level.txt
