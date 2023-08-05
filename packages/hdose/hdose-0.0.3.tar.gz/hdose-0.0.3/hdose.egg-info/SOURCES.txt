@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin/hdose
+harmonize/__init__.py
+harmonize/create_exposure_outcome_table.py
+harmonize/flip_swap.py
+harmonize/harmonize.py
+harmonize/vcf_to_dosage.py
+harmonize/version.py
+hdose.egg-info/PKG-INFO
+hdose.egg-info/SOURCES.txt
+hdose.egg-info/dependency_links.txt
+hdose.egg-info/requires.txt
+hdose.egg-info/top_level.txt
