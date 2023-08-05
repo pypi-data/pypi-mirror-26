@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: py-ldnlib
+Version: 0.1.1
+Summary: Python-based linked data notification libraries
+Home-page: https://github.com/trellis-ldp/py-ldnlib
+Author: Aaron Coburn
+Author-email: acoburn@amherst.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Internet :: WWW/HTTP
