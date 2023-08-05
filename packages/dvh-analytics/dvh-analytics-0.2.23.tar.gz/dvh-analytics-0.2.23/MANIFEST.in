@@ -1,0 +1,13 @@
+include preferences/create_tables.sql
+include preferences/institutional.roi
+include preferences/options.txt
+include preferences/physician_BBM.roi
+include static/images/logo.jpg
+include templates/index.html
+include test_files/*
+include install_notes.md
+include LICENSE
+include README.md
+include dvh/*.py
+include dvh/*.js
+include *.py
