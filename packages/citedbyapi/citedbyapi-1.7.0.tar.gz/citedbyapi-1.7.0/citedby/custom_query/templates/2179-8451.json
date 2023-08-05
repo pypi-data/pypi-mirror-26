@@ -1,0 +1,23 @@
+{
+    "should": [
+        {
+            "title": "Tema (São Carlos)",
+            "fuzziness": 3
+        },
+        {
+            "title": "Tema",
+            "fuzziness": 1
+        }
+    ],
+    "must_not": [
+        "Rima, São Carlos",
+        "Teme",
+        "Time",
+        "Reme",
+        "Tome",
+        "tese",
+        "Leme",
+        "Tempe",
+        "Theme"
+    ]
+}
