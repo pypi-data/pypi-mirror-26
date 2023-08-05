@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: hierreg
+Version: 0.1
+Summary: Hierarchical or multilevel linear models through l2-regularization
+Home-page: https://github.com/david-cortes/hierreg
+Author: David Cortes
+Author-email: david.cortes.rivera@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/david-cortes/hierreg/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: random effects,mixed effects,herarchical model,multilevel modeling
+Platform: UNKNOWN
