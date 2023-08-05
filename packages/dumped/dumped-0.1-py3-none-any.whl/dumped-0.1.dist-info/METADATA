@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: dumped
+Version: 0.1
+Summary: Easy & lightweight objects persistence
+Home-page: https://github.com/GoldsteinE/dumped
+Author: GoldsteinE
+Author-email: mouse-art@ya.ru
+License: MIT
+Download-URL: https://github.com/GoldsteinE/dumped/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: dumping json persistence lightweight
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
+
