@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+dictionary_model/AsciiEncoder.py
+dictionary_model/CharPredictor.py
+dictionary_model/__init__.py
+dictionary_model/downloader.py
+dictionary_model.egg-info/PKG-INFO
+dictionary_model.egg-info/SOURCES.txt
+dictionary_model.egg-info/dependency_links.txt
+dictionary_model.egg-info/not-zip-safe
+dictionary_model.egg-info/requires.txt
+dictionary_model.egg-info/top_level.txt
