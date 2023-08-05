@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: yahoofinancials
+Version: 0.3
+Summary: A powerful financial data module used for pulling fundamental and technical stock data from Yahoo Finance
+Home-page: https://github.com/JECSand/yahoofinancials
+Author: Connor Sanders
+Author-email: connor@exceleri.com
+License: MIT
+Download-URL: https://github.com/JECSand/yahoofinancials/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: finance data,stocks,yahoo finance
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: pytz
+Requires-Dist: requests
+
+UNKNOWN
+
+
