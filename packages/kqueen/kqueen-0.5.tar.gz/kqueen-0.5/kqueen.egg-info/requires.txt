@@ -1,0 +1,9 @@
+Flask==0.12.2
+Flask-Table
+Flask-WTF
+gunicorn
+kubernetes
+python-etcd
+python-jenkins
+pyyaml
+requests
