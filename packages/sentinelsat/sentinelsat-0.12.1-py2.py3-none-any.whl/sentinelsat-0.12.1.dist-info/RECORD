@@ -1,0 +1,11 @@
+sentinelsat/__init__.py,sha256=vZ_lfFXetF6edBWQzPGuMwnfDTDE_CLEjq__DLeKlfo,220
+sentinelsat/sentinel.py,sha256=sfp9GNSd846RpnCsY1TrIem-CMKnaT9uT62rRLvupGI,41002
+sentinelsat/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentinelsat/scripts/cli.py,sha256=JqrIIeeO3SsV_KUxXneL94DaumxoNP52U8sUMYQPe0c,6577
+sentinelsat-0.12.1.dist-info/DESCRIPTION.rst,sha256=HEX7Lbl5JXL63Wdska71L8ez468ffAq7gGoq36wpExc,11313
+sentinelsat-0.12.1.dist-info/METADATA,sha256=prqYGPSKb8vfTgt_FPhsRcQ2GYdfyeM_4uEuhfRKoY8,12639
+sentinelsat-0.12.1.dist-info/RECORD,,
+sentinelsat-0.12.1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+sentinelsat-0.12.1.dist-info/entry_points.txt,sha256=Lgrn0zeL6-BOnV-4zPpX0OHTPJapntH7hPX4sELqrsU,77
+sentinelsat-0.12.1.dist-info/metadata.json,sha256=815mCxamsyPNLyCPtwmld_I6LA6NA2nKdorTw_4-jKY,1372
+sentinelsat-0.12.1.dist-info/top_level.txt,sha256=KoleA6rn1VJUSmBQwdcCDY_u-wA2-0hjiC_ZBGEVNGM,12
