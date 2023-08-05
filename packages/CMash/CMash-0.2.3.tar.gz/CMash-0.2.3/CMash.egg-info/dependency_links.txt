@@ -1,0 +1,1 @@
+https://github.com/dkoslicki/pytst2/blob/master/dist/pytst-1.18.tar.gz#egg=pytst2
