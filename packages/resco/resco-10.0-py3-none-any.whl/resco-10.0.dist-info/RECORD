@@ -1,0 +1,13 @@
+resco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resco/cli.py,sha256=E-WYVVaOLIV4U8uswWrV5-YZiUYBCesFDo99WMRxn4M,926
+resco/templates.py,sha256=3AF3un4Hcf58tDehVSVDDYDZuH1k4Xja-VS0K7lqp0I,77
+resco/utils.py,sha256=xQCKjxzAh6u-kA5xaeoUJPJl4Y3D9pC-vOCIbidvc54,568
+resco-10.0.data/scripts/resco,sha256=vb4owcMtRGEp7niAQxut93I1JRSfRsDE0tqcU7h2TAo,197
+resco-10.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+resco-10.0.dist-info/METADATA,sha256=GbxoBqWrpazV2GtXoZcCW2DHNy8fONXHHJTJFioAKfc,322
+resco-10.0.dist-info/RECORD,,
+resco-10.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+resco-10.0.dist-info/metadata.json,sha256=FIhNSn3NleB9ulS2yFZWHqIG5-ks7DTD3t2vnca2o80,377
+resco-10.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+resco-10.0.dist-info/top_level.txt,sha256=vkEXevrACakroIF0JlDvgAypJC1_vB4eee_0sz31xgE,6
+resco-10.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
