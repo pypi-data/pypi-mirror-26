@@ -1,0 +1,21 @@
+Release Notes
+=============
+
+This file contains the changes made since the last release.
+
+v0.6.3
+------
+
+This version contains very little, it was required to work around a pypi issue.
+
+New Features
+````````````
+Two new logging calls are now valid when using the CleverSheep logger, these are
+'warning' and 'fatal'. This brings it more in line with the Python logging
+library which is what is used under the hood.
+
+Known Issues
+````````````
+
+- The '--timeout' command line option does not work as intended and should not be used.
+- Using versions 0.7.X of twisted and higher seems to cause an import error and should not be used.
