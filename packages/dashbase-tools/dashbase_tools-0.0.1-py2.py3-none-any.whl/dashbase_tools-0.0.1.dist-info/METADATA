@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: dashbase-tools
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: http://www.dashbase.io
+Author: khou
+Author-email: kevin@dashbase.io
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: setuptools (>=12.2)
+Requires-Dist: urllib3 (==1.21.1)
+Requires-Dist: dateparser (==0.6.0)
+Requires-Dist: terminaltables (==3.1.0)
+Requires-Dist: simplejson (==3.11.1)
+
+UNKNOWN
+
+
