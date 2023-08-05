@@ -1,0 +1,16 @@
+conx/__init__.py,sha256=Z3M_G9KUXT7JgfH41H0LLaXvlwYISy59vTTMReqps_Q,985
+conx/_version.py,sha256=yIyhQL6mOEXdSUA0nzZ3eqNchoa_iGXllxrUaoGYpSM,835
+conx/activations.py,sha256=PYnqSe8HL7L2W2xudvilv2igwwFgec_9PpZGAUm_QIA,992
+conx/dashboard.py,sha256=YV5KAfIUbvpCfM8XfpCbz3gaCifdXu6k7SAYiYJKFJY,19249
+conx/dataset.py,sha256=UwzvZkBg2lISMAIpjHut8KTgcWvzfM_HVPOzwh4Ry0o,43581
+conx/graphs.py,sha256=48VWh8gHGtg7zqweOMewSALRJiZeIdWd-q2-7vEXm7E,4529
+conx/layers.py,sha256=Qoj35KvqozCpWHwXrDfTvFFUNsw-AYKNAQ9O9zk5Nxk,16501
+conx/network.py,sha256=i01WkasDAswWc3OQBF-OLjxMBkMkHNPIrfteKOvapig,80967
+conx/utils.py,sha256=S2HVN6NuidVyLw2NIBfWxgbQ-pXVoxqXELqJpOt3its,6649
+conx/widgets.py,sha256=9nD-Pk2wSqgPJVZP8Q21nmKJz8k-2n94X_i_UvH8weo,5414
+conx-3.2.4.dist-info/DESCRIPTION.rst,sha256=B5vD1UjafMgfSn8Wj6niP381eA0N6fnqPLWZL3Wx9pg,3599
+conx-3.2.4.dist-info/METADATA,sha256=pOJZM0lAcbYWlQL24i1p0Ew_mQdhhbcdjGzcCV9MbD0,4210
+conx-3.2.4.dist-info/RECORD,,
+conx-3.2.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+conx-3.2.4.dist-info/metadata.json,sha256=fE8fag_QZ1oZ3p5uWTeMJlxGj0pUZrnzI6VVk-PusEc,734
+conx-3.2.4.dist-info/top_level.txt,sha256=DqxQxhoknIg1nqMIWx0OtWesjPiAXmBDvi2UPDH1smg,5
