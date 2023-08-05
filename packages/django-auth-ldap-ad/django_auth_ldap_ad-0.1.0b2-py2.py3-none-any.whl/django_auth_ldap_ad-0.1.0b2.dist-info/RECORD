@@ -1,0 +1,10 @@
+django_auth_ldap_ad-0.1.0b2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_auth_ldap_ad-0.1.0b2.dist-info/METADATA,sha256=0DZ1OG6h-Z3CkFEnbnE_WPThpBAGAaGf-vfMyZ39w1s,892
+django_auth_ldap_ad-0.1.0b2.dist-info/RECORD,,
+django_auth_ldap_ad-0.1.0b2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_auth_ldap_ad-0.1.0b2.dist-info/metadata.json,sha256=-MxplT9KOUFW_BTu8Ir0dfWdjZxeQ_A4Z7d4Si9YfmU,1045
+django_auth_ldap_ad-0.1.0b2.dist-info/top_level.txt,sha256=RzYoNBtWagQ5zR5S3zQbhl5VnpmHlsB3wl2uY4j5dV8,15
+django_ldap_ad/__init__.py,sha256=E4VYKWb2mRITY5DOpc7g7UAshwDfQA1WAGG-vCDMoV8,34
+django_ldap_ad/backend.py,sha256=4MqZ7IawNxusWXFZgYfvkFSVzyN_ld03qGsI_xyN44E,6195
+django_ldap_ad/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ldap_ad/tests.py,sha256=4Yc7egO9P-J2DKmwmfQrUrrGUSq7-bePk10bwZxRrEU,7397
