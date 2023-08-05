@@ -1,0 +1,5 @@
+graphene-django>=2.0
+Django>=1.8.0
+django-filter>=1.0.4
+djangorestframework~=3.6.0
+channels-api>=0.4.0
