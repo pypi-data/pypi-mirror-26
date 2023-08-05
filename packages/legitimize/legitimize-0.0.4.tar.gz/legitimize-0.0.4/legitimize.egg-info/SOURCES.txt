@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+legitimize/__init__.py
+legitimize/legit.py
+legitimize/legitimize.py
+legitimize.egg-info/PKG-INFO
+legitimize.egg-info/SOURCES.txt
+legitimize.egg-info/dependency_links.txt
+legitimize.egg-info/requires.txt
+legitimize.egg-info/top_level.txt

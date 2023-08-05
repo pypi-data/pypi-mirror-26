@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: legitimize
+Version: 0.0.4
+Summary: Validate and Format Data
+Home-page: https://github.com/559wade/legitimize
+Author: Wade Williams
+Author-email: 559wade@gmail.com
+License: BSD
+Download-URL: https://github.com/559wade/legitimize/tarball/0.0.4
+Description: legitimize
+        ===============================
+        
+        version number: 0.0.1
+        author: Wade Williams
+        
+        Overview
+        --------
+        
+        Validate and Format Data
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install legitimize
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/559wade/legitimize.git
+            $ python setup.py install
+            
+        Contributing
+        ------------
+        
+        TBD
+        
+        Example
+        -------
+        
+        TBD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
