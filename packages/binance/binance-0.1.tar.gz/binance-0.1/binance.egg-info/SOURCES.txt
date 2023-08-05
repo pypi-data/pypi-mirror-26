@@ -1,0 +1,5 @@
+setup.py
+binance.egg-info/PKG-INFO
+binance.egg-info/SOURCES.txt
+binance.egg-info/dependency_links.txt
+binance.egg-info/top_level.txt
