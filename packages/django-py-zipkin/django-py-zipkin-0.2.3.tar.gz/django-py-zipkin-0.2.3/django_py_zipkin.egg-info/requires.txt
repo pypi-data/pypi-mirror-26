@@ -1,0 +1,12 @@
+Django
+celery
+requests
+py-zipkin==0.9.0
+
+[dev]
+pytest
+pytest-xdist
+pytest-django
+mock
+responses
+flake8
