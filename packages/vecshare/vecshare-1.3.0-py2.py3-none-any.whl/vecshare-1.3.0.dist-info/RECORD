@@ -1,0 +1,13 @@
+vecshare/__init__.py,sha256=D4hkMcdthsu8elhtDecsSZnZkaGTPYTwohepLiC2ZVM,62
+vecshare/indexer.py,sha256=PMdqhCwSrDO95YWs7lnftxRhgNwhykz3Ak-JCfCi0oA,12942
+vecshare/info.py,sha256=qsrQA162YmAFBX8QCOSzmBGkhwL7Uy0VVsPjqYz_RgQ,503
+vecshare/poll.py,sha256=oR1vE7OukvEskfyyus4cT6IpsdfzqWxKaD7X0QEsnCo,820
+vecshare/signatures.py,sha256=tBrfKLWkNh-4Ue8quo4B4wbf1sPCxlzdG1wjzB4u2Iw,4711
+vecshare/sim_benchmark.py,sha256=ObXp9m7RlaE_pAEb11WAybL6rM6d2wub0yt-U824gVk,2308
+vecshare/vecshare.py,sha256=3GmtQlBOLFinyfSmWMcAB7UI4k-r7mo2da-hmUlRUfw,14263
+vecshare-1.3.0.dist-info/DESCRIPTION.rst,sha256=E1ZXnUa32V65RmJc-LSaIEETrf2LTV6_cWkqtPzRJi4,14236
+vecshare-1.3.0.dist-info/METADATA,sha256=0kG9fBFoVb24oXfeRE87VERy_nsQkJEf2Yrur8boFVY,15607
+vecshare-1.3.0.dist-info/RECORD,,
+vecshare-1.3.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+vecshare-1.3.0.dist-info/metadata.json,sha256=4rO-bQAjP8P-d5YcGG7F8u1YKNDWlC6T0s40GIsJfOs,1370
+vecshare-1.3.0.dist-info/top_level.txt,sha256=q6yr_PjeblewOC3pHJLGYa9Qb7d73FA13X1DLttoeVY,9
