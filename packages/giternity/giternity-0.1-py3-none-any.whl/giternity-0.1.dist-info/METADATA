@@ -1,0 +1,96 @@
+Metadata-Version: 2.0
+Name: giternity
+Version: 0.1
+Summary: Mirror git repositories.
+Home-page: https://github.com/rahiel/giternity
+Author: Rahiel Kasim
+Author-email: rahielkasim@gmail.com
+License: GPLv3+
+Description-Content-Type: UNKNOWN
+Keywords: giternity git mirror cgit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: System :: Archiving :: Mirroring
+Requires-Dist: requests
+Requires-Dist: toml
+
+giternity
+=========
+
+Giternity is a tool to mirror your git repositories from GitHub. You can
+specify a username/organization to mirror all their repositories, or
+just individual repo's. It retrieves some repo metadata so they can be
+nicely served with `cgit <https://git.zx2c4.com/cgit/about/>`__. Run
+giternity periodically to update the mirrors.
+
+Installation
+============
+
+Install giternity:
+
+.. code:: shell
+
+    sudo pip3 install giternity
+
+You also need to have git installed.
+
+Configuration
+=============
+
+The configuration file is at ``/etc/giternity.toml``:
+
+.. code:: toml
+
+    # path where to keep the git mirrors
+    git_data_path = "/srv/git/"
+
+    # URL of your cgit instance (optional)
+    # cgit_url = "https://git.cpu.re/"
+
+    [github]
+    repositories = [
+        "rahiel",
+        "sunsistemo",
+        "TeMPOraL/nyan-mode",
+    ]
+
+In the ``[github]`` section you specify which repositories to mirror.
+You list a username (``"rahiel"``) or an organization (``"sunsistemo"``)
+to mirror all of their non-fork repositories. For individual repos
+(``"TeMPOraL/nyan-mode"``) you specify them like ``owner/repo``.
+
+With the configuration in place you simply run ``giternity``.
+
+For convenience there is an automatic configuration that sets up a
+separate system user, gives this user permissions to ``git_data_path``
+and creates a cron job at ``/etc/cron.d/giternity`` to update the
+mirrors every hour. Apply these defaults with:
+
+.. code:: shell
+
+    sudo giternity --configure
+
+cgit
+====
+
+Your git mirrors are now suitable to serve with cgit. Customize your
+``/etc/cgitrc`` as you like and add the following to the bottom:
+
+.. code:: ini
+
+    agefile=info/web/last-modified
+    section-from-path=1
+    scan-path=/srv/git/
+
+where you replace ``/srv/git/`` with the ``git_data_path`` from your
+``/etc/giternity.toml``.
+
+
