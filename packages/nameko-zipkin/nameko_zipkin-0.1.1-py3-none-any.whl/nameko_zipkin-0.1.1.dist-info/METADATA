@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: nameko-zipkin
+Version: 0.1.1
+Summary: Zipkin tracing for nameko framework
+Home-page: https://github.com/fraglab/nameko-zipkin
+Author: Maxim Kiyan
+Author-email: maxim.k@fraglab.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: nameko (>=2.6.0)
+Requires-Dist: py-zipkin (>=0.7.1)
+
+UNKNOWN
+
+

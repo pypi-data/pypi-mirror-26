@@ -1,0 +1,12 @@
+nameko_zipkin/__init__.py,sha256=CJoHCRgyusj1nYdLPMiH2tohUWqEGQv-QJDWz-Ad2zk,112
+nameko_zipkin/constants.py,sha256=23qYdPFN7cawU_Lw5Kia3R5-N2FCeA0PDIMNjMJrW-w,273
+nameko_zipkin/method_proxy.py,sha256=NgmQX1B-YPy5FgjQgOmkRARpC4xNMJD5bLtnFvbx9nM,1153
+nameko_zipkin/provider.py,sha256=rCJbMA7CyB245W99NYjBBY4WMB_8ONbykmzd6r3adwo,2091
+nameko_zipkin/transport.py,sha256=khvj3qrRrqNJhi0BRo7viCFq55BmN_n7npy8xFBMzWM,2377
+nameko_zipkin/utils.py,sha256=otYXSb3bdGsvOgsE2CNRbRtWJWWJtYVoqSbWvojaBGA,707
+nameko_zipkin-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+nameko_zipkin-0.1.1.dist-info/METADATA,sha256=6X8rAf360CBK_SPXm_ucdQ3WDkCEPZPygAm5su9c7co,321
+nameko_zipkin-0.1.1.dist-info/RECORD,,
+nameko_zipkin-0.1.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+nameko_zipkin-0.1.1.dist-info/metadata.json,sha256=pBB6Mx3N91LL8bKN974BMvLOtfTloYgLCAHQk9Sm4Gs,499
+nameko_zipkin-0.1.1.dist-info/top_level.txt,sha256=LGVHDzbAoctA7c59mVvRMlqKDyP-k_LakPHq47RI6-w,14
