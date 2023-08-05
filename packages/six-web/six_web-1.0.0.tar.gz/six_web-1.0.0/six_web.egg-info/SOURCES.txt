@@ -1,0 +1,9 @@
+README.md
+setup.py
+six_web/__init__.py
+six_web/six.py
+six_web.egg-info/PKG-INFO
+six_web.egg-info/SOURCES.txt
+six_web.egg-info/dependency_links.txt
+six_web.egg-info/top_level.txt
+test/test_all.py
