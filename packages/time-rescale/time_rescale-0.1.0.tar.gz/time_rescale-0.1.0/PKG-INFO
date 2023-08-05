@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: time_rescale
+Version: 0.1.0
+Summary: Tools for evaluating the goodness of fit of a pointprocess model via the time rescaling theorem
+Home-page: https://github.com/Eden-Kramer-Lab/time_rescale
+Author: Eric Denovellis
+Author-email: edeno@bu.edu
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
