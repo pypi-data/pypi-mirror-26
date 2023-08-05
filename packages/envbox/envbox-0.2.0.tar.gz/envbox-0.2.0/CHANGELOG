@@ -1,0 +1,12 @@
+envbox changelog
+================
+
+
+v0.2.0
+------
++ Introduced 'import_by_environment()' function.
+
+
+v0.1.0
+------
++ Basic functionality.
