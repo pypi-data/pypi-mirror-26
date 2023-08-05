@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: spark_stratifier
+Version: 0.1.1
+Summary: Stratified Cross Validator for Spark
+Home-page: https://github.com/interviewstreet/spark-stratifier
+Author: Justin Suen
+Author-email: justin.suen@hackerrank.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
