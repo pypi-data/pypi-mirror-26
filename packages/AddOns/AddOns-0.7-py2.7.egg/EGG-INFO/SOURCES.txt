@@ -1,0 +1,11 @@
+README.txt
+setup.py
+AddOns.egg-info/PKG-INFO
+AddOns.egg-info/SOURCES.txt
+AddOns.egg-info/dependency_links.txt
+AddOns.egg-info/namespace_packages.txt
+AddOns.egg-info/requires.txt
+AddOns.egg-info/top_level.txt
+peak/__init__.py
+peak/util/__init__.py
+peak/util/addons.py
