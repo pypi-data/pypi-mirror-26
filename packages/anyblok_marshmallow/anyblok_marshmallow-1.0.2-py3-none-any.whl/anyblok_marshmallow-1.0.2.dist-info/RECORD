@@ -1,0 +1,16 @@
+anyblok_marshmallow/__init__.py,sha256=enU0VCn9YNiE8JZZ1YNABJ9EuFKopwgSvY1k0zS_aYQ,393
+anyblok_marshmallow/release.py,sha256=_Yf2Qhu8Lfl_9slyrw72ZhpYY9K4CQumYoE6_bWR0vk,398
+anyblok_marshmallow/schema.py,sha256=0BVqRNe8QgvUbAW16sYeQMo_U0ZxgSAHSmj7IAuVs1k,7966
+anyblok_marshmallow/tests/__init__.py,sha256=ZvZV2v4MPVUXKRB4hlPbxPpped8bm5EejyyZuAUrnsA,2636
+anyblok_marshmallow/tests/test_complexe_model.py,sha256=tnrtl_I_fkge4aeqe4JaFOKO5E0iRR5vB31nwQnDIiw,3397
+anyblok_marshmallow/tests/test_decorator.py,sha256=kiut_fwnoX0Q5VL3hzE_O8PZtR_zNXDiCmaruvLXAX0,2139
+anyblok_marshmallow/tests/test_post_load_return_instance.py,sha256=fa_dGs2PQXOX4RxWGgS5u3oA1mz94QE3YrKYEm7ZiXA,7688
+anyblok_marshmallow/tests/test_registry.py,sha256=fiaCHHeC0Koe2oUTegLITjcnvx1BK_pubfuDEuAlh1o,15305
+anyblok_marshmallow/tests/test_simple_model.py,sha256=gQS8_hi7Dco62eUT0aCqIVB0ROHue5gRZx0uQTqZFyk,2969
+anyblok_marshmallow-1.0.2.dist-info/DESCRIPTION.rst,sha256=V1HgRB6832FppWdBP3EPgDJKO4CaEdQhK3tHOzlCyeg,12045
+anyblok_marshmallow-1.0.2.dist-info/LICENSE.txt,sha256=-0NEqdjsx2cyqZie7Y0LbRRYdTj5XPlTSoLyo5uKfHY,16687
+anyblok_marshmallow-1.0.2.dist-info/METADATA,sha256=EGDxx68kEMuoh-vbpY3DMxq1-HANIAxNE6-njMUslr4,12983
+anyblok_marshmallow-1.0.2.dist-info/RECORD,,
+anyblok_marshmallow-1.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+anyblok_marshmallow-1.0.2.dist-info/metadata.json,sha256=RBko9iCuYoy05wDuMiyuRZCNYP_oO8pmVTaSts50Be8,1078
+anyblok_marshmallow-1.0.2.dist-info/top_level.txt,sha256=2yALY25JTe6_KyvmXiL_cvScOjJDu5I_vtCISFSiDrI,20
