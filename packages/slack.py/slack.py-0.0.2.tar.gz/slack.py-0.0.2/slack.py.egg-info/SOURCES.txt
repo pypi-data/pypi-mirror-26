@@ -1,0 +1,15 @@
+README.md
+main.py
+setup.cfg
+setup.py
+slack.py.egg-info/PKG-INFO
+slack.py.egg-info/SOURCES.txt
+slack.py.egg-info/dependency_links.txt
+slack.py.egg-info/entry_points.txt
+slack.py.egg-info/requires.txt
+slack.py.egg-info/top_level.txt
+slack.py.egg-info/zip-safe
+slack_cli/__init__.py
+slack_cli/api.py
+slack_cli/cmd.py
+slack_cli/utils.py
