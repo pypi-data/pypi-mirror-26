@@ -1,0 +1,3 @@
+[console_scripts]
+esper-wave = esper_wave.__main__:main
+

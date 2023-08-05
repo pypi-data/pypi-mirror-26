@@ -1,0 +1,5 @@
+requests
+argparse
+future
+pyreadline
+pyqtgraph

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+esper_wave/__init__.py
+esper_wave/__main__.py
+esper_wave/version.py
+esper_wave.egg-info/PKG-INFO
+esper_wave.egg-info/SOURCES.txt
+esper_wave.egg-info/dependency_links.txt
+esper_wave.egg-info/entry_points.txt
+esper_wave.egg-info/requires.txt
+esper_wave.egg-info/top_level.txt

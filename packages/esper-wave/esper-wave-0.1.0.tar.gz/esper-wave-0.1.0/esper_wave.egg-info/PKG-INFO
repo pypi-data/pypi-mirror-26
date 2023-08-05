@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: esper-wave
+Version: 0.1.0
+Summary: Tool for displaying ESPER waveforms and variables
+Home-page: https://github.com/bryerton/esper-wave
+Author: Bryerton Shaw
+Author-email: bryerton@triumf.ca
+License: MIT
+Description: ==========
+        ESPER WAVE
+        ==========
+        
+        Overview
+        --------
+        A python-based utility to display waveforms and perform stripline-like analysis of ESPER-based experiments
+        
+        Installation
+        ------------
+        The recommended installation method is via pip
+        
+          To install:
+            `pip install esper-wave`
+          To upgrade:
+            `pip install -U esper-wave`
+        
+        Interactive
+        -----------
+         Command:
+          `esper-wave [-h] [-u USER] [-p PASS] <url>`
+        
+         Purpose:
+          Connects to an esper service located at `url`
+         
+         Options:
+          `-h`
+          
+          `--help`
+           Print out help for this subcommand 
+         
+          `-u USER`
+          
+          `--user USER`
+           User to use for HTTP basic authentication
+         
+          `-p PASS`
+          
+          `--password PASS`
+           Password to use for HTTP basic authentication. If `-u` is specified, but `-p` is not, the user will be prompted for a password
+        
+          `url`
+           Location of ESPER web service given in standard web URL format. If the port is excluded, it defaults to 80
+        
+Keywords: esper monitoring control experiments
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: Console
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
