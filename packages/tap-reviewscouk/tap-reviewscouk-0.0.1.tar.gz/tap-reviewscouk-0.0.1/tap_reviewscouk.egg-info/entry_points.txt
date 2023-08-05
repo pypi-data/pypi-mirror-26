@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          tap-reviewscouk=tap_reviewscouk:main
+      
