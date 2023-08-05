@@ -1,0 +1,6 @@
+networkx==1.11
+
+[test]
+pytest
+pytest_cov
+coveralls
