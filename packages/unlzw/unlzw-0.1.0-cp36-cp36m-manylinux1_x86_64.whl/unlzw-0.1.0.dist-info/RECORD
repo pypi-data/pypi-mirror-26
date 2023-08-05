@@ -1,0 +1,10 @@
+unlzw-0.1.0.dist-info/DESCRIPTION.rst,sha256=ke-BVMcl73PHK_ApTyPnQxk9JhtlfMIpDR6tDKpqIUo,594
+unlzw-0.1.0.dist-info/WHEEL,sha256=nd6vkSWs8DEKiyCL0EDgvNKKSV5WLkJz4DczUuxkLLk,109
+unlzw-0.1.0.dist-info/metadata.json,sha256=IEntsQnaVxvO9C36qar83kWdJpzUJP1aO0xtoQFG7rc,1201
+unlzw-0.1.0.dist-info/METADATA,sha256=Pzyvxko-08GWP8aehPNeezIVUFl1GcGltYFsjC7VHrM,1692
+unlzw-0.1.0.dist-info/RECORD,,
+unlzw-0.1.0.dist-info/top_level.txt,sha256=pVB1VOwsWkD46yNOyKflrLKL6yE80Akuv1BkkJ80idM,6
+unlzw/_unlzw_build.py,sha256=SNIR2M0B7zrz2TrgWqGfaNhk-OWZlW1Gicc0-ecu770,342
+unlzw/__init__.py,sha256=TpjLvSYnqiKtFSKZKya6CPdKCgmQrGHc3bqkdjsQoxg,770
+unlzw/_unlzw.abi3.so,sha256=mCrcpca3fcPokudgj1FJ6XXZ4_E9_4aC1Febao0snu8,27252
+unlzw/_unlzw.c,sha256=VaYopV0zmEKHcEd8Zqpl6Q384yd8spBOijD-lAVnI4I,10944
