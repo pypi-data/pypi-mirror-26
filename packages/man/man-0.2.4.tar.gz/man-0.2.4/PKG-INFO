@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: man
+Version: 0.2.4
+Summary: Project manager for pypi libraries
+Home-page: https://github.com/ddorn/man
+Author: Diego Dorn
+Author-email: diego.dorn@free.fr
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: |Build Status|
+        
+        man
+        ===
+        
+        Project manager for pypi libraries
+        
+        .. |Build Status| image:: https://travis-ci.org/ddorn/man.svg?branch=v0.2.4
+           :target: https://travis-ci.org/ddorn/man
+        
+Platform: UNKNOWN
