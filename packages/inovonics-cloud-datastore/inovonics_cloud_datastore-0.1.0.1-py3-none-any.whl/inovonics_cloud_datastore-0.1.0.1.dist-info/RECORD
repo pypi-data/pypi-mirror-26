@@ -1,0 +1,11 @@
+inovonics/cloud/datastore/__init__.py,sha256=J6EEa3KXzmqsnWQHqndalzGVZWWSDTD8-b2HFX-4JdE,320
+inovonics/cloud/datastore/__version__.py,sha256=lJOgMYCJ_K0co2t806u_dyh_L74wA-nt9yPems8cIko,47
+inovonics/cloud/datastore/bases.py,sha256=OLGf8qDC1Ylt19-0rSxVSHe8HNcnPXRVNtiykmbvEjk,398
+inovonics/cloud/datastore/exceptions.py,sha256=2iW9RJjNEbTUfdp5bf5CTw6mlIizTVH6vPi7MfP-vg8,299
+inovonics/cloud/datastore/inoredis.py,sha256=8_pEQgqnwZfHaHwq31SmZdxprjcIqpMEjv2q6YSky_E,750
+inovonics_cloud_datastore-0.1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+inovonics_cloud_datastore-0.1.0.1.dist-info/METADATA,sha256=tmFfpEA8uiPwOOAHhw68lnNSZc3yECPDrqvBdkuXg0s,945
+inovonics_cloud_datastore-0.1.0.1.dist-info/RECORD,,
+inovonics_cloud_datastore-0.1.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+inovonics_cloud_datastore-0.1.0.1.dist-info/metadata.json,sha256=OrCeE4aOHygS8Y15sx75IXtnGlZWxFSYIdlqB4ZvssA,1054
+inovonics_cloud_datastore-0.1.0.1.dist-info/top_level.txt,sha256=GUSkOhBpOs9G52jsKiIF50ADRnEmFkeO2AaY9rwjII4,10
