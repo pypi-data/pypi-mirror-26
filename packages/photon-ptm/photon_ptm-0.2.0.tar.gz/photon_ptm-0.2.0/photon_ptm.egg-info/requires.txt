@@ -1,0 +1,11 @@
+numpy
+pandas >= 0.21
+scipy
+matplotlib
+statsmodels
+networkx
+perseuspy
+flask
+celery
+redis
+goenrich
