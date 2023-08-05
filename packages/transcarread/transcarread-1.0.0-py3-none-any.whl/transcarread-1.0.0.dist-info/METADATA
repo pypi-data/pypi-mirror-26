@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: transcarread
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/scivision/transcarrread
+Author: Michael Hirsch, Ph.D.
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: gridaurora
+Requires-Dist: matplotlib
+Requires-Dist: nose
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: sciencedates
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: xarray
+
+UNKNOWN
+
+
