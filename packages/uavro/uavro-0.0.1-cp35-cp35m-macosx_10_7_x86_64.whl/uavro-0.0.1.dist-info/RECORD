@@ -1,0 +1,10 @@
+uavro/__init__.py,sha256=SMfIvt0-xmm0bBEK0agO3HnfEhP0y2fEQa0F0VoAN_8,62
+uavro/core.py,sha256=-N7jnhhG4dujRqZbYMo9q7yKur30r6A4SBNhClaP1h8,11481
+uavro/reader.c,sha256=0sad3HP08kaZrEtH_fpH6Mv3-jdSKVD4O9ojhMJNdEw,407185
+uavro/reader.cpython-35m-darwin.so,sha256=hlQhu-lxFAaSYd-rKCeNCcSjHR9exp4ZHsCh-Vedyrs,89952
+uavro-0.0.1.dist-info/DESCRIPTION.rst,sha256=5x32wWwN-wJ-88OUEf3Fj9CzubMM8j2UGmRpPLXpdks,198
+uavro-0.0.1.dist-info/METADATA,sha256=qN-4UW2zdECCmj_ZzIR-zAP0p7bkxAKphW_fr0JbTak,1126
+uavro-0.0.1.dist-info/RECORD,,
+uavro-0.0.1.dist-info/WHEEL,sha256=biCFD27EwDmLETYNGA4vFm6BiMkUI2wrSAHnHEZTA7k,110
+uavro-0.0.1.dist-info/metadata.json,sha256=KjQ_5x-n_ce2NBUYeNC7cfNCHXTxsDqGlhAoBcEa9LU,1032
+uavro-0.0.1.dist-info/top_level.txt,sha256=9twAo3sE0kxnKBriL2T3WzvVAyHGlG8GYk6HQnmXFoQ,6
