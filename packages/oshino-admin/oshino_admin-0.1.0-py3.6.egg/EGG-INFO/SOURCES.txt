@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+oshino_admin/__init__.py
+oshino_admin/run.py
+oshino_admin/version.py
+oshino_admin.egg-info/PKG-INFO
+oshino_admin.egg-info/SOURCES.txt
+oshino_admin.egg-info/dependency_links.txt
+oshino_admin.egg-info/entry_points.txt
+oshino_admin.egg-info/requires.txt
+oshino_admin.egg-info/top_level.txt
+requirements/release.txt
+requirements/test.txt
