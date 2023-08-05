@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: tap-reviewscouk
+Version: 0.0.2
+Summary: Singer.io tap for extracting data from reviews.co.uk
+Home-page: https://github.com/onedox/tap-reviewscouk
+Author: Onedox
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: requests (>=2.13.0)
+Requires-Dist: singer-python (>=1.4.2)
+
+UNKNOWN
+
+
