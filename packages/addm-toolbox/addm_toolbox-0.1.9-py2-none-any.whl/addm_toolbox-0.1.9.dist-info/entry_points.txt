@@ -1,0 +1,15 @@
+[console_scripts]
+addm_basinhopping = basinhopping_optimize:main
+addm_cis_trans_fit = cis_trans_fitting:main
+addm_demo = demo:main
+addm_genetic_algorithm = genetic_algorithm_optimize:main
+addm_mla_test = addm_mla_test:main
+addm_pta_map = addm_pta_map:main
+addm_pta_mle = addm_pta_mle:main
+addm_pta_test = addm_pta_test:main
+addm_run_tests = run_all_tests:main
+addm_simulate_true_distributions = simulate_addm_true_distributions:main
+addm_util_test = util_test:main
+ddm_mla_test = ddm_mla_test:main
+ddm_pta_test = ddm_pta_test:main
+
