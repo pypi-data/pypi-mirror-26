@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: build-service-osc
+Version: 0.16.0
+Summary: openSUSE commander
+Home-page: http://en.opensuse.org/openSUSE:OSC
+Author: openSUSE project
+Author-email: opensuse-buildservice@opensuse.org
+License: GPL
+Download-URL: https://github.com/openSUSE/osc
+Description: Command-line client for the openSUSE Build Service, which allows to access repositories in the openSUSE Build Service in similar way as Subversion repositories.
+Keywords: openSUSE,SUSE,RPM,build,buildservice
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows XP/2000/NT
+Platform: Windows 95/98/ME
+Platform: FreeBSD
