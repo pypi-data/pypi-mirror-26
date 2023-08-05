@@ -1,0 +1,10 @@
+README.md
+_nod.cpp
+setup.py
+nod/__init__.py
+nod/__main__.py
+nod.egg-info/PKG-INFO
+nod.egg-info/SOURCES.txt
+nod.egg-info/dependency_links.txt
+nod.egg-info/top_level.txt
+py-nod/nod_wrap_util.cxx
