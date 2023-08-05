@@ -1,0 +1,19 @@
+include TTFramework/Conf/*.conf
+include *.txt
+include TTFramework/TTAdmin/
+include TTFramework/TTAdmin/static/*.*
+include TTFramework/TTAdmin/static/css/*.*
+include TTFramework/TTAdmin/static/echart/*.*
+include TTFramework/TTAdmin/static/echart/chart/*.*
+include TTFramework/TTAdmin/static/fonts/*.*
+include TTFramework/TTAdmin/static/images/*.*
+include TTFramework/TTAdmin/static/js/*.*
+include TTFramework/TTAdmin/templete/*.*
+include TTFramework/Core/InstanceFactory.py
+include TTFramework/Core/LDAPManager.py
+recursive-include examples *.txt *.py
+prune examples/sample?/build
+prune TTFramework/DevelopMain.py
+prune TTFramework/TestMain.py
+prune TTFramework/Main.py
+prune TTFramework/TestCase
