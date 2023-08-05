@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: checkdnssec
+Version: 0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: dnspython
+Requires-Dist: pycrypto
+
+UNKNOWN
+
+
