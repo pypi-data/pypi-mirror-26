@@ -1,0 +1,11 @@
+admin_ordering/__init__.py,sha256=lZoKu-bE_yRz1lc2dewsGj3Y9RP_UO1sJQyq1yZFHWY,120
+admin_ordering/admin.py,sha256=-a-EdUyU8KWnlIjODtwKfgnfOs8tBWFr35fkLPPizGQ,2109
+admin_ordering/static/admin_ordering/admin_ordering.css,sha256=8EQqeLLsw1BUu8ztgpzVNgun9j0rL3dnW9-HREEM8zM,110
+admin_ordering/static/admin_ordering/admin_ordering.js,sha256=TNeOD0akX-Jw4QpIDxA4FWFh-ns8TBhwXvTg3yC0QRw,1756
+admin_ordering/static/admin_ordering/jquery-ui-1.11.4.custom.min.js,sha256=n1yAyo_8xJjOoZaFR1mv_2kHAeOjaI3LvzcAbVhcUkk,37940
+django_admin_ordering-0.6.1.dist-info/DESCRIPTION.rst,sha256=mgfKtIgoLMRe_YJOvvLzko_XhSnfV3AKdZSpCODejdw,1441
+django_admin_ordering-0.6.1.dist-info/METADATA,sha256=uCE_xlIzQ5eko0YoublEyvmRh_m-yXjRrK6Jfw-nPvM,2457
+django_admin_ordering-0.6.1.dist-info/RECORD,,
+django_admin_ordering-0.6.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_admin_ordering-0.6.1.dist-info/metadata.json,sha256=s9rP6eOzJ-OsYn4NloszGQpTSa8-igdCxY-1NwdZEtE,1236
+django_admin_ordering-0.6.1.dist-info/top_level.txt,sha256=t92pQ6-BY9fyj1NIYdbgCY2-iuqZPQVGPysXR4OJZgU,15
