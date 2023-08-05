@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: django-py-zipkin
+Version: 0.1.0
+Summary: py2 & py3 compatible zipkin for Django
+Home-page: https://github.com/praekeltfoundation/django-py-zipkin
+Author: Simon de Haan
+Author-email: simon@praekelt.org
+License: UNKNOWN
+Keywords: zipkin
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Django
+Requires-Dist: celery
+Requires-Dist: py-zipkin (==0.8.3)
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: mock; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-django; extra == 'dev'
+Requires-Dist: pytest-xdist; extra == 'dev'
+Requires-Dist: responses; extra == 'dev'
+
+Django-py-zipkin
+================
+
+Django middleware and tracing utilities for submitting traces to Zipkin.
+py2 / py3 compatible.
+
+
