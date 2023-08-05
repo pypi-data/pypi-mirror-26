@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="bullshit">
+    <file>Operation.png</file>
+  </qresource>
+</RCC>
