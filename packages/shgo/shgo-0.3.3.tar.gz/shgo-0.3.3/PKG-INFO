@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: shgo
+Version: 0.3.3
+Summary: Simplicial homology global optimisation
+Home-page: https://github.com/stefan-endres/shgo
+Author: Stefan Endres
+Author-email: stefan.c.endres@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
