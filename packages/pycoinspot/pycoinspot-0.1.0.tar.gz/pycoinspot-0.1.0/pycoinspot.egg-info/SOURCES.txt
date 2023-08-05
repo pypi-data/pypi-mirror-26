@@ -1,0 +1,9 @@
+README.md
+setup.py
+coinspot/__init__.py
+coinspot/coinspot.py
+pycoinspot.egg-info/PKG-INFO
+pycoinspot.egg-info/SOURCES.txt
+pycoinspot.egg-info/dependency_links.txt
+pycoinspot.egg-info/requires.txt
+pycoinspot.egg-info/top_level.txt

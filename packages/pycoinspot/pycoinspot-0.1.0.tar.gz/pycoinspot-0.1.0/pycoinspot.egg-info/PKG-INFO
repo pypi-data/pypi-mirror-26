@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: pycoinspot
+Version: 0.1.0
+Summary: coinspot api,works for both python2 & python3
+Home-page: https://github.com/sylar1015/coinspot
+Author: Liang.Sun
+Author-email: sylar1015@qq.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # coinspot
+        coinspot api, works for both python2 &amp; python3
+        
+        coinspot_api = Coinspot(api_key = 'your api key', api_secret = 'your api sceret')
+        
+        res = coinspot_api.quote_buy()
+        
+        ...
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
