@@ -1,0 +1,10 @@
+[run]
+branch = True
+source = fusion_util
+omit =
+  fusion_util/_version.py
+
+[paths]
+source =
+  fusion_util
+  .tox/*/site-packages/fusion_util

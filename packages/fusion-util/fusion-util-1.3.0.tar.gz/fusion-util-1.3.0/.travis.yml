@@ -1,0 +1,28 @@
+sudo: false
+dist: trusty
+language: python
+cache:
+  directories:
+  - "$HOME/.cache/pip"
+branches:
+  only:
+  - master
+  - staging
+  - trying
+matrix:
+  include:
+    - env: TOXENV=py27
+      python: 2.7.13
+    - env: TOXENV=pypy
+      python: pypy2.7-5.8.0
+install:
+- pip install -U pip setuptools
+- pip install tox codecov
+script:
+- tox
+after_success:
+- codecov
+notifications:
+  email: false
+  slack:
+    secure: ehY2lYgF319LlPKJWjR2sXfVhAx36pWA9AuTYCF7VuorgWzX0g5SyhG7xesi/xrIBpozXwtDUMw7d4ggtUlPlvpEcu0CbJQ7mNwprHcwHJKiGP45nfwHiqdlwmyiGSR0yOGyMlMRV1/cbZCj2RCFAfoWe1KDUYu2vqRX4G83Qo39wQx+WyUibIC9jlgaU5v2TvsPSqsLE6cbrgf6Zono3/cr1IbRSVriofTN4jD0PnqqEhs4cFCllxiZgfi7yP2tlGtrc8RqNvFSBplvohhg0rtOZ2enasdPCw3p8kTIg4zbNx7CLP+q4nMPl0LpQW7/0J5DHm+FJfl/YW/QXE91YZj/0zwBZqMJPg7l/h/8dkgzw44RGNXh1OPYF51UAEybiH6GR1lpregvGNbtkIsmNbN1dvtWWRfDg4vA7uiAimulywJMRdyIdYCMz5fXLc/R58Lr3rqt2JbiWZw+Dv1sZ3MrwZRhB7/ah6SqxXFuoXdkB6r9L5vHP1itKQRGZ2fYXcA7/7mZwxf6qy4iUn2cS3aVAql/u7sOr8McRY/0TaZwwD+cyy8PC4A4AozQgfawoSFjhA6jpnHmM6TKX8R9WiU0TomVDSZrKDhwCnSY2fPNTcu8AaWT3NQtHAtMTprGtGQKFMBiv43SPHMVmOkvT3zq/tebInydHYqEhLVYBzY=

@@ -1,0 +1,11 @@
+FROM debian:jessie
+
+RUN apt-get update \
+  && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -qy virtualenv python zlib1g-dev ca-certificates
+RUN virtualenv -p /usr/bin/python /appenv
+RUN . /appenv/bin/activate \
+  && pip install --upgrade pip setuptools
+RUN . /appenv/bin/activate \
+  && pip install eliot-tree
+ENV PATH /appenv/bin:$PATH
+WORKDIR "/db"
