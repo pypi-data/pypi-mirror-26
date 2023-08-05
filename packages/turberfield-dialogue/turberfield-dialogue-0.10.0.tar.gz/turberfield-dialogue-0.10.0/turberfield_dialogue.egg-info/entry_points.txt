@@ -1,0 +1,3 @@
+[console_scripts]
+turberfield-rehearse = turberfield.dialogue.viewer:run
+
