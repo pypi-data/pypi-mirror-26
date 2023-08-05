@@ -1,0 +1,12 @@
+oca/__init__.py,sha256=NyHCk5Jg2nIw-AuQvcC-c346RG75wK45P26lj7KgRuc,184
+oca/decorators/__init__.py,sha256=ZTKslQanAQHAwOuXUPeb8dnDUcg6Nqpla_1d_8f2WLM,179
+oca/decorators/foreach.py,sha256=R_6S51fqEtDI_vK4cL8a1UNnvFQZ74XzHOrGKUSqvCc,2235
+oca/tests/__init__.py,sha256=mIpJZ2m-CJXQpyJ8NSMyVNyR7tGJcKbNYGChJeP3u3c,118
+oca/tests/common.py,sha256=I7fY7Ay6kZ0sTCsXjjpclNErPdYLuE_0uVIRdx3E2S0,379
+oca/tests/test_helpers_foreach.py,sha256=noW65Hb8R7iqg7k2qnULorfy2LbhlETC96V2KdULIS8,1286
+oca_decorators-0.0.1.dist-info/DESCRIPTION.rst,sha256=UrBxHISJnwjIi97urYA4B92hFhKMtRKPWP6EB7BKOyc,2103
+oca_decorators-0.0.1.dist-info/METADATA,sha256=0IVyr9BCOnHgnnu5fNTJ3RJzLNOG5nJrv0X7eWah6qE,3072
+oca_decorators-0.0.1.dist-info/RECORD,,
+oca_decorators-0.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+oca_decorators-0.0.1.dist-info/metadata.json,sha256=CxoYS5K8rFiODG72Pqkff975Cd_oeWfbdsJJ_PT86Mg,1105
+oca_decorators-0.0.1.dist-info/top_level.txt,sha256=h2raP2_cHHc6g7ghaUKoQ2D0HhecthkXjKUaaFO3p0A,4
