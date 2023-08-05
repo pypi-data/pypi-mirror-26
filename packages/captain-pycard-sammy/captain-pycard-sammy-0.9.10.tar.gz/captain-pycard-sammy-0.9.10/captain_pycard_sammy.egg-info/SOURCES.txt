@@ -1,0 +1,8 @@
+setup.py
+captain_pycard_sammy.egg-info/PKG-INFO
+captain_pycard_sammy.egg-info/SOURCES.txt
+captain_pycard_sammy.egg-info/dependency_links.txt
+captain_pycard_sammy.egg-info/top_level.txt
+pycard/__init__.py
+pycard/card.py
+pycard/holder.py
