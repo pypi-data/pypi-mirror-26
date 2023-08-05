@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: geocrawl
+Version: 0.2
+Summary: A library to stream geocaching related entities from the official website
+Home-page: https://github.com/nalch/geo-crawl
+Author: Kristian Scholze
+Author-email: Scholze.Kristian@gmail.com
+License: MIT
+Download-URL: https://github.com/nalch/geo-crawl/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: scrapy,geocaching,cache
+Platform: UNKNOWN
