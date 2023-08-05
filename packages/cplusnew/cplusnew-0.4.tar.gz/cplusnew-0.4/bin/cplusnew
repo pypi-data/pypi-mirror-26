@@ -1,0 +1,10 @@
+#1/usr/bin/env python
+
+import cplusnew
+import sys
+
+if len(sys.argv) != 2:
+	print("None or too many project names specified. \nUsing default: \'Project\'")
+	cplusnew.main("Project")
+else:
+	cplusnew.main(sys.argv[1])
