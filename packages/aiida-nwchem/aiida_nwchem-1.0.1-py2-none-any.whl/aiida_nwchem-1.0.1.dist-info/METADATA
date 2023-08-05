@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: aiida-nwchem
+Version: 1.0.1
+Summary: The official AiiDA plugin for NWChem
+Home-page: https://github.com/aiidateam/aiida-nwchem
+Author: The AiiDA team
+Author-email: developers@aiida.net
+License: MIT License
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: aiida-core (>=0.10.0rc1)
+Provides-Extra: dev_precommit
+Requires-Dist: pre-commit; extra == 'dev_precommit'
+Provides-Extra: docs
+Requires-Dist: Sphinx; extra == 'docs'
+Requires-Dist: docutils; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+
+UNKNOWN
+
+

@@ -1,0 +1,12 @@
+[aiida.calculations]
+nwchem.basic = aiida_nwchem.calculations.basic:BasicCalculation
+nwchem.pymatgen = aiida_nwchem.calculations.nwcpymatgen:NwcpymatgenCalculation
+
+[aiida.parsers]
+nwchem.basenwc = aiida_nwchem.parsers.__init__:BasenwcParser
+nwchem.basic = aiida_nwchem.parsers.basic:BasicParser
+nwchem.pymatgen = aiida_nwchem.parsers.nwcpymatgen:NwcpymatgenParser
+
+[aiida.tools.dbexporters.tcod_plugins]
+nwchem.nwcpymatgen = aiida_nwchem.tools.dbexporters.tcod_plugins.nwcpymatgen:NwcpymatgenTcodtranslator
+
