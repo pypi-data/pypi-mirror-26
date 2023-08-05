@@ -1,0 +1,8 @@
+setup.py
+meep/__init__.py
+meep/meep.py
+meep.egg-info/PKG-INFO
+meep.egg-info/SOURCES.txt
+meep.egg-info/dependency_links.txt
+meep.egg-info/entry_points.txt
+meep.egg-info/top_level.txt
