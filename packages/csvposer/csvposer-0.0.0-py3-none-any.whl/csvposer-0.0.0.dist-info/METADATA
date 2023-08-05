@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: csvposer
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/philipov/csvposer
+Author: Philip Loguinov
+Author-email: philipov@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+
+CSVPoser
+==========
+
+Context manager offering a dict-based interface for transforming CSV files.
+
+
