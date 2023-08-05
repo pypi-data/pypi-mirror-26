@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+test/test_imagefeeder.py
+tfimageutils/__init__.py
+tfimageutils/imagefeeder.py
+tfimageutils.egg-info/PKG-INFO
+tfimageutils.egg-info/SOURCES.txt
+tfimageutils.egg-info/dependency_links.txt
+tfimageutils.egg-info/requires.txt
+tfimageutils.egg-info/top_level.txt
