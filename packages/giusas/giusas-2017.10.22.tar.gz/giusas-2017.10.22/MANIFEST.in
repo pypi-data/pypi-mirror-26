@@ -1,0 +1,5 @@
+exclude giusas/gui/ui/*.qrc giusas/gui/ui/*.ui giusas/gui/ui/compile.py .hgignore .hgsub .hgsubstate .hgtags
+exclude giusas/compile.py compile.py
+prune giusas/gui/ui/images
+prune testdata
+prune oldmatlab
