@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: meep
+Version: 1.0.4
+Summary: Very light-weight task runner
+Home-page: https://bitbucket.org/metallapan/meep
+Author: Fredrik Håård
+Author-email: fredrik@metallapan.se
+License: Do whatever you want, don't blame me
+Description-Content-Type: UNKNOWN
+Description: Prototype of very light task runner, meant to be used for CI/CD tasks triggered by VCS hooks
+Keywords: ci cd automation operations
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Version Control
