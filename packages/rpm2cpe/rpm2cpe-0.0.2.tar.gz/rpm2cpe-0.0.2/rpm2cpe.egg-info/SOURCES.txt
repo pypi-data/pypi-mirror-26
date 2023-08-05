@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bin/rpm2cpe
+rpm2cpe/__init__.py
+rpm2cpe/rpm2cpe.py
+rpm2cpe.egg-info/PKG-INFO
+rpm2cpe.egg-info/SOURCES.txt
+rpm2cpe.egg-info/dependency_links.txt
+rpm2cpe.egg-info/top_level.txt
