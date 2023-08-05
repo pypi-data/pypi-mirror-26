@@ -1,0 +1,48 @@
+================================================================================
+Bubble: {{{bubble_name}}}
+Description: {{{bubble_description}}}
+
+Errors:
+    {{#errors}}
+    * {{{.}}}
+    {{/errors}}
+
+
+    Original Request:
+    -----------------
+
+{{#original_request}}
+{{{method}}} {{{scheme}}}://{{{host}}}:{{{port}}}{{{path}}}{{#query}}?{{query}}{{/query}} {{{http_version}}}
+{{#headers}}
+{{{name}}}: {{{value}}}
+{{/headers}}
+
+{{{body}}}
+{{/original_request}}
+
+
+    Modified Request:
+    -----------------
+
+{{#modified_request}}
+{{{method}}} {{{scheme}}}://{{{host}}}:{{{port}}}{{{path}}}{{#query}}?{{query}}{{/query}} {{{http_version}}}
+{{#headers}}
+{{{name}}}: {{{value}}}
+{{/headers}}
+
+{{{body}}}
+{{/modified_request}}
+
+
+    Server Response:
+    ----------------
+
+{{#server_response}}
+{{{status}}} {{{reason}}}
+{{#headers}}
+{{{name}}}: {{{value}}}
+{{/headers}}
+
+{{{body}}}
+{{/server_response}}
+

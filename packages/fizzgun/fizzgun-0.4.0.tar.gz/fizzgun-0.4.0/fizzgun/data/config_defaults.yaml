@@ -1,0 +1,32 @@
+bubbles:
+  tags-blacklist: []
+  tags-whitelist: []
+
+  default-settings:
+    expected_status_range: '0-499'
+    mark_requests: false
+
+  bubble-packs:
+  - module: fizzgun.bubbles
+
+
+filters: []
+
+report:
+  directory: ./reports
+  format: txt
+
+stack:
+  queue_type: zmq
+  use_processes: true
+  transformers: 2
+  requestors: 4
+
+
+source: mitmproxy
+
+mitmproxy:
+  http_connect_ignore: null
+  insecure: true
+  port: 8888
+  track_sessions: true

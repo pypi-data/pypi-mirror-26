@@ -1,0 +1,13 @@
+{% extends "frame.html" %}
+{% block body %}
+
+<h2>Reports</h2>
+<hr>
+<ul>
+{% for filename in files %}
+    <li><a href="{{ filename }}">{{ filename }}</a></li>
+{% end %}
+</ul>
+<hr>
+
+{% end %}

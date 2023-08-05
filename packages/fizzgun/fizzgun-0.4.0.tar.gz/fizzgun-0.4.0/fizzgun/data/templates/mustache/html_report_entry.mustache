@@ -1,0 +1,56 @@
+<hr>
+<table style="border: 1px solid black;">
+    <tr>
+        <td style="background-color: #efefef;">Bubble</td>
+        <td><b>{{bubble_name}}: </b>{{bubble_description}}</td>
+    </tr>
+    <tr>
+        <td style="background-color: #efefef;">Error</td>
+        <td>
+            <ul>
+                {{#errors}}
+                <li>{{.}}</li>
+                {{/errors}}
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color: #efefef;">Original Request</td>
+        <td>
+            {{#original_request}}
+            <b>{{method}}</b> {{scheme}}://{{host}}:{{port}}{{path}}{{#query}}?{{query}}{{/query}} {{http_version}}<br>
+            {{#headers}}
+            <b>{{name}}</b>: {{value}}<br>
+            {{/headers}}
+            <br>
+            {{body}}
+            {{/original_request}}
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color: #efefef;">Modified Request</td>
+        <td>
+            {{#modified_request}}
+            <b>{{method}}</b> {{scheme}}://{{host}}:{{port}}{{path}}{{#query}}?{{query}}{{/query}} {{http_version}}<br>
+            {{#headers}}
+            <b>{{name}}</b>: {{value}}<br>
+            {{/headers}}
+            <br>
+            {{body}}
+            {{/modified_request}}
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color: #efefef;">Server Response</td>
+        <td>
+            {{#server_response}}
+            <b>{{status}} {{reason}}</b><br>
+            {{#headers}}
+            <b>{{name}}</b>: {{value}}<br>
+            {{/headers}}
+            <br>
+            {{body}}
+            {{/server_response}}
+        </td>
+    </tr>
+</table>
