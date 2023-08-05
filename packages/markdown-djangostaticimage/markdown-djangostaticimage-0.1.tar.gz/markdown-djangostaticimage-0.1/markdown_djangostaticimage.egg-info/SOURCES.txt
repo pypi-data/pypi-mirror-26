@@ -1,0 +1,8 @@
+README.md
+django_static_image.py
+setup.py
+markdown_djangostaticimage.egg-info/PKG-INFO
+markdown_djangostaticimage.egg-info/SOURCES.txt
+markdown_djangostaticimage.egg-info/dependency_links.txt
+markdown_djangostaticimage.egg-info/not-zip-safe
+markdown_djangostaticimage.egg-info/top_level.txt
