@@ -1,0 +1,10 @@
+gesture_classifying_model/GestureClassifier.py,sha256=GG27d-9Enq7t4ejgj66dIzInU_cgJfP9WlySRCmV8h8,2179
+gesture_classifying_model/__init__.py,sha256=raUiCpsAxcPMjTuPceaoS60u_iUbAIwQbfRjmY5P8hc,48
+gesture_classifying_model/custom_objectives.py,sha256=VbrChNE5ku6Lm-LTri0u4Anxu95NdfD4fYRrrDJYXno,1129
+gesture_classifying_model/downloader.py,sha256=Lao5JTJVcQ-UyvFuc421HX8q7qESdzoe6EvBDkMjzfI,1442
+gesture_classifying_model-0.1.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+gesture_classifying_model-0.1.3.dist-info/METADATA,sha256=C_tPLTkpqil37U_WL4k47Jj6t0cAj-RttQwyv8Prlhs,948
+gesture_classifying_model-0.1.3.dist-info/RECORD,,
+gesture_classifying_model-0.1.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+gesture_classifying_model-0.1.3.dist-info/metadata.json,sha256=U-z0YAMKqtx6LC0eP7g-Ny5zIUkY0RRxJq5r0t7yfBQ,1061
+gesture_classifying_model-0.1.3.dist-info/top_level.txt,sha256=YsntATFfbb6e0avVIuZS3stk9TjHpxpOyHhlHYoyFrA,26
