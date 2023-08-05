@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+encodji/__init__.py
+encodji.egg-info/PKG-INFO
+encodji.egg-info/SOURCES.txt
+encodji.egg-info/dependency_links.txt
+encodji.egg-info/top_level.txt
