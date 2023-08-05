@@ -1,0 +1,5 @@
+setup.py
+newputtest.egg-info/PKG-INFO
+newputtest.egg-info/SOURCES.txt
+newputtest.egg-info/dependency_links.txt
+newputtest.egg-info/top_level.txt
