@@ -1,0 +1,3 @@
+[console_scripts]
+monzo-api = monzoapistub.cli:cli
+
