@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: checkdnssec
+Version: 0.5
+Summary: Verify if domain names use DNSSEC.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: dnspython
+Requires-Dist: pycrypto
+
+# checkdnssec
+Python script to check for valid DNSSEC signature
+
+<code>pip install dnspython</code></br>
+<code>pip install pycrypto</code></br>
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+checkdnssec = checkdnssec:main
+
