@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: tntfuzzer
+Version: 1.0.0
+Summary: An OpenAPI (Swagger) fuzzer written in python. Basically TnT for your API.
+Home-page: https://github.com/Teebytes/TnT-Fuzzer
+Author: Tobias Hassenkloever
+Author-email: tnt@teebytes.net
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: openapi,swagger,fuzzer,fuzzing,json-api,REST
+Platform: UNKNOWN
