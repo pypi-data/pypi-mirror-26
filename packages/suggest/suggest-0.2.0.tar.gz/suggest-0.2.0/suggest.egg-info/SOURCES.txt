@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+suggest.egg-info/PKG-INFO
+suggest.egg-info/SOURCES.txt
+suggest.egg-info/dependency_links.txt
+suggest.egg-info/entry_points.txt
+suggest.egg-info/requires.txt
+suggest.egg-info/top_level.txt
+suggest_imports/__init__.py
+suggest_imports/suggest.py
