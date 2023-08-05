@@ -1,0 +1,17 @@
+docs/Makefile,sha256=nphHzrJoKUjHA-0L2wHQox87745Nk-xHQZ3dbBAiQmA,7626
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/conf.py,sha256=dBt7BFDlF-Y-vAAseaHGCznyHQYO9Rjfm6HeF4-H7Go,12018
+docs/index.rst,sha256=R-y4ZIAWhKFdJAAls8v2m9c0Vb22YC3f7M3xu5bhW_s,467
+docs/make.bat,sha256=8ki5XLLdRafffOGvsub8frxN9ywyI_uWyaOS2TVo0c0,7461
+magen_mongo-1.1a0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+magen_mongo-1.1a0.dist-info/METADATA,sha256=ghhtEETUiBwGIEZPtn3bAjubb3pcrXBtfjyMN3DroM8,965
+magen_mongo-1.1a0.dist-info/RECORD,,
+magen_mongo-1.1a0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+magen_mongo-1.1a0.dist-info/metadata.json,sha256=_xeYK6kgVmRXXh7TgSovE7JxA5YU6dmOVSX45-1mf6c,1031
+magen_mongo-1.1a0.dist-info/top_level.txt,sha256=AwFLkW4p4TOMRVesLRUKSUj-ry8TOKnic5qc6mNiYRM,22
+magen_mongo_apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magen_mongo_apis/concrete_dao.py,sha256=FIfrB6GaEme8xtQK6AveI3UYXZkjLLxpdelpUcgw4LY,15359
+magen_mongo_apis/mongo_core_database.py,sha256=qfv4Fp7J7ydWTIgqFpDcMZgmKUOl5P87dEVLjYo9X04,7146
+magen_mongo_apis/mongo_exception_apis.py,sha256=Pq_h19gkf4heW1KiHnA5hqmKX52D_hxY-yoz82xa0EA,2909
+magen_mongo_apis/mongo_return.py,sha256=_3GwEYMGr18Ny3VvMu2pYf-HdpibQFNhbYZR68FrLCM,3220
+magen_mongo_apis/mongo_utils.py,sha256=QIfKMOc1OQb9Vl7sbKcEFOTDzNI70awr-x2cP0_vbuc,1392
