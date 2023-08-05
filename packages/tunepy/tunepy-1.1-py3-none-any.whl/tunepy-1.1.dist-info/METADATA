@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: tunepy
+Version: 1.1
+Summary: Interactive function argument tuning
+Home-page: https://github.com/kbobrowski/tunepy
+Author: Kamil Bobrowski
+Author-email: kamil.bobrowski@gmail.com
+License: MIT
+Keywords: optimization visualization tuning interactive
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+
+
+Python decorator which allows to interactively tune arguments of a function.
+Automatically determines output type (matplotlib / numpy image / return value / console output).
+Decorated function can take instances of a "tunable" class (which determines range of the variable) instead of constant values as arguments.
+
+
