@@ -1,0 +1,6 @@
+[console_scripts]
+docker-bridge = dockerManager.bin.bridge:main
+docker-container = dockerManager.bin.container:main
+docker-image = dockerManager.bin.image:main
+docker-watcher = dockerManager.bin.watcher:main
+
