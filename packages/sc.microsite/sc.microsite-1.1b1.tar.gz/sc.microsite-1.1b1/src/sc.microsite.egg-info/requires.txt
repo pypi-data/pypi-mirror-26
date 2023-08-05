@@ -1,0 +1,21 @@
+collective.behavior.localdiazo
+collective.behavior.localregistry
+plone.api
+plone.app.content
+plone.app.dexterity [relations]
+plone.app.layout
+plone.app.upgrade
+plone.dexterity
+Products.CMFPlone >=4.3
+Products.CMFQuickInstallerTool
+Products.GenericSetup
+setuptools
+zope.i18nmessageid
+zope.interface
+
+[test]
+AccessControl
+plone.app.robotframework
+plone.app.testing
+plone.testing
+zope.component
