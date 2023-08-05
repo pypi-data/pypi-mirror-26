@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Electrum-VTC
+Version: 2.9.3.3
+Summary: Lightweight Vertcoin Wallet
+Home-page: https://github.com/vertcoin/electrum-vtc
+Author: Thomas Voegtlin
+Author-email: thomasv@electrum.org
+License: MIT Licence
+Description-Content-Type: UNKNOWN
+Description: Lightweight Vertcoin Wallet
+Platform: UNKNOWN
