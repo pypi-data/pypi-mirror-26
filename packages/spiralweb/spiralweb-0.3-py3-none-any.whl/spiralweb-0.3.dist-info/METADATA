@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: spiralweb
+Version: 0.3
+Summary: A lightweight-markup based literate programming system
+Home-page: https://github.com/michaeljmcd/spiralweb
+Author: Michael McDermott
+Author-email: mmcdermott@mad-computer-scientist.com
+License: MIT
+Keywords: literate programming,lp,markdown
+Platform: UNKNOWN
+Requires-Dist: ply
+
+SpiralWeb is a literate programming system that uses lightweight text
+markup (Markdown, with Pandoc extensions being the only option at the
+moment) as its default backend and provides simple, pain-free build
+integration to make building real-life systems easy.
+
+

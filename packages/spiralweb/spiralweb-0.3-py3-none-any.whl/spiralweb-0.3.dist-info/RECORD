@@ -1,0 +1,13 @@
+spiralweb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spiralweb/__main__.py,sha256=FWTHsuC2s023gCWtdxB5aJWLBRvvLOUwP2AwFpooI9E,1317
+spiralweb/api.py,sha256=Sy24lARHWfI_I1_VzLeTLHiGQEi-UKRAKdqFut_GlUs,371
+spiralweb/model.py,sha256=LJC3pvDISCh-J8r2lcLaI3zjt2Ju2FGBCSoVjbkkuE0,7767
+spiralweb/parser.py,sha256=Od7EKpkANTVIRRxa9c5vjMTQC1h5jH2Up1VbGO9smug,5574
+spiralweb/parsetab.py,sha256=8FtUzqIIGAawpLW1RIO4tPfYoiMoP6fnyNmcCJ_chaw,7161
+spiralweb-0.3.dist-info/DESCRIPTION.rst,sha256=ETEfKc51mXJdCzwp6GrQxHo-_m_9s5bRCA_vi2bzqe8,263
+spiralweb-0.3.dist-info/METADATA,sha256=goKgh0zPS5ksdNCVIMgO-gj-knQ74lzwIk_cCQEMcXU,602
+spiralweb-0.3.dist-info/RECORD,,
+spiralweb-0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+spiralweb-0.3.dist-info/entry_points.txt,sha256=RISkAEW99FYqLP7X__CglemOuL-horVnac_OYa03zec,55
+spiralweb-0.3.dist-info/metadata.json,sha256=VqS9BWG8Pqaj7Alalys4vEPP8PvmIrQ2BXIwD5jD0-I,737
+spiralweb-0.3.dist-info/top_level.txt,sha256=xM7_o27VkmdYNhJnY9btAz5lm6J5x5ED1BpsUmsmy_I,10
