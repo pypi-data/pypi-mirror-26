@@ -1,0 +1,132 @@
+CHANGES
+=======
+
+1.1.4
+-----
+
+* Update documentation
+
+1.1.3
+-----
+
+* ignoring .cache
+* newline
+
+1.1.2
+-----
+
+* pipenv-to-requirements >= 0.1.9
+
+1.1.1
+-----
+
+* make release
+* pipenv-to-requirements >= 0.1.6
+
+1.1.0
+-----
+
+* Bad -e line in Pipfile
+* Helper targets in Makefile
+* New dep: pipenv\_to\_requirements
+* fix pyflake version
+* Don't track Pipfile.lock for a library
+
+1.0.0
+-----
+
+* Fix indentation
+* only support travis with twisted > 15
+* update commands in appveyor
+* install pipenv in travis
+* yapf
+* pylint and fix autodoc changes
+* makefile
+* rename to TxTestCase and TxReadersWriterLock
+* switch to pipenv
+
+0.4.8
+-----
+
+* lint only on 1 travis build
+* No osx test on travis
+* pylint
+* Update .travis.yml
+* Test on Mac OS X
+
+0.4.7
+-----
+
+* update doc
+
+0.4.6
+-----
+
+* ignore coverage.xml
+* add codecov support
+* Add Appveyor support
+
+0.4.5
+-----
+
+* Update documentation
+* Add link to blog post presentation
+
+0.4.4
+-----
+
+* Typo
+
+0.4.3
+-----
+
+* add error test case
+* Minor typo fixes
+
+0.4.2
+-----
+
+* Fix travis and pypi upload
+
+0.4.1
+-----
+
+* Fix coveralls report generation
+* remove duplicate badges
+
+0.4.0
+-----
+
+* only don't upload to pypi the right package
+* Configure coverage and doc build
+* update README and remote ChangeLog/AUTHOR from git
+
+0.3.2
+-----
+
+* Update README
+
+0.3.1
+-----
+
+* better readme
+
+0.3.0
+-----
+
+* test against all recent version of twisted
+* fix bad formatting on exclusion matrix
+* Update Changelog
+* dont test on python3 with twisted < 15.4
+
+0.2.1
+-----
+
+* skip await test due to syntax error on prev python
+
+0.2.0
+-----
+
+* update link and badge to readthedoc
+* update badges
+* dont use setup.py test
