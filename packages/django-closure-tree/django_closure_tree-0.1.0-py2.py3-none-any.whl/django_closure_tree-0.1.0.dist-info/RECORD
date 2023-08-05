@@ -1,0 +1,11 @@
+closure_tree/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+closure_tree/__version__.py,sha256=WimP8m0GROykDHB388nVxvf_Lj4q6K4bGF-I48-oByM,63
+closure_tree/fields.py,sha256=iaoJsvTKCe9hD8_DkzeczXbG7NqETX8pa2FMUWnchv0,2568
+closure_tree/migrations.py,sha256=yWuMmN3Bjcw2nvpfdJVG7iYKv8WwPrJOFPbyZ15VtOw,1274
+closure_tree/models.py,sha256=YhVa02-L_4qJtcXCNrpsTAttLYQ2T_yMDUnMLx1gn0A,348
+django_closure_tree-0.1.0.dist-info/DESCRIPTION.rst,sha256=QgdOCUHS98AB9_X3KcD92m4iT9_9GwbDMHA39lqUDsw,839
+django_closure_tree-0.1.0.dist-info/METADATA,sha256=5ZS4kZFoRJXCkLX0gH3WYygzqa8-LkKA-_6GfZNmzUE,1596
+django_closure_tree-0.1.0.dist-info/RECORD,,
+django_closure_tree-0.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_closure_tree-0.1.0.dist-info/metadata.json,sha256=IlqwzAAtzQGBwzXjd0h9-EtHd-ikNaAgkGrb577Ks3w,915
+django_closure_tree-0.1.0.dist-info/top_level.txt,sha256=tframqXohNzlIs_B1NSKw5WSrpZSt2KLu3I9iRt1sw4,13
