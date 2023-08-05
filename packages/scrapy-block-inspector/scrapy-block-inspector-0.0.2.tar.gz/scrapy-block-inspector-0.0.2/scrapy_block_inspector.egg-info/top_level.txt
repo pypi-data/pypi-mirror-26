@@ -1,0 +1,1 @@
+scrapy_block_inspector

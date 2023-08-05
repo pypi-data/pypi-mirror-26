@@ -1,0 +1,2 @@
+include versioneer.py
+include scrapy_block_inspector/_version.py
