@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: qrnr
+Version: 0.1.0
+Summary: a tool to issue queries to databases in CLI using sqlalchemy.
+Home-page: https://github.com/smizoe/qrnr
+Author: Sho Mizoe
+Author-email: sho.mizoe@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Database Engines/Servers
