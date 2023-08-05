@@ -1,0 +1,11 @@
+nltk
+numpy
+scipy
+sklearn
+pandas
+
+[generator]
+gensim
+
+[visualize]
+matplotlib
