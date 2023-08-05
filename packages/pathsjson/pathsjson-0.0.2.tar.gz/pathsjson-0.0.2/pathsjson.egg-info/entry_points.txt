@@ -1,0 +1,3 @@
+[console_scripts]
+pathsjson = pathsjson.cli:main
+
