@@ -1,0 +1,6 @@
+helloworld
+setup.py
+newput_test.egg-info/PKG-INFO
+newput_test.egg-info/SOURCES.txt
+newput_test.egg-info/dependency_links.txt
+newput_test.egg-info/top_level.txt
