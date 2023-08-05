@@ -1,0 +1,16 @@
+mcc/__init__.py,sha256=EqPsl9f7ARD0gYlRx_COJBMVLEhsHVC18Rp6csLmzOE,934
+mcc/__main__.py,sha256=OsU4RK9bffrVKfuIzTgpAT7tUolTk1gm-dlAzbzCRp8,1002
+mcc/cldcnct.py,sha256=RFDEcgKBCOEUVl8DvO8qKtt_KtVEc_p1m53CTiSKf0E,8508
+mcc/colors.py,sha256=kpQ4vfgqNMVVASCBWE6BqnGoJACP3UWChPhSnIdqIlQ,2611
+mcc/confdir.py,sha256=3SJH48znHzcd3kB1q3JwB5Z30DGSVTdQ6_kd7AyKNzQ,1176
+mcc/config.ini,sha256=uG7nXd42Ok0vwOCh64AjGt5YP0RL_I2H9xkPb9oBoZI,3538
+mcc/core.py,sha256=h9Sbd0zCo8Te_i77sXMKqu5jPcNsHHcwK2jRO9PCjPM,5100
+mcc/tables.py,sha256=WjfGXR8I7tLYYIu4Pzre4RWlXUnYSFBwHUu7BZrTZYM,2188
+mcc/uimode.py,sha256=7Aj8jZmR9tafZWWtI8_9f0eXuuvnFn6941b0ZA6YOlM,12214
+mcc-0.1.1.dist-info/DESCRIPTION.rst,sha256=gXJ_TwNoNSx3OgMq2W6mKjQyLb-zAsLdkuEM3dAly_s,7182
+mcc-0.1.1.dist-info/METADATA,sha256=vRnCLVcddCZo3-t1rxf165vUP4PjbCc4fw2k5ygR-ts,9413
+mcc-0.1.1.dist-info/RECORD,,
+mcc-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mcc-0.1.1.dist-info/entry_points.txt,sha256=ajya6JWQ0-jiHv-431qdERAOG6JDWaYyKyqE0gGr7pw,65
+mcc-0.1.1.dist-info/metadata.json,sha256=g-HYLghVem6YUo-JmQN5vCrM5f7VVW2RAktxgNQbcdA,2208
+mcc-0.1.1.dist-info/top_level.txt,sha256=x9fpmuvTXJMVF7AzFLjIcn8dHy9oN9J5ZcRf_ZVahZg,4
