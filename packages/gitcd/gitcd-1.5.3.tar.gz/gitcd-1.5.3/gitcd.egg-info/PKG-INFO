@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gitcd
+Version: 1.5.3
+Summary: Tool for continous delivery using git
+Home-page: https://github.com/claudio-walser/gitcd
+Author: Claudio Walser
+Author-email: claudio.walser@srf.ch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
