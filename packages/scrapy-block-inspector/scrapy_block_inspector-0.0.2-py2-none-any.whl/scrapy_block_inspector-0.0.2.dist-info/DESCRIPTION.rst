@@ -1,0 +1,128 @@
+=====================
+Scrapy-Block-Inpector
+=====================
+
+.. image:: https://img.shields.io/pypi/v/scrapy-block-inspector.svg
+    :target: https://pypi.python.org/pypi/scrapy-block-inspector
+   :alt: PyPI Version
+
+.. image:: https://img.shields.io/travis/grammy-jiang/scrapy-block-inspector/master.svg
+    :target: http://travis-ci.org/grammy-jiang/scrapy-block-inspector
+   :alt: Build Status
+
+.. image:: https://img.shields.io/badge/wheel-yes-brightgreen.svg
+    :target: https://pypi.python.org/pypi/scrapy-block-inspector
+   :alt: Wheel Status
+
+.. image:: https://img.shields.io/codecov/c/github/grammy-jiang/scrapy-block-inspector/master.svg
+    :target: http://codecov.io/github/grammy-jiang/scrapy-block-inpector?branch=master
+   :alt: Coverage report
+
+Overview
+========
+
+Scrapy is a great framework for web crawling. This package provides a spider
+middleware to inspect the spider blocked or not in a highly customized way.
+
+Requirements
+============
+
+* Tests on Python 2.7 and Python 3.5, but it should work on other version higher
+  then Python 3.3
+
+* Tests on Linux, but it's a pure python module, it should work on other
+  platforms with official python supported, e.g. Windows, Mac OSX, BSD
+
+Installation
+============
+
+The quick way::
+
+    pip install scrapy-block-inspector
+
+Or put this middleware just beside the scrapy project.
+
+Documentation
+=============
+
+Block Inspector in spider middleware, in ``settings.py``, for example::
+
+    # -----------------------------------------------------------------------------
+    # USER AGENT
+    # -----------------------------------------------------------------------------
+
+    SPIDER_MIDDLEWARES.update({
+        'scrapy_block_inspector.spidermiddlewares.block_inspector.BlockInspector': 500,
+    })
+    BLOCK_INSPECTOR = 'scrapy_project.spiders.spider.inspect_block'
+    BLOCK_SIGNALS = ['scrapy_rotated_proxy.signals.proxy_block']
+    BLOCK_SIGNALS_DEFERRED = ['scrapy_httpcache.signals.response_block']
+    RECYCLE_BLOCK_REQUEST = 'scrapy_project.utils.recycle_block_request'
+
+This middleware will add a new stats in the stats collector, named
+'block_inspector/block'.
+
+Settings Reference
+==================
+
+BLOCK_INSPECTOR
+---------------
+
+A function in the spidermiddleware to inspect block, if blocked this function
+will return ``True``, otherwise return ``False``.
+
+The input of this function is the ``response``.
+
+BLOCK_SIGNALS
+-------------
+
+When a block inspected, this spidermiddleware can send a signal to the ``signal
+manager`` of the crawler to let other parts (middlewares, extensions, stats,
+etc.) to execute relative operations.
+
+This should be a list.
+
+BLOCK_SIGNALS_DEFERRED
+----------------------
+
+If the signal is connected to a function or method which will return a deferred
+object, this signal should be put in this setting.
+
+This should be a list.
+
+RECYCLE_BLOCK_REQUEST
+---------------------
+
+A function to recycle the blocked request. Sometimes the block request need to
+recycle after some further treatment, like to remove proxy related key in
+request.meta, etc.
+
+**Note: in this middleware 'dont_filter=True' will be added automatically.**
+
+The input of this function is the request.
+
+Build-in Functions To Inspect Block
+===================================
+
+inspect_block_google_recaptcha
+------------------------------
+
+This is a function to check google recaptcha block.
+
+To use this inspector, in settings::
+
+    BLOCK_INSPECTOR = 'scrapy_block_inspector.utils.inspect_block_google_recaptcha.inspect_block'
+
+NOTE
+====
+
+Please note: in scrapy, the exception raised by the method
+``process_spider_input`` will be sent to ``request.err_back`` first if there is
+err_back defined. So please make sure the exception ``BlockException`` defined
+by this middleware can be raised in err_back function to trigger off the method
+``process_spider_exception`` correctly.
+
+TODO
+====
+
+

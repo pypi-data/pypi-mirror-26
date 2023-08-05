@@ -1,0 +1,13 @@
+scrapy_block_inspector/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+scrapy_block_inspector/_version.py,sha256=tiB9XL3V9kaJAD_9pBWL88L2hr53CVSrzzHPYRqy8uc,498
+scrapy_block_inspector/exceptions.py,sha256=vMkOmehNa9ku8iIqVwee4KFbpCjWhUIYnWe3Mf9WC04,100
+scrapy_block_inspector/spidermiddlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_block_inspector/spidermiddlewares/block_inspector.py,sha256=5w8ASjNF0CoGGPvhw4O2-31uTb-nXWWz1wW9SUken7w,2418
+scrapy_block_inspector/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_block_inspector/utils/inspect_block_google_recaptcha.py,sha256=F406xEuCQTli12z7Yf10wAuLT1FEbJpcAEBUXB2K3AE,368
+scrapy_block_inspector-0.0.2.dist-info/DESCRIPTION.rst,sha256=MqT4BlE_tT4BBKWCZ44XxqCak8AQWn-mppkWzY3cW0Q,3872
+scrapy_block_inspector-0.0.2.dist-info/METADATA,sha256=y6Z-1lLb5T-VLC6l_5TKHYspIAJ-ZxUDin9oqY25Zoo,5020
+scrapy_block_inspector-0.0.2.dist-info/RECORD,,
+scrapy_block_inspector-0.0.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+scrapy_block_inspector-0.0.2.dist-info/metadata.json,sha256=qmcpxGSlg8mzw8Ra5cAYEva1X2UQBlhYKQS98FO-a-4,1271
+scrapy_block_inspector-0.0.2.dist-info/top_level.txt,sha256=ZYgODRiT-E2vwDI66CAENl7NBPSiNdq-qdYLF8nvdPM,23
