@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: CommanderSnek
+Version: 0.1
+Summary: Create CLI interfaces from your code the better way!
+Home-page: https://github.com/ccubed/CommanderSnek
+Author: Charles Click
+Author-email: ccubed.techno@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: TUI UI CLI
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: User Interfaces
