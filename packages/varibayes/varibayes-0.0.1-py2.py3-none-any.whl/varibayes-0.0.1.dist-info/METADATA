@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: varibayes
+Version: 0.0.1
+Summary: A toolbox for performing variational Bayesian inference
+Home-page: https://github.com/colinclement/varibayes
+Author: Colin Clement
+Author-email: colin.clement@gmail.com
+License: MIT License
+Keywords: variational bayes inference
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: numpy (>=1.10.4)
+
+Variational Bayesian Inference Toolbox
+
+--------------------------------------
+
+
+This module is inspired by the paper 'Black Box Variational Inference'
+by Rajesh Ranganath et al. It attempts to make nearly trivial the task
+of fitting a variational distribution to a user-specified log-likelihood
+function without derivatives. Currently it only uses a
+mean field variational distribution, but the main class 
+VariationalInferenceMF is flexible enough for simple subclassing in the
+future. This module also contains a number of implementations of
+stochastic gradient descent algorithms to be used for optimization.
+
+
