@@ -1,0 +1,12 @@
+kappy/__init__.py,sha256=UgyykwDItTsd3AvL0-xlrfdbVUesiu6qzSTVh2u69dw,53
+kappy/dummy.cpython-35m-darwin.so,sha256=gL_4oLgVrDkgRadGwbQ2jiB11mTBV2VR6rA8bFFD_uk,16736
+kappy/kappa_common.py,sha256=WdR_kJ3vhnG4itBjqf568feuFyQSYMtTmdv18LzecsE,3732
+kappy/kappa_rest.py,sha256=Le55ZBT_bp5k93CZwXU4PNL6y1HcjdkB2BEXKO1Q7ws,7804
+kappy/kappa_std.py,sha256=irA7eIY-QX7YP_Bd3eruqRqno85_CuS2pvmUKoid8JE,6885
+kappy/bin/KaSimAgent,sha256=QgN6EWx9viHVn5orXdgjf7OaNu5PbVJKFOeHPPdzYmE,4817900
+kappy-4.0.0.dev4.dist-info/DESCRIPTION.rst,sha256=ryVrktT2sJBhnUBdHMRoaThm__XNmIx7qX8b54D3zzA,736
+kappy-4.0.0.dev4.dist-info/METADATA,sha256=p_3W0PhE-Tw4LVd_-bV2_ZZ4lwKl0uH2DacOv7CXA9g,1213
+kappy-4.0.0.dev4.dist-info/RECORD,,
+kappy-4.0.0.dev4.dist-info/WHEEL,sha256=kYEVqlgzsayTy7F_lPTU0_aKWgzbfmSiMqREYReNFOI,109
+kappy-4.0.0.dev4.dist-info/metadata.json,sha256=sbGqhx0wr-S5gNC47ehQXZ62c_9thW-I-0BoOKv7d6Y,683
+kappy-4.0.0.dev4.dist-info/top_level.txt,sha256=BnE8yYSftS6cs45KLC2xdA2DUvk92U-lhzfgjaKVjZ4,6
