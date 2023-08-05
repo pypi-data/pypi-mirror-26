@@ -1,0 +1,13 @@
+pixiedust_twitterdemo/__init__.py,sha256=qtMLsKH7ZDCaTUXMOVcqinGyA7NTisGd9jTc2bLZ4j8,1204
+pixiedust_twitterdemo/twitterDemo.py,sha256=fqFPRRcrgFWxMoN2zgiPYyCx2aYUuywlojyN7QwHYuw,3328
+pixiedust_twitterdemo/templates/demo.html,sha256=uFnF-LTxt5dP8TEbrbRK-iftksfpvBY-92IoSMk9Ut8,17188
+pixiedust_twitterdemo/templates/demoGroupedChart.js,sha256=KTL-sEfHuLPueM-fuVIrtrdaJdo2RRoGpmEinlKYSOg,6142
+pixiedust_twitterdemo/templates/demoPieChart.js,sha256=JE3d64NzTd6vfltkSVqpRDo-oRZCtTa8rL4ZoBAV2Jo,5091
+pixiedust_twitterdemo/templates/demoScript.html,sha256=Q_49X9puUdfh-VLo_zk0G0a-VdqCQXV3EoTEkK0Y3UU,3801
+pixiedust_twitterdemo/templates/startStreaming.execute,sha256=S-krdEESmG1OBhYiRPTVESjA_-yVpfxJT0b6QyBUh0g,97
+stem_ladiespixiedust_twitterdemo-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+stem_ladiespixiedust_twitterdemo-0.1.dist-info/METADATA,sha256=DmxwprTActwMEwLCWHR-NgBI22y0Udx7McXplBdJ2eE,458
+stem_ladiespixiedust_twitterdemo-0.1.dist-info/RECORD,,
+stem_ladiespixiedust_twitterdemo-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+stem_ladiespixiedust_twitterdemo-0.1.dist-info/metadata.json,sha256=rgvwB1FUUDSf7wOYE3iDdNuuXCexk4xajsOm8H3NlSY,675
+stem_ladiespixiedust_twitterdemo-0.1.dist-info/top_level.txt,sha256=AhZJLAgqkbOfILgRLzsJgErvoyuSSf0LI4YcTv3XFfs,22
