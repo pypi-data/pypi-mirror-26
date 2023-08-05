@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: esper
+Version: 0.9.9
+Summary: UNKNOWN
+Home-page: https://github.com/benmoran56/esper
+Author: Benjamin Moran
+Author-email: benmoran@protonmail.com
+License: MIT
+Download-URL: https://github.com/benmoran56/esper/releases
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: ecs,entity component system,game
+Platform: POSIX
+Platform: Windows
+Platform: MacOS X
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries
