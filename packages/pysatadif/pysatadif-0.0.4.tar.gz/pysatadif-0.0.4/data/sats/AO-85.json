@@ -1,0 +1,10 @@
+{
+    "AO-85": {
+        "freq": "435.172",
+        "freqrx": "145.98",
+        "band": "70CM",
+        "bandrx": "2M",
+        "mode": "FM",
+        "satmode": "FM"
+    }
+}
