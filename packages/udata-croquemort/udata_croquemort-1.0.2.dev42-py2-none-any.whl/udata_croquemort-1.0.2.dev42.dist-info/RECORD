@@ -1,0 +1,13 @@
+udata_croquemort/__init__.py,sha256=eCxqu-5e1OVRyXZrPkI7Oyo7u4G2jcxVssR5jUhMMkM,176
+udata_croquemort/checker.py,sha256=XoqnWXn__ZY1hc1Kq5OrUa9_oUg7IdPQ9DjEMZZtyN8,2219
+udata_croquemort/commands.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+udata_croquemort/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+udata_croquemort/tests.py,sha256=rgpDhksfZt8U-r_47LO8XdihxI9oQCbvJfMa-olctxo,7310
+udata_croquemort/utils.py,sha256=NR77ZVCWzclg-qhI6M0BNdFATsF87fBhfF0uPbRh2Lc,2724
+udata_croquemort-1.0.2.dev42.dist-info/DESCRIPTION.rst,sha256=C2fQW47NEpvXYYwyjOMKRuMo6gPP0YsnmywBwg2aO6A,1037
+udata_croquemort-1.0.2.dev42.dist-info/METADATA,sha256=r89Cram8rcD_oQfHU6hxpWOSrwvbdJeKdormVog3SCs,2001
+udata_croquemort-1.0.2.dev42.dist-info/RECORD,,
+udata_croquemort-1.0.2.dev42.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+udata_croquemort-1.0.2.dev42.dist-info/entry_points.txt,sha256=C3ovGUo4KbAkGmOq6stXVKHHQSqmuxgLhIYokh9PDm4,82
+udata_croquemort-1.0.2.dev42.dist-info/metadata.json,sha256=ly6x9u8xWOeiEWwu0VRhwVv6QSO1MXAkltOnjjpDtwY,1256
+udata_croquemort-1.0.2.dev42.dist-info/top_level.txt,sha256=OTUG8H_MTdMhWhvPzPQa0jPBCwOWY1gC2eY8h1TJ0D0,17
