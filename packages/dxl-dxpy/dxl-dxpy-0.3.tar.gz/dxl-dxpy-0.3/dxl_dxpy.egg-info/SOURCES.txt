@@ -1,0 +1,15 @@
+setup.py
+bin/dxpy
+dxl_dxpy.egg-info/PKG-INFO
+dxl_dxpy.egg-info/SOURCES.txt
+dxl_dxpy.egg-info/dependency_links.txt
+dxl_dxpy.egg-info/not-zip-safe
+dxl_dxpy.egg-info/requires.txt
+dxl_dxpy.egg-info/top_level.txt
+dxpy/__init__.py
+dxpy/config.old.py
+dxpy/core.py
+dxpy/database.py
+dxpy/slurm.py
+dxpy/time.py
+dxpy/utils.py
