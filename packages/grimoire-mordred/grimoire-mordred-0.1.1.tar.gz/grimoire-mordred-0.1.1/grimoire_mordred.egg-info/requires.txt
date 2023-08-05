@@ -1,0 +1,5 @@
+grimoire-elk>=0.30.7
+grimoire-kidash>=0.30.4
+sortinghat>=0.4.2
+PyMySQL
+pyyaml
