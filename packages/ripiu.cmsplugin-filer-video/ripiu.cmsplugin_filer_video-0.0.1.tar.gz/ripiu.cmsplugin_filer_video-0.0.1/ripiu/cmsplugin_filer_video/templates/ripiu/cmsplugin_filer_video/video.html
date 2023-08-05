@@ -1,0 +1,15 @@
+{% load cms_tags staticfiles %}
+<video src="{{ instance.video_file.url }}"
+       title="{{ instance.title }}"{% if instance.width %}
+       width="{{ instance.width }}"{% endif %}{% if instance.height %}
+       height="{{ instance.height }}"{% endif %}{% if instance.poster %}
+       poster="{% static instance.poster.url %}"{% endif %}{% if instance.autoplay %}
+       autoplay{% endif %}{% if instance.controls %}
+       controls{% endif %}{% if instance.loop %}
+       loop{% endif %}{% if instance.controls %}
+       controls{% endif %}{% if instance.muted %}
+       muted{% endif %}>
+  {% for plugin in instance.child_plugin_instances %}
+    {% render_plugin plugin %}
+  {% endfor %}
+</video>

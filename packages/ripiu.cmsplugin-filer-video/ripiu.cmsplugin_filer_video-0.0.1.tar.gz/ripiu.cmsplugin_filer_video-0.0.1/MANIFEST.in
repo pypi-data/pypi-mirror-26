@@ -1,0 +1,7 @@
+include AUTHORS
+include LICENSE
+include README.rst
+include HISTORY
+recursive-include ripiu/cmsplugin_filer_video/migrations *
+recursive-include ripiu/cmsplugin_filer_video/templates *
+recursive-include ripiu/cmsplugin_filer_video/locale *
