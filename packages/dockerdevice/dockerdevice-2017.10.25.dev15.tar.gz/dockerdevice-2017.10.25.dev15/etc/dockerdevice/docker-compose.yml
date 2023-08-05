@@ -1,0 +1,23 @@
+version: '2'
+services:
+  nvidia-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        - ssh_password=${ssh_password}
+    ports:
+      - "${ssh_port}:22"
+    network_mode: bridge
+    volumes:
+      - nvidia_vol:/usr/local/nvidia:ro
+    devices:
+      - /dev/nvidiactl
+      - /dev/nvidia-uvm
+
+volumes:
+  nvidia_vol:
+    external:
+      driver: nvidia-docker
+      name: nvidia_driver_384.81
+    

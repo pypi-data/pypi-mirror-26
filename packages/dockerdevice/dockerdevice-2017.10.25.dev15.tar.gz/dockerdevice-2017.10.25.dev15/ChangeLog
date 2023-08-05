@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+* docker object initalization
+* updating docker compose nvidia-driver version
+* updating setup config
+* changing docker client init code,add new requirements
+* adding pbr changes
+* adding Dockerfile and docker-compose yml
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* skipping container with no devices attached
+* adding gpu-add gpu-remove commands
+* adding gpu-list command
+* first commit

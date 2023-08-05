@@ -1,0 +1,8 @@
+[console_scripts]
+dockerdevice = dockerdevice.main:main
+
+[dockerdevice.client]
+gpu-add = dockerdevice.gpu:GpuAdd
+gpu-list = dockerdevice.gpu:GpuList
+gpu-remove = dockerdevice.gpu:GpuRemove
+
