@@ -1,0 +1,5 @@
+include LICENSE
+include *.md
+include *requirements.txt
+recursive-include ocder *
+global-exclude *.pyc

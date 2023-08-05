@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ocder
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/yedpodtrzitko/ocder
+Author: yedpodtrzitko
+Author-email: yed@vanyli.net
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development
