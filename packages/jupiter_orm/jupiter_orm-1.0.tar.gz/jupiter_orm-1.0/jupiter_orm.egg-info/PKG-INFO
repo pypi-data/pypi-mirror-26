@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: jupiter-orm
+Version: 1.0
+Summary: jupiter_orm
+Home-page: https://github.com/dianbaer/jupiter
+Author: dianbaer
+Author-email: 232365732@qq.com
+License: MIT
+Description: jupiter_orm
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: AsyncIO
