@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Flask-JWT-Login
+Version: 0.0.4
+Summary: Flask extension that helps authentication using JWT
+Home-page: https://github.com/JeongUkJae/Flask-JWT-Login
+Author: Jeong Ukjae
+Author-email: jeongukjae@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
