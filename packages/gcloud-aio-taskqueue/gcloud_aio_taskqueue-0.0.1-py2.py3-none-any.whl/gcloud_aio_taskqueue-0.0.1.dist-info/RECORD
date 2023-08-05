@@ -1,0 +1,15 @@
+gcloud_aio_taskqueue-0.0.1-py3.6-nspkg.pth,sha256=bGEMtsEE-ubFTc0BV5U-qVH5QmXIvfU27SFd22s6zBk,1686
+gcloud/aio/taskqueue/__init__.py,sha256=-T7p-wVURTMFRc_9hEeErtoUGGbCCjC6Uc0zOc83VnU,277
+gcloud/aio/taskqueue/something.py,sha256=NzEq5QGoXsZ3SItpV3soYPILMHTW3zvFoUc3pZ3G2JE,86
+gcloud/aio/taskqueue/taskqueue.py,sha256=rP92XrehGqQIaEi-sn1vRXz9YhneGDlD_jnlxoPjASY,10731
+gcloud_aio_taskqueue-0.0.1.dist-info/DESCRIPTION.rst,sha256=_gWLx57LnL2gdR4ctwELGYTCw8LT9lgUG6F7DtEaYJw,204
+gcloud_aio_taskqueue-0.0.1.dist-info/METADATA,sha256=qE71UPeYb4BvSL2ImNsah8_0Lz2sTOIMleFhO2D74O0,918
+gcloud_aio_taskqueue-0.0.1.dist-info/RECORD,,
+gcloud_aio_taskqueue-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gcloud_aio_taskqueue-0.0.1.dist-info/metadata.json,sha256=m7PX3echaQ5d3vmE080xCct4VV3cM-VEBrwvm-JcuQQ,881
+gcloud_aio_taskqueue-0.0.1.dist-info/namespace_packages.txt,sha256=-g45M0lNSIP1YnGVZdmhV1skM4SizE4Y8TV1arz1_38,18
+gcloud_aio_taskqueue-0.0.1.dist-info/top_level.txt,sha256=sox9WnuebKsnnDxekC1Pd7Q7wUz_DL8DRjlHhthn-ik,13
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/dummy_test.py,sha256=M7I6a0GN7BGga3uPThIC1z7-glIByiY2AqcD0hdUX9s,116
+tests/unit/taskqueue_test.py,sha256=b7KnB-AwYZz0_cO2ejUNg5hnfd2XV-AHgGC9Yx_Wmcw,115
