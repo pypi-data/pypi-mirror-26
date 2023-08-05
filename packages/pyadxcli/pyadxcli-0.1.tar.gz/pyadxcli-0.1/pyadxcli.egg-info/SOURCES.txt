@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyadxcli/__init__.py
+pyadxcli/client.py
+pyadxcli/utils.py
+pyadxcli.egg-info/PKG-INFO
+pyadxcli.egg-info/SOURCES.txt
+pyadxcli.egg-info/dependency_links.txt
+pyadxcli.egg-info/requires.txt
+pyadxcli.egg-info/top_level.txt
