@@ -1,0 +1,15 @@
+ilabs.client-0.0.5-py2.7-nspkg.pth,sha256=TIsQ2lVWw2AI6wU4DS7QAwmP5JFdx3YG3hTqQoYhhn8,534
+ilabs/client/__init__.py,sha256=90qoHjmEoY0ORGONfPdYPyYx7ozsyuNLput1VxDUelQ,286
+ilabs/client/get_user_key.py,sha256=Q4t-TiTfPXmtPFsxf7PTNeOga-rrL_OnGSILsqV6_pk,1156
+ilabs/client/ilabs_api.py,sha256=iyiPitXisKW9xS5cgFusQH2vt1eNoop8AhQTfF0voac,7267
+ilabs/client/ilabs_bulk_predict.py,sha256=6n_LQG6Wqf9AMR4rja_bcl65Az8VOANeApY-S87scr0,2518
+ilabs/client/ilabs_predictor.py,sha256=CWVFcGY4GaLuujRzGVMdKiBU4P8usH-EV9C5WauwoDo,2397
+ilabs/client/ilabs_tagger.py,sha256=_0dD57eNvVEYg9XBroiqViHx2GvJn9M_6k0MSsCQIfA,5871
+ilabs.client-0.0.5.dist-info/DESCRIPTION.rst,sha256=5Ub7XZV2siBvBXxJFBx_xJtvLsNGwME2VSFgEKd04io,51
+ilabs.client-0.0.5.dist-info/METADATA,sha256=9rj9PK39ahCxODW7aCpHe6nSFqph5HkV2iBmYYXNbAY,1143
+ilabs.client-0.0.5.dist-info/RECORD,,
+ilabs.client-0.0.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+ilabs.client-0.0.5.dist-info/entry_points.txt,sha256=QK3mGVAtdwWmhkwp_J2miOwtTVMgMEN86pTn74qQpkE,77
+ilabs.client-0.0.5.dist-info/metadata.json,sha256=SYZoohFdKum2ZIpsOLx81IkFPYhXr-H6hA0UfiLiPmQ,1424
+ilabs.client-0.0.5.dist-info/namespace_packages.txt,sha256=ANUT4VIcoiAdC7s28anBxMabo9qtL4LfUxjyYJk4KHQ,6
+ilabs.client-0.0.5.dist-info/top_level.txt,sha256=ANUT4VIcoiAdC7s28anBxMabo9qtL4LfUxjyYJk4KHQ,6
