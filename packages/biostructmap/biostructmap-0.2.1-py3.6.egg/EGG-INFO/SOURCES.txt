@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+biostructmap/__init__.py
+biostructmap/biostructmap.py
+biostructmap/gentests.py
+biostructmap/map_functions.py
+biostructmap/pdbtools.py
+biostructmap/seqtools.py
+biostructmap.egg-info/PKG-INFO
+biostructmap.egg-info/SOURCES.txt
+biostructmap.egg-info/dependency_links.txt
+biostructmap.egg-info/requires.txt
+biostructmap.egg-info/top_level.txt
