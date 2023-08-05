@@ -1,0 +1,17 @@
+gcloud_aio_taskqueue-0.7.0-py3.6-nspkg.pth,sha256=bGEMtsEE-ubFTc0BV5U-qVH5QmXIvfU27SFd22s6zBk,1686
+gcloud/aio/taskqueue/__init__.py,sha256=_2GVwc9BG8uPT61a43T1SFIF-ywTrBX7MCemu_zUDoo,518
+gcloud/aio/taskqueue/taskmanager.py,sha256=f07vrijahsEeYLK4tGE2WuPYgRla5TY0H454CTBuX04,12572
+gcloud/aio/taskqueue/taskqueue.py,sha256=Lw_5xVuVORCwNO-lB43Jp6QPz7MINYqKmlNnv4QsUYs,8790
+gcloud/aio/taskqueue/utils.py,sha256=bRXXManXw31r7Ymjq436WUcCb_MM5mKgOMe0z5XFonc,748
+gcloud_aio_taskqueue-0.7.0.dist-info/DESCRIPTION.rst,sha256=Wi6RzB8zBBpji-Iihna9dTbQWn0a8dfWU2YqQxE_99g,1249
+gcloud_aio_taskqueue-0.7.0.dist-info/METADATA,sha256=JxewAiYVkuDL9PanEqJJuk_WPEhfYjgeXrlNR5S-Xrw,1954
+gcloud_aio_taskqueue-0.7.0.dist-info/RECORD,,
+gcloud_aio_taskqueue-0.7.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gcloud_aio_taskqueue-0.7.0.dist-info/metadata.json,sha256=0ArluxkUb-KPO6zemCIybJhoOOkdXAzmRaKEQ--y1zc,872
+gcloud_aio_taskqueue-0.7.0.dist-info/namespace_packages.txt,sha256=-g45M0lNSIP1YnGVZdmhV1skM4SizE4Y8TV1arz1_38,18
+gcloud_aio_taskqueue-0.7.0.dist-info/top_level.txt,sha256=sox9WnuebKsnnDxekC1Pd7Q7wUz_DL8DRjlHhthn-ik,13
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/smoke_test.py,sha256=um4L2VYRPHswy7RNsjA8NkkJljsumZ57nNOElRXthbw,1349
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/taskmanager_test.py,sha256=Cgf2vKncBkDHMvUHqNGPkPzv23o9zfDA244yDYLN5kg,129
+tests/unit/taskqueue_test.py,sha256=iLKQatEjjZcJVNjDrvGVvfx8up-g1eVoHxbQvy0KVAg,125
