@@ -1,0 +1,11 @@
+boto>=2.38.0
+click
+diskcache==2.4.1
+future
+lazy_object_proxy
+psutil>=3.2.1
+pytz
+setproctitle
+subprocess32
+tabulate>=0.7.3,<0.8.0
+typing
