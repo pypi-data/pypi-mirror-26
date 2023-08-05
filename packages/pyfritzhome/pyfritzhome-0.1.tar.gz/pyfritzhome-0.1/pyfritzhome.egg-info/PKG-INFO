@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: pyfritzhome
+Version: 0.1
+Summary: Fritz!Box Smarthome Python Library
+Home-page: http://github.com/hthiery/python-fritzhome
+Author: Heiko Thiery
+Author-email: heiko.thiery@gmail.com
+License: LGPLv2+
+Description-Content-Type: UNKNOWN
+Description: Python Library to access AVM Fritz!Box homeautomation
+        =====================================================
+        
+        |BuildStatus| |Coveralls| |CodeClimate|
+        
+        Tested Devices
+        --------------
+        * `FRITZ!Box 6490 Cable`_ with FRITZ!OS 06.85
+        * `FRITZ!DECT 200`_ with firmware 03.87
+        * `Comet DECT`_ with firmware 03.54
+        
+        .. |BuildStatus| image:: https://travis-ci.org/hthiery/python-fritzhome.png?branch=master
+                         :target: https://travis-ci.org/hthiery/python-fritzhome
+        .. |CodeClimate| image:: https://api.codeclimate.com/v1/badges/fc83491ef0ae81080882/maintainability
+        				 :target: https://codeclimate.com/github/hthiery/python-fritzhome/maintainability
+        				 :alt: Maintainability
+        .. |Coveralls|   image:: https://coveralls.io/repos/github/hthiery/python-fritzhome/badge.svg?branch=master
+                         :target: https://coveralls.io/github/hthiery/python-fritzhome?branch=master
+        
+        .. _Comet DECT: https://www.eurotronic.org/produkte/comet-dect.html
+        .. _FRITZ!DECT 200: https://avm.de/produkte/fritzdect/fritzdect-200/
+        .. _FRITZ!Box 6490 Cable: https://avm.de/produkte/fritzbox/fritzbox-6490-cable/
+        
+Keywords: avm fritzbox
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
