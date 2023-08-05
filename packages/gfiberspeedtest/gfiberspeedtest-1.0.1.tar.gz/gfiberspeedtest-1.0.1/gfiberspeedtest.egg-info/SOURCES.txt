@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+gfiberspeedtest/__init__.py
+gfiberspeedtest/speedtest_cli.py
+gfiberspeedtest.egg-info/PKG-INFO
+gfiberspeedtest.egg-info/SOURCES.txt
+gfiberspeedtest.egg-info/dependency_links.txt
+gfiberspeedtest.egg-info/requires.txt
+gfiberspeedtest.egg-info/top_level.txt
