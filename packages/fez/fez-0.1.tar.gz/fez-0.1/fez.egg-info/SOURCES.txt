@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+fez/Fez.py
+fez/__init__.py
+fez/constants.py
+fez.egg-info/PKG-INFO
+fez.egg-info/SOURCES.txt
+fez.egg-info/dependency_links.txt
+fez.egg-info/entry_points.txt
+fez.egg-info/requires.txt
+fez.egg-info/top_level.txt
