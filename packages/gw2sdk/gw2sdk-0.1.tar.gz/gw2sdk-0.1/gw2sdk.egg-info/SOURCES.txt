@@ -1,0 +1,9 @@
+README.md
+setup.py
+connectors/commerce.py
+connectors/items.py
+connectors/recipes.py
+gw2sdk.egg-info/PKG-INFO
+gw2sdk.egg-info/SOURCES.txt
+gw2sdk.egg-info/dependency_links.txt
+gw2sdk.egg-info/top_level.txt
