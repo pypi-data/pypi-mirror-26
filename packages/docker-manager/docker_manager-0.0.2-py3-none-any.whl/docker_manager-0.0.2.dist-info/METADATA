@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: docker-manager
+Version: 0.0.2
+Summary: Tool for docker container management
+Home-page: https://github.com/claudio-walser/python-docker-manager
+Author: Claudio Walser
+Author-email: claudio.walser@srf.ch
+License: Apache License
+Keywords: docker,application,docker-manager,docker-compose
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Dist: argcomplete
+Requires-Dist: argparse
+Requires-Dist: pyyaml
+Requires-Dist: shutilwhich
+Requires-Dist: simple-cli
+
+Nothing to see yet
+
+
