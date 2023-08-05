@@ -1,0 +1,11 @@
+dnc/__init__.py,sha256=OB-b_GnUnTkECn1fwxl844UBmiui3mSWIvhBqMZY7Tc,22
+dnc/copy_task.py,sha256=GAyjpJWLgQaQe-r4QR5E7AA5xB1ZY3-7HRH8eXVoqo4,5188
+dnc/dnc.py,sha256=DywS5fpsQ9quDpo4aN0ZIDc5RUMhtc0XYeBLNAaJIKU,8499
+dnc/memory.py,sha256=ZfBotWeIyayDwFMWgHCdLF-e_Q0gCCDqlP6m8TOMHhU,10516
+dnc/util.py,sha256=Ki_7wa1oA5C0B2tRIuhyNMfbTm6KKi7IhFfXsyS7K6E,4371
+dnc-0.0.1.dist-info/DESCRIPTION.rst,sha256=x6YvlDTb4J4oIFtb4sNSF8kqc3moUiP8z0HVxJDkNz0,51
+dnc-0.0.1.dist-info/METADATA,sha256=G-kYIFnlBh7uH4P9vlH-6AOAG71JEy4bgHUDswyh2aA,992
+dnc-0.0.1.dist-info/RECORD,,
+dnc-0.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+dnc-0.0.1.dist-info/metadata.json,sha256=I61cyKEMpWwfVLcHN2LXDgNEP-g0sdldLscepuvj710,1094
+dnc-0.0.1.dist-info/top_level.txt,sha256=NfYcPQ2Dk-uaR2Ma7ELSUYdKJ2siu0GpAk-mg-Mwjts,4
