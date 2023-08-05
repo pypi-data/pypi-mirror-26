@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: esx-cli
+Version: 1.1
+Summary: A command line tool for managing vCenter and ESXi servers
+Home-page: http://github.com/Moshe-Immerman/esx-cli
+Author: Moshe Immerman
+Author-email: name.surname@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: any

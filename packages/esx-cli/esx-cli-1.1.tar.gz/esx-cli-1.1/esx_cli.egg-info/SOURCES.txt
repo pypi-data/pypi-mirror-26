@@ -1,0 +1,14 @@
+README.md
+setup.py
+esx_cli/ESX.py
+esx_cli/__init__.py
+esx_cli/cli.py
+esx_cli/esx.py
+esx_cli/utils.py
+esx_cli.egg-info/PKG-INFO
+esx_cli.egg-info/SOURCES.txt
+esx_cli.egg-info/dependency_links.txt
+esx_cli.egg-info/entry_points.txt
+esx_cli.egg-info/pbr.json
+esx_cli.egg-info/requires.txt
+esx_cli.egg-info/top_level.txt

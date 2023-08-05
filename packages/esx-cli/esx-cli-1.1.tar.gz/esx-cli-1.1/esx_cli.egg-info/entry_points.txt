@@ -1,0 +1,3 @@
+[console_scripts]
+esx = esx_cli.cli:main
+

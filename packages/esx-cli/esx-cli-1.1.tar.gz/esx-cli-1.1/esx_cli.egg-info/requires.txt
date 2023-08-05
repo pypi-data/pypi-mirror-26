@@ -1,0 +1,10 @@
+Click
+paramiko
+pyvmomi
+requests
+ansicolors
+progressbar2
+termcolor
+colorama
+mcommons
+sh
