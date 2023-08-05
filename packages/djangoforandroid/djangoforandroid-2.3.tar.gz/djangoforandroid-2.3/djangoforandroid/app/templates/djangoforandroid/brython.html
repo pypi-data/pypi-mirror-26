@@ -1,0 +1,7 @@
+{% load staticfiles %}
+{% load compile_static %}
+
+<!--Brython-->
+<script type="text/javascript" src="{% static "brython/brython.js" %}"></script>
+<script type="text/javascript" src="{% static "brython/brython_stdlib.js" %}"></script>
+<script type="text/javascript" src="{% static "brython/brython.coffee"|compile %}"></script>
