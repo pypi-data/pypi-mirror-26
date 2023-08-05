@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: Logrdis
+Version: 0.2.0
+Summary: A fully configurable stream redirector from a socket to a database
+Home-page: https://github.com/carbyne/logrdis
+Author: Matt Daue
+Author-email: mdaue@carbyne.solutions
+License: BSD-4-Clause
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: log stream sql redirect
+Platform: UNKNOWN
