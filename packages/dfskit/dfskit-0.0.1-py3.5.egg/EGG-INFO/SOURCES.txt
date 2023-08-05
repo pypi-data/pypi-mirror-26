@@ -1,0 +1,12 @@
+README.rst
+setup.py
+dfskit.egg-info/PKG-INFO
+dfskit.egg-info/SOURCES.txt
+dfskit.egg-info/dependency_links.txt
+dfskit.egg-info/entry_points.txt
+dfskit.egg-info/top_level.txt
+dsfkit/__init__.py
+dsfkit/cli/__init__.py
+dsfkit/cli/csvjson.py
+dsfkit/utilities/__init__.py
+dsfkit/utilities/csvjson.py
