@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/pygate
+dxl_pygate.egg-info/PKG-INFO
+dxl_pygate.egg-info/SOURCES.txt
+dxl_pygate.egg-info/dependency_links.txt
+dxl_pygate.egg-info/not-zip-safe
+dxl_pygate.egg-info/requires.txt
+dxl_pygate.egg-info/top_level.txt
+pygate/__init__.py
+pygate/merge.py
+pygate/methods.py
+pygate/pygate_click.py
+pygate/service.py
+pygate/shell.py
+pygate/submit.py
