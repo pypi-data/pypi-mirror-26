@@ -1,0 +1,17 @@
+README.md
+setup.py
+DTSR.egg-info/PKG-INFO
+DTSR.egg-info/SOURCES.txt
+DTSR.egg-info/dependency_links.txt
+DTSR.egg-info/requires.txt
+DTSR.egg-info/top_level.txt
+dtsr/__init__.py
+dtsr/baselines.py
+dtsr/config.py
+dtsr/data.py
+dtsr/dtsr.py
+dtsr/formula.py
+dtsr/io.py
+dtsr/plot.py
+dtsr/signif.py
+dtsr/util.py
