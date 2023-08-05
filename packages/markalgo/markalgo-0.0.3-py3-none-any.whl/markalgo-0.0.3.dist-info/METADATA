@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: markalgo
+Version: 0.0.3
+Summary: Markov's algorithm processing
+Home-page: https://gitlab.com/fedinskiy/marknalgo
+Author: fedinskiy
+Author-email: UNKNOWN
+License: WTFPL
+Description-Content-Type: UNKNOWN
+Keywords: markov replace
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: argparse
+Provides-Extra: test
+Requires-Dist: unittest; extra == 'test'
+
+UNKNOWN
+
+
