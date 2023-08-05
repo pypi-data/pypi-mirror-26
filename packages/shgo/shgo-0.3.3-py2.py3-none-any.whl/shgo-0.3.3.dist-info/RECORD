@@ -1,0 +1,12 @@
+shgo/__init__.py,sha256=nxV-FK2NbC5MDv_DK3AxqrGPWQJFLKbdu1m-TywE2E4,106
+shgo/_shgo.py,sha256=fbM4oMk5PVw2uGCFxzl_VbYN1ddD8suB7u_9G_6dx0A,62384
+shgo/_tgo.py,sha256=3WI_NLWARMLxTardbv0Z9RqFKJG7iZe0eU5-i72zBSY,31316
+shgo/shgo_tests.py,sha256=o2WS_NWA1DLrB10vJ517rgYwE_5BXIx6qHdw84uReWY,19586
+shgo/sobol_seq.py,sha256=9AJmo5_g7YeM_g2GsWIhf3am4sxRlWdxDsY07dzRJyg,14948
+shgo/triangulation.py,sha256=NoJPPQv8GQsxnwHqoWsPpqpotM49rTGkrp03XcDGmgk,30342
+shgo-0.3.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+shgo-0.3.3.dist-info/METADATA,sha256=E2mJHpWRmKjc-11XWrlFBpN8dxK9xo0TFVAqEgHHVhE,791
+shgo-0.3.3.dist-info/RECORD,,
+shgo-0.3.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+shgo-0.3.3.dist-info/metadata.json,sha256=ZHhxYAM7tKEss9QaofUsUJ676l6D9wBG_VeJFfLwjCU,939
+shgo-0.3.3.dist-info/top_level.txt,sha256=-rNHcKMwoCXpH29zShcj-UxJjX2y71NEtBDP8nXgHuI,5
