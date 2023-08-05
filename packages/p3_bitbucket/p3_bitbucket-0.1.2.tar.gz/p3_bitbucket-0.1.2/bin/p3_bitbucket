@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import p3_bitbucket
+
+p3.bitbucket.execute_from_command_line()
