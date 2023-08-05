@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+confluence_libaray.egg-info/PKG-INFO
+confluence_libaray.egg-info/SOURCES.txt
+confluence_libaray.egg-info/dependency_links.txt
+confluence_libaray.egg-info/requires.txt
+confluence_libaray.egg-info/top_level.txt

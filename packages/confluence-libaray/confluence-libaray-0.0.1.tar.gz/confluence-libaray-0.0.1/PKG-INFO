@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: confluence-libaray
+Version: 0.0.1
+Summary: A python libaray for Atlassian Confluence
+Home-page: https://github.com/tonybearpan/confluence-libaray
+Author: tonybearpan
+Author-email: tonybearpan@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: confluence
+Platform: UNKNOWN
