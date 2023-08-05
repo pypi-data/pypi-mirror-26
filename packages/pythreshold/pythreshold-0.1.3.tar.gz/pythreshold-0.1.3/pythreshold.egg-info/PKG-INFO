@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pythreshold
+Version: 0.1.3
+Summary: Numpy/Scipy implementations of state-of-the-art image thresholding algorithms
+Home-page: https://www.researchgate.net/profile/Manuel_Aguado_Martinez2
+Author: BSc. Manuel Aguado Martínez
+Author-email: manuelaguadomtz@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: thresholding entropy
+Platform: UNKNOWN
