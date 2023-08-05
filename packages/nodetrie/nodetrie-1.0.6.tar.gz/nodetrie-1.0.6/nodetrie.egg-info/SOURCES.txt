@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+nodetrie/__init__.py
+nodetrie/_version.py
+nodetrie/nodetrie.c
+nodetrie.egg-info/PKG-INFO
+nodetrie.egg-info/SOURCES.txt
+nodetrie.egg-info/dependency_links.txt
+nodetrie.egg-info/not-zip-safe
+nodetrie.egg-info/top_level.txt
+nodetrie_c/src/node.c
+nodetrie_c/src/node.h
