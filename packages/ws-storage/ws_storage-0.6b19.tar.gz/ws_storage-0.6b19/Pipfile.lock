@@ -1,0 +1,149 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "122299536464e0b045c6b0d62ea8b5d366590a7b7a90ad4718f27421e0bdcc3d"
+        },
+        "requires": {},
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "aiobotocore": {
+            "version": "==0.4.5"
+        },
+        "aiohttp": {
+            "version": "==2.3.0"
+        },
+        "async-patterns": {
+            "version": "==0.3b13"
+        },
+        "async-timeout": {
+            "version": "==2.0.0"
+        },
+        "botocore": {
+            "version": "==1.7.5"
+        },
+        "chardet": {
+            "version": "==3.0.4"
+        },
+        "docutils": {
+            "version": "==0.14"
+        },
+        "jmespath": {
+            "version": "==0.9.3"
+        },
+        "modconf": "==0.4b6",
+        "multidict": {
+            "version": "==3.3.0"
+        },
+        "packaging": {
+            "version": "==16.8"
+        },
+        "pyparsing": {
+            "version": "==2.2.0"
+        },
+        "python-dateutil": {
+            "version": "==2.6.1"
+        },
+        "six": {
+            "version": "==1.11.0"
+        },
+        "toml": {
+            "version": "==0.9.3.1"
+        },
+        "wrapt": {
+            "version": "==1.10.11"
+        },
+        "yarl": {
+            "version": "==0.13.0"
+        }
+    },
+    "develop": {
+        "-e .": "*",
+        "alabaster": {
+            "version": "==0.7.10"
+        },
+        "appdirs": {
+            "version": "==1.4.3"
+        },
+        "async-generator": {
+            "version": "==1.8"
+        },
+        "babel": {
+            "version": "==2.5.1"
+        },
+        "certifi": {
+            "version": "==2017.7.27.1"
+        },
+        "chardet": {
+            "version": "==3.0.4"
+        },
+        "coverage": {
+            "version": "==4.4.1"
+        },
+        "docutils": {
+            "version": "==0.14"
+        },
+        "fs": {
+            "version": "==2.0.12"
+        },
+        "idna": {
+            "version": "==2.6"
+        },
+        "imagesize": {
+            "version": "==0.7.1"
+        },
+        "jinja2": {
+            "version": "==2.9.6"
+        },
+        "markupsafe": {
+            "version": "==1.0"
+        },
+        "numpy": {
+            "version": "==1.13.3"
+        },
+        "py": {
+            "version": "==1.4.34"
+        },
+        "pygments": {
+            "version": "==2.2.0"
+        },
+        "pytest": {
+            "version": "==3.2.3"
+        },
+        "pytest-asyncio": {
+            "version": "==0.8.0"
+        },
+        "pytest-cov": {
+            "version": "==2.5.1"
+        },
+        "pytz": {
+            "version": "==2017.2"
+        },
+        "requests": {
+            "version": "==2.18.4"
+        },
+        "setuptools": {
+            "version": "==36.6.0"
+        },
+        "six": {
+            "version": "==1.11.0"
+        },
+        "snowballstemmer": {
+            "version": "==1.2.1"
+        },
+        "sphinx": {
+            "version": "==1.6.4"
+        },
+        "sphinxcontrib-websupport": {
+            "version": "==1.0.1"
+        },
+        "urllib3": {
+            "version": "==1.22"
+        }
+    }
+}
