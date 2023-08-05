@@ -1,0 +1,8 @@
+README.rst
+setup.py
+SpiderBone/__init__.py
+SpiderBone.egg-info/PKG-INFO
+SpiderBone.egg-info/SOURCES.txt
+SpiderBone.egg-info/dependency_links.txt
+SpiderBone.egg-info/requires.txt
+SpiderBone.egg-info/top_level.txt

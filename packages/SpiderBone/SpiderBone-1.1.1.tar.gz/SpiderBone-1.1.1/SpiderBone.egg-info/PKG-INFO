@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: SpiderBone
+Version: 1.1.1
+Summary: Differently Spider frame
+Home-page: https://github.com/HiredMagician/SpiderBone/
+Author: HiredMagician
+Author-email: badjoke@aliyun.com
+License: MIT
+Description: SpiderBone is Differently Spider frame,make you create own web spider more fast than ever,you don't even need to code^_^
+Keywords: web spider frame
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
