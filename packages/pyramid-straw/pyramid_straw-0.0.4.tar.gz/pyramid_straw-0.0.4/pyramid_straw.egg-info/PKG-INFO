@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pyramid-straw
+Version: 0.0.4
+Summary: SQLAlchemy profiler for Pyramid Framework
+Home-page: http://github.com/dz0ny/pyramid_straw/
+Author: dz0ny
+Author-email: dz0ny@ubuntu.si
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5

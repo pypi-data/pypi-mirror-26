@@ -1,0 +1,6 @@
+pyramid
+SQLAlchemy
+pyramid_debugtoolbar
+
+[dev]
+pytest
