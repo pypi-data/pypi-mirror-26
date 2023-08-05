@@ -1,0 +1,1 @@
+http://github.com/ValiMail/dkimpy/tarball/master#egg=dkimpy-0.7.1
