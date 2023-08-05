@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+seaborn
+pandas
+feather-format
+halo
+pyarrow
+scikit-learn
+flask
