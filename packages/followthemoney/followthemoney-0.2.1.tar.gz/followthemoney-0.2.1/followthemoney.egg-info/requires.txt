@@ -1,0 +1,7 @@
+six
+pyyaml
+requests
+normality
+sqlalchemy
+backports.csv
+dalet>=1.3
