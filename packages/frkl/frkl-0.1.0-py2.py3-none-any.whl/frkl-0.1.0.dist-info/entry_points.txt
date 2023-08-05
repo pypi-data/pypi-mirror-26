@@ -1,0 +1,20 @@
+[console_scripts]
+frkl = frkl.cli:cli
+
+[frkl.collector]
+merge = frkl.frkl:MergeResultCallback
+
+[frkl.frk]
+deserialize = frkl.frkl:EnsurePythonObjectProcessor
+expand_url = frkl.frkl:UrlAbbrevProcessor
+frklize = frkl.frkl:FrklProcessor
+id = frkl.frkl:IdProcessor
+inject = frkl.frkl:DictInjectionProcessor
+load_additional_configs = frkl.frkl:LoadMoreConfigsProcessor
+merge = frkl.frkl:MergeProcessor
+read = frkl.frkl:EnsureUrlProcessor
+regex = frkl.frkl:RegexProcessor
+render_template = frkl.frkl:Jinja2TemplateProcessor
+split = frkl.frkl:YamlTextSplitProcessor
+to_yaml = frkl.frkl:ToYamlProcessor
+
