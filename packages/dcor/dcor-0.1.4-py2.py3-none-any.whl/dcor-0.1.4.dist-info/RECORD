@@ -1,0 +1,12 @@
+dcor/__init__.py,sha256=6EcyttIHTHDm-ciX4AjFhLQobprwr8gqxyaTyxs2Z2g,970
+dcor/dcor.py,sha256=f6cbXICedN9GQH-9qSKDdnhIhEyJg1rinr9d0_WwwHM,45368
+dcor/distances.py,sha256=pm_UmISPijp-fvIMSNDQ-EZFIumdybq7vFYvLh6KlgA,793
+dcor/homogeneity.py,sha256=QM7A_lF9hIqoNA3ctQ6FKOPG4wFiSLYN2rKFZe6hXBM,7794
+dcor/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcor/tests/test_dcor.py,sha256=pnKJsM3_-ELHQoazJxLTGZxNLDaTy_quZEAYCnwBJTo,7952
+dcor-0.1.4.dist-info/DESCRIPTION.rst,sha256=cyAK-d3Sa4bwdjt61M-jEUCK48gBn2-IM-Pd2-dn0fk,1501
+dcor-0.1.4.dist-info/METADATA,sha256=TwtqPaBPJL8SknVGENDTqQkKfJGazyjV03EM_c44LyU,2560
+dcor-0.1.4.dist-info/RECORD,,
+dcor-0.1.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dcor-0.1.4.dist-info/metadata.json,sha256=LCgtdbcxb_XJbVZ-m4eoDEXmWt98Zv6iurQH8ws9Mps,1227
+dcor-0.1.4.dist-info/top_level.txt,sha256=0eAqfHqwYOmY3kglc-8-EytvVFq_QPZVYJj_YbzWASo,5
