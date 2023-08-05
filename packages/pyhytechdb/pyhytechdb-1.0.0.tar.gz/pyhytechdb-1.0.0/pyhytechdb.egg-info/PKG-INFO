@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyhytechdb
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Aleksandr Osipov
+Author-email: aleksandr.osipov@zoho.eu
+License: MIT License
+Description: UNKNOWN
+Keywords: Hytech
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: Microsoft :: Windows
