@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: offbyone
+Version: 0.1
+Summary: Produces off by one "errors" in prints and interactive shell
+Home-page: https://github.com/chinatsu/offbyone
+Author: chinatsu
+Author-email: lolexplode@gmail.com
+License: MIT
+Description: 
+                            `offbyone` produces off by one "errors" in prints and in the interactive shell.
+                            Simply import and enjoy. The print function is automatically wrapped to show
+                            values off by one.
+                            The underlying data is never touched, so no bugs should be introduced by this.
+                           
+Keywords: off-by-one print
+Platform: UNKNOWN
