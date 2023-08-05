@@ -1,0 +1,8 @@
+setup.py
+jupiter_config/ConfigUtil.py
+jupiter_config/GoodDict.py
+jupiter_config/__init__.py
+jupiter_config.egg-info/PKG-INFO
+jupiter_config.egg-info/SOURCES.txt
+jupiter_config.egg-info/dependency_links.txt
+jupiter_config.egg-info/top_level.txt
