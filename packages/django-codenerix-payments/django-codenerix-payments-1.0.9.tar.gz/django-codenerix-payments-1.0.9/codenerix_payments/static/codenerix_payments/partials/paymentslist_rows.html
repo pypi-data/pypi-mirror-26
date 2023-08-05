@@ -1,0 +1,15 @@
+<td>{{row.locator|codenerix}}</td>
+<td>{{row.order|codenerix}}</td>
+<td>{{row.request_date|codenerix}}</td>
+<td>{{row.answer_date|codenerix}}</td>
+<td>{{row.platform|codenerix}}</td>
+<td>{{row.protocol|codenerix}}</td>
+<td>{{row.total|codenerix}}</td>
+<td>{{row.currency|codenerix}}</td>
+<td><span codenerix-html-compile='row.cancelled|codenerix'></td>
+<td><span codenerix-html-compile='row.error|codenerix'></td>
+<td>{{row.ref|codenerix}}</td>
+<td ng-click="$event.stopPropagation();" ng-controller="codenerixPaymentRequestCtrl">
+    <button ng-click="submit_approval(row.pk, row.get_approval)">{{data.meta.gentranslate.pay}}</button>
+    <div style='display:none' id='PaymentInternalFormHTML{{row.pk}}'></div>
+</td>
