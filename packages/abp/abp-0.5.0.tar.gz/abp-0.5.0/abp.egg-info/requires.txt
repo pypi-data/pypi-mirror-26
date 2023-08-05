@@ -1,0 +1,4 @@
+numpy
+networkx
+websocket-client
+websocket-server
