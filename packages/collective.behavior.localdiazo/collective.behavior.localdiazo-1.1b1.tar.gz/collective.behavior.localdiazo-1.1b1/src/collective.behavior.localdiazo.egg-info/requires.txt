@@ -1,0 +1,26 @@
+collective.behavior.localregistry
+plone.app.registry
+plone.app.theming >=1.1
+plone.autoform
+plone.behavior
+plone.registry
+Products.CMFCore
+Products.CMFPlone >=4.3
+setuptools
+zope.component
+zope.i18nmessageid
+zope.interface
+zope.schema
+
+[develop]
+manuel
+setuptools-flakes
+Sphinx
+
+[test]
+interlude
+plone.app.dexterity
+plone.app.testing
+plone.dexterity
+plone.testing
+unittest2
