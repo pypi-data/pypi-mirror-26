@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: qqwry-py2
+Version: 1.0.0
+Summary: Lookup location of IP in qqwry.dat, for Python 2.7
+Home-page: https://github.com/animalize/qqwry-python3
+Author: animalize
+Author-email: animalize81@hotmail.com
+License: BSD
+Description: 用于在qqwry.dat里查找IP地址归属地。
+        ﻿另提供一个从纯真网络更新qqwry.dat的小工具。
+        
+        是https://pypi.org/project/qqwry-py3/的Python 2实现，文档同该模块。
+        
+Keywords: qqwry cz88 纯真 ip归属地
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Topic :: Utilities

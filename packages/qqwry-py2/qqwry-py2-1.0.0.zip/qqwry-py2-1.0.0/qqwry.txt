@@ -1,0 +1,4 @@
+用于在qqwry.dat里查找IP地址归属地。
+﻿另提供一个从纯真网络更新qqwry.dat的小工具。
+
+是https://pypi.org/project/qqwry-py3/的Python 2实现，文档同该模块。
