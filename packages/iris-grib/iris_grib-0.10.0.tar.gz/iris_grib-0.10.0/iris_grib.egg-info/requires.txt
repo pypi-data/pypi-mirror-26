@@ -1,0 +1,4 @@
+iris>=1.9,<2
+
+[test:python_version=="2.7"]
+mock
