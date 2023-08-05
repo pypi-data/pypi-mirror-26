@@ -1,0 +1,3 @@
+[console_scripts]
+mason = masonry.main:main
+
