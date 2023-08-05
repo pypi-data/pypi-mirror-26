@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: qri-py
+Version: 2.0.1
+Summary: Qri Python interface
+Home-page: https://github.com/Orderry/qri-py
+Author: va-dev
+Author-email: vadimanikin1@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7, <3
+Requires-Dist: pyasn1
+
+UNKNOWN
+
+
