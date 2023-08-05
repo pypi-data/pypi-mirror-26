@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: fluidspaces
+Version: 0.2.2
+Summary: Navigate i3wm named containers
+Home-page: https://github.com/mosbasik/fluidspaces
+Author: Peter Henry
+Author-email: me@peterhenry.net
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Fluidspaces
+        -------------
+        
+        Create, navigate and edit i3wm named containers with ease!
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.6

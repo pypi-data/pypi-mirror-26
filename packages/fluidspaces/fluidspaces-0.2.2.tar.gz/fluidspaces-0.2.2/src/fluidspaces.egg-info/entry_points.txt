@@ -1,0 +1,3 @@
+[console_scripts]
+fluidspaces = fluidspaces.__main__:main
+
