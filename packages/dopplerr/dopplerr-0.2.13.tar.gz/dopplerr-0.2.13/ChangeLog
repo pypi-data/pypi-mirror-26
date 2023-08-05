@@ -1,0 +1,80 @@
+CHANGES
+=======
+
+0.2.13
+------
+
+* yapf
+* pylint fix
+* propagate subliminal provider config
+* README: current limitations of Dopplerr
+* Bad return value
+* fix basedir undefined
+* multiline makefile
+* update README about basedir
+* Split downloaded into filters, response
+* make check does not sdist
+* base for db
+* define vectors for unit tests
+* docker run: debug file
+* Log during docker run
+
+0.2.12
+------
+
+* README: update about ports
+* new alias in Makefile
+* typo in readme
+* fix command line args
+* Housecleaning on docker run test and Makefile
+* update README
+* renane env var to SUBDLSRC\_ to DOPPLERR\_
+* new badge codeclimate
+* update title
+* updating readme
+* update badges
+* codecov on travis
+* merge 2 docker layer
+
+0.2.11
+------
+
+* reorg deps install in docker
+* remove ref to pyup
+* Fix startup script command line
+* freezen setuptools 36.6 and pipenv 8.2.7 in Dockerfile
+* pipenv 7
+* pipenv 5
+* pip 9.0.1
+* copy setup-pip.sh in layer
+* rework docker dep layering
+* reput dependency install on own docker layer
+* install pipenv on travis
+* Reset pipenv version
+* Revert "split deps install in own docker fs layer"
+* fix line width
+* anonymize tests
+* Missing pipenv on docker
+
+0.2.10
+------
+
+* Fix dockerfile
+* split bootstrap scripts
+* split deps install in own docker fs layer
+
+0.2.9
+-----
+
+* typo
+* update readme mess doc
+
+0.2.8
+-----
+
+* put back README.rst
+
+0.2.7
+-----
+
+* no wrapping on pandoc on travis
