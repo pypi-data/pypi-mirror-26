@@ -1,0 +1,14 @@
+python-dateutil
+pytz
+nose
+numpy
+scipy
+xarray
+h5py
+astropy
+matplotlib
+seaborn
+pathlib2
+sciencedates
+lowtran
+pathvalidate
