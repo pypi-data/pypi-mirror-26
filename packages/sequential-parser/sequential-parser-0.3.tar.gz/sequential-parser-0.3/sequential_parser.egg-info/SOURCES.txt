@@ -1,0 +1,7 @@
+setup.py
+sequential_parser/__init__.py
+sequential_parser/utils.py
+sequential_parser.egg-info/PKG-INFO
+sequential_parser.egg-info/SOURCES.txt
+sequential_parser.egg-info/dependency_links.txt
+sequential_parser.egg-info/top_level.txt
