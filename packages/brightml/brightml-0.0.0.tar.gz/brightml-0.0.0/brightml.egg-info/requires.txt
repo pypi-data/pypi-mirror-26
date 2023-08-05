@@ -1,0 +1,11 @@
+zmq
+numpy
+pandas
+scikit-learn
+python-xlib
+Pillow
+simplejson
+pyinotify
+
+[whereami]
+whereami
