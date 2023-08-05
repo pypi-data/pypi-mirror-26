@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: wxnatpy
+Version: 0.0.1
+Summary: wxPython XNAT repository browser
+Home-page: https://github.com/pauldmccarthy/wxnatpy
+Author: Paul McCarthy
+Author-email: pauldmccarthy@gmail.com
+License: Apache License Version 2.0
+Description-Content-Type: UNKNOWN
+Description: wxnatpy
+        =======
+        
+        `wxnatpy` is a [wxPython](https://www.wxpython.org) widget which allows users
+        to browse the contents of a [XNAT](https://xnat.org) repository. It is built
+        on top of `wxPython` and
+        [xnatpy](https://bitbucket.org/bigr_erasmusmc/xnatpy).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
