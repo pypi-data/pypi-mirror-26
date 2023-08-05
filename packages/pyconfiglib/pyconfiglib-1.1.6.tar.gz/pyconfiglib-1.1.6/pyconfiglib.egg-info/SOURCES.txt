@@ -1,0 +1,15 @@
+README.rst
+setup.py
+configlib/__init__.py
+configlib/config.py
+configlib/conftypes.py
+configlib/core.py
+configlib/log.py
+configlib/prompting.py
+configlib/version
+pyconfiglib.egg-info/PKG-INFO
+pyconfiglib.egg-info/SOURCES.txt
+pyconfiglib.egg-info/dependency_links.txt
+pyconfiglib.egg-info/requires.txt
+pyconfiglib.egg-info/top_level.txt
+test/test_are_missing.py
