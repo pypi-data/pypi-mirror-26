@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<form string="Memo" col="6">
+    <label name="title"/>
+    <field name="title" colspan="5"/>
+    <label name="category"/>
+    <field name="category"/>
+    <label name="datecreated"/>
+    <field name="datecreated" widget="date"/>
+    <label name="datechanged"/>
+    <field name="datechanged" widget="date"/>
+    <notebook colspan="6">
+        <page string="Memo" col="1" id="pgmemo">
+            <field name="memo"/>
+        </page>
+        <page string="Children" col="1" id="childs">
+            <field name="childs"/>
+        </page>
+    </notebook>
+</form>
