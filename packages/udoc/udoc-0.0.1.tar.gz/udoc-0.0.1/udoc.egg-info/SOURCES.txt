@@ -1,0 +1,9 @@
+README.rst
+setup.py
+udoc/__init__.py
+udoc.egg-info/PKG-INFO
+udoc.egg-info/SOURCES.txt
+udoc.egg-info/dependency_links.txt
+udoc.egg-info/not-zip-safe
+udoc.egg-info/requires.txt
+udoc.egg-info/top_level.txt
