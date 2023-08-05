@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: shuwen-news
+Version: 0.0.1
+Summary: shuwen news openapi python sdk
+Home-page: https://github.com/newsdata/shuwen-news-python-sdk
+Author: liaojian
+Author-email: liaojian@shuwen.com
+License: MIT
+Description: shuwen news openapi python sdk
+Platform: UNKNOWN
