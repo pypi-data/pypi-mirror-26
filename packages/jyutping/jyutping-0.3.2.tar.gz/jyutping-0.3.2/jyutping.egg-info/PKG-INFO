@@ -1,0 +1,33 @@
+Metadata-Version: 1.0
+Name: jyutping
+Version: 0.3.2
+Summary: Python tool to convert Chinese characters to Jyutping.
+Home-page: https://github.com/imdreamrunner/python-jyutping
+Author: Ivor Zhou
+Author-email: hello@ivorz.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: python-jyutping
+        ===============
+        
+        Python tool to convert Chinese characters to Jyutping.
+        
+        Install
+        -------
+        
+        .. code:: bash
+        
+            $ pip install jyutping
+        
+        Usage
+        -----
+        
+        .. code:: python
+        
+            >>> import jyutping
+        
+            >>> jyutping.get('广东话')  # Python 3
+            >>> jyutping.get(u'广东话')  # Python 2
+            ['gwong2', 'dung1', 'waa6']
+        
+Platform: UNKNOWN

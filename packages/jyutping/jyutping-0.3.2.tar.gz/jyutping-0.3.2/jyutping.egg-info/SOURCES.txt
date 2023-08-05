@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+jyutping/__init__.py
+jyutping/dictionary.py
+jyutping/jyutping.py
+jyutping/logger.py
+jyutping.egg-info/PKG-INFO
+jyutping.egg-info/SOURCES.txt
+jyutping.egg-info/dependency_links.txt
+jyutping.egg-info/top_level.txt
+jyutping/data/zidian_zhyue-ft-kfcd-yp-2013122.txt
