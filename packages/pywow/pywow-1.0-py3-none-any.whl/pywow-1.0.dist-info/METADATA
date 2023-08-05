@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: pywow
+Version: 1.0
+Summary: Python WoW API Wrapper
+Home-page: https://github.com/mostm/pywow
+Author: mostm
+Author-email: mostm@endcape.ru
+License: MIT
+Keywords: wow world of warcraft world_of_warcraft python api wrapper lib
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests (<3,>=2.15)
+Requires-Dist: Pillow (<5,>=4)
+
+# pyWoW
+Python WoW API Wrapper
+
+## Installation
+1. `pip install -U pywow`
+2. Get token for WoW Community API [here](https://dev.battle.net/apps/register)
+4. Create/add to file config.py in project folder with these values:
+```python
+blizzard_key = 'Your_WoW_Community_APIKEY_here'
+```
+
+## Usage
+*!* Only EU region is currently supported. 
+```python
+import wow
+```
+
+## Quick Tutorial
+
+#### Get character
+```python
+char = wow.Character(name='CharacterName', realm='Character realm')
+print('{name} on {realm} ({xplvl}lvl/{ilvl})\nPlaying as {class},{race} at {side}'.format(
+	{'name':char.full_name, 'realm':char.realm.name, 'xplvl':char.level['xp']
+	'ilvl':char.level['item'], 'class':char.wow_class.name, 'race':char.race.name,
+	'side':char.race.side}))
+```
+
