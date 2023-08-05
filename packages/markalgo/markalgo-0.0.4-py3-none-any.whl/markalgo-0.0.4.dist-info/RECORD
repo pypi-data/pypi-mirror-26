@@ -1,0 +1,12 @@
+markalgo/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+markalgo/__main__.py,sha256=H7nQ0kOnbW21JC9NMEK25zy3UP-pNQ6XmAqMePI2050,576
+markalgo/console.py,sha256=Imqggm7AO28CY8nf67uio4GO9WdtNtyOX0tdVSlNXJg,417
+markalgo/processing.py,sha256=HFz9TUD7ivIiaBKQt2sHfvBtDd-jEckfnR98qxSS0Hc,641
+markalgo/rules.py,sha256=QuW6fC8JwAbQP31OCs9yAiDbPwTbd-sF3ZUXjT8PvdM,2502
+markalgo-0.0.4.dist-info/DESCRIPTION.rst,sha256=sWgXqvud0VmuCKe3iyLAz6n_e_6js4DcYJQZBQhzdOs,797
+markalgo-0.0.4.dist-info/METADATA,sha256=gxT3kBlF6w-bgJ6Ev4LkVShKyv6hW0jAMeBiph2Qet4,1505
+markalgo-0.0.4.dist-info/RECORD,,
+markalgo-0.0.4.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+markalgo-0.0.4.dist-info/entry_points.txt,sha256=sZPUXVbYBoboH38b5WSaLUJ3uD_i6PbGmyQ3aC3XKfQ,44
+markalgo-0.0.4.dist-info/metadata.json,sha256=lUyj4gVzclHObvmW6FyHzYlyuaNGqlzfdFn0WT3AS0E,1011
+markalgo-0.0.4.dist-info/top_level.txt,sha256=VSOlDQMjVgYaAQeb715Xst-QS3wjZ6B-zDJU3W3QmBQ,9
