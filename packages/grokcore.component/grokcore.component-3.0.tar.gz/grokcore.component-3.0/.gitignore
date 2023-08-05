@@ -1,0 +1,12 @@
+.installed.cfg
+bin/
+develop-eggs/
+eggs/
+
+.coverage
+*.py[co]
+__pycache__/
+build/
+dist/
+*.egg-info/
+.tox/
