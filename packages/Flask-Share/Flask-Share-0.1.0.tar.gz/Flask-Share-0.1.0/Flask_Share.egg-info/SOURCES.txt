@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+flask_share.py
+setup.cfg
+setup.py
+test_flask_share.py
+Flask_Share.egg-info/PKG-INFO
+Flask_Share.egg-info/SOURCES.txt
+Flask_Share.egg-info/dependency_links.txt
+Flask_Share.egg-info/not-zip-safe
+Flask_Share.egg-info/requires.txt
+Flask_Share.egg-info/top_level.txt
