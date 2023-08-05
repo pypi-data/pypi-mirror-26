@@ -1,0 +1,125 @@
+---
+### Fizzgun configuration
+
+
+## source: Requests input source for Fizzgun
+# Possible values:
+#  * mitmproxy (default): receive request samples from mitmproxy
+source: mitmproxy
+
+## stack: Deployment settings on how to execute fizzgun
+stack:
+  ## queue_type: Fizzgun entities communication mechanism
+  # Possible values:
+  #  * zmq (default): Link Fizzgun entities using ZeroMQ
+  #  * python: Link Fizzgun entities using python Queues
+  queue_type: zmq
+
+  ## use_processes: Start Fizzgun entities in different processes
+  # On by default. If false multiple threads will be spawn in a single process
+  use_processes: true
+
+  # transformers: Number of parallel entities generating mutations of incoming requests
+  transformers: 2
+
+  # requestors: Number of parallel entities performing mutated HTTP requests to the target
+  requestors : 4
+
+
+## filters: Rule sets defining which incoming requests should be accepted for fuzzing
+# for no filters set the value to an empty list. I.e: [] (all incoming requests are processed for fuzzing)
+# You can find some examples below
+filters:
+  # each entry in this list consist of a mapping with these keys:
+  #  * endpoint (mandatory): Evaluate this rule set if the host:port tuple for the request's target matches the value,
+  #   which can be either an exact match (e.g. 'www.google.com:443') a regexp (e.g. '.+\.google\..+') or '*' (match
+  #   all the requests). Note that any specific target can match none or many of these endpoint rules
+  #  * matchers (optional): zero or more fine grained conditions. If one or more are defined all of them must evaluate
+  #   to true for the request to be accepted.
+  #
+  #  Summarizing: endpoints apply in an 'OR' fashion while matches in a given endpoint apply in an 'AND' fashion.
+  #  I.e. accept request R if (R matches endpoint1 AND R matches endpoint1.matchers) OR (R matches endpoint2 AND ..)
+
+
+  # Accept all requests targeting any example.com subdomain but only on ports 80 and 443
+  - endpoint: '.*\.example\.com:(80|443)'
+
+  # Accept DELETE and GET requests targeting example.org:443 on any URL starting with /api/
+  - endpoint: 'example.org:443'
+    matchers:
+      path: '/api/.*'
+      method: [DELETE, GET]
+
+  # Accept request to api.example.com unless request with same method, scheme, host, port, and query was already fuzzed
+  - endpoint: 'api.example.com'
+    matchers:
+      unseen: [method, scheme, host, port, path, query]
+
+  # Currently supported matchers include:
+  #  path: matches the URL path (without querystring), the value can be an exact match, a regex, or '*'
+  #  path_with_query: matches the full resource path (including querystring), the value can be an exact match, a regex,
+  #      or '*'
+  #  method: matches the request's HTTP method, the value can be either a single method string, or a list of methods
+  #  unseen: matches if a request with the same signature has not been fuzzed already, the value is a list of one or
+  #      more request attributes that compose the signature: method, scheme, host, port, path, query
+
+
+## bubbles: configuration of fizzgun bubbles (request's mutators)
+bubbles:
+  # tags-whitelist: Only load bubbles that contain any tag from this list (unless list is empty)
+  tags-whitelist: []
+
+  # tags-blacklist: Don't load bubbles that are tagged with anything from this blacklist
+  tags-blacklist: []
+
+  # default-settings: Applied to all the bubbles, you can override a setting for a particular bubble in
+  # the bubble-packs[x].settings.BubbleName section.
+  default-settings:
+    # expected_status_rage: a specification of what response codes are considered valid. E.g, '100-499,502,503'
+    # defaults to '0-499' if unset.
+    expected_status_range: '0-499'
+
+    # mark requests: if 'true' every mutated request will include an 'x-fizzgun-id' header with a unique id
+    mark_requests: false
+
+  # bubble-packs: List of modules containing bubbles definition
+  # You can extend Fizzgun by loading your own bubble pack
+  # To load your own bubble pack, add an entry to this list specifying:
+  #   * module: a module name containing a 'BUBBLES' attribute which is a list of your bubble classes
+  #   * settings (optional): Define instantiation attributes for built-in or yourcustom bubbles this way:
+  #       settings:
+  #         YourBubbleClassName:
+  #           keyword_arg1: 100
+  #           another_kw_arg: 'foo'
+  #         AnotherBubbleClass:
+  #           ...
+  bubble-packs:
+    - module: fizzgun.bubbles # load built-in bubbles
+      settings:
+        Enlarger:
+          grow_factor: 100
+
+## report: settings on how fizzgun findings are reported
+report:
+  # directory: location where reports are written
+  directory: ./reports
+  # format: either 'txt' or 'html'
+  format: txt
+
+
+## mitmproxy: Specific settings (if 'source: mitmproxy')
+mitmproxy:
+  # port: bind the proxy to this port
+  port: 8888
+
+  # http_connect_ignore: Specify a regex base matchers to avoid interception of HTTPS requests based
+  # on the HTTP CONNECT "host:port" tuple
+  # Usually you will want to filter out anything that is not your service under test. E.g.:
+  # http_connect_ignore: ^(?!myservice\.com)(?!myservice\.org)
+  http_connect_ignore:
+
+  # insecure: Allow mitmproxy to connect to target with invalid SSL certificates
+  insecure: True
+
+  # Enable fizzgun session tracking by enabling authentication in the proxy (the username becomes the session id)
+  track_sessions: True

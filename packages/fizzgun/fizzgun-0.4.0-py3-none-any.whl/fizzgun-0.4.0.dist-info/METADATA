@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: fizzgun
+Version: 0.4.0
+Summary: Fizzgun - Simple & Effective HTTP(S) Fuzzer
+Home-page: https://bitbucket.org/atlassian/fizzgun/
+Author: Sebastian Tello
+Author-email: stello@atlassian.com
+License: Apache 2.0
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: mitmproxy
+Requires-Dist: pystache
+Requires-Dist: pyzmq
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+UNKNOWN
+
+
