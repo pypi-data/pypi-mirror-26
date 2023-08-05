@@ -1,0 +1,7 @@
+setup.py
+checkdnssec.egg-info/PKG-INFO
+checkdnssec.egg-info/SOURCES.txt
+checkdnssec.egg-info/dependency_links.txt
+checkdnssec.egg-info/entry_points.txt
+checkdnssec.egg-info/requires.txt
+checkdnssec.egg-info/top_level.txt
