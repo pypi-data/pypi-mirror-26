@@ -1,0 +1,10 @@
+prod:
+  apt:
+    - a:
+        after: b
+    - b
+
+  pip:
+    - c
+    - d:
+        before: b

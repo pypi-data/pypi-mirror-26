@@ -1,0 +1,14 @@
+include MANIFEST.in README.rst CHANGELOG.rst LICENSE Makefile version.txt
+include requirements.txt requirements.in
+include dev-requirements.txt dev-requirements.in
+include requirements.yml metadata
+include tox.ini Dockerfile
+recursive-include dev *
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-include tests *
+recursive-exclude tests *.pyc
+recursive-include examples *.yml
+recursive-include depman *
+recursive-exclude depman *.pyc

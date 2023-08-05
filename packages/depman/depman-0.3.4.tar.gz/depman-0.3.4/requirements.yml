@@ -1,0 +1,28 @@
+dev:
+  apt:
+    - libxml2-dev
+    - libxslt1-dev
+
+  pip:
+    - check-manifest
+    - coverage
+    - detox
+    - fmap
+    - ipdb
+    - ipdbplugin
+    - ipython
+    - lxml
+    - mock
+    - nose
+    - pip-tools
+    - Sphinx
+    - twine
+    - tox
+    - xunitmerge
+
+prod:
+  pip:
+    - syn:
+        always_upgrade: yes
+    - yatr:
+        always_upgrade: yes
