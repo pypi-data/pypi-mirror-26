@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: crawl-requests
+Version: 1.1.1
+Summary: crawl_requests provides api of User-Agent_pool and proxy_pool.
+Home-page: https://github.com/shinalone/crawl_requests
+Author: UlionTse
+Author-email: shinalone@outlook.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: **crawl_requests**
+        ==================
+        *1. Feactures:*
+        ---------------
+        - *crawl_requests provides api of User-Agent_pool and proxy_pool.*
+        - *firstly, common requests; secondly, add user-agent requests; finally, add user-agent and proxy requests.*
+        
+        *2. Usage:*
+        -----------
+        >>>from crawl_requests import req
+        
+        >>>req.req_get(url='https://baidu.com',headers={},UA_pool=[],proxy_pool=[])
+        
+        <Response [200]>
+        
+        
+        *3. Tips:*
+        ----------
+        - *pip install crawl_requests*
+        - *Example: proxy_pool=[{'http': '62.81.245.12:3128'},{'https': '210.38.1.147:8080'}]*
+        
+Keywords: translate,translate_api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
