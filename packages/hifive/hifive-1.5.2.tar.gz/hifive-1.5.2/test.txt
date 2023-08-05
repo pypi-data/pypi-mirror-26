@@ -1,0 +1,6 @@
+Quality Score Results
+
+Resolution	Coverage	All	21	22
+40 Kb	2,106,753	0.077719	0.075603	0.079913
+
+
