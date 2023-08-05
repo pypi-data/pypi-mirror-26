@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: huTrend
+Version: 1.0
+Summary: 这仅是自己使用的整合包
+Home-page: https://pypi.python.org/pypi
+Author: trend
+Author-email: huyazhou_hadoop@163.com
+License: BSD License
+Description: UNKNOWN
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries

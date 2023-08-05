@@ -1,0 +1,5 @@
+setup.py
+huTrend.egg-info/PKG-INFO
+huTrend.egg-info/SOURCES.txt
+huTrend.egg-info/dependency_links.txt
+huTrend.egg-info/top_level.txt
