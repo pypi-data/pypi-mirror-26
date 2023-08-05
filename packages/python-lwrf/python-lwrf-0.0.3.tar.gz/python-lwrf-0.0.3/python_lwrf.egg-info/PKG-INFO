@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: python-lwrf
+Version: 0.0.3
+Summary: ['A Python3 Library to control LightwaveRF Devices']
+Home-page: https://github.com/proffalken/python-lwrf
+Author: Matthew Macdonald-Wallace
+Author-email: matt@doics.co
+License: ['LICENSE.txt']
+Download-URL: https://github.com/proffalken/python-lwrf/archive/v0.0.3.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
