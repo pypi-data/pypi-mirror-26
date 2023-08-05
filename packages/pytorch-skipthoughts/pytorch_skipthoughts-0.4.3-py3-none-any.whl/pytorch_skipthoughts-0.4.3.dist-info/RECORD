@@ -1,0 +1,11 @@
+pytorch_skipthoughts-0.4.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pytorch_skipthoughts-0.4.3.dist-info/METADATA,sha256=qQEA4OCkK_44k2G_N-QgSfZc_Wxnh-VHRQhAeR1fuoo,654
+pytorch_skipthoughts-0.4.3.dist-info/RECORD,,
+pytorch_skipthoughts-0.4.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+pytorch_skipthoughts-0.4.3.dist-info/metadata.json,sha256=oJcMxjuhSmwZZCtWD8AZ_3mQPzcREzbCmYMfPdRPi08,841
+pytorch_skipthoughts-0.4.3.dist-info/top_level.txt,sha256=PR8WAXNyMKMo7_T2_Axu1sIlAa-TQg0J0-W9B0W-pqw,8
+torchst/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchst/model.py,sha256=ha07mg9UjhdJWbeshvA6E7PhTLObEssHo1ow76jD23o,14727
+torchst/train.py,sha256=UcO3QZxfO6rgd0iy0WVt6J6UzC4FkP_4gogyhR5If74,25039
+torchst/vectorize.py,sha256=nl0Eqa-o97PQZKMQIiYloJhKbEoi9JbRtqVC-vU0hRc,12703
+torchst/wordembed.py,sha256=3tbFlgwQSkTzFdPp_gVbff_mtTRnso_C7p-Hnqom6T8,13428
