@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles widgets_tag %}
+
+{% block title %}E-Democracia{% endblock %}
+
+{% block html %}
+  {% import_widgets 'home_section' %}
+  {{block.super}}
+{% endblock html %}
+
+{% block main %}
+
+  {% if not user.is_authenticated %}
+    {% include "login.html" %}
+  {% endif %}
+
+  {% for widget in widgets_home_section %}
+    {{widget.get_body}}
+  {% endfor %}
+
+{% endblock main %}
+
+{% block extra_js %}
+  {% include "filter.js" %}
+{% endblock extra_js %}
