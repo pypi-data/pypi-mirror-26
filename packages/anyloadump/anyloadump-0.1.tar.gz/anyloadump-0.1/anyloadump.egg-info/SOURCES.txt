@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+anyloadump/__init__.py
+anyloadump/dump.py
+anyloadump/load.py
+anyloadump/loadump.py
+anyloadump.egg-info/PKG-INFO
+anyloadump.egg-info/SOURCES.txt
+anyloadump.egg-info/dependency_links.txt
+anyloadump.egg-info/entry_points.txt
+anyloadump.egg-info/not-zip-safe
+anyloadump.egg-info/top_level.txt
