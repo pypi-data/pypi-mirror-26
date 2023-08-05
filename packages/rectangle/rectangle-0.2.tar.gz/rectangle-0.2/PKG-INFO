@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: rectangle
+Version: 0.2
+Summary: A class for handling rectangle regions.
+Home-page: https://github.com/NeilGirdhar/rectangle
+Author: Neil Girdhar
+Author-email: mistersheik@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/neilgirdhar/rectangle/archive/0.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
