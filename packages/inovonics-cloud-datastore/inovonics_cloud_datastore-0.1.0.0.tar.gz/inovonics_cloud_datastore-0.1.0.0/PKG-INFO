@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: inovonics_cloud_datastore
+Version: 0.1.0.0
+Summary: Basic classes for building a datastore using Redis as a backend.
+Home-page: UNKNOWN
+Author: Daniel Williams
+Author-email: dwilliams@inovonics.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
