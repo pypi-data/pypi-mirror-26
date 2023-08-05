@@ -1,0 +1,16 @@
+invenio_jsonschemas/__init__.py,sha256=8BFebXAHX9YvulvXkWj4e3yTI53inQbDTf3pCLLB0t8,1821
+invenio_jsonschemas/config.py,sha256=HWvZJQ_f2d3_l8EozsyTXQy8lSqfokGlXHFW2qlryl4,2003
+invenio_jsonschemas/errors.py,sha256=l9RhAlxtvDAUo2plyUVQ5VneJKcTKctnFgFDnZWGCO4,2330
+invenio_jsonschemas/ext.py,sha256=n8qaPQpVwosxgeb4ZJ0-I1-6CrLdrDK8Wkb77LJG-Ts,10440
+invenio_jsonschemas/jsonresolver.py,sha256=1NjIWXY5WIQZLnrxou1kTHWvwRqfzt4WhhdlPgXf9zA,1579
+invenio_jsonschemas/proxies.py,sha256=HMu3IQ3DDsC8cytKq1t5u3mPYTr3JsibNif51pnmaI0,1251
+invenio_jsonschemas/utils.py,sha256=o66GvYNV440QjvGAQpXrZRsc0DeWinmdYgJXLD6dlr4,2410
+invenio_jsonschemas/version.py,sha256=QK5tudVASEnqPrwRMZRn-Uomc1kPd-u5mrYR8kN3RTw,1205
+invenio_jsonschemas/views.py,sha256=G_5Hefgvoqoev5NhE9nGhWf3ZiHO1I-PvHjo4QJvHDw,2463
+invenio_jsonschemas-1.0.0a7.dist-info/DESCRIPTION.rst,sha256=6LSpXNpkrBaX8ZkBTQASB1zeQtgcumj0nTv-1h3bp3w,3166
+invenio_jsonschemas-1.0.0a7.dist-info/METADATA,sha256=WEXL5L8RtbZZiB4_Z1CWWiFUGt0CzDSMTae1TMVCF94,6121
+invenio_jsonschemas-1.0.0a7.dist-info/RECORD,,
+invenio_jsonschemas-1.0.0a7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+invenio_jsonschemas-1.0.0a7.dist-info/entry_points.txt,sha256=iANXdMqrLWFGNQjZnUp5JMsldTZHfUdqjfbhS1KuzOU,260
+invenio_jsonschemas-1.0.0a7.dist-info/metadata.json,sha256=nbcm6RUr1fPPSNbwQQ592dK5zUPuFYsmPS1qt248Mk8,2782
+invenio_jsonschemas-1.0.0a7.dist-info/top_level.txt,sha256=YZNLWDQSOwJxrwd_PRTI2awUNMpld1OHJtiIWDPYLLA,20
