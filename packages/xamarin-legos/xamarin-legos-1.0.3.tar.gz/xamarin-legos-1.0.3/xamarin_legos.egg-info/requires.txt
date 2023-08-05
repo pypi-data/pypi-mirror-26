@@ -1,0 +1,6 @@
+Click
+PyGithub
+arrow
+tabulate
+requests
+configparser

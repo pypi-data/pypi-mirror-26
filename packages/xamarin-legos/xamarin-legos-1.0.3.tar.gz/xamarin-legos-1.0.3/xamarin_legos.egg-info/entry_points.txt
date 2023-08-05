@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        legos=legos_command:cli
+    
