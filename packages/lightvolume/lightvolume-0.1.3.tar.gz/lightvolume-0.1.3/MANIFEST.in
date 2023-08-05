@@ -1,0 +1,6 @@
+include lightvolume.h
+include lightvolume.cpp
+include lightvolume_build.py
+include README.rst
+include LICENSE
+recursive-include vendor/visibility *.hpp LICENSE *.md
