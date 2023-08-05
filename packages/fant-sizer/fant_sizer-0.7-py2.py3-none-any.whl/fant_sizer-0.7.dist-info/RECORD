@@ -1,0 +1,12 @@
+fant_sizer/__init__.py,sha256=j-4dz7vu2PMbA8GX1zfmx4Uy6XbGvIF0B-Y8XAz__1c,32
+fant_sizer/fant_sizer.py,sha256=2sP9-00xh-flJGGR4u4ynAaVKXAuQbg3c4xWDZRyqVI,9079
+fant_sizer-0.7.dist-info/DESCRIPTION.rst,sha256=5PLs0UrPIgNqm5zFk152937putfIi9gK63wLJ7F4PmM,3472
+fant_sizer-0.7.dist-info/METADATA,sha256=elh8vqa5A0H3ai2IVbJ8R65njKp6ogHBu3ikw_BXcLs,4137
+fant_sizer-0.7.dist-info/RECORD,,
+fant_sizer-0.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+fant_sizer-0.7.dist-info/entry_points.txt,sha256=bZeNh4pOC_ef-x2frVsVB7YmT7UMWhLpTtTPCuvBvNY,60
+fant_sizer-0.7.dist-info/metadata.json,sha256=cfSsU41w0VVnz-gq4LigfGDAjBln8yYdg3ULVjDfRZk,988
+fant_sizer-0.7.dist-info/top_level.txt,sha256=t9XyCosUFCwkErSxRVYTdreKMaU0SXAZ53Fkc2f5yi4,17
+tests/__init__.py,sha256=RtnbW7jfO1w7A8gUA_Ibp_tHC-MV-Sk8rN-WLxhOFOI,31
+tests/conftest.py,sha256=Ut5zzx8rHHC8hWdKH9JalVsMAPgg9Shbdg4JczQJSKA,1281
+tests/test_fant_sizer.py,sha256=IAGM1p2CqAH2B_4cow1CbU5izwJDQW49uBinCUF53VA,3398
