@@ -1,0 +1,1 @@
+A central lock for distribute applications
