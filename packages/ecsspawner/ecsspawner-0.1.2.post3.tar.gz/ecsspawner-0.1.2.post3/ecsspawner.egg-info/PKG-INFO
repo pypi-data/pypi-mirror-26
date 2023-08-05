@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: ecsspawner
+Version: 0.1.2.post3
+Summary: 
+                ECSSpawner: A spawner for JupyterHub that uses Amazon ECS service
+                
+Home-page: https://github.com/gouthambs/ecsspawner
+Author: Goutham Balaraman
+Author-email: gouthaman.balaraman@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
