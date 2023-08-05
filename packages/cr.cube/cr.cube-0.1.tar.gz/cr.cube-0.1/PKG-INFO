@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: cr.cube
+Version: 0.1
+Summary: Crunch.io Cube library
+Home-page: https://github.com/Crunch-io/crunch-cube/
+Author: Crunch.io
+Author-email: dev@crunch.io
+License: Proprietary
+Description: # crunch-cube
+        Open Source helper implementation for Cubes with the Crunch API
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

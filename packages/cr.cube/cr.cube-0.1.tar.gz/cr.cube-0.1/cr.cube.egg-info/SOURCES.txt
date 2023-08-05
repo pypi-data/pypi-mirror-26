@@ -1,0 +1,12 @@
+setup.py
+cr/__init__.py
+cr.cube.egg-info/PKG-INFO
+cr.cube.egg-info/SOURCES.txt
+cr.cube.egg-info/dependency_links.txt
+cr.cube.egg-info/namespace_packages.txt
+cr.cube.egg-info/requires.txt
+cr.cube.egg-info/top_level.txt
+cr.cube.egg-info/zip-safe
+cr/cube/__init__.py
+cr/cube/crunch_cube.py
+cr/cube/dimension.py
