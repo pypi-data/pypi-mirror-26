@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: hotwing-core
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/jasonhamilton/hotwing-core
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPLv3
+Description: This Module which contains the core libraries for the HotWing-CLI and HotWing-GUI projects. This Module provides a series of classes and functions to aid in creating GCode for 4-Axis CNC foam cutters, specifically working with wing profiles, interpolating new profiles, and computing reverse kinematics for the CNC.
+Keywords: development cnc gcode airfoil
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
