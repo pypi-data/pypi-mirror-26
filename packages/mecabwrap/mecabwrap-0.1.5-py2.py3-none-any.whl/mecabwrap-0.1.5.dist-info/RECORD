@@ -1,0 +1,12 @@
+mecabwrap/__init__.py,sha256=vlGsJpGznKrhUXWj83MoIE1ie7V47H3rD8rbwpxHm3U,142
+mecabwrap/api.py,sha256=_STKiQpsPL0In9X53Yj4df7wptTc_zQr8S9MAHe4KGo,3991
+mecabwrap/config.py,sha256=N_SXbXpHAp9tQR6QawgLE_EnMWHCWg1gTa0U5UqP_MU,273
+mecabwrap/domecab.py,sha256=tPMQ6VNQxDJfxq0i7lEVH9HTlIaniFl-R-bRAdMsONo,5215
+mecabwrap/globals.py,sha256=N_SXbXpHAp9tQR6QawgLE_EnMWHCWg1gTa0U5UqP_MU,273
+mecabwrap/utils.py,sha256=aaBLXqa5dYE_pR23yBc4vHToqpWnGgtelfB7MU6gECQ,2280
+mecabwrap-0.1.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mecabwrap-0.1.5.dist-info/METADATA,sha256=7DyJIuCOzK_myFcbn2Ioystw_RYYNrRsD8KX81i40yU,770
+mecabwrap-0.1.5.dist-info/RECORD,,
+mecabwrap-0.1.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mecabwrap-0.1.5.dist-info/metadata.json,sha256=0rWDTOfn9E3X0CqigsVNv688SefipQx4nkW0TQJDzGM,865
+mecabwrap-0.1.5.dist-info/top_level.txt,sha256=lE8oHitoyDfY9NyOh-Kcfac-UQC2Nwk11xLDdSDkAFg,10
