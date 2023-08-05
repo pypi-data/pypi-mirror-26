@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+phylopandas/__init__.py
+phylopandas/__version__.py
+phylopandas/dataframe.py
+phylopandas.egg-info/PKG-INFO
+phylopandas.egg-info/SOURCES.txt
+phylopandas.egg-info/dependency_links.txt
+phylopandas.egg-info/requires.txt
+phylopandas.egg-info/top_level.txt
