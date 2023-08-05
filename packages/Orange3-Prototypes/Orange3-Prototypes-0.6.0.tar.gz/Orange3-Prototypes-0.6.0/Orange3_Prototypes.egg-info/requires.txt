@@ -1,0 +1,11 @@
+Orange3
+numpy
+scipy
+scikit-learn
+pyqtgraph
+AnyQt>=0.0.8
+serverfiles
+BeautifulSoup4
+
+[:python_version<"3.5"]
+typing
