@@ -1,0 +1,3 @@
+[console_scripts]
+thermal_mean_hist.py = bob.paper.biosig2017_3dmaskprestudy.scripts.thermal_mean_hist:main
+

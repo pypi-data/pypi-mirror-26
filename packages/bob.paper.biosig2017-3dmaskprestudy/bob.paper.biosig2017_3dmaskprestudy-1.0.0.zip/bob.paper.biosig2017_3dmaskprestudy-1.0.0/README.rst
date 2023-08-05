@@ -1,0 +1,65 @@
+.. vim: set fileencoding=utf-8 :
+.. Sushil Bhattacharjee <sushil.bhattacharjee@idiap.ch>
+.. Sat 17 Sep 20:01:00 2016
+
+
+================================================================================
+Reproducing results of paper on extended-range imaging, published in BioSIG-2017
+================================================================================
+
+This package is part of the Bob_ toolkit. Scripts in this package can be used to reproduce face-PAD results the following paper::
+
+    @inproceedings{bhattacharjeeBiosig2017,
+    author = {Sushil Bhattacharjee and S{\'{e}}bastien Marcel},
+    title = {What you can't see can help you -- extended range imaging for 3d-mask presentation attack detection},
+    year = {2017},
+    month = sep,
+    booktitle = {Proceedings of the 16th International Conference of the Biometrics Special Interest Group (BIOSIG)},
+    address = {Darmstadt, Germany},
+    }
+                                                        §
+
+If you use this package and/or its results, please cite the paper.
+
+Installation
+------------
+The installation instructions are based on conda_ and works on **Linux systems only**. 
+`Install conda`_ before continuing.
+
+Once you have installed conda_, download the source code of this paper and
+unpack it.  Then, you can create a conda environment with the following
+command::
+
+    $ cd bob.paper.biosig2017_3dmaskprestudy
+    $ conda env create -f environment.yml
+    $ source activate bob.paper.biosig2017_3dmaskprestudy  # activate the environment
+    $ buildout
+
+This will install all the required software to reproduce this paper.
+
+
+Downloading the dataset
+-----------------------
+This package works with the ERPA_ dataset published by IDIAP. Please download the dataset before proceeding.
+
+
+Generating the plot
+-------------------
+Figure 5 in the paper shows distributions of the mean pixel-values of the face-region in the thermal images captured using the Xenics Gobi camera.
+To reproduce this plot, use the following command:
+
+.. code-block:: sh
+
+    $ ./bin/thermal_mean_hist.py -ip <input-ERPA-folder>/Xenics_Gobi/ -op <output-plot-folder>
+
+
+where <input-ERPA-folder> should be the folder containing the ERPA_ dataset, and <output-plot-folder> should specify the folder where you want the plot to be created as a pdf file.
+This command will process images from the 'Xenics_Gobi' sub-folder in the specified input-folder (<input-ERPA-folder>), and create a file called **thermal_profile_hist.pdf** in the specified output folder.
+
+
+
+
+.. _bob: https://www.idiap.ch/software/bob
+.. _ERPA: https://www.idiap.ch/datasets/erpa
+.. _conda: https://conda.io
+.. _install conda: https://conda.io/docs/install/quick.html#linux-miniconda-install
