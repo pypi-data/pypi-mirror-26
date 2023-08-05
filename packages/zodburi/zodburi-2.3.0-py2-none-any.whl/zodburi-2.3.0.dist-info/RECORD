@@ -1,0 +1,14 @@
+zodburi/__init__.py,sha256=DybBbUFylEYSDQWObIMp7GH6DF1vLUwplJ_219aFcw8,1975
+zodburi/_compat.py,sha256=V6pRusyMWjyup3BJpn1ZrO2TW2Axs3IZV_apBSjd0PA,333
+zodburi/datatypes.py,sha256=L1SPpUn0W1qU7u-Y6TFIBenYnUOuOeaUUGnGubf5kDw,1387
+zodburi/resolvers.py,sha256=AAyN9eZHEStT6xl2EoPe9Sv50pK6S66up0Dd8VpQuaE,7325
+zodburi/tests/__init__.py,sha256=1ESwmtCv1fEQMDxg1RitOPt43ELOrXBIggv8gLFVtao,1636
+zodburi/tests/test_datatypes.py,sha256=0ZeUb8QdamlawmcjpLOL0kEolOOUHAxRnA-vAhz6eUE,3061
+zodburi/tests/test_resolvers.py,sha256=JVXAiktH_SCFnp6yju58C1-lCEJOP--W3g_r8v7h1Ig,22312
+zodburi-2.3.0.dist-info/DESCRIPTION.rst,sha256=-oB2Hlp3YrwtJSyO20_3IFq0nUhh2SwkbLWHTxcqcnw,2478
+zodburi-2.3.0.dist-info/METADATA,sha256=uj05lqvFVFv4NYVjBNxvcPDrSbh07aiZ6yPiOKbsn3U,3911
+zodburi-2.3.0.dist-info/RECORD,,
+zodburi-2.3.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+zodburi-2.3.0.dist-info/entry_points.txt,sha256=XJGKGgyQY0D8JGIv0HckXLW-PdsdZjM9AGold_MimVw,248
+zodburi-2.3.0.dist-info/metadata.json,sha256=uOlN_p_mTl36pNqL7LMpcBT_XlHOFdLncbxjd2ANxmU,1548
+zodburi-2.3.0.dist-info/top_level.txt,sha256=D9MRVau_73zZGsBHkWbay2Woz72D_dQoqmypnF_d7w4,8
