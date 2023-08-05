@@ -1,0 +1,13 @@
+gcloud_aio_bigquery-0.0.0-py3.6-nspkg.pth,sha256=bGEMtsEE-ubFTc0BV5U-qVH5QmXIvfU27SFd22s6zBk,1686
+gcloud/aio/bigquery/__init__.py,sha256=Pt1xURpoJ9O53ghCg_9sGanq7pLoG5pG7CCUoaY-nJU,190
+gcloud/aio/bigquery/bigquery.py,sha256=mXdNzxQ4HLypQKKDiv26X-UuGCO7x1ZVp94stoR5Cv0,4182
+gcloud_aio_bigquery-0.0.0.dist-info/DESCRIPTION.rst,sha256=rsQ3WkvV6WnVkmhAJqGHo1-ODNebYT9cgnVQ_oXLhl0,199
+gcloud_aio_bigquery-0.0.0.dist-info/METADATA,sha256=9ef_Uz_freEOlTCp7HquhkUJWNob4W_qeQRb6fnrQMY,910
+gcloud_aio_bigquery-0.0.0.dist-info/RECORD,,
+gcloud_aio_bigquery-0.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gcloud_aio_bigquery-0.0.0.dist-info/metadata.json,sha256=i8x04cqiriL4c4Uwphh3q969SODjY6jO686-put3990,878
+gcloud_aio_bigquery-0.0.0.dist-info/namespace_packages.txt,sha256=-g45M0lNSIP1YnGVZdmhV1skM4SizE4Y8TV1arz1_38,18
+gcloud_aio_bigquery-0.0.0.dist-info/top_level.txt,sha256=sox9WnuebKsnnDxekC1Pd7Q7wUz_DL8DRjlHhthn-ik,13
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/bigquery_test.py,sha256=mOnVmZv2b0dgGUapBFadfXDu7cMSw4TeSqa93ij3D6g,113
