@@ -1,0 +1,12 @@
+plonecli/__init__.py,sha256=OnSay08NeM8i-zEuV_pRGGrdVovAn9MSoqdy-1WCZA0,149
+plonecli/cli.py,sha256=TSHiJLZeWROLCvMFu_gHNynVj67phgb8CDHpdRKu0BU,6041
+plonecli/exceptions.py,sha256=-tWIhWj51JUcJy_6RlIFHIfpyqIeaNjl5fQybBz6mOo,956
+plonecli/registry.py,sha256=A7nQsPcX-_cw0F8drJfbxVOm_kw9xnfp_vqyjIAeDvA,4005
+plonecli-0.1.0a2.dist-info/DESCRIPTION.rst,sha256=jBlrMrHqceMGf7IeDbk2IeSMG7rwFLZQ3fG1GucpDPg,6332
+plonecli-0.1.0a2.dist-info/METADATA,sha256=5_6YmiG4aoXeppP3jJQ7-R8VM4BM8q-aXdgyQYzo5Z4,7272
+plonecli-0.1.0a2.dist-info/RECORD,,
+plonecli-0.1.0a2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+plonecli-0.1.0a2.dist-info/dependency_links.txt,sha256=9Tz8mknettS23I5WgTkggCCDjZJAzwF5GllsIgsVvJc,71
+plonecli-0.1.0a2.dist-info/entry_points.txt,sha256=tJOi2G6dFjp7wS7eS9oGpBENWqjrPUMTUCFe5N1eHrw,47
+plonecli-0.1.0a2.dist-info/metadata.json,sha256=eoT5g_DOypNBXHnzZxU8mezwPZUgLvxwMSmE42CFA8k,1245
+plonecli-0.1.0a2.dist-info/top_level.txt,sha256=ohiive_0g_cB54abKvuSkDGgeKFUAD951CwLiZWooQ4,9
