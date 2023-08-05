@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-viewgroups
+Version: 0.1.29
+Summary: Django admin like groups of CBVs
+Home-page: https://github.com/freakypie/django-viewgroups.git
+Author: John Leith
+Author-email: leith.john@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
