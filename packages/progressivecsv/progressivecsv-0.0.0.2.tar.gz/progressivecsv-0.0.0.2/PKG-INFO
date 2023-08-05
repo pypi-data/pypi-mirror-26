@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: progressivecsv
+Version: 0.0.0.2
+Summary: Package for writing a CSV with dynamic headers. CSV is completed at end.
+Home-page: UNKNOWN
+Author: Martin Rusilowicz
+Author-email: UNKNOWN
+License: GNU AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
