@@ -1,0 +1,9 @@
+README.md
+setup.py
+steem_watchdog.py
+steem_watchdog.egg-info/PKG-INFO
+steem_watchdog.egg-info/SOURCES.txt
+steem_watchdog.egg-info/dependency_links.txt
+steem_watchdog.egg-info/entry_points.txt
+steem_watchdog.egg-info/requires.txt
+steem_watchdog.egg-info/top_level.txt
