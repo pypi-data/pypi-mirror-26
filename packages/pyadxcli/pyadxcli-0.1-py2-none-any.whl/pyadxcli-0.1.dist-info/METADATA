@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: pyadxcli
+Version: 0.1
+Summary: A basic client to Audionamix API
+Home-page: https://github.com/audionamix/pyadxcli
+Author: Audionamix
+Author-email: guillaume.vincke@audionamix.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.18.4)
+
+UNKNOWN
+
+
