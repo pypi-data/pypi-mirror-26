@@ -1,0 +1,8 @@
+README
+setup.cfg
+setup.py
+doublehorn/__init__.py
+doublehorn.egg-info/PKG-INFO
+doublehorn.egg-info/SOURCES.txt
+doublehorn.egg-info/dependency_links.txt
+doublehorn.egg-info/top_level.txt
