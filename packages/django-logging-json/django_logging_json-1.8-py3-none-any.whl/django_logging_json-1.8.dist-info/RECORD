@@ -1,0 +1,14 @@
+django_logging/__init__.py,sha256=UDJlFnRRDLgNmjForkVip3XKJyrWco0Y0v-ziy-nCas,187
+django_logging/apps.py,sha256=B1GPQq4vK0glXfUDTkvgt1hHWNy-bsX3oLnbsF_lNMo,102
+django_logging/cursor_wrapper.py,sha256=UbsJNRlHraNu72pNtGJlwA3g-XYxz0hhX6gQCX_2CDk,1037
+django_logging/handlers.py,sha256=q3iHG7zv6CFngSuPT6r5ghvBmEBHtKEgjbzlXqNDrrU,4650
+django_logging/log_object.py,sha256=KPAaRU3lNIdSYEhH3A8ae1bf8ip8bPkKygAC_tmST1w,5485
+django_logging/logger.py,sha256=ZypipgT6pRn9DDDhjgmcO1BzeU76UyHumysllkW9eTk,2654
+django_logging/middleware.py,sha256=cVhbOMAZcBIJW8A064pd-q5li-9alBFtEYcFIJv-LPU,957
+django_logging/settings.py,sha256=zVPonwnmYQ3752P4OZSYp6D7tV9cOpB5bofonaXweWc,2380
+django_logging_json-1.8.dist-info/DESCRIPTION.rst,sha256=mCWCU6XA21o8KUzvY_nWvG5JwpRke7kVhsGeTVkqTJ8,6453
+django_logging_json-1.8.dist-info/METADATA,sha256=1IN9WfY3Xkc3YTHKZJfW2HmN9T0XoF2ZSzDpuQXuTkU,7663
+django_logging_json-1.8.dist-info/RECORD,,
+django_logging_json-1.8.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+django_logging_json-1.8.dist-info/metadata.json,sha256=BOWSEoz5fwnwk0unF9dAXgsVv1AgpqEkRuFySLLeVUU,1290
+django_logging_json-1.8.dist-info/top_level.txt,sha256=fwfTuSLfigodG5tO1N_xQ6BJnxTBowvkWNiYfM3FyaQ,15
