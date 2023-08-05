@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: ascii-graph
+Version: 1.4.2
+Summary: A simple python lib to print data as ascii histograms.
+Home-page: https://github.com/kakwa/py-ascii-graph
+Author: Pierre-Francois Carpentier
+Author-email: carpentier.pf@gmail.com
+License: MIT
+Description: A simple python lib to print data as ascii histograms.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
