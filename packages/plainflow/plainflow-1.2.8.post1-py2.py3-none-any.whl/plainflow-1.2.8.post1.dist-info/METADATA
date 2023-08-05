@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: plainflow
+Version: 1.2.8.post1
+Summary: The official Python client for Plainflow.
+Home-page: https://github.com/plainflow-dcp/plainflow-python
+Author: Plainflow
+Author-email: friends@plainflow.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: requests (<3.0,>=2.7)
+Requires-Dist: six (>=1.5)
+Requires-Dist: python-dateutil (>2.1)
+
+This is the official Python client for Plainflow (https://www.plainflow.com).
+
+Documentation and more details at https://www.plainflow.com/docs/developers/sdk/python
+
+
