@@ -1,0 +1,11 @@
+flask
+flask-sqlalchemy
+pyyaml
+
+[dev]
+pytest
+pytest-cov
+
+[test]
+pytest
+pytest-cov
