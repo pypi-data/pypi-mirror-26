@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: jac
+Version: 0.16.2
+Summary: A Jinja extension (compatible with Flask and other frameworks) to compile and/or compress your assets.
+Home-page: https://github.com/jaysonsantos/jinja-assets-compressor
+Author: Jayson Reis
+Author-email: santosdosreis@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: Jinja2
+Requires-Dist: beautifulsoup4
+Requires-Dist: rjsmin
+Requires-Dist: ordereddict
+Requires-Dist: six
+
+UNKNOWN
+
+
