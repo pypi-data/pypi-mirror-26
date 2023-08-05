@@ -1,0 +1,15 @@
+cornice/__init__.py,sha256=PLw_Ab83Iq6nDPJAgrchMwLohJGF3Ft0U3W2RoSq_Lk,3748
+cornice/cors.py,sha256=hFv8mQii-SizipLcTTJUVWPy436xs3SigqDQKg7AXRM,5013
+cornice/errors.py,sha256=usyifb5KgVaj-CV16srnth8Ryp6Y4gHRhPC2S-meD40,1264
+cornice/pyramidhook.py,sha256=AH4feiAgfZmGv8VFZhRYSAXJwBwdnyPsHLG2-_3OnDA,13627
+cornice/resource.py,sha256=ckHQI1l_3drTSYMC9fPYajzb_1G6HGmk8BuqbuvbPlk,5407
+cornice/service.py,sha256=PtSVM9LSoyWx8kbOLHUDOIynzwxj0NyuCzrfaksMAUo,20254
+cornice/util.py,sha256=u7RIuC3S_wWEhKdHwmNDjNPkyhTNwvkalok1ZFtrZdw,6875
+cornice/validators/__init__.py,sha256=GVj7Lc4kqnx_Xx1aTbGi3Lp0YNp2qlkbIQSWZM6wTb4,2241
+cornice/validators/_colander.py,sha256=yBw5veboOio_qz3EHDBrgegvwMTUiWMrVJ0KsDDpG1s,2707
+cornice-3.0.0.dist-info/DESCRIPTION.rst,sha256=hyuPdWAq1Bp7kBgJetOIqcs6MyZb7Fwhg3_9y4dHoVI,12787
+cornice-3.0.0.dist-info/METADATA,sha256=wKoKXpA-Yp3pu8g_wGfk9Dt_Hg8yvZOV5hV4jujcqac,13602
+cornice-3.0.0.dist-info/RECORD,,
+cornice-3.0.0.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+cornice-3.0.0.dist-info/metadata.json,sha256=10owlwD6ifN3eV7rAd2fyFM83qiaFK8SRXQp4zg0Smw,982
+cornice-3.0.0.dist-info/top_level.txt,sha256=fGmdTG5Paqg_QO89mH3UYmHjH1iiDgO2aHZAkGfAWaQ,8
