@@ -1,0 +1,16 @@
+0.0.3
+-----
+
+* Deferred IO setup until first call to show
+* Changed sys.exit to ImportError for warning about missing dependencies
+
+0.0.2
+-----
+
+* Tweaked Python package MANIFEST
+
+0.0.1
+-----
+
+* Initial release
+
