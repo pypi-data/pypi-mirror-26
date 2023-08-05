@@ -1,0 +1,14 @@
+README.md
+setup.py
+onepanel/__init__.py
+onepanel/cli.py
+onepanel/gitwrapper.py
+onepanel.egg-info/PKG-INFO
+onepanel.egg-info/SOURCES.txt
+onepanel.egg-info/dependency_links.txt
+onepanel.egg-info/entry_points.txt
+onepanel.egg-info/requires.txt
+onepanel.egg-info/top_level.txt
+onepanel/commands/__init__.py
+onepanel/commands/login.py
+onepanel/commands/projects.py
