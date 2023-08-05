@@ -1,0 +1,5 @@
+grpcio<1.7.0,>=1.6.0
+grpcio-tools
+pendulum
+blinker
+jinja2
