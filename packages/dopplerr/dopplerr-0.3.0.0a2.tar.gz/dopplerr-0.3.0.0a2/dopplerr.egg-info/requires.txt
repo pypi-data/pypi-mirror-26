@@ -1,0 +1,11 @@
+colorlog
+flask
+glob2
+klein
+pathlib2
+pbr
+peewee
+setuptools!=36.0.0
+subliminal
+txrwlock>=1.0.0
+txwebbackendbase==0.1.3
