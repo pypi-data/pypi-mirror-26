@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+flask_debugtoolbar_flamegraph/__init__.py
+flask_debugtoolbar_flamegraph/flamegraph.pl
+flask_debugtoolbar_flamegraph/flamegraph.py
+flask_debugtoolbar_flamegraph/flask_debugtoolbar_flamegraph.py
+flask_debugtoolbar_flamegraph.egg-info/PKG-INFO
+flask_debugtoolbar_flamegraph.egg-info/SOURCES.txt
+flask_debugtoolbar_flamegraph.egg-info/dependency_links.txt
+flask_debugtoolbar_flamegraph.egg-info/not-zip-safe
+flask_debugtoolbar_flamegraph.egg-info/top_level.txt
