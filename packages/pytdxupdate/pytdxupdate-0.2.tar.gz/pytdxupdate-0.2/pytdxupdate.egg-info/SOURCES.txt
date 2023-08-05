@@ -1,0 +1,11 @@
+setup.py
+pytdxupdate.egg-info/PKG-INFO
+pytdxupdate.egg-info/SOURCES.txt
+pytdxupdate.egg-info/dependency_links.txt
+pytdxupdate.egg-info/entry_points.txt
+pytdxupdate.egg-info/requires.txt
+pytdxupdate.egg-info/top_level.txt
+update_bcolz_data/__init__.py
+update_bcolz_data/stock_list.py
+update_bcolz_data/tdx_best_ip.py
+update_bcolz_data/update_min_data.py
