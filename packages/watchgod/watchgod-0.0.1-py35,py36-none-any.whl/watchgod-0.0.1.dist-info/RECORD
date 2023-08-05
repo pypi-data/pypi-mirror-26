@@ -1,0 +1,11 @@
+watchgod/__init__.py,sha256=-SWfiDL95Nd_8GX9RBa4JyUa3C9EnErLS4HLlInFhRU,81
+watchgod/main.py,sha256=jEY54VpSNJEed8FOb1k5E5TqgRVgl5I4yn1mXCEU3mk,5463
+watchgod/version.py,sha256=_oiDvH9smjmsLd8WKunDIby7-0uTmWkQoWUokgtKmC8,101
+watchgod/watcher.py,sha256=Po_njZ1kUHMwS1jb_-Z_Yc6wQpiMVsPbgLs8qgVVK1M,2216
+watchgod-0.0.1.dist-info/DESCRIPTION.rst,sha256=2Mb1CF4ie-yrBm7prbfXSBTUmGMG4EQXx80u5MItZLM,4915
+watchgod-0.0.1.dist-info/METADATA,sha256=hoEwAK1HA7dFxsjdGN-aIp-Q91zGisW-_3lqAYed88I,5950
+watchgod-0.0.1.dist-info/RECORD,,
+watchgod-0.0.1.dist-info/WHEEL,sha256=oqeFcadZoraCRoOY4dPaKqOaiBWkJvzKx-yx71cGyQM,98
+watchgod-0.0.1.dist-info/metadata.json,sha256=UAFNEkRhQfBD6pys6Je--Q2yhB2iHhYQZH2gKRID8H4,1113
+watchgod-0.0.1.dist-info/top_level.txt,sha256=vDSixV-_cAsdN83qBhOQS4kBblDTqO0aePPJlkJylQg,9
+watchgod-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
