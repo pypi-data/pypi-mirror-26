@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: NNBuilder
+Version: 0.3.1
+Summary: A multi-backend framework for building and training neural networks
+Home-page: https://github.com/aeloyq
+Author: aeloyq IOBLAB-Shanghai Maritime University
+Author-email: aeloyq@icloud.com
+License: aeloyq
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: theano pytorch machine learning neural networks deep learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
