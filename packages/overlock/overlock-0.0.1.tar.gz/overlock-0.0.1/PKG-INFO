@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: overlock
+Version: 0.0.1
+Summary: Client libraries for the debugger
+Home-page: https://github.com/overlockIoT/python
+Author: Zoetrope Labs
+Author-email: overlock@zoetrope.io
+License: UNKNOWN
+Download-URL: https://github.com/overlockIoT/python
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: testing,logging
+Platform: UNKNOWN
