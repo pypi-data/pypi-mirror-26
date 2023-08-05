@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: keen-csv
+Version: 1.0.0
+Summary: Builds a multiline CSV string from a Keen IO response
+Home-page: https://github.com/dorkusprime/keen-csv.py
+Author: Jevon Wild
+Author-email: jevon@keen.io
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
