@@ -1,0 +1,3 @@
+[console_scripts]
+toggl-timewax = toggl_timewax.cli:cli
+

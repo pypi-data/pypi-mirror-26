@@ -1,0 +1,10 @@
+setup.py
+toggl_timewax/__init__.py
+toggl_timewax/cli.py
+toggl_timewax/main.py
+toggl_timewax.egg-info/PKG-INFO
+toggl_timewax.egg-info/SOURCES.txt
+toggl_timewax.egg-info/dependency_links.txt
+toggl_timewax.egg-info/entry_points.txt
+toggl_timewax.egg-info/requires.txt
+toggl_timewax.egg-info/top_level.txt
