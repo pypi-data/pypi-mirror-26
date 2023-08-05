@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: sequential-parser
+Version: 0.3
+Summary: Utility to extract structured text using text patterns and a state machine.
+Home-page: https://github.com/kalessin/sequential-parser
+Author: Martin Olveyra
+Author-email: molveyra@gmail.com
+License: BSD
+Keywords: scraping,parsing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
