@@ -1,0 +1,3 @@
+[console_scripts]
+itester = itester.itester:main
+
