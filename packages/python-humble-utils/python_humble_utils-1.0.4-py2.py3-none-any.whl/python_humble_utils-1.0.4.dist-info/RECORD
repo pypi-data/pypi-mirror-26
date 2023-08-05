@@ -1,0 +1,14 @@
+python_humble_utils/__init__.py,sha256=8qkPtzcAdxsBqOpibeUo42wl_EBGaeXxVLPDD_ZURiE,94
+python_humble_utils/commands.py,sha256=GCWkNhlBtA3kCakbIHe1PBC2wJOvz_YKshtVpraWpz0,6167
+python_humble_utils/conftest.py,sha256=5bfDMZuDcWCdI3RltYOf5V9l6KYHO4_V4xQf0bHhp-Q,1047
+python_humble_utils/pytest_commands.py,sha256=2uTqtTWDx6UqS0AZFx93HfNva5J2JZ_p5A3QRF4BD4U,1251
+python_humble_utils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_humble_utils/tests/classes.py,sha256=UqD2XGdV2bk1YrHuPWXOKtngb_TfTIAtjARNyA9zc-E,99
+python_humble_utils/tests/test_commands.py,sha256=qghKht0bU_QyvitOJaLKJIcaIY2K_LchMfGYwFkcPBE,9580
+python_humble_utils/tests/test_pytest_commands.py,sha256=V2T1aGhWqr_bVpyJ92srSJyNYz84EMqrDINvnUGZLI4,1490
+python_humble_utils-1.0.4.dist-info/DESCRIPTION.rst,sha256=yiUxnQ-Rc8UXmcNmGyvMla4ku9JY5zBNXchuBipQUb8,7449
+python_humble_utils-1.0.4.dist-info/METADATA,sha256=NULw4PHXmxn9i7bmeNPCtqBqikeH4OZU38e7bRACe2Q,8146
+python_humble_utils-1.0.4.dist-info/RECORD,,
+python_humble_utils-1.0.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+python_humble_utils-1.0.4.dist-info/metadata.json,sha256=tnXGD0fbf7AxUqKhqvtcMHccRVOlEcbZ9OsmAOAzzQE,870
+python_humble_utils-1.0.4.dist-info/top_level.txt,sha256=DYyFxpa_lHpMP7kc7mUR8u6u4egnuEelJIZ2bdHDwlg,20
