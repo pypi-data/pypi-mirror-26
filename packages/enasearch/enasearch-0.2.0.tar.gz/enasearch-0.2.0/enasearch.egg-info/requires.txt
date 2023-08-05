@@ -1,0 +1,13 @@
+requests
+Click
+flake8
+xmltodict
+biopython
+dicttoxml
+codecov
+pytest-cov
+Sphinx
+sphinx_rtd_theme
+
+[testing]
+pytest
