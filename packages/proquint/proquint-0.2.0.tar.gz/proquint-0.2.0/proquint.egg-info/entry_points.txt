@@ -1,0 +1,3 @@
+[console_scripts]
+proquint = proquint.__main__:main
+
