@@ -1,0 +1,17 @@
+setup.py
+miniglm/__init__.py
+miniglm/mock.py
+miniglm.egg-info/PKG-INFO
+miniglm.egg-info/SOURCES.txt
+miniglm.egg-info/dependency_links.txt
+miniglm.egg-info/top_level.txt
+src/matrix2.cpp
+src/matrix3.cpp
+src/matrix4.cpp
+src/module.cpp
+src/others.cpp
+src/quaternion.cpp
+src/tools.cpp
+src/vector2.cpp
+src/vector3.cpp
+src/vector4.cpp
