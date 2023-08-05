@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: egta
+Version: 0.0.6
+Summary: Scripts to perform EGTA
+Home-page: https://github.com/egtaonline/quiesce.git
+Author: Strategic Reasoning Group
+Author-email: strategic.reasoning.group@umich.edu
+License: Apache 2.0
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gameanalysis (~=3.2)
+Requires-Dist: egtaonlineapi (~=0.2)
+Requires-Dist: numpy (~=1.13)
+
+UNKNOWN
+
+
