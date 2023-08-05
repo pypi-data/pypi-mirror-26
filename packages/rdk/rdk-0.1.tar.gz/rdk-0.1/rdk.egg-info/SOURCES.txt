@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/rdk
+rdk/__init__.py
+rdk/rdk.py
+rdk.egg-info/PKG-INFO
+rdk.egg-info/SOURCES.txt
+rdk.egg-info/dependency_links.txt
+rdk.egg-info/not-zip-safe
+rdk.egg-info/requires.txt
+rdk.egg-info/top_level.txt
