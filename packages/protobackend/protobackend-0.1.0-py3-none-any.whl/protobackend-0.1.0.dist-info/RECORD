@@ -1,0 +1,11 @@
+protobackend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protobackend/dispatcher.py,sha256=QZBpDs38wWHOV5y5tZpCCih7rGi9w1rh2qIlVlOXiMQ,3393
+protobackend/exercise.py,sha256=nCBmk4w0LD8YH3ZYB-RraeBKiCMH4TCcEPyYJhDYl2M,756
+protobackend/output.py,sha256=uzC1ZfBhKq4uR2W24yiillHv5bwfEJP8C7CqomCZRbI,1955
+protobackend/payload.py,sha256=L9jWGOlaG809kujc4X0r8RIjJ0f9Vn_P7bwuQO6S_BY,302
+protobackend-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+protobackend-0.1.0.dist-info/METADATA,sha256=a4sbNgSrAjut6GVywE1F9V0EoDnWTGIFkU-8NLV-ECQ,235
+protobackend-0.1.0.dist-info/RECORD,,
+protobackend-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+protobackend-0.1.0.dist-info/metadata.json,sha256=7N--A-c0zdGrxo5gzQSYZmydE51AxKe0Qt2h5WlLIZQ,389
+protobackend-0.1.0.dist-info/top_level.txt,sha256=O9VPV3RbE4KcttlDkSQQzyfPdOttaxogRpw_7ljuMiY,13
