@@ -1,0 +1,4 @@
+include .coveragerc
+recursive-include docs *.GPL
+recursive-include docs *.rst
+recursive-include docs *.txt

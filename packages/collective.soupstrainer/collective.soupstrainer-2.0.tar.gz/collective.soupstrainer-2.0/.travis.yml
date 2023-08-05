@@ -1,0 +1,15 @@
+language: python
+sudo: false
+python:
+    - 2.7
+install:
+    - pip install -U pip setuptools
+    - pip install -U coverage coveralls zope.testrunner
+    - pip install -U -e .
+script:
+    - coverage run -m zope.testrunner --test-path=. --verbose
+after_success:
+    - coveralls
+notifications:
+    email: false
+cache: pip
