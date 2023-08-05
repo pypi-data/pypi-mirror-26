@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pychecks
+Version: 1.1.0
+Summary: check tools
+Home-page: https://www.baidu.com
+Author: chendansi
+Author-email: 289908221@qq.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: check tools
+Platform: all
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7

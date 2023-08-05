@@ -1,0 +1,3 @@
+[console_scripts]
+pychecks = pychecks.__main__:main
+
