@@ -1,0 +1,9 @@
+[console_scripts]
+tawk = tabtools.scripts:awk
+tcat = tabtools.scripts:cat
+tgrp = tabtools.scripts:grp
+tplot = tabtools.scripts:plot
+tpretty = tabtools.scripts:pretty
+tsrt = tabtools.scripts:srt
+ttail = tabtools.scripts:tail
+
