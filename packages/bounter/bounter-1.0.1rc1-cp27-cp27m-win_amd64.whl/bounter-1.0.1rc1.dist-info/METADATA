@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: bounter
+Version: 1.0.1rc1
+Summary: Counter for large datasets
+Home-page: https://github.com/RaRe-Technologies/bounter
+Author: RARE Technologies
+Author-email: opensource@rare-technologies.com
+License: MIT
+Download-URL: http://pypi.python.org/pypi/bounter
+Description-Content-Type: UNKNOWN
+Keywords: counter,count-min sketch,bounded memory,hyperloglog,approximative counting,cardinality estimation
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+
+UNKNOWN
+
+
