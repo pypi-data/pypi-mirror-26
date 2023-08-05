@@ -1,0 +1,77 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Check the task function doesn't include the name of the current task
+
+0.1.3
+-----
+
+* Better handle non-workflow YAML files
+
+0.1.2
+-----
+
+* Add a --diff flag
+
+0.1.1
+-----
+
+* Fix tests and error codes
+
+0.1.0
+-----
+
+* Document some of the features
+
+0.0.9
+-----
+
+* Fix the tests yolo
+
+0.0.8
+-----
+
+* Allow tripleo failures
+* Skip files that don't match either a workbook or workflow
+
+0.0.7
+-----
+
+* Add a flag that can be used to lint and OpenStack gerrit review
+* Update README example
+
+0.0.6
+-----
+
+* Fixed description error messages
+
+0.0.5
+-----
+
+* Validate YAQL and Jinja2 expressions
+* Tweak the README formatting
+* Add badges
+
+0.0.4
+-----
+
+* Test via the entry point
+* Use mistral-lint for the command
+
+0.0.3
+-----
+
+* Fix the name
+
+0.0.1
+-----
+
+* Deploy on tags
+* Fix env name
+* Add test requirements
+* Add testing framework and travis to the project
+* Add a basic linter for expressions
+* POC

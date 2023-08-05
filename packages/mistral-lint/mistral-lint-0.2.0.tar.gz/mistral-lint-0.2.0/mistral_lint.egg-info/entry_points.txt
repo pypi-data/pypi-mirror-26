@@ -1,0 +1,11 @@
+[console_scripts]
+mistral-lint = mistral_lint.__main__:main
+
+[mistral.linters]
+description = mistral_lint.linters:description
+expressions = mistral_lint.linters:expressions
+inputs = mistral_lint.linters:inputs
+task_names = mistral_lint.linters:task_names
+tasks = mistral_lint.linters:tasks
+type = mistral_lint.linters:type_
+
