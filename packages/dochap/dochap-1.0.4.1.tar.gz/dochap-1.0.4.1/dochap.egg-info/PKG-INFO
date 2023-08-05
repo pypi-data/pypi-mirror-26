@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: dochap
+Version: 1.0.4.1
+Summary: do some intresting things with your gtf files
+Home-page: https://github.com/nitzanel/dochap
+Author: Nitzan Elbaz
+Author-email: elbazni@post.bgu.ac.il
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: some more info
+Platform: UNKNOWN
+Requires-Python: >=3.5
