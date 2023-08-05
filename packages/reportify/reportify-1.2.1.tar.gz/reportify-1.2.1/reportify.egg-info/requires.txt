@@ -1,0 +1,8 @@
+beautifulsoup4
+jupyter
+jupyter-contrib-nbextensions
+nbconvert
+nbformat
+traitlets
+PyYAML
+Jinja2
