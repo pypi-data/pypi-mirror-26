@@ -1,0 +1,5 @@
+[console_scripts]
+index_gff = MISO.misopy.index_gff:main
+rmats2sashimiplot = rmats2sashimiplot.rmats2sashimiplot:main
+sashimi_plot = MISO.misopy.sashimi_plot.sashimi_plot:main
+
