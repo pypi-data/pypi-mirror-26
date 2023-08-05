@@ -1,0 +1,3 @@
+[console_scripts]
+duco = duco.command_line:main
+
