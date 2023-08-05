@@ -1,0 +1,6 @@
+pydotplus
+networkx<2
+click
+
+[teamcity]
+teamcity-messages
