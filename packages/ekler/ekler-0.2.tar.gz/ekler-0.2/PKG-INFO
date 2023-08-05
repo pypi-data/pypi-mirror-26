@@ -1,0 +1,65 @@
+Metadata-Version: 1.2
+Name: ekler
+Version: 0.2
+Summary: Turkce kelimelerin sonuna fonetik yapilarina uygun ekleri ekleyen module.
+Home-page: https://github.com/alioguzhan/ekler
+Author: Ali Oguzhan Yildiz
+Author-email: aoguzhanyildiz@gmail.com
+License: MIT
+Description: <p align="center">
+        <img src="ekler.png" width="300">
+        </p>
+        
+        # Ekler
+        Turkce kelimelerin sonuna, fonetik yapilarina gore:
+        
+        - `Iyelik` 
+        - `Yonelme`
+        
+        eklerini ekler. 
+        
+        ## Kurulum & Kullanim 
+        
+            $ pip install ekler
+        
+        Ornek Kullanim:
+        
+            from ekler import ekli, YONELME_EKI, IYELIK_EKI
+        
+            isim = 'ali'
+            ekli(isim, IYELIK_EKI)
+            ## ali'nin
+        
+            ekli(isim, YONELME_EKI)
+            ## ali'ye
+        
+            isim = "Ahmet"
+            ekli(isim, IYELIK_EKI)
+            ## ahmet'in
+        
+            ekli(isim, YONELME_EKI)
+            ## ahmet'e
+        
+            ekli(isim, YONELME_EKI, False) # kesme isareti yok
+            ## ahmete
+        
+        
+        
+        ## To Do
+        
+        - BUYUK HARF ve camelCase destegi
+        - `Bulunma` ve `Ayrilma` ekleri ( ali'de , ali'den )
+        - Daha fazla test
+        
+        
+            
+        
+Keywords: turkish,turkce,isim,ekler
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3
