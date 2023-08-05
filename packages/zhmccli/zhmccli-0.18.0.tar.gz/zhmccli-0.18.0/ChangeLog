@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+0.18.0
+------
+
+* Released 0.18.0
+* Added the zhmcclient version to the output of 'zhmc --version'
+* Fixed that CONSOLE\_LOGGER\_NAME was not migrated from zhmcclient
+* Fix build\_clib issue on Travis by removing duplicate setuptools
+* Select zhmcclient version from repo master branch
+* Disabled OS-X and pypy on Travis for the time being
+* Fixed issue with no readline module on Windows
+* Circumvented Travis issue with build\_clib
+* Add CLI support for mount and unmount an ISO
+* Improved the change log description
+* Renamed repo to zhmccli
+* Initial version of zhmccli
