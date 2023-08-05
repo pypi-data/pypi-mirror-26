@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+netboxapi_client.egg-info/PKG-INFO
+netboxapi_client.egg-info/SOURCES.txt
+netboxapi_client.egg-info/dependency_links.txt
+netboxapi_client.egg-info/entry_points.txt
+netboxapi_client.egg-info/top_level.txt
