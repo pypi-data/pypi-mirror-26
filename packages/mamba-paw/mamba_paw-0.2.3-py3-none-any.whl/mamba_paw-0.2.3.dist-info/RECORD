@@ -1,0 +1,10 @@
+mamba_paw-0.2.3.dist-info/DESCRIPTION.rst,sha256=vVk-3yyRhhEqjWworw0lJmOyxzFmf4Z0653PuFrgqBQ,1251
+mamba_paw-0.2.3.dist-info/METADATA,sha256=ffOv2h_L6xchJue4-2g5VEvex5q7Hwu-hhN5b_88ZII,1846
+mamba_paw-0.2.3.dist-info/RECORD,,
+mamba_paw-0.2.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mamba_paw-0.2.3.dist-info/metadata.json,sha256=3qHQ_BZH7mkUSVKAJmAAy9LT-GQ1IYXEbezAphukOKI,799
+mamba_paw-0.2.3.dist-info/top_level.txt,sha256=Sm29YgVNaOzz7pwe6KZ-5Olks4Npm9UsdR3KnWQWH5E,4
+paw/__init__.py,sha256=UIzQPTy7wNz6eYCLmn1d3FO2Mz9AVtce66I_th3ouqE,1250
+paw/exceptions.py,sha256=o5jRgswpn-M5yl4o60pSuU_I9v2vOtN471_uhUV30o0,36
+paw/models.py,sha256=Gmb417Bf5JJ84yDd8GEJCo9FAAaG04h7aEW04ocV6kA,12238
+paw/utils.py,sha256=sOpZaK9I_tE4EvUuq4Sj_PKbPGiO7WDR24CsNzziSQE,7743
