@@ -1,0 +1,11 @@
+birthdays/__init__.py,sha256=8VCPnvSqyIVTVGMKupuTfZbTFsbulSXcNEN21bkPfRI,19
+birthdays/__version__.py,sha256=GI8jYEksCyU_GLvu0eW6pPFjDcmTuWNQVavfvCX2KuQ,22
+birthdays/app.py,sha256=t_rcAKGq9Ez9G11WozXHFV_zNs16Syrn-HXPZMc6biQ,3712
+birthdays/cli.py,sha256=As3bl0wfMwx5UY3LR8V_TowNHtVV7uPXF78biif94cc,1737
+birthdays-0.4.3.dist-info/DESCRIPTION.rst,sha256=8KINK9-piD4aOcNzaTzBx9CBJzww_FowSm4lnbT-OBc,1084
+birthdays-0.4.3.dist-info/METADATA,sha256=n1k-lq7Fp8cBqpxt2orc10fGqaBVwO6EO3Ey0nl7Dm4,2001
+birthdays-0.4.3.dist-info/RECORD,,
+birthdays-0.4.3.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+birthdays-0.4.3.dist-info/entry_points.txt,sha256=Bqzuh8CRBLnQ-f9RX0Y35Kc7cDiklZEWzJtAY2DyNs8,45
+birthdays-0.4.3.dist-info/metadata.json,sha256=_ry-8VIUZvKM8NioED6pA1NXn6ujNdDgqpOEj5V7puk,1190
+birthdays-0.4.3.dist-info/top_level.txt,sha256=dV3I_Z6EJY0rrZDLn3zvMMZXZdcjLABtfASRqmTRbVo,10
