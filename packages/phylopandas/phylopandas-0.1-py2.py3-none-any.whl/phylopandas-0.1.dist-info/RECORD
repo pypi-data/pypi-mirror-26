@@ -1,0 +1,11 @@
+phylopandas/__init__.py,sha256=q3_GQyEUYCIlrJ9fC-J6RsBcZ8gqOLQ6NX-TxTaQc_s,53
+phylopandas/__version__.py,sha256=IGBoA5lNgZl2rxU9cULHVeaC7u6nzUYELDsnmetV9qo,19
+phylopandas/dataframe.py,sha256=_7Pl2YsHitbIKiLtFWSD_Cwis5HYNKMrJKQwlBIpvj0,297
+phylopandas/read.py,sha256=F_JCFePNaB-g3DeqW0dwDYtHa90VwK06DgESJgn1ptw,878
+phylopandas/write.py,sha256=EBoSohIgPpiblIZyUoPN1xRiEj1TYIKpxKRf3HDSPf8,639
+phylopandas-0.1.dist-info/DESCRIPTION.rst,sha256=lCgK5Ea861SK3ACReeDTQvSE71tzislFwHfzecO36A4,929
+phylopandas-0.1.dist-info/METADATA,sha256=YrbuFsrqEuQj40c8P_peTDbrLumTVhPITNiTTgd9v64,1679
+phylopandas-0.1.dist-info/RECORD,,
+phylopandas-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+phylopandas-0.1.dist-info/metadata.json,sha256=gJ3wNBfLRGa2BSCjIF1d1_jDG3DxS94VNrFxc25VLec,901
+phylopandas-0.1.dist-info/top_level.txt,sha256=ThqDqu8ekx-Ynvnko2tahFKmjk08FzGgkD_0uYN_o8s,12
