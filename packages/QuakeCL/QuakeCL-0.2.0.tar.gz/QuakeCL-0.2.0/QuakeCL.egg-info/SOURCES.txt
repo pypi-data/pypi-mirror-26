@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+QuakeCL.egg-info/PKG-INFO
+QuakeCL.egg-info/SOURCES.txt
+QuakeCL.egg-info/dependency_links.txt
+QuakeCL.egg-info/entry_points.txt
+QuakeCL.egg-info/requires.txt
+QuakeCL.egg-info/top_level.txt
+quakecl/__init__.py
+quakecl/earthquake.py
