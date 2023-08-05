@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: ws-sheets
+Version: 0.5b15
+Summary: python spreadsheets
+Home-page: http://github.com/chuck1/ws_sheets
+Author: Charles Rymal
+Author-email: charlesrymal@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: async-patterns (==0.3b14)
+Requires-Dist: codemach (==0.4b17)
+Requires-Dist: fs (==2.0.12)
+Requires-Dist: numpy (==1.13.3)
+Requires-Dist: pytz (==2017.2)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: toml (==0.9.3.1)
+
+UNKNOWN
+
+
