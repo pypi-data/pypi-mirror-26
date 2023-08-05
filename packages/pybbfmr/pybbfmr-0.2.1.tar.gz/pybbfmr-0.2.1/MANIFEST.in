@@ -1,0 +1,3 @@
+include versioneer.py
+include bbfmr/_version.py
+include README.txt
