@@ -1,0 +1,10 @@
+README.rst
+setup.py
+launchdman/__init__.py
+launchdman/debug.py
+launchdman/test.py
+launchdman/test1.py
+launchdman.egg-info/PKG-INFO
+launchdman.egg-info/SOURCES.txt
+launchdman.egg-info/dependency_links.txt
+launchdman.egg-info/top_level.txt
