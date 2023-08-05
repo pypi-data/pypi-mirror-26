@@ -1,0 +1,10 @@
+demjson
+python-dateutil
+pandas>=0.19.2
+requests>=2.12.4
+requests-toolbelt>=0.8.0
+retrying>=1.3.3
+simplejson>=3.10.0
+pygments>=2.1.3
+google-api-python-client
+oauth2client==3.0

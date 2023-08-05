@@ -1,0 +1,4 @@
+[console_scripts]
+shub = singularity.cli.main:main
+sregistry = singularity.registry.main:main
+
