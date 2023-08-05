@@ -1,0 +1,477 @@
+<center><a href="interpol.c">Actual source code: interpol.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="http://slepc.upv.es/documentation/current/src/nep/impls/interpol/interpol.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2017-10-20T18:07:57+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.8.0 2017-10-20</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.8.0 v3.8 src/nep/impls/interpol/interpol.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2017, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   SLEPc nonlinear eigensolver: "interpol"</font>
+
+<a name="line13"> 13: </a><font color="#B22222">   Method: Polynomial interpolation</font>
+
+<a name="line15"> 15: </a><font color="#B22222">   Algorithm:</font>
+
+<a name="line17"> 17: </a><font color="#B22222">       Uses a <a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> object to solve the interpolated <a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>. Currently supports</font>
+<a name="line18"> 18: </a><font color="#B22222">       only Chebyshev interpolation on an interval.</font>
+
+<a name="line20"> 20: </a><font color="#B22222">   References:</font>
+
+<a name="line22"> 22: </a><font color="#B22222">       [1] C. Effenberger and D. Kresser, "Chebyshev interpolation for</font>
+<a name="line23"> 23: </a><font color="#B22222">           nonlinear eigenvalue problems", BIT 52:933-951, 2012.</font>
+<a name="line24"> 24: </a><font color="#B22222">*/</font>
+
+<a name="line26"> 26: </a><font color="#A020F0">#include &lt;slepc/private/nepimpl.h&gt;         </font><font color="#B22222">/*I "slepcnep.h" I*/</font><font color="#A020F0"></font>
+<a name="line27"> 27: </a><font color="#A020F0">#include &lt;slepc/private/pepimpl.h&gt;         </font><font color="#B22222">/*I "slepcpep.h" I*/</font><font color="#A020F0"></font>
+
+<a name="line29"> 29: </a><font color="#4169E1">typedef</font> <font color="#4169E1">struct</font> {
+<a name="line30"> 30: </a>  <a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a>       pep;
+<a name="line31"> 31: </a>  PetscReal tol;       <font color="#B22222">/* tolerance for norm of polynomial coefficients */</font>
+<a name="line32"> 32: </a>  PetscInt  maxdeg;    <font color="#B22222">/* maximum degree of interpolation polynomial */</font>
+<a name="line33"> 33: </a>  PetscInt  deg;       <font color="#B22222">/* actual degree of interpolation polynomial */</font>
+<a name="line34"> 34: </a>} NEP_INTERPOL;
+
+<a name="line36"> 36: </a><strong><font color="#4169E1"><a name="NEPSetUp_Interpol"></a>PetscErrorCode NEPSetUp_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line37"> 37: </a>{
+<a name="line39"> 39: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+<a name="line40"> 40: </a>  <a href="../../../../docs/manualpages/ST/ST.html#ST">ST</a>             st;
+<a name="line41"> 41: </a>  <a href="../../../../docs/manualpages/RG/RG.html#RG">RG</a>             rg;
+<a name="line42"> 42: </a>  PetscReal      a,b,c,d,s,tol;
+<a name="line43"> 43: </a>  PetscScalar    zero=0.0;
+<a name="line44"> 44: </a>  PetscBool      flg,istrivial,trackall;
+<a name="line45"> 45: </a>  PetscInt       its,in;
+
+<a name="line48"> 48: </a>  NEPSetDimensions_Default(nep,nep-&gt;nev,&amp;nep-&gt;ncv,&amp;nep-&gt;mpd);
+<a name="line49"> 49: </a>  <font color="#4169E1">if</font> (nep-&gt;ncv&gt;nep-&gt;nev+nep-&gt;mpd) SETERRQ(PetscObjectComm((PetscObject)nep),1,<font color="#666666">"The value of ncv must not be larger than nev+mpd"</font>);
+<a name="line50"> 50: </a>  <font color="#4169E1">if</font> (!nep-&gt;max_it) nep-&gt;max_it = PetscMax(5000,2*nep-&gt;n/nep-&gt;ncv);
+<a name="line51"> 51: </a>  <font color="#4169E1">if</font> (nep-&gt;fui!=NEP_USER_INTERFACE_SPLIT) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"NEPINTERPOL only available for split operator"</font>);
+<a name="line52"> 52: </a>  <font color="#4169E1">if</font> (nep-&gt;stopping!=<a href="../../../../docs/manualpages/NEP/NEPStoppingBasic.html#NEPStoppingBasic">NEPStoppingBasic</a>) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"This solver does not support user-defined stopping test"</font>);
+
+<a name="line54"> 54: </a>  <font color="#B22222">/* transfer <a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> options */</font>
+<a name="line55"> 55: </a>  <font color="#4169E1">if</font> (!ctx-&gt;pep) { <a href="../../../../docs/manualpages/NEP/NEPInterpolGetPEP.html#NEPInterpolGetPEP">NEPInterpolGetPEP</a>(nep,&amp;ctx-&gt;pep); }
+<a name="line56"> 56: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetBasis.html#PEPSetBasis">PEPSetBasis</a>(ctx-&gt;pep,<a href="../../../../docs/manualpages/PEP/PEPBasis.html#PEPBasis">PEP_BASIS_CHEBYSHEV1</a>);
+<a name="line57"> 57: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetWhichEigenpairs.html#PEPSetWhichEigenpairs">PEPSetWhichEigenpairs</a>(ctx-&gt;pep,<a href="../../../../docs/manualpages/PEP/PEPWhich.html#PEPWhich">PEP_TARGET_MAGNITUDE</a>);
+<a name="line58"> 58: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetST.html#PEPGetST">PEPGetST</a>(ctx-&gt;pep,&amp;st);
+<a name="line59"> 59: </a>  <a href="../../../../docs/manualpages/ST/STSetType.html#STSetType">STSetType</a>(st,STSINVERT);
+<a name="line60"> 60: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetDimensions.html#PEPSetDimensions">PEPSetDimensions</a>(ctx-&gt;pep,nep-&gt;nev,nep-&gt;ncv?nep-&gt;ncv:PETSC_DEFAULT,nep-&gt;mpd?nep-&gt;mpd:PETSC_DEFAULT);
+<a name="line61"> 61: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetTolerances.html#PEPGetTolerances">PEPGetTolerances</a>(ctx-&gt;pep,&amp;tol,&amp;its);
+<a name="line62"> 62: </a>  <font color="#4169E1">if</font> (tol==PETSC_DEFAULT) tol = (nep-&gt;tol==PETSC_DEFAULT)?SLEPC_DEFAULT_TOL:nep-&gt;tol;
+<a name="line63"> 63: </a>  <font color="#4169E1">if</font> (ctx-&gt;tol==PETSC_DEFAULT) ctx-&gt;tol = tol;
+<a name="line64"> 64: </a>  <font color="#4169E1">if</font> (!its) its = nep-&gt;max_it?nep-&gt;max_it:PETSC_DEFAULT;
+<a name="line65"> 65: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetTolerances.html#PEPSetTolerances">PEPSetTolerances</a>(ctx-&gt;pep,tol,its);
+<a name="line66"> 66: </a>  <a href="../../../../docs/manualpages/NEP/NEPGetTrackAll.html#NEPGetTrackAll">NEPGetTrackAll</a>(nep,&amp;trackall);
+<a name="line67"> 67: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetTrackAll.html#PEPSetTrackAll">PEPSetTrackAll</a>(ctx-&gt;pep,trackall);
+
+<a name="line69"> 69: </a>  <font color="#B22222">/* transfer region options */</font>
+<a name="line70"> 70: </a>  <a href="../../../../docs/manualpages/RG/RGIsTrivial.html#RGIsTrivial">RGIsTrivial</a>(nep-&gt;rg,&amp;istrivial);
+<a name="line71"> 71: </a>  <font color="#4169E1">if</font> (istrivial) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"NEPINTERPOL requires a nontrivial region"</font>);
+<a name="line72"> 72: </a>  PetscObjectTypeCompare((PetscObject)nep-&gt;rg,RGINTERVAL,&amp;flg);
+<a name="line73"> 73: </a>  <font color="#4169E1">if</font> (!flg) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"Only implemented for interval regions"</font>);
+<a name="line74"> 74: </a>  <a href="../../../../docs/manualpages/RG/RGIntervalGetEndpoints.html#RGIntervalGetEndpoints">RGIntervalGetEndpoints</a>(nep-&gt;rg,&amp;a,&amp;b,&amp;c,&amp;d);
+<a name="line75"> 75: </a>  <font color="#4169E1">if</font> (a&lt;=-PETSC_MAX_REAL || b&gt;=PETSC_MAX_REAL) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"Only implemented for bounded intervals"</font>);
+<a name="line76"> 76: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetRG.html#PEPGetRG">PEPGetRG</a>(ctx-&gt;pep,&amp;rg);
+<a name="line77"> 77: </a>  <a href="../../../../docs/manualpages/RG/RGSetType.html#RGSetType">RGSetType</a>(rg,RGINTERVAL);
+<a name="line78"> 78: </a>  <font color="#4169E1">if</font> (a==b) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"Only implemented for intervals on the real axis"</font>);
+<a name="line79"> 79: </a>  s = 2.0/(b-a);
+<a name="line80"> 80: </a>  c = c*s;
+<a name="line81"> 81: </a>  d = d*s;
+<a name="line82"> 82: </a>  <a href="../../../../docs/manualpages/RG/RGIntervalSetEndpoints.html#RGIntervalSetEndpoints">RGIntervalSetEndpoints</a>(rg,-1.0,1.0,c,d);
+<a name="line83"> 83: </a>  <a href="../../../../docs/manualpages/RG/RGCheckInside.html#RGCheckInside">RGCheckInside</a>(nep-&gt;rg,1,&amp;nep-&gt;target,&amp;zero,&amp;in);
+<a name="line84"> 84: </a>  <font color="#4169E1">if</font> (in&lt;0) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_SUP,<font color="#666666">"The target is not inside the target set"</font>);
+<a name="line85"> 85: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetTarget.html#PEPSetTarget">PEPSetTarget</a>(ctx-&gt;pep,(nep-&gt;target-(a+b)/2)*s);
+
+<a name="line87"> 87: </a>  <a href="../../../../docs/manualpages/NEP/NEPAllocateSolution.html#NEPAllocateSolution">NEPAllocateSolution</a>(nep,0);
+<a name="line88"> 88: </a>  <font color="#4169E1">return</font>(0);
+<a name="line89"> 89: </a>}
+
+<a name="line91"> 91: </a><font color="#B22222">/*</font>
+<a name="line92"> 92: </a><font color="#B22222">  Input:</font>
+<a name="line93"> 93: </a><font color="#B22222">    d, number of nodes to compute</font>
+<a name="line94"> 94: </a><font color="#B22222">    a,b, interval extrems</font>
+<a name="line95"> 95: </a><font color="#B22222">  Output:</font>
+<a name="line96"> 96: </a><font color="#B22222">    *x, array containing the d Chebyshev nodes of the interval [a,b]</font>
+<a name="line97"> 97: </a><font color="#B22222">    *dct2, coefficients to compute a discrete cosine transformation (DCT-II)</font>
+<a name="line98"> 98: </a><font color="#B22222">*/</font>
+<a name="line99"> 99: </a><strong><font color="#4169E1"><a name="ChebyshevNodes"></a>static PetscErrorCode ChebyshevNodes(PetscInt d,PetscReal a,PetscReal b,PetscScalar *x,PetscReal *dct2)</font></strong>
+<a name="line100">100: </a>{
+<a name="line101">101: </a>  PetscInt  j,i;
+<a name="line102">102: </a>  PetscReal t;
+
+<a name="line105">105: </a>  <font color="#4169E1">for</font> (j=0;j&lt;d+1;j++) {
+<a name="line106">106: </a>    t = ((2*j+1)*PETSC_PI)/(2*(d+1));
+<a name="line107">107: </a>    x[j] = (a+b)/2.0+((b-a)/2.0)*PetscCosReal(t);
+<a name="line108">108: </a>    <font color="#4169E1">for</font> (i=0;i&lt;d+1;i++) dct2[j*(d+1)+i] = PetscCosReal(i*t);
+<a name="line109">109: </a>  }
+<a name="line110">110: </a>  <font color="#4169E1">return</font>(0);
+<a name="line111">111: </a>}
+
+<a name="line113">113: </a><strong><font color="#4169E1"><a name="NEPSolve_Interpol"></a>PetscErrorCode NEPSolve_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line114">114: </a>{
+<a name="line116">116: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+<a name="line117">117: </a>  Mat            *A;
+<a name="line118">118: </a>  PetscScalar    *x,*fx,t;
+<a name="line119">119: </a>  PetscReal      *cs,a,b,s,aprox,aprox0=1.0,*matnorm;
+<a name="line120">120: </a>  PetscInt       i,j,k,deg=ctx-&gt;maxdeg;
+<a name="line121">121: </a>  PetscBool      hasmnorm;
+<a name="line122">122: </a>  Vec            vr,vi=NULL;
+
+<a name="line125">125: </a>  PetscMalloc5(deg+1,&amp;A,(deg+1)*(deg+1),&amp;cs,deg+1,&amp;x,(deg+1)*nep-&gt;nt,&amp;fx,nep-&gt;nt,&amp;matnorm);
+<a name="line126">126: </a>  <font color="#4169E1">for</font>  (j=0;j&lt;nep-&gt;nt;j++) {
+<a name="line127">127: </a>    MatHasOperation(nep-&gt;A[j],MATOP_NORM,&amp;hasmnorm);
+<a name="line128">128: </a>    <font color="#4169E1">if</font> (!hasmnorm) <font color="#4169E1">break</font>;
+<a name="line129">129: </a>    MatNorm(nep-&gt;A[j],NORM_INFINITY,matnorm+j);
+<a name="line130">130: </a>  }
+<a name="line131">131: </a>  <font color="#4169E1">if</font> (!hasmnorm) <font color="#4169E1">for</font> (j=0;j&lt;nep-&gt;nt;j++) matnorm[j] = 1.0;
+<a name="line132">132: </a>  <a href="../../../../docs/manualpages/RG/RGIntervalGetEndpoints.html#RGIntervalGetEndpoints">RGIntervalGetEndpoints</a>(nep-&gt;rg,&amp;a,&amp;b,NULL,NULL);
+<a name="line133">133: </a>  ChebyshevNodes(deg,a,b,x,cs);
+<a name="line134">134: </a>  <font color="#4169E1">for</font> (j=0;j&lt;nep-&gt;nt;j++) {
+<a name="line135">135: </a>    <font color="#4169E1">for</font> (i=0;i&lt;=deg;i++) {
+<a name="line136">136: </a>      <a href="../../../../docs/manualpages/FN/FNEvaluateFunction.html#FNEvaluateFunction">FNEvaluateFunction</a>(nep-&gt;f[j],x[i],&amp;fx[i+j*(deg+1)]);
+<a name="line137">137: </a>    }
+<a name="line138">138: </a>  }
+<a name="line139">139: </a>  <font color="#B22222">/* Polynomial coefficients */</font>
+<a name="line140">140: </a>  ctx-&gt;deg = deg;
+<a name="line141">141: </a>  <font color="#4169E1">for</font> (k=0;k&lt;=deg;k++) {
+<a name="line142">142: </a>    MatDuplicate(nep-&gt;A[0],MAT_COPY_VALUES,&amp;A[k]);
+<a name="line143">143: </a>    t = 0.0;
+<a name="line144">144: </a>    <font color="#4169E1">for</font> (i=0;i&lt;deg+1;i++) t += fx[i]*cs[i*(deg+1)+k];
+<a name="line145">145: </a>    t *= 2.0/(deg+1);
+<a name="line146">146: </a>    <font color="#4169E1">if</font> (k==0) t /= 2.0;
+<a name="line147">147: </a>    aprox = matnorm[0]*PetscAbsScalar(t);
+<a name="line148">148: </a>    MatScale(A[k],t);
+<a name="line149">149: </a>    <font color="#4169E1">for</font> (j=1;j&lt;nep-&gt;nt;j++) {
+<a name="line150">150: </a>      t = 0.0;
+<a name="line151">151: </a>      <font color="#4169E1">for</font> (i=0;i&lt;deg+1;i++) t += fx[i+j*(deg+1)]*cs[i*(deg+1)+k];
+<a name="line152">152: </a>      t *= 2.0/(deg+1);
+<a name="line153">153: </a>      <font color="#4169E1">if</font> (k==0) t /= 2.0;
+<a name="line154">154: </a>      aprox += matnorm[j]*PetscAbsScalar(t);
+<a name="line155">155: </a>      MatAXPY(A[k],t,nep-&gt;A[j],nep-&gt;mstr);
+<a name="line156">156: </a>    }
+<a name="line157">157: </a>    <font color="#4169E1">if</font> (k==0) aprox0 = aprox;
+<a name="line158">158: </a>    <font color="#4169E1">if</font> (aprox/aprox0&lt;ctx-&gt;tol) { ctx-&gt;deg = k; deg = k; <font color="#4169E1">break</font>; }
+<a name="line159">159: </a>  }
+
+<a name="line161">161: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetOperators.html#PEPSetOperators">PEPSetOperators</a>(ctx-&gt;pep,deg+1,A);
+<a name="line162">162: </a>  <font color="#4169E1">for</font> (k=0;k&lt;=deg;k++) {
+<a name="line163">163: </a>    MatDestroy(&amp;A[k]);
+<a name="line164">164: </a>  }
+<a name="line165">165: </a>  PetscFree5(A,cs,x,fx,matnorm);
+
+<a name="line167">167: </a>  <font color="#B22222">/* Solve polynomial eigenproblem */</font>
+<a name="line168">168: </a>  <a href="../../../../docs/manualpages/PEP/PEPSolve.html#PEPSolve">PEPSolve</a>(ctx-&gt;pep);
+<a name="line169">169: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetConverged.html#PEPGetConverged">PEPGetConverged</a>(ctx-&gt;pep,&amp;nep-&gt;nconv);
+<a name="line170">170: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetIterationNumber.html#PEPGetIterationNumber">PEPGetIterationNumber</a>(ctx-&gt;pep,&amp;nep-&gt;its);
+<a name="line171">171: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetConvergedReason.html#PEPGetConvergedReason">PEPGetConvergedReason</a>(ctx-&gt;pep,(<a href="../../../../docs/manualpages/PEP/PEPConvergedReason.html#PEPConvergedReason">PEPConvergedReason</a>*)&amp;nep-&gt;reason);
+<a name="line172">172: </a>  <a href="../../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(nep-&gt;V,0,nep-&gt;nconv);
+<a name="line173">173: </a>  <a href="../../../../docs/manualpages/BV/BVCreateVec.html#BVCreateVec">BVCreateVec</a>(nep-&gt;V,&amp;vr);
+<a name="line174">174: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)   </font>
+<a name="line175">175: </a>  VecDuplicate(vr,&amp;vi);
+<a name="line176">176: </a><font color="#A020F0">#endif</font>
+<a name="line177">177: </a>  s = 2.0/(b-a);
+<a name="line178">178: </a>  <font color="#4169E1">for</font> (i=0;i&lt;nep-&gt;nconv;i++) {
+<a name="line179">179: </a>    <a href="../../../../docs/manualpages/PEP/PEPGetEigenpair.html#PEPGetEigenpair">PEPGetEigenpair</a>(ctx-&gt;pep,i,&amp;nep-&gt;eigr[i],&amp;nep-&gt;eigi[i],vr,vi);
+<a name="line180">180: </a>    nep-&gt;eigr[i] /= s;
+<a name="line181">181: </a>    nep-&gt;eigr[i] += (a+b)/2.0;
+<a name="line182">182: </a>    nep-&gt;eigi[i] /= s;
+<a name="line183">183: </a>    <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(nep-&gt;V,i,vr);
+<a name="line184">184: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)   </font>
+<a name="line185">185: </a>    <font color="#4169E1">if</font> (nep-&gt;eigi[i]!=0.0) {
+<a name="line186">186: </a>      <a href="../../../../docs/manualpages/BV/BVInsertVec.html#BVInsertVec">BVInsertVec</a>(nep-&gt;V,++i,vi);
+<a name="line187">187: </a>    }
+<a name="line188">188: </a><font color="#A020F0">#endif</font>
+<a name="line189">189: </a>  }
+<a name="line190">190: </a>  VecDestroy(&amp;vr);
+<a name="line191">191: </a>  VecDestroy(&amp;vi);
+
+<a name="line193">193: </a>  nep-&gt;state = NEP_STATE_EIGENVECTORS;
+<a name="line194">194: </a>  <font color="#4169E1">return</font>(0);
+<a name="line195">195: </a>}
+
+<a name="line197">197: </a><strong><font color="#4169E1"><a name="PEPMonitor_Interpol"></a>static PetscErrorCode PEPMonitor_Interpol(<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> pep,PetscInt its,PetscInt nconv,PetscScalar *eigr,PetscScalar *eigi,PetscReal *errest,PetscInt nest,void *ctx)</font></strong>
+<a name="line198">198: </a>{
+<a name="line199">199: </a>  PetscInt       i,n;
+<a name="line200">200: </a>  <a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>            nep = (<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>)ctx;
+<a name="line201">201: </a>  PetscReal      a,b,s;
+<a name="line202">202: </a>  <a href="../../../../docs/manualpages/ST/ST.html#ST">ST</a>             st;
+
+<a name="line206">206: </a>  n = PetscMin(nest,nep-&gt;ncv);
+<a name="line207">207: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++) {
+<a name="line208">208: </a>    nep-&gt;eigr[i]   = eigr[i];
+<a name="line209">209: </a>    nep-&gt;eigi[i]   = eigi[i];
+<a name="line210">210: </a>    nep-&gt;errest[i] = errest[i];
+<a name="line211">211: </a>  }
+<a name="line212">212: </a>  <a href="../../../../docs/manualpages/PEP/PEPGetST.html#PEPGetST">PEPGetST</a>(pep,&amp;st);
+<a name="line213">213: </a>  <a href="../../../../docs/manualpages/ST/STBackTransform.html#STBackTransform">STBackTransform</a>(st,n,nep-&gt;eigr,nep-&gt;eigi);
+<a name="line214">214: </a>  <a href="../../../../docs/manualpages/RG/RGIntervalGetEndpoints.html#RGIntervalGetEndpoints">RGIntervalGetEndpoints</a>(nep-&gt;rg,&amp;a,&amp;b,NULL,NULL);
+<a name="line215">215: </a>  s = 2.0/(b-a);
+<a name="line216">216: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++) {
+<a name="line217">217: </a>    nep-&gt;eigr[i] /= s;
+<a name="line218">218: </a>    nep-&gt;eigr[i] += (a+b)/2.0;
+<a name="line219">219: </a>    nep-&gt;eigi[i] /= s;
+<a name="line220">220: </a>  }
+<a name="line221">221: </a>  NEPMonitor(nep,its,nconv,nep-&gt;eigr,nep-&gt;eigi,nep-&gt;errest,nest);
+<a name="line222">222: </a>  <font color="#4169E1">return</font>(0);
+<a name="line223">223: </a>}
+
+<a name="line225">225: </a><strong><font color="#4169E1"><a name="NEPSetFromOptions_Interpol"></a>PetscErrorCode NEPSetFromOptions_Interpol(PetscOptionItems *PetscOptionsObject,<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line226">226: </a>{
+<a name="line228">228: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+<a name="line229">229: </a>  PetscInt       i;
+<a name="line230">230: </a>  PetscBool      flg1,flg2;
+<a name="line231">231: </a>  PetscReal      r;
+
+<a name="line234">234: </a>  PetscOptionsHead(PetscOptionsObject,<font color="#666666">"<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> Interpol Options"</font>);
+
+<a name="line236">236: </a>    <a href="../../../../docs/manualpages/NEP/NEPInterpolGetInterpolation.html#NEPInterpolGetInterpolation">NEPInterpolGetInterpolation</a>(nep,&amp;r,&amp;i);
+<a name="line237">237: </a>    <font color="#4169E1">if</font> (!i) i = PETSC_DEFAULT;
+<a name="line238">238: </a>    PetscOptionsInt(<font color="#666666">"-nep_interpol_interpolation_degree"</font>,<font color="#666666">"Maximum degree of polynomial interpolation"</font>,<font color="#666666">"<a href="../../../../docs/manualpages/NEP/NEPInterpolSetInterpolation.html#NEPInterpolSetInterpolation">NEPInterpolSetInterpolation</a>"</font>,i,&amp;i,&amp;flg1);
+<a name="line239">239: </a>    PetscOptionsReal(<font color="#666666">"-nep_interpol_interpolation_tol"</font>,<font color="#666666">"Tolerance for interpolation coefficients"</font>,<font color="#666666">"<a href="../../../../docs/manualpages/NEP/NEPInterpolSetInterpolation.html#NEPInterpolSetInterpolation">NEPInterpolSetInterpolation</a>"</font>,r,&amp;r,&amp;flg2);
+<a name="line240">240: </a>    <font color="#4169E1">if</font> (flg1 || flg2) { <a href="../../../../docs/manualpages/NEP/NEPInterpolSetInterpolation.html#NEPInterpolSetInterpolation">NEPInterpolSetInterpolation</a>(nep,r,i); }
+
+<a name="line242">242: </a>  PetscOptionsTail();
+
+<a name="line244">244: </a>  <font color="#4169E1">if</font> (!ctx-&gt;pep) { <a href="../../../../docs/manualpages/NEP/NEPInterpolGetPEP.html#NEPInterpolGetPEP">NEPInterpolGetPEP</a>(nep,&amp;ctx-&gt;pep); }
+<a name="line245">245: </a>  <a href="../../../../docs/manualpages/PEP/PEPSetFromOptions.html#PEPSetFromOptions">PEPSetFromOptions</a>(ctx-&gt;pep);
+<a name="line246">246: </a>  <font color="#4169E1">return</font>(0);
+<a name="line247">247: </a>}
+
+<a name="line249">249: </a><strong><font color="#4169E1"><a name="NEPInterpolSetInterpolation_Interpol"></a>static PetscErrorCode NEPInterpolSetInterpolation_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscReal tol,PetscInt degree)</font></strong>
+<a name="line250">250: </a>{
+<a name="line252">252: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+
+<a name="line255">255: </a>  <font color="#4169E1">if</font> (tol == PETSC_DEFAULT) {
+<a name="line256">256: </a>    ctx-&gt;tol   = PETSC_DEFAULT;
+<a name="line257">257: </a>    nep-&gt;state = NEP_STATE_INITIAL;
+<a name="line258">258: </a>  } <font color="#4169E1">else</font> {
+<a name="line259">259: </a>    <font color="#4169E1">if</font> (tol &lt;= 0.0) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Illegal value of tol. Must be &gt; 0"</font>);
+<a name="line260">260: </a>    ctx-&gt;tol = tol;
+<a name="line261">261: </a>  }
+<a name="line262">262: </a>  <font color="#4169E1">if</font> (degree == PETSC_DEFAULT || degree == PETSC_DECIDE) {
+<a name="line263">263: </a>    ctx-&gt;maxdeg = 0;
+<a name="line264">264: </a>    <font color="#4169E1">if</font> (nep-&gt;state) { <a href="../../../../docs/manualpages/NEP/NEPReset.html#NEPReset">NEPReset</a>(nep); }
+<a name="line265">265: </a>    nep-&gt;state = NEP_STATE_INITIAL;
+<a name="line266">266: </a>  } <font color="#4169E1">else</font> {
+<a name="line267">267: </a>    <font color="#4169E1">if</font> (degree &lt;= 0) SETERRQ(PetscObjectComm((PetscObject)nep),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Illegal value of degree. Must be &gt; 0"</font>);
+<a name="line268">268: </a>    <font color="#4169E1">if</font> (ctx-&gt;maxdeg != degree) {
+<a name="line269">269: </a>      ctx-&gt;maxdeg = degree;
+<a name="line270">270: </a>      <font color="#4169E1">if</font> (nep-&gt;state) { <a href="../../../../docs/manualpages/NEP/NEPReset.html#NEPReset">NEPReset</a>(nep); }
+<a name="line271">271: </a>      nep-&gt;state = NEP_STATE_INITIAL;
+<a name="line272">272: </a>    }
+<a name="line273">273: </a>  }
+<a name="line274">274: </a>  <font color="#4169E1">return</font>(0);
+<a name="line275">275: </a>}
+
+<a name="line277">277: </a><font color="#B22222">/*@</font>
+<a name="line278">278: </a><font color="#B22222">   <a href="../../../../docs/manualpages/NEP/NEPInterpolSetInterpolation.html#NEPInterpolSetInterpolation">NEPInterpolSetInterpolation</a> - Sets the tolerance and maximum degree when building</font>
+<a name="line279">279: </a><font color="#B22222">   the interpolation polynomial.</font>
+
+<a name="line281">281: </a><font color="#B22222">   Collective on <a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a></font>
+
+<a name="line283">283: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line284">284: </a><font color="#B22222">+  nep - nonlinear eigenvalue solver</font>
+<a name="line285">285: </a><font color="#B22222">.  tol - tolerance to stop computing polynomial coefficients</font>
+<a name="line286">286: </a><font color="#B22222">-  deg - maximum degree of interpolation</font>
+
+<a name="line288">288: </a><font color="#B22222">   Options Database Key:</font>
+<a name="line289">289: </a><font color="#B22222">+  -nep_interpol_interpolation_tol &lt;tol&gt; - Sets the tolerance to stop computing polynomial coefficients</font>
+<a name="line290">290: </a><font color="#B22222">-  -nep_interpol_interpolation_degree &lt;degree&gt; - Sets the maximum degree of interpolation</font>
+
+<a name="line292">292: </a><font color="#B22222">   Notes:</font>
+<a name="line293">293: </a><font color="#B22222">   Use PETSC_DEFAULT for either argument to assign a reasonably good value.</font>
+
+<a name="line295">295: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line297">297: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/NEP/NEPInterpolGetInterpolation.html#NEPInterpolGetInterpolation">NEPInterpolGetInterpolation</a>()</font>
+<a name="line298">298: </a><font color="#B22222">@*/</font>
+<a name="line299">299: </a><strong><font color="#4169E1"><a name="NEPInterpolSetInterpolation"></a>PetscErrorCode <a href="../../../../docs/manualpages/NEP/NEPInterpolSetInterpolation.html#NEPInterpolSetInterpolation">NEPInterpolSetInterpolation</a>(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscReal tol,PetscInt deg)</font></strong>
+<a name="line300">300: </a>{
+
+<a name="line307">307: </a>  PetscTryMethod(nep,<font color="#666666">"NEPInterpolSetInterpolation_C"</font>,(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>,PetscReal,PetscInt),(nep,tol,deg));
+<a name="line308">308: </a>  <font color="#4169E1">return</font>(0);
+<a name="line309">309: </a>}
+
+<a name="line311">311: </a><strong><font color="#4169E1"><a name="NEPInterpolGetInterpolation_Interpol"></a>static PetscErrorCode NEPInterpolGetInterpolation_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscReal *tol,PetscInt *deg)</font></strong>
+<a name="line312">312: </a>{
+<a name="line313">313: </a>  NEP_INTERPOL *ctx = (NEP_INTERPOL*)nep-&gt;data;
+
+<a name="line316">316: </a>  <font color="#4169E1">if</font> (tol) *tol = ctx-&gt;tol;
+<a name="line317">317: </a>  <font color="#4169E1">if</font> (deg) *deg = ctx-&gt;maxdeg;
+<a name="line318">318: </a>  <font color="#4169E1">return</font>(0);
+<a name="line319">319: </a>}
+
+<a name="line321">321: </a><font color="#B22222">/*@</font>
+<a name="line322">322: </a><font color="#B22222">   <a href="../../../../docs/manualpages/NEP/NEPInterpolGetInterpolation.html#NEPInterpolGetInterpolation">NEPInterpolGetInterpolation</a> - Gets the tolerance and maximum degree when building</font>
+<a name="line323">323: </a><font color="#B22222">   the interpolation polynomial.</font>
+
+<a name="line325">325: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line327">327: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line328">328: </a><font color="#B22222">.  nep - nonlinear eigenvalue solver</font>
+
+<a name="line330">330: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line331">331: </a><font color="#B22222">+  tol - tolerance to stop computing polynomial coefficients</font>
+<a name="line332">332: </a><font color="#B22222">-  deg - maximum degree of interpolation</font>
+
+<a name="line334">334: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line336">336: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/NEP/NEPInterpolSetInterpolation.html#NEPInterpolSetInterpolation">NEPInterpolSetInterpolation</a>()</font>
+<a name="line337">337: </a><font color="#B22222">@*/</font>
+<a name="line338">338: </a><strong><font color="#4169E1"><a name="NEPInterpolGetInterpolation"></a>PetscErrorCode <a href="../../../../docs/manualpages/NEP/NEPInterpolGetInterpolation.html#NEPInterpolGetInterpolation">NEPInterpolGetInterpolation</a>(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscReal *tol,PetscInt *deg)</font></strong>
+<a name="line339">339: </a>{
+
+<a name="line344">344: </a>  PetscUseMethod(nep,<font color="#666666">"NEPInterpolGetInterpolation_C"</font>,(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>,PetscReal*,PetscInt*),(nep,tol,deg));
+<a name="line345">345: </a>  <font color="#4169E1">return</font>(0);
+<a name="line346">346: </a>}
+
+<a name="line348">348: </a><strong><font color="#4169E1"><a name="NEPInterpolSetPEP_Interpol"></a>static PetscErrorCode NEPInterpolSetPEP_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> pep)</font></strong>
+<a name="line349">349: </a>{
+<a name="line351">351: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+
+<a name="line354">354: </a>  PetscObjectReference((PetscObject)pep);
+<a name="line355">355: </a>  <a href="../../../../docs/manualpages/PEP/PEPDestroy.html#PEPDestroy">PEPDestroy</a>(&amp;ctx-&gt;pep);
+<a name="line356">356: </a>  ctx-&gt;pep = pep;
+<a name="line357">357: </a>  PetscLogObjectParent((PetscObject)nep,(PetscObject)ctx-&gt;pep);
+<a name="line358">358: </a>  nep-&gt;state = NEP_STATE_INITIAL;
+<a name="line359">359: </a>  <font color="#4169E1">return</font>(0);
+<a name="line360">360: </a>}
+
+<a name="line362">362: </a><font color="#B22222">/*@</font>
+<a name="line363">363: </a><font color="#B22222">   <a href="../../../../docs/manualpages/NEP/NEPInterpolSetPEP.html#NEPInterpolSetPEP">NEPInterpolSetPEP</a> - Associate a polynomial eigensolver object (<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a>) to the</font>
+<a name="line364">364: </a><font color="#B22222">   nonlinear eigenvalue solver.</font>
+
+<a name="line366">366: </a><font color="#B22222">   Collective on <a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a></font>
+
+<a name="line368">368: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line369">369: </a><font color="#B22222">+  nep - nonlinear eigenvalue solver</font>
+<a name="line370">370: </a><font color="#B22222">-  pep - the polynomial eigensolver object</font>
+
+<a name="line372">372: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line374">374: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/NEP/NEPInterpolGetPEP.html#NEPInterpolGetPEP">NEPInterpolGetPEP</a>()</font>
+<a name="line375">375: </a><font color="#B22222">@*/</font>
+<a name="line376">376: </a><strong><font color="#4169E1"><a name="NEPInterpolSetPEP"></a>PetscErrorCode <a href="../../../../docs/manualpages/NEP/NEPInterpolSetPEP.html#NEPInterpolSetPEP">NEPInterpolSetPEP</a>(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> pep)</font></strong>
+<a name="line377">377: </a>{
+
+<a name="line384">384: </a>  PetscTryMethod(nep,<font color="#666666">"NEPInterpolSetPEP_C"</font>,(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>,<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a>),(nep,pep));
+<a name="line385">385: </a>  <font color="#4169E1">return</font>(0);
+<a name="line386">386: </a>}
+
+<a name="line388">388: </a><strong><font color="#4169E1"><a name="NEPInterpolGetPEP_Interpol"></a>static PetscErrorCode NEPInterpolGetPEP_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> *pep)</font></strong>
+<a name="line389">389: </a>{
+<a name="line391">391: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+
+<a name="line394">394: </a>  <font color="#4169E1">if</font> (!ctx-&gt;pep) {
+<a name="line395">395: </a>    <a href="../../../../docs/manualpages/PEP/PEPCreate.html#PEPCreate">PEPCreate</a>(PetscObjectComm((PetscObject)nep),&amp;ctx-&gt;pep);
+<a name="line396">396: </a>    <a href="../../../../docs/manualpages/PEP/PEPSetOptionsPrefix.html#PEPSetOptionsPrefix">PEPSetOptionsPrefix</a>(ctx-&gt;pep,((PetscObject)nep)-&gt;prefix);
+<a name="line397">397: </a>    <a href="../../../../docs/manualpages/PEP/PEPAppendOptionsPrefix.html#PEPAppendOptionsPrefix">PEPAppendOptionsPrefix</a>(ctx-&gt;pep,<font color="#666666">"nep_interpol_"</font>);
+<a name="line398">398: </a>    PetscObjectIncrementTabLevel((PetscObject)ctx-&gt;pep,(PetscObject)nep,1);
+<a name="line399">399: </a>    PetscLogObjectParent((PetscObject)nep,(PetscObject)ctx-&gt;pep);
+<a name="line400">400: </a>    <a href="../../../../docs/manualpages/PEP/PEPMonitorSet.html#PEPMonitorSet">PEPMonitorSet</a>(ctx-&gt;pep,PEPMonitor_Interpol,nep,NULL);
+<a name="line401">401: </a>  }
+<a name="line402">402: </a>  *pep = ctx-&gt;pep;
+<a name="line403">403: </a>  <font color="#4169E1">return</font>(0);
+<a name="line404">404: </a>}
+
+<a name="line406">406: </a><font color="#B22222">/*@</font>
+<a name="line407">407: </a><font color="#B22222">   <a href="../../../../docs/manualpages/NEP/NEPInterpolGetPEP.html#NEPInterpolGetPEP">NEPInterpolGetPEP</a> - Retrieve the polynomial eigensolver object (<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a>)</font>
+<a name="line408">408: </a><font color="#B22222">   associated with the nonlinear eigenvalue solver.</font>
+
+<a name="line410">410: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line412">412: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line413">413: </a><font color="#B22222">.  nep - nonlinear eigenvalue solver</font>
+
+<a name="line415">415: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line416">416: </a><font color="#B22222">.  pep - the polynomial eigensolver object</font>
+
+<a name="line418">418: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line420">420: </a><font color="#B22222">.seealso: <a href="../../../../docs/manualpages/NEP/NEPInterpolSetPEP.html#NEPInterpolSetPEP">NEPInterpolSetPEP</a>()</font>
+<a name="line421">421: </a><font color="#B22222">@*/</font>
+<a name="line422">422: </a><strong><font color="#4169E1"><a name="NEPInterpolGetPEP"></a>PetscErrorCode <a href="../../../../docs/manualpages/NEP/NEPInterpolGetPEP.html#NEPInterpolGetPEP">NEPInterpolGetPEP</a>(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a> *pep)</font></strong>
+<a name="line423">423: </a>{
+
+<a name="line429">429: </a>  PetscUseMethod(nep,<font color="#666666">"NEPInterpolGetPEP_C"</font>,(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a>,<a href="../../../../docs/manualpages/PEP/PEP.html#PEP">PEP</a>*),(nep,pep));
+<a name="line430">430: </a>  <font color="#4169E1">return</font>(0);
+<a name="line431">431: </a>}
+
+<a name="line433">433: </a><strong><font color="#4169E1"><a name="NEPView_Interpol"></a>PetscErrorCode NEPView_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep,PetscViewer viewer)</font></strong>
+<a name="line434">434: </a>{
+<a name="line436">436: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+<a name="line437">437: </a>  PetscBool      isascii;
+
+<a name="line440">440: </a>  PetscObjectTypeCompare((PetscObject)viewer,PETSCVIEWERASCII,&amp;isascii);
+<a name="line441">441: </a>  <font color="#4169E1">if</font> (isascii) {
+<a name="line442">442: </a>    <font color="#4169E1">if</font> (!ctx-&gt;pep) { <a href="../../../../docs/manualpages/NEP/NEPInterpolGetPEP.html#NEPInterpolGetPEP">NEPInterpolGetPEP</a>(nep,&amp;ctx-&gt;pep); }
+<a name="line443">443: </a>    PetscViewerASCIIPrintf(viewer,<font color="#666666">"  polynomial degree %D, max=%D\n"</font>,ctx-&gt;deg,ctx-&gt;maxdeg);
+<a name="line444">444: </a>    PetscViewerASCIIPrintf(viewer,<font color="#666666">"  tolerance for norm of polynomial coefficients %g\n"</font>,ctx-&gt;tol);
+<a name="line445">445: </a>    PetscViewerASCIIPushTab(viewer);
+<a name="line446">446: </a>    <a href="../../../../docs/manualpages/PEP/PEPView.html#PEPView">PEPView</a>(ctx-&gt;pep,viewer);
+<a name="line447">447: </a>    PetscViewerASCIIPopTab(viewer);
+<a name="line448">448: </a>  }
+<a name="line449">449: </a>  <font color="#4169E1">return</font>(0);
+<a name="line450">450: </a>}
+
+<a name="line452">452: </a><strong><font color="#4169E1"><a name="NEPReset_Interpol"></a>PetscErrorCode NEPReset_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line453">453: </a>{
+<a name="line455">455: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+
+<a name="line458">458: </a>  <a href="../../../../docs/manualpages/PEP/PEPReset.html#PEPReset">PEPReset</a>(ctx-&gt;pep);
+<a name="line459">459: </a>  <font color="#4169E1">return</font>(0);
+<a name="line460">460: </a>}
+
+<a name="line462">462: </a><strong><font color="#4169E1"><a name="NEPDestroy_Interpol"></a>PetscErrorCode NEPDestroy_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line463">463: </a>{
+<a name="line465">465: </a>  NEP_INTERPOL   *ctx = (NEP_INTERPOL*)nep-&gt;data;
+
+<a name="line468">468: </a>  <a href="../../../../docs/manualpages/PEP/PEPDestroy.html#PEPDestroy">PEPDestroy</a>(&amp;ctx-&gt;pep);
+<a name="line469">469: </a>  PetscFree(nep-&gt;data);
+<a name="line470">470: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolSetInterpolation_C"</font>,NULL);
+<a name="line471">471: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolGetInterpolation_C"</font>,NULL);
+<a name="line472">472: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolSetPEP_C"</font>,NULL);
+<a name="line473">473: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolGetPEP_C"</font>,NULL);
+<a name="line474">474: </a>  <font color="#4169E1">return</font>(0);
+<a name="line475">475: </a>}
+
+<a name="line477">477: </a><strong><font color="#4169E1"><a name="NEPCreate_Interpol"></a>PETSC_EXTERN PetscErrorCode NEPCreate_Interpol(<a href="../../../../docs/manualpages/NEP/NEP.html#NEP">NEP</a> nep)</font></strong>
+<a name="line478">478: </a>{
+<a name="line480">480: </a>  NEP_INTERPOL   *ctx;
+
+<a name="line483">483: </a>  PetscNewLog(nep,&amp;ctx);
+<a name="line484">484: </a>  nep-&gt;data   = (void*)ctx;
+<a name="line485">485: </a>  ctx-&gt;maxdeg = 5;
+<a name="line486">486: </a>  ctx-&gt;tol    = PETSC_DEFAULT;
+
+<a name="line488">488: </a>  nep-&gt;ops-&gt;solve          = NEPSolve_Interpol;
+<a name="line489">489: </a>  nep-&gt;ops-&gt;setup          = NEPSetUp_Interpol;
+<a name="line490">490: </a>  nep-&gt;ops-&gt;setfromoptions = NEPSetFromOptions_Interpol;
+<a name="line491">491: </a>  nep-&gt;ops-&gt;reset          = NEPReset_Interpol;
+<a name="line492">492: </a>  nep-&gt;ops-&gt;destroy        = NEPDestroy_Interpol;
+<a name="line493">493: </a>  nep-&gt;ops-&gt;view           = NEPView_Interpol;
+
+<a name="line495">495: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolSetInterpolation_C"</font>,NEPInterpolSetInterpolation_Interpol);
+<a name="line496">496: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolGetInterpolation_C"</font>,NEPInterpolGetInterpolation_Interpol);
+<a name="line497">497: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolSetPEP_C"</font>,NEPInterpolSetPEP_Interpol);
+<a name="line498">498: </a>  PetscObjectComposeFunction((PetscObject)nep,<font color="#666666">"NEPInterpolGetPEP_C"</font>,NEPInterpolGetPEP_Interpol);
+<a name="line499">499: </a>  <font color="#4169E1">return</font>(0);
+<a name="line500">500: </a>}
+
+</pre>
+</body>
+
+</html>

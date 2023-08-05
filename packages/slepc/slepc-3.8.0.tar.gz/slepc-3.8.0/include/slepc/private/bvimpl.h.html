@@ -1,0 +1,327 @@
+<center><a href="bvimpl.h">Actual source code: bvimpl.h</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="http://slepc.upv.es/documentation/current/include/slepc/private/bvimpl.h.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2017-10-20T18:08:26+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.8.0 2017-10-20</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.8.0 v3.8 include/slepc/private/bvimpl.h.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2017, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+
+<a name="line11"> 11: </a><font color="#A020F0">#if !defined(_BVIMPL)</font>
+<a name="line12"> 12: </a><strong><font color="#228B22">#define _BVIMPL</font></strong>
+
+<a name="line14"> 14: </a><font color="#A020F0">#include &lt;slepcbv.h&gt;</font>
+<a name="line15"> 15: </a><font color="#A020F0">#include &lt;slepc/private/slepcimpl.h&gt;</font>
+
+<a name="line17"> 17: </a>PETSC_EXTERN PetscBool BVRegisterAllCalled;
+<a name="line18"> 18: </a><strong><font color="#4169E1">PETSC_EXTERN PetscErrorCode <a href="../../../docs/manualpages/BV/BVRegisterAll.html#BVRegisterAll">BVRegisterAll</a>(void)</font></strong>;
+
+<a name="line20"> 20: </a>PETSC_EXTERN PetscLogEvent BV_Create,BV_Copy,BV_Mult,BV_MultVec,BV_MultInPlace,BV_Dot,BV_DotVec,BV_Orthogonalize,BV_OrthogonalizeVec,BV_Scale,BV_Norm,BV_NormVec,BV_SetRandom,BV_MatMult,BV_MatMultVec,BV_MatProject;
+
+<a name="line22"> 22: </a><font color="#4169E1">typedef struct _BVOps *BVOps;</font>
+
+<a name="line24"> 24: </a><font color="#4169E1"><a name="_BVOps"></a>struct _BVOps </font>{
+<a name="line25"> 25: </a>  PetscErrorCode (*mult)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscScalar,PetscScalar,<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Mat);
+<a name="line26"> 26: </a>  PetscErrorCode (*multvec)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscScalar,PetscScalar,Vec,PetscScalar*);
+<a name="line27"> 27: </a>  PetscErrorCode (*multinplace)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Mat,PetscInt,PetscInt);
+<a name="line28"> 28: </a>  PetscErrorCode (*multinplacetrans)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Mat,PetscInt,PetscInt);
+<a name="line29"> 29: </a>  PetscErrorCode (*dot)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Mat);
+<a name="line30"> 30: </a>  PetscErrorCode (*dotvec)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Vec,PetscScalar*);
+<a name="line31"> 31: </a>  PetscErrorCode (*dotvec_local)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Vec,PetscScalar*);
+<a name="line32"> 32: </a>  PetscErrorCode (*dotvec_begin)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Vec,PetscScalar*);
+<a name="line33"> 33: </a>  PetscErrorCode (*dotvec_end)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Vec,PetscScalar*);
+<a name="line34"> 34: </a>  PetscErrorCode (*scale)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar);
+<a name="line35"> 35: </a>  PetscErrorCode (*norm)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,NormType,PetscReal*);
+<a name="line36"> 36: </a>  PetscErrorCode (*norm_local)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,NormType,PetscReal*);
+<a name="line37"> 37: </a>  PetscErrorCode (*norm_begin)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,NormType,PetscReal*);
+<a name="line38"> 38: </a>  PetscErrorCode (*norm_end)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,NormType,PetscReal*);
+<a name="line39"> 39: </a>  PetscErrorCode (*matmult)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,Mat,<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>);
+<a name="line40"> 40: </a>  PetscErrorCode (*copy)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>);
+<a name="line41"> 41: </a>  PetscErrorCode (*resize)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscBool);
+<a name="line42"> 42: </a>  PetscErrorCode (*getcolumn)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,Vec*);
+<a name="line43"> 43: </a>  PetscErrorCode (*restorecolumn)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,Vec*);
+<a name="line44"> 44: </a>  PetscErrorCode (*getarray)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscScalar**);
+<a name="line45"> 45: </a>  PetscErrorCode (*restorearray)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscScalar**);
+<a name="line46"> 46: </a>  PetscErrorCode (*getarrayread)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,const PetscScalar**);
+<a name="line47"> 47: </a>  PetscErrorCode (*restorearrayread)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,const PetscScalar**);
+<a name="line48"> 48: </a>  PetscErrorCode (*duplicate)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>*);
+<a name="line49"> 49: </a>  PetscErrorCode (*create)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>);
+<a name="line50"> 50: </a>  PetscErrorCode (*setfromoptions)(PetscOptionItems*,<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>);
+<a name="line51"> 51: </a>  PetscErrorCode (*view)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscViewer);
+<a name="line52"> 52: </a>  PetscErrorCode (*destroy)(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>);
+<a name="line53"> 53: </a>};
+
+<a name="line55"> 55: </a><font color="#4169E1"><a name="_p_BV"></a>struct _p_BV </font>{
+<a name="line56"> 56: </a>  PETSCHEADER(<font color="#4169E1">struct _BVOps</font>);
+<a name="line57"> 57: </a>  <font color="#B22222">/*------------------------- User parameters --------------------------*/</font>
+<a name="line58"> 58: </a>  Vec                t;            <font color="#B22222">/* template vector */</font>
+<a name="line59"> 59: </a>  PetscInt           n,N;          <font color="#B22222">/* dimensions of vectors (local, global) */</font>
+<a name="line60"> 60: </a>  PetscInt           m;            <font color="#B22222">/* number of vectors */</font>
+<a name="line61"> 61: </a>  PetscInt           l;            <font color="#B22222">/* number of leading columns */</font>
+<a name="line62"> 62: </a>  PetscInt           k;            <font color="#B22222">/* number of active columns */</font>
+<a name="line63"> 63: </a>  PetscInt           nc;           <font color="#B22222">/* number of constraints */</font>
+<a name="line64"> 64: </a>  <a href="../../../docs/manualpages/BV/BVOrthogType.html#BVOrthogType">BVOrthogType</a>       orthog_type;  <font color="#B22222">/* the method of vector orthogonalization */</font>
+<a name="line65"> 65: </a>  <a href="../../../docs/manualpages/BV/BVOrthogRefineType.html#BVOrthogRefineType">BVOrthogRefineType</a> orthog_ref;   <font color="#B22222">/* refinement method */</font>
+<a name="line66"> 66: </a>  PetscReal          orthog_eta;   <font color="#B22222">/* refinement threshold */</font>
+<a name="line67"> 67: </a>  <a href="../../../docs/manualpages/BV/BVOrthogBlockType.html#BVOrthogBlockType">BVOrthogBlockType</a>  orthog_block; <font color="#B22222">/* the method of block orthogonalization */</font>
+<a name="line68"> 68: </a>  Mat                matrix;       <font color="#B22222">/* inner product matrix */</font>
+<a name="line69"> 69: </a>  PetscBool          indef;        <font color="#B22222">/* matrix is indefinite */</font>
+<a name="line70"> 70: </a>  <a href="../../../docs/manualpages/BV/BVMatMultType.html#BVMatMultType">BVMatMultType</a>      vmm;          <font color="#B22222">/* version of matmult operation */</font>
+
+<a name="line72"> 72: </a>  <font color="#B22222">/*---------------------- Cached data and workspace -------------------*/</font>
+<a name="line73"> 73: </a>  Vec                Bx;           <font color="#B22222">/* result of matrix times a vector x */</font>
+<a name="line74"> 74: </a>  Vec                buffer;       <font color="#B22222">/* buffer vector used in orthogonalization */</font>
+<a name="line75"> 75: </a>  PetscObjectId      xid;          <font color="#B22222">/* object id of vector x */</font>
+<a name="line76"> 76: </a>  PetscObjectState   xstate;       <font color="#B22222">/* state of vector x */</font>
+<a name="line77"> 77: </a>  Vec                cv[2];        <font color="#B22222">/* column vectors obtained with <a href="../../../docs/manualpages/BV/BVGetColumn.html#BVGetColumn">BVGetColumn</a>() */</font>
+<a name="line78"> 78: </a>  PetscInt           ci[2];        <font color="#B22222">/* column indices of obtained vectors */</font>
+<a name="line79"> 79: </a>  PetscObjectState   st[2];        <font color="#B22222">/* state of obtained vectors */</font>
+<a name="line80"> 80: </a>  PetscObjectId      id[2];        <font color="#B22222">/* object id of obtained vectors */</font>
+<a name="line81"> 81: </a>  PetscScalar        *h,*c;        <font color="#B22222">/* orthogonalization coefficients */</font>
+<a name="line82"> 82: </a>  Vec                omega;        <font color="#B22222">/* signature matrix values for indefinite case */</font>
+<a name="line83"> 83: </a>  Mat                B,C;          <font color="#B22222">/* auxiliary dense matrices for matmult operation */</font>
+<a name="line84"> 84: </a>  PetscObjectId      Aid;          <font color="#B22222">/* object id of matrix A of matmult operation */</font>
+<a name="line85"> 85: </a>  PetscBool          defersfo;     <font color="#B22222">/* deferred call to setfromoptions */</font>
+<a name="line86"> 86: </a>  <a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>                 cached;       <font color="#B22222">/* cached <a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> to store result of matrix times <a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> */</font>
+<a name="line87"> 87: </a>  PetscObjectState   bvstate;      <font color="#B22222">/* state of <a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> when <a href="../../../docs/manualpages/BV/BVApplyMatrixBV.html#BVApplyMatrixBV">BVApplyMatrixBV</a>() was called */</font>
+<a name="line88"> 88: </a>  PetscRandom        rand;         <font color="#B22222">/* random number generator */</font>
+<a name="line89"> 89: </a>  PetscBool          rrandom;      <font color="#B22222">/* reproducible random vectors */</font>
+<a name="line90"> 90: </a>  Mat                Acreate;      <font color="#B22222">/* matrix given at <a href="../../../docs/manualpages/BV/BVCreateFromMat.html#BVCreateFromMat">BVCreateFromMat</a>() */</font>
+<a name="line91"> 91: </a>  PetscBool          cuda;         <font color="#B22222">/* true if GPU must be used in SVEC */</font>
+<a name="line92"> 92: </a>  PetscScalar        *work;
+<a name="line93"> 93: </a>  PetscInt           lwork;
+<a name="line94"> 94: </a>  void               *data;
+<a name="line95"> 95: </a>};
+
+<a name="line97"> 97: </a><font color="#B22222">/*</font>
+<a name="line98"> 98: </a><font color="#B22222">  BV_SafeSqrt - Computes the square root of a scalar value alpha, which is</font>
+<a name="line99"> 99: </a><font color="#B22222">  assumed to be z'*B*z. The result is</font>
+<a name="line100">100: </a><font color="#B22222">    if definite inner product:     res = sqrt(alpha)</font>
+<a name="line101">101: </a><font color="#B22222">    if indefinite inner product:   res = sgn(alpha)*sqrt(abs(alpha))</font>
+<a name="line102">102: </a><font color="#B22222">*/</font>
+<a name="line103">103: </a><strong><font color="#4169E1"><a name="BV_SafeSqrt"></a>PETSC_STATIC_INLINE PetscErrorCode BV_SafeSqrt(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> bv,PetscScalar alpha,PetscReal *res)</font></strong>
+<a name="line104">104: </a>{
+<a name="line106">106: </a>  PetscReal      absal,realp;
+
+<a name="line109">109: </a>  absal = PetscAbsScalar(alpha);
+<a name="line110">110: </a>  realp = PetscRealPart(alpha);
+<a name="line111">111: </a>  <font color="#4169E1">if</font> (absal&lt;PETSC_MACHINE_EPSILON) {
+<a name="line112">112: </a>    PetscInfo(bv,<font color="#666666">"Zero norm, either the vector is zero or a semi-inner product is being used\n"</font>);
+<a name="line113">113: </a>  }
+<a name="line114">114: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line115">115: </a>  <font color="#4169E1">if</font> (PetscAbsReal(PetscImaginaryPart(alpha))&gt;PETSC_MACHINE_EPSILON &amp;&amp; PetscAbsReal(PetscImaginaryPart(alpha))/absal&gt;100*PETSC_MACHINE_EPSILON) SETERRQ1(PetscObjectComm((PetscObject)bv),1,<font color="#666666">"The inner product is not well defined: nonzero imaginary part %g"</font>,PetscImaginaryPart(alpha));
+<a name="line116">116: </a><font color="#A020F0">#endif</font>
+<a name="line117">117: </a>  <font color="#4169E1">if</font> (bv-&gt;indef) {
+<a name="line118">118: </a>    *res = (realp&lt;0.0)? -PetscSqrtReal(-realp): PetscSqrtReal(realp);
+<a name="line119">119: </a>  } <font color="#4169E1">else</font> {
+<a name="line120">120: </a>    <font color="#4169E1">if</font> (realp&lt;0.0) SETERRQ(PetscObjectComm((PetscObject)bv),1,<font color="#666666">"The inner product is not well defined: indefinite matrix"</font>);
+<a name="line121">121: </a>    *res = PetscSqrtReal(realp);
+<a name="line122">122: </a>  }
+<a name="line123">123: </a>  <font color="#4169E1">return</font>(0);
+<a name="line124">124: </a>}
+
+<a name="line126">126: </a><font color="#B22222">/*</font>
+<a name="line127">127: </a><font color="#B22222">  BV_IPMatMult - Multiply a vector x by the inner-product matrix, cache the</font>
+<a name="line128">128: </a><font color="#B22222">  result in Bx.</font>
+<a name="line129">129: </a><font color="#B22222">*/</font>
+<a name="line130">130: </a><strong><font color="#4169E1"><a name="BV_IPMatMult"></a>PETSC_STATIC_INLINE PetscErrorCode BV_IPMatMult(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> bv,Vec x)</font></strong>
+<a name="line131">131: </a>{
+
+<a name="line135">135: </a>  <font color="#4169E1">if</font> (((PetscObject)x)-&gt;id != bv-&gt;xid || ((PetscObject)x)-&gt;state != bv-&gt;xstate) {
+<a name="line136">136: </a>    MatMult(bv-&gt;matrix,x,bv-&gt;Bx);
+<a name="line137">137: </a>    bv-&gt;xid = ((PetscObject)x)-&gt;id;
+<a name="line138">138: </a>    bv-&gt;xstate = ((PetscObject)x)-&gt;state;
+<a name="line139">139: </a>  }
+<a name="line140">140: </a>  <font color="#4169E1">return</font>(0);
+<a name="line141">141: </a>}
+
+<a name="line143">143: </a><font color="#B22222">/*</font>
+<a name="line144">144: </a><font color="#B22222">  BV_IPMatMultBV - Multiply <a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> by the inner-product matrix, cache the</font>
+<a name="line145">145: </a><font color="#B22222">  result internally in bv-&gt;cached.</font>
+<a name="line146">146: </a><font color="#B22222">*/</font>
+<a name="line147">147: </a><strong><font color="#4169E1"><a name="BV_IPMatMultBV"></a>PETSC_STATIC_INLINE PetscErrorCode BV_IPMatMultBV(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> bv)</font></strong>
+<a name="line148">148: </a>{
+
+<a name="line152">152: </a>  <a href="../../../docs/manualpages/BV/BVGetCachedBV.html#BVGetCachedBV">BVGetCachedBV</a>(bv,&amp;bv-&gt;cached);
+<a name="line153">153: </a>  <a href="../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(bv-&gt;cached,bv-&gt;l,bv-&gt;k);
+<a name="line154">154: </a>  <font color="#4169E1">if</font> (((PetscObject)bv)-&gt;state != bv-&gt;bvstate) {
+<a name="line155">155: </a>    <font color="#4169E1">if</font> (bv-&gt;matrix) {
+<a name="line156">156: </a>      <a href="../../../docs/manualpages/BV/BVMatMult.html#BVMatMult">BVMatMult</a>(bv,bv-&gt;matrix,bv-&gt;cached);
+<a name="line157">157: </a>    } <font color="#4169E1">else</font> {
+<a name="line158">158: </a>      <a href="../../../docs/manualpages/BV/BVCopy.html#BVCopy">BVCopy</a>(bv,bv-&gt;cached);
+<a name="line159">159: </a>    }
+<a name="line160">160: </a>    bv-&gt;bvstate = ((PetscObject)bv)-&gt;state;
+<a name="line161">161: </a>  }
+<a name="line162">162: </a>  <font color="#4169E1">return</font>(0);
+<a name="line163">163: </a>}
+
+<a name="line165">165: </a><font color="#B22222">/*</font>
+<a name="line166">166: </a><font color="#B22222">  BV_AllocateCoeffs - Allocate orthogonalization coefficients if not done already.</font>
+<a name="line167">167: </a><font color="#B22222">*/</font>
+<a name="line168">168: </a><strong><font color="#4169E1"><a name="BV_AllocateCoeffs"></a>PETSC_STATIC_INLINE PetscErrorCode BV_AllocateCoeffs(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> bv)</font></strong>
+<a name="line169">169: </a>{
+
+<a name="line173">173: </a>  <font color="#4169E1">if</font> (!bv-&gt;h) {
+<a name="line174">174: </a>    PetscMalloc2(bv-&gt;nc+bv-&gt;m,&amp;bv-&gt;h,bv-&gt;nc+bv-&gt;m,&amp;bv-&gt;c);
+<a name="line175">175: </a>    PetscLogObjectMemory((PetscObject)bv,2*bv-&gt;m*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line176">176: </a>  }
+<a name="line177">177: </a>  <font color="#4169E1">return</font>(0);
+<a name="line178">178: </a>}
+
+<a name="line180">180: </a><font color="#B22222">/*</font>
+<a name="line181">181: </a><font color="#B22222">  BV_AllocateSignature - Allocate signature coefficients if not done already.</font>
+<a name="line182">182: </a><font color="#B22222">*/</font>
+<a name="line183">183: </a><strong><font color="#4169E1"><a name="BV_AllocateSignature"></a>PETSC_STATIC_INLINE PetscErrorCode BV_AllocateSignature(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> bv)</font></strong>
+<a name="line184">184: </a>{
+
+<a name="line188">188: </a>  <font color="#4169E1">if</font> (bv-&gt;indef &amp;&amp; !bv-&gt;omega) {
+<a name="line189">189: </a>    <font color="#4169E1">if</font> (bv-&gt;cuda) {
+<a name="line190">190: </a><font color="#A020F0">#if defined(PETSC_HAVE_VECCUDA)</font>
+<a name="line191">191: </a>      VecCreateSeqCUDA(PETSC_COMM_SELF,bv-&gt;nc+bv-&gt;m,&amp;bv-&gt;omega);
+<a name="line192">192: </a><font color="#A020F0">#else</font>
+<a name="line193">193: </a>      SETERRQ(PetscObjectComm((PetscObject)bv),1,<font color="#666666">"Something wrong happened"</font>);
+<a name="line194">194: </a><font color="#A020F0">#endif</font>
+<a name="line195">195: </a>    } <font color="#4169E1">else</font> {
+<a name="line196">196: </a>      VecCreateSeq(PETSC_COMM_SELF,bv-&gt;nc+bv-&gt;m,&amp;bv-&gt;omega);
+<a name="line197">197: </a>    }
+<a name="line198">198: </a>    PetscLogObjectParent((PetscObject)bv,(PetscObject)bv-&gt;omega);
+<a name="line199">199: </a>    VecSet(bv-&gt;omega,1.0);
+<a name="line200">200: </a>  }
+<a name="line201">201: </a>  <font color="#4169E1">return</font>(0);
+<a name="line202">202: </a>}
+
+<a name="line204">204: </a><font color="#B22222">/*</font>
+<a name="line205">205: </a><font color="#B22222">  BV_AllocateMatMult - Allocate auxiliary matrices required for <a href="../../../docs/manualpages/BV/BVMatMult.html#BVMatMult">BVMatMult</a> if not available.</font>
+<a name="line206">206: </a><font color="#B22222">*/</font>
+<a name="line207">207: </a><strong><font color="#4169E1"><a name="BV_AllocateMatMult"></a>PETSC_STATIC_INLINE PetscErrorCode BV_AllocateMatMult(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> bv,Mat A,PetscInt m)</font></strong>
+<a name="line208">208: </a>{
+<a name="line210">210: </a>  PetscObjectId  Aid;
+<a name="line211">211: </a>  PetscBool      create=PETSC_FALSE;
+<a name="line212">212: </a>  PetscInt       cols;
+
+<a name="line215">215: </a>  <font color="#4169E1">if</font> (!bv-&gt;B) create=PETSC_TRUE;
+<a name="line216">216: </a>  <font color="#4169E1">else</font> {
+<a name="line217">217: </a>    MatGetSize(bv-&gt;B,NULL,&amp;cols);
+<a name="line218">218: </a>    PetscObjectGetId((PetscObject)A,&amp;Aid);
+<a name="line219">219: </a>    <font color="#4169E1">if</font> (cols!=m || bv-&gt;Aid!=Aid) {
+<a name="line220">220: </a>      MatDestroy(&amp;bv-&gt;B);
+<a name="line221">221: </a>      MatDestroy(&amp;bv-&gt;C);
+<a name="line222">222: </a>      create=PETSC_TRUE;
+<a name="line223">223: </a>    }
+<a name="line224">224: </a>  }
+<a name="line225">225: </a>  <font color="#4169E1">if</font> (create) {
+<a name="line226">226: </a>    MatCreateDense(PetscObjectComm((PetscObject)bv),bv-&gt;n,PETSC_DECIDE,bv-&gt;N,m,NULL,&amp;bv-&gt;B);
+<a name="line227">227: </a>    PetscLogObjectParent((PetscObject)bv,(PetscObject)bv-&gt;B);
+<a name="line228">228: </a>    MatAssemblyBegin(bv-&gt;B,MAT_FINAL_ASSEMBLY);
+<a name="line229">229: </a>    MatAssemblyEnd(bv-&gt;B,MAT_FINAL_ASSEMBLY);
+<a name="line230">230: </a>  }
+<a name="line231">231: </a>  <font color="#4169E1">return</font>(0);
+<a name="line232">232: </a>}
+
+<a name="line234">234: </a><font color="#B22222">/*</font>
+<a name="line235">235: </a><font color="#B22222">  BVAvailableVec: First (0) or second (1) vector available for</font>
+<a name="line236">236: </a><font color="#B22222">  getcolumn operation (or -1 if both vectors already fetched).</font>
+<a name="line237">237: </a><font color="#B22222">*/</font>
+<a name="line238">238: </a><strong><font color="#228B22">#define BVAvailableVec (((bv-&gt;ci[0]==-bv-&gt;nc-1)? 0: (bv-&gt;ci[1]==-bv-&gt;nc-1)? 1: -1))</font></strong>
+
+<a name="line240">240: </a><font color="#B22222">/*</font>
+<a name="line241">241: </a><font color="#B22222">    Macros to test valid <a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> arguments</font>
+<a name="line242">242: </a><font color="#B22222">*/</font>
+<a name="line243">243: </a><font color="#A020F0">#if !defined(PETSC_USE_DEBUG)</font>
+
+<a name="line245">245: </a><strong><font color="#228B22">#define BVCheckSizes(h,arg) do {} while (0)</font></strong>
+
+<a name="line247">247: </a><font color="#A020F0">#else</font>
+
+<a name="line249">249: </a><strong><font color="#228B22">#define BVCheckSizes(h,arg) \</font></strong>
+<a name="line250">250: </a><strong><font color="#228B22">  do { \</font></strong>
+<a name="line251">251: </a><strong><font color="#228B22">    if (!h-&gt;m) SETERRQ1(PetscObjectComm((PetscObject)h),PETSC_ERR_ARG_WRONGSTATE,</font><font color="#666666">"<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a> sizes have not been defined: Parameter #%d"</font><font color="#228B22">,arg); \</font></strong>
+<a name="line252">252: </a><strong><font color="#228B22">  } while (0)</font></strong>
+
+<a name="line254">254: </a><font color="#A020F0">#endif</font>
+
+<a name="line256">256: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVView_Vecs(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscViewer)</font></strong>;
+
+<a name="line258">258: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVAllocateWork_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt)</font></strong>;
+
+<a name="line260">260: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVMult_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscInt,PetscInt,PetscScalar,const PetscScalar*,const PetscScalar*,PetscScalar,PetscScalar*)</font></strong>;
+<a name="line261">261: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVMultVec_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscScalar,const PetscScalar*,const PetscScalar*,PetscScalar,PetscScalar*)</font></strong>;
+<a name="line262">262: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVMultInPlace_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscInt,PetscInt,PetscInt,PetscScalar*,const PetscScalar*,PetscBool)</font></strong>;
+<a name="line263">263: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVMultInPlace_Vecs_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscInt,Vec*,const PetscScalar*,PetscBool)</font></strong>;
+<a name="line264">264: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVAXPY_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscScalar,const PetscScalar*,PetscScalar,PetscScalar*)</font></strong>;
+<a name="line265">265: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVDot_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscInt,PetscInt,const PetscScalar*,const PetscScalar*,PetscScalar*,PetscBool)</font></strong>;
+<a name="line266">266: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVDotVec_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,const PetscScalar*,const PetscScalar*,PetscScalar*,PetscBool)</font></strong>;
+<a name="line267">267: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVScale_BLAS_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*,PetscScalar)</font></strong>;
+<a name="line268">268: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVNorm_LAPACK_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,const PetscScalar*,NormType,PetscReal*,PetscBool)</font></strong>;
+<a name="line269">269: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BVOrthogonalize_LAPACK_Private(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscScalar*,PetscScalar*)</font></strong>;
+
+<a name="line271">271: </a><font color="#A020F0">#if defined(PETSC_HAVE_VECCUDA)</font>
+<a name="line272">272: </a><font color="#A020F0">#include &lt;petsccuda.h&gt;</font>
+<a name="line273">273: </a><font color="#A020F0">#include &lt;cublas_v2.h&gt;</font>
+
+<a name="line275">275: </a><strong><font color="#228B22">#define WaitForGPU() PetscCUDASynchronize ? cudaThreadSynchronize() : 0</font></strong>
+
+<a name="line277">277: </a><font color="#B22222">/* complex single */</font>
+<a name="line278">278: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line279">279: </a><font color="#A020F0">#if defined(PETSC_USE_REAL_SINGLE)</font>
+<a name="line280">280: </a><strong><font color="#228B22">#define cublasXgemm(a,b,c,d,e,f,g,h,i,j,k,l,m,n) cublasCgemm((a),(b),(c),(d),(e),(f),(cuComplex*)(g),(cuComplex*)(h),(i),(cuComplex*)(j),(k),(cuComplex*)(l),(cuComplex*)(m),(n))</font></strong>
+<a name="line281">281: </a><strong><font color="#228B22">#define cublasXgemv(a,b,c,d,e,f,g,h,i,j,k,l) cublasCgemv((a),(b),(c),(d),(cuComplex*)(e),(cuComplex*)(f),(g),(cuComplex*)(h),(i),(cuComplex*)(j),(cuComplex*)(k),(l))</font></strong>
+<a name="line282">282: </a><strong><font color="#228B22">#define cublasXscal(a,b,c,d,e) cublasCscal(a,b,(const cuComplex*)(c),(cuComplex*)(d),e)</font></strong>
+<a name="line283">283: </a><strong><font color="#228B22">#define cublasXnrm2(a,b,c,d,e) cublasScnrm2(a,b,(const cuComplex*)(c),d,e)</font></strong>
+<a name="line284">284: </a><strong><font color="#228B22">#define cublasXaxpy(a,b,c,d,e,f,g) cublasCaxpy((a),(b),(cuComplex*)(c),(cuComplex*)(d),(e),(cuComplex*)(f),(g))</font></strong>
+<a name="line285">285: </a><strong><font color="#228B22">#define cublasXdotc(a,b,c,d,e,f,g) cublasCdotc((a),(b),(const cuComplex *)(c),(d),(const cuComplex *)(e),(f),(cuComplex *)(g))</font></strong>
+<a name="line286">286: </a><font color="#A020F0">#else </font><font color="#B22222">/* complex double */</font><font color="#A020F0"></font>
+<a name="line287">287: </a><strong><font color="#228B22">#define cublasXgemm(a,b,c,d,e,f,g,h,i,j,k,l,m,n) cublasZgemm((a),(b),(c),(d),(e),(f),(cuDoubleComplex*)(g),(cuDoubleComplex*)(h),(i),(cuDoubleComplex*)(j),(k),(cuDoubleComplex*)(l),(cuDoubleComplex*)(m),(n))</font></strong>
+<a name="line288">288: </a><strong><font color="#228B22">#define cublasXgemv(a,b,c,d,e,f,g,h,i,j,k,l) cublasZgemv((a),(b),(c),(d),(cuDoubleComplex*)(e),(cuDoubleComplex*)(f),(g),(cuDoubleComplex*)(h),(i),(cuDoubleComplex*)(j),(cuDoubleComplex*)(k),(l))</font></strong>
+<a name="line289">289: </a><strong><font color="#228B22">#define cublasXscal(a,b,c,d,e) cublasZscal(a,b,(const cuDoubleComplex*)(c),(cuDoubleComplex*)(d),e)</font></strong>
+<a name="line290">290: </a><strong><font color="#228B22">#define cublasXnrm2(a,b,c,d,e) cublasDznrm2(a,b,(const cuDoubleComplex*)(c),d,e)</font></strong>
+<a name="line291">291: </a><strong><font color="#228B22">#define cublasXaxpy(a,b,c,d,e,f,g) cublasZaxpy((a),(b),(cuDoubleComplex*)(c),(cuDoubleComplex*)(d),(e),(cuDoubleComplex*)(f),(g))</font></strong>
+<a name="line292">292: </a><strong><font color="#228B22">#define cublasXdotc(a,b,c,d,e,f,g) cublasZdotc((a),(b),(const cuDoubleComplex *)(c),(d),(const cuDoubleComplex *)(e),(f),(cuDoubleComplex *)(g))</font></strong>
+<a name="line293">293: </a><font color="#A020F0">#endif</font>
+<a name="line294">294: </a><font color="#A020F0">#else </font><font color="#B22222">/* real single */</font><font color="#A020F0"></font>
+<a name="line295">295: </a><font color="#A020F0">#if defined(PETSC_USE_REAL_SINGLE)</font>
+<a name="line296">296: </a><strong><font color="#228B22">#define cublasXgemm cublasSgemm</font></strong>
+<a name="line297">297: </a><strong><font color="#228B22">#define cublasXgemv cublasSgemv</font></strong>
+<a name="line298">298: </a><strong><font color="#228B22">#define cublasXscal cublasSscal</font></strong>
+<a name="line299">299: </a><strong><font color="#228B22">#define cublasXnrm2 cublasSnrm2</font></strong>
+<a name="line300">300: </a><strong><font color="#228B22">#define cublasXaxpy cublasSaxpy</font></strong>
+<a name="line301">301: </a><strong><font color="#228B22">#define cublasXdotc cublasSdot</font></strong>
+<a name="line302">302: </a><font color="#A020F0">#else </font><font color="#B22222">/* real double */</font><font color="#A020F0"></font>
+<a name="line303">303: </a><strong><font color="#228B22">#define cublasXgemm cublasDgemm</font></strong>
+<a name="line304">304: </a><strong><font color="#228B22">#define cublasXgemv cublasDgemv</font></strong>
+<a name="line305">305: </a><strong><font color="#228B22">#define cublasXscal cublasDscal</font></strong>
+<a name="line306">306: </a><strong><font color="#228B22">#define cublasXnrm2 cublasDnrm2</font></strong>
+<a name="line307">307: </a><strong><font color="#228B22">#define cublasXaxpy cublasDaxpy</font></strong>
+<a name="line308">308: </a><strong><font color="#228B22">#define cublasXdotc cublasDdot</font></strong>
+<a name="line309">309: </a><font color="#A020F0">#endif</font>
+<a name="line310">310: </a><font color="#A020F0">#endif</font>
+
+<a name="line312">312: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_CleanCoefficients_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*)</font></strong>;
+<a name="line313">313: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_AddCoefficients_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*,PetscScalar*)</font></strong>;
+<a name="line314">314: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_SetValue_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscInt,PetscScalar*,PetscScalar)</font></strong>;
+<a name="line315">315: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_SquareSum_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*,PetscReal*)</font></strong>;
+<a name="line316">316: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_ApplySignature_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*,PetscBool)</font></strong>;
+<a name="line317">317: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_SquareRoot_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*,PetscReal*)</font></strong>;
+<a name="line318">318: </a><strong><font color="#4169E1">PETSC_INTERN PetscErrorCode BV_StoreCoefficients_CUDA(<a href="../../../docs/manualpages/BV/BV.html#BV">BV</a>,PetscInt,PetscScalar*,PetscScalar*)</font></strong>;
+
+<a name="line320">320: </a><font color="#A020F0">#endif </font><font color="#B22222">/* PETSC_HAVE_VECCUDA */</font><font color="#A020F0"></font>
+
+<a name="line322">322: </a><font color="#A020F0">#endif</font>
+</pre>
+</body>
+
+</html>

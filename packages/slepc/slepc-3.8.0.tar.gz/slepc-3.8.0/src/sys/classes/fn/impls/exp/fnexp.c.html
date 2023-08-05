@@ -1,0 +1,566 @@
+<center><a href="fnexp.c">Actual source code: fnexp.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="http://slepc.upv.es/documentation/current/src/sys/classes/fn/impls/exp/fnexp.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2017-10-20T18:05:34+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.8.0 2017-10-20</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.8.0 v3.8 src/sys/classes/fn/impls/exp/fnexp.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2017, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   Exponential function  exp(x)</font>
+<a name="line12"> 12: </a><font color="#B22222">*/</font>
+
+<a name="line14"> 14: </a><font color="#A020F0">#include &lt;slepc/private/fnimpl.h&gt;      </font><font color="#B22222">/*I "slepcfn.h" I*/</font><font color="#A020F0"></font>
+<a name="line15"> 15: </a><font color="#A020F0">#include &lt;slepcblaslapack.h&gt;</font>
+
+<a name="line17"> 17: </a><strong><font color="#4169E1"><a name="FNEvaluateFunction_Exp"></a>PetscErrorCode FNEvaluateFunction_Exp(<a href="../../../../../../docs/manualpages/FN/FN.html#FN">FN</a> fn,PetscScalar x,PetscScalar *y)</font></strong>
+<a name="line18"> 18: </a>{
+<a name="line20"> 20: </a>  *y = PetscExpScalar(x);
+<a name="line21"> 21: </a>  <font color="#4169E1">return</font>(0);
+<a name="line22"> 22: </a>}
+
+<a name="line24"> 24: </a><strong><font color="#4169E1"><a name="FNEvaluateDerivative_Exp"></a>PetscErrorCode FNEvaluateDerivative_Exp(<a href="../../../../../../docs/manualpages/FN/FN.html#FN">FN</a> fn,PetscScalar x,PetscScalar *y)</font></strong>
+<a name="line25"> 25: </a>{
+<a name="line27"> 27: </a>  *y = PetscExpScalar(x);
+<a name="line28"> 28: </a>  <font color="#4169E1">return</font>(0);
+<a name="line29"> 29: </a>}
+
+<a name="line31"> 31: </a><strong><font color="#228B22">#define MAX_PADE 6</font></strong>
+<a name="line32"> 32: </a><strong><font color="#228B22">#define SWAP(a,b,t) {t=a;a=b;b=t;}</font></strong>
+
+<a name="line34"> 34: </a><strong><font color="#4169E1"><a name="FNEvaluateFunctionMat_Exp_Pade"></a>PetscErrorCode FNEvaluateFunctionMat_Exp_Pade(<a href="../../../../../../docs/manualpages/FN/FN.html#FN">FN</a> fn,Mat A,Mat B)</font></strong>
+<a name="line35"> 35: </a>{
+<a name="line36"> 36: </a><font color="#A020F0">#if defined(PETSC_MISSING_LAPACK_GESV) || defined(SLEPC_MISSING_LAPACK_LANGE)</font>
+<a name="line38"> 38: </a>  SETERRQ(PETSC_COMM_SELF,PETSC_ERR_SUP,<font color="#666666">"GESV/LANGE - Lapack routines are unavailable"</font>);
+<a name="line39"> 39: </a><font color="#A020F0">#else</font>
+<a name="line41"> 41: </a>  PetscBLASInt   n,ld,ld2,*ipiv,info,inc=1;
+<a name="line42"> 42: </a>  PetscInt       m,j,k,sexp;
+<a name="line43"> 43: </a>  PetscBool      odd;
+<a name="line44"> 44: </a>  const PetscInt p=MAX_PADE;
+<a name="line45"> 45: </a>  PetscReal      c[MAX_PADE+1],s,*rwork;
+<a name="line46"> 46: </a>  PetscScalar    scale,mone=-1.0,one=1.0,two=2.0,zero=0.0;
+<a name="line47"> 47: </a>  PetscScalar    *Aa,*Ba,*As,*A2,*Q,*P,*W,*aux;
+
+<a name="line50"> 50: </a>  MatDenseGetArray(A,&amp;Aa);
+<a name="line51"> 51: </a>  MatDenseGetArray(B,&amp;Ba);
+<a name="line52"> 52: </a>  MatGetSize(A,&amp;m,NULL);
+<a name="line53"> 53: </a>  PetscBLASIntCast(m,&amp;n);
+<a name="line54"> 54: </a>  ld  = n;
+<a name="line55"> 55: </a>  ld2 = ld*ld;
+<a name="line56"> 56: </a>  P   = Ba;
+<a name="line57"> 57: </a>  PetscMalloc6(m*m,&amp;Q,m*m,&amp;W,m*m,&amp;As,m*m,&amp;A2,ld,&amp;rwork,ld,&amp;ipiv);
+<a name="line58"> 58: </a>  PetscMemcpy(As,Aa,ld2*<font color="#4169E1">sizeof</font>(PetscScalar));
+
+<a name="line60"> 60: </a>  <font color="#B22222">/* Pade' coefficients */</font>
+<a name="line61"> 61: </a>  c[0] = 1.0;
+<a name="line62"> 62: </a>  <font color="#4169E1">for</font> (k=1;k&lt;=p;k++) c[k] = c[k-1]*(p+1-k)/(k*(2*p+1-k));
+
+<a name="line64"> 64: </a>  <font color="#B22222">/* Scaling */</font>
+<a name="line65"> 65: </a>  s = LAPACKlange_(<font color="#666666">"I"</font>,&amp;n,&amp;n,As,&amp;ld,rwork);
+<a name="line66"> 66: </a>  PetscLogFlops(1.0*n*n);
+<a name="line67"> 67: </a>  <font color="#4169E1">if</font> (s&gt;0.5) {
+<a name="line68"> 68: </a>    sexp = PetscMax(0,(int)(PetscLogReal(s)/PetscLogReal(2.0))+2);
+<a name="line69"> 69: </a>    scale = PetscPowRealInt(2.0,-sexp);
+<a name="line70"> 70: </a>    PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;ld2,&amp;scale,As,&amp;inc));
+<a name="line71"> 71: </a>    PetscLogFlops(1.0*n*n);
+<a name="line72"> 72: </a>  } <font color="#4169E1">else</font> sexp = 0;
+
+<a name="line74"> 74: </a>  <font color="#B22222">/* Horner evaluation */</font>
+<a name="line75"> 75: </a>  PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;one,As,&amp;ld,As,&amp;ld,&amp;zero,A2,&amp;ld));
+<a name="line76"> 76: </a>  PetscLogFlops(2.0*n*n*n);
+<a name="line77"> 77: </a>  PetscMemzero(Q,ld2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line78"> 78: </a>  PetscMemzero(P,ld2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line79"> 79: </a>  <font color="#4169E1">for</font> (j=0;j&lt;n;j++) {
+<a name="line80"> 80: </a>    Q[j+j*ld] = c[p];
+<a name="line81"> 81: </a>    P[j+j*ld] = c[p-1];
+<a name="line82"> 82: </a>  }
+
+<a name="line84"> 84: </a>  odd = PETSC_TRUE;
+<a name="line85"> 85: </a>  <font color="#4169E1">for</font> (k=p-1;k&gt;0;k--) {
+<a name="line86"> 86: </a>    <font color="#4169E1">if</font> (odd) {
+<a name="line87"> 87: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;one,Q,&amp;ld,A2,&amp;ld,&amp;zero,W,&amp;ld));
+<a name="line88"> 88: </a>      SWAP(Q,W,aux);
+<a name="line89"> 89: </a>      <font color="#4169E1">for</font> (j=0;j&lt;n;j++) Q[j+j*ld] += c[k-1];
+<a name="line90"> 90: </a>      odd = PETSC_FALSE;
+<a name="line91"> 91: </a>    } <font color="#4169E1">else</font> {
+<a name="line92"> 92: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;one,P,&amp;ld,A2,&amp;ld,&amp;zero,W,&amp;ld));
+<a name="line93"> 93: </a>      SWAP(P,W,aux);
+<a name="line94"> 94: </a>      <font color="#4169E1">for</font> (j=0;j&lt;n;j++) P[j+j*ld] += c[k-1];
+<a name="line95"> 95: </a>      odd = PETSC_TRUE;
+<a name="line96"> 96: </a>    }
+<a name="line97"> 97: </a>    PetscLogFlops(2.0*n*n*n);
+<a name="line98"> 98: </a>  }
+<a name="line99"> 99: </a>  <font color="#4169E1">if</font> (odd) {
+<a name="line100">100: </a>    PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;one,Q,&amp;ld,As,&amp;ld,&amp;zero,W,&amp;ld));
+<a name="line101">101: </a>    SWAP(Q,W,aux);
+<a name="line102">102: </a>    PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;ld2,&amp;mone,P,&amp;inc,Q,&amp;inc));
+<a name="line103">103: </a>    PetscStackCallBLAS(<font color="#666666">"LAPACKgesv"</font>,LAPACKgesv_(&amp;n,&amp;n,Q,&amp;ld,ipiv,P,&amp;ld,&amp;info));
+<a name="line104">104: </a>    SlepcCheckLapackInfo(<font color="#666666">"gesv"</font>,info);
+<a name="line105">105: </a>    PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;ld2,&amp;two,P,&amp;inc));
+<a name="line106">106: </a>    <font color="#4169E1">for</font> (j=0;j&lt;n;j++) P[j+j*ld] += 1.0;
+<a name="line107">107: </a>    PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;ld2,&amp;mone,P,&amp;inc));
+<a name="line108">108: </a>  } <font color="#4169E1">else</font> {
+<a name="line109">109: </a>    PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;one,P,&amp;ld,As,&amp;ld,&amp;zero,W,&amp;ld));
+<a name="line110">110: </a>    SWAP(P,W,aux);
+<a name="line111">111: </a>    PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;ld2,&amp;mone,P,&amp;inc,Q,&amp;inc));
+<a name="line112">112: </a>    PetscStackCallBLAS(<font color="#666666">"LAPACKgesv"</font>,LAPACKgesv_(&amp;n,&amp;n,Q,&amp;ld,ipiv,P,&amp;ld,&amp;info));
+<a name="line113">113: </a>    SlepcCheckLapackInfo(<font color="#666666">"gesv"</font>,info);
+<a name="line114">114: </a>    PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;ld2,&amp;two,P,&amp;inc));
+<a name="line115">115: </a>    <font color="#4169E1">for</font> (j=0;j&lt;n;j++) P[j+j*ld] += 1.0;
+<a name="line116">116: </a>  }
+<a name="line117">117: </a>  PetscLogFlops(2.0*n*n*n+2.0*n*n*n/3.0+4.0*n*n);
+
+<a name="line119">119: </a>  <font color="#4169E1">for</font> (k=1;k&lt;=sexp;k++) {
+<a name="line120">120: </a>    PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;one,P,&amp;ld,P,&amp;ld,&amp;zero,W,&amp;ld));
+<a name="line121">121: </a>    PetscMemcpy(P,W,ld2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line122">122: </a>  }
+<a name="line123">123: </a>  <font color="#4169E1">if</font> (P!=Ba) { PetscMemcpy(Ba,P,ld2*<font color="#4169E1">sizeof</font>(PetscScalar)); }
+<a name="line124">124: </a>  PetscLogFlops(2.0*n*n*n*sexp);
+
+<a name="line126">126: </a>  PetscFree6(Q,W,As,A2,rwork,ipiv);
+<a name="line127">127: </a>  MatDenseRestoreArray(A,&amp;Aa);
+<a name="line128">128: </a>  MatDenseRestoreArray(B,&amp;Ba);
+<a name="line129">129: </a>  <font color="#4169E1">return</font>(0);
+<a name="line130">130: </a><font color="#A020F0">#endif</font>
+<a name="line131">131: </a>}
+
+<a name="line133">133: </a><strong><font color="#228B22">#define ITMAX 5</font></strong>
+
+<a name="line135">135: </a><font color="#B22222">/*</font>
+<a name="line136">136: </a><font color="#B22222"> * Estimate norm(A^m,1) by block 1-norm power method (required workspace is 11*n)</font>
+<a name="line137">137: </a><font color="#B22222"> */</font>
+<a name="line138">138: </a><strong><font color="#4169E1"><a name="normest1"></a>static PetscReal normest1(PetscBLASInt n,PetscScalar *A,PetscInt m,PetscScalar *work,PetscRandom rand)</font></strong>
+<a name="line139">139: </a>{
+<a name="line140">140: </a>  PetscScalar  *X,*Y,*Z,*S,*S_old,*aux,val,sone=1.0,szero=0.0;
+<a name="line141">141: </a>  PetscReal    est=0.0,est_old,vals[2],*zvals,maxzval[2],raux;
+<a name="line142">142: </a>  PetscBLASInt i,j,t=2,it=0,ind[2],est_j=0,m1;
+
+<a name="line145">145: </a>  X = work;
+<a name="line146">146: </a>  Y = work + 2*n;
+<a name="line147">147: </a>  Z = work + 4*n;
+<a name="line148">148: </a>  S = work + 6*n;
+<a name="line149">149: </a>  S_old = work + 8*n;
+<a name="line150">150: </a>  zvals = (PetscReal*)(work + 10*n);
+
+<a name="line152">152: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++) {  <font color="#B22222">/* X has columns of unit 1-norm */</font>
+<a name="line153">153: </a>    X[i] = 1.0/n;
+<a name="line154">154: </a>    PetscRandomGetValue(rand,&amp;val);
+<a name="line155">155: </a>    <font color="#4169E1">if</font> (PetscRealPart(val) &lt; 0.5) X[i+n] = -1.0/n;
+<a name="line156">156: </a>    <font color="#4169E1">else</font> X[i+n] = 1.0/n;
+<a name="line157">157: </a>  }
+<a name="line158">158: </a>  <font color="#4169E1">for</font> (i=0;i&lt;t*n;i++) S[i] = 0.0;
+<a name="line159">159: </a>  ind[0] = 0; ind[1] = 0;
+<a name="line160">160: </a>  est_old = 0;
+<a name="line161">161: </a>  <font color="#4169E1">while</font> (1) {
+<a name="line162">162: </a>    it++;
+<a name="line163">163: </a>    <font color="#4169E1">for</font> (j=0;j&lt;m;j++) {  <font color="#B22222">/* Y = A^m*X */</font>
+<a name="line164">164: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;t,&amp;n,&amp;sone,A,&amp;n,X,&amp;n,&amp;szero,Y,&amp;n));
+<a name="line165">165: </a>      <font color="#4169E1">if</font> (j&lt;m-1) SWAP(X,Y,aux);
+<a name="line166">166: </a>    }
+<a name="line167">167: </a>    <font color="#4169E1">for</font> (j=0;j&lt;t;j++) {  <font color="#B22222">/* vals[j] = norm(Y(:,j),1) */</font>
+<a name="line168">168: </a>      vals[j] = 0.0;
+<a name="line169">169: </a>      <font color="#4169E1">for</font> (i=0;i&lt;n;i++) vals[j] += PetscAbsScalar(Y[i+j*n]);
+<a name="line170">170: </a>    }
+<a name="line171">171: </a>    <font color="#4169E1">if</font> (vals[0]&lt;vals[1]) {
+<a name="line172">172: </a>      SWAP(vals[0],vals[1],raux);
+<a name="line173">173: </a>      m1 = 1;
+<a name="line174">174: </a>    } <font color="#4169E1">else</font> m1 = 0;
+<a name="line175">175: </a>    est = vals[0];
+<a name="line176">176: </a>    <font color="#4169E1">if</font> (est&gt;est_old || it==2) est_j = ind[m1];
+<a name="line177">177: </a>    <font color="#4169E1">if</font> (it&gt;=2 &amp;&amp; est&lt;=est_old) {
+<a name="line178">178: </a>      est = est_old;
+<a name="line179">179: </a>      <font color="#4169E1">break</font>;
+<a name="line180">180: </a>    }
+<a name="line181">181: </a>    est_old = est;
+<a name="line182">182: </a>    <font color="#4169E1">if</font> (it&gt;ITMAX) <font color="#4169E1">break</font>;
+<a name="line183">183: </a>    SWAP(S,S_old,aux);
+<a name="line184">184: </a>    <font color="#4169E1">for</font> (i=0;i&lt;t*n;i++) {  <font color="#B22222">/* S = sign(Y) */</font>
+<a name="line185">185: </a>      S[i] = (PetscRealPart(Y[i]) &lt; 0.0)? -1.0: 1.0;
+<a name="line186">186: </a>    }
+<a name="line187">187: </a>    <font color="#4169E1">for</font> (j=0;j&lt;m;j++) {  <font color="#B22222">/* Z = (A^T)^m*S */</font>
+<a name="line188">188: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"C"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;t,&amp;n,&amp;sone,A,&amp;n,S,&amp;n,&amp;szero,Z,&amp;n));
+<a name="line189">189: </a>      <font color="#4169E1">if</font> (j&lt;m-1) SWAP(S,Z,aux);
+<a name="line190">190: </a>    }
+<a name="line191">191: </a>    maxzval[0] = -1; maxzval[1] = -1;
+<a name="line192">192: </a>    ind[0] = 0; ind[1] = 0;
+<a name="line193">193: </a>    <font color="#4169E1">for</font> (i=0;i&lt;n;i++) {  <font color="#B22222">/* zvals[i] = norm(Z(i,:),inf) */</font>
+<a name="line194">194: </a>      zvals[i] = PetscMax(PetscAbsScalar(Z[i+0*n]),PetscAbsScalar(Z[i+1*n]));
+<a name="line195">195: </a>      <font color="#4169E1">if</font> (zvals[i]&gt;maxzval[0]) {
+<a name="line196">196: </a>        maxzval[0] = zvals[i];
+<a name="line197">197: </a>        ind[0] = i;
+<a name="line198">198: </a>      } <font color="#4169E1">else</font> <font color="#4169E1">if</font> (zvals[i]&gt;maxzval[1]) {
+<a name="line199">199: </a>        maxzval[1] = zvals[i];
+<a name="line200">200: </a>        ind[1] = i;
+<a name="line201">201: </a>      }
+<a name="line202">202: </a>    }
+<a name="line203">203: </a>    <font color="#4169E1">if</font> (it&gt;=2 &amp;&amp; maxzval[0]==zvals[est_j]) <font color="#4169E1">break</font>;
+<a name="line204">204: </a>    <font color="#4169E1">for</font> (i=0;i&lt;t*n;i++) X[i] = 0.0;
+<a name="line205">205: </a>    <font color="#4169E1">for</font> (j=0;j&lt;t;j++) X[ind[j]+j*n] = 1.0;
+<a name="line206">206: </a>  }
+<a name="line207">207: </a>  <font color="#B22222">/* Flop count is roughly (it * 2*m * t*gemv) = 4*its*m*t*n*n */</font>
+<a name="line208">208: </a>  PetscLogFlops(4.0*it*m*t*n*n);
+<a name="line209">209: </a>  PetscFunctionReturn(est);
+<a name="line210">210: </a>}
+
+<a name="line212">212: </a><strong><font color="#228B22">#define SMALLN 100</font></strong>
+
+<a name="line214">214: </a><font color="#B22222">/*</font>
+<a name="line215">215: </a><font color="#B22222"> * Estimate norm(A^m,1) (required workspace is 2*n*n)</font>
+<a name="line216">216: </a><font color="#B22222"> */</font>
+<a name="line217">217: </a><strong><font color="#4169E1"><a name="normAm"></a>static PetscReal normAm(PetscBLASInt n,PetscScalar *A,PetscInt m,PetscScalar *work,PetscRandom rand)</font></strong>
+<a name="line218">218: </a>{
+<a name="line219">219: </a>  PetscScalar  *v=work,*w=work+n*n,*aux,sone=1.0,szero=0.0;
+<a name="line220">220: </a>  PetscReal    nrm,rwork[1],tmp;
+<a name="line221">221: </a>  PetscBLASInt i,j,one=1;
+<a name="line222">222: </a>  PetscBool    isrealpos=PETSC_TRUE;
+
+<a name="line225">225: </a>  <font color="#4169E1">if</font> (n&lt;SMALLN) {   <font color="#B22222">/* compute matrix power explicitly */</font>
+<a name="line226">226: </a>    <font color="#4169E1">if</font> (m==1) {
+<a name="line227">227: </a>      nrm = LAPACKlange_(<font color="#666666">"O"</font>,&amp;n,&amp;n,A,&amp;n,rwork);
+<a name="line228">228: </a>      PetscLogFlops(1.0*n*n);
+<a name="line229">229: </a>    } <font color="#4169E1">else</font> {  <font color="#B22222">/* m&gt;=2 */</font>
+<a name="line230">230: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;sone,A,&amp;n,A,&amp;n,&amp;szero,v,&amp;n));
+<a name="line231">231: </a>      <font color="#4169E1">for</font> (j=0;j&lt;m-2;j++) {
+<a name="line232">232: </a>        PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n,&amp;n,&amp;n,&amp;sone,A,&amp;n,v,&amp;n,&amp;szero,w,&amp;n));
+<a name="line233">233: </a>        SWAP(v,w,aux);
+<a name="line234">234: </a>      }
+<a name="line235">235: </a>      nrm = LAPACKlange_(<font color="#666666">"O"</font>,&amp;n,&amp;n,v,&amp;n,rwork);
+<a name="line236">236: </a>      PetscLogFlops(2.0*n*n*n*(m-1)+1.0*n*n);
+<a name="line237">237: </a>    }
+<a name="line238">238: </a>  } <font color="#4169E1">else</font> {
+<a name="line239">239: </a>    <font color="#4169E1">for</font> (i=0;i&lt;n;i++)
+<a name="line240">240: </a>      <font color="#4169E1">for</font> (j=0;j&lt;n;j++) 
+<a name="line241">241: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line242">242: </a>        <font color="#4169E1">if</font> (PetscRealPart(A[i+j*n])&lt;0.0 || PetscImaginaryPart(A[i+j*n])!=0.0) { isrealpos = PETSC_FALSE; <font color="#4169E1">break</font>; }
+<a name="line243">243: </a><font color="#A020F0">#else</font>
+<a name="line244">244: </a>        <font color="#4169E1">if</font> (A[i+j*n]&lt;0.0) { isrealpos = PETSC_FALSE; <font color="#4169E1">break</font>; }
+<a name="line245">245: </a><font color="#A020F0">#endif</font>
+<a name="line246">246: </a>    <font color="#4169E1">if</font> (isrealpos) {   <font color="#B22222">/* for positive matrices only */</font>
+<a name="line247">247: </a>      <font color="#4169E1">for</font> (i=0;i&lt;n;i++) v[i] = 1.0;
+<a name="line248">248: </a>      <font color="#4169E1">for</font> (j=0;j&lt;m;j++) {  <font color="#B22222">/* w = A'*v */</font>
+<a name="line249">249: </a>        PetscStackCallBLAS(<font color="#666666">"BLASgemv"</font>,BLASgemv_(<font color="#666666">"C"</font>,&amp;n,&amp;n,&amp;sone,A,&amp;n,v,&amp;one,&amp;szero,w,&amp;one));
+<a name="line250">250: </a>        SWAP(v,w,aux);
+<a name="line251">251: </a>      }
+<a name="line252">252: </a>      PetscLogFlops(2.0*n*n*m);
+<a name="line253">253: </a>      nrm = 0.0;
+<a name="line254">254: </a>      <font color="#4169E1">for</font> (i=0;i&lt;n;i++) <font color="#4169E1">if</font> ((tmp = PetscAbsScalar(v[i])) &gt; nrm) nrm = tmp;   <font color="#B22222">/* norm(v,inf) */</font>
+<a name="line255">255: </a>    } <font color="#4169E1">else</font> {
+<a name="line256">256: </a>      nrm = normest1(n,A,m,work,rand);
+<a name="line257">257: </a>    }
+<a name="line258">258: </a>  }
+<a name="line259">259: </a>  PetscFunctionReturn(nrm);
+<a name="line260">260: </a>}
+
+<a name="line262">262: </a><font color="#B22222">/*</font>
+<a name="line263">263: </a><font color="#B22222"> * Function needed to compute optimal parameters (required workspace is 3*n*n)</font>
+<a name="line264">264: </a><font color="#B22222"> */</font>
+<a name="line265">265: </a><strong><font color="#4169E1"><a name="ell"></a>static PetscInt ell(PetscBLASInt n,PetscScalar *A,PetscReal coeff,PetscInt m,PetscScalar *work,PetscRandom rand)</font></strong>
+<a name="line266">266: </a>{
+<a name="line267">267: </a>  PetscScalar  *Ascaled=work;
+<a name="line268">268: </a>  PetscReal    nrm,alpha,beta,rwork[1];
+<a name="line269">269: </a>  PetscInt     t;
+<a name="line270">270: </a>  PetscBLASInt i,j;
+
+<a name="line273">273: </a>  beta = PetscPowReal(coeff,1.0/(2*m+1));
+<a name="line274">274: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++)
+<a name="line275">275: </a>    <font color="#4169E1">for</font> (j=0;j&lt;n;j++) 
+<a name="line276">276: </a>      Ascaled[i+j*n] = beta*PetscAbsScalar(A[i+j*n]);
+<a name="line277">277: </a>  nrm = LAPACKlange_(<font color="#666666">"O"</font>,&amp;n,&amp;n,A,&amp;n,rwork);
+<a name="line278">278: </a>  PetscLogFlops(2.0*n*n);
+<a name="line279">279: </a>  alpha = normAm(n,Ascaled,2*m+1,work+n*n,rand)/nrm;
+<a name="line280">280: </a>  t = PetscMax((PetscInt)PetscCeilReal(PetscLogReal(2.0*alpha/PETSC_MACHINE_EPSILON)/PetscLogReal(2.0)/(2*m)),0);
+<a name="line281">281: </a>  PetscFunctionReturn(t);
+<a name="line282">282: </a>}
+
+<a name="line284">284: </a><font color="#B22222">/*</font>
+<a name="line285">285: </a><font color="#B22222"> * Compute scaling parameter (s) and order of Pade approximant (m)  (required workspace is 4*n*n)</font>
+<a name="line286">286: </a><font color="#B22222"> */</font>
+<a name="line287">287: </a><strong><font color="#4169E1"><a name="expm_params"></a>static PetscErrorCode expm_params(PetscInt n,PetscScalar **Apowers,PetscInt *s,PetscInt *m,PetscScalar *work)</font></strong>
+<a name="line288">288: </a>{
+<a name="line289">289: </a>  PetscErrorCode  ierr;
+<a name="line290">290: </a>  PetscScalar     sfactor,sone=1.0,szero=0.0,*A=Apowers[0],*Ascaled;
+<a name="line291">291: </a>  PetscReal       d4,d6,d8,d10,eta1,eta3,eta4,eta5,rwork[1];
+<a name="line292">292: </a>  PetscBLASInt    n_,n2,one=1;
+<a name="line293">293: </a>  PetscRandom     rand;
+<a name="line294">294: </a>  const PetscReal coeff[5] = { 9.92063492063492e-06, 9.94131285136576e-11,  <font color="#B22222">/* backward error function */</font>
+<a name="line295">295: </a>                               2.22819456055356e-16, 1.69079293431187e-22, 8.82996160201868e-36 };
+<a name="line296">296: </a>  const PetscReal theta[5] = { 1.495585217958292e-002,    <font color="#B22222">/* m = 3  */</font>
+<a name="line297">297: </a>                               2.539398330063230e-001,    <font color="#B22222">/* m = 5  */</font>
+<a name="line298">298: </a>                               9.504178996162932e-001,    <font color="#B22222">/* m = 7  */</font>
+<a name="line299">299: </a>                               2.097847961257068e+000,    <font color="#B22222">/* m = 9  */</font>
+<a name="line300">300: </a>                               5.371920351148152e+000 };  <font color="#B22222">/* m = 13 */</font>
+
+<a name="line303">303: </a>  *s = 0;
+<a name="line304">304: </a>  *m = 13;
+<a name="line305">305: </a>  PetscBLASIntCast(n,&amp;n_);
+<a name="line306">306: </a>  PetscRandomCreate(PETSC_COMM_SELF,&amp;rand);
+<a name="line307">307: </a>  d4 = PetscPowReal(LAPACKlange_(<font color="#666666">"O"</font>,&amp;n_,&amp;n_,Apowers[2],&amp;n_,rwork),1.0/4.0);
+<a name="line308">308: </a>  <font color="#4169E1">if</font> (d4==0.0) { <font color="#B22222">/* safeguard for the case A = 0 */</font>
+<a name="line309">309: </a>    *m = 3;
+<a name="line310">310: </a>    <font color="#4169E1">goto</font> done;
+<a name="line311">311: </a>  }
+<a name="line312">312: </a>  d6 = PetscPowReal(LAPACKlange_(<font color="#666666">"O"</font>,&amp;n_,&amp;n_,Apowers[3],&amp;n_,rwork),1.0/6.0);
+<a name="line313">313: </a>  PetscLogFlops(2.0*n*n);
+<a name="line314">314: </a>  eta1 = PetscMax(d4,d6);
+<a name="line315">315: </a>  <font color="#4169E1">if</font> (eta1&lt;=theta[0] &amp;&amp; !ell(n_,A,coeff[0],3,work,rand)) {
+<a name="line316">316: </a>    *m = 3;
+<a name="line317">317: </a>    <font color="#4169E1">goto</font> done;
+<a name="line318">318: </a>  }
+<a name="line319">319: </a>  <font color="#4169E1">if</font> (eta1&lt;=theta[1] &amp;&amp; !ell(n_,A,coeff[1],5,work,rand)) {
+<a name="line320">320: </a>    *m = 5;
+<a name="line321">321: </a>    <font color="#4169E1">goto</font> done;
+<a name="line322">322: </a>  }
+<a name="line323">323: </a>  <font color="#4169E1">if</font> (n&lt;SMALLN) {
+<a name="line324">324: </a>    PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[2],&amp;n_,Apowers[2],&amp;n_,&amp;szero,work,&amp;n_));
+<a name="line325">325: </a>    d8 = PetscPowReal(LAPACKlange_(<font color="#666666">"O"</font>,&amp;n_,&amp;n_,work,&amp;n_,rwork),1.0/8.0);
+<a name="line326">326: </a>    PetscLogFlops(2.0*n*n*n+1.0*n*n);
+<a name="line327">327: </a>  } <font color="#4169E1">else</font> {
+<a name="line328">328: </a>    d8 = PetscPowReal(normAm(n_,Apowers[2],2,work,rand),1.0/8.0);
+<a name="line329">329: </a>  }
+<a name="line330">330: </a>  eta3 = PetscMax(d6,d8);
+<a name="line331">331: </a>  <font color="#4169E1">if</font> (eta3&lt;=theta[2] &amp;&amp; !ell(n_,A,coeff[2],7,work,rand)) {
+<a name="line332">332: </a>    *m = 7;
+<a name="line333">333: </a>    <font color="#4169E1">goto</font> done;
+<a name="line334">334: </a>  }
+<a name="line335">335: </a>  <font color="#4169E1">if</font> (eta3&lt;=theta[3] &amp;&amp; !ell(n_,A,coeff[3],9,work,rand)) {
+<a name="line336">336: </a>    *m = 9;
+<a name="line337">337: </a>    <font color="#4169E1">goto</font> done;
+<a name="line338">338: </a>  }
+<a name="line339">339: </a>  <font color="#4169E1">if</font> (n&lt;SMALLN) {
+<a name="line340">340: </a>    PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[2],&amp;n_,Apowers[3],&amp;n_,&amp;szero,work,&amp;n_));
+<a name="line341">341: </a>    d10 = PetscPowReal(LAPACKlange_(<font color="#666666">"O"</font>,&amp;n_,&amp;n_,work,&amp;n_,rwork),1.0/10.0);
+<a name="line342">342: </a>    PetscLogFlops(2.0*n*n*n+1.0*n*n);
+<a name="line343">343: </a>  } <font color="#4169E1">else</font> {
+<a name="line344">344: </a>    d10 = PetscPowReal(normAm(n_,Apowers[1],5,work,rand),1.0/10.0);
+<a name="line345">345: </a>  }
+<a name="line346">346: </a>  eta4 = PetscMax(d8,d10);
+<a name="line347">347: </a>  eta5 = PetscMin(eta3,eta4);
+<a name="line348">348: </a>  *s = PetscMax((PetscInt)PetscCeilReal(PetscLogReal(eta5/theta[4])/PetscLogReal(2.0)),0);
+<a name="line349">349: </a>  <font color="#4169E1">if</font> (*s) {
+<a name="line350">350: </a>    Ascaled = work+3*n*n;
+<a name="line351">351: </a>    n2 = n_*n_;
+<a name="line352">352: </a>    PetscStackCallBLAS(<font color="#666666">"BLAScopy"</font>,BLAScopy_(&amp;n2,A,&amp;one,Ascaled,&amp;one));
+<a name="line353">353: </a>    sfactor = PetscPowRealInt(2.0,-(*s));
+<a name="line354">354: </a>    PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;n2,&amp;sfactor,Ascaled,&amp;one));
+<a name="line355">355: </a>    PetscLogFlops(1.0*n*n);
+<a name="line356">356: </a>  } <font color="#4169E1">else</font> Ascaled = A;
+<a name="line357">357: </a>  *s += ell(n_,Ascaled,coeff[4],13,work,rand);
+<a name="line358">358: </a><strong><font color="#FF0000">done:</font></strong>
+<a name="line359">359: </a>  PetscRandomDestroy(&amp;rand);
+<a name="line360">360: </a>  <font color="#4169E1">return</font>(0);
+<a name="line361">361: </a>}
+
+<a name="line363">363: </a><font color="#B22222">/*</font>
+<a name="line364">364: </a><font color="#B22222"> * Matrix exponential implementation based on algorithm and matlab code by N. Higham and co-authors</font>
+<a name="line365">365: </a><font color="#B22222"> *</font>
+<a name="line366">366: </a><font color="#B22222"> *     N. J. Higham, "The scaling and squaring method for the matrix exponential </font>
+<a name="line367">367: </a><font color="#B22222"> *     revisited", SIAM J. Matrix Anal. Appl. 26(4):1179-1193, 2005.</font>
+<a name="line368">368: </a><font color="#B22222"> */</font>
+<a name="line369">369: </a><strong><font color="#4169E1"><a name="FNEvaluateFunctionMat_Exp_Higham"></a>PetscErrorCode FNEvaluateFunctionMat_Exp_Higham(<a href="../../../../../../docs/manualpages/FN/FN.html#FN">FN</a> fn,Mat A,Mat B)</font></strong>
+<a name="line370">370: </a>{
+<a name="line371">371: </a><font color="#A020F0">#if defined(PETSC_MISSING_LAPACK_GESV) || defined(SLEPC_MISSING_LAPACK_LANGE)</font>
+<a name="line373">373: </a>  SETERRQ(PETSC_COMM_SELF,PETSC_ERR_SUP,<font color="#666666">"GESV/LANGE - Lapack routines are unavailable"</font>);
+<a name="line374">374: </a><font color="#A020F0">#else</font>
+<a name="line375">375: </a>  PetscErrorCode    ierr;
+<a name="line376">376: </a>  PetscBLASInt      n_,n2,*ipiv,info,one=1;
+<a name="line377">377: </a>  PetscInt          n,m,j,s;
+<a name="line378">378: </a>  PetscScalar       scale,smone=-1.0,sone=1.0,stwo=2.0,szero=0.0;
+<a name="line379">379: </a>  PetscScalar       *Aa,*Ba,*Apowers[5],*Q,*P,*W,*work,*aux;
+<a name="line380">380: </a>  const PetscScalar *c;
+<a name="line381">381: </a>  const PetscScalar c3[4]   = { 120, 60, 12, 1 };
+<a name="line382">382: </a>  const PetscScalar c5[6]   = { 30240, 15120, 3360, 420, 30, 1 };
+<a name="line383">383: </a>  const PetscScalar c7[8]   = { 17297280, 8648640, 1995840, 277200, 25200, 1512, 56, 1 };
+<a name="line384">384: </a>  const PetscScalar c9[10]  = { 17643225600, 8821612800, 2075673600, 302702400, 30270240,
+<a name="line385">385: </a>                                2162160, 110880, 3960, 90, 1 };
+<a name="line386">386: </a>  const PetscScalar c13[14] = { 64764752532480000, 32382376266240000, 7771770303897600,
+<a name="line387">387: </a>                                1187353796428800,  129060195264000,   10559470521600,
+<a name="line388">388: </a>                                670442572800,      33522128640,       1323241920,
+<a name="line389">389: </a>                                40840800,          960960,            16380,  182,  1 };
+
+<a name="line392">392: </a>  MatDenseGetArray(A,&amp;Aa);
+<a name="line393">393: </a>  MatDenseGetArray(B,&amp;Ba);
+<a name="line394">394: </a>  MatGetSize(A,&amp;n,NULL);
+<a name="line395">395: </a>  PetscBLASIntCast(n,&amp;n_);
+<a name="line396">396: </a>  n2 = n_*n_;
+<a name="line397">397: </a>  PetscMalloc2(8*n*n,&amp;work,n,&amp;ipiv);
+
+<a name="line399">399: </a>  <font color="#B22222">/* Matrix powers */</font>
+<a name="line400">400: </a>  Apowers[0] = work;                  <font color="#B22222">/* Apowers[0] = A   */</font>
+<a name="line401">401: </a>  Apowers[1] = Apowers[0] + n*n;      <font color="#B22222">/* Apowers[1] = A^2 */</font>
+<a name="line402">402: </a>  Apowers[2] = Apowers[1] + n*n;      <font color="#B22222">/* Apowers[2] = A^4 */</font>
+<a name="line403">403: </a>  Apowers[3] = Apowers[2] + n*n;      <font color="#B22222">/* Apowers[3] = A^6 */</font>
+<a name="line404">404: </a>  Apowers[4] = Apowers[3] + n*n;      <font color="#B22222">/* Apowers[4] = A^8 */</font>
+
+<a name="line406">406: </a>  PetscMemcpy(Apowers[0],Aa,n2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line407">407: </a>  PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[0],&amp;n_,Apowers[0],&amp;n_,&amp;szero,Apowers[1],&amp;n_));
+<a name="line408">408: </a>  PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[1],&amp;n_,Apowers[1],&amp;n_,&amp;szero,Apowers[2],&amp;n_));
+<a name="line409">409: </a>  PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[1],&amp;n_,Apowers[2],&amp;n_,&amp;szero,Apowers[3],&amp;n_));
+<a name="line410">410: </a>  PetscLogFlops(6.0*n*n*n);
+
+<a name="line412">412: </a>  <font color="#B22222">/* Compute scaling parameter and order of Pade approximant */</font>
+<a name="line413">413: </a>  expm_params(n,Apowers,&amp;s,&amp;m,Apowers[4]);
+
+<a name="line415">415: </a>  <font color="#4169E1">if</font> (s) { <font color="#B22222">/* rescale */</font>
+<a name="line416">416: </a>    <font color="#4169E1">for</font> (j=0;j&lt;4;j++) {
+<a name="line417">417: </a>      scale = PetscPowRealInt(2.0,-PetscMax(2*j,1)*s);
+<a name="line418">418: </a>      PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;n2,&amp;scale,Apowers[j],&amp;one));
+<a name="line419">419: </a>    }
+<a name="line420">420: </a>    PetscLogFlops(4.0*n*n);
+<a name="line421">421: </a>  }
+
+<a name="line423">423: </a>  <font color="#B22222">/* Evaluate the Pade approximant */</font>
+<a name="line424">424: </a>  <font color="#4169E1">switch</font> (m) {
+<a name="line425">425: </a>    <font color="#4169E1">case</font> 3:  c = c3;  <font color="#4169E1">break</font>;
+<a name="line426">426: </a>    <font color="#4169E1">case</font> 5:  c = c5;  <font color="#4169E1">break</font>;
+<a name="line427">427: </a>    <font color="#4169E1">case</font> 7:  c = c7;  <font color="#4169E1">break</font>;
+<a name="line428">428: </a>    <font color="#4169E1">case</font> 9:  c = c9;  <font color="#4169E1">break</font>;
+<a name="line429">429: </a>    <font color="#4169E1">case</font> 13: c = c13; <font color="#4169E1">break</font>;
+<a name="line430">430: </a><strong><font color="#FF0000">    default:</font></strong> SETERRQ1(PETSC_COMM_SELF,PETSC_ERR_ARG_WRONG,<font color="#666666">"Wrong value of m %d"</font>,m);
+<a name="line431">431: </a>  }
+<a name="line432">432: </a>  P = Ba;
+<a name="line433">433: </a>  Q = Apowers[4] + n*n;
+<a name="line434">434: </a>  W = Q + n*n;
+<a name="line435">435: </a>  <font color="#4169E1">switch</font> (m) {
+<a name="line436">436: </a>    <font color="#4169E1">case</font> 3:
+<a name="line437">437: </a>    <font color="#4169E1">case</font> 5:
+<a name="line438">438: </a>    <font color="#4169E1">case</font> 7:
+<a name="line439">439: </a>    <font color="#4169E1">case</font> 9:
+<a name="line440">440: </a>      <font color="#4169E1">if</font> (m==9) PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[1],&amp;n_,Apowers[3],&amp;n_,&amp;szero,Apowers[4],&amp;n_));
+<a name="line441">441: </a>      PetscMemzero(P,n2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line442">442: </a>      PetscMemzero(Q,n2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line443">443: </a>      <font color="#4169E1">for</font> (j=0;j&lt;n;j++) {
+<a name="line444">444: </a>        P[j+j*n] = c[1];
+<a name="line445">445: </a>        Q[j+j*n] = c[0];
+<a name="line446">446: </a>      }
+<a name="line447">447: </a>      <font color="#4169E1">for</font> (j=m;j&gt;=3;j-=2) {
+<a name="line448">448: </a>        PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[j],Apowers[(j+1)/2-1],&amp;one,P,&amp;one));
+<a name="line449">449: </a>        PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[j-1],Apowers[(j+1)/2-1],&amp;one,Q,&amp;one));
+<a name="line450">450: </a>        PetscLogFlops(4.0*n*n);
+<a name="line451">451: </a>      }
+<a name="line452">452: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[0],&amp;n_,P,&amp;n_,&amp;szero,W,&amp;n_));
+<a name="line453">453: </a>      PetscLogFlops(2.0*n*n*n);
+<a name="line454">454: </a>      SWAP(P,W,aux);
+<a name="line455">455: </a>      <font color="#4169E1">break</font>;
+<a name="line456">456: </a>    <font color="#4169E1">case</font> 13:
+<a name="line457">457: </a>      <font color="#B22222">/*  P = A*(Apowers[3]*(c[13]*Apowers[3] + c[11]*Apowers[2] + c[9]*Apowers[1]) </font>
+<a name="line458">458: </a><font color="#B22222">              + c[7]*Apowers[3] + c[5]*Apowers[2] + c[3]*Apowers[1] + c[1]*I)       */</font>
+<a name="line459">459: </a>      PetscStackCallBLAS(<font color="#666666">"BLAScopy"</font>,BLAScopy_(&amp;n2,Apowers[3],&amp;one,P,&amp;one));
+<a name="line460">460: </a>      PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;n2,&amp;c[13],P,&amp;one));
+<a name="line461">461: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[11],Apowers[2],&amp;one,P,&amp;one));
+<a name="line462">462: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[9],Apowers[1],&amp;one,P,&amp;one));
+<a name="line463">463: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[3],&amp;n_,P,&amp;n_,&amp;szero,W,&amp;n_));
+<a name="line464">464: </a>      PetscLogFlops(5.0*n*n+2.0*n*n*n);
+<a name="line465">465: </a>      PetscMemzero(P,n2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line466">466: </a>      <font color="#4169E1">for</font> (j=0;j&lt;n;j++) P[j+j*n] = c[1];
+<a name="line467">467: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[7],Apowers[3],&amp;one,P,&amp;one));
+<a name="line468">468: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[5],Apowers[2],&amp;one,P,&amp;one));
+<a name="line469">469: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[3],Apowers[1],&amp;one,P,&amp;one));
+<a name="line470">470: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;sone,P,&amp;one,W,&amp;one));
+<a name="line471">471: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[0],&amp;n_,W,&amp;n_,&amp;szero,P,&amp;n_));
+<a name="line472">472: </a>      PetscLogFlops(7.0*n*n+2.0*n*n*n);
+<a name="line473">473: </a>      <font color="#B22222">/*  Q = Apowers[3]*(c[12]*Apowers[3] + c[10]*Apowers[2] + c[8]*Apowers[1])</font>
+<a name="line474">474: </a><font color="#B22222">              + c[6]*Apowers[3] + c[4]*Apowers[2] + c[2]*Apowers[1] + c[0]*I        */</font>
+<a name="line475">475: </a>      PetscStackCallBLAS(<font color="#666666">"BLAScopy"</font>,BLAScopy_(&amp;n2,Apowers[3],&amp;one,Q,&amp;one));
+<a name="line476">476: </a>      PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;n2,&amp;c[12],Q,&amp;one));
+<a name="line477">477: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[10],Apowers[2],&amp;one,Q,&amp;one));
+<a name="line478">478: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[8],Apowers[1],&amp;one,Q,&amp;one));
+<a name="line479">479: </a>      PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,Apowers[3],&amp;n_,Q,&amp;n_,&amp;szero,W,&amp;n_));
+<a name="line480">480: </a>      PetscLogFlops(5.0*n*n+2.0*n*n*n);
+<a name="line481">481: </a>      PetscMemzero(Q,n2*<font color="#4169E1">sizeof</font>(PetscScalar));
+<a name="line482">482: </a>      <font color="#4169E1">for</font> (j=0;j&lt;n;j++) Q[j+j*n] = c[0];
+<a name="line483">483: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[6],Apowers[3],&amp;one,Q,&amp;one));
+<a name="line484">484: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[4],Apowers[2],&amp;one,Q,&amp;one));
+<a name="line485">485: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;c[2],Apowers[1],&amp;one,Q,&amp;one));
+<a name="line486">486: </a>      PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;sone,W,&amp;one,Q,&amp;one));
+<a name="line487">487: </a>      PetscLogFlops(7.0*n*n);
+<a name="line488">488: </a>      <font color="#4169E1">break</font>;
+<a name="line489">489: </a><strong><font color="#FF0000">    default:</font></strong> SETERRQ1(PETSC_COMM_SELF,PETSC_ERR_ARG_WRONG,<font color="#666666">"Wrong value of m %d"</font>,m);
+<a name="line490">490: </a>  }
+<a name="line491">491: </a>  PetscStackCallBLAS(<font color="#666666">"BLASaxpy"</font>,BLASaxpy_(&amp;n2,&amp;smone,P,&amp;one,Q,&amp;one));
+<a name="line492">492: </a>  PetscStackCallBLAS(<font color="#666666">"LAPACKgesv"</font>,LAPACKgesv_(&amp;n_,&amp;n_,Q,&amp;n_,ipiv,P,&amp;n_,&amp;info));
+<a name="line493">493: </a>  SlepcCheckLapackInfo(<font color="#666666">"gesv"</font>,info);
+<a name="line494">494: </a>  PetscStackCallBLAS(<font color="#666666">"BLASscal"</font>,BLASscal_(&amp;n2,&amp;stwo,P,&amp;one));
+<a name="line495">495: </a>  <font color="#4169E1">for</font> (j=0;j&lt;n;j++) P[j+j*n] += 1.0;
+<a name="line496">496: </a>  PetscLogFlops(2.0*n*n*n/3.0+4.0*n*n);
+
+<a name="line498">498: </a>  <font color="#B22222">/* Squaring */</font>
+<a name="line499">499: </a>  <font color="#4169E1">for</font> (j=1;j&lt;=s;j++) {
+<a name="line500">500: </a>    PetscStackCallBLAS(<font color="#666666">"BLASgemm"</font>,BLASgemm_(<font color="#666666">"N"</font>,<font color="#666666">"N"</font>,&amp;n_,&amp;n_,&amp;n_,&amp;sone,P,&amp;n_,P,&amp;n_,&amp;szero,W,&amp;n_));
+<a name="line501">501: </a>    SWAP(P,W,aux);
+<a name="line502">502: </a>  }
+<a name="line503">503: </a>  <font color="#4169E1">if</font> (P!=Ba) { PetscMemcpy(Ba,P,n2*<font color="#4169E1">sizeof</font>(PetscScalar)); }
+<a name="line504">504: </a>  PetscLogFlops(2.0*n*n*n*s);
+
+<a name="line506">506: </a>  PetscFree2(work,ipiv);
+<a name="line507">507: </a>  MatDenseRestoreArray(A,&amp;Aa);
+<a name="line508">508: </a>  MatDenseRestoreArray(B,&amp;Ba);
+<a name="line509">509: </a>  <font color="#4169E1">return</font>(0);
+<a name="line510">510: </a><font color="#A020F0">#endif</font>
+<a name="line511">511: </a>}
+
+<a name="line513">513: </a><strong><font color="#4169E1"><a name="FNView_Exp"></a>PetscErrorCode FNView_Exp(<a href="../../../../../../docs/manualpages/FN/FN.html#FN">FN</a> fn,PetscViewer viewer)</font></strong>
+<a name="line514">514: </a>{
+<a name="line516">516: </a>  PetscBool      isascii;
+<a name="line517">517: </a>  char           str[50];
+<a name="line518">518: </a>  const char     *methodname[] = {
+<a name="line519">519: </a>                  <font color="#666666">"scaling &amp; squaring, [m/m] Pade approximant (Higham)"</font>,
+<a name="line520">520: </a>                  <font color="#666666">"scaling &amp; squaring, [6/6] Pade approximant"</font>
+<a name="line521">521: </a>  };
+<a name="line522">522: </a>  const int      nmeth=<font color="#4169E1">sizeof</font>(methodname)/<font color="#4169E1">sizeof</font>(methodname[0]);
+
+<a name="line525">525: </a>  PetscObjectTypeCompare((PetscObject)viewer,PETSCVIEWERASCII,&amp;isascii);
+<a name="line526">526: </a>  <font color="#4169E1">if</font> (isascii) {
+<a name="line527">527: </a>    <font color="#4169E1">if</font> (fn-&gt;beta==(PetscScalar)1.0) {
+<a name="line528">528: </a>      <font color="#4169E1">if</font> (fn-&gt;alpha==(PetscScalar)1.0) {
+<a name="line529">529: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">"  Exponential: exp(x)\n"</font>);
+<a name="line530">530: </a>      } <font color="#4169E1">else</font> {
+<a name="line531">531: </a>        <a href="../../../../../../docs/manualpages/sys/SlepcSNPrintfScalar.html#SlepcSNPrintfScalar">SlepcSNPrintfScalar</a>(str,50,fn-&gt;alpha,PETSC_TRUE);
+<a name="line532">532: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">"  Exponential: exp(%s*x)\n"</font>,str);
+<a name="line533">533: </a>      }
+<a name="line534">534: </a>    } <font color="#4169E1">else</font> {
+<a name="line535">535: </a>      <a href="../../../../../../docs/manualpages/sys/SlepcSNPrintfScalar.html#SlepcSNPrintfScalar">SlepcSNPrintfScalar</a>(str,50,fn-&gt;beta,PETSC_TRUE);
+<a name="line536">536: </a>      <font color="#4169E1">if</font> (fn-&gt;alpha==(PetscScalar)1.0) {
+<a name="line537">537: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">"  Exponential: %s*exp(x)\n"</font>,str);
+<a name="line538">538: </a>      } <font color="#4169E1">else</font> {
+<a name="line539">539: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">"  Exponential: %s"</font>,str);
+<a name="line540">540: </a>        PetscViewerASCIIUseTabs(viewer,PETSC_FALSE);
+<a name="line541">541: </a>        <a href="../../../../../../docs/manualpages/sys/SlepcSNPrintfScalar.html#SlepcSNPrintfScalar">SlepcSNPrintfScalar</a>(str,50,fn-&gt;alpha,PETSC_TRUE);
+<a name="line542">542: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">"*exp(%s*x)\n"</font>,str);
+<a name="line543">543: </a>        PetscViewerASCIIUseTabs(viewer,PETSC_TRUE);
+<a name="line544">544: </a>      }
+<a name="line545">545: </a>    }
+<a name="line546">546: </a>    <font color="#4169E1">if</font> (fn-&gt;method&lt;nmeth) {
+<a name="line547">547: </a>      PetscViewerASCIIPrintf(viewer,<font color="#666666">"  computing matrix functions with: %s\n"</font>,methodname[fn-&gt;method]);
+<a name="line548">548: </a>    }
+<a name="line549">549: </a>  }
+<a name="line550">550: </a>  <font color="#4169E1">return</font>(0);
+<a name="line551">551: </a>}
+
+<a name="line553">553: </a><strong><font color="#4169E1"><a name="FNCreate_Exp"></a>PETSC_EXTERN PetscErrorCode FNCreate_Exp(<a href="../../../../../../docs/manualpages/FN/FN.html#FN">FN</a> fn)</font></strong>
+<a name="line554">554: </a>{
+<a name="line556">556: </a>  fn-&gt;ops-&gt;evaluatefunction       = FNEvaluateFunction_Exp;
+<a name="line557">557: </a>  fn-&gt;ops-&gt;evaluatederivative     = FNEvaluateDerivative_Exp;
+<a name="line558">558: </a>  fn-&gt;ops-&gt;evaluatefunctionmat[0] = FNEvaluateFunctionMat_Exp_Higham;
+<a name="line559">559: </a>  fn-&gt;ops-&gt;evaluatefunctionmat[1] = FNEvaluateFunctionMat_Exp_Pade;
+<a name="line560">560: </a>  fn-&gt;ops-&gt;view                   = FNView_Exp;
+<a name="line561">561: </a>  <font color="#4169E1">return</font>(0);
+<a name="line562">562: </a>}
+
+</pre>
+</body>
+
+</html>
