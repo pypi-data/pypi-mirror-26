@@ -1,0 +1,477 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-06-30 19:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.nitf\n"
+
+#: collective/nitf/profiles.zcml:12
+msgid "A Dexterity-based content type inspired on the News Industry Text Format specification."
+msgstr ""
+
+#: collective/nitf/profiles/default/types/collective.nitf.content.xml
+msgid "A news article"
+msgstr ""
+
+#: collective/nitf/tiles/configure.zcml:19
+msgid "A tile that shows information about a News Article."
+msgstr ""
+
+#: collective/nitf/config.py:12
+msgid "Actuality"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:212
+msgid "Add latest NITF Portlet"
+msgstr ""
+
+#: collective/nitf/config.py:15
+msgid "Advice"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:185
+msgid "All"
+msgstr ""
+
+#: collective/nitf/config.py:19
+msgid "Almanac"
+msgstr ""
+
+#: collective/nitf/config.py:23
+msgid "Analysis"
+msgstr ""
+
+#: collective/nitf/config.py:27
+msgid "Anniversary"
+msgstr ""
+
+#: collective/nitf/config.py:32
+msgid "Archive material"
+msgstr ""
+
+#: collective/nitf/interfaces.py:37
+msgid "Author"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:36
+msgid "Available Genres"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:20
+msgid "Available Sections"
+msgstr ""
+
+#: collective/nitf/config.py:36
+msgid "Background"
+msgstr ""
+
+#: collective/nitf/interfaces.py:58
+msgid "Body text"
+msgstr ""
+
+#: collective/nitf/config.py:40
+msgid "Current"
+msgstr ""
+
+#: collective/nitf/config.py:44
+msgid "Curtain Raiser"
+msgstr ""
+
+#: collective/nitf/config.py:48
+msgid "Daybook"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:46
+msgid "Default Genre"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:28
+msgid "Default Section"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:54
+msgid "Default Urgency"
+msgstr ""
+
+#: collective/nitf/browser/configure.zcml:18
+msgid "Default view"
+msgstr ""
+
+#: collective/nitf/browser/configure.zcml:18
+msgid "Displays a news article with an image."
+msgstr ""
+
+#: configure.zcml
+msgid "Displays a slideshow in the news article"
+msgstr ""
+
+#: collective/nitf/browser/configure.zcml:24
+msgid "Displays a slideshow in the news article."
+msgstr ""
+
+#: configure.zcml
+msgid "Displays news article with image"
+msgstr ""
+
+#: collective/nitf/browser/configure.zcml:30
+msgid "Displays the text of the news article only."
+msgstr ""
+
+#: collective/nitf/browser/templates/media.pt:104
+msgid "Drag and drop images to change their order on the slideshow."
+msgstr ""
+
+#: collective/nitf/tiles/nitf.pt:9
+msgid "Drag&amp;drop a News Article here."
+msgstr ""
+
+#: collective/nitf/config.py:53
+msgid "Exclusive"
+msgstr ""
+
+#: collective/nitf/config.py:57
+msgid "Feature"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:115
+msgid "Filter collection"
+msgstr ""
+
+#: collective/nitf/config.py:61
+msgid "Fixture"
+msgstr ""
+
+#: collective/nitf/config.py:64
+msgid "Forecast"
+msgstr ""
+
+#: collective/nitf/config.py:68
+msgid "From the Scene"
+msgstr ""
+
+#: collective/nitf/config.py:195
+msgid "General"
+msgstr ""
+
+#: collective/nitf/interfaces.py:66
+msgid "Genre"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:47
+msgid "Genre to be used as default on new items."
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:97
+msgid "Header"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:64
+msgid "Here you can modify the settings for collective.nitf."
+msgstr ""
+
+#: collective/nitf/config.py:188
+msgid "High"
+msgstr ""
+
+#: collective/nitf/config.py:71
+msgid "History"
+msgstr ""
+
+#: collective/nitf/config.py:75
+msgid "Horoscope"
+msgstr ""
+
+#: collective/nitf/tiles/nitf.py:33
+msgid "Image Rights"
+msgstr ""
+
+#: collective/nitf/config.py:78
+msgid "Interview"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:153
+msgid "Latest Sectionable NITF"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:102
+msgid "Limit"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:21
+msgid "List of available sections in the site."
+msgstr ""
+
+#: collective/nitf/interfaces.py:45
+msgid "Location"
+msgstr ""
+
+#: collective/nitf/config.py:190
+msgid "Low"
+msgstr ""
+
+#: collective/nitf/browser/templates/media.pt:103
+#: collective/nitf/profiles/default/types/collective.nitf.content.xml
+msgid "Media"
+msgstr ""
+
+#: collective/nitf/config.py:82
+msgid "Music"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:63
+#: collective/nitf/profiles/default/controlpanel.xml
+msgid "NITF Settings"
+msgstr ""
+
+#: collective/nitf/behaviors/configure.zcml:14
+msgid "Named section where the item will appear."
+msgstr ""
+
+#: collective/nitf/profiles/default/types/collective.nitf.content.xml
+msgid "News Article"
+msgstr ""
+
+#: collective/nitf/tiles/configure.zcml:19
+msgid "News Article Tile"
+msgstr ""
+
+#: configure.zcml
+msgid "News Article View"
+msgstr ""
+
+#: collective/nitf/config.py:189
+msgid "Normal"
+msgstr ""
+
+#: collective/nitf/config.py:85
+msgid "Obituary"
+msgstr ""
+
+#: collective/nitf/config.py:89
+msgid "Opinion"
+msgstr ""
+
+#: collective/nitf/config.py:93
+msgid "Polls and Surveys"
+msgstr ""
+
+#: collective/nitf/config.py:97
+msgid "Press Release"
+msgstr ""
+
+#: collective/nitf/config.py:101
+msgid "Press-Digest"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:109
+msgid "Pretty dates"
+msgstr ""
+
+#: collective/nitf/config.py:105
+msgid "Profile"
+msgstr ""
+
+#: collective/nitf/config.py:109
+msgid "Program"
+msgstr ""
+
+#: collective/nitf/config.py:114
+msgid "Question and Answer Session"
+msgstr ""
+
+#: collective/nitf/config.py:118
+msgid "Quote"
+msgstr ""
+
+#: collective/nitf/config.py:122
+msgid "Raw Sound"
+msgstr ""
+
+#: collective/nitf/config.py:125
+msgid "Response to a Question"
+msgstr ""
+
+#: collective/nitf/config.py:128
+msgid "Results Listings and Statistics"
+msgstr ""
+
+#: collective/nitf/config.py:132
+msgid "Retrospective"
+msgstr ""
+
+#: collective/nitf/config.py:137
+msgid "Review"
+msgstr ""
+
+#: collective/nitf/config.py:141
+msgid "Scener"
+msgstr ""
+
+#: collective/nitf/behaviors/configure.zcml:14
+#: collective/nitf/behaviors/interfaces.py:21
+#: collective/nitf/controlpanel.py:24
+msgid "Section"
+msgstr ""
+
+#: collective/nitf/controlpanel.py:29
+msgid "Section to be used as default on new items."
+msgstr ""
+
+#: collective/nitf/controlpanel.py:37
+msgid "Select the list of available genres in the site. Genres indicate a nature, journalistic or intellectual characteristic of items."
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:110
+msgid "Show dates in a pretty format (ie. \"4 hours ago\")."
+msgstr ""
+
+#: collective/nitf/config.py:144
+msgid "Side bar and supporting information"
+msgstr ""
+
+#: configure.zcml
+msgid "Slideshow View"
+msgstr ""
+
+#: collective/nitf/browser/configure.zcml:24
+msgid "Slideshow view"
+msgstr ""
+
+#: collective/nitf/config.py:148
+msgid "Special Report"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:103
+msgid "Specify the maximum number of items to show in the portlet. Leave this blank to show all items."
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.pt:61
+msgid "Submit"
+msgstr ""
+
+#: collective/nitf/interfaces.py:27
+#: collective/nitf/tiles/nitf.py:20
+msgid "Subtitle"
+msgstr ""
+
+#: collective/nitf/config.py:153
+msgid "Summary"
+msgstr ""
+
+#: collective/nitf/config.py:157
+msgid "Synopsis"
+msgstr ""
+
+#: collective/nitf/config.py:161
+msgid "Text only"
+msgstr ""
+
+#: collective/nitf/browser/configure.zcml:30
+msgid "Text only view"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:98
+msgid "The header for the portlet. Leave empty for none."
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:213
+msgid "This portlet display a list of latest NITF created. It allows to filter NITF from different sections."
+msgstr ""
+
+#: collective/nitf/config.py:164
+msgid "Transcript and Verbatim"
+msgstr ""
+
+#: collective/nitf/profiles.zcml:19
+msgid "Uninstall profile for the collective.nitf package."
+msgstr ""
+
+#: collective/nitf/config.py:168
+msgid "Update"
+msgstr ""
+
+#: collective/nitf/upgrades/v1008/configure.zcml:14
+msgid "Update collective.nitf to v1008."
+msgstr ""
+
+#: collective/nitf/upgrades/v2000/configure.zcml:13
+msgid "Upgrade collective.nitf to v2000"
+msgstr ""
+
+#: collective/nitf/interfaces.py:79
+msgid "Urgency"
+msgstr ""
+
+#: collective/nitf/portlets/latest_sectionable_nitf.py:116
+msgid "Use the criteria from this collection to modify the search results and order."
+msgstr ""
+
+#: collective/nitf/config.py:172
+msgid "Voicer"
+msgstr ""
+
+#: collective/nitf/config.py:175
+msgid "Wrap"
+msgstr ""
+
+#: collective/nitf/config.py:178
+msgid "Wrapup"
+msgstr ""
+
+#: collective/nitf/profiles.zcml:12
+msgid "collective.nitf"
+msgstr ""
+
+#: collective/nitf/profiles.zcml:19
+msgid "collective.nitf uninstall"
+msgstr ""
+
+#: collective/nitf/upgrades/v1008/configure.zcml:14
+msgid "collective.nitf:v1008"
+msgstr ""
+
+#: collective/nitf/upgrades/v2000/configure.zcml:13
+msgid "collective.nitf:v2000"
+msgstr ""
+
+#. Default: "Describes the nature, journalistic or intellectual characteristic of a news object, not specifically its content."
+#: collective/nitf/interfaces.py:67
+msgid "help_genre"
+msgstr ""
+
+#. Default: "Event location. Where an event took place (as opposed to where the story was written)."
+#: collective/nitf/interfaces.py:46
+msgid "help_location"
+msgstr ""
+
+#. Default: "Named section where the item will appear."
+#: collective/nitf/behaviors/interfaces.py:22
+msgid "help_section"
+msgstr ""
+
+#. Default: "A subordinate headline for the article."
+#: collective/nitf/interfaces.py:28
+msgid "help_subtitle"
+msgstr ""
+
+#. Default: "News importance."
+#: collective/nitf/interfaces.py:80
+msgid "help_urgency"
+msgstr ""
+
+#. Default: "News Article"
+#: collective/nitf/tiles/nitf.py:48
+msgid "msg_short_name_nitf"
+msgstr ""
