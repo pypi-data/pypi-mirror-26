@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+mxrain.egg-info/PKG-INFO
+mxrain.egg-info/SOURCES.txt
+mxrain.egg-info/dependency_links.txt
+mxrain.egg-info/top_level.txt
+mxrain.egg-info/zip-safe
+mxrainsrc/__init__.py
+mxrainsrc/mxrain.py
