@@ -1,0 +1,12 @@
+currint/__init__.py,sha256=zUP_CCLACm8OS_dqs6MvaFupOVTRGZHd9s1uSTxZxPU,109
+currint/amount.py,sha256=TYHYhgZLSBoANoXKf0SKCX5nMpK2MQ47TI8mA2WmZrs,6949
+currint/currency.py,sha256=78AXaaPax_4pMCCTkrXkO0M_wla5ilUIMCNGPGiOPtg,13173
+currint/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+currint/tests/test_amount.py,sha256=yxRS0iT6trtX0AviiLTWHTKm9ltsQgbE8hwneoiTTGE,9998
+currint/tests/test_currency.py,sha256=vXW_-j4l6FhVuqWKch7Jdr1yVIyqF71fcyM-HzQY2R0,2827
+currint-2.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+currint-2.0.0.dist-info/METADATA,sha256=_hlO3mI0xWJzau1H9UHoSXG7L6y9Zv-k0zBQp09dhs0,843
+currint-2.0.0.dist-info/RECORD,,
+currint-2.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+currint-2.0.0.dist-info/metadata.json,sha256=e03DtL7Wu3xafkZFDgGNZGw89mHq8sx4k97xRXO1egA,905
+currint-2.0.0.dist-info/top_level.txt,sha256=XHAV3OuwfWvlnmXDPJZAmh7Z5XoX2kJGoSdYvjms3lg,8
