@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+cotimelog/__init__.py
+cotimelog/cologger.py
+cotimelog/tests.py
+cotimelog.egg-info/PKG-INFO
+cotimelog.egg-info/SOURCES.txt
+cotimelog.egg-info/dependency_links.txt
+cotimelog.egg-info/top_level.txt
