@@ -1,0 +1,6 @@
+[console_scripts]
+ancybindiff = ancypatch.scripts.bindiff:main
+ancyexplore = ancypatch.scripts.explore:run
+ancypatch = ancypatch.scripts.patch:main
+ancyrun = ancypatch.scripts.patch:run
+
