@@ -1,0 +1,45 @@
+from bgframework import add_ons
+from django.conf.urls import url
+from django.utils.translation import ugettext_lazy as _
+# from .views import (
+#     YourViews01,
+#     YourViews02,
+# )
+
+class {{ camel_case_app_name }}Addon(add_ons.BaseAddon):
+
+    # Add-ons url, it look like: 'http://your domain/addons/myapp/...'
+    # urlpatterns = [
+    #     url(r'myapp/view01/$', YourViews01.as_view(), name="myapp_view01"),
+    #     url(r'myapp/view02/$', YourViews02.as_view(), name="myapp_view02"),
+    # ]
+    # Top navbar display name
+    name = _('{{ app_name }}')
+    # Navbar first sort by addons.sort_id
+    sort_id = 0
+    # Second level navbar
+    navs = [
+        # {   "nav_name": _('MyAppNameNav01'),    # display name
+        #     "url_name":"addons:myapp_view01",   # target url
+        #     "sort": 4,                          # sequence number 
+        #     "nav_id":"nav-myapp_view01",        # navbar html element id
+        #     "iconclass":"fa fa-male",            # icon style
+        #     "require_group":"admin",            # required django auth groups, optional
+        #     "subnav": [
+        #         {
+        #              "nav_name": _('MyAppNameNav01Sub01'),
+        #              "url_name":"addons:myapp_viewsub01",
+        #              "nav_id":"nav-myapp_view01",
+        #              "require_group":"admin",
+        #         }
+        #     ]
+        # },
+        # {   "nav_name": _('MyAppNameNav02'),
+        #     "url_name":"addons:myapp_view02",
+        #     "sort": 5,
+        #     "nav_id":"nav-myapp_view02",
+        #     "iconclass":"fa fa-reorder",
+        #     "require_group":"customer"
+        # },
+    ]
+# add_ons.register({{ camel_case_app_name }}Addon)
