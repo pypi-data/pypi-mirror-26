@@ -1,0 +1,5 @@
+numpy
+matplotlib
+lasio
+striplog
+tqdm
