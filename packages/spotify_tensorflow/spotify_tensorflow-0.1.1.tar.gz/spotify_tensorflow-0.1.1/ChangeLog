@@ -1,0 +1,36 @@
+CHANGES
+=======
+
+0.1.1
+-----
+
+* Publish also for python 2
+* Add example of use of featran dataset
+* Return actual number of features
+* Add compression to example dataset
+
+0.1.0
+-----
+
+* Update ignore files
+* Requires >= on TF
+* Update ignore files
+* Remove obsolete readme parts
+* Remove spotify build files
+* Add license and notice
+* Add some setup cfg config
+* Fix style
+* Fix style add nose dep
+* Ignore swp files
+* Add test for featran dataset
+* Empty list instead of None
+* Use TF 1.3.0
+* Fix style
+* Add test requirements
+* Remove default value for features
+* Expose parsing function generator
+* Add requirements.txt
+* Fix indentation, from 2 to 4
+* Use file\_io
+* Dataset Example reader helper
+* Init commit
