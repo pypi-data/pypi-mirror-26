@@ -1,0 +1,102 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'flags/sprite.css' %}">
+
+<script type="text/javascript">
+
+    function get_common_params(){
+        return {
+            'competition_slug': "{{ competition.slug }}",
+            'year': "{{ season.year }}"
+        }
+    }
+
+    function reload_stats(el){
+
+        var standing_model = $(el).data('standingModel');
+
+        $('.loader-lock').removeClass('hide');
+
+        var params = get_common_params();
+
+        params['model'] = standing_model;
+
+        record_el = $('#record');
+
+        if(record_el.val() !== ''){
+            params['record'] = record_el.val();
+        }
+
+        rank_opt = $('#rank_opt');
+
+        if(rank_opt.val() !== ''){
+            params['rank_opt'] = rank_opt.val();
+        }
+
+
+        $.get("{% url 'driver27:dr27-ajax:stats' %}", params,
+            function (response) {
+                $(el).html(response);
+                $('.loader-lock').addClass('hide');
+            }
+        );
+
+    }
+
+    function reload_standing(el) {
+
+        $('.loader-lock').removeClass('hide');
+
+        var standing_model = $(el).data('standingModel');
+
+        var params = get_common_params();
+
+        params['model'] = standing_model;
+
+        {% if olympic == True %}
+            params.olympic = 1;
+        {% endif %}
+
+        punctuation = $('#scoring').val();
+        if (punctuation) {
+            params.punctuation = punctuation;
+        }
+
+        by_season = $('#by_season').is(':checked');
+        if (by_season) {
+            params.by_season = 1;
+        }
+
+        $.get("{% url 'driver27:dr27-ajax:standing' %}", params,
+            function (response) {
+                $(el).html(response);
+                $('.loader-lock').addClass('hide');
+            }
+        );
+    }
+
+    function reload_all_standings() {
+        $('.standing[data-standing-model]').each(function (index, el) {
+            reload_standing(el);
+        })
+    }
+
+    function reload_all_stats() {
+        $('.stats[data-standing-model]').each(function (index, el) {
+            reload_stats(el);
+        })
+    }
+
+    $(function () {
+        reload_all_standings();
+        reload_all_stats();
+
+        $('#scoring, #by_season').change(function () {
+            reload_all_standings();
+        });
+
+        $('#record, #rank_opt').change(function () {
+            reload_all_stats();
+        });
+    });
+
+</script>

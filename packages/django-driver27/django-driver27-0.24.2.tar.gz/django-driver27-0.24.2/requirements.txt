@@ -1,0 +1,12 @@
+django>=1.10
+django-bootstrap3
+django-countries
+django-tabbed-admin
+python-slugify
+tox
+djangorestframework>=3.7.0
+django-swapfield
+django-filter
+unicodecsv
+python-memcached
+django-memcache-status
