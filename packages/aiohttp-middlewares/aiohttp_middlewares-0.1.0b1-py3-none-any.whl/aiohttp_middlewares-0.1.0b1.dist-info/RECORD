@@ -1,0 +1,11 @@
+aiohttp_middlewares/__init__.py,sha256=nigaIPCI5RAdniL4NoTnstxscTp_B1TNHOS_OFBpbMI,302
+aiohttp_middlewares/https.py,sha256=0nppsXKprryvKJaUfWy674Uj7z19V--3F3H8P--xzUk,2633
+aiohttp_middlewares/timeout.py,sha256=pn-obohj8hEllgpzt5y4XcAYfzXebz0suvam8bgYgVg,4956
+aiohttp_middlewares/types.py,sha256=haDCKfV69vUzP5944HlVw087KG25kCDTkrGgKThgRaY,499
+aiohttp_middlewares/utils.py,sha256=xZlzSfY6hSB15AnAVY_4to0MZu9On4OmbizMTWPDoXE,776
+aiohttp_middlewares-0.1.0b1.dist-info/DESCRIPTION.rst,sha256=jwBTLTJzrWD_dertjSBh1N1txc9cckGWv2plgiCAx2s,1482
+aiohttp_middlewares-0.1.0b1.dist-info/METADATA,sha256=rbjhHQ3FRW3MU-GE4WGRKn-OS5arIiFWcdn0RngxkHE,2527
+aiohttp_middlewares-0.1.0b1.dist-info/RECORD,,
+aiohttp_middlewares-0.1.0b1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aiohttp_middlewares-0.1.0b1.dist-info/metadata.json,sha256=t3rsf81kh6K52irxeiNcu4UopHoGhgn3PLxj8dAUQ7w,1188
+aiohttp_middlewares-0.1.0b1.dist-info/top_level.txt,sha256=rZl8BQud-eN6ayj5EQoN1BwtcHIS_DTRkwD5xKmrNHc,20
