@@ -1,0 +1,2 @@
+rapydo-utils==0.5.6
+invoke==0.21.0
