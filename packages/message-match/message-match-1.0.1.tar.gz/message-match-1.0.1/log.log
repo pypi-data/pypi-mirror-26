@@ -1,0 +1,374 @@
+special
+special
+special
+special
+special
+special
+special
+special
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+smurf
+FOO
+FOO
+foo
+<_sre.SRE_Pattern object at 0x7f068a7d00d8>
+None
+smurf
+<_sre.SRE_Pattern object at 0x7f068aa8c670>
+None
+FOO
+<_sre.SRE_Pattern object at 0x7f068a7d0420>
+None
+FOO
+<_sre.SRE_Pattern object at 0x7f068a7d0420>
+None
+foo
+re.compile('foo')
+None
+smurf
+re.compile('smurf')
+None
+FOO
+re.compile('FOO')
+None
+FOO
+re.compile('FOO')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f8604ac78d0>
+<_sre.SRE_Match object at 0x7f8603e29098>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f8604131670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f86041a5988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f86041a5988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7fbf1d5148d0>
+<_sre.SRE_Match object at 0x7fbf1c81c2a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7fbf1cb7f670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7fbf1cbf3988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7fbf1cbf3988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f5c6ef7c8d0>
+<_sre.SRE_Match object at 0x7f5c6e2842a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f5c6e5e6670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f5c6e65a988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f5c6e65a988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f4c6a07a8d0>
+<_sre.SRE_Match object at 0x7f4c693822a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f4c696e5670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f4c69759988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f4c69759988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f4e802e58d0>
+<_sre.SRE_Match object at 0x7f4e7f5ec2a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f4e7f950670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f4e7f9c4988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f4e7f9c4988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7fcc83cdb8d0>
+<_sre.SRE_Match object at 0x7fcc82fe22a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7fcc83346670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7fcc833ba988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7fcc833ba988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f01497e88d0>
+<_sre.SRE_Match object at 0x7f0148b48098>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f0148e52670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f0148ec6988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f0148ec6988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f30196dc8d0>
+<_sre.SRE_Match object at 0x7f30189e52a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f3018d47670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f3018dbb988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f3018dbb988>
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f39dfcd18d0>
+<_sre.SRE_Match object at 0x7f39df030098>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f39df33b670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f39df3af988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f39df3af988>
+case insensitive
+None
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+case insensitive
+None
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f9945ba98d0>
+<_sre.SRE_Match object at 0x7f9944f0a098>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f9945214670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f9945288988>
+None
+.*FOO.*
+case insensitive
+<_sre.SRE_Pattern object at 0x7f9945288a40>
+<_sre.SRE_Match object at 0x7f9944f01098>
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+case insensitive
+re.compile('.*FOO.*', re.IGNORECASE)
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*foo.*
+<_sre.SRE_Pattern object at 0x7fa2bcef98d0>
+<_sre.SRE_Match object at 0x7fa2bc2032a0>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7fa2bc564670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7fa2bc5d8988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7fa2bc5d8a40>
+<_sre.SRE_Match object at 0x7fa2bc2032a0>
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*', re.IGNORECASE)
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*foo.*
+<_sre.SRE_Pattern object at 0x7f16612068d0>
+<_sre.SRE_Match object at 0x7f1660567098>
+.*smurf.*
+<_sre.SRE_Pattern object at 0x7f1660871670>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f16608e5988>
+None
+.*FOO.*
+<_sre.SRE_Pattern object at 0x7f16608e5a40>
+<_sre.SRE_Match object at 0x7f166055e098>
+.*foo.*
+re.compile('.*foo.*')
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+.*smurf.*
+re.compile('.*smurf.*')
+None
+.*FOO.*
+re.compile('.*FOO.*')
+None
+.*FOO.*
+re.compile('.*FOO.*', re.IGNORECASE)
+<_sre.SRE_Match object; span=(0, 8), match='forefoot'>
+2
+5
