@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+knowledgelab/__init__.py
+knowledgelab/commands.py
+knowledgelab/extension.py
+knowledgelab.egg-info/PKG-INFO
+knowledgelab.egg-info/SOURCES.txt
+knowledgelab.egg-info/dependency_links.txt
+knowledgelab.egg-info/not-zip-safe
+knowledgelab.egg-info/top_level.txt
