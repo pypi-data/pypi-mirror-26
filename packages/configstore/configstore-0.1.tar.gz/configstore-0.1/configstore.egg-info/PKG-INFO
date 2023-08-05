@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: configstore
+Version: 0.1
+Summary: Retrieve config from different backends
+Home-page: https://github.com/caravancoop/configstore.git
+Author: Antoine Reversat
+Author-email: antoine@caravan.coop
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

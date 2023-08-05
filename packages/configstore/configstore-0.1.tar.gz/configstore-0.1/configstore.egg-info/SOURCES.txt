@@ -1,0 +1,9 @@
+README.md
+setup.py
+configstore/__init__.py
+configstore/exceptions.py
+configstore.egg-info/PKG-INFO
+configstore.egg-info/SOURCES.txt
+configstore.egg-info/dependency_links.txt
+configstore.egg-info/not-zip-safe
+configstore.egg-info/top_level.txt
