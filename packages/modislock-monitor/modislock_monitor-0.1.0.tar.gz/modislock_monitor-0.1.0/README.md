@@ -1,0 +1,42 @@
+![Modis GmbH](http://modislab.com/wp-content/uploads/2017/04/logo_100.png) 
+# [Monitor](http://www.modislab.com) 
+
+Intended to run as a daemon service that monitors the incoming requests from Modis readers. The monitor also
+maintains conditions of 2 door sensors as well as 4 possible readers. 
+
+Notifications are handled at the monitor but they are sent asynchronously via Redis and Celery.
+
+
+## Installation
+The monitor was designed to run on a Raspberry Pi 3 or CM3 module. It **will not** work on Micro$oft Windows. 
+
+An emulator can work with a Linux based system and the [GPIOEmu](https://github.com/paly2/GPIOEmu) package in 
+place of the [RPi.GPIO](https://sourceforge.net/projects/raspberry-gpio-python/) package.
+
+Validation requests are handled through Raspberry Pi's UART so if running on a Pi3 will need the BT module
+disabled and the pins configured for UART communications.
+
+#### Requirements
+
+Supervisor `apt install supervisor`
+A MySQL service is also required to be running on the same machine. `apt install mysql-server5.5`
+
+##### Optional
+For notifications, a redis server is required. `apt install redis`
+
+#### Installation can be accomplished with:
+`pip install modislock_monitor`
+
+The installation writes several files to the /etc/supervisor/conf.d, the install will need to have 
+super user privileges.
+
+`sudo pip install modislock_monitor`
+
+#### Database Population
+
+The initial installation will populate the database. No user intervention is required.
+
+## Options
+
+You can adapt the configuration of the monitor by modifying the `config/default.py` or `config/development.py` or 
+`config/production.py` files based on your mode of operation.
