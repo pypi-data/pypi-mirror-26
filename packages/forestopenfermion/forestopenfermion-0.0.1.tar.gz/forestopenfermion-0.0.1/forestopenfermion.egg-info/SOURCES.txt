@@ -1,0 +1,12 @@
+README.rst
+setup.py
+forestopenfermion/__init__.py
+forestopenfermion/pyquil_circuit_generator.py
+forestopenfermion/pyquil_connector.py
+forestopenfermion.egg-info/PKG-INFO
+forestopenfermion.egg-info/SOURCES.txt
+forestopenfermion.egg-info/dependency_links.txt
+forestopenfermion.egg-info/top_level.txt
+forestopenfermion/tests/__init__.py
+forestopenfermion/tests/pyquil_connector_test.py
+forestopenfermion/tests/pyquil_generator_test.py
