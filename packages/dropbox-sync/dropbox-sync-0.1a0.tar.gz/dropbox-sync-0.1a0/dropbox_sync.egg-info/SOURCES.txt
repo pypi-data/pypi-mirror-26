@@ -1,0 +1,9 @@
+README.md
+setup.py
+dropbox-sync/syncer.py
+dropbox_sync.egg-info/PKG-INFO
+dropbox_sync.egg-info/SOURCES.txt
+dropbox_sync.egg-info/dependency_links.txt
+dropbox_sync.egg-info/not-zip-safe
+dropbox_sync.egg-info/requires.txt
+dropbox_sync.egg-info/top_level.txt
