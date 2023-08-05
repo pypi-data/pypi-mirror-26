@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+lecsimnester.egg-info/PKG-INFO
+lecsimnester.egg-info/SOURCES.txt
+lecsimnester.egg-info/dependency_links.txt
+lecsimnester.egg-info/top_level.txt
