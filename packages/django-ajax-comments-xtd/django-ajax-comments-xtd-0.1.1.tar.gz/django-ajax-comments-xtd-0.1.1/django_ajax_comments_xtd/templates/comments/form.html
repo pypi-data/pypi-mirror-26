@@ -1,0 +1,28 @@
+{% load i18n %}
+{% load comments bulma_tags %}
+
+<form id="comment-reply-form" class="comment-submit-form" method="POST" action="{% comment_form_target %}" {% if form.reply_to.value %}data-reply-to="{{ form.reply_to.value }}"{% endif %}>
+  {% csrf_token %}
+
+  {% for field in form %}
+    {% if field.is_hidden %}<div>{{ field }}</div>{% endif %}
+  {% endfor %}
+
+  <div style="display:none">{{ form.honeypot }}</div>
+
+  {{ form.comment|bulma }}
+   {% if not request.user.is_authenticated %}
+     <div class="columns">
+      <div class="column">{{ form.name|bulma }}</div>
+      <div class="column">{{ form.email|bulma }}</div>
+     </div>
+   {% endif %}
+
+  <div class="columns">
+    <div class="column">
+      <button class="button is-primary is-fullwidth">{% trans 'Send comment' %}</button>
+    </div>
+    <div class="column">{{ form.followup|bulma }}</div>
+  </div>
+
+</form>
