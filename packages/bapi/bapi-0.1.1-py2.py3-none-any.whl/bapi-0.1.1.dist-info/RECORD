@@ -1,0 +1,17 @@
+bapi/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+bapi/app.py,sha256=a5xG4Lq3l5PbyyxtL0CsJQIx5uTz2R6SPl-hNw6KJVs,953
+bapi/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bapi/api/core.py,sha256=_oO6DFw54zPNdfPW0wkZsUFAkvYO9hKfL8wH9NfzD5M,323
+bapi/api/query.py,sha256=DWWDdfFk7-PbPk8yeRA2PSM3SSevfGuZaXQ0JB_UIic,1285
+bapi/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bapi/core/exception.py,sha256=fdUlZqbfDzJBA0J0T7ilfhTblqEdw5Q1rptmW-cIRBg,40
+bapi/core/storage.py,sha256=1vX8RsJO7Zg_E0ykDZKHi3HuIF0vzW9HW5kdKVFBBko,814
+bapi-0.1.1.dist-info/DESCRIPTION.rst,sha256=7cDJy6lnsSs465FG2S2L_Uf8YjtSewuSnatv4nOzozA,433
+bapi-0.1.1.dist-info/METADATA,sha256=KIovnxRfgOvo8GNdtWDK-P3e367ckScziJvgC25vW0I,1229
+bapi-0.1.1.dist-info/RECORD,,
+bapi-0.1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+bapi-0.1.1.dist-info/entry_points.txt,sha256=WlNDG0genPTRDO9CDQOfrTJH2h90NNGuv93ox9v1d_c,40
+bapi-0.1.1.dist-info/metadata.json,sha256=U9zKmVmvY_zvDFIK52AIWKpA16VB7MNCZASjaBo_2J4,1089
+bapi-0.1.1.dist-info/top_level.txt,sha256=I-Wbh784Uq-q1uzrISRLvG1FHq7H2bl1zg3xG0Km9I8,11
+tests/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/core/storage_test.py,sha256=yfJrgR_dFe53cvwY24bqtuoPQNmqj72tns_F-uVW7dQ,737
