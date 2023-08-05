@@ -1,0 +1,10 @@
+README.md
+setup.py
+horoscoop/__init__.py
+horoscoop/main.py
+horoscoop.egg-info/PKG-INFO
+horoscoop.egg-info/SOURCES.txt
+horoscoop.egg-info/dependency_links.txt
+horoscoop.egg-info/entry_points.txt
+horoscoop.egg-info/requires.txt
+horoscoop.egg-info/top_level.txt
