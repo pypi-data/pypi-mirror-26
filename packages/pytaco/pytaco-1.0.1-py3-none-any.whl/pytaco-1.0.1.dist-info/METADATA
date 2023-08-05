@@ -1,0 +1,42 @@
+Metadata-Version: 1.2
+Name: pytaco
+Version: 1.0.1
+Summary: How many tacos for a meetup?
+Home-page: https://github.com/Mariatta/taco-py
+License: UNKNOWN
+Author: Mariatta Wijaya
+Author-email: mariatta.wijaya@gmail.com
+Maintainer: Mariatta Wijaya
+Maintainer-email: mariatta.wijaya@gmail.com
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+
+pytaco
+======
+
+
+Stop ordering Pizza for your meetup! Order Taco!
+
+Inspired by `pizza.py <https://github.com/BostonPython/fingertools/blob/master/pizza.py>`_.
+
+Installation
+============
+
+Requires Python 3.6
+
+::
+
+   pip3 install pytaco
+
+Once installed, on the command line, type::
+
+   pytaco
+
+and press Enter.
+
+🌮
+
+Check my other project: `tic-tac-taco-pizza <https://pypi.org/project/tic_tac_taco_pizza/>`_.
+
