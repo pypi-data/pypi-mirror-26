@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+fmodpy/__init__.py
+fmodpy/fmodpy.py
+fmodpy.egg-info/PKG-INFO
+fmodpy.egg-info/SOURCES.txt
+fmodpy.egg-info/dependency_links.txt
+fmodpy.egg-info/requires.txt
+fmodpy.egg-info/top_level.txt
