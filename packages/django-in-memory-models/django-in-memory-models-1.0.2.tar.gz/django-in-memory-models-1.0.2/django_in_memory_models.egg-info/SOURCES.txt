@@ -1,0 +1,7 @@
+setup.py
+django_in_memory_models.egg-info/PKG-INFO
+django_in_memory_models.egg-info/SOURCES.txt
+django_in_memory_models.egg-info/dependency_links.txt
+django_in_memory_models.egg-info/not-zip-safe
+django_in_memory_models.egg-info/requires.txt
+django_in_memory_models.egg-info/top_level.txt
