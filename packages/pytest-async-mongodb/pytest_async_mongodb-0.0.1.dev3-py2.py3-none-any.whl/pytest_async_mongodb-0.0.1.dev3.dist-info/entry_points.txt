@@ -1,0 +1,3 @@
+[pytest11]
+pytest-async-mongodb = pytest_async_mongodb.plugin
+
