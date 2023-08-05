@@ -1,0 +1,13 @@
+photinia/__init__.py,sha256=P3hcSfGflepIDExHKI0bjMTFx9jnIjMW0tj_sluaxZs,569
+photinia/main.py,sha256=CIrXcpfqXBPd_T1tMVV6r84dOnbJyP-WjY9UlixU-6M,891
+photinia/ops.py,sha256=-S6Hov3ZWGGQzea422afM9r-wQV_hCp0W5AM1ixaXNw,2423
+photinia/training.py,sha256=DPEctigT0IK_P4gmQc9B9s4C6d-7G4vnM1R1Hop2UuE,15967
+photinia/utils.py,sha256=YPh_MccCdQx8VyzJi9qiMgxvbuIifvIg9BH2lRqZrrI,268
+photinia/widgets.py,sha256=0mUDJNCcpiM1AOtxp0wC7fuXnqSNtvgy0cQwwOXmBqU,39888
+photinia-0.1.20171018.dist-info/DESCRIPTION.rst,sha256=IVKKxccosJhJiLuhmffdOMJMqiuadrvy4I3kbuxp31A,380
+photinia-0.1.20171018.dist-info/METADATA,sha256=mqBt4OB_okOdsNwYwJoHSCrao8QvC7MQ6HhhH8X08hk,802
+photinia-0.1.20171018.dist-info/RECORD,,
+photinia-0.1.20171018.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+photinia-0.1.20171018.dist-info/metadata.json,sha256=wYmUPkseNwIgxtdJslBpugl-dCHw1WGby5wvkdtYvR0,646
+photinia-0.1.20171018.dist-info/top_level.txt,sha256=V--2exUcWuROhkvBe-B-qeoFw_SeXaMEuCP1PLmbFzY,9
+photinia-0.1.20171018.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
