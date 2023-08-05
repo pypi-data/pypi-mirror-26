@@ -1,0 +1,11 @@
+collectd_rabbitmq-1.19.0.data/data/share/collectd-rabbitmq/types.db.custom,sha256=SYTr7LAPgBveniCj3bCoINMZLZd8NOzzarWpsd8Iqws,2208
+collectd_rabbitmq/rabbit.py,sha256=ywR1MUgndrYwfU3ViE4GK_wAsS6xULP95r6l9kw-Ifs,6679
+collectd_rabbitmq/collectd_plugin.py,sha256=PxS-F7fAC1fiMFsJ8RcWqkbK9FDXc2l0paaSKTsQiv0,12838
+collectd_rabbitmq/utils.py,sha256=q93ZtFs_xFqaaAyUIQSB9DsW80EkMmlXCNmTk2Uknew,3191
+collectd_rabbitmq/__init__.py,sha256=PvMTFqtUFNQdVjEOjF4SwqihC40AoILowDbGracDUXA,23
+collectd_rabbitmq-1.19.0.dist-info/DESCRIPTION.rst,sha256=nC4ZQ88GmnqDXcAqZIme4itbfxeYPfqxwzvAUHu5ANw,3342
+collectd_rabbitmq-1.19.0.dist-info/metadata.json,sha256=jTJGY4a2PXnAhQLeRwK85qdtl1mTmB5ZTKrMDh4etVw,812
+collectd_rabbitmq-1.19.0.dist-info/top_level.txt,sha256=ii997zQ7VaKPp4Ogt_7bdLjsU91UOO2sE5c4rpHLSWg,18
+collectd_rabbitmq-1.19.0.dist-info/RECORD,,
+collectd_rabbitmq-1.19.0.dist-info/WHEEL,sha256=6lxp_S3wZGmTBtGMVmNNLyvKFcp7HqQw2Wn4YYk-Suo,110
+collectd_rabbitmq-1.19.0.dist-info/METADATA,sha256=hLW2aUh5EtYOtN5k86wpwZNJlAVFqp1Ge5vvYQ6oNUw,3994
