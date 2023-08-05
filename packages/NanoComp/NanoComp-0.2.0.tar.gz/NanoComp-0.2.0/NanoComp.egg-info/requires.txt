@@ -1,0 +1,5 @@
+pandas
+numpy
+nanoplotter>=0.13.5
+nanoget>=0.12.0
+nanomath>=0.12.5
