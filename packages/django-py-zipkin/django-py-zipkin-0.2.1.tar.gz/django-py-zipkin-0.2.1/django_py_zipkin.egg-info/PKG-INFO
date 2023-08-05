@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: django-py-zipkin
+Version: 0.2.1
+Summary: py2 & py3 compatible zipkin for Django
+Home-page: https://github.com/praekeltfoundation/django-py-zipkin
+Author: Simon de Haan
+Author-email: simon@praekelt.org
+License: UNKNOWN
+Description: Django-py-zipkin
+        ================
+        
+        Django middleware and tracing utilities for submitting traces to Zipkin.
+        py2 / py3 compatible.
+        
+Keywords: zipkin
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
