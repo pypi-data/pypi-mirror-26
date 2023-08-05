@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+php2json.pyx
+setup.cfg
+setup.py
+lib/php2json.c
+lib/php2json.h
+php2json.egg-info/PKG-INFO
+php2json.egg-info/SOURCES.txt
+php2json.egg-info/dependency_links.txt
+php2json.egg-info/not-zip-safe
+php2json.egg-info/top_level.txt
