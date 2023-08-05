@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: selfLineOverwriter
+Version: 18.10.17
+Summary: Function to write over specific lines of code in itself
+Home-page: http://dhess.com/s/game/
+Author: The42ndTurtle
+Author-email: throwawayemail@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: save rewrite specific line
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A function that takes a line number and a string argument and writes over that line of your program with whatever is put in the string parameter
+
+
