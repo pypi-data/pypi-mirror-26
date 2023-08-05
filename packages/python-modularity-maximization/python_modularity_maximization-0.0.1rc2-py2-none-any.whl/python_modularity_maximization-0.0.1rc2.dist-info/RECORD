@@ -1,0 +1,10 @@
+modularity_maximization/__init__.py,sha256=rSLQ4oQhMPZW8PqK3kHAsPif6m_2OLqu4jL0nrVER5M,1198
+modularity_maximization/_divide.py,sha256=-l9bxznhK6LtNeFFvdLpycf5z9zawvTeYc750t5kq5g,4128
+modularity_maximization/community_newman.py,sha256=47C48nDWLU1EzocsEFARUbDypwsVpEtJfsspkH9Ac68,3554
+modularity_maximization/utils.py,sha256=mpjFV2w6II0FOqhgoB5ieO7u5erMOQsXVrQ8NYZnSxM,4906
+python_modularity_maximization-0.0.1rc2.dist-info/DESCRIPTION.rst,sha256=dSjZRpgtJvbbejPu-8YfsvilWjMC0usqDXbJHs-IZ_8,1169
+python_modularity_maximization-0.0.1rc2.dist-info/METADATA,sha256=liiRp_9g9Ayai2C7LtOu52r-MAYScY-9YHxTQj2n5uc,2154
+python_modularity_maximization-0.0.1rc2.dist-info/RECORD,,
+python_modularity_maximization-0.0.1rc2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+python_modularity_maximization-0.0.1rc2.dist-info/metadata.json,sha256=8Qq_HoUfKv-kNcUh7FNF5MXSAYsYZpy8SR1fZD3wuYE,1157
+python_modularity_maximization-0.0.1rc2.dist-info/top_level.txt,sha256=3nKhOaK8X_GxAbJ8n9b1-LhW99qjrkH120SmSQwx7Y0,24
