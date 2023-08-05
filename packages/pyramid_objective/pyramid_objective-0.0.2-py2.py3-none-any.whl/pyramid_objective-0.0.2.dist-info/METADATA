@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: pyramid-objective
+Version: 0.0.2
+Summary: declaraive de/serialization of python structures for pyramid
+Home-page: https://github.com/diefans/pyramid_objective
+Author: Oliver Berger
+Author-email: diefans@gmail.com
+License: UNKNOWN
+Keywords: objective pyramid deserialization serialization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Requires-Dist: pyramid
+Requires-Dist: zope.component
+Requires-Dist: objective
+
+UNKNOWN
+
+
