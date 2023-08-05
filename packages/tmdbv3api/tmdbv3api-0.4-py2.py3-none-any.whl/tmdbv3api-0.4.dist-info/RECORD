@@ -1,0 +1,15 @@
+tmdbv3api/__init__.py,sha256=pZ6uIR4R1OhKHBi3-XRpZtzhJm7HGX83haFa5bx2XkY,185
+tmdbv3api/as_obj.py,sha256=hixpbcs3hUG20jn-s_jIZuL3XfdhvPxIpE10iza4T5g,86
+tmdbv3api/tmdb.py,sha256=x0gkXl7p41uK_-l9JJ16JzaHoqN0-fk6J23vQtq2o8E,1406
+tmdbv3api/objs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tmdbv3api/objs/collection.py,sha256=K8UexmLxMLBC36ZaPcOg1UB7TCFbMN4rAdvhLGKcLJg,759
+tmdbv3api/objs/discover.py,sha256=UiUZAHCppFO5zhBdR5k7P7c2YYqucNKeYa-VAhaRgDk,874
+tmdbv3api/objs/movie.py,sha256=I0VCfN3WNsgZhLrue_1a7Wg7XQxoTCnGNZQ1U5eNor4,4335
+tmdbv3api/objs/person.py,sha256=KPbEh63KzEPKHvxH-s9n5mByUW5pbmCXLVmTtsns68w,765
+tmdbv3api/objs/tv.py,sha256=zDn-lA2xA9oEGuePUbyhjNFYS7bgKzk8FNwMOWfHqAk,3678
+tmdbv3api-0.4.dist-info/DESCRIPTION.rst,sha256=5bbpova6z1vfejzKDj-0Cb3MAv_DoUP_4H9eIL3wO6k,5044
+tmdbv3api-0.4.dist-info/METADATA,sha256=QaKbPK7kAq6TfzyLf7PpVsejWn41aT_RLi16tq_pQVY,5570
+tmdbv3api-0.4.dist-info/RECORD,,
+tmdbv3api-0.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+tmdbv3api-0.4.dist-info/metadata.json,sha256=4DLmxArghZs3zNKnjo81dEtp5zZGFvt2JB5xKTzcyI8,750
+tmdbv3api-0.4.dist-info/top_level.txt,sha256=Sisoow2ZPkDgyOOPVxDPQt1YYGk3iOcE1ZRtckp2bo0,10
