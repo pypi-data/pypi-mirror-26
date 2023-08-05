@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+getsiteinfo/__init__.py
+getsiteinfo/awis.py
+getsiteinfo.egg-info/PKG-INFO
+getsiteinfo.egg-info/SOURCES.txt
+getsiteinfo.egg-info/dependency_links.txt
+getsiteinfo.egg-info/requires.txt
+getsiteinfo.egg-info/top_level.txt
