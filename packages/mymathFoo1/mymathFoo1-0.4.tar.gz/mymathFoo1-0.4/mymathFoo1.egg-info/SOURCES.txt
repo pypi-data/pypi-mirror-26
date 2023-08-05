@@ -1,0 +1,9 @@
+README.txt
+add.py
+mymathFoo1.py
+setup.py
+subtract.py
+mymathFoo1.egg-info/PKG-INFO
+mymathFoo1.egg-info/SOURCES.txt
+mymathFoo1.egg-info/dependency_links.txt
+mymathFoo1.egg-info/top_level.txt
