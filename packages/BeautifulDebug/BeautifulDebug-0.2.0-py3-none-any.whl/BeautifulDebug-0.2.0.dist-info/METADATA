@@ -1,0 +1,40 @@
+Metadata-Version: 2.0
+Name: BeautifulDebug
+Version: 0.2.0
+Summary: enjoy beautiful debug tools.
+Home-page: https://github.com/xiaojieluo/BeautifulDebug
+Author: Xiaojieluo
+Author-email: xiaojieluoff@gmail.com
+License: Apache License
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+
+# BeautifulDebug
+the beautiful debug
+
+```python
+import BeautifulDebug as d
+
+d.dir()
+```
+
+dump(msg, format, debug, **kw):
+    msg: 要显示的字符串, 可以包含格式化字符: {}
+    format: 字符串中有 {}时, 替换
+    debug: 控制单个 dump 是否显示,
+    **kw: print 函数的其余参数
+
+
+
+
