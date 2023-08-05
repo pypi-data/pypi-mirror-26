@@ -1,0 +1,15 @@
+semantic_version
+alembic
+arrow
+colorlog
+django
+dogpile.cache
+openpyxl
+pendulum
+prettytable
+pyparsing
+python-dateutil
+pytz
+regex
+sqlalchemy
+sqlparse
