@@ -1,0 +1,12 @@
+z3c.ptcompat-2.1.0-py3.6-nspkg.pth,sha256=Ou9y0X2aSJC-56yWL7VjITZxnfX6slYJCSxhMSKad6I,524
+z3c/ptcompat/__init__.py,sha256=f42SEQ2H9mPr7loCsUjLp9YelkJWXSDqWSU5BCNg16E,673
+z3c/ptcompat/configure.zcml,sha256=gatOGDhgudgW7xveeUaPZQsSLVFXG_O8itz-RFO6F7M,179
+z3c/ptcompat/engine.py,sha256=V7AHlaDbEx4gMP8lLUGMAOmwT2rtE1oWeC8MMx49bH4,1964
+z3c/ptcompat/tests.py,sha256=930u2DZez8WryncQo8UWIsxO3c_ISbZ94ICXjQ4jfOQ,816
+z3c.ptcompat-2.1.0.dist-info/DESCRIPTION.rst,sha256=QDx_40OgRvSkQyx6op8KIYp5p0iJ75vjvnkHZXTrdWM,4709
+z3c.ptcompat-2.1.0.dist-info/METADATA,sha256=ORs9V-iUVZXhCz3qSTvQHMLNwkHMFAuqiqseXgX_LC8,6352
+z3c.ptcompat-2.1.0.dist-info/RECORD,,
+z3c.ptcompat-2.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+z3c.ptcompat-2.1.0.dist-info/metadata.json,sha256=kUwrFDpHk_6dtdCiRiy-GjLbjoTve5iOS91Zw9Lw92c,1707
+z3c.ptcompat-2.1.0.dist-info/namespace_packages.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.ptcompat-2.1.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
