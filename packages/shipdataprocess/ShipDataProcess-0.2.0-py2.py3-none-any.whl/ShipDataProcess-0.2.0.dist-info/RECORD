@@ -1,0 +1,9 @@
+ShipDataProcess-0.2.0.dist-info/DESCRIPTION.rst,sha256=6DTcO7Bxv3lEjpX-TbaXUfUznbB0OYithW3OFRvcMMU,878
+ShipDataProcess-0.2.0.dist-info/METADATA,sha256=JAEMsJkCXdf2hDTI7B3ScgLor2ixss8PW_A1evp9zFM,1172
+ShipDataProcess-0.2.0.dist-info/RECORD,,
+ShipDataProcess-0.2.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+ShipDataProcess-0.2.0.dist-info/metadata.json,sha256=hSUfBiMRHNKhDgWaxfaDtNprLVICRL398vQ_dcNRZJI,485
+ShipDataProcess-0.2.0.dist-info/top_level.txt,sha256=Isy-K71G02UFtQTCwq7OC9BisnG9j8fcde2SughEZY8,16
+shipdataprocess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipdataprocess/normalize.py,sha256=B0a1PREGJqHeLz9gRG3yLTO75qI_Mtae3IjlbTB_PzI,5539
+shipdataprocess/shiptype.py,sha256=EecY9MMLYnQ5gfw_f-w-F7Cm1Gm0n6pcPDuEAU5C1wU,4381
