@@ -1,0 +1,14 @@
+MANIFEST.in
+Pipfile.lock
+README.rst
+Setup.lock
+setup.py
+codemach/__init__.py
+codemach/assembler.py
+codemach/machine.py
+codemach.egg-info/PKG-INFO
+codemach.egg-info/SOURCES.txt
+codemach.egg-info/dependency_links.txt
+codemach.egg-info/not-zip-safe
+codemach.egg-info/requires.txt
+codemach.egg-info/top_level.txt
