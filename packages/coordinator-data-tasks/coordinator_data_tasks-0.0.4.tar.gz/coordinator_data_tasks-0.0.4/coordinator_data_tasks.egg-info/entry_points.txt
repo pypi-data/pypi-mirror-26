@@ -1,0 +1,3 @@
+[console_scripts]
+data_tasks = coordinator_data_tasks.cli:main
+

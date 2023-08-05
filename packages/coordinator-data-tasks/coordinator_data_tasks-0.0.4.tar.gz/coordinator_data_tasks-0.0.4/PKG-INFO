@@ -1,0 +1,114 @@
+Metadata-Version: 1.1
+Name: coordinator_data_tasks
+Version: 0.0.4
+Summary: A python-based command line utility to automate some of the most common data tasks faced by the Clinical Coordinators.
+Home-page: https://github.com/xguse/coordinator_data_tasks
+Author: Gus Dunn
+Author-email: w.gus.dunn@gmail.com
+License: MIT license
+Description-Content-Type: UNKNOWN
+Description: ======================
+        Coordinator Data Tasks
+        ======================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/coordinator_data_tasks.svg
+                :target: https://pypi.python.org/pypi/coordinator_data_tasks
+        
+        .. image:: https://img.shields.io/travis/ScottSnapperLab/coordinator_data_tasks.svg
+                :target: https://travis-ci.org/ScottSnapperLab/coordinator_data_tasks
+        
+        .. image:: https://readthedocs.org/projects/coordinator-data-tasks/badge/?version=latest
+                :target: https://coordinator-data-tasks.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/ScottSnapperLab/coordinator_data_tasks/shield.svg
+             :target: https://pyup.io/repos/github/ScottSnapperLab/coordinator_data_tasks/
+             :alt: Updates
+        
+        
+        A python-based command line utility to automate some of the most common data tasks faced by the Clinical Coordinators.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://coordinator-data-tasks.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        v0.0.4 / 2017-10-25
+        ===================
+        
+          * travis tests now passing
+          * changed pypi deploy target to 3.7
+          * utils/loaders.py: added file (smart table loaders)
+          * track some xls files for tests
+        
+        v0.0.3 / 2017-10-24
+        ===================
+        
+          * Makefile: experimenting with install structure
+          * test_coordinator_data_tasks.py: removed useless test
+          * cli.py: added join subcommands
+          * requirements.dev.pip.txt: mypy lives here now
+          * docs/index.rst: fixed too few `==` under title
+          * docs/conf.py: upgraded auto-build code
+          * left_join.py: more log entries
+          * moved recommonmark req to requirements.pip.txt
+          * got tox to work
+          * Makefile: experimenting with install structure
+          * MANIFEST.in: add req files to allow tox to work
+          * flake8
+          * removed setup and test specific req files
+          * README.rst: fixed badge address errors
+          * fix repo in travis ci setup
+        
+        v0.0.2 / 2017-10-23
+        ===================
+        
+          * prelim tests
+          * allow from coordinator_data_tasks import commands
+          * travis ci setup
+        
+        v0.0.1 / 2017-10-23
+        ===================
+        
+          * setup.py: update metadata (language support)
+          * configure tox
+          * Makefile: formatting
+          * Makefile: py.test -> pytest
+          * setup.py: pick up reqs from req.txt files
+          * setup.cfg: ignore some errors
+          * Makefile: upgraded help, supported conda install
+          * requirements.dev.txt: unpin for now
+          * added commands pkg
+          * added utils pkg
+          * added extra requirements subfiles (pip,setup,etc)
+          * ignore binary document extentions
+          * ignore vscode and mypy_cache
+        
+Keywords: coordinator_data_tasks
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

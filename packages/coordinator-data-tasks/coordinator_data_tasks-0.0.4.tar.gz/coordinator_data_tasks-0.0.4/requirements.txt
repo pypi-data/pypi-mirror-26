@@ -1,0 +1,16 @@
+click
+pandas
+numpy
+munch
+seaborn
+pandas
+numexpr
+numpy
+xlrd
+xlwt
+tqdm>=4.10.0
+ipython
+jupyter
+jupyter_nbextensions_configurator
+widgetsnbextension
+jupyter_contrib_nbextensions
