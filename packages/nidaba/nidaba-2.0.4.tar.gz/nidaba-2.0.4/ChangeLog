@@ -1,0 +1,69 @@
+CHANGES
+=======
+
+2.0.4
+-----
+
+* Hopefully fix travis pypi deploy
+
+2.0.3
+-----
+
+* Sort documents in batches as celery's accumulate function does not preserve ordering
+* Auto-deploy to pypi using travis
+* Intra-XML image path syntax for tesseract segmentation tests
+* Remove kraken jpg test as those are never bitonal
+* disable ocropy tests for now
+
+2.0.2
+-----
+
+* Correct docstring of pybossa plugin
+* Adapt get\_state to new 2.x state format
+* Forgot to add lies here too back in august
+* More helpful exception when executing docless batch
+* make tesseract plugin log output
+* Add syriac model to script selection
+* more hacky switches
+* Add hacky switch in frontend
+* Update dependencies also in template
+* Disable auto queue processing in frontend
+* Update web frontend dependencies
+* Bump requirements to 4.1 for Task.replace bugfixes
+* Wrap add\_task and add\_metadata in promises
+* Pipeline complete Batch.run() invocation
+* Check bitonality of input images in ocr.kraken
+* Resync batch definition before execution
+* Unescape URLs in get\_storage\_path\_url
+* Correct error output in CLI for remote batches
+* Fix classifier identifiers in html
+* Bump pillow version as they broke TIFF conversion
+* Fix exception in Batch.get\_tasks()
+* Allow verbatim inclusion of model repository in kraken plugin
+* Remove deprecate file access methods
+* Use send\_from\_directory in API server
+* Add more metadata fields to web frontend
+* Fix arabic font selector
+* Add arabic selections to web frontend
+* Fix href in frontned
+* Fix display of output in frontend
+* Fix status output in CLI
+* Minor adjustments to introspection functions
+* Fix tesseract exception
+* Reset segment scope when scoping a line
+* Add task/document removal routines to Batch and API
+* Fix syntax error in web frontend
+* Convert color space to RGB for any\_to\_png
+* Correct variable names in pybossa plugin
+* Create one pybossa project per batch
+* Make pybossa plugin actually work
+* pybossa plugin archival fix
+* Fix return value of tesseract segmentation
+* Import exception to api
+* Change output format of segmentations tasks
+* circumvent celery.accumulate arbitraryness
+* Changed pybossa plugin to submit lines as individual tasks
+* Fix document iterator in pybossa plugin
+* kraken doesn't allow tuples in segmentation bboxes anymore
+* Adapt to new kraken version
+* Correct accrued style errors/pep8ify
