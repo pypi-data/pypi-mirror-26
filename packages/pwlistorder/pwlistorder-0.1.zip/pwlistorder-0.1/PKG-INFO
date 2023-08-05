@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pwlistorder
+Version: 0.1
+Summary: Ordering lists based on aggregated pairwise preferences
+Home-page: https://github.com/david-cortes/pwlistorder
+Author: David Cortes
+Author-email: david.cortes.rivera@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/david-cortes/pwlistorder/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: pairwise ranking,list ordering,kwik-sort
+Platform: UNKNOWN
