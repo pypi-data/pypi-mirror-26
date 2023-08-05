@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: sentry-patrol
+Version: 0.0.1
+Summary: Command Line program to interact with sentry API
+Home-page: https://github.com/daneoshiga/sentry-patrol
+Author: Danilo Shiga
+Author-email: daniloshiga@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: sentry cli patrol
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Distributed Computing
+
+UNKNOWN
+
+
