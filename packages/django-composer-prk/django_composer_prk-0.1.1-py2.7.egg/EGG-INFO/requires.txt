@@ -1,0 +1,5 @@
+django-crum
+django-nested-admin
+django-simplemde
+BeautifulSoup
+markdown
