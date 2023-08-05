@@ -1,0 +1,45 @@
+Metadata-Version: 2.0
+Name: PredictionIO
+Version: 0.9.9
+Summary: PredictionIO Python SDK
+Home-page: http://predictionio.apache.org/
+Author: Apache PredictionIO
+Author-email: user@predictionio.apache.org
+License: LICENSE.txt
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pytz (>=2014.2)
+
+PredictionIO Python SDK
+
+PredictionIO is a prediction server for building smart
+applications. While you search data through a database
+server, you can make prediction through PredictionIO.
+
+With PredictionIO, you can write apps
+
+- that predict user behaviors based on solid data
+  science
+- using your choice of state-of-the-art machine
+  learning algorithms
+- without worrying about scalability
+
+Detailed documentation is available on our
+`documentation site <http://predictionio.apache.org/>`_.
+
+This module provides convenient access of the
+PredictionIO API to Python programmers so that they
+can focus on their application logic.
+
+
