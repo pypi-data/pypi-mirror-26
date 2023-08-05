@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: marlight
+Version: 0.0.1
+Summary: Marglight RGBW control through ethernet bridge
+Home-page: UNKNOWN
+Author: Nicolas Gilles
+Author-email: nicolas.gilles@gmail.com
+License: BSD 2-Clause
+Description: # marlight-py
+        
+        marlight-py is Python library for controlling Marlight "smart" bulbs through the ethernet bridge.
+        
+        These bulbs seem to be built by LEDE and can be found under a few different brand names:
+        
+         * Marlight
+         * New-Deal K9
+         * TIME2
+         * ...
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
