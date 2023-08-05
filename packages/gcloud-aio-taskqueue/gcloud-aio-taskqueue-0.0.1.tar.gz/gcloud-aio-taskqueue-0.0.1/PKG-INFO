@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: gcloud-aio-taskqueue
+Version: 0.0.1
+Summary: Asyncio Python Client for Google Cloud Task Queue
+Home-page: https://github.com/jomido/gcloud-aio
+Author: Jonathan Dobson
+Author-email: jon.m.dobson@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Asyncio Python Client for Google Cloud Task Queue
+        =================================================
+        
+        Installation
+        ------------
+        
+        .. code-block:: console
+        
+            $ pip install --upgrade gcloud-aio-taskqueue
+        
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
