@@ -1,0 +1,16 @@
+pylangacq/VERSION,sha256=MMmeixA-rL5vbW4bVLBsptXzFktPUAlDNKUXrpXKj7o,5
+pylangacq/__init__.py,sha256=MWIOt-tNN5qbL7U0UilcOxxixib2dM5TVibelxqlClM,204
+pylangacq/chat.py,sha256=0ngTXxLdp5csftpgCpE_iOXAlzuOOrZfNX0_snT0s9s,62860
+pylangacq/dependency.py,sha256=bI1Tqq3pmDmJjGLQJZVTu0tV-VjFkJTcCibUw8KiGH4,4437
+pylangacq/measures.py,sha256=YSzQZJi8GbfRjZNwEtoZCTbi6EE0jpwOqqUaGNJMrYo,42024
+pylangacq/util.py,sha256=WHtysM7CiQiNb60WgZ5-2PX15k0pklS4RL9WTeWU-eM,11216
+pylangacq/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylangacq/tests/test_dependency.py,sha256=4fkI8S4QLDF7i94erPSSJ6aJInNhC0MGYnxHKdYBYe0,1427
+pylangacq/tests/test_util.py,sha256=0WMtl_8est4k_b7x3vbGmbebqp5WGhIcK2WfsOLcdns,2696
+pylangacq-0.9.0.dist-info/DESCRIPTION.rst,sha256=wxHB5U-zlWbzswPmhO-CWpmj5bcj7gxJ2-3c7YAKgWw,2240
+pylangacq-0.9.0.dist-info/LICENSE.txt,sha256=IPCCLgWr39Ad-cKjxU4u0EkNDBSAKjKj6bHWH5P50wA,1080
+pylangacq-0.9.0.dist-info/METADATA,sha256=RqWBqoGFgQkXxfqLnDGOxG9L5Sxu5FWC4xKM91sRnco,3830
+pylangacq-0.9.0.dist-info/RECORD,,
+pylangacq-0.9.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pylangacq-0.9.0.dist-info/metadata.json,sha256=PBLl05vJ9VmVL4SaH-EbQyet5-YxkEzVng39XMaUFOY,1714
+pylangacq-0.9.0.dist-info/top_level.txt,sha256=cwaonYTKEdsiCOB9WD3dm3SH7m6rJ-cP3mQGXCjv2iw,10
