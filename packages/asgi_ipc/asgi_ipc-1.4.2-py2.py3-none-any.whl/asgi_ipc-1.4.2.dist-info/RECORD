@@ -1,0 +1,9 @@
+asgi_ipc/__init__.py,sha256=qk_QApWDlEG18FBu2NxQa5MsJjzyO5LpU59EjmY5p0A,123
+asgi_ipc/core.py,sha256=xopl2wbEZ_nXUJDvgWp1EIvn_cEwcm1PvgwInaNMgkE,5102
+asgi_ipc/store.py,sha256=0F2H58-h5Yy2dyJNLIkKpzu4rL9csScZdTQ_xFkvo0c,6889
+asgi_ipc-1.4.2.dist-info/DESCRIPTION.rst,sha256=0xfTaVRrs3vUJfJpET-2_KNSd_RVAFIwdF5uqX_ziUE,4671
+asgi_ipc-1.4.2.dist-info/METADATA,sha256=e2hIov3iVtGa1OKdjr_LrbgWrCeIHhqAUOXv9kCwfvI,5056
+asgi_ipc-1.4.2.dist-info/RECORD,,
+asgi_ipc-1.4.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+asgi_ipc-1.4.2.dist-info/metadata.json,sha256=Q21ZVcuKziSK5muwh19847iTxXFZl-9sFQPvUHG-PM4,571
+asgi_ipc-1.4.2.dist-info/top_level.txt,sha256=YUBvRyyi6GetZyQujZwy_Sybcy-GezLTa-BU4wlUDVw,9
