@@ -1,0 +1,4 @@
+[console_scripts]
+easylog = easy_log.easylog:easylog
+test = easy_log.easylog:test
+
