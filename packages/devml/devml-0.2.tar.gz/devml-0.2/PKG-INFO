@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: devml
+Version: 0.2
+Summary: Machine Learning, Statistics and Utilities around Developer Productivity, 
+        Company Productivity and Project Productivity
+Home-page: https://github.com/noahgift/devml
+Author: Noah Gift
+Author-email: consulting@noahgift.com
+License: MIT
+Description: 
+            Machine Learning, Statistics and Utilities around Developer Productivity
+        
+            A few handy bits of functionality:
+        
+            Can checkout all repositories in Github
+            Converts a tree of checked out repositories on disk into a pandas dataframe
+            Statistics on combined DataFrames
+            
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
