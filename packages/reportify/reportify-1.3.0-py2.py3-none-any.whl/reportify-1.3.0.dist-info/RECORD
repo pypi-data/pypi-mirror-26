@@ -1,0 +1,15 @@
+reportify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reportify/embed_html.py,sha256=V5SA_oMD56HBe_6n6RXiUyB-pOWV5ys8TxODpCl2ilQ,2091
+reportify/header.py,sha256=EQSOl_dDqbxqCQNhkeF8PvtZp73S3Y0JJINXZhHY23U,1633
+reportify/reportify.py,sha256=ONivNWUDnkW5Fwoar_-KzZgZ4LUuMTD_rNeTyqxmMrI,3333
+reportify/data/footer.md,sha256=zvyBeBWy-DIit2u-8WImTfYP31Fjit0v0bVfxV1wckw,423
+reportify/data/header.md,sha256=tdaa33QtY41d-m7dJfGqzcXekBu0PpGYiJaGMsa9K2Q,1373
+reportify/data/no_code.tpl,sha256=8aPp7hDNRX9vOF23GqrAhZJ9mxKZAp0XxFMfkLWr9R0,332
+reportify/data/custom/custom.css,sha256=e2Z69aPtLK2BsfRy1wU8HF4uUBVCCkfuUydMSJWEV0g,1397
+reportify-1.3.0.dist-info/DESCRIPTION.rst,sha256=698MNblbJkYWUqzUMJKQPZuM3oPNQXmmLP-XqoKlo6o,1191
+reportify-1.3.0.dist-info/METADATA,sha256=qzfWSmKwQ27tsL3K-G8o6lB0ae86r7K36g_bc1R3mjU,2234
+reportify-1.3.0.dist-info/RECORD,,
+reportify-1.3.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+reportify-1.3.0.dist-info/entry_points.txt,sha256=37o-zcK291G9Tw7zPEgnEjgWhXlZClRptjgrFPkeVMU,56
+reportify-1.3.0.dist-info/metadata.json,sha256=SU5S6jPiZIHeJjp43kNY63ZFGj9kZN0Vc2DXDq1yMF0,1291
+reportify-1.3.0.dist-info/top_level.txt,sha256=GZnt5xJpU8rBuJussVS6MrGMsIR_ZCc78UE9OWwRXnI,10
