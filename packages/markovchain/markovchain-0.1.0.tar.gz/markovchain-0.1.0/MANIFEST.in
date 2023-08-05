@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include tests/**/*.py
+include settings/**/*.json
+include docsrc/Makefile
+include docsrc/index.rst
+include docsrc/conf.py
+include build.sh
+include test
+include .editorconfig
+include .pylintrc
