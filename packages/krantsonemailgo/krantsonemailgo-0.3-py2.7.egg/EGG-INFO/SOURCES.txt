@@ -1,0 +1,11 @@
+setup.py
+krantsonemailgo/__init__.py
+krantsonemailgo/krantsonemailgo.py
+krantsonemailgo/logger.py
+krantsonemailgo/storage.py
+krantsonemailgo.egg-info/PKG-INFO
+krantsonemailgo.egg-info/SOURCES.txt
+krantsonemailgo.egg-info/dependency_links.txt
+krantsonemailgo.egg-info/entry_points.txt
+krantsonemailgo.egg-info/requires.txt
+krantsonemailgo.egg-info/top_level.txt
