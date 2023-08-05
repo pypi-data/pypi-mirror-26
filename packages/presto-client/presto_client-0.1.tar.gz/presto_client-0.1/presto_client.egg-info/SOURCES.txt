@@ -1,0 +1,8 @@
+README.md
+setup.py
+presto_client/__init__.py
+presto_client.egg-info/PKG-INFO
+presto_client.egg-info/SOURCES.txt
+presto_client.egg-info/dependency_links.txt
+presto_client.egg-info/not-zip-safe
+presto_client.egg-info/top_level.txt

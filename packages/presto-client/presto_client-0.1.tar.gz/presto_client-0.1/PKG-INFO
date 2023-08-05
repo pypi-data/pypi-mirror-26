@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: presto_client
+Version: 0.1
+Summary: Python Presto Client Using JDBC Provided by Presto Maintainers
+Home-page: http://github.com/gowtham95india/presto_client
+Author: Gowtham Sai
+Author-email: me@gowtham-sai.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
