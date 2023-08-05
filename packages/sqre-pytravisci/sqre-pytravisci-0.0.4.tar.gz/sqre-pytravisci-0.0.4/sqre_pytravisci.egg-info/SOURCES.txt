@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sqre_pytravisci.egg-info/PKG-INFO
+sqre_pytravisci.egg-info/SOURCES.txt
+sqre_pytravisci.egg-info/dependency_links.txt
+sqre_pytravisci.egg-info/requires.txt
+sqre_pytravisci.egg-info/top_level.txt
+travisci/__init__.py
+travisci/travisci.py
