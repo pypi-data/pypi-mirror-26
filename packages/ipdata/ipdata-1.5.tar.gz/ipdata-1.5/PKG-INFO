@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ipdata
+Version: 1.5
+Summary: Python Client for Ipdata.co - a Free Ip Geolocation API
+Home-page: https://github.com/ipdata/python
+Author: Jonathan Kosgei
+Author-email: jonathan@ipdata.co
+License: UNKNOWN
+Download-URL: https://github.com/ipdata/python/archive/1.5.tar.gz
+Description: UNKNOWN
+Keywords: geolocation,ip geolocation,ip locate
+Platform: UNKNOWN
