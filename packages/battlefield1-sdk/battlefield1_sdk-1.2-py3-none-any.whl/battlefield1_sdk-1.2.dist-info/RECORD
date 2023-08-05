@@ -1,0 +1,15 @@
+battlefield1_sdk-1.2.dist-info/DESCRIPTION.rst,sha256=1m2u69BrrlpfmZSA0RsLd17Z6betlymqSLzcdJQkC0g,1773
+battlefield1_sdk-1.2.dist-info/METADATA,sha256=oytr2io42fBmdOLpHj6z0d02QvNptAa_-MkIiGbM6WU,2356
+battlefield1_sdk-1.2.dist-info/RECORD,,
+battlefield1_sdk-1.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+battlefield1_sdk-1.2.dist-info/metadata.json,sha256=FXXOOyxhQOCUoqXZNdA25hxd6nrC23OwnVzDNrDNDY8,746
+battlefield1_sdk-1.2.dist-info/top_level.txt,sha256=ifyQt_YwUKYaM-ql6cXtgzbPdgBZgtdEPVvix7FXkfo,4
+bf1/__init__.py,sha256=18aI2Hf1kNv9NjXYAXOSmT5OHK-iY5EQ1aG_HfnefYw,232
+bf1/api.py,sha256=q8FUMcv3UzSoS5X8U1mrjYkYNs_qiaGBFAFrOHbpFi4,894
+bf1/api_map.py,sha256=2VatkhI1W8ndgXSSUImg9filwbzUwJtnseBmaL2p5ow,3057
+bf1/battlefield.py,sha256=6maxnI9lZSU5_7-mOPMJjiiFVXO_9ZO8_eJJTbxjPGU,1904
+bf1/exceptions.py,sha256=wJmfs3l82H_CX_Vf16I7b20Si0pc870OOLYlCp10PlU,580
+bf1/resolvers.py,sha256=jYZ_atMqARERBEbBEwNByQxE79nWB_2h90rzXFqsu6E,1769
+bf1/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bf1/config/vehicles.py,sha256=B4PUQmKyhfgpkRIKA3TvF9nhd2y7QbbVyacqsx0Re8A,2297
+bf1/config/weapons.py,sha256=OmUJdo2ICupR248UgDnKEk7de-m-CD-BfvAZGx02jCA,11137
