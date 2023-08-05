@@ -1,0 +1,4 @@
+wagtail>1.7
+Django>=1.8.16
+wagtailfontawesome>=1.0.2
+django-comments-xtd>=1.6.3

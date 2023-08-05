@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: wagtail-comments-xtd
+Version: 0.2.9
+Summary: UNKNOWN
+Home-page: https://github.com/joyider/wagtail_comments_xtd
+Author: André Karlsson
+Author-email: andre.karlsson@protractus.se
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3
