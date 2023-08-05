@@ -1,0 +1,10 @@
+README.rst
+setup.py
+zijinlib
+zijinlib/__init__.py
+zijinlib/file.py
+zijinlib/mail.py
+zijinlib.egg-info/PKG-INFO
+zijinlib.egg-info/SOURCES.txt
+zijinlib.egg-info/dependency_links.txt
+zijinlib.egg-info/top_level.txt
