@@ -1,0 +1,12 @@
+allofplos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allofplos/jupyter_nbconvert_config.py,sha256=D1Sdfo3INF1liSRhtMHQliuYqsihpPwOMhln9q2Plqk,41
+allofplos/plos_corpus.py,sha256=fNrrxanFSoXZKxQmNMiAVGhfGBKbrzrV4-W-S_KJF4Y,40248
+allofplos/plos_regex.py,sha256=xYPU9lSyTrtmc-okfoz7tZ0VEFx-b-7HvXMBw1EScjU,4266
+allofplos/transformations.py,sha256=7qvnH5x6ApJffOi2NuJJaCxWOUC_9wFAnsw-dXrKkJo,6055
+allofplos-0.8.4.dist-info/DESCRIPTION.rst,sha256=Yr6V71ChjcXGkZPQL623wANnU0GVdDHaEmZ1_TAPkME,3542
+allofplos-0.8.4.dist-info/METADATA,sha256=g7hX1OJ_YWujIbXFL4QXrc_Worw-gJmG5KYqM2654Ho,4569
+allofplos-0.8.4.dist-info/RECORD,,
+allofplos-0.8.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+allofplos-0.8.4.dist-info/entry_points.txt,sha256=lTpNT96WSXM2ZHE-0hVFDZHp98uD-Dwr_TQFSXDfaGA,60
+allofplos-0.8.4.dist-info/metadata.json,sha256=3JvtYePpign_y3cQTuvz1VwoQtrSM-zShw_3mIDdfL4,1288
+allofplos-0.8.4.dist-info/top_level.txt,sha256=NM_BxbybbgEzVc1j8YOnRu-iqPOPK4G1lbUAFMTFjFc,10
