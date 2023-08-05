@@ -1,0 +1,13 @@
+journal_club/__init__.py,sha256=beutCXZLGWNKvau4sT5chO8gEUcMOPGYZHnADpoucJo,47
+journal_club/__version__.py,sha256=QaKrrCeLmUWRaUA8pjWo9GWzxTk9cCTRKQXEuQX5viQ,21
+journal_club/countdown.wav,sha256=RPpkR6GgDcjzcKYNSQvhD8Bi_iwCwjQjH0Dlo2qkDDY,5967600
+journal_club/jc.py,sha256=5lNWyu5ZjgtMS5KGsTiU944U4eQn3pfOn3MhY9DZrbY,4413
+journal_club/jc_algorithm.py,sha256=BqKj44JCjG_nbLX_78006eC2gQwSMgk5d_wBiUl_dsU,2131
+journal_club/sound.py,sha256=l2O3s0R1vPfwryo7GSWR9f7ObHDctwI6gYB4qEaDs84,1279
+journal_club-0.0.8.dist-info/DESCRIPTION.rst,sha256=sBOcq_iGsQH2Pw5dz9e_p_fG5CRxxYN74iF1Wde0Eqc,371
+journal_club-0.0.8.dist-info/METADATA,sha256=yCIkKXWmY6HH3iJXbCWgCj9zITqwQwUOssBZwGSl88Y,1339
+journal_club-0.0.8.dist-info/RECORD,,
+journal_club-0.0.8.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+journal_club-0.0.8.dist-info/entry_points.txt,sha256=nJi_hcD0TAOfArUk_BMnTn6UvTRiw4dfD0bZY3VxY2U,45
+journal_club-0.0.8.dist-info/metadata.json,sha256=mbLUkKbfl4fy4bsGDOIUc9CIJl_m0Nv5F4WPbGclGSg,1200
+journal_club-0.0.8.dist-info/top_level.txt,sha256=gvUFfw307SDuma7e3_uO58IP3n_pBZl4mB9Xk_X8ybc,13
