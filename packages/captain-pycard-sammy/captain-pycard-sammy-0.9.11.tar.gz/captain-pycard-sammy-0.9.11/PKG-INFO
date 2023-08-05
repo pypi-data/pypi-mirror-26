@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: captain-pycard-sammy
+Version: 0.9.11
+Summary: A simple library for payment card validation
+Home-page: https://github.com/Samox/pycard.git
+Author: Sammy
+Author-email: sammy.teillet@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
