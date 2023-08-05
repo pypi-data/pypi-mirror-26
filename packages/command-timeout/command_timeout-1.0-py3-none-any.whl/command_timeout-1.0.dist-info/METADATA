@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: command-timeout
+Version: 1.0
+Summary: Timeout Commands
+Home-page: UNKNOWN
+Author: xoviat
+Author-email: xoviat@noreply.users.github.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: psutil
+
+UNKNOWN
+
+
