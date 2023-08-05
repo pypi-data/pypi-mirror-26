@@ -1,0 +1,7 @@
+requests
+rethinkdb
+pathlib
+numpy
+pandas
+tabulate
+sortedcontainers
