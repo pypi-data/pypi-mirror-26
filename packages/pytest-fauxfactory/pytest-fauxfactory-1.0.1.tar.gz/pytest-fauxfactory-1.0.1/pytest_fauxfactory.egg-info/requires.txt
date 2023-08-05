@@ -1,0 +1,10 @@
+pytest>=3.2
+fauxfactory
+
+[dev]
+coveralls
+flake8
+pytest-cov
+pytest-xdist
+twine
+wheel

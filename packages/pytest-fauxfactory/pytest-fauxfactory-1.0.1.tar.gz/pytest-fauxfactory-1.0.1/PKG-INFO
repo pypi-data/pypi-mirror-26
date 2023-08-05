@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pytest-fauxfactory
+Version: 1.0.1
+Summary: Integration of fauxfactory into pytest.
+Home-page: https://github.com/omaciel/pytest-fauxfactory
+Author: Og Maciel
+Author-email: omaciel@ogmaciel.com
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: pytest
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Unix Shell
