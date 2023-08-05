@@ -1,0 +1,15 @@
+PyLTI-0.5.1.dist-info/DESCRIPTION.rst,sha256=jjuIq5OvhppihOyL1KGkmbcbxpmqNSm76zxanbwNkHU,2552
+PyLTI-0.5.1.dist-info/METADATA,sha256=9XM9Yww-6O1oRhBddQVlD_fF9hx0s6_l3o8RZM4m7fM,3097
+PyLTI-0.5.1.dist-info/RECORD,,
+PyLTI-0.5.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+PyLTI-0.5.1.dist-info/metadata.json,sha256=kfWwsXuxOcSPxCdUIEo-wsprPxTHx54Gx90QrNZxogM,982
+PyLTI-0.5.1.dist-info/top_level.txt,sha256=8bMtk751J32H8fQo9fxiiK9rkQJ8HZZxpKw3JIXCGyQ,6
+pylti/__init__.py,sha256=nbVq8FeAxX1qRoPNYmS5cjyOG2_RC5TjDJr-xE4fimo,189
+pylti/common.py,sha256=afnzBWZ7WOQXFwtjcskN7Po6G154lpl8_pg4Oosp8Vg,13898
+pylti/flask.py,sha256=YNjoHbTSMxWGVxXTa-CR2nYZEWKRdGglHxhGUVoaJ_Y,11880
+pylti/tests/__init__.py,sha256=nAGjpBgVAOHYfs-1uohLgZ3eWulXZygl5lFj6Lokan8,165
+pylti/tests/test_common.py,sha256=wKzVJIPVM3mtr6kiBH5IibKh7BjXVhfw6A5E9iBETKA,10561
+pylti/tests/test_flask.py,sha256=O8MvREwwuy1dgBKfD7Za69zUUSPGqh_m_kaVr-ZZVjI,22191
+pylti/tests/test_flask_app.py,sha256=JAW_p7aS-TqMCA95PWYCd3VKhZl1Dn6ERbMsMxF9OcA,5307
+pylti/tests/util.py,sha256=aJgUUtUq1NoJDjB-l9jg0rY-Hn3jvWajXQ_rRyyHw8E,246
+pylti/tests/data/certs/snakeoil.pem,sha256=oXjPMErRnictHqgBkm_d57Arsf22uioZkoSyTByUAWo,1766
