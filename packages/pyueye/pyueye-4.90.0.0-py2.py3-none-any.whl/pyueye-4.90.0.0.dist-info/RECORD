@@ -1,0 +1,10 @@
+pyueye/__init__.py,sha256=zgwqHWbt-N8d3i9jyApNhYs1XSOO1SZSmT3SiOBJRGU,2809
+pyueye/dll.py,sha256=-5mvMi69wyZ37nlrkHig6Zoxhl-AwUaKbO4HrV8kL8E,5817
+pyueye/ueye.py,sha256=CxLUVfe0ufv5KCQHz04xw9Xgp-hCGPN9Qmf7d5lAJHQ,308211
+pyueye/ueye_tools.py,sha256=cT2yamAloFg8rtGC4Dq4kTxbAAmGMDkM83F9pZBj8ec,24001
+pyueye-4.90.0.0.dist-info/DESCRIPTION.rst,sha256=hnY29lzthiVA67k6hL4FLSXRA355hcTs8Chth1d_RT4,2789
+pyueye-4.90.0.0.dist-info/METADATA,sha256=HQ_E8UIjHGZyshPcVoV9ut4ULw09d7wLuur76bJ8TIE,3079
+pyueye-4.90.0.0.dist-info/RECORD,,
+pyueye-4.90.0.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+pyueye-4.90.0.0.dist-info/metadata.json,sha256=7Z78WDmSu_ZHyFAvBm8NyelbJ7XyGRSFqGpkya51rQU,512
+pyueye-4.90.0.0.dist-info/top_level.txt,sha256=aCcKPUXJlKTdU2Ihp9LqwgBY0lBoJx01M1NRVK3jaPQ,7
