@@ -1,0 +1,11 @@
+import paho.mqtt.client as mqtt
+
+
+class SimpleMQTTHost:
+
+    def __init__(self):
+        self.mqtt_client = None
+        self.discovery_prefix = "homeassistant"
+        self.node_id = None
+
+    def add_device(self, device):
