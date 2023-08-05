@@ -1,0 +1,13 @@
+AppNexus_client-0.5.0.dist-info/DESCRIPTION.rst,sha256=-p98s3j_ztbj0SvXjJHaS8WwolJC_gWyQWplx7SwVHg,5841
+AppNexus_client-0.5.0.dist-info/METADATA,sha256=aNE_aYcUcPuc4L3QgoLkUSPVIc7-sBWhwVzRCxCw3co,6651
+AppNexus_client-0.5.0.dist-info/RECORD,,
+AppNexus_client-0.5.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+AppNexus_client-0.5.0.dist-info/metadata.json,sha256=qKgMyAbCAh2VKlVDToZP90FiYMqPv0-KaTExPEEFG_0,996
+AppNexus_client-0.5.0.dist-info/top_level.txt,sha256=yLq1f55gimHT1X1zLx9sICRu0XmUCPYSY2vcPKBfkmU,9
+appnexus/__init__.py,sha256=683FRln2_lQroycaOTdShJNqX-ChN7YRWnZef9HRcRA,231
+appnexus/client.py,sha256=8MY3bC4d9Rg4gmHMQlVVY14WMBp565G6_NCe13A7ZIc,10334
+appnexus/cursor.py,sha256=tv3qpvgvaB8Z7PLsmoOWyA6B_WYUXWPO0r43s2wDUkc,4383
+appnexus/exceptions.py,sha256=bNigqPEvZTlmDSVn1XAab9ZwAXrmu_OrzkIqp2jmaHU,1089
+appnexus/model.py,sha256=N5-SJzfrcvSqr7jfNco0a7OFdFpW2g4lg93NDY-LEkA,4434
+appnexus/representations.py,sha256=KIRBvsQULdSugqenfZ3KnN2Q4j_biZ1IIBbML8bLfZk,66
+appnexus/utils.py,sha256=KzwfJMzAV2WVbqPRS3TjDi2q6U9pjDjLNvNAz8q-U24,420
