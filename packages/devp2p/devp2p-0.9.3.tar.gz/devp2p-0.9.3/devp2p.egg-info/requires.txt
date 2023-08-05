@@ -1,0 +1,12 @@
+coincurve>=5.0.1
+bitcoin
+gevent>=1.1.0
+miniupnpc
+wheel
+tox
+coverage
+repoze.lru
+pyelliptic==1.5.7
+ipaddress
+pycryptodome>=3.3.1
+rlp>=0.6.0,<0.7.0
