@@ -1,0 +1,11 @@
+legendgram/__init__.py,sha256=DorV6Rm6VODXecUkToF6GeArKPkngz4wEyRXcg9Q2zs,35
+legendgram/__version__.py,sha256=ZkJ4YFnqff5CwHnqUupPsAVatqD4aozkrh1u-iQrvMc,21
+legendgram/legendgram.py,sha256=ObE--Z-mFXXJtyQysbjLKmhU02UMp_6FTN2vM7RO4Eo,1813
+legendgram/test_legendgram.py,sha256=bJUSIZIheVsPyFiS4V9-f1fkvMKazNCxKCcZRcMQ5zk,3875
+legendgram/util.py,sha256=GH9r1Mrbz_AyhWqJs560cXpgtZx2PbxhHrRDRqPan40,2970
+legendgram-0.0.2.dist-info/DESCRIPTION.rst,sha256=kIufItzvj5f-9_WXFIAKG4D7R_bw9sYhfW67UvlqdcU,1853
+legendgram-0.0.2.dist-info/METADATA,sha256=gzJg1wSQ9vDnzooA2RuGaaLVRjdb6pjWCYgTQEMl5Vg,2776
+legendgram-0.0.2.dist-info/RECORD,,
+legendgram-0.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+legendgram-0.0.2.dist-info/metadata.json,sha256=wpJURoFBSMN-JJmrLbXmKdCvH_oomMGv928EeCiyl3w,1062
+legendgram-0.0.2.dist-info/top_level.txt,sha256=8ppmZOgOB6IKK0ZaAD0IPwUi3zLS1kntKSSwzBiD6G0,11
