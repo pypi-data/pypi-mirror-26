@@ -1,0 +1,43 @@
+#!/usr/bin/python
+#
+# asn2quickder -- Generate header files for C for use with Quick `n' Easy DER
+#
+# This program owes a lot to asn1ate, which was built to generate pyasn1
+# classes, but which was so well-written that it could be extended with a
+# code generator for Quick DER.
+#
+# Much of the code below is diagonally inspired on the pyasn1 backend, so
+# a very big thank you to Schneider Electric Buildings AB for helping to
+# make this program possible!
+#
+# Copyright (c) 2016-2017 OpenFortress B.V. and InternetWide.org
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of Schneider Electric Buildings AB nor the
+#       names of contributors may be used to endorse or promote products
+#       derived from this software without specific prior written permission.
+#
+
+from sys import argv, exit, stderr
+from quick_der.main import main
+
+
+if __name__ == '__main__':
+    """
+    The main program asn2quickder is called with one or more .asn1 files,
+    the first of which is mapped to a C header file and the rest is
+   loaded to fulfil dependencies.
+    """
+    if len(argv) < 2:
+        stderr.write('Usage: %s [-I incdir] [-l proglang] [-t testcases] ... main.asn1 [dependency.asn1] ...\n'
+                         % argv[0])
+        exit(1)
+    else:
+        main(script_name=argv[0], script_args=argv[1:])
