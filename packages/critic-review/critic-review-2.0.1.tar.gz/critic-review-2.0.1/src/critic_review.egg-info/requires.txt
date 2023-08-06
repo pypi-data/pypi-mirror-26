@@ -1,0 +1,5 @@
+argon2_cffi
+passlib
+psycopg2
+pygments
+requests

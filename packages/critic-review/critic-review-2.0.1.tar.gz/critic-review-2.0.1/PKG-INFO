@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: critic-review
+Version: 2.0.1
+Summary: The Critic code review system
+Home-page: https://critic-review.org/
+Author: The Critic contributors
+Author-email: critic-dev@critic-review.org
+License: Apache License, Version 2.0
+Description: 
+        A Critic code review system hosts one or more Git repositories, often mirrors
+        of some authoritative source, and allows collaborative code review of commits
+        on branches in these repositories.
+        
+        An example system can be found at https://critic-review.org/, where changes to
+        the Critic code review system itself are reviewed.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.6
