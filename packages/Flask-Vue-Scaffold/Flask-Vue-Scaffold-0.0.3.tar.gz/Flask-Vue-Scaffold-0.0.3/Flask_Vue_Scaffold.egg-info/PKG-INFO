@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Flask-Vue-Scaffold
+Version: 0.0.3
+Summary: Flask Vue Scaffold
+Home-page: https://github.com/treebee/flask-vue-scaffold
+Author: Patrick Muehlbauer
+Author-email: patrick@opentrash.org
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
