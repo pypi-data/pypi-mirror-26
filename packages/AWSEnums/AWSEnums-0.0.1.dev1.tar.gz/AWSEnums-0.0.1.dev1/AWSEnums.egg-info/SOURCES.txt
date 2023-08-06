@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+AWSEnums/__init__.py
+AWSEnums/region.py
+AWSEnums.egg-info/PKG-INFO
+AWSEnums.egg-info/SOURCES.txt
+AWSEnums.egg-info/dependency_links.txt
+AWSEnums.egg-info/top_level.txt

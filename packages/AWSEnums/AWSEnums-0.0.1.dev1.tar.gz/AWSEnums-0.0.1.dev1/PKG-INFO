@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: AWSEnums
+Version: 0.0.1.dev1
+Summary: Python module that contains a list of enums useful for your applications.
+Home-page: https://github.com/SchibstedSpain/AWSEnums
+Author: Schibsted Spain
+Author-email: ferran.grau@scmspain.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # AWSenums
+        Python module that contails a list of enums usefull for your aplications.
+        
+        # How To package:
+        * ```python setup.py sdist```
+        
+Keywords: AWS enums
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
