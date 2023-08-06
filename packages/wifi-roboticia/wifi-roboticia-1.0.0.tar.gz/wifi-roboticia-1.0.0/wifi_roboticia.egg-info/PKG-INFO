@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wifi-roboticia
+Version: 1.0.0
+Summary: wifi library using python
+Home-page: UNKNOWN
+Author: Rocky Meza, Gavin Wahl, Julien JEHL
+Author-email: contact@roboticia.com
+License: BSD
+Description: Wifi management by command line using python
+Platform: Debian
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: System :: Networking
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
