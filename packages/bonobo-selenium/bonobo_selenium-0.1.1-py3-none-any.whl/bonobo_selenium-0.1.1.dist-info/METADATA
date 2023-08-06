@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: bonobo-selenium
+Version: 0.1.1
+Summary: Bonobo Selenium Extension
+Home-page: https://bonobo-project.org/with/selenium
+Author: Romain Dorgueil
+Author-email: romain@dorgueil.net
+License: Apache License, Version 2.0
+Download-URL: https://github.com/python-bonobo/bonobo-selenium/tarball/0.1.1
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: bonobo (>=0.5.1)
+Requires-Dist: selenium (<3.8,>=3.7)
+Provides-Extra: dev
+Requires-Dist: bonobo (>=0.5.1); extra == 'dev'
+Requires-Dist: coverage (<5.0,>=4.4); extra == 'dev'
+Requires-Dist: pytest (<4.0,>=3.1); extra == 'dev'
+Requires-Dist: pytest-cov (<3.0,>=2.5); extra == 'dev'
+Requires-Dist: yapf; extra == 'dev'
+
+
+brew install geckodriver
+
