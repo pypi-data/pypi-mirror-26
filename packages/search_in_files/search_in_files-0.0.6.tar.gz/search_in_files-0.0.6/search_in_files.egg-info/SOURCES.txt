@@ -1,0 +1,12 @@
+README.rst
+setup.py
+search_in_files/__init__.py
+search_in_files/csearch.pyx
+search_in_files/search.py
+search_in_files/search_test.py
+search_in_files.egg-info/PKG-INFO
+search_in_files.egg-info/SOURCES.txt
+search_in_files.egg-info/dependency_links.txt
+search_in_files.egg-info/entry_points.txt
+search_in_files.egg-info/requires.txt
+search_in_files.egg-info/top_level.txt

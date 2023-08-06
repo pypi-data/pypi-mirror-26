@@ -1,0 +1,3 @@
+[console_scripts]
+search_in_files = search_in_files.search:main
+
