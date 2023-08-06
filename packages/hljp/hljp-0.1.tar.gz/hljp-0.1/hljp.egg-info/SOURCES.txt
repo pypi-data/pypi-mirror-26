@@ -1,0 +1,8 @@
+README.md
+setup.py
+hljp.egg-info/PKG-INFO
+hljp.egg-info/SOURCES.txt
+hljp.egg-info/dependency_links.txt
+hljp.egg-info/entry_points.txt
+hljp.egg-info/requires.txt
+hljp.egg-info/top_level.txt
