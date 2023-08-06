@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyali
+Version: 0.1.1
+Summary: A package for merging alignments
+Home-page: https://github.com/christang/pyali
+Author: Chris L Tang
+Author-email: chris.l.tang@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/christang/pyali/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: bioinformatics,sequence,alignment
+Platform: UNKNOWN
