@@ -1,0 +1,7 @@
+include MANIFEST.in 
+include requirements*txt
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+
+
