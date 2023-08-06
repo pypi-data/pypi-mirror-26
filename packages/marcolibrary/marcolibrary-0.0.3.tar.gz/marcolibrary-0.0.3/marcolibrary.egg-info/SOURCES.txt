@@ -1,0 +1,7 @@
+README.md
+setup.py
+marcolibrary/example.py
+marcolibrary.egg-info/PKG-INFO
+marcolibrary.egg-info/SOURCES.txt
+marcolibrary.egg-info/dependency_links.txt
+marcolibrary.egg-info/top_level.txt
