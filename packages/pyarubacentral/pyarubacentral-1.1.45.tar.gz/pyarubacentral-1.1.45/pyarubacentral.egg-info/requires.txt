@@ -1,0 +1,8 @@
+requets
+json
+
+[dev]
+check-manifest
+
+[test]
+coverage
