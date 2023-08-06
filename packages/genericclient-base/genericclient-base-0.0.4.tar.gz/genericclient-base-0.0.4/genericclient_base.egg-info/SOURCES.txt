@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+genericclient_base/__init__.py
+genericclient_base/exceptions.py
+genericclient_base/routes.py
+genericclient_base/utils.py
+genericclient_base.egg-info/PKG-INFO
+genericclient_base.egg-info/SOURCES.txt
+genericclient_base.egg-info/dependency_links.txt
+genericclient_base.egg-info/not-zip-safe
+genericclient_base.egg-info/top_level.txt
+tests/__init__.py
+tests/test_resource.py
+tests/test_utils.py
