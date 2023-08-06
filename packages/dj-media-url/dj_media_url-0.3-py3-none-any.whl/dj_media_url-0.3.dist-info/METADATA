@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: dj-media-url
+Version: 0.3
+Summary: My awesome project
+Home-page: https://example.com/
+Author: Adam Brenecki
+Author-email: adam@brenecki.id.au
+License: Proprietary
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: boto3
+Requires-Dist: django-storages
+Requires-Dist: urlobject (<3,>=2.4)
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: prospector; extra == 'dev'
+
+UNKNOWN
+
+
