@@ -1,0 +1,7 @@
+Document:
+  extends: Thing
+  label: Document
+  plural: Documents
+  icon: fa-file-text
+  hidden: true
+  fuzzy: false
