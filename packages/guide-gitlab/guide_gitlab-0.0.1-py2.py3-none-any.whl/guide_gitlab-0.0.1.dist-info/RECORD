@@ -1,0 +1,10 @@
+guide_gitlab/__about__.py,sha256=irCkTTqw5_NgQv422tv2ztK7h2UkCCjKZXp1d75s9Zo,405
+guide_gitlab/__init__.py,sha256=U1Kb3oe1jtk3Te28y8dTBXU_zpHxESLGxJwD9L9tAPI,128
+guide_gitlab/exceptions.py,sha256=P_zVc5kmVOb7huPRiccQE2R1eKaeExBBc_q9Vv1D84o,2058
+guide_gitlab/gitlab.py,sha256=pSK-pdaRVugdLPiCGavBEhcqJelU-S4yRJXCZkOy2Zk,22445
+guide_gitlab-0.0.1.dist-info/DESCRIPTION.rst,sha256=N75t002ibX7cAVW24qZE3mIbjtv1ggabxy4hURCUw0I,134
+guide_gitlab-0.0.1.dist-info/METADATA,sha256=8LF-9BN-wmX-vb0UW3-lVPQy0F3K9-Jzn6eM7wTjGNs,1070
+guide_gitlab-0.0.1.dist-info/RECORD,,
+guide_gitlab-0.0.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+guide_gitlab-0.0.1.dist-info/metadata.json,sha256=55AqZoQ6zEK9mpcRDsibB0uRePC6R5vVHyl74EM7-M0,1081
+guide_gitlab-0.0.1.dist-info/top_level.txt,sha256=ILonU81-wskbj7fvqwg9aISKS6beEKlUMUSi2BamRXM,13
