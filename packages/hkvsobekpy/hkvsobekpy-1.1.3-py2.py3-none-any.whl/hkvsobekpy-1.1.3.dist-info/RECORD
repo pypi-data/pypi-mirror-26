@@ -1,0 +1,12 @@
+hkvsobekpy/__init__.py,sha256=ljP54T37v2MMYwQpvjSGk_8fN7fs0jRezI3LTmaeKOA,704
+hkvsobekpy/__main__.py,sha256=ljP54T37v2MMYwQpvjSGk_8fN7fs0jRezI3LTmaeKOA,704
+hkvsobekpy/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hkvsobekpy/core/plausibility.py,sha256=lrX7ESo15SMwDZVeCnaV9Ow1BG7fGAjkIr-5LLTjDR4,11329
+hkvsobekpy/core/waterlevelstat.py,sha256=13zxNR5mIejJFSjRyoyEpvFDEEAuAAX90DxZsa3R0yA,33834
+hkvsobekpy/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hkvsobekpy/io/bui.py,sha256=YwwqvunGgEFWr6_3nGFzY4MbrwgQoKKSK7cwo-F5zdU,3668
+hkvsobekpy/io/his.py,sha256=aJSHeQdx-yWR-WCMiu1t7q8AYao58i0OuLUu85cukDA,22682
+hkvsobekpy-1.1.3.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+hkvsobekpy-1.1.3.dist-info/WHEEL,sha256=RA_fzc0G9apkHJKy7p05CMHAeSfJ3NaDzVYRdT6OUBk,100
+hkvsobekpy-1.1.3.dist-info/METADATA,sha256=hpeBP9haxvlCVfUTa8zFvexRakWghEotphC7KoYbLUI,359
+hkvsobekpy-1.1.3.dist-info/RECORD,,
