@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/signalled_timeout.egg-info/PKG-INFO
+src/signalled_timeout.egg-info/SOURCES.txt
+src/signalled_timeout.egg-info/dependency_links.txt
+src/signalled_timeout.egg-info/top_level.txt
+src/timeout/__init__.py
+src/timeout/timeout.py
