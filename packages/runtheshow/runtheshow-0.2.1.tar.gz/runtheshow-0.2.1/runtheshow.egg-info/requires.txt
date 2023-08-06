@@ -1,0 +1,4 @@
+twine
+keyring
+requests
+lxml
