@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: scraper_monitor_lib
+Version: 0.2.0
+Summary: Scraper Monitor lib
+Home-page: https://git.eddyhintze.com/xtream1101/scraper-monitor-lib
+Author: Eddy Hintze
+Author-email: eddy@hintze.co
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
