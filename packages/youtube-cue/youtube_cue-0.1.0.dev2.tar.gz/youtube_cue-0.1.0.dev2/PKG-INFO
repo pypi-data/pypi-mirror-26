@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: youtube_cue
+Version: 0.1.0.dev2
+Summary: Generate a cue sheet for a youtube url
+Home-page: https://github.com/bugdone/youtube-cue
+Author: bugdone
+Author-email: bugdone@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: youtube cue
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
