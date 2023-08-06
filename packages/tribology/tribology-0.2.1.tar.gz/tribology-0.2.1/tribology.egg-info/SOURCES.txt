@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+tribology/__init__.py
+tribology/tribology.py
+tribology/tribology_boundary_element.py
+tribology/tribology_constants.py
+tribology/tribology_dowson_hamrock.py
+tribology/tribology_hertz.py
+tribology/tribology_lubrication.py
+tribology.egg-info/PKG-INFO
+tribology.egg-info/SOURCES.txt
+tribology.egg-info/dependency_links.txt
+tribology.egg-info/requires.txt
+tribology.egg-info/top_level.txt
