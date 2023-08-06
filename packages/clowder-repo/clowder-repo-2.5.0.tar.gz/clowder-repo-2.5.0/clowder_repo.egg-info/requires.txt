@@ -1,0 +1,7 @@
+argcomplete
+colorama
+GitPython
+PyYAML
+termcolor
+psutil
+tqdm
