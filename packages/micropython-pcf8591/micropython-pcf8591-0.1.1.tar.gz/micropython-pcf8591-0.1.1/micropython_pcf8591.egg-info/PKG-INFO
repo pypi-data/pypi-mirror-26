@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: micropython-pcf8591
+Version: 0.1.1
+Summary: A pcf8591 driver for micropython
+Home-page: https://gitlab.com/cediddi/micropython-pcf8591/
+Author: Umut Karcı
+Author-email: cediddi@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: PCF8591 is a digital-analog and analog-digital converter that supports 4 analog inputs and 1 analog output and a I2C interface. This driver is for MicroPython and microchips that have a I2C interface.
+Platform: UNKNOWN
