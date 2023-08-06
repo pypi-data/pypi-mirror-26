@@ -1,0 +1,8 @@
+setup.py
+json_transformer/__init__.py
+json_transformer/example.py
+json_transformer/parser.py
+json_transformer.egg-info/PKG-INFO
+json_transformer.egg-info/SOURCES.txt
+json_transformer.egg-info/dependency_links.txt
+json_transformer.egg-info/top_level.txt
