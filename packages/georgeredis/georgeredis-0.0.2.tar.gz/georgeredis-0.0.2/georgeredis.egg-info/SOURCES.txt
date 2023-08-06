@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GRedis/__init__.py
+GRedis/__init__.pyc
+GRedis/setting.py
+GRedis/setting.pyc
+GRedis/tools.py
+GRedis/utils.py
+GRedis/utils.pyc
+georgeredis.egg-info/PKG-INFO
+georgeredis.egg-info/SOURCES.txt
+georgeredis.egg-info/dependency_links.txt
+georgeredis.egg-info/not-zip-safe
+georgeredis.egg-info/requires.txt
+georgeredis.egg-info/top_level.txt
