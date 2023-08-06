@@ -1,0 +1,9 @@
+onegov.core>=0.4.0
+
+[test]
+coverage
+onegov_testing
+pytest
+pdfdocument
+pdfrw
+reportlab
