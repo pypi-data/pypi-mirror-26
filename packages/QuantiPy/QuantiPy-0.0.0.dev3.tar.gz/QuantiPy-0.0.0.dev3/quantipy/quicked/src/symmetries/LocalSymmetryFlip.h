@@ -1,0 +1,85 @@
+/** @file LocalSymmetryFlip.h
+ *   
+ *  @author Alexander Wietek  
+ * 
+ *  @version 0.1 
+ *  @brief applying symmetries and finding representatives the naive way
+ *  
+ */
+
+#ifndef __QUICKED_SYMMETRIES_LOCALSYMMETRYFLIP_H__
+#define __QUICKED_SYMMETRIES_LOCALSYMMETRYFLIP_H__
+
+#include "BasisState.h"
+#include "HilbertSpace.h"
+
+namespace quicked
+{
+
+  template<hilbert_t THilbertSpace>
+  class LocalSymmetryFlip
+  {
+    typedef typename state_t<THilbertSpace>::type state_t;
+  public:
+    LocalSymmetryFlip() = default;
+    LocalSymmetryFlip(const uint32& _n_sites,
+		      const uint32& even_odd_representation); 
+      
+    friend void swap(LocalSymmetryFlip& se1, LocalSymmetryFlip& se2)
+    {
+      using std::swap;
+      swap(se1.n_sites_, se2.n_sites_);
+      swap(se1.bloch_factor_, se2.bloch_factor_);
+    }
+    inline uint32 n_symmetries() const {return 2;}
+    inline void apply_symmetry(const int& num_sym, state_t* state) const;
+    inline double bloch(const uint32& idx) const { return (idx == 0) ? 1.0 : bloch_factor_;}
+
+  private:
+    uint32 n_sites_;
+    double bloch_factor_;
+  };
+
+  
+  // Implementation
+  template<hilbert_t THilbertSpace>
+  LocalSymmetryFlip<THilbertSpace>::LocalSymmetryFlip(const uint32& _n_sites,
+						      const uint32& even_odd_representation)
+    : n_sites_(_n_sites),
+      bloch_factor_((even_odd_representation == 0) ? 1.0 : -1.0)
+  {}
+
+
+  namespace SymmetryDetail
+  {
+    template<hilbert_t THilbertSpace>
+    void flip(const uint32& n_sites, typename state_t<THilbertSpace>::type *state)
+    {
+      for (uint32 site = 0; site < n_sites; ++site)
+	{
+	  const uint32 siteval = get_site_value<THilbertSpace>(*state, site);
+	  set_site_value<THilbertSpace>(state, site,
+					local_dim<THilbertSpace>::value - 1 - siteval);
+	}
+    }
+
+    template <>
+    void flip<HILBERTSPACE_SPINHALF_TYPE>(const uint32& n_sites,
+					  typename state_t<HILBERTSPACE_SPINHALF_TYPE>::type *state)
+    {
+      *state = ~(*state)&((uint64(1) << n_sites) - 1);
+    }
+    
+  }
+
+  template<hilbert_t THilbertSpace>
+  void LocalSymmetryFlip<THilbertSpace>::apply_symmetry(const int& num_sym, state_t* state)
+    const
+  {
+    if (num_sym != 0)
+      SymmetryDetail::flip<THilbertSpace>(n_sites_, state);
+  }
+ 
+}
+
+#endif

@@ -1,0 +1,131 @@
+/** @file SymmetryDetail.h
+ *   
+ *  @author Alexander Wietek  
+ * 
+ *  @version 0.1 
+ *  @brief helping functions for symmetry engines
+ *  
+ */
+
+#ifndef __QUICKED_SYMMETRIES_SYMMETRYDETAIL_H__
+#define __QUICKED_SYMMETRIES_SYMMETRYDETAIL_H__
+
+#include <algorithm>
+#include <string>
+#include <sstream>
+
+#include "BasisState.h"
+#include "HilbertSpace.h"
+
+#include "common.h"
+
+namespace quicked {
+  namespace SymmetryDetail
+  {
+    bool is_valid_permutation(const std::vector<uint32>& permutation)
+    {
+      for (uint32 i = 0; i < permutation.size(); ++i)
+	if (std::find(permutation.begin(), permutation.end(), i) == permutation.end())
+	  return false;
+      return true;  
+    }
+
+    template<hilbert_t THilbertSpace>
+    inline typename state_t<THilbertSpace>::type apply_permutation
+    (const typename state_t<THilbertSpace>::type& state, const uint32& n_sites,
+     const uint32* permutation)
+    {
+      typename state_t<THilbertSpace>::type tstate = 0;
+      for(uint32 i=0; i < n_sites; ++i)
+	{
+	  const uint32 val = get_site_value<THilbertSpace>(state, i);
+	  set_site_value<THilbertSpace>(&tstate, permutation[i], val);
+	}
+      return tstate;
+    }
+
+    bool is_valid_symmetry_collection(const std::vector<std::vector<uint32> >& symmetries)
+    {
+      bool is_valid = true;
+      const uint32 n_sites = symmetries[0].size();
+      for (uint32 i = 0; i < symmetries.size(); ++i)
+	is_valid &= ((symmetries[i].size() == n_sites) && (is_valid_permutation(symmetries[i])));
+      return is_valid;
+    }
+
+    template <uint32 NSubLats>
+    void get_n_sublat_symmetries(const std::vector<std::vector<uint32> >& symmetries,
+				 int *n_sublat_symmetries)
+    {
+      std::fill(n_sublat_symmetries, n_sublat_symmetries + NSubLats, 0);
+      const uint32 n_symmetries = symmetries.size();
+      const uint32 n_sites = symmetries[0].size();
+      
+      // Calculate number of sublattice symmetries
+      for(uint32 i = 0; i < n_symmetries; ++i)
+	{
+	  bool is_sublat_symmetry[NSubLats];
+	  for (uint32 k = 0; k < NSubLats; ++k) is_sublat_symmetry[k] = true;
+
+	  for (uint32 sublat = 0; sublat < NSubLats; ++sublat)
+	    {
+	      for(uint32 j = sublat*n_sites/NSubLats; j < (sublat+1)*n_sites/NSubLats; ++j)
+		if (symmetries[i][j] >= n_sites/NSubLats) is_sublat_symmetry[sublat] = false;
+	    }
+	  for (uint32 sublat = 0; sublat < NSubLats; ++sublat)
+	    if(is_sublat_symmetry[sublat]) ++n_sublat_symmetries[sublat];
+	  
+	}
+    }
+    
+    // Routines to check sublattice stability
+    template <uint32 NSubLats>
+    bool is_sublattice_stable(const std::vector<std::vector<uint32> >& symmetries) 
+    {
+      if (!is_valid_symmetry_collection(symmetries)) return false;
+      
+      const uint32 n_symmetries = symmetries.size();
+      const uint32 n_sites = symmetries[0].size();
+
+      if ((n_sites%NSubLats) != 0) return false; 
+      int n_sublat_symmetries[NSubLats];
+      get_n_sublat_symmetries<NSubLats>(symmetries, &(n_sublat_symmetries[0]));
+  
+      if ((uint32)std::accumulate(n_sublat_symmetries, n_sublat_symmetries + NSubLats, 0)
+	  != n_symmetries)
+	return false;
+
+      // Check if symmetries are in valid order for the sublattice description
+      uint32 n_sym = 0;
+      for (uint32 sublat = 0; sublat < NSubLats; ++sublat)
+	for(int i = 0; i < n_sublat_symmetries[sublat]; ++i, ++n_sym)
+	  for(uint32 j = sublat*n_sites/NSubLats; j < (sublat+1)*n_sites/NSubLats; ++j)
+	    if (symmetries[n_sym][j] >= n_sites/NSubLats) return false;
+
+      return true;
+    }
+
+    template <uint32 NSubLats>
+    bool is_sublattice_symmetry(const std::vector<uint32>& symmetry, const uint32& sublat)
+    {
+      if (!is_valid_permutation(symmetry)) return false;
+      const uint32 n_sites = symmetry.size();
+      if ((n_sites%NSubLats) != 0) return false;
+      
+      for(uint32 j = sublat*n_sites/NSubLats; j < (sublat+1)*n_sites/NSubLats; ++j)
+	if (symmetry[j] < (n_sites/NSubLats)*(NSubLats-1)) return false;
+      
+      return true;
+    }
+
+    std::string to_string(const std::vector<uint32>& symmetry)
+    {
+      std::ostringstream ss;
+      for (uint32 i = 0; i < symmetry.size(); ++i)
+	ss << symmetry[i] << " ";
+      return ss.str();
+    }
+    
+  }
+}
+#endif
