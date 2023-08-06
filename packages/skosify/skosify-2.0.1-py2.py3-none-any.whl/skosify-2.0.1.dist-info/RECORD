@@ -1,0 +1,16 @@
+skosify/__init__.py,sha256=7jgUgLIquY1F7_CNa05BYCt5DGgO_l4T1NgLtlavZWk,186
+skosify/cli.py,sha256=SLLtdjunmfD8REbaijchl454w7d5r21N9HCLybnCcnA,10904
+skosify/config.py,sha256=24gzbN-p0na50NA_yqD6ysZBVqTXjmlAsE5UxKKlR3c,5150
+skosify/infer.py,sha256=5GwbD-oQMY7gTIirJTABoV36uRPwsjo3nKweHAWxW0c,3106
+skosify/skosify.py,sha256=A9rCgTx_uaAbVpaAEXqoVvYKgXavF8CkTjpb4kgaPMk,37990
+skosify/rdftools/__init__.py,sha256=tNS9jakDMdrMqv4naH2omT4gLysURmYF1o8TnJEUi7Q,274
+skosify/rdftools/access.py,sha256=v6qyUF5cw_5Ygko7gZ38--toG3cNBV3kLfjXd4XP_10,442
+skosify/rdftools/io.py,sha256=UpOSTbM8QGElzpCKf_rXZZMVQUmYDgffU_5S1QSGYys,1502
+skosify/rdftools/modify.py,sha256=JzUlLpTUz4OLLv-b0f-yMD5dQsgcFOjsTlzZVhfRck4,3284
+skosify-2.0.1.dist-info/DESCRIPTION.rst,sha256=lfbfY4Z0Nz2rgI8dH92IB9fS2kn0gpAVn72gVITHhes,2903
+skosify-2.0.1.dist-info/METADATA,sha256=PP1RodNAomyOB7ZGAV5ZVpOVc0vBBuRWa2OOrmK2O6Y,3435
+skosify-2.0.1.dist-info/RECORD,,
+skosify-2.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+skosify-2.0.1.dist-info/entry_points.txt,sha256=sbZB39VOv_VCp2XS46na0GKXe7dmOmroFMxXqXs-kYw,46
+skosify-2.0.1.dist-info/metadata.json,sha256=mLDSQZPQ7iF8XMkaOw3jjNV5dD6xQiqyuDTnU68VYC8,971
+skosify-2.0.1.dist-info/top_level.txt,sha256=C1xY_bKVM4xGBox99D95eDjJIEap7Uo9dDX7M2eVBgE,8
