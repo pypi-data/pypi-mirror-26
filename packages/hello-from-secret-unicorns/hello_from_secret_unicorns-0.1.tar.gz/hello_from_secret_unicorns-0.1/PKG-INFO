@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: hello_from_secret_unicorns
+Version: 0.1
+Summary: Prints hello world
+Home-page: https://github.com/secretunicorns/pythonA
+Author: unicorns
+Author-email: UNKNOWN
+License: Apache 2.0
+Download-URL: https://github.com/secretunicorns/pythonA/pythonA-v0.1.tgz
+Description: <Read me>
+        This package can print:
+        .......
+        Hello world!!
+        .......
+Keywords: pythonA hello world
+Platform: UNKNOWN
