@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: mekoramaqr
+Version: 0.1.0rc1
+Summary: Tools for reading, writing, and editing Mekorama level QR Codes
+Home-page: https://bitbucket.org/gepeto213/mekoramaqr
+Author: MekoramaQR Contributors
+Author-email: gepeto.mekorama@gmail.com
+License: UNKNOWN
+Download-URL: https://bitbucket.org/gepeto213/mekoramaqr/downloads/
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: games,mekorama,qr code,cli
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Freely Distributable
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
