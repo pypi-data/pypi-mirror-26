@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: testindicator
+Version: 0.3
+Summary: Don't worry about running tests - just write code
+Home-page: https://github.com/logileifs/testindicator
+Author: Logi Leifsson
+Author-email: logileifs@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: testindicator is an automatic test runner/monitor. It monitors a directory of your choice and runs your tests as soon as a file is changed
+Platform: UNKNOWN
