@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: verylargebits
+Version: 0.1.8
+Summary: Python SDK for the Very Large Bits API
+Home-page: https://github.com/verylargebits/sdk-python
+Author: John Wells
+Author-email: john@verylargebits.com
+License: UNKNOWN
+Download-URL: https://github.com/verylargebits/sdk-python/archive/0.1.8.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pycryptodome
+Requires-Dist: requests
+
+Provides an easy-to-use HTTP client for all supported Very Large Bits services and authentication protocols.
+
+
