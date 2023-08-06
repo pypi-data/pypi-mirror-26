@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: django-jsonschema2
+Version: 0.1.0
+Summary: Django JSONSchema
+Home-page: https://github.com/hypc/django-jsonschema
+Author: hypc
+Author-email: h_yp00@163.com
+License: MIT
+Description: # Django JSONSchema
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet
+Requires: jsonschema
+Requires: django

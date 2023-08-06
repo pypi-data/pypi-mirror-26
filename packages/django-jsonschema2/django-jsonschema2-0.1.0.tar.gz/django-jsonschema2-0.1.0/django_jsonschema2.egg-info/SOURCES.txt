@@ -1,0 +1,9 @@
+setup.py
+django_jsonschema/__init__.py
+django_jsonschema/forms.py
+django_jsonschema/models.py
+django_jsonschema/validators.py
+django_jsonschema2.egg-info/PKG-INFO
+django_jsonschema2.egg-info/SOURCES.txt
+django_jsonschema2.egg-info/dependency_links.txt
+django_jsonschema2.egg-info/top_level.txt
