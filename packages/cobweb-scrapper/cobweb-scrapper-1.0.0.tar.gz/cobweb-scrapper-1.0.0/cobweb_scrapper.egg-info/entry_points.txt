@@ -1,0 +1,3 @@
+[console_scripts]
+cobweb = cobweb.scripts:main
+
