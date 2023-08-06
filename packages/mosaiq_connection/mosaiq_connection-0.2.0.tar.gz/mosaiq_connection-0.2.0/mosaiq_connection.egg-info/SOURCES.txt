@@ -1,0 +1,9 @@
+setup.py
+mosaiq_connection/__init__.py
+mosaiq_connection/connection.py
+mosaiq_connection/execution.py
+mosaiq_connection.egg-info/PKG-INFO
+mosaiq_connection.egg-info/SOURCES.txt
+mosaiq_connection.egg-info/dependency_links.txt
+mosaiq_connection.egg-info/requires.txt
+mosaiq_connection.egg-info/top_level.txt
