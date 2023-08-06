@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: instatag
+Version: 0.1
+Summary: Extract users from tag in instagram
+Home-page: https://github.com/Moduland/instatag
+Author: Moduland Co
+Author-email: info@moduland.ir
+License: MIT
+Download-URL: https://github.com/Moduland/instatag/tarball/v0.1
+Description: UNKNOWN
+Keywords: extract,scrap,instagram,python,tags,users
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
