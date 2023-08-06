@@ -1,0 +1,13 @@
+BigQuery_DatasetManager-0.0.2.dist-info/DESCRIPTION.rst,sha256=0_7GrLqeXFFbAyzBZJuetjY0vNysQ5nCUR-9ScMfZ5Q,11572
+BigQuery_DatasetManager-0.0.2.dist-info/METADATA,sha256=98CZYig_sabV1ISbdJZwWLQ3YY24AZko5MmPZi8NPnU,12599
+BigQuery_DatasetManager-0.0.2.dist-info/RECORD,,
+BigQuery_DatasetManager-0.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+BigQuery_DatasetManager-0.0.2.dist-info/entry_points.txt,sha256=nQbqQl7o7pOjA1e-olgHBLi_AXqmfg2JjQdCMOJVbLI,39
+BigQuery_DatasetManager-0.0.2.dist-info/metadata.json,sha256=dVrK04u3iWWXoxgFJ49qN_-EtateDwHIX3MBZbUVkXs,1359
+BigQuery_DatasetManager-0.0.2.dist-info/top_level.txt,sha256=xYKF885SRfnH_EO7TzhIet5CUof8ZAl5TNpZ_3i4JB8,5
+bqdm/__init__.py,sha256=8UBsrQW6NIFBHsYnBPjUWBcmURoZYOcUUQ5uWEumSqo,183
+bqdm/action.py,sha256=h9EJ5_qbLbrKTgzlB3bxDo-U4ZSdvaxy4ZSaOQE_iGs,6986
+bqdm/cli.py,sha256=vINzyFldiZzJ8rVazG-SQj2eEgX-LDG92JAe36vW8DA,5307
+bqdm/message.py,sha256=MwVKR_0FZYrUThi0b0uHX8etmqa8mgRfT32q8nO_rOU,1767
+bqdm/model.py,sha256=p9WYBSdjrIvi0HD3-cenPq2-oIqV49EnCNRTW5WqBrM,5634
+bqdm/util.py,sha256=qOLzonSgoD5yZgWcgCY_uBNfXwCGBAikNaC8h3RE-qk,1100
