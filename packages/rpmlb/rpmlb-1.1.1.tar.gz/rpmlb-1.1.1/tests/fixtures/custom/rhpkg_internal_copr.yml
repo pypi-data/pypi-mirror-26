@@ -1,0 +1,18 @@
+download:
+  - |
+    rhpkg co "${PKG}"
+    cd "${PKG}"
+    git checkout rhscl-2.4-rh-ror50-rhel-7
+before_build:
+  - |
+    PKG_NAMES="$(copr-cli --config ${HOME}/.config/copr-internal \
+        list-package-names rh-ror50-test)"
+    for PKG_NAME in ${PKG_NAMES}; do
+        copr-cli --config ${HOME}/.config/copr-internal \
+            delete-package --name "${PKG_NAME}" rh-ror50-test
+    done
+build:
+  - "rm -v *.rpm || true"
+  - rhpkg --dist rhscl-2.4-rh-ror50-rhel-7 srpm
+  - |
+    copr-cli --config ${HOME}/.config/copr-internal build rh-ror50-test *.rpm

@@ -1,0 +1,6 @@
+# Recipe for Ruby on Rails collections
+---
+rh-ror50:
+  packages:
+    - rh-ror50
+    - rubygem-arel
