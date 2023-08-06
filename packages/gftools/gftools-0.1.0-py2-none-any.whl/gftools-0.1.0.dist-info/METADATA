@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: gftools
+Version: 0.1.0
+Summary: Google Fonts Tools is a set of command-line tools for testing font projects
+Home-page: https://github.com/googlefonts/tools/
+Author: Google Fonts Tools Authors: Dave Crossland, Felipe Sanches, Lasse Fister, Marc Foley, Roderick Sheeter
+Author-email: dave@lab6.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: Flask
+Requires-Dist: FontTools
+Requires-Dist: glyphsLib
+Requires-Dist: google-apputils
+Requires-Dist: pillow
+Requires-Dist: protobuf
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: unidecode
+
+UNKNOWN
+
+
