@@ -1,0 +1,14 @@
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/DESCRIPTION.rst,sha256=H6NLJ7zIqQRNHx3XHOmvanljFrIJ6GZdsTBwrbpTG1w,822
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/METADATA,sha256=wViTebgZRxSuwhV9u5m6S8_nlse6Tv7AGdphclFF9rg,2887
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/RECORD,,
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/entry_points.txt,sha256=9pycpTRVuUAiYRjhyc8eVBAOE3yEYS1q2ixgaH70tfE,91
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/metadata.json,sha256=Plar9kJeLC5AZLYg1JLfrws8_L9KNrvNEH_KMZcSH5A,2096
+cds_trytond_sale_tax_subdivision-4.6.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+trytond/modules/sale_tax_subdivision/__init__.py,sha256=C14HGhta1VUW3ti5c_8hGNO63FQgNvIGn5N-edEGqM0,378
+trytond/modules/sale_tax_subdivision/country.py,sha256=AInatj8jm-0QyEwTLr-2rE1DL6jjW92PbO5Cr1uFHKI,786
+trytond/modules/sale_tax_subdivision/country.xml,sha256=PvxlSo4GtmA3RoxFOZz99aFvtLA-2dSo6RsPnhTAntg,604
+trytond/modules/sale_tax_subdivision/sale.py,sha256=ped0ZUVlPDsCg6PXSojgebbi6SGGZkIw7uS0F72uNCQ,2790
+trytond/modules/sale_tax_subdivision/tryton.cfg,sha256=Y1rlFphGo7bCQwOeI8hzgEf_3RsZqzynEcFjmZcVae4,112
+trytond/modules/sale_tax_subdivision/view/subdivision_form.xml,sha256=ThzEQSvfhbfM_ZpDzJsYYzsrC3gwBvBbIb00RmcKoFU,356
+trytond/modules/sale_tax_subdivision/view/subdivision_tree.xml,sha256=WYbXUAHT1HwVMeOTN2QRrBVqs2Clj1hcbZ7b9b0R_LQ,314
