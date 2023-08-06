@@ -1,0 +1,6 @@
+gevent
+gevent-websocket
+werkzeug
+flask
+multidict
+kombu
