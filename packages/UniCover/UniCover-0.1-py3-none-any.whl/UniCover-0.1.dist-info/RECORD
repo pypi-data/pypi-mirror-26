@@ -1,0 +1,11 @@
+UniCover-0.1.dist-info/DESCRIPTION.rst,sha256=dkwIOOO9n3EQrS4KOQxHQz2H1u-WqAdkUHdInQLlb2I,1827
+UniCover-0.1.dist-info/METADATA,sha256=8K92rFldWtoGPYwkrTw7EpWk0d_0JTygKYF55rwHKnE,2513
+UniCover-0.1.dist-info/RECORD,,
+UniCover-0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+UniCover-0.1.dist-info/entry_points.txt,sha256=Bf5vCXKuOTb6ZzBm59VCWkJs-wuEykrZCJhoz6XgBPI,53
+UniCover-0.1.dist-info/metadata.json,sha256=KoJMDyiZtznGuMyw899kOHTvTtxiw4dJQDqfK8lU7hE,1010
+UniCover-0.1.dist-info/top_level.txt,sha256=gKS3mLY53eH-AuDNFUbEI-SgSkxOsq4dXjYpIcso5Ew,9
+unicover/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unicover/blocks.py,sha256=eo5cbS-UT1QoGQ62FGV3oI2e_2IYPNJK9GP8KqkjP30,27734
+unicover/ranges.py,sha256=8D6t5YpZjeYDUrtnG2YImTTKeqPJFkvckiYjWYnY654,1993
+unicover/unicover.py,sha256=KO1TeIlXoN2IeVWUZbyQ_k1iRgY3j1Fpt8VDecPJ-Ww,8999
