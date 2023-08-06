@@ -1,0 +1,11 @@
+gpkg/keras/mnist/MODELS,sha256=c0Cb_VSuBmPFaH3TtBktBlrxFVWyUMajrfJe7BhQyHA,734
+gpkg/keras/mnist/mnist_mlp.py,sha256=JUt3qtfGntD4LjwZg7_z-ofiCAcpuFYWR5aaEGMbkvE,13
+gpkg.keras.mnist-0.1.0.dev7.dist-info/DESCRIPTION.rst,sha256=jSHKBtD-95B6Fe88uTNV94yg4nY_x-eLQqh1iUy3x-g,444
+gpkg.keras.mnist-0.1.0.dev7.dist-info/METADATA,sha256=tATR2lE55UPJzcKbVRE9sYYULdQRJPOJyQndjNUIGeQ,829
+gpkg.keras.mnist-0.1.0.dev7.dist-info/PACKAGE,sha256=lojqTJatcEtq7AqnWq0FupM7Sek30falkE5FIy3uGdA,370
+gpkg.keras.mnist-0.1.0.dev7.dist-info/RECORD,,
+gpkg.keras.mnist-0.1.0.dev7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gpkg.keras.mnist-0.1.0.dev7.dist-info/entry_points.txt,sha256=3fplLOlWZEnXaYZPovTsFP3F12XJYqozidTF7sdS2Gs,124
+gpkg.keras.mnist-0.1.0.dev7.dist-info/metadata.json,sha256=TAXySEzhIFGgY6H9_FQE5Vpqzo6G6rYz28cD24y_EBU,772
+gpkg.keras.mnist-0.1.0.dev7.dist-info/namespace_packages.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.keras.mnist-0.1.0.dev7.dist-info/top_level.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
