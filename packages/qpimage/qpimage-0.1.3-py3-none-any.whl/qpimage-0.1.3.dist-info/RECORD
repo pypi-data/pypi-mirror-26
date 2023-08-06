@@ -1,0 +1,16 @@
+qpimage/__init__.py,sha256=-1rnC1UGmVxZVV96oXtoiKIbjgM9UoBLxxRzX-o3Ros,184
+qpimage/_version.py,sha256=H9VAu--V0Ji4IwnTfk590MjEy3y9b0Q7q_XndNWZZBA,4432
+qpimage/_version_save.py,sha256=PgWO-bSwQdr55L6FXTs7zxW5w2GEdQ_dRhIHgn3hxLM,82
+qpimage/bg_estimate.py,sha256=Iy8JBKxCtehfjhBaZTcC2FwsavYG0P5wA4lEy1iXb5s,4931
+qpimage/core.py,sha256=3qzg_lL6puoZeQ9M5kjVBtiuDW2vuNY7BhgrUJZe2pc,20125
+qpimage/holo.py,sha256=m5NG0E9X54zJMoETyeVdScUWa0AQzxtpWUH8BxGYlN8,3368
+qpimage/image_data.py,sha256=SwIoeZu0nhYH6aaqf2Gd_gr5gFijdqrGjDV3zHq_UAA,8348
+qpimage/integrity_check.py,sha256=a4mYzCHD4q8-hC79ygfAOvG2p-xLWUfvgENiu5DmqT0,2770
+qpimage/meta.py,sha256=RJIBMSorc_1j00esRxZe7-kaNkdZOTZW-r4Cpf4a1cc,1920
+qpimage/series.py,sha256=75CcuievMq4GA0r_EHqtb5PbouuKR5e0TchH2cQAHwc,5130
+qpimage-0.1.3.dist-info/DESCRIPTION.rst,sha256=Eu6awLWqZ-THBWFmmQfGDxM7FU2ZHtWoOsG3CAoaGzo,1017
+qpimage-0.1.3.dist-info/METADATA,sha256=a-Vz5kOJIWkQsu4_46ELIJr9ZM7OEdsJn5Ipqh-I6UU,1706
+qpimage-0.1.3.dist-info/RECORD,,
+qpimage-0.1.3.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+qpimage-0.1.3.dist-info/metadata.json,sha256=vN8E41MnWs-0b0iQ1PByOctW75_4F04cvpW9SXApKgA,955
+qpimage-0.1.3.dist-info/top_level.txt,sha256=bpoxUHoy4UEw5e1O8RNjz1tjeIdqRt4n2QbudVHZiRM,8
