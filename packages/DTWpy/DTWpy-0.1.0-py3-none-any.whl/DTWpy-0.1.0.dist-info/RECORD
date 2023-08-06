@@ -1,0 +1,11 @@
+DTWpy/__init__.py,sha256=nMZzra8djTV2s6Ksl0haxewZPLyZR75rtSbC7K9o1R0,20
+DTWpy/distance_measure.py,sha256=aA-Xz8IMp15eDi8IH6GyNfPYZ4nn7L7WBUcM_D1WCKU,282
+DTWpy/dtwpy.py,sha256=liZn0nZejfegrTEzPD4thdbhhqOaf_rGJg1NB5gk4a4,8568
+DTWpy/patterns.py,sha256=MH-42n7653Dr8kDh8MBpH27KLptWyeLPogSf0-Koyjc,21035
+DTWpy/plotDTWalignment.py,sha256=_PmgsK5uuZqT_ktMdjk4hho-pszNdbdMTcmI838jHww,2700
+DTWpy-0.1.0.dist-info/DESCRIPTION.rst,sha256=hgeEpyBUBBCcbq6nYdvR9bK5e0OuvYCJq0_7BnmsxFk,1529
+DTWpy-0.1.0.dist-info/METADATA,sha256=AP1vCfWXr4v8po_vitNl7lBhHmM2VB0HcBIq2F9Xd0A,2291
+DTWpy-0.1.0.dist-info/RECORD,,
+DTWpy-0.1.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+DTWpy-0.1.0.dist-info/metadata.json,sha256=ZPF6dGcm8zIfx70oyclE0DrSW7V9o7SqOwqM_tGl2SY,966
+DTWpy-0.1.0.dist-info/top_level.txt,sha256=ErWAnQ8JFJnNrlzwzdWdRlnrMNJEQmQiQOtpT-Gzouk,6
