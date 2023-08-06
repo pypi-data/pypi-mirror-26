@@ -1,0 +1,8 @@
+dicom
+numpy
+pandas
+pydicom
+docker
+wxPython
+google.cloud
+boto3

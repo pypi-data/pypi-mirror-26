@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: dicom2cloud
+Version: 0.8
+Summary: Platform independent GUI for anonymizing/uploading brain scans to an image processing cloud instance
+Home-page: https://github.com/CAIsr/dicom2cloud
+Author: The Dicom2cloud Team
+Author-email: steffen.bollmann@cai.uq.edu.au
+License: BSD-2
+Description: Clinic2Cloud - A platform independent graphical user interface for anonymizing and uploading clinical brain scans to an image processing cloud instance
+        
+        Current image processing techniques have reached a high level of sophistication and allow the extraction of extensive information from medical imaging data. The problem is that most of these modern post processing techniques are not applied in a clinical setting, because the software developed by scientists is difficult to use, often does not run on operating systems used by clinicians, and requires extensive hardware resources. The integration of new post processing techniques by vendors often takes many years, if the vendors take the risk at all to implement a new technique. One solution to bring modern image processing into the clinic would be to take the medical data outside of the clinic and utilize a powerful cloud instance where all tools are installed and the clinician can upload the data. The problem however is, that medical data contains sensitive information that cannot be easily removed, such as facial features in magnetic resonance imaging data of the brain.
+        
+        Modern image processing algorithms could potentially have a high clinical impact and could help diagnose a variety of diseases, like Multiple sclerosis, Parkinson, and other neurodegenerative diseases. Unfortunately the use of new exciting techniques is currently limited to a few specialized centers where expertise exists to run these algorithms. This severely limits the translation of research into clinics and it often takes years until vendors implement new processing techniques into their clinical platforms.
+        
+        The ideal solution would be a platform-independent (win, mac, linux) software/browser plugin that is easy to use, reads standard DICOM data, anonymizes the data and uploads it to a cloud instance and starts the processing. Anonymization of brain scans needs to remove facial features so that patients cannot be re-identified in a 3D rendering of their head. However, it is not possible to simply cut off the area where the face is, as this would affect registration tools by creating artificial edges.
+        
+        
+Keywords: image processing mri
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: ~=2.7
