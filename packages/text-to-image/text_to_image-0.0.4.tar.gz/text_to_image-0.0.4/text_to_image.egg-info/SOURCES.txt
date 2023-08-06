@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+text_to_image/__init__.py
+text_to_image/decode.py
+text_to_image/encode.py
+text_to_image/utilities.py
+text_to_image.egg-info/PKG-INFO
+text_to_image.egg-info/SOURCES.txt
+text_to_image.egg-info/dependency_links.txt
+text_to_image.egg-info/requires.txt
+text_to_image.egg-info/top_level.txt
