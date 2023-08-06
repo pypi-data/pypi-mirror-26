@@ -1,0 +1,5 @@
+setup.py
+sera.egg-info/PKG-INFO
+sera.egg-info/SOURCES.txt
+sera.egg-info/dependency_links.txt
+sera.egg-info/top_level.txt
