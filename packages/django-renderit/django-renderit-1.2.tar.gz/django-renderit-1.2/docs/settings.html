@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Settings &mdash; django-renderit 1.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="django-renderit 1.2 documentation" href="index.html" />
+    <link rel="prev" title="Template Fallback" href="templatefallback.html" /> 
+  </head>
+  <body role="document">
+<div id="docstitle">
+	<p>django-renderit 1.2 documentation</p>
+</div>
+<div id="header">
+	<div id="title"><h1>Settings</h1></div>
+	<ul id="headerButtons">
+		<li id="toc_button"><div class="headerButton"><a href="#">Table of Contents</a></div></li>
+		<li id="page_buttons">
+			<div class="headerButton"><a href="genindex.html" title="General Index" accesskey="I">index</a></div>
+			<div class="headerButton"><a href="templatefallback.html" title="Template Fallback" accesskey="P">previous</a></div>
+		</li>
+	</ul>
+</div>
+
+<div id="sphinxsidebar">
+  <div class="sphinxsidebarwrapper">
+	<ul><li class="toctree-l1"><a href="index.html">Main Page</a></li></ul>
+	<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templatetags.html">Template Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templatefallback.html">Template Fallback</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concatination-string">CONCATINATION_STRING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#root-template-path">ROOT_TEMPLATE_PATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#debug">DEBUG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#site-groups">SITE_GROUPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#site-get-func">SITE_GET_FUNC</a></li>
+</ul>
+</li>
+</ul>
+
+    <div id="searchbox" style="display: none">
+      
+        <form class="search" action="search.html" method="get">
+			<div class="search-wrapper">
+			<span class="search-left"></span>
+			<input class="prettysearch" type="text" name="q" size="18" />
+			<span class="search-right">&nbsp;</span>
+			</div>
+          <input type="submit" value="Search" class="searchbutton" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+        <p class="searchtip" style="font-size: 90%">
+        Enter search terms or a module, class or function name.
+        </p>
+    </div>
+    <script type="text/javascript">$('#searchbox').show(0);</script>
+  </div>
+</div>
+
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="settings">
+<span id="id1"></span><h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
+<p>All settings are grouped in the <cite>RENDERIT_SETTINGS</cite> dictionary, below are all the possible options</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can also use individual settings by prepending <cite>RENDERIT_</cite> in front of the names below.
+If you combine both, the individual settings will act as defaults, and the dictionary
+will override the setting if supplied</p>
+</div>
+<div class="section" id="concatination-string">
+<span id="setting-concatination-string"></span><h2>CONCATINATION_STRING<a class="headerlink" href="#concatination-string" title="Permalink to this headline">¶</a></h2>
+<p>Change the default concatination strings, default is _ (underscore)</p>
+</div>
+<div class="section" id="root-template-path">
+<span id="id2"></span><h2>ROOT_TEMPLATE_PATH<a class="headerlink" href="#root-template-path" title="Permalink to this headline">¶</a></h2>
+<p>Change the default root template path to look for the templates, default is
+<strong>/renderit/</strong></p>
+</div>
+<div class="section" id="debug">
+<span id="id3"></span><h2>DEBUG<a class="headerlink" href="#debug" title="Permalink to this headline">¶</a></h2>
+<p>Outputs some debugging information to the console, defaults to the value of <cite>DEBUG</cite></p>
+</div>
+<div class="section" id="site-groups">
+<span id="id4"></span><h2>SITE_GROUPS<a class="headerlink" href="#site-groups" title="Permalink to this headline">¶</a></h2>
+<p>Boolean value indicated if renderit should care about <cite>sites</cite></p>
+</div>
+<div class="section" id="site-get-func">
+<span id="id5"></span><h2>SITE_GET_FUNC<a class="headerlink" href="#site-get-func" title="Permalink to this headline">¶</a></h2>
+<p>By default when site groups are enabled, it will use the <cite>pk</cite> of the site. However
+if we want cleaner names, you can define your own function to get the value.
+Defaults to <cite>renderit.templatetags.renderit_tags.default_get_site_func</cite></p>
+</div>
+</div>
+
+
+          </div> 
+        </div>
+      </div>
+    <div class="footer">
+    <p>
+      &copy; Copyright 2010, jsoares.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.4.5.
+	</p>
+    </div>
+      <div class="clearer"></div>
+    </div>
+	<div id="breadcrumbs">
+		Settings
+		</ul>
+	</div>
+	<script type="text/javascript" charset="utf-8" src="_static/toc.js"></script>
+  </body>
+</html>
