@@ -1,0 +1,11 @@
+examples/__init__.py,sha256=e7IrqV0nP3n15zcUXqxWr4SNO16qV0FjOz4fog6eZC8,59
+examples/stringwrap.py,sha256=wRVCJc5iq2KNbZfDLK__O48OcOljwMBjTS7Gnv-2j30,317
+examples/typecheck.py,sha256=KAzgj0OiXPejgWTTRHlaZXmvesYYgyxoEh_uB0wbjDQ,707
+paramdec/__init__.py,sha256=YKiIm6tOGZoDGSKFZrES9LMCnGwqARw7lvQK9tdZUo0,480
+paramdec/paramdec.py,sha256=52OM9SEGG5XdsJoNBY0CMXkERkLUlNnszT_egb937-U,340
+paramdec-2.1.0.dist-info/DESCRIPTION.rst,sha256=BfpQUKDDvXjg9tK15t7hWs4rriaHvNY16avx2BlAdiI,1029
+paramdec-2.1.0.dist-info/METADATA,sha256=n5Ak_6McZ6Qi0SoF_0R_tTNK6HBAStWLxAvgeHlWB1U,1732
+paramdec-2.1.0.dist-info/RECORD,,
+paramdec-2.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+paramdec-2.1.0.dist-info/metadata.json,sha256=alUOQ8cfXnXt-xD9j2lhvZvM7BW-mnvmsle-bOqOLek,915
+paramdec-2.1.0.dist-info/top_level.txt,sha256=rhmF73wVV164pwaQlW8ZonjSagD79Kh08pgymU-sloI,18
