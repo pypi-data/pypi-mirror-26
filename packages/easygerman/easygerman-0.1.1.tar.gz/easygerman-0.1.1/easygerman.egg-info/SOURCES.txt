@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+easygerman.egg-info/PKG-INFO
+easygerman.egg-info/SOURCES.txt
+easygerman.egg-info/dependency_links.txt
+easygerman.egg-info/requires.txt
+easygerman.egg-info/top_level.txt
