@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: RainbowChain
+Version: 0.1.5
+Summary: Implementing Middle Out (Indexing) to the Markov Chain
+Home-page: https://github.com/Avery246813579/Python-Rainbow-Chain
+Author: Avery Durrant
+Author-email: avery@frostbyte.co
+License: MIT License
+Download-URL: https://github.com/Avery246813579/Python-Rainbow-Chain/0.1.5
+Description: UNKNOWN
+Keywords: Markov Chain,Middle Out,Markov Model
+Platform: UNKNOWN
