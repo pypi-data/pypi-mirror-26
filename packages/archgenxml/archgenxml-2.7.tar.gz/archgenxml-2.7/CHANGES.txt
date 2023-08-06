@@ -1,0 +1,173 @@
+Changelog
+=========
+
+2.7 (2017-11-08)
+----------------
+- Added possibility to use tagged value 'icon' on actions to manage the icon_expr.
+  [gbastien]
+
+- Added Tagged value 'icon' available for workflow transition.
+  [gbastien]
+
+- Added a disable_increment_profile_vernum tagged value.
+  If it is True, version number in metadata.xml is not upgraded at each generation.
+  [thomasdesvenain]
+
+- Add icons metadata files.
+  [thomasdesvenain]
+
+- Use png as default icons.
+  If folder_icon or document_icon is set as content_icon, do not copy it.
+  [thomasdesvenain]
+
+- Allow multiple worlkflows.
+  If many workflows are embedded with class, each workflow is binded in workflows.xml.
+  'use_workflow' attribute adds a workflow to embedded workflows.
+  [thomasdesvenain]
+
+- Abstract class have no workflow binding.
+  [thomasdesvenain]
+
+- Import Column classes with DataGridField.
+  [thomasdesvenain]
+
+- Added a protected section in workflows definition.xml.
+  [thomasdesvenain]
+
+- View action is always ${object_url}/view, otherwise select layout doesn't
+  work anymore.
+  [thomasdesvenain]
+
+- When we add content_icon with null value on a class, icon expr is empty.
+  [thomasdesvenain]
+
+- Add Site Administrator to ignored extra roles if plone >= 4.1.
+  [thomasdesvenain]
+
+- Default plone target version is 4.1.
+  It's easier to change default version.
+  [thomasdesvenain]
+
+- Fixed configure.zcml core section protection.
+  [thomasdesvenain]
+
+- Now, manage formats of generic setup version number as n, n1.n2,
+  and not only n1.n2.n3.
+  [thomasdesvenain]
+
+- If plone_target_version tagged-value is set to 4.0 or 4.1, then generate
+  icon_expr instead of content_icon for FTIs.
+  [vincentfretin]
+
+- Add a protected FOOT section in type.xml.
+  [vincentfretin]
+
+- Add vocabulary_factory tagged value.
+  [thomasdesvenain]
+
+- Avoid deprecated import warning under Zope 2.13+.
+  [thomasdesvenain]
+
+- Fixed inconstancy between template name and portlet class by removing .pt in the generation
+  [jihaisse]
+
+- Added method generation for portlet class.
+  The portlet class will look like the classic portlet.
+  [jihaisse]
+
+
+2.6 (2011-03-10)
+----------------
+
+- make z3 interfaces the default interface and dont accept any longer zope2
+  interfaces
+  [jensens]
+
+- Use portal_type tagged-value if available instead of class name when
+  generating workflows.xml.
+  [vincentfretin]
+
+- remove unneccessary imports for remember/membrane,
+  view permissions can now additionally be specified in the dependency
+  association to the content class,
+  name of the view template can now additionally be specified in the
+  dependency relation between view class and content class,
+  pass fixed size parameter to arrayfield (i.e. 4 generates size-4) ,
+  browser views: name on dpendency determines name of view,
+  remove old generator i18n support.
+  [zworkb]
+
+- tgv for dynatree widget
+  [hpeteragitator]
+
+- Added worklist:guard_expressions tag definition.
+  [vincentfretin]
+
+- Fixed UnicodeEncodeError when writing the code of existing methods
+  back to the files and the code is in the unicode format.
+  [deo]
+
+
+2.5 (2010-09-04)
+----------------
+
+- Extender doesn't generate interfaces twice anymore.
+  [jensens]
+
+- You can now set meta_type="Subtractive Workflow" (default is "Workflow")
+  and state_var="confidential_state" for example (default is "review_state")
+  on a workflow to use it with collective.subtractiveworkflow.
+  [vincentfretin]
+
+- Added roles and permissions protected sections in rolemap.xml.
+  [vincentfretin]
+
+- Replaced buggy odict implementation by the ordereddict implementation
+  available in Python 2.7.
+  [moldy]
+
+- Unicode fixes for generated module info header.
+  [moldy]
+
+- Removed DeprecationWarning about the sets module.
+  [vincentfretin]
+
+- Header info: use better formatting for author.
+  Encode module header strings so we don't choke on non-ASCII chars.
+  [moldy]
+
+- Make "dependend_profiles" alternative as multi-tgv available
+  (avoid ultra-long tgvs).
+  [jensens]
+
+- Added virtual field type "keywords" which results in a LinesField with
+  KeywordWidget (this needs a tgv catalog:index=1).
+  [jensens]
+
+- Prevent error on empty tgv.
+  [hpeteragitator]
+
+
+2.4.1 (2009-04-01)
+------------------
+
+- Fix wrong version '2.4-'.
+  '2.4-' version was not fully uploaded.
+  [vincentfretin]
+
+
+2.4 (2009-04-01)
+----------------
+
+- Fix use of index:extras tagged-value
+  [jensens]
+
+- Enable easy plone.app.content.ATBlob subclassing.
+  Add atblob stereotype to the profile.
+  [jensens]
+
+- Add stripogram (available as egg) as dependency.
+  [jensens]
+
+- Fix catalog assignment when catalogmultiples tagged valued is used.
+  [erico_andrei]
