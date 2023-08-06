@@ -1,0 +1,8 @@
+orderedset
+six
+sqlalchemy
+sqlparse
+tablib
+pyyaml
+flapjack_stack
+stevedore
