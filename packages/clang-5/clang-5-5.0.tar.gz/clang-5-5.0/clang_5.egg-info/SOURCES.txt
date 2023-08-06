@@ -1,0 +1,10 @@
+README.txt
+setup.py
+clang/__init__.py
+clang/cindex.py
+clang/enumerations.py
+clang_5.egg-info/PKG-INFO
+clang_5.egg-info/SOURCES.txt
+clang_5.egg-info/dependency_links.txt
+clang_5.egg-info/not-zip-safe
+clang_5.egg-info/top_level.txt
