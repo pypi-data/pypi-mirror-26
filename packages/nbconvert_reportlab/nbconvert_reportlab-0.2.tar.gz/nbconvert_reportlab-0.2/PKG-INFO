@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: nbconvert_reportlab
+Version: 0.2
+Summary: Convert notebooks to PDF using Reportlab
+Home-page: https://github.com/takluyver/nbconvert-reportlab
+Author: Thomas Kluyver
+Author-email: thomas@kluyver.me.uk
