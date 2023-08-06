@@ -1,0 +1,15 @@
+foldable_robotics/__init__.py,sha256=k12PtzR5opsIHRABoFORLrlv2AJ_GxSCGOTH36QnhrQ,130
+foldable_robotics/class_algebra.py,sha256=hVfMyvGvVj3tiRT_uGBc_gQ3fdDWrJffkJ_WjfgPVDE,581
+foldable_robotics/dxf.py,sha256=xs8ck-X2MAVhLMrBh5IY7PqkeWjhKiohom84P7_fDnU,3566
+foldable_robotics/dynamics_info.py,sha256=Nsz0AhT-PVsqFqvwpo288GnzOhSDwC6FwRSdYqSWzNI,2227
+foldable_robotics/geometry.py,sha256=rUd7Q8ok6nrK04eb0JhOQYkiBYuEkSubHExmHSucAaU,937
+foldable_robotics/laminate.py,sha256=s9LpvaJs5urhTbW4YLJEelaHi9e9EH1-FKJ7AarG8Y4,6001
+foldable_robotics/layer.py,sha256=ak5n0Vj33v8guPyVPtPjY1v39J-yIOY9nh5X9GtpI68,13038
+foldable_robotics/manufacturing.py,sha256=--0Fn0HyjT67aRn_rPt63ZAvntEXzZujCceuan8gb0Q,7112
+foldable_robotics/parts.py,sha256=MDJMGRR7oN5k374xtjaHNCn0EQnBF-kDXM3W8Fc5N3w,1911
+foldable_robotics-0.0.11.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+foldable_robotics-0.0.11.dist-info/METADATA,sha256=l2xkm7E_N6zLmXy8JM0ui1uMl5K6e2TrctmSSMruglk,606
+foldable_robotics-0.0.11.dist-info/RECORD,,
+foldable_robotics-0.0.11.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+foldable_robotics-0.0.11.dist-info/metadata.json,sha256=354iJix3b-jzL0HZMUhkRSWEggJ7Ot1GygUxgvP5sv8,750
+foldable_robotics-0.0.11.dist-info/top_level.txt,sha256=hGdO9PpGgdMlwXPVUb7Kkw1P9MvGdJy6AGypX3Mb-EY,18
