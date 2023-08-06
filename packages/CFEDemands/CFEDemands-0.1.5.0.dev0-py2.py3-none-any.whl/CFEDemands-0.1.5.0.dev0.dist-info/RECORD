@@ -1,0 +1,17 @@
+CFEDemands-0.1.5.0.dev0.dist-info/DESCRIPTION.rst,sha256=GJAbQvN803X6O_TV8X-ARmUD19KdtTEgd01S9aw49dE,1006
+CFEDemands-0.1.5.0.dev0.dist-info/LICENSE.txt,sha256=qImFXcRJwxIHS80FE7uOx6FhmLY8apd4Y12aR54QU7w,282
+CFEDemands-0.1.5.0.dev0.dist-info/METADATA,sha256=GKKIB0NWp-J82nmtBP0uAj6DMUodgwn1pW5_ko27_RM,1372
+CFEDemands-0.1.5.0.dev0.dist-info/RECORD,,
+CFEDemands-0.1.5.0.dev0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+CFEDemands-0.1.5.0.dev0.dist-info/metadata.json,sha256=1WsTwSLPcNdUVMCqsZtQddRzTySQJadiT15u3ulu53U,623
+CFEDemands-0.1.5.0.dev0.dist-info/top_level.txt,sha256=etC2dNVXYICGmvCQqDBiRYt8P7vL4qCSwlCv1rmCqGs,4
+cfe/__init__.py,sha256=wuThe-Jscm_-N53MhME8S5dFXMsXibXHU74Z1Kv8QxM,70
+cfe/_core.py,sha256=aD1qmNLzesXNro8S-gRpUkN5VMpsbJOr8jYy4XtCrb0,4373
+cfe/_utils.py,sha256=k46baMJonfyWRqW24CrvB1J1G78SRksKyFsOLyRqSEE,1742
+cfe/demands.py,sha256=8N6cVF30ITJ1O5852nOJMSdIJcTie_VXjCNrtTCZA_o,2639
+cfe/df_utils.py,sha256=j8lV3vglxqB02rmmvsgxrUibp0lwwXKrpZT4h2w4tWg,12442
+cfe/estimation.py,sha256=aNElqYCkiREY_wIM8wLHN1loPPnXCKl5ANcrtdjCPQE,29573
+cfe/frischian.py,sha256=kt4sctC_FweXnApZs-w7cnwhOAkUNCEZej6_7UT1OVE,1224
+cfe/hicksian.py,sha256=Djtao3ZMs77e7cxwDxufprZ3jeijapKvrtdS_4VqGr8,1085
+cfe/marshallian.py,sha256=qCGlbkOIV-FmAVmaAhfsx74gh-xUsx1oNbr_CjWrUzk,2183
+cfe/root_with_precision.py,sha256=OKc_eGFnnsu_MVPBSfpFFtyZxJ-jheW3ZVPkAx1zkkY,2634
