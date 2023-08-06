@@ -1,0 +1,4 @@
+[console_scripts]
+multifasta.py = sis.multifasta:main
+sis.py = sis.SIS:main
+
