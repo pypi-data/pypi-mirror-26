@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: restaurant-service-client
+Version: 0.1.0
+Summary: Restaurant Service Client
+Home-page: https://github.com/Kalimaha/restaurant-service-client
+Author: Guido Barbaglia
+Author-email: guido.barbaglia@gmail.com
+License: LICENSE
+Description: Restaurant Service Client
+        =========================
+        
+        Small client app used to test the [pact-test](https://github.com/Kalimaha/pact-test) library.
+        
+Platform: UNKNOWN

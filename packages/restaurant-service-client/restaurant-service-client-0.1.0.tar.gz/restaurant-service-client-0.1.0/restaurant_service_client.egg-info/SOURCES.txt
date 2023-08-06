@@ -1,0 +1,6 @@
+setup.py
+client/__init__.py
+restaurant_service_client.egg-info/PKG-INFO
+restaurant_service_client.egg-info/SOURCES.txt
+restaurant_service_client.egg-info/dependency_links.txt
+restaurant_service_client.egg-info/top_level.txt
