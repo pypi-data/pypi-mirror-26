@@ -1,0 +1,6 @@
+[console_scripts]
+multipointtopoint = wsdottraffic.gp.multipointtopoint:main
+wsdottraffic = wsdottraffic.__main__:main
+wsdottrafficgp = wsdottraffic.gp.__main__:main
+zipgdb = wsdottraffic.gp.zipgdb:main
+
