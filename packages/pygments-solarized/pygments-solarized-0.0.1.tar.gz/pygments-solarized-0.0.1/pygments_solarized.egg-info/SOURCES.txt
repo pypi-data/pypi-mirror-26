@@ -1,0 +1,12 @@
+README.rst
+setup.py
+pygments_solarized/__init__.py
+pygments_solarized/dark.py
+pygments_solarized/dark256.py
+pygments_solarized/light.py
+pygments_solarized.egg-info/PKG-INFO
+pygments_solarized.egg-info/SOURCES.txt
+pygments_solarized.egg-info/dependency_links.txt
+pygments_solarized.egg-info/entry_points.txt
+pygments_solarized.egg-info/requires.txt
+pygments_solarized.egg-info/top_level.txt
