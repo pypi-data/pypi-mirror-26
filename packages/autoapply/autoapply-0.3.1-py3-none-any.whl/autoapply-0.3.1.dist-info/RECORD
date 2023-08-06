@@ -1,0 +1,13 @@
+autoapply/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoapply/autoapply.py,sha256=bucr7J1LiX3txOPXeklLLTrmCDZwVgKDNOOeFzC0tBc,5049
+autoapply/crypt.py,sha256=Q5ER4aNNwnLUAHLB0bSMQfCAYpzEoE4Bbxi4xLFQAQM,2075
+autoapply/download.py,sha256=WBFQPpslJvjjEkCfZ1QJpcSgdcRhmgpppO3xphK1EUI,3494
+autoapply/util.py,sha256=9Cma4oMGCiNJN_N910BUqwv6hLYom1BHOZ71broM2UA,1901
+autoapply-0.3.1.data/scripts/autoapply,sha256=mO11o2u-KiLtNBJAoAgTYYIIMzles_ERuultk5VkJ0g,167
+autoapply-0.3.1.data/scripts/autoapply-server,sha256=8J6DdMx1pWNFEbXfkJSyMXwce8ec3pmPQyabO1cQEyE,604
+autoapply-0.3.1.dist-info/DESCRIPTION.rst,sha256=5CgJjyoDzvoi_3ZsHFI3lC8N4MEyndgjFKYyfTOybrs,2071
+autoapply-0.3.1.dist-info/METADATA,sha256=RQ-I_pV4MsUKTb3UR8wQEYhna5OVGHOSesTRcNiH774,2392
+autoapply-0.3.1.dist-info/RECORD,,
+autoapply-0.3.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+autoapply-0.3.1.dist-info/metadata.json,sha256=KknVx7xk6egdnFw1DCTt1Rd3CTClaGo35Cf9VWBstxY,511
+autoapply-0.3.1.dist-info/top_level.txt,sha256=_7tDopneNuFZJHRtFm2XbBFEXNRlo-4v_LUn6610XnU,10
