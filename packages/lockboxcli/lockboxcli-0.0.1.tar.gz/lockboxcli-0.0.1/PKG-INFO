@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: lockboxcli
+Version: 0.0.1
+Summary: A client for interacting with Lockbox, an aws lambda for handling server secrets.
+Home-page: http://pypi.python.org/pypi/lockboxcli/
+Author: Jim Barcelona
+Author-email: barce@me.com
+License: LICENSE
+Description: # lockboxcli
+        command line for lockbox
+        
+Platform: UNKNOWN
