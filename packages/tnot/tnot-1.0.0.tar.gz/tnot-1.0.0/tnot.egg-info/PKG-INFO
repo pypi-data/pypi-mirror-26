@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tnot
+Version: 1.0.0
+Summary: Python Wrapper for TerminalNotifier 2.0
+Home-page: UNKNOWN
+Author: Jake
+Author-email: jake@hwll.me
+License: MIT
+Description: UNKNOWN
+Keywords: mac osx notification
+Platform: UNKNOWN
