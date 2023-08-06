@@ -1,0 +1,5 @@
+aiohttp
+
+[develop]
+pytest
+pytest-cov
