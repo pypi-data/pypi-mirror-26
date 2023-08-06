@@ -1,0 +1,11 @@
+download/__init__.py,sha256=0NPYSbHnssamjw7m9y3O78mmG62WY_HwoZcbCS0VLtc,118
+download/download.py,sha256=GY-0O8itrcd2yyWJZXJFEggEosGcFihimbZy9bxxGjw,14429
+download/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+download/tests/test.tar,sha256=2YvXx2FKeauXK8uBUFPcfUhKGwiYGyUsLa0003fcGs0,1536
+download/tests/test.tar.gz,sha256=ARJ9NaO03_lzYJNCoP7q2YQWf6DFLufgJXkIeeBSg0U,117
+download/tests/test.zip,sha256=Wx7BMObHztwgoFAaZKoc6eRQyMutxtHtRn6ff2T_Jmk,595
+download/tests/test_download.py,sha256=Z652Mx3DQPg7MC0Ejyq3eKaryAQQ_8W-BRGN_Dgt8wc,2781
+download-0.3.3.dist-info/LICENSE,sha256=YagOnFo7EI0kXCyE7BK0l_vC9n8y5lhHd1JC68u5iLk,1081
+download-0.3.3.dist-info/WHEEL,sha256=RA_fzc0G9apkHJKy7p05CMHAeSfJ3NaDzVYRdT6OUBk,100
+download-0.3.3.dist-info/METADATA,sha256=cQa3N62yC655jEc6DOeFe5PObkvgFt2rK3D4FZstOU4,334
+download-0.3.3.dist-info/RECORD,,
