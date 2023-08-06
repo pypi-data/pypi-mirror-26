@@ -1,0 +1,5 @@
+psycopg2
+sqlalchemy
+results-schema>=2.0
+collate==0.3.0
+metta-data>=1.0
