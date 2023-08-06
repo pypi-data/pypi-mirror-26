@@ -1,0 +1,14 @@
+oaiharvest/__init__.py,sha256=5_RUUCPyNJosTjdkq5uN_Jn2QFJ-Cu_tbgwvb_30K4E,310
+oaiharvest/exceptions.py,sha256=U9eiCc3UuCdx-eDEmKhg7GcMjUjehmLAo2F2cQ38iwo,255
+oaiharvest/harvest.py,sha256=BcXhynEEYcLMpofjo6dmKEni0y2W04G4qjFBsPs5_wo,17481
+oaiharvest/metadata.py,sha256=yQ56xl6T2E4NddXElMXxOLG53pgHnyFFVXB_0EzxMFE,1956
+oaiharvest/registry.py,sha256=mxxpAPLpdDK41tT0064T99pJ4vSRjBwlOQqh16UmCcQ,13485
+oaiharvest/test/__init__.py,sha256=kDeZ0dwoujM8L8vyIEnon3tbdiOPnvKVsdACcb3JhUo,151
+oaiharvest/test/test_harvest.py,sha256=jemhxrwqXps0t9h1vc8AaS0k9ifEIOsV92jlbDaSg5Q,3535
+oaiharvest-3.0.0.dist-info/DESCRIPTION.rst,sha256=Xo2ZgnqOJ2gO8GZXi8teugyruDAT-SGGQQJDzhgs00k,6290
+oaiharvest-3.0.0.dist-info/METADATA,sha256=9ODAa0deK1lxa9ZgXuSf-kTCTjIDjuCpMuXHv127reA,7282
+oaiharvest-3.0.0.dist-info/RECORD,,
+oaiharvest-3.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+oaiharvest-3.0.0.dist-info/entry_points.txt,sha256=CR7t0bRP7-_vpW7JrIK_jSnA2mILTzT9pVOzFxHX4cI,92
+oaiharvest-3.0.0.dist-info/metadata.json,sha256=AcmOxHC8JwMFTV0Eb9m2eMff4G5LZK2qgRLb7magcd8,1386
+oaiharvest-3.0.0.dist-info/top_level.txt,sha256=EgmZd-ieL9XAUhO8XdgiD6GNHXVUlMri18o_eB8n0ZU,11
