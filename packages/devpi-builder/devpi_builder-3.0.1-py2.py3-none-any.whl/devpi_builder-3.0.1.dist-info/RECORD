@@ -1,0 +1,11 @@
+devpi_builder/__init__.py,sha256=eoZ6GfifbqhMLNzjlqRDVil-yyBkOmVN9ujSgJWNBlY,15
+devpi_builder/cli.py,sha256=RyJCJstq8JTOMwWGpel6a8Kozor7iHjMlnPdUodlBEI,7005
+devpi_builder/requirements.py,sha256=VM87NuMjaM9hk085IFrfadaA3fLq1hMnbIsItCddvAA,2234
+devpi_builder/wheeler.py,sha256=dSpEAhC103wvMJwP_E0Z2WxhdPO2LW14r6iq0L4xLiU,3226
+devpi_builder-3.0.1.dist-info/DESCRIPTION.rst,sha256=dm38V9zLzYp0WYxDVisaOpAR5A1nYx-xvQqe79F1-eI,7708
+devpi_builder-3.0.1.dist-info/METADATA,sha256=oPWOxiYEeHUQ46NrlD9wDNaRPmhDNnfWLVnZd1_j__I,8834
+devpi_builder-3.0.1.dist-info/RECORD,,
+devpi_builder-3.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+devpi_builder-3.0.1.dist-info/entry_points.txt,sha256=uU7RTnIw4kHZwJen2JS4B5f97T1xIVqV06Ubq2nQ3rE,58
+devpi_builder-3.0.1.dist-info/metadata.json,sha256=1vZGesrxB-qgNi5enLxD4z_SQaf-XgZM6WIMSLFj90M,1483
+devpi_builder-3.0.1.dist-info/top_level.txt,sha256=k0ecLs1L25IFBc-Xdly0YitpAIdzmxAClDjDdtz2eCI,14
