@@ -1,0 +1,37 @@
+{% extends "wagtailadmin/base.html" %}
+{% load wagtailadmin_tags i18n staticfiles gravatar sendinblue %}
+
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'sendinblue/css/admin.css' %}">
+{% endblock %}
+
+{% block titletag %}{{ title }}{% endblock %}
+
+{% block content %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% include 'wagtailadmin/shared/header.html' with title=title icon='fa-envelope' %}
+    <section id="dashboard" class="nice-padding active sendinblue">
+        <div class="row row-flush">
+            <div class="col4">
+                {% include 'sendinblue/widgets/account.html' %}
+            </div>
+            <div class="col4">
+                {% include 'sendinblue/widgets/contacts.html' %}
+            </div>
+            <div class="col4">
+                {% include 'sendinblue/widgets/automation.html' %}
+            </div>
+        </div>
+
+        <div class="row row-flush">
+            {% for campaign_id in campaigns_order %}
+            {% with campaigns|get_item:campaign_id as campaign %}
+            <div class="col4">
+                {% include 'sendinblue/widgets/campaign.html' %}
+            </div>
+            {% endwith %}
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
