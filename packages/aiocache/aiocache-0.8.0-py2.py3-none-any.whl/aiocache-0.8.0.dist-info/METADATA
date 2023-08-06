@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: aiocache
+Version: 0.8.0
+Summary: multi backend asyncio cache
+Home-page: https://github.com/argaen/aiocache
+Author: Manuel Miranda
+Author-email: manu.mirandad@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: AsyncIO
+Provides-Extra: dev
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-asyncio; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-mock; extra == 'dev'
+Requires-Dist: codecov; extra == 'dev'
+Requires-Dist: marshmallow; extra == 'dev'
+Requires-Dist: asynctest (==0.11.0); extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-autobuild; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Requires-Dist: gitchangelog; extra == 'dev'
+Requires-Dist: pystache; extra == 'dev'
+Provides-Extra: memcached
+Requires-Dist: aiomcache (>=0.5.2); extra == 'memcached'
+Provides-Extra: redis
+Requires-Dist: aioredis (<1,>=0.3.3); extra == 'redis'
+
+UNKNOWN
+
+
