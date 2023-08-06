@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+logger_server/__init__.py
+logger_server/server.py
+logger_server.egg-info/PKG-INFO
+logger_server.egg-info/SOURCES.txt
+logger_server.egg-info/dependency_links.txt
+logger_server.egg-info/entry_points.txt
+logger_server.egg-info/requires.txt
+logger_server.egg-info/top_level.txt
+logger_server/conf/logserver.conf.template
+test/test_logger.py
