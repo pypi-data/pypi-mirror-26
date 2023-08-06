@@ -1,0 +1,14 @@
+astropy>=2.0
+numpy
+scipy
+scikit-image
+ipywidgets>=7
+msumastro>=0.9
+ccdproc>=1.2
+matplotlib
+dask
+
+[docs]
+numpydoc
+sphinx-argparse
+sphinx_rtd_theme
