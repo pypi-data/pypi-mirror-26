@@ -1,0 +1,50 @@
+Metadata-Version: 2.0
+Name: ethtoken
+Version: 0.0.1a1
+Summary: Ethereum EIP20 Token Interface
+Home-page: https://github.com/carver/ethtoken.py
+Author: Jason Carver
+Author-email: ut96caarrs@snkmail.com
+License: MIT
+Keywords: ethereum erc20 token eip20 ICO ETH
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: web3 (~=4.0b)
+
+ethtoken.py Project
+===================
+
+This is a tiny library leveraging web3.py to make an interface for
+working with EIP20 (formerly ERC20) tokens on Ethereum.
+
+**It is currently in Pre-alpha, with 0 automated tests**
+
+Usage
+-----
+
+Install
+~~~~~~~
+
+.. code:: sh
+
+    virtualenv -p python3 venv
+    . venv/bin/activate
+    pip install --pre ethtoken
+
+Initialize
+~~~~~~~~~~
+
+.. code:: py
+
+    from ethtoken import token
+
+    omg = token("omg.thetoken.eth")
+
+    omg.token_balance("ethereumfoundation.eth")
+
+
