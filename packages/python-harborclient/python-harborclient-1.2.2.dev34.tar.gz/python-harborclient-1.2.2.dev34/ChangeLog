@@ -1,0 +1,37 @@
+CHANGES
+=======
+
+* Update setup.cfg
+* Update README.md
+* Fix typo error
+* Change devstack to localhost in harborrc
+* Fix get top error if count is not number
+* Add bash completion script
+* Add more actions
+* Add more actions
+* Fix login error for https
+* Disable insecure request warning
+* Fix '\_' not defined
+* Create CODE\_OF\_CONDUCT.md
+* Fix pep8 error
+* Don't get username and password from args
+* Request only return body
+* Remove i18n
+* Remove some useless files
+* Add target and job subcommands
+* Add more subcommands
+* Fix get wrong name of image
+* Update README
+* Upgrade to latest harbor API
+* Add project to options
+* Raise error if fail to authorize
+* Add required options check
+* Add https support
+* Remove test code
+* Format code to pep8 style
+* Add todo list
+* Update README.md
+* Add Chinese doc
+* Update document
+* Add Docker support
+* init repo

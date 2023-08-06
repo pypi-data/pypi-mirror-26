@@ -1,0 +1,3 @@
+[console_scripts]
+harbor = harborclient.shell:main
+
