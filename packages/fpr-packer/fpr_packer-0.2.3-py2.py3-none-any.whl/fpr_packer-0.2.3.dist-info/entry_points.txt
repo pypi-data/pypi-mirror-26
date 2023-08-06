@@ -1,0 +1,3 @@
+[pytest11]
+fpr_packer = fpr_packer.plugin
+
