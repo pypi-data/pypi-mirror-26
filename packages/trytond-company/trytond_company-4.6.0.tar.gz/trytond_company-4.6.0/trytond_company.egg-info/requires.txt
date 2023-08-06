@@ -1,0 +1,6 @@
+trytond_currency >= 4.6, < 4.7
+trytond_party >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
+
+[timezone]
+pytz
