@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+captcha_manager.egg-info/PKG-INFO
+captcha_manager.egg-info/SOURCES.txt
+captcha_manager.egg-info/dependency_links.txt
+captcha_manager.egg-info/requires.txt
+captcha_manager.egg-info/top_level.txt
+captchamanager/__init__.py
+captchamanager/manager.py
+captchamanager/token.py
