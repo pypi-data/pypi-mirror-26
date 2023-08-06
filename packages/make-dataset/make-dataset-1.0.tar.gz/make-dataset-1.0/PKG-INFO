@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: make-dataset
+Version: 1.0
+Summary: Easily make image datsets for training Deep Learning models by scraping web images.
+Home-page: https://github.com/brandonjabr/make-dataset
+Author: Brandon Jabr
+Author-email: bjabr@berkeley.edu
+License: UNKNOWN
+Download-URL: https://github.com/brandonjabr/make-dataset/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: dataset,imageset,make-dataset,images,scrape
+Platform: UNKNOWN
