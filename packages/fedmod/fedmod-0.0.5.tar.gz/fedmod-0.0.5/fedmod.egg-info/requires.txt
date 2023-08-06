@@ -1,0 +1,6 @@
+modulemd
+click
+requests
+requests-toolbelt
+lxml
+attrs

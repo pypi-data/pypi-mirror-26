@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: fedmod
+Version: 0.0.5
+Summary: Utilities for generating & maintaining modulemd files
+Home-page: https://pagure.io/modularity/fedmod
+Author: Nick Coghlan
+Author-email: ncoghlan@redhat.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: fedmod provides tools for converting existing RPMs (most notably metapackages) into module definitions in Fedora's modulemd format.
+Keywords: modularization modularity module modulemd fedora
+Platform: UNKNOWN
