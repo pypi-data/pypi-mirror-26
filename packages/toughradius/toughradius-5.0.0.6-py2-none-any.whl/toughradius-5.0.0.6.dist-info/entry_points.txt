@@ -1,0 +1,5 @@
+[console_scripts]
+accttest = toughradius.common.radtest:test_acct
+authtest = toughradius.common.radtest:test_auth
+radiusd = toughradius.common.radiusd:run
+
