@@ -1,0 +1,67 @@
+=====
+mailchimp_sender_package
+=====
+
+Requirements:
+
+
+
+Quick start
+-----------
+0. Install package::
+	pip install mailchimpworker
+
+1. Add "mailchimp_sender_package" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'mailchimpworker',
+        ...
+    ]
+
+Make migrations::
+	python manage.py makemigrations mailchimpworker
+	python manage.py migrate
+Also add the MAILCHIMP_API_KEY::
+	MAILCHIMP_API_KEY = 'YOUR API KEY'
+
+2. Include the mailchimp_sender_package URLconf in your project urls.py like this::
+
+    url(r'^mailchimp/', include('mailchimpworker.urls')),
+
+3. Make migrations::
+	python manage.py makemigrations
+	python manage.py migrate
+
+4. Create into folder with settings.py, wsgi.py and etc. file 'celery.py' with this content::
+
+	from __future__ import absolute_import, unicode_literals
+	import os
+	from celery import Celery
+	from celery.schedules import crontab
+
+	os.environ.setdefault("DJANGO_SETTINGS_MODULE", "[proj_name].settings")
+
+	app = Celery('[proj_name]')
+	app.config_from_object('django.conf:settings', namespace='CELERY')
+	app.conf.broker_url = 'redis://localhost:6379/0'
+	app.conf.beat_schedule = {
+	    'mailchimpworker.tasks.send_new_emails': {
+	        'task': 'mailchimpworker.tasks.send_new_emails',
+	        'schedule': crontab(minute=0),
+	        'args': ([YOUR_LIST_ID], [YOUR_CATEGORY_ID], [YOUR_INTEREST_ID]) # that should be strings, not lists
+	    },
+	}
+	app.autodiscover_tasks()
+
+5. Write your views for creating objects of model Subscriber and bind them with forms. Example::
+
+	from django.shortcuts import render
+	from mailchimpworker.models import *
+
+	def new_subscriber(request):
+	    data_email = request.POST.get('EMAIL')
+	    unique_check = Subscriber.objects.filter(email=data_email)
+	    if not len(unique_check):
+	        Subscriber.objects.create(email=data_email)
+	    return render(request, '[path_to_"thanks"_template].html', {})
