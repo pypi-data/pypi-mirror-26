@@ -1,0 +1,12 @@
+aiohttp_session/__init__.py,sha256=koLzYsnXenS-KEE9FePe5QMhaUF9EOBg9YUoGg_1oE8,6958
+aiohttp_session/cookie_storage.py,sha256=AyDi-qdkQTl8dLo9IKoiSfVapm2Fwz-gsq9tj8w722k,1994
+aiohttp_session/log.py,sha256=_ajVswJmhPUb5LOjilX8p2N0LZnYsmtMYS7A5YScqZk,54
+aiohttp_session/memcached_storage.py,sha256=No_SZH6niZea2NsOdWNrEnruJ-AoF473tFip1QtEDHY,2390
+aiohttp_session/nacl_storage.py,sha256=ZzVbjxHPdObtAqGsrvceRC3Xsb4n4jb5NXcEP6uvGmA,1708
+aiohttp_session/redis_storage.py,sha256=2Oe2fjMeWNzS2YswkSjCW0tHBZqWEdgVYNWBuXtYOgU,3223
+aiohttp_session-2.0.1.dist-info/DESCRIPTION.rst,sha256=uO_Bj_czN3O0nlYAP5i-tFH1-5JhP5C7_L7akveYg0Q,5279
+aiohttp_session-2.0.1.dist-info/METADATA,sha256=RKXiEAzyWktNNHdByZs-C386Fh-bZmjDES0q0WLfLvo,6304
+aiohttp_session-2.0.1.dist-info/RECORD,,
+aiohttp_session-2.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+aiohttp_session-2.0.1.dist-info/metadata.json,sha256=Qy4ul_A9ijf3VyprssvO7afD4XLr47AM2HxhRdfDxvA,1145
+aiohttp_session-2.0.1.dist-info/top_level.txt,sha256=0OnHSlgLQXu8TB3RdcMfPyp-5Pju54JlqZ0vlM7ApVM,16
