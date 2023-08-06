@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tmtoolkit/__init__.py
+tmtoolkit/corpus.py
+tmtoolkit/dtm.py
+tmtoolkit/filter_tokens.py
+tmtoolkit/germalemma.py
+tmtoolkit/preprocess.py
+tmtoolkit/utils.py
+tmtoolkit.egg-info/PKG-INFO
+tmtoolkit.egg-info/SOURCES.txt
+tmtoolkit.egg-info/dependency_links.txt
+tmtoolkit.egg-info/requires.txt
+tmtoolkit.egg-info/top_level.txt
