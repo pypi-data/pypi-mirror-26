@@ -1,0 +1,12 @@
+setup.py
+ajnwordcloud/__init__.py
+ajnwordcloud/colours.py
+ajnwordcloud/core.py
+ajnwordcloud/data.py
+ajnwordcloud/ii_search.c
+ajnwordcloud.egg-info/PKG-INFO
+ajnwordcloud.egg-info/SOURCES.txt
+ajnwordcloud.egg-info/dependency_links.txt
+ajnwordcloud.egg-info/not-zip-safe
+ajnwordcloud.egg-info/requires.txt
+ajnwordcloud.egg-info/top_level.txt
