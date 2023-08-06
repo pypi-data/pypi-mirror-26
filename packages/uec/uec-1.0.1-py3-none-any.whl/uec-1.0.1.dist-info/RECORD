@@ -1,0 +1,12 @@
+uec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uec/__main__.py,sha256=k8S1BczBpDevcZGaDby2vUNof2_z3CbGbvwso5C2Qtk,1651
+uec/methods.py,sha256=2GIc0Q-fhtVlkqEChF6kYLnhXumvYCiF00q3q1ENIV4,4894
+uec/uec.py,sha256=k8S1BczBpDevcZGaDby2vUNof2_z3CbGbvwso5C2Qtk,1651
+uec/user.py,sha256=oTwmqtOX_gR5HdlR5mCXVoLdBXfzTQxgjlJmeaE6OlA,2406
+uec-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+uec-1.0.1.dist-info/METADATA,sha256=cilSa3apZkpQc3wBslj01RzDtFbXMMku6Y06Udr4o3Q,761
+uec-1.0.1.dist-info/RECORD,,
+uec-1.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+uec-1.0.1.dist-info/entry_points.txt,sha256=UlMz91XGrVHgF-pfuF85rBh9vl9kxrxrmppnMuiD2wY,63
+uec-1.0.1.dist-info/metadata.json,sha256=CRP6yKAD1Pwdh7tMJhzfwPIvux-AkpGz2HmKdp55fKQ,1016
+uec-1.0.1.dist-info/top_level.txt,sha256=fDGm8ikozlhSuV9k8MjYFxz7FVQ0SkEOOf6ktYAGEnw,4

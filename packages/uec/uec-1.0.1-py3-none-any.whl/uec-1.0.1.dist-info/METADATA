@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: uec
+Version: 1.0.1
+Summary: Scripts for getting UEC student info and lectures info.
+Home-page: https://github.com/ikarishinjigao/UEC-Scraping
+Author: ikarishinjigao
+Author-email: ikarishinjigao@gmail.com
+License: MIT License
+Keywords: uec,UEC,GPA,gpa
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: bs4
+Requires-Dist: click
+Requires-Dist: lxml
+Requires-Dist: prettytable
+Requires-Dist: progressbar2
+Requires-Dist: requests
+Requires-Dist: selenium
+
+UNKNOWN
+
+
