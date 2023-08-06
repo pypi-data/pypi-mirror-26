@@ -1,0 +1,11 @@
+qrnn.py
+setup.py
+/Users/jonathanraiman/Desktop/Coding/python_packages/tensorflow_qrnn/src/fo_pool_op_cpu.cpp
+/Users/jonathanraiman/Desktop/Coding/python_packages/tensorflow_qrnn/src/fo_pool_op_gpu.cpp
+/Users/jonathanraiman/Desktop/Coding/python_packages/tensorflow_qrnn/src/fo_pool_op_kernel.cu
+/Users/jonathanraiman/Desktop/Coding/python_packages/tensorflow_qrnn/src/thread_pool.cpp
+qrnn.egg-info/PKG-INFO
+qrnn.egg-info/SOURCES.txt
+qrnn.egg-info/dependency_links.txt
+qrnn.egg-info/requires.txt
+qrnn.egg-info/top_level.txt
