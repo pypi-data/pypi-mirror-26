@@ -1,0 +1,4 @@
+[console_scripts]
+mocha = mocha.cli:cmd
+mocha-brew = mocha.cli:brew
+
