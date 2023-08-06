@@ -1,0 +1,3 @@
+[console_scripts]
+landsat = core.landsat:cli_runner
+
