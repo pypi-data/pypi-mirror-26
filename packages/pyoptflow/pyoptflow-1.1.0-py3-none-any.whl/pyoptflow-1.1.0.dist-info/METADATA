@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: pyoptflow
+Version: 1.1.0
+Summary: Pure Python optical flow: Horn-Schunck, Lucas-Kanade
+Home-page: https://github.com/scivision/pyoptflow
+Author: Michael Hirsch, Ph.D.
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: future-fstrings
+Requires-Dist: nose
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Provides-Extra: plot
+Requires-Dist: matplotlib; extra == 'plot'
+
+UNKNOWN
+
+
