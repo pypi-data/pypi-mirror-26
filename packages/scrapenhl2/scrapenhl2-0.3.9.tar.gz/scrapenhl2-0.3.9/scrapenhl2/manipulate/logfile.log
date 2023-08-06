@@ -1,0 +1,169 @@
+2017-10-09 19:38:39,389 INFO     Creating team IDs file
+2017-10-09 19:38:39,392 WARNING  Generating team info with default limits, 1 to 110
+2017-10-09 19:38:39,555 INFO     Done with ID # 1: New Jersey Devils
+2017-10-09 19:38:39,627 INFO     Done with ID # 2: New York Islanders
+2017-10-09 19:38:39,731 INFO     Done with ID # 3: New York Rangers
+2017-10-09 19:38:39,820 INFO     Done with ID # 4: Philadelphia Flyers
+2017-10-09 19:38:39,898 INFO     Done with ID # 5: Pittsburgh Penguins
+2017-10-09 19:38:39,969 INFO     Done with ID # 6: Boston Bruins
+2017-10-09 19:38:40,064 INFO     Done with ID # 7: Buffalo Sabres
+2017-10-09 19:38:40,133 INFO     Done with ID # 8: MontrÃ©al Canadiens
+2017-10-09 19:38:40,207 INFO     Done with ID # 9: Ottawa Senators
+2017-10-09 19:38:40,273 INFO     Done with ID # 10: Toronto Maple Leafs
+2017-10-09 19:38:40,339 INFO     Done with ID # 11: Atlanta Thrashers
+2017-10-09 19:38:40,408 INFO     Done with ID # 12: Carolina Hurricanes
+2017-10-09 19:38:40,475 INFO     Done with ID # 13: Florida Panthers
+2017-10-09 19:38:40,547 INFO     Done with ID # 14: Tampa Bay Lightning
+2017-10-09 19:38:40,644 INFO     Done with ID # 15: Washington Capitals
+2017-10-09 19:38:40,716 INFO     Done with ID # 16: Chicago Blackhawks
+2017-10-09 19:38:40,782 INFO     Done with ID # 17: Detroit Red Wings
+2017-10-09 19:38:40,854 INFO     Done with ID # 18: Nashville Predators
+2017-10-09 19:38:40,944 INFO     Done with ID # 19: St. Louis Blues
+2017-10-09 19:38:41,033 INFO     Done with ID # 20: Calgary Flames
+2017-10-09 19:38:41,187 INFO     Done with ID # 21: Colorado Avalanche
+2017-10-09 19:38:41,259 INFO     Done with ID # 22: Edmonton Oilers
+2017-10-09 19:38:41,498 INFO     Done with ID # 23: Vancouver Canucks
+2017-10-09 19:38:41,598 INFO     Done with ID # 24: Anaheim Ducks
+2017-10-09 19:38:41,703 INFO     Done with ID # 25: Dallas Stars
+2017-10-09 19:38:41,779 INFO     Done with ID # 26: Los Angeles Kings
+2017-10-09 19:38:41,911 INFO     Done with ID # 27: Phoenix Coyotes
+2017-10-09 19:38:42,015 INFO     Done with ID # 28: San Jose Sharks
+2017-10-09 19:38:42,115 INFO     Done with ID # 29: Columbus Blue Jackets
+2017-10-09 19:38:42,212 INFO     Done with ID # 30: Minnesota Wild
+2017-10-09 19:38:42,316 INFO     Done with ID # 31: Minnesota North Stars
+2017-10-09 19:38:42,554 INFO     Done with ID # 32: Quebec Nordiques
+2017-10-09 19:38:42,659 INFO     Done with ID # 33: Winnipeg Jets (1979)
+2017-10-09 19:38:42,770 INFO     Done with ID # 34: Hartford Whalers
+2017-10-09 19:38:42,873 INFO     Done with ID # 35: Colorado Rockies
+2017-10-09 19:38:42,948 INFO     Done with ID # 36: Ottawa Senators (1917)
+2017-10-09 19:38:43,030 INFO     Done with ID # 37: Hamilton Tigers
+2017-10-09 19:38:43,102 INFO     Done with ID # 38: Pittsburgh Pirates
+2017-10-09 19:38:43,183 INFO     Done with ID # 39: Philadelphia Quakers
+2017-10-09 19:38:43,282 INFO     Done with ID # 40: Detroit Cougars
+2017-10-09 19:38:43,440 INFO     Done with ID # 41: Montreal Wanderers
+2017-10-09 19:38:43,517 INFO     Done with ID # 42: Quebec Bulldogs
+2017-10-09 19:38:43,612 INFO     Done with ID # 43: Montreal Maroons
+2017-10-09 19:38:43,695 INFO     Done with ID # 44: New York Americans
+2017-10-09 19:38:43,777 INFO     Done with ID # 45: St. Louis Eagles
+2017-10-09 19:38:43,853 INFO     Done with ID # 46: Oakland Seals
+2017-10-09 19:38:43,954 INFO     Done with ID # 47: Atlanta Flames
+2017-10-09 19:38:44,030 INFO     Done with ID # 48: Kansas City Scouts
+2017-10-09 19:38:44,119 INFO     Done with ID # 49: Cleveland Barons
+2017-10-09 19:38:44,199 INFO     Done with ID # 50: Detroit Falcons
+2017-10-09 19:38:44,280 INFO     Done with ID # 51: Brooklyn Americans
+2017-10-09 19:38:44,362 INFO     Done with ID # 52: Winnipeg Jets
+2017-10-09 19:38:44,517 INFO     Done with ID # 53: Arizona Coyotes
+2017-10-09 19:38:44,609 INFO     Done with ID # 54: Vegas Golden Knights
+2017-10-09 19:38:44,774 INFO     Done with ID # 56: California Golden Seals
+2017-10-09 19:38:44,874 INFO     Done with ID # 57: Toronto Arenas
+2017-10-09 19:38:44,951 INFO     Done with ID # 58: Toronto St. Patricks
+2017-10-09 19:38:45,127 INFO     Done with ID # 60: Canada
+2017-10-09 19:38:45,201 INFO     Done with ID # 61: Czech Republic
+2017-10-09 19:38:45,296 INFO     Done with ID # 62: Finland
+2017-10-09 19:38:45,395 INFO     Done with ID # 63: Germany
+2017-10-09 19:38:45,491 INFO     Done with ID # 64: Russia
+2017-10-09 19:38:45,563 INFO     Done with ID # 65: Slovakia
+2017-10-09 19:38:45,667 INFO     Done with ID # 66: Sweden
+2017-10-09 19:38:45,765 INFO     Done with ID # 67: United States
+2017-10-09 19:38:46,899 INFO     Done with ID # 80: Helsinki Jokerit
+2017-10-09 19:38:47,029 INFO     Done with ID # 81: Stockholm Djurgarden
+2017-10-09 19:38:47,133 INFO     Done with ID # 82: Stockman Farjestad
+2017-10-09 19:38:47,641 INFO     Done with ID # 87: Team Atlantic
+2017-10-09 19:38:47,783 INFO     Done with ID # 88: Team Metropolitan
+2017-10-09 19:38:47,854 INFO     Done with ID # 89: Team Central
+2017-10-09 19:38:47,947 INFO     Done with ID # 90: Team Pacific
+2017-10-09 19:38:48,049 INFO     Done with ID # 91: Team Alfredsson
+2017-10-09 19:38:48,151 INFO     Done with ID # 92: Team Chara
+2017-10-09 19:38:48,226 INFO     Done with ID # 93: Team Foligno
+2017-10-09 19:38:48,371 INFO     Done with ID # 94: Team Toews
+2017-10-09 19:38:48,444 INFO     Done with ID # 95: Team Staal
+2017-10-09 19:38:48,532 INFO     Done with ID # 96: Team Lidstrom
+2017-10-09 19:38:48,604 INFO     Done with ID # 97: All-Stars East
+2017-10-09 19:38:48,677 INFO     Done with ID # 98: All-Stars West
+2017-10-09 19:38:48,833 INFO     Done with ID # 100: Young Stars East
+2017-10-09 19:38:48,915 INFO     Done with ID # 101: Young Stars West
+2017-10-10 19:30:04,075 INFO     Creating team IDs file
+2017-10-10 19:30:04,078 WARNING  Generating team info with default limits, 1 to 110
+2017-10-10 19:30:04,206 INFO     Done with ID # 1: New Jersey Devils
+2017-10-10 19:30:04,267 INFO     Done with ID # 2: New York Islanders
+2017-10-10 19:30:04,378 INFO     Done with ID # 3: New York Rangers
+2017-10-10 19:30:04,459 INFO     Done with ID # 4: Philadelphia Flyers
+2017-10-10 19:30:04,514 INFO     Done with ID # 5: Pittsburgh Penguins
+2017-10-10 19:30:04,563 INFO     Done with ID # 6: Boston Bruins
+2017-10-10 19:30:04,612 INFO     Done with ID # 7: Buffalo Sabres
+2017-10-10 19:30:04,663 INFO     Done with ID # 8: MontrÃ©al Canadiens
+2017-10-10 19:30:04,722 INFO     Done with ID # 9: Ottawa Senators
+2017-10-10 19:30:04,774 INFO     Done with ID # 10: Toronto Maple Leafs
+2017-10-10 19:30:04,836 INFO     Done with ID # 11: Atlanta Thrashers
+2017-10-10 19:30:04,899 INFO     Done with ID # 12: Carolina Hurricanes
+2017-10-10 19:30:04,948 INFO     Done with ID # 13: Florida Panthers
+2017-10-10 19:30:05,015 INFO     Done with ID # 14: Tampa Bay Lightning
+2017-10-10 19:30:05,077 INFO     Done with ID # 15: Washington Capitals
+2017-10-10 19:30:05,148 INFO     Done with ID # 16: Chicago Blackhawks
+2017-10-10 19:30:05,219 INFO     Done with ID # 17: Detroit Red Wings
+2017-10-10 19:30:05,312 INFO     Done with ID # 18: Nashville Predators
+2017-10-10 19:30:05,368 INFO     Done with ID # 19: St. Louis Blues
+2017-10-10 19:30:05,428 INFO     Done with ID # 20: Calgary Flames
+2017-10-10 19:30:05,484 INFO     Done with ID # 21: Colorado Avalanche
+2017-10-10 19:30:05,536 INFO     Done with ID # 22: Edmonton Oilers
+2017-10-10 19:30:05,591 INFO     Done with ID # 23: Vancouver Canucks
+2017-10-10 19:30:05,641 INFO     Done with ID # 24: Anaheim Ducks
+2017-10-10 19:30:05,798 INFO     Done with ID # 25: Dallas Stars
+2017-10-10 19:30:05,843 INFO     Done with ID # 26: Los Angeles Kings
+2017-10-10 19:30:05,896 INFO     Done with ID # 27: Phoenix Coyotes
+2017-10-10 19:30:05,949 INFO     Done with ID # 28: San Jose Sharks
+2017-10-10 19:30:06,003 INFO     Done with ID # 29: Columbus Blue Jackets
+2017-10-10 19:30:06,058 INFO     Done with ID # 30: Minnesota Wild
+2017-10-10 19:30:06,142 INFO     Done with ID # 31: Minnesota North Stars
+2017-10-10 19:30:06,199 INFO     Done with ID # 32: Quebec Nordiques
+2017-10-10 19:30:06,254 INFO     Done with ID # 33: Winnipeg Jets (1979)
+2017-10-10 19:30:06,308 INFO     Done with ID # 34: Hartford Whalers
+2017-10-10 19:30:06,359 INFO     Done with ID # 35: Colorado Rockies
+2017-10-10 19:30:06,419 INFO     Done with ID # 36: Ottawa Senators (1917)
+2017-10-10 19:30:06,474 INFO     Done with ID # 37: Hamilton Tigers
+2017-10-10 19:30:06,541 INFO     Done with ID # 38: Pittsburgh Pirates
+2017-10-10 19:30:06,599 INFO     Done with ID # 39: Philadelphia Quakers
+2017-10-10 19:30:06,767 INFO     Done with ID # 40: Detroit Cougars
+2017-10-10 19:30:06,846 INFO     Done with ID # 41: Montreal Wanderers
+2017-10-10 19:30:06,920 INFO     Done with ID # 42: Quebec Bulldogs
+2017-10-10 19:30:06,970 INFO     Done with ID # 43: Montreal Maroons
+2017-10-10 19:30:07,022 INFO     Done with ID # 44: New York Americans
+2017-10-10 19:30:07,104 INFO     Done with ID # 45: St. Louis Eagles
+2017-10-10 19:30:07,165 INFO     Done with ID # 46: Oakland Seals
+2017-10-10 19:30:07,225 INFO     Done with ID # 47: Atlanta Flames
+2017-10-10 19:30:07,282 INFO     Done with ID # 48: Kansas City Scouts
+2017-10-10 19:30:07,338 INFO     Done with ID # 49: Cleveland Barons
+2017-10-10 19:30:07,387 INFO     Done with ID # 50: Detroit Falcons
+2017-10-10 19:30:07,450 INFO     Done with ID # 51: Brooklyn Americans
+2017-10-10 19:30:07,510 INFO     Done with ID # 52: Winnipeg Jets
+2017-10-10 19:30:07,577 INFO     Done with ID # 53: Arizona Coyotes
+2017-10-10 19:30:07,638 INFO     Done with ID # 54: Vegas Golden Knights
+2017-10-10 19:30:07,839 INFO     Done with ID # 56: California Golden Seals
+2017-10-10 19:30:07,943 INFO     Done with ID # 57: Toronto Arenas
+2017-10-10 19:30:07,994 INFO     Done with ID # 58: Toronto St. Patricks
+2017-10-10 19:30:08,149 INFO     Done with ID # 60: Canada
+2017-10-10 19:30:08,420 INFO     Done with ID # 61: Czech Republic
+2017-10-10 19:30:08,474 INFO     Done with ID # 62: Finland
+2017-10-10 19:30:08,530 INFO     Done with ID # 63: Germany
+2017-10-10 19:30:08,598 INFO     Done with ID # 64: Russia
+2017-10-10 19:30:08,658 INFO     Done with ID # 65: Slovakia
+2017-10-10 19:30:08,769 INFO     Done with ID # 66: Sweden
+2017-10-10 19:30:08,821 INFO     Done with ID # 67: United States
+2017-10-10 19:31:50,950 INFO     Creating team IDs file
+2017-10-10 19:31:50,951 WARNING  Generating team info with default limits, 1 to 110
+2017-10-10 19:31:51,016 INFO     Done with ID # 1: New Jersey Devils
+2017-10-10 19:31:51,069 INFO     Done with ID # 2: New York Islanders
+2017-10-10 19:31:51,127 INFO     Done with ID # 3: New York Rangers
+2017-10-10 19:31:51,173 INFO     Done with ID # 4: Philadelphia Flyers
+2017-10-10 19:31:51,222 INFO     Done with ID # 5: Pittsburgh Penguins
+2017-10-10 19:31:51,273 INFO     Done with ID # 6: Boston Bruins
+2017-10-10 19:31:51,332 INFO     Done with ID # 7: Buffalo Sabres
+2017-10-10 19:31:51,375 INFO     Done with ID # 8: MontrÃ©al Canadiens
+2017-10-10 19:31:51,426 INFO     Done with ID # 9: Ottawa Senators
+2017-10-10 19:31:51,673 INFO     Done with ID # 10: Toronto Maple Leafs
+2017-10-10 19:31:51,826 INFO     Done with ID # 11: Atlanta Thrashers
+2017-10-10 19:31:51,879 INFO     Done with ID # 12: Carolina Hurricanes
+2017-10-10 19:31:51,927 INFO     Done with ID # 13: Florida Panthers
+2017-10-10 19:31:51,985 INFO     Done with ID # 14: Tampa Bay Lightning
+2017-10-10 19:31:52,033 INFO     Done with ID # 15: Washington Capitals
+2017-10-10 19:31:52,097 INFO     Done with ID # 16: Chicago Blackhawks
