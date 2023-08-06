@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: delay
+Version: 0.0.1
+Summary: A micro library focused on providing wait states in distributed systems
+Home-page: https://github.com/Carbyne-Solutions/delay
+Author: Matt Daue
+Author-email: mdaue@carbyne.solutions
+License: BSD-3-Clause
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: sql key value database
+Platform: UNKNOWN
