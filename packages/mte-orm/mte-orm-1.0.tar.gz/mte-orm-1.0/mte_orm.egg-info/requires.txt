@@ -1,0 +1,4 @@
+nose
+requests
+sqlalchemy
+requests_ntlm
