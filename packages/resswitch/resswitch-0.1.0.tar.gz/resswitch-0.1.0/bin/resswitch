@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+import resswitch
+
+resswitch.ResSwitch().mainloop()
