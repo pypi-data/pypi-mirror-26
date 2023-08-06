@@ -1,0 +1,95 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xml:lang="en" lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master"
+      i18n:domain="collective.ttwpo">
+
+<body>
+
+<metal:main fill-slot="prefs_configlet_main">
+  <h1 i18n:translate="controlpanel_heading">TTW PO Control Panel</h1>
+  <p i18n:translate="controlpanel_description">
+    Manage user interface translations with GNU Gettext (*.po) files through-the-web.
+    Configure a synchronisation with a translation-webservice (currently only Zanata is supported).
+  </p>
+  <table class="listing">
+    <thead>
+      <tr>
+        <th i18n:translate="">I18N-Domain</th>
+        <th i18n:translate="">Synchronisation Options</th>
+        <th i18n:translate="">Locales</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tal:loop tal:repeat="domain python:view.get_domains()">
+        <tr tal:define="info python:view.domain_info(domain)">
+          <td>
+              <h3>${domain}</h3>
+              <p><a href="${python:context.absolute_url()}/ttwpo-manage/${domain}"
+                 i18n:translate=""
+                 role="button"
+                 class="plone-btn plone-btn-primary plone-btn-xs">manage files</a>
+              </p>
+              <p><a href="${python:context.absolute_url()}/ttwpo-controlpanel-deletedomain?domain=${domain}&_authenticator=${context/@@authenticator/token}"
+                 class="plone-btn plone-btn-danger plone-btn-sm"
+                 role="button"
+                 i18n:translate="">delete</a>
+              </p>
+          </td>
+          <td>
+            <form action="${python:context.absolute_url()}/ttwpo-controlpanel-savedomainoptions" method="post">
+                <span tal:replace="structure context/@@authenticator/authenticator"/>
+                <input type="hidden" name="domain" value="${domain}">
+                <textarea
+                   name="sync-options"
+                   placeholder="expected: JSON mapping with key 'servicename' (i.e. zanata) and arbitary options matching configured service."
+                   >${python: view.to_json(info['settings']) if info['settings'] else ''}</textarea>
+                <button
+                   class="plone-btn plone-btn-primary plone-btn-sm"
+                   type="submit"
+                   i18n:translate="">save</button>
+            </form>
+          </td>
+          <td>
+              <table class="listing" tal:condition="python: info['locales']">
+                  <tr tal:repeat="locale python: info['locales']">
+                      <td><strong>${locale}</strong></td>
+                      <td>
+                          <a href="${python:context.absolute_url()}/ttwpo-controlpanel-deletelocale?domain=${domain}&locale=${locale}&_authenticator=${context/@@authenticator/token}"
+                             i18n:translate=""
+                             role="button"
+                             class="plone-btn plone-btn-danger plone-btn-xs">delete</a>
+                      </td>
+                  </tr>
+              </table>
+              <form action="${python:context.absolute_url()}/ttwpo-controlpanel-addlocales" method="post">
+                  <div class="input-group">
+                    <span tal:replace="structure context/@@authenticator/authenticator"/>
+                    <input type="hidden" name="domain" value="${domain}">
+                    <input type="text"
+                           name="locales"
+                           placeholder="locale (locale) name(s) to create?" />
+                    <span class="input-group-btn">
+                      <button class="btn plone-btn plone-btn-success" type="submit">Create</button>
+                    </span>
+                  </div>
+              </form>
+          </td>
+        </tr>
+      </tal:loop>
+    </tbody>
+  </table>
+  <form action="${python:context.absolute_url()}/ttwpo-controlpanel-createdomain" method="post">
+    <div class="input-group">
+      <span tal:replace="structure context/@@authenticator/authenticator"/>
+      <input type="text" name="i18ndomain" placeholder="name of new i18ndomain?" />
+      <span class="input-group-btn">
+        <button class="btn plone-btn plone-btn-success" type="submit" i18n:translate="">Create I18N-Domain</button>
+      </span>
+    </div>
+  </form>
+</metal:main>
+</body>
+</html>
