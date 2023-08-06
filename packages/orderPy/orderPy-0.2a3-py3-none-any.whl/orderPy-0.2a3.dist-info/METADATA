@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: orderPy
+Version: 0.2a3
+Summary: A python script for windows that will order a disordered set of files by their date of creation or last modification.
+Home-page: https://github.com/johannesber/orderPy
+Author: Johannes Berger
+Author-email: johannes.berger1709@gmail.com
+License: MIT
+Keywords: sorting data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >3.6
+Requires-Dist: Unipath
+Requires-Dist: pip
+
+The documentation can be found on the project's `github page <https://github.com/johannesber/orderPy/blob/master/README.md>`_.
+
+
