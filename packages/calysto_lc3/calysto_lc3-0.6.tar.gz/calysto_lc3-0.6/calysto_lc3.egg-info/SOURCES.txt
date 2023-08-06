@@ -1,0 +1,14 @@
+setup.py
+calysto_lc3/__init__.py
+calysto_lc3/__main__.py
+calysto_lc3/_version.py
+calysto_lc3/install.py
+calysto_lc3/kernel.py
+calysto_lc3/lc3.py
+calysto_lc3.egg-info/PKG-INFO
+calysto_lc3.egg-info/SOURCES.txt
+calysto_lc3.egg-info/dependency_links.txt
+calysto_lc3.egg-info/requires.txt
+calysto_lc3.egg-info/top_level.txt
+calysto_lc3/images/logo-32x32.png
+calysto_lc3/images/logo-64x64.png
