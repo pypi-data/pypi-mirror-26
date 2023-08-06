@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+Ofpp/__init__.py
+Ofpp/field_parser.py
+Ofpp/mesh_parser.py
+Ofpp/utils.py
+Ofpp.egg-info/PKG-INFO
+Ofpp.egg-info/SOURCES.txt
+Ofpp.egg-info/dependency_links.txt
+Ofpp.egg-info/not-zip-safe
+Ofpp.egg-info/requires.txt
+Ofpp.egg-info/top_level.txt
