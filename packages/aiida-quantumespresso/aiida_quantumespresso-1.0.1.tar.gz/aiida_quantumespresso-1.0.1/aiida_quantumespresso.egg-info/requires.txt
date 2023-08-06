@@ -1,0 +1,9 @@
+aiida-core>=0.10.0rc1
+
+[dev_precommit]
+pre-commit
+
+[docs]
+Sphinx
+docutils
+sphinx_rtd_theme
