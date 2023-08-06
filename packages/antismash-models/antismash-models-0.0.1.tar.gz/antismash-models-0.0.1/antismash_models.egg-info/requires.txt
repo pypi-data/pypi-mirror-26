@@ -1,0 +1,8 @@
+aioredis
+
+[testing]
+pytest
+coverage
+pytest-cov
+mockaioredis
+pytest-asyncio
