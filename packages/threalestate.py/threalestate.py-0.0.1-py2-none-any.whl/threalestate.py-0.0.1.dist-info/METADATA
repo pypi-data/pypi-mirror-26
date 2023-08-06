@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: threalestate.py
+Version: 0.0.1
+Summary: TH Real Estates Core Modules
+Home-page: https://github.com/THRealEstate/threalestate.py
+Author: Ilan Filonneko
+Author-email: ilan.filonenko@tiaa.org
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Flask
+Requires-Dist: mysql-connector (==2.1.4)
+Requires-Dist: redis
+
+UNKNOWN
+
+
