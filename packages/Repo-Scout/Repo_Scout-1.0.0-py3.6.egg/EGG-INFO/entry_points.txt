@@ -1,0 +1,3 @@
+[console_scripts]
+rscout = src.launcher:start
+
