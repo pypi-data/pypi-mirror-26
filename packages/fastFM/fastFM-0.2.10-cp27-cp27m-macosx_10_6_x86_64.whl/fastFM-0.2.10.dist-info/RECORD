@@ -1,0 +1,16 @@
+ffm.so,sha256=-zCbdergpGPNuT80tLbTMgMUdSrgWTp1Wyr3P-CDh4M,643112
+fastFM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastFM/als.py,sha256=871Y2Y1-mpdBszLHXca73iZ07odOhQUEn9oUDV6YJbY,6591
+fastFM/base.py,sha256=-qZrJqXVl3DPvIQEq5qdpnKTd7rX1iBxTwO1bJy6LTs,4028
+fastFM/bpr.py,sha256=StlOUZfN2zhJzryLxumeNwIPVBeXCFLUUIFK8jS0CfQ,2984
+fastFM/datasets.py,sha256=kgtQG4zk2GPLj86PcbgkNyamKa5Mk8WSKIxQl2aTpgc,2176
+fastFM/mcmc.py,sha256=v2kwfqhLPFjN1p4VrQwTOdSQmBJTx7TY0Y6NnMbmqe0,7472
+fastFM/sgd.py,sha256=euJFRg9VCzYBW83-CPVHgl8SZttPewRdpbR14vQMYow,5783
+fastFM/utils.py,sha256=LvV13fmfVgGQlfaebYmk7D6jmCq5_DJthg7Mspdy-rE,757
+fastFM/validation.py,sha256=yLwQRKJZWeJyjjTvvll3Xz73OrCu2HbsiYyFxhswcHw,10690
+fastFM-0.2.10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+fastFM-0.2.10.dist-info/METADATA,sha256=MfDW4TFicAlfmTT32T_tGJt_J3t3kX3pkWXbMuuQ8LY,1061
+fastFM-0.2.10.dist-info/RECORD,,
+fastFM-0.2.10.dist-info/WHEEL,sha256=7aWLvHk_hKVotzmtwyz659ppmkA4drNpUjpSVKcj9cE,110
+fastFM-0.2.10.dist-info/metadata.json,sha256=YxxrmxiWvvBgP4K1s8_p3rEg0U5jucHE3YelFXVD0cU,1124
+fastFM-0.2.10.dist-info/top_level.txt,sha256=6TCfbL2J1QT5CMN1a0fc9Ste1w4kQJkb5Ze_Da22mhA,11
