@@ -1,0 +1,11 @@
+pymystem3/__init__.py,sha256=thlcgEdZNCRNfsYXEghVYgT-2X8bM1irsU6Ti9Y2ejA,300
+pymystem3/__main__.py,sha256=oeUsp62aCUpmIY_GT2qknUsk5mhs8A92dpOplvST-CQ,503
+pymystem3/constants.py,sha256=Tp8U-1E1oLvs6ZppgdByXnRbxfNHoPRd1OHd6Val99g,813
+pymystem3/metadata.py,sha256=4m2ZlZS28tabolNFJYEoeJxouskLIM4vRz_KRcACIJM,659
+pymystem3/mystem.py,sha256=Ocp7SqgxXjy_1V7i5AZm7aqB3XPcaqiWwsQvSamFfI0,9431
+pymystem3-0.1.7.dist-info/DESCRIPTION.rst,sha256=gJv5L_KJPnuI-0Z8tEe3ALfe4WyRPWa03BldgXoByzk,4404
+pymystem3-0.1.7.dist-info/METADATA,sha256=i095mebcCsrLQv6T1JIuLavfLe44P_pRoAFEjwcht6k,5413
+pymystem3-0.1.7.dist-info/RECORD,,
+pymystem3-0.1.7.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pymystem3-0.1.7.dist-info/metadata.json,sha256=y_lXv0VZOsy7gN32J87Ysfxcfw3jfcdPJEIY92KLvzw,1207
+pymystem3-0.1.7.dist-info/top_level.txt,sha256=p1PDobMkiBd4cQPyCdb9n0pmeOa8XqmwGdIJkYPCt10,10
