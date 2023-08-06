@@ -1,0 +1,5 @@
+elasticsearch_dsl
+python-libnmap
+future
+gevent
+grequests

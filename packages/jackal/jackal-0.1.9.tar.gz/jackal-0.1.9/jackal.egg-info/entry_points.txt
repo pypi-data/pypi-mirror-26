@@ -1,0 +1,10 @@
+[console_scripts]
+jk-configure = jackal.config:manual_configure
+jk-filter = jackal.scripts.filter:main
+jk-hosts = jackal.scripts.hosts:main
+jk-import-nmap = jackal.scripts.import_nmap:main
+jk-netdiscover = jackal.scripts.netdiscover:main
+jk-ranges = jackal.scripts.ranges:main
+jk-status = jackal.scripts.status:main
+jk-tomcat-brute = jackal.scripts.tomcat_brute:main
+
