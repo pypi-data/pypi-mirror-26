@@ -1,0 +1,3 @@
+[console_scripts]
+ccpc = ccpc.chimp:main
+
