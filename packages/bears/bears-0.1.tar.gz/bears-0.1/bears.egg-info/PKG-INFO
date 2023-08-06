@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: bears
+Version: 0.1
+Summary: simpler and faster alternative to pandas
+Home-page: http://github.com/elbaro/bears
+Author: elbaro
+Author-email: elbaro@users.noreply.github.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        **bears** is a light alternative to pandas. Its main goal is to provide a columnar dataframe.
+        Dataframe is a collection of columns. Each column is a numpy.ndarray.
+        
+        The difference from pandas is as follows:
+        - no fancy indexing
+        - no label index / no active column
+        - no implicit copy / expensive operation
+        
+        You can
+        - add/remove a column in O(1)
+        - slice indexing / list indexing without copy
+        - transpose the columnar dataframe to get the record-wise list 
+        
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering

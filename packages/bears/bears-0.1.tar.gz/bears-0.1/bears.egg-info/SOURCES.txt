@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+bears/__init__.py
+bears.egg-info/PKG-INFO
+bears.egg-info/SOURCES.txt
+bears.egg-info/dependency_links.txt
+bears.egg-info/not-zip-safe
+bears.egg-info/top_level.txt
