@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: pyls-isort
+Version: 0.1.0
+Summary: Isort plugin for python-language-server
+Home-page: https://github.com/paradoxxxzero/pyls-isort
+Author: Florian Mounier
+Author-email: paradoxxx.zero@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: Any
+Provides: pyls_isort
+Requires-Dist: python-language-server
+Requires-Dist: isort
+
+UNKNOWN
+
+
