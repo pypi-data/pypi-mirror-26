@@ -1,0 +1,25 @@
+ChangeLog
+=========
+
+2017.1.2 (2017-11-07)
+---------------------
+
+*Bugfix:*
+
+    - Add missing `wsgi.py` file.
+
+2017.1.1 (2017-11-06)
+---------------------
+
+*Bugfix:*
+
+    - Adjust to Django 1.8+ URL syntax
+
+2017.1.0 (2017-11-06)
+---------------------
+
+*New:*
+
+    - Refactor the application packaging/installation rules.
+
+.. vim:et:ts=4:sw=4:tw=79:ft=rst:
