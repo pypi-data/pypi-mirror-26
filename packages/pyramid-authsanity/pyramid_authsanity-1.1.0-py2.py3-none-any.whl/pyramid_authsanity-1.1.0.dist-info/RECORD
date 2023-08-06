@@ -1,0 +1,12 @@
+pyramid_authsanity/__init__.py,sha256=P0MzRNV2ZCBqfkwE1YH4umN2wopPiT529w6Q7BxLDHk,2851
+pyramid_authsanity/interfaces.py,sha256=QHVLExFgBkYYbBwxfV4rg5yzFeS-kx3OYwR8NzRK6TI,1786
+pyramid_authsanity/policy.py,sha256=ZVkflFNfAjqNOGpmWMTeG0YgeKHok9NntggtXYJPve4,6190
+pyramid_authsanity/sources.py,sha256=t03X2ldkds1NPbjo_w06ktFOKZEKyl_ukTmfcZTpYPE,4329
+pyramid_authsanity/util.py,sha256=ksE6Tt6_FVKJhrUWoYIniatFVOLywhYznITdHKXAJfg,957
+pyramid_authsanity-1.1.0.dist-info/DESCRIPTION.rst,sha256=xUUGL27ec4KHJhjrebotKQpZbielzlA80bcjOtxNf_s,1386
+pyramid_authsanity-1.1.0.dist-info/LICENSE.txt,sha256=hot8x7AYQSLEQF6bVJam7HGMyosNLn_caxHJWxcg0Ug,736
+pyramid_authsanity-1.1.0.dist-info/METADATA,sha256=8q0Gf192ohwKookDSMulOQccBsv60bXB5KiJ9obxbiI,3007
+pyramid_authsanity-1.1.0.dist-info/RECORD,,
+pyramid_authsanity-1.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pyramid_authsanity-1.1.0.dist-info/metadata.json,sha256=QERRc1IlivB55N_wKtOiWjnbK4wy97rl34JA0A_NvBo,1449
+pyramid_authsanity-1.1.0.dist-info/top_level.txt,sha256=8ywoY8vQo3x2PvMKFvTobs25K4cLImJkqrGCsEyQlhU,19
