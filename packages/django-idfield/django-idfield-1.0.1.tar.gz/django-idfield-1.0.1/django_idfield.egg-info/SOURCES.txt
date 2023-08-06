@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_idfield.egg-info/PKG-INFO
+django_idfield.egg-info/SOURCES.txt
+django_idfield.egg-info/dependency_links.txt
+django_idfield.egg-info/not-zip-safe
+django_idfield.egg-info/requires.txt
+django_idfield.egg-info/top_level.txt
+idfield/__init__.py
+idfield/fields.py
