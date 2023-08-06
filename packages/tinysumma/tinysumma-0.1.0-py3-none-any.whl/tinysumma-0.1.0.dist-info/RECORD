@@ -1,0 +1,12 @@
+tinysumma/__init__.py,sha256=vmgKV_DliiwPLpoB_coVKCXUOYts2nh57zwvlPgKrVQ,106
+tinysumma/main.py,sha256=ncznX2jXzakukxJIb5TvY8eFZxjqmbTbdySjGMGPJp0,4611
+tinysumma/version.py,sha256=2xfQt8SxTxkrEhrQkh_OXHp0B4iYL_aiLTxL82bCDTY,253
+tinysumma/data/messages.csv,sha256=tYJnV0GDbZaNdyBXTfD7NG41LnHpxY2VUlsZ5AKe4Ew,1060
+tinysumma/data/urls.csv,sha256=2JS2FC44fJjQJfDUSayRrYmMrXJiNGvwX_T_lt4m-5s,2026
+tinysumma-0.1.0.dist-info/DESCRIPTION.rst,sha256=AgfP6ZQWeutUsjOK9GXZ5_Vq1Aw_5r5hC0As5wNiQRM,2510
+tinysumma-0.1.0.dist-info/METADATA,sha256=g4Unz0pGNHQSeHBKwqfX5MmwyIcCyW_cD9nD9zDVkoo,3030
+tinysumma-0.1.0.dist-info/RECORD,,
+tinysumma-0.1.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+tinysumma-0.1.0.dist-info/entry_points.txt,sha256=Mt11DYMSe5TrfXLZ9h_JeQLpbb8u7TrY5nDtUDaw1JA,54
+tinysumma-0.1.0.dist-info/metadata.json,sha256=lXSaPDwXU4xG2MxkOePSOeNJaEzlwbDG0Y53wxJLK28,888
+tinysumma-0.1.0.dist-info/top_level.txt,sha256=QbGqk-GMzE0RzyRpTJeo_OJ8nOKkVWOaGQVy1mlmPW4,10
