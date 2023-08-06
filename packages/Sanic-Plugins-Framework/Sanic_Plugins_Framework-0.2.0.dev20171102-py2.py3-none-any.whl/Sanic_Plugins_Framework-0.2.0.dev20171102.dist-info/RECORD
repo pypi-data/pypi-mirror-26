@@ -1,0 +1,9 @@
+Sanic_Plugins_Framework-0.2.0.dev20171102.dist-info/DESCRIPTION.rst,sha256=1glhg2vgx5EusP5W048iKnFUKqHGSnuMezzN8lG5Gv0,7049
+Sanic_Plugins_Framework-0.2.0.dev20171102.dist-info/METADATA,sha256=OwOozNsCKob39WTBOoBJ4c8QT2_OhK2TMWhXBh5KmBI,8025
+Sanic_Plugins_Framework-0.2.0.dev20171102.dist-info/RECORD,,
+Sanic_Plugins_Framework-0.2.0.dev20171102.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Sanic_Plugins_Framework-0.2.0.dev20171102.dist-info/metadata.json,sha256=Fo56Ty6QRCURMA_3yzJyc5EBMV3jguG6pyUbrNedKYw,1106
+Sanic_Plugins_Framework-0.2.0.dev20171102.dist-info/top_level.txt,sha256=izAYSRYFnvErnezhjKqmERyaXXMiE8fwzzdgzG6vgxY,4
+spf/__init__.py,sha256=0-cwjrbjsoXNQ3qX7gUEiz95KPpD-pDuO5DhWMAgSXQ,181
+spf/context.py,sha256=h9tASlX5pYm2xzrtzoKEnIx5naUssxa8tbw8ar4yUQ0,2455
+spf/plugin.py,sha256=8ye27omojcnEAWhx9rX52JhBbhCurqJS7GBTyl8x-KQ,25338
