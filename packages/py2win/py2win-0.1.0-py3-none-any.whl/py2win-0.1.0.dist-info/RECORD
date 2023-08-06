@@ -1,0 +1,16 @@
+embedding_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+embedding_python/bdist_windows.py,sha256=IWFdZl2jLfrMhmin7TK0EunMipzJxY5qfvsMIv5tI9I,2590
+embedding_python/embed.py,sha256=Ltdeza0bPxCDz2s7j1SgMaH0K05fCy0Xg0KnnGApjS8,8739
+embedding_python/test_bdist_windows.py,sha256=EidlwBzvO2VlfubWJEF73gJyw36iVFkszRLoOyokHRE,1515
+embedding_python/test_embed.py,sha256=4e3hriLY681v9_t2UxlutTqK2f68iAIpEPcn5-6WeFI,1828
+py2win/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py2win/bdist_windows.py,sha256=BedOVxNdrlSCGz6b8tdXicDPW-uZugDzrxqx6qfmxXA,2580
+py2win/embed.py,sha256=Ltdeza0bPxCDz2s7j1SgMaH0K05fCy0Xg0KnnGApjS8,8739
+py2win/test_bdist_windows.py,sha256=tomIbcXCxNm4Jl_rIyuKdnrYgjdp-i3j73a7eyqBiMY,1202
+py2win/test_embed.py,sha256=NdQqr-d9BFZiMh-J2WEUkBNPOv5ceBFt0h_dGQ2cE1U,1811
+py2win-0.1.0.dist-info/DESCRIPTION.rst,sha256=8fsXLxFfFxuGRY-Cv2SQY6KPuLSyMvYVv9Q1j7LlBss,1635
+py2win-0.1.0.dist-info/METADATA,sha256=EkoH6lNVkwrsWB_jefwyKNuBpPJosQN6EfauzqvGaZ4,2403
+py2win-0.1.0.dist-info/RECORD,,
+py2win-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+py2win-0.1.0.dist-info/metadata.json,sha256=4F0XlbKBvVk1SzLrJNsYXmqOJaZjFms8KlfLSmk55L0,894
+py2win-0.1.0.dist-info/top_level.txt,sha256=Wpr88_P7MC_9Qt1Ma1bH9MiuIE2XLkhdsYtJeMxzW-w,7
