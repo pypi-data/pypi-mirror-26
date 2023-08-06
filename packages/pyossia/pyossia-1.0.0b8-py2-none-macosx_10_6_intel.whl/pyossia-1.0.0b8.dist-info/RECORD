@@ -1,0 +1,10 @@
+pyossia/__init__.py,sha256=mLT76OSI0homcg3g-zgG4_t4Z0p963uu5RrJgs340p0,6789
+pyossia/_version.py,sha256=Wsv5uFZ_F12XQl4ml6NE78YfKWTfdD6VTbN1LR9Mvs8,500
+pyossia/ossia_python.py,sha256=hj3MoFo64ZytBlTrd8eYD-p3JWKns_RjNS0Hz6--odY,386
+pyossia/ossia_python.so,sha256=uWg-SQoesqGRltvu_q_rX2pKkDCrNPOVB-dMVPUgNSE,14470008
+pyossia-1.0.0b8.dist-info/DESCRIPTION.rst,sha256=x7uptNS6XDFFg7CS9sMW9VEVRKp7InPfCxu2Toch49A,600
+pyossia-1.0.0b8.dist-info/METADATA,sha256=6YZKVmNCrWq2z3-qNppFfDl7Aw_7jg_7ymk4MRHUSDk,1407
+pyossia-1.0.0b8.dist-info/RECORD,,
+pyossia-1.0.0b8.dist-info/WHEEL,sha256=iK4h3nEeuXCHMTUfO_4nzTb3hedYwXPdFJWdlX8NkqA,95
+pyossia-1.0.0b8.dist-info/metadata.json,sha256=ZgJo3cLOHEXn5RPM0QBfyRthGnlsCdNHAjGyuuHzLkk,977
+pyossia-1.0.0b8.dist-info/top_level.txt,sha256=y_-MoMt7kRNEL9UG_xHD6pIwHYmPFZG4ab_57dw_SBc,8
