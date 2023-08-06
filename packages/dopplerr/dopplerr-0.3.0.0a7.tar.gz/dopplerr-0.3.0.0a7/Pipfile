@@ -1,0 +1,43 @@
+[[source]]
+
+verify_ssl = true
+url = "https://pypi.python.org/simple"
+
+
+[dev-packages]
+
+pandoc = "*"
+pytest = "*"
+cryptography = "*"
+yapf = "*"
+tox = "*"
+isort = "*"
+pylint = "*"
+pycodestyle = "*"
+"autopep8" = "*"
+pyyaml = "*"
+pyflakes = "<1.6.0,>=1.5.0'"
+"flake8" = "*"
+pipenv-to-requirements = ">=0.1.9"
+"e1839a8" = {path = ".", editable = true}
+
+
+[packages]
+
+klein = "*"
+txwebbackendbase = ">=0.1.7"
+flask = "*"
+subliminal = { git = "https://github.com/stibbons/subliminal" }
+txrwlock = ">=1.1.2"
+"glob2" = "*"
+peewee = "*"
+pbr = "*"
+colorlog = "*"
+setuptools = "!=36.0.0"
+"pathlib2" = "*"
+treq = "*"
+
+
+[requires]
+
+python_version = "3.6"

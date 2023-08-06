@@ -1,0 +1,96 @@
+CHANGES
+=======
+
+0.3.0.a7
+--------
+
+* latest fetched series db
+* pushover notification on success
+* Cards in Landing page (fix #5)
+* WeUI: simplist events page fix #14
+* postman-like test + rework returned json
+* Display episode number in event
+* rework Web UI menu
+* handle no subtitle found
+* Handle filtered event
+* prepare frontend views
+
+0.3.0.a6
+--------
+
+* remove languages limitation
+*  txrwlock>=1.1.2 txwebbackendbase>=0.1.7
+
+0.3.0.a5
+--------
+
+* ignoring lock files for building
+
+0.3.0.a4
+--------
+
+* pipenv-to-requirements >= 0.1.9
+
+0.3.0.a3
+--------
+
+* regenerate README
+* pipenv-to-requirements >= 0.1.6
+
+0.3.0.a2
+--------
+
+* fix -e . in Pipfile
+* Auto generation of requirements\*.txt
+* Ignoring Pipfile.lock
+* new target in makefile: make requirements
+* New dev dependency: pipenv-to-requirements
+* Update README.md
+
+0.3.0.a1
+--------
+
+* typo
+* fix bad frontend site copy in docker build
+* update readme
+
+0.2.18
+------
+
+* version api
+* pytlint
+* Fix travis apt install
+* ensure docker gets the right version
+* rework docker
+* rework buildsystem
+* make UI accessible
+* more branding
+* make release
+* Name in frontend OUI
+* reflect version to frontend
+* Switch frontend to quasar framework
+* less verbose rm/cp in docker
+
+0.2.17
+------
+
+* Fix npm cache clean command for docker
+* fix docker layers
+* flake8
+* reorg npm build in docker
+* docker add npm
+* docker builds frontend
+* have frontend served by dopplerr
+* frontend in vue.js
+
+0.2.16
+------
+
+* update readme
+
+0.2.15
+------
+
+* pylint
+* fix pylint
+* pipenv update
