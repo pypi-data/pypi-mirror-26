@@ -1,0 +1,12 @@
+.gitignore
+README.rst
+plover_windows_brightness.py
+setup.cfg
+setup.py
+plover_windows_brightness.egg-info/PKG-INFO
+plover_windows_brightness.egg-info/SOURCES.txt
+plover_windows_brightness.egg-info/dependency_links.txt
+plover_windows_brightness.egg-info/entry_points.txt
+plover_windows_brightness.egg-info/requires.txt
+plover_windows_brightness.egg-info/top_level.txt
+plover_windows_brightness.egg-info/zip-safe
