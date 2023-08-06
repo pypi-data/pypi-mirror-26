@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: fglib
+Version: 0.2.1
+Summary: factor graph library
+Home-page: https://github.com/danbar/fglib/
+Author: Daniel Bartel
+Author-email: dan.bar@gmx.at
+License: MIT License
+Download-URL: https://github.com/danbar/fglib/archive/v0.2.1.tar.gz
+Description: The factor graph library (fglib) is a Python package to simulate message passing on factor graphs.
+Keywords: factor graph message passing
+Platform: UNKNOWN
