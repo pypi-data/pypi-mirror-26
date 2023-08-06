@@ -1,0 +1,17 @@
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2-py2.7-nspkg.pth,sha256=yjZbgHQAw5gimz4qZY5xWkpHSWWWy2Wr32eLa0psiH4,370
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/DESCRIPTION.rst,sha256=R-gLo-Fxg3KTkdY162APyPQa4tUwWnO2j4zr6AO8GWw,1511
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/METADATA,sha256=cq8qAZSIz1iT7Pjv0AoF6i2uhrvVTb37XJgZE644Woo,2033
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/RECORD,,
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/metadata.json,sha256=ImayeJwMzmJXZT6e2eyAdCTMWgWtTg-QphCovN7jMZY,743
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_l10n_it_esigibilita_iva-8.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo_addons/l10n_it_esigibilita_iva/README.rst,sha256=1SVJEecRquN9rPYRevexwy1hAxa-mRtqdV7-K3K9ePQ,1509
+odoo_addons/l10n_it_esigibilita_iva/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo_addons/l10n_it_esigibilita_iva/__openerp__.py,sha256=uQMB3km5pRaPeoGEzTABMCr1T2840Me1jFZ8nSGNyqI,522
+odoo_addons/l10n_it_esigibilita_iva/i18n/it.po,sha256=WTCMtWUd1CsNNyCqFiBHcvJeLzS3eXfba5aVlm_NNtc,1293
+odoo_addons/l10n_it_esigibilita_iva/i18n/sl.po,sha256=ctJO1OKxO3w8BCz4-whlPmVcKvgJEWnv7mRHlaUHuz8,1352
+odoo_addons/l10n_it_esigibilita_iva/models/__init__.py,sha256=XzZ890InGpbb8w77Mf1Y4c2pfgqu9SU9IBdAnV48zLk,47
+odoo_addons/l10n_it_esigibilita_iva/models/account.py,sha256=dw7q3UDVGrQN7ErhOJSCBFFAIiO92ZgcnKMzugeh7lE,301
+odoo_addons/l10n_it_esigibilita_iva/static/description/icon.png,sha256=fp4mmB38o1l45QOzfYXS5KbPe6cOTWAuIq2eM0QajCo,12304
+odoo_addons/l10n_it_esigibilita_iva/views/account_view.xml,sha256=vP6I3MoMCTvSR8V_uNAo23Qk1wI3yQxOFIIV-69O7Fk,585
