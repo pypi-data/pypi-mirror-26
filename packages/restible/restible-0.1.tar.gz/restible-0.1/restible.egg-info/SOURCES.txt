@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+ops/requirements.txt
+restible.egg-info/PKG-INFO
+restible.egg-info/SOURCES.txt
+restible.egg-info/dependency_links.txt
+restible.egg-info/top_level.txt
+src/restible/__init__.py
