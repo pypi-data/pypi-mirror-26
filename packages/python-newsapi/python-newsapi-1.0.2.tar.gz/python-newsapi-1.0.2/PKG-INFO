@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: python-newsapi
+Version: 1.0.2
+Summary: python wrapper for newsapi.org
+Home-page: https://github.com/cyriac/python-newsapi
+Author: Compile Inc
+Author-email: dev@compile.com
+License: MIT
+Download-URL: https://github.com/cyriac/python-newsapi/archive/v1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: newsapi.org,newsapi
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

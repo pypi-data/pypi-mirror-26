@@ -1,0 +1,10 @@
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+newsapi/__init__.py
+python_newsapi.egg-info/PKG-INFO
+python_newsapi.egg-info/SOURCES.txt
+python_newsapi.egg-info/dependency_links.txt
+python_newsapi.egg-info/requires.txt
+python_newsapi.egg-info/top_level.txt
