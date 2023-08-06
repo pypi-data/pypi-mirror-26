@@ -1,0 +1,12 @@
+aiodl/__init__.py,sha256=DxadH_VNiH9DM_hp7VEMo8xN_ihW_yUvNr5UcurTwOY,81
+aiodl/__main__.py,sha256=46BEYWQkW-jkMXIZ_DNpskMrSQWIFEXohw-5dUZNwXc,1498
+aiodl/aiodl.py,sha256=GkLjZxED1VyOjUMLsaCepB_thNRz4qWAbvxxEVLOS4o,5480
+aiodl/utils.py,sha256=gFG8olFgbA9IV6lZBD-u0LlqzYqzACPy-JhHpud6L24,3214
+aiodl/version.py,sha256=jMc7UM2pASY9F8z0XMALQbSXxGCAxWPyeXQlarwD0VI,22
+aiodl-0.4.5.dist-info/DESCRIPTION.rst,sha256=zLUEKc_UDSg-cZTvINEZWBswYLV7eMLIJ3TmPYAOyEE,1263
+aiodl-0.4.5.dist-info/METADATA,sha256=rFwYi_g9xxpcrzkc1yfHbjl68zy_5DCKW-3TYtR78uw,1919
+aiodl-0.4.5.dist-info/RECORD,,
+aiodl-0.4.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aiodl-0.4.5.dist-info/entry_points.txt,sha256=bw-IQjSRPRxxdoT6gyVDvDFuFT77EdKio29MfAcTZH4,47
+aiodl-0.4.5.dist-info/metadata.json,sha256=OnZ_k3sLlI-22fUTOa-5jyVipw9JUYs4EAtA0K5qzNc,975
+aiodl-0.4.5.dist-info/top_level.txt,sha256=M8s36EHLuSwOYjJsqpN5CKdxrW_EIt96fH_uQG9S2o8,6
