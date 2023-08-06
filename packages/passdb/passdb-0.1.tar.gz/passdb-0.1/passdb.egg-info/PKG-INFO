@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: passdb
+Version: 0.1
+Summary: PassDB (Password DB) for shared password management using GPG
+Home-page: https://github.com/raags/passdb
+Author: Raghu Udiyar
+Author-email: raghusiddarth@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/raags/passdb/tarball/0.1
+Description: UNKNOWN
+Platform: UNKNOWN
