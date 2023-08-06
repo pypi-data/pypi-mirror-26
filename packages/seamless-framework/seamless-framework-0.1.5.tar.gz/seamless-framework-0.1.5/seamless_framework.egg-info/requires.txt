@@ -1,0 +1,13 @@
+ipython
+pyqt5
+numpy
+cson
+PyOpenGL
+lxml
+qtconsole
+
+[recommended]
+scipy
+pandas
+websockets
+cython
