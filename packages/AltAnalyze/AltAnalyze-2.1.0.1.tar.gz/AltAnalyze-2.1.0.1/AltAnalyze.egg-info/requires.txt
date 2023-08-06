@@ -1,0 +1,19 @@
+numpy
+scipy
+matplotlib
+pillow
+patsy
+pandas
+wxpython
+
+[:"Dar" in sys_platform]
+pysam
+python-igraph
+
+[:"linux" in sys_platform]
+pysam
+python-igraph
+
+[:"win" in sys_platform]
+Pysam-AltAnalyze
+python-igraph==0.7.1.post6
