@@ -1,0 +1,10 @@
+requests
+
+[develop]
+setuptools
+wheel
+twine
+
+[docs]
+Sphinx
+sphinx-autobuild
