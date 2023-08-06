@@ -1,0 +1,9 @@
+setup.py
+datatoaster/__init__.py
+datatoaster/datatoaster.py
+datatoaster.egg-info/PKG-INFO
+datatoaster.egg-info/SOURCES.txt
+datatoaster.egg-info/dependency_links.txt
+datatoaster.egg-info/top_level.txt
+demo/__init__.py
+demo/server.py
