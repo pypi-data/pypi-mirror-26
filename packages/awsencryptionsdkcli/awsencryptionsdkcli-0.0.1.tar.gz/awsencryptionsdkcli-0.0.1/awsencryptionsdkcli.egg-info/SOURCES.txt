@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+awsencryptionsdkcli.egg-info/PKG-INFO
+awsencryptionsdkcli.egg-info/SOURCES.txt
+awsencryptionsdkcli.egg-info/dependency_links.txt
+awsencryptionsdkcli.egg-info/top_level.txt
