@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+import_resolve/__init__.py
+import_resolve/check.py
+import_resolve.egg-info/PKG-INFO
+import_resolve.egg-info/SOURCES.txt
+import_resolve.egg-info/dependency_links.txt
+import_resolve.egg-info/entry_points.txt
+import_resolve.egg-info/requires.txt
+import_resolve.egg-info/top_level.txt
+import_resolve.egg-info/zip-safe
