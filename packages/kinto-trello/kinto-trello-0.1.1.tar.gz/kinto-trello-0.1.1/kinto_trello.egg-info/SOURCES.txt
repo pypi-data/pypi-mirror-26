@@ -1,0 +1,8 @@
+README.md
+setup.py
+kinto_trello/__init__.py
+kinto_trello/authentication.py
+kinto_trello.egg-info/PKG-INFO
+kinto_trello.egg-info/SOURCES.txt
+kinto_trello.egg-info/dependency_links.txt
+kinto_trello.egg-info/top_level.txt
