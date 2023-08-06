@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: yoctol-keras-layer-zoo
+Version: 0.7.0
+Summary: A pip package
+Home-page: UNKNOWN
+Author: plliao
+Author-email: UNKNOWN
+License: GPL3
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: keras (==2.0.8)
+Requires-Dist: numpy (==1.13.3)
+
+customed Keras Layer used in Yoctol
+
+
