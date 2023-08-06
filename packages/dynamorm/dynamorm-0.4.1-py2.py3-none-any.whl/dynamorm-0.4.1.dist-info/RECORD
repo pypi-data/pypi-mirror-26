@@ -1,0 +1,16 @@
+dynamorm/__init__.py,sha256=FkGjf7Hn-jijex-5DpoypmnABJG60RgX4uPZWJlnWsE,306
+dynamorm/exceptions.py,sha256=NVkKZHG75Zz8npMQjamW1_yKEHxPdI5hB4wSzFvdm1s,1744
+dynamorm/local.py,sha256=S7pwypNYQ7_OMXYzCDOcDXO73gtgNaVPyAiUYqYL7wc,2498
+dynamorm/model.py,sha256=AyYtgDSynGsdLMLq3UIU8s10kYa29K0FBBtFt_rjxv8,24961
+dynamorm/signals.py,sha256=HnatHNwIW9I7DQRcN3Y4bfhfpPH62n2_WIGjTxU_oTE,3433
+dynamorm/table.py,sha256=bfB9vqx09BcSXzVwLFrmqjqrPQ7sKB7KcQH2R7UVd2M,25706
+dynamorm/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynamorm/types/_marshmallow.py,sha256=WbanC-RWbWshDK6Wb-iJs3D6u4C4rqOuJka2JavqMIo,983
+dynamorm/types/_schematics.py,sha256=DhcjiyA9UDrNCuYGCBk9kjUSrt2gZSR2bL1J9EMxs88,1192
+dynamorm/types/base.py,sha256=Kh-WNZ9jpVTPXU58rK1qQg-nTeiH_3WkdoSWPNTneis,1706
+dynamorm-0.4.1.dist-info/DESCRIPTION.rst,sha256=yyVCd5HgoiqmA8QPbTgFEKXAkA3wrwbkJ3GZK2FckbQ,5159
+dynamorm-0.4.1.dist-info/METADATA,sha256=CYvMKIxNSQMvQEG3AjMACKGgngiz8h1jO5C6Qt7Ac-o,5904
+dynamorm-0.4.1.dist-info/RECORD,,
+dynamorm-0.4.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dynamorm-0.4.1.dist-info/metadata.json,sha256=RJ97-6LPljcCtwOz_-b7urC_S2-Qdtdiyb51RrwkAy0,888
+dynamorm-0.4.1.dist-info/top_level.txt,sha256=ld0yLIYPZlqw53toYiGE-Z3MvhUoyQPlGrX6eD1glVc,9
