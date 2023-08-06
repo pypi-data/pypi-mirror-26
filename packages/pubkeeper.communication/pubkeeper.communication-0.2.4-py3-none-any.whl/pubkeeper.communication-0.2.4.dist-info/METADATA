@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: pubkeeper.communication
+Version: 0.2.4
+Summary: Brew, Fill, Consume
+Home-page: http://github.com/pubkeeper/python-communication
+Author: n.io
+Author-email: info@n.io
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: pubkeeper,communication
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: tornado
+
+UNKNOWN
+
+
