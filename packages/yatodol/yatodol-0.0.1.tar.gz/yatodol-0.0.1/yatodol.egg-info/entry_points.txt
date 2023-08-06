@@ -1,0 +1,3 @@
+[console_scripts]
+yatodol = yatodol:main
+

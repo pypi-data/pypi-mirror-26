@@ -1,0 +1,11 @@
+README.rst
+setup.py
+tests/__init__.py
+tests/test_yatodol.py
+yatodol/__init__.py
+yatodol.egg-info/PKG-INFO
+yatodol.egg-info/SOURCES.txt
+yatodol.egg-info/dependency_links.txt
+yatodol.egg-info/entry_points.txt
+yatodol.egg-info/requires.txt
+yatodol.egg-info/top_level.txt
