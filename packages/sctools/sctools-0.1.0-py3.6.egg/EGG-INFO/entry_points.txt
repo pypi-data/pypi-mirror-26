@@ -1,0 +1,3 @@
+[console_scripts]
+Attach10xBarcodes = sctools.platform:TenXV2.attach_barcodes
+
