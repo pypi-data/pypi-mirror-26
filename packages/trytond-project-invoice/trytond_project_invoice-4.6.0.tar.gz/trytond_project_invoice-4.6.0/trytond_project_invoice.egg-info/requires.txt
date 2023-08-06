@@ -1,0 +1,8 @@
+python-sql >= 0.4
+trytond_project >= 4.6, < 4.7
+trytond_project_revenue >= 4.6, < 4.7
+trytond_timesheet >= 4.6, < 4.7
+trytond_account >= 4.6, < 4.7
+trytond_account_invoice >= 4.6, < 4.7
+trytond_product >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
