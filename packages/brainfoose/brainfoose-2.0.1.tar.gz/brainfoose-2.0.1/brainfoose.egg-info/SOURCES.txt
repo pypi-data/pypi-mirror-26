@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+brainfoose/__init__.py
+brainfoose.egg-info/PKG-INFO
+brainfoose.egg-info/SOURCES.txt
+brainfoose.egg-info/dependency_links.txt
+brainfoose.egg-info/entry_points.txt
+brainfoose.egg-info/requires.txt
+brainfoose.egg-info/top_level.txt
