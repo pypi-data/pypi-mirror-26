@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+vdt/__init__.py
+vdt.simpleaptrepo.egg-info/PKG-INFO
+vdt.simpleaptrepo.egg-info/SOURCES.txt
+vdt.simpleaptrepo.egg-info/dependency_links.txt
+vdt.simpleaptrepo.egg-info/entry_points.txt
+vdt.simpleaptrepo.egg-info/namespace_packages.txt
+vdt.simpleaptrepo.egg-info/not-zip-safe
+vdt.simpleaptrepo.egg-info/requires.txt
+vdt.simpleaptrepo.egg-info/top_level.txt
+vdt/simpleaptrepo/__init__.py
+vdt/simpleaptrepo/cli.py
+vdt/simpleaptrepo/config.py
+vdt/simpleaptrepo/repo.py
+vdt/simpleaptrepo/utils.py

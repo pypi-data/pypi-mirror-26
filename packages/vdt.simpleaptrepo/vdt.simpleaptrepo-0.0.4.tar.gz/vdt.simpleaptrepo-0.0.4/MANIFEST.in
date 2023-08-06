@@ -1,0 +1,3 @@
+include *.rst
+prune vdt/simpleaptrepo/tests
+prune docker
