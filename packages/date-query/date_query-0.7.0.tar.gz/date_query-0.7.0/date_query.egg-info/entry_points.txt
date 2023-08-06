@@ -1,0 +1,3 @@
+[console_scripts]
+date_query = date_query:main
+
