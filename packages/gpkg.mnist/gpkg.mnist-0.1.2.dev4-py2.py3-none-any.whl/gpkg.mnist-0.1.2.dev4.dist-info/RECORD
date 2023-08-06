@@ -1,0 +1,14 @@
+gpkg/mnist/MODELS,sha256=BAhwE5kxqQdTu3Mn2iv5Hg1RYFC0mtbxfo57EYg6Rwo,797
+gpkg/mnist/README.md,sha256=MG1d5TEq2mbjFfn9OxJYkxkpEebWqr3CmIVVa7IMUis,157
+gpkg/mnist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpkg/mnist/cnn.py,sha256=6ZUZbaiZiZlt2hdZINJwaYBttHiLYpUwKUx8aEkM9-0,5773
+gpkg/mnist/softmax.py,sha256=fAYkAF6JfwT7rpgI40MU5Z-0GnJsbORrUHZVCPYqDHE,5118
+gpkg.mnist-0.1.2.dev4.dist-info/DESCRIPTION.rst,sha256=Cbe8jc7s9iCgTJdYWzYGOHRqOmI2czApuUlbU_9RTw8,688
+gpkg.mnist-0.1.2.dev4.dist-info/METADATA,sha256=Uj_IxQocCTYws_3oeYRp1cgr0ttLVSCiU027P0ZkYUw,1037
+gpkg.mnist-0.1.2.dev4.dist-info/PACKAGE,sha256=LSFy-iDvAPIjFlyFXxOOFHUcaqsrGLCKLsMqSJf6et8,1073
+gpkg.mnist-0.1.2.dev4.dist-info/RECORD,,
+gpkg.mnist-0.1.2.dev4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gpkg.mnist-0.1.2.dev4.dist-info/entry_points.txt,sha256=A95lywfDHzurQwQCNTR6b42OnRhs6pXfmlQTK3u8HHQ,153
+gpkg.mnist-0.1.2.dev4.dist-info/metadata.json,sha256=-ES5XFKhMQCCHzsBMJduW_a1fpby6sstS8lIoPh3rmE,748
+gpkg.mnist-0.1.2.dev4.dist-info/namespace_packages.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.mnist-0.1.2.dev4.dist-info/top_level.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
