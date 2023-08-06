@@ -1,0 +1,11 @@
+path.py
+pycodestyle
+pyflakes
+pylint
+mccabe
+pytest
+pytest-mock
+
+bumpversion
+twine
+wheel
