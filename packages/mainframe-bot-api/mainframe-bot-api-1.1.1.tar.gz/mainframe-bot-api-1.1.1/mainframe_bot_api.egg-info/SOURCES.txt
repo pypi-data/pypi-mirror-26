@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+mainframe/__init__.py
+mainframe/array_type.py
+mainframe/client.py
+mainframe/response.py
+mainframe_bot_api.egg-info/PKG-INFO
+mainframe_bot_api.egg-info/SOURCES.txt
+mainframe_bot_api.egg-info/dependency_links.txt
+mainframe_bot_api.egg-info/requires.txt
+mainframe_bot_api.egg-info/top_level.txt
