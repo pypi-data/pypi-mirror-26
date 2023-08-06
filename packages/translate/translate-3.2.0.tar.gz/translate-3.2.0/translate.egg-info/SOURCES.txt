@@ -1,0 +1,14 @@
+README.rst
+setup.py
+translate-cli
+translate/__init__.py
+translate/__main__.py
+translate/exceptions.py
+translate/main.py
+translate/providers.py
+translate/translate.py
+translate.egg-info/PKG-INFO
+translate.egg-info/SOURCES.txt
+translate.egg-info/dependency_links.txt
+translate.egg-info/requires.txt
+translate.egg-info/top_level.txt
