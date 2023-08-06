@@ -1,0 +1,5 @@
+casadi>=3.2.0
+numpy>=1.11.0
+scipy
+numba
+pymola
