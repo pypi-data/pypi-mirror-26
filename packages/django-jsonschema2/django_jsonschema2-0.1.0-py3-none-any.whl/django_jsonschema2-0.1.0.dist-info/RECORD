@@ -1,0 +1,10 @@
+django_jsonschema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_jsonschema/forms.py,sha256=oB1Dh8zg3a8bjmaBlo_CTf_P1laRnEVW20TuiFrleXo,543
+django_jsonschema/models.py,sha256=TPxiftZBqG4mdvTJseo_f-525bPawukLlg6Md7YbkvU,681
+django_jsonschema/validators.py,sha256=AZ4JvbF7-yvt5ZroNzKxtsN0Z23v29x8uIAGJWvI74w,666
+django_jsonschema2-0.1.0.dist-info/DESCRIPTION.rst,sha256=g9zgUaHO4hKSRkXMsnnSrEvrm2TJugVT8QE5jDv2tGo,22
+django_jsonschema2-0.1.0.dist-info/METADATA,sha256=C1JM4yE3GL0yE1ZUiPMBcQUumV4BBk9FHe2bCY-GPNg,724
+django_jsonschema2-0.1.0.dist-info/RECORD,,
+django_jsonschema2-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+django_jsonschema2-0.1.0.dist-info/metadata.json,sha256=6UclcivQH4RzOpRzQMwftfJ3hZi1yCkiXJOLXYEWb1A,803
+django_jsonschema2-0.1.0.dist-info/top_level.txt,sha256=8liiIRmJ1oZP5fEVoDHQZi-2lO6oxZzgcr0ZWUqgsog,18
