@@ -1,0 +1,54 @@
+language: python
+sudo: false
+
+notifications:
+  email: false
+
+python:
+  - "2.7"
+  - "3.5"
+  - "3.6"
+  - "nightly"
+  - "pypy2.7-5.8.0"
+  - "pypy3.5-5.8.0"
+
+env:
+  - WITH_CYTHON=1
+  - WITH_CYTHON=0
+
+addons:
+  apt:
+    packages:
+      - build-essential
+      - pandoc
+
+install:
+  - pip install pipenv
+  - if [ $WITH_CYTHON -eq 1 ]; then
+      pipenv install cython --skip-lock ;
+    fi
+  - pipenv install --dev --skip-lock
+  - pipenv run pip install -e .
+  - pipenv run pip install pytest-benchmark  # somehow not found with python2
+  - pipenv run python -c 'import geohash_hilbert as ghh; print(ghh._hilbert.CYTHON_AVAILABLE)'
+
+script: PYTHONPATH=$PWD pipenv run pytest
+
+after_success:
+  - coveralls
+
+before_deploy:
+  - git stash --all
+  - pandoc --from=markdown --to=rst --output=README.rst README.md
+
+deploy:
+  provider: pypi
+  user: tammoippen
+  skip_cleanup: true
+  password:
+    secure: kYE8V0AY29Rm4V6D/HahelNxr3RcJdEGn+WCMwVmiHK3Rkt41hP0qLWqf3ann6NiQLAM5PjL1jszST6LofOpK8Pu+3GC4JhOW1xCiOODKgva6+BbH4pGHFMW8eO/TRnSbF6oYWW4bblTgIC/O2km6WMfNQ86RO7MUUVaNMkgPUqhrHiLOOgiQWrFzG0ojpwQZHw7WMd0IIikXSd1JsalEF/JsLFACgojJ+h5KkAIflPlNzqWfmLzOy5i5AzYPJgTJ3EM8tfP8RL75bSDnqOKnO6kzH8qr6ZTaOm3QMgxBg8/TNFQLegxG5Dy7tEk0a8MFTbRReT2tdes1aqPvrN5O3+u6fPQ+L2WI6wTDN2Ca61yHPVEf5kRDqWQtTPYVKvjmKwXRGcQKeH+wfG/geqSGr1vpt1in0up12dwM2NJVXaD/XeiwvHJSm7evZEBHs/mLbSy50Xk2j1y7bFx45dA8pMu8Srmw1fb6C3dcFoc6wElcnwAgQTAsJIb2sKSFbVUORGyqEGnVVs/fRxAw68bY0gMkS2+4E3LL/HtSX5AyrPuaoVxi810KxuLA2uAgegi9qVo1VjXQE6aTC2NW/Q9AeJ6cqhH3atiTiJXj2+GD/ErW2v4u1UJtgv0GcKv5h2NzwkpixVJuTj4Th7Eb9TdJyyhi/TpBatFYBQ6BJ8WfTc=
+  on:
+    branch: master
+    tags: true
+    python: "3.6"
+    condition: $WITH_CYTHON -eq 1
