@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: yosaipy2
+Version: 0.3.5
+Summary: Yosai is a powerful security framework with an intuitive api.
+Home-page: http://yosaiproject.github.io/yosai
+Author: jellybean4
+Author-email: xulongfetion@163.com
+License: Apache License 2.0
+Description: # Migration of yosai to Python27
+        
+        ## Yosai Project web site:  http://yosaiproject.github.io/yosai
+        
+        ## Yosai Github: https://github.com/YosaiProject/yosai
+        
+Keywords: security rbac session authentication authorization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
