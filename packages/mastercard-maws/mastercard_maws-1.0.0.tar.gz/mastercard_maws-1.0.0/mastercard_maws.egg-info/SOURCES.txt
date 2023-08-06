@@ -1,0 +1,9 @@
+setup.py
+mastercard_maws.egg-info/PKG-INFO
+mastercard_maws.egg-info/SOURCES.txt
+mastercard_maws.egg-info/dependency_links.txt
+mastercard_maws.egg-info/requires.txt
+mastercard_maws.egg-info/top_level.txt
+mastercardmaws/__init__.py
+mastercardmaws/abu.py
+mastercardmaws/resourceconfig.py
