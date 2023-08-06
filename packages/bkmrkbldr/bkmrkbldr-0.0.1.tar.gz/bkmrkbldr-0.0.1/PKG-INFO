@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: bkmrkbldr
+Version: 0.0.1
+Summary: A library for generating bookmark files.
+Home-page: https://www.bitbucket.org/keithodulaigh-lonewolf/bkmrkbldr.git
+Author: Keith O Dulaigh
+Author-email: keith@keithodulaigh.com
+License: UNKNOWN
+Download-URL: https://bitbucket.org/keithodulaigh-lonewolf/bkmrkbldr/downloads/bkmrkbldr-0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: bookmarks,chrome,netscape,chromium
+Platform: UNKNOWN
