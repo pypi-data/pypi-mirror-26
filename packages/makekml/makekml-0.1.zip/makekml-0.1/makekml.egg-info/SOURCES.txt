@@ -1,0 +1,7 @@
+setup.py
+makekml/__init__.py
+makekml.egg-info/PKG-INFO
+makekml.egg-info/SOURCES.txt
+makekml.egg-info/dependency_links.txt
+makekml.egg-info/not-zip-safe
+makekml.egg-info/top_level.txt
