@@ -1,0 +1,15 @@
+setup.py
+vulcanai/__init__.py
+vulcanai/mnist_loader.py
+vulcanai/model_tests.py
+vulcanai/net.py
+vulcanai/ops.py
+vulcanai/schemas.py
+vulcanai/selu.py
+vulcanai/snapshot_ensemble.py
+vulcanai/utils.py
+vulcanai.egg-info/PKG-INFO
+vulcanai.egg-info/SOURCES.txt
+vulcanai.egg-info/dependency_links.txt
+vulcanai.egg-info/requires.txt
+vulcanai.egg-info/top_level.txt
