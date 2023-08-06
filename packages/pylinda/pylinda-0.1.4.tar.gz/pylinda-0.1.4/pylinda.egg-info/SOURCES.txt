@@ -1,0 +1,12 @@
+MANIFEST.in
+README.txt
+files.txt
+setup.py
+bin/pylinda_svr
+pylinda/__init__.py
+pylinda/pylinda.py
+pylinda.egg-info/PKG-INFO
+pylinda.egg-info/SOURCES.txt
+pylinda.egg-info/dependency_links.txt
+pylinda.egg-info/not-zip-safe
+pylinda.egg-info/top_level.txt

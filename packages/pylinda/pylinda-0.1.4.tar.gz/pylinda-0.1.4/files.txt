@@ -1,0 +1,13 @@
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/pylinda/__init__.py
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/pylinda/pylinda.py
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/pylinda/__pycache__/__init__.cpython-35.pyc
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/pylinda/__pycache__/pylinda.cpython-35.pyc
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/SOURCES.txt
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/dependency_links.txt
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/top_level.txt
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/not-zip-safe
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/PKG-INFO
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/scripts/pylinda_svr
+/home/appa/Desktop/workshop/pylinda/v/lib/python3.5/site-packages/pylinda-0.1.3-py3.5.egg/EGG-INFO/scripts/pylinda-svr
+/home/appa/Desktop/workshop/pylinda/v/bin/pylinda_svr
+/home/appa/Desktop/workshop/pylinda/v/bin/pylinda-svr
