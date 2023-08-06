@@ -1,0 +1,8 @@
+pycurl
+pyzmq
+webob
+pudb
+psutil
+pfdcm
+pfmisc
+pudb
