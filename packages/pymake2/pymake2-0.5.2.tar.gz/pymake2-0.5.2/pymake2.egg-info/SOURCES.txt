@@ -1,0 +1,14 @@
+MANIFEST.in
+README.txt
+setup.py
+pymake2/__init__.py
+pymake2/make.py
+pymake2/makefile_template.py
+pymake2/pmake2
+pymake2/pymake2
+pymake2/utility.py
+pymake2.egg-info/PKG-INFO
+pymake2.egg-info/SOURCES.txt
+pymake2.egg-info/dependency_links.txt
+pymake2.egg-info/requires.txt
+pymake2.egg-info/top_level.txt
