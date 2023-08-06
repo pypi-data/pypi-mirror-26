@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: msar
+Version: 0.1.1
+Summary: My System Activity Reporter
+Home-page: https://github.com/askdaddy/msar
+Author: Askdaddy
+Author-email: askdaddy@gmail.com
+License: UNKNOWN
+Description: ===================
+        My System Activity reporter
+        ===================
+        
+Keywords: linux,system,monitor
+Platform: UNKNOWN

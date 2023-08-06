@@ -1,0 +1,6 @@
+README.rst
+setup.py
+msar.egg-info/PKG-INFO
+msar.egg-info/SOURCES.txt
+msar.egg-info/dependency_links.txt
+msar.egg-info/top_level.txt
