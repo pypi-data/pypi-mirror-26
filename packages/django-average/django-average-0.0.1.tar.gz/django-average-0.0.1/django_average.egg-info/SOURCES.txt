@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_average/__init__.py
+django_average/admin.py
+django_average/apps.py
+django_average/models.py
+django_average/tests.py
+django_average/views.py
+django_average.egg-info/PKG-INFO
+django_average.egg-info/SOURCES.txt
+django_average.egg-info/dependency_links.txt
+django_average.egg-info/top_level.txt
+django_average/migrations/__init__.py
