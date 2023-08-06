@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+test_aiohttp/__init__.py
+test_aiohttp/rsps.py
+testing_aiohttp.egg-info/PKG-INFO
+testing_aiohttp.egg-info/SOURCES.txt
+testing_aiohttp.egg-info/dependency_links.txt
+testing_aiohttp.egg-info/not-zip-safe
+testing_aiohttp.egg-info/requires.txt
+testing_aiohttp.egg-info/top_level.txt
+tests/__init__.py
+tests/test_rsps.py
