@@ -1,0 +1,10 @@
+README.md
+flask_auth_mgr.py
+setup.cfg
+setup.py
+Flask_AuthMgr.egg-info/PKG-INFO
+Flask_AuthMgr.egg-info/SOURCES.txt
+Flask_AuthMgr.egg-info/dependency_links.txt
+Flask_AuthMgr.egg-info/not-zip-safe
+Flask_AuthMgr.egg-info/requires.txt
+Flask_AuthMgr.egg-info/top_level.txt
