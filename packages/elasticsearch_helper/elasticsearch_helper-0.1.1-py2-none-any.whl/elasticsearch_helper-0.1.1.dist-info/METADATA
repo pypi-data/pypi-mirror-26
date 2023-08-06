@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: elasticsearch-helper
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: http://github.com/yuuichi-fujioka/setuptools_elasticsearch_helper.git
+Author: Yuuichi Fujioka
+Author-email: fujioka.yuuichi@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: python-dateutil
+Requires-Dist: elasticsearch
+
+UNKNOWN
+
+
