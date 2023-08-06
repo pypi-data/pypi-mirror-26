@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: chord_labels
+Version: 0.1
+Summary: MIREX-style chord label parser
+Home-page: https://github.com/bzamecnik/chord_labels
+Author: Bohumir Zamecnik
+Author-email: bohumir.zamecnik@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
