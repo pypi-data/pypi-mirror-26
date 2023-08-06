@@ -1,0 +1,13 @@
+click
+coolname
+Flask
+haikunator
+Keras
+numpy
+python-dateutil
+pytz
+scipy
+h5py
+tensorflow
+prettytable
+tinydb

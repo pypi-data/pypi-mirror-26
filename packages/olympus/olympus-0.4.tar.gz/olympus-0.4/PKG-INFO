@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: olympus
+Version: 0.4
+Summary: A tool for creating a REST API for any machine learning model, in seconds.
+Home-page: https://github.com/galiboo/olympus
+Author: Galiboo
+Author-email: hello@galiboo.com
+License: UNKNOWN
+Download-URL: https://github.com/galiboo/olympus/archive/0.4.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: machine learning,python,rest,api,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
