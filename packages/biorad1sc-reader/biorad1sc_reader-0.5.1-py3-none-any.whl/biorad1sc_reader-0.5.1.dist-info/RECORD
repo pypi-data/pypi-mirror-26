@@ -1,0 +1,15 @@
+biorad1sc_reader/__init__.py,sha256=ffWkLMwgnww5_9NH-QS1y0c0XH2QrBTlTCXW94I0GhE,90
+biorad1sc_reader/cmd_bio1sc2tiff.py,sha256=d6WLquonuqvVsI6mgpQgsFdtVgk8Iwh1VvS2ja0os5A,2691
+biorad1sc_reader/cmd_bio1scmeta.py,sha256=nrRViw01gFIbBPzpGFs60PvON0BAvKUZSIZJ3p_3Jw0,9270
+biorad1sc_reader/cmd_bio1scread.py,sha256=GTDZT0_MJ4xjIl70eN0xdOwqVqi0W-xVSzHqC-1aYZA,49700
+biorad1sc_reader/constants.py,sha256=IvHU9FXy7WHM0ZoyyzHuBBW6jufFEVtp47BMytpqzn0,3463
+biorad1sc_reader/errors.py,sha256=s8x8zy0881AHzzqiDS5PCO772AWMxIi1AbO-zNDL8wI,311
+biorad1sc_reader/parsing.py,sha256=Vq1hXGDtts40us5u3EmsNNuYdO3blKz9o7GkCOgj23c,22010
+biorad1sc_reader/reader.py,sha256=uFfuEZ00zcoiZmDtxKj_Kgh_Y1UHVdCXJeAT8EWyfDc,28568
+biorad1sc_reader-0.5.1.dist-info/DESCRIPTION.rst,sha256=Yn_U1Z6ZL-L4E9OxUqWP1UxEcSQkONhbbv8DsYXFn-g,3584
+biorad1sc_reader-0.5.1.dist-info/METADATA,sha256=5PINy_fck_wOW-PV-2q0bbwyGG-cATYLUrvXyp0BZG0,4396
+biorad1sc_reader-0.5.1.dist-info/RECORD,,
+biorad1sc_reader-0.5.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+biorad1sc_reader-0.5.1.dist-info/entry_points.txt,sha256=tLkQsItFb0SMa_VxlDNNyBYtGBKMn3SLzoma6zu6UE4,192
+biorad1sc_reader-0.5.1.dist-info/metadata.json,sha256=kUIGx0kX1euyYjpXNcoasby0Z0IBL2qlqlYijEkIs1k,1511
+biorad1sc_reader-0.5.1.dist-info/top_level.txt,sha256=kupuu98UZhWl1zZ5FVv-9Omt6xouqlUsp5GeJCtTeTo,17
