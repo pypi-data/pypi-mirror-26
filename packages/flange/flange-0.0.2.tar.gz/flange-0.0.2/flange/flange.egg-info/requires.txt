@@ -1,0 +1,9 @@
+anyconfig
+certifi
+chardet
+idna
+PyYAML
+requests
+six
+urllib3
+jsonschema
