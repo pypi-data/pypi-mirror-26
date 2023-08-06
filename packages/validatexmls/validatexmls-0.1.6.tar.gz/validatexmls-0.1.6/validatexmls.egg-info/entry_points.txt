@@ -1,0 +1,3 @@
+[console_scripts]
+validatexmls = validatexmls.__main__:main
+
