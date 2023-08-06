@@ -1,0 +1,47 @@
+{
+  "tests": [
+    {
+      "stdout": " 41",
+      "name": "01"
+    },
+    {
+      "stdout": " 5348",
+      "name": "02"
+    },
+    {
+      "stdout": " 1",
+      "name": "03"
+    },
+    {
+      "stdout": " 127393",
+      "name": "04"
+    },
+    {
+      "stdout": " 100",
+      "name": "05"
+    },
+    {
+      "stdout": " 80970",
+      "name": "06"
+    },
+    {
+      "compiler_exit_code": 2,
+      "name": "07"
+    },
+    {
+      "compiler_exit_code": 2,
+      "name": "08"
+    },
+    {
+      "compiler_exit_code": 2,
+      "name": "09"
+    },
+    {
+      "compiler_exit_code": 2,
+      "name": "10" 
+    }
+  ],
+  "extensions": [
+    "BASE"
+  ]
+}
