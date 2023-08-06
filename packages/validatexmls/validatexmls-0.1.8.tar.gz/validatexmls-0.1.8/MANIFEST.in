@@ -1,0 +1,12 @@
+# Include the license file
+include LICENSE.txt
+
+# Include the data files
+# recursive-include validatexmls/data *
+#recursive-include examples *.py
+#recursive-include doc/html *.html *.css *.js *.png
+
+include validatexmls/data/testfile.txt
+include validatexmls/data/xsd/BC9.xsd
+include validatexmls/data/input/35104616_49_30527.XML
+include validatexmls/data/input/35107864_119_40462.XML

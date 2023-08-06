@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: validatexmls
+Version: 0.1.8
+Summary: validatexmls validates an xml against a XSD and put it in the right output directory
+Home-page: https://github.com/nielspostma/validatexmls
+Author: Niels Postma
+Author-email: niels.postma@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Validate XMLs with validatexmls
+        ===============================
+        
+        This is validate-xmls which Validates an XML against a XSD.
+        
+Keywords: validate xml xsd lxml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
