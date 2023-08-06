@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: beholder
+Version: 0.0.0
+Summary: A lightweight and easy to use folder watcher
+Home-page: http://github.com/ACarrasco1009/beholder
+License: UNKNOWN
+Author: Alec Carrasco
+Author-email: alecc1009@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
