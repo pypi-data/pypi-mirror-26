@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+pyinfo/__init__.py
+pyinfo/__main__.py
+pyinfo/_pyinfo.py
+pyinfo/renderers.py
+pyinfo/wsgi.py
+pyinfo.egg-info/PKG-INFO
+pyinfo.egg-info/SOURCES.txt
+pyinfo.egg-info/dependency_links.txt
+pyinfo.egg-info/top_level.txt
