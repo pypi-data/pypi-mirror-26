@@ -1,0 +1,13 @@
+manifest/__init__.py,sha256=RNqNZei6bjvc7O070bGYyqqeCfJJO5KiVwRvtOSTE9Q,1741
+manifest/httpdownloader.py,sha256=mAzHhWFBUIchDamIJ6Fr0I0d8A3rnH-KSssBO28c6Cg,2238
+manifest/main.py,sha256=4WUiYoqIZccIf_eTYT3jW5vIpmPQSKcnFYQbMuNv8qw,5918
+manifest/s3downloader.py,sha256=9ixQfUvTfZSUZFpvLA3Mz3Jh2srI4OEF6pTEKFpuDHQ,2730
+manifest/sftpdownloader.py,sha256=MqpZparu4Edv62lf0QOpdCfciJlBmh4UbaClkNGLvp4,3053
+manifest/utils.py,sha256=QbbDZtIvX1Hwu6-P-RDR85Ths-PMQVwQEeCiCMMAexY,6569
+manifest_ingest-0.4.6.dist-info/DESCRIPTION.rst,sha256=LqKivPEJvocp5wfky1X792xHPVPbTurxJTq6x-pxlyE,6727
+manifest_ingest-0.4.6.dist-info/METADATA,sha256=cWmIpgtKWDBBaUwXdcdyMrKxco-RoJizqgL4qO3LFU8,7806
+manifest_ingest-0.4.6.dist-info/RECORD,,
+manifest_ingest-0.4.6.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+manifest_ingest-0.4.6.dist-info/entry_points.txt,sha256=8pt_B7gkKl7vrRgLHW24dtxMZuOhoMTvH6QgwdrBJ5c,155
+manifest_ingest-0.4.6.dist-info/metadata.json,sha256=pno-0U4m_jnbt5crnr7r7pgccmjyQvV-BaMuw1owl94,1625
+manifest_ingest-0.4.6.dist-info/top_level.txt,sha256=cCHmEKX2Lu_QGDD-po5foYDozwF8COoIkMMmsoVOvJY,9
