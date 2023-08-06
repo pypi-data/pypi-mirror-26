@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+pacsquery/__init__.py
+pacsquery/pacsquery.py
+pacsquery.egg-info/PKG-INFO
+pacsquery.egg-info/SOURCES.txt
+pacsquery.egg-info/dependency_links.txt
+pacsquery.egg-info/not-zip-safe
+pacsquery.egg-info/requires.txt
+pacsquery.egg-info/top_level.txt
