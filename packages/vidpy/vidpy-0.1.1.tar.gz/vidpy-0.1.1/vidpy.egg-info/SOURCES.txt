@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+vidpy.egg-info/PKG-INFO
+vidpy.egg-info/SOURCES.txt
+vidpy.egg-info/dependency_links.txt
+vidpy.egg-info/not-zip-safe
+vidpy.egg-info/requires.txt
+vidpy.egg-info/top_level.txt
