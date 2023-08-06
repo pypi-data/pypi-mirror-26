@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+README.rst
+setup.py
+PyDMTQ/PyDMTQ.py
+PyDMTQ/__init__.py
+PyDMTQ.egg-info/PKG-INFO
+PyDMTQ.egg-info/SOURCES.txt
+PyDMTQ.egg-info/dependency_links.txt
+PyDMTQ.egg-info/not-zip-safe
+PyDMTQ.egg-info/requires.txt
+PyDMTQ.egg-info/top_level.txt

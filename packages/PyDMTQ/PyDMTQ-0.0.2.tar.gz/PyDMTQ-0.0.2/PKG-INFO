@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: PyDMTQ
+Version: 0.0.2
+Summary: Python Interface For DMTQ API
+Home-page: https://github.com/Naville/DMTQResearch
+Author: Naville
+Author-email: admin@mayuyu.io
+License: GPL
+Description-Content-Type: UNKNOWN
+Description: PyDMTQ
+        ======
+        
+        Python Implementation for DJMax Technika Q's API
+        
+Platform: UNKNOWN
