@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+merquery/__init__.py
+merquery/__version__.py
+merquery/core.py
+merquery.egg-info/PKG-INFO
+merquery.egg-info/SOURCES.txt
+merquery.egg-info/dependency_links.txt
+merquery.egg-info/top_level.txt
