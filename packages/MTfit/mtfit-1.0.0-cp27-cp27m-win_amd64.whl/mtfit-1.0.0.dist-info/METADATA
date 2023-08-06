@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: mtfit
+Version: 1.0.0
+Summary: mtfit: Bayesian Moment Tensor Inversion Code
+Home-page: UNKNOWN
+Author: David J Pugh
+Author-email: david.j.pugh@cantab.net
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Cython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires: numpy
+Requires: scipy
+Provides: mtfit
+Requires-Dist: numpy (>=1.7.0)
+Requires-Dist: scipy
+Requires-Dist: cython (>=0.20.2)
+Requires-Dist: setuptools
+Requires-Dist: pyqsub (>=1.0.2)
+Provides-Extra: Cluster
+Requires-Dist: pyqsub (>=1.0.2); extra == 'Cluster'
+Provides-Extra: HTML documentation
+Requires-Dist: sphinx (>=1.3.1); extra == 'HTML documentation'
+Provides-Extra: MATLAB -v7.3
+Requires-Dist: h5py; extra == 'MATLAB -v7.3'
+Requires-Dist: hdf5storage; extra == 'MATLAB -v7.3'
+Provides-Extra: Plotting
+Requires-Dist: matplotlib (>=1.4.0); extra == 'Plotting'
+
+Bayesian moment tensor inversion code based on the approach described in Pugh, D J, 2015,
+Bayesian Source Inversion of Microseismic Events, PhD Thesis, Department of Earth Sciences,
+University of Cambridge.
+
