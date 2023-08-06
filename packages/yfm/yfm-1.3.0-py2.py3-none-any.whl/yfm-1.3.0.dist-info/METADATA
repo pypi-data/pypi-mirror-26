@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: yfm
+Version: 1.3.0
+Summary: A command line tool to store and manage Yahoo Finance stock data in a MongoDb database
+Home-page: https://github.com/rubenafo/yfMongo
+Author: Ruben Afonso
+Author-email: rbfrancos@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/rubenafo/yfMongo/archive/1.3.0.zip
+Description-Content-Type: UNKNOWN
+Keywords: yahoo-finance,mongodb,finance,stock
+Platform: UNKNOWN
+Requires-Dist: pymongo
+
+UNKNOWN
+
+
