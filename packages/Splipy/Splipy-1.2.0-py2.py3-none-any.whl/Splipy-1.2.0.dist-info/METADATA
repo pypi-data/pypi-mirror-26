@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: Splipy
+Version: 1.2.0
+Summary: Spline modelling library for Python
+Home-page: https://github.com/sintefmath/Splipy
+Author: Kjetil Andre Johannessen
+Author-email: kjetijo@gmail.com
+License: GNU public license v3
+Keywords: B-spline,Splines,NURBS,Curve,Surface,Volume,Interpolation,Approximation,Fit,Integration,Differentiation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy (>=1.9)
+Requires-Dist: scipy (>=0.17)
+
+This repository contains the Splipy packages. Splipy is a pure python library for the creation, evaluation and manipulation of B-spline and NURBS geometries. It supports n-variate splines of any dimension, but emphasis is made on the use of curves, surfaces and volumes. The library is designed primarily for analysis use, and therefore allows fine-grained control over many aspects which is not possible to achieve with conventional CAD tools.
+
+
