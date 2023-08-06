@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: kmapper
+Version: 1.0.1
+Summary: Python implementation of mapper algorithm for Topological Data Analysis.
+Home-page: https://github.com/MLWAve/kepler-mapper
+Author: HJ van Veen, Nathaniel Saul
+Author-email: info@mlwave.com, nat@saulgill.com
+License: MIT
+Description: Python implementation of mapper algorithm. This implementation is intended to integrate into scikit-learn and be easily extendible.
+Keywords: mapper,topology data analysis,algebraic topology,unsupervised learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
