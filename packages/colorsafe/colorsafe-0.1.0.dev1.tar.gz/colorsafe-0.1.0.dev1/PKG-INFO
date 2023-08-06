@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: colorsafe
+Version: 0.1.0.dev1
+Summary: A colorized data storage scheme for printing on paper.
+Home-page: https://github.com/colorsafe/colorsafe
+Author: Justin Bass
+Author-email: colorsafeproject@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/colorsafe/colorsafe/archive/0.1.tar.gz
+Description: A colorized data storage scheme for printing on paper.
+Keywords: colorized,data,storage,paper,printing
+Platform: UNKNOWN
