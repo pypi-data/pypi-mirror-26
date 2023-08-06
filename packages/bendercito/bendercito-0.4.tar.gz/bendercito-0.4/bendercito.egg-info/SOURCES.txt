@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bendercito/__init__.py
+bendercito/bendercito.py
+bendercito.egg-info/PKG-INFO
+bendercito.egg-info/SOURCES.txt
+bendercito.egg-info/dependency_links.txt
+bendercito.egg-info/entry_points.txt
+bendercito.egg-info/not-zip-safe
+bendercito.egg-info/requires.txt
+bendercito.egg-info/top_level.txt
