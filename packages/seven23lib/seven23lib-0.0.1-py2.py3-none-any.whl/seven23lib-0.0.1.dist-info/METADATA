@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: seven23lib
+Version: 0.0.1
+Summary: A simple API client for seven23.io
+Home-page: https://github.com/pleyo/seven23lib
+Author: Yohann Pollonghini
+Author-email: pleyo25@gmail.com
+License: MIT
+Keywords: seven23 api library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+Seven23.io python lib
+=====================
+
+This project aims to provide a simple python module to access the seven23.io API.
+
+----
+
+This is an really early stage of the project. Documentation/ Usage example will come in time.
+
+
