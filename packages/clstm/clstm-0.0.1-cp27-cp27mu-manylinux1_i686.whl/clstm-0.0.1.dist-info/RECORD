@@ -1,0 +1,11 @@
+_clstm.so,sha256=acn0sAHDUaQOTn1o_DsrZolhD8J-wB9aq5ILW-o-AgE,12741200
+clstm.py,sha256=ojjXSBYdqIbkt6KYlAL9ffnpimDE1iXh7wEyxfRonmo,31861
+clstm-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+clstm-0.0.1.dist-info/METADATA,sha256=TOWehouernRBACsCkckcNqehDm7GD0uSLM67--j3xSU,481
+clstm-0.0.1.dist-info/RECORD,,
+clstm-0.0.1.dist-info/WHEEL,sha256=eBCbJuZFFtHdt34I-Uny_TWE-1oCOeIpamuvv3hr49Q,108
+clstm-0.0.1.dist-info/metadata.json,sha256=SWKNDf63MbeVzBGplCVgi7rgWy-B0r4nyVSLDrMeAyI,609
+clstm-0.0.1.dist-info/top_level.txt,sha256=0fd7ft2FxFSSDa1yLFpo9SeAS3O4tCRh-GFw2lSdloY,13
+.libs_clstm/libz-83853723.so.1.2.3,sha256=RXg6ZNFYfXk1W4MF8PFDsOI7JPjgObAM5e99g2BilFo,75576
+.libs_clstm/libprotobuf-d65febe9.so.6.0.0,sha256=VrdCQYJxrRjKNEJlpsxo6Nc8XKgOCA3wO_fnX9fp5TE,1486360
+.libs_clstm/libpng12-61124c64.so.0.10.0,sha256=DN052hKwsaVtR-DIzYZ1mQ2no4nR9vYI987RJ0fIRWk,168212

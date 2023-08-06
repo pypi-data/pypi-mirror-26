@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: clstm
+Version: 0.0.1
+Summary: clstm - swig python bindings for the clstm library
+Home-page: https://github.com/tmbdev/clstm
+Author: Thomas Breuel
+Author-email: UNKNOWN
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+
+UNKNOWN
+
+
