@@ -1,0 +1,7 @@
+odo
+owslib
+tstoolbox>=3.17.14.11
+requests
+zeep
+ulmo
+networkx<2.0
