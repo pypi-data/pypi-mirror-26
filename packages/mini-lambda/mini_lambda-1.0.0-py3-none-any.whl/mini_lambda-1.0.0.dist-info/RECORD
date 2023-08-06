@@ -1,0 +1,14 @@
+mini_lambda/__init__.py,sha256=q8Gy57iTYDtlqPtL5sbBAoUdnnlpt9oIVS1eIhoVAbA,388
+mini_lambda/base.py,sha256=VKLToo6d7swtGbxLWA32CIaD6LyTyDasA_GnjOtHvFs,8948
+mini_lambda/generated.py,sha256=yppK_vYcuyyUhGdsDoiJJY25v7VRsUH6nHczulNR7ZQ,46983
+mini_lambda/main.py,sha256=B8ulEYNFF6KmYjGKQBmcrZTCZaYGEgmm14Oqi1giJBc,26356
+mini_lambda/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mini_lambda/tests/conftest.py,sha256=RPZRl5attCXaFqNuReCJ0mZCzyYgzMIt3ZUIp0o_prg,2315
+mini_lambda/tests/test_mini_lambda.py,sha256=vvwnbu5O1nDBpLxZZ7tQHF8cspLG1UmOb2-YvDh2j6s,16080
+mini_lambda/tests/test_readme.py,sha256=nWAcRC3xpGoBf-qUC65x8IM80Fj6wrbd-cheKKCaRZg,2416
+mini_lambda-1.0.0.dist-info/DESCRIPTION.rst,sha256=TD_5Y7_H_RVN4HJlVW6HugeFE59SmiqRsMHjy7nfdw4,4359
+mini_lambda-1.0.0.dist-info/METADATA,sha256=oWwnfvPMzKzKhs5iffiSwEIifEZP5nWwTgvUMkh539E,5140
+mini_lambda-1.0.0.dist-info/RECORD,,
+mini_lambda-1.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+mini_lambda-1.0.0.dist-info/metadata.json,sha256=Km80-XpaPI94ZeRHXrvWFMi4YkYKD7Pca4DX4EST8b0,1044
+mini_lambda-1.0.0.dist-info/top_level.txt,sha256=L0PZ_pV1i0LPXltFfva142vhNNuYKcBczu1rLv1R6U8,12
