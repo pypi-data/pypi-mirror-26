@@ -1,0 +1,7 @@
+README.rst
+setup.py
+google_closure_compiler_api.egg-info/PKG-INFO
+google_closure_compiler_api.egg-info/SOURCES.txt
+google_closure_compiler_api.egg-info/dependency_links.txt
+google_closure_compiler_api.egg-info/entry_points.txt
+google_closure_compiler_api.egg-info/top_level.txt
