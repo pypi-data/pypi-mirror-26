@@ -1,0 +1,3 @@
+recursive-include chemkin8 *
+recursive-include chemkin8/tests *
+recursive-include chemkin8/tests/test_cases *
