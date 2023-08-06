@@ -1,0 +1,7 @@
+libevresp_Darwin_64bit_py35
+libgse2_Darwin_64bit_py35
+libmseed_Darwin_64bit_py35
+libsegy_Darwin_64bit_py35
+libsignal_Darwin_64bit_py35
+libtau_Darwin_64bit_py35
+obspy
