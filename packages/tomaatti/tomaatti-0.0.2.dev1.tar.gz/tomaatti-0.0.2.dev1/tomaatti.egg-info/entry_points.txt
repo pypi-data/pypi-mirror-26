@@ -1,0 +1,3 @@
+[console_scripts]
+tomaatti = tomaatti.tomaatti:script_entry_point
+
