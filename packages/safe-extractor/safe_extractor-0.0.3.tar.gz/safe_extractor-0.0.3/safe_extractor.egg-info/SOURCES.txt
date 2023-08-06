@@ -1,0 +1,7 @@
+setup.py
+safe_extractor.egg-info/PKG-INFO
+safe_extractor.egg-info/SOURCES.txt
+safe_extractor.egg-info/dependency_links.txt
+safe_extractor.egg-info/entry_points.txt
+safe_extractor.egg-info/requires.txt
+safe_extractor.egg-info/top_level.txt
