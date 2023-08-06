@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# Copyright 2010-2017 Mads Michelsen (mail@brokkr.net)
+# This file is part of Poca.
+# Poca is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License,
+# or (at your option) any later version.
+
+"""A subscription management tool for poca"""
+
+
+import poco
+
+
+def main():
+    '''Main script'''
+    args = poco.args.get_poca_subscribe_args()
+    args.quiet = False
+    stream_logger = poco.loggers.start_stream_logger(args)
+    conf = poco.config.Config(args, merge_default=False)
+    if args.cmd_name == 'delete':
+        poco.subscribe.delete(conf, args)
+    elif args.cmd_name == 'add':
+        sub_dic, sub_category = poco.subscribe.user_input_add_sub()
+        poco.subscribe.add_sub(conf, sub_category, sub_dic)
+    elif args.cmd_name == 'list':
+        poco.subscribe.list_subs(conf)
+    elif args.cmd_name == 'toggle':
+        poco.subscribe.toggle(conf, args)
+    elif args.cmd_name == 'stats':
+        poco.subscribe.stats(conf, args)
+    elif args.cmd_name == 'tags':
+        poco.subscribe.list_id3_tags()
+    elif args.cmd_name == 'search':
+        sub_dic, sub_category = poco.subscribe.search_show(conf, args)
+        if sub_dic:
+            poco.subscribe.add_sub(conf, sub_category, sub_dic)
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
