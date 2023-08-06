@@ -1,0 +1,234 @@
+# French translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-10-08 20:41+0200\n"
+"PO-Revision-Date: 2017-10-08 20:44+0200\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: apps.py:14
+msgid "Thank you, the form has been submitted."
+msgstr "Merci, le formulaire a été soumis"
+
+#: apps.py:15
+msgid "There was an error processing the form"
+msgstr "Il y a eu une erreur lors du traitement de ce formulaire"
+
+#: forms.py:31
+msgid "You don't seems to be human"
+msgstr "Vous n'avez pas l'air humain"
+
+#: forms.py:39 forms.py:51
+msgid "Connection to reCaptcha server failed"
+msgstr "La connection au serveur de reCaptcha a échouée"
+
+#: forms.py:53
+msgid "reCaptcha invalid or expired, try again"
+msgstr "reCaptacha invalide ou expiré, essayez encore"
+
+#: forms.py:56
+msgid "reCaptcha response from Google not valid, try again"
+msgstr "La réponse reCaptcha de Google est non valide, essayez encore"
+
+#: models.py:41
+msgid "submit time"
+msgstr "date de soumission"
+
+#: models.py:50
+msgid "form submission"
+msgstr "soumission de formulaire"
+
+#: models.py:55
+msgid "Upload Image"
+msgstr "Envoi d'image"
+
+#: models.py:56
+msgid "File Upload"
+msgstr "Envoi de fichier"
+
+#: models.py:59
+msgid "field type"
+msgstr "type de champ"
+
+#: models.py:64
+msgid "Show in admin"
+msgstr "Afficher dans l'admin"
+
+#: models.py:65
+msgid "Display this field in the admin"
+msgstr "Afficher le champ dans l'admin"
+
+#: models.py:66
+msgid "Filterable"
+msgstr "Filtrable"
+
+#: models.py:67
+msgid "Is this field filterable ?"
+msgstr "Ce champ est-il filtrable ?"
+
+#: models.py:68
+msgid "Searchable"
+msgstr "Cherchable"
+
+#: models.py:69
+msgid "Is this field searchable ?"
+msgstr "Ce champ est-il cherchable ?"
+
+#: models.py:79
+msgid "Name"
+msgstr "Nom"
+
+#: models.py:81
+msgid "Store submissions"
+msgstr "Stocker les soumissions"
+
+#: models.py:83
+msgid ""
+"Store all form submissions in the database. This has to comply with "
+"local privacy laws."
+msgstr ""
+"Stocker toutes les soumissions en base de données. Ce doit être "
+"compatible avec la réglementation locale en vigueur."
+
+#: models.py:85
+msgid "Button label"
+msgstr "Libellé du bouton"
+
+#: models.py:87
+msgid "Submit"
+msgstr "Soumettre"
+
+#: models.py:88
+msgid "Submit button label"
+msgstr "Libellé du bouton de soumission"
+
+#: models.py:89
+msgid "Enable reCaptcha"
+msgstr "Activer reCaptcha"
+
+#: models.py:91
+msgid "Prevent submissions by non-humans"
+msgstr "Prévenir la soumissions par des non-humains"
+
+#: models.py:93
+msgid "Success message"
+msgstr "Message de succès"
+
+#: models.py:96
+msgid ""
+"An optional success message to show when the form has been succesfully "
+"submitted"
+msgstr ""
+"Un message de succès optionnel à afficher lorsque le formulaire a été "
+"soumis avec succès"
+
+#: models.py:109
+msgid "Form"
+msgstr "Formulaire"
+
+#: models.py:110
+msgid "Forms"
+msgstr "Formulaires"
+
+#: models.py:181
+msgid "to address"
+msgstr "destinataire"
+
+#: models.py:182
+msgid ""
+"Optional - form submissions will be emailed to these addresses. Separate "
+"multiple addresses by comma."
+msgstr ""
+"Optionnel - les soumissions de formulaire seront envoyées à ces "
+"adresses. Séparer les multiples adresses par des virgules"
+
+#: models.py:185
+msgid "from address"
+msgstr "Émetteur"
+
+#: models.py:187
+msgid "subject"
+msgstr "sujet"
+
+#: models.py:190
+msgid "Email form"
+msgstr "Formulaire avec email"
+
+#: views.py:77 wagtail_hooks.py:161
+msgid "Edit"
+msgstr "Modifier"
+
+#: wagtail_hooks.py:119
+msgid "Add a form"
+msgstr "Ajouter un formulaire"
+
+#: wagtail_hooks.py:120
+msgid "Add a new form"
+msgstr "Ajouter un nouveau formulaire"
+
+#: wagtail_hooks.py:126
+#, python-format
+msgid "Add %s"
+msgstr "Ajouter %s"
+
+#: wagtail_hooks.py:128
+#, python-format
+msgid "Add a new %s"
+msgstr "Ajouter un nouveau %s"
+
+#: wagtail_hooks.py:147
+msgid "Inspect"
+msgstr "Inspecter"
+
+#: wagtail_hooks.py:149
+#, python-format
+msgid "Inspect this %s"
+msgstr "Inspecter ce %s"
+
+#: wagtail_hooks.py:163
+#, python-format
+msgid "Edit this %s"
+msgstr "Modifier ce %s"
+
+#: wagtail_hooks.py:175
+msgid "Submissions"
+msgstr "Soumissions"
+
+#: wagtail_hooks.py:177
+msgid "See submissions for this form"
+msgstr "Voir les soumissions de ce formulaire"
+
+#: wagtail_hooks.py:189
+msgid "Delete"
+msgstr "Supprimer"
+
+#: wagtail_hooks.py:191
+#, python-format
+msgid "Delete this %s"
+msgstr "Supprimer ce %s"
+
+#: wagtail_hooks.py:261
+msgid "Form type"
+msgstr "Type de formulaire"
+
+#~ msgid "Add a recaptcha"
+#~ msgstr "Ajouter un recaptcha"
+
+#~ msgid "Add a reCaptcha"
+#~ msgstr "Ajouter un reCaptcha"
+
+#~ msgid "Add a reCapcha field to the form."
+#~ msgstr "Ajouter un captcha au formulaire"

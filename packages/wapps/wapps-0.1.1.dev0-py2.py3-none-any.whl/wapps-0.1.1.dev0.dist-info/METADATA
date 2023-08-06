@@ -1,0 +1,140 @@
+Metadata-Version: 2.0
+Name: wapps
+Version: 0.1.1.dev0
+Summary: Some Wagtail reusable applications
+Home-page: https://github.com/apihackers/wapps
+Author: API Hackers
+Author-email: wapps@apihackers.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: wagtail,reusable apps,django
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Django (==1.11.7)
+Requires-Dist: Jinja2 (==2.10)
+Requires-Dist: django-appconf (==1.0.2)
+Requires-Dist: django-babel (==0.6.1)
+Requires-Dist: django-colorful (==1.2)
+Requires-Dist: django-jinja (==2.4.0)
+Requires-Dist: django-memoize (==2.1.0)
+Requires-Dist: django-model-utils (==3.0.0)
+Requires-Dist: django-modelcluster (==3.1)
+Requires-Dist: psycopg2
+Requires-Dist: requests
+Requires-Dist: wagtail (==1.13)
+Requires-Dist: wagtailfontawesome (==1.1.0)
+Provides-Extra: test
+Requires-Dist: Faker (==0.8.6); extra == 'test'
+Requires-Dist: factory-boy (<2.9.0); extra == 'test'
+Requires-Dist: feedparser (==5.2.1); extra == 'test'
+Requires-Dist: pytest (==3.2.3); extra == 'test'
+Requires-Dist: pytest-cov (==2.5.1); extra == 'test'
+Requires-Dist: pytest-django (==3.1.2); extra == 'test'
+Requires-Dist: pytest-factoryboy (==1.3.1); extra == 'test'
+Requires-Dist: pytest-faker (==2.0.0); extra == 'test'
+Requires-Dist: pytest-pythonpath (==0.7.1); extra == 'test'
+Requires-Dist: pytest-sugar (==0.9.0); extra == 'test'
+Requires-Dist: python-dateutil (==2.6.1); extra == 'test'
+Requires-Dist: wagtail-factories (==0.3.0); extra == 'test'
+
+WApps
+=====
+
+`![CircleCI <https://img.shields.io/circleci/project/github/apihackers/wapps.svg>`_](https://circleci.com/gh/apihackers/workflows/wapps)
+`![codecov <https://codecov.io/gh/apihackers/wapps/branch/master/graph/badge.svg>`_](https://codecov.io/gh/apihackers/wapps/branch/master)
+`![Last version <https://img.shields.io/pypi/v/wapps.svg>`_](https://pypi.python.org/pypi/wapps)
+`![License <https://img.shields.io/pypi/l/wapps.svg>`_](https://pypi.python.org/pypi/wapps)
+`![Supported Python versions <https://img.shields.io/pypi/pyversions/wapps.svg>`_](https://pypi.python.org/pypi/wapps)
+
+A very optionated set of Wagtail reusable applications and helpers
+meant to speedup website development. There is not any universality intent.
+
+stack
+-----
+
+It assumes the following stacks:
+
+Server-side stack:
+******************
+
+- Python 3
+- Latest Wagtail and Django versions
+- Django-Jinja for template rendering
+- Django-Babel for localization
+- Django-Appconf for default settings
+
+Frontend Stack
+**************
+
+- Vue 2 for front components
+- Webpack 2 as front build toolchain
+- SCSS as style language
+- Bootstrap and Font-awesome as base frameworks
+
+Requirements
+------------
+
+Wapps is designed to work with Python 3, Django-jinja, Django-babel and latest Django and Wagtail versions.
+
+Wapps also provides JS/Vue2 helpers and scss mixins and classes
+
+Installation
+------------
+
+Python installation
+*******************
+
+Install it with pip:
+
+.. code-block:: shell
+
+    $ pip install wapps
+
+
+
+then add the required bases apps to your settings (ie. `settings.py`):
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        '...',
+        'wapps',
+        'memoize'
+    ]
+
+
+
+Node modules installation
+*************************
+
+Install it with `npm` or `yarn`
+
+.. code-block:: shell
+
+    $ npm install wapps@<wapps-version>
+
+
+
+Changelog
+=========
+
+Current
+-------
+
+- Initial release
+
+
+

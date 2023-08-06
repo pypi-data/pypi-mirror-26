@@ -1,0 +1,55 @@
+{% set identity = settings('wapps.IdentitySettings', use_default_site=not request.site) %}
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ identity.favicon_url(57) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ identity.favicon_url(60) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ identity.favicon_url(72) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ identity.favicon_url(76) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ identity.favicon_url(114) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ identity.favicon_url(120) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ identity.favicon_url(144) }}" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ identity.favicon_url(152) }}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ identity.favicon_url(16) }}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ identity.favicon_url(32) }}" />
+<link rel="icon" type="image/png" sizes="96x96" href="{{ identity.favicon_url(96) }}" />
+<link rel="icon" type="image/png" sizes="128x128" href="{{ identity.favicon_url(128) }}" />
+<link rel="icon" type="image/png" sizes="196x196" href="{{ identity.favicon_url(196) }}" />
+<meta name="application-name" content="{{ identity.name or request.site.name }}"/>
+<meta name="theme-color" content="{{ identity.bg_color }}" />
+<meta name="msapplication-TileColor" content="{{ identity.bg_color}}" />
+<meta name="msapplication-TileImage" content="{{ identity.favicon_url(144) }}" />
+<meta name="msapplication-square70x70logo" content="{{ identity.favicon_url(70) }}" />
+<meta name="msapplication-square150x150logo" content="{{ identity.favicon_url(150) }}" />
+<meta name="msapplication-wide310x150logo" content="{{ identity.favicon_url(310, 150) }}" />
+<meta name="msapplication-square310x310logo" content="{{ identity.favicon_url(310) }}" />
+<meta name="generator" content="Wagtail" />
+
+{% if page %}
+<link rel="canonical" href="{{ page.full_url }}" />
+{% endif %}
+
+{% if meta %}
+<meta name="keywords" content="{{ meta.tags|join(',') }}">
+<meta name="description" content="{{ meta.description }}">
+{# <meta name="author" content=""> #}
+<meta property="og:title" content="{{ meta.title }}" />
+<meta property="og:site_name" content="{{ meta.site_title }}" />
+<meta property="og:description" content="{{ meta.description }}" />
+{% if LANGUAGE_CODE %}
+<meta property="og:locale" content="{{ LANGUAGE_CODE }}" />
+{% endif %}
+{% if meta.image %}
+<meta property="og:image" content="{{ imageurl(meta.image, 'fill-1200x630') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{% endif %}
+<meta name="twitter:card" content="summary_large_image" />
+{% if identity.twitter %}<meta name="twitter:site" content="{{ identity.twitter }}" />{% endif %}
+<!-- meta name="twitter:creator" content="@SarahMaslinNir" -->
+<meta name="twitter:title" content="{{ meta.full_title }}" />
+<meta name="twitter:description" content="{{ meta.description }}" />
+{% if meta.image %}
+<meta name="twitter:image" content="{{ imageurl(meta.image, 'fill-1024x512') }}" />
+<meta name="twitter:image:alt" content="{{ meta.image.title }}" />
+{% endif %}
+{% endif %}
+
+{{ jsonld() }}
