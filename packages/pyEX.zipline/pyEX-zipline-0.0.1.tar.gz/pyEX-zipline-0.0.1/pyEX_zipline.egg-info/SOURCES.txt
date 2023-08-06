@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyEX_zipline.egg-info/PKG-INFO
+pyEX_zipline.egg-info/SOURCES.txt
+pyEX_zipline.egg-info/dependency_links.txt
+pyEX_zipline.egg-info/top_level.txt
+pyEXzipline/__init__.py
+pyEXzipline/ingest.py
