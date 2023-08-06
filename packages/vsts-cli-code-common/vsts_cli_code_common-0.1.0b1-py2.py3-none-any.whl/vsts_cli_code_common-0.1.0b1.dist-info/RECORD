@@ -1,0 +1,14 @@
+vsts/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/code/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/code/common/__init__.py,sha256=tgaJt_VIxea35CzjM39E07y-i1owyPUjHAP34jCm2ts,349
+vsts/cli/code/common/custom.py,sha256=0GlfCS7_n-BWsLCnz4UnPGeyVqX94b-HaZ62ECxWiy8,40666
+vsts/cli/code/common/git_alias.py,sha256=SmZop_ocXmY6dLJ4Od6P1NX5XnyO5vDO9QN2NjXM2cA,1481
+vsts/cli/code/common/pull_request.py,sha256=QYB4R9BiHUvBnaBnBuD5rQwbWX9jYoYwKsTyAxnT28c,38734
+vsts/cli/code/common/repository.py,sha256=UwiYzduCNFnffRL0lFjFa_UCPHRvg6erOGpK4Rwh_jw,5296
+vsts_cli_code_common-0.1.0b1.dist-info/DESCRIPTION.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsts_cli_code_common-0.1.0b1.dist-info/METADATA,sha256=wvN5YdZtrqi51mpPQRnI7lrcREeOBeUBt9q_mdTqsGo,900
+vsts_cli_code_common-0.1.0b1.dist-info/RECORD,,
+vsts_cli_code_common-0.1.0b1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+vsts_cli_code_common-0.1.0b1.dist-info/metadata.json,sha256=oIXhSnrfvdYGlqyPkVM9iD961p-grUEBZeWaKwtG74E,1036
+vsts_cli_code_common-0.1.0b1.dist-info/top_level.txt,sha256=r-Q1CPVoe51isile67MY1CdCYdDF5a1ghu3YlrUuU0E,5
