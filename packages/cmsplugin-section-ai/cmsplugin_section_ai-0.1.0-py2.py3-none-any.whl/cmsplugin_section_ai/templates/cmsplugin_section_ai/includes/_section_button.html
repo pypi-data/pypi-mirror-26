@@ -1,0 +1,9 @@
+{% if section.section_buttons.all|length %}
+    <div class="cmsplugin-section__buttons {{ section.button_position.value }}">
+        {% for button in section.section_buttons.all %}
+            <a href="{{ button.link }}" class="btn {{ button.style.value }} {{ button.size.value }}">
+                {{ button.text }}
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
