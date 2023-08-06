@@ -1,0 +1,145 @@
+Metadata-Version: 1.1
+Name: django-auxilium
+Version: 0.1.2
+Summary: Django utility app to help in Django development
+Home-page: https://github.com/miki725/django-auxilium
+Author: Miroslav Shubernetskiy
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Django Auxilium
+        ===============
+        
+        .. image:: https://badge.fury.io/py/django-auxilium.svg
+            :target: https://badge.fury.io/py/django-auxilium
+            :alt: PyPI version
+        .. image:: https://travis-ci.org/miki725/django-auxilium.svg?branch=develop
+            :target: https://travis-ci.org/miki725/django-auxilium
+            :alt: Build Status
+        .. image:: https://coveralls.io/repos/miki725/django-auxilium/badge.svg?branch=master&service=github
+            :target: https://coveralls.io/github/miki725/django-auxilium?branch=master
+            :alt: Coverage
+        
+        * Free software: MIT license
+        * GitHub: https://github.com/miki725/django-auxilium
+        * Documentation: http://django-auxilium.readthedocs.org/
+        
+        About
+        -----
+        
+        Django Auxilium is a set of utilities packages as a Django app which
+        help working with Django. The word "auxilium" means help in Latin.
+        How this project came about is because I used to have an app for each
+        of my Django projects called ``core`` or ``common`` where I kept all of my
+        utility methods and classes, but after doing a couple of projects,
+        maintaining the same folder within all of the project became non-productive,
+        hence I refactored it into a separate reusable package.
+        
+        Docs
+        ----
+        
+        For some of the highlights about the library and the most useful features
+        you are encouraged to take a look at the documentation, particularly
+        `Highlights <http://django-auxilium.readthedocs.org/en/latest/highlights.html>`_ document.
+        
+        Installation
+        ------------
+        
+        Easiest way to install is by using ``pip``::
+        
+            $ pip install django-auxilium
+        
+        If you want to install from source code, you can also install using setup tools::
+        
+            $ python setup.py install
+        
+        Tests
+        -----
+        
+        Before running tests you need to install all test dependencies::
+        
+            $ pip install -r requirements-dev.txt
+            # or
+            $ make install
+        
+        Then to run tests you can use ``Makefile``::
+        
+            $ make test
+        
+        .. note::
+            This library uses both functional and doctests
+        
+        
+        
+        
+        History
+        -------
+        
+        0.1.2 (2017-11-22)
+        ~~~~~~~~~~~~~~~~~~
+        
+        * Fixed: Not removing all spaces between html tags.
+          Sometimes spaces matter for formatting.
+          For example ``<strong>Hello</strong> <i>World</i>`` cannot be minified any further.
+        
+        0.1.1 (2016-09-26)
+        ~~~~~~~~~~~~~~~~~~
+        
+        * Fixed: Cache properties now allow to set cache value via ``foo = bar``
+          syntax when cache descriptor has ``as_property == True``
+        
+        0.1.0 (2015-11-26)
+        ~~~~~~~~~~~~~~~~~~
+        
+        * First release on PyPI.
+        
+        
+        Credits
+        -------
+        
+        Development Lead
+        ~~~~~~~~~~~~~~~~
+        
+        * Miroslav Shubernetskiy - https://github.com/miki725
+        
+        Contributors
+        ~~~~~~~~~~~~
+        
+        None yet. Why not be the first?
+        
+        
+        License
+        -------
+        
+        The source code can be found at `Github <https://github.com/miki725/django-auxilium>`_.
+        
+        This library is licensed with `MIT License <http://opensource.org/licenses/MIT>`_::
+        
+            Copyright (c) Miroslav Shubernetskiy
+        
+            Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights to
+            use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+            the Software, and to permit persons to whom the Software is furnished to do so,
+            subject to the following conditions:
+        
+            The above copyright notice and this permission notice shall be included in all
+            copies or substantial portions of the Software.
+        
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+            INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+            PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+            HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+            OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+            SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Keywords: django
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
