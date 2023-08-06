@@ -1,0 +1,12 @@
+gpkg/hello/MODEL,sha256=isYNBMCCoNIDBX9T4d1walcscuOGn7g9mGxTtgxXqic,1673
+gpkg/hello/msg.txt,sha256=C8lrT0dXqAwKP5ubwU3nieXrHXVlmQTeaCQc_HAw594,35
+gpkg/hello/say.py,sha256=aulcnEWLzzKblDYzoxVxNXg92xLVl1kI0EOQJNecejs,661
+gpkg.hello-0.1.0.dev5.dist-info/DESCRIPTION.rst,sha256=LPIUuXUZywOgZOBF6Ybkb-OpN4rH9jG73J4MR_6fhI4,1232
+gpkg.hello-0.1.0.dev5.dist-info/METADATA,sha256=3A3ZAEL_3fpERNkLEtc5O8C2BAhjxdxm8L8z60CqgqA,1536
+gpkg.hello-0.1.0.dev5.dist-info/PACKAGE,sha256=H1I9hPQDvH8jguVjXo98wrepuTCHuZeW79jCn7gbgQg,321
+gpkg.hello-0.1.0.dev5.dist-info/RECORD,,
+gpkg.hello-0.1.0.dev5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gpkg.hello-0.1.0.dev5.dist-info/entry_points.txt,sha256=RDzZfCSKKsiR6YtIUQIKObjJsp8zqTa1ZU8i3m8VQ1I,171
+gpkg.hello-0.1.0.dev5.dist-info/metadata.json,sha256=g9OUFKTcoCmBYTnBiqddEI0627Pi1R9EHJhH4h2qx78,714
+gpkg.hello-0.1.0.dev5.dist-info/namespace_packages.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.hello-0.1.0.dev5.dist-info/top_level.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
