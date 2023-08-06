@@ -1,0 +1,4 @@
+requests
+docopt
+publicsuffixpy3dns
+pyspf==2.0.11
