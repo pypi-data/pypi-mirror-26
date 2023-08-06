@@ -1,0 +1,10 @@
+awssh/__init__.py,sha256=Pa3XQ1an267QmhyFYEM1WiT3md1GzUx-dkEckQn7yLk,155
+awssh/awssh.py,sha256=GhNMNAkZ297Ophg9cb9wk0f4YPytQG0vGPZAmYFl150,5289
+awssh/cli.py,sha256=XANst5CHKRt4lvTx5xKBH_WGqsnptBN-Is7bIx-BJik,9410
+jh_awssh-0.29.0.dist-info/DESCRIPTION.rst,sha256=a0B8af-k8ym7g1Z82SrY5n1Utjmy_EV1maEZCqbNFKU,941
+jh_awssh-0.29.0.dist-info/METADATA,sha256=Voec3gYckXuvM-8_ZI13nqBtU0oE5vVWlKeC14_V44A,1512
+jh_awssh-0.29.0.dist-info/RECORD,,
+jh_awssh-0.29.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jh_awssh-0.29.0.dist-info/entry_points.txt,sha256=u1DrN92OTasdKX3PftyNmqzlCUVGw3_YwpriqPMQmRQ,42
+jh_awssh-0.29.0.dist-info/metadata.json,sha256=jm2hNxcHXL9jN-q6VoVZIeHzqI6AFcjmz9Ob66tWY4c,974
+jh_awssh-0.29.0.dist-info/top_level.txt,sha256=q5v0Li_G70HPEAtnVKwOJ3rmHuxMT6-gNJEcm_HZ-Ro,6
