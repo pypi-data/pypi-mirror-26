@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: ktio
+Version: 0.1
+Summary: A collection of functions for fasta/fastq i/o in Python
+Home-page: https://github.com/cschu/ktio
+Author: cschu
+Author-email: cschu1981@gmail.com
+License: MIT
+Keywords: sequence i/o fasta fastq
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
+
