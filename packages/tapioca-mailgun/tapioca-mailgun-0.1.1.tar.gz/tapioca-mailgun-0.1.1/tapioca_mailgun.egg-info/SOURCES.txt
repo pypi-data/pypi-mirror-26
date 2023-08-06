@@ -1,0 +1,11 @@
+README.md
+setup.py
+tapioca_mailgun/__init__.py
+tapioca_mailgun/resource_mapping.py
+tapioca_mailgun/tapioca_mailgun.py
+tapioca_mailgun.egg-info/PKG-INFO
+tapioca_mailgun.egg-info/SOURCES.txt
+tapioca_mailgun.egg-info/dependency_links.txt
+tapioca_mailgun.egg-info/not-zip-safe
+tapioca_mailgun.egg-info/requires.txt
+tapioca_mailgun.egg-info/top_level.txt
