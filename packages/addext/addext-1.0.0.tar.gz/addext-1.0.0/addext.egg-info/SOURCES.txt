@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+addext/__init__.py
+addext/addext.py
+addext/pronom-xml-to-sqlite.py
+addext/pronom.db
+addext.egg-info/PKG-INFO
+addext.egg-info/SOURCES.txt
+addext.egg-info/dependency_links.txt
+addext.egg-info/requires.txt
+addext.egg-info/top_level.txt
