@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: Pysam-AltAnalyze
+Version: 1.0
+Summary: Modified pysam for use of AltAnalyze on windows
+Home-page: http://www.altanalyze.org
+Author: Nathan Salomonis
+Author-email: nathan.salomonis@cchmc.org
+License: Apache
+Keywords: bioinformatics,transcriptome analysis,gene expression
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: cython (>=0.12.1)
+
+pysam for AltAnalyze
+=======================
+
+This is a version of pysam that has been modified for use by AltAnalyze on windows platforms.
+
+
