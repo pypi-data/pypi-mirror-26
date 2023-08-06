@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: kaidoku
+Version: 0.2.1
+Summary: Player, solver and creater of sudoku puzzles
+Home-page: https://sekika.github.io/kaidoku/
+Author: Katsutoshi Seki
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Kaidoku: Player, solver and creater of sudoku puzzles
+        =======================
+        
+        Project Home Page
+        https://sekika.github.io/kaidoku/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
