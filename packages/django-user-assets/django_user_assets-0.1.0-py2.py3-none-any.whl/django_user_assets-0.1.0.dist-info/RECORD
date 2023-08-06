@@ -1,0 +1,13 @@
+django_user_assets-0.1.0.dist-info/DESCRIPTION.rst,sha256=DI4DqF7Whx22R-7mTLyTKO869flVq3wntsHYnMQet_s,1640
+django_user_assets-0.1.0.dist-info/METADATA,sha256=VxzrL4qje2U0N02y-AhJA9OtljVh9nmmmJhFFJfVwpk,2558
+django_user_assets-0.1.0.dist-info/RECORD,,
+django_user_assets-0.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_user_assets-0.1.0.dist-info/metadata.json,sha256=ywg4LoFk3qCXjLY8-_YIV25Vw32SZhH3iJeeadmLCBI,1044
+django_user_assets-0.1.0.dist-info/top_level.txt,sha256=cbyQ7PboGmUsE6PgkYqidkcSsJ9RBtddWuLnegDlNdo,12
+user_assets/__init__.py,sha256=EDC75cPJJhA_90IqU92fF51trEWTB_tvtVJhZh1vgmI,79
+user_assets/admin.py,sha256=4vfh3UdZmu3hyr8-wIbbn1HY9iupX12lWk9mwQlJLvw,495
+user_assets/apps.py,sha256=wBpHd8rX33Q4yUld9EjPfu6DoY3QJeWj4ieTyt5e0Tc,179
+user_assets/context_processors.py,sha256=q_t0EghPz6m2FpUkx1myYiw_Yp0mym9ZdCfMgVswTCM,444
+user_assets/models.py,sha256=mXwaQwNIo0i22GPchKi7TPGVsa4zP_qTkU3D9mNStp0,1017
+user_assets/migrations/0001_initial.py,sha256=mtBoJJ01Wu6-cMhLh-aJeyxvIA9n35DSTtNUPCsBqvQ,2113
+user_assets/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
