@@ -1,0 +1,3 @@
+[console_scripts]
+captchasolver = captchasolver.cmdline:main
+
