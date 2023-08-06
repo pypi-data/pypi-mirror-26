@@ -1,0 +1,53 @@
+Metadata-Version: 2.0
+Name: z2pack
+Version: 2.1.1
+Summary: Automating the computation of topological numbers of band-structures
+Home-page: http://z2pack.ethz.ch
+Author: Dominik Gresch
+Author-email: greschd@gmx.ch
+License: GPL
+Description-Content-Type: UNKNOWN
+Keywords: topology,topological,invariant,bandstructure,chern,z2,solid-state,tight-binding
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: decorator
+Requires-Dist: blessings
+Requires-Dist: sortedcontainers
+Requires-Dist: msgpack-python
+Requires-Dist: fsc.locker
+Requires-Dist: fsc.export
+Requires-Dist: fsc.formatting
+Requires-Dist: fsc.iohelper
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme; extra == 'doc'
+Provides-Extra: plot
+Requires-Dist: matplotlib; extra == 'plot'
+Provides-Extra: tb
+Requires-Dist: tbmodels (>=1.1.1); extra == 'tb'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: matplotlib; extra == 'test'
+Requires-Dist: tbmodels (>=1.1.1); extra == 'test'
+
+Z2Pack is a tool that computes topological invariants and illustrates non-trivial features of Berry curvature. It works as a post-processing tool with all major first-principles codes (z2pack.fp), as well as with tight-binding models (z2pack.tb) and explicit Hamiltonian matrices -- such as the ones obtained from a k.p model (z2pack.hm).
+
+It tracks the charge centers of hybrid Wannier functions - as described `here <http://journals.aps.org/prb/abstract/10.1103/PhysRevB.83.235401>`_ - to calculate these topological invariants.
+
+The Wannier charge centers are computed from overlap matrices that are obtained either directly (for tb) or via the Wannier90 code package (fp).
+
+- `Documentation <http://z2pack.ethz.ch/doc>`_
+- `Online interface <http://z2pack.ethz.ch/online>`_ (tight-binding only)
+
+
