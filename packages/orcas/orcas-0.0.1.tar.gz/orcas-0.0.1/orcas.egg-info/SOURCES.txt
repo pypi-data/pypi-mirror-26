@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.cfg
+setup.py
+orcas/__init__.py
+orcas/cli.py
+orcas/face_tool.py
+orcas/logger.py
+orcas/storage.py
+orcas.egg-info/PKG-INFO
+orcas.egg-info/SOURCES.txt
+orcas.egg-info/dependency_links.txt
+orcas.egg-info/entry_points.txt
+orcas.egg-info/not-zip-safe
+orcas.egg-info/requires.txt
+orcas.egg-info/top_level.txt
