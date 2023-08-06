@@ -1,0 +1,85 @@
+Metadata-Version: 1.1
+Name: turing-chatroom-bus
+Version: 0.0.1.post0.dev12
+Summary: Chatroom by Socket.IO
+Home-page: UNKNOWN
+Author: Swind Ou
+Author-email: swind@code-life.info
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: turing-chatroom-bus
+        ------------------------------------------------
+        
+        Response
+        ================================================
+        
+        Success
+        ################################################
+        
+        .. code-block:: json
+        
+            {
+              "_uid": <The id of the request>,
+              "success": <true or false>,
+              "error": <[Optional] error message>
+            }
+        
+        
+        Register
+        =================================================
+        
+        client
+        #################################################
+        
+        .. code-block:: json
+        
+            {
+              "_uid": <uuid>,
+              "path": <client path>
+            }
+        
+        RPC
+        =================================================
+        
+        RPC Request
+        #################################################
+        
+        .. code-block:: json
+        
+            {
+              "_uid": <uuid>,
+              "path": <target path>,
+              "payload": {
+                "id": <RPC request id>,
+                "method": <method name>,
+                "parameters": <parameters>
+              }
+            }
+        
+        RPC Response
+        #################################################
+        
+        .. code-block:: json
+        
+            {
+              "_uid": <uuid>,
+              "path": <RPC request source path>,
+              "payload": {
+                "id": <RPC request id>,
+                "result": <RPC result>,
+                "error": <error message>
+              }
+            }
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Testing

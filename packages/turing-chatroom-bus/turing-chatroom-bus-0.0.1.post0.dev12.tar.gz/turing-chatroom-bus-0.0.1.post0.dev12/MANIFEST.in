@@ -1,0 +1,4 @@
+include versioneer.py
+include chatroom/_version.py
+include index.html
+include README.rst
