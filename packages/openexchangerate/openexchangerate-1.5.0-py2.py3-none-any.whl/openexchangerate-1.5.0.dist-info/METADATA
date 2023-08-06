@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: openexchangerate
+Version: 1.5.0
+Summary: OpenExchangeRates API client for Python 3.7+.
+Home-page: https://github.com/juancarlospaco/openexchangerate#openexchangerate
+Author: Juan Carlos
+Author-email: juancarlospaco@gmail.com
+License: GPLv3+ LGPLv3+
+Description-Content-Type: UNKNOWN
+Keywords: bitcoin price exchange_prices openexchangerates minimalism
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+
+OpenExchangeRates API client for Python 3.7+,
+worldwide exchange prices + Bitcoin price,
+can calculate base price locally offline with free api key,
+can be used as context manager or iterator, namedtuple and dict outputs.
+
