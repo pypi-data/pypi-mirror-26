@@ -1,0 +1,3 @@
+[console_scripts]
+sereh = sereh.commandline:main
+
