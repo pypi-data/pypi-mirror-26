@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: brizzy
+Version: 0.1
+Summary: Tools for plotting Oxford Nanopore and other long-read data.
+Home-page: https://github.com/conchoecia/brizzy
+Author: Darrin Schultz
+Author-email: dts@ucsc.edu
+License: GPLv3
+Description: 
+                  'brizzy' is a package for easily taking spectra from ocean optics
+              spectrometers. No more hitting the pause button every time you want a
+              spectrum!
+        
+              You can visit the gitub page for more detailed information here:
+              https://github.com/conchoecia/brizzy
+              
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Requires: python (>3.0)
+Provides: brizzy

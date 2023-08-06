@@ -1,0 +1,8 @@
+setup.py
+brizzy.egg-info/PKG-INFO
+brizzy.egg-info/SOURCES.txt
+brizzy.egg-info/dependency_links.txt
+brizzy.egg-info/entry_points.txt
+brizzy.egg-info/not-zip-safe
+brizzy.egg-info/requires.txt
+brizzy.egg-info/top_level.txt
