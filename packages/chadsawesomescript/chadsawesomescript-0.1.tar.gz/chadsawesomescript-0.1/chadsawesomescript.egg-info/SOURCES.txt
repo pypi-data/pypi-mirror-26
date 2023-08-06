@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+ChadsPackage/__init__.py
+ChadsPackage/dataconnection.py
+ChadsPackage/hello.py
+ChadsPackage/iamawesome.py
+chadsawesomescript.egg-info/PKG-INFO
+chadsawesomescript.egg-info/SOURCES.txt
+chadsawesomescript.egg-info/dependency_links.txt
+chadsawesomescript.egg-info/top_level.txt
