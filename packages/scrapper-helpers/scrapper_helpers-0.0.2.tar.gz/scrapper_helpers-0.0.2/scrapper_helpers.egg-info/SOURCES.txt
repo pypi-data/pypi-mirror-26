@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+scrapper_helpers/__init__.py
+scrapper_helpers/utils.py
+scrapper_helpers.egg-info/PKG-INFO
+scrapper_helpers.egg-info/SOURCES.txt
+scrapper_helpers.egg-info/dependency_links.txt
+scrapper_helpers.egg-info/top_level.txt
