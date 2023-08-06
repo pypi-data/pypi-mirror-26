@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+modis/__init__.py
+modis/_download.py
+modis/_search.py
+modis/coordinates.py
+modis/core.py
+modis/products.py
+modis_util.egg-info/PKG-INFO
+modis_util.egg-info/SOURCES.txt
+modis_util.egg-info/dependency_links.txt
+modis_util.egg-info/top_level.txt

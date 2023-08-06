@@ -1,0 +1,63 @@
+Metadata-Version: 1.0
+Name: modis-util
+Version: 0.0.1
+Summary: Modis-util is a tool to make it easy to search and download MODIS data from AWS
+Home-page: https://github.com/whistler/modis-util
+Author: Ibrahim Muhammad
+Author-email: ibmmmm@gmail.com
+License: MIT License
+
+Copyright (c) 2017 Ibrahim Muhammad
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+Description: Modis-Util
+        ========================
+        
+        Modis-Util is a tool that makes it easy to search and download `MODIS <https://modis.gsfc.nasa.gov/>`_ data on `AWS
+        <https://aws.amazon.com/public-datasets/modis/>`_.
+        
+        Install
+        +++++++
+        
+        Install this package using pip::
+        
+            pip install modis-util
+        
+        
+        Usage
+        +++++
+        
+        Search for a scene::
+        
+            import modis
+            import datetime
+            scenes = modis.search(modis.products.MCD43A4_006, 49.2827, 123.1207, datetime.date(2017, 11, 15))
+        
+        Download complete dataset for a scene::
+        
+            modis.download('', 'modis_data')
+        
+        Download only certain files of a scene, you can use any part of the filename in the `include` list::
+        
+            modis.download('', include=['BROWSE'])
+        ---------------
+        
+        
+        
+Platform: UNKNOWN
