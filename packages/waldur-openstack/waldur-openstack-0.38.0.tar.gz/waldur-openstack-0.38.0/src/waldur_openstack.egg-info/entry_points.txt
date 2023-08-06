@@ -1,0 +1,4 @@
+[nodeconductor_extensions]
+openstack = waldur_openstack.openstack.extension:OpenStackExtension
+openstack_tenant = waldur_openstack.openstack_tenant.extension:OpenStackTenantExtension
+
