@@ -1,0 +1,3 @@
+[console_scripts]
+prochestra = prochestra:command_line
+
