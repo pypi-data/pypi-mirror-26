@@ -1,0 +1,12 @@
+arabic_reshaper/__init__.py,sha256=91TmXVjPwojDVtNLVBULLpxe5nzq2K55howODmzXDTk,160
+arabic_reshaper/__version__.py,sha256=YHfSoqxCUyNphrTJsW3Ed3e2IVM5_H1IYKii1J5IND4,22
+arabic_reshaper/arabic_reshaper.py,sha256=l8YM5KG9dJaN0_ZJGaKQM3MS2PsYrV4UpBMOnNFkWI4,11946
+arabic_reshaper/default-config.ini,sha256=w9NY164ptBFSECLWO6TEGZU7SWDdcRLIam2l-pI91Gw,12148
+arabic_reshaper/letters.py,sha256=1QuW2WYHm8Y8PRMgryrPFZwFRVhoByyjAIrK-NLlFcs,7266
+arabic_reshaper/ligatures.py,sha256=30p_JrBPEvRdjWYFQeiX0MY63V2JM-EWb4-Gdn7C9W4,33248
+arabic_reshaper-2.0.9.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+arabic_reshaper-2.0.9.dist-info/METADATA,sha256=Atx2Odc-2af-Qq_iA47l7frxY1nxKkO_FHOr4je7O0w,815
+arabic_reshaper-2.0.9.dist-info/RECORD,,
+arabic_reshaper-2.0.9.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+arabic_reshaper-2.0.9.dist-info/metadata.json,sha256=onGkpzuQFam1sb0PM1t73l9s9A1UKYYNrZY1KdoRZ6k,1027
+arabic_reshaper-2.0.9.dist-info/top_level.txt,sha256=4Epxfw4HxajjgNm5LzgmVKcJZ3vEc5VxEFidlKs9Feo,16
