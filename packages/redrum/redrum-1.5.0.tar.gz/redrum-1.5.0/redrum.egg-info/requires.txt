@@ -1,0 +1,7 @@
+PyYAML
+requests
+configparser
+
+[tune]
+matplotlib
+numpy
