@@ -1,0 +1,72 @@
+CHANGES
+=======
+
+0.5.2
+-----
+
+* api/v1/config/dir\*s\*
+* clean log
+* update media info in db before background task
+* update README
+* add test vector for download and rename use case
+* remove useless new line
+* remove useless badges
+* Add discord badge
+* updating npm dependencies
+* try to clean more the docker img
+* remove app dir setting
+* Add Log page
+
+0.5.1
+-----
+
+* Conditionalize disc scanner by conf
+* Put sanic-transmute in prod
+* Disc scanner: filter video files
+* task status: active and started
+* simple disc scanner implementation
+
+0.5.0
+-----
+
+* change default main color
+* auto refresh in all pages
+* Status page
+* split config rest api
+* DirNameCfg stores absolute path
+* config dir rest api
+* versions api
+* fix periodic init
+* update coverages.io badge
+* split periodic tasks in own module
+* Register periodic schedulers using APScheduler
+* queued task + unit tests
+* try pytest-sugar
+* dump junit.xml report
+
+0.4.11
+------
+
+* update api for transmute
+* try sanic transmute for swagger model
+* make update should keep dev environment
+* sync test should still use unittest.TestCase
+* minor fixes
+* Note about MANIFEST.in
+* use MANIFEST.in to exclude files in sdist
+* using asynctest.TestCase
+* # coding: utf-8 simpler
+* remove \_\_import\_\_ since python 3
+* created queued task
+* Status page auto refresh
+
+0.4.10
+------
+
+* flake8 check bad list comprehension
+* flake8 to enforce encodings header
+* Fix background task reports
+* refactor task managers & remove periodic tasks
+* Rename DopplerrExecutors in TaskManager
+* reworked subliminal wrapper
+* Minor fixes
