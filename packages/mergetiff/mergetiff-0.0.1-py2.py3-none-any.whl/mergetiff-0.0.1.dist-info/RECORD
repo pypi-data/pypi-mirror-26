@@ -1,0 +1,11 @@
+mergetiff/__init__.py,sha256=uooJbES7NPhsHcT5JNbtsqWJSOqCI1VtN0kL-giuUxo,19
+mergetiff/cli.py,sha256=RR1PfILXr6l4XZqpUZRzmS__u3AYAvmsKUgZMjB8JFo,819
+mergetiff/lib.py,sha256=Mu313BBI4vSMjbgCOj-EUo15XODE5dD6Ed47Off1PPE,1642
+mergetiff-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mergetiff-0.0.1.dist-info/METADATA,sha256=vPdg3CLdMlX3kgehb_g8-vZqCr4LidOXXk7d34UfJCk,595
+mergetiff-0.0.1.dist-info/RECORD,,
+mergetiff-0.0.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+mergetiff-0.0.1.dist-info/entry_points.txt,sha256=4QxmE-q2jCFT8P1GUE1zuVkWlO_8LJT7qaZ1I-DRAKQ,50
+mergetiff-0.0.1.dist-info/metadata.json,sha256=zLKs0vwjQd0R1TQoMaGBNnsXUwgml3_x8qpPaq8k8pM,930
+mergetiff-0.0.1.dist-info/top_level.txt,sha256=sJA8YFjaCGXcd5QA2tCkGeets0-9ofLhnoADPHswd4s,10
+mergetiff-0.0.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
