@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: dds-pylib
+Version: 0.1
+Summary: Diversified Data Python Utilies Library
+Home-page: https://bitbucket.org/ddsbitbucket/dds_pylib
+Author: Stephen Funkhouser
+Author-email: it@ddssoft.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: dds_pylib
+        =========
+        
+        **Diversified Data Python Helper Library**
+        
+        List of available utilities:
+        
+        1. dates
+            1. classes
+                1. Gregorian()
+            1. functions
+                1. todays_julian()
+                1.  gregorian2julian()
+                1.  julian2gregorian()
+        
+        
+Keywords: integer julian date
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
