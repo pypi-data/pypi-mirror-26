@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.cfg
+setup.py
+pico/__init__.py
+pico/client.js
+pico/client.py
+pico/decorators.py
+pico/pragmaticjson.py
+pico/server.py
+pico/wrappers.py
+pico.egg-info/PKG-INFO
+pico.egg-info/SOURCES.txt
+pico.egg-info/dependency_links.txt
+pico.egg-info/pbr.json
+pico.egg-info/requires.txt
+pico.egg-info/top_level.txt
