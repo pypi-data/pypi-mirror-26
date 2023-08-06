@@ -1,0 +1,14 @@
+dmarcmsg/__init__.py,sha256=b4sjVcFAej4J5Ox2cbSvXv2jnydV4QEImNX9k7G0Pf8,146
+dmarcmsg/__init__.pyc,sha256=CaFh6T97wxaedjC7ecy3Auu5OcYKYCzrwMHAlB3LXZk,335
+dmarcmsg/construct.py,sha256=5rggwModFZrC09WZcSHD-ohBB_Gt7WXtpIHgoKNzE7I,11376
+dmarcmsg/construct.pyc,sha256=DGA8LfluX0Ha0F8-8pcovE9_oyYaaWIj-NH6rgxe0Z0,5790
+dmarcmsg/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmarcmsg/util/__init__.pyc,sha256=79m4qeJSfkL0bvdQWtLC4FRv2age6TK_i15WGQA41Qo,112
+dmarcmsg/util/content_disposition.py,sha256=ohSAACLSX-OvHj6aBptVBvGrB5qqazXNUWZLkTxW6DQ,1085
+dmarcmsg/util/content_disposition.pyc,sha256=OJQPfPEg-DVsbuDHM19EXoCcqWVox7NGiUZjNTspxL4,809
+dmarcmsg-0.0.7.dist-info/DESCRIPTION.rst,sha256=blCAIHopQc601kb8GRSzpetvEqCT9x3rIWKEIHrjwaw,226
+dmarcmsg-0.0.7.dist-info/METADATA,sha256=71dM6wYiMLRSesYBpSHr3rJa_pYH0NqNW0ribC8VOzs,1578
+dmarcmsg-0.0.7.dist-info/RECORD,,
+dmarcmsg-0.0.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dmarcmsg-0.0.7.dist-info/metadata.json,sha256=ObunwgdGwZcXlh76LmnJW1_FeRW8QZyiymfNS9dMDqE,1416
+dmarcmsg-0.0.7.dist-info/top_level.txt,sha256=Q_02cihpt6MW-zvArLOhsqE8N_BTwgMxTn5hiy1zhTQ,9
