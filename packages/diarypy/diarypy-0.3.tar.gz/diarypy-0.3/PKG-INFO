@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: diarypy
+Version: 0.3
+Summary: Diary to create notebooks and store intermediate results and figures
+Home-page: https://github.com/perellonieto/DiaryPy
+Author: Miquel Perello Nieto
+Author-email: perello.nieto@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/perellonieto/DiaryPy/archive/0.3.tar.gz
+Description: UNKNOWN
+Keywords: diary,notebook,logging,figures,experiments
+Platform: UNKNOWN
