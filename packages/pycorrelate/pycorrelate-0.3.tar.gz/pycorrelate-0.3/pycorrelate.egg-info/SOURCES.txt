@@ -1,0 +1,38 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+docs/Makefile
+docs/api.rst
+docs/authors.rst
+docs/conf.py
+docs/contributing.rst
+docs/history.rst
+docs/index.rst
+docs/installation.rst
+docs/make.bat
+docs/theory.rst
+docs/usage.rst
+docs/notebooks/Simple FCS example.ipynb
+docs/notebooks/pycorrelate-examples.ipynb
+docs/notebooks/.ipynb_checkpoints/Simple FCS example-checkpoint.ipynb
+docs/notebooks/.ipynb_checkpoints/pycorrelate examples-checkpoint.ipynb
+docs/notebooks/.ipynb_checkpoints/pycorrelate-examples-checkpoint.ipynb
+pycorrelate/__init__.py
+pycorrelate/_version.py
+pycorrelate/pycorrelate.py
+pycorrelate/utils.py
+pycorrelate.egg-info/PKG-INFO
+pycorrelate.egg-info/SOURCES.txt
+pycorrelate.egg-info/dependency_links.txt
+pycorrelate.egg-info/not-zip-safe
+pycorrelate.egg-info/requires.txt
+pycorrelate.egg-info/top_level.txt
+tests/__init__.py
+tests/nbrun.py
+tests/test_pycorrelate.py
