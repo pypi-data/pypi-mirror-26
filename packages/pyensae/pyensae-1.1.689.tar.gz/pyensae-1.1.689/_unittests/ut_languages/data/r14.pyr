@@ -1,0 +1,2 @@
+def onefunction():
+    r = df[5, :]

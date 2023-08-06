@@ -1,0 +1,6 @@
+from python2r_helper import dotry
+
+
+def onefunc():
+    m = dotry(func(infile=bf, csh=csh, pmod=""))
+
