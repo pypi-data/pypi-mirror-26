@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: python3-brisa
+Version: 0.10.1
+Summary: UPnP framework
+Home-page: https://garage.maemo.org/projects/brisa/
+Author: Leandro Melo de Sales (leandroal)
+Author-email: leandro@embedded.ufcg.edu.br
+License: MIT
+Download-URL: https://garage.maemo.org/projects/brisa/
+Description: BRisa is an UPnP framework written in Python. It provides facilities for creating UPnP devices and control points. The Python-BRisa API comprehends internet messaging protocols and basic services (TCP, UDP, HTTP, SOAP, SSDP), networking facilities, threading management, logging, configurations, web server and more. Python-BRisa's runs on the maemo plataform, Linux and on Mac with a few tweaks. We would really appreciate community feedback, bug reports and feature requests concerning attempts to run it on other systems.
+Keywords: UPnP,Control Point,DLNA,Device,Service
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia
