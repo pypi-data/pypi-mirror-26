@@ -1,0 +1,37 @@
+Metadata-Version: 1.2
+Name: MagicBus
+Version: 4.1.0
+Summary: A pub/sub state machine
+Home-page: https://github.com/cherrypy/MagicBus
+Author: CherryPy Team
+Author-email: team@cherrypy.org
+License: UNKNOWN
+Description: .. image:: https://img.shields.io/pypi/v/magicbus.svg
+           :target: https://pypi.org/project/magicbus
+        
+        .. image:: https://img.shields.io/pypi/pyversions/magicbus.svg
+        
+        .. image:: https://img.shields.io/travis/cherrypy/magicbus/master.svg
+           :target: http://travis-ci.org/cherrypy/magicbus
+        
+        The Process Bus is a publish/subscribe architecture that
+        loosely connects components with services.
+        
+        Testing
+        =======
+        
+        To run the test suite, install and run `tox
+        <https://pypi.org/project/tox>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=2.7
