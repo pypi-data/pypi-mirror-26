@@ -1,0 +1,155 @@
+CHANGES
+=======
+
+0.9.2
+-----
+
+* Fix: oslo.db remove the option idle\_timeout
+* Serialize the text
+* Update README
+* Update AUTHORS
+
+0.9.0
+-----
+
+* Set the version to 0.9.0
+* Add two APIs to register content type
+
+0.8.0
+-----
+
+* Update the version to 0.8.0
+* Corrent the import of oslo\_service.wsgi.Router
+* Remove the dependent package of oslo\_log
+* Update wsgi.py
+
+0.7.5
+-----
+
+* Update the version info
+* import all from \_\_future\_\_
+
+0.7.4
+-----
+
+* Set the version to 0.7.4
+* Fix a bug
+* Update PKG-INFO
+
+0.7.3
+-----
+
+* Set the version to 0.7.3
+* Fix a bug
+* Update README.rst
+
+0.7.2
+-----
+
+* Set the version to 0.7.2
+* Add the introduction for API of TaskServer
+* Add the introduction for API of TCPServer
+* Add the introduction for API of PoolServer
+* Add the example of TCPServer
+* Add the example of TaskServer
+* Add the example for PoolServer
+* Rename example\_server.py to wsgi\_server-example.py
+* Update the example
+* Set the version to 0.7.1
+* Fix a bug about serializer of Response
+
+0.7
+---
+
+* Add \_\_init\_\_.py to contrib
+* Update the content\_types of request and response supported by default
+* Update the doc
+* Move some modules into contrib
+* Delete the needless code
+
+0.6.2
+-----
+
+* Set the version to 0.6.2
+* Correct status code when content\_type is invalid
+
+0.6.1
+-----
+
+* Set the version to 0.6.1
+* Remove some dependent packages
+* Remove METADATA
+* Update README and the package information
+* Update the package manager information
+
+0.6
+---
+
+* Set the version to 0.6
+* Add the property 'accept\_content\_type' for Request
+* Allow the user to assign content\_type mandatorily
+* Modify the default value of the option, pool\_size
+* Update README.md
+
+0.5
+---
+
+* Set the version to 0.5
+* Fix a bug and add the traceback of exception
+* Update the default of pool\_size from None to 1024
+* Update pool\_size from None to 1024
+
+0.4
+---
+
+* Set the version to 0.4
+* Add the HOME page
+* Add 'methods\_with\_body' to 'Resource.\_\_init\_\_'
+
+0.3
+---
+
+* Update the version to 0.3
+* Add the server based on Task Pool
+* Add the daemon function
+* Add the convenient function of Middleware
+* Update the doc
+* Remove the Changelog file
+* Add the log information for TaskServer
+
+0.2
+---
+
+* Set the version to 0.2
+* Add some servers
+* Update the usage
+
+0.1
+---
+
+* Add the ignore of PyCharm project
+* Update the example and the use introduction
+* Update README.md
+* Add the log default set for the example
+* Add the file AUTHOR
+* Replace \_BaseException with ExceptionBase
+* Corrent the code
+* Update the code, but incompletely. NOT USE
+* Correct a mistake
+* Fix a bug
+* Catch and handle the exception
+* Fix the definition of \`BaseException\`
+* Convert the exception to webob.exc.HTTPException
+* Add the install and the packaging sdist function
+* Correct a error
+* Add some exception classes
+* Add the support of 'text/plain'
+* Modify the config
+* correct a bug
+* Repair the header \`Accept\` in Request
+* Repair the best match content type
+* Corrent the error in requirements.txt
+* Add the example of db
+* move examples
+* First commit
+* Initial commit

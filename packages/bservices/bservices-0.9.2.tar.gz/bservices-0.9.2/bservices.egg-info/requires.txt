@@ -1,0 +1,7 @@
+six
+WebOb
+greenlet
+eventlet
+oslo.db
+oslo.config
+oslo.service>=0.10.0
