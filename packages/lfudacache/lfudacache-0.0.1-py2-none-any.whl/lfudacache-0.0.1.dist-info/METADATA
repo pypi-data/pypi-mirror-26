@@ -1,0 +1,297 @@
+Metadata-Version: 2.0
+Name: lfudacache
+Version: 0.0.1
+Summary: Less Frequently Used with Dynamic Aging
+Home-page: https://github.com/ergoithz/lfudacache
+Author: Felipe A. Hernandez
+Author-email: ergoithz@gmail.com
+License: MIT
+Download-URL: https://github.com/ergoithz/lfudacache/archive/0.0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: cache,memoize
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+
+# lfudacache
+
+Python implementation Less Frequently Used with Dynamic Aging (LFUDA).
+
+## Usage
+
+```python
+import lfudacache
+
+cache = LFUDCache(1000)
+cache.set('value')
+cache.get('value')  # 'value'
+```
+
+A function memoization decorator is also provided. Please note that,
+unhashable arguments will raise `TypeError` just like python's standard
+`functools.lru_cache`.
+
+```python
+import lfudacache
+
+@lfudacache.memoize(1000)
+def my_cached_function(attr):
+    # a lot of work here
+    return attr
+```
+
+## Rationale
+
+Although I found a lot of LFU implementations for Python, I were unable to get
+a LFUDA one.
+
+In the other hand, LRU and LFU object-based implementations are quite
+inefficient for such performance-critical use cases, due to python attribute
+lookup overhead (thats why python's standard lru_cache implementation is
+purely functional).
+
+Our implementation follows a hybrid approach: the methods make extensive use
+of python closures, while providing an object-oriented interface to those
+(static) methods, as they use a different intermediate dynamic class for every
+instance, holding said state.
+
+### Why Less Frequently Used with Dynamic Aging (LFUDA)
+
+LFUDA evicts less used items when they become too old, rejecting new cache
+items until then.
+
+In our implementation, an item become too old when its cache hit count lags
+behind the entire cache misses.
+
+This approach prevents eviction of very used items in favor of potentially less
+used items.
+
+
+### Why not Less Recently Used (LRU)
+
+LRU is a very simple approach to caching, evicting older unused items.
+
+This approach is optimal when the most relevant items are accessed frequently,
+but this is not always the case.
+
+The drawback is that very used items will be evicted when a lot of new items
+are added to cache, even if they will never be accesed again.
+
+This problem is usually minimized increasing the cache size until potentially
+irrelevant cache items become only a tiny fraction of the entire cache, but
+this is not a possibility on all cases (ie. caching huge datasets).
+
+### Why not Less Frequenty Used (LFU)
+
+LFU is our base algorithm, which evicts less used items.
+
+This approach has one major drawback when cache is full: a new saved item
+could cause the eviction of an item more frequently used than the new one.
+This is called cache pollution.
+
+To minimize this problem, it's common to implement two different item storages,
+with different eviction policies. Please note while this method reduces said
+cache pollution issue, it does not fix it.
+
+## Documentation
+
+
+### make_key(args, kwargs, tuple=tuple, hash=hash)
+
+```
+Hash function for function arguments.
+
+:param args: argument iterable
+:type args: iterable
+:param kwargs: keyword argument dict-like object
+:type kwargs: dict
+:returns: hash of arg and kwargs
+:rtype: int
+```
+
+### LFUDACache
+
+```
+Less Frequenty Used with Dynamic Aging cache.
+
+Implementation note:
+
+    Instances will be created from their own different subclass.
+
+    As a side effect, the effective instance type won't be this class, so
+    avoid :func:`type` conparisons and use :func:`isinstance` instead.
+
+How it works:
+
+* Every cache hit increases item `HIT` counter.
+* Every cache miss increases `THRESHOLD`, until max `HITS` is reached.
+* When full, a new cache item will only be accepted if `THRESHOLD` is
+  above or equals the less frequently used item's HIT counter. Said
+  item is evicted.
+* When a new item is cached, its `HIT` counter is set equal to `THRESHOLD`
+  itself.
+* When an existing item is updated, its `HIT` counter is incremented
+  by 1 above `THRESHOLD`.
+* When any item's `HIT` reaches `MAX_HITS`, said value is substracted
+  from every `HIT` and `THRESHOLD` counter.
+```
+
+#### LFUDACache.get(key, default=None)
+
+```
+LFUDACache.get(key[,default]) -> value
+
+Get value of key from cache.
+
+:param key: cache item key
+:param default: optional default parameter
+:returns: cache item value
+```
+
+#### LFUDACache.__getitem__(key)
+
+```
+LFUDACache[key] -> value
+
+Get value of key from cache.
+
+If key is not found, KeyError is raised.
+
+:param key: cache item key
+:param default: optional default parameter
+:returns: cache item value
+```
+
+#### LFUDACache.__setitem__(key, value)
+
+```
+LFUDACache[key] = value
+
+Set value for key in cache.
+
+:param key: cache item key
+:param value: cache item value
+```
+
+#### LFUDACache.__delitem__(key)
+
+```
+del LFUDACache[key]
+
+Remove specified key and return the corresponding value.
+If key is not found KeyError is raised.
+
+:param key: cache item key
+:param value: cache item value
+```
+
+#### LFUDACache.__contains__(key)
+
+```
+key in LFUDACache -> True if cached, False otherwise
+
+:returns: True if key is cached, False otherwise
+```
+
+#### LFUDACache.pop(key, default=None)
+
+```
+LFUDACache.pop(key[,default]) -> value
+
+Remove specified key and return the corresponding value.
+If key is not found, default is returned if given, otherwise
+KeyError is raised.
+
+:param key: cache item key
+:param default: optional default parameter
+:returns: cache item value
+```
+
+#### LFUDACache.items()
+
+```
+LFUDACache.items() => iterable of key and value tuples
+
+Iterable of cache pairs (key, value) sorted from most to lesser
+frequently used.
+
+:yields: (key, value) tuples
+```
+
+#### LFUDACache.keys():
+
+```
+LFUDACache.keys() -> iterable of keys
+
+Iterable of cache keys sorted from most to lesser
+frequently used.
+
+:yields: key
+```
+
+#### LFUDACache.__iter__()
+
+```
+iter(LFUDACache) -> iterable of keys
+
+Iterable of cache keys sorted from most to lesser
+frequently used.
+
+:yields: key
+```
+
+#### LFUDACache.values()
+
+```
+LFUDACache.values() -> iterable of values
+
+Iterable of cache values sorted from most to lesser
+frequently used.
+
+:yields: value
+```
+
+#### LFUDACache.clear()
+
+```
+LFUDA.clear()
+
+Evict the entire cache.
+```
+
+#### LFUDACache.threshold
+
+```
+Current threshold level
+```
+
+#### LFUDACache.__len__()
+
+```
+len(LFUDACache) -> current cache size
+```
+
+### memoize(maxsize, fnc=None, key_fnc=make_key)
+
+```
+Memoization decorator using Less Frequenty Used with Dynamic Aging cache
+eviction algorithm.
+
+The LFUDACache instance is available on the decorated function, as `cache`
+property.
+
+:param maxsize: maximum cache size
+:type maxsize: int
+:param fnc: optional function to memoize
+:type fnc: callable or None
+:param key_fnc: optional custom cache key function, receiving argument
+                list and keyword argument dict
+:type key_fnc: callable
+:returns: decorator if fnc is not given, wrapped function otherwise
+:rtype: callable
+```
+
+
