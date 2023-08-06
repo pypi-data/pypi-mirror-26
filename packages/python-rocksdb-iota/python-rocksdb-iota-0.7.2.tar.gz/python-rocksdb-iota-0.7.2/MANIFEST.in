@@ -1,0 +1,5 @@
+include rocksdb_iota/cpp/*.hpp
+recursive-include rocksdb_iota *.pxd
+recursive-include rocksdb_iota *.pyx
+recursive-include include *
+
