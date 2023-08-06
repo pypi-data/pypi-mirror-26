@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+vat_python_test_utils.egg-info/PKG-INFO
+vat_python_test_utils.egg-info/SOURCES.txt
+vat_python_test_utils.egg-info/dependency_links.txt
+vat_python_test_utils.egg-info/requires.txt
+vat_python_test_utils.egg-info/top_level.txt
+vat_python_utils/__init__.py
+vat_python_utils/misc.py
