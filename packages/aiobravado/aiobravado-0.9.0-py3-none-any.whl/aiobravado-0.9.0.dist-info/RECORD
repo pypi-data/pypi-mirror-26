@@ -1,0 +1,16 @@
+aiobravado/__init__.py,sha256=YKyeP_9GPn2btPkRFEEEZibIhKVYO3b2vkJEOJ8QHSM,42
+aiobravado/aiohttp_client.py,sha256=zMG0ygQsrxkk8GD18IXW94q_nkcLaoTByBmxBHhMxHw,5483
+aiobravado/client.py,sha256=jLxdVjpPsN6vYJd58sO3Oq98Kk7byhB-DdtmryI6J1w,12211
+aiobravado/compat.py,sha256=cMMSJFVm0r-jQEZdRuzd0DZ4vlgaH2eN9Jbps3wjHxU,136
+aiobravado/docstring_property.py,sha256=aSaKSfv7YhhqN7kAShXmyUGj8rpZ6oYLUbqA26nYZGA,2057
+aiobravado/exception.py,sha256=EcKcP9axeL8uVR8aS29CuhZD2GD74bGZSxqZD-XQySg,5789
+aiobravado/http_client.py,sha256=lWPpue6I-6243KB9L6TJ17RFqzkX_MqOcRMNr62px4k,1392
+aiobravado/http_future.py,sha256=9ut9l3htI66jj7XFmpfric4p7aKmGeOxklKAlY0EGCM,8638
+aiobravado/swagger_model.py,sha256=PKQFJxreLZ1kuK0SsGHc32CUmLTcj_NjEsfs4b3A6cg,5354
+aiobravado/warning.py,sha256=SULObt2VcNwkpO37zRS4u1PZVx98lH_8Sim9u3KjJeQ,757
+aiobravado-0.9.0.dist-info/DESCRIPTION.rst,sha256=e4ulSqdmrCpl370fB-hmRxK3Qew6povEo6VtFQqhEzQ,3395
+aiobravado-0.9.0.dist-info/METADATA,sha256=2rBUFS4Ez23iPchoMA4-wBVAu2S9H-e9Qj7rnlpNbTU,4292
+aiobravado-0.9.0.dist-info/RECORD,,
+aiobravado-0.9.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aiobravado-0.9.0.dist-info/metadata.json,sha256=yChU0qoN8hE6lAY1v7z-IjDP2F6OjAsF1ETK9QB3UhE,987
+aiobravado-0.9.0.dist-info/top_level.txt,sha256=998XXV61PuuSyA4bIGOALvmgtHTc-PQaBbFeg6qL1ek,11
