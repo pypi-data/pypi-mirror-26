@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: midi2mqtt
+Version: 0.0.3
+Summary: Receive MIDI signals and forward them to a mqtt broker.
+Home-page: https://github.com/pintman/midi2mqtt
+Author: Marco Bakera
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: mqtt midi
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: paho-mqtt
+Requires-Dist: python-rtmidi
+
+UNKNOWN
+
+
