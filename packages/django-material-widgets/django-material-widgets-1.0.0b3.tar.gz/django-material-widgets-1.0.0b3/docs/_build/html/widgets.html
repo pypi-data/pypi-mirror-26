@@ -1,0 +1,1100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>material_widgets.widgets &#8212; Django Material Widgets 1.0.0-beta documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changelog" href="changelog.html" />
+    <link rel="prev" title="material_widgets.forms" href="forms.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-material_widgets.widgets">
+<span id="material-widgets-widgets"></span><h1>material_widgets.widgets<a class="headerlink" href="#module-material_widgets.widgets" title="Permalink to this headline">¶</a></h1>
+<p>Customized form field widgets with templates styled with Material Components
+for the Web.</p>
+<p class="rubric">References</p>
+<p><a class="reference external" href="https://material.io/components/web/">Material Design for the Web</a></p>
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialCheckboxInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialCheckboxInput</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialCheckboxInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialCheckboxInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material CheckboxInput</p>
+<p>Default widget for BooleanField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the right of the checkbox.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the label.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Explicit widget declaration is unnecessary in a BooleanField under a
+MaterialForm.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">checkbox</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Checkbox&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;This is a checkbox&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">#widget=MaterialCheckboxInput(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialCheckboxSelectMultiple">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialCheckboxSelectMultiple</code><span class="sig-paren">(</span><em>is_vertical=True</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialCheckboxSelectMultiple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialCheckboxSelectMultiple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material CheckboxSelectMultiple</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed above the checkbox group.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>list</em><em> or </em><em>tuple of str</em><em>, </em><em>optional</em>) – Displayed as tool tips on the respective checkbox labels.</li>
+<li><strong>choices</strong> (<em>list</em><em> or </em><em>tuple of</em><em> (</em><em>value</em><em>, </em><em>label</em><em>) </em><em>pairs</em>) – Each pair will be displayed as a checkbox.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>is_vertical</strong> (<em>bool, optional</em>) – Layout of checkboxes will be vertical if True, or horizontal otherwise.
+Defaults to True.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">checkbox_select_multiple</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">MultipleChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Multiple Checkboxes&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="s1">&#39;This is checkbox 1&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="s1">&#39;This is checkbox 2&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="s1">&#39;This is checkbox 3&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialCheckboxSelectMultiple</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">is_vertical</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;checkbox_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Checkbox 1&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;checkbox_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Checkbox 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;checkbox_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Checkbox 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialClearableFileInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialClearableFileInput</code><span class="sig-paren">(</span><em>button=None</em>, <em>icon=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialClearableFileInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialClearableFileInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material ClearableFileInput</p>
+<p>Default widget for FileField and ImageField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the button.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.
+Label dynamically changes to selected file name, or file count if
+the ‘multiple’ attrs is True.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the button.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>button</strong> (<em>list or tuple of str, optional</em>) – Button style modifiers include ‘compact’, ‘dense’, ‘raised’, ‘stroked’,
+and ‘unelevated’. See <a class="reference external" href="https://github.com/material-components/material-components-web/tree/master/packages/mdc-button#css-classes">mdc-button CSS Classes</a> for details.</li>
+<li><strong>icon</strong> (<em>str, optional</em>) – Icon to be displayed on the file button. See <a class="reference external" href="https://material.io/icons/">Material Icons</a> for
+choices.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clearable_file_input</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">FileField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">### Blank the label to only display the icon</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Choose 1 or more files&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialClearableFileInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="c1">### compact, dense, raised, stroked, unelevated</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">button</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;compact&#39;</span><span class="p">,</span> <span class="s1">&#39;dense&#39;</span><span class="p">,</span> <span class="s1">&#39;raised&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="c1">### From material-icons; https://material.io/icons/</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;file_upload&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;multiple&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialDateInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialDateInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialDateInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialDateInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material DateInput</p>
+<p>Default widget for DateField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">date_field</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;YYYY-MM-DD&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialDateInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialDateTimeInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialDateTimeInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialDateTimeInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialDateTimeInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material DateTimeInput</p>
+<p>Default widget for DateTimeField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">datetime_field</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Date and Time&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;YYYY-MM-DD HH:MM:SS&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialDateTimeInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialEmailInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialEmailInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialEmailInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialEmailInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material EmailInput</p>
+<p>Default widget for EmailField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">email</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">EmailField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Email Address&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;your_email@example.com&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialEmailInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialFileInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialFileInput</code><span class="sig-paren">(</span><em>button=None</em>, <em>icon=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialFileInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialFileInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material FileInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the button.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.
+Label dynamically changes to selected file name, or file count if
+the ‘multiple’ attrs is True.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the button.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>button</strong> (<em>list or tuple of str, optional</em>) – Button style modifiers include ‘compact’, ‘dense’, ‘raised’, ‘stroked’,
+and ‘unelevated’. See <a class="reference external" href="https://github.com/material-components/material-components-web/tree/master/packages/mdc-button#css-classes">mdc-button CSS Classes</a> for details.</li>
+<li><strong>icon</strong> (<em>str, optional</em>) – Icon to be displayed on the file button. See <a class="reference external" href="https://material.io/icons/">Material Icons</a> for
+choices.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">file_input</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">FileField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">### Blank the label to only display the icon</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Choose 1 or more files&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialFileInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="c1">### compact, dense, raised, stroked, unelevated</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">button</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;compact&#39;</span><span class="p">,</span> <span class="s1">&#39;dense&#39;</span><span class="p">,</span> <span class="s1">&#39;raised&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="c1">### From material-icons; https://material.io/icons/</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;attachment&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;multiple&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialHiddenInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialHiddenInput</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialHiddenInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialHiddenInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material HiddenInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>initial</strong> (<em>varies depending on field</em><em>, </em><em>optional</em>) – Initial value to populate the hidden input in the form.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hidden_input</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">initial</span><span class="o">=</span><span class="s1">&#39;hidden_value&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HiddenInput</span><span class="p">(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialMultipleHiddenInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialMultipleHiddenInput</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialMultipleHiddenInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialMultipleHiddenInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material MultipleHiddenInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>initial</strong> (<em>varies depending on field</em><em>, </em><em>optional</em>) – Initial Value to populate the multiple hidden input in the form.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">multiple_hidden_input</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">MultipleChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">initial</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;hidden_1&#39;</span><span class="p">,</span> <span class="s1">&#39;hidden_2&#39;</span><span class="p">,</span> <span class="s1">&#39;hidden_3&#39;</span><span class="p">,],</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">MultipleHiddenInput</span><span class="p">(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;hidden_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden 1&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;hidden_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;hidden_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialNullBooleanSelect">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialNullBooleanSelect</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialNullBooleanSelect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialNullBooleanSelect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material NullBooleanSelect</p>
+<p>Default widget for NullBooleanField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the left of the select menu.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the label.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Explicit widget declaration is unnecessary in a NullBooleanField under a
+MaterialForm.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">null_boolean_select</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">NullBooleanField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Is this a null boolean select?&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;This is a null boolean select&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">#widget=MaterialNullBooleanSelect(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialNumberInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialNumberInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialNumberInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialNumberInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material NumberInput</p>
+<p>Default widget for DecimalField, FloatField, and IntegerField under
+MaterialForm when Field.localize is False.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Explicit widget declaration is unnecessary in a DecimalField, FloatField,
+or IntegerField under MaterialForm.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">decimal</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">DecimalField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Decimal Number&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;To 2 d.p.&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">min_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">max_value</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">decimal_places</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integer</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Odd Number&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;No even numbers!&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">min_value</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">max_value</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">NumberInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;step&#39;</span><span class="p">:</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialPasswordInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialPasswordInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialPasswordInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialPasswordInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material PasswordInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">password</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Secret Password&quot;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Please enter at least 8 characters&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">min_length</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialPasswordInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialRadioSelect">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialRadioSelect</code><span class="sig-paren">(</span><em>is_vertical=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialRadioSelect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialRadioSelect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material RadioSelect</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed above the radio group.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>list</em><em> or </em><em>tuple of str</em><em>, </em><em>optional</em>) – Displayed as tool tips on the respective radio option labels.</li>
+<li><strong>choices</strong> (<em>list</em><em> or </em><em>tuple of</em><em> (</em><em>value</em><em>, </em><em>label</em><em>) </em><em>pairs</em>) – Each pair will be displayed as a radio option.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>is_vertical</strong> (<em>bool, optional</em>) – Layout of checkboxes will be vertical if True, or horizontal otherwise.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">radio_select</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Radio Select&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="s1">&#39;This is radio 1&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="s1">&#39;This is radio 2&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="s1">&#39;This is radio 3&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">RadioSelect</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">is_vertical</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;radio_select_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Radio 1&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;radio_select_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Radio 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;radio_select_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Radio 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialRadioSelect.Media">
+<em class="property">class </em><code class="descname">Media</code><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialRadioSelect.Media"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialRadioSelect.Media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material radio JS component.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSelect">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSelect</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSelect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSelect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material Select</p>
+<p>Default widget for ChoiceField, FilePathField, ModelChoiceField, and
+TypedChoiceField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the left of the select menu.
+If explicitly declared blank, the first item in the select menu will
+act as an unselectable choice label.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the label.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Explicit widget declaration is unnecessary in ChoiceField, FilePathField,
+ModelChoiceField, and TypedChoiceField under MaterialForm.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">#widget=MaterialSelect(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Select&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;choice_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Choice 1&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;choice_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Choice 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;choice_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Choice 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Choices can be grouped.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select_with_groups</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Select with Groups&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;Group 1&#39;</span><span class="p">,</span> <span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;group_1_choice_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 1 Choice 1 &#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;group_1_choice_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 1 Choice 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;group_1_choice_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 1 Choice 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;Group 2&#39;</span><span class="p">,</span> <span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;group_2_choice_4&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 2 Choice 4&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;group_2_choice_5&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 2 Choice 5&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;group_2_choice_6&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 2 Choice 6&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSelectDateWidget">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSelectDateWidget</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSelectDateWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSelectDateWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material SelectDateWidget</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the left of the select menu.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the label.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>various</strong> (<em>various, optional</em>) – See <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/forms/widgets/#selectdatewidget">django.forms.widgets.SelectDateWidget</a> for optional parameters.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Widget can be declared as Django’s SelectDateWidget or as
+MaterialSelectDateWidget.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">date_select</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Date&quot;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;This is a select date&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">SelectDateWidget</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">years</span><span class="o">=</span><span class="p">[</span><span class="n">year</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">year</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>              <span class="p">],</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">empty_label</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="s2">&quot;Month&quot;</span><span class="p">,</span> <span class="s2">&quot;Day&quot;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSelectDateWidget.Media">
+<em class="property">class </em><code class="descname">Media</code><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSelectDateWidget.Media"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSelectDateWidget.Media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material multiwidget CSS component.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="material_widgets.widgets.MaterialSelectDateWidget.select_widget">
+<code class="descname">select_widget</code><a class="headerlink" href="#material_widgets.widgets.MaterialSelectDateWidget.select_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#material_widgets.widgets.MaterialSelect" title="material_widgets.widgets.MaterialSelect"><code class="xref py py-class docutils literal"><span class="pre">MaterialSelect</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSelectMultiple">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSelectMultiple</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSelectMultiple"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSelectMultiple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material SelectMultiple</p>
+<p>Default widget for MultipleChoiceField, ModelMultipleChoiceField, and
+TypedMultipleChoiceField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the left of the select menu.
+If explicitly declared blank, the first item in the select menu will
+act as an unselectable choice label.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the label.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Explicit widget declaration is unnecessary in MultipleChoiceField,
+ModelMultipleChoiceField, and TypedMultipleChoiceField under MaterialForm.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select_multiple</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">MultipleChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Choose 1 or more&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Ctrl + Click to unselect&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">#widget=MaterialSelect(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Select&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 1&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Choices can be grouped.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">select_multiple_with_groups</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">MultipleChoiceField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">#help_text=&#39;A label is needed to show the help text tooltip&#39;,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">choices</span><span class="o">=</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;Select Multiple 1&#39;</span><span class="p">,</span> <span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_1&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 1&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_2&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 2&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_3&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 3&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">(</span><span class="s1">&#39;Select Multiple 2&#39;</span><span class="p">,</span> <span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_4&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 4&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_5&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 5&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">(</span><span class="s1">&#39;multiple_choice_6&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiple Choice 6&#39;</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSliderInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSliderInput</code><span class="sig-paren">(</span><em>display_markers=False</em>, <em>is_discrete=False</em>, <em>persistent_help_text=True</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSliderInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSliderInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material SliderInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed above the widget in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the right of the label.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to True.</li>
+<li><strong>is_discrete</strong> (<em>bool, optional</em>) – Slider will have discrete steps in its interface if True, else its
+interface will be continuous.
+Defaults to False.</li>
+<li><strong>display_markers</strong> (<em>bool, optional</em>) – Value markers appear on slider interaction if True.
+Defaults to False.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">slider</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Slider&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1">### help_text in sliders are persistent by default</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Even Number with Markers&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">min_value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">max_value</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">initial</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialSliderInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">is_discrete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">display_markers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;step&#39;</span><span class="p">:</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSplitDateTimeWidget">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSplitDateTimeWidget</code><span class="sig-paren">(</span><em>attrs=None</em>, <em>date_format=None</em>, <em>time_format=None</em>, <em>label=None</em>, <em>date_label='Date'</em>, <em>date_help_text='YYYY-MM-DD'</em>, <em>date_persistent_help_text=False</em>, <em>time_label='Time'</em>, <em>time_help_text='HH:MM:SS'</em>, <em>time_persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSplitDateTimeWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSplitDateTimeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material SplitDateTimeWidget</p>
+<p>Splits datetime input into two MaterialTextFields.
+Default widget for SplitDateTimeField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the left of the widget fields in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><ul class="first last simple">
+<li><strong>attrs</strong> (<em>dict, optional</em>) – HTML attributes to be included in the multiwidget’s template.</li>
+<li><strong>date_format</strong> (<em>str, optional</em>) – Format to display initial field value. Defaults to first format found
+in Django’s DATE_INPUT_FORMATS.</li>
+<li><strong>time_format</strong> (<em>str, optional</em>) – Format to display initial field value. Defaults to first format found
+in Django’s TIME_INPUT_FORMATS.</li>
+<li><strong>label</strong> (<em>str, optional</em>) – Passes value through from field parameter.</li>
+<li><strong>date_label</strong> (<em>str, optional</em>) – Displayed on the Date widget’s field in the template.
+Defaults to ‘Date’.</li>
+<li><strong>date_help_text</strong> (<em>str, optional</em>) – Displayed under the Date input field.
+Defaults to ‘YYYY-MM-DD’.</li>
+<li><strong>date_persistent_help_text</strong> (<em>bool, optional</em>) – Help text for Date widget will be persistently displayed if True, else
+it will only be visible when the field is active.
+Defaults to False.</li>
+<li><strong>time_label</strong> (<em>str, optional</em>) – Displayed on the Time widget’s field in the template.
+Defaults to ‘Time’.</li>
+<li><strong>time_help_text</strong> (<em>str, optional</em>) – Displayed under the Time input field.
+Defaults to ‘HH:MM:SS’.</li>
+<li><strong>time_persistent_help_text</strong> (<em>bool, optional</em>) – Help text for Time widget will be persistently displayed if True, else
+it will only be visible when the field is active.
+Defaults to False.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split_datetime</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">SplitDateTimeField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialSplitDateTimeWidget</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">date_label</span><span class="o">=</span><span class="s1">&#39;Birthdate&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">date_help_text</span><span class="o">=</span><span class="s1">&#39;YYYY-MM-DD&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">date_persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">time_label</span><span class="o">=</span><span class="s1">&#39;Birthtime&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">time_help_text</span><span class="o">=</span><span class="s1">&#39;HH:MM:SS&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">time_persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSplitHiddenDateTimeWidget">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSplitHiddenDateTimeWidget</code><span class="sig-paren">(</span><em>attrs=None</em>, <em>date_format=None</em>, <em>time_format=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSplitHiddenDateTimeWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSplitHiddenDateTimeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material SplitHiddenDateTimeWidget</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>initial</strong> (<em>list</em><em> or </em><em>tuple of str</em><em>, </em><em>optional</em>) – Initial values to populate the hidden date and time fields in the form.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split_hidden_datetime</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">SplitDateTimeField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">initial</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1965-08-09&#39;</span><span class="p">,</span> <span class="s1">&#39;12:00:00&#39;</span><span class="p">],</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">SplitHiddenDateTimeWidget</span><span class="p">(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialSwitchInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialSwitchInput</code><span class="sig-paren">(</span><em>label=None</em>, <em>help_text=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialSwitchInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialSwitchInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material SwitchInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed to the left of the switch.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed as a tool tip on the label.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity in a BooleanField to use widget.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boolean_switch</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Boolean Switch&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;This is a switch&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialSwitchInput</span><span class="p">(),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialTextarea">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialTextarea</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialTextarea"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialTextarea" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material Textarea</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed in the widget’s field to the upper left of the box in the
+template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">textarea</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Captain&#39;s Log&quot;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Write as much as you want&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">MaterialTextarea</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialTextInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialTextInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialTextInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialTextInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material TextInput</p>
+<p>Default widget for CharField and various other fields under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">username</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Choose a Username&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">min_length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">max_length</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;3-32 characters required&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">TextInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">attrs</span><span class="o">=</span><span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;autofocus&#39;</span><span class="p">:</span> <span class="s2">&quot;autofocus&quot;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="p">},</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialTimeInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialTimeInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialTimeInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialTimeInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material TimeInput</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">time_field</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">TimeField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Time&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;HH:MM:SS&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">MaterialTimeInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.widgets.MaterialURLInput">
+<em class="property">class </em><code class="descclassname">material_widgets.widgets.</code><code class="descname">MaterialURLInput</code><span class="sig-paren">(</span><em>persistent_help_text=False</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/widgets.html#MaterialURLInput"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.widgets.MaterialURLInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Material URLInput</p>
+<p>Default widget for URLField under MaterialForm.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>label</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed on the widget’s field in the template.
+Defaults to widget’s capitalized field name with underscores converted
+to spaces.</li>
+<li><strong>help_text</strong> (<em>str</em><em>, </em><em>optional</em>) – Displayed under the input field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Other Parameters:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last"><strong>persistent_help_text</strong> (<em>bool, optional</em>) – Help text will be persistently displayed if True, else it will only be
+visible when the field is active.
+Defaults to False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Declare widget explicity to use custom widget parameters.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">URLField</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">label</span><span class="o">=</span><span class="s1">&#39;URL&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Website&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">initial</span><span class="o">=</span><span class="s1">&#39;http://github.com/ooknosi&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">widget</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">MaterialTextInput</span><span class="p">(</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="forms.html" title="previous chapter">material_widgets.forms</a></li>
+      <li>Next: <a href="changelog.html" title="next chapter">Changelog</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Edison KOO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/widgets.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

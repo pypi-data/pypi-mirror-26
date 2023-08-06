@@ -1,0 +1,281 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>material_widgets.forms &#8212; Django Material Widgets 1.0.0-beta documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for material_widgets.forms</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Customized form classes that uses widgets built with Material Components</span>
+<span class="sd">for the Web.</span>
+
+<span class="sd">``MaterialForm`` and ``MaterialModelForm`` modifies ``django.forms.Form`` and</span>
+<span class="sd">``django.forms.ModelForm`` respectively, and are used to declare Django forms</span>
+<span class="sd">that will render with Material widgets.</span>
+
+<span class="sd">References</span>
+<span class="sd">----------</span>
+<span class="sd">`Material Design for the Web &lt;https://material.io/components/web/&gt;`_</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># pylint: disable=no-member</span>
+<span class="c1"># pylint: disable=too-few-public-methods, too-many-ancestors</span>
+<span class="c1"># pylint: disable=unused-wildcard-import, wildcard-import</span>
+<span class="kn">from</span> <span class="nn">copy</span> <span class="k">import</span> <span class="n">deepcopy</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="k">import</span> <span class="n">modules</span>
+<span class="kn">from</span> <span class="nn">django.forms</span> <span class="k">import</span> <span class="n">Form</span><span class="p">,</span> <span class="n">ModelForm</span><span class="p">,</span> <span class="n">widgets</span>
+<span class="kn">from</span> <span class="nn">django.forms.utils</span> <span class="k">import</span> <span class="n">ErrorList</span>
+<span class="kn">from</span> <span class="nn">.widgets</span> <span class="k">import</span> <span class="n">MaterialComponent</span><span class="p">,</span> <span class="n">MaterialMultiWidget</span>
+<span class="kn">from</span> <span class="nn">.widgets</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;MaterialForm&#39;</span><span class="p">,</span> <span class="s1">&#39;MaterialModelForm&#39;</span><span class="p">,)</span>
+
+<span class="k">def</span> <span class="nf">str_to_object</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return python object from string.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    string : str</span>
+<span class="sd">        Dot (.) separated location of python object.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    module : python object</span>
+<span class="sd">        The actual python object.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; text_input = str_to_object(&#39;django.forms.widgets.TextInput&#39;)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">module</span> <span class="o">=</span> <span class="n">modules</span><span class="p">[</span><span class="vm">__name__</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">submodule</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">):</span>
+        <span class="n">module</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">submodule</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">module</span>
+
+
+<span class="k">def</span> <span class="nf">materialize_field</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">field</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Convert Django field widgets to use Material widgets.</span>
+
+<span class="sd">    Change all default Django widgets in the provided form field to use</span>
+<span class="sd">    Material Component widgets. Add label and help_text data to the Material</span>
+<span class="sd">    widget, then return the field.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">        Name of the form field.</span>
+<span class="sd">    field : class object</span>
+<span class="sd">        Field object from `django.forms.fields`.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    field : class object</span>
+<span class="sd">        Field object modified with `material_widgets.widgets`.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; field = materialize_field(&#39;username&#39;, django.forms.fields.CharField())</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Convert only widgets.Widget fields to Material widgets</span>
+    <span class="k">if</span> <span class="p">(</span>
+            <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Widget</span><span class="p">)</span>
+            <span class="ow">and</span> <span class="ow">not</span>
+            <span class="nb">isinstance</span><span class="p">(</span>
+                <span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="p">,</span> <span class="p">(</span><span class="n">MaterialComponent</span><span class="p">,</span> <span class="n">MaterialMultiWidget</span><span class="p">)</span>
+                <span class="p">)</span>
+        <span class="p">):</span>
+        <span class="c1"># match Django widget to Material widget</span>
+        <span class="n">material_widget</span> <span class="o">=</span> <span class="n">str_to_object</span><span class="p">(</span>
+            <span class="s1">&#39;Material&#39;</span> <span class="o">+</span> <span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+            <span class="p">)()</span>
+        <span class="c1"># remove widget.MultiWidget.widgets as it is hardcoded to</span>
+        <span class="c1"># use django.widgets</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">MultiWidget</span><span class="p">):</span>
+            <span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;widgets&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># replicate Django widget attributes to Material widget</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">material_widget</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">field</span><span class="o">.</span><span class="n">widget</span> <span class="o">=</span> <span class="n">material_widget</span>
+    <span class="c1"># set additional fields used in material_widgets.widgets</span>
+    <span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="p">(</span><span class="n">field</span><span class="o">.</span><span class="n">label</span> <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                          <span class="k">else</span> <span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+    <span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">help_text</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">help_text</span>
+    <span class="k">return</span> <span class="n">field</span>
+
+
+<span class="k">class</span> <span class="nc">MaterialErrorList</span><span class="p">(</span><span class="n">ErrorList</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;ErrorList formatted with Material Components.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">as_components</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">as_components</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return error_list rendered with Material Components and layout.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">error_group</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="s1">&#39;&lt;ul class=&quot;mdc-errorlist mdc-list&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/ul&gt;&#39;</span>
+            <span class="p">)</span>
+        <span class="n">error_item</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="s1">&#39;&lt;li class=&quot;mdc-list-item&quot;&gt;&#39;</span>
+            <span class="s1">&#39;&lt;i class=&quot;mdc-list-item__start-detail material-icons&quot;&#39;</span>
+            <span class="s1">&#39; aria-hidden=&quot;true&quot;&gt;error&lt;/i&gt;&#39;</span>
+            <span class="s1">&#39;&lt;span class=&quot;mdc-typography--caption&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/span&gt;&lt;/li&gt;&#39;</span>
+            <span class="p">)</span>
+        <span class="n">error_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">error_item</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="k">for</span> <span class="n">error</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">]</span>
+        <span class="n">error_list</span> <span class="o">=</span> <span class="n">error_group</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">error_items</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">error_list</span>
+
+
+<span class="k">class</span> <span class="nc">BaseMaterialForm</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of `MaterialForm` and `MaterialModelForm` which modifies</span>
+<span class="sd">    `django.forms.Form` and `django.forms.ModelForm` to use</span>
+<span class="sd">    `material_widgets.widgets`.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    *args</span>
+<span class="sd">    **kwargs</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    error_css_class, required_css_class : str</span>
+<span class="sd">        CSS class attributes added to erroneous fields and required fields</span>
+<span class="sd">        respectively.</span>
+<span class="sd">        See `Django Forms API documentation &lt;https://docs.djangoproject.com\</span>
+<span class="sd">        /en/dev/ref/forms/api/#styling-required-or-erroneous-form-rows&gt;`_.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">error_css_class</span> <span class="o">=</span> <span class="s2">&quot;mdc-error&quot;</span>
+    <span class="n">required_css_class</span> <span class="o">=</span> <span class="s2">&quot;mdc-required&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Change all default `django.forms.widgets` in Form to</span>
+<span class="sd">        `material_widgets.widgets`. Set self.error_class to use</span>
+<span class="sd">        `MaterialErrorList`.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">error_class</span> <span class="o">=</span> <span class="n">MaterialErrorList</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">field</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">fields</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">field</span> <span class="o">=</span> <span class="n">materialize_field</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">field</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">as_components</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return form rendered with Material Components and layout.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_html_output</span><span class="p">(</span>
+            <span class="n">normal_row</span><span class="o">=</span><span class="s1">&#39;&lt;div</span><span class="si">%(html_class_attr)s</span><span class="s1">&gt;</span><span class="si">%(field)s</span><span class="s1">&lt;/div&gt;&#39;</span><span class="p">,</span>
+            <span class="n">error_row</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+            <span class="n">row_ender</span><span class="o">=</span><span class="s1">&#39;&lt;/div&gt;&#39;</span><span class="p">,</span>
+            <span class="n">help_text_html</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+            <span class="n">errors_on_separate_row</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="p">)</span>
+
+
+<div class="viewcode-block" id="MaterialForm"><a class="viewcode-back" href="../../forms.html#material_widgets.forms.MaterialForm">[docs]</a><span class="k">class</span> <span class="nc">MaterialForm</span><span class="p">(</span><span class="n">BaseMaterialForm</span><span class="p">,</span> <span class="n">Form</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Modified `django.forms.Form` that uses `material_widgets.widgets`.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare your Form fields as usual but subclass `MaterialForm` instead of</span>
+<span class="sd">    `django.forms.Form`.</span>
+
+<span class="sd">    &gt;&gt;&gt; class ExampleForm(MaterialForm):</span>
+<span class="sd">    &gt;&gt;&gt;     username = forms.CharField(required=True)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="MaterialModelForm"><a class="viewcode-back" href="../../forms.html#material_widgets.forms.MaterialModelForm">[docs]</a><span class="k">class</span> <span class="nc">MaterialModelForm</span><span class="p">(</span><span class="n">BaseMaterialForm</span><span class="p">,</span> <span class="n">ModelForm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Modified `django.forms.ModelForm` that uses `material_widgets.widgets`.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare your ModelForm Meta as usual but subclass `MaterialModelForm`</span>
+<span class="sd">    instead of `django.forms.ModelForm`.</span>
+
+<span class="sd">    &gt;&gt;&gt; class ExampleModelForm(MaterialModelForm):</span>
+<span class="sd">    &gt;&gt;&gt;     class Meta:</span>
+<span class="sd">    &gt;&gt;&gt;         model = ExampleModel</span>
+<span class="sd">    &gt;&gt;&gt;         fields = &#39;__all__&#39;</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Edison KOO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

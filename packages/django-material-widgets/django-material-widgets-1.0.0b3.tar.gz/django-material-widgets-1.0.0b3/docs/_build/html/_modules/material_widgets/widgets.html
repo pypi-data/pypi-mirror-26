@@ -1,0 +1,1484 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>material_widgets.widgets &#8212; Django Material Widgets 1.0.0-beta documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for material_widgets.widgets</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Customized form field widgets with templates styled with Material Components</span>
+<span class="sd">for the Web.</span>
+
+<span class="sd">References</span>
+<span class="sd">----------</span>
+<span class="sd">`Material Design for the Web &lt;https://material.io/components/web/&gt;`_</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># pylint: disable=invalid-name, too-few-public-methods</span>
+<span class="c1"># pylint: disable=too-many-ancestors, too-many-arguments, too-many-lines</span>
+<span class="kn">from</span> <span class="nn">django.forms</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">utils</span>
+<span class="kn">from</span> <span class="nn">.settings</span> <span class="k">import</span> <span class="n">MATERIAL_CSS</span><span class="p">,</span> <span class="n">MATERIAL_JS</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;MaterialCheckboxInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialCheckboxSelectMultiple&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialClearableFileInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialDateInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialDateTimeInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialEmailInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialFileInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialHiddenInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialMultipleHiddenInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialNullBooleanSelect&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialNumberInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialPasswordInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialRadioSelect&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSelect&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSelectDateWidget&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSelectMultiple&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSliderInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSplitDateTimeWidget&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSplitHiddenDateTimeWidget&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialSwitchInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialTextarea&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialTextInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialTimeInput&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MaterialURLInput&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">MaterialComponent</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">Widget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of Material widgets which adds attributes used by Material</span>
+<span class="sd">    Components.</span>
+
+<span class="sd">    Passes label and help_text to the widget context. Declares under Media the</span>
+<span class="sd">    Material CSS and JS components required to correctly display the widget.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under text field and textarea inputs, to the right of slider</span>
+<span class="sd">        labels, and as tool tips on labels for other inputs.</span>
+<span class="sd">    *args</span>
+<span class="sd">    **kwargs</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">help_text</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">label</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">help_text</span> <span class="o">=</span> <span class="n">help_text</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="p">,</span>
+            <span class="s1">&#39;help_text&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">help_text</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="k">return</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Media</span><span class="p">(</span>
+            <span class="n">css</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="n">MATERIAL_CSS</span><span class="p">,</span>
+                <span class="s1">&#39;material_widgets/css/material_error.css&#39;</span><span class="p">,</span>
+                <span class="p">)},</span>
+            <span class="n">js</span><span class="o">=</span><span class="p">(</span><span class="n">MATERIAL_JS</span><span class="p">,),</span>
+            <span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">MaterialMultiWidget</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">MultiWidget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of Material split widgets which adds attributes used by</span>
+<span class="sd">    Material Components. Material split widgets consist of multiple Material</span>
+<span class="sd">    widgets.</span>
+
+<span class="sd">    Passes label to the widget context. Declares under Media the Material CSS</span>
+<span class="sd">    and JS components required to correctly display the widget.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    multiwidgets : list or tuple of widget objects</span>
+<span class="sd">        Widgets to be included in the multiwidget.</span>
+<span class="sd">    attrs : dict, optional</span>
+<span class="sd">        HTML attributes to be included in the multiwidget&#39;s template.</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the split widget fields in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    *args</span>
+<span class="sd">    **kwargs</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s2">&quot;material_widgets/widgets/material_multiwidget.html&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">multiwidgets</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">multiwidgets</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">label</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="k">return</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Media</span><span class="p">(</span>
+            <span class="n">css</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="n">MATERIAL_CSS</span><span class="p">,</span>
+                <span class="s1">&#39;material_widgets/css/material_error.css&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;material_widgets/css/material_multiwidget.css&#39;</span><span class="p">,</span>
+                <span class="p">)},</span>
+            <span class="n">js</span><span class="o">=</span><span class="p">(</span><span class="n">MATERIAL_JS</span><span class="p">,),</span>
+            <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">decompress</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a list of decompressed values for the given compressed value.</span>
+<span class="sd">        The given value can be assumed to be valid, but not necessarily</span>
+<span class="sd">        non-empty.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s1">&#39;Subclasses must implement this method.&#39;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">MaterialCheckbox</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of Material widgets that make use of Material Checkbox</span>
+<span class="sd">    Components.</span>
+
+<span class="sd">    Declares under Media the Material JS component required to correctly</span>
+<span class="sd">    display the widget.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;material_widgets/js/material_checkbox.js&#39;</span><span class="p">,)</span>
+
+
+<span class="k">class</span> <span class="nc">MaterialFileButton</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of Material widgets that make use of Material File Button</span>
+<span class="sd">    Components.</span>
+
+<span class="sd">    Declares under Media the Material CSS and JS components required to</span>
+<span class="sd">    correctly display the widget.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    button : list or tuple of str, optional</span>
+<span class="sd">        Button style modifiers include &#39;compact&#39;, &#39;dense&#39;, &#39;raised&#39;, &#39;stroked&#39;,</span>
+<span class="sd">        and &#39;unelevated&#39;. See `mdc-button CSS Classes &lt;https://github.com\</span>
+<span class="sd">        /material-components/material-components-web/tree/master/packages\</span>
+<span class="sd">        /mdc-button#css-classes&gt;`_ for details.</span>
+<span class="sd">    icon : str, optional</span>
+<span class="sd">        Icon to be displayed on the file button. See `Material Icons</span>
+<span class="sd">        &lt;https://material.io/icons/&gt;`_ for</span>
+<span class="sd">        choices.</span>
+<span class="sd">    *args</span>
+<span class="sd">    **kwargs</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">button</span> <span class="o">=</span> <span class="n">button</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">icon</span> <span class="o">=</span> <span class="n">icon</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;button&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">button</span><span class="p">,</span>
+            <span class="s1">&#39;icon&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">icon</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s1">&#39;material_widgets/css/material_button.css&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;material_widgets/css/material_file_input.css&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">}</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="s1">&#39;material_widgets/js/material_button.js&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;material_widgets/js/material_file_input.js&#39;</span><span class="p">,</span>
+            <span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">MaterialSelectMenu</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of Material widgets that make use of Material Select Menu</span>
+<span class="sd">    Components.</span>
+
+<span class="sd">    Declares under Media the Material CSS and JS components required to</span>
+<span class="sd">    correctly display the widget.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s1">&#39;material_widgets/css/material_select.css&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">}</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;material_widgets/js/material_select.js&#39;</span><span class="p">,)</span>
+
+
+<span class="k">class</span> <span class="nc">MaterialTextField</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Superclass of Material widgets that make use of Material TextField</span>
+<span class="sd">    Components.</span>
+
+<span class="sd">    Declares under Media the Material CSS and JS components required to</span>
+<span class="sd">    correctly display the widget.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+<span class="sd">    *args</span>
+<span class="sd">    **kwargs</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">persistent_help_text</span> <span class="o">=</span> <span class="n">persistent_help_text</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;persistent_help_text&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">persistent_help_text</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s1">&#39;material_widgets/css/material_text_field.css&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">}</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;material_widgets/js/material_text_field.js&#39;</span><span class="p">,)</span>
+
+
+<div class="viewcode-block" id="MaterialCheckboxInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialCheckboxInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialCheckboxInput</span><span class="p">(</span><span class="n">MaterialCheckbox</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">CheckboxInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material CheckboxInput</span>
+
+<span class="sd">    Default widget for BooleanField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the right of the checkbox.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the label.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Explicit widget declaration is unnecessary in a BooleanField under a</span>
+<span class="sd">    MaterialForm.</span>
+
+<span class="sd">    &gt;&gt;&gt; checkbox = forms.BooleanField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Checkbox&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;This is a checkbox&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     #widget=MaterialCheckboxInput(),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_checkbox.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialCheckboxSelectMultiple"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialCheckboxSelectMultiple">[docs]</a><span class="k">class</span> <span class="nc">MaterialCheckboxSelectMultiple</span><span class="p">(</span>
+        <span class="n">MaterialCheckbox</span><span class="p">,</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">CheckboxSelectMultiple</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material CheckboxSelectMultiple</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed above the checkbox group.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : list or tuple of str, optional</span>
+<span class="sd">        Displayed as tool tips on the respective checkbox labels.</span>
+<span class="sd">    choices : list or tuple of (value, label) pairs</span>
+<span class="sd">        Each pair will be displayed as a checkbox.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    is_vertical : bool, optional</span>
+<span class="sd">        Layout of checkboxes will be vertical if True, or horizontal otherwise.</span>
+<span class="sd">        Defaults to True.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; checkbox_select_multiple = forms.MultipleChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Multiple Checkboxes&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=(</span>
+<span class="sd">    &gt;&gt;&gt;         &#39;This is checkbox 1&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         &#39;This is checkbox 2&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         &#39;This is checkbox 3&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialCheckboxSelectMultiple(</span>
+<span class="sd">    &gt;&gt;&gt;         is_vertical=False,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;checkbox_1&#39;, &#39;Checkbox 1&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;checkbox_2&#39;, &#39;Checkbox 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;checkbox_3&#39;, &#39;Checkbox 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_checkbox_select.html&#39;</span>
+    <span class="n">option_template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_checkbox_option.html&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_vertical</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_vertical</span> <span class="o">=</span> <span class="n">is_vertical</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;is_vertical&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_vertical</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="k">def</span> <span class="nf">create_option</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                      <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">selected</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span>
+                      <span class="n">subindex</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">option</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">create_option</span><span class="p">(</span>
+            <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">selected</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">subindex</span><span class="p">,</span> <span class="n">attrs</span>
+            <span class="p">)</span>
+        <span class="n">option</span><span class="p">[</span><span class="s1">&#39;help_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">help_text</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">option</span></div>
+
+
+<div class="viewcode-block" id="MaterialClearableFileInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialClearableFileInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialClearableFileInput</span><span class="p">(</span>
+        <span class="n">MaterialFileButton</span><span class="p">,</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">ClearableFileInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material ClearableFileInput</span>
+
+<span class="sd">    Default widget for FileField and ImageField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the button.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">        Label dynamically changes to selected file name, or file count if</span>
+<span class="sd">        the &#39;multiple&#39; attrs is True.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the button.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    button : list or tuple of str, optional</span>
+<span class="sd">        Button style modifiers include &#39;compact&#39;, &#39;dense&#39;, &#39;raised&#39;, &#39;stroked&#39;,</span>
+<span class="sd">        and &#39;unelevated&#39;. See `mdc-button CSS Classes &lt;https://github.com\</span>
+<span class="sd">        /material-components/material-components-web/tree/master/packages\</span>
+<span class="sd">        /mdc-button#css-classes&gt;`_ for details.</span>
+<span class="sd">    icon : str, optional</span>
+<span class="sd">        Icon to be displayed on the file button. See `Material Icons</span>
+<span class="sd">        &lt;https://material.io/icons/&gt;`_ for</span>
+<span class="sd">        choices.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; clearable_file_input = forms.FileField(</span>
+<span class="sd">    &gt;&gt;&gt;     ### Blank the label to only display the icon</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Choose 1 or more files&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialClearableFileInput(</span>
+<span class="sd">    &gt;&gt;&gt;         ### compact, dense, raised, stroked, unelevated</span>
+<span class="sd">    &gt;&gt;&gt;         button=(&#39;compact&#39;, &#39;dense&#39;, &#39;raised&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ### From material-icons; https://material.io/icons/</span>
+<span class="sd">    &gt;&gt;&gt;         icon=&#39;file_upload&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         attrs={</span>
+<span class="sd">    &gt;&gt;&gt;             &#39;multiple&#39;: True,</span>
+<span class="sd">    &gt;&gt;&gt;             },</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_clearable_file_input.html&#39;</span>
+
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s1">&#39;material_widgets/css/material_button.css&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;material_widgets/css/material_file_input.css&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">}</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="s1">&#39;material_widgets/js/material_button.js&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;material_widgets/js/material_checkbox.js&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;material_widgets/js/material_file_input.js&#39;</span><span class="p">,</span>
+            <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="MaterialDateInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialDateInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialDateInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">DateInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material DateInput</span>
+
+<span class="sd">    Default widget for DateField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; date_field = forms.DateField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Date&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;YYYY-MM-DD&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialDateInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_date.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialDateTimeInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialDateTimeInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialDateTimeInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">DateTimeInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material DateTimeInput</span>
+
+<span class="sd">    Default widget for DateTimeField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; datetime_field = forms.DateTimeField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Date and Time&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;YYYY-MM-DD HH:MM:SS&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialDateTimeInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_datetime.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialEmailInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialEmailInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialEmailInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">EmailInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material EmailInput</span>
+
+<span class="sd">    Default widget for EmailField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; email = forms.EmailField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Email Address&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;your_email@example.com&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialEmailInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_email.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialFileInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialFileInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialFileInput</span><span class="p">(</span><span class="n">MaterialFileButton</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FileInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material FileInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the button.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">        Label dynamically changes to selected file name, or file count if</span>
+<span class="sd">        the &#39;multiple&#39; attrs is True.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the button.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    button : list or tuple of str, optional</span>
+<span class="sd">        Button style modifiers include &#39;compact&#39;, &#39;dense&#39;, &#39;raised&#39;, &#39;stroked&#39;,</span>
+<span class="sd">        and &#39;unelevated&#39;. See `mdc-button CSS Classes &lt;https://github.com\</span>
+<span class="sd">        /material-components/material-components-web/tree/master/packages\</span>
+<span class="sd">        /mdc-button#css-classes&gt;`_ for details.</span>
+<span class="sd">    icon : str, optional</span>
+<span class="sd">        Icon to be displayed on the file button. See `Material Icons</span>
+<span class="sd">        &lt;https://material.io/icons/&gt;`_ for</span>
+<span class="sd">        choices.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; file_input = forms.FileField(</span>
+<span class="sd">    &gt;&gt;&gt;     ### Blank the label to only display the icon</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Choose 1 or more files&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialFileInput(</span>
+<span class="sd">    &gt;&gt;&gt;         ### compact, dense, raised, stroked, unelevated</span>
+<span class="sd">    &gt;&gt;&gt;         button=(&#39;compact&#39;, &#39;dense&#39;, &#39;raised&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ### From material-icons; https://material.io/icons/</span>
+<span class="sd">    &gt;&gt;&gt;         icon=&#39;attachment&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         attrs={</span>
+<span class="sd">    &gt;&gt;&gt;             &#39;multiple&#39;: True,</span>
+<span class="sd">    &gt;&gt;&gt;             },</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_file.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialHiddenInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialHiddenInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialHiddenInput</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HiddenInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material HiddenInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    initial : varies depending on field, optional</span>
+<span class="sd">        Initial value to populate the hidden input in the form.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; hidden_input = forms.CharField(</span>
+<span class="sd">    &gt;&gt;&gt;     initial=&#39;hidden_value&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.HiddenInput(),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_hidden.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialMultipleHiddenInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialMultipleHiddenInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialMultipleHiddenInput</span><span class="p">(</span>
+        <span class="n">MaterialComponent</span><span class="p">,</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">MultipleHiddenInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material MultipleHiddenInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    initial : varies depending on field, optional</span>
+<span class="sd">        Initial Value to populate the multiple hidden input in the form.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; multiple_hidden_input = forms.MultipleChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     initial=[&#39;hidden_1&#39;, &#39;hidden_2&#39;, &#39;hidden_3&#39;,],</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.MultipleHiddenInput(),</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;hidden_1&#39;, &#39;Hidden 1&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;hidden_2&#39;, &#39;Hidden 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;hidden_3&#39;, &#39;Hidden 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_multiple_hidden.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialNullBooleanSelect"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialNullBooleanSelect">[docs]</a><span class="k">class</span> <span class="nc">MaterialNullBooleanSelect</span><span class="p">(</span><span class="n">MaterialSelectMenu</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">NullBooleanSelect</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material NullBooleanSelect</span>
+
+<span class="sd">    Default widget for NullBooleanField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the select menu.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the label.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Explicit widget declaration is unnecessary in a NullBooleanField under a</span>
+<span class="sd">    MaterialForm.</span>
+
+<span class="sd">    &gt;&gt;&gt; null_boolean_select = forms.NullBooleanField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Is this a null boolean select?&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;This is a null boolean select&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     #widget=MaterialNullBooleanSelect(),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_select.html&#39;</span>
+    <span class="n">option_template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_select_option.html&#39;</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">attrs_class</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s1">&#39; mdc-select&#39;</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="n">attrs_class</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span></div>
+
+
+<div class="viewcode-block" id="MaterialNumberInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialNumberInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialNumberInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">NumberInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material NumberInput</span>
+
+<span class="sd">    Default widget for DecimalField, FloatField, and IntegerField under</span>
+<span class="sd">    MaterialForm when Field.localize is False.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Explicit widget declaration is unnecessary in a DecimalField, FloatField,</span>
+<span class="sd">    or IntegerField under MaterialForm.</span>
+
+<span class="sd">    &gt;&gt;&gt; decimal = forms.DecimalField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Decimal Number&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;To 2 d.p.&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     min_value=0.0,</span>
+<span class="sd">    &gt;&gt;&gt;     max_value=10.0,</span>
+<span class="sd">    &gt;&gt;&gt;     decimal_places=2,</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; integer = forms.IntegerField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Odd Number&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;No even numbers!&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     min_value=1,</span>
+<span class="sd">    &gt;&gt;&gt;     max_value=9,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.NumberInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         attrs={</span>
+<span class="sd">    &gt;&gt;&gt;             &#39;step&#39;: &#39;2&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;             },</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_number.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialPasswordInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialPasswordInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialPasswordInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">PasswordInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material PasswordInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; password = forms.CharField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&quot;Secret Password&quot;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Please enter at least 8 characters&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     min_length=8,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialPasswordInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_password.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialRadioSelect"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialRadioSelect">[docs]</a><span class="k">class</span> <span class="nc">MaterialRadioSelect</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioSelect</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material RadioSelect</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed above the radio group.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : list or tuple of str, optional</span>
+<span class="sd">        Displayed as tool tips on the respective radio option labels.</span>
+<span class="sd">    choices : list or tuple of (value, label) pairs</span>
+<span class="sd">        Each pair will be displayed as a radio option.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    is_vertical : bool, optional</span>
+<span class="sd">        Layout of checkboxes will be vertical if True, or horizontal otherwise.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; radio_select = forms.ChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Radio Select&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=(</span>
+<span class="sd">    &gt;&gt;&gt;         &#39;This is radio 1&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         &#39;This is radio 2&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         &#39;This is radio 3&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.RadioSelect(</span>
+<span class="sd">    &gt;&gt;&gt;         is_vertical=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;radio_select_1&#39;, &#39;Radio 1&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;radio_select_2&#39;, &#39;Radio 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;radio_select_3&#39;, &#39;Radio 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_radio.html&#39;</span>
+    <span class="n">option_template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_radio_option.html&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">is_vertical</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_vertical</span> <span class="o">=</span> <span class="n">is_vertical</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;is_vertical&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_vertical</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="k">def</span> <span class="nf">create_option</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                      <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">selected</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span>
+                      <span class="n">subindex</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">option</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">create_option</span><span class="p">(</span>
+            <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">selected</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">subindex</span><span class="p">,</span> <span class="n">attrs</span>
+            <span class="p">)</span>
+        <span class="n">option</span><span class="p">[</span><span class="s1">&#39;help_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">help_text</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">option</span>
+
+<div class="viewcode-block" id="MaterialRadioSelect.Media"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialRadioSelect.Media">[docs]</a>    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Material radio JS component.&quot;&quot;&quot;</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;material_widgets/js/material_radio.js&#39;</span><span class="p">,)</span></div></div>
+
+
+<div class="viewcode-block" id="MaterialSelect"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSelect">[docs]</a><span class="k">class</span> <span class="nc">MaterialSelect</span><span class="p">(</span><span class="n">MaterialSelectMenu</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Select</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material Select</span>
+
+<span class="sd">    Default widget for ChoiceField, FilePathField, ModelChoiceField, and</span>
+<span class="sd">    TypedChoiceField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the select menu.</span>
+<span class="sd">        If explicitly declared blank, the first item in the select menu will</span>
+<span class="sd">        act as an unselectable choice label.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the label.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Explicit widget declaration is unnecessary in ChoiceField, FilePathField,</span>
+<span class="sd">    ModelChoiceField, and TypedChoiceField under MaterialForm.</span>
+
+<span class="sd">    &gt;&gt;&gt; select = forms.ChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     #widget=MaterialSelect(),</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;&#39;, &#39;Select&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;choice_1&#39;, &#39;Choice 1&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;choice_2&#39;, &#39;Choice 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;choice_3&#39;, &#39;Choice 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    Choices can be grouped.</span>
+
+<span class="sd">    &gt;&gt;&gt; select_with_groups = forms.ChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     required=False,</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;&#39;, &#39;Select with Groups&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;Group 1&#39;, (</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;group_1_choice_1&#39;, &#39;Group 1 Choice 1 &#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;group_1_choice_2&#39;, &#39;Group 1 Choice 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;group_1_choice_3&#39;, &#39;Group 1 Choice 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             )</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;Group 2&#39;, (</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;group_2_choice_4&#39;, &#39;Group 2 Choice 4&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;group_2_choice_5&#39;, &#39;Group 2 Choice 5&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;group_2_choice_6&#39;, &#39;Group 2 Choice 6&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             )</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_select.html&#39;</span>
+    <span class="n">option_template_name</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="s1">&#39;material_widgets/widgets/&#39;</span>
+        <span class="s1">&#39;material_select_option.html&#39;</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">attrs_class</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s1">&#39; mdc-select&#39;</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="n">attrs_class</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span></div>
+
+
+<div class="viewcode-block" id="MaterialSelectDateWidget"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSelectDateWidget">[docs]</a><span class="k">class</span> <span class="nc">MaterialSelectDateWidget</span><span class="p">(</span><span class="n">MaterialSelectMenu</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">SelectDateWidget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material SelectDateWidget</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the select menu.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the label.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    various : various, optional</span>
+<span class="sd">        See `django.forms.widgets.SelectDateWidget &lt;https://docs.djangoproject.com\</span>
+<span class="sd">        /en/dev/ref/forms/widgets/#selectdatewidget&gt;`_ for optional parameters.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Widget can be declared as Django&#39;s SelectDateWidget or as</span>
+<span class="sd">    MaterialSelectDateWidget.</span>
+
+<span class="sd">    &gt;&gt;&gt; date_select = forms.DateField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&quot;Date&quot;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;This is a select date&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.SelectDateWidget(</span>
+<span class="sd">    &gt;&gt;&gt;         years=[year for year in range(</span>
+<span class="sd">    &gt;&gt;&gt;             datetime.now().year, datetime.now().year-100, -1)</span>
+<span class="sd">    &gt;&gt;&gt;               ],</span>
+<span class="sd">    &gt;&gt;&gt;         empty_label=(&quot;Year&quot;, &quot;Month&quot;, &quot;Day&quot;),</span>
+<span class="sd">    &gt;&gt;&gt;         )</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_select_date.html&#39;</span>
+    <span class="n">select_widget</span> <span class="o">=</span> <span class="n">MaterialSelect</span>
+
+<div class="viewcode-block" id="MaterialSelectDateWidget.Media"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSelectDateWidget.Media">[docs]</a>    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Material multiwidget CSS component.&quot;&quot;&quot;</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s1">&#39;material_widgets/css/material_multiwidget.css&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">}</span></div></div>
+
+
+<div class="viewcode-block" id="MaterialSelectMultiple"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSelectMultiple">[docs]</a><span class="k">class</span> <span class="nc">MaterialSelectMultiple</span><span class="p">(</span><span class="n">MaterialSelectMenu</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">SelectMultiple</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material SelectMultiple</span>
+
+<span class="sd">    Default widget for MultipleChoiceField, ModelMultipleChoiceField, and</span>
+<span class="sd">    TypedMultipleChoiceField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the select menu.</span>
+<span class="sd">        If explicitly declared blank, the first item in the select menu will</span>
+<span class="sd">        act as an unselectable choice label.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the label.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Explicit widget declaration is unnecessary in MultipleChoiceField,</span>
+<span class="sd">    ModelMultipleChoiceField, and TypedMultipleChoiceField under MaterialForm.</span>
+
+<span class="sd">    &gt;&gt;&gt; select_multiple = forms.MultipleChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Choose 1 or more&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Ctrl + Click to unselect&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     #widget=MaterialSelect(),</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;&#39;, &#39;Select&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_1&#39;, &#39;Multiple Choice 1&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_2&#39;, &#39;Multiple Choice 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_3&#39;, &#39;Multiple Choice 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    Choices can be grouped.</span>
+
+<span class="sd">    &gt;&gt;&gt; select_multiple_with_groups = forms.MultipleChoiceField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     #help_text=&#39;A label is needed to show the help text tooltip&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     choices=(</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;Select Multiple 1&#39;, (</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_1&#39;, &#39;Multiple Choice 1&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_2&#39;, &#39;Multiple Choice 2&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_3&#39;, &#39;Multiple Choice 3&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             )</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;         (&#39;Select Multiple 2&#39;, (</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_4&#39;, &#39;Multiple Choice 4&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_5&#39;, &#39;Multiple Choice 5&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             (&#39;multiple_choice_6&#39;, &#39;Multiple Choice 6&#39;),</span>
+<span class="sd">    &gt;&gt;&gt;             )</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_select_multiple.html&#39;</span>
+    <span class="n">option_template_name</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="s1">&#39;material_widgets/widgets/material_select_option_nojs.html&#39;</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">attrs_class</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s1">&#39; mdc-multi-select mdc-list&#39;</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="n">attrs_class</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span></div>
+
+
+<div class="viewcode-block" id="MaterialSliderInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSliderInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialSliderInput</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">NumberInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material SliderInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed above the widget in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed to the right of the label.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to True.</span>
+<span class="sd">    is_discrete : bool, optional</span>
+<span class="sd">        Slider will have discrete steps in its interface if True, else its</span>
+<span class="sd">        interface will be continuous.</span>
+<span class="sd">        Defaults to False.</span>
+<span class="sd">    display_markers : bool, optional</span>
+<span class="sd">        Value markers appear on slider interaction if True.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; slider = forms.IntegerField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Slider&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     ### help_text in sliders are persistent by default</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Even Number with Markers&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     required=False,</span>
+<span class="sd">    &gt;&gt;&gt;     min_value=0,</span>
+<span class="sd">    &gt;&gt;&gt;     max_value=10,</span>
+<span class="sd">    &gt;&gt;&gt;     initial=6,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialSliderInput(</span>
+<span class="sd">    &gt;&gt;&gt;         is_discrete=True,</span>
+<span class="sd">    &gt;&gt;&gt;         display_markers=True,</span>
+<span class="sd">    &gt;&gt;&gt;         attrs={</span>
+<span class="sd">    &gt;&gt;&gt;             &#39;step&#39;: &#39;2&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;             },</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_slider.html&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                 <span class="n">display_markers</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">is_discrete</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">persistent_help_text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                 <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">display_markers</span> <span class="o">=</span> <span class="n">display_markers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_discrete</span> <span class="o">=</span> <span class="n">is_discrete</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">persistent_help_text</span> <span class="o">=</span> <span class="n">persistent_help_text</span>
+
+    <span class="k">def</span> <span class="nf">get_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span>
+        <span class="n">context</span><span class="p">[</span><span class="s1">&#39;widget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s1">&#39;display_markers&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">display_markers</span><span class="p">,</span>
+            <span class="s1">&#39;is_discrete&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_discrete</span><span class="p">,</span>
+            <span class="s1">&#39;persistent_help_text&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">persistent_help_text</span><span class="p">,</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">context</span>
+
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">js</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;material_widgets/js/material_slider.js&#39;</span><span class="p">,)</span></div>
+
+
+<div class="viewcode-block" id="MaterialSplitDateTimeWidget"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSplitDateTimeWidget">[docs]</a><span class="k">class</span> <span class="nc">MaterialSplitDateTimeWidget</span><span class="p">(</span><span class="n">MaterialMultiWidget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material SplitDateTimeWidget</span>
+
+<span class="sd">    Splits datetime input into two MaterialTextFields.</span>
+<span class="sd">    Default widget for SplitDateTimeField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the widget fields in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    attrs : dict, optional</span>
+<span class="sd">        HTML attributes to be included in the multiwidget&#39;s template.</span>
+<span class="sd">    date_format : str, optional</span>
+<span class="sd">        Format to display initial field value. Defaults to first format found</span>
+<span class="sd">        in Django&#39;s DATE_INPUT_FORMATS.</span>
+<span class="sd">    time_format : str, optional</span>
+<span class="sd">        Format to display initial field value. Defaults to first format found</span>
+<span class="sd">        in Django&#39;s TIME_INPUT_FORMATS.</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Passes value through from field parameter.</span>
+<span class="sd">    date_label : str, optional</span>
+<span class="sd">        Displayed on the Date widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to &#39;Date&#39;.</span>
+<span class="sd">    date_help_text : str, optional</span>
+<span class="sd">        Displayed under the Date input field.</span>
+<span class="sd">        Defaults to &#39;YYYY-MM-DD&#39;.</span>
+<span class="sd">    date_persistent_help_text : bool, optional</span>
+<span class="sd">        Help text for Date widget will be persistently displayed if True, else</span>
+<span class="sd">        it will only be visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+<span class="sd">    time_label : str, optional</span>
+<span class="sd">        Displayed on the Time widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to &#39;Time&#39;.</span>
+<span class="sd">    time_help_text : str, optional</span>
+<span class="sd">        Displayed under the Time input field.</span>
+<span class="sd">        Defaults to &#39;HH:MM:SS&#39;.</span>
+<span class="sd">    time_persistent_help_text : bool, optional</span>
+<span class="sd">        Help text for Time widget will be persistently displayed if True, else</span>
+<span class="sd">        it will only be visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; split_datetime = forms.SplitDateTimeField(</span>
+<span class="sd">    &gt;&gt;&gt;     required=False,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialSplitDateTimeWidget(</span>
+<span class="sd">    &gt;&gt;&gt;         date_label=&#39;Birthdate&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         date_help_text=&#39;YYYY-MM-DD&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         date_persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         time_label=&#39;Birthtime&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         time_help_text=&#39;HH:MM:SS&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;         time_persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">supports_microseconds</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_splitdatetime.html&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                 <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">date_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">time_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">date_label</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">date_help_text</span><span class="o">=</span><span class="s1">&#39;YYYY-MM-DD&#39;</span><span class="p">,</span>
+                 <span class="n">date_persistent_help_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">time_label</span><span class="o">=</span><span class="s1">&#39;Time&#39;</span><span class="p">,</span> <span class="n">time_help_text</span><span class="o">=</span><span class="s1">&#39;HH:MM:SS&#39;</span><span class="p">,</span>
+                 <span class="n">time_persistent_help_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">multiwidgets</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">MaterialDateInput</span><span class="p">(</span>
+                <span class="n">label</span><span class="o">=</span><span class="n">date_label</span><span class="p">,</span>
+                <span class="n">help_text</span><span class="o">=</span><span class="n">date_help_text</span><span class="p">,</span>
+                <span class="n">persistent_help_text</span><span class="o">=</span><span class="n">date_persistent_help_text</span><span class="p">,</span>
+                <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">,</span>
+                <span class="nb">format</span><span class="o">=</span><span class="n">date_format</span><span class="p">,</span>
+                <span class="p">),</span>
+            <span class="n">MaterialTimeInput</span><span class="p">(</span>
+                <span class="n">label</span><span class="o">=</span><span class="n">time_label</span><span class="p">,</span>
+                <span class="n">help_text</span><span class="o">=</span><span class="n">time_help_text</span><span class="p">,</span>
+                <span class="n">persistent_help_text</span><span class="o">=</span><span class="n">time_persistent_help_text</span><span class="p">,</span>
+                <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">,</span>
+                <span class="nb">format</span><span class="o">=</span><span class="n">time_format</span><span class="p">,</span>
+                <span class="p">),</span>
+            <span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">multiwidgets</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">decompress</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">to_current_timezone</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">value</span><span class="o">.</span><span class="n">date</span><span class="p">(),</span> <span class="n">value</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)]</span>
+        <span class="k">return</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="MaterialSplitHiddenDateTimeWidget"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSplitHiddenDateTimeWidget">[docs]</a><span class="k">class</span> <span class="nc">MaterialSplitHiddenDateTimeWidget</span><span class="p">(</span><span class="n">MaterialSplitDateTimeWidget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material SplitHiddenDateTimeWidget</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    initial : list or tuple of str, optional</span>
+<span class="sd">        Initial values to populate the hidden date and time fields in the form.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; split_hidden_datetime = forms.SplitDateTimeField(</span>
+<span class="sd">    &gt;&gt;&gt;     initial=[&#39;1965-08-09&#39;, &#39;12:00:00&#39;],</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.SplitHiddenDateTimeWidget(),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">input_type</span> <span class="o">=</span> <span class="s1">&#39;hidden&#39;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_splithiddendatetime.html&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">date_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">time_format</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">attrs</span><span class="p">,</span> <span class="n">date_format</span><span class="p">,</span> <span class="n">time_format</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+                         <span class="n">date_label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">date_help_text</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+                         <span class="n">date_persistent_help_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                         <span class="n">time_label</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">time_help_text</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+                         <span class="n">time_persistent_help_text</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                        <span class="p">)</span>
+        <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="p">:</span>
+            <span class="n">widget</span><span class="o">.</span><span class="vm">__class__</span> <span class="o">=</span> <span class="n">MaterialHiddenInput</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">input_type</span> <span class="o">=</span> <span class="s1">&#39;hidden&#39;</span></div>
+
+<div class="viewcode-block" id="MaterialSwitchInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialSwitchInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialSwitchInput</span><span class="p">(</span><span class="n">MaterialComponent</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">CheckboxInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material SwitchInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed to the left of the switch.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed as a tool tip on the label.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity in a BooleanField to use widget.</span>
+
+<span class="sd">    &gt;&gt;&gt; boolean_switch = forms.BooleanField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Boolean Switch&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;This is a switch&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialSwitchInput(),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_switch.html&#39;</span>
+
+    <span class="k">class</span> <span class="nc">Media</span><span class="p">:</span>  <span class="c1"># pylint: disable=missing-docstring</span>
+        <span class="n">css</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s1">&#39;material_widgets/css/material_switch.css&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="MaterialTextarea"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialTextarea">[docs]</a><span class="k">class</span> <span class="nc">MaterialTextarea</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Textarea</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material Textarea</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed in the widget&#39;s field to the upper left of the box in the</span>
+<span class="sd">        template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; textarea = forms.CharField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&quot;Captain&#39;s Log&quot;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Write as much as you want&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.MaterialTextarea(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_textarea.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialTextInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialTextInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialTextInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">TextInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material TextInput</span>
+
+<span class="sd">    Default widget for CharField and various other fields under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; username = forms.CharField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Choose a Username&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     min_length=3,</span>
+<span class="sd">    &gt;&gt;&gt;     max_length=32,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;3-32 characters required&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.TextInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         attrs={</span>
+<span class="sd">    &gt;&gt;&gt;             &#39;autofocus&#39;: &quot;autofocus&quot;,</span>
+<span class="sd">    &gt;&gt;&gt;             },</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_text.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialTimeInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialTimeInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialTimeInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">TimeInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material TimeInput</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; time_field = forms.TimeField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;Time&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;HH:MM:SS&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=MaterialTimeInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_time.html&#39;</span></div>
+
+
+<div class="viewcode-block" id="MaterialURLInput"><a class="viewcode-back" href="../../widgets.html#material_widgets.widgets.MaterialURLInput">[docs]</a><span class="k">class</span> <span class="nc">MaterialURLInput</span><span class="p">(</span><span class="n">MaterialTextField</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">URLInput</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Material URLInput</span>
+
+<span class="sd">    Default widget for URLField under MaterialForm.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    label : str, optional</span>
+<span class="sd">        Displayed on the widget&#39;s field in the template.</span>
+<span class="sd">        Defaults to widget&#39;s capitalized field name with underscores converted</span>
+<span class="sd">        to spaces.</span>
+<span class="sd">    help_text : str, optional</span>
+<span class="sd">        Displayed under the input field.</span>
+
+<span class="sd">    Other Parameters</span>
+<span class="sd">    ----------------</span>
+<span class="sd">    persistent_help_text : bool, optional</span>
+<span class="sd">        Help text will be persistently displayed if True, else it will only be</span>
+<span class="sd">        visible when the field is active.</span>
+<span class="sd">        Defaults to False.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Declare widget explicity to use custom widget parameters.</span>
+
+<span class="sd">    &gt;&gt;&gt; url = forms.URLField(</span>
+<span class="sd">    &gt;&gt;&gt;     label=&#39;URL&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     help_text=&#39;Website&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     initial=&#39;http://github.com/ooknosi&#39;,</span>
+<span class="sd">    &gt;&gt;&gt;     widget=widgets.MaterialTextInput(</span>
+<span class="sd">    &gt;&gt;&gt;         persistent_help_text=True,</span>
+<span class="sd">    &gt;&gt;&gt;         ),</span>
+<span class="sd">    &gt;&gt;&gt;     )</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">template_name</span> <span class="o">=</span> <span class="s1">&#39;material_widgets/widgets/material_url.html&#39;</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Edison KOO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

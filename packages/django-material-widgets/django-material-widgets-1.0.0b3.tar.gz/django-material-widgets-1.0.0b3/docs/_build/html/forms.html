@@ -1,0 +1,126 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>material_widgets.forms &#8212; Django Material Widgets 1.0.0-beta documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="material_widgets.widgets" href="widgets.html" />
+    <link rel="prev" title="Settings" href="settings.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-material_widgets.forms">
+<span id="material-widgets-forms"></span><h1>material_widgets.forms<a class="headerlink" href="#module-material_widgets.forms" title="Permalink to this headline">¶</a></h1>
+<p>Customized form classes that uses widgets built with Material Components
+for the Web.</p>
+<p><code class="docutils literal"><span class="pre">MaterialForm</span></code> and <code class="docutils literal"><span class="pre">MaterialModelForm</span></code> modifies <code class="docutils literal"><span class="pre">django.forms.Form</span></code> and
+<code class="docutils literal"><span class="pre">django.forms.ModelForm</span></code> respectively, and are used to declare Django forms
+that will render with Material widgets.</p>
+<p class="rubric">References</p>
+<p><a class="reference external" href="https://material.io/components/web/">Material Design for the Web</a></p>
+<dl class="class">
+<dt id="material_widgets.forms.MaterialForm">
+<em class="property">class </em><code class="descclassname">material_widgets.forms.</code><code class="descname">MaterialForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/forms.html#MaterialForm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.forms.MaterialForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modified <cite>django.forms.Form</cite> that uses <cite>material_widgets.widgets</cite>.</p>
+<p class="rubric">Examples</p>
+<p>Declare your Form fields as usual but subclass <cite>MaterialForm</cite> instead of
+<cite>django.forms.Form</cite>.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">ExampleForm</span><span class="p">(</span><span class="n">MaterialForm</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">username</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="material_widgets.forms.MaterialModelForm">
+<em class="property">class </em><code class="descclassname">material_widgets.forms.</code><code class="descname">MaterialModelForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/material_widgets/forms.html#MaterialModelForm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#material_widgets.forms.MaterialModelForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modified <cite>django.forms.ModelForm</cite> that uses <cite>material_widgets.widgets</cite>.</p>
+<p class="rubric">Examples</p>
+<p>Declare your ModelForm Meta as usual but subclass <cite>MaterialModelForm</cite>
+instead of <cite>django.forms.ModelForm</cite>.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">ExampleModelForm</span><span class="p">(</span><span class="n">MaterialModelForm</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">model</span> <span class="o">=</span> <span class="n">ExampleModel</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;__all__&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="settings.html" title="previous chapter">Settings</a></li>
+      <li>Next: <a href="widgets.html" title="next chapter">material_widgets.widgets</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Edison KOO.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/forms.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
