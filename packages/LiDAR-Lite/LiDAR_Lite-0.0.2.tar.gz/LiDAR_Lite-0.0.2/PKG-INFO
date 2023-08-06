@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: LiDAR_Lite
+Version: 0.0.2
+Summary: LiDAR-Lite v3 Python Interface
+Home-page: https://github.gatech.edu/VIP-Automotive-LiDAR-OE-Subgroup/LiDAR-Lite
+Author: Kevin Abraham
+Author-email: kev@gatech.edu
+License: Apache-2.0
+Description-Content-Type: UNKNOWN
+Description: LiDAR_Lite
+        =======================
+        
+        A Python interface for the LiDAR-Lite v3 by Garmin.
+        
+        ----
+        
+        This is the README file for the project.
+        
+        
+Keywords: LiDAR Lite LiDAR-Lite Garmin
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3, <4
