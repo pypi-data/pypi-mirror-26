@@ -1,0 +1,7 @@
+tables
+numpy
+zipline
+pytdx
+cn-treasury_curve
+cn-stock-holidays
+tdx-wrapper
