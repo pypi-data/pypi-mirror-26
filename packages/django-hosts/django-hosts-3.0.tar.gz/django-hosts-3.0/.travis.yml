@@ -1,0 +1,32 @@
+sudo: false
+language: python
+install:
+- pip install tox coveralls
+script:
+- tox
+env:
+- TOXENV=py27-django-111
+- TOXENV=py34-django-111
+- TOXENV=py34-django-20
+matrix:
+  include:
+  - python: 3.5
+    env: TOXENV=py35-django-111
+  - python: 3.5
+    env: TOXENV=py35-django-20
+  - python: 3.6
+    env: TOXENV=py36-django-111
+  - python: 3.6
+    env: TOXENV=py36-django-20
+after_success: coveralls
+deploy:
+  provider: pypi
+  server: https://jazzband.co/projects/django-hosts/upload
+  user: jazzband
+  distributions: sdist bdist_wheel
+  password:
+    secure: AwOdeqfsMKnlHLL/h8/WsetV1e3qc8ewGD4gtIVlW9jACadtqhiZeFpxJvLljq955MfF7lkv9lMGx2g1Ljvjyuw0txzkv93/gyxd+Seu606J/tIO5VMNZMQuEJaR/ND3DvpTjwV5WWiMxECa3lp/ttlq6F5Ugjdup/xuJo+MT0s=
+  on:
+    tags: true
+    repo: jazzband/django-hosts
+    condition: "$TOXENV = py27-django-111"
