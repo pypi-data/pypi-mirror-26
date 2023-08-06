@@ -1,0 +1,11 @@
+bootstrap_contrast/__init__.py,sha256=22_IqGpuAc_8THgS5_smmsSzQi6peZ3YAz8BUjPxqjY,53
+bootstrap_contrast/bootstrap_contrast.py,sha256=g7SwHbWB4wKUQTDxqdkqxXebk2xGht8Ws2cLZJtxMLQ,27511
+bootstrap_contrast/bootstrap_tools.py,sha256=0M3pGLcf7kyiOr5f7pTLE999ep1L2r2sxo0CFGVks_k,11446
+bootstrap_contrast/misc_tools.py,sha256=xnXK-TuVs2mJ5dqOb4c0LGn70nVQD4xdAtCQECmeCZk,388
+bootstrap_contrast/plot_tools.py,sha256=kkrQGYqrgR4mezYqrFwEtpWHfgyavEIcBGrBvFD9hdU,3409
+bootstrap_contrast-0.331.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+bootstrap_contrast-0.331.dist-info/METADATA,sha256=4z_oodeQwrZ4aM5R-loJXkhc_7ufP-Xq8KJgsUgXjyY,337
+bootstrap_contrast-0.331.dist-info/RECORD,,
+bootstrap_contrast-0.331.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+bootstrap_contrast-0.331.dist-info/metadata.json,sha256=MXrPL-cEeT4wm2uv7qvngEBd4aMvzXDCqYCCOdvyYwk,518
+bootstrap_contrast-0.331.dist-info/top_level.txt,sha256=OqqaTFmbfwPffAoboB9r3Xk6wsRUlzxYN3SX2czMaO0,19
