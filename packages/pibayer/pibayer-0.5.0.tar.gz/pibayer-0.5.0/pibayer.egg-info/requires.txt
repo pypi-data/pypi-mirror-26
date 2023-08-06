@@ -1,0 +1,10 @@
+picamera
+numpy
+nose
+
+[plot]
+matplotlib
+
+[write]
+tifffile
+h5py
