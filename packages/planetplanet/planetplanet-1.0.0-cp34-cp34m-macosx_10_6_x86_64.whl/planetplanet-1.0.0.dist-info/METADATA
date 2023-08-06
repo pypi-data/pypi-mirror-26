@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: planetplanet
+Version: 1.0.0
+Summary: Photodynamical code for planet-planet occultations
+Home-page: http://github.com/rodluger/planetplanet
+Author: Rodrigo Luger
+Author-email: rodluger@uw.edu
+License: GPL
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: numba (>=0.34)
+Requires-Dist: numpy (>=1.8)
+Requires-Dist: pandas
+Requires-Dist: rebound
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: tqdm
+
+A photodynamical code that computes transits, eclipses, phase curves, and planet-planet/planet-moon occultations in planetary systems.
+
+
