@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: python-harborclient
+Version: 1.2.2.dev42
+Summary: A CLI tool for the Docker Registry Harbor
+Home-page: https://github.com/int32bit/python-harborclient
+Author: int32bit
+Author-email: krystism@gmail.com
+License: Apache License, Version 2.0
+Description: A CLI tool for the Docker Registry Harbor
+Keywords: 'docker registry distribution harbor python sdk'
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
