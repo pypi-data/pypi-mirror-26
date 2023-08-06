@@ -1,0 +1,12 @@
+wagtailcontentstream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailcontentstream/blocks.py,sha256=aXjST2I28TptiTnQm925gYEIdzvRAYoozEKv2XN4034,1561
+wagtailcontentstream/models.py,sha256=pVm7UVNHeijCMUdVwq8XhhdkCM-RCJcxbvr90bxIL24,694
+wagtailcontentstream/templates/wagtailcontentstream/blocks/captioned_image.html,sha256=l1ObCiAiokvpESOixUu3N_6G0QRfC6ewaYViqaaeyfM,163
+wagtailcontentstream/templates/wagtailcontentstream/blocks/heading.html,sha256=mcaQxPGgcU_RYuHvUR1WcMre0cBEEFURknRo5M0qp4I,41
+wagtailcontentstream/templates/wagtailcontentstream/blocks/section_heading.html,sha256=rnYmDytOuJqGyfdMO5zByHitasAcYno5roMC8uuaelU,41
+wagtailcontentstream-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+wagtailcontentstream-0.2.0.dist-info/METADATA,sha256=ofRfpmsMSZzsNh2imzKQ13kIFR7u6BDABs52JN0vmsg,919
+wagtailcontentstream-0.2.0.dist-info/RECORD,,
+wagtailcontentstream-0.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+wagtailcontentstream-0.2.0.dist-info/metadata.json,sha256=xVrbJ0AtlDL6oPVUC-iaZfBQrpki5eC8h4V_l1woyq0,1020
+wagtailcontentstream-0.2.0.dist-info/top_level.txt,sha256=mz1Vr8yaIat0_hw-nfaIVWWPoCIomuH-sFdGm3HC2IA,21
