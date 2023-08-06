@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: rt1
+Version: 0.0.1
+Summary: rt1 - bistatic single scattering radiative transfer model
+Home-page: https://github.com/TUW-GEO/rt1
+Author: Raphael Quast
+Author-email: raphael.quast@geo.tuwien.ac.at
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: xxxx
+Keywords: physics,radiative transfer
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Programming Language :: Python :: 2.7
