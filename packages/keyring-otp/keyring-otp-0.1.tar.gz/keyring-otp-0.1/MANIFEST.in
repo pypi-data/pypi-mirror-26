@@ -1,0 +1,3 @@
+include *.rst
+include *.png
+include requirements.txt
