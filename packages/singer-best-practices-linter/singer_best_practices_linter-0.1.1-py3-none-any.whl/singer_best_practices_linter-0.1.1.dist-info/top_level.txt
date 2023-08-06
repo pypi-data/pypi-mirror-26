@@ -1,0 +1,1 @@
+singer_best_practices_linter
