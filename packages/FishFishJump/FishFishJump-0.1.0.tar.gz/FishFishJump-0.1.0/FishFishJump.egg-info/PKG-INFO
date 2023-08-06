@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: FishFishJump
+Version: 0.1.0
+Summary: Simple solution for search engines in the python
+Home-page: https://github.com/SylvanasSun/FishFishJump
+Author: SylvanasSun
+Author-email: sylvanas.sun@gmail.com
+License: MIT
+Description: ============
+        FishFishJump
+        ============
+        
+        Fish Fish Jump is a solution that simply and basic for search engines.
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2017-11-09)
+        ------------------
+        * First release on PyPI.
+Keywords: FishFishJump python scrapy scrapy-redis
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
