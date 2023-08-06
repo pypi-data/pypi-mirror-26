@@ -1,0 +1,3 @@
+[pokrok]
+tqdm = pokrok.plugins.tqdm:TqdmProgressMeterFactory
+
