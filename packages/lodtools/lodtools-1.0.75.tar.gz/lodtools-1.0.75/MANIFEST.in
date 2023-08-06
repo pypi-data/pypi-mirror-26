@@ -1,0 +1,3 @@
+include LICENSE.txt
+include collab/TRUTH.txt
+exclude collab/CONFIG.txt
