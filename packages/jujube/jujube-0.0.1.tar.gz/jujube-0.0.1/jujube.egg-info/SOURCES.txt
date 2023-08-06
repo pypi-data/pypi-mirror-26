@@ -1,0 +1,7 @@
+setup.py
+jujube/__init__.py
+jujube.egg-info/PKG-INFO
+jujube.egg-info/SOURCES.txt
+jujube.egg-info/dependency_links.txt
+jujube.egg-info/entry_points.txt
+jujube.egg-info/top_level.txt
