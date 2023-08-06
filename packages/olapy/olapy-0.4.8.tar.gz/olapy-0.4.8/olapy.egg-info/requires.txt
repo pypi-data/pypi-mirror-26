@@ -1,0 +1,15 @@
+pandas<1
+lxml
+spyne<3
+SQLAlchemy<1.2
+xmlwitch
+attrs
+mysqlclient
+pymysql
+psycopg2
+pyyaml
+werkzeug
+bonobo
+bonobo-sqlalchemy
+awesome-slugify
+python-dotenv
