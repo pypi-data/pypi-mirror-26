@@ -1,0 +1,1 @@
+dash_annotated_syntax_highlighter

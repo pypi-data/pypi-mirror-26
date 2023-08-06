@@ -1,0 +1,728 @@
+{
+  "src/components/AnnotatedSyntaxHighlighter.react.js": {
+    "description": "",
+    "displayName": "AnnotatedCode",
+    "methods": [],
+    "props": {
+      "code": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "theme": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'androidstudio'",
+              "computed": false
+            },
+            {
+              "value": "'arduinoLight'",
+              "computed": false
+            },
+            {
+              "value": "'arta'",
+              "computed": false
+            },
+            {
+              "value": "'ascetic'",
+              "computed": false
+            },
+            {
+              "value": "'atelierCaveDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierCaveLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierDuneDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierDuneLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierEstuaryDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierEstuaryLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierForestDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierForestLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierHeathDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierHeathLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierLakesideDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierLakesideLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierPlateauDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierPlateauLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSavannaDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSavannaLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSeasideDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSeasideLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSulphurpoolDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSulphurpoolLight'",
+              "computed": false
+            },
+            {
+              "value": "'atomOneDark'",
+              "computed": false
+            },
+            {
+              "value": "'atomOneLight'",
+              "computed": false
+            },
+            {
+              "value": "'brownPaper'",
+              "computed": false
+            },
+            {
+              "value": "'codepenEmbed'",
+              "computed": false
+            },
+            {
+              "value": "'colorBrewer'",
+              "computed": false
+            },
+            {
+              "value": "'darcula'",
+              "computed": false
+            },
+            {
+              "value": "'dark'",
+              "computed": false
+            },
+            {
+              "value": "'darkula'",
+              "computed": false
+            },
+            {
+              "value": "'defaultStyle'",
+              "computed": false
+            },
+            {
+              "value": "'docco'",
+              "computed": false
+            },
+            {
+              "value": "'dracula'",
+              "computed": false
+            },
+            {
+              "value": "'far'",
+              "computed": false
+            },
+            {
+              "value": "'foundation'",
+              "computed": false
+            },
+            {
+              "value": "'githubGist'",
+              "computed": false
+            },
+            {
+              "value": "'github'",
+              "computed": false
+            },
+            {
+              "value": "'googlecode'",
+              "computed": false
+            },
+            {
+              "value": "'grayscale'",
+              "computed": false
+            },
+            {
+              "value": "'gruvboxDark'",
+              "computed": false
+            },
+            {
+              "value": "'gruvboxLight'",
+              "computed": false
+            },
+            {
+              "value": "'hopscotch'",
+              "computed": false
+            },
+            {
+              "value": "'hybrid'",
+              "computed": false
+            },
+            {
+              "value": "'idea'",
+              "computed": false
+            },
+            {
+              "value": "'irBlack'",
+              "computed": false
+            },
+            {
+              "value": "'kimbieDark'",
+              "computed": false
+            },
+            {
+              "value": "'kimbieLight'",
+              "computed": false
+            },
+            {
+              "value": "'magula'",
+              "computed": false
+            },
+            {
+              "value": "'monoBlue'",
+              "computed": false
+            },
+            {
+              "value": "'monokaiSublime'",
+              "computed": false
+            },
+            {
+              "value": "'monokai'",
+              "computed": false
+            },
+            {
+              "value": "'obsidian'",
+              "computed": false
+            },
+            {
+              "value": "'ocean'",
+              "computed": false
+            },
+            {
+              "value": "'paraisoDark'",
+              "computed": false
+            },
+            {
+              "value": "'paraisoLight'",
+              "computed": false
+            },
+            {
+              "value": "'pojoaque'",
+              "computed": false
+            },
+            {
+              "value": "'purebasic'",
+              "computed": false
+            },
+            {
+              "value": "'qtcreatorDark'",
+              "computed": false
+            },
+            {
+              "value": "'qtcreatorLight'",
+              "computed": false
+            },
+            {
+              "value": "'railscasts'",
+              "computed": false
+            },
+            {
+              "value": "'rainbow'",
+              "computed": false
+            },
+            {
+              "value": "'routeros'",
+              "computed": false
+            },
+            {
+              "value": "'schoolBook'",
+              "computed": false
+            },
+            {
+              "value": "'solarizedDark'",
+              "computed": false
+            },
+            {
+              "value": "'solarizedLight'",
+              "computed": false
+            },
+            {
+              "value": "'sunburst'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNightBlue'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNightBright'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNightEighties'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNight'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrow'",
+              "computed": false
+            },
+            {
+              "value": "'vs'",
+              "computed": false
+            },
+            {
+              "value": "'vs2015'",
+              "computed": false
+            },
+            {
+              "value": "'xcode'",
+              "computed": false
+            },
+            {
+              "value": "'xt256'",
+              "computed": false
+            },
+            {
+              "value": "'zenburn'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_container": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_syntax_container": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_syntax": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_syntax_span": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_comment_container": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_comment_pre": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "styles_comment_span": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "src/components/SyntaxHighlighter.react.js": {
+    "description": "",
+    "displayName": "DashSyntaxHighlighter",
+    "methods": [],
+    "props": {
+      "code": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "theme": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'androidstudio'",
+              "computed": false
+            },
+            {
+              "value": "'arduinoLight'",
+              "computed": false
+            },
+            {
+              "value": "'arta'",
+              "computed": false
+            },
+            {
+              "value": "'ascetic'",
+              "computed": false
+            },
+            {
+              "value": "'atelierCaveDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierCaveLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierDuneDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierDuneLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierEstuaryDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierEstuaryLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierForestDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierForestLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierHeathDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierHeathLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierLakesideDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierLakesideLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierPlateauDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierPlateauLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSavannaDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSavannaLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSeasideDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSeasideLight'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSulphurpoolDark'",
+              "computed": false
+            },
+            {
+              "value": "'atelierSulphurpoolLight'",
+              "computed": false
+            },
+            {
+              "value": "'atomOneDark'",
+              "computed": false
+            },
+            {
+              "value": "'atomOneLight'",
+              "computed": false
+            },
+            {
+              "value": "'brownPaper'",
+              "computed": false
+            },
+            {
+              "value": "'codepenEmbed'",
+              "computed": false
+            },
+            {
+              "value": "'colorBrewer'",
+              "computed": false
+            },
+            {
+              "value": "'darcula'",
+              "computed": false
+            },
+            {
+              "value": "'dark'",
+              "computed": false
+            },
+            {
+              "value": "'darkula'",
+              "computed": false
+            },
+            {
+              "value": "'defaultStyle'",
+              "computed": false
+            },
+            {
+              "value": "'docco'",
+              "computed": false
+            },
+            {
+              "value": "'dracula'",
+              "computed": false
+            },
+            {
+              "value": "'far'",
+              "computed": false
+            },
+            {
+              "value": "'foundation'",
+              "computed": false
+            },
+            {
+              "value": "'githubGist'",
+              "computed": false
+            },
+            {
+              "value": "'github'",
+              "computed": false
+            },
+            {
+              "value": "'googlecode'",
+              "computed": false
+            },
+            {
+              "value": "'grayscale'",
+              "computed": false
+            },
+            {
+              "value": "'gruvboxDark'",
+              "computed": false
+            },
+            {
+              "value": "'gruvboxLight'",
+              "computed": false
+            },
+            {
+              "value": "'hopscotch'",
+              "computed": false
+            },
+            {
+              "value": "'hybrid'",
+              "computed": false
+            },
+            {
+              "value": "'idea'",
+              "computed": false
+            },
+            {
+              "value": "'irBlack'",
+              "computed": false
+            },
+            {
+              "value": "'kimbieDark'",
+              "computed": false
+            },
+            {
+              "value": "'kimbieLight'",
+              "computed": false
+            },
+            {
+              "value": "'magula'",
+              "computed": false
+            },
+            {
+              "value": "'monoBlue'",
+              "computed": false
+            },
+            {
+              "value": "'monokaiSublime'",
+              "computed": false
+            },
+            {
+              "value": "'monokai'",
+              "computed": false
+            },
+            {
+              "value": "'obsidian'",
+              "computed": false
+            },
+            {
+              "value": "'ocean'",
+              "computed": false
+            },
+            {
+              "value": "'paraisoDark'",
+              "computed": false
+            },
+            {
+              "value": "'paraisoLight'",
+              "computed": false
+            },
+            {
+              "value": "'pojoaque'",
+              "computed": false
+            },
+            {
+              "value": "'purebasic'",
+              "computed": false
+            },
+            {
+              "value": "'qtcreatorDark'",
+              "computed": false
+            },
+            {
+              "value": "'qtcreatorLight'",
+              "computed": false
+            },
+            {
+              "value": "'railscasts'",
+              "computed": false
+            },
+            {
+              "value": "'rainbow'",
+              "computed": false
+            },
+            {
+              "value": "'routeros'",
+              "computed": false
+            },
+            {
+              "value": "'schoolBook'",
+              "computed": false
+            },
+            {
+              "value": "'solarizedDark'",
+              "computed": false
+            },
+            {
+              "value": "'solarizedLight'",
+              "computed": false
+            },
+            {
+              "value": "'sunburst'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNightBlue'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNightBright'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNightEighties'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrowNight'",
+              "computed": false
+            },
+            {
+              "value": "'tomorrow'",
+              "computed": false
+            },
+            {
+              "value": "'vs'",
+              "computed": false
+            },
+            {
+              "value": "'vs2015'",
+              "computed": false
+            },
+            {
+              "value": "'xcode'",
+              "computed": false
+            },
+            {
+              "value": "'xt256'",
+              "computed": false
+            },
+            {
+              "value": "'zenburn'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}

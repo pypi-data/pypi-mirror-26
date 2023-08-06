@@ -1,0 +1,5 @@
+include dash_annotated_syntax_highlighter/bundle.js
+include dash_annotated_syntax_highlighter/bundle.js.map
+include dash_annotated_syntax_highlighter/metadata.json
+include README.md
+include LICENSE.md
