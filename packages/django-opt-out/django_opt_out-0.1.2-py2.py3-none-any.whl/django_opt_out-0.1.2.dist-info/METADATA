@@ -1,0 +1,132 @@
+Metadata-Version: 2.0
+Name: django-opt-out
+Version: 0.1.2
+Summary: Allow everybody to unsubscribe your messages, user accounts are not required.
+Home-page: https://github.com/wooyek/django-opt-out
+Author: Janusz Skonieczny
+Author-email: js+pypi@bravelabs.pl
+License: MIT license
+Description-Content-Type: UNKNOWN
+Keywords: django-opt-out
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: django-bootstrap-form
+Requires-Dist: django
+Requires-Dist: django-betterforms
+Requires-Dist: django-environ
+Requires-Dist: django-formtools
+Requires-Dist: django-import-export
+Requires-Dist: django-localflavor
+Requires-Dist: django-pascal-templates
+Requires-Dist: django-polymodels
+Requires-Dist: django-powerbank
+Requires-Dist: django-reversion
+Requires-Dist: django-email-queue
+Requires-Dist: html2text
+Requires-Dist: isoweek
+Requires-Dist: jinja2-highlight
+Requires-Dist: markdown
+Requires-Dist: maya
+Requires-Dist: pathlib
+Requires-Dist: psycopg2
+Requires-Dist: pycountry
+Requires-Dist: pytz
+Requires-Dist: raven
+Requires-Dist: requests
+Requires-Dist: Django (>=1.10)
+Provides-Extra: factories
+Requires-Dist: factory-boy; extra == 'factories'
+
+==========================
+Django Opt-out application
+==========================
+
+
+.. image:: https://img.shields.io/pypi/v/django-opt-out.svg
+        :target: https://pypi.python.org/pypi/django-opt-out
+
+.. image:: https://img.shields.io/travis/wooyek/django-opt-out.svg
+        :target: https://travis-ci.org/wooyek/django-opt-out
+
+.. image:: https://readthedocs.org/projects/django-opt-out/badge/?version=latest
+        :target: https://django-opt-out.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+Allow everybody to unsubscribe your messages, user accounts are not required.
+
+* Free software: MIT license
+* Documentation: https://django-opt-out.readthedocs.io.
+
+
+Quickstart
+----------
+
+Install Django Opt-out application::
+
+    pip install django-opt-out
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'django_opt_out.apps.DjangoOptOutConfig',
+        ...
+    )
+
+Add Django Opt-out application's URL patterns:
+
+.. code-block:: python
+
+    from django_opt_out import urls as django_opt_out_urls
+
+
+    urlpatterns = [
+        ...
+        url(r'^', include(django_opt_out_urls)),
+        ...
+    ]
+
+Features
+--------
+
+* TODO
+
+Running Tests
+-------------
+
+Does the code actually work?
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install tox
+    (myenv) $ tox
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `wooyek/cookiecutter-django-app`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`wooyek/cookiecutter-django-app`: https://github.com/wooyek/cookiecutter-django-app
+
+
+
+
+History
+-------
+
+0.1.0 (2017-11-03)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
