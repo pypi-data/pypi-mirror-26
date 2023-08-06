@@ -1,0 +1,9 @@
+README.md
+setup.py
+spitobj/__init__.py
+spitobj/adapters.py
+spitobj/spitobj.py
+spitobj.egg-info/PKG-INFO
+spitobj.egg-info/SOURCES.txt
+spitobj.egg-info/dependency_links.txt
+spitobj.egg-info/top_level.txt

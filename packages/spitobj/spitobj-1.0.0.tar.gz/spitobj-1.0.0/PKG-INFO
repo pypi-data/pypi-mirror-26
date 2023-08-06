@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: spitobj
+Version: 1.0.0
+Summary: Spitobj - fake data object initialization
+Home-page: https://github.com/xliiv/spitobj
+Author: xliiv
+Author-email: tymoteusz.jankowski@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        Fake data object initialization
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
