@@ -1,0 +1,104 @@
+CHANGES
+=======
+
+0.6.4
+-----
+
+* rename availability event
+* Fix dockerbuild
+* note about TZ information
+
+0.6.2
+-----
+
+* no pip install -e trick in travis and docker hub
+
+0.6.1
+-----
+
+* db reset event
+
+0.6.0
+-----
+
+* make dev to force pip install -e 
+
+0.5.11
+------
+
+* remove database on minor version update
+* UI: glossy is create
+
+0.5.10
+------
+
+* Multi season support (extract first one)
+* Support refresh of double episodes
+* UI: enhancements
+* UI: Table in status page
+* UI: rework events and logs
+* UI: add about page
+* UI: Rework homepage
+* remove comment in md
+
+0.5.9
+-----
+
+* fix crash during disk scanner
+* other subliminal logs to hide
+
+0.5.8
+-----
+
+* ui: Fix screensize on mobile
+
+0.5.7
+-----
+
+* quick and dirty fix of glob search
+
+0.5.6
+-----
+
+* do not use peewee sqlitequeuedb get\_or\_create
+* less subliminal logs
+* hide subliminal logging debug
+* fix bad media  globing
+* fix unhandled response exceptions
+* flake8: enable D2
+* yapf: style
+* yapf: blank\_line\_before\_class\_docstring
+* yapf: blank\_line\_before\_nested\_class\_or\_def
+* custom log level for cfgtree and aspscheduler
+* oui: layout width
+* logger name of cfgtree
+* custom loglevel for extern libs
+
+0.5.5
+-----
+
+* move pyannotate to own entry point
+
+0.5.4
+-----
+
+* ui: title on the right
+
+0.5.3
+-----
+
+* oui: put qtabs in toolbar
+* Fix object is not subscriptable
+* fix extra semicolon
+* flake8-docstrings
+* flake8-logging-format
+* make update
+* add Pipfile.lock
+* mypy checks
+* mypy cfgtree
+* add heading in isort imports
+* make mypy happy
+* generate annotation file on env var
+* fix pipfile -e 
+* mypy and pyannotate
+* rework front oui
