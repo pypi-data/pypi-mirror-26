@@ -1,0 +1,3 @@
+[console_scripts]
+om-tests = openmairie.devtools.omtests:main
+
