@@ -1,0 +1,4 @@
+parameter	rmsep_overall	rmsep_similarity_score_0p5	rmsep_similarity_score_0p6	rmsep_similarity_score_0p7	rmsep_similarity_score_0p8	rmsep_similarity_score_0p9	rmsep_similarity_score_1p0
+cl_h	0.67	0.76	0.76	0.57	0.57	0.57	0.57
+ppb_h	0.9	0.94	0.94	0.94	0.83	0.83	0.83
+v_h	0.45	0.51	0.51	0.37	0.37	0.37	0.37

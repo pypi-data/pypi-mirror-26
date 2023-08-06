@@ -1,0 +1,63 @@
+expected column header	column header to map	comment
+name		always
+mol_wt		always
+charge_type		po
+pka_a1		po
+pka_a2		po
+pka_b1		po
+pka_b2		po
+cl_in_vivo_plasma_dog		dog
+cl_in_vivo_plasma_dog_qualifier		dog
+cl_in_vivo_plasma_dog_similarity		dog
+cl_in_vivo_plasma_dog_standard_deviation		dog
+cl_in_vivo_plasma_dog_units		dog
+v_steady_state_dog		dog
+v_steady_state_dog_qualifier		dog
+v_steady_state_dog_similarity		dog
+v_steady_state_dog_standard_deviation		dog
+v_steady_state_dog_units		dog
+ppb_dog		dog free
+ppb_dog_qualifier		dog free
+ppb_dog_similarity		dog free
+ppb_dog_standard_deviation		dog free
+ppb_dog_units		dog free
+cl_in_vivo_plasma_human	cl_h	human
+cl_in_vivo_plasma_human_qualifier	cl_h_qualifier	human
+cl_in_vivo_plasma_human_similarity	cl_h_mean_similarity_score	human
+cl_in_vivo_plasma_human_standard_deviation	cl_h_standard_deviation	human
+cl_in_vivo_plasma_human_units	cl_h_units	human
+v_steady_state_human	v_h	human
+v_steady_state_human_qualifier	v_h_qualifier	human
+v_steady_state_human_similarity	v_h_mean_similarity_score	human
+v_steady_state_human_standard_deviation		human
+v_steady_state_human_units	v_h_units	human
+ppb_human	ppb_h	human free
+ppb_human_qualifier	ppb_h_qualifier	human free
+ppb_human_similarity	ppb_h_mean_similarity_score	human free
+ppb_human_standard_deviation		human free
+ppb_human_units	ppb_h_units	human free
+cl_in_vivo_plasma_rat	cl_r	rat
+cl_in_vivo_plasma_rat_qualifier	cl_r_qualifier	rat
+cl_in_vivo_plasma_rat_similarity	cl_r_mean_similarity_score	rat
+cl_in_vivo_plasma_rat_standard_deviation		rat
+cl_in_vivo_plasma_rat_units	cl_r_units	rat
+v_steady_state_rat	v_r	rat
+v_steady_state_rat_qualifier	v_r_qualifier	rat
+v_steady_state_rat_similarity	v_r_mean_similarity_score	rat
+v_steady_state_rat_standard_deviation		rat
+v_steady_state_rat_units	v_r_units	rat
+ppb_rat	ppb_r	rat free
+ppb_rat_qualifier	ppb_r_qualifier	rat free
+ppb_rat_similarity	ppb_r_mean_similarity_score	rat free
+ppb_rat_standard_deviation		rat free
+ppb_rat_units	ppb_r_units	rat free
+caco2_6p5_human		po
+caco2_6p5_human_qualifier		po
+caco2_6p5_human_similarity		po
+caco2_6p5_human_standard_deviation		po
+caco2_6p5_human_units		po
+solubility_7p4		po
+solubility_7p4_qualifier		po
+solubility_7p4_similarity		po
+solubility_7p4_standard_deviation		po
+solubility_7p4_units		po

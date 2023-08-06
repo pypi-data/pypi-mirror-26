@@ -1,0 +1,63 @@
+expected column header	column header to map	comment
+name		always
+mol_wt		always
+charge_type		po
+pka_a1		po
+pka_a2		po
+pka_b1		po
+pka_b2		po
+cl_in_vivo_plasma_dog		dog
+cl_in_vivo_plasma_dog_qualifier		dog
+cl_in_vivo_plasma_dog_similarity		dog
+cl_in_vivo_plasma_dog_standard_deviation		dog
+cl_in_vivo_plasma_dog_units		dog
+v_steady_state_dog		dog
+v_steady_state_dog_qualifier		dog
+v_steady_state_dog_similarity		dog
+v_steady_state_dog_standard_deviation		dog
+v_steady_state_dog_units		dog
+ppb_dog		dog free
+ppb_dog_qualifier		dog free
+ppb_dog_similarity		dog free
+ppb_dog_standard_deviation		dog free
+ppb_dog_units		dog free
+cl_in_vivo_plasma_human		human
+cl_in_vivo_plasma_human_qualifier		human
+cl_in_vivo_plasma_human_similarity		human
+cl_in_vivo_plasma_human_standard_deviation		human
+cl_in_vivo_plasma_human_units		human
+v_steady_state_human		human
+v_steady_state_human_qualifier		human
+v_steady_state_human_similarity		human
+v_steady_state_human_standard_deviation		human
+v_steady_state_human_units		human
+ppb_human		human free
+ppb_human_qualifier		human free
+ppb_human_similarity		human free
+ppb_human_standard_deviation		human free
+ppb_human_units		human free
+cl_in_vivo_plasma_rat		rat
+cl_in_vivo_plasma_rat_qualifier		rat
+cl_in_vivo_plasma_rat_similarity		rat
+cl_in_vivo_plasma_rat_standard_deviation		rat
+cl_in_vivo_plasma_rat_units		rat
+v_steady_state_rat		rat
+v_steady_state_rat_qualifier		rat
+v_steady_state_rat_similarity		rat
+v_steady_state_rat_standard_deviation		rat
+v_steady_state_rat_units		rat
+ppb_rat		rat free
+ppb_rat_qualifier		rat free
+ppb_rat_similarity		rat free
+ppb_rat_standard_deviation		rat free
+ppb_rat_units		rat free
+caco2_6p5_human		po
+caco2_6p5_human_qualifier		po
+caco2_6p5_human_similarity		po
+caco2_6p5_human_standard_deviation		po
+caco2_6p5_human_units		po
+solubility_7p4		po
+solubility_7p4_qualifier		po
+solubility_7p4_similarity		po
+solubility_7p4_standard_deviation		po
+solubility_7p4_units		po

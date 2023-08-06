@@ -1,0 +1,21 @@
+name	mol_wt	cl_in_vivo_plasma_human	v_steady_state_human	ppb_human	cl_in_vivo_plasma_human_units	v_steady_state_human_units	ppb_human_units
+Cpd_01	297.7	0.3	0.73	13.83	mL min-1 kg-1	L kg-1	% bound
+Cpd_02	327.92	15.2	18.56	70.17	mL min-1 kg-1	L kg-1	% bound
+Cpd_03	259.71	2.11	0.88	32.7	mL min-1 kg-1	L kg-1	% bound
+Cpd_04	294.67	0.39	1.18	84.51	mL min-1 kg-1	L kg-1	% bound
+Cpd_05	359.45	4.51	0.22	99.98	mL min-1 kg-1	L kg-1	% bound
+Cpd_06	214.08	11.82	0.77	88.79	mL min-1 kg-1	L kg-1	% bound
+Cpd_07	198.58	23.27	1.55	38.72	mL min-1 kg-1	L kg-1	% bound
+Cpd_08	586.22	13.08	4.68	99.12	mL min-1 kg-1	L kg-1	% bound
+Cpd_09	568.71	17.84	4.89	60.68	mL min-1 kg-1	L kg-1	% bound
+Cpd_10	373.94	3.14	0.99	68.15	mL min-1 kg-1	L kg-1	% bound
+Cpd_11	306.11	21.44	4.47	58.16	mL min-1 kg-1	L kg-1	% bound
+Cpd_12	294.56	0.33	0.19	58.25	mL min-1 kg-1	L kg-1	% bound
+Cpd_13	305.96	15.06	8.71	96.72	mL min-1 kg-1	L kg-1	% bound
+Cpd_14	309.4	1.19	0.64	89.63	mL min-1 kg-1	L kg-1	% bound
+Cpd_15	287.68	1.81	0.16	76.96	mL min-1 kg-1	L kg-1	% bound
+Cpd_16	376.36	18.99	5.97	25.29	mL min-1 kg-1	L kg-1	% bound
+Cpd_17	337.87	16.95	10.6	99.95	mL min-1 kg-1	L kg-1	% bound
+Cpd_18	376.15	0.29	0.18	92.93	mL min-1 kg-1	L kg-1	% bound
+Cpd_19	362.94	6.9	3.99	36.2	mL min-1 kg-1	L kg-1	% bound
+Cpd_20	244.66	1.37	0.67	18.82	mL min-1 kg-1	L kg-1	% bound

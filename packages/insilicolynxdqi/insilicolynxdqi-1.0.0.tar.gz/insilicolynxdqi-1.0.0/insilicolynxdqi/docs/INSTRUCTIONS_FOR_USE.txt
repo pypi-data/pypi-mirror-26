@@ -1,0 +1,708 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Instructions for use of insilicolynxdqi
+=============================================================================================================================================================================================
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Change log
+=============================================================================================================================================================================================
+
+17th November 2017: First release written by Mark Wenlock.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Copyright
+=============================================================================================================================================================================================
+
+Copyright 2017 InSilicoLynx Limited
+All Rights Reserved.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Background to methodology
+=============================================================================================================================================================================================
+
+The purpose of insilicolynxdqi is to provide functionality for calculating drug suitability parameters, that can be used within early drug discovery to evaluate compounds based on the 
+estimated in vivo levels they achieve for a particular quantity for a given dose.
+
+One of these drug suitability parameters is the dose-quantity intercept (DQI).  This is derived from analysing a set of estimates for a particular in vivo quantity calculated using a 
+relevant mathematical pharmacokinetic (PK) model representation of a mammalian body and a set of doses for a particular compound.
+
+The PK models provided with insilicolynxdqi include: (i) intravenous (iv) two-compartment ("2c") model, (ii) oral (po) one-compartment ("1c") model, (iii) "po 2c" model.  Models (i) and 
+(iii) are similar in the sense that they use a central and peripheral compartment to represent aspects of the mammalian body - the central compartment represents areas of the body where 
+a compound distributes into more quickly compared to the peripheral compartment that represents areas of the body where a compound distributes into more slowly. In model (i) a compound's 
+dose is considered to be administered as a iv bolus directly into the central compartment, whereas in model (iii) the dose is considered to be administered as a po bolus into a third
+compartment that represents the small intestines, from which a compound can be absorbed into the central compartment.  Model (ii) has a similar absorption compartment to that used in 
+model (iii) but only one compartment to represent the body.  In model (ii) a compound is eliminated from the body compartment, whereas in models (i) and (iii) compound is eliminated from 
+the central compartment.  In models (ii) and (iii) an absorption window can be applied to compound absorption.  In models (i) and (iii), non-spontaneous compound distribution around the 
+body is assumed, whereas model (ii) assumes spontaneous distribution.  These PK models can be applied to dog, human and rat systems.
+
+The movement of compound from one compartment to another can be expressed as a series of linear differential equations.  These differential equations can be solved using standard Laplace 
+transformation methods to provide a series of rate equations, and it is these rate equations that are coded into insilicolynxdqi.  These rate equations use rate constants to describe the 
+movement of compound between compartments: k1 relates to a compound's absorption from the small intestines to the body compartment (applicable to model (ii)), or the central compartment 
+(applicable to model (iii)); k2 relates to a compound's distribution from the central compartment to the peripheral compartment (applicable to models (i) and (iii)); k3 relates to a 
+compound's distribution from the peripheral compartment to the central compartment (applicable to models (i) and (iii)); k4 relates to a compound's elimination from the body compartment 
+(applicable to model (ii)), or the central compartment (applicable to models (i) and (iii)).  These rate constants are calculated by insilicolynxdqi using the relevant input data: k1 uses 
+an approach similar to that described by M. Wenlock, Med. Chem. Commun., 2016, 7, 706 and E. Sjögren et al, Eur. J. Pharm. Sci., 2013, 49, 679; k2, k3 and k4 use standard "1c" or "2c" 
+(M. Rowland and T. Tozer, in Clinical Pharmacokinetics: Concepts and Applications, Third Edition, Lippincott Williams and Wilkins, Pennsylvania, 1995, p. 313–339) PK model equations and 
+estimates of a compound's volume of the central compartment (applicable to models (i) and (iii)), a compound's steady-state volume of distribution (applicable to models (i), (ii) and 
+(iii)), a compound's terminal volume of distribution (applicable to models (i) and (iii)), and a compound's in vivo clearance (applicable to models (i), (ii) and (iii)).  These rate 
+equations can be used to calculate levels in the different compartments with time for a given dose to the body; as the compartments represent different body spaces such levels are 
+estimates of in vivo quantities with time, the term simulation is used to describe such a set of calculations over a set of time points.  There is flexibility over the types of 
+simulations that insilicolynxdqi can perform, including repeated dosing scenarios where the principle of superposition is applied - insilicolynxdqi treats each dose as a separate
+simulation covering a time period from the point it was dosed to the end of the simulation and then combines all these simulations into a corresponding summary simulation.  In addition,
+five simulations reflecting variations in the distribution kinetics of a compound are considered when using models (i) and (iii) and, in all three models, a corresponding set of 
+additional simulations will be run for each input data error scenario considered.  The five simulations reflecting variations in the distribution kinetics of a compound consider five
+scenarios where a compound's volume of the central compartment and terminal volume of distribution are varied.  Either free- or total-levels for each in vivo quantity can be calculated 
+by insilicolynxdqi. In vivo quantities are calculated towards the latter time points of a particular simulation or summary simulation; and insilicolynxdqi can calculate the maximum, 
+middle and minimum compound quantity or AUC over a particular simulation time region in the body compartment (applicable to model (ii)) or the central compartment (applicable to models 
+(i) and (iii)) or peripheral compartment (applicable to models (i) and (iii)). 
+
+A compounds DQI is determined by assessing the curve resulting from a plot of the in vivo quantity values, calculated using one of the above PK models, against a corresponding set of 
+doses.  If model (i) is being considered, then on a logarithmic base 10 (log10) - log10 scale (i.e., log10(in vivo quantity) versus log10(dose)) such a curve should be linear with a slope 
+of one; for models (ii) and (iii), at the lower doses the curve should also be linear with a slope of one but then tail off as the dose size increases until reaching a plateau with 
+respect to log10(dose).  A compound's DQI is the intercept for the linear regression equation in the linear region of the log10(in vivo quantity) versus log10(dose) curve where the slope 
+is equal, or approximately equal, to one.  The linear regression equation takes the form:
+
+	log10(in vivo quantity) = 1.00 x log10(dose) + DQI		(1)
+
+In the case of models (ii) and (iii) it is possible to derive a second drug suitability parameter which reflects the upper dose limit where linear PK still occurs.  In other words, the 
+highest linear dose (HLD).  There are several ways to calculate this value including finding the minimum log10(dose) belonging to the plateau region referred to above or fitting a power 
+function similar to that used to relate a monobasic compound's logD to logP.  An alternative approach is to set the HLD to the corresponding log10(dose) calculated using the maximum 
+log10(in vivo quantity) value in the log10(in vivo quantity) versus log10(dose) curve (which should correspond to the plateau level), a DQI and a rearrangement of eqn (1).  
+
+A compound's DQI is a term, made up of several PK factors, that relate to its tendency to be eliminated from the body during linear PK conditions.  Similarly, a compound's HLD is a term, 
+made up of several PK factors, that relate to its tendency to being orally absorbed into the body assuming linear PK conditions.  These drug suitability terms benefit from being as large 
+as possible.
+
+Compounds can be assessed using these drug suitability parameters and eqn (1), or a rearrangement thereof, for example by considering: (i) the log10(in vivo quantity) possible for a fixed dose, (ii) in the case of po administration, the maximum log10(in vivo quantity) possible (i.e., by setting log10(dose) equal to HLD); etc.  Note, it is assumed that a log10(dose) greater
+than a compound's HLD will result in a log10(in vivo quantity) value equal to the log10(in vivo quantity) value that corresponds to a log10(dose) that is equal to HLD (i.e., the maximum 
+log10(in vivo quantity)).
+
+In the case of model (i), five simulations reflecting variations in the distribution kinetics of a compound are considered, and insilicolynxdqi will calculate a DQI for each distribution 
+kinetics scenario; also corresponding DQI values will be determined for each input data error scenario considered.  Each compound's set of DQI values can be used to compare different
+compounds.  
+
+In the case of model (ii), spontaneous distribution kinetics are assumed and insilicolynxdqi only determines a single DQI and HLD value pair for this scenario; but corresponding DQI and 
+HLD pairs will be determined for each input data error scenario considered.  In the case of model (iii), five simulations reflecting variations in the distribution kinetics of a compound 
+are considered, and insilicolynxdqi will calculate a DQI and HLD pair for each distribution kinetics scenario; also corresponding DQI and HLD pairs will be determined for each input data 
+error scenario considered.  Each DQI and HLD pair can be treated as a Cartesian coordinate, in which the DQI and HLD values represent the y-axis coordinate and the x-axis coordinate, respectively, or vice versa; and these Cartesian coordinates can be plotted in the DQI-HLD plane.  In the case of model (ii), if no input data error scenarios are being considered then a compound will have only one Cartesian coordinate which will be represented as a point in the DQI-HLD plane; when error scenarios are considered, insilicolynxdqi is coded to generate at 
+least two scenarios and in this case there will be three Cartesian coordinates that can be represented as a triangle in the DQI-HLD plane.  The triangle's vertices being given by each 
+Cartesian coordinate in the DQI-HLD plane.  Where more input data error scenarios are considered, the number of Cartesian coordinates will be greater than three and can be represented as 
+a non-self-intersecting closed polygon in the DQI-HLD plane.  The polygon's vertices being given by each Cartesian coordinate in the DQI-HLD plane.  In the case of models (i) and (iii) 
+due to the consideration of distribution kinetics scenarios, five DQI and HLD pairs should be available, even more if input data error scenarios are also being considered; the number of 
+Cartesian coordinates will be greater than three and can also be represented as a non-self-intersecting closed polygon in the DQI-HLD plane.  The polygon's vertices being given by each Cartesian coordinate in the DQI-HLD plane.  Attributes of a polygon such as its centroid, area, second moments of area can be calculated using standard methods, and can be used to 
+describe a polygon.  Each compound's set of DQI and HLD values can be used to compare different compounds.  
+
+It is considered that a compound's DQI and HLD values, or their antilog base 10 values, could be used as descriptors within quantitative structure activity relationship (QSAR) models for 
+other in vivo quantity parameters.
+ 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Distribution file content
+=============================================================================================================================================================================================
+
+The insilicolynxdqi distribution file contains:
+
+	"bin":
+		insilicolynxdqi_analyse_calculations.py
+		insilicolynxdqi_generate_scenarios.py
+		insilicolynxdqi_perform_calculations.py
+		insilicolynxdqi_run.py
+
+	"insilicolynxdqi":
+		"calculations":
+			Python library scripts.
+			
+		"docs":
+			"example":
+				column_header_mappings_example.txt.
+				data_example_set_1.txt.
+				data_example_set_2.txt.
+				rmsep_example.txt.		
+			"templates":
+				column_header_mappings.txt.
+				rmsep_example.txt.	
+			CHANGE.txt - details version changes.
+			INSTRUCTIONS_FOR_USE.txt - instructions for use.	
+			LICENSE.txt - License file.
+			README.txt - contains important information regarding the insilicolynxdqi Python library.
+	
+		"resources":
+			column_header_mappings.txt.
+		
+		"run":
+			Python library scripts.
+			
+		"system":
+			Python library scripts.
+		
+	PKG-INFO - package information.
+	README.txt - contains important information regarding the insilicolynxdqi Python library.
+	setup.py - set up python script for insilicolynxdqi.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Installation of insilicolynxdqi
+=============================================================================================================================================================================================
+
+Refer to the README file for installation information.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"bin" directory
+=============================================================================================================================================================================================
+
+Four console scripts are provided and details of how they can be used are below.
+
+If the Python PATH environmental variable is set, open a new terminal (Linux) or a new Command Prompt (Win32) and type:
+
+	>>> insilicolynxdqi_analyse_calculations.py -h
+
+	>>> insilicolynxdqi_generate_scenarios.py -h
+
+	>>> insilicolynxdqi_perform_calculations.py -h
+
+	>>> insilicolynxdqi_run.py -h
+
+Read the subsequent details printed on the screen for the arguments used by each script.  See "Example calculations" section below for further insight.  Note, insilicolynxdqi_run.py 
+performs the tasks of the three other scripts, and insilicolynxdqi_perform_calculations.py uses output from insilicolynxdqi_generate_scenarios.py and insilicolynxdqi_analyse_calculations
+uses output from insilicolynxdqi_perform_calculations.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Required compound data in an input data file 
+=============================================================================================================================================================================================
+
+The PerformInVivoCalculations.run() function requires specific input data in a tab-delimited text file with the following data column headers (note, the "species" text refers to dog, 
+human or rat):
+
+	name
+	mol_wt
+	cl_in_vivo_plasma_(species)
+	cl_in_vivo_plasma_(species)_qualifier
+	cl_in_vivo_plasma_(species)_units
+	v_steady_state_(species)
+	v_steady_state_(species)_qualifier
+	v_steady_state_(species)_units
+
+For calculation of free levels the additional data columns are also required:
+
+	ppb_(species)
+	ppb_(species)_qualifier
+	ppb_(species)_units
+
+For po calculations the additional data columns are also required:
+
+	charge_type
+	pka_a1 (dependent on charge_type)
+	pka_a2 (dependent on charge_type)
+	pka_b1 (dependent on charge_type)
+	pka_b2 (dependent on charge_type)
+	caco2_6p5_human
+	caco2_6p5_human_qualifier	
+	caco2_6p5_human_units
+	solubility_7p4
+	solubility_7p4_qualifier
+	solubility_7p4_units
+
+However, the minimum information required in the input data file used by the generateInVivoScenarios.run() function is below:
+
+	name
+	mol_wt
+	cl_in_vivo_plasma_(species)
+	cl_in_vivo_plasma_(species)_units
+	v_steady_state_(species)
+	v_steady_state_(species)_units
+
+For calculation of free levels the additional data columns are also required:
+
+	ppb_(species)
+	ppb_(species)_units
+
+For po calculations the additional data columns are also required:
+
+	charge_type
+	pka_a1 (dependent on charge_type)
+	pka_a2 (dependent on charge_type)
+	pka_b1 (dependent on charge_type)
+	pka_b2 (dependent on charge_type)
+	caco2_6p5_human
+	caco2_6p5_human_units
+	solubility_7p4
+	solubility_7p4_units
+
+A qualifier column for a particular parameter is optional when using the GenerateInVivoScenarios.run() function; if missing, a qualifier column filled with empty values is automatically 
+added to a revised data file that can be used by the PerformInVivoCalculations.run() function.
+
+Functionality is provided to use a customised "column_header_mappings.txt" text file to map the column headers used within the input data file to generate a revised data file with the 
+appropriately named column headers needed by the PerformInVivoCalculations.run() function.  This functionality is intended to facilitate integration with other systems that may generate 
+the prerequisite data for the input data file but use alternate column headers.  The "insilicolynxdqi/docs/templates" directory within the distribution file contains a template version of 
+the "column_header_mappings.txt" text file, which contains three columns of information:
+
+	expected column header:
+
+		Pre-filled do not change.
+
+	column header to map:
+
+		Empty - enter the column headers used within the input data file for the relevant parameter.
+
+	comment:
+
+		Pre-filled do not change.
+
+To customise, open the tab-delimited "column_header_mappings.txt" text file template within a text file editor or a spreadsheet program.
+
+*********************************************************************************************************************************************************************************************
+Do not alter the existing column headers in the tab-delimited "column_header_mappings.txt" text file template.
+*********************************************************************************************************************************************************************************************
+
+Add the column header text used within the input data file for the relevant parameter in the "column header to map" column.  If using a text editor, save the changes.  If using a 
+spreadsheet program, copy (just) the data within the three columns, open a text editor and paste into a new text file and save as a tab-delimited text file.  The 
+"insilicolynxdqi/docs/example" directory within distribution file contains an example customised "column_header_mappings.txt" text file ("column_header_mappings_example.txt") and an 
+excerpt from this file is below:
+
+	expected column header				column header to map		comment
+	name										always
+	mol_wt										always
+
+	...
+
+	cl_in_vivo_plasma_human				cl_h				human
+	cl_in_vivo_plasma_human_qualifier		cl_h_qualifier			human
+	cl_in_vivo_plasma_human_similarity		cl_h_mean_similarity_score	human
+	cl_in_vivo_plasma_human_standard_deviation	cl_h_standard_deviation		human
+	cl_in_vivo_plasma_human_units			cl_h_units			human
+	v_steady_state_human				v_h				human
+	v_steady_state_human_qualifier			v_h_qualifier			human
+	v_steady_state_human_similarity			v_h_mean_similarity_score	human
+	v_steady_state_human_standard_deviation						human
+	v_steady_state_human_units							human
+	ppb_human					ppb_h				human free
+	ppb_human_qualifier				ppb_h_qualifier			human free
+	ppb_human_similarity				ppb_h_mean_similarity_score	human free
+	ppb_human_standard_deviation							human free
+	ppb_human_units					ppb_h_units			human free
+
+	...
+
+A customised "column_header_mappings.txt" text file can be used in conjunction with the generateInVivoScenarios.run() function by setting the "mappingsFile" argument.  The data in the 
+input data file is automatically mapped to the expected column header in the revised data file, e.g., the "cl_h" column header in the input data file is mapped to a 
+"cl_in_vivo_plasma_human" column header in the revised data file.  See "Example calculations" section below for further insight.
+
+Functionality is provided to generate input data error scenarios.  This is done by adding the required number of duplicate rows, for a particular compound, to the revised data file in 
+which the original value is replaced by a randomly selected value, chosen from a Gaussian distribution based on the original value and a standard deviation value, for each parameter 
+selected for error consideration.  Note, only the following parameters can be selected for error consideration: cl_in_vivo_plasma_(species), v_steady_state_(species), caco2_6p5_human
+solubility_7p4 and ppb_(species).
+
+*********************************************************************************************************************************************************************************************
+The standard deviations for cl_in_vivo_plasma_(species), v_steady_state_(species), caco2_6p5_human and solubility_7p4 are required to be on a logarithmic base-10 scale, and for 
+ppb_(species) on a logarithmic base-10 % bound over % free scale.  The assumption being that the data on such scales follow a more Gaussian distribution.  A valid compound standard 
+deviation value is greater than or equal to 0.0.
+*********************************************************************************************************************************************************************************************
+
+The standard deviation used can be set to a default value via the "defaultParameterStandardDeviation" argument used by the GenerateInVivoScenarios.run() function.  However, if compound 
+standard deviation information for a particular parameter is provided in the input data file, via the inclusion of a standard deviation column, then this is used instead.
+
+If a parameter value is based on a QSAR prediction then a prediction standard deviation is required.  Note, a QSAR prediction is just an estimate of a compound's parameter value and it is
+plausible to think of it in the same way as an experimental determined estimate of a compound's parameter.  Although, the standard deviation associated to a QSAR prediction is most likely
+greater than that observed by measurement.
+
+For a QSAR prediction the associated standard deviation may not be known but a root mean squared error in prediction (RMSEP) for an external test set may be.  A RMSEP considers the error 
+between the predicted values and the observed valued for a set of compounds not seen by the QSAR model and a prediction standard deviation considers the error in the predicted values.  
+If the RMSEP is simply assumed to be a function of the experimental standard deviation (associated to the QSAR model's external test set) and the prediction standard deviation, then it 
+is possible to propose the following empirical relationship based on the linear combination of variances of independent quantities (see M. Wenlock and L. Carlsson, J. Chem. Inf. Model.,
+2015, 55, 125–134.):
+
+	RMSEP = ((experimental standard deviation)^2 + (prediction standard deviation)^2)^0.5		(2)
+
+This algorithm can be rearranged to:
+	
+	prediction standard deviation = ((RMSEP)^2 - (experimental standard deviation)^2)^0.5		(3)
+
+The prediction standard deviation given by eqn (3) requires an approximate value for the experimental standard deviation associated to the QSAR model's external test set data.
+Pragmatically, this value would be based on the standard deviations associated to the parameter experimental value for a sample of the compounds in the QSAR model's external test set.
+Often, parameter experimental values (for PK parameters) are based on one measurement, and it is possible that a QSAR model's external test set is based on a single experimental 
+parameter measurement for each compound and the experimental standard deviation is unknown.  Consequently, scientific judgement is required to approximate the experimental standard 
+deviation required in eqn (3).
+
+*********************************************************************************************************************************************************************************************
+The use of eqn (3) is pragmatic and any prediction standard deviation is an approximation based on assumptions that may not be appropriate.
+*********************************************************************************************************************************************************************************************
+
+Functionality is provided to approximate a prediction standard deviation for use in generating error scenarios via eqn (3).  The RMSEP value used in eqn (3) must not be smaller than the
+experimental standard deviation, if this occurs then the prediction standard deviation is based solely on the experimental standard deviation.  The experimental standard deviation is set 
+via the "qsarExperimentalStandardDeviation" argument used by the GenerateInVivoScenarios.run() function.  The RMSEP value used in eqn (3) is dependent upon the provision of additional 
+QSAR model information and compound similarity data to a particular QSAR model's external test set as discussed below.
+
+Functionality is provided to use a customised "rmsep.txt" text file to store RMSEP information for a particular parameter estimated via a QSAR model's external test set; but this 
+functionality can only be used provided that the input data file contains a similarity column for a particular parameter.
+
+*********************************************************************************************************************************************************************************************
+Where a QSAR model's RMSEP value is required it must relate to a RMSEP determined between predicted and observed values both on a logarithmic base-10 scale for cl_in_vivo_plasma_(species), 
+v_steady_state_(species), caco2_6p5_human and solubility_7p4 and predicted and observed values both on a logarithmic base-10 % bound over % free scale for ppb_(species).
+*********************************************************************************************************************************************************************************************
+
+The expected column header for a parameter's similarity column is found within the "column_header_mappings.txt" text file template and a customised "column_header_mappings.txt" text file 
+can also contain mappings for the input data file's column headers (see above).  The similarity column needs to contain the compound similarity score to its nearest compound neighbour in 
+the QSAR model's test set.
+
+*********************************************************************************************************************************************************************************************
+Valid compound similarity scores range between greater than 0.0 and 1.0.
+*********************************************************************************************************************************************************************************************
+
+Functionality is provided to use different RMSEP values for compound's with different similarity scores.  The "insilicolynxdqi/docs/templates" directory within the distribution file 
+contains a template version of the "rmsep.txt" text file, which contains eight, fixed header, columns of information:
+
+	parameter:
+		
+		Permitted values:
+
+			cl_d
+			cl_h
+			cl_r
+			v_d
+			v_h
+			v_r
+			ppb_d
+			ppb_h
+			ppb_r
+			caco2_h
+			solubility
+		
+		The prefix "cl" refers to a in_vivo clearance QSAR model, the prefix "v" refers to a steady state volume of distribution QSAR model, and the prefix "ppb" refers to a 
+		plasma protein binding QSAR model.  The suffixes d, h, and r refer to dog, human and rat, respectively. The value "caco2_h" refers to a human Caco2 A to B at pH 6.5 
+		QSAR model and the value "solubility" refers a solubility at pH 7.4 QSAR model.
+ 
+	rmsep_overall:
+		
+		The overall RMSEP for the QSAR model's external test set.
+
+	rmsep_similarity_score_0p5:
+
+		Optional - the RMSEP seen for the QSAR model's external test set compounds with a similarity score to its nearest neighbours in the QSAR model's test set that is less 
+		than or equal to 0.5.
+
+	rmsep_similarity_score_0p6:
+
+		Optional - the RMSEP seen for the QSAR model's external test set compounds with a similarity score to its nearest neighbours in the QSAR model's test set that is greater 
+		than 0.5 and less than or equal to 0.6.
+
+	rmsep_similarity_score_0p7:
+
+		Optional - the RMSEP seen for the QSAR model's external test set compounds with a similarity score to its nearest neighbours in the QSAR model's test set that is greater 
+		than 0.6 and less than or equal to 0.7.
+
+	rmsep_similarity_score_0p8:
+
+		Optional - the RMSEP seen for the QSAR model's external test set compounds with a similarity score to its nearest neighbours in the QSAR model's test set that is greater 
+		than 0.7 and less than or equal to 0.8.
+
+	rmsep_similarity_score_0p9:
+
+		Optional - the RMSEP seen for the QSAR model's external test set compounds with a similarity score to its nearest neighbours in the QSAR model's test set that is greater
+		than 0.8 and less than or equal to 0.9.
+
+	rmsep_similarity_score_1p0:
+
+		Optional - the RMSEP seen for the QSAR model's external test set compounds with a similarity score to its nearest neighbours in the QSAR model's test set that is greater 
+		than 0.9 and less than or equal to 1.0.
+
+To customise, open the tab-delimited "rmsep.txt" text file template within a text file editor or a spreadsheet program.
+
+*********************************************************************************************************************************************************************************************
+Do not alter the existing column headers in the tab-delimited "rmsep.txt" text file template.
+*********************************************************************************************************************************************************************************************
+
+Add the relevant information for the species QSAR model's external test set of interest.  If using a text editor, save the changes.  If using a spreadsheet program, copy (just) the data 
+within the eight columns, open a text editor and paste into a new text file and save as a tab-delimited text file.  The "insilicolynxdqi/docs/example" directory within the distribution 
+file contains an example customised "rmsep.txt" text file ("rmsep_example.txt") and an excerpt from this file is below:
+
+	parameter	rmsep_overall	rmsep_similarity_score_0p5	...	rmsep_similarity_score_1p0
+	cl_h		0.67		0.76				...	0.57
+	ppb_h		0.9		0.94				...	0.83
+	v_h		0.45		0.51				...	0.37
+
+A customised "rmsep.txt" text file can be used in conjunction with the GenerateInVivoScenarios.run() function by setting the "rmsepFile" argument.
+
+The standard deviation and the similarity score columns for a particular parameter are only relevant if error scenarios are being considered.  With respect to consideration of error 
+scenarios a standard deviation is required and the various possibilities of how this can occur is summarised below:
+
+	Scenario 1:
+	
+		For a particular parameter, no standard deviation or similarity score columns exist.  Use the default standard deviation, set via the "defaultParameterStandardDeviation" 
+		argument used by the GenerateInVivoScenarios.run() function.
+
+	Scenario 2:
+	
+		For a particular parameter, a standard deviation column exists but not a similarity score column.  If a valid compound's standard deviation is set use this, else use the 
+		default standard deviation, set via the "defaultParameterStandardDeviation" argument used by the GenerateInVivoScenarios.run() function.
+
+	Scenario 3:
+		
+		For a particular parameter, no standard deviation column exists but a similarity score column does.  Estimate standard deviation using eqn (3) and a RMSEP value based 
+		accordingly on the compound's similarity score:
+
+			If an appropriate permitted value for a QSAR model appears in the parameter column of the "rmsep.txt" text file, attempt to determine the RMSEP value to use
+			based on the data in the "rmsep.txt" text file, else use the default RMSEP value.  Where a valid RMSEP value can not be associated to a compound's similarity 
+			score range then the overall RMSEP value is to be used.  If a compound's similarity score is not set, then a similarity score of 0.0 is applied and the overall 
+			RMSEP value is to be used.  If the RMSEP value selected is not a valid value, then the default RMSEP value is to be used.  The default RMSEP is set via the
+			"qsarDefaultRmsep" argument used by the GenerateInVivoScenarios.run() function.
+
+	Scenario 4:
+		
+		For a particular parameter, both the standard deviation and similarity columns exist.  Prioritise the use of a compound's standard deviation value over it's similarity 
+		score.  If a valid compound's standard deviation is set use this, else check for a valid compound's similarity score and apply the process described in Scenario 3, else 
+		use the default standard deviation, set via the "defaultParameterStandardDeviation" argument used by the GenerateInVivoScenarios.run() function.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scale and magnitude for the data in the input files
+=============================================================================================================================================================================================
+
+The parameter data must be on a linear scale (and not on a logarithmic scale).  The acceptable magnitude for a particular parameter are far in excess of typically values and are as 
+follows:
+
+	cl_in_vivo_plasma_(species):
+			
+		0.0001 to 10000 mL min-1 kg-1.
+
+	v_steady_state_(species):
+		
+		species plasma volume to 10000 L kg-1.
+
+	ppb_(species)
+
+		0.0001 to 99.9999 % bound. Note, as plasma protein binding is converted to a logarithmic base-10 % bound over % free scale, values of 0 or 100 are not compatible.
+
+	caco2_6p5_human:
+			
+		0.0000000001 to 0.1 cm s-1.
+
+	solubility_7p4:
+		
+		0.0000000001 to 10.0 M.
+	pKa:
+		Greater than 0 to less than 14.
+
+If parameter similarity score columns are included (and error scenarios are being considered) then compound similarity scores values must be on a linear scale (and not on a logarithmic 
+scale).  A valid compound similarity score can range between greater than 0.0 and 1.0.  Where a QSAR model's external test set RMSEP value is required (see above) it must relate to a 
+RMSEP determined between predicted and observed values both on a logarithmic base-10 scale for cl_in_vivo_plasma_(species), v_steady_state_(species), caco2_6p5_human and solubility_7p4 
+and predicted and observed values both on a logarithmic base-10 % bound over % free scale for ppb_(species).
+
+If parameter standard deviation columns are included (and error scenarios are being considered) then the standard deviations for cl_in_vivo_plasma_(species), v_steady_state_(species), 
+caco2_6p5_human and solubility_7p4 are required to be on a logarithmic base-10 scale and for ppb_(species) on a logarithmic base-10 % bound over % free scale.  The assumption being that 
+the data on such scales follow a more Gaussian distribution.  A valid compound standard deviation value is greater than or equal to 0.0.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Required units for the data in the input files
+=============================================================================================================================================================================================
+
+The data for the following parameters is required to be in the following units:
+
+	mL min-1 kg-1 		for cl_in_vivo_plasma_(species)	
+	L kg-1			for v_steady_state_(species)
+	% bound or % free 	for ppb_(species)
+	cm s-1			for caco2_6p5_human
+	M			for solubility_7p4
+
+Note, mol_wt must be in Da but there is no requirement to specify these units. With respect to charge_type, pka_a1, pka_a2, pka_b1 and pka_b2 they do not have units to consider. 
+
+	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example calculations
+=============================================================================================================================================================================================
+
+The "insilicolynxdqi/docs/example" directory within the distribution file contains two example data sets that can be used with the "iv 2c" PK model:
+	
+	data_example_set_1.txt:
+	
+		Importantly, it contains cl_in_vivo_plasma_human, v_steady_state_human and ppb_human data for 20 compounds.	
+
+	data_example_set_2.txt:
+
+		Importantly, it contains cl_in_vivo_plasma_human (under the column header cl_h), cl_in_vivo_plasma_human_standard_deviation (under the column header 
+		cl_h_standard_deviation), v_steady_state_human (under the column header v_h) and  v_steady_state_human_similarity (under the column header v_h_mean_similarity_score) data 
+		for 20 compounds.
+
+On a local computer, create a directory called "work" and within this two directory called "resources" and "data".  Within the "data" directory create two directory called 
+"run_1" and "run_2".  Within the "resources" directory, copy the "column_header_mappings_example.txt" and "rmsep_example.txt" text files.  Within the "run_1" directory, copy the 
+"data_example_set_1.txt" text file and within the "run_2" directory copy the "data_example_set_2.txt" text file.  The directory structure should look as follows:
+
+	work:
+	
+		resources:
+		
+			column_header_mappings_example.txt
+			rmsep_example.txt
+
+		data:
+		
+			run_1:
+
+				data_example_set_1.txt
+			
+			run_2:
+				data_example_set_2.txt
+
+To run in-vivo calculations on "data_example_set_1.txt" open a new terminal (Linux) or a new Command Prompt (Win32) and change the working directory to the "work" directory. 
+
+*********************************************************************************************************************************************************************************************
+Concerning the "data_example_set_1.txt" input data text file.
+*********************************************************************************************************************************************************************************************
+
+On a Linux platform, type:
+
+	>>> insilicolynxdqi_run.py -df data/run_1/data_example_set_1.txt -m 5
+
+or, on a Win32 platform, type:
+
+	>>> insilicolynxdqi_run.py -df data\run_1\data_example_set_1.txt -m 5
+
+Based on other default arguments this code will calculate, following repeat dosing every 12 hours over a period of 168 hours (7 days), the total-levels for in-vivo exposure parameters 
+associated to a human "iv 2c" PK model.
+
+Several new directories and files are generated in the "run_1" directory including:
+	
+	"analysis_data_example_set_1_revised_iv_2c_total_human_summary":
+		
+		amount_central_maximum_value.txt
+		amount_central_mid_value.txt
+		amount_central_minimum_value.txt
+		auc_amount_central_value.txt
+		auc_concentration_central_value.txt
+		concentration_central_maximum_value.txt
+		concentration_central_mid_value.txt
+		concentration_central_minimum_value.txt
+	
+	"simulations":
+
+		human:
+
+			iv_2c_total_human:
+
+				Calculation raw data text files.  Note there is a particular "raw" directory that contains the bulk of the raw data (see below).
+		
+	data_example_set_1_revised.txt
+	data_example_set_1_revised_iv_2c_total_human.txt
+	analysis_data_example_set_1_revised_iv_2c_total_human.txt
+
+The "insilicolynxdqi_run.py" console script performs the tasks of the three other scripts in the "bin" directory within the distribution file, and simplifies the overall calculation 
+process.  The output of the GenerateInVivoScenarios.run() function is the text file "data_example_set_1_revised.txt".  The output of the PerformInVivoCalculations.run() function 
+is the calculations summary text file "data_example_set_1_revised_iv_2c_total_human.txt" and the "simulations" directory, and its content of calculation raw data text files.  The output 
+of the AnalyseInVivoCalculations function is a analysis summary text file "analysis_data_example_set_1_revised_iv_2c_total_human.txt" and the 
+"analysis_data_example_set_1_revised_iv_2c_total_human_summary" directory, and its content of specific total-level in-vivo exposure parameters (associated to a human "iv 2c" PK model) 
+analysis summary text files.
+
+To calculate, following repeat dosing every 12 hours over a period of 168 hours (7 days), the free-levels for in-vivo exposure parameters associated to a human "iv 2c" PK model, on a 
+Linux platform, type:
+
+	>>> insilicolynxdqi_run.py -df data/run_1/data_example_set_1.txt -m 6
+
+or, on a Win32 platform, type:
+
+	>>> insilicolynxdqi_run.py -df data\run_1\data_example_set_1.txt -m 6
+
+Several new directories and files are generated in the "run_1" directory including:
+	
+	"analysis_data_example_set_1_revised_iv_2c_free_human_summary":
+		
+		amount_central_maximum_value.txt
+		amount_central_mid_value.txt
+		amount_central_minimum_value.txt
+		auc_amount_central_value.txt
+		auc_concentration_central_value.txt
+		concentration_central_maximum_value.txt
+		concentration_central_mid_value.txt
+		concentration_central_minimum_value.txt
+	
+	"simulations":
+
+		human:
+
+			iv_2c_free_human:
+
+				Calculation raw data text files.  Note there is a particular "raw" directory that contains the bulk of the raw data (see below).
+		
+	data_example_set_1_revised.txt
+	data_example_set_1_revised_iv_2c_free_human.txt
+	analysis_data_example_set_1_revised_iv_2c_free_human.txt
+
+These new directories and files for free-levels in a human "iv 2c" PK model are created in a similar manner to the directories and files described above for total-levels in a human 
+"iv 2c" PK model.
+
+In the command line code above, a -m ("method"), argument is used; there are six options for -m which specify the calculation mode to use:
+
+	1 refers to a "po 1c" total (levels) PK model
+	2 refers to a "po 1c" free (levels) PK model
+	3 refers to a "po 2c" total (levels) PK model
+	4 refers to a "po 2c" free (levels) PK model	
+	5 refers to a "iv 2c" total (levels) PK model
+	6 refers to a "iv 2c" free (levels) PK model
+
+It is important to note that the "data_example_set_1_revised.txt" text file has been over-written using the command line code above; if you want to calculate levels in different models 
+using the same "data_example_set_1_revised.txt" text file you will need to use a combination of the three other scripts in the "bin" directory within the distribution file.
+
+Calculations in different species require the setting of the "speciesName" argument and providing the necessary species specific parameter data in the input data file.
+
+Note that in the two cases discussed so far, no error scenarios have been considered.  Consequently, the analysis summary text files do not contain any approximated error ranges for the 
+in-vivo exposure parameters.
+
+*********************************************************************************************************************************************************************************************
+Concerning the "data_example_set_2.txt" input data text file.
+*********************************************************************************************************************************************************************************************
+
+The "column_header_mappings_example.txt" text file, within the "resources" directory, can be used to map the column headers used in the "data_example_set_2.txt" input data text file and 
+the "rmsep_example.txt" text file, within the "resources" directory, can be used to determine prediction standard deviations based on similarity scores for some of the compounds missing 
+an actual cl_in_vivo_plasma_human_standard_deviation value and for all compounds with respect to v_steady_state_human.
+
+On a Linux platform, type:
+
+	>>> insilicolynxdqi_run.py -mf resources/column_header_mappings_example.txt -rf resources/rmsep_example.txt -df data/run_2/data_example_set_2.txt -m 5 -es 20
+
+or, on a Win32 platform, type:
+
+ 	>>> insilicolynxdqi_run.py -mf resources\column_header_mappings_example.txt -rf resources\rmsep_example.txt -df data\run_2\data_example_set_2.txt -m 5 -es 20
+
+Based on other default arguments this code will calculate, following repeat dosing every 12 hours over a period of 168 hours (7 days), the total-levels for in-vivo exposure parameters 
+associated to a human "iv 2c" PK model.
+
+Several new directories and files, similar to those discussed above, are generated in the "run_2" directory.
+
+This example demonstrates functionalities that have been introduced above: (i) use of a customised "column_header_mapping.txt" text file, (ii) use of a customised "rmsep.txt" text file 
+to generate approximate parameter standard deviations, (iii) the use of an actual standard deviation over an RMSEP approximated standard deviation and (iv) the generation of error 
+scenarios based off the original input scenario.  A comparison of the "data_example_set_2.txt" and "data_example_set_2_revised.txt" text files will highlight these points.
+
+An inspection of the analysis summary text files should now contain error range approximations for the in-vivo exposure parameters.
+	
+*********************************************************************************************************************************************************************************************
+Concerning file storage space.
+*********************************************************************************************************************************************************************************************
+
+All aspects of the calculations are, by default, stored as a text file.
+
+Calculations using a "2c" model consider five distribution kinetics scenarios (that generate data for two compartments), compared to calculations using a "1c" model where only one 
+distribution kinetics scenario is considered (that generates data for just one compartment); and when input data error scenarios are considered, corresponding calculations are made for 
+each error scenario.  Therefore, careful thought should be given to the potential file storage usage when large calculation runs are planned, especially those that involve error scenarios 
+using a "2c" model.
+
+There is functionality to choose whether or not to save the bulk of a calculation's raw data text files (saved within the "raw" directory as discussed above) and it is set using the 
+"saveRawDataFiles" argument used by the PerformInVivoCalculations.run() function; by default it is set to "yes".  Significant reductions in file storage can be made by setting this 
+argument to "no" (i.e., by adding the "-srdf no" argument), but by not saving these files, removes the ability to fully investigate the raw data behind each calculation.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Help
+=============================================================================================================================================================================================
+
+This file is intended to only cover key aspects of using the insilicolynxdqi Python library but it is not comprehensive, for further details please contact InSilicoLynx Limited using the 
+Email below:
+ 		
+	Email: contact@insilicolynx.com
+
+
+=============================================================================================================================================================================================
+=============================================================================================================================================================================================
+
+

@@ -1,0 +1,1 @@
+parameter	rmsep_overall	rmsep_similarity_score_0p5	rmsep_similarity_score_0p6	rmsep_similarity_score_0p7	rmsep_similarity_score_0p8	rmsep_similarity_score_0p9	rmsep_similarity_score_1p0

@@ -1,0 +1,21 @@
+name	mol_wt	cl_h	cl_h_qualifier	cl_h_standard_deviation	cl_h_mean_similarity_score	cl_h_units	v_h	v_h_qualifier	v_h_mean_similarity_score	v_h_units
+Cpd_A	471.55	0.17		0.5	0.58	mL min-1 kg-1	0.27		0.58	L kg-1
+Cpd_B	378.41	1.18			0.51	mL min-1 kg-1	0.13		0.51	L kg-1
+Cpd_C	357.49	0.24			0.61	mL min-1 kg-1	0.37		0.61	L kg-1
+Cpd_D	337.35	0.78			0.54	mL min-1 kg-1	0.10	<	0.54	L kg-1
+Cpd_E	452.60	0.10	<		0.52	mL min-1 kg-1	0.12		0.54	L kg-1
+Cpd_F	323.13	3.18			0.54	mL min-1 kg-1	0.13		0.54	L kg-1
+Cpd_G	296.15	26.92	>		0.80	mL min-1 kg-1	21.88	>	0.80	L kg-1
+Cpd_H	407.32	12.77			0.62	mL min-1 kg-1	1.15		0.59	L kg-1
+Cpd_I	418.45	15.56		0.6	0.72	mL min-1 kg-1	0.66		0.72	L kg-1
+Cpd_J	454.52	1.02			0.58	mL min-1 kg-1	0.43		0.58	L kg-1
+Cpd_K	285.31	5.78			0.54	mL min-1 kg-1	2.43		0.54	L kg-1
+Cpd_L	500.58	0.10	<		0.82	mL min-1 kg-1	1.49		0.82	L kg-1
+Cpd_M	459.56	0.95			0.86	mL min-1 kg-1	0.10	<	0.86	L kg-1
+Cpd_N	408.88	0.89			0.90	mL min-1 kg-1	0.10	<	0.90	L kg-1
+Cpd_O	114.17	10.22			0.53	mL min-1 kg-1	3.11		0.53	L kg-1
+Cpd_P	170.24	7.18			0.55	mL min-1 kg-1	1.18		0.55	L kg-1
+Cpd_Q	217.29	2.36			0.52	mL min-1 kg-1	0.32		0.52	L kg-1
+Cpd_R	252.27	3.98			0.54	mL min-1 kg-1	0.70		0.55	L kg-1
+Cpd_S	179.22	0.10	<		0.47	mL min-1 kg-1	0.10	<	0.47	L kg-1
+Cpd_T	279.38	2.61		0.4	0.51	mL min-1 kg-1	1.13		0.51	L kg-1

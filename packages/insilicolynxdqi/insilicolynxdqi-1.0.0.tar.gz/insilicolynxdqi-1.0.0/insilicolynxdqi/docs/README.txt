@@ -1,0 +1,380 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+README file for insilicolynxdqi
+=============================================================================================================================================================================================
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Change log
+=============================================================================================================================================================================================
+
+17th November 2017: First release written by Mark Wenlock.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Copyright
+=============================================================================================================================================================================================
+
+Copyright 2017 InSilicoLynx Limited
+All Rights Reserved.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Licence
+=============================================================================================================================================================================================
+
+The insilicolynxdqi software is covered by a BSD 3-clause license that is included in the LICENSE.txt file distributed with this software.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Description
+=============================================================================================================================================================================================
+
+Medicinal Chemistry tool for calculating drug suitability parameters of compounds.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Platform and version
+=============================================================================================================================================================================================
+
+The software named insilicolynxdqi has been tested for compatibility on the following systems:
+
+	Ubuntu 14.04 LTS system running Python 2.7.6
+	Ubuntu 14.04 LTS system running Python 3.4.3
+	Ubuntu 16.04 LTS system running Python 2.7.12
+	Ubuntu 16.04 LTS system running Python 3.5.2
+	Windows 7 system running Python 3.6.0
+
+The software named insilicolynxdqi should be compatible with Python 2.7(.z) and Python 3(.y.z) running on a Linux platform or a Win32 platform (where y and z are the version numbers of the 
+distribution).
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To install on a local computer
+=============================================================================================================================================================================================
+
+(1) Save the compressed source distribution file on to a local computer.
+
+(2) Installation from the compressed source distribution file using pip:
+
+	Within a new terminal (Linux) or a new Command Prompt (Win32), change the working directory to the directory containing the compressed source distribution file and type:
+
+		>>> sudo pip install insilicolynxdqi-x.y.z.tar.gz (Linux)
+
+	or
+
+		>>> pip install insilicolynxdqi-x.y.z.zip (Win32)
+
+	where x, y and z are the version numbers of the distribution.	
+
+	Note, to uninstall:
+
+		>>> sudo pip uninstall insilicolynxdqi (Linux)
+
+	or
+
+		>>> pip uninstall insilicolynxdqi (Win32)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Using insilicolynxdqi within a Python script - generate in-vivo scenarios functionality
+=============================================================================================================================================================================================
+
+The following code is needed for accessing the generate in-vivo scenarios functionality of insilicolynxdqi:
+	
+	from insilicolynxdqi.run.generate_in_vivo_scenarios import GenerateInVivoScenarios
+	generateInVivoScenarios = GenerateInVivoScenarios()
+				
+	generateInVivoScenarios.run( args )
+	
+The possible arguments (i.e., args) for the generateInVivoScenarios.run() function include:
+
+	dataFile (df):
+
+		REQUIRED - full file name of the tab-delimited file containing the data set.  The following data column headers are required (note, the "species" text refers to dog, human or rat):
+
+			name
+			mol_wt
+			cl_in_vivo_plasma_(species)
+			cl_in_vivo_plasma_(species)_units
+			v_steady_state_(species)
+			v_steady_state_(species)_units
+
+		For calculation of free levels the additional data columns are also required:
+
+			ppb_(species)
+			ppb_(species)_units
+
+		For calculation based on oral dosing the additional data columns are also required:
+
+			charge_type
+			pka_a1 (dependent on charge_type)
+			pka_a2 (dependent on charge_type)
+			pka_b1 (dependent on charge_type)
+			pka_b2 (dependent on charge_type)
+			caco2_6p5_human
+			caco2_6p5_human_units
+			solubility_7p4
+			solubility_7p4_units
+		
+	speciesName (sn):
+
+		Species: d = dog, h = human, r = rat (default = h).
+
+	method (m):
+
+		Method: 1 (po 1c total), 2 (po 1c free), 3 (po 2c total), 4 (po 2c free), 5 (iv 2c total), 6 (iv 2c free) (default = 1).
+	
+	errorScenarios (es):
+
+		Number of error scenarios to consider (default = 0, can not equal 1).
+
+	errorParameters (ep):
+
+		Enter the parameter abbreviation for error consideration (in vivo clearance (cl), volume of distribution at steady state (v), Caco2 Papp A to B at pH 6.5 (caco2), aqueous 
+		solubility at pH 7.4 (solubility) and plasma protein binding (ppb)) e.g., cl v caco2 solubility ppb.  (Note, do not add speech marks.)
+
+	mappingsFile (mf):
+
+		Full file path of the file containing the column header mappings for the input data set.
+
+	rmsepFile (rf):
+
+		Full file path of the file containing the rmsep values for the associated QSAR models.
+
+	qsarDefaultRmsep (qdr):
+
+		Assumed RMSEP for a QSAR model without an entry in the rmsep file.  The value reflects the RMSEP between predicted and observed values both on a logarithmic base-10 scale for 
+		cl_in_vivo_plasma_(species), v_steady_state_(species), caco2_6p5_human, solubility_7p4 and predicted and observed values both on a logarithmic base-10 percent bound over percent 
+		free scale for ppb_(species) (default = 1.00).  (Note, the species text refers to dog, human or rat.)
+
+	qsarExperimentalStandardDeviation (qesd):
+
+		Assumed default experimental standard deviation associated to measured data.  For cl_in_vivo_plasma_(species), v_steady_state_(species), caco2_6p5_human and solubility_7p4 this 
+		value reflects a logarithmic base-10 scale, and for ppb_(species) this value reflects a logarithmic base-10 percent bound over percent free scale (default = 0.30).  (Note, the 
+		species text refers to dog, human or rat.)
+
+	defaultParameterStandardDeviation (dpsd):
+
+		Assumed default parameter standard deviation to be used in the absence of a valid compound standard deviation value and/or a valid compound similarity score.  For 
+		cl_in_vivo_plasma_(species), v_steady_state_(species), caco2_6p5_human and solubility_7p4 this value reflects a logarithmic base-10 scale, and for ppb_(species) this value reflects 
+		a logarithmic base-10 percent bound over percent free scale (default = 0.30).  (Note, the species text refers to dog, human or rat.)
+
+	nameSubstring (ns):
+
+		The substring appended to the name (followed by an integer) to indicate an error scenario row (default = _#).
+	
+	byPass (bp):
+		
+		Bypass the Python version and platform check: yes or no (default).
+
+Output of generateInVivoScenarios.run( args ):
+
+	dataFileNew:
+
+		The file path for the new data file generated by the library - permits joining with other functions within one Python script.	
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output - generate in-vivo scenarios functionality
+=============================================================================================================================================================================================
+
+A revised text file.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Using insilicolynxdqi within a Python script - perform in-vivo calculations functionality
+=============================================================================================================================================================================================
+
+The following code is needed for accessing the perform in-vivo calculations functionality of insilicolynxdqi:
+	
+	from insilicolynxdqi.run.perform_in_vivo_calculations import PerformInVivoCalculations
+	performInVivoCalculations = PerformInVivoCalculations()
+				
+	performInVivoCalculations.run( args )
+	
+The possible arguments (i.e., args) for the performInVivoCalculations.run() function include:
+
+	dataFile (df):
+
+		REQUIRED - full file name of the tab-delimited file containing the data set (i.e., the output data file from insilicolynxdqi_generate_scenarios).  The following data column 
+		headers are required (note, the "species" text refers to dog, human or rat):
+
+			name
+			mol_wt
+			cl_in_vivo_plasma_(species)
+			cl_in_vivo_plasma_(species)_qualifier
+			cl_in_vivo_plasma_(species)_units
+			v_steady_state_(species)
+			v_steady_state_(species)_qualifier
+			v_steady_state_(species)_units
+
+		For calculation of free levels the additional data columns are also required:
+
+			ppb_(species)
+			ppb_(species)_qualifier
+			ppb_(species)_units
+		
+		For calculation based on oral dosing the additional data columns are also required:
+
+			charge_type
+			pka_a1 (dependent on charge_type)
+			pka_a2 (dependent on charge_type)
+			pka_b1 (dependent on charge_type)
+			pka_b2 (dependent on charge_type)
+			caco2_6p5_human
+			caco2_6p5_human_qualifier			
+			caco2_6p5_human_units
+			solubility_7p4
+			solubility_7p4_qualifier
+			solubility_7p4_units
+
+	speciesName (sn):
+
+		Species: d = dog, h = human, r = rat (default = h).
+
+	method (m):
+
+		Method: 1 (po 1c total), 2 (po 1c free), 3 (po 2c total), 4 (po 2c free), 5 (iv 2c total), 6 (iv 2c free) (default = 1).
+
+	doseInterval (di):
+		
+		Dose interval (frequency), units: hours (default = 12.00).
+
+	simulationLength (sl):
+
+		Simulation length, units = hours (default = 168.00).
+
+	compartment (c):
+
+		Compartment to consider: c = central, p = peripheral, cp = central_peripheral or all (default = c).  (Note, not relevant for methods involving only one compartment.)		
+
+	name (n):
+
+		Name (of molecule) column header as it appears in the input data set (default = name).
+
+	upperVcentralToVssRatio (uvr):
+		Upper ratio for the volume of distribution in the central compartment to the volume of distribution at steady state (needs to be a number between 0.00 and less than 1.00) 
+		(default = 0.50).
+
+	vterminalToVssRatioLower (vrl):
+
+		Terminal volume of distribution to volume of distribution at steady state ratio lower limit (needs to be greater than or equal to 1.01) (default = 1.10).
+
+	vterminalToVssRatioUpper (vru):
+	
+		Terminal volume of distribution to volume of distribution at steady state ratio upper limit (needs to be less than or equal to 7.00) (default = 2.00).
+
+	defaultIvDose (did):
+
+		Default dose to use with iv scenarios only, units: mg kg-1 (default = 1.00).
+
+	absorptionDelay (ad):
+
+		Absorption delay to use with po scenarios only, units: hours (default = -1.00 (and hard coded values used: dog = 0.50; human = 1.00; rat = 0.25)).
+
+	intestinalTransitTime (itt):
+
+		Intestinal transit time to use with po scenarios only, units: hours (default = -1.00 (and hard coded values used: dog = 2.00; human = 4.00; rat = 1.50)).
+
+	saveRawDataFiles (srdf):
+		
+		Save raw data files: yes (default) or no.
+
+	byPass (bp):
+
+		Bypass the Python version and platform check: yes or no (default).
+
+Output of performInVivoCalculations.run( args ):
+
+	dataFileNew:
+
+		The file path for the new data file generated by the library - permits joining with the insilicolynxdqi Python library within one Python script.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output - perform in-vivo calculations functionality
+=============================================================================================================================================================================================
+
+Multiple text files.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Using insilicolynxdqi within a Python script - analyse in-vivo calculations functionality
+=============================================================================================================================================================================================
+
+The following code is needed for accessing the analyse in-vivo calculations functionality of insilicolynxdqi:
+	
+	from insilicolynxdqi.run.analyse_in_vivo_calculations import AnalyseInVivoCalculations
+	analyseInVivoCalculations = AnalyseInVivoCalculations()
+				
+	analyseInVivoCalculations.run( args )
+	
+The possible arguments (i.e., args)  for the analyseInVivoCalculations.run() function include:
+
+	dataFile (df):
+	
+		REQUIRED - full file name of the tab-delimited file containing the data set (i.e., the output data file from insilicolynxdqi_perform_calculations) (enter file path prefix for 
+		multiple scenarios e.g., ../../folder/data_).
+
+	speciesName (sn):
+		
+		Species: d = dog, h = human, r = rat (default = h).
+
+	method (m):
+	
+		Method: 1 (po 1c total), 2 (po 1c free), 3 (po 2c total), 4 (po 2c free), 5 (iv 2c total), 6 (iv 2c free) (default = 0, user must specify a method if full file path provided).
+
+	nameSubstring (ns):
+
+		The substring appended to the name (followed by an integer) to indicate an error scenario row (default = _#).
+
+	compartment (c):
+
+		Compartment to consider: c = central, p = peripheral, cp = central_peripheral or all (default = c).  (Note, not relevant for methods involving only one compartment.)
+
+	removeOutliers (ro):
+		If the number of available records permits, the number of outliers to remove - to use with po scenarios only.
+
+	intervalLevelDistribution (ild):
+
+		If the number of available records permits, the (approximate) two-sided distribution interval level to calculate - accepted range : 70.00 percent to 100.00 percent 
+		(default = 80.00 percent).
+
+	confidenceMeanLevel (cml):
+
+		If the number of available records permits, the (approximate) two-sided confidence interval of the mean level to calculate - accepted range : 70.00 percent to 99.90 percent 
+		(default = 80.00 percent).  (Note, a minimum of four records is required to calculate the confidence intervals of the mean; and where the degrees of freedom is greater than 150 
+		the t-critical value is calculated for 150 degrees of freedom.)
+
+	smiles (s):
+	
+		If applicable, smiles column header as it appears in the input data set (default = smiles).
+
+	byPass (bp):
+
+		Bypass the Python version and platform check: yes or no (default).
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output - analyse in-vivo calculations functionality
+=============================================================================================================================================================================================
+
+Multiple text files.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Further information
+=============================================================================================================================================================================================
+
+Refer to INSTRUCTIONS_FOR_USE.txt file within the distribution file.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Help
+=============================================================================================================================================================================================
+
+Email: contact@insilicolynx.com
+
+
+=============================================================================================================================================================================================
+=============================================================================================================================================================================================
+
