@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: nbreversible
+Version: 0.0.0
+Summary: -
+Home-page: https://github.com/podhmo/nbreversible
+Author: podhmo
+Author-email: ababjam61+github.com@gmail.com
+License: UNKNOWN
+Description: nbreversible
+        ========================================
+        
+        reversible nbconvert. (.ipynb <-> .py)
+        
+        
+        .. code-block:: bash
+        
+          # convert .ipynb to .py
+          $ python -m nbreversible foo.ipynb > foo.py
+        
+          # convert .py to .ipynb
+          $ python -m nbreversible foo.py > foo.ipynb
+        
+          # re: convert .ipynb to .py
+          $ python -m nbreversible foo.ipynb > foo.py
+        
+        
+        
+        
+        
+Keywords: jupyter nbconvert reversible
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
