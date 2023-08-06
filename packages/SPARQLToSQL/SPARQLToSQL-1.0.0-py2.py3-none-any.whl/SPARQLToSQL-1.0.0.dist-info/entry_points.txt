@@ -1,0 +1,3 @@
+[console_scripts]
+encrypt = SPARQLToSQL.translator:translate
+
