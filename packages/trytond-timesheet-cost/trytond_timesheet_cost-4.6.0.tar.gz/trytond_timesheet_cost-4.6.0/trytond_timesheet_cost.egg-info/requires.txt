@@ -1,0 +1,5 @@
+python-sql >= 0.4
+trytond_company >= 4.6, < 4.7
+trytond_party >= 4.6, < 4.7
+trytond_timesheet >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
