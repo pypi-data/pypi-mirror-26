@@ -1,0 +1,10 @@
+flake8
+isort
+pylint
+pytest
+pytest-cov
+pytest-sugar
+
+# required for `python setup.py check --restructuredtext -s`
+docutils
+pygments
