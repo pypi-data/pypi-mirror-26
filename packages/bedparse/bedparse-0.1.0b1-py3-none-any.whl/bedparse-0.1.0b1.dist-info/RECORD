@@ -1,0 +1,12 @@
+bedparse/__init__.py,sha256=_pN-d-CSTZmF3CUiX0ZWB0DQvDGqP-pc2oZVTuq-WSw,118
+bedparse/bedline.py,sha256=z67j1vEhuyqvn1ype7OI0iLe8wLnYiPYkt9O9rpNlGg,16215
+bedparse/bedparse.py,sha256=F2cp4NvYn50Xv8bD_C9JvOLm_-ps-mcPXzd3nsEoaUQ,12676
+bedparse/chrnames.py,sha256=7hjJV2eI07yoAZ9jSapm2j9fKV-zS6jtbuYyvhAmF-0,35339
+bedparse/converters.py,sha256=5KOznoMSTEPyRlS-oGuVptuwDAaJpJO31a16D64Ymp4,4033
+bedparse-0.1.0b1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+bedparse-0.1.0b1.dist-info/METADATA,sha256=jX6YhYzI_X6wPF5mORuWgvMVHc756-tu5xmxEOsp5XU,708
+bedparse-0.1.0b1.dist-info/RECORD,,
+bedparse-0.1.0b1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+bedparse-0.1.0b1.dist-info/entry_points.txt,sha256=TLnEz5Y8yNskthXso4wfzmLLpW8sttg5bsNNL0Ek5ps,53
+bedparse-0.1.0b1.dist-info/metadata.json,sha256=uwPGXjieT6OMG7DvNuh1A6T_heujzgP3ojA4lwB9PLw,1028
+bedparse-0.1.0b1.dist-info/top_level.txt,sha256=soFOj-mvrFmy7fpJooCPNMO-8OQTYEdd7ONlI_U57Bc,9
