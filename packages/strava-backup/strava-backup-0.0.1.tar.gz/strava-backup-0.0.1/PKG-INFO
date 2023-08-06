@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: strava-backup
+Version: 0.0.1
+Summary: Get your data back from Strava
+Home-page: https://github.com/pR0Ps/strava-backup
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MPLv2
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
