@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: midiio
+Version: v0.0.1
+Summary: Python MIDI IO
+Home-page: https://github.com/blowfeld/python-midi-io
+Author: blowfeld
+Author-email: grand.hifi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
