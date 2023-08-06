@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: cmstop
+Version: 0.0.2
+Summary: A set tools for cmstop (not release by offical).
+Home-page: https://github.com/teachmyself/icmstop
+Author: teachmyself
+Author-email: teachmyself@126.com
+License: MIT LICENSE
+Description-Content-Type: UNKNOWN
+Description: cmstop
+        
+        Copyright (c) 2017 teachmyself
+        
+        This is a set of tools for CmsTop (Not released by official).
+        
+Keywords: cmstop,cms,top,cmstools
+Platform: UNKNOWN

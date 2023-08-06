@@ -1,0 +1,3 @@
+[console_scripts]
+cmstop-find = cmstop.find:main
+

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.txt
+VERSION
+requirements.txt
+setup.py
+cmstop/__init__.py
+cmstop/cmstop.py
+cmstop/common.py
+cmstop/db.py
+cmstop/find.py
+cmstop.egg-info/PKG-INFO
+cmstop.egg-info/SOURCES.txt
+cmstop.egg-info/dependency_links.txt
+cmstop.egg-info/entry_points.txt
+cmstop.egg-info/requires.txt
+cmstop.egg-info/top_level.txt
