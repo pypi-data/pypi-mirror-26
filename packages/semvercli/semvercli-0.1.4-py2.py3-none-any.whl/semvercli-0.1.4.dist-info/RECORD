@@ -1,0 +1,11 @@
+semvercli/__init__.py,sha256=aKi3quBH7DyIW8_YNDk2Fz85qIpIfCWJ3GNIAvOUeKU,170
+semvercli/cli.py,sha256=wDgNHGPEhu9zk94sBjh53-j8esLyx8zAO5Dch-qtSK0,677
+semvercli/meta.py,sha256=jWO95qeOGL-XwUOlsB7LO5r2_rtpqwOSZtnMOVb7fes,153
+semvercli/semvercli.py,sha256=wAqTEzKMTpLI1sazrQwAQQaQH0_uY96aiQWq0OCFB8c,380
+semvercli-0.1.4.dist-info/DESCRIPTION.rst,sha256=tjV1usc6ftU7lVHNBkLT7dGEzC8OHDIZ9_CuOa67UZU,119
+semvercli-0.1.4.dist-info/METADATA,sha256=GLWoskAdIBJmBRWS3R7kyrlKc6awubxZ8ex9cMzHT_g,921
+semvercli-0.1.4.dist-info/RECORD,,
+semvercli-0.1.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+semvercli-0.1.4.dist-info/entry_points.txt,sha256=RfgN08OebJ4A7o5t9di7ItU0WlLIoAUmTDhMH0sxuRs,50
+semvercli-0.1.4.dist-info/metadata.json,sha256=PF1fozFDFuIgetEd8ap5adiWGe_CYcJ88rpQdzVBs6E,1111
+semvercli-0.1.4.dist-info/top_level.txt,sha256=puKgtK0DTNvLDe4SMk6ED7d3hl1evKsBI-IrYBiGn_w,10
