@@ -1,0 +1,9 @@
+
+[dev]
+scrapy
+future
+
+[test]
+pytest
+pytest-describe
+pytest-cov
