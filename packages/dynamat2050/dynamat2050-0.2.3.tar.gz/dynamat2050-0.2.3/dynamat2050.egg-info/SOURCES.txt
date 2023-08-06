@@ -1,0 +1,11 @@
+README.md
+setup.py
+dynamat2050/__init__.py
+dynamat2050/download.py
+dynamat2050/dynamat2050.py
+dynamat2050.egg-info/PKG-INFO
+dynamat2050.egg-info/SOURCES.txt
+dynamat2050.egg-info/dependency_links.txt
+dynamat2050.egg-info/entry_points.txt
+dynamat2050.egg-info/requires.txt
+dynamat2050.egg-info/top_level.txt

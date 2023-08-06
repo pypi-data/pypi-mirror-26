@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: dynamat2050
+Version: 0.2.3
+Summary: A library for accessing data from the Dynamat2050 API
+Home-page: https://github.com/ggstuart/dynamat2050
+Author: Graeme Stuart
+Author-email: gstuart@dmu.ac.uk
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: energy consumption data API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis

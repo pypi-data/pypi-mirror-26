@@ -1,0 +1,4 @@
+[console_scripts]
+dynamat_data = dynamat2050.download:data
+dynamat_meters = dynamat2050.download:meters
+
