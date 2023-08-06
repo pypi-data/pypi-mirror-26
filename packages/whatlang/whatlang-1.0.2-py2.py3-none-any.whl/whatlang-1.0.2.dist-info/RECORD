@@ -1,0 +1,10 @@
+whatlang/__init__.py,sha256=xUIj45uiXKl0JGipi7XvQXQZ1jVSdNStMkosuMsolbg,34
+whatlang/predict_lang.py,sha256=hWAJ3rOAfLW7WbWu-fXSA55ciyXWGL_1kdneVzhKojM,1303
+whatlang/test_predict_lang.py,sha256=O-QOYp4t2RVcNmwqrwzvhzDN0q4Z49HpaNsKH-m6v98,870
+whatlang/model/lid.176.ftz,sha256=jzRyz-hzintgmejpmcPL-uDc0VaWqsfXc4qAOdtgPoM,938013
+whatlang-1.0.2.dist-info/DESCRIPTION.rst,sha256=5n_fEedGAsDE1KDSrWP5RXSEuaBkl7q1RvWbBreDVDI,4554
+whatlang-1.0.2.dist-info/METADATA,sha256=hdjIMuYjv0VBaK1iKOWffKC-Hz4I1l6EFRvhhgJ48Is,5050
+whatlang-1.0.2.dist-info/RECORD,,
+whatlang-1.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+whatlang-1.0.2.dist-info/metadata.json,sha256=UDHb-8Limk6--KoUt92r-x0PhyjDEC7xeMJ7YvZo_EY,716
+whatlang-1.0.2.dist-info/top_level.txt,sha256=RGMzBmVAnfCEsGprq4JGM9hDLh0vYBhLtodESu8oSDA,9
