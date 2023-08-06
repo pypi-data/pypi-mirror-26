@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dust_extinction
+Version: 0.6
+Summary: Astropy affiliated package
+Home-page: http://dust-extinction.readthedocs.io/
+Author: Karl Gordon
+Author-email: kgordon@stsci.edu
+License: BSD
+Description: Provides interstellar dust extinction curves in the astropy modeling framework
+Platform: UNKNOWN
