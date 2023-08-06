@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: easysnmptable
+Version: 0.1.0
+Summary: An extension to easysnmp providing table handling.
+Home-page: https://github.com/wolcomm/easysnmptable
+Author: Workonline Communications
+Author-email: communications@workonkonline.co.za
+License: LICENSE
+Download-URL: https://github.com/easysnmptable/0.1.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
