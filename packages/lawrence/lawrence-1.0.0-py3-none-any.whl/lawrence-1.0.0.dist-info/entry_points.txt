@@ -1,0 +1,3 @@
+[console_scripts]
+lawrence = lawrence.__init__:cli
+
