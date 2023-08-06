@@ -1,0 +1,7 @@
+awscli
+boto3
+cloudpickle
+docker
+pipreqs
+six
+tenacity
