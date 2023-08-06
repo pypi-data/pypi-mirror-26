@@ -1,0 +1,6 @@
+six>=1.11
+
+[test]
+pytest-cov
+pytest
+tox
