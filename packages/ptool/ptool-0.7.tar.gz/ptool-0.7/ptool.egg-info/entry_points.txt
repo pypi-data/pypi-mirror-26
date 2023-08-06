@@ -1,0 +1,3 @@
+[console_scripts]
+ptool = ptool.__main__:_main
+
