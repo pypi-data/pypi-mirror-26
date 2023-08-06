@@ -1,0 +1,1 @@
+pybuilder_cram_console_scripts
