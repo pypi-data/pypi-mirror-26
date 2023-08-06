@@ -1,0 +1,4 @@
+[console_scripts]
+newrelic-alerts-app = newrelic_alerting.run:main_app
+newrelic-alerts-synch = newrelic_alerting.run:main
+
