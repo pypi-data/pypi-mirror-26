@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: wellcome_aws_utils
+Version: 0.0.1
+Summary: A collection of AWS utilities
+Home-page: https://github.com/wellcometrust/aws_utils
+Author: Wellcome Trust (Digital Platform Team)
+Author-email: wellcomedigitalplatform@wellcome.ac.uk
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: aws
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6

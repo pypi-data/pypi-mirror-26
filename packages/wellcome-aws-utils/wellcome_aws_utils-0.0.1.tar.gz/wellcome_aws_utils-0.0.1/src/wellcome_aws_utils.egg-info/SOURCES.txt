@@ -1,0 +1,8 @@
+README.rst
+setup.py
+src/wellcome_aws_utils/__init__.py
+src/wellcome_aws_utils/version.py
+src/wellcome_aws_utils.egg-info/PKG-INFO
+src/wellcome_aws_utils.egg-info/SOURCES.txt
+src/wellcome_aws_utils.egg-info/dependency_links.txt
+src/wellcome_aws_utils.egg-info/top_level.txt
