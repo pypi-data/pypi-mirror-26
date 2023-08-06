@@ -1,0 +1,16 @@
+alfredo/__init__.py,sha256=VjN90E3Nma656QQ9dEyzPfShmrL_u2PYUdsPVLJx_8A,783
+alfredo/cli.py,sha256=bPabDy_KaR8ZK-kJ0b3qWG-DmiUKu3yNOhq2LQq0pK4,9806
+alfredo/descriptions.py,sha256=IbNwJNg23jZyYeigY0j_lQs2__JAsij3I7mUeWalBJM,631
+alfredo/http.py,sha256=E4BxjW-L8d6zVOFipvx1ljGisnvV7Hw9ZZposFk0giI,1571
+alfredo/resource.py,sha256=vzq1IFiIMpCg-kFxUVESb4Q89UtmlqXKE2fmtKDvu7I,8257
+alfredo/stream.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alfredo/mixins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alfredo/mixins/lazy.py,sha256=0H7DHbQp86IwJ-RMneDy9H4WuQzGBY9tocGEXJcPlm4,725
+alfredo/mixins/nested.py,sha256=J0fHyTQl69rGwLRWdJSFNxvy7SVE5Fg9rU88dWX5CcQ,630
+alfredo_python-0.0.2.post3.dist-info/DESCRIPTION.rst,sha256=c7H771Re1X14CNYRXapETgJe8oC5TcSTqKLyhH-mVl4,4423
+alfredo_python-0.0.2.post3.dist-info/METADATA,sha256=rmUiKfMSwrkNUJozPNWDuaXYITnATLB4c6yRlm2p3T8,5573
+alfredo_python-0.0.2.post3.dist-info/RECORD,,
+alfredo_python-0.0.2.post3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+alfredo_python-0.0.2.post3.dist-info/entry_points.txt,sha256=nNX46dZp7YGPKNR-vGD9VlFaB946FgS4no6SzDnMi3Q,46
+alfredo_python-0.0.2.post3.dist-info/metadata.json,sha256=OM8JhqNqTiZV-xH0q2rKvT8cvzcFwDOL5R-kesRiJJs,1390
+alfredo_python-0.0.2.post3.dist-info/top_level.txt,sha256=rWtpHkpJc6E3Ychg960d-ggZR56RePIDeEcSmFYhlx4,8
