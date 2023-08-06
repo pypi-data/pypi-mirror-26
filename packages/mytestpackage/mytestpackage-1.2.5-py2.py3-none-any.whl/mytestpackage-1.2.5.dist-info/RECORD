@@ -1,0 +1,11 @@
+mytestpackage/__init__.py,sha256=ucnxN7KwUna9iRjm3b4kt3UxvKxegKcZqRTamqxLPK8,81
+mytestpackage/mod1.py,sha256=BR9605WtOPZZsVAa3OJhLqpSLay7D6GZuMoGSJLedWM,83
+mytestpackage/group1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mytestpackage/group1/sample1.py,sha256=4pdItg_AHmkbYpGPTbaV9x6BNh89xSk02xLpUGm13ZU,97
+mytestpackage/group1/sample2.py,sha256=jspr68i-NxrJB-Qr-R4I19dpWH_rkZCpAdE8KryFGJk,105
+mytestpackage-1.2.5.dist-info/DESCRIPTION.rst,sha256=kLyJ2FRMmBXpHh_bCSQUEUEStdetsHKVI0uAxebo7no,57
+mytestpackage-1.2.5.dist-info/METADATA,sha256=-a81InQ2djHHF1vdcLtXENh1A-JBXli4C5_MtuaK_f0,631
+mytestpackage-1.2.5.dist-info/RECORD,,
+mytestpackage-1.2.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mytestpackage-1.2.5.dist-info/metadata.json,sha256=HufJWMtNdXZ0lw00Sgb4WZm1eiP7YXsYN3nMOk_Ypxg,728
+mytestpackage-1.2.5.dist-info/top_level.txt,sha256=BvpFpMZNpvNYycoVfossb5nK4fDjNVRFWUZwsK6RmkM,14
