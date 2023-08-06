@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: rtctools
+Version: 0.0.1.dev2
+Summary: Toolbox for control and optimization of water systems
+Home-page: https://pypi.python.org/pypi/rtc-tools/
+Author: Jack Vreeken
+Author-email: UNKNOWN
+License: GPL
+Description: Use `rtc-tools <https://pypi.python.org/pypi/rtc-tools/>`_ instead
+Platform: all
