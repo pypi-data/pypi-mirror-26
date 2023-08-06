@@ -1,0 +1,134 @@
+Metadata-Version: 2.0
+Name: messgeraet-anzapfen
+Version: 0.5.2
+Summary: Anzapfen von Messgeräten und senden der Werte an einen Server
+Home-page: https://gitlab.com/messgeraet/anzapfen
+Author: Sebastian Stigler
+Author-email: sebastian@sebastian-stigler.de
+License: mit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: certifi (==2017.4.17)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: coloredlogs (==7.1)
+Requires-Dist: humanfriendly (==4.4)
+Requires-Dist: idna (==2.5)
+Requires-Dist: PyJWT (==1.5.2)
+Requires-Dist: requests (==2.18.1)
+Requires-Dist: urllib3 (==1.21.1)
+Requires-Dist: colorama (==0.3.9)
+
+======================================
+Quick reference of messgeraet_anzapfen
+======================================
+
+
+The command :program:`anzapfen` is used to collect a sensor value and post it
+to the `logserver <https://gitlab.com/messgeraet/logserver>`_.
+
+Sensors can be loaded as plugins.
+
+
+Installation
+============
+
+The program is designed to run primarily on a Raspberry Pi with raspbian jesse.
+
+It is assumed that you use the standard user `pi` and your current directory
+is the home of this user.
+
+Required packages
+-----------------
+
+You need to install the following linux packages: ::
+
+   sudo apt-get update
+   sudo apt-get install python3-rpi.gpio python3-virtualenv
+
+Create the virtual environment
+------------------------------
+
+To create a virtual environment for the program, the following command must be
+used: ::
+
+   virtualenv -p python3 --system-site-packages venv
+
+The virtualenv :file:`venv` was populated in the current directory. Now you
+have to activate it: ::
+
+   source ~pi/venv/bin/activate
+
+Your prompt should now be prepended by `(venv)`.
+
+Install the program :program:`anzapfen`
+---------------------------------------
+
+The program is available vi PyPi and is called `messgerat-anzapfen`: ::
+
+   pip install messgeraet-anzapfen
+
+
+Usage of :program:`anzapfen`
+============================
+
+To use the program you first have to activate the virtual environment: ::
+
+   source ~pi/venv/bin/activate
+
+Further more you need a config file to tell the program which sensor should be
+queried and where the logserver is. Fortunately there are some helpful command
+line arguments for :program:`anzapfen` which come in handy.
+
+Check the installed plugins
+---------------------------
+
+The :option:`--print-known-sensors` of the program :program:`anzapfen`. This
+option displays all installed sensors with a short description. If the sensor,
+you want to use is not listed here then install it (instructions are included
+with the sensor plugin).
+
+Create a config file
+--------------------
+The next option is the :option:`--print-config-file`. Use this option to
+create a new config file by redirecting the output to a file: ::
+
+   anzapfen --print-config-file > configfile.ini
+
+.. note::
+   The name of the config file can be any valid filename for linux. It is
+   recomended to use the suffix `.ini` and don't use spaces and umlauts in the
+   name.
+
+
+The config file
+---------------
+
+In the `Default` section you can choose which sensor will be use by setting
+`sensor_type` to the name of the sensor (identical to the section caption of
+the sensor). The default value is the dummy sensor `Constant` that always send
+the entry of its variable `value` to the logserver.
+
+The `sensor_id` is the key in the database of logserver where the measured
+value is stored with a timestamp.  The name can include the letters **a-z**,
+**A-Z**, the numbers **0-9** and the underscore. Further more it should not
+exceed 255 characters.
+
+.. tip::
+   Best practise for a sensor name is the combination of the name of the sensor
+   plugin and the location of the measurement.
+
+In the `Server` section you can set the url of the logserver.
+The variables `endpoint` and `sensor_id` should remain untouched!
+
+The settings for the sensor will be described within the plugin repository of
+the sensor.
+
+
+
