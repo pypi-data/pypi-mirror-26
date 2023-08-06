@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: pypi-task-demo
+Version: 0.0.0
+Summary: PyPI demo
+Home-page: https://github.com/kuvinodms/vsts-pypi-demo
+Author: Vinod Kumar
+Author-email: kuvinod@microsoft.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: 
+Keywords: Microsoft,VSTS,Team Services,SDK,AzureTfs
+Platform: UNKNOWN
+Requires-Dist: msrest (>=0.2.0)
+Requires-Dist: mock
+
