@@ -1,0 +1,10 @@
+README
+setup.py
+jopymongo/__init__.py
+jopymongo/jojo-pymongo.jo
+jopymongo/jopymongo.jo
+jopymongo.egg-info/PKG-INFO
+jopymongo.egg-info/SOURCES.txt
+jopymongo.egg-info/dependency_links.txt
+jopymongo.egg-info/requires.txt
+jopymongo.egg-info/top_level.txt
