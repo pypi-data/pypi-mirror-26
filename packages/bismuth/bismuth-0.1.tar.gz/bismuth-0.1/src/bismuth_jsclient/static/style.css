@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.message {
+    margin: .4rem;
+    padding: .2rem;
+    background-color: #eee;
+}
+
+.message .timestamp {
+    margin: .2rem;
+    padding: .2rem;
+    background-color: #ddd;
+}
+
+#input {
+    display: flex;
+    width: 100%;
+}
+
+#message-text {
+    flex-grow: 1;
+}
+
+#message-send {
+    width: 4rem;
+}

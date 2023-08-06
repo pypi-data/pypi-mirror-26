@@ -1,0 +1,3 @@
+[console_scripts]
+bismuth-runserver = bismuth_server.server:main
+

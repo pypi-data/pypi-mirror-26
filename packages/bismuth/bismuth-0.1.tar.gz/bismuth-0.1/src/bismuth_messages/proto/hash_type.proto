@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+// Enumeration describing hash functions in use.
+enum HashType {
+    DISALLOWED = 0;
+    SHA256 = 1;
+    SHA384 = 2;
+    SHA512 = 3;
+}

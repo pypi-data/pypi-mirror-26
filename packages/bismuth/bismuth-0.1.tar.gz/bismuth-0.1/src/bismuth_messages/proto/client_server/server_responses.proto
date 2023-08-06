@@ -1,0 +1,3 @@
+syntax = "proto3";
+
+import "bismuth_messages/proto/bismuth_message.proto";

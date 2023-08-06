@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+import "bismuth_messages/proto/bismuth_message.proto";
+
+// an atomic request from a client to the server
+message Action {
+    // should be unique, serial value identifying this request for this session
+    int64 serial = 1;
+
+    oneof action {
+        Hello hello = 2;
+        Get get = 3;
+        Post post = 4;
+        Subscribe subscribe = 5;
+        Unsubscribe unsubscribe = 6;
+    }
+
+    //
+    // action types follow
+    //
+
+    // request information exchange such as hash, server root message, etc.
+    message Hello { }
+
+    // request contents of message(s)
+    message Get {
+        bytes message_id = 1;
+    }
+
+    // post message
+    message Post {
+        BismuthMessage message = 1;
+    }
+
+    // subscribe to new messages on a topic
+    message Subscribe {
+        bytes topic = 1;
+    }
+
+    // unsubscribe from a topic
+    message Unsubscribe {
+        bytes topic = 2;
+    }
+}
+
+// wrapper for multiple actions sent in a single request message
+message ClientRequest {
+    int64 version = 1;
+    repeated Action actions = 2;
+}

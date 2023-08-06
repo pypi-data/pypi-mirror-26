@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: bismuth
+Version: 0.1
+Summary: bismuth message service
+Home-page: UNKNOWN
+Author: Kent Ross
+Author-email: k@mad.cash
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: POSIX
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Communications
+Classifier: Topic :: Security :: Cryptography

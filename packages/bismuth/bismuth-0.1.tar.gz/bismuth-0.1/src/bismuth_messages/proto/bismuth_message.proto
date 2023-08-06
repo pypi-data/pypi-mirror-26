@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+import "bismuth_messages/proto/hash_type.proto";
+
+// Bismuth message consists of three real parts: the topic it's attached to, the body, and
+// the signature.
+//
+// The identity of the message is the one-byte hash type identifier concatenated with the
+// hash of the compact binary representation of the message excluding the signature
+// (which must sign against this resulting hash).
+//
+// This binary representation is defined as follows:
+//     (topic + byte(has_metadata * 128 + hash_type) + data)
+//
+// That is, the first byte after the topic ID indicates both whether the message body
+// contains public metadata (in the most significant bit) and identifies the
+// hash function used to generate this message's ID (in the remaining bits).
+//
+// E.g., for a message with metadata of hash type sha256, the result would be:
+//     "\x01" + sha256(topic + "\x81" + data)
+//
+// ...33 bytes in length.
+message BismuthMessage {
+    bytes topic = 1;
+    HashType hash_type = 2;
+    bool has_metadata = 3;
+    bytes data = 4;
+    bytes signature = 5;
+}
+
+// If a bismuth message is flagged as having metadata, it should be parsed with
+// this publicly defined message format to extract its metadata: attached topic keys,
+// whether the topic is being closed, etc. These fields will affect the public semantics
+// of the mesage tres once the message is posted and may cause it to be invalid
+// (for example, closing a topic requires a different signing key than a normal message.)
+message PublicMetaMessage {
+    bytes parent_topic = 1;
+
+    // The following should be public signing keys.
+    //
+    // If write_key is set, messages posted to this topic require a valid signature by it.
+    // If control_key is set, closing this topic requires a valid signature by it.
+    // If make_subtopic_key is set, posting another topic beneath this one requires a valid
+    // signature by it.
+    bytes write_key = 2;
+    bytes control_key = 3;
+    bytes make_subtopic_key = 4;
+
+    // Indicates that this topic is sunset and no new messages should be generated for it.
+    // The existence of any such message for a topic is a directive to rate-limit the acceptance
+    // of new messages in the topic.
+    bool choke = 5;
+
+    // reserved for future
+    reserved 6 to 10;
+}
