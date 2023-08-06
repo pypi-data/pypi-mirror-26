@@ -1,0 +1,13 @@
+jsoncolor/__init__.py,sha256=jpv6YBiV5ntrFmxHowlyjkxn8YBxNrIUc85I7j8HynU,101
+jsoncolor/_compat.py,sha256=7mrzB-FxUJHUw9ZU2ShLA0u3Uqdlo45l8Rb72SaSqMQ,163
+jsoncolor/cli.py,sha256=y63cbfVLP4NfDVjOgm5K2kgnEYVHG5uTL7FOz4H-MLM,3443
+jsoncolor/config.py,sha256=JK3Qu2bnevoqZU3p2A54flYSOBbi48i0NApb8gxD5PM,1192
+jsoncolor/core.py,sha256=tNBN2yN5iQ2NWjZQr8atFLZ6ADp9p-um9S8QQdHPYuA,2769
+jsoncolor/errors.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsoncolor-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+jsoncolor-0.1.dist-info/METADATA,sha256=cViaIEHuIOxp9f7w6zuZy2cZIsVCV_LjKPa5GRAXOGA,623
+jsoncolor-0.1.dist-info/RECORD,,
+jsoncolor-0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+jsoncolor-0.1.dist-info/entry_points.txt,sha256=rkt0rx2cae_gv02D_WB-ntH1FEmzYw0H6R1a512i90w,50
+jsoncolor-0.1.dist-info/metadata.json,sha256=5WHoy9ySUCbScKy-uP7xKA0W59a7k5j7RwvKpoxZyFw,904
+jsoncolor-0.1.dist-info/top_level.txt,sha256=yjRBvkH2ARJrciNKoBh1GdgvkkVDDux0hxgFhaORQNY,10
