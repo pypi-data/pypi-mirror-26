@@ -1,0 +1,17 @@
+
+    <!-- IP grant -->
+    <script id="ip_grants.partial" type="text/x-handlebars-template">
+      <ul>
+        {{#each items}}
+          <span class="attack_surface_item">
+            <li class="list-group-item-text">
+              {{CIDR}} {{#if CIDRName}}({{CIDRName}}){{/if}}
+            </li>
+          </span>
+        {{/each}}
+      </ul>
+    </script>
+    <script>
+        Handlebars.registerPartial("ip_grants", $("#ip_grants\\.partial").html());
+    </script>
+
