@@ -1,0 +1,13 @@
+numpy
+pandas
+brewer2mpl
+matplotlib
+uncertainties
+sklearn
+scipy
+mpld3
+Ipython
+configparser
+tqdm
+fuzzywuzzy
+python-Levenshtein
