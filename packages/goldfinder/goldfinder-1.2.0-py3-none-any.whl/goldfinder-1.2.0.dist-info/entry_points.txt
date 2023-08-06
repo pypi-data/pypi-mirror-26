@@ -1,0 +1,3 @@
+[console_scripts]
+goldfinder = goldfinder.goldfinder:main
+
