@@ -1,0 +1,7 @@
+biopython
+numpy
+progress
+pysam
+sklearn
+scipy
+matplotlib
