@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+photovoltaic/ASTMG173.txt
+photovoltaic/__init__.py
+photovoltaic/silicon_optical_properties.txt
+photovoltaic.egg-info/PKG-INFO
+photovoltaic.egg-info/SOURCES.txt
+photovoltaic.egg-info/dependency_links.txt
+photovoltaic.egg-info/requires.txt
+photovoltaic.egg-info/top_level.txt
