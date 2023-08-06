@@ -1,0 +1,3 @@
+[console_scripts]
+jound = jound.__main__:main
+
