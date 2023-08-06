@@ -1,0 +1,14 @@
+rorolite/__init__.py,sha256=Nk0pXEKQ65p_KjREJliF2fRpw2ChukSoYNvgIFYu2yo,23
+rorolite/config.py,sha256=gc3v5gGsBueY11RtHhiEupjFhrpS21X_uTTIpmzyCdI,735
+rorolite/deploy.py,sha256=MwqBztBa-JL7mRV_xfSVqgwQkoybF6ywW3wTzbHmvX0,4621
+rorolite/fabfile.py,sha256=xJ7OgKlnX8G472wjE0Pw1ucSPXmq2SxpFnYDzGXdBVQ,2493
+rorolite/main.py,sha256=WRrLIURFEIqWihTCDnJztrH6UgS7ByabQyulj3I2jT0,2463
+rorolite/utils.py,sha256=tUqgJeyD8VT70830MblP32wTqhvN3MbeiA1dNZn8uRQ,693
+rorolite/files/etc/profile.d/rorolite.sh,sha256=n99D1h6XU5s5dH1XbVjrqRLTcaz27IveLFt1TQ6CINI,76
+rorolite-0.1.3.dist-info/DESCRIPTION.rst,sha256=HE6HM8yp8_5N0wAIEBFa9-15AzYxIS9ODtHDMsfeatg,647
+rorolite-0.1.3.dist-info/METADATA,sha256=9D0AljSwBcU9EHzy5o8bYhEEgOAoDIs9NrpHYXLTtK8,1012
+rorolite-0.1.3.dist-info/RECORD,,
+rorolite-0.1.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+rorolite-0.1.3.dist-info/entry_points.txt,sha256=gfgKF7zeJPIbUr6Oa7D1z5ini0Jl31y1dU_KzLdKAEU,67
+rorolite-0.1.3.dist-info/metadata.json,sha256=zpNHon0Yl4QfPHxd__tsYGnX2w4XsXpCmjBBn2ScoBI,652
+rorolite-0.1.3.dist-info/top_level.txt,sha256=XAEKCT9eFFLZWPNNZpldqZNaRjuHI0dESfS98rfkXpM,9
