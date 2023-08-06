@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import argparse, os
+from form_to_excel import ExcelBuilder, Word, PDF
+
+def form_to_text(filename):
+    if filename.lower().endswith('.pdf'):
+        form_name = filename[:-4]
+        question_labels = PDF(filename).to_txt()
+    elif filename.lower().endswith('.docx'):
+        form_name = filename[:-5]
+        question_labels = Word(filename).to_txt()
+    else:
+        raise ValueError("Invalid file type, must be a .pdf or .docx file.")
+    return { "question_labels": question_labels, "filename": form_name }
+
+def main():    
+    parser = argparse.ArgumentParser(description="Opens an PDF and places text into Excel")
+    parser.add_argument('filename', type=str, help="Name of file")
+    args = parser.parse_args()
+    text = form_to_text(args.filename)
+    ExcelBuilder(text).generate_excel_file()
+    return
+
+if __name__ == "__main__":
+    main()
