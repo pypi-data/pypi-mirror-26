@@ -1,0 +1,11 @@
+README.rst
+setup.py
+dbtrolls/__init__.py
+dbtrolls/__main__.py
+dbtrolls.egg-info/PKG-INFO
+dbtrolls.egg-info/SOURCES.txt
+dbtrolls.egg-info/dependency_links.txt
+dbtrolls.egg-info/entry_points.txt
+dbtrolls.egg-info/requires.txt
+dbtrolls.egg-info/top_level.txt
+dbtrolls.egg-info/zip-safe
