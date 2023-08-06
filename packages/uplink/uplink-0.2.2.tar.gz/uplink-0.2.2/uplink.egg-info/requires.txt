@@ -1,0 +1,6 @@
+requests>=2.18.0
+uritemplate>=3.0.0
+twisted>=17.1.0
+
+[:python_version>='3.4.2']
+aiohttp>=2.3.0
