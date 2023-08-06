@@ -1,0 +1,51 @@
+Metadata-Version: 1.1
+Name: pybaccarat
+Version: 0.10
+Summary: Play the card game Baccarat
+Home-page: https://github.com/fulkgl/PyBaccarat
+Author: George L Fulk
+Author-email: fulkgl@gmail.com
+License: MIT
+Description: # PyBaccarat
+        Play the card game Baccarat
+        
+        To check out a copy of the source:
+            cd base-location
+            git clone https://github.com/fulkgl/PyBaccarat.git
+        
+        Run each of the following with:
+            Python 2.7.13
+        
+        Run unit tests:
+            cd base-location
+            python tests\unittest_card.py
+            python tests\unittest_shoe.py
+            python tests\unittest_hand.py
+        
+        To check the coding standards and minor quality check:
+            cd base-location
+            pycodestyle pybaccarat\playingcards.py
+            pycodestyle pybaccarat\baccarat.py
+            pycodestyle pybaccarat\baccaratsystems.py
+            pycodestyle bin\play_baccarat.py
+            pylint --rcfile=\usr\local\bin\pylint2.rc pybaccarat\playingcards.py
+            pylint --rcfile=\usr\local\bin\pylint2.rc pybaccarat\baccarat.py
+            pylint --rcfile=\usr\local\bin\pylint2.rc pybaccarat\baccaratsystems.py
+            pylint --rcfile=\usr\local\bin\pylint2.rc bin\play_baccarat.py
+        
+        To run the build and make distribution packages:
+            cd base-location
+            python setup.py sdist bdist_egg
+            rem dist/* contains source and binary distribution packages
+        
+        x
+Keywords: playing cards game Baccarat
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

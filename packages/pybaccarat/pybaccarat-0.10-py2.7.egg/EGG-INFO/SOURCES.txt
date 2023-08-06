@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pybaccarat/__init__.py
+pybaccarat/baccarat.py
+pybaccarat/baccaratsystems.py
+pybaccarat/playingcards.py
+pybaccarat.egg-info/PKG-INFO
+pybaccarat.egg-info/SOURCES.txt
+pybaccarat.egg-info/dependency_links.txt
+pybaccarat.egg-info/not-zip-safe
+pybaccarat.egg-info/top_level.txt
