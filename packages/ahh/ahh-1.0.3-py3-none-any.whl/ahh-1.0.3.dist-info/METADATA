@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: ahh
+Version: 1.0.3
+Summary: Functions that I can easily reference, and maybe you too!
+Home-page: https://github.com/ahuang11/ahh
+Author: Andrew Huang
+Author-email: huang.andrew12@gmail.com
+License: MIT
+Download-URL: https://github.com/ahuang11/ahh/archive/1.0.0.tar.gz
+Keywords: data,visualization,analysis,streamline,andrew,huang,helps
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bokeh
+Requires-Dist: matplotlib
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: xarray
+
+UNKNOWN
+
+
