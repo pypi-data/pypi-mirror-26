@@ -1,0 +1,14 @@
+genericclient_base/__init__.py,sha256=Zy1bdO2NVD4Mdji3EZuohWpxEvmE1mGsbogLKhh67OQ,6896
+genericclient_base/exceptions.py,sha256=Vl8fjMvqmZqSy2i6a_yuECLWXskDKFCWiYHcdylct9Q,630
+genericclient_base/routes.py,sha256=JczIfWRjVwy_ddtC_Fj3BGmOjVS1F8xMzE5vbrZ_Qm8,2461
+genericclient_base/utils.py,sha256=FB72q35bCzBkyRSF6cc5kVjmRsYpeVo6sLh75qYnE_Y,460
+genericclient_base-0.0.1.dist-info/DESCRIPTION.rst,sha256=No4ZiZM2J5Ja8rtYje9LpQidPtRqM1kmX_d_jBSii_s,444
+genericclient_base-0.0.1.dist-info/LICENSE.txt,sha256=Uja0RnNIx86sXfvg2TvythG2U8s_oXyWzcb8tezSWsY,1061
+genericclient_base-0.0.1.dist-info/METADATA,sha256=CXAjPjCE6d8V9te9syy7sZJmVSDYZ826-yF5WZ-8W2Q,1032
+genericclient_base-0.0.1.dist-info/RECORD,,
+genericclient_base-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+genericclient_base-0.0.1.dist-info/metadata.json,sha256=MQY8VLhbQ4vq0K4EX7wOUrQk35Jj5RqxhLTmc5ewpBA,824
+genericclient_base-0.0.1.dist-info/top_level.txt,sha256=xTEGYQ9JShPDG1zmueOPXAJdXMCaHx7ugq7oM2u7Zus,25
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_resource.py,sha256=84RlwKi9Ns1H3BEttoqcYnSvMxY3NoPtHOcuUVYlFdE,1053
+tests/test_utils.py,sha256=Q-V-0BB8vFrCgNxJ3u5XZzhrOtGuEhKYpKIW8gUxMtI,880
