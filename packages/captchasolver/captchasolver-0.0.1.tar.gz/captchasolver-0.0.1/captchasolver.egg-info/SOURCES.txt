@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+captchasolver/__init__.py
+captchasolver/captchasolver.py
+captchasolver/cmdline.py
+captchasolver/features.py
+captchasolver/sox.py
+captchasolver/splitaudio.py
+captchasolver.egg-info/PKG-INFO
+captchasolver.egg-info/SOURCES.txt
+captchasolver.egg-info/dependency_links.txt
+captchasolver.egg-info/entry_points.txt
+captchasolver.egg-info/requires.txt
+captchasolver.egg-info/top_level.txt
+captchasolver/data/model.pkl
