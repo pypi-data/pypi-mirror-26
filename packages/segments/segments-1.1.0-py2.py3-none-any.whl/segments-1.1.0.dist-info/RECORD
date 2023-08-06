@@ -1,0 +1,15 @@
+segments/__init__.py,sha256=nvZNVVMwUc2p9jmxAX9SeR5SDloXpZT0lE4aagTDOWo,94
+segments/__main__.py,sha256=A6s1KXV0lsDtZ4mCVxAF_hI2ej-Cie_82F7ro1AWEDs,197
+segments/cli.py,sha256=M35mh5UmyNOsBzCCWCMGA_9Bere5SY5N1rQCxKNaUSk,1701
+segments/errors.py,sha256=Sc1jCN91anrXDed1Lfs-nTNvi20j2TrGLAejYaQrecQ,459
+segments/tokenizer.py,sha256=q8dNGnKkG31KKVdL1FmkslDfNW5qNq0-jLN3OdpfKhE,17665
+segments/tree.py,sha256=CemMxmLVoruBnPLB5fF84VhBudMJqPI5HGs83U45-7A,2811
+segments/util.py,sha256=cywa0b2-kjM75QsH8itoBAowQPmqnjZLAh6lBH_Z5r0,235
+segments-1.1.0.dist-info/DESCRIPTION.rst,sha256=MpJNQYWryE3dRORPs90nPmiCP4nKgr1QznYUrOI0ReQ,614
+segments-1.1.0.dist-info/LICENSE.txt,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+segments-1.1.0.dist-info/METADATA,sha256=tRqM8opaw_kH5TUrjlixvEmlCySZMFH0BrirJWcVU0g,1819
+segments-1.1.0.dist-info/RECORD,,
+segments-1.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+segments-1.1.0.dist-info/entry_points.txt,sha256=4muQoRKqZ_ExojYFX2eJPLxeOVFFA8hf5K3RsqLsIQE,48
+segments-1.1.0.dist-info/metadata.json,sha256=qjhl6kj5m-Duz5X5q-xMjY_CucgDgSTgnwFH7-dUO1g,1351
+segments-1.1.0.dist-info/top_level.txt,sha256=6c8xKq6vt3NBzy6MSfFICf-VMJL3FMsIX3g9bft7Bm0,9
