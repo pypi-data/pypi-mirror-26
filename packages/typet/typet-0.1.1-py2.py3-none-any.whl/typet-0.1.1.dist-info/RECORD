@@ -1,0 +1,9 @@
+tests/py36/__init__.py,sha256=8jREavUARs7796w5tBBpcOrvlxOuTTPkQ9yoUcDwx5M,85
+tests/py36/test_typed_objects.py,sha256=ZvkBi--M5F4cShGr4A3t1lcHm3wuAqkfcYwmhbnnlqI,1117
+typet/__init__.py,sha256=d5sWk961tsj_cvS3GN-zmpVmK3WVg0M6fynq_u7U5qs,35454
+typet-0.1.1.dist-info/DESCRIPTION.rst,sha256=WMgl3vE-8Yzr8GSsLgJcrNZwG3rEvJhZaKrPw_r5UiI,5217
+typet-0.1.1.dist-info/METADATA,sha256=5hTToeIFCDMUQJWxR7JevnGIcL89cvuOsI8yxN1q9_4,6233
+typet-0.1.1.dist-info/RECORD,,
+typet-0.1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+typet-0.1.1.dist-info/metadata.json,sha256=7zVzZUefkQb8o0Wy648iYInm7ZjydE19rMUNzQohyn0,1234
+typet-0.1.1.dist-info/top_level.txt,sha256=M1wBOjNndk3cT6iwasu_R-6agr05ALJPeJkynBNSjec,12
