@@ -1,0 +1,7 @@
+setup.py
+gsheetlog.egg-info/PKG-INFO
+gsheetlog.egg-info/SOURCES.txt
+gsheetlog.egg-info/dependency_links.txt
+gsheetlog.egg-info/entry_points.txt
+gsheetlog.egg-info/requires.txt
+gsheetlog.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: gsheetlog
+Version: 0.1.0
+Summary: Extract Google Sheet history
+Home-page: UNKNOWN
+Author: Sergey Salnikov
+Author-email: serg@salnikov.ru
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
