@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+release-history.rst
+requirements-dev.txt
+requirements-doc.txt
+requirements-test.txt
+requirements.txt
+setup.py
+compress/__init__.py
+compress/__init__.pyc
+compress.egg-info/PKG-INFO
+compress.egg-info/SOURCES.txt
+compress.egg-info/dependency_links.txt
+compress.egg-info/top_level.txt
