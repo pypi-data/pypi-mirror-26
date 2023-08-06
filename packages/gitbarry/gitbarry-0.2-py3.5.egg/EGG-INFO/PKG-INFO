@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: gitbarry
+Version: 0.2
+Summary: Customizable git workflow extension
+Home-page: http://gitlab.dev.tivak.ru/a1fred/gitbarry
+Author: a1fred
+Author-email: demalf@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Software Distribution
