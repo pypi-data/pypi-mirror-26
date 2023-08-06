@@ -1,0 +1,50 @@
+Metadata-Version: 2.0
+Name: awstwitter
+Version: 1.0.2
+Summary: A Python module to make it easy to connect to twitter from AWS
+Home-page: https://github.com/hsbakshi/awstwitter
+Author: Hrishi Bakshi
+Author-email: bakshi.hrishikesh@gmail.com
+License: Apache License 2.0
+Description-Content-Type: UNKNOWN
+Keywords: Allow AWS Serverless applications to connect to Twitter
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: boto3
+Requires-Dist: pylint
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: mock; extra == 'test'
+Requires-Dist: nosetests; extra == 'test'
+
+# awstwitter
+Securely store Twitter API credentials in AWS EC2 Systems manager.
+
+The secret credentials are encrypted using KMS.
+
+Usage:
+
+```python
+import awstwitter
+
+credentials = awstwitter.retrieve_credentials('my_namespace')
+
+print 'consumer_key', credentials['consumer_key']
+print 'consumer_secret', credentials['consumer_secret']
+print 'access_token', credentials['access_token']
+print 'access_token_secret', credentials['access_token_secret']
+```
+
+
