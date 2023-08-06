@@ -1,0 +1,13 @@
+pyesp/__init__.py,sha256=9bfiVih9OW9UwxVapoLLhnrOvq6VydgnYANgZBk2-OU,216
+pyesp/pyesp.py,sha256=KSlS5QIrcGaQhTOcjrBWauwMtQYgH36JpcxrNnYvsaI,7524
+pyesp/run.py,sha256=kk9CHI6vn-j9Dr_sXaYxOtfCx1O0BZy_4Rf25GKBxKI,5397
+pyesp/data/api/mpython.json,sha256=LunWqjE1rtedWeodUS_YJkPqF-zC_6mBfoYXkZ87NYA,255
+pyesp/data/api/nodemcu.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyesp/data/serial/config.json,sha256=EYjaZf5sIJoal7jdr5LhZvFuswwzKywphWXXgrCiNUY,121
+pyesp-0.7.2.dist-info/DESCRIPTION.rst,sha256=ga6YWkpMjx0dc4YTukAQOWmLh9OF1mvZfYJLKkE_jq8,740
+pyesp-0.7.2.dist-info/METADATA,sha256=gdOZ_OYsMwywtwJwQ6bvYGfQHGoP-TdT9vp7Hc1TBSA,1143
+pyesp-0.7.2.dist-info/RECORD,,
+pyesp-0.7.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pyesp-0.7.2.dist-info/entry_points.txt,sha256=ip1eDOI77_kKeGgN9eGW0D9_F_S7amEteD9tYpXcLxE,42
+pyesp-0.7.2.dist-info/metadata.json,sha256=gJmFCakRi--PdY7A3G766Df1TbE_hlX-kd7-jvHvdMo,713
+pyesp-0.7.2.dist-info/top_level.txt,sha256=jhPwdRwtzGas0aY1k9v-1WZPY-Ebc5IoMf5VjnCRcik,6
