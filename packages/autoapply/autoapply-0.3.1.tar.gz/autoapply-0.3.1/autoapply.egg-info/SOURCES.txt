@@ -1,0 +1,15 @@
+README.rst
+setup.py
+autoapply/__init__.py
+autoapply/autoapply.py
+autoapply/crypt.py
+autoapply/download.py
+autoapply/util.py
+autoapply.egg-info/PKG-INFO
+autoapply.egg-info/SOURCES.txt
+autoapply.egg-info/dependency_links.txt
+autoapply.egg-info/requires.txt
+autoapply.egg-info/top_level.txt
+bin/autoapply
+bin/autoapply-server
+test/test_util.py
