@@ -1,0 +1,4 @@
+gpiozero
+PIL
+time
+picamera>=1.13
