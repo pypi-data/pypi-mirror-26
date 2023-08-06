@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+Landsat578.egg-info/PKG-INFO
+Landsat578.egg-info/SOURCES.txt
+Landsat578.egg-info/dependency_links.txt
+Landsat578.egg-info/entry_points.txt
+Landsat578.egg-info/requires.txt
+Landsat578.egg-info/top_level.txt
+core/__init__.py
+core/download_composer.py
+core/landsat.py
+core/landsat_gui.py
+core/sample_script.py
+core/usgs_download.py
+core/web_tools.py

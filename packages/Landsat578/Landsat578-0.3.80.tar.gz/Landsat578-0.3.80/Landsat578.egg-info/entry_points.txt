@@ -1,0 +1,3 @@
+[console_scripts]
+landsat = core.landsat:__main__
+
