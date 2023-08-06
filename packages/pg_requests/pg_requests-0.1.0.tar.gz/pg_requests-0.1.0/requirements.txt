@@ -1,0 +1,1 @@
+# Apparently there is no dependencies, just keep it for the project boilerplate

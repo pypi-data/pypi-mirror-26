@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+requirements-test.txt
+requirements.txt
+setup.cfg
+setup.py
+pg_requests/__init__.py
+pg_requests/exceptions.py
+pg_requests/functions.py
+pg_requests/operators.py
+pg_requests/query.py
+pg_requests/tokens.py
+pg_requests.egg-info/PKG-INFO
+pg_requests.egg-info/SOURCES.txt
+pg_requests.egg-info/dependency_links.txt
+pg_requests.egg-info/top_level.txt
