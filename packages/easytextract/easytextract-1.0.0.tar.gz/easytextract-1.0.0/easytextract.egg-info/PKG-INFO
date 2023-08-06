@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: easytextract
+Version: 1.0.0
+Summary: Easy to use text extractor, from PDF, DOC, DOCX and other document types, using the awesome Textract, including if necessary using OCR (via Tesseract).
+Home-page: https://github.com/LRQ3000/easytextract
+Author: Stephen Larroque
+Author-email: lrq3000@gmail.com
+License: MIT Licence
+Description: easytextract
+        ======================
+        
+        |PyPI-Status| |PyPI-Versions| |LICENCE|
+        
+        Easy to use text extractor, from PDF, DOC, DOCX and other documents, including if necessary using OCR (via Tesseract).
+        
+        This library can extract text from any type supported by Textract.
+        
+        This library only exists because of the awesome work of the Textract team and Tesseract.
+        
+        |Screenshot|
+        
+        It runs under Python 2.7 (it was not tested nor developped with compatibility with Python 3 in mind, although it might work with some slight changes).
+        
+        INSTALL
+        -------
+        
+        Please pip install textract and install tesseract v3 (not v4!) for your platform beforehand.
+        
+        For DOC support (not DOCX as it is already supported natively), you will also need antiword installed in C:\antiword\antiword.exe (for Linux and Mac you will need to change the path inside the script.)
+        
+        LICENSE
+        -------------
+        easytextract was initially made by Stephen Larroque <LRQ3000> for the Coma Science Group - GIGA Consciousness - CHU de Liege, Belgium. The application is licensed under MIT License.
+        
+        
+        .. |LICENCE| image:: https://img.shields.io/pypi/l/easytextract.svg
+           :target: https://raw.githubusercontent.com/lrq3000/easytextract/master/LICENCE
+        .. |PyPI-Status| image:: https://img.shields.io/pypi/v/easytextract.svg
+           :target: https://pypi.python.org/pypi/easytextract
+        .. |PyPI-Versions| image:: https://img.shields.io/pypi/pyversions/easytextract.svg
+           :target: https://pypi.python.org/pypi/easytextract
+        .. |Screenshot| image:: https://raw.githubusercontent.com/lrq3000/easytextract/master/img/easytextract_gui.png
+        
+Keywords: text extractor pdf doc docx word utility ocr
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: X11 Applications
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: End Users/Desktop
