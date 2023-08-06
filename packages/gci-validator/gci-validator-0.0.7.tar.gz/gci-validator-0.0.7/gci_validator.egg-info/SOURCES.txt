@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+bin/gci-validator
+gci_validator.egg-info/PKG-INFO
+gci_validator.egg-info/SOURCES.txt
+gci_validator.egg-info/dependency_links.txt
+gci_validator.egg-info/requires.txt
+gci_validator.egg-info/top_level.txt
