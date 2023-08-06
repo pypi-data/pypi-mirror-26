@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: earthsat
+Version: 0.0.1
+Summary: Python code to download Goes16 data from aws s3 bucket
+Home-page: https://github.com/sehnem/earthsat
+Author: Josué M. Sehnem
+Author-email: josue@sehnem.com
+License: GPL
+Download-URL: https://github.com/sehnem/earthsat/archive/0.0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Hardware

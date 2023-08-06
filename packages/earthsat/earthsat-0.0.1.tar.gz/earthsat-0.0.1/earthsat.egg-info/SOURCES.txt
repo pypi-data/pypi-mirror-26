@@ -1,0 +1,10 @@
+README.md
+setup.py
+earthsat/__init__.py
+earthsat/goes.py
+earthsat.egg-info/PKG-INFO
+earthsat.egg-info/SOURCES.txt
+earthsat.egg-info/dependency_links.txt
+earthsat.egg-info/not-zip-safe
+earthsat.egg-info/requires.txt
+earthsat.egg-info/top_level.txt
