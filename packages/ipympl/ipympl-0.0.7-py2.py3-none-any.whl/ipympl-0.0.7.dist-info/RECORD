@@ -1,0 +1,15 @@
+ipympl/__init__.py,sha256=dlYOov-lHHatnmHnbK_K7ItQvKl93Od1SAQnz9zRwXQ,596
+ipympl/_version.py,sha256=WIRPPNbh5w94sNxb8MihXhBYL1H-l06_eYZvek2QUjc,72
+ipympl/backend_nbagg.py,sha256=1cDCzzNFBZ3oxTcJwzUqEUO6M_HoiOB5NzxNhJ9ooXs,8163
+ipympl/static/extension.js,sha256=S61Q9H3jtT0cpOMQXp5x2Sa1JdTJqVMmFk-qDAAOaAI,2812
+ipympl/static/index.js,sha256=-cDTzhGnM3JqzfgL8_gfllSbuXBnbN5_ZJzOERetRLM,847396
+ipympl/static/index.js.map,sha256=9TmJ4y8P5k90o7fvwdUEYXBzgXLoeUb1_SVyuM-qkzM,1062988
+ipympl-0.0.7.data/data/share/jupyter/nbextensions/jupyter-matplotlib/extension.js,sha256=S61Q9H3jtT0cpOMQXp5x2Sa1JdTJqVMmFk-qDAAOaAI,2812
+ipympl-0.0.7.data/data/share/jupyter/nbextensions/jupyter-matplotlib/index.js,sha256=-cDTzhGnM3JqzfgL8_gfllSbuXBnbN5_ZJzOERetRLM,847396
+ipympl-0.0.7.data/data/share/jupyter/nbextensions/jupyter-matplotlib/index.js.map,sha256=9TmJ4y8P5k90o7fvwdUEYXBzgXLoeUb1_SVyuM-qkzM,1062988
+ipympl-0.0.7.dist-info/DESCRIPTION.rst,sha256=snNEZW8VcDMDhXwTrwjh1vCRsp5rQVlJOZK_1Ot7C2s,31
+ipympl-0.0.7.dist-info/METADATA,sha256=a7f9S55qrGdBeHhMkNsLUmCzB7QZ3dHOwdhzv8RcP0I,944
+ipympl-0.0.7.dist-info/RECORD,,
+ipympl-0.0.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ipympl-0.0.7.dist-info/metadata.json,sha256=GpjrhhNkHv56OS3tOjnNU98fhikBNJh7Y4MMmApnE8U,1028
+ipympl-0.0.7.dist-info/top_level.txt,sha256=vk63LdrWWpUYsEcfp_7Q7cFpcq94EtsKH9q00mBtjco,7
