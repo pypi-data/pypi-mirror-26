@@ -1,0 +1,15 @@
+beaker
+passlib
+falcon
+beaker_extensions
+lazy_object_proxy
+redis
+enum34
+werkzeug
+celery
+SpiffWorkflow
+pyoko
+tornado
+pika==0.10.0
+babel
+futures
