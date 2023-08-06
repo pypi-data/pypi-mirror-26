@@ -1,0 +1,4 @@
+click
+couchdb
+pyrkube>=0.2.3
+kazoo-sdk>=0.2.2
