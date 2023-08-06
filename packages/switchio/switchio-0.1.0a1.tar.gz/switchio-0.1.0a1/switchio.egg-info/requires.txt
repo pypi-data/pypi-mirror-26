@@ -1,0 +1,12 @@
+click
+colorlog
+
+[graphing]
+matplotlib
+pandas>=0.18
+
+[hdf5]
+tables==3.2.1.1
+
+[metrics]
+pandas>=0.18
