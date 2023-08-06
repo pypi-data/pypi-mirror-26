@@ -1,0 +1,13 @@
+tribology/__init__.py,sha256=PMR1aYJXeo2Yt0sM1mBtAQQrKt7DdKHgFOjgdmHOVdg,515
+tribology/tribology.py,sha256=7VYcyFJkrTznVDnCCoKfUx2ER94R2rZS9U7yvjZ8Z1M,7097
+tribology/tribology_boundary_element.py,sha256=M6-8FsJEpC-JRKuxdE4elWfbsG7nFOEJyKlBqrlfWkE,9233
+tribology/tribology_constants.py,sha256=IUkj13Ag8XRZNBa9hNBh53HKSTSzteQ43yaeXvgQ5zI,1415
+tribology/tribology_dowson_hamrock.py,sha256=i8Pk8oKOawRuKM9GbTyZgHcuquSEoBsTYpPasf0UBmA,2508
+tribology/tribology_hertz.py,sha256=oLQNmj3JRq0E2F7BmjD1iqtXcIgfqyIg6RQQZAvBWkg,3632
+tribology/tribology_lubrication.py,sha256=BNvffCyBKSmRYHM_p1U6GvYD-GnA3exlmHvnemoSCS4,4104
+tribology-0.2.0.dist-info/DESCRIPTION.rst,sha256=xUjsHwZZ6OiFSYI-si6HKB05FKTEFsoGPGT7-fnppwY,127
+tribology-0.2.0.dist-info/METADATA,sha256=B4adtKomU2bBnpi7fYHI8WmRnSK3btxfSMZOGYIvp8A,506
+tribology-0.2.0.dist-info/RECORD,,
+tribology-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+tribology-0.2.0.dist-info/metadata.json,sha256=g2DmH-j8uZrugUfTMJFK5NHPN611o13RDT5qlaHNtm8,598
+tribology-0.2.0.dist-info/top_level.txt,sha256=R2zS4Cm8J9rUVHldgmASpoO3hIgJLg-F6z2L-Ch4Qtk,10
