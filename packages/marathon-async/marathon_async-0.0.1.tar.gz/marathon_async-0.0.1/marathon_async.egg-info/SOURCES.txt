@@ -1,0 +1,9 @@
+setup.py
+marathon_async/__init__.py
+marathon_async/aio_client.py
+marathon_async/exceptions.py
+marathon_async.egg-info/PKG-INFO
+marathon_async.egg-info/SOURCES.txt
+marathon_async.egg-info/dependency_links.txt
+marathon_async.egg-info/requires.txt
+marathon_async.egg-info/top_level.txt

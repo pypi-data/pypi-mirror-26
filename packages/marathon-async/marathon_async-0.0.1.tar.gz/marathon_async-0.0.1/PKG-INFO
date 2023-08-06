@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: marathon_async
+Version: 0.0.1
+Summary: Async Marathon Client Library
+Home-page: https://github.com/ibovyrin/aio-marathon-python
+Author: Ivan Bovyrin
+Author-email: ibovirin@gmail.com
+License: UNKNOWN
+Description: Python interface to the Mesos Marathon REST API with asyncio support.
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
