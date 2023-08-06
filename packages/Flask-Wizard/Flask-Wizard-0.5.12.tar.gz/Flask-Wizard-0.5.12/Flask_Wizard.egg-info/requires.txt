@@ -1,0 +1,9 @@
+Flask
+future
+jsonschema
+wget
+requests
+PyJWT
+slackclient
+telepot
+redis
