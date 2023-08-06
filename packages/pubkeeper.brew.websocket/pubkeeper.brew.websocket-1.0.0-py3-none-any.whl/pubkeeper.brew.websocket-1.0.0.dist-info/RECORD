@@ -1,0 +1,9 @@
+pubkeeper/brew/websocket/__init__.py,sha256=7xuwCJFiky8xKmF5jCjb8W1WWa09CRS8qmBWEFbzQpQ,227
+pubkeeper/brew/websocket/brew.py,sha256=fWSNwClvPcUk5q3AdTXZ3nVDK7luzLqLYb-3BjC5DYM,6034
+pubkeeper/brew/websocket/patron.py,sha256=5SHfauKl85q9gks2md-hYyiS48s4srIuua0gEETS-Zs,2136
+pubkeeper.brew.websocket-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pubkeeper.brew.websocket-1.0.0.dist-info/METADATA,sha256=4UhZYWLQ74mWpQfjLXtn2VBSt1DnB8XMY_J4059wyeA,555
+pubkeeper.brew.websocket-1.0.0.dist-info/RECORD,,
+pubkeeper.brew.websocket-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pubkeeper.brew.websocket-1.0.0.dist-info/metadata.json,sha256=BEtlZT5q5iGObu3KI6sz-G8D7n54x4YbjZtyVF1_cbc,726
+pubkeeper.brew.websocket-1.0.0.dist-info/top_level.txt,sha256=PbGuyfZTbALsxOgJRqARNiFsldjXQrwhswENsVYP1d0,10
