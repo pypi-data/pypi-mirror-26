@@ -1,0 +1,3 @@
+[console_scripts]
+nagios-unity = nagiosunity.cli.client:main
+
