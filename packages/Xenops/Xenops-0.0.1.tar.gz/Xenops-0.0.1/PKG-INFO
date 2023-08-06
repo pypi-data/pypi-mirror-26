@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: Xenops
+Version: 0.0.1
+Summary: Xenops is a simple program to sync data like (customers/products) between different systems
+Home-page: https://github.com/krukas/Xenops
+Author: Maikel Martens
+Author-email: maikel@martens.me
+License: GPL3
+Download-URL: https://github.com/krukas/Xenops/releases/tag/0.0.1
+Description-Content-Type: UNKNOWN
+Description: .. image:: https://api.travis-ci.org/krukas/Xenops.svg?branch=master
+            :target: https://travis-ci.org/krukas/Xenops
+        
+        .. image:: https://readthedocs.org/projects/xenops/badge/?version=latest
+            :target: http://xenops.readthedocs.io/en/latest
+        
+        .. image:: https://codecov.io/gh/krukas/Xenops/branch/master/graph/badge.svg
+          :target: https://codecov.io/gh/krukas/Xenops
+        
+        .. image:: https://badge.fury.io/py/Xenops.svg
+            :target: https://badge.fury.io/py/Xenops
+        
+        **PRE PRE ALPHA, still in active development**
+        
+        
+        Xenops
+        ======
+        
+        Xenops is a simple program to sync data like (customers/products) between different systems.
+        
+        
+        Installation
+        ============
+        To install Xenops, run:
+        
+            pip install Xenops
+        
+        Create new project
+        ==================
+        For creating a new project, read the documentation.
+        
+        
+        
+Keywords: Xenops,Connector,Enterprise Service Bus,ESB
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
