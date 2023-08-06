@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: pytoutv
+Version: 3.0.1
+Summary: TOU.TV client library and user interfaces
+Home-page: https://github.com/bvanheu/pytoutv
+Author: Benjamin Vanheuverzwijn
+Author-email: bvanheu@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: TOUTV
+Platform: UNKNOWN
