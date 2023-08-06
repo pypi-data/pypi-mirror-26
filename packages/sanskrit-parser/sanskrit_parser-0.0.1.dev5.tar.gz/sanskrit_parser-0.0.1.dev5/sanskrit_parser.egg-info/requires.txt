@@ -1,0 +1,5 @@
+indic_transliteration
+lxml
+networkx
+tinydb
+python-constraint
