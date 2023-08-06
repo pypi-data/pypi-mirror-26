@@ -1,0 +1,7 @@
+setup.py
+lmselfie/__init__.py
+lmselfie/ejemplo.py
+lmselfie.egg-info/PKG-INFO
+lmselfie.egg-info/SOURCES.txt
+lmselfie.egg-info/dependency_links.txt
+lmselfie.egg-info/top_level.txt
