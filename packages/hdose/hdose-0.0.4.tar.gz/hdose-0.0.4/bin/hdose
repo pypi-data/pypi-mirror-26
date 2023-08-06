@@ -1,0 +1,111 @@
+#!/usr/bin/env python
+
+"""
+hdose
+Harmonize the dosages between dosage_info and GWAS alleles for Mendelian Randomization.
+(Visit github.com/endrebak/harmonize-dosage for examples and help.)
+Usage:
+    hdose --dosage-info=DSI --GWAS=GWS --dosage=DOS --output-dir=DIR
+          [--tolerance=TOL] [--GWAS-columns=GWC] [--dosage-info-columns=DSC]
+    hdose --help
+Arguments:
+    -d DSI --dosage-info DSI          Dosage info file
+    -g GWS --GWAS GWS                 GWAS info file
+    -v DOS --dosage DOS               Dosage file (bcf/dosage/vcf/vcf.gz)
+    -t TOL --tolerance TOL            Tolerance for considering AFs similar.  [default: 0.08]
+    -o DIR --output-dir DIR           Dir to put output files in.
+    -D DSC --dosage-info-columns DSC  Comma-separated names of the columns containing the
+                                      reference allele, alternate  allele, rsid and
+                                      allele frequency in the dosage-info file. The allele frequency
+                                      should belong to the alternate allele.
+                                      [default: REF,ALT,rs,AF]
+    -G GWC --GWAS-columns GWC         Comma-separated names of the columns containing the
+                                      reference allele, alternate allele, rsid and
+                                      allele frequency in the GWAS file. The allele frequency
+                                      should belong to the alternate allele.
+                                      [default: A1,A2,rsid,FreqA2]
+Options:
+    -h --help                 show this help message
+"""
+
+from subprocess import call
+
+import pandas as pd
+
+from docopt import docopt
+
+from harmonize.create_exposure_outcome_table import create_exposure_outcome_table
+from harmonize.harmonize import assign_table, sanity_check_table
+from harmonize.flip_swap import flip_swap_remove, flip_swap_remove_exposure_alleles, swap_dosages
+from harmonize.vcf_to_dosage import vcf_to_dosage
+
+
+def main():
+    """Harmonize GWAS and dosage_info alleles."""
+
+    args = docopt(__doc__)
+
+    tolerance = float(args["--tolerance"][0])
+    outpath = args["--output-dir"][0]
+
+    if outpath:
+        call("mkdir -p {}".format(outpath), shell=True)
+
+    assert len(args["--dosage-info-columns"][0].split(",")) == 4,\
+-     "Exactly four columns are needed in --dosage-info-columns"
+    assert len(args["--GWAS-columns"][0].split(",")) == 4,\
+        "Exactly four columns are needed in --GWAS-columns"
+
+    dosage_info_columns = {k: v for k, v in
+                           zip(args["--dosage-info-columns"][0].split(","), "REF,ALT,rs,AF".split(","))}
+    gwas_columns = {k: v for k, v in
+                    zip(args["--GWAS-columns"][0].split(","), "A1,A2,rsid,FreqA2".split(","))}
+
+    dosage_info = pd.read_table(args["--dosage-info"][0], sep=r"\s+")
+    gwas = pd.read_table(args["--GWAS"][0], sep=r"\s+")
+
+    original_dosage_info_names = list(dosage_info.columns)
+
+    dosage_info.columns = [dosage_info_columns.get(c, c) for c in dosage_info.columns]
+    gwas.columns = [gwas_columns.get(c, c) for c in gwas.columns]
+
+    dosage_path = args["--dosage"][0]
+
+    if dosage_path.endswith(".vcf") or dosage_path.endswith(".vcf.gz") or \
+       dosage_path.endswith(".bcf"):
+        dosage = vcf_to_dosage(dosage_path)
+    else:
+        dosage = pd.read_table(dosage_path, sep=r"\s+", index_col=0)
+
+    dosage_info = dosage_info.set_index("rs")
+    gwas = gwas.set_index("rsid")
+
+    gwas_dosage_info = create_exposure_outcome_table(dosage_info, gwas)
+
+    missing_data = gwas_dosage_info.loc[gwas_dosage_info.isnull().sum(axis=1).astype(bool)]
+    gwas_dosage_info = gwas_dosage_info.dropna()
+
+    sanity_check_table(gwas_dosage_info)
+
+    snp_classifications = assign_table(gwas_dosage_info, tolerance)
+    to_swap, to_flip, to_remove = flip_swap_remove(snp_classifications, tolerance)
+    harmonized_dosage_info = flip_swap_remove_exposure_alleles(dosage_info, to_flip, to_swap, to_remove)
+    harmonized_dosage_info = harmonized_dosage_info.reset_index()
+
+    harmonized_dosage = swap_dosages(dosage, to_swap, to_remove)
+
+    harmonized_dosage.to_csv(outpath + "/harmonized_dosage.csv", sep=" ")
+    harmonized_dosage_info.to_csv(outpath + "/harmonized_dosage_info.csv", sep=" ",
+                               header=original_dosage_info_names, index=False)
+
+    snp_classifications.to_csv(outpath + "/snp_classifications.csv", sep=" ")
+    missing_data.to_csv(outpath + "/missing_data.csv", sep=" ", na_rep="NA")
+
+    return snp_classifications
+
+
+if __name__ == "__main__":
+
+    snps = main()
+
+    print((snps.SNPType.value_counts() * 100 / len(snps)).to_csv(sep=" "))
