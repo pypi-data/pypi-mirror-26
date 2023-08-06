@@ -1,0 +1,3 @@
+[console_scripts]
+unicorn_pwrs = unicorn_pwrs.unicorn_pwrs:main
+

@@ -1,0 +1,14 @@
+unicorn_pwrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unicorn_pwrs/unicorn_pwrs.py,sha256=EFRFogPMj0-pUoW8cHuXSbc3p-fX7X8LyiMTwW8NpGI,2658
+unicorn_pwrs/data/cover.txt,sha256=zokZPZSV0amVoyZQenwp9jsscKg2ZD6muIAZ5dBCexc,1314
+unicorn_pwrs/data/cv.txt,sha256=u1aHmf0r4oAj429ifUrzvpoamex3f3xlM3fHjSrcSc8,654
+unicorn_pwrs/data/reference.txt,sha256=_kvOhJc9zFTKg1bRWlEXW_acrPKyXUt_0m_cA4QWiWY,593
+unicorn_pwrs/data/unicorn_bleep.wav,sha256=g-lSD2R444_p_UvUV1DaBsQYRq_jToDSqCgmYYSItp4,17836
+unicorn_pwrs/data/unicorn_click.wav,sha256=BY5YNP_zL0_fluaytgaKq2l4ljnpl8I046SX0MG0LPU,12056
+unicorn_pwrs-0.1.dist-info/DESCRIPTION.rst,sha256=sRbaKl4mFBrAfBS8IfULi5B4BODh1DO78RfqlLErz-Q,101
+unicorn_pwrs-0.1.dist-info/METADATA,sha256=bV1n4U7kpR2-GMkPnF5NPif7RK-P3cSX0rOE27ij5Xc,787
+unicorn_pwrs-0.1.dist-info/RECORD,,
+unicorn_pwrs-0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+unicorn_pwrs-0.1.dist-info/entry_points.txt,sha256=mhqDEolAfkiwWIcyvjgv8eB4ogAC6NYHMQ_CBNixkeM,65
+unicorn_pwrs-0.1.dist-info/metadata.json,sha256=DZOsSXtXJ5Ew6N0Y0JizM7z4iEVqIqbYOdwJm3B7kXg,1063
+unicorn_pwrs-0.1.dist-info/top_level.txt,sha256=HjYDCLkahefUEzaEoPJWk7hXwKSyGygLw07oqz84gEA,13
