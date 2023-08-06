@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: lessweb
+Version: 0.0.1
+Summary: Web framework and Tookit for generating command line interfaces
+Home-page: https://github.com/qorzj/lessweb
+Author: qorzj
+Author-email: inull@qq.com
+License: MIT
+Description: 
+        README: https://github.com/qorzj/lessweb
+Keywords: lessweb web web.py
+Platform: any
