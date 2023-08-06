@@ -1,0 +1,1 @@
+http://github.com/ashwinvis/scikit-aero/tarball/master#egg=scikit-aero-0.2.dev0
