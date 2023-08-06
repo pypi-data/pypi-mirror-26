@@ -1,0 +1,10 @@
+vm_automation/__init__.py,sha256=dwFatpWNqaM_Xhtj6GN7sMH8VH9HzVulBaOJb3NGBiE,99
+vm_automation/esxiVm.py,sha256=H1u65Bq71WCJMAEUZUBSvyf7AHS6Sg17RCMGQ57G_hA,34157
+vm_automation/workstationVm.py,sha256=ljzSyBYVvXfM-bYmvAFbZdfyhUKqcOHgWg3zdslZkL8,6803
+vm_automation-0.1.3.dist-info/DESCRIPTION.rst,sha256=IWSzLCnV5nAoamtlTx-CnSiSJwtGamX99Ez6IqzaX7E,2149
+vm_automation-0.1.3.dist-info/METADATA,sha256=hfVkXrL7RhYzf1eoYN3RZMIwQB5t6qkT4KDTm7eV-Qg,2554
+vm_automation-0.1.3.dist-info/RECORD,,
+vm_automation-0.1.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+vm_automation-0.1.3.dist-info/metadata.json,sha256=B1QdAmXlYcVXW8DUTFL_2bdp_OY5aPX5iqH9s9zopFI,650
+vm_automation-0.1.3.dist-info/top_level.txt,sha256=cefF9ZV4M563gVH1HtnE9ByWeIJCE0hyr402OHaOk8Q,14
+vm_automation-0.1.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
