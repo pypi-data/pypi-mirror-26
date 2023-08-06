@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: icheckin
+Version: 1.3.5
+Summary: A console application for Sunway University's iCheckin
+Home-page: https://github.com/chunkhang/icheckin
+Author: Marcus Mu
+Author-email: chunkhang@gmail.com
+License: UNLICENSE
+Description-Content-Type: UNKNOWN
+Keywords: icheckin,sunway
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Environment :: Console
+Requires-Dist: requests (==2.18.1)
+Requires-Dist: click (==6.7)
+Requires-Dist: halo (==0.0.7)
+
+UNKNOWN
+
+
