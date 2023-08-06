@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/repovisor/__about__.py
+src/repovisor/__init__.py
+src/repovisor/__main__.py
+src/repovisor/repostate.py
+src/repovisor/repovisor.py
+src/repovisor.egg-info/PKG-INFO
+src/repovisor.egg-info/SOURCES.txt
+src/repovisor.egg-info/dependency_links.txt
+src/repovisor.egg-info/entry_points.txt
+src/repovisor.egg-info/requires.txt
+src/repovisor.egg-info/top_level.txt
