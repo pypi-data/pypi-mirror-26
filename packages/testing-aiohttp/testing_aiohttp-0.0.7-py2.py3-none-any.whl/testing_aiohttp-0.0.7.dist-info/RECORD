@@ -1,0 +1,12 @@
+test_aiohttp/__init__.py,sha256=BMDhhAW2KS0q6vrwU7fO8zy779_rLV6YPlT5lQbekBw,162
+test_aiohttp/rsps.py,sha256=YUourN-0xun3fsz1-qxanvTDC-xQPr4tW2RgGnl6UFA,8197
+test_aiohttp/testcases.py,sha256=JeHXPQZDdyHc6P3KAOESgSe_vOlOkkeUbjkledl1Uxk,465
+testing_aiohttp-0.0.7.dist-info/DESCRIPTION.rst,sha256=42k2HHHU6eeKGYtJMOf8Crr4R5GwRoGexBeoxMXsR2w,3683
+testing_aiohttp-0.0.7.dist-info/LICENSE.txt,sha256=Uja0RnNIx86sXfvg2TvythG2U8s_oXyWzcb8tezSWsY,1061
+testing_aiohttp-0.0.7.dist-info/METADATA,sha256=yc4gbAF_N6WGJn8O3WqssEjLy-qSGU14I4Zf7jicCjc,4265
+testing_aiohttp-0.0.7.dist-info/RECORD,,
+testing_aiohttp-0.0.7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+testing_aiohttp-0.0.7.dist-info/metadata.json,sha256=AzU7HABKVNsTsMssDrhobHy-w73tMeJQ7imsBNfRkXc,824
+testing_aiohttp-0.0.7.dist-info/top_level.txt,sha256=N9metEAvaNerix-I8RNvTcyFi01k6C5acHCWZlNUNDs,19
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_rsps.py,sha256=FUdKA1F9518WumQSrzS-rul0B9jZfCxRaW5kgQOmrLI,5579
