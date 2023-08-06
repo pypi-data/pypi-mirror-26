@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: parseit
+Version: 1.0
+Summary: Simple parser that creates ASTs
+Home-page: https://github.com/
+Author: mincrmatt12
+Author-email: matthewmirvish@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Requires-Dist: future
+
+UNKNOWN
+
+
