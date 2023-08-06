@@ -1,0 +1,9 @@
+from protorpc import message_types
+from protorpc import messages
+
+class LogMessage(messages.Message):
+    """A single log message within a LogMessagesRequest."""
+    is_error = messages.BoolField(1)
+    # message value is silently ignored if it's a bytestring
+    # make sure it is a unicode string!
+    message = messages.StringField(2, required=True)
