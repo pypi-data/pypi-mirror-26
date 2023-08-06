@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "01",
+      "timeout": 3
+    },
+    {
+      "name": "02",
+      "timeout": 4
+    },
+    {
+      "name": "11",
+      "timeout": 3
+    }
+  ]
+}
