@@ -1,0 +1,14 @@
+README.md
+setup.py
+pysmash/__init__.py
+pysmash/api.py
+pysmash/brackets.py
+pysmash/exceptions.py
+pysmash/smashgg.py
+pysmash/tournaments.py
+pysmash/utils.py
+pysmash.egg-info/PKG-INFO
+pysmash.egg-info/SOURCES.txt
+pysmash.egg-info/dependency_links.txt
+pysmash.egg-info/requires.txt
+pysmash.egg-info/top_level.txt
