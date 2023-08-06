@@ -1,0 +1,5 @@
+trytond_account >= 4.6, < 4.7
+trytond_account_dunning >= 4.6, < 4.7
+trytond_company >= 4.6, < 4.7
+trytond_party >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
