@@ -1,0 +1,8 @@
+setup.py
+djdb.egg-info/PKG-INFO
+djdb.egg-info/SOURCES.txt
+djdb.egg-info/dependency_links.txt
+djdb.egg-info/requires.txt
+djdb.egg-info/top_level.txt
+pydb/__init__.py
+pydb/session.py
