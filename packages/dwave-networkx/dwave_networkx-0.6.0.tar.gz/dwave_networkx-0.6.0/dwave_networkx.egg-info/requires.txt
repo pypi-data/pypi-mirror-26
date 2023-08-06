@@ -1,0 +1,5 @@
+networkx>=2.0
+decorator>=4.1.0
+
+[all]
+dimod>=0.3.1
