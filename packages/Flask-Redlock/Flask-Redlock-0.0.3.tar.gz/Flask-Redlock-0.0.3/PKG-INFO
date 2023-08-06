@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: Flask-Redlock
+Version: 0.0.3
+Summary: Adds redis lock support to your Flask application
+Home-page: https://github.com/TheWaWaR/flask-redlock
+Author: Qian Linfeng
+Author-email: thewawar@gmail.com
+License: MIT
+Description: 
+        Flask-Redlock
+        ----------------
+        
+        Example
+        ```````
+        
+        .. code:: python
+        
+            from flask_redlock import RedisLock
+        
+            redis_lock = RedisLock()
+            redis_lock.init_app(app)
+        
+            with redis_lock.lock('something.lock', 3000, retry=10, interval=0.2) as lock:
+                if not lock:
+                    return 'busy!'
+        
+                # Do your work here ...
+        
+        Links
+        `````
+        
+        * `Github <https://github.com/TheWaWaR/flask-redlock>`
+        
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
