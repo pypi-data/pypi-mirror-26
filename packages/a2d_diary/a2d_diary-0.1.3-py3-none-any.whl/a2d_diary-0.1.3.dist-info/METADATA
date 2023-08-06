@@ -1,0 +1,38 @@
+Metadata-Version: 1.2
+Name: a2d_diary
+Version: 0.1.3
+Summary: A2D-Diary web app. Create and encode paper diaries automatically
+Home-page: https://a2d-diary.netlify.com
+License: UNKNOWN
+Author: Julio Vega
+Author-email: julio.vega@protonmail.com
+Requires-Python: >=3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Dist: opencv_python (>=3.3.0.10)
+Requires-Dist: waitress (>=1.0.2)
+Requires-Dist: falcon (>=1.3.0)
+Requires-Dist: numpy (>=1.12.1)
+Requires-Dist: falcon_multipart (>=0.2.0)
+Requires-Dist: Pillow (>=4.3.0)
+Requires-Dist: PyPDF2 (>=1.26.0)
+Requires-Dist: reportlab (>=3.4.0)
+
+A2D-Diary
+=========
+
+A2D-Diary is a web app to create and encode paper diaries. It makes the
+task of transcribing marks on paper to a digital file faster. It uses
+OpenCV and OMR to identify areas of a paper sheet that have been marked
+using a pen.
+
+For more information check the official docs at
+https://a2d-diary.netlify.com/
+
