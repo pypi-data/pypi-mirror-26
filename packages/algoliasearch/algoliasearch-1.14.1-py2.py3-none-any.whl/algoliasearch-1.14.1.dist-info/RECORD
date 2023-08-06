@@ -1,0 +1,12 @@
+algoliasearch/__init__.py,sha256=362FU-jD-VvZKFxlVPZ0DM_N1U9i-CWtTtO5tI4Efhs,1429
+algoliasearch/client.py,sha256=Mb55ODQGBdtUaF8NmHKJUZWKxdBcd61Oy0WT3D4UOK4,24892
+algoliasearch/helpers.py,sha256=f4Pbe2HHxBBqn7Z2v-1GOwzLqQtKOvCm7r6QgiWfKh4,3432
+algoliasearch/index.py,sha256=GMbfGOcwT4AzAp5gTzMN1BCg7WQv3CfLS5btJhU-a24,49498
+algoliasearch/transport.py,sha256=NvRQUGw--KYkOgRj7GQAX66gqC7EyrWCNd7-rzRaGYo,6227
+algoliasearch/version.py,sha256=sV7tAx035tYEKfckE7tTuHNKFXXXeKzlkv6xxNJT6lk,19
+algoliasearch-1.14.1.dist-info/DESCRIPTION.rst,sha256=-ZqdPR4zsUOS0GlYKccwwA_9-Iefr0y1j_IXEk_j-ZY,5739
+algoliasearch-1.14.1.dist-info/METADATA,sha256=VIXQxn6KegIZxVcJ9_TT1qcJ-eQdO6idyD1LrnrfHw0,6940
+algoliasearch-1.14.1.dist-info/RECORD,,
+algoliasearch-1.14.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+algoliasearch-1.14.1.dist-info/metadata.json,sha256=s9GvDXaHNe8XhOkva4Hl-P8Upd1tpzuy9cy8Q31ZPok,1335
+algoliasearch-1.14.1.dist-info/top_level.txt,sha256=B2kncBglTOyYF_9HVm_QFNyv-QHx4BbKFKm_2yvK55g,14
