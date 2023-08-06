@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: cs.logutils
+Version: 20171030
+Summary: Logging convenience routines.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: The logging package is very useful, but a little painful to use.
+        This package provides low impact logging setup and some extremely useful if unconventional context hooks for logging.
+        
+        The logging verbosity output format has different defaults based on whether an output log file is a tty and whether the environment variable $DEBUG is set, and to what.
+        
+        On terminals warnings and errors get ANSI colouring.
+        
+        A mode is available that uses cs.upd.
+        
+        Some examples:
+        --------------
+        
+        Program initialisation::
+        
+          from cs.logutils import setup_logging
+        
+          def main(argv):
+            cmd = os.path.basename(argv.pop(0))
+            setup_logging(cmd)
+        
+        Basic logging from anywhere::
+        
+          from cs.logutils import info, warning, error
+          [...]
+          def some_function(...):
+            [...]
+            error("nastiness found! bad value=%r", bad_value)
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
