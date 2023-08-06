@@ -1,0 +1,22 @@
+# A sample configuration file for the ILAMB BMI.
+#
+# config         path to ILAMB config file
+# ilamb_root     where benchmarks and model outputs are located
+# model_root     location of model outputs, relative to ilamb_root
+# build_dir      where analysis results are saved
+# define_regions files where custom regions are defined
+# regions        regions over which analysis is performed
+# models         a list of models to benchmark
+# confrontations a list of confrontations to run
+
+config: /home/csdms/wmt/_testing/opt/bmi-ilamb/bmi_ilamb/data/ilamb.cfg
+ilamb_root: /nas/data/ILAMB_sample
+model_root: MODELS  # relative to ilamb_root
+build_dir:
+define_regions:
+regions:
+  - bona
+  - tena
+  - ceam
+models:
+confrontations:
