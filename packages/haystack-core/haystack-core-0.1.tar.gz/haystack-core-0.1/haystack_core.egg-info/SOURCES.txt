@@ -1,0 +1,7 @@
+setup.py
+haystack-core/__init__.py
+haystack_core.egg-info/PKG-INFO
+haystack_core.egg-info/SOURCES.txt
+haystack_core.egg-info/dependency_links.txt
+haystack_core.egg-info/not-zip-safe
+haystack_core.egg-info/top_level.txt
