@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aws-lambda-fsm
+Version: 0.9.15
+Summary: AWS FSMs on Lambda/Kinesis/DynamoDB
+Home-page: http://github.com/Workiva/aws-lambda-fsm
+Author: Shawn Rusaw
+Author-email: shawn.rusaw@workiva.com
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
