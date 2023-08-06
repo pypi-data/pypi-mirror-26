@@ -1,0 +1,10 @@
+validatexmls/__init__.py,sha256=QSiWpsPWaVJBzE3wHNjhpKyp1eyjvWeMt6wzgzzMf4Q,436
+validatexmls/__main__.py,sha256=6nxw_ub7bQP3XdznCaX_Xpr1qmTaGVSn8MlAa1Ytkm4,259
+validatexmls/validatexmls.py,sha256=9w3j5bAAQJhf6uZW9ycp0rJg0Enbq2OxWhe8tdw78Nk,5838
+validatexmls-0.1.13.dist-info/DESCRIPTION.rst,sha256=2dt-43yhsiORX6zB7-ShmeW4fGy5xvOZv_mVZZQ15Og,127
+validatexmls-0.1.13.dist-info/METADATA,sha256=77Zgh51j0LQltjoBvMj40JcuAWWiR-D1e4HQKjHSPQ4,719
+validatexmls-0.1.13.dist-info/RECORD,,
+validatexmls-0.1.13.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+validatexmls-0.1.13.dist-info/entry_points.txt,sha256=tjyCiN2-N6aATdLvRx-CMa3vvfh-QTpVPOauFWNspMI,65
+validatexmls-0.1.13.dist-info/metadata.json,sha256=45JpRQCHdcQIyDnOmESaPjWqgW1hFSvQrkQhw6TmRBg,984
+validatexmls-0.1.13.dist-info/top_level.txt,sha256=fW2mBvgcZgsaOlqg4LJd0mwwbHfqZNEucBy51-vike8,13
