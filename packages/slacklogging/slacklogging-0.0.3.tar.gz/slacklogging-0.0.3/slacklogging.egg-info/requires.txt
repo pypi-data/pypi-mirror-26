@@ -1,0 +1,5 @@
+requests
+
+[testing]
+flake8
+pytest
