@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: django-jp-stations
+Version: 0.1
+Summary: A simple Django app for japanese stations.
+Home-page: https://github.com/t-hiroyoshi/django-jp-stations
+Author: Hiroyoshi Takahashi
+Author-email: t.hiroyoshi209@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: # !!UNDER CONSTRUCTION!!
+        
+        # django-jp-stations
+        
+        django-jp-stations is a simple japanese stations apps.
+        
+        ## Quick start
+        
+        * Add "jp-stations" to your INSTALLED_APPS setting like this
+        
+        ```python
+        INSTALLED_APPS = [
+          ...
+          'jp_stations',
+        ]
+        ```
+        
+        * Run `python manage.py migrate` to create the stations models.
+        
+        ## Data
+        
+        from http://www.ekidata.jp
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
