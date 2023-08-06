@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: minerboard
+Version: 0.0.13
+Summary: Uploader of Your miners API to minerboard.pro
+Home-page: https://github.com/Aksimant/minerboard
+Author: MinerBoard.pro
+Author-email: minerboard@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Requires-Dist: requests
+
+README
+
+

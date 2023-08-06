@@ -1,0 +1,11 @@
+minerboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minerboard/config/config.ini,sha256=4fBSyeXFs4yl2SxakyF7BfUHs09XnhP9XWZCNEN3Sic,251
+minerboard/minerboard_core/__init__.py,sha256=pICPnyV6c-qzUAL2YYcDnRJO0Ky5aOB86hu8M4vUQ2w,106
+minerboard/minerboard_core/minerboard_uploder.py,sha256=USEfz5zjTXC0-UxhGczr9kHkXElT1lw_KNANLduUM9U,5877
+minerboard-0.0.13.dist-info/DESCRIPTION.rst,sha256=ziihR03fTbGNjPTN7CtjTyEOa9lSdFeH2tfp3PMyncE,9
+minerboard-0.0.13.dist-info/METADATA,sha256=W2C6i6RRrZ48n0f6ShuMQruxnBUl-bC3EYG84aBmCXI,299
+minerboard-0.0.13.dist-info/RECORD,,
+minerboard-0.0.13.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+minerboard-0.0.13.dist-info/entry_points.txt,sha256=PZgFK8bz_y9zpon3tuIXhhz2HCaCAoUqAh36hBddetA,69
+minerboard-0.0.13.dist-info/metadata.json,sha256=4P64eUTqOMel6g0BQBeOo2miaBvs24sVxlQy8t2furI,723
+minerboard-0.0.13.dist-info/top_level.txt,sha256=UmCY6It4NObX4pKc-2D2iMXVtSxi3_EiB0KyPd60jlQ,11
