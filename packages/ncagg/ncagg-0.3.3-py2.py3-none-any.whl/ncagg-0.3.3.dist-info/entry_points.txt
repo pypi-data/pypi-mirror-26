@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        ncagg=ncagg.cli:cli
+        template-ncagg=ncagg.cli_template:cli_template
+    
