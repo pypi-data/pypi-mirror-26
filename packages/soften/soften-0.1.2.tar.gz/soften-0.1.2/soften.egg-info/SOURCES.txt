@@ -1,0 +1,6 @@
+setup.py
+soften.egg-info/PKG-INFO
+soften.egg-info/SOURCES.txt
+soften.egg-info/dependency_links.txt
+soften.egg-info/entry_points.txt
+soften.egg-info/top_level.txt
