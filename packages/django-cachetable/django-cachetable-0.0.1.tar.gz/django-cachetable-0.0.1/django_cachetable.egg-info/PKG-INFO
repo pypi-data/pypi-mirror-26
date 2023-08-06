@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: django-cachetable
+Version: 0.0.1
+Summary: Use Django admin to view cachetable
+Home-page: https://github.com/ratson/django-cachetable
+Author: Ratson
+Author-email: contact@ratson.name
+License: UNKNOWN
+Description: django-cachetable
+        =================
+        
+        .. image:: https://img.shields.io/pypi/v/django-cachetable.svg
+            :target: https://pypi.python.org/pypi/django-cachetable
+            :alt: Latest PyPI version
+            :crossorigin: anonymous
+        
+        Use Django admin to view cachetable.
+        
+        Installation
+        ------------
+        
+        You can install ``django-cachetable`` via `pip`_ from `PyPI`_::
+        
+            $ pip install django-cachetable
+        
+        .. _`pip`: https://pypi.python.org/pypi/pip/
+        .. _`PyPI`: https://pypi.python.org/pypi
+        
+        Usage
+        -----
+        
+        Add ``cachetable`` to ``INSTALLED_APPS``.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
