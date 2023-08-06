@@ -1,0 +1,7 @@
+setup.py
+package_test_BJL/__init__.py
+package_test_BJL.egg-info/PKG-INFO
+package_test_BJL.egg-info/SOURCES.txt
+package_test_BJL.egg-info/dependency_links.txt
+package_test_BJL.egg-info/not-zip-safe
+package_test_BJL.egg-info/top_level.txt
