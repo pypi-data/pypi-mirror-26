@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: asyncrpc
+Version: 0.1.4
+Summary: JSON RPC Server and Client
+Home-page: UNKNOWN
+Author: Seliverstov Maksim
+Author-email: Maksim.V.Seliverstov@yandex.ru
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: rpc,jsonrpc,aiorpc,asyncrpc,multiple interfaces rpc
+Platform: UNKNOWN
