@@ -1,0 +1,8 @@
+README.rst
+qemu_affinity.py
+setup.py
+qemu_affinity.egg-info/PKG-INFO
+qemu_affinity.egg-info/SOURCES.txt
+qemu_affinity.egg-info/dependency_links.txt
+qemu_affinity.egg-info/entry_points.txt
+qemu_affinity.egg-info/top_level.txt
