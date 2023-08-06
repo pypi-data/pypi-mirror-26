@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+aws_lambda_pyauthlib.egg-info/PKG-INFO
+aws_lambda_pyauthlib.egg-info/SOURCES.txt
+aws_lambda_pyauthlib.egg-info/dependency_links.txt
+aws_lambda_pyauthlib.egg-info/top_level.txt
+pyauthlib/__init__.py
+pyauthlib/auth_event.py
+pyauthlib/auth_policy.py
+pyauthlib/http_method.py
+pyauthlib/method_arn.py
+pyauthlib/user_info.py
