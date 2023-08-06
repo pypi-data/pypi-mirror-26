@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+pyinstamation/__init__.py
+pyinstamation/__main__.py
+pyinstamation/bot.py
+pyinstamation/comments.py
+pyinstamation/config.py
+pyinstamation/controller.py
+pyinstamation/models.py
+pyinstamation.egg-info/PKG-INFO
+pyinstamation.egg-info/SOURCES.txt
+pyinstamation.egg-info/dependency_links.txt
+pyinstamation.egg-info/requires.txt
+pyinstamation.egg-info/top_level.txt

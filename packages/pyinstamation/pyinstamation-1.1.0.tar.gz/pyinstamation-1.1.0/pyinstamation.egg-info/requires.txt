@@ -1,0 +1,1 @@
+selenium==3.5.0PyYAML==3.12peewee==2.10.1requests==2.18.3coverage==4.4.1pyvirtualdisplay==0.2.1codecov==2.0.9

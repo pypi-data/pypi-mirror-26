@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyinstamation
+Version: 1.1.0
+Summary: Instagram bot, written in python 3
+Home-page: https://github.com/dscovr/pyinstamation
+Author: Santiago Fraire, Marcos Schroh
+Author-email: santiwilly@gmail.com, schrohm@gmail.com
+License: GPLv3
+Download-URL: https://github.com/dscovr/pyinstamation.git
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: bot,instagram,pybot,Bot,Instagram,Pybot
+Platform: UNKNOWN
