@@ -1,0 +1,66 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.provider :digital_ocean do |provider, config|
+    # set unique vm name
+    config.vm.hostname = VM_NAME
+    provider.token = ENV["DIGITALOCEAN_TOKEN"]
+    provider.ssh_key_name = File.basename(ENV["DIGITALOCEAN_PRIVATE_KEY_PATH"], ".*")
+    if VM_HOST == "debian-8"
+      provider.image = "debian-8-x64"
+    elsif VM_HOST == "ubuntu-1604"
+      provider.image = "ubuntu-16-04-x64"
+    end
+    provider.region = "nyc1"
+    if VM_SIZE == "512mb"
+      provider.size = "512mb"
+    elsif VM_SIZE == "1024mb"
+      provider.size = "1gb"
+    elsif VM_SIZE == "2048mb"
+      provider.size = "2gb"
+    end
+  end
+  config.ssh.username = "vagrant"
+  config.ssh.private_key_path = ENV["DIGITALOCEAN_PRIVATE_KEY_PATH"]
+  config.ssh.forward_agent = FORWARD_SSH
+  config.vm.box = "digital_ocean"
+  config.vm.box_url = "https://github.com/devopsgroup-io/vagrant-digitalocean/raw/master/box/digital_ocean.box"
+  if COPY_DIR_WITH_RSYNC
+    config.vm.synced_folder ".",
+      "/vagrant",
+      type: "rsync"
+  else
+    config.vm.synced_folder ".",
+      "/vagrant",
+      type: "rsync",
+      disabled: true
+  end
+  config.vm.provision "shell",
+    inline: "wget -O /etc/apt/sources.list https://raw.githubusercontent.com/terminal-labs/package-sources/master/" + VM_HOST + "/official/sources.list",
+    keep_color: true
+  if PROVISION_WITH_SALT
+    config.vm.provision :salt do |salt|
+      salt.bootstrap_options = "-P"
+      salt.verbose = true
+    end
+    $pre_salt = <<-EOS
+      mv /etc/salt/minion{,-dist}
+      cp /vagrant/salt_resources/minions/minion.digitalocean /etc/salt/minion
+      cp /vagrant/salt_resources/grains/grains /etc/salt/grains
+      mkdir -p /vagrant/salt_resources/states/files/licenses
+      if [ -d "/vagrant/auth/licenses/" ]; then cp -a /vagrant/auth/licenses/. /vagrant/salt_resources/states/files/licenses/; fi
+    EOS
+    config.vm.provision "shell",
+      inline: $pre_salt,
+      keep_color: true
+    config.vm.provision "shell",
+      inline: PROVISION_SALT_CMD,
+      keep_color: true
+  end
+  if PROVISION_WITH_CMD
+    config.vm.provision "shell",
+      inline: PROVISION_CMD,
+      keep_color: true
+  end
+end

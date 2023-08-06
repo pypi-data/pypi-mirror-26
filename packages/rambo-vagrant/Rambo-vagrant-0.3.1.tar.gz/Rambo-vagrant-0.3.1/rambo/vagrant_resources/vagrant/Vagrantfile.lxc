@@ -1,0 +1,74 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.provider :lxc do |provider|
+    provider.backingstore = "loop"
+    if VM_SIZE == "512mb"
+      provider.customize "cgroup.memory.limit_in_bytes",
+        "512M"
+      provider.backingstore_option "--fssize",
+        "20G"
+    elsif VM_SIZE == "1024mb"
+      provider.customize "cgroup.memory.limit_in_bytes",
+        "1024M"
+      provider.backingstore_option "--fssize",
+        "30G"
+    elsif VM_SIZE == "2048mb"
+      provider.customize "cgroup.memory.limit_in_bytes",
+        "2048M"
+      provider.backingstore_option "--fssize",
+        "40G"
+    end
+  end
+  config.ssh.username = "vagrant"
+  config.ssh.forward_agent = FORWARD_SSH
+  config.vm.hostname = VM_NAME
+  config.vm.network :forwarded_port,
+    :guest => 5000,
+    :host => 5000,
+    auto_correct: true
+  config.vm.network :forwarded_port,
+    :guest => 80,
+    :host => 8080,
+    auto_correct: true
+  config.vm.box = "terminal-labs/tl-debian-jessie-64bit-lxc"
+  config.vm.box_url = "terminal-labs/tl-debian-jessie-64bit-lxc"
+  if COPY_DIR_WITH_RSYNC == true
+    config.vm.synced_folder ".",
+      "/vagrant",
+      type: "rsync"
+  else
+    config.vm.synced_folder ".",
+      "/vagrant",
+      type: "rsync",
+      disabled: true
+  end
+  config.vm.provision "shell",
+    inline: "wget -O /etc/apt/sources.list https://raw.githubusercontent.com/terminal-labs/package-sources/master/" + VM_HOST + "/official/sources.list",
+    keep_color: true
+  if PROVISION_WITH_SALT
+    config.vm.provision :salt do |salt|
+      salt.bootstrap_options = "-P"
+      salt.verbose = true
+    end
+    $pre_salt = <<-EOS
+      mv /etc/salt/minion{,-dist}
+      cp /vagrant/salt_resources/minions/minion.lxc /etc/salt/minion
+      cp /vagrant/salt_resources/grains/grains /etc/salt/grains
+      mkdir -p /vagrant/salt_resources/states/files/licenses
+      if [ -d "/vagrant/auth/licenses/" ]; then cp -a /vagrant/auth/licenses/. /vagrant/salt_resources/states/files/licenses/; fi
+    EOS
+    config.vm.provision "shell",
+      inline: $pre_salt,
+      keep_color: true
+    config.vm.provision "shell",
+      inline: PROVISION_SALT_CMD,
+      keep_color: true
+  end
+  if PROVISION_WITH_CMD
+    config.vm.provision "shell",
+      inline: PROVISION_CMD,
+      keep_color: true
+  end
+end
