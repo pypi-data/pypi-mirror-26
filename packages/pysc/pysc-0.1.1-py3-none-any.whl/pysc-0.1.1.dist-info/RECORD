@@ -1,0 +1,17 @@
+pysc/__init__.py,sha256=SYlMdLVbPLTGK2vMLuZaLS5o5VNFz0i9PFNfanMrew4,372
+pysc/sc_linux.py,sha256=SpYiUNH_McS1jcOb0ay0sBaRrus1exfJTfW7Oh28uQ8,1183
+pysc/sc_windows.py,sha256=5tapyULwCf2c_FsrlSUElGogXmdWJdnzNQX7aKufN6w,1597
+pysc/svc.exe,sha256=2f6slwk7XFuas0FkTxifDuOJcndE0JcWRrcKs2NcaPA,16384
+pysc/win_scm_api.py,sha256=PJFQAdpFF0xg398SPXZ4eHSeQbI91F9lNwogK0yAtK0,10116
+pysc/include/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysc/include/skeleton/guard.h,sha256=m_Gq9dGrFQuhhtkrmcdZvUvCB5Hl1QRwz-sMclxwVds,700
+pysc/include/skeleton/service.h,sha256=SSwoyt83Rarvjgv9jJ-Tt5BKiVt1kBtQmLvcHWRcYx4,1415
+pysc/include/skeleton/singleton.h,sha256=bccahHL4ivGjRei08hlO-jbecYWDadpr3rkR-CzjGOE,1560
+pysc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysc/tests/test_scm.py,sha256=yyum-YzFr36PYSi0F-WthCj8GG5ofFnrosNglkX7eYA,1897
+pysc-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pysc-0.1.1.dist-info/METADATA,sha256=h3evk-SUO7_TScl8AsyFglB118PPoZ8EysjIQW1Buq4,298
+pysc-0.1.1.dist-info/RECORD,,
+pysc-0.1.1.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+pysc-0.1.1.dist-info/metadata.json,sha256=GItDnxSOkk_vI7FHoYKbSLJAr5uIdCSRQEhNcsPqIO0,440
+pysc-0.1.1.dist-info/top_level.txt,sha256=f5UgcFYytfsN9v43NZ853FGP_MSIz_ImYHLmggumgUg,5
