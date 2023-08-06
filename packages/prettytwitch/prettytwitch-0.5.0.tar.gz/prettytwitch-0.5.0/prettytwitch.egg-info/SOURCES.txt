@@ -1,0 +1,8 @@
+README.rst
+setup.py
+prettytwitch/__init__.py
+prettytwitch/prettytwitch.py
+prettytwitch.egg-info/PKG-INFO
+prettytwitch.egg-info/SOURCES.txt
+prettytwitch.egg-info/dependency_links.txt
+prettytwitch.egg-info/top_level.txt

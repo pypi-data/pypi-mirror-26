@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: prettytwitch
+Version: 0.5.0
+Summary: This package allows you to identify any Twitch IRC server response and format it to your liking.
+Home-page: https://github.com/xinitrc-ls/prettytwitch
+Author: Alexander Berdichevskiy
+Author-email: xinitrc@x-hub.co
+License: MIT
+Description: UNKNOWN
+Keywords: twitch,irc,pretty,prettytwitch,prettyirc,twitchbot
+Platform: UNKNOWN
