@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: ancypatch
+Version: 0.1.2
+Summary: helper scripts to patch a binary, forked version of patchkit
+Home-page: http://anciety.cn/ancypatch/index.html
+Author: Anciety
+Author-email: ding641880047@126.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: patch binary
+Platform: UNKNOWN
