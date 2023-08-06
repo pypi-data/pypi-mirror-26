@@ -1,0 +1,3 @@
+[dogpile.cache]
+appengine_memcache = dogpile_appengine.backend:AppEngineMemcacheBackend
+
