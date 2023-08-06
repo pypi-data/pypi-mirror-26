@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+regime_switch_model/__init__.py
+regime_switch_model/rshmm.py
+regime_switch_model/utils.py
+regime_switch_model.egg-info/PKG-INFO
+regime_switch_model.egg-info/SOURCES.txt
+regime_switch_model.egg-info/dependency_links.txt
+regime_switch_model.egg-info/requires.txt
+regime_switch_model.egg-info/top_level.txt
