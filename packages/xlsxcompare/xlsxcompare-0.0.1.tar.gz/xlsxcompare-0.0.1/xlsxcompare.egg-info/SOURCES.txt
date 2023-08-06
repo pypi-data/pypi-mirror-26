@@ -1,0 +1,7 @@
+README.rst
+setup.py
+xlsx_compare.py
+xlsxcompare.egg-info/PKG-INFO
+xlsxcompare.egg-info/SOURCES.txt
+xlsxcompare.egg-info/dependency_links.txt
+xlsxcompare.egg-info/top_level.txt

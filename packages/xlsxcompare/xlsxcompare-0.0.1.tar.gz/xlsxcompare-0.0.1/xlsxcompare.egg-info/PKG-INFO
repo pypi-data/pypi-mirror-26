@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: xlsxcompare
+Version: 0.0.1
+Summary: A Python script to compare the equivalency of two Excel documents
+Home-page: UNKNOWN
+Author: Bella Woo
+Author-email: bella@dharmaplatform.com
+License: BSD
+Description: # xlsx_compare
+        Forked from XLSXwriter
+        
+        A package that extracts some test helper functions from XLSXwriter for external use. The script provies the ability to compare the equivalency of two Excel documents.
+Platform: UNKNOWN
