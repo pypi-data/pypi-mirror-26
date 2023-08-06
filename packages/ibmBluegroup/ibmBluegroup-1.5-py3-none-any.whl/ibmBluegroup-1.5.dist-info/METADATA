@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: ibmBluegroup
+Version: 1.5
+Summary: IBM Bluegroup API
+Home-page: https://github.com/ThomasIBM/ibmBluegroup
+Author: ThomasIBM
+Author-email: guojial@cn.ibm.com
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Keywords: Bluegroup
+Platform: UNKNOWN
+Requires-Dist: httplib2
+
+UNKNOWN
+
+
