@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: WordpressCheckVersion
+Version: 0.1.0
+Summary: Python class to process html to detect wordpress version
+Home-page: https://github.com/securipy/WordpressCheckVersion
+Author: goldrak
+Author-email: goldrak@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.5
