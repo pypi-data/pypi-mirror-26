@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+inheritance_graph/__init__.py
+inheritance_graph/explain_mro_failure.py
+inheritance_graph/reason.py
+inheritance_graph.egg-info/PKG-INFO
+inheritance_graph.egg-info/SOURCES.txt
+inheritance_graph.egg-info/dependency_links.txt
+inheritance_graph.egg-info/requires.txt
+inheritance_graph.egg-info/top_level.txt
+test/test.py
