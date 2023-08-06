@@ -1,0 +1,7 @@
+include README.md
+include *.txt
+recursive-include  pydigree *.py *.c *.pyx
+recursive-include docs *
+recursive-include scripts *
+recursive-include support *
+recursive-include sample_pedigrees *
