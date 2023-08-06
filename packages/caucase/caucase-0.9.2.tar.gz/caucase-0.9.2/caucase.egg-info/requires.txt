@@ -1,0 +1,3 @@
+cryptography>=2.1.1
+pem>=17.1.0
+pyOpenSSL>=17.1.0
