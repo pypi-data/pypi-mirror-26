@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: pent
+Version: 0.0
+Summary: Pent Extracts Numerical Text
+Home-page: https://www.github.com/bskinn/pent
+Author: Brian Skinn
+Author-email: bskinn@alum.mit.edu
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: pent
+        ====
+        
+        *Pent Extracts Numerical Text*
+        
+        Mini-language driven parser for structured numerical data.
+        
+        *Development impending...*
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 1 - Planning

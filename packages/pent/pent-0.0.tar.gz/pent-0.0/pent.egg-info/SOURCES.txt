@@ -1,0 +1,9 @@
+CHANGELOG.md
+MANIFEST.in
+README.rst
+setup.py
+pent/__init__.py
+pent.egg-info/PKG-INFO
+pent.egg-info/SOURCES.txt
+pent.egg-info/dependency_links.txt
+pent.egg-info/top_level.txt
