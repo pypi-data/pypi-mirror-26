@@ -1,0 +1,8 @@
+cython
+argparse
+gensim
+fasttext
+numpy
+keras
+tensorflow
+ujson
