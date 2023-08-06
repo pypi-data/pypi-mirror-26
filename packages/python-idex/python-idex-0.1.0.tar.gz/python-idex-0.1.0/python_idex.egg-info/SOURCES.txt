@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+idex/__init__.py
+idex/client.py
+idex/client_old.py
+idex/exceptions.py
+python_idex.egg-info/PKG-INFO
+python_idex.egg-info/SOURCES.txt
+python_idex.egg-info/dependency_links.txt
+python_idex.egg-info/requires.txt
+python_idex.egg-info/top_level.txt
