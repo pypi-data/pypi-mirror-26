@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+draftsutils/__init__.py
+draftsutils.egg-info/PKG-INFO
+draftsutils.egg-info/SOURCES.txt
+draftsutils.egg-info/dependency_links.txt
+draftsutils.egg-info/entry_points.txt
+draftsutils.egg-info/requires.txt
+draftsutils.egg-info/top_level.txt
