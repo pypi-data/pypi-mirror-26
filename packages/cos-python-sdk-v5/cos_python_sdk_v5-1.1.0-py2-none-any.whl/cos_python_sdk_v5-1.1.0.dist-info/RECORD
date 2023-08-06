@@ -1,0 +1,15 @@
+cos_python_sdk_v5-1.1.0.dist-info/DESCRIPTION.rst,sha256=RWCZkwjscPJmnnvyYtYjwa80JL095TzzyruWDnzQd5s,3762
+cos_python_sdk_v5-1.1.0.dist-info/METADATA,sha256=LSm_H95J_pnSM18f8Oz5wIrOHAMi3_nCEWPrYvJLfbc,4032
+cos_python_sdk_v5-1.1.0.dist-info/RECORD,,
+cos_python_sdk_v5-1.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+cos_python_sdk_v5-1.1.0.dist-info/metadata.json,sha256=zG_bMsGhtiTZAvk2F3qK9mvRQIr5sFMngaiQj_tdzs0,480
+cos_python_sdk_v5-1.1.0.dist-info/top_level.txt,sha256=zyPS8RLL4lZyoaMbOhy5-V24K3gh_pqvNuJSQf0xDKw,11
+qcloud_cos/__init__.py,sha256=ckr0OqI-6NBVgYUKUeObSw3ipC7CbWUWR93hZDmHqUY,192
+qcloud_cos/cos_auth.py,sha256=QHJjp6hq2xDSuAj6dDEsaO5IBtEJxSnvpMm8lf0cddk,3448
+qcloud_cos/cos_client.py,sha256=AK3osZ1EfDyxDGAFClGWw-kzr_HTfdKDMBRY2P7KoCk,41791
+qcloud_cos/cos_exception.py,sha256=Ur3KTwevAjN5ewvI7WwDgrtlYr8R3LbAUn10dsKs3Do,2780
+qcloud_cos/cos_threadpool.py,sha256=vknxAWbkqBaRe18mnl2WKGaGnSuUUbfQH1EpxSSsEtg,2727
+qcloud_cos/demo.py,sha256=ag2F6sZdjnytdTT2Dr1LJTIEPUScHp_aRDOl52-Jymo,2230
+qcloud_cos/streambody.py,sha256=6yFxsOOCVmpQvO0z0gqwevahV_YIm8xOdSwuZiLuicQ,902
+qcloud_cos/test.py,sha256=JtMbFacktt8pmZJdoteA6rgo82yxuDMIdd2OGIT0PXo,8762
+qcloud_cos/xml2dict.py,sha256=v32SJurEoFRtMSluCF7yaa0yRsFMXw86yR39quScfq4,1608
