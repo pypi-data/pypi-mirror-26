@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: crypto-mediator
+Version: 0.0.1
+Summary: Client that allows communication between many crypto exchanges
+Home-page: http://www.github.com/cowalla/mediator
+Author: Connor Wallace
+Author-email: wallaconno@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: cryptocurrency client
+Platform: UNKNOWN
