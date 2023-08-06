@@ -1,0 +1,3 @@
+[console_scripts]
+midi2mqtt = midi2mqtt:midi2mqtt
+
