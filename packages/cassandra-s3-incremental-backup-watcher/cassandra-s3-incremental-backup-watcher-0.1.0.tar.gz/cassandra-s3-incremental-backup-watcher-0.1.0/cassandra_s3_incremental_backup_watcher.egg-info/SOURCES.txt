@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+cassandra_s3_incremental_backup_watcher/__init__.py
+cassandra_s3_incremental_backup_watcher/main.py
+cassandra_s3_incremental_backup_watcher/sstable.py
+cassandra_s3_incremental_backup_watcher/transfer.py
+cassandra_s3_incremental_backup_watcher/util.py
+cassandra_s3_incremental_backup_watcher.egg-info/PKG-INFO
+cassandra_s3_incremental_backup_watcher.egg-info/SOURCES.txt
+cassandra_s3_incremental_backup_watcher.egg-info/dependency_links.txt
+cassandra_s3_incremental_backup_watcher.egg-info/entry_points.txt
+cassandra_s3_incremental_backup_watcher.egg-info/requires.txt
+cassandra_s3_incremental_backup_watcher.egg-info/top_level.txt
