@@ -1,0 +1,9 @@
+setup.py
+src/plague/__init__.py
+src/plague/infections.py
+src/plague/plague.py
+src/plague.egg-info/PKG-INFO
+src/plague.egg-info/SOURCES.txt
+src/plague.egg-info/dependency_links.txt
+src/plague.egg-info/entry_points.txt
+src/plague.egg-info/top_level.txt

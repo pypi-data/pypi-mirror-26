@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: plague
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/sixninetynine/plague
+Author: Loren Carvalho
+Author-email: me@loren.pizza
+License: MIT license
+Description: UNKNOWN
+Keywords: hiss
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
