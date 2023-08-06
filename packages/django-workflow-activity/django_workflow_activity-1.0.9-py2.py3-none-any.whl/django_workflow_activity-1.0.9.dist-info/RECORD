@@ -1,0 +1,13 @@
+django_workflow_activity-1.0.9.dist-info/DESCRIPTION.rst,sha256=M1al0FKkS1Lz3Jgc8yBEQbsud_vpAqp6W0qf1uU8z80,1558
+django_workflow_activity-1.0.9.dist-info/METADATA,sha256=Wcg3aLmCYVCRnQ712K0DMYK5-BurX4pud5rmGYcBvBo,2283
+django_workflow_activity-1.0.9.dist-info/RECORD,,
+django_workflow_activity-1.0.9.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_workflow_activity-1.0.9.dist-info/metadata.json,sha256=pO7lOQBVanCi4M8FHKM7zXL7P9RocDmBBOgSM4eo3Es,886
+django_workflow_activity-1.0.9.dist-info/top_level.txt,sha256=pxgQs6RY6PMrVstt1YCDkzrObqy7I2Flt_ETtQ8ijnM,18
+workflow_activity/__init__.py,sha256=sj_CIRSd0fSJJKr9dHKx2djOOMeL9rPZj1R3J2Uh5z0,93
+workflow_activity/admin.py,sha256=HevFS4PfG2TlHBBj5CZnQzz9tdlPwfpWkFMgHXMF3E8,978
+workflow_activity/managers.py,sha256=ita6m_upvCHASbcNxb_YRSLxb8IxCDC_wz-K3oeljfM,2281
+workflow_activity/models.py,sha256=MDPBNY5vHe7lDCO2zCMJQuA1vyEBhx6WARjmY0T6zsI,12653
+workflow_activity/utils.py,sha256=EDzTOiZpgfSjCdA93lymOEdvVvA9fESbR4DiEAMP_JI,907
+workflow_activity/migrations/0001_initial.py,sha256=vjnMVQhm0c_Ofs2I2XgOy3-tR45wjRTmFYlMar9zQR0,1631
+workflow_activity/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
