@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pytradfri
+Version: 4.0.0
+Summary: IKEA Trådfri/Tradfri API. Control and observe your lights from Python.
+Home-page: https://github.com/ggravlingen/pytradfri
+Author: balloob, lwis, ggravlingen
+Author-email: no@email.com
+License: UNKNOWN
+Download-URL: https://github.com/ggravlingen/pytradfri/archive/4.0.0.zip
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
