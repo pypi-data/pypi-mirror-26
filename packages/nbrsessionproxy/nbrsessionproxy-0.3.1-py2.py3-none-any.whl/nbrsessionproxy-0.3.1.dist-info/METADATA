@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: nbrsessionproxy
+Version: 0.3.1
+Summary: Jupyter extension to proxy RStudio's rsession
+Home-page: https://github.com/jupyterhub/nbrsessionproxy
+Author: Ryan Lovett
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: Jupyter
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Requires-Dist: nbserverproxy
+Requires-Dist: notebook
+Requires-Dist: tornado
+
+UNKNOWN
+
+
