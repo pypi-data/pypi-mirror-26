@@ -1,0 +1,10 @@
+onnx_tf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onnx_tf/backend.py,sha256=ciSpLajQpuv47B-uyNtXWdOGJP9Sy9SCIOFjKizrJws,26638
+onnx_tf/backend_rep.py,sha256=vaV974asbj35GVwaC0pYBINnmnmiGC6TFQv6rGkJwfg,1647
+onnx_tf/tf_net.py,sha256=5PtoONlv5-PY7XK_X5uYZZOMIqZ4pQoqTcb3g__v7uU,227
+onnx_tf-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+onnx_tf-0.1.1.dist-info/METADATA,sha256=s0BQAdcpX0e3bbnU_OUSdWeeLQbVKFDyLIqHANEDqTg,382
+onnx_tf-0.1.1.dist-info/RECORD,,
+onnx_tf-0.1.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+onnx_tf-0.1.1.dist-info/metadata.json,sha256=IJ4PZamBcfLWenF7Gh-3kqqV78BKW6UcvYA3N33jtwA,578
+onnx_tf-0.1.1.dist-info/top_level.txt,sha256=kBH79ICZvPTfUVahBrATgWCfN90Yc63GhrZliPiiJJw,8
