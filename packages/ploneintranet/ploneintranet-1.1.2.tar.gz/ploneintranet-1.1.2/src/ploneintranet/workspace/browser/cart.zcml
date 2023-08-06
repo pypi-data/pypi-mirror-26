@@ -1,0 +1,59 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ploneintranet">
+
+
+  <!-- Enable IAnnotations to be stored on Member objects -->
+  <class class="Products.CMFCore.MemberDataTool.MemberData">
+    <implements interface="zope.annotation.interfaces.IAttributeAnnotatable" />
+  </class>
+
+  <browser:pages
+      for="*"
+      permission="zope2.View"
+      class=".cart_actions.delete.DeleteView">
+    <browser:page name="cart-delete" attribute="delete"/>
+    <browser:page name="cart-delete-confirm" attribute="confirm"/>
+  </browser:pages>
+
+  <browser:pages
+      for="*"
+      permission="zope2.View"
+      class=".cart_actions.mail.MailView">
+    <browser:page name="cart-mail" attribute="send"/>
+    <browser:page name="cart-mail-confirm" attribute="confirm"/>
+  </browser:pages>
+
+  <browser:page
+      for="*"
+      permission="zope2.View"
+      class=".cart_actions.cut.CutView"
+      template="cart_actions/templates/message.pt"
+      name="cart-cut"/>
+
+  <browser:page
+      for="*"
+      class=".cart_actions.copy.CopyView"
+      permission="zope2.View"
+      template="cart_actions/templates/message.pt"
+      name="cart-copy"/>
+
+  <browser:page
+      for="*"
+      class=".cart_actions.paste.PasteView"
+      permission="cmf.AddPortalContent"
+      template="cart_actions/templates/message.pt"
+      name="cart-paste"/>
+
+  <browser:page
+      for="*"
+      class=".cart_actions.cart_dispatch.CartDispatchView"
+      permission="zope2.View"
+      name="cart-dispatch"/>
+
+</configure>

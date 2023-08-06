@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ploneintranet.microblog">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
+
+  <include package="ploneintranet.activitystream" />
+  <include package="ploneintranet.attachments" />
+
+  <include package=".browser" />
+  <include file="permissions.zcml" />
+  <include file="dexterity.zcml" />
+  <include file="profiles.zcml" />
+
+  <!-- included from suite only - to avoid test pollution
+       <include file="subscribers.zcml" />
+  -->
+
+
+  <adapter factory=".urlpreview.URLPreview"/>
+
+</configure>
