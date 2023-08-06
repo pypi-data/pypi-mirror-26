@@ -1,0 +1,5 @@
+# Include the license file
+include LICENSE.txt
+include ControlYourWay\ControlYourWay_p3.py
+include ControlYourWay\ControlYourWay_p27.py
+include ControlYourWay\__init__.py
