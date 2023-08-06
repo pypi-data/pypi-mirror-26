@@ -1,0 +1,11 @@
+xfer-0.2.9.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+xfer-0.2.9.dist-info/METADATA,sha256=OO3u_osc3RbpH_ljbSMO2NN0IrWehCD543iqd_MYTX0,2702
+xfer-0.2.9.dist-info/metadata.json,sha256=eByPcLiv_fU9WJleDLOGPi6RIdNemk23ZvZsTLHVHak,1191
+xfer-0.2.9.dist-info/RECORD,,
+xfer-0.2.9.dist-info/top_level.txt,sha256=SkqDWAwjk9hYpAIdV6EKZltmGXoVkdxmJgvcBdi0jbE,5
+xfer-0.2.9.dist-info/DESCRIPTION.rst,sha256=D4P82DJdeEOT4Y0i-6Fv4N63Ppe2YApwWY_K8z1Fqkc,1833
+xfer-0.2.9.dist-info/entry_points.txt,sha256=XMZHqxkq8hT9TzUZ9xC8p2PyqNyDib5s_gcxJLCITbA,45
+xfer-0.2.9.data/scripts/git-xfer,sha256=9dViSyhe2mSoBzfy8RQ3-jEIeIyIk6r50x5z8-CiByk,19
+xfer/__init__.py,sha256=AkvFrBMM5RIfzsaxgid5wBQBJ8JHLF8VoLS4O5MFDvQ,107
+xfer/__main__.py,sha256=nJBovCDDYJy8AkSgg-5D1KuJTTvwaUUR_R0obXBTFuU,2591
+xfer/cli.py,sha256=U-D0VdCBLAc7PK1gcDVECR1ecdS6f332KZcynqekkhk,13333
