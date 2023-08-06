@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Filesystem config files</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="filesystem-config-files">
+<h1>Filesystem config files</h1>
+<p>The information about filesystems that we want backed-up is gathered in JSON files,
+one per filesystem. For instance:</p>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;connstr&quot;</span><span class="p">:</span> <span class="s2">&quot;mongodb://myuser:mypwd@ds21135.mlab.com:34562/fsbackup_tvs761_main&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;paths&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;\\\\ZEYCUS-TVS671\\Multimedia&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;\\\\ZEYCUS-TVS671\\Resources&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;reportpref&quot;</span><span class="p">:</span> <span class="s2">&quot;F:\\Dropbox\\fsbackup\\reports\\main_&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The information is as follows:</p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">connstr</span></code></dt>
+<dd>The connection string to the mongoDB database.</dd>
+<dt><code class="docutils literal"><span class="pre">paths</span></code></dt>
+<dd>The list of paths in the filesystem that we want backed-up. So far I&#8217;ve been using absolute paths myself,
+but I think that paths relative to the location of the config file work as well. But I have not tested
+it that heavily.</dd>
+<dt><code class="docutils literal"><span class="pre">reportpref</span></code></dt>
+<dd>Prefix for reports. All files created by the <code class="docutils literal"><span class="pre">backupStatus</span></code> command are created with that prefix.</dd>
+</dl>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

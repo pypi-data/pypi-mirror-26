@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Overview</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="overview">
+<h1>Overview</h1>
+<p>A command-line script in Python is provided, to manage backups for large filesystems in multiple external disks.</p>
+<p>It is intended as a minimalist system, to get the job done but with no GUI or other niceties. At least not yet!
+I just wanted to sleep well at night.</p>
+<div class="section" id="motivation">
+<h2>Motivation</h2>
+<div class="section" id="the-problem">
+<h3>The Problem</h3>
+<p>For more than a decade I had being gathering content and
+storing it in external drives.
+For backup purposes I used to buy them in pairs, so that one would work as the other&#8217;s mirror.
+Of course the solution was far from ideal, there were tv-series, movies, and documentaries in most disks,
+sparsed pretty much randomly, and when the number of disks reached 15 (plus backups) even finding content was a pain.
+I had simple text files with the file contents of each disk, which needed to be updated, etc.</p>
+</div>
+<div class="section" id="an-improvement">
+<h3>An Improvement</h3>
+<p>A friend talked to me about a NAS he had recently acquired. After little consideration I realized I had been needing
+one myself for a long time, just did not know such a thing existed. Taking into account the size of the files I already had,
+plus reasonable mid-term foreseable needs, I bought a 6-slots NAS and put 8GB disks in it (5 of them currently).</p>
+<p>Now the content was neatly organised, easy to find and maintain.</p>
+<p>I was using RAID5, which is nice, but in several forums I found the clear warning
+that <a class="reference external" href="https://serverfault.com/questions/2888/why-is-raid-not-a-backup">RAID does not work as backup</a><span class="link-target"> [https://serverfault.com/questions/2888/why-is-raid-not-a-backup]</span>, so I started worring.
+I had the need of a real backup, and a bunch of external drives which content was already in the NAS.
+Obviously they might be used to backup content, but I could not bring myself to even try to micro-manage it.
+It would be particularly hard because some folders are way bigger that the external drives, so they would have to be split manually.</p>
+</div>
+</div>
+<div class="section" id="backup-system-overview">
+<h2>Backup System Overview</h2>
+<p>The idea behind the implementation of <strong>fsbackup</strong> is pretty simple, and everything gets done by the <code class="docutils literal"><span class="pre">fsbck</span></code> command.
+Given a list of one or more paths that we want backed-up, the backup system works in three stages.</p>
+<div class="section" id="stage-1">
+<h3>Stage 1</h3>
+<p>A command (intended to be scheduled nightly) keeps a collection in a <a class="reference external" href="https://www.mongodb.com/">mongoDB</a><span class="link-target"> [https://www.mongodb.com/]</span> database updated with
+the absolute path, size, last modification timestamp and a hash function (currently SHA-256) of each file in that list of paths.
+They are interpreted as file-trees, so all the content buried in those paths is included.
+It can be done with something like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">fsbck</span><span class="o">.</span><span class="n">py</span> <span class="n">refreshHashes</span> <span class="o">-</span><span class="n">db</span><span class="o">=</span><span class="n">conn_multimedia</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>Only new files, or files with a more recent modification timestamp than the one in the database have their hash function recalculated
+(since it is really time-consuming). As you might have guessed, the <code class="docutils literal"><span class="pre">db</span></code> argument refers
+to a <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">json</a><span class="link-target"> [https://en.wikipedia.org/wiki/JSON]</span> file with information regarding the location
+of the filesystem, as well as mongoDB collections where the information is stored.</p>
+</div>
+<div class="section" id="stage-2">
+<h3>Stage 2</h3>
+<p>External hard disks work as backup volumes, containing files renamed with their hash function. The folder structure in the original filesystem
+is not replicated, all files are at root level. Except that, using git-style, they are divided in folders according to the first
+letters in the hash, to avoid having thousands of files in the same directory.</p>
+<p>In order to update the backup, we can mount a disk that works as backup volume (say, it is in G:), and run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">fsbck</span><span class="o">.</span><span class="n">py</span> <span class="n">processDrive</span> <span class="o">-</span><span class="n">db</span><span class="o">=</span><span class="n">conn_multimedia</span><span class="o">.</span><span class="n">json</span> <span class="o">--</span><span class="n">drive</span><span class="o">=</span><span class="n">G</span>
+</pre></div>
+</div>
+<p>This action:</p>
+<ul>
+<li><p class="first">Removes from the volume files that are not necessary anymore.</p>
+</li>
+<li><p class="first">Copies new files that were not backed-up yet.</p>
+</li>
+<li><p class="first">Provides a backup status report, with:</p>
+<blockquote>
+<div><ul class="simple">
+<li>the number of files/size pending backup (if there was not enough room in that volume).</li>
+<li>a summary of the number of files/size in each volume.</li>
+<li>a file per volume is created with the detailed absolute paths of each file backed-up in it.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>For this to work properly, another collection in the database stores the hashes backed in each volume.</p>
+</div>
+<div class="section" id="stage-3">
+<h3>Stage 3</h3>
+<p>If/when the time comes information needs to be retrieved from the volumes, the script handles that as well. For instance, the command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">fsbck</span><span class="o">.</span><span class="n">py</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">db</span><span class="o">=</span><span class="n">conn_multimedia</span><span class="o">.</span><span class="n">json</span> <span class="o">--</span><span class="n">drive</span><span class="o">=</span><span class="n">G</span> <span class="o">--</span><span class="n">sourcepath</span><span class="o">=//</span><span class="n">Zeycus</span><span class="o">/</span><span class="n">multimedia</span><span class="o">/</span><span class="n">movies</span> <span class="o">--</span><span class="n">destpath</span><span class="o">=</span><span class="n">F</span><span class="p">:</span>\<span class="n">chekouts</span>\<span class="n">movies</span>
+</pre></div>
+</div>
+<p>recovers the relevant information in the actual (G:) volume for a particular folder. In a worst-case scenario, to recover all the files
+you&#8217;d have to do this for every volume.</p>
+</div>
+</div>
+<div class="section" id="collaboration">
+<h2>Collaboration</h2>
+<p>You may wish to improve or add features, in that case you are more than welcome, feel free to contact me at <a class="reference external" href="mailto:zeycus&#37;&#52;&#48;gmail&#46;com">zeycus<span>&#64;</span>gmail<span>&#46;</span>com</a>.</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

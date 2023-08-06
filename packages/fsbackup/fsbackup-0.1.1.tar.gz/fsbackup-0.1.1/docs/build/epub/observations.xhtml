@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Observations</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="observations">
+<h1>Observations</h1>
+<div class="section" id="volume-identification">
+<h2>Volume identification</h2>
+<p>Volumes are not numbered, instead they are identified by a unique identifier. For now it is their filesystem <a class="reference external" href="https://en.wikipedia.org/wiki/Volume_serial_number">volume serial number</a><span class="link-target"> [https://en.wikipedia.org/wiki/Volume_serial_number]</span>.
+This means you never need to process the volumes in any order, nor when you update them.</p>
+<p>For instance, suppose you remove some huge files from your filesystem (who would want to see <strong>THAT</strong> tv-show again!?). As a consequence the backupstatus report
+shows that a volume contains now 300GB of removable files. You could choose this volume for your next <code class="docutils literal"><span class="pre">processDrive</span></code>: useless content will be dropped, making room and using it for fresh file backups.</p>
+</div>
+<div class="section" id="volume-content">
+<h2>Volume content</h2>
+<p>Files are not backed-up in any order. The system just aims to have each file backed-up in a (single) volume. This means content is more or less randomly
+divided among volumes.</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
