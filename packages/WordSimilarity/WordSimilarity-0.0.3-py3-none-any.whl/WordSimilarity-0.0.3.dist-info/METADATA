@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: WordSimilarity
+Version: 0.0.3
+Summary: 基于哈工大同义词词林扩展版的单词相似度计算方法.
+Home-page: https://github.com/BiLiangLtd/WordSimilarity
+Author: wuzhengwei
+Author-email: commissarster@qq.com
+License: Apache 2.0
+Keywords: cilin,word similarity computation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+
+基于哈工大同义词词林扩展版的单词相似度计算方法.
+
+
