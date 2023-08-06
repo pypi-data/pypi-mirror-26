@@ -1,0 +1,3 @@
+
+[console_scripts]
+env2cfg = env2cfgfile.script:main
