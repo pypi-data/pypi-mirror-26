@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: html_cluster
+Version: 0.1
+Summary: A command line tool to cluster html files
+Home-page: https://github.com/matiskay/html-cluster
+Author: Edgar Marca
+Author-email: matiskay@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Internet :: WWW/HTTP
