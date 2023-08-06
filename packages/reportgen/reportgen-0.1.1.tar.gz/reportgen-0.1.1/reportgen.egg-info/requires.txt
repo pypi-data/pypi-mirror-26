@@ -1,0 +1,6 @@
+pandas
+numpy
+python-pptx
+PIL
+io
+time

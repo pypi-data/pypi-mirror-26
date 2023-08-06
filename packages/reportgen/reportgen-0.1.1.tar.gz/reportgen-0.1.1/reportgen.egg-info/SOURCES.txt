@@ -1,0 +1,7 @@
+README.rst
+setup.py
+reportgen.egg-info/PKG-INFO
+reportgen.egg-info/SOURCES.txt
+reportgen.egg-info/dependency_links.txt
+reportgen.egg-info/requires.txt
+reportgen.egg-info/top_level.txt
