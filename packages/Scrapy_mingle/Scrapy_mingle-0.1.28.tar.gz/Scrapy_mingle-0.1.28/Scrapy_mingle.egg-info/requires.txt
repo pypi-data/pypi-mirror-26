@@ -1,0 +1,6 @@
+Scrapy
+redis
+requests
+twisted
+scrapy_rediscluster
+scrapy_redis
