@@ -1,0 +1,6 @@
+knack
+vsts-cli-common==0.1.0b1
+vsts-cli-build==0.1.0b1
+vsts-cli-code==0.1.0b1
+vsts-cli-team==0.1.0b1
+vsts-cli-work==0.1.0b1
