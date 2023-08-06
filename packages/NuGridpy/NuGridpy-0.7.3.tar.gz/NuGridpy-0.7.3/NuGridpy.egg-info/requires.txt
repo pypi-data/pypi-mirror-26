@@ -1,0 +1,8 @@
+numpy
+setuptools
+future
+matplotlib
+scipy
+matplotlib
+h5py
+xlrd
