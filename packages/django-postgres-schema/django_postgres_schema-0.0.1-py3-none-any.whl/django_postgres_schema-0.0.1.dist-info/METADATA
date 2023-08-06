@@ -1,0 +1,47 @@
+Metadata-Version: 2.0
+Name: django-postgres-schema
+Version: 0.0.1
+Summary: Postgres schemas in Django.
+Home-page: https://github.com/damoti/django-postgres-schema
+Author: Lex Berezhny
+Author-email: lex@damoti.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Keywords: django,postgres,schema
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+=================================================
+django-postgres-schema |pypi| |travis| |coverage|
+=================================================
+
+.. _introduction:
+
+**django-postgres-schema** makes it possible to use postgres schemas with Django to build SaaS applications where each customer's data lives in an isolated schema.
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/django-postgres-schema.svg
+   :target: https://pypi.python.org/pypi/django-postgres-schema
+   :alt: Package
+
+.. |travis| image:: https://travis-ci.org/damoti/django-postgres-schema.svg?branch=master
+   :target: https://travis-ci.org/damoti/django-postgres-schema
+   :alt: Build
+
+.. |coverage| image:: https://codecov.io/gh/damoti/django-postgres-schema/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/damoti/django-postgres-schema
+   :alt: Test Coverage
+
+
+0.0.1
+-----
+
+* Initial release.
+
+
