@@ -1,0 +1,4 @@
+[console_scripts]
+toil-rnaseq = toil_rnaseq.rnaseq_cgl_pipeline:main
+toil-rnaseq-inputs = toil_rnaseq.input_generation:main
+
