@@ -1,0 +1,3 @@
+PyYAML
+requests
+xdg;platform_system!="Windows"
