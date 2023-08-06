@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: resswitch
+Version: 0.1.4
+Summary: GUI for analyzing resistive switching data
+Home-page: https://github.com/danieljosesilva/resswitch
+Author: Daniel Silva
+Author-email: djsilva99@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Useful for analyzing experiments involving memristor transport measurements.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Physics
