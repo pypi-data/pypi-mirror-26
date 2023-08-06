@@ -1,0 +1,13 @@
+tabledata/__init__.py,sha256=hj_zGPXeL-Hfe3Dfxx6jReCyn-6vO7RaHWcB5IJ3nwk,471
+tabledata/_common.py,sha256=dNcSNO7Bt1EBoFdFdbSrNguuoWugO7-nTG3XKzC5TEE,318
+tabledata/_constant.py,sha256=xk0l9bSfJpenTYEhx45NMS7c9WWESlhc610tEXbHXk8,173
+tabledata/_core.py,sha256=kU_TeAAYX7c9dYs_MzVQXfIgOiy3_vfeO_97TQVI3tM,14717
+tabledata/_logger.py,sha256=jy7tGz1eSE9E_CIEA8yTgQKz_r5IrvN5oa-AdANzPAY,1443
+tabledata/_sanitizer.py,sha256=Ua6DYHHCDZXqjISHoTnrBxXBRDmrLaKiOiUoxILR-1Y,8289
+tabledata/error.py,sha256=Fn4ez3Beq3vmQ0mDJfwB4XqM_PeJQNH1qUIezdhVVbs,690
+tabledata-0.0.5.dist-info/DESCRIPTION.rst,sha256=ZuqMF40EWZ1GixeS5pSLVh46tJMw7zUxjELVCprwjH8,3036
+tabledata-0.0.5.dist-info/METADATA,sha256=8llqkZWk0kOYFX-WnvF-AOHCVxfl1Y5vOmT6qTmnoj4,3920
+tabledata-0.0.5.dist-info/RECORD,,
+tabledata-0.0.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+tabledata-0.0.5.dist-info/metadata.json,sha256=Z-jBN8tUomOaGbLTzflTITod5-lQbTERLGIHmGtzocM,943
+tabledata-0.0.5.dist-info/top_level.txt,sha256=wPYCjph2PxB5odPJWPADX_65iL1gAIjMQFlAyZi80iI,10
