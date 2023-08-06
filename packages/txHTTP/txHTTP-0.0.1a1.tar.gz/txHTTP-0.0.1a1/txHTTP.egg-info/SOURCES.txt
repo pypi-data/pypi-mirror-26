@@ -1,0 +1,6 @@
+README.rst
+setup.py
+txHTTP.egg-info/PKG-INFO
+txHTTP.egg-info/SOURCES.txt
+txHTTP.egg-info/dependency_links.txt
+txHTTP.egg-info/top_level.txt
