@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: folstools
+Version: 0.0.1
+Summary: Useful utilities by Folger
+Home-page: UNKNOWN
+Author: FolgerLun
+Author-email: lunbest@163.com
+License: UNKNOWN
+Keywords: folstool
+Platform: UNKNOWN
+Requires-Dist: pydrive
+Requires-Dist: requests
+
+UNKNOWN
+
+
