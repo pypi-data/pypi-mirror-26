@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="footer">
+    {% block footer_content %}
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          {% block footer_content_left %}
+          <li>PBX: 2374-3000</li>
+          <li><a href="http://www.minfin.gob.gt/">www.minfin.gob.gt</a></li>
+          <li>8a avenida 20-59, Zona 1, Centro Cívico, Guatemala - 01001</li>
+          {% endblock %}
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li class="text-right">Organismo Judicial</li>
+          <li class="text-right">Organismo Ejecutivo</li>
+          <li class="text-right">Organismo Legislativo</li>
+        </ul>
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+  {%- block footer_debug %}
+    {% if g.debug %}
+    {% include 'snippets/debug.html' %}
+    {% endif %}
+  {% endblock -%}
+</div>
