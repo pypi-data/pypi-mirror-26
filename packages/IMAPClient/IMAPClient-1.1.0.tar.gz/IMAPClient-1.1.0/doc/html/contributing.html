@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Contributing to IMAPClient &#8212; IMAPClient 2.0.0-alpha documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0.0-alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IMAPClient 2.0.0-alpha documentation" href="index.html" />
+    <link rel="next" title="Version 2.0" href="releases.html" />
+    <link rel="prev" title="IMAPClient Class" href="api.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="releases.html" title="Version 2.0"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="api.html" title="IMAPClient Class"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">IMAPClient 2.0.0-alpha documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Contributing to IMAPClient</a><ul>
+<li><a class="reference internal" href="#source-code">Source Code</a></li>
+<li><a class="reference internal" href="#branches">Branches</a></li>
+<li><a class="reference internal" href="#release-tags">Release Tags</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unit-tests">Unit Tests</a><ul>
+<li><a class="reference internal" href="#running-unit-tests">Running Unit Tests</a></li>
+<li><a class="reference internal" href="#running-the-unit-tests-against-multiple-python-versions">Running the Unit Tests Against Multiple Python Versions</a></li>
+<li><a class="reference internal" href="#writing-unit-tests">Writing Unit Tests</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="api.html"
+                        title="previous chapter">IMAPClient Class</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="releases.html"
+                        title="next chapter">Version 2.0</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/contributing.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="contributing-to-imapclient">
+<h1>Contributing to IMAPClient<a class="headerlink" href="#contributing-to-imapclient" title="Permalink to this headline">¶</a></h1>
+<p>The best way to contribute changes to IMAPClient is to fork the
+official repository on Github, make changes in a branch in your
+personal fork and then submit a pull request.</p>
+<p>Discussion on the mailing list before undertaking development is
+highly encouraged for potentially major changes.</p>
+<p>Although not essential, it will make the project maintainer a much
+happier person if change submissions include appropriate updates to
+unit tests and the live tests. Please ask if you&#8217;re unsure how of how
+the tests work.</p>
+<p>Please read on if you plan on submitting changes to IMAPClient.</p>
+<div class="section" id="source-code">
+<h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>The official source code repository for IMAPClient can be found on
+Github at: <a class="reference external" href="https://github.com/mjs/imapclient/">https://github.com/mjs/imapclient/</a></p>
+<p>Any major feature work will also be found as branches of this
+repository.</p>
+</div>
+<div class="section" id="branches">
+<h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h2>
+<p>Development for the next major release happens on the <code class="docutils literal"><span class="pre">master</span></code> branch.</p>
+<p>There is also a branch for each major release series (for example:
+<code class="docutils literal"><span class="pre">1.x</span></code>). When appropriate and when there will be future releases for
+a series, changes may be selectively merged between <code class="docutils literal"><span class="pre">master</span></code> and a
+stable release branch.</p>
+</div>
+<div class="section" id="release-tags">
+<h2>Release Tags<a class="headerlink" href="#release-tags" title="Permalink to this headline">¶</a></h2>
+<p>Each released version is available in the IMAPClient repository
+as a Git tag (e.g. &#8220;0.9.1&#8221;).</p>
+</div>
+</div>
+<div class="section" id="unit-tests">
+<h1>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h1>
+<p>There are comprehensive unit tests for the server response parser and
+a number of other parts of the code. These tests use the unittest2
+package which is also included as the standard unittest package in
+Python 2.7 and 3.2 onwards.</p>
+<div class="section" id="running-unit-tests">
+<h2>Running Unit Tests<a class="headerlink" href="#running-unit-tests" title="Permalink to this headline">¶</a></h2>
+<p>To run the tests run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">test</span>
+</pre></div>
+</div>
+<p>from the root of the package source. This will install the Mock
+package (locally) if it isn&#8217;t already installed as it is required for
+many of the tests.</p>
+<p>Where unittest2 is included in the standard library (eg. Python 2.7
+and 3.2+) you can also run all unit tests like this (from the root
+directory of the IMAPClient source):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">unittest</span> <span class="n">discover</span>
+</pre></div>
+</div>
+<p>Alternatively, if unittest2 is installed separately use the unit2
+script (for Unix-like systems) or the unit2.py script:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">unit2</span> <span class="n">discover</span>
+<span class="n">unit2</span><span class="o">.</span><span class="n">py</span> <span class="n">discover</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-the-unit-tests-against-multiple-python-versions">
+<h2>Running the Unit Tests Against Multiple Python Versions<a class="headerlink" href="#running-the-unit-tests-against-multiple-python-versions" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to run the unit tests against all supported Python
+versions at once using <a class="reference external" href="http://testrun.org/tox/">tox</a>. Once installed, the <code class="docutils literal"><span class="pre">tox</span></code> command
+will use the tox.ini file in the root of the source directory and run
+the unit tests against the Python versions officially supported by
+IMAPClient (provided these versions of Python are installed!).</p>
+</div>
+<div class="section" id="writing-unit-tests">
+<h2>Writing Unit Tests<a class="headerlink" href="#writing-unit-tests" title="Permalink to this headline">¶</a></h2>
+<p>Protocol level unit tests should not act against a real IMAP server
+but should use canned data instead. The IMAPClientTest base class
+should typically be used as the base class for any tests - it provides
+a mock IMAPClient instance at <cite>self.client</cite>. See the tests in
+<cite>tests/test_imapclient.py</cite> for examples of how to write unit tests using
+this approach.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="releases.html" title="Version 2.0"
+             >next</a></li>
+        <li class="right" >
+          <a href="api.html" title="IMAPClient Class"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">IMAPClient 2.0.0-alpha documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, Menno Smits.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.6.
+    </div>
+  </body>
+</html>

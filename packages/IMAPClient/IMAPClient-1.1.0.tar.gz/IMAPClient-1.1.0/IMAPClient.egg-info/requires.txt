@@ -1,0 +1,3 @@
+six
+backports.ssl>=0.0.9
+pyopenssl>=0.15.1
