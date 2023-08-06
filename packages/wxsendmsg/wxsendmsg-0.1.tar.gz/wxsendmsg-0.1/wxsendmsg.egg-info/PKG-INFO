@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: wxsendmsg
+Version: 0.1
+Summary: Python module/library wxsendmsg.
+Home-page: http://www.shiranba.cn
+Author: ding
+Author-email: dingyinggui@aliyun.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: send msg project
+        by API send msg
+        
+        
+Keywords: Python,wxsendmsg
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

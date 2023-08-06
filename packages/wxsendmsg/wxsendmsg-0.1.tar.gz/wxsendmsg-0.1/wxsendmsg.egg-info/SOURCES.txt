@@ -1,0 +1,9 @@
+README
+setup.py
+wxsendmsg/__init__.py
+wxsendmsg/querytoken.py
+wxsendmsg.egg-info/PKG-INFO
+wxsendmsg.egg-info/SOURCES.txt
+wxsendmsg.egg-info/dependency_links.txt
+wxsendmsg.egg-info/requires.txt
+wxsendmsg.egg-info/top_level.txt
