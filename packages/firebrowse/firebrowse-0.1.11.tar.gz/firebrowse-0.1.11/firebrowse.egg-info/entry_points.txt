@@ -1,0 +1,4 @@
+[console_scripts]
+fbgen = firebrowse.generate:main
+fbget = firebrowse.highlevel:main
+
