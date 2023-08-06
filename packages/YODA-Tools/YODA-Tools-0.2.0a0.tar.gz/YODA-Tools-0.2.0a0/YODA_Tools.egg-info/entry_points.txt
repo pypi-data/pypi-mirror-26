@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        yodatools=yodatools.dataloader.controller.Main:main
+        
