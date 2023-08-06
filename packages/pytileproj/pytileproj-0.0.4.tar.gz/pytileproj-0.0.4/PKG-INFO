@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: pytileproj
+Version: 0.0.4
+Summary: Add a short description here!
+Home-page: http://...
+Author: Bernhard Bauer-Marschallinger
+Author-email: bernhard.bauer-marschallinger@geo.tuwien.ac.at
+License: none
+Description-Content-Type: UNKNOWN
+Description: ==========
+        pytileproj
+        ==========
+        
+        .. image:: https://travis-ci.org/TUW-GEO/pytileproj.svg?branch=master
+            :target: https://travis-ci.org/TUW-GEO/pytileproj
+        
+        .. image:: https://badge.fury.io/py/pytileproj.svg
+            :target: https://badge.fury.io/py/pytileproj
+        
+        A python class for working with TiledProjectionSystems (TPS) - how to convert to - how to use a tiling system - etc.
+        
+        
+        Description
+        ===========
+        
+        A LONGER DESCRIPTION OF YOUR PROJECT GOES HERE...
+        
+        
+        Note
+        ====
+        
+        This project has been set up using PyScaffold 2.5.6. For details and usage
+        information on PyScaffold see http://pyscaffold.readthedocs.org/.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
