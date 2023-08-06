@@ -1,0 +1,3 @@
+[pytest11]
+symbols = pytest_symbols.plugin
+
