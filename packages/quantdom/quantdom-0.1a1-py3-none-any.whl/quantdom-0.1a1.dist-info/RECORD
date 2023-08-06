@@ -1,0 +1,11 @@
+quantdom/__init__.py,sha256=7SX_e59QiAIPJ42w4gZJmrRI0_Xy64ex1BruoLwzv94,1394
+quantdom/app.py,sha256=94LEh5bFfk4ckeqw1jpYudW3YvOy3u-NZ50i7I8OIfU,1328
+quantdom/cli.py,sha256=Ld3_a5x-Y_JrWqX0XuqSU4i9-rqzR4Hg5NQm2yJ7x0g,1645
+quantdom/ui.py,sha256=m4iGJMa3wJJGbF_XKaKftYZJz0XoGGTbdWXg86DfxII,15306
+quantdom-0.1a1.dist-info/DESCRIPTION.rst,sha256=6g8Vj6DMBwQPcYgJJV3XV9mEUkYUYFQRWvi9ohwZC6U,6877
+quantdom-0.1a1.dist-info/METADATA,sha256=AKAZq5GOMD1Y0RiHBtw9_mqSa2-MRhn7NTgr07J01Iw,8101
+quantdom-0.1a1.dist-info/RECORD,,
+quantdom-0.1a1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+quantdom-0.1a1.dist-info/entry_points.txt,sha256=c7T_iWxcqnexZ7fQJcwnLykyDIh2Ijw6E8wXrdnFFLE,47
+quantdom-0.1a1.dist-info/metadata.json,sha256=R5xq_Q1FoPzCFRfoyye21SDYtOnoW6Sdm8WPdnp1TBY,1567
+quantdom-0.1a1.dist-info/top_level.txt,sha256=wJnOmSUermpP6vk6-Thsia0ytaEVWdpIfStD3ggI6eM,9
