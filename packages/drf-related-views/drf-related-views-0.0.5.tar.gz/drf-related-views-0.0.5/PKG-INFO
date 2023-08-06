@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: drf-related-views
+Version: 0.0.5
+Summary: Related Views for Django Rest Framework
+Home-page: https://github.com/fasihahmad/django-rest-framework-related-views
+Author: Fasih Ahmad Fakhri
+Author-email: fasihahmadfakhri@gmail.com
+License: GPL-3.0
+Download-URL: https://github.com/fasihahmad/django-rest-framework-related-views/archive/v0.0.5.tar.gz
+Description: UNKNOWN
+Keywords: django rest framework related views
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
