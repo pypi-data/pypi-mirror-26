@@ -1,0 +1,3 @@
+[console_scripts]
+nvprof_tools = nvprof.__main__:main
+
