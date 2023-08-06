@@ -1,0 +1,6 @@
+wifi
+requests
+setuptools
+
+[json]
+development
