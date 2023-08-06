@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: fiteanalytics
+Version: 1.0.0
+Summary: jupyter client for FinX
+Home-page: https://github.com/FiteAnalytics/fiteanalytics
+Author: Fite Analytics LLC
+Author-email: info@fiteanalytics.com
+License: APGL3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Dist: boto3
+Requires-Dist: bqplot
+Requires-Dist: graphviz
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: pydotplus
+Requires-Dist: quandl
+Requires-Dist: requests
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: tensorflow
+
+UNKNOWN
+
+
