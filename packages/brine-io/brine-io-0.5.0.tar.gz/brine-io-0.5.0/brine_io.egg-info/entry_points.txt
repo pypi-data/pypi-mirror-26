@@ -1,0 +1,3 @@
+[console_scripts]
+brine = brine.__main__:main
+

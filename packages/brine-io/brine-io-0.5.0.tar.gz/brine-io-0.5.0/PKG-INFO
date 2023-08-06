@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: brine-io
+Version: 0.5.0
+Summary: Dataset management for computer vision
+Home-page: https://github.com/brine-io/brine
+Author: David Ye
+Author-email: david@brine.io
+License: LICENSE
+Download-URL: https://github.com/brine-io/brine/archive/0.5.0.tar.gz
+Description: Dataset management for computer vision
+Keywords: brine
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
