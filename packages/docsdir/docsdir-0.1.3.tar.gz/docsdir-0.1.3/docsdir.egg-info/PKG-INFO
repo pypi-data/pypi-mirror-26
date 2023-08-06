@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: docsdir
+Version: 0.1.3
+Summary: Automatically maintains files and links in the directory with documentation of your projects.
+Home-page: http://pypi.python.org/pypi/docsdir
+Author: Grzegorz Krason
+Author-email: grzegorz.krason@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: doc,documentation,server
+Platform: UNKNOWN
