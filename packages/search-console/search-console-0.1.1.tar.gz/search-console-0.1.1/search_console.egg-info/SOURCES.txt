@@ -1,0 +1,9 @@
+README.md
+setup.py
+search_console/__init__.py
+search_console/api.py
+search_console.egg-info/PKG-INFO
+search_console.egg-info/SOURCES.txt
+search_console.egg-info/dependency_links.txt
+search_console.egg-info/requires.txt
+search_console.egg-info/top_level.txt
