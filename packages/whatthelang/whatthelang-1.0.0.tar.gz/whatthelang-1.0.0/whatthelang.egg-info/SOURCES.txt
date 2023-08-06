@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+requirements.txt
+setup.py
+whatthelang/__init__.py
+whatthelang/predict_lang.py
+whatthelang/test_predict_lang.py
+whatthelang.egg-info/PKG-INFO
+whatthelang.egg-info/SOURCES.txt
+whatthelang.egg-info/dependency_links.txt
+whatthelang.egg-info/requires.txt
+whatthelang.egg-info/top_level.txt
+whatthelang/model/lid.176.ftz
