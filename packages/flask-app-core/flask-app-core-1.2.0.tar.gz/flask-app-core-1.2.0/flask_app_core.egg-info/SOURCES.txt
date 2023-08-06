@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+flask_app_core/__init__.py
+flask_app_core/base_config.py
+flask_app_core.egg-info/PKG-INFO
+flask_app_core.egg-info/SOURCES.txt
+flask_app_core.egg-info/dependency_links.txt
+flask_app_core.egg-info/requires.txt
+flask_app_core.egg-info/top_level.txt
