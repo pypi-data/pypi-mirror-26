@@ -1,0 +1,5 @@
+archinfo
+capstone
+python-idb
+pyvex
+requests
