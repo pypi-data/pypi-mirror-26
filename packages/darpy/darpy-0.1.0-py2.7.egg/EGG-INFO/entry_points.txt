@@ -1,0 +1,3 @@
+[console_scripts]
+darpy = darpy.main:main
+
