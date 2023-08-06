@@ -1,0 +1,3 @@
+[console_scripts]
+minerboard = minerboard_uploder:main
+
