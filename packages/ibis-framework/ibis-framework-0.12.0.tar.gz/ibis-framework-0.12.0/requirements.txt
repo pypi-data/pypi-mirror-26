@@ -1,0 +1,5 @@
+enum34; python_version < '3'
+numpy>=1.10.0
+pandas>=0.18.1
+six
+toolz
