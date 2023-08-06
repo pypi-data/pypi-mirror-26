@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: minerboard
+Version: 0.0.13
+Summary: Uploader of Your miners API to minerboard.pro
+Home-page: https://github.com/Aksimant/minerboard
+Author: MinerBoard.pro
+Author-email: minerboard@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: README
+        =========
+        
+        Miners API data uploader to minerboard.pro
+        
+        Now Support ZecMiner(nvidia Eqihash) and ClaymoreDualMiner (AMD/Nvidia Ethash)
+        
+Keywords: minerboard.pro
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Users of minerboard.pro
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
