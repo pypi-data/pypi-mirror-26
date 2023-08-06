@@ -1,0 +1,8 @@
+README.md
+setup.py
+raml2spore/__init__.py
+raml2spore.egg-info/PKG-INFO
+raml2spore.egg-info/SOURCES.txt
+raml2spore.egg-info/dependency_links.txt
+raml2spore.egg-info/top_level.txt
+scripts/raml2spore

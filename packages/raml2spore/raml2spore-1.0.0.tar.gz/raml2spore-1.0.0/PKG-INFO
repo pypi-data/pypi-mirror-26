@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: raml2spore
+Version: 1.0.0
+Summary: convert RAML specs to SPORE specs.
+Home-page: http://github.com/xmonader/raml2spore
+Author: Ahmed T. Youssef
+Author-email: xmonader@gmail.com
+License: BSD 3-Clause License
+Description-Content-Type: UNKNOWN
+Description: Convert RAML specs to SPORE specs.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

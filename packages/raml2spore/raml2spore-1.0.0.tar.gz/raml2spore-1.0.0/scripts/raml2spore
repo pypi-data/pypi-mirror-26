@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+import os
+import os.path
+from argparse import ArgumentParser
+import raml2spore
+
+
+parser = ArgumentParser()
+parser.add_argument('--ramlfile', '-f', help='RAML file to convert.')
+
+parsed = parser.parse_args()
+ramlfile = parsed.ramlfile
+if os.path.exists(parsed.ramlfile):
+    print(raml2spore.spore_from_raml_file(parsed.ramlfile))
