@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: lingpy
+Version: 2.6
+Summary: Python library for automatic tasks in historical linguistics
+Home-page: http://lingpy.org
+Author: Johann-Mattis List and Simon Greenhill and Robert Forkel
+Author-email: info@lingpy.org
+License: gpl-3.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: historical linguistics,sequence alignment,computational linguistics,dialectology
+Platform: unix
+Platform: linux
+Platform: windows
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing :: Linguistic
