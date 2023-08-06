@@ -1,0 +1,8 @@
+Flask
+Flask-Restful
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Redislite
+Flask-Login
+pycrypto
+Pillow
