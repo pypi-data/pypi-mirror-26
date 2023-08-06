@@ -1,0 +1,4 @@
+azure-cli-core
+azure-monitor==0.3.0
+azure-mgmt-monitor==0.3.0
+azure-mgmt-resource==1.2.1
