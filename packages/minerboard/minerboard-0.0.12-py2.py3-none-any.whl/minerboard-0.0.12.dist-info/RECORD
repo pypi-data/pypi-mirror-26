@@ -1,0 +1,11 @@
+minerboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minerboard/config/config.ini,sha256=4fBSyeXFs4yl2SxakyF7BfUHs09XnhP9XWZCNEN3Sic,251
+minerboard/minerboard_core/__init__.py,sha256=pICPnyV6c-qzUAL2YYcDnRJO0Ky5aOB86hu8M4vUQ2w,106
+minerboard/minerboard_core/minerboard_uploder.py,sha256=pTQULxIZiHV6GO3Dh4lOI2leaAKOg-f3ihO03URYt0Q,5875
+minerboard-0.0.12.dist-info/DESCRIPTION.rst,sha256=ziihR03fTbGNjPTN7CtjTyEOa9lSdFeH2tfp3PMyncE,9
+minerboard-0.0.12.dist-info/METADATA,sha256=YI-ce7t76kOqWNf_L8WLcbL1u3nzr9tcueQnIHIM9AE,299
+minerboard-0.0.12.dist-info/RECORD,,
+minerboard-0.0.12.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+minerboard-0.0.12.dist-info/entry_points.txt,sha256=PZgFK8bz_y9zpon3tuIXhhz2HCaCAoUqAh36hBddetA,69
+minerboard-0.0.12.dist-info/metadata.json,sha256=1N7Ag7ZQ6_cux5KgGIu-zm6eJjcrYp8k5rvFBZtHXOE,723
+minerboard-0.0.12.dist-info/top_level.txt,sha256=UmCY6It4NObX4pKc-2D2iMXVtSxi3_EiB0KyPd60jlQ,11
