@@ -1,0 +1,3 @@
+[console_scripts]
+collate_patient_logfiles = collate_patient_logfiles:main
+
