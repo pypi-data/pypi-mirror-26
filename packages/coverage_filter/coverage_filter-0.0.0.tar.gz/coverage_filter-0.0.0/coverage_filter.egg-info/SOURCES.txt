@@ -1,0 +1,7 @@
+README.rst
+coverage_filter.py
+setup.py
+coverage_filter.egg-info/PKG-INFO
+coverage_filter.egg-info/SOURCES.txt
+coverage_filter.egg-info/dependency_links.txt
+coverage_filter.egg-info/top_level.txt
