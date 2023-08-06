@@ -1,0 +1,6 @@
+README.md
+setup.py
+pylinda.egg-info/PKG-INFO
+pylinda.egg-info/SOURCES.txt
+pylinda.egg-info/dependency_links.txt
+pylinda.egg-info/top_level.txt
