@@ -1,0 +1,14 @@
+README.rst
+setup.py
+ChomikBox/ChomikBox.py
+ChomikBox/PartFile.py
+ChomikBox/__init__.py
+ChomikBox/__version__.py
+ChomikBox/utils/FileTransferProgressBar.py
+ChomikBox/utils/SeekableHTTPFile.py
+ChomikBox/utils/__init__.py
+pyChomikBox.egg-info/PKG-INFO
+pyChomikBox.egg-info/SOURCES.txt
+pyChomikBox.egg-info/dependency_links.txt
+pyChomikBox.egg-info/requires.txt
+pyChomikBox.egg-info/top_level.txt

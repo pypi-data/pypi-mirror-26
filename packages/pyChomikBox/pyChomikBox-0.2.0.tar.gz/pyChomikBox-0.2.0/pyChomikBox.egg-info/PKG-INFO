@@ -1,0 +1,56 @@
+Metadata-Version: 1.2
+Name: pyChomikBox
+Version: 0.2.0
+Summary: Python library for Chomikuj.pl filesharing service
+Home-page: https://github.com/JuniorJPDJ/pyChomikBox
+Author: JuniorJPDJ
+Author-email: juniorjpdj@interia.pl
+License: LGPLv3+
+Description: pyChomikBox
+        ===========
+        
+        Python 2.7 and 3.5 (and wasn't tested at lower versions) library for Chomikuj.pl file sharing service.
+        It uses official app's (ChomikBox) protocol to comunicate with Chomikuj servers.
+        
+        
+        Installation
+        ------------
+        
+        Just use pip, as you would with all python packages
+        
+        .. code-block:: bash
+        
+            $ pip install pyChomikBox
+        
+        
+        Examples
+        --------
+        
+        A simple example of usage
+        
+        .. code-block:: python
+        
+            >>> from ChomikBox import Chomik
+            >>> c = Chomik('username', 'password')
+            >>> c.login()
+            >>> c
+            <ChomikBox.Chomik: username>
+            >>> print(c.list())
+            [<ChomikBox.ChomikFolder: "/prywatne/" (username)>, <ChomikBox.ChomikFolder: "/zachomikowane/" (username)>]
+        
+        This code is logging at Chomikuj as `username` with password `password` and printing all files and folders of root folder.
+        
+        You can find more examples in `examples` directory.
+        
+Keywords: chomikuj chomik file share sharing upload download uploader downloader
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Communications :: Chat
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
