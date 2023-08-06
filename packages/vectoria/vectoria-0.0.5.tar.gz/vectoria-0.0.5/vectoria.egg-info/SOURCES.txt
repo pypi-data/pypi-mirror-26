@@ -1,0 +1,10 @@
+README.rst
+setup.py
+vectoria/Embeddings.py
+vectoria/Sequencers.py
+vectoria/__init__.py
+vectoria.egg-info/PKG-INFO
+vectoria.egg-info/SOURCES.txt
+vectoria.egg-info/dependency_links.txt
+vectoria.egg-info/requires.txt
+vectoria.egg-info/top_level.txt
