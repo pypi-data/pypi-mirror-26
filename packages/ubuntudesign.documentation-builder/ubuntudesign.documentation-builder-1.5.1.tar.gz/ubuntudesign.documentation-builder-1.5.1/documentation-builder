@@ -1,0 +1,18 @@
+#! /usr/bin/env python3
+
+# Core modules
+import locale
+import sys
+
+# Local modules
+from ubuntudesign.documentation_builder import cli
+
+
+# Set UTF-8 locale
+if 'UTF-8' not in locale.getlocale():
+    locale.setlocale(locale.LC_ALL, 'C.UTF-8')
+
+if __name__ == "__main__":
+    # Run the CLI
+    cli.main(sys.argv[1:])
+
