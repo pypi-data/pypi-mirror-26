@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: wwu_tinker
+Version: 0.1a1
+Summary: Free hyperparameter optimization webservice
+Home-page: http://github.com/hutchresearch/wwu_tinker
+Author: WWU
+Author-email: brian.hutchinson@wwu.edu
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3

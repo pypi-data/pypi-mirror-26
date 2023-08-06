@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+wwu_tinker/__init__.py
+wwu_tinker/configuration.py
+wwu_tinker/experiment.py
+wwu_tinker/variable.py
+wwu_tinker.egg-info/PKG-INFO
+wwu_tinker.egg-info/SOURCES.txt
+wwu_tinker.egg-info/dependency_links.txt
+wwu_tinker.egg-info/not-zip-safe
+wwu_tinker.egg-info/requires.txt
+wwu_tinker.egg-info/top_level.txt
