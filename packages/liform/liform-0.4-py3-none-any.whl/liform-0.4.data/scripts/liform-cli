@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+if __name__ == '__main__':
+    try:
+        from colorama import init
+        init()
+    except:
+        pass
+
+    from liform.commands.processor import CommandProcessor
+
+    command_processor = CommandProcessor()
+    command_processor.run()
