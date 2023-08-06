@@ -1,0 +1,12 @@
+muffin_rest/__init__.py,sha256=oyZlzliiU2BfQvVpaVCsHEpH713U9SjrWIT2SNUkN3w,1273
+muffin_rest/api.py,sha256=opD-iIsQ-0Ar7nqFzVVyZIELXdWML3RTOGJn1QCeS5M,3689
+muffin_rest/filters.py,sha256=p5jP-ScetFdNm5xvX1buat-sa4_V6Auiwd13DghhWFg,3123
+muffin_rest/handlers.py,sha256=ViRx_H6TP_hY4pJ7T4ytUXet2SDv3_4wiFKcySTzvxE,9858
+muffin_rest/peewee.py,sha256=cDoDdD_saKrfjC_gVfHZfSbBPMKanheY4zE-031eFQg,3750
+muffin_rest/templates/swagger.html,sha256=74CWI8jWcOm7H0Xz5T4Klw2qWBmzDTAhOxGHb9NJe4w,1316
+muffin_rest-1.3.0.dist-info/DESCRIPTION.rst,sha256=R5hF1DA4MUTllctxc94cSN18wHUfx7uIgK3QU0mrbaQ,1467
+muffin_rest-1.3.0.dist-info/METADATA,sha256=I8ef389LG-CuPSwiIn-MDiQ8F_TSfGYXcEsEnj2FObI,2339
+muffin_rest-1.3.0.dist-info/RECORD,,
+muffin_rest-1.3.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+muffin_rest-1.3.0.dist-info/metadata.json,sha256=M0ssoFNZLMt7u13SVBwczWZjrEUtmdoxP3D7ewrzOB0,1027
+muffin_rest-1.3.0.dist-info/top_level.txt,sha256=HbkvTHa4P9UnCl-7SojUzWWDsVaBOvhcan7VQpM465M,12
