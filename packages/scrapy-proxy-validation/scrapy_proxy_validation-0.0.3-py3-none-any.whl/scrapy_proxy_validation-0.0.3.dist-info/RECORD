@@ -1,0 +1,14 @@
+scrapy_proxy_validation/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+scrapy_proxy_validation/_version.py,sha256=MGChQ4e2Xj--78BcqlU9QYdV1RPgR4jPnwURU0L7hdc,498
+scrapy_proxy_validation/downloadermiddlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_proxy_validation/downloadermiddlewares/proxy_validation.py,sha256=bauQbe2triOCUUkv5Slqc0Exga-Xy4ZHcG7nZfpmML8,3220
+scrapy_proxy_validation/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_proxy_validation/settings/default_settings.py,sha256=vUkobaVaYA1nN9c1VREPViP8LNkTZFdZpP5jUSAkYKA,58
+scrapy_proxy_validation/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_proxy_validation/utils/recycle_request.py,sha256=J_SXYKJ8QYIe8Mo4W48NjTqNR-ATCgnjPCioVw-hWM4,152
+scrapy_proxy_validation-0.0.3.dist-info/DESCRIPTION.rst,sha256=LHRWjsMVKFbZJqwwprbkk4seurxD-_8YRoXvrUpRU0o,4151
+scrapy_proxy_validation-0.0.3.dist-info/METADATA,sha256=itjUVE3m3ZrdF-zL5yg0TSnz-i_NuMu1lQxnn3xIjVw,5044
+scrapy_proxy_validation-0.0.3.dist-info/RECORD,,
+scrapy_proxy_validation-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+scrapy_proxy_validation-0.0.3.dist-info/metadata.json,sha256=fXLTLQmmzpQk9JxIncg-cc6kOxWugnS7C-EdKiufdVY,1017
+scrapy_proxy_validation-0.0.3.dist-info/top_level.txt,sha256=dhx-QvGpvTYEi3rhPRCi-2LS6_6DNKmvK__MV0qRJNg,24
