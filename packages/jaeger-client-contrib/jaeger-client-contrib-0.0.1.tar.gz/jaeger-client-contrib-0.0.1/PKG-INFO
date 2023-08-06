@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: jaeger-client-contrib
+Version: 0.0.1
+Summary: Utilities for Jaeger Python Client
+Home-page: https://github.com/timonwong/jaeger-client-python-contrib
+Author: Timon Wong
+Author-email: timon86.wang@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Utilities for Jaeger Python Client
+        ==================================
+        
+Keywords: jaeger,tracing,opentracing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
