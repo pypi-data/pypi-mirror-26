@@ -1,0 +1,5 @@
+setup.py
+siteboss.egg-info/PKG-INFO
+siteboss.egg-info/SOURCES.txt
+siteboss.egg-info/dependency_links.txt
+siteboss.egg-info/top_level.txt
