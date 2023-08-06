@@ -1,0 +1,5 @@
+setup.py
+my_print_hello.egg-info/PKG-INFO
+my_print_hello.egg-info/SOURCES.txt
+my_print_hello.egg-info/dependency_links.txt
+my_print_hello.egg-info/top_level.txt
