@@ -1,0 +1,12 @@
+fortiosapi/__init__.py,sha256=D9RkEbOo4VdhxcxDvmNf1pmjFwLSgAJq6UGA7pvIh_k,35
+fortiosapi/fortigatemon.py,sha256=ATSoRPdi4Fet_qtObboyCWaYwzmYyIks-IzmlJ2mMbk,7906
+fortiosapi/fortiosapi.py,sha256=n3r0DcgHAbXyM1BAqBpnUWKD_qFHzlyrGGQbeCy2M8Y,14155
+fortiosapi/fortiosapi_flymake.py,sha256=vg0j-xCoeUmmV7wHVoiGSA3YX_rdv-HWUkuTWYuNqNg,12656
+fortiosapi/testapi.py,sha256=IPagAotzdxYO0lQR-DLPk7fSrd_48LBPp3okjv0PZ38,1119
+fortiosapi/testssh.py,sha256=WexPQGwqFWoDYNl2lgSGD9uLVKdhDAXFhZkN7thWB5s,2415
+fortiosapi-0.9.8.dist-info/DESCRIPTION.rst,sha256=8yYmHMpkDxFiqFOdFrwwlK7QofAgUdD87ygjPOj4S7c,727
+fortiosapi-0.9.8.dist-info/METADATA,sha256=h6GjKBRU5115fboaSeLDQ9aDjM7ncNaH7NbO6uaIg80,1333
+fortiosapi-0.9.8.dist-info/RECORD,,
+fortiosapi-0.9.8.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+fortiosapi-0.9.8.dist-info/metadata.json,sha256=8obF3kXasT9cT6Q4BCSmhjUujwGwD6607a--CrvGDgI,799
+fortiosapi-0.9.8.dist-info/top_level.txt,sha256=zXPxu_rLqSlcs2FhD-uyv6M6LKqYavr1YIOEfy-DfCk,11
