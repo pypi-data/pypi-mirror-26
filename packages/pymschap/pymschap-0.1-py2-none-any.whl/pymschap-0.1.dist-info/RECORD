@@ -1,0 +1,15 @@
+pymschap/U32.py,sha256=tVTW93BzJyVy6I71tdpQfpmb2iCPSMmiG48MxXHZAmQ,4991
+pymschap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymschap/des.py,sha256=jqK4TdwKz96d8BEIPzCMYvzu2XWs1pUn1Aw3DB-iAoU,2272
+pymschap/des_c.py,sha256=RDcevMJl7hDO2APDN1du4hgnq4_BOeKaNN7lPCA3Lww,8360
+pymschap/des_data.py,sha256=ucXXZ-TS1njvNTGJFg61ZJo3Qn8xhKofoBcMdA1IW7Y,20596
+pymschap/md4.py,sha256=MhwCpYSb6oZaz4lfY2Naew0PUlw-1DSfEph_ml38L3A,9104
+pymschap/mppe.py,sha256=EazOYRac5rQfHQm9QspD7umD0oLuBykfXOPuGMCeAzA,9536
+pymschap/mschap.py,sha256=P7ONnSVTBH4t8N2LK8ssXUnkzssMY_fWYZoaEvhWBEA,3627
+pymschap/utils.py,sha256=rkjd7nqPyGOibA1ka786IU8zVHrmL7nCPVgZwBGgodo,3227
+pymschap-0.1.dist-info/DESCRIPTION.rst,sha256=cAEaGWmgnYDQDxJS1j6Zhbh0ss_D4DhTiLZ6GPa0n4I,1663
+pymschap-0.1.dist-info/METADATA,sha256=_KARcG8wSwsyPxpaUoBrHpbun3iVOrqCHo1jR2p1uj8,2170
+pymschap-0.1.dist-info/RECORD,,
+pymschap-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+pymschap-0.1.dist-info/metadata.json,sha256=-zSW82Dr4D-Ae-NW6ecuHquUHEEdBx3Av2anxiH8buM,695
+pymschap-0.1.dist-info/top_level.txt,sha256=ojldt53KNhPwCBh20iLUE5mcUEhUUFnq90wl8owIAdg,9
