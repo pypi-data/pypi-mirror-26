@@ -1,0 +1,15 @@
+numpy
+cython
+flask
+scipy
+pandas
+sqlalchemy
+flask-restful
+flask-restless
+flask-script
+flask-sqlalchemy
+flask-uploads
+flask-wtf
+textblob
+Simplejson
+wtforms
