@@ -1,0 +1,142 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="ploneintranet.activitystream">
+
+  <include file="permissions.zcml" package="ploneintranet.microblog" />
+
+  <include package="plone.tiles" file="meta.zcml" />
+
+  <plone:tile
+      name="activitystream.tile"
+      title="Activity stream tile"
+      description="Provides an activity stream as a tile"
+      add_permission="cmf.ManagePortal"
+      class=".stream.StreamTile"
+      permission="ploneintranet.microblog.ViewStatusUpdate"
+      for="*"
+      layer=".interfaces.IPloneIntranetActivitystreamLayer"
+      />
+
+  <browser:page
+      name="tagstream"
+      for="plone.app.layout.navigation.interfaces.INavigationRoot"
+      class=".stream.TagStream"
+      template="templates/tag-stream.html"
+      layer=".interfaces.IPloneIntranetActivitystreamLayer"
+      permission="ploneintranet.microblog.ViewStatusUpdate"
+      />
+
+    <browser:page
+        name="comment.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateView"
+        template="templates/comment.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.AddStatusUpdate"
+        />
+
+    <browser:page
+        name="post.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateView"
+        template="templates/post.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.AddStatusUpdate"
+        />
+
+    <browser:page
+        name="content-stream.html"
+        for="*"
+        class=".content_stream.ContentStreamView"
+        template="templates/content-stream.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.ViewStatusUpdate"
+        />
+
+    <browser:page
+        name="content-share.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateView"
+        template="templates/content-share.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.ViewStatusUpdate"
+        />
+
+    <!-- edit/delete actions via traversal views -->
+
+    <browser:page
+        name="statusupdate"
+        for="plone.app.layout.navigation.interfaces.INavigationRoot"
+        class=".statusupdate_traverse.StatusUpdateTraverse"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.ViewStatusUpdate"
+      />
+
+    <browser:page
+        name="post-menu.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateView"
+        template="templates/post-menu.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.AddStatusUpdate"
+        />
+
+    <browser:page
+        name="panel-delete-post.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateDeletePanel"
+        template="templates/panel-delete-post.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.DeleteOwnStatusUpdate"
+        />
+
+    <browser:page
+        name="panel-edit-post.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateEditPanel"
+        template="templates/panel-edit-post.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.ModifyOwnStatusUpdate"
+        />
+
+    <!-- special modify views handle POST -->
+    <browser:page
+        name="post-edited.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateModify"
+        template="templates/post.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.ModifyOwnStatusUpdate"
+        />
+
+    <browser:page
+        name="post-deleted.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateModify"
+        template="templates/post-deleted.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.DeleteOwnStatusUpdate"
+        />
+
+    <browser:page
+        name="comment-edited.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateModify"
+        template="templates/comment.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.ModifyOwnStatusUpdate"
+        />
+
+    <browser:page
+        name="comment-deleted.html"
+        for="ploneintranet.microblog.interfaces.IStatusUpdate"
+        class=".statusupdate.StatusUpdateModify"
+        template="templates/comment-deleted.html"
+        layer=".interfaces.IPloneIntranetActivitystreamLayer"
+        permission="ploneintranet.microblog.DeleteOwnStatusUpdate"
+        />
+
+</configure>

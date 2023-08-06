@@ -1,0 +1,294 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ploneintranet.workspace">
+
+    <genericsetup:upgradeStep
+        title="Customize file and image widgets"
+        description="To allow images and files to be replaced"
+        source="*"
+        destination="0003"
+        handler=".base.import_portal_types"
+        profile="ploneintranet.workspace:default" />
+
+    <genericsetup:upgradeStep
+        title="Reset empty tags"
+        description="Empty tags were saved as (u'',) rather than ()"
+        source="*"
+        destination="0004"
+        handler=".base.reset_empty_tags"
+        profile="ploneintranet.workspace:default" />
+
+    <genericsetup:upgradeStep
+        title="Upgrade step to fill the review state select in case manager working"
+        description="We prefill the select with some review states which we know are useful"
+        source="*"
+        destination="0007"
+        handler=".base.import_portal_registry"
+        profile="ploneintranet.workspace:default" />
+
+    <genericsetup:upgradeStep
+        title="Upgrade step to add the archived fields for searching"
+        description="Adds is_archived and archival_date"
+        source="*"
+        destination="0008"
+        handler=".base.import_search_registry"
+        profile="ploneintranet.workspace:default" />
+
+    <genericsetup:upgradeStep
+        title="Statusupdate edit/delete"
+        description="Grant manage statusupdate to teamadmin"
+        source="*"
+        destination="0009"
+        handler=".base.statusupdate_edit_delete"
+        profile="ploneintranet.workspace:default" />
+
+    <genericsetup:upgradeStep
+        title="Reread workflow"
+        description="In order to assign the folder_in_workspace_workflow"
+        source="*"
+        destination="0010"
+        handler=".base.update_workflows"
+        profile="ploneintranet.workspace:default"
+      />
+
+    <genericsetup:registerProfile
+        name="to_0011"
+        title="Upgrade profile that includes the ploneintranet.workspace.mail content type"
+        description=""
+        directory="profiles/to_0011"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Import the ploneintranet.workspace.mail content type"
+        description=""
+        source="*"
+        destination="0011"
+        handler=".to_0011.add_mail_type"
+        profile="ploneintranet.workspace:default"
+      />
+
+    <genericsetup:upgradeStep
+        title="Configure the portal for extra bulk actions"
+        description=""
+        source="*"
+        destination="0012"
+        handler=".bulk_actions.bulk_actions_configuration"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:upgradeStep
+        title="Reread catalog config"
+        description="Activates the new invitees index and populates it (Cave: reindexes all events!)"
+        source="*"
+        destination="0014"
+        handler=".to_0014.activate_invitees"
+        profile="ploneintranet.workspace:default"
+      />
+
+    <genericsetup:registerProfile
+        name="to_0015"
+        title="Upgrade profile that includes registry record to configure the subscribe action"
+        description=""
+        directory="profiles/to_0015"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile to make the subscride bulk action configurable"
+        description=""
+        source="*"
+        destination="0015"
+        handler=".to_0015.subscribe_bulk_action_configurable"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0016"
+        title="Upgrade profile that includes registry record to configure the workspace sort options"
+        description=""
+        directory="profiles/to_0016"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile to control workspaces sort options"
+        description=""
+        source="*"
+        destination="0016"
+        handler=".to_0016.workspaces_sort_options"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0017"
+        title="Upgrade profile that includes registry record to configure autosave for selected portal types"
+        description=""
+        directory="profiles/to_0017"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile to control autosave for selected portal types"
+        description=""
+        source="*"
+        destination="0017"
+        handler=".to_0017.autosave_portal_types"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:upgradeStep
+        title="Reread catalog config"
+        description="Activates the new timezone index and populates it (Cave: reindexes all events!)"
+        source="*"
+        destination="0018"
+        handler=".to_0018.activate_timezone"
+        profile="ploneintranet.workspace:default"
+      />
+
+    <genericsetup:upgradeStep
+        title="Allow workgroups in workspacecontainers"
+        description="Add the workgroups type to the allowed items in workspacecontainers."
+        source="*"
+        destination="0019"
+        handler=".to_0019.workspacecontainer_contains_workgroups"
+        profile="ploneintranet.workspace:default" />
+      />
+
+    <genericsetup:upgradeStep
+        title="Setup default grouping"
+        description=""
+        source="*"
+        destination="0020"
+        handler=".to_0020.setup_default_grouping"
+        profile="ploneintranet.workspace:default" />
+      />
+
+    <genericsetup:registerProfile
+        name="to_0021"
+        title="Upgrade profile that includes registry record for filtering the documents in the sidebar"
+        description=""
+        directory="profiles/to_0021"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile that includes registry record for filtering the documents in the sidebar"
+        description=""
+        source="*"
+        destination="0021"
+        handler=".to_0021.create_sidebar_registry_records"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0022"
+        title="Upgrade profile that includes registry record for inclusion of an slcclicktracker element in the content default view templates"
+        description=""
+        directory="profiles/to_0022"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile that includes registry record for inclusion of an slcclicktracker element in the content default view templates"
+        description=""
+        source="*"
+        destination="0022"
+        handler=".to_0022.create_clicktracker_registry_record"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0023"
+        title="Upgrade profile that includes registry record to disallow the automatic rename of objects after the title has changed"
+        description=""
+        directory="profiles/to_0023"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile that includes registry record to disallow the automatic rename of objects after the title has changed"
+        description=""
+        source="*"
+        destination="0023"
+        handler=".to_0023.create_autorename_record"
+        profile="ploneintranet.workspace:default"
+        />
+
+
+    <genericsetup:registerProfile
+        name="to_0024"
+        title="Upgrade profile that includes registry record to preserve the template ownership after a copy"
+        description=""
+        directory="profiles/to_0024"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile that includes registry record to preserve the template ownership after a copy"
+        description=""
+        source="*"
+        destination="0024"
+        handler=".to_0024.create_preserve_template_ownership_record"
+        profile="ploneintranet.workspace:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0025"
+        title="Upgrade profile that includes registry record for phase due dates"
+        description=""
+        directory="profiles/to_0025"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeSteps
+        source="0024"
+        destination="0025"
+        profile="ploneintranet.workspace:default">
+
+      <genericsetup:upgradeDepends
+          title="registry records for phase due dates"
+          import_profile="ploneintranet.workspace.upgrades:to_0025"
+          run_deps="True"/>
+
+    </genericsetup:upgradeSteps>
+
+
+    <genericsetup:upgradeStep
+        title="Reread workflow"
+        description="In order to change the name of a transition"
+        source="0025"
+        destination="0026"
+        handler=".base.update_workflows_no_reindex"
+        profile="ploneintranet.workspace:default"
+      />
+
+    <genericsetup:registerProfile
+        name="to_0027"
+        title="Upgrade profile that includes registry record to set the autosave delay"
+        description=""
+        directory="profiles/to_0027"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Install the upgrade profile that includes registry record to set the autosave delay"
+        description=""
+        source="*"
+        destination="0027"
+        handler=".to_0027.configure_autosave_delay"
+        profile="ploneintranet.workspace:default"
+        />
+
+</configure>

@@ -1,0 +1,87 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ploneintranet">
+
+  <plone:behavior
+      title="Case Metadata"
+      description="Adds Case specific Metadata"
+      provides=".case.ICaseMetadata"
+      for="ploneintranet.workspace.case.ICase"
+      />
+
+  <plone:behavior
+      title="Image field"
+      description=""
+      provides=".image.IImageField"
+      factory=".image.ImageField"
+      for="plone.app.contenttypes.interfaces.IImage"
+      marker=".image.IImageField"
+      />
+
+  <plone:behavior
+      title="File field"
+      description=""
+      provides=".file.IFileField"
+      factory=".file.FileField"
+      for="plone.app.contenttypes.interfaces.IFile"
+      marker=".file.IFileField"
+      />
+
+  <plone:behavior
+      title="PloneIntranet Event Fields"
+      description=""
+      provides=".event.IPloneIntranetEvent"
+      for="plone.app.contenttypes.interfaces.IEvent"
+      />
+
+  <plone:behavior
+      title="Mail"
+      description="Adds mail behavior"
+      provides=".mail.IMail"
+      factory=".mail.Mail"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      marker=".mail.IMail"
+      />
+
+  <!-- behavior for turning a workspace into a membrane group -->
+  <plone:behavior
+      title="Membrane Group (Workspace)"
+      description="Use this content as a membrane group"
+      provides=".group.IMembraneGroup"
+      marker=".group.IMembraneGroup"
+      factory=".group.MembraneWorkspaceGroup"
+      for="ploneintranet.workspace.workspacefolder.IWorkspaceFolder"
+      />
+
+  <adapter
+    factory=".group.MembraneWorkspaceGroup"
+    provides="Products.membrane.interfaces.IGroup"
+    />
+  <!-- Adapt our dexterity membrane groups behavior to IMembraneGroupProperties,
+  so that our membrane-workspaces can have property sheets, e.g. for title -->
+  <adapter
+    factory=".group.MembraneGroupProperties"
+    provides="Products.membrane.interfaces.IMembraneGroupProperties"
+    />
+
+  <!-- Adapt dexterity membrane users to IMembraneUserGroups so that the
+  lookup of user->groups in PAS is working for our workspaces.
+  See the docstring of MembraneWorkspaceGroupsProvider for more details.
+   -->
+  <adapter
+    for="dexterity.membrane.behavior.user.IMembraneUser"
+    factory=".group.MembraneWorkspaceGroupsProvider"
+    provides="Products.membrane.interfaces.user.IMembraneUserGroups"
+    />
+  <!-- Adapt dexterity group users to IMembraneGroupGroups so that the
+  lookup of group->groups in PAS is working for our workspaces.
+  See the docstring of MembraneWorkspaceGroupsProvider for more details.
+   -->
+  <adapter
+    for=".group.IMembraneGroup"
+    factory=".group.MembraneWorkspaceGroupsProvider"
+    provides="Products.membrane.interfaces.group.IMembraneGroupGroups"
+    />
+
+</configure>

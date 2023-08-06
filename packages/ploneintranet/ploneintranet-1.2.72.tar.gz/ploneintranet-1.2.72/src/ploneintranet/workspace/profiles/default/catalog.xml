@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+ <index name="invitees" meta_type="KeywordIndex">
+  <indexed_attr value="invitees"/>
+ </index>
+ <index name="mimetype" meta_type="FieldIndex">
+  <indexed_attr value="mimetype"/>
+ </index>
+ <column value="mimetype"/>
+ <column value="timezone"/>
+</object>

@@ -1,0 +1,117 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="ploneintranet">
+
+  <body class="view-secure">
+    <metal:content fill-slot="content" tal:define="
+        ploneview here/@@plone;
+        token context/@@authenticator/token;
+      ">
+        <form  class="canvas-toolbar pat-inject pat-autosubmit"
+               action="${here/absolute_url}/workspaces.html#workspaces"
+               method="POST"
+               >
+            <label class="bare pat-select" id="filter-option-sorting">
+              <select name="sort">
+                <option tal:repeat="o view/sort_options"
+                        selected="${o/selected}"
+                        value="${o/value}"
+                      >${o/content}</option>
+              </select>
+            </label>
+            <label class="bare pat-select" id="filter-option-grouping">
+              <select name="grouping">
+                <tal:r repeat="o view/grouping_options">
+                    <option value="${o/value}" tal:attributes="selected python:request.get('sort')==o['value'] and 'selected' or None" tal:content="o/content" i18n:translate="">Option</option>
+                </tal:r>
+              </select>
+            </label>
+            <label class="bare pat-select" id="filter-option-workspace-types">
+                <select name="workspace_type">
+                  <tal:r repeat="o view/workspace_types">
+                    <option value="${o/value}" tal:attributes="selected python:request.get('workspace_type')==o['value'] and 'selected' or None" tal:content="o/content" i18n:translate="">Option</option>
+                  </tal:r>
+                </select>
+            </label>
+            <label class="pat-checklist" title="Show or hide archived workspace" i18n:attributes="title" id="filter-option-archived">
+              <!-- Even though pat-depends is applied on archived workspace tiles, the value of the following checkbox must still be stored on the user object. The actual hiding and showing of the archived workspace tile is handled by pat-depends, but may also be handled server side (be including or not including the tile in the markup) if this offers significant performance advantages -->
+              <input type="checkbox"
+                     name="archived"
+                     checked="${python:request.get('archived') and 'checked' or None}"
+                    > <tal:archived i18n:translate="label_show_archived">Archived</tal:archived>
+            </label>
+            <label class="pat-checklist" title="Show all workspaces or only workspace you're a member of." i18n:attributes="title" id="filter-option-my-workspaces">
+              <input type="checkbox"
+                     name="member"
+                     checked="${python:request.get('member') and 'checked' or None}"
+                    ><tal:label i18n:translate="">Only my workspaces</tal:label>
+            </label>
+            <div class="icons">
+               <a href="${view/target/absolute_url}/@@add_workspace#document-content" data-pat-modal="class: large" title="Create a new workspace" class="icon create pat-modal" tal:condition="view/can_add" i18n:translate="" i18n:attributes="title">Create workspace</a>
+               <span tal:replace="structure context/@@authenticator/authenticator"/>
+            </div>
+             <input type="search" placeholder="Search workspaces" focus name="SearchableText" i18n:attributes="placeholder" tal:attributes="value request/SearchableText|nothing">
+        </form>
+
+        <tal:no_grouping condition="python:request.get('grouping', '') == ''">
+          <span id="workspaces">
+            <div class="row tiles workspaces pat-masonry" data-pat-masonry="column-width: .grid-sizer; gutter: 0; item-selector: .tile-workspaces;" tal:define="wrkspc view/workspaces">
+              <div class="grid-sizer four columns"></div>
+              <tal:rep repeat="w wrkspc">
+                <tal:workspace tal:replace="structure w/@@workspace.tile" />
+              </tal:rep>
+            </div>
+          </span>
+        </tal:no_grouping>
+
+        <tal:group_by_division condition="python:request.get('grouping', '') == 'division'">
+          <span id="workspaces">
+            <tal:def define="
+                       wbd view/workspaces_by_division;
+                       divisions view/divisions;
+                     ">
+              <tal:r repeat="division divisions">
+                <section tal:define="workspaces python:wbd[division.token]" tal:condition="workspaces">
+                  <article class="pat-rich canvas-intro">
+                    <h1 class="group-title">${division/title}</h1>
+                    <p class="description" tal:condition="division/description">${division/description}</p>
+                  </article>
+                  <div class="row tiles workspaces pat-masonry" data-pat-masonry="column-width: .grid-sizer; gutter: 0; item-selector: .tile-workspaces;">
+                    <div class="grid-sizer four columns"></div>
+                    <tal:r repeat="w workspaces">
+                      <tal:workspace tal:replace="structure w/@@workspace.tile" />
+                    </tal:r>
+                  </div>
+                </section>
+              </tal:r>
+              <section tal:condition="python:wbd.get('')">
+                  <article class="pat-rich canvas-intro">
+                    <h1 class="group-title" i18n:translate="">
+                      Ungrouped
+                    </h1>
+                  </article>
+                  <div class="row tiles workspaces pat-masonry" data-pat-masonry="column-width: .grid-sizer; gutter: 0; item-selector: .tile-workspaces;">
+                    <div class="grid-sizer four columns"></div>
+                    <tal:r repeat="w python:wbd['']">
+                      <tal:workspace tal:replace="structure w/@@workspace.tile" />
+                    </tal:r>
+                  </div>
+                </section>
+            </tal:def>
+          </span>
+        </tal:group_by_division>
+
+
+        <tal:group_by_workspace_type condition="python:request.get('grouping', 'workspace_type') == ''">
+
+            <!-- Not implemented yet -->
+
+        </tal:group_by_workspace_type>
+
+    </metal:content>
+  </body>
+</html>

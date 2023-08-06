@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    >
+
+    <genericsetup:upgradeStep
+        title="Add the calendar app"
+        description=""
+        source="*"
+        destination="0002"
+        handler=".to0002.add_calendar_app"
+        profile="ploneintranet.calendar:default"
+      />
+
+    <genericsetup:registerProfile
+        name="to0003"
+        title="Fullcalendar day span configurable"
+        description=""
+        directory="profiles/to0003"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+    <genericsetup:upgradeStep
+        title="Fullcalendar day span configurable"
+        description=""
+        source="*"
+        destination="0003"
+        handler=".to0003.add_registry_record"
+        profile="ploneintranet.calendar:default"
+      />
+
+</configure>

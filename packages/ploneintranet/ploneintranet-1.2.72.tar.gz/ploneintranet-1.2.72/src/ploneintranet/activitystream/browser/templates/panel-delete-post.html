@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      i18n:domain="ploneintranet"
+>
+  <body>
+    <div class="modal"
+         id="content"
+    >
+      <div class="pat-modal"
+           id="document-content"
+      >
+        <h1 i18n:translate="">Delete post</h1>
+        <form class="wizard-box pat-inject"
+              action="${view/form_action}"
+              method="post"
+              data-pat-inject="${view/data_pat_inject}"
+        >
+          <div class="panel-body">
+            <div class="container">
+              <input name="statusupdate_id"
+                     type="hidden"
+                     value="${context/id}"
+              />
+              <input name="delete"
+                     type="hidden"
+                     value="true"
+              />
+              <article>
+                <p i18n:translate="">${view/description}</p>
+              </article>
+            </div>
+          </div>
+          <div class="buttons panel-footer">
+            <div class="container">
+              <button class="close-panel icon-ok-circle"
+                      type="submit"
+                      i18n:translate=""
+              >
+                I am sure, delete now
+              </button>
+              <button class="close-panel icon-cancel-circle"
+                      type="button"
+                      i18n:translate="label_cancel"
+              >
+                Cancel
+              </button>
+              <tal:token tal:replace="structure context/@@authenticator/authenticator" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

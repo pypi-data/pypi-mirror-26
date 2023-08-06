@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="ploneintranet">
+  <record name="ploneintranet.layout.splashpage_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>True</default>
+      <title>Turn on the display of a first time splash page</title>
+      <description>If the user logs in for the first time, he will see a splash page overlay which can contain introductory information stored in splashpage_content.</description>
+      <required>False</required>
+    </field>
+    <value purge="false">True</value>
+  </record>
+  <record name="ploneintranet.layout.splashpage_uid">
+    <field type="plone.registry.field.TextLine">
+      <default>splashpage-1</default>
+      <title>Configure a unique identifier for the splash page</title>
+      <description>This UID is used to store the information in the user's browser if the splashpage has been shown already. If you want to make the splashpage reappear for all users, change the UID.</description>
+      <required>False</required>
+    </field>
+    <value purge="false">splashpage-1</value>
+  </record>
+  <record name="ploneintranet.layout.splashpage_content">
+    <field type="plone.registry.field.Text">
+      <default></default>
+      <title>Content of the splashpage</title>
+      <description>This is the complete html markup used to render the splashpage.</description>
+      <required>False</required>
+    </field>
+    <value purge="false">&lt;div class=&quot;panel-content&quot;&gt;
+    &lt;hr class=&quot;trigger splash-trigger collapsible-open&quot;&gt;
+    &lt;div class=&quot;content pat-stacks&quot;&gt;
+        &lt;article id=&quot;introduce&quot; class=&quot;container has-image visible&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-mobile.png)&quot;&gt;
+            &lt;h1&gt;Welcome back!&lt;/h1&gt;
+            &lt;p&gt;
+                We would like to introduce you to the new Quaive. Quaive has been redesigned so that it now works on touch screens (mobile/tablets).
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;a href=&quot;#new-dashboard&quot; class=&quot;pat-button&quot;&gt;Next…&lt;/a&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+        &lt;article id=&quot;new-dashboard&quot; class=&quot;container has-image hidden&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-dashboard.png); display: none;&quot;&gt;
+            &lt;h1&gt;Dashboard&lt;/h1&gt;
+            &lt;p&gt;
+                This is the new Dashboard. The Dashboard is the home for your personal shortcuts to your most important places.
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;a href=&quot;#bookmark-workspaces&quot; class=&quot;pat-button&quot;&gt;Next…&lt;/a&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+        &lt;article id=&quot;bookmark-workspaces&quot; class=&quot;container has-image hidden&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-bookmark-workspaces.png); display: none;&quot;&gt;
+            &lt;h1&gt;Bookmark workspaces&lt;/h1&gt;
+            &lt;p&gt;
+                You can add items to  your dashboard like this.
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;a href=&quot;#bookmark-items&quot; class=&quot;pat-button&quot;&gt;Next…&lt;/a&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+        &lt;article id=&quot;bookmark-items&quot; class=&quot;container has-image hidden&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-bookmark-apps.png); display: none;&quot;&gt;
+            &lt;h1&gt;Bookmark anything&lt;/h1&gt;
+            &lt;p&gt;
+                You can also add contacts and apps. Same for App bookmarking.
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;a href=&quot;#navigate&quot; class=&quot;pat-button&quot;&gt;Next…&lt;/a&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+        &lt;article id=&quot;navigate&quot; class=&quot;container has-image hidden&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-workspace-landing.png); display: none;&quot;&gt;
+            &lt;h1&gt;Navigation&lt;/h1&gt;
+            &lt;p&gt;
+                For deeper research, the navigation bar lets you switch between screens.
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;a href=&quot;#search&quot; class=&quot;pat-button&quot;&gt;Next…&lt;/a&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+        &lt;article id=&quot;search&quot; class=&quot;container has-image hidden&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-search.png); display: none;&quot;&gt;
+            &lt;h1&gt;Search&lt;/h1&gt;
+            &lt;p&gt;
+                Or use our new powerful context search.
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;a href=&quot;#enjoy&quot; class=&quot;pat-button&quot;&gt;Next…&lt;/a&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+        &lt;article id=&quot;enjoy&quot; class=&quot;container has-image hidden&quot; style=&quot;background-image: url(++theme++ploneintranet.theme/generated/media/pi-dashboard.png); display: none;&quot;&gt;
+            &lt;h1&gt;Enjoy!&lt;/h1&gt;
+            &lt;p&gt;
+                We  hope you will enjoy working with the new Quaive.
+            &lt;/p&gt;
+            &lt;p class=&quot;button-bar&quot;&gt;
+                    &lt;!-- &lt;a class=&quot;pat-button&quot;&gt;Finish&lt;/a&gt; --&gt;
+                    &lt;button class=&quot;pat-button splash-trigger collapsible-open&quot;&gt;Finish&lt;/button&gt;
+            &lt;/p&gt;    
+        &lt;/article&gt;
+    &lt;/div&gt;
+    &lt;nav class=&quot;dots&quot;&gt;
+        &lt;a href=&quot;#introduce&quot; class=&quot;current&quot;&gt;Welcome back!&lt;/a&gt;
+        &lt;a href=&quot;#new-dashboard&quot;&gt;Dashboard&lt;/a&gt;
+        &lt;a href=&quot;#bookmark-workspaces&quot;&gt;Bookmark workspaces&lt;/a&gt;
+        &lt;a href=&quot;#bookmark-items&quot;&gt;Bookmark anything&lt;/a&gt;
+        &lt;a href=&quot;#navigate&quot;&gt;Navigation&lt;/a&gt;
+        &lt;a href=&quot;#search&quot;&gt;Search&lt;/a&gt;
+        &lt;a href=&quot;#enjoy&quot;&gt;Enjoy!&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;</value>
+  </record>
+</registry>

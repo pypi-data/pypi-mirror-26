@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      i18n:domain="ploneintranet">
+  <body tal:define="
+          portletspan python:request.get('portletspan', 'span-1');
+          portletstate python:request.get('portletstate', 'state-collapsed');
+        ">
+    <div class="news portlet ${portletspan} ${portletstate}"
+         id="portlet-news"
+         tal:define="
+           news_items view/news_items;
+           portal_url here/portal_url;
+         "
+         tal:condition="news_items"
+    >
+      <div class="content">
+        <form class="state-toggle pat-inject pat-autosubmit"
+              method="post"
+              action="${here/absolute_url}/@@${view/__name__}"
+              data-pat-inject="source: #portlet-news::element; target: #portlet-news::element"
+              tal:condition="view/can_expand"
+        >
+          <input name="portletspan"
+                 type="hidden"
+                 value="${portletspan}"
+          />
+          <input name="portletstate"
+                 type="hidden"
+                 value="${python: 'state-expanded' if portletstate == 'state-collapsed' else 'state-collapsed'}"
+          />
+            <label class="show-more pat-switch checked"
+                   data-pat-switch="selector: #portlet-news; remove: state-*; add: state-expanded"
+            >
+                <input type="radio"
+                       name="portlet-news-state-expanded"
+                       value="on"
+                >
+                Show more
+            </label>
+            <label class="show-less pat-switch checked"
+                   data-pat-switch="selector: #portlet-news; remove: state-*; add: state-collapsed">
+                <input type="radio"
+                       name="portlet-news-state-expanded"
+                       value=""
+                >
+                Show less
+            </label>
+        </form>
+        <tal:bubble define="osh_view nocall:here/on-screen-help;"
+                    replace="structure python:osh_view.link_to('portlet-news')"
+        />
+        <h2 class="portlet-title"><a href="${portal_url}/news" i18n:translate="label_news">News</a></h2>
+
+        <div class="news-block" id="unread-news">
+          <div class="news-item pat-equaliser">
+            <article class="item item-${repeat/news/number}"
+                     tal:repeat="news news_items">
+              <a href="${news/url}">
+                <img class="illustration"
+                     style="${python:view.get_img_style(news, scale)}"
+                     src="${portal_url}/++theme++ploneintranet.theme/generated/media/placeholder-16x9.png"
+                     alt=""
+                     tal:define="scale python: 'mini' if repeat.news.index != 0 else ('large' if portletspan != 'span-1' else 'preview')"
+                />
+                <h3 class="title">
+                  ${news/title}
+                </h3>
+                <p class="description"
+                >
+                  <span tal:replace="news/description">
+                  First Indian Airline to join Global Airline Alliance Strong network in growing Indian aviation market</span>
+                  <em i18n:translate="read-more">Read more...</em>
+                </p>
+              </a>
+              <form action="${view/url}#portlet-news"
+                    method="post"
+                    class="functions pat-inject">
+                <input type="hidden" name="hit_uid" value="${news/uid}" />
+                <input type="hidden" name="list:just_read_uids"
+                       value="${view/just_read_uids}" />
+                  <button type="submit" class="icon-ok" i18n:translate="label_mark_read">Mark read</button>
+              </form>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

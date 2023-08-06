@@ -1,0 +1,391 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="ploneintranet">
+  <body>
+
+    <metal:button_cluster define-macro="button_cluster"
+                  i18n:domain="ploneintranet"
+    >
+      <span class="button-cluster" tal:condition="not:read_only">
+        <button class="sortable-button-up small pat-button"
+                name="up"
+                type="submit"
+                value="up"
+                i18n:translate=""
+        >Up</button>
+        <button class="sortable-button-down small pat-button"
+                name="down"
+                type="submit"
+                value="down"
+                i18n:translate=""
+        >down</button>
+      </span>
+    </metal:button_cluster>
+
+    <metal:task_fields i18n:domain="ploneintranet"
+        define-macro="task_fields"
+        tal:define="chv here/content_helper_view;
+            read_only read_only|not:view/can_edit;
+            value python: context.portal_type=='todo' and context.description or '';
+        ">
+      <label class="description">
+          <span tal:omit-tag="" i18n:translate="">Description</span> <textarea name="description" tal:attributes="disabled read_only" placeholder="Enter a description of the task" rows="6" title="Description" i18n:attributes="placeholder; title">${value}</textarea>
+      </label>
+      <label class="initiator">
+        <span tal:omit-tag="" i18n:translate="">Initiator</span> <input class="pat-autosuggest users"  type="text" name="initiator" placeholder="Pick an initiator" i18n:attributes="placeholder"
+        data-pat-autosuggest="${python: view.get_data_pat_autosuggest(attrs['name'])}"
+        tal:attributes="disabled read_only"
+        />
+      </label>
+      <br/>
+      <label class="assignee">
+        <span tal:omit-tag="" i18n:translate="">Assignee</span>
+        <input class="pat-autosuggest users"
+               name="assignee"
+               placeholder="Pick an assignee"
+               i18n:attributes="placeholder"
+               data-pat-autosuggest="${python: view.get_data_pat_autosuggest(attrs['name'])}"
+               tal:attributes="disabled read_only"
+                />
+      </label>
+      <br/>
+      <label class="date-time">
+        <span tal:omit-tag="" i18n:translate="">Due date</span>
+        <input type="date"
+               name="due"
+               value="${context/due | nothing}"
+               tal:attributes="disabled read_only"
+               data-pat-autosubmit="delay: defocus"
+               data-pat-date-picker="i18n: ${context/portal_url}/@@date-picker-i18n.json"
+               class="pat-date-picker" i18n:attributes="placeholder" placeholder="Set a deadline"/>
+      </label>
+      <br />
+      <label class="pat-subform pat-inject pat-autosubmit"
+             data-pat-inject="url: ${here/absolute_url}/@@get_milestones_for_container; source: #milestones::element; target: #milestones::element"
+             tal:condition="containers"
+             tal:define="
+               containers view/possible_containers|nothing;
+               selected_container_path python:request.get('container', '');
+             ">
+        <tal:i18n i18n:translate="">Destination</tal:i18n>
+        <select class="focus"
+                name="container"
+                tal:define="
+                  user nocall:view/user;
+                "
+        >
+          <option value="${python: '/'.join(user.getPhysicalPath())}"
+                  tal:condition="nocall:user"
+                  i18n:translate=""
+          >Personal task list</option>
+          <optgroup label="Workspaces">
+            <!-- Only workspaces the user has edit rights to are displayed here. -->
+            <tal:options repeat="container containers">
+              <option
+                selected="${python:'selected' if container_path == selected_container_path else None}"
+                value="${container_path}"
+                tal:define="container_path container/getPath|python:'/'.join(container.getPhysicalPath());"
+              >${container/Title}</option>
+            </tal:options>
+          </optgroup>
+        </select>
+      </label>
+      <br/>
+      <label class="stage milestone"
+             id="milestones"
+      >
+        <tal:case_todo condition="milestone_options"
+                       define="
+                         milestone_options view/milestone_options|nothing;
+                       ">
+            <span tal:omit-tag="" i18n:translate="">Milestone this task belongs to</span>
+            <select name="milestone">
+              <option></option>
+              <option value="${option/value}"
+                      selected="${option/selected}"
+                      tal:repeat="option milestone_options"
+              >${option/title}</option>
+            </select>
+        </tal:case_todo>
+      </label>
+      <br />
+      <label class="priority">
+        <tal:label i18n:translate="">Priority</tal:label>
+        <select name="priority"
+          tal:define="
+            selected request/priority|here/priority|nothing;
+          "
+        >
+          <option selected="${python: 'selected' if str(selected) == '-1' else None}"
+                  value="-1"
+                  i18n:translate="">No priority set</option>
+          <option selected="${python: 'selected' if str(selected) == '0' else None}"
+                  value="0"
+                  i18n:translate="">Low priority</option>
+          <option selected="${python: 'selected' if str(selected) == '1' else None}"
+                  value="1"
+                  i18n:translate="">Medium priority</option>
+          <option selected="${python: 'selected' if str(selected) == '2' else None}"
+                  value="2"
+                  i18n:translate="">High priority</option>
+        </select>
+      </label>
+    </metal:task_fields>
+
+    <metal:event_fields define-macro="event_fields" i18n:domain="ploneintranet"
+                        tal:define="read_only python:not view.can_edit;chv here/content_helper_view;">
+      <metal:extra-fields-top define-slot="extra-fields-top"/>
+
+      <input type="hidden" name="app" value="${request/app | nothing}" />
+      <label class="calendar" tal:condition="request/app | nothing">
+                <span tal:omit-tag="" i18n:translate="">Calendar</span>
+          <select name="container"
+                  required="required"
+                  tal:define="
+                    workspaceuid workspace/UID;
+                  "
+          >
+            <option value="" i18n:translate="">-- Please select a workspace --</option>
+            <tal:repeat repeat="uw here/content_helper_view/get_writable_user_workspaces">
+                <option selected="${python: 'selected' if workspaceuid == uw.UID else None}"
+                        value="${uw/getPath}"
+                >${uw/Title}</option>
+            </tal:repeat>
+          </select>
+      </label>
+      <fieldset
+          class="description"
+          tal:define="
+            is_view python: view.__name__ != 'add_event';
+            value python: is_view and context.description or '';
+          "
+        >
+        <legend i18n:translate="">Notes</legend>
+        <div class="textarea group">
+            <p class="mirror-target" id="ticket-description">${value}</p>
+            <textarea name="description"
+                      class="pat-content-mirror focus"
+                      disabled="${python:read_only and 'disabled' or None}"
+                      data-pat-content-mirror="target: #ticket-description"
+                      placeholder="Event description"
+                      rows="6"
+                      i18n:attributes="placeholder"
+                    >${value}</textarea>
+        </div>
+      </fieldset>
+      <br />
+
+      <label class="location">
+        <span tal:omit-tag="" i18n:translate="">Location</span> <input
+        placeholder="Enter a location"
+        i18n:attributes="placeholder"
+        name="location" tal:attributes="disabled read_only" value="${context/location | nothing}" type="text" value="" />
+      </label>
+      <br/>
+      <label class="organiser">
+        <span tal:omit-tag="" i18n:translate="">Organiser</span>
+        <input type="text"
+               name="organizer"
+               data-pat-autosuggest="ajax-data-type: json; maximum-selection-size: 1; ajax-url: ${workspace_url}/members.json; prefill-json: ${python:chv.safe_member_prefill(context, attrs['name'])}"
+               class="pat-autosuggest users"
+               placeholder="Name of organiser"
+               i18n:attributes="placeholder"
+               tal:attributes="disabled read_only"/>
+      </label>
+      <br/>
+      <fieldset class="pat-checklist options">
+        <label>
+          <input name="whole_day" value="selected" tal:attributes="disabled read_only; checked python:getattr(context, 'whole_day', 0)" type="checkbox"/>
+          <input name="whole_day-empty-marker" type="hidden" value="1" />
+          <span tal:omit-tag="" i18n:translate="">All day event</span>
+        </label>
+<!--        <br/>
+        <label>
+          <input type="checkbox" tal:attributes="disabled read_only"/> <span tal:omit-tag="" i18n:translate="">Visible on other calendars</span>
+        </label> -->
+      </fieldset>
+      <br/>
+      <fieldset class="group date-time">
+        <fieldset class="row group"
+                tal:define="dt python:modules['DateTime'].DateTime();
+                            start_id string:event-start-date-${dt/millis};
+                            end_id string:event-end-date-${dt/millis}">
+          <fieldset class="group six columns">
+            <legend i18n:translate="">From</legend>
+
+            <div class="row"
+                 tal:define="start context/start | view/default_start">
+              <label class="seven columns">
+                <input class="date pat-date-picker"
+                       id="${start_id}"
+                       name="start"
+                       type="date"
+                       required="required"
+                       disabled="${python:'disabled' if read_only else None}"
+                       size="10"
+                       placeholder="Date"
+                       value="${python:start and start.strftime('%Y-%m-%d')}"
+                       data-pat-date-picker="i18n: ${context/portal_url}/@@date-picker-i18n.json"
+                       data-pat-validation="type: date; not-after: #${end_id}; message-date: ${python:here.translate('This date must be on or before the end date.', domain='ploneintranet')}"
+                       i18n:attributes="placeholder"
+                />
+              </label>
+              <label class="five columns">
+                <input type="time" size="10" class="time" name="start" placeholder="Time"
+                       i18n:attributes="placeholder"
+                       tal:attributes="disabled read_only"
+                       value="${python:start and start.strftime('%H:%M')}"/>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="group six columns">
+            <legend i18n:translate="">Until</legend>
+            <div class="row"
+                 tal:define="end context/end | view/default_end">
+              <label class="seven columns">
+                <input class="date pat-date-picker"
+                       id="${end_id}"
+                       name="end"
+                       type="date"
+                       required="required"
+                       disabled="${python:'disabled' if read_only else None}"
+                       size="10"
+                       placeholder="Date"
+                       value="${python:end and end.strftime('%Y-%m-%d')}"
+                       data-pat-date-picker="i18n: ${context/portal_url}/@@date-picker-i18n.json"
+                       data-pat-validation="type: date; not-before: #${start_id}; message-date: ${python:here.translate('This date must be on or after the start date.', domain='ploneintranet')}"
+                       i18n:attributes="placeholder"
+                />
+              </label>
+              <label class="five columns">
+                <input type="time" size="10" class="time" name="end" placeholder="Time"
+                       i18n:attributes="placeholder"
+                       tal:attributes="disabled read_only"
+                       value="${python:end and end.strftime('%H:%M')}"/>
+              </label>
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <label class="timezone" tal:condition="not:view/hide_timezone|nothing"><span tal:omit-tag="" i18n:translate="">Timezone</span>
+            <select class="timezone" name="timezone" tal:attributes="disabled read_only">
+                <option tal:repeat="tz here/content_helper_view/get_tz_options;"
+                    data-timezone-id="${tz/id}"
+                    gmt-adjustment="${tz/gmt_adjustment}"
+                    data-use-daylight-time="${tz/use_daylight}"
+                    selected="${tz/selected}"
+                    value="${tz/value}">${tz/label}</option>
+            </select>
+        </label>
+
+      </fieldset>
+
+      <fieldset class="group agenda"
+                tal:define="
+                  agenda_items view/get_agenda_items|nothing;
+                  show_no_agenda_items python: not agenda_items and read_only;
+                "
+      >
+        <legend i18n:translate="">Agenda</legend>
+        <ol class="items-list ${python:'pat-sortable pat-clone' if not read_only else ''}"
+            data-pat-clone="template: #agenda-item-template"
+            data-pat-sortable="selector: .sortable"
+            tal:condition="not:show_no_agenda_items"
+        >
+          <tal:new_item condition="not:read_only">
+            <li class="agenda-item sortable"
+                id="agenda-item-template"
+                hidden
+            >
+              <input type="text"
+                     placeholder="Name of agenda item"
+                     name="agenda_items"
+                     i18n:attributes="placeholder;"
+                     value=""
+              />
+              <metal:macro use-macro="here/content_macros/button_cluster" />
+            </li>
+            <li class="agenda-item sortable" tal:condition="not:agenda_items">
+              <input type="text"
+                     placeholder="Name of agenda item"
+                     name="agenda_items"
+                     i18n:attributes="placeholder;"
+                     value=""
+              />
+              <metal:macro use-macro="here/content_macros/button_cluster" />
+            </li>
+          </tal:new_item>
+          <li class="agenda-item sortable"
+              tal:repeat="agenda_item agenda_items"
+          >
+            <tal:write condition="not:agenda_item/read_only">
+              <input type="text"
+                     placeholder="Name of agenda item"
+                     name="agenda_items"
+                     i18n:attributes="placeholder;"
+                     value="${agenda_item/value}"
+              />
+            </tal:write>
+            <tal:read condition="agenda_item/read_only">
+              <h4 class="title"
+                  tal:define="brain agenda_item/brain"
+              >
+                <a href="${brain/getURL}/view"
+                   target="AgendaItem"
+                   tal:omit-tag="not:brain"
+                >
+                  ${brain/Title|agenda_item/value}
+                </a>
+                <span class="meta">
+                  <em class="label ${badge/klass}"
+                      tal:repeat="badge python:view.get_agenda_item_badges(agenda_item)"
+                  >${badge/label}</em>
+                </span>
+                <input type="hidden"
+                       name="agenda_items"
+                       value="${agenda_item/value}"
+                />
+              </h4>
+              <p class="summary">${agenda_item/brain/Description|nothing}</p>
+            </tal:read>
+            <metal:macro use-macro="here/content_macros/button_cluster" />
+          </li>
+        </ol>
+        <em tal:condition="show_no_agenda_items"
+            i18n:translate=""
+        >No items set</em>
+        <p class="button-bar" tal:condition="not:read_only">
+          <button class="add-item icon-plus-circle small add-clone" type="button" id="add-agenda-item" i18n:translate="">Add agenda item</button>
+        </p>
+        <input class="sortable-amount"
+               name="pat-sortable-amount"
+               type="hidden"
+               value="1"
+               tal:condition="not:read_only"
+        />
+      </fieldset>
+      <br/>
+
+      <label class="invitees"><span tal:omit-tag="" i18n:translate="">Invitees</span>
+      <input name="invitees" type="text" placeholder="Invitees" i18n:attributes="placeholder" class="pat-autosuggest users" tal:attributes="disabled read_only"
+             data-pat-autosuggest-classes=''
+             tal:define="selection_classes python:view.get_selection_classes(field='invitees')"
+             data-pat-autosuggest="ajax-data-type: json; selection-classes: ${selection_classes}; ajax-url: ${here/portal_url}/allusers-and-groups.json; prefill-json: ${python:chv.safe_member_and_group_prefill(context, attrs['name'])}"/>
+      <span class="legend" tal:condition="nothing">
+        <dfn class="undecided" i18n:translate="">Undecided</dfn>
+        <dfn class="confirmed" i18n:translate="">Confirmed</dfn>
+        <dfn class="tentative" i18n:translate="">Tentative</dfn>
+        <dfn class="declined" i18n:translate="">Declined</dfn>
+      </span>
+
+      </label>
+
+      <metal:extra-fields-top define-slot="extra-fields-bottom"/>
+
+    </metal:event_fields>
+
+  </body>
+</html>

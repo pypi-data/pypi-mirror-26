@@ -1,0 +1,26 @@
+<form class="search"
+      id="global-nav-search"
+      action="${here/portal_url}/@@search"
+      i18n:domain="ploneintranet"
+>
+  <tal:bubble define="osh_view nocall:here/on-screen-help;"
+              replace="structure python:osh_view.link_to('global-search')"
+              tal:condition="nothing"
+  >
+    Waiting for https://github.com/quaive/ploneintranet.prototype/issues/521
+  </tal:bubble>
+  <label>
+    <input class="search"
+           name="SearchableText"
+           placeholder="Search through content…"
+           type="text"
+           i18n:attributes="placeholder label_search_placeholder"
+    />
+  </label>
+  <button name="submit"
+          tabindex="-1"
+          type="submit"
+          value="submit"
+          i18n:translate="label_search_button"
+  >Search</button>
+</form>

@@ -1,0 +1,12 @@
+<div i18n:domain="plone" id="portal-personaltools-wrapper">
+  <tal:block condition="not: view/anonymous">
+    <a class="pat-avatar pat-tooltip user-info-avatar"
+       id="user-avatar"
+       href="${here/portal_url}/personal-menu.html#content"
+       data-pat-tooltip="position-list: tr; position-policy: force; trigger: click; source: ajax;"
+       data-initials="${view/initials|nothing}"
+       >
+       <img src="${view/avatar_url|nothing}" alt="${view/user_name|nothing}" />
+    </a>
+  </tal:block>
+</div>

@@ -1,0 +1,42 @@
+<div id="content">
+    <div id="extra-options">
+        <ul class="menu" i18n:domain="ploneintranet">
+            <li tal:condition="view/is_versionable">
+                <a href="${context/absolute_url}/contenthistorypopup#content" class="iconified icon-history pat-modal" data-pat-modal="class: large" data-pat-inject="source: #content; target: body:after" title="Version history" i18n:attributes="title" i18n:translate="">
+                    Version history
+                </a>
+            </li>
+            <li tal:condition="nothing">
+                <a href="/feedback/panel-event-attachments.html#content" class="icon-attach iconified pat-tooltip" data-pat-tooltip="source: ajax" title="Attach documents" i18n:attributes="title" i18n:translate="">
+                    Attachments
+                </a>
+            </li>
+            <li tal:condition="view/can_edit">
+              <a href="${context/absolute_url}/delete_confirmation#document-content"
+                 title="Delete this document"
+                 i18n:attributes="title"
+                 class="pat-modal icon-trash iconified close-panel"
+                 i18n:translate=""
+                >Delete</a>
+            </li>
+            <li tal:define="
+                  action here/@@archive-link-iconified|nothing;
+                "
+                tal:condition="action/strip|action"
+                tal:content="structure action"
+            ></li>
+            <li tal:define="
+                  action here/@@pinning-link-iconified|nothing;
+                "
+                tal:condition="action/strip|action"
+                tal:content="structure action"
+            ></li>
+            <li tal:define="
+                  action here/@@app-audit-button|nothing;
+                "
+                tal:condition="action/strip|action"
+                tal:content="structure action"
+            ></li>
+        </ul>
+    </div>
+</div>

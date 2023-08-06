@@ -1,0 +1,163 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="ploneintranet">
+
+  <body>
+    <metal:content fill-slot="content"
+                   tal:define="
+                     logical_parent nocall:view/logical_parent;
+                     logical_parent_url logical_parent/absolute_url;
+                     read_only python:not view.can_edit;
+                     disabled python: None if view.can_edit else 'disabled';
+                     workflow_menu nocall:here/@@workflow_menu|nothing;
+                     is_in_app view/is_in_app;
+                   ">
+      <div class="application" id="app-space">
+        <div class="application-${python:view.is_in_app() and 'todo' or 'workspace'} application- project page-type-${type} workspace-type-${type} sidebar-left-open sidebar-right-closed sidebar-normal"
+             id="application-body"
+             tal:define="type logical_parent/ws_type | string:workspace;"
+        >
+          <h1 id="workspace-name" tal:condition="not:is_in_app">
+            <a href="${logical_parent_url}">${logical_parent/Title}</a>
+          </h1>
+          <div class="${python:plone_view.normalizeString(logical_parent.getId())}"
+               id="project-body"
+          >
+            <div id="document-body">
+              <form class="document pat-inject ${python:'pat-autosubmit' if view.autosave_enabled else ''}"
+                    method="POST"
+                    action="${context/absolute_url}/view"
+                    enctype="multipart/form-data"
+                    id="document-form"
+                    data-pat-autosubmit="delay: ${view/autosave_delay}"
+                    data-pat-inject="${view/form_pat_inject_options}"
+              >
+                <div class="metadata pat-bumper" id="meta">
+                  <div class="meta-bar">
+                    <span class="title-group">
+                      <h1 class="doc-title"
+                          id="document-title"
+                          style="min-height: 1.5em"
+                        >${context/title}</h1>
+                      <textarea name="title"
+                                disabled="${disabled}"
+                                placeholder="Document title"
+                                class="doc-title pat-content-mirror"
+                                data-pat-content-mirror="target: #document-title"
+                      >${context/title}</textarea>
+                    </span>
+                    <div class="quick-functions">
+                      <a class="icon-ellipsis iconified pat-tooltip"
+                         href="${context/absolute_url}/context-menu?${python:'app' if 'app' in request.form else ''}#content"
+                         title="Show extra context actions"
+                         data-pat-tooltip="source: ajax"
+                         i18n:attributes="title"
+                         i18n:translate=""
+                         tal:condition="not:read_only"
+                      >Show extra context actions</a>
+                      <tal:bookmark replace="structure here/@@bookmark-link-iconified|nothing" />
+                      <a class="icon-down-open meta-data-toggle iconified pat-toggle"
+                         data-pat-toggle="selector: #document-form; value: more-metadata less-metadata"
+                         title="Show extra metadata fields"
+                         i18n:attributes="title"
+                         i18n:translate=""
+                      >Toggle extra metadata</a>
+                      <tal:workflow replace="structure workflow_menu|nothing" />
+                      <tal:saving_badge replace="structure here/@@saving_badge" />
+                    </div>
+                  </div>
+                  <fieldset class="pat-collapsible closed meta-extra" data-pat-collapsible="trigger: .meta-data-toggle" id="meta-extra">
+                    <fieldset class="bar">
+                      <input type="text"
+                             disabled="${disabled}"
+                             class="pat-autosuggest"
+                             name="subjects"
+                             placeholder="Tags"
+                             i18n:domain="plone"
+                             i18n:attributes="placeholder"
+                             value="${python:','.join(context.subject)}"
+                             data-pat-autosuggest="ajax-data-type: json; ajax-search-index: text; ajax-search-index: text; ajax-url:${context/absolute_url}/@@getVocabulary?resultsonly=1&amp;name=ploneintranet.network.vocabularies.Keywords&amp;field=subjects"
+                      />
+                    </fieldset>
+
+                  </fieldset>
+                </div>
+
+                <div id="document-content">
+                  <div class="document ticket-details">
+
+                    <fieldset class="vertical fancy">
+                      <metal:task_fields use-macro="logical_parent/content_macros/task_fields"/>
+                    </fieldset>
+                  </div>
+                </div>
+                <input type="hidden" name="form.submitted" value="1" />
+              </form>
+              <div tal:replace="structure context/@@content-stream.html"></div>
+            </div>
+
+            <aside class="left sidebar"
+                   id="sidebar"
+                   tal:condition="view/show_sidebar"
+            >
+              <div id="sidebar-content">
+                <a class="pat-inject"
+                   data-pat-inject="source: #sidebar::element; target: #sidebar::element; trigger: autoload"
+                   href="${here/absolute_url}/@@todo_sidebar?${python:'app' if 'app' in request.form else ''}"
+                   i18n:translate=""
+                >Open sidebar</a>
+              </div>
+            </aside>
+            <tal:sidebar-toggle-button condition="python:view.show_sidebar and not view.workspace"
+                                       replace="structure here/@@sidebar-toggle-button|nothing"
+            />
+            <aside tal:condition="not:view/show_sidebar"
+                   tal:define="
+                     done workflow_menu/is_done;
+                   "
+              >
+              <label id="todo-${here/UID}-replacement"
+                     tal:condition="request/task_action|nothing"
+              >
+                <input type="checkbox" name="active-tasks:list"
+                  value="${here/UID};"
+                  checked="${python: 'checked' if done else None}"
+                  disabled="${disabled}"
+                />
+                <input type="hidden"
+                  name="disabled-checked-tasks:list"
+                  value="${here/UID}"
+                  tal:condition="python: disabled and done"
+                />
+                <input type="hidden"
+                  name="checked-tasks:list"
+                  value="${here/UID}"
+                  tal:condition="python: not disabled and done"
+                />
+                <a class="pat-inject follow pat-switch"
+                  title="${here/title}"
+                  href="${here/absolute_url}"
+                  data-pat-inject="source: #document-body; target: #document-body"
+                  data-pat-switch="body focus-* focus-document &amp;&amp; body sidebar-large sidebar-normal"
+                  >${here/title}</a>
+                <input type="hidden"
+                  name="current-tasks:list"
+                  value="${here/UID}"
+                />
+              </label>
+            </aside>
+          </div>
+          <nav class="navigation workspace-tabs"
+               id="workspace-tabs"
+               data-tile="${logical_parent_url}/@@workspace.tabs.tile"
+               tal:condition="not:is_in_app"
+          />
+        </div>
+      </div>
+    </metal:content>
+  </body>
+</html>

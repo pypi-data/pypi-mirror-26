@@ -1,0 +1,111 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ploneintranet.suite">
+
+  <genericsetup:upgradeStep
+      title="Reread registry configuration"
+      description="Setup registry records to define additional facets"
+      source="*"
+      destination="0002"
+      handler=".helpers.update_registry"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Update registry configuration"
+      description="Setup registry records filter on creator"
+      source="*"
+      destination="0003"
+      handler=".to0003.update_registry_filter_fields_0003"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Update registry configuration"
+      description="Setup registry records filter on UID"
+      source="*"
+      destination="0004"
+      handler=".to0004.update_registry_filter_fields_0004"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Remove the division UUID index from portal_catalog"
+      description=""
+      source="*"
+      destination="0005"
+      handler=".to0005.remove_division_index"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Remove the division column from portal_catalog"
+      description=""
+      source="*"
+      destination="0005"
+      handler=".to0005.remove_division_column"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Update registry configuration"
+      description="Update filter_fields registry record with event related fields"
+      source="*"
+      destination="0006"
+      handler=".to0006.update_registry_filter_fields_0006"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Update registry configuration"
+      description="Update filter_fields registry record with the outdated field"
+      source="*"
+      destination="0007"
+      handler=".to0007.add_outdated_filter_field"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Update registry configuration"
+      description="Create solr.disabled field"
+      source="*"
+      destination="0008"
+      handler=".to0008.add_solr_disabled_field"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:registerProfile
+      name="to_0009"
+      title="Add registry entry for solr function query boost"
+      description=""
+      directory="profiles/to_0009"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <genericsetup:upgradeStep
+      title="Add registry entry for solr function query boost"
+      description="ploneintranet.search.solr.function_query_boost"
+      source="*"
+      destination="0009"
+      handler=".to0009.add_query_boost_configuration"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:registerProfile
+      name="to_0010"
+      title="Add registry entry for solr field limit"
+      description=""
+      directory="profiles/to_0010"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <genericsetup:upgradeStep
+      title="Add registry entry for solr field limit"
+      description="ploneintranet.search.solr.field_limit"
+      source="*"
+      destination="0010"
+      handler=".to0010.add_field_limit_configuration"
+      profile="ploneintranet.search:default" />
+
+  <genericsetup:upgradeStep
+      title="Configure the solr fields for the todo app"
+      description=""
+      source="*"
+      destination="0012"
+      handler=".to0012.add_todo_app_solr_fields"
+      profile="ploneintranet.search:default" />
+
+</configure>

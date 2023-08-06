@@ -1,0 +1,193 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ploneintranet.suite">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <!-- Include configuration for dependencies listed in setup.py -->
+  <includeDependencies package="." />
+
+  <include package="ploneintranet.activitystream"/>
+  <include package="ploneintranet.async"/>
+  <include package="ploneintranet.admintool"/>
+  <include package="ploneintranet.bookmarks"/>
+  <include package="ploneintranet.calendar"/>
+  <include package="ploneintranet.core"/>
+  <include package="ploneintranet.messaging"/>
+  <include package="ploneintranet.microblog"/>
+  <include package="ploneintranet.microblog" file="subscribers.zcml"/>
+  <include package="ploneintranet.network"/>
+  <include package="ploneintranet.news"/>
+  <include package="ploneintranet.userprofile"/>
+  <include package="ploneintranet.search"/>
+  <include package="ploneintranet.library"/>
+  <include package="ploneintranet.attachments"/>
+  <include package="ploneintranet.docconv.client"/>
+  <include package="ploneintranet.invitations"/>
+  <include package="ploneintranet.notifications"/>
+  <include package="ploneintranet.pagerank"/>
+  <include package="ploneintranet.layout"/>
+  <include package="ploneintranet.theme"/>
+  <include package="ploneintranet.themeswitcher"/>
+  <include package="ploneintranet.todo"/>
+  <include package="ploneintranet.workspace"/>
+
+  <genericsetup:registerProfile
+      name="full"
+      title="Plone Intranet:  Suite"
+      directory="profiles/full"
+      description="Installs the full suite of Plone Intranet packages"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler="ploneintranet.suite.setuphandlers.full"
+      />
+
+  <!-- This is :default for historical reasons.
+       The actual default installer is :full, which provides a themed site.
+  -->
+  <genericsetup:registerProfile
+      name="default"
+      title="Plone Intranet: -- [Suite base]"
+      directory="profiles/default"
+      description="Unthemed installer for the suite of Plone Intranet packages"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler="ploneintranet.suite.setuphandlers.default"
+      />
+
+  <genericsetup:registerProfile
+      name="ldap"
+      title="Plone Intranet:  Suite : LDAP"
+      directory="profiles/ldap"
+      description="Installs LDAP support in Plone Intranet"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="ldap-uninstall"
+      title="Plone Intranet: Suite : LDAP Uninstall"
+      directory="profiles/ldap-uninstall"
+      description="Removes LDAP support from Plone Intranet"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Plone Intranet: Suite : Uninstall"
+      directory="profiles/uninstall"
+      description="Uninstalls the Ploneintranet Suite"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler="ploneintranet.suite.uninstall.uninstall"
+      />
+
+  <genericsetup:registerProfile
+      name="testing"
+      title="Plone Intranet:  Suite : Create Testing Content"
+      directory="profiles/testing"
+      description="WARNING: CANNOT BE UNINSTALLED! Do not run in a production environment. Creates fake user profiles and microblog posts."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      i18n:attributes="title; description"
+      post_handler="ploneintranet.suite.setuphandlers.testing"
+      />
+
+  <!-- enable microblogging on workspaces -->
+  <class class="ploneintranet.workspace.workspacefolder.WorkspaceFolder">
+    <implements interface="ploneintranet.microblog.interfaces.IMicroblogContext"/>
+  </class>
+
+  <utility
+    factory=".hiddenprofiles.HiddenProducts"
+    name="ploneintranet" />
+
+  <utility
+    factory=".hiddenprofiles.HiddenProfiles"
+    name="ploneintranet" />
+
+  <genericsetup:upgradeSteps
+      source="*"
+      destination="0005"
+      profile="ploneintranet.suite:testing"
+      >
+    <genericsetup:upgradeDepends
+        title="Install ploneintranet.news testcontent"
+        import_profile="ploneintranet.news:testing"
+        />
+    <genericsetup:upgradeStep
+        title="Configure news editor access for alice_lindstrom"
+        handler=".setuphandlers.configure_news"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeStep
+      title="Enable barceloneta specific workspace layer"
+      description="Enable fallback views for barceloneta workspace"
+      source="*"
+      destination="0008"
+      handler=".upgrades.barceloneta_workspace"
+      profile="ploneintranet.suite:default" />
+
+  <genericsetup:upgradeStep
+      title="Install ploneintranet.bookmarks"
+      description=""
+      source="*"
+      destination="0009"
+      handler=".upgrades.to_0009"
+      profile="ploneintranet.suite:default"
+    />
+
+  <genericsetup:upgradeStep
+      title="Configure content types used for preview generation"
+      description=""
+      source="*"
+      destination="0012"
+      handler=".upgrades.import_portal_registry"
+      profile="ploneintranet.suite:default"
+      />
+
+  <genericsetup:upgradeSteps
+      source="*"
+      destination="0013"
+      profile="ploneintranet.suite:default"
+      >
+    <genericsetup:upgradeDepends
+        title="Install ploneintranet.news"
+        import_profile="ploneintranet.news:default"
+        />
+    <genericsetup:upgradeDepends
+        title="Activate news portal_tab"
+        import_profile="ploneintranet.layout:default"
+        import_steps="actions"
+        />
+    <genericsetup:upgradeStep
+        title="Sort portal tabs"
+        handler="ploneintranet.layout.setuphandlers.sort_portal_tabs"
+        />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeStep
+      title="Filter out news app layers in CMS"
+      source="*"
+      destination="0014"
+      profile="ploneintranet.suite:default"
+      handler=".upgrades.filter_news_layer"
+      />
+
+  <genericsetup:upgradeDepends
+      source="*"
+      destination="0015"
+      profile="ploneintranet.suite:default"
+      title="Disable INoBarceletaLayer in Barceloneta"
+      import_steps="plone.app.registry"
+      />
+
+  <genericsetup:upgradeStep
+      title="Install ploneintranet.admintool"
+      description=""
+      source="*"
+      destination="0016"
+      handler=".upgrades.to_0016"
+      profile="ploneintranet.suite:default"
+    />
+
+</configure>

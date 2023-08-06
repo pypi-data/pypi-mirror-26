@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  lang="en" metal:use-macro="context/main_template/macros/master" i18n:domain="ploneintranet">
+
+  <body class="view-secure">
+    <metal:content fill-slot="content-core">
+      <div id="document-content"
+           tal:define="
+             fullname here/fullname;
+             absolute_url here/absolute_url;
+           "
+      >
+        <article id="person-info" tal:define="is_me view/is_me">
+          <h1 hidden>${fullname}</h1>
+          <figure class="user-info-header">
+            <span class="pat-gallery" tal:omit-tag="not:here/portrait">
+              <a tal:replace="structure view/get_avatar_tag" />
+            </span>
+            <figcaption>
+              <a href="${absolute_url}"
+                 title="Visit the profile of ${fullname}"
+                >
+                <span tal:replace="fullname"/>
+              </a>
+            </figcaption>
+          </figure>
+          <tal:block condition="is_me">
+            <a href="${absolute_url}/@@edit"
+               class="pat-inject"
+               i18n:translate=""
+               data-pat-inject="source: #user-edit-form::element; target: #person-info; trigger: autoload">
+              Edit profile
+            </a>
+          </tal:block>
+          <tal:block condition="not:is_me">
+            <dl class="pat-grid-list" tal:define="fields view/fields_for_display">
+              <dt class="icon-user" i18n:translate="">
+                User profile
+              </dt>
+              <dd>
+                <a href="${absolute_url}">${absolute_url}</a>
+              </dd>
+              <tal:field repeat="field fields">
+                <tal:display condition="field/raw">
+                  <dt class="${field/icon_class}" i18n:translate="" tal:content="field/label"/>
+                  <dd>
+                    <span tal:replace="structure field/html"/>
+                  </dd>
+                </tal:display>
+              </tal:field>
+            </dl>
+            <div id="person-groups">
+              <a class="pat-inject"
+                href="${here/absolute_url}/@@userprofile-group#person-groups"
+                data-pat-inject="trigger:autoload-visible; loading-class: none"
+                i18n:translate=""
+                >Loading group information...
+              </a>
+            </div>
+
+            <article class="pat-rich" tal:condition="context/biography|nothing">
+              <p tal:content="context/biography">
+                Some content goes here on Jeff
+              </p>
+            </article>
+          </tal:block>
+        </article>
+      </div>
+    </metal:content>
+  </body>
+
+</html>

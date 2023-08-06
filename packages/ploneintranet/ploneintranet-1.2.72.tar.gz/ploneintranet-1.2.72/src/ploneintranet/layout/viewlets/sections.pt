@@ -1,0 +1,75 @@
+<tal:sections
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:metal="http://xml.zope.org/namespaces/metal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     tal:define="portal_tabs view/portal_tabs"
+     tal:condition="portal_tabs"
+     i18n:domain="plone">
+
+  <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
+  <nav class="plone-navbar" id="portal-globalnav-wrapper" role="navigation"
+       tal:define="
+         osh_view nocall:here/on-screen-help;
+       "
+  >
+    <div class="container">
+      <div class="plone-navbar-header">
+        <button type="button" class="plone-navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+          <span class="sr-only" i18n:translate="label_toggle_navigation" i18n:domain="ploneintranet">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="plone-collapse plone-navbar-collapse" id="portal-globalnav-collapse">
+        <tal:bubble replace="structure python:osh_view.link_to('hamburger')"
+                    tal:condition="bbb|nothing"
+        >
+          This is temporarily disabled because of this issue:
+          - https://github.com/quaive/ploneintranet.prototype/issues/514
+        </tal:bubble>
+        <ul class="plone-nav plone-navbar-nav"
+            id="portal-globalnav"
+            tal:define="selected_tab python:view.selected_portal_tab">
+            <li>
+              <tal:bubble replace="structure python:osh_view.link_to('portal-suite')" />
+              <a class="title">${view/logo_title | string:Intranet}</a>
+            </li>
+            <tal:tabs tal:repeat="tab portal_tabs">
+              <li id="portaltab-${tid}"
+                  tal:define="
+                    tid tab/id;
+                    current python:selected_tab==tid;
+                    disable_injection tab/disable_injection|nothing;
+                    dashboard python:tid=='dashboard';
+                  ">
+                <tal:injection condition="not:disable_injection">
+                  <tal:bubble replace="structure python:osh_view.link_to('portal-'+tid)" />
+                  <a href="${tab/url}#portal-content"
+                     title="${tab/description|nothing}"
+                     target="${tab/link_target|nothing}"
+                     class="section-${tid} tab pat-inject pat-switch close-panel ${python:'pat-toggle' if dashboard else ''} ${python:'current' if current else ''}"
+                     data-pat-switch="#app-space state-on state-off"
+                     data-pat-inject="${python: tab.get('inject_options', 'history: record')}"
+                     data-pat-toggle="${python:'selector: #global-header; value: mobile-menu-on' if dashboard else ''}">
+                    ${tab/name}
+                  </a>
+                </tal:injection>
+                <tal:no_injection condition="disable_injection">
+                  <a href="${tab/url}"
+                     title="${tab/description|nothing}"
+                     target="${tab/link_target|nothing}"
+                     class="section-${tid} tab ${python:'current' if current else ''}"
+                    >
+                    ${tab/name}
+                  </a>
+                </tal:no_injection>
+              </li>
+            </tal:tabs>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</tal:sections>

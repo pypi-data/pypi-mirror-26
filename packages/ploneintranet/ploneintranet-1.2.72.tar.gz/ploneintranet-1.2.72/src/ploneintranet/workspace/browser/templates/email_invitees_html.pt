@@ -1,0 +1,33 @@
+<tal:domain define="
+              toLocalizedTime nocall:here/toLocalizedTime;
+              is_whole_day here/whole_day|nothing;
+            "
+            i18n:domain="ploneintranet"
+><p i18n:translate="">Dear Mr./Ms. <tal:name i18n:name="invitee_name">${view/invitee_name}</tal:name>,</p>
+
+<p i18n:translate="">
+  You received this email from
+  <tal:name i18n:name="portal_title">${context/plone_portal_state/navigation_root_title}</tal:name>
+  because you are invited to the following date:
+</p>
+
+<p>
+  <b i18n:translate="">Title:</b> <a href="${context/absolute_url}">${context/title}</a><br>
+  <tal:not_whole_day condition="not:is_whole_day">
+    <b i18n:translate="">From</b> ${python: toLocalizedTime(here.start, long_format=1)} <b i18n:translate="email_to">to</b> ${python:toLocalizedTime(here.start, long_format=1)}
+  </tal:not_whole_day>
+  <tal:whole_day condition="is_whole_day">
+    <b i18n:translate="">Date:</b> ${python: toLocalizedTime(here.start)}
+    <tal:i18n i18n:translate="">(all day)</tal:i18n>
+  </tal:whole_day>
+  <br>
+  <b i18n:translate="">Location</b>: ${context/location}<br>
+
+<p i18n:translate="">
+The agenda for this event can be found here:
+</p>
+
+${context/absolute_url}
+
+<p i18n:translate="">Regards</p>
+</tal:domain>

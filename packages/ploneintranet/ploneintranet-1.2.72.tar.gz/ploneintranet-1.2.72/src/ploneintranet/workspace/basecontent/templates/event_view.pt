@@ -1,0 +1,93 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="ploneintranet">
+
+<body>
+
+    <metal:content metal:fill-slot="content">
+    <div class="application" id="app-space">
+      <div id="application-body"
+           tal:define="workspace python:view.workspace;
+              workspace_url workspace/absolute_url;
+              workspace_id python:workspace.id;
+              read_only python:not view.can_edit;
+              type workspace/ws_type | string:workspace;
+              is_archived workspace/archival_date;
+              archived_class python:'workspace-state-archived' if is_archived else '';
+              autosave_enabled view/autosave_enabled|nothing;
+              autosave_delay view/autosave_delay|nothing;
+            "
+           tal:attributes="class string:sidebar-normal application-workspace application- project page-type-${type} workspace-type-${type} ${archived_class} sidebar-left-closed">
+
+          <h1 id="workspace-name">
+              <!-- Next link is to lead to landing state of current workspace -->
+              <a href="${workspace_url}" tal:content="workspace/Title">Title</a>
+          </h1>
+
+          <div class="${workspace_id}" id="project-body">
+
+              <div id="document-body" tal:define="formid here/UID;">
+                  <form class="document pat-inject pat-validation ${python:'pat-autosubmit' if view.autosave_enabled else ''}"
+                        method="POST"
+                        action="${context/absolute_url}/view#document-body"
+                        id="${formid}"
+                        data-pat-validation="disable-selector: #save-button"
+                        data-pat-inject="${view/form_pat_inject_options}"
+                        >
+                      <div class="metadata pat-bumper" id="meta">
+                          <div class="meta-bar">
+                              <!-- Next link should be populated with the link back to the parent. Used for small screen and accessibility -->
+                              <button class="pat-switch back-to-parent icon-left-open" data-pat-switch="body focus-* focus-sidebar">${python:context.__parent__.title}</button>
+                              <span class="title-group">
+                                <h1 class="doc-title"
+                                    id="document-title"
+                                    style="min-height: 1.5em"
+                                  >${context/title}</h1>
+                                <textarea type="text" name="title" maxlength="70" tal:attributes="disabled read_only" placeholder="Document title" class="doc-title pat-content-mirror" data-pat-content-mirror="target: #document-title" tal:content="context/title" />
+                              </span>
+                              <div class="quick-functions">
+                                <a class="icon-ellipsis iconified pat-tooltip" data-pat-tooltip="source: ajax" title="Show extra context actions" i18n:attributes="title" i18n:translate="" href="${context/absolute_url}/context-menu#content">Show extra context actions</a>
+                                <tal:saving_badge replace="structure here/@@saving_badge" />
+                              </div>
+                          </div>
+                      </div>
+                      <div id="document-content">
+                        <div class="document event-details">
+                          <fieldset class="vertical fancy">
+                            <metal:task_fields use-macro="context/content_macros/event_fields" />
+                          </fieldset>
+                        </div>
+                      </div>
+                  </form>
+
+                  <div id="slcclicktracker"
+                       tal:condition="view/include_clicktracker|nothing"
+                       tal:attributes="request_url request/getURL;
+                                       path python:'/'.join(context.getPhysicalPath())" />
+              </div>
+              <tal:sidebar define="
+                                    container context/@@plone_context_state/folder;
+                                    show_sidebar view/show_sidebar;
+                                    show_sidebar_events python:not show_sidebar and request.method == 'POST';
+                                  "
+              >
+                <aside data-tile="${container/absolute_url}/@@sidebar.default"
+                       tal:condition="show_sidebar"
+                />
+                <aside data-tile="${container/absolute_url}/@@sidebar.events"
+                       tal:condition="show_sidebar_events"
+                />
+              </tal:sidebar>
+          </div>
+
+          <nav class="navigation workspace-tabs" id="workspace-tabs" data-tile="./@@workspace.tabs.tile" tal:attributes="data-tile string:${workspace_url}/@@workspace.tabs.tile" />
+      </div>
+    </div>
+    </metal:content>
+</body>
+</html>

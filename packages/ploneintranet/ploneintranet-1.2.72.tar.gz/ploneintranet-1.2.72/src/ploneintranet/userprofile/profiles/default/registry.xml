@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<registry>
+
+  <record name="ploneintranet.userprofile.userprofile_hidden_info">
+    <field type="plone.registry.field.Tuple">
+      <title>Hide some informations from the user profile view</title>
+      <description>
+        If you want to hide a tab in the user profile view add it here.
+        Add:
+        <ul>
+          <li><code>userprofile-view</code> to hide the "Timeline" tab</li>
+          <li><code>userprofile-info</code> to hide the "Info" tab</li>
+          <li><code>userprofile-followers</code> to hide the "Followers" tab</li>
+          <li><code>userprofile-following</code> to hide the "Following" tab</li>
+          <li><code>userprofile-documents</code> to hide the "Documents" tab</li>
+          <li><code>userprofile-workspaces</code> to hide the "Workspaces" tab</li>
+        </ul>
+        <p>
+          As a convenience, adding <code>userprofile-follow*</code>
+          will hide both the "Followers" and "Following" tabs.
+        </p>
+        <p>
+          Hiding a tab will also block hide from the user view the relevant
+          informations, i.e. if you remove the "Following" tab,
+          you will not see the "Following" portlet under the icon avatar.
+        </p>
+      </description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+    </value>
+  </record>
+
+  <record name="ploneintranet.userprofile.hidden_fields">
+    <field type="plone.registry.field.Tuple">
+      <title>Hidden fields</title>
+      <description>
+        User profile fields that are hidden from the profile editing page
+      </description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+    </value>
+  </record>
+
+  <record name="ploneintranet.userprofile.property_sheet_mapping">
+    <field type="plone.registry.field.Dict">
+      <title>Property sheet mapping</title>
+      <description>
+        A mapping of a user property to a specific property sheet which
+	should be used to obtain the data for this attribute.
+      </description>
+      <key_type type="plone.registry.field.ASCII" />
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+    </value>
+  </record>
+
+  <record name="ploneintranet.userprofile.primary_external_user_source">
+    <field type="plone.registry.field.ASCIILine">
+      <title>Primary External User Source</title>
+      <description>
+        The ID of the PAS plugin that will be treated as the primary source of external users.
+      </description>
+    </field>
+    <value />
+  </record>
+
+  <record name="ploneintranet.userprofile.read_only_fields">
+    <field type="plone.registry.field.Tuple">
+      <title>Read only fields</title>
+      <description>
+        User profile fields that are read-only
+        (shown on profile editing page but not editable)
+      </description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+      <element>username</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.userprofile.locations">
+    <field type="plone.registry.field.Tuple">
+      <title>Hidden fields</title>
+      <description>
+        User profile fields that are hidden from the profile editing page
+      </description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+      <element>London</element>
+      <element>Amsterdam</element>
+      <element>Berlin</element>
+      <element>Paris</element>
+      <element>New York</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.userprofile.only_membrane_groups">
+    <field type="plone.registry.field.Bool">
+      <title>Use only membrane groups</title>
+      <description>
+        If set to True the system will assume
+        that only membrane groups are used
+        allowing various optimizations
+      </description>
+    </field>
+    <value>False</value>
+  </record>
+
+  <!-- By default we use usernames to login -->
+  <record name="dexterity.membrane.behavior.settings.IDexterityMembraneSettings.use_email_as_username">
+    <field type="plone.registry.field.Bool">
+    </field>
+    <value>False</value>
+  </record>
+
+  <!-- By default we use username as userid for compatibility with external
+       auth systems e.g. LDAP/AD -->
+  <record name="dexterity.membrane.behavior.settings.IDexterityMembraneSettings.use_uuid_as_userid">
+    <field type="plone.registry.field.Bool">
+    </field>
+    <value>False</value>
+  </record>
+
+  <record name="ploneintranet.userprofile.enable_password_reset">
+    <field type="plone.registry.field.Bool">
+      <title>Allow users to reset their password</title>
+    </field>
+    <value>True</value>
+  </record>
+
+  <record name="ploneintranet.userprofile.portlet_contacts_recent">
+    <field type="plone.registry.field.Bool">
+      <title>Show recent contacts in the contacts portlet</title>
+    </field>
+    <value>True</value>
+  </record>
+
+  <record name="ploneintranet.userprofile.portlet_contacts_byline_field">
+    <field type="plone.registry.field.TextLine">
+      <title>Field to show in contacts portlet search result byline</title>
+    </field>
+    <value>contact_telephone</value>
+  </record>
+
+  <record interface="Products.CMFPlone.interfaces.controlpanel.ISecuritySchema"
+          name="plone.use_email_as_login">
+    <value>False</value>
+  </record>
+
+</registry>

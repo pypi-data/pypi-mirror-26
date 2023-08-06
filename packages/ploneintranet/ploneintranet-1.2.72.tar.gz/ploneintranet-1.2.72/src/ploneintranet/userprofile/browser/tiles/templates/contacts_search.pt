@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="ploneintranet">
+
+  <body>
+
+    <div class="contacts portlet ${python:request.get('portletspan', 'span-1')}" id="portlet-contacts"
+         tal:define="
+           osh_view nocall:here/on-screen-help;
+         "
+    >
+      <div class="content">
+        <tal:bubble replace="structure python:osh_view.link_to('portlet-contacts')" />
+        <h2 class="portlet-title">
+          <a href="${view/header_link}" i18n:translate="">Contacts</a>
+        </h2>
+        <form class="search-box pat-inject pat-autosubmit" action="${context/portal_url}/@@contacts_search.tile#contact-search-items">
+		  <fieldset class="vertical">
+	        <label>
+	          <input name="SearchableText" type="search" placeholder="Search" i18n:attributes="placeholder"/>
+	          <button hidden type="submit" i18n:translate="">Find users</button>
+	        </label>
+		  </fieldset>
+        </form>
+        <div id="contact-search-items" tal:define="search_response context/@@search_people/search_people" metal:define-macro="contact-search-items">
+            <nav class="user-cloud pat-auto-scale" tal:condition="view/is_show_recent_contacts">
+                <a tal:repeat="user view/recent_contacts" tal:replace="structure python:view.get_avatar_by_userid(user.username)" />
+            </nav>
+            <div class="item-selector mode-follow"
+                    tal:condition="request/SearchableText|nothing">
+                <form class="search-result users">
+                <fieldset class="checklist pat-checklist" tal:define="byline_fieldname view/get_byline_fieldname">
+                    <tal:result repeat="result search_response">
+                    <label class="item user"
+                           tal:condition="python: result.review_state == 'enabled'"
+                    >
+                        <input name="" type="checkbox" />
+                        <a href="${result/url}" class="follow">
+                        <img tal:condition="result/getId|nothing"
+                             tal:replace="structure python:view.get_avatar_by_userid(result.getId(), link_to=None)"
+                          />
+                        <strong class="title">${result/title}</strong>
+                        <br/>
+                        <dfn class="byline" tal:content="python: True and result.get(byline_fieldname, '&nbsp;') or '&nbsp;'"/>
+                        </a>
+                    </label>
+                    </tal:result>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+	  </div>
+    </div>
+  </body>
+</html>

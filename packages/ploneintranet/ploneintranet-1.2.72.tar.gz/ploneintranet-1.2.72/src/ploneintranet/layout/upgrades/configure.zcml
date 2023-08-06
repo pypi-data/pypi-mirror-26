@@ -1,0 +1,255 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ploneintranet">
+
+    <genericsetup:upgradeStep
+        title="Configure dashboard tiles through portal_registry"
+        description="We added two records"
+        source="*"
+        destination="0001"
+        handler=".helpers.update_registry"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:registerProfile
+        name="to_0002"
+        title="Upgrade profile to include login form colophon actions"
+        description=""
+        directory="profiles/to_0002"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Import the generic setup profile that includes the login form colophon actions"
+        description=""
+        source="*"
+        destination="0002"
+        handler=".to0002.include_login_colophon_actions"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:upgradeStep
+        title="Add the bookmarks tile to the dashboard"
+        description=""
+        source="*"
+        destination="0003"
+        handler=".to0003.add_the_dashboard_tile"
+        profile="ploneintranet.layout:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0004"
+        title="Upgrade profile to include the Apps container type"
+        description=""
+        directory="profiles/to_0004"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add the Apps container"
+        description=""
+        source="0003"
+        destination="0004"
+        handler=".to0004.add_apps_container"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:registerProfile
+        name="to_0005"
+        title="Upgrade profile to include the Apps"
+        description=""
+        directory="profiles/to_0005"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add the Apps"
+        description=""
+        source="0004"
+        destination="0005"
+        handler=".to0005.add_apps"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:registerProfile
+        name="to_0006"
+        title="Upgrade to setup the login splash image"
+        description=""
+        directory="profiles/to_0006"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Setup the login splash image"
+        description=""
+        source="*"
+        destination="0006"
+        handler=".to0006.setup_login_splash"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:upgradeStep
+        title="Sort portal tabs"
+        description="Sort top navigation conform design intent"
+        source="*"
+        destination="0008"
+        handler="..setuphandlers.sort_portal_tabs"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:upgradeStep
+        title="Re-initialize apps"
+        description="Update app instances to default specifications"
+        source="*"
+        destination="0009"
+        handler="..setuphandlers.create_apps"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:registerProfile
+        name="to_0010"
+        title="Add registry entries to configure portlet expand"
+        description=""
+        directory="profiles/to_0010"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add registry entries to configure portlet expand"
+        description="num and max items"
+        source="*"
+        destination="0010"
+        handler=".to_0010.add_portlet_configuration"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:upgradeDepends
+        source="*"
+        destination="0011"
+        profile="ploneintranet.layout:default"
+        title="Install INoBarceletaLayer"
+        import_steps="browserlayer" />
+
+    <genericsetup:registerProfile
+        name="to_0012"
+        title="Add registry entries to configure news portlet filter"
+        description=""
+        directory="profiles/to_0012"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add registry entries to configure news portlet filter"
+        description="num and max items"
+        source="*"
+        destination="0012"
+        handler=".to_0012.add_news_portlet_configuration"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:registerProfile
+        name="to_0013"
+        title="Add registry entries to configure splash page"
+        description=""
+        directory="profiles/to_0013"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add registry entries to configure splash page"
+        description=""
+        source="*"
+        destination="0013"
+        handler=".to_0013.add_splash_page_configuration"
+        profile="ploneintranet.layout:default" />
+
+    <genericsetup:registerProfile
+        name="to_0014"
+        title="Add registry entry for the custom dashboard"
+        description=""
+        directory="profiles/to_0014"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add registry entry for the custom dashboard"
+        description=""
+        source="*"
+        destination="0014"
+        handler=".to_0014.add_custom_dashboard_tiles"
+        profile="ploneintranet.layout:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0015"
+        title="Add known bad ips"
+        description=""
+        directory="profiles/to_0015"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Add known bad ips"
+        description=""
+        source="*"
+        destination="0015"
+        handler=".to_0015.add_known_bad_ips"
+        profile="ploneintranet.layout:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0016"
+        title="New splashpage"
+        description=""
+        directory="profiles/to_0016"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="New splashpage"
+        description=""
+        source="*"
+        destination="0016"
+        handler=".to_0016.new_splashpage"
+        profile="ploneintranet.layout:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0017"
+        title="Registry record to customize the help bubbles"
+        description=""
+        directory="profiles/to_0017"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Registry record to customize the help bubbles"
+        description=""
+        source="*"
+        destination="0017"
+        handler=".to_0017.custom_help_bubbles"
+        profile="ploneintranet.layout:default"
+        />
+
+    <genericsetup:registerProfile
+        name="to_0018"
+        title="Registry record to toggle the help bubbles on and off"
+        description=""
+        directory="profiles/to_0018"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:upgradeStep
+        title="Registry record to toggle the help bubbles on and off"
+        description=""
+        source="*"
+        destination="0018"
+        handler=".to_0018.toggle_help_bubbles"
+        profile="ploneintranet.layout:default"
+        />
+
+</configure>

@@ -1,0 +1,92 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ploneintranet.userprofie">
+
+  <include file="profiles.zcml" />
+
+  <genericsetup:upgradeStep
+    title="Fix user profile container"
+    description="We want a user profile container, we want i public"
+    source="*"
+    destination="2"
+    handler="..setuphandlers.get_or_create_userprofile_container"
+    sortkey="1"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Update to new dexterity.membrane behaviors"
+    description="dexterity.membrane behavior names changed in 1.1.0"
+    source="*"
+    destination="3"
+    handler="..setuphandlers.update_dx_membrane_behaviors"
+    sortkey="1"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Update registry to allow users to reset their password"
+    description="Disable 'ploneintranet.userprofile.enable_password_reset' if you do not want to allow this."
+    source="3"
+    destination="4"
+    handler=".upgrades.add_password_reset_registry_entry"
+    sortkey="1"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Update registry to allow hiding some informations from the user profile view"
+    description=""
+    source="*"
+    destination="5"
+    handler=".to_0005.add_userprofile_hidden_info_registry_entry"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Install support for Membrane Workgroups"
+    description=""
+    source="*"
+    destination="6"
+    handler=".to_0006.prep_for_workgroups"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Update profile to include the changes for ploneintranet.userprofile.only_membrane_groups"
+    description=""
+    source="*"
+    destination="7"
+    handler=".to_0007.only_membrane_groups_registry_record"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Initialize ploneintranet.userprofile.portlet_contacts_recent"
+    description=""
+    source="*"
+    destination="8"
+    handler=".to_0008.portlet_contacts_recent_registry_record"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Initialize ploneintranet.userprofile.portlet_contacts_byline_field"
+    description=""
+    source="*"
+    destination="9"
+    handler=".to_0009.portlet_contacts_byline_field_registry_record"
+    profile="ploneintranet.userprofile:default"
+    />
+
+  <genericsetup:upgradeStep
+    title="Allow the creation of todo inside user profiles"
+    description=""
+    source="*"
+    destination="10"
+    handler=".to_0010.personal_tasks"
+    profile="ploneintranet.userprofile:default"
+    />
+
+</configure>

@@ -1,0 +1,145 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="ploneintranet"
+    >
+
+  <browser:page
+      name="mark_read"
+      for="..behaviors.IMustReadMarker"
+      permission="zope2.View"
+      class=".markread.MarkRead"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="view"
+      for="..content.todo.ITodo"
+      permission="zope2.View"
+      class=".todo_view.TodoView"
+      template="templates/todo_view.pt"
+      layer="ploneintranet.layout.interfaces.INoBarcelonetaLayer"
+      />
+
+  <browser:page
+      name="context-menu"
+      for="..content.todo.ITodo"
+      permission="zope2.View"
+      class=".todo_view.TodoView"
+      template="templates/context-menu.pt"
+      layer="ploneintranet.layout.interfaces.INoBarcelonetaLayer"
+      />
+
+  <browser:page
+      name="todo_sidebar"
+      for="..content.todo.ITodo"
+      permission="zope2.View"
+      class=".todo_view.TodoSidebar"
+      layer="ploneintranet.layout.interfaces.INoBarcelonetaLayer"
+      />
+
+  <browser:page
+      name="todo_in_sidebar"
+      for="..content.todo.ITodo"
+      permission="zope2.View"
+      class=".todo_view.TodoView"
+      template="templates/todo_in_sidebar.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="workflow_menu"
+      for="..content.todo.ITodo"
+      permission="zope2.View"
+      class=".todo_view.TodoWorkflowMenu"
+      template="templates/workflow_menu.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="add_task"
+      for="Products.CMFCore.interfaces.IFolderish"
+      permission="cmf.AddPortalContent"
+      class=".todo_add.AddTask"
+      />
+
+  <browser:page
+      name="add_task"
+      for="ploneintranet.todo.interfaces.ITodoApp"
+      permission="zope2.View"
+      class=".todo_add.AppAddTask"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="get_milestones_for_container"
+      for="ploneintranet.todo.interfaces.ITodoApp"
+      permission="zope2.View"
+      class=".todo_add.GetMilestonesForContainer"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="app-todo"
+      for="ploneintranet.layout.app.IApp"
+      permission="zope2.View"
+      class=".app.View"
+      template="templates/app.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="app-todo-search-results"
+      for="ploneintranet.layout.app.IApp"
+      permission="zope2.View"
+      class=".app.View"
+      template="templates/app-results.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="my-tasks"
+      for="ploneintranet.layout.app.IApp"
+      permission="zope2.View"
+      class=".app.MyTasksView"
+      template="templates/app.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="my-tasks-search-results"
+      for="ploneintranet.layout.app.IApp"
+      permission="zope2.View"
+      class=".app.MyTasksView"
+      template="templates/app-results.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="personal-tasks"
+      for="ploneintranet.layout.app.IApp"
+      permission="zope2.View"
+      class=".app.PersonalTasksView"
+      template="templates/app.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="personal-tasks-search-results"
+      for="ploneintranet.layout.app.IApp"
+      permission="zope2.View"
+      class=".app.PersonalTasksView"
+      template="templates/app-results.pt"
+      layer=".interfaces.IPloneintranetTodoLayer"
+      />
+
+  <browser:page
+      name="delete_confirmation"
+      for="..content.todo.ITodo"
+      permission="zope2.DeleteObjects"
+      class=".todo_delete.TodoDeleteConfirmationForm"
+      layer="ploneintranet.layout.interfaces.INoBarcelonetaLayer"
+      />
+
+</configure>

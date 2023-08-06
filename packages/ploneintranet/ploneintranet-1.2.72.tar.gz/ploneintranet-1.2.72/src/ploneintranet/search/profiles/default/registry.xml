@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<records>
+
+  <record name="ploneintranet.search.filter_fields">
+    <field type="plone.registry.field.Tuple">
+      <title>Filter fields</title>
+      <description>Fields that will be used to filter query responses in searches</description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+      <element>Creator</element>
+      <element>tags</element>
+      <element>friendly_type_name</element>
+      <element>portal_type</element>
+      <element>path</element>
+      <element>review_state</element>
+      <element>is_division</element>
+      <element>outdated</element>
+      <element>is_archived</element>
+      <element>assignee</element>
+      <element>initiator</element>
+      <element>division</element>
+      <element>UID</element>
+      <element>invitees</element>
+      <element>due__gt</element>
+      <element>due__lt</element>
+      <element>due__range</element>
+      <element>end__gt</element>
+      <element>object_provides</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.search.facet_fields">
+    <field type="plone.registry.field.Tuple">
+      <title>Facet field</title>
+      <description>A field that will be used to facet query responses</description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+      <element>tags</element>
+      <element>friendly_type_name</element>
+      <element>is_division</element>
+      <element>is_archived</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.search.phrase_fields">
+    <field type="plone.registry.field.Tuple">
+      <title>Phrase fields</title>
+      <description>Fields to which the main search phrase will be applied</description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+      <element>Title</element>
+      <element>Description</element>
+      <element>tags</element>
+      <element>SearchableText</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.search.solr.phrase_field_boosts">
+    <field type="plone.registry.field.Dict">
+      <title>Phrase query field and associated boost values</title>
+      <description>Solr Boost values used to compute relevency for queries.</description>
+      <key_type type="plone.registry.field.TextLine" />
+      <value_type type="plone.registry.field.Int">
+        <min>1</min>
+      </value_type>
+    </field>
+    <value>
+      <element key="Title">5</element>
+      <element key="Description">3</element>
+      <element key="tags">4</element>
+      <element key="SearchableText">1</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.search.solr.function_query_boost">
+    <field type="plone.registry.field.TextLine">
+      <title>Function query for boosting the main query</title>
+      <description>Solr function query that will be interpreted by the solr BoostQParserPlugin and applied to the main query ('q') of a search object.</description>
+      <required>False</required>
+      <default></default>
+    </field>
+    <value></value>
+  </record>
+
+  <record name="ploneintranet.search.solr.spellchecker.accuracy">
+    <field type="plone.registry.field.Dict">
+      <title>Solr spellchecking settings</title>
+      <description>Various spelling checking properties</description>
+      <key_type type="plone.registry.field.TextLine" />
+      <value_type type="plone.registry.field.Int">
+        <min>1</min>
+      </value_type>
+    </field>
+  </record>
+
+  <record name="ploneintranet.search.solr.field_limit">
+    <field type="plone.registry.field.Tuple">
+      <title>Solr Field Limit</title>
+      <description>Limit fields returned by solr to this list</description>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value />
+  </record>
+
+  <record name="ploneintranet.search.ui.additional_facets">
+    <field type="plone.registry.field.Dict">
+      <title>Additional facets for filtering your results</title>
+      <description>The search results page, by default,
+        facets the search results using the friendly_type_name field.
+        Here you can list additional fields you want to use for faceting.
+        Each field should be specified as field
+        (should match the values from ploneintranet.search.facet_fields)
+        and label
+        (a value that can be translate in the ploneintranet 18n domain)
+      </description>
+      <key_type type="plone.registry.field.ASCII" />
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
+    <value>
+      <element key="tags">Tags</element>
+    </value>
+  </record>
+
+  <record name="ploneintranet.search.ui.persistent_options">
+    <field type="plone.registry.field.Bool">
+      <title>Persistent search options</title>
+      <description>
+        If this option is enabled,
+        the selected search options will be stored for every user
+      </description>
+    </field>
+    <value>False</value>
+  </record>
+
+  <record name="ploneintranet.search.solr.disabled">
+    <field type="plone.registry.field.Bool">
+      <title>Allow to disable solr</title>
+      <description></description>
+    </field>
+    <value>False</value>
+  </record>
+
+</records>

@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      xml:lang="en"
+      i18n:domain="ploneintranet"
+>
+  <body>
+    <tal:content metal:fill-slot="content"
+                 define="
+                   search_response view/search_people;
+                   search_macros nocall:here/@@search_macros;
+                 "
+    >
+      <div class="focus-sidebar sidebar-normal application-search application-${view/__name__} sidebar-left-open sidebar-right-closed "
+           id="application-body"
+      >
+        <metal:form use-macro="search_macros/form">
+          <metal:results fill-slot="results">
+            <div class="container results">
+              <metal:counter use-macro="search_macros/counter" />
+              <div class="row people results pat-equaliser-disabled"
+                   id="listing"
+              >
+                <tal:result repeat="result search_response">
+                  <div class="item">
+                    <div class="user-card">
+                      <img class="pat-avatar"
+                           tal:attributes="
+                             src result/preview_image_url;
+                             alt string:Image of ${result/title};
+                           "
+                      />
+                      <a tal:attributes="
+                           href result/url;
+                         "
+                      >
+                        <h4 class="name"
+                            tal:content="result/title"
+                        >Minoush Farmer</h4>
+                        <p class="byline"
+                           tal:condition="result/latest_status|nothing"
+                           tal:content="result/latest_status|nothing"
+                        >This is my latest status.</p>
+                      </a>
+                      <ul class="skill-cloud"
+                          tal:condition="result/skills|nothing"
+                      >
+                        <tal:skill tal:repeat="skill result/skills">
+                          <li class="skill"
+                              tal:content="skill/title"
+                          >Design
+                            <em class="counter"
+                                tal:content="skill/count"
+                            >7</em></li>
+                        </tal:skill>
+                      </ul>
+                      <ul class="data">
+                        <li class="mail icon-mail"
+                            tal:condition="result/contact_email"
+                            tal:attributes="
+                              title string:Mail ${result/title} at ${result/contact_email};
+                            "
+                        >
+                          <a tal:content="result/contact_email"
+                             tal:attributes="
+                               href string:mailto:${result/contact_email};
+                             "
+                          >minoush.farmer@organisation.com</a>
+                        </li>
+                        <li class="phone icon-phone"
+                            tal:condition="result/phone|nothing"
+                            tal:attributes="
+                              title string:Call ${result/title} on ${result/phone};
+                            "
+                        >
+                          <a tal:attributes="
+                               href string:tel:${result/phone};
+                             "
+                          >+34 506 948 294</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </tal:result>
+                <metal:counter use-macro="search_macros/autoload" />
+              </div>
+            </div>
+          </metal:results>
+        </metal:form>
+      </div>
+    </tal:content>
+  </body>
+</html>

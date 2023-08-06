@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ploneintranet">
+
+  <browser:page
+      name="app-messaging"
+      for="ploneintranet.layout.app.IApp"
+      class=".views.AppMessagingView"
+      template="templates/chat.html"
+      layer=".interfaces.IPloneIntranetMessagingLayer"
+      permission="ploneintranet.messaging.usemessaging"
+      />
+
+  <browser:page
+      name="app-messaging-new-chat"
+      for="ploneintranet.layout.app.IApp"
+      class=".views.AppMessagingNewChat"
+      template="templates/panel-new-chat.html"
+      layer=".interfaces.IPloneIntranetMessagingLayer"
+      permission="ploneintranet.messaging.usemessaging"
+      />
+
+  <browser:page
+      name="app-messaging-new-message"
+      for="ploneintranet.layout.app.IApp"
+      class=".views.AppMessagingNewMessage"
+      template="templates/new-message.html"
+      layer=".interfaces.IPloneIntranetMessagingLayer"
+      permission="ploneintranet.messaging.usemessaging"
+      />
+
+  <browser:viewlet
+      name="ploneintranet.messaging.messages"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.MessagesViewlet"
+      permission="ploneintranet.messaging.usemessaging"
+      template="templates/messagingviewlet.pt"
+      layer=".interfaces.IPloneintranetMessagingLayer"
+      />
+
+
+</configure>

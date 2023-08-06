@@ -1,0 +1,4989 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-09-04 10:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: ploneintranet\n"
+
+#: ../activitystream/browser/templates/post-menu.html:18
+#: ../layout/browser/templates/personal-menu.pt:47
+msgid "${action/title}"
+msgstr ""
+
+#: ../activitystream/browser/templates/content-share.html:22
+msgid "${action_verb} this item"
+msgstr ""
+
+#: ../activitystream/browser/templates/content-share.html:22
+msgid "${context/action_verb}"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:96
+msgid "${facet/label}"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile_group.pt:37
+msgid "${members} Members"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/metromap.pt:20
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:77
+msgid "${milestone/title}"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/metromap.pt:68
+msgid "${milestone/transition_title}"
+msgstr ""
+
+#: ../layout/browser/templates/workflow_menu.pt:16
+msgid "${state/title}"
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:21
+msgid "(all day)"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/change_workflow_confirmation.pt:25
+msgid "-- Please select --"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:150
+msgid "-- Please select a workspace --"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:43
+msgid "1 Column wide"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:47
+msgid "2 Columns wide"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:32
+msgid "<p>404</p>"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/mail_send_confirmation.pt:38
+msgid "<span class=\"text\"><em class=\"placeholder\">Write a message to the recipient(s)...</em></span><em class=\"selected-users\" id=\"selected-users\"></em><em class=\"selected-tags\" id=\"selected-tags\"></em>"
+msgstr ""
+
+#: ../bookmarks/browser/bookmark_button.py:47
+msgid "<strong>Bookmark</strong> this page"
+msgstr ""
+
+#: ../layout/viewlets/templates/on-screen-help.pt:1
+msgid "?"
+msgstr ""
+
+#: ../layout/profiles/default/types/ploneintranet.layout.app.xml
+#: ../layout/upgrades/profiles/to_0005/types/ploneintranet.layout.app.xml
+msgid "A Plone Intranet application"
+msgstr ""
+
+#: ../workspace/profiles/default/types/ploneintranet.workspace.workspacefolder.xml
+msgid "A Workspace users can collaborate in"
+msgstr ""
+
+#: ../search/interfaces.py:57
+msgid "A contact email address for this search result"
+msgstr ""
+
+#: ../layout/profiles/default/types/ploneintranet.layout.appscontainer.xml
+#: ../layout/upgrades/profiles/to_0004/types/ploneintranet.layout.appscontainer.xml
+msgid "A container for Apps"
+msgstr ""
+
+#: ../workspace/profiles/default/types/ploneintranet.workspace.workspacecontainer.xml
+msgid "A container for workspaces"
+msgstr ""
+
+#: ../library/behaviors/templates/feedback-library-copy-updated.pt:14
+#: ../workspace/basecontent/templates/document_view.pt:161
+msgid "A copy of this document"
+msgstr ""
+
+#: ../search/interfaces.py:94
+msgid "A dictionary of facets and available values"
+msgstr ""
+
+#: ../userprofile/content/workgroup.py:140
+msgid "A group with this id already exists"
+msgstr ""
+
+#: ../search/interfaces.py:69
+msgid "A highlighted summary of this search result"
+msgstr ""
+
+#: ../microblog/interfaces.py:13
+msgid "A longint unique status id"
+msgstr ""
+
+#: ../workspace/profiles/default/types/ploneintranet.workspace.mail.xml
+#: ../workspace/upgrades/profiles/to_0011/types/ploneintranet.workspace.mail.xml
+msgid "A mail content type"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:320
+msgid "A problem occurred while changing the user state"
+msgstr ""
+
+#: ../microblog/browser/configure.zcml:18
+msgid "A tile to add a new post"
+msgstr ""
+
+#: ../layout/browser/configure.zcml:284
+msgid "A title for the news"
+msgstr ""
+
+#: ../layout/browser/configure.zcml:273
+msgid "A title for the tasks"
+msgstr ""
+
+#: ../todo/behaviors.py:56
+msgid "A user (or a group) assigned to this task"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:217
+#: ../userprofile/content/userprofile.py:168
+msgid "A user with this username already exists"
+msgstr ""
+
+#: ../layout/profiles/default/actions.xml
+#: ../layout/upgrades/profiles/to_0002/actions.xml
+msgid "About this environment"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:65
+msgid "Account status"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:247
+msgid "Activate user"
+msgstr ""
+
+#: ../layout/browser/templates/dashboard.pt:48
+msgid "Activity centric view"
+msgstr ""
+
+#: ../layout/browser/templates/dashboard.pt:112
+msgid "Activity stream"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:216
+msgid "Activity stream portlet"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:361
+msgid "Add agenda item"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:136
+msgid "Add group"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-add-group.pt:13
+msgid "Add groups"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:190
+msgid "Add known bad ips"
+msgstr ""
+
+#: ../todo/portlets/latest.py:75
+msgid "Add latest news portlet"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:138
+msgid "Add registry entries to configure news portlet filter"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:114
+msgid "Add registry entries to configure portlet expand"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:155
+msgid "Add registry entries to configure splash page"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:172
+msgid "Add registry entry for the custom dashboard"
+msgstr ""
+
+#: ../bookmarks/browser/bookmark_link.py:57
+msgid "Add this item to your bookmarks"
+msgstr ""
+
+#: ../bookmarks/browser/tiles.py:103
+msgid "Add this workspace to your bookmarks."
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:39
+msgid "Add user"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-add-user.pt:13
+msgid "Add users"
+msgstr ""
+
+#: ../userprofile/content/configure.zcml:15
+msgid "Additional profile fields"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:103
+msgid "Address"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:11
+msgid "Adds Case specific Metadata"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:45
+msgid "Adds mail behavior"
+msgstr ""
+
+#: ../workspace/policies.py:33
+msgid "Admin-Managed"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:167
+#: ../workspace/browser/tiles/templates/sidebar.pt:45
+msgid "Advanced"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:183
+msgid "Advanced permissions"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:292
+msgid "Agenda"
+msgstr ""
+
+#: ../search/browser/searchtabs.py:12
+#: ../workspace/browser/templates/case_manager.pt:109
+#: ../workspace/browser/tiles/templates/navigation.pt:35
+msgid "All"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:543
+msgid "All Authors"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:539
+msgid "All Dates"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:547
+msgid "All Letters"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:541
+msgid "All Tags"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:873
+msgid "All Time"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:545
+msgid "All Types"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:19
+msgid "All bookmarks"
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:49
+msgid "All calendars"
+msgstr ""
+
+#: ../workspace/browser/tiles/events.py:37
+msgid "All day"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:202
+msgid "All day event"
+msgstr ""
+
+#: ../news/browser/magazine.py:33
+msgid "All news"
+msgstr ""
+
+#: ../notifications/browser/notifications.pt:42
+msgid "All notifications"
+msgstr ""
+
+#: ../todo/browser/app.py:667
+msgid "All personal tasks"
+msgstr ""
+
+#: ../todo/browser/app.py:44
+msgid "All tasks"
+msgstr ""
+
+#: ../bookmarks/browser/app.py:195
+#: ../layout/browser/grouped_search.py:68
+msgid "All time"
+msgstr ""
+
+#: ../library/browser/views.py:104
+msgid "All topics"
+msgstr ""
+
+#: ../workspace/browser/workspacecontainer.py:148
+msgid "All workspace types"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:61
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0016/registry.xml
+msgid "Alphabetical"
+msgstr ""
+
+#: ../todo/browser/app.py:72
+msgid "Alphabetically"
+msgstr ""
+
+#: ../layout/browser/templates/app-not-available.pt:18
+#: ../layout/browser/templates/app-unauthorized.pt:25
+#: ../layout/browser/templates/app.pt:25
+msgid "Alright"
+msgstr ""
+
+#: ../workspace/basecontent/baseviews.py:207
+msgid "Anonymous User"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:89
+msgid "Any logged-in user is allowed to join the group and participate. Anything in this group is visible for any logged-in user, even if they're not a member."
+msgstr ""
+
+#: ../layout/profiles/default/types/ploneintranet.layout.app.xml
+#: ../layout/upgrades/profiles/to_0005/types/ploneintranet.layout.app.xml
+msgid "App"
+msgstr ""
+
+#: ../layout/browser/apps.py:26
+#: ../layout/browser/templates/app.pt:12
+msgid "App not available"
+msgstr ""
+
+#: ../layout/browser/templates/app-unauthorized.pt:12
+msgid "App unauthorized"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:20
+#: ../layout/browser/on_screen_help.py:110
+#: ../layout/profiles/default/actions.xml
+msgid "Apps"
+msgstr ""
+
+#: ../layout/profiles/default/types/ploneintranet.layout.appscontainer.xml
+#: ../layout/upgrades/profiles/to_0004/types/ploneintranet.layout.appscontainer.xml
+msgid "Apps Container"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:79
+msgid "Archival and freeze"
+msgstr ""
+
+#: ../workspace/browser/archive.py:107
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:184
+msgid "Archive"
+msgstr ""
+
+#: ../workspace/browser/archive.py:105
+msgid "Archive this document"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:86
+msgid "Archive workspace"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:115
+msgid "Archived"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/workspace.tile.pt:15
+msgid "Archived on"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/delete_confirmation.pt:49
+msgid "Are you sure? (un-tick to exclude from deletion)"
+msgstr ""
+
+#: ../todo/behaviors.py:55
+#: ../todo/browser/templates/app-results.pt:70
+#: ../todo/browser/templates/app.pt:82
+msgid "Assignee"
+msgstr ""
+
+#: ../async/configure.zcml:18
+msgid "Async task dispatch for PloneIntranet"
+msgstr ""
+
+#: ../microblog/browser/templates/update-social.html:103
+msgid "Attach a file"
+msgstr ""
+
+#: ../microblog/browser/templates/update-social.html:103
+msgid "Attach a file (or create a picture)"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:72
+#: ../workspace/browser/templates/context-menu.pt:10
+msgid "Attach documents"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:72
+#: ../workspace/browser/templates/context-menu.pt:10
+msgid "Attachments"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:100
+msgid "Attributes changed."
+msgstr ""
+
+#: ../microblog/interfaces.py:16
+msgid "Author name (for display)"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:317
+msgid "Author of this document"
+msgstr ""
+
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0027/registry.xml
+msgid "Autosave delay"
+msgstr ""
+
+#: ../userprofile/browser/templates/user_import_form.pt:70
+msgid "Available fields/columns"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:112
+msgid "BCC"
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:34
+#: ../workspace/browser/tiles/sidebar.py:549
+msgid "Back"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/retag.py:16
+msgid "Batch (re)tagging"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/change_workflow.py:17
+msgid "Batch change workflow"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/delete.py:11
+msgid "Batch delete"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/rename.py:15
+msgid "Batch rename"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/mail.py:25
+msgid "Batch send"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:118
+msgid "Biography"
+msgstr ""
+
+#: ../bookmarks/browser/bookmark_link.py:59
+#: ../bookmarks/browser/tiles.py:100
+msgid "Bookmark"
+msgstr ""
+
+#: ../bookmarks/browser/tiles.py:94
+msgid "Bookmarked"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.apps.tile.pt:28
+msgid "Bookmarked Apps"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.documents.tile.pt:28
+msgid "Bookmarked Documents"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.workspaces.tile.pt:49
+msgid "Bookmarked Workspaces"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:207
+msgid "Bookmarked apps portlet"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:196
+msgid "Bookmarked workspaces portlet"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.tile.pt:20
+msgid "Bookmarks"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:32
+msgid "Bookmarks of Apps tile"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:44
+msgid "Bookmarks of Documents tile"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:20
+msgid "Bookmarks of Workspaces tile"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:120
+msgid "Bookmarks portlet"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:57
+msgid "Bookmarks tile"
+msgstr ""
+
+#: ../todo/browser/app.py:68
+msgid "By assignee"
+msgstr ""
+
+#: ../todo/browser/app.py:69
+msgid "By initiator"
+msgstr ""
+
+#: ../todo/browser/app.py:71
+msgid "By priority"
+msgstr ""
+
+#: ../todo/browser/app.py:70
+msgid "By task state"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:106
+msgid "CC"
+msgstr ""
+
+msgid "CSV document"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:143
+msgid "Calendar"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:80
+msgid "Call ${fullname} at ${context/telephone}"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:85
+#: ../library/behaviors/templates/panel-publish-to-library.pt:47
+#: ../messaging/browser/templates/panel-new-chat.html:40
+msgid "Cancel"
+msgstr ""
+
+#: ../userprofile/content/workgroup.py:31
+msgid "Canonical Group ID (may contain spaces)"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:11
+msgid "Case Metadata"
+msgstr ""
+
+msgid "Case Workspace"
+msgstr ""
+
+#: ../workspace/browser/workspacecontainer.py:166
+msgid "Cases"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:126
+msgid "Change custom order of tags"
+msgstr ""
+
+#: ../workspace/browser/templates/edit_folder.pt:7
+msgid "Change folder title and description"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/changemetadata.py:17
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:219
+msgid "Change metadata"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:219
+msgid "Change metadata, including names, tags and descriptions."
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:134
+msgid "Change notes"
+msgstr ""
+
+#: ../layout/browser/templates/personal-menu.pt:41
+msgid "Change personal image"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-change-role.pt:16
+#: ../workspace/browser/templates/panel-member-role-actions.pt:17
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:68
+msgid "Change role"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:68
+msgid "Change role of member"
+msgstr ""
+
+#: ../layout/browser/templates/dashboard.pt:72
+msgid "Change the composition of this dashboard to your liking. Add or remove items or change their order or size."
+msgstr ""
+
+#: ../layout/browser/templates/workflow_menu.pt:8
+#: ../todo/browser/templates/workflow_menu.pt:14
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:205
+msgid "Change the workflow state"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:205
+msgid "Change workflow"
+msgstr ""
+
+#: ../todo/browser/todo_view.py:103
+msgid "Changes applied"
+msgstr ""
+
+#: ../bookmarks/browser/bookmark_button.py:29
+msgid "Click to remove this bookmark"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:88
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:90
+msgid "Close"
+msgstr ""
+
+#: ../todo/browser/templates/workflow_menu.pt:36
+msgid "Closed"
+msgstr ""
+
+#: ../todo/browser/app.py:80
+msgid "Closed tasks"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:379
+msgid "Confirmed"
+msgstr ""
+
+#. Default: "row"
+#: ../userprofile/browser/user_import.py:187
+msgid "Constraint not satisfied for {} at row {}.field"
+msgstr ""
+
+#: ../workspace/policies.py:49
+msgid "Consume"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:66
+msgid "Contact"
+msgstr ""
+
+#: ../userprofile/browser/tiles/templates/contacts_search.pt:16
+msgid "Contacts"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:132
+msgid "Contacts portlet"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:151
+msgid "Copy"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:215
+msgid "Copy all attachments as individual files to this workspace."
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:179
+msgid "Copy file to workspace"
+msgstr ""
+
+#: ../library/behaviors/configure.zcml:13
+msgid "Copy into the Library"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/change_workflow.py:82
+msgid "Could not transition: ${title}"
+msgstr ""
+
+#: ../news/browser/templates/panel-create-news.html:81
+#: ../todo/browser/templates/add_task.pt:31
+#: ../workspace/browser/templates/add_content.pt:53
+msgid "Create"
+msgstr ""
+
+#: ../library/browser/templates/library.html:60
+msgid "Create a new page or section"
+msgstr ""
+
+#: ../admintool/browser/templates/user-management.pt:33
+msgid "Create a new user account"
+msgstr ""
+
+#: ../workspace/browser/templates/workspaces.pt:54
+msgid "Create a new workspace"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:23
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:55
+msgid "Create document"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:268
+#: ../workspace/browser/templates/add_event.pt:37
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:14
+msgid "Create event"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:234
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:58
+msgid "Create folder"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:246
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:64
+msgid "Create link"
+msgstr ""
+
+#: ../todo/browser/templates/app-results.pt:125
+#: ../todo/browser/templates/app.pt:279
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:22
+msgid "Create new task"
+msgstr ""
+
+#: ../news/browser/templates/panel-create-news.html:18
+msgid "Create news"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:279
+#: ../todo/browser/todo_add.py:15
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:22
+msgid "Create task"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:143
+msgid "Create user account"
+msgstr ""
+
+#: ../workspace/browser/add_workspace.py:38
+#: ../workspace/browser/templates/add_workspace.pt:145
+#: ../workspace/browser/templates/workspaces.pt:54
+msgid "Create workspace"
+msgstr ""
+
+#: ../microblog/interfaces.py:18
+msgid "Creation date"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:145
+msgid "Cut"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:67
+#: ../layout/profiles/default/actions.xml
+msgid "Dashboard"
+msgstr ""
+
+#: ../layout/browser/dashboard.py:467
+msgid "Dashboard order changed"
+msgstr ""
+
+#: ../layout/browser/dashboard.py:470
+msgid "Dashboard order unchanged"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:36
+msgid "Dashboard view select"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:221
+msgid "Date"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:327
+msgid "Date and time of the latest modification"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:67
+#: ../todo/browser/templates/app.pt:210
+msgid "Date range"
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:20
+msgid "Date:"
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:42
+msgid "Day"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:50
+msgid "Days running"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:249
+msgid "Deactivate user"
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:6
+msgid "Dear Mr./Ms. ${invitee_name},"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:381
+msgid "Declined"
+msgstr ""
+
+#: ../userprofile/content/configure.zcml:15
+msgid "Default additional fields for UserProfile."
+msgstr ""
+
+#: ../layout/browser/dashboard.py:453
+msgid "Default dashboard restored"
+msgstr ""
+
+#: ../todo/browser/templates/context-menu.pt:7
+#: ../workspace/basecontent/templates/mail_view.pt:62
+#: ../workspace/browser/templates/context-menu.pt:15
+msgid "Delete"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-delete-comment.html:10
+msgid "Delete comment"
+msgstr ""
+
+#: ../layout/browser/actions.py:26
+msgid "Delete confirmation"
+msgstr ""
+
+#: ../news/browser/templates/confirm-delete-item.html:16
+msgid "Delete news item"
+msgstr ""
+
+#: ../news/browser/templates/confirm-delete-section.html:18
+msgid "Delete news section"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-delete-post.html:10
+msgid "Delete post"
+msgstr ""
+
+#: ../news/browser/templates/edit.html:38
+#: ../todo/browser/templates/context-menu.pt:7
+#: ../workspace/browser/templates/context-menu.pt:15
+msgid "Delete this document"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:62
+msgid "Delete this event"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:154
+msgid "Delete workspace"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:88
+#: ../workspace/browser/templates/case_manager.pt:100
+msgid "Department"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:109
+msgid "Departments"
+msgstr ""
+
+#: ../userprofile/content/workgroup.py:45
+#: ../workspace/basecontent/templates/document_view.pt:108
+#: ../workspace/basecontent/templates/mail_view.pt:130
+msgid "Description"
+msgstr ""
+
+#: ../workspace/browser/templates/add_content.pt:41
+#: ../workspace/browser/templates/add_folder.pt:24
+#: ../workspace/browser/templates/add_form.pt:19
+msgid "Description for search results (Optional)"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:41
+#: ../workspace/browser/tiles/templates/navigation.pt:36
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:139
+msgid "Deselect all"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:72
+msgid "Destination"
+msgstr ""
+
+#: ../library/behaviors/templates/panel-publish-to-library.pt:28
+msgid "Destination within the library:"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:185
+msgid "Did you mean"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:150
+msgid "Display previews"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:116
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:45
+msgid "Division"
+msgstr ""
+
+#: ../workspace/interfaces.py:115
+msgid "Divisions represent sections of the overall organisation and appear as groupings on the workspace overview."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/changemetadata_confirmation.pt:36
+msgid "Document description"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/changemetadata_confirmation.pt:27
+#: ../workspace/browser/templates/add_content.pt:29
+msgid "Document title"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:51
+msgid "Document types"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:23
+#: ../layout/browser/configure.zcml:296
+#: ../layout/browser/templates/my_documents.pt:25
+msgid "Documents"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:152
+msgid "Documents portlet"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:39
+msgid "Don't show"
+msgstr ""
+
+#: ../todo/browser/templates/workflow_menu.pt:41
+msgid "Done"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:64
+msgid "Down"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/download.py:17
+#: ../workspace/browser/cart_actions/templates/download_confirmation.pt:73
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:198
+msgid "Download"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:260
+#: ../workspace/basecontent/templates/mail_view.pt:227
+msgid "Download as"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:173
+msgid "Download file"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:150
+msgid "Download this file"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:212
+msgid "Download this image"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:108
+msgid "Drop files here..."
+msgstr ""
+
+#: ../todo/behaviors.py:67
+#: ../workspace/browser/templates/content_macros.pt:55
+msgid "Due date"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:27
+msgid "E-mail"
+msgstr ""
+
+#: ../admintool/browser/templates/panel-create-user-account.pt:41
+msgid "E-mail address"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:124
+msgid "Earliest creation date"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:131
+msgid "Earliest modification date"
+msgstr ""
+
+#: ../library/browser/templates/page.pt:37
+#: ../workspace/browser/templates/edit_folder.pt:19
+msgid "Edit"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-edit-comment.html:10
+msgid "Edit comment"
+msgstr ""
+
+#: ../layout/browser/templates/dashboard.pt:72
+#: ../layout/browser/templates/edit-dashboard.pt:12
+msgid "Edit dashboard"
+msgstr ""
+
+#: ../todo/portlets/latest.py:87
+msgid "Edit latest news portlet"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:258
+msgid "Edit name/description"
+msgstr ""
+
+#: ../news/browser/templates/panel-edit-news-section-info.html:15
+msgid "Edit news section"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-edit-post.html:10
+msgid "Edit post"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile_info.pt:28
+msgid "Edit profile"
+msgstr ""
+
+#: ../activitystream/browser/templates/comment.html:41
+#: ../activitystream/browser/templates/content-share.html:38
+#: ../activitystream/browser/templates/post.html:76
+msgid "Edited"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:63
+#: ../userprofile/content/workgroup.py:52
+msgid "Email"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/mail.py:104
+msgid "Email sent."
+msgstr ""
+
+#: ../workspace/browser/event.py:143
+msgid "Emails sent successfully"
+msgstr ""
+
+#: ../themeswitcher/configure.zcml:43
+msgid "Enables on-the-fly theme switching"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:34
+msgid "Enter a description of the task"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/changemetadata_confirmation.pt:43
+#: ../workspace/browser/cart_actions/templates/retag_confirmation.pt:29
+msgid "Enter a label"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:181
+msgid "Enter a location"
+msgstr ""
+
+#: ../workspace/browser/event.py:133
+msgid "Error sending email"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/paste.py:25
+msgid "Error while pasting items"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:376
+msgid "Event"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:168
+msgid "Event description"
+msgstr ""
+
+#: ../workspace/browser/templates/add_event.pt:18
+msgid "Event title"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:18
+#: ../workspace/browser/tiles/templates/workspace-tabs-tile.pt:20
+msgid "Events"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:36
+msgid "Events I'm invited to"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:142
+msgid "Events portlet"
+msgstr ""
+
+msgid "Excel 2007 spreadsheet"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:273
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:41
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:13
+msgid "Expand sidebar"
+msgstr ""
+
+#: ../admintool/configure.zcml:26
+msgid "Extension profile for ploneintranet.admintool."
+msgstr ""
+
+#: ../bookmarks/configure.zcml:26
+msgid "Extension profile for ploneintranet.bookmarks."
+msgstr ""
+
+#: ../calendar/configure.zcml:26
+msgid "Extension profile for ploneintranet.calendar."
+msgstr ""
+
+#: ../layout/configure.zcml:41
+msgid "Extension profile for ploneintranet.layout."
+msgstr ""
+
+#: ../userprofile/sync.py:186
+msgid "External property sync complete."
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:29
+msgid "File field"
+msgstr ""
+
+#: ../userprofile/browser/user_import.py:147
+msgid "File incorrectly formatted."
+msgstr ""
+
+#: ../search/browser/searchtabs.py:24
+msgid "Files"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:136
+msgid "Filter by user"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.documents.tile.pt:44
+msgid "Find bookmarked documents"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.tile.pt:36
+msgid "Find bookmarks"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:34
+msgid "Find events"
+msgstr ""
+
+#: ../userprofile/browser/tiles/templates/contacts_search.pt:22
+msgid "Find users"
+msgstr ""
+
+#: ../admintool/browser/templates/mail-user-created.pt:15
+#: ../admintool/browser/templates/panel-create-user-account.pt:25
+#: ../userprofile/content/userprofile.py:53
+msgid "First name"
+msgstr ""
+
+msgid "Folder"
+msgstr ""
+
+#: ../workspace/browser/templates/add_folder.pt:16
+msgid "Folder name"
+msgstr ""
+
+#: ../network/browser/follows.py:40
+msgid "Follow"
+msgstr ""
+
+#: ../network/browser/templates/maxiauthor_provider.pt:28
+msgid "Followers"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:129
+msgid "Followers ${num_followers}"
+msgstr ""
+
+#: ../network/browser/templates/maxiauthor_provider.pt:35
+#: ../network/browser/templates/miniauthor_provider.pt:34
+#: ../network/browser/templates/toggle_follow.pt:25
+msgid "Following"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:177
+msgid "Following ${num_following}"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-security.pt:23
+msgid "For cases, security is managed by the case workflow. You cannot configure it here like in workspaces. Instead please just assign the correct roles to users and groups in the \"Members\" tab."
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:36
+msgid "Forward"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:102
+msgid "Freeze case"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:221
+#: ../workspace/basecontent/templates/mail_view.pt:96
+#: ../workspace/browser/templates/content_macros.pt:216
+msgid "From"
+msgstr ""
+
+#: ../workspace/browser/templates/case_timeline.pt:15
+msgid "Frozen"
+msgstr ""
+
+#: ../workspace/browser/templates/case_timeline.pt:19
+msgid "Frozen on"
+msgstr ""
+
+#: ../calendar/browser/configure.zcml:55
+msgid "Full Calendar tile"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:140
+msgid "Full list of followers"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:119
+msgid "Full list of people ${name_of_followee} follows."
+msgstr ""
+
+#: ../layout/browser/dashboard.py:448
+msgid "Function not allowed"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar.pt:31
+msgid "General"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:39
+msgid "General tasks"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:31
+msgid "Generic workspace"
+msgstr ""
+
+#: ../workspace/browser/workspacecontainer.py:164
+msgid "Generic workspaces"
+msgstr ""
+
+#: ../userprofile/profiles/default/types/ploneintranet.userprofile.workgroup.xml
+#: ../userprofile/upgrades/profiles/to_0006/types/ploneintranet.userprofile.workgroup.xml
+msgid "Group"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:16
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:23
+msgid "Group by"
+msgstr ""
+
+#: ../todo/browser/app.py:55
+msgid "Group by assignee"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:49
+msgid "Group by bookmarking date"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:44
+msgid "Group by creation date"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile_documents.pt:14
+msgid "Group by date"
+msgstr ""
+
+#: ../workspace/browser/workspacecontainer.py:140
+msgid "Group by division"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:34
+msgid "Group by first character"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile_documents.pt:13
+msgid "Group by first letter"
+msgstr ""
+
+#: ../todo/browser/app.py:56
+msgid "Group by initiator"
+msgstr ""
+
+#: ../todo/browser/app.py:53
+msgid "Group by origin"
+msgstr ""
+
+#: ../todo/browser/app.py:54
+msgid "Group by origin and milestone"
+msgstr ""
+
+#: ../todo/browser/app.py:58
+msgid "Group by priority"
+msgstr ""
+
+#: ../library/browser/templates/library.html:47
+msgid "Group by section"
+msgstr ""
+
+#: ../library/browser/templates/library.html:51
+msgid "Group by tag"
+msgstr ""
+
+#: ../todo/browser/app.py:57
+msgid "Group by task state"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:39
+msgid "Group by workspace"
+msgstr ""
+
+#: ../layout/browser/configure.zcml:308
+msgid "Grouped Search"
+msgstr ""
+
+#: ../workspace/policies.py:77
+msgid "Guest"
+msgstr ""
+
+#: ../workspace/policies.py:78
+msgid "Guests are only used internally and cannot be assigned."
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:248
+#: ../layout/browser/templates/on-screen-help-link.pt:1
+msgid "Help"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:31
+msgid "Help unavailable"
+msgstr ""
+
+#: ../workspace/interfaces.py:96
+msgid "Hero Image"
+msgstr ""
+
+#: ../todo/vocabularies.py:11
+msgid "High"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:130
+msgid "High priority"
+msgstr ""
+
+#: ../todo/portlets/latest.py:23
+msgid "How many items to list."
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:105
+msgid "I"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-delete-comment.html:31
+#: ../activitystream/browser/templates/panel-delete-post.html:31
+#: ../layout/browser/actions.py:82
+msgid "I am sure, delete now"
+msgstr ""
+
+#: ../workspace/browser/templates/confirmation-remove-special-role.pt:30
+msgid "I am sure, remove role now"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-unfreeze-case.pt:25
+msgid "I am sure, unfreeze now"
+msgstr ""
+
+#: ../layout/profiles/default/actions.xml
+#: ../layout/upgrades/profiles/to_0002/actions.xml
+msgid "I forgot my password"
+msgstr ""
+
+#: ../userprofile/content/workgroup.py:26
+msgid "ID"
+msgstr ""
+
+#: ../workspace/browser/forms.py:64
+msgid "If checked, users will be removed from workspace"
+msgstr ""
+
+#: ../layout/browser/templates/locking_panel.pt:17
+msgid "If you think the user is currently not editing this document and you want to edit it now, then you can unlock the document. Unlocking the document will allow you to edit the document and lock it for editing for other users untill you close the document."
+msgstr ""
+
+#: ../workspace/browser/templates/workspace.pt:77
+msgid "If you use this workspace, you might also be interested in"
+msgstr ""
+
+#: ../workspace/browser/templates/add_content.pt:25
+msgid "Image"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:20
+msgid "Image field"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile-edit.pt:14
+msgid "Image of {{ page.title }}"
+msgstr ""
+
+#: ../search/browser/searchtabs.py:20
+msgid "Images"
+msgstr ""
+
+#: ../userprofile/browser/templates/user_import_form.pt:62
+msgid "Import users from file"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:121
+msgid "Individuals"
+msgstr ""
+
+#: ../todo/browser/templates/app-results.pt:31
+#: ../userprofile/browser/templates/userprofile.pt:160
+#: ../workspace/browser/templates/sharingviewlet.pt:4
+msgid "Info"
+msgstr ""
+
+#: ../todo/behaviors.py:49
+#: ../todo/browser/templates/app.pt:153
+#: ../workspace/browser/templates/content_macros.pt:37
+msgid "Initiator"
+msgstr ""
+
+#: ../todo/browser/templates/app-results.pt:108
+msgid "Initiator of this task"
+msgstr ""
+
+#: ../news/configure.zcml:47
+msgid "Installs test content for ploneintranet.news"
+msgstr ""
+
+#: ../themeswitcher/configure.zcml:52
+msgid "Installs testthemeA for test purposes"
+msgstr ""
+
+#: ../news/configure.zcml:29
+msgid "Installs the ploneintranet.news package"
+msgstr ""
+
+#: ../userprofile/configure.zcml:62
+msgid "Installs the ploneintranet.userprofile package"
+msgstr ""
+
+#: ../invitations/invitations.py:75
+msgid "Invitation sent to %s"
+msgstr ""
+
+#: ../invitations/invite_user.pt:20
+#: ../invitations/profiles/default/controlpanel.xml
+msgid "Invitations"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:169
+msgid "Invite users to this workspace (via email)"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:372
+msgid "Invitees"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:194
+msgid "Item created."
+msgstr ""
+
+#: ../workspace/browser/edit_content.py:32
+msgid "Item edited."
+msgstr ""
+
+#: ../news/browser/templates/edit.html:55
+#: ../news/browser/templates/panel-create-news.html:42
+msgid "Item summary (Optional)"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/paste.py:31
+msgid "Item(s) pasted"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:868
+msgid "Items modified last month"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:862
+msgid "Items modified last week"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:856
+msgid "Items modified today"
+msgstr ""
+
+msgid "JPEG image"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:83
+msgid "Job title"
+msgstr ""
+
+#: ../workspace/browser/templates/joinviewlet.pt:3
+msgid "Join"
+msgstr ""
+
+#: ../workspace/browser/templates/joinviewlet.pt:9
+msgid "Join now"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:72
+msgid "Last Contacts"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:867
+msgid "Last Month"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:861
+msgid "Last Week"
+msgstr ""
+
+#: ../bookmarks/browser/app.py:193
+#: ../layout/browser/grouped_search.py:66
+msgid "Last month"
+msgstr ""
+
+#: ../admintool/browser/templates/mail-user-created.pt:17
+#: ../admintool/browser/templates/panel-create-user-account.pt:33
+#: ../userprofile/content/userprofile.py:58
+msgid "Last name"
+msgstr ""
+
+#: ../layout/browser/templates/saving_badge.pt:22
+msgid "Last saved"
+msgstr ""
+
+#: ../bookmarks/browser/app.py:191
+#: ../layout/browser/grouped_search.py:64
+msgid "Last week"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:126
+msgid "Latest creation date"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:133
+msgid "Latest modification date"
+msgstr ""
+
+#: ../todo/portlets/latest.py:39
+msgid "Latest news"
+msgstr ""
+
+#: ../calendar/browser/templates/calendar_more_menu.pt:22
+msgid "Learn how this works"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:89
+#: ../layout/profiles/default/actions.xml
+msgid "Library"
+msgstr ""
+
+#: ../library/profiles/default/types/ploneintranet.library.app.xml
+msgid "Library App"
+msgstr ""
+
+#: ../library/profiles/default/types/ploneintranet.library.folder.xml
+msgid "Library Folder"
+msgstr ""
+
+#: ../library/profiles/default/types/ploneintranet.library.section.xml
+msgid "Library Section"
+msgstr ""
+
+#: ../library/configure.zcml:20
+msgid "Library for PloneIntranet"
+msgstr ""
+
+#: ../network/browser/likes.py:95
+msgid "Like"
+msgstr ""
+
+msgid "Link"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:248
+msgid "Link name"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:188
+msgid "Load previews ..."
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:215
+msgid "Loading ${num_groups} data..."
+msgstr ""
+
+#: ../admintool/browser/templates/app.pt:26
+msgid "Loading ..."
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile_info.pt:53
+msgid "Loading group information..."
+msgstr ""
+
+#: ../admintool/browser/templates/user-management.pt:90
+#: ../search/browser/templates/all_results.pt:313
+msgid "Loading more search results&hellip;"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:90
+msgid "Loading..."
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:181
+#: ../workspace/browser/templates/email_invitees_html.pt:24
+msgid "Location"
+msgstr ""
+
+#: ../layout/browser/templates/locking_panel.pt:40
+msgid "Lock"
+msgstr ""
+
+#: ../layout/browser/templates/saving_badge.pt:43
+msgid "Locked"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:34
+msgid "Locked down, secret workspace"
+msgstr ""
+
+#: ../layout/browser/overrides-quaive-specific/Products.CMFPlone.skins.plone_login.login_next.cpy:22
+msgid "Login failed"
+msgstr ""
+
+#: ../layout/browser/templates/personal-menu.pt:55
+msgid "Logout"
+msgstr ""
+
+#: ../todo/vocabularies.py:9
+msgid "Low"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:124
+msgid "Low priority"
+msgstr ""
+
+#: ../news/configure.zcml:18
+msgid "Magazine metadata for News Item"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:45
+#: ../workspace/profiles/default/types/ploneintranet.workspace.mail.xml
+#: ../workspace/upgrades/profiles/to_0011/types/ploneintranet.workspace.mail.xml
+msgid "Mail"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:73
+msgid "Mail ${fullname} via ${context/email}"
+msgstr ""
+
+msgid "Make open"
+msgstr ""
+
+# change security settings on a generic workspace
+msgid "Make private"
+msgstr ""
+
+msgid "Make secret"
+msgstr ""
+
+#: ../todo/portlets/latest.pt:34
+msgid "Mark read"
+msgstr ""
+
+#: ../todo/behaviors.py:25
+msgid "Mark the content as \"Must read\" for all users."
+msgstr ""
+
+#: ../todo/vocabularies.py:10
+msgid "Medium"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:127
+msgid "Medium priority"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:74
+msgid "Member"
+msgstr ""
+
+#: ../userprofile/browser/templates/group.pt:44
+#: ../userprofile/browser/templates/group_view.pt:44
+msgid "Member groups"
+msgstr ""
+
+#: ../userprofile/browser/templates/group.pt:63
+#: ../userprofile/browser/templates/group_view.pt:65
+msgid "Member users"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:245
+msgid "Member(s) added"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:250
+msgid "Member(s) removed"
+msgstr ""
+
+#: ../userprofile/content/workgroup.py:62
+#: ../workspace/browser/templates/workspace.pt:64
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:27
+msgid "Members"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:55
+msgid "Membrane Group (Workspace)"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:48
+msgid "Menu toggle"
+msgstr ""
+
+#: ../workspace/browser/forms.py:119
+msgid "Message"
+msgstr ""
+
+#: ../messaging/browser/templates/messagingviewlet.pt:2
+msgid "Messages"
+msgstr ""
+
+#: ../messaging/browser/templates/chat.html:25
+msgid "Messages makes it easy to stay in touch with your co-workers and anyone else who's using the intranet."
+msgstr ""
+
+#: ../todo/behaviors.py:83
+#: ../todo/browser/templates/app-results.pt:96
+msgid "Milestone"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:103
+msgid "Milestone this task belongs to"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:250
+msgid "Milestones"
+msgstr ""
+
+#. Default: "row"
+#: ../userprofile/browser/user_import.py:182
+msgid "Missing required field {} on row {}"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:98
+msgid "Mobile Number"
+msgstr ""
+
+#: ../layout/profiles/testing/types/ploneintranet.layout.mockfolder.xml
+msgid "MockFolder"
+msgstr ""
+
+#: ../workspace/policies.py:70
+msgid "Moderate"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:54
+msgid "Modifications past 7 days"
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:40
+msgid "Month"
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:51
+msgid "More"
+msgstr ""
+
+#: ../userprofile/browser/templates/group_view.pt:86
+msgid "More &hellip;"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:36
+msgid "More info"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:92
+msgid "More information about"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:48
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:35
+msgid "More..."
+msgstr ""
+
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0016/registry.xml
+msgid "Most active workspaces on top"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.tile.pt:47
+msgid "Most popular"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:69
+msgid "Most recently added"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:73
+msgid "Most recently logged in"
+msgstr ""
+
+#: ../workspace/browser/forms.py:63
+msgid "Move"
+msgstr ""
+
+#: ../todo/behaviors.py:24
+msgid "Must read"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:56
+msgid "My calendars"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:40
+msgid "My events"
+msgstr ""
+
+#: ../layout/browser/templates/personal-menu.pt:15
+msgid "My profile"
+msgstr ""
+
+#: ../todo/browser/app.py:45
+msgid "My tasks"
+msgstr ""
+
+#: ../layout/browser/configure.zcml:273
+msgid "My tile's description"
+msgstr ""
+
+#: ../layout/browser/templates/dashboard.pt:60
+msgid "My view (customizable)"
+msgstr ""
+
+#: ../network/browser/likes.py:66
+msgid "Myself"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:303
+msgid "Name of agenda item"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:189
+msgid "Name of organiser"
+msgstr ""
+
+#: ../messaging/browser/templates/chat.html:30
+#: ../messaging/browser/templates/panel-new-chat.html:17
+msgid "New conversation"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:208
+msgid "New splashpage"
+msgstr ""
+
+#: ../todo/browser/app.py:66
+msgid "Newest first"
+msgstr ""
+
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0016/registry.xml
+msgid "Newest workspaces on top"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:80
+#: ../layout/profiles/default/actions.xml
+#: ../todo/portlets/latest.pt:12
+msgid "News"
+msgstr ""
+
+#: ../news/profiles/default/types/ploneintranet.news.app.xml
+msgid "News App"
+msgstr ""
+
+msgid "News Item"
+msgstr ""
+
+#: ../news/profiles/default/types/ploneintranet.news.section.xml
+msgid "News Section"
+msgstr ""
+
+#: ../news/browser/templates/panel-create-news.html:38
+msgid "News item title"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:162
+msgid "News portlet"
+msgstr ""
+
+#: ../layout/browser/configure.zcml:284
+msgid "News tile showing news on the dashboard"
+msgstr ""
+
+#: ../news/configure.zcml:18
+msgid "Newsitem Magazine Metadata"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:65
+msgid "Next"
+msgstr ""
+
+#: ../layout/browser/templates/on-screen-help.pt:13
+msgid "Next tip&hellip;"
+msgstr ""
+
+#: ../microblog/browser/templates/update-social.html:104
+msgid "No attachments selected."
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:63
+#: ../bookmarks/browser/templates/bookmarks.apps.tile.pt:34
+#: ../bookmarks/browser/templates/bookmarks.documents.tile.pt:55
+msgid "No bookmarks were found"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.documents.tile.pt:54
+#: ../bookmarks/browser/templates/bookmarks.tile.pt:57
+msgid "No bookmarks were found matching ${SearchableText}"
+msgstr ""
+
+#: ../todo/browser/app.py:59
+#: ../workspace/browser/workspacecontainer.py:138
+msgid "No grouping"
+msgstr ""
+
+#: ../network/browser/likes.py:152
+msgid "No item id given in sub-path. Use .../@@toggle_like/123456"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/changemetadata_confirmation.pt:56
+msgid "No item selected."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/retag.py:54
+msgid "No items could be (re)tagged"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/change_workflow.py:116
+msgid "No items could be changed in their workflow states."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/delete.py:41
+msgid "No items could be deleted"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/rename.py:51
+msgid "No items could be renamed"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/changemetadata.py:121
+msgid "No items could be updated"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:357
+msgid "No items set"
+msgstr ""
+
+#: ../notifications/browser/notifications.pt:39
+msgid "No pending notifications"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:205
+msgid "No preview available"
+msgstr ""
+
+#: ../todo/vocabularies.py:8
+msgid "No priority"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:121
+msgid "No priority set"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:18
+msgid "No results"
+msgstr ""
+
+#: ../todo/browser/templates/app-results.pt:136
+msgid "No results found"
+msgstr ""
+
+#: ../network/browser/templates/author.pt:20
+#: ../network/browser/templates/graph.pt:20
+msgid "No such user ${userid}."
+msgstr ""
+
+#: ../activitystream/browser/stream.py:285
+msgid "No tag selected"
+msgstr ""
+
+#: ../layout/browser/templates/tasks-tile.pt:24
+msgid "No tasks available"
+msgstr ""
+
+#: ../bookmarks/browser/app.py:63
+#: ../layout/browser/grouped_search.py:86
+msgid "No title"
+msgstr ""
+
+#: ../invitations/views.py:30
+msgid "No token id given in sub-path.Use .../@@accept-token/tokenid"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:44
+msgid "No upcoming events."
+msgstr ""
+
+#: ../admintool/browser/user_management.py:313
+msgid "No user selected"
+msgstr ""
+
+#: ../admintool/browser/templates/user-management.pt:55
+msgid "No users found"
+msgstr ""
+
+#: ../todo/browser/app.py:548
+#: ../workspace/browser/templates/add_workspace.pt:120
+#: ../workspace/browser/tiles/templates/navigation.pt:36
+msgid "None"
+msgstr ""
+
+#: ../bookmarks/browser/app.py:252
+msgid "Not in a workspace"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:165
+msgid "Notes"
+msgstr ""
+
+#: ../network/browser/templates/author.pt:18
+#: ../network/browser/templates/graph.pt:18
+msgid "Nothing here"
+msgstr ""
+
+#: ../notifications/browser/notifications.pt:12
+#: ../notifications/browser/notificationsviewlet.pt:4
+msgid "Notifications"
+msgstr ""
+
+#: ../todo/portlets/latest.py:22
+msgid "Number of items to display"
+msgstr ""
+
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0027/registry.xml
+msgid "Number of ms the client will wait before submitting a document"
+msgstr ""
+
+msgid "ODT document"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/change_workflow_confirmation.pt:59
+msgid "OK, change workflow"
+msgstr ""
+
+#: ../workspace/subscribers.py:170
+msgid "Oh boy, oh boy, you are already a member"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-add-group.pt:27
+#: ../workspace/browser/templates/panel-add-user.pt:26
+#: ../workspace/browser/templates/panel-related-workspaces.pt:50
+msgid "Ok"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:874
+msgid "Older"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:79
+msgid "Older events"
+msgstr ""
+
+#: ../todo/browser/app.py:67
+msgid "Oldest first"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:144
+msgid "Once the user account is created, the user will receive an e-mail containing a link to a page on which the account creation can be finalised."
+msgstr ""
+
+#: ../workspace/policies.py:34
+msgid "Only administrators can add workspace members."
+msgstr ""
+
+#: ../workspace/browser/templates/workspaces.pt:51
+msgid "Only my workspaces"
+msgstr ""
+
+#: ../todo/browser/templates/workflow_menu.pt:34
+#: ../workspace/policies.py:23
+msgid "Open"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:46
+msgid "Open community"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:73
+msgid "Open in External Editor"
+msgstr ""
+
+#: ../todo/browser/templates/todo_view.pt:108
+msgid "Open sidebar"
+msgstr ""
+
+#: ../todo/browser/app.py:79
+msgid "Open tasks"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:48
+msgid "Open workspace calendar"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:48
+msgid "Open workspace calendar in a new window"
+msgstr ""
+
+#: ../news/browser/templates/publisher-sidebar.pt:41
+#: ../search/browser/templates/all_results.pt:119
+msgid "Options"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:188
+msgid "Organiser"
+msgstr ""
+
+#: ../activitystream/browser/templates/comment.html:53
+#: ../activitystream/browser/templates/content-share.html:49
+#: ../activitystream/browser/templates/post.html:88
+msgid "Original text:"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:41
+msgid "Other events"
+msgstr ""
+
+#: ../workspace/policies.py:43
+msgid "Outsiders can self-join becoming a workspace member."
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/metromap.pt:74
+msgid "Overdue"
+msgstr ""
+
+msgid "PDF document"
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:52
+msgid "Page wide"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:157
+msgid "Paste"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar.pt:13
+msgid "Paste document(s)"
+msgstr ""
+
+msgid "Pending review"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:22
+#: ../search/browser/searchtabs.py:16
+msgid "People"
+msgstr ""
+
+msgid "Person"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:48
+msgid "Person title"
+msgstr ""
+
+#: ../messaging/browser/templates/panel-new-chat.html:27
+msgid "Person you like to chat with"
+msgstr ""
+
+#: ../layout/browser/personal_tools.py:57
+msgid "Personal image updated. Keep browsing or reload the page to see the change."
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:276
+msgid "Personal menu"
+msgstr ""
+
+#: ../layout/browser/templates/personal-menu.pt:23
+msgid "Personal settings"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:79
+msgid "Personal task list"
+msgstr ""
+
+#: ../layout/browser/dashboard.py:406
+#: ../todo/browser/app.py:46
+msgid "Personal tasks"
+msgstr ""
+
+#: ../todo/browser/app.py:668
+msgid "Personal tasks assigned to me by others"
+msgstr ""
+
+#: ../todo/browser/app.py:669
+msgid "Personal tasks that I assigned to others"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:67
+msgid "Photo"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:45
+msgid "Pick an assignee"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:37
+msgid "Pick an initiator"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:101
+msgid "Pick the responsible department"
+msgstr ""
+
+#: ../workspace/browser/pinning.py:114
+msgid "Pin this item to the workspace"
+msgstr ""
+
+#: ../workspace/browser/pinning.py:116
+msgid "Pinned"
+msgstr ""
+
+#: ../todo/browser/templates/workflow_menu.pt:35
+msgid "Planned"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/change_workflow.py:64
+msgid "Please select at least one item."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/change_workflow.py:98
+msgid "Please select at workflow transition."
+msgstr ""
+
+#: ../workspace/browser/add_workspace.py:232
+msgid "Please specify which Case Template to use"
+msgstr ""
+
+#: ../admintool/configure.zcml:34
+msgid "Plone Intranet: -- [Administrator Tool uninstall]"
+msgstr ""
+
+#: ../admintool/configure.zcml:26
+msgid "Plone Intranet: -- [Administrator Tool]"
+msgstr ""
+
+#: ../async/configure.zcml:26
+msgid "Plone Intranet: -- [Async uninstall]"
+msgstr ""
+
+#: ../async/configure.zcml:18
+msgid "Plone Intranet: -- [Async]"
+msgstr ""
+
+#: ../bookmarks/configure.zcml:34
+msgid "Plone Intranet: -- [Bookmarks uninstall]"
+msgstr ""
+
+#: ../bookmarks/configure.zcml:26
+msgid "Plone Intranet: -- [Bookmarks]"
+msgstr ""
+
+#: ../calendar/configure.zcml:34
+msgid "Plone Intranet: -- [Calendar uninstall]"
+msgstr ""
+
+#: ../calendar/configure.zcml:26
+msgid "Plone Intranet: -- [Calendar]"
+msgstr ""
+
+#: ../layout/configure.zcml:49
+msgid "Plone Intranet: -- [Layout testing]"
+msgstr ""
+
+#: ../layout/configure.zcml:58
+msgid "Plone Intranet: -- [Layout uninstall]"
+msgstr ""
+
+#: ../layout/configure.zcml:41
+msgid "Plone Intranet: -- [Layout]"
+msgstr ""
+
+#: ../library/configure.zcml:28
+msgid "Plone Intranet: -- [Library uninstall]"
+msgstr ""
+
+#: ../library/configure.zcml:20
+msgid "Plone Intranet: -- [Library]"
+msgstr ""
+
+#: ../news/configure.zcml:29
+msgid "Plone Intranet: -- [News: Install]"
+msgstr ""
+
+#: ../news/configure.zcml:47
+msgid "Plone Intranet: -- [News: Testcontent]"
+msgstr ""
+
+#: ../news/configure.zcml:38
+msgid "Plone Intranet: -- [News: Uninstall]"
+msgstr ""
+
+#: ../themeswitcher/configure.zcml:52
+msgid "Plone Intranet: -- [Themeswitcher: Testing]"
+msgstr ""
+
+#: ../themeswitcher/configure.zcml:43
+msgid "Plone Intranet: -- [Themeswitcher]"
+msgstr ""
+
+#: ../userprofile/configure.zcml:81
+msgid "Plone Intranet: -- [User Profiles Testing]"
+msgstr ""
+
+#: ../userprofile/configure.zcml:72
+msgid "Plone Intranet: -- [User Profiles uninstall]"
+msgstr ""
+
+#: ../userprofile/configure.zcml:62
+msgid "Plone Intranet: -- [User Profiles]"
+msgstr ""
+
+#: ../workspace/configure.zcml:185
+msgid "Plone Intranet: -- [Workspace uninstall]"
+msgstr ""
+
+#: ../workspace/configure.zcml:176
+msgid "Plone Intranet: -- [Workspace]"
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:36
+msgid "PloneIntranet Event Fields"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:239
+msgid "Portal search"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:227
+msgid "Post a message"
+msgstr ""
+
+msgid "PowerPoint 2007 presentation"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:159
+msgid "Preview"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:204
+msgid "Preview being generated"
+msgstr ""
+
+#: ../news/browser/templates/edit.html:42
+msgid "Preview this news item"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:112
+msgid "Primary location"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:263
+#: ../workspace/basecontent/templates/mail_view.pt:230
+msgid "Print"
+msgstr ""
+
+#: ../todo/behaviors.py:61
+#: ../workspace/browser/templates/content_macros.pt:115
+msgid "Priority"
+msgstr ""
+
+#: ../workspace/policies.py:16
+msgid "Private"
+msgstr ""
+
+#: ../workspace/policies.py:56
+msgid "Produce"
+msgstr ""
+
+#: ../userprofile/profiles/default/types/ploneintranet.userprofile.userprofile.xml
+msgid "Profile"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:57
+msgid "Provides bookmarks as a tile"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:32
+msgid "Provides bookmarks of Apps as a tile"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:44
+msgid "Provides bookmarks of Documents as a tile"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:20
+msgid "Provides bookmarks of workspaces as a tile"
+msgstr ""
+
+#: ../library/behaviors/templates/panel-publish-to-library.pt:44
+#: ../workspace/policies.py:63
+msgid "Publish"
+msgstr ""
+
+#: ../library/behaviors/templates/panel-publish-to-library.pt:12
+#: ../workspace/basecontent/templates/document_view.pt:266
+#: ../workspace/basecontent/templates/mail_view.pt:233
+msgid "Publish to library"
+msgstr ""
+
+#: ../library/behaviors/configure.zcml:13
+msgid "Publish widely"
+msgstr ""
+
+msgid "Published"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:228
+msgid "Re-tag"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:311
+msgid "Read the manual"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmarks.tile.pt:43
+msgid "Recent"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/mail_send_confirmation.pt:28
+msgid "Recipients..."
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:32
+msgid "Regards"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:226
+msgid "Registry record to customize the help bubbles"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:244
+msgid "Registry record to toggle the help bubbles on and off"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:77
+msgid "Remove"
+msgstr ""
+
+#: ../bookmarks/browser/bookmark_link.py:52
+msgid "Remove bookmark"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:77
+msgid "Remove member or group"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-remove-user.pt:16
+msgid "Remove members"
+msgstr ""
+
+#: ../workspace/browser/templates/confirmation-remove-special-role.pt:13
+msgid "Remove role"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-member-role-actions.pt:14
+msgid "Remove special role"
+msgstr ""
+
+#: ../bookmarks/browser/bookmark_link.py:50
+msgid "Remove this item from your bookmarks"
+msgstr ""
+
+#: ../bookmarks/browser/tiles.py:97
+msgid "Remove this workspace from your bookmarks"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/rename_confirmation.pt:56
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:235
+msgid "Rename"
+msgstr ""
+
+#: ../todo/browser/templates/workflow_menu.pt:42
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:96
+msgid "Reopen"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-reorder-tags.pt:8
+msgid "Reorder tags"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:89
+msgid "Reset"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:42
+msgid "Reset filters"
+msgstr ""
+
+#: ../todo/browser/templates/app-results.pt:20
+msgid "Reset search and filters"
+msgstr ""
+
+#: ../layout/browser/passwordpanel.py:23
+#: ../layout/browser/utils.py:26
+msgid "Resetting your own password is not supported."
+msgstr ""
+
+#: ../workspace/browser/templates/content_history.pt:21
+msgid "Revert"
+msgstr ""
+
+#: ../workspace/browser/templates/add_content.pt:18
+msgid "Rich text"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:257
+msgid "Role updated"
+msgstr ""
+
+#: ../workspace/browser/roster.py:38
+msgid "Roster updated."
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:79
+#: ../layout/browser/templates/saving_badge.pt:31
+#: ../news/browser/templates/panel-edit-news-section-info.html:58
+msgid "Save"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:123
+msgid "Save a new version"
+msgstr ""
+
+#: ../news/browser/templates/edit.html:46
+msgid "Save this document"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:137
+msgid "Save this version"
+msgstr ""
+
+#: ../workspace/browser/templates/workspace.pt:98
+msgid "Scroll back to top"
+msgstr ""
+
+#: ../admintool/browser/templates/user-management.pt:40
+#: ../messaging/browser/templates/chat.html:95
+#: ../microblog/browser/templates/panel_tags.pt:21
+msgid "Search"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:57
+#: ../bookmarks/browser/templates/bookmarks.documents.tile.pt:37
+#: ../bookmarks/browser/templates/bookmarks.tile.pt:29
+msgid "Search bookmarks"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:33
+msgid "Search events"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-add-group.pt:21
+msgid "Search existing groups"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-add-user.pt:21
+msgid "Search existing users"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:41
+msgid "Search for a user"
+msgstr ""
+
+#: ../admintool/browser/templates/user-management.pt:59
+msgid "Search for users"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:83
+msgid "Search in title and description"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-related-workspaces.pt:25
+#: ../workspace/browser/templates/workspaces.pt:57
+msgid "Search workspaces"
+msgstr ""
+
+#: ../workspace/policies.py:9
+msgid "Secret"
+msgstr ""
+
+#: ../news/behaviors.py:20
+#: ../news/browser/templates/edit.html:96
+msgid "Section"
+msgstr ""
+
+#: ../news/browser/templates/panel-create-news.html:44
+#: ../news/browser/templates/panel-edit-news-section-info.html:29
+msgid "Section description (Optional)"
+msgstr ""
+
+#: ../news/browser/templates/panel-create-news.html:40
+msgid "Section title"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar.pt:40
+msgid "Security"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:33
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:108
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:43
+msgid "Select"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:40
+#: ../workspace/browser/tiles/templates/navigation.pt:35
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:138
+msgid "Select all"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-related-workspaces.pt:14
+msgid "Select related workspaces"
+msgstr ""
+
+#: ../workspace/browser/forms.py:58
+msgid "Select workspace"
+msgstr ""
+
+#: ../workspace/policies.py:42
+msgid "Self-Managed"
+msgstr ""
+
+#: ../invitations/invite_user.pt:48
+#: ../workspace/browser/cart_actions/templates/mail_send_confirmation.pt:111
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:167
+msgid "Send"
+msgstr ""
+
+#: ../invitations/invite_user.pt:37
+msgid "Send email invite to:"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:167
+msgid "Send selected document(s)"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:56
+msgid "Set a deadline"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:117
+msgid "Set related workspaces"
+msgstr ""
+
+#: ../todo/behaviors.py:19
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:30
+msgid "Settings"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:79
+#: ../workspace/basecontent/templates/mail_view.pt:81
+msgid "Share"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:79
+#: ../workspace/basecontent/templates/mail_view.pt:81
+msgid "Share this document"
+msgstr ""
+
+#: ../calendar/browser/templates/app.pt:79
+msgid "Shared events"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:372
+msgid "Show ${count} older comment"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:375
+msgid "Show ${count} older comments"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/events.pt:71
+msgid "Show all events"
+msgstr ""
+
+#: ../workspace/browser/templates/workspaces.pt:47
+msgid "Show all workspaces or only workspace you're a member of."
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:77
+msgid "Show archived documents"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:87
+msgid "Show archived tags"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:117
+msgid "Show archived workspaces"
+msgstr ""
+
+#: ../todo/browser/templates/todo_view.pt:54
+#: ../workspace/basecontent/templates/document_view.pt:65
+#: ../workspace/basecontent/templates/event_view.pt:54
+msgid "Show extra context actions"
+msgstr ""
+
+#: ../todo/browser/templates/todo_view.pt:63
+#: ../workspace/basecontent/templates/document_view.pt:85
+#: ../workspace/basecontent/templates/mail_view.pt:86
+msgid "Show extra metadata fields"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:97
+msgid "Show my documents only"
+msgstr ""
+
+#: ../workspace/browser/templates/workspaces.pt:40
+msgid "Show or hide archived workspace"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:372
+msgid "Slideshow"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:32
+msgid "Some Context"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/mail.py:56
+msgid "Some items have been sent to you."
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:59
+msgid "Sort"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:172
+msgid "Sort by date"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:162
+msgid "Sort by relevancy"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:59
+msgid "Special workspace"
+msgstr ""
+
+#: ../search/interfaces.py:91
+msgid "Spell corrected search string"
+msgstr ""
+
+#: ../messaging/browser/templates/chat.html:30
+msgid "Start a new conversation"
+msgstr ""
+
+#: ../messaging/browser/templates/panel-new-chat.html:37
+msgid "Start conversation"
+msgstr ""
+
+#: ../workspace/basecontent/event.py:45
+msgid "Start date should be lower than end date"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:108
+msgid "Status"
+msgstr ""
+
+#: ../network/browser/templates/author.pt:29
+msgid "Status updates by ${fullname}:"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:191
+msgid "Subscribe"
+msgstr ""
+
+#: ../calendar/browser/templates/calendar_more_menu.pt:18
+msgid "Subscribe to calendar"
+msgstr ""
+
+#: ../calendar/browser/templates/calendar_more_menu.pt:4
+msgid "Subscribe to this calendar in Outlook"
+msgstr ""
+
+#: ../layout/browser/templates/on-screen-help.pt:30
+msgid "Switch tips off now"
+msgstr ""
+
+#: ../calendar/browser/configure.zcml:55
+msgid "THe fullcalendar used in app and workspace"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/retag_confirmation.pt:93
+msgid "Tag"
+msgstr ""
+
+#: ../layout/browser/templates/dashboard.pt:54
+msgid "Task centric view"
+msgstr ""
+
+#: ../todo/utils.py:59
+msgid "Task state changed"
+msgstr ""
+
+#: ../todo/browser/templates/add_task.pt:12
+msgid "Task title"
+msgstr ""
+
+#: ../layout/browser/templates/tasks-tile.pt:13
+#: ../workspace/browser/tiles/templates/workspace-tabs-tile.pt:22
+msgid "Tasks"
+msgstr ""
+
+#: ../workspace/browser/templates/case_manager.pt:46
+msgid "Tasks finished"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:172
+msgid "Tasks portlet"
+msgstr ""
+
+#: ../workspace/policies.py:37
+msgid "Team-Managed"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:39
+msgid "Team-managed, private workspace"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:93
+msgid "Telephone Number"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:380
+msgid "Tentative"
+msgstr ""
+
+#: ../userprofile/configure.zcml:81
+msgid "Testing of the ploneintranet.userprofile package"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:368
+msgid "Text document"
+msgstr ""
+
+#: ../messaging/browser/templates/chat.html:24
+msgid "Thank you for using Messages!"
+msgstr ""
+
+#: ../todo/interfaces.py:24
+msgid "The UID of the content that needs actioning"
+msgstr ""
+
+#: ../search/solr/interfaces.py:16
+msgid "The URL that will resolve to a SOLR core."
+msgstr ""
+
+#: ../invitations/interfaces.py:26
+msgid "The UUID of this token"
+msgstr ""
+
+#: ../search/interfaces.py:76
+msgid "The absolute URL for a preview image representing search result"
+msgstr ""
+
+#: ../search/interfaces.py:83
+msgid "The absolute URL to the content for this search result based on the path and the host in the current request"
+msgstr ""
+
+#: ../todo/interfaces.py:25
+msgid "The action to be taken on the content"
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:26
+msgid "The agenda for this event can be found here:"
+msgstr ""
+
+#: ../layout/browser/templates/app-not-available.pt:12
+#: ../layout/browser/templates/app.pt:18
+msgid "The app that you selected is not available yet, but will be enabled in the near future."
+msgstr ""
+
+#: ../todo/interfaces.py:27
+msgid "The datetime this ContentAction was completed"
+msgstr ""
+
+#: ../todo/interfaces.py:26
+msgid "The datetime this ContentAction was created"
+msgstr ""
+
+#: ../todo/interfaces.py:28
+msgid "The datetime this ContentAction was triggered"
+msgstr ""
+
+#: ../invitations/interfaces.py:28
+msgid "The datetime this token expires"
+msgstr ""
+
+#: ../search/interfaces.py:54
+msgid "The description of this search result"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/archive.py:33
+msgid "The following items have been archived: ${titles}"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/mail.py:41
+msgid "The following items have been shared with you:"
+msgstr ""
+
+#: ../search/interfaces.py:66
+msgid "The friendly label for the type of search result"
+msgstr ""
+
+#: ../invitations/events.py:9
+msgid "The id of the Token that was consumed"
+msgstr ""
+
+#: ../invitations/interfaces.py:27
+msgid "The number of uses for this token before it expires"
+msgstr ""
+
+#: ../search/interfaces.py:63
+msgid "The portal type of this search result"
+msgstr ""
+
+#: ../search/interfaces.py:72
+msgid "The relative path to a preview imagerepresenting this search result"
+msgstr ""
+
+#: ../search/interfaces.py:80
+msgid "The relative path to the content for this search result"
+msgstr ""
+
+#: ../search/interfaces.py:51
+msgid "The title of this search result"
+msgstr ""
+
+#: ../invitations/invitations.py:97
+msgid "The token has expired."
+msgstr ""
+
+#: ../search/interfaces.py:97
+msgid "The total number of results generated from the query"
+msgstr ""
+
+#: ../todo/behaviors.py:50
+msgid "The user (or group) who requested this task"
+msgstr ""
+
+#: ../todo/interfaces.py:23
+msgid "The userid this action is for"
+msgstr ""
+
+#: ../workspace/basecontent/baseviews.py:286
+msgid "The workflow state has been changed."
+msgstr ""
+
+#: ../workspace/policies.py:24
+msgid "The workspace can be explored by outsiders. Outsiders can browse but not actively participate."
+msgstr ""
+
+#: ../workspace/policies.py:10
+msgid "The workspace is hidden from outsiders. Only workspace members know it exists."
+msgstr ""
+
+#: ../workspace/policies.py:17
+msgid "The workspace is visible, but inaccessible to outsiders. Only workspace members can access the workspace."
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:76
+msgid "The workspace will only be accessible by people you invite. The workspace will not be visible on the workspaces overview. Documents in this group are subject to review before they can be shared within the group. Nothing in this group will ever be visible to non-members."
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:83
+msgid "The workspace will only be accessible for team members. Any member can add a new team member. Once you're in the team, you can do pretty much anything. Nothing in this group will ever be visible to non-members."
+msgstr ""
+
+#: ../activitystream/browser/templates/content-stream.html:22
+msgid "There are ${num_comments} comments on ${num_shares} shares"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/download.py:86
+msgid "There are no downloadable items in your cart."
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:78
+msgid "There are no events to be displayed"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:111
+msgid "There was a problem updating the content: %s."
+msgstr ""
+
+#: ../workspace/basecontent/baseviews.py:303
+msgid "There was a problem:"
+msgstr ""
+
+#: ../workspace/browser/add_content.py:202
+#: ../workspace/browser/edit_content.py:37
+msgid "There was a problem: %s."
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:63
+msgid "This belongs to a division"
+msgstr ""
+
+#: ../activitystream/browser/templates/comment-deleted.html:9
+msgid "This comment has been succesfully deleted."
+msgstr ""
+
+msgid "This date must be on or after the start date."
+msgstr ""
+
+# Messages for pat-validation
+msgid "This date must be on or before the end date."
+msgstr ""
+
+#: ../layout/browser/templates/locking_panel.pt:11
+msgid "This document is currently locked for editing by"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmark.pt:16
+msgid "This item has been added to your bookmarks."
+msgstr ""
+
+#: ../workspace/browser/archive.py:47
+msgid "This item has been archived."
+msgstr ""
+
+#: ../bookmarks/browser/templates/unbookmark.pt:16
+msgid "This item has been removed from your bookmarks."
+msgstr ""
+
+#: ../workspace/browser/archive.py:62
+msgid "This item has been unarchived."
+msgstr ""
+
+#: ../todo/portlets/latest.py:76
+msgid "This portlet displays the latest news that must be read."
+msgstr ""
+
+#: ../activitystream/browser/templates/post-deleted.html:9
+msgid "This post has been succesfully deleted."
+msgstr ""
+
+#: ../workspace/browser/forms.py:24
+msgid "This user doesn't have an email associated with their account."
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:20
+msgid "Tile order and tile size"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:69
+msgid "Tile to bookmark a workspace and show status"
+msgstr ""
+
+#: ../layout/browser/configure.zcml:296
+msgid "Tile to list recently modified documents"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:236
+msgid "Time"
+msgstr ""
+
+#: ../userprofile/content/userprofile.py:107
+msgid "Time Zone"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:155
+msgid "Timeline"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:273
+msgid "Timezone"
+msgstr ""
+
+#: ../layout/browser/templates/on-screen-help.pt:20
+msgid "Tip:"
+msgstr ""
+
+#: ../userprofile/content/workgroup.py:38
+msgid "Title"
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:15
+msgid "Title:"
+msgstr ""
+
+#: ../workspace/basecontent/templates/mail_view.pt:100
+msgid "To"
+msgstr ""
+
+#: ../bookmarks/browser/app.py:189
+#: ../calendar/browser/templates/fullcalendar.tile.pt:35
+#: ../layout/browser/grouped_search.py:62
+msgid "Today"
+msgstr ""
+
+msgid "Todo"
+msgstr ""
+
+#: ../todo/browser/templates/todo_view.pt:63
+#: ../workspace/basecontent/templates/document_view.pt:85
+#: ../workspace/basecontent/templates/mail_view.pt:86
+msgid "Toggle extra metadata"
+msgstr ""
+
+#: ../invitations/views.py:46
+msgid "Token no longer valid"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:176
+msgid "Transfer members to another workspace."
+msgstr ""
+
+#: ../workspace/browser/archive.py:100
+msgid "Unarchive"
+msgstr ""
+
+#: ../workspace/browser/archive.py:98
+msgid "Unarchive this document"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:119
+msgid "Unassigned"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:378
+msgid "Undecided"
+msgstr ""
+
+#: ../network/browser/follows.py:38
+msgid "Unfollow"
+msgstr ""
+
+#: ../workspace/browser/templates/case_timeline.pt:31
+msgid "Unfreeze"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-unfreeze-case.pt:14
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:104
+msgid "Unfreeze case"
+msgstr ""
+
+#: ../workspace/browser/templates/workspaces.pt:93
+msgid "Ungrouped"
+msgstr ""
+
+#: ../library/configure.zcml:28
+msgid "Uninstall Library for PloneIntranet"
+msgstr ""
+
+#: ../async/configure.zcml:26
+msgid "Uninstalls ploneintranet.async"
+msgstr ""
+
+#: ../news/configure.zcml:38
+msgid "Uninstalls the ploneintranet.news package"
+msgstr ""
+
+#: ../layout/browser/widgets.py:19
+msgid "Unknown"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:260
+msgid "Unknown function"
+msgstr ""
+
+#: ../network/browser/likes.py:93
+msgid "Unlike"
+msgstr ""
+
+#: ../layout/browser/templates/locking_panel.pt:25
+msgid "Unlock"
+msgstr ""
+
+#: ../workspace/browser/pinning.py:136
+msgid "Unpin"
+msgstr ""
+
+#: ../workspace/browser/pinning.py:107
+msgid "Unpin this item from the workspace"
+msgstr ""
+
+#: ../workspace/browser/pinning.py:109
+msgid "Unpinned"
+msgstr ""
+
+#: ../news/browser/templates/loadmore.pt:20
+#: ../news/browser/templates/publisher-sidebar.pt:112
+msgid "Unpublished"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:232
+#: ../workspace/browser/templates/content_macros.pt:245
+msgid "Until"
+msgstr ""
+
+#: ../layout/browser/templates/edit-dashboard.pt:60
+#: ../workspace/browser/templates/content_macros.pt:12
+msgid "Up"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:28
+msgid "Upcoming events"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile.pt:45
+msgid "Update avatar"
+msgstr ""
+
+#: ../userprofile/browser/templates/user_import_form.pt:56
+msgid "Update details for existing users (matching on username)"
+msgstr ""
+
+#: ../network/browser/templates/author.pt:27
+#: ../network/browser/templates/maxiauthor_provider.pt:21
+msgid "Updates"
+msgstr ""
+
+#: ../messaging/upgrades/configure.zcml:21
+msgid "Upgrade profile for making the messsaging App work"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:21
+msgid "Upgrade profile to include login form colophon actions"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:64
+msgid "Upgrade profile to include the Apps"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:47
+msgid "Upgrade profile to include the Apps container type"
+msgstr ""
+
+#: ../layout/upgrades/configure.zcml:81
+msgid "Upgrade to setup the login splash image"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:132
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:360
+msgid "Upload"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:127
+msgid "Upload a new file"
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:130
+msgid "Upload a new image"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:61
+msgid "Upload file(s)"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:357
+msgid "Upload files"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:140
+msgid "Use Due Date calculation?"
+msgstr ""
+
+#: ../calendar/browser/templates/calendar_more_menu.pt:21
+msgid "Use the above URL to see this Workspace's calendar also in your Outlook calendar."
+msgstr ""
+
+#: ../workspace/behaviors/configure.zcml:55
+msgid "Use this content as a membrane group"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:323
+msgid "User not found"
+msgstr ""
+
+#: ../userprofile/browser/templates/userprofile_info.pt:37
+msgid "User profile"
+msgstr ""
+
+#: ../userprofile/browser/templates/user_import_form.pt:18
+msgid "User profile management"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:317
+msgid "User state changed"
+msgstr ""
+
+#: ../microblog/interfaces.py:17
+msgid "Userid"
+msgstr ""
+
+#: ../admintool/browser/templates/mail-user-created.pt:13
+#: ../admintool/browser/templates/panel-create-user-account.pt:17
+#: ../userprofile/content/userprofile.py:43
+msgid "Username"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:111
+msgid "Various"
+msgstr ""
+
+#: ../workspace/browser/templates/context-menu.pt:5
+msgid "Version history"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:271
+#: ../workspace/browser/templates/content_history.pt:15
+msgid "View"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:317
+msgid "View this image"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:381
+msgid "Weblink"
+msgstr ""
+
+#: ../calendar/browser/templates/fullcalendar.tile.pt:41
+msgid "Week"
+msgstr ""
+
+#: ../admintool/browser/user_management.py:167
+msgid "Welcome to ${portal_title}!"
+msgstr ""
+
+#: ../workspace/subscribers.py:178
+msgid "Welcome to our family, Stranger"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:58
+msgid "Welcome!"
+msgstr ""
+
+#: ../workspace/browser/templates/content_history.pt:13
+msgid "What"
+msgstr ""
+
+#: ../workspace/browser/templates/confirmation-remove-special-role.pt:21
+msgid "When you remove the special role from this member, this member will inherit the default role for this workspace. Are you sure?"
+msgstr ""
+
+msgid "Word 2007 document"
+msgstr ""
+
+#: ../userprofile/sync.py:388
+msgid "WorkGroup property sync complete."
+msgstr ""
+
+#: ../workspace/profiles/default/types/ploneintranet.workspace.workspacefolder.xml
+msgid "Workspace"
+msgstr ""
+
+#: ../workspace/browser/templates/roster-edit.pt:75
+msgid "Workspace Admin"
+msgstr ""
+
+#: ../workspace/browser/roster.py:190
+msgid "Workspace Administrator"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:69
+msgid "Workspace Bookmarking"
+msgstr ""
+
+#: ../workspace/profiles/default/types/ploneintranet.workspace.workspacecontainer.xml
+msgid "Workspace Folder"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:25
+msgid "Workspace calendar"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:23
+msgid "Workspace description"
+msgstr ""
+
+#: ../workspace/configure.zcml:176
+msgid "Workspace for PloneIntranet"
+msgstr ""
+
+#: ../workspace/browser/views.py:42
+msgid "Workspace join policy doesn't allow self join"
+msgstr ""
+
+#: ../workspace/policies.py:38
+msgid "Workspace members can add outsiders as a workspace member."
+msgstr ""
+
+#: ../workspace/policies.py:71
+msgid "Workspace members can do everything: read, add, publish and edit content."
+msgstr ""
+
+#: ../workspace/policies.py:57
+msgid "Workspace members can read and add content. They can neither publish nor edit content."
+msgstr ""
+
+#: ../workspace/policies.py:50
+msgid "Workspace members can read content. They cannot add, publish or edit content."
+msgstr ""
+
+#: ../workspace/policies.py:64
+msgid "Workspace members can read, add and publish content. They cannot edit other member's content."
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-security.pt:20
+msgid "Workspace policy"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:323
+msgid "Workspace security policy change failed"
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:320
+msgid "Workspace security policy changes saved"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/workspace-tabs-tile.pt:13
+msgid "Workspace settings and about"
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:13
+msgid "Workspace title"
+msgstr ""
+
+#: ../bookmarks/browser/templates/app.pt:21
+#: ../layout/browser/on_screen_help.py:99
+#: ../layout/profiles/default/actions.xml
+msgid "Workspaces"
+msgstr ""
+
+#: ../layout/browser/on_screen_help.py:185
+msgid "Workspaces portlet"
+msgstr ""
+
+#: ../messaging/browser/templates/chat.html:83
+#: ../messaging/browser/templates/new-message.html:42
+msgid "Write a message"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/mail_send_confirmation.pt:46
+msgid "Write a message to the recipient(s)..."
+msgstr ""
+
+#: ../workspace/basecontent/templates/document_view.pt:168
+msgid "Write your text here"
+msgstr ""
+
+#. Default: "row"
+#: ../userprofile/browser/user_import.py:192
+msgid "Wrong type for {} at row {}.field"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:222
+#: ../workspace/browser/templates/case_manager.pt:124
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: ../workspace/browser/views.py:51
+msgid "You are a member of this workspace now"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-change-role.pt:33
+msgid "You are about to change the role of the following <strong>${num_users}</strong> members of this workspace. Are you sure? (un-tick to exclude from this role change)"
+msgstr ""
+
+#: ../layout/browser/templates/delete_confirmation.pt:53
+msgid "You are about to delete this ${contenttype}. Are you sure?"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-delete-comment.html:24
+msgid "You are about to delete this comment. Are you sure?"
+msgstr ""
+
+#: ../activitystream/browser/templates/panel-delete-post.html:24
+msgid "You are about to delete this post. Are you sure?"
+msgstr ""
+
+#: ../workspace/browser/templates/panel-unfreeze-case.pt:18
+msgid "You are about to unfreeze this case. After unfreezing a case, its members will able again to make changes."
+msgstr ""
+
+#: ../layout/browser/templates/app-unauthorized.pt:18
+msgid "You are not authorized to use this app."
+msgstr ""
+
+#: ../workspace/browser/templates/joinviewlet.pt:6
+msgid "You can become a member of this workspace"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmark.pt:17
+#: ../bookmarks/browser/templates/unbookmark.pt:17
+msgid "You can find your bookmarks in the"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/changemetadata_confirmation.pt:64
+msgid "You cannot change the metadata of the following items."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/delete_confirmation.pt:75
+msgid "You cannot delete this item."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/rename_confirmation.pt:47
+msgid "You cannot rename this item."
+msgstr ""
+
+#: ../workspace/browser/tiles/sidebar.py:228
+msgid "You do not have permission to change the workspace policy"
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/retag_confirmation.pt:45
+msgid "You don't have permission to (re)tag any of them."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/delete_confirmation.pt:33
+msgid "You don't have permission to delete any of them."
+msgstr ""
+
+#: ../workspace/browser/templates/add_workspace.pt:95
+msgid "You may at any time change these settings later via the security control panel in the workspace."
+msgstr ""
+
+#: ../workspace/browser/cart_actions/templates/mail_send_confirmation.pt:20
+msgid "You may send this message to one or more people. The recipient(s) will receive an e-mail with a link to the document(s). It's possible to enter names of known users or just their e-mail addresses."
+msgstr ""
+
+#: ../layout/browser/templates/on-screen-help.pt:23
+msgid "You may switch this on screen help feature on or off at any time by clicking on the <strong class=\"iconified icon-help-circle\">?</strong> at the top right on the toolbar."
+msgstr ""
+
+#: ../todo/browser/templates/app-results.pt:13
+msgid "You reached the search result limit, you may want to filter your search"
+msgstr ""
+
+#: ../workspace/browser/templates/email_invitees_html.pt:10
+msgid "You received this email from ${portal_title} because you are invited to the following date:"
+msgstr ""
+
+#: ../workspace/basecontent/baseviews.py:296
+msgid "Your changes have been saved."
+msgstr ""
+
+msgid "Zip archive"
+msgstr ""
+
+#. Default: "No."
+#: ../workspace/browser/templates/content_history.pt:11
+msgid "abbreviation_number"
+msgstr ""
+
+#. Default: "The user account of '${fullname}' is deactivated. Would you like to activate this user account?"
+#: ../admintool/browser/user_management.py:294
+msgid "activate_user_panel_description"
+msgstr ""
+
+#. Default: "What are you doing?"
+#: ../microblog/browser/update_social.py:264
+#: ../microblog/interfaces.py:14
+msgid "add_statusupdate_button"
+msgstr ""
+
+#: ../admintool/browser/configure.zcml:25
+msgid "administrator-tool"
+msgstr ""
+
+#. Default: "A user account has been created for you with the following data"
+#: ../admintool/browser/templates/mail-user-created.pt:9
+msgid "admintool_info_account_created"
+msgstr ""
+
+#. Default: "Before logging in, your account needs to be activated."
+#: ../admintool/browser/templates/mail-user-created.pt:25
+msgid "admintool_info_activation"
+msgstr ""
+
+#. Default: "Thank you for joining ${site_name}!"
+#: ../admintool/browser/templates/mail-user-created.pt:7
+msgid "admintool_info_intro"
+msgstr ""
+
+#. Default: "You can set at any time your password following this link"
+#: ../admintool/browser/templates/mail-user-created.pt:21
+msgid "admintool_info_set_password"
+msgstr ""
+
+#. Default: "You've selected the following ${num_users} members to be removed from this workspace. Are you sure? (un-tick to exclude from removing)"
+#: ../workspace/browser/templates/panel-remove-user.pt:26
+msgid "alert_remove_users_from_workspace"
+msgstr ""
+
+#. Default: "All activities"
+#: ../activitystream/browser/templates/stream_tile.pt:14
+msgid "all_filter"
+msgstr ""
+
+#. Default: "Define which CSS class the app should have. If it is the same as the app's id, then you can leave this blank"
+#: ../layout/app.py:72
+msgid "app_class_description"
+msgstr ""
+
+#. Default: "App CSS class"
+#: ../layout/app.py:71
+msgid "app_class_label"
+msgstr ""
+
+#. Default: "If this condition is given then the app tile will not be shown if it evaluates to False."
+#: ../layout/app.py:107
+msgid "app_condition_description"
+msgstr ""
+
+#. Default: "Condition"
+#: ../layout/app.py:106
+msgid "app_condition_label"
+msgstr ""
+
+#. Default: "The view name for this App (e.g. @@case-manager)"
+#: ../layout/app.py:52
+msgid "app_description"
+msgstr ""
+
+#. Default: "This contains the devices supported by the appValid values are desktop tablet mobile"
+#: ../layout/app.py:83
+msgid "app_devices_description"
+msgstr ""
+
+#. Default: "App supported devices"
+#: ../layout/app.py:82
+msgid "app_devices_label"
+msgstr ""
+
+#. Default: "Is this an external app? If so it will not be injected via ajax."
+#: ../layout/app.py:62
+msgid "app_external_description"
+msgstr ""
+
+#. Default: "App external"
+#: ../layout/app.py:61
+msgid "app_external_label"
+msgstr ""
+
+#. Default: "App"
+#: ../layout/app.py:51
+msgid "app_label"
+msgstr ""
+
+#. Default: "Add some request parameters in a json format, e.g.: {\"query\": \"News\"} "
+#: ../layout/app.py:94
+msgid "app_parameters_description"
+msgstr ""
+
+#. Default: "App parameters"
+#: ../layout/app.py:93
+msgid "app_parameters_label"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:23
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:30
+msgid "author"
+msgstr ""
+
+#. Default: "The workflow state of the following items has been changed: ${title_elems}"
+#: ../workspace/browser/cart_actions/change_workflow.py:104
+msgid "batch_change_workflow_success"
+msgstr ""
+
+#. Default: "The following items have been updated: ${title_elems}"
+#: ../workspace/browser/cart_actions/changemetadata.py:109
+msgid "batch_changemetadata_success"
+msgstr ""
+
+#. Default: "${num_elems} Files were copied to your cloud clipboard."
+#: ../workspace/browser/cart_actions/copy.py:38
+msgid "batch_copied_success"
+msgstr ""
+
+#. Default: "The following items could not be cut: ${num_elems}"
+#: ../workspace/browser/cart_actions/cut.py:64
+msgid "batch_cut_failure"
+msgstr ""
+
+#. Default: "${num_elems} Files were cut and moved to your cloud clipboard."
+#: ../workspace/browser/cart_actions/cut.py:52
+msgid "batch_cut_success"
+msgstr ""
+
+#. Default: "The following items have been deleted: ${title_elems}"
+#: ../workspace/browser/cart_actions/delete.py:29
+msgid "batch_delete_success"
+msgstr ""
+
+#. Default: "The following items have been renamed: ${title_elems}"
+#: ../workspace/browser/cart_actions/rename.py:39
+msgid "batch_rename_success"
+msgstr ""
+
+#. Default: "The following items have been (re)tagged: ${title_elems}"
+#: ../workspace/browser/cart_actions/retag.py:42
+msgid "batch_retag_success"
+msgstr ""
+
+#. Default: "BCC"
+#: ../workspace/behaviors/mail.py:43
+msgid "bcc"
+msgstr ""
+
+#. Default: "Body"
+#: ../workspace/behaviors/mail.py:51
+msgid "body"
+msgstr ""
+
+#. Default: "<strong>Bookmarked</strong>"
+#: ../bookmarks/browser/bookmark_button.py:31
+msgid "bookmarked_button_label"
+msgstr ""
+
+#: ../bookmarks/browser/configure.zcml:87
+msgid "bookmarks"
+msgstr ""
+
+#: ../bookmarks/browser/templates/bookmark.pt:18
+#: ../bookmarks/browser/templates/unbookmark.pt:18
+msgid "bookmarks app"
+msgstr ""
+
+#. Default: "Close"
+#: ../layout/viewlets/globalstatusmessage.py:21
+msgid "button_close"
+msgstr ""
+
+#. Default: "Post"
+#: ../microblog/browser/templates/update-social.html:130
+msgid "button_post"
+msgstr ""
+
+msgid "cases"
+msgstr ""
+
+#. Default: "CC"
+#: ../workspace/behaviors/mail.py:35
+msgid "cc"
+msgstr ""
+
+#. Default: "Cannot modify: ${title}"
+#: ../workspace/browser/cart_actions/changemetadata.py:64
+msgid "changemetadata_permission_denied for"
+msgstr ""
+
+#. Default: "You are about to delete \"${title}\". Are you sure?"
+#: ../news/browser/templates/confirm-delete-item.html:25
+msgid "content_delete_confirmation"
+msgstr ""
+
+#. Default: "Only content updates"
+#: ../activitystream/browser/templates/stream_tile.pt:18
+msgid "content_filter"
+msgstr ""
+
+#. Default: "Problem during the copy process"
+#: ../workspace/browser/mails/copy.py:17
+msgid "copy_error"
+msgstr ""
+
+#. Default: "Copy not allowed"
+#: ../workspace/browser/mails/copy.py:16
+msgid "copy_not_allowed"
+msgstr ""
+
+#. Default: "The copy was succesfull"
+#: ../workspace/browser/mails/copy.py:15
+msgid "copy_success"
+msgstr ""
+
+msgid "created"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:25
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:32
+msgid "date"
+msgstr ""
+
+# Define our own long date format
+msgid "date_format_long"
+msgstr ""
+
+#. Default: "Start time should be lower than end time. The system set the end time to: ${date}"
+#: ../workspace/browser/add_content.py:291
+msgid "dates_hijacked"
+msgstr ""
+
+#. Default: "Would you like to deactivate the account of '${fullname}'? After this, this user can no longer enter his account, but this action can be reversed at any time."
+#: ../admintool/browser/user_management.py:283
+msgid "deactivate_user_panel_description"
+msgstr ""
+
+#. Default: "Show the section description on the section page"
+#: ../news/content.py:40
+msgid "description_description_visible"
+msgstr ""
+
+#. Default: "Show this section in the section navigation"
+#: ../news/content.py:32
+msgid "description_section_visible"
+msgstr ""
+
+#. Default: "Description visible"
+#: ../news/content.py:39
+msgid "description_visible"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:21
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:28
+msgid "document type"
+msgstr ""
+
+#. Default: "The document is locked by ${user}."
+#: ../workspace/basecontent/baseviews.py:239
+msgid "document_locked_by_error"
+msgstr ""
+
+#. Default: "It seems that this document was modified since you loaded this form. Your changes will be discarded. <a href=\"${url}\">Please reload this page by clicking here</a>."
+#: ../workspace/basecontent/baseviews.py:251
+msgid "document_modified_error"
+msgstr ""
+
+#: ../workspace/browser/templates/content_macros.pt:18
+msgid "down"
+msgstr ""
+
+#. Default: "Download"
+#: ../library/browser/templates/library.html:146
+msgid "download"
+msgstr ""
+
+#. Default: "Drop files here or click to browse..."
+#: ../workspace/browser/tiles/sidebar.py:466
+msgid "drop_files_here"
+msgstr ""
+
+#. Default: "to"
+#: ../workspace/browser/templates/email_invitees_html.pt:17
+msgid "email_to"
+msgstr ""
+
+#. Default: "Expiration date must be after publishing date."
+#: ../network/behaviors/metadata.py:232
+msgid "error_expiration_must_be_after_effective_date"
+msgstr ""
+
+#. Default: "Invalid effective or expires date"
+#: ../network/behaviors/metadata.py:195
+msgid "error_invalid_publication"
+msgstr ""
+
+#: ../todo/browser/templates/app.pt:273
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:41
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:13
+msgid "expand/reduce sidebar"
+msgstr ""
+
+#. Default: "External visibility"
+#: ../workspace/browser/tiles/sidebar.py:288
+msgid "external_visibility_label"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:27
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:34
+msgid "first letter"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:18
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:25
+msgid "folder"
+msgstr ""
+
+#: ../network/browser/templates/maxiauthor_provider.pt:64
+#: ../network/browser/templates/miniauthor_provider.pt:30
+msgid "follow"
+msgstr ""
+
+#. Default: "From"
+#: ../workspace/behaviors/mail.py:21
+msgid "from"
+msgstr ""
+
+msgid "has_created"
+msgstr ""
+
+msgid "has_published"
+msgstr ""
+
+#. Default: "Roster for ${folder}"
+#: ../workspace/browser/templates/roster-edit.pt:24
+msgid "heading_edit_roster"
+msgstr ""
+
+#. Default: "Here you can select different dashboards. There is an activity centric and a task centric dashboard available. You can also configure your own dashboard using My view. Pick what best fits your style of working."
+#: ../layout/browser/on_screen_help.py:37
+msgid "help-dashboard-view"
+msgstr ""
+
+#. Default: "Wanna chat with your collegues? Click here to open  the chat app. A number within a red circle shows that you have unread chat messages."
+#: ../layout/browser/on_screen_help.py:257
+msgid "help-global-chat-info"
+msgstr ""
+
+#. Default: "Use this toggle to turn the help bubbles on or off."
+#: ../layout/browser/on_screen_help.py:249
+msgid "help-global-help-info"
+msgstr ""
+
+#. Default: "Notifications about news posts are listed here. A number within a red circle shows that you have unread notifications."
+#: ../layout/browser/on_screen_help.py:267
+msgid "help-global-messages-info"
+msgstr ""
+
+#. Default: "Your avatar image opens the personal menu with links to your user profile, password change and logout actions."
+#: ../layout/browser/on_screen_help.py:277
+msgid "help-global-personal-menu"
+msgstr ""
+
+#. Default: "Use the search to find information within the Quaive portal."
+#: ../layout/browser/on_screen_help.py:240
+msgid "help-global-search"
+msgstr ""
+
+#. Default: "The menu toggle lets you hide and show the global navigation which allows you to quickly jump to another section of the intranet."
+#: ../layout/browser/on_screen_help.py:49
+msgid "help-hamburger"
+msgstr ""
+
+#. Default: "Apps are extra bits of functionality for your Quaive site. Visit this section to find out what apps are available."
+#: ../layout/browser/on_screen_help.py:111
+msgid "help-portal-apps"
+msgstr ""
+
+#. Default: "This is your personal Dashboard. It is the home for shortcuts to your most important places and shows you an overview of recent activities. You can add workspaces, contacts and apps to your own dashboard."
+#: ../layout/browser/on_screen_help.py:68
+msgid "help-portal-dashboard"
+msgstr ""
+
+#. Default: "In the library you can find documents that are valid for all intranet users, organized by different topics."
+#: ../layout/browser/on_screen_help.py:90
+msgid "help-portal-library"
+msgstr ""
+
+#. Default: "Here is the news magazine. It gives you an overview over your organization's news."
+#: ../layout/browser/on_screen_help.py:81
+msgid "help-portal-news"
+msgstr ""
+
+#. Default: "We would like to introduce you to the Quaive Social Intranet Platform. Please try out!"
+#: ../layout/browser/on_screen_help.py:59
+msgid "help-portal-suite"
+msgstr ""
+
+#. Default: "Workspaces are areas for creating, organizing and sharing content. Go here to get an overview over the workspaces you can access or create your own workspaces."
+#: ../layout/browser/on_screen_help.py:100
+msgid "help-portal-workspaces"
+msgstr ""
+
+#. Default: "Your bookmarked Apps! These are apps you have marked as important by bookmarking them."
+#: ../layout/browser/on_screen_help.py:208
+msgid "help-portlet-bookmarked-apps"
+msgstr ""
+
+#. Default: "Your bookmarked Workspaces! These are workspaces you have marked as important by bookmarking them. You will never see any workspaces here that you can't actually access."
+#: ../layout/browser/on_screen_help.py:197
+msgid "help-portlet-bookmarked-workspaces"
+msgstr ""
+
+#. Default: "Bookmarks are what matters most to you. While browsing through the intranet, you can mark interesting content with a bookmark. All that content will then appear here in your bookmark box."
+#: ../layout/browser/on_screen_help.py:121
+msgid "help-portlet-bookmarks"
+msgstr ""
+
+#. Default: "Quick access to all your contacts. Start typing a name, a job title or a street. Matching contacts appear immediately."
+#: ../layout/browser/on_screen_help.py:133
+msgid "help-portlet-contacts"
+msgstr ""
+
+#. Default: "All events you are invited to - at your fingertips. They are ordered by upcoming first."
+#: ../layout/browser/on_screen_help.py:143
+msgid "help-portlet-events"
+msgstr ""
+
+#. Default: "See recent changes to documents. Content listed here may come from the library or from any of your workspaces."
+#: ../layout/browser/on_screen_help.py:153
+msgid "help-portlet-library"
+msgstr ""
+
+#. Default: "Stay informed - see the latest news articles listed here. If you click the 'mark read' button of a news item, it will disappear from the portlet."
+#: ../layout/browser/on_screen_help.py:163
+msgid "help-portlet-news"
+msgstr ""
+
+#. Default: "Read about what's going on in your company in the activity stream portlet. You can filter existing messages and also write a post to your colleagues yourself."
+#: ../layout/browser/on_screen_help.py:217
+msgid "help-portlet-stream"
+msgstr ""
+
+#. Default: "Your Tasks. This is what you need to work on, ordered by deadline. The topmost one is usually the one due first. If you just completed one, mark it as completed. If you don't yet know what to do, click it and read the description."
+#: ../layout/browser/on_screen_help.py:173
+msgid "help-portlet-tasks"
+msgstr ""
+
+#. Default: "Your Workspaces! These are workspaces that you can see. You will never see any workspaces here that you can't actually access."
+#: ../layout/browser/on_screen_help.py:186
+msgid "help-portlet-workspaces"
+msgstr ""
+
+#. Default: "Post a message to the team, to your colleagues, to the company. Share what is important right now, let your colleagues know. Upload attachments, mention specific people and tag your post."
+#: ../layout/browser/on_screen_help.py:228
+msgid "help-post-message"
+msgstr ""
+
+#. Default: "Enable autosave for the selected portal types (works for edit forms inside workspaces)"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0017/registry.xml
+msgid "help_autosave_portal_types"
+msgstr ""
+
+#. Default: "Only these States are shown for filtering"
+#: ../workspace/profiles/default/registry.xml
+msgid "help_case_manager_states"
+msgstr ""
+
+#. Default: "The names of people that have contributed to this item. Each contributor should be on a separate line."
+#: ../network/behaviors/metadata.py:274
+msgid "help_contributors"
+msgstr ""
+
+#. Default: "Copyright statement or other rights information on this item."
+#: ../network/behaviors/metadata.py:291
+msgid "help_copyrights"
+msgstr ""
+
+#. Default: "Persons responsible for creating the content of this item. Please enter a list of user names, one per line. The principal creator should come first."
+#: ../network/behaviors/metadata.py:256
+msgid "help_creators"
+msgstr ""
+
+#. Default: "This is the list of the tiles\n        the user will see on the\n        \"Activity centric view\" dashboard."
+#: ../layout/profiles/default/registry.xml
+msgid "help_dashboard_activity_tiles"
+msgstr ""
+
+#. Default: "This is the list of the tiles\n        the user will see on the\n        \"My view (customizable)\" dashboard."
+#: ../layout/profiles/default/registry.xml
+#: ../layout/upgrades/profiles/to_0014/registry.xml
+msgid "help_dashboard_custom_tiles"
+msgstr ""
+
+#. Default: "This is the name of the dashboard type that should be shown by default. Pick the values from\n        the dropdown on the dashboard."
+#: ../layout/profiles/default/registry.xml
+msgid "help_dashboard_default"
+msgstr ""
+
+#. Default: "This is the list of the tiles\n        the user will see on the\n        \"Task centric view\" dashboard."
+#: ../layout/profiles/default/registry.xml
+msgid "help_dashboard_task_tiles"
+msgstr ""
+
+#. Default: "This news section is empty and can be safely removed."
+#: ../news/browser/templates/confirm-delete-section.html:27
+msgid "help_delete_newssection_empty"
+msgstr ""
+
+#. Default: "Used in item listings and search results."
+#: ../network/behaviors/metadata.py:84
+msgid "help_description"
+msgstr ""
+
+#. Default: "If this date is in the future, the content will not show up in listings and searches until this date."
+#: ../network/behaviors/metadata.py:210
+msgid "help_effective_date"
+msgstr ""
+
+#. Default: "When this date is reached, the content will nolonger be visible in listings and searches."
+#: ../network/behaviors/metadata.py:220
+msgid "help_expiration_date"
+msgstr ""
+
+#. Default: "When true, the isActivatedInMemberProperty() and isActivatedInSiteProperty() methods of the EnabledView always return True. Otherwise the normal behaviour as implemented in collective.externaleditor is used."
+#: ../workspace/profiles/default/registry.xml
+msgid "help_externaleditor_always_activated"
+msgstr ""
+
+#. Default: "At the moment we are able to handle the values \"active\", \"alphabet\" and \"newest\"."
+#: ../workspace/profiles/default/registry.xml
+msgid "help_my_workspace_sorting"
+msgstr ""
+
+#. Default: "Check if we should preserve the templates ownership after a copy."
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0024/registry.xml
+msgid "help_preserve_template_ownership"
+msgstr ""
+
+#. Default: "If set to True, RichText content (HTML) in workspaces is sanitized before it gets stored. That means all open tags are properly closed, and inline styles and unwanted tags such as SPAN or BLOCKQUOTE get stripped. Multipe line breaks get reduced to a single line break."
+#: ../workspace/profiles/default/registry.xml
+msgid "help_sanitize_html"
+msgstr ""
+
+#. Default: "Tags are commonly used for ad-hoc organization of content."
+#: ../network/behaviors/metadata.py:112
+msgid "help_tags"
+msgstr ""
+
+#. Default: "If set to True, cases will expose the due date management functionality. You need to have the quaive.app.milestones package installed."
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0025/registry.xml
+msgid "help_use_phase_due_dates"
+msgstr ""
+
+#. Default: "This types may enter the microblog feed."
+#: ../microblog/profiles/default/registry.xml
+msgid "help_whitelisted_types"
+msgstr ""
+
+#. Default: "Controls in which way we are able to sort the workspaces"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0016/registry.xml
+msgid "help_workspace_sort_options"
+msgstr ""
+
+#. Default: "Workspace types which can be used for filtering on the workspaces view"
+#: ../workspace/profiles/default/registry.xml
+msgid "help_workspace_type_filters"
+msgstr ""
+
+#. Default: "If a portal_type is not here it will default to regular.\n        The values should be passed as \"{type}|{css class}\",\n        e.g. \"ploneintranet.workspace.case|type-case\""
+#: ../workspace/profiles/default/registry.xml
+msgid "help_workspace_types_css_mapping"
+msgstr ""
+
+#. Default: "${action} - ${actor} on ${time}"
+#: ../workspace/browser/templates/content_history.pt:52
+msgid "history_action"
+msgstr ""
+
+#. Default: "Only posts and replies"
+#: ../activitystream/browser/templates/stream_tile.pt:16
+msgid "human_filter"
+msgstr ""
+
+#. Default: "Archived"
+#: ../layout/browser/overrides-quaive-specific/plone.app.layout.viewlets.path_bar.pt:19
+#: ../search/browser/templates/all_results.pt:209
+#: ../workspace/browser/templates/case_manager.pt:34
+msgid "icon_archived"
+msgstr ""
+
+#. Default: "${num_not_deleteable} of the items cannot be deleted because you don't have permission."
+#: ../workspace/browser/cart_actions/templates/delete_confirmation.pt:39
+msgid "info_has_not_deleteable_items"
+msgstr ""
+
+#. Default: "${num_not_modifiable} of the items cannot be (re)tagged because you don't have permission."
+#: ../workspace/browser/cart_actions/templates/retag_confirmation.pt:52
+msgid "info_has_not_modifiable_items"
+msgstr ""
+
+#. Default: "You've selected the following ${num_items} items to be deleted."
+#: ../workspace/browser/cart_actions/templates/delete_confirmation.pt:30
+msgid "info_items_selected"
+msgstr ""
+
+#. Default: "The following workspaces are currently set as related. Un-tick to remove the relation again."
+#: ../workspace/browser/templates/panel-related-workspaces.pt:31
+msgid "info_items_selected_as_related_workspace"
+msgstr ""
+
+#. Default: "The following ${num_items} items will be (re)tagged (un-tick to exclude from this action)."
+#: ../workspace/browser/cart_actions/templates/retag_confirmation.pt:41
+msgid "info_items_selected_for_retagging"
+msgstr ""
+
+#. Default: "The workflow state of the following ${num_items} items will be changed (un-tick to exclude from this action)."
+#: ../workspace/browser/cart_actions/templates/change_workflow_confirmation.pt:42
+msgid "info_items_selected_workflow"
+msgstr ""
+
+#. Default: "Loading more posts"
+#: ../activitystream/browser/templates/stream_tile.pt:43
+msgid "info_loading_more_posts"
+msgstr ""
+
+#. Default: "Documents that you publish in the ${library} will be visible to all people who have access to the library."
+#: ../library/behaviors/templates/panel-publish-to-library.pt:22
+msgid "info_publish_to_library"
+msgstr ""
+
+#. Default: "${document} is published in the library."
+#: ../library/behaviors/templates/feedback-library-copy-updated.pt:14
+#: ../workspace/basecontent/templates/document_view.pt:161
+msgid "info_publish_to_library_success"
+msgstr ""
+
+#. Default: "This workspace was archived on ${archival_date}. Archived workspaces are hidden from the ${workspaces_page}, but can still be made visible by users by ticking 'Archived'."
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:95
+msgid "info_was_archived_on"
+msgstr ""
+
+#. Default: "Enter an email address below to invite someone to the plone site. A unique token URL will be sent to the address."
+#: ../invitations/invite_user.pt:22
+msgid "invitation_admin_para_1"
+msgstr ""
+
+#. Default: "When the unique token URL is accessed, a user account will be automatically created and the user will be logged in. Finally the token URL will be invalidated."
+#: ../invitations/invite_user.pt:28
+msgid "invitation_admin_para_2"
+msgstr ""
+
+#. Default: "Invitations"
+#: ../workspace/browser/forms.py:132
+msgid "invititations"
+msgstr ""
+
+#: ../search/browser/templates/all_results.pt:115
+msgid "items matched your search."
+msgstr ""
+
+#. Default: "Join policy"
+#: ../workspace/browser/tiles/sidebar.py:287
+msgid "join_policy_label"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/navigation.pt:19
+msgid "label"
+msgstr ""
+
+#. Default: "Allow comments"
+#: ../news/behaviors.py:55
+#: ../news/browser/templates/edit.html:110
+msgid "label_allow_comments"
+msgstr ""
+
+#. Default: "Archived"
+#: ../workspace/interfaces.py:82
+msgid "label_archived"
+msgstr ""
+
+#. Default: "Image visible as hero image on the news article page."
+#: ../news/behaviors.py:27
+#: ../news/browser/templates/edit.html:80
+msgid "label_article_image"
+msgstr ""
+
+#. Default: "Autosave portal types"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0017/registry.xml
+msgid "label_autosave_portal_types"
+msgstr ""
+
+#. Default: "Follow ${username}"
+#: ../network/browser/templates/toggle_follow.pt:20
+msgid "label_btn_follow_user"
+msgstr ""
+
+#. Default: "Cancel"
+#: ../activitystream/browser/templates/panel-delete-comment.html:35
+#: ../activitystream/browser/templates/panel-delete-post.html:35
+#: ../activitystream/browser/templates/panel-edit-comment.html:43
+msgid "label_cancel"
+msgstr ""
+
+#. Default: "Case Manager Workflow States"
+#: ../workspace/profiles/default/registry.xml
+msgid "label_case_manager_states"
+msgstr ""
+
+#. Default: "Contributors"
+#: ../network/behaviors/metadata.py:273
+msgid "label_contributors"
+msgstr ""
+
+#. Default: "Rights"
+#: ../network/behaviors/metadata.py:290
+msgid "label_copyrights"
+msgstr ""
+
+#. Default: "Created after…"
+#: ../search/browser/templates/all_results.pt:69
+msgid "label_created_after"
+msgstr ""
+
+#. Default: "Created before…"
+#: ../search/browser/templates/all_results.pt:79
+msgid "label_created_before"
+msgstr ""
+
+#. Default: "Creators"
+#: ../network/behaviors/metadata.py:255
+msgid "label_creators"
+msgstr ""
+
+#. Default: "List of dashboard activity tiles"
+#: ../layout/profiles/default/registry.xml
+msgid "label_dashboard_activity_tiles"
+msgstr ""
+
+#. Default: "List of dashboard custom tiles"
+#: ../layout/profiles/default/registry.xml
+#: ../layout/upgrades/profiles/to_0014/registry.xml
+msgid "label_dashboard_custom_tiles"
+msgstr ""
+
+#. Default: "Name of the default dashboard"
+#: ../layout/profiles/default/registry.xml
+msgid "label_dashboard_default"
+msgstr ""
+
+#. Default: "List of dashboard task tiles"
+#: ../layout/profiles/default/registry.xml
+msgid "label_dashboard_task_tiles"
+msgstr ""
+
+#. Default: "I am sure, delete now"
+#: ../news/browser/templates/confirm-delete-item.html:31
+msgid "label_delete_newsitem_confirm"
+msgstr ""
+
+#. Default: "Delete section now"
+#: ../news/browser/templates/confirm-delete-section.html:33
+msgid "label_delete_newssection_confirm"
+msgstr ""
+
+#. Default: "Summary"
+#: ../network/behaviors/metadata.py:83
+msgid "label_description"
+msgstr ""
+
+#. Default: "Publishing Date"
+#: ../network/behaviors/metadata.py:209
+msgid "label_effective_date"
+msgstr ""
+
+#. Default: "Global Events by default?"
+#: ../workspace/interfaces.py:100
+msgid "label_event_global_default"
+msgstr ""
+
+#. Default: "Expiration Date"
+#: ../network/behaviors/metadata.py:219
+#: ../news/browser/templates/edit.html:148
+msgid "label_expiration_date"
+msgstr ""
+
+#. Default: "External Editor always activated."
+#: ../workspace/profiles/default/registry.xml
+msgid "label_externaleditor_always_activated"
+msgstr ""
+
+#. Default: "Include an slcclicktracker element in the content default view templates"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0022/registry.xml
+msgid "label_include_slcclicktracker"
+msgstr ""
+
+#. Default: "Language"
+#: ../network/behaviors/metadata.py:181
+msgid "label_language"
+msgstr ""
+
+#. Default: "Disclaimer"
+#: ../layout/browser/overrides/Products.CMFPlone.skins.plone_login.login_form.cpt:173
+msgid "label_login_disclaimer"
+msgstr ""
+
+#. Default: "Visible on news landing page"
+#: ../news/behaviors.py:45
+#: ../news/browser/templates/edit.html:122
+msgid "label_magazine_home"
+msgstr ""
+
+#. Default: "Image visible on news overview pages."
+#: ../news/behaviors.py:36
+#: ../news/browser/templates/edit.html:89
+msgid "label_magazine_image"
+msgstr ""
+
+#. Default: "Mark read"
+#: ../layout/browser/templates/news-tile.pt:83
+msgid "label_mark_read"
+msgstr ""
+
+#. Default: "ID of a member"
+#: ../userprofile/content/workgroup.py:59
+msgid "label_member_id"
+msgstr ""
+
+#. Default: "All users must read this"
+#: ../news/browser/templates/edit.html:134
+msgid "label_must_read"
+msgstr ""
+
+#. Default: "My workspace sorting."
+#: ../workspace/profiles/default/registry.xml
+msgid "label_my_workspace_sorting"
+msgstr ""
+
+#. Default: "Name"
+#: ../workspace/browser/templates/roster-edit.pt:73
+msgid "label_name"
+msgstr ""
+
+#. Default: "News"
+#: ../layout/browser/templates/news-tile.pt:54
+msgid "label_news"
+msgstr ""
+
+#. Default: "News item"
+#: ../news/browser/templates/panel-create-news.html:29
+msgid "label_news_item"
+msgstr ""
+
+#. Default: "News section"
+#: ../news/browser/templates/panel-create-news.html:33
+msgid "label_news_section"
+msgstr ""
+
+#. Default: "Show on both news landing page and section page"
+#: ../news/browser/templates/panel-create-news.html:65
+msgid "label_newsitem_visibility_both"
+msgstr ""
+
+#. Default: "Show on section page only"
+#: ../news/browser/templates/panel-create-news.html:71
+msgid "label_newsitem_visibility_page"
+msgstr ""
+
+#. Default: "Make the section description visible for visitors on the section page"
+#: ../news/browser/templates/panel-create-news.html:51
+#: ../news/browser/templates/panel-edit-news-section-info.html:39
+msgid "label_newssection_description_visible"
+msgstr ""
+
+#. Default: "Edit news section information"
+#: ../news/browser/templates/publisher-sidebar.pt:48
+msgid "label_newssection_edit"
+msgstr ""
+
+#. Default: "Show this section in the news subnavigation"
+#: ../news/browser/templates/panel-create-news.html:58
+#: ../news/browser/templates/panel-edit-news-section-info.html:49
+msgid "label_newssection_visible"
+msgstr ""
+
+#. Default: "No events available"
+#: ../workspace/browser/tiles/templates/sidebar-events.pt:88
+msgid "label_no_events_available"
+msgstr ""
+
+#. Default: "Preserve templates ownership"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0024/registry.xml
+msgid "label_preserve_template_ownership"
+msgstr ""
+
+#. Default: "Publication Date"
+#: ../news/browser/templates/edit.html:142
+msgid "label_publication_date"
+msgstr ""
+
+#. Default: "effective"
+#: ../workspace/browser/templates/content_history.pt:55
+msgid "label_publishing_effective"
+msgstr ""
+
+#. Default: "Related workspaces"
+#: ../workspace/interfaces.py:91
+msgid "label_related_workspaces"
+msgstr ""
+
+#. Default: "Replace image"
+#: ../news/browser/templates/edit.html:63
+msgid "label_replace_image"
+msgstr ""
+
+#. Default: "Sanitize HTML on saving."
+#: ../workspace/profiles/default/registry.xml
+msgid "label_sanitize_html"
+msgstr ""
+
+#. Default: "Save"
+#: ../activitystream/browser/templates/panel-edit-comment.html:39
+#: ../activitystream/browser/templates/panel-edit-post.html:30
+#: ../news/browser/templates/edit.html:46
+msgid "label_save"
+msgstr ""
+
+#. Default: "Categorization"
+#: ../network/behaviors/metadata.py:106
+msgid "label_schema_categorization"
+msgstr ""
+
+#. Default: "Dates"
+#: ../network/behaviors/metadata.py:204
+msgid "label_schema_dates"
+msgstr ""
+
+#. Default: "Ownership"
+#: ../network/behaviors/metadata.py:247
+msgid "label_schema_ownership"
+msgstr ""
+
+#. Default: "Search"
+#: ../microblog/browser/templates/panel_tags.pt:22
+msgid "label_search"
+msgstr ""
+
+#. Default: "Search"
+#: ../search/browser/templates/plone.searchbox.pt:20
+msgid "label_search_button"
+msgstr ""
+
+#. Default: "Search the entire intranet"
+#: ../search/browser/templates/search_macros.pt:15
+msgid "label_search_entire_intranet"
+msgstr ""
+
+#. Default: "Search through content…"
+#: ../search/browser/templates/plone.searchbox.pt:13
+msgid "label_search_placeholder"
+msgstr ""
+
+#. Default: "Search users"
+#: ../workspace/browser/templates/roster-edit.pt:52
+msgid "label_search_users"
+msgstr ""
+
+#. Default: "Delete news section"
+#: ../news/browser/templates/publisher-sidebar.pt:57
+msgid "label_section_delete"
+msgstr ""
+
+#: ../invitations/invite_user.pt:48
+msgid "label_send"
+msgstr ""
+
+#. Default: "Archived"
+#: ../workspace/browser/templates/workspaces.pt:45
+msgid "label_show_archived"
+msgstr ""
+
+#. Default: "Tags"
+#: ../network/behaviors/metadata.py:111
+msgid "label_tags"
+msgstr ""
+
+#. Default: "Title"
+#: ../network/behaviors/metadata.py:78
+msgid "label_title"
+msgstr ""
+
+#. Default: "Toggle navigation"
+#: ../layout/viewlets/sections.pt:18
+msgid "label_toggle_navigation"
+msgstr ""
+
+#. Default: "Upload image"
+#: ../news/browser/templates/edit.html:66
+msgid "label_upload_image"
+msgstr ""
+
+#. Default: "Use phase due dates?"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0025/registry.xml
+msgid "label_use_phase_due_dates"
+msgstr ""
+
+#. Default: "List of the whitelisted types"
+#: ../microblog/profiles/default/registry.xml
+msgid "label_whitelisted_types"
+msgstr ""
+
+#. Default: "Calendar visible in central calendar"
+#: ../workspace/interfaces.py:65
+msgid "label_workspace_calendar_visibility"
+msgstr ""
+
+#. Default: "Workspace default grouping"
+#: ../workspace/profiles/default/registry.xml
+msgid "label_workspace_default_grouping"
+msgstr ""
+
+#. Default: "Belongs to this Division"
+#: ../workspace/interfaces.py:72
+msgid "label_workspace_division"
+msgstr ""
+
+#. Default: "E-mail address"
+#: ../workspace/interfaces.py:77
+msgid "label_workspace_email"
+msgstr ""
+
+#. Default: "Is this workspace representing a division?"
+#: ../workspace/interfaces.py:112
+msgid "label_workspace_is_division"
+msgstr ""
+
+#. Default: "Types that are blacklisted in the document sidebar"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0021/registry.xml
+msgid "label_workspace_sidebar_blacklisted_types"
+msgstr ""
+
+#. Default: "Types that are considered as containers in the document sidebar"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0021/registry.xml
+msgid "label_workspace_sidebar_folderish_types"
+msgstr ""
+
+#. Default: "Workspace sort options"
+#: ../workspace/profiles/default/registry.xml
+#: ../workspace/upgrades/profiles/to_0016/registry.xml
+msgid "label_workspace_sort_options"
+msgstr ""
+
+#. Default: "Workspace type filters"
+#: ../workspace/profiles/default/registry.xml
+msgid "label_workspace_type_filters"
+msgstr ""
+
+#. Default: "Maps workspace portal types to css classes"
+#: ../workspace/profiles/default/registry.xml
+msgid "label_workspace_types_css_mapping"
+msgstr ""
+
+#. Default: "UID of a workspace"
+#: ../workspace/interfaces.py:88
+msgid "label_workspace_uid"
+msgstr ""
+
+#. Default: "Leave a comment..."
+#: ../activitystream/browser/statusupdate.py:34
+#: ../microblog/browser/update_social.py:259
+msgid "leave_a_comment"
+msgstr ""
+
+#: ../library/behaviors/templates/panel-publish-to-library.pt:22
+msgid "library"
+msgstr ""
+
+#. Default: "Liked by: ${likers}"
+#: ../network/browser/likes.py:69
+msgid "liked_by"
+msgstr ""
+
+#. Default: "Chat with ${fullname}."
+#: ../layout/browser/locking.py:38
+msgid "lock_panel_chat_link_label"
+msgstr ""
+
+#. Default: "This item is locked by ${fullname}. Click to see options."
+#: ../layout/browser/saving_badge.py:43
+msgid "lock_panel_link_title"
+msgstr ""
+
+#. Default: "Your password has been set successfully. You may now ${login_link} with your new password."
+#: ../layout/browser/overrides/Products.PasswordResetTool.skins.PasswordReset.pwreset_finish.pt:16
+msgid "message_pwreset_success"
+msgstr ""
+
+#. Default: "Missing parameter: ${key}"
+#: ../admintool/browser/user_management.py:198
+msgid "missing_parameter_key"
+msgstr ""
+
+#. Default: "More"
+#: ../news/browser/templates/publisher-sidebar.pt:125
+msgid "more"
+msgstr ""
+
+#. Default: "Library"
+msgid "my_docs_heading_library"
+msgstr ""
+
+#. Default: "My Documents"
+msgid "my_docs_heading_workspaces"
+msgstr ""
+
+#. Default: "Only people and things I follow"
+#: ../activitystream/browser/templates/stream_tile.pt:20
+msgid "network_filter"
+msgstr ""
+
+#. Default: "No tasks created yet"
+#: ../workspace/browser/tiles/templates/sidebar-todos.pt:41
+msgid "no-task-found"
+msgstr ""
+
+#. Default: "${num_deleteable} of the items can be deleted."
+#: ../workspace/browser/cart_actions/templates/delete_confirmation.pt:46
+msgid "num_items_can_be_deleted"
+msgstr ""
+
+#. Default: "${num_modifiable} of the items can be (re)tagged."
+#: ../workspace/browser/cart_actions/templates/retag_confirmation.pt:59
+msgid "num_items_can_be_retagged"
+msgstr ""
+
+#. Default: "${no_users} Users / ${no_groups} Groups"
+#: ../workspace/browser/workspace.py:151
+#: ../workspace/workspacefolder.py:142
+msgid "number_of_members"
+msgstr ""
+
+#. Default: "Participant policy"
+#: ../workspace/browser/tiles/sidebar.py:290
+msgid "participant_policy_label"
+msgstr ""
+
+#. Default: "Groups ${num_groups}"
+#: ../userprofile/browser/templates/userprofile.pt:199
+msgid "person-groups"
+msgstr ""
+
+#. Default: "Workspaces ${num_workspaces}"
+#: ../userprofile/browser/templates/userprofile.pt:191
+msgid "person-workspaces"
+msgstr ""
+
+#: ../notifications/browser/notifications.pt:24
+#: ../workspace/browser/tiles/workspaces.py:313
+msgid "posted"
+msgstr ""
+
+#. Default: "Read more..."
+#: ../layout/browser/templates/news-tile.pt:74
+#: ../library/browser/templates/library.html:143
+#: ../news/browser/templates/feeditem.pt:24
+msgid "read-more"
+msgstr ""
+
+#. Default: "Current users"
+#: ../workspace/browser/templates/roster-edit.pt:65
+msgid "rostered-users"
+msgstr ""
+
+#. Default: "Section visible"
+#: ../news/content.py:31
+msgid "section_visible"
+msgstr ""
+
+#. Default: "All"
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:138
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:59
+msgid "select_all"
+msgstr ""
+
+#. Default: "None"
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:139
+#: ../workspace/browser/tiles/templates/sidebar-settings-members.pt:60
+msgid "select_none"
+msgstr ""
+
+#. Default: "The participation policy of this workspace is ${policy_name}"
+#: ../workspace/browser/templates/sharingviewlet.pt:7
+msgid "sharing_policy_description"
+msgstr ""
+
+#. Default: "You have bookmarked this item."
+#: ../bookmarks/browser/tiles.py:85
+msgid "success_bookmark"
+msgstr ""
+
+#. Default: "You have unbookmarked this item."
+#: ../bookmarks/browser/tiles.py:90
+msgid "success_unbookmarked"
+msgstr ""
+
+#. Default: "Content listing"
+#: ../workspace/browser/templates/content_history.pt:6
+msgid "summary_content_listing"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-documents.pt:26
+msgid "tag"
+msgstr ""
+
+#: ../workspace/browser/tiles/workspaces.py:54
+msgid "tile_"
+msgstr ""
+
+#. Cases
+#: ../layout/browser/templates/dashboard.pt
+msgid "tile_ploneintranet.workspace.case"
+msgstr ""
+
+#. Workspaces
+#: ../layout/browser/templates/dashboard.pt
+msgid "tile_ploneintranet.workspace.workspacefolder"
+msgstr ""
+
+#. Default: "Workspaces"
+#: ../workspace/browser/tiles/workspaces.py:55
+msgid "tile_workspaces_default_tile"
+msgstr ""
+
+#. Default: "Click to follow ${fullname}"
+#: ../network/browser/follows.py:45
+msgid "title_follow"
+msgstr ""
+
+#. Default: "Revert to this revision"
+#: ../workspace/browser/templates/content_history.pt:91
+msgid "title_revert_revision"
+msgstr ""
+
+#. Default: "You are now following ${fullname}. Click to unfollow."
+#: ../network/browser/follows.py:50
+msgid "title_unfollow"
+msgstr ""
+
+#. Default: "View"
+#: ../workspace/browser/templates/content_history.pt:64
+msgid "title_view_revision"
+msgstr ""
+
+#. Default: "To"
+#: ../workspace/behaviors/mail.py:27
+msgid "to"
+msgstr ""
+
+#. Default: "Click to bookmark the profile page of ${fullname}"
+#: ../bookmarks/browser/bookmark_button.py:40
+msgid "unbookmarked_button_label"
+msgstr ""
+
+#: ../network/browser/templates/maxiauthor_provider.pt:72
+#: ../network/browser/templates/miniauthor_provider.pt:38
+msgid "unfollow"
+msgstr ""
+
+#. Default: "${name} is a member of the following ${num_groups} groups."
+#: ../userprofile/browser/templates/userprofile_group.pt:23
+msgid "user_member_of_groups"
+msgstr ""
+
+#. Default: "${name} is a member of the following ${num_workspaces} workspaces."
+#: ../userprofile/browser/templates/userprofile_workspaces.pt:22
+msgid "user_member_of_workspaces"
+msgstr ""
+
+#. Default: "Search ${user_name}'s documents"
+#: ../userprofile/browser/userprofile.py:325
+msgid "user_search_placeholder"
+msgstr ""
+
+#. Default: "Workspace brief description"
+#: ../workspace/browser/tiles/templates/sidebar-settings-general.pt:31
+msgid "workspace_brief_description"
+msgstr ""
+
+#. Default: "Default role for this workspace (${role})"
+#: ../workspace/browser/roster.py:175
+msgid "workspace_default_role"
+msgstr ""
+
+#. Default: "Workspace e-mail address"
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:31
+msgid "workspace_email_address"
+msgstr ""
+
+#. Default: "Workspace hero image"
+#: ../workspace/browser/tiles/templates/sidebar-settings-general.pt:43
+msgid "workspace_hero_image"
+msgstr ""
+
+#. Default: "This represents a division"
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:49
+msgid "workspace_is_division"
+msgstr ""
+
+#. Default: "Workspace landing page"
+#: ../workspace/browser/tiles/templates/workspace-tabs-tile.pt:11
+msgid "workspace_landing_page"
+msgstr ""
+
+#. Default: "Workspace settings"
+#: ../workspace/browser/tiles/templates/workspace-tabs-tile.pt:13
+msgid "workspace_settings"
+msgstr ""
+
+#. Default: "Workspace title"
+#: ../workspace/browser/tiles/templates/sidebar-settings-general.pt:19
+msgid "workspace_title"
+msgstr ""
+
+msgid "workspacefolders"
+msgstr ""
+
+#: ../workspace/browser/tiles/templates/sidebar-settings-advanced.pt:95
+msgid "workspaces page"
+msgstr ""
+
+#: ../activitystream/browser/templates/post.html:375
+msgid "x x"
+msgstr ""
+
+#. Default: "row"
+#: ../userprofile/browser/user_import.py:177
+msgid "{} on row {}"
+msgstr ""
+
+#: ../userprofile/browser/user_import.py:199
+msgid "{} user(s) {}."
+msgstr ""

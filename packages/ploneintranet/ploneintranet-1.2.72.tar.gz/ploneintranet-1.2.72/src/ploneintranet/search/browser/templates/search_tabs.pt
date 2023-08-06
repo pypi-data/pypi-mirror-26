@@ -1,0 +1,12 @@
+<nav class="tabs pat-tabs navigation"
+     id="tabs-nav"
+     tal:define="
+       context_url here/absolute_url;
+     "
+     i18n:domain="ploneintranet"
+>
+  <a class="pat-inject ${tab/extra_class|nothing}"
+     href="${tab/url}"
+     tal:repeat="tab view/get_tabs"
+  >${tab/title}</a>
+</nav>

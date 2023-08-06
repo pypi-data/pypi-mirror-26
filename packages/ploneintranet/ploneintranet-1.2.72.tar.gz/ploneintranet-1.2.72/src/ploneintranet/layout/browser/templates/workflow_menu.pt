@@ -1,0 +1,30 @@
+<fieldset class="pat-subform pat-autosubmit pat-inject"
+          id="workflow-menu"
+          data-pat-inject="${view/form_pat_inject_options}"
+          data-pat-autosubmit="delay: 1ms"
+          tal:condition="view/has_workflow"
+          i18n:domain="ploneintranet"
+>
+  <label class="pat-select bare workflow"
+         title="Change the workflow state"
+         i18n:attributes="title"
+  >
+    <select id="workflow_action"
+            name="workflow_action"
+            disabled="${python: None if view.can_review else ''}"
+    >
+      <option
+        title="${state/title}"
+        value="${state/current_state_id|state/action}"
+        selected="${state/selected|nothing}"
+        tal:repeat="state view/get_workflow_transitions"
+        i18n:translate=""
+      >${state/title}</option>
+    </select>
+  </label>
+  <input name="dx_modified"
+         type="hidden"
+         value="${request/dx_modified|here/dx_modified|nothing}"
+  />
+  <span tal:replace="structure here/@@authenticator/authenticator"/>
+</fieldset>

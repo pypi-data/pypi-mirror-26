@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="ploneintranet"
+    tal:omit-tag="">
+  <form id="functions-${view/unique_id}"
+        method="post"
+        action="${view/action}"
+        class="pat-inject"
+        data-pat-inject="source: form; target: #functions-${view/unique_id}">
+
+    <button class="${python:'like active' if view.is_liked else 'like'}"
+            value="like"
+            name="like_button"
+            title="${view/likers}"
+            type="submit"
+    >
+      ${view/verb}
+      <sup class="counter">(${view/total_likes})</sup>
+    </button>
+  </form>
+</html>

@@ -1,0 +1,148 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      lang="en"
+      metal:use-macro="context/panel_template/macros/master"
+      xml:lang="en"
+      i18n:domain="plone"
+>
+  <body>
+    <metal:body fill-slot="body"
+                tal:define="
+                  context_state context/@@plone_context_state;
+                  useSelf python:context_state.is_structural_folder() and not context_state.is_default_page();
+                  folder_warning python:useSelf and context.portal_type != 'Topic';
+                  number_of_objects_to_delete python:folder_warning and view.items_to_delete;
+                "
+    >
+      <article>
+        <p tal:condition="view/is_locked"
+           i18n:translate="alert_deleting_locked_item"
+        >
+                This item can not be deleted because it is currently locked by another user.
+        </p>
+        <tal:block condition="not:view/is_locked">
+          <tal:c condition="folder_warning">
+            <p>
+              <span tal:omit-tag=""
+                    i18n:translate="alert_really_delete_folder"
+              >
+                      Do you really want to delete this folder and all its contents?
+              </span>
+            </p>
+            <p class="pat-message warning"
+               tal:condition="python:number_of_objects_to_delete&gt;1"
+            >
+              <span tal:omit-tag=""
+                    i18n:translate="alert_deleting_x_number_of_items"
+              >
+                      This will delete a total of
+                <strong tal:content="python:number_of_objects_to_delete"
+                        i18n:name="number_of_items_to_delete"
+                >22</strong>
+                      items.
+              </span>
+            </p>
+          </tal:c>
+          <p tal:condition="not:folder_warning"
+             i18n:domain="ploneintranet"
+             i18n:translate=""
+          >
+                  You are about to delete this
+            <tal:block tal:content="context/portal_type"
+                       i18n:domain="plone"
+                       i18n:name="contenttype"
+                       i18n:translate=""
+            />. Are you sure?
+          </p>
+          <ul>
+            <li tal:content="context/@@plone_context_state/object_title">The item title (ID)</li>
+          </ul>
+        </tal:block>
+      </article>
+
+      <metal:define define-macro="fields">
+
+        <tal:widgets repeat="widget view/widgets/values">
+          <div class="row"
+               tal:define="
+                 hidden python:widget.mode == 'hidden';
+               "
+               tal:omit-tag="hidden"
+          >
+
+            <metal:field-slot define-slot="field">
+              <metal:field define-macro="field">
+                <div class="field"
+                     tal:define="
+                       error widget/error;
+                       hidden python:widget.mode == 'hidden';
+                     "
+                     tal:attributes="
+                       class python:'field' + (error and ' error' or '');
+                     "
+                >
+                  <label for=""
+                         tal:condition="not:hidden"
+                         tal:attributes="
+                           for widget/id;
+                         "
+                  >
+                    <span tal:content="widget/label"
+                          i18n:translate=""
+                    >label</span>
+                  </label>
+
+                  <span class="fieldRequired"
+                        title="Required"
+                        tal:condition="python:widget.required and not hidden"
+                        i18n:attributes="title title_required;"
+                        i18n:translate="label_required"
+                  >
+                        (Required)
+                  </span>
+
+                  <div class="formHelp"
+                       tal:define="
+                         description widget/field/description;
+                       "
+                       tal:condition="python:description and not hidden"
+                       tal:content="description"
+                       i18n:translate=""
+                  >field description</div>
+
+                  <div tal:condition="error"
+                       tal:content="structure error/render"
+                  >
+                        Error
+                  </div>
+
+                  <div class="widget">
+                    <input type="text"
+                           tal:replace="structure widget/render"
+                    />
+                  </div>
+                </div>
+              </metal:field>
+            </metal:field-slot>
+
+          </div>
+        </tal:widgets>
+
+      </metal:define>
+    </metal:body>
+    <metal:buttons fill-slot="buttons">
+      <tal:block repeat="action view/actions/values">
+        <button class="${action/klass}"
+                name="${action/name}"
+                type="${action/type|string:submit}"
+        >${action/title}</button>
+      </tal:block>
+      <tal:token tal:replace="structure context/@@authenticator/authenticator" />
+      <input name="app"
+             type="hidden"
+             value="1"
+             tal:condition="python:'app' in request.form"
+      />
+    </metal:buttons></body></html>

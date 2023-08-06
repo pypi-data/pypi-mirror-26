@@ -1,0 +1,122 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      xml:lang="en"
+      i18n:domain="ploneintranet"
+>
+  <body class="view-secure">
+    <metal:statusmessage fill-slot="statusmessage"
+                         tal:define="
+                           suppress_message python:request.get('suppress_message', False);
+                         "
+    >
+      <metal:macro use-macro="context/main_template/macros/statusmessage"
+                   tal:condition="not:suppress_message"
+      />
+    </metal:statusmessage>
+    <metal:content fill-slot="content"
+                   tal:define="
+                     workspace view/workspace;
+                     workspace_url workspace/absolute_url;
+                     related_ws view/get_related_workspaces;
+                     ws_type workspace/ws_type | string:case;
+                     is_archived workspace/archival_date;
+                     archived_class python:'workspace-state-archived' if is_archived else '';
+                   "
+    >
+      <div class="application"
+           id="app-space"
+      >
+        <div class="sidebar-normal focus-document application-workspace application-${ws_type} project page-type-${ws_type} workspace-type-${ws_type} ${archived_class} sidebar-left-closed sidebar-right-closed"
+             id="application-body"
+        >
+
+          <h1 id="workspace-name">
+            <a href="${workspace_url}">${workspace/Title}</a>
+          </h1>
+
+          <div id="document-body">
+            <div class="pat-bumper ${python:context.hero_image and 'has-hero' or ''}"
+                 id="workspace-header"
+            >
+              <tal:hero tal:condition="context/hero_image | nothing">
+                <img class="hero-image"
+                    tal:define="modified context/modified"
+                    src="${context/absolute_url}/@@images/hero_image?timestamp=${modified/ISO}"
+                    tal:condition="not:request/hero_image|nothing"
+                />
+                <!-- When replacing the hero image the modified date is not yet updated. Use current time in this case. -->
+                <img class="hero-image"
+                    tal:define="DateTime modules/DateTime.DateTime"
+                    src="${context/absolute_url}/@@images/hero_image?timestamp=${DateTime/ISO}"
+                    tal:condition="request/hero_image|nothing"
+                />
+              </tal:hero>
+              <div class="content">
+                <h1 class="title"
+                    id="top"
+                >${here/Title}</h1>
+                <h2 class="byline">
+                  ${python:len(view.member_ids)}
+                  <tal:t i18n:translate="">Members</tal:t>
+                </h2>
+                <form class="pat-inject buttons">
+                  <fieldset id="bookmark-workspace"
+                            data-tile="${workspace_url}/@@workspace_bookmark.tile"
+                  ></fieldset>
+                </form>
+              </div>
+            </div>
+            <div id="workspace-messages"
+                 tal:condition="related_ws"
+            >
+              <p class="message notice">
+                <span tal:omit-tag=""
+                      i18n:translate=""
+                >If you use this workspace, you might also be interested in</span>
+                <tal:r repeat="rw related_ws">
+                  <a class="icon-workspace"
+                     href="${rw/getURL}"
+                  >${rw/Title}</a><tal:separator condition="python: not repeat['rw'].end">,
+                  </tal:separator></tal:r>.
+              </p>
+            </div>
+            <div tal:replace="structure here/@@workspace-timeline|nothing" />
+            <form id="new-post-box"
+                  data-tile="${workspace_url}/@@newpostbox.tile"
+                  tal:condition="view/can_add_status_updates"
+            ></form>
+            <div id="activity-stream"
+                 data-tile="${workspace_url}/@@activitystream.tile"
+            ></div>
+            <p id="scroll-to-workspace-top"
+               hidden
+            >
+              <a class="pat-scroll pat-scroll-animated"
+                 href="#top"
+                 data-pat-scroll="trigger: auto"
+                 i18n:translate=""
+              >Scroll back to top</a>
+            </p>
+
+            <div id="slcclicktracker"
+                 path="${python:'/'.join(context.getPhysicalPath())}"
+                 request_url="${request/getURL}"
+                 tal:condition="view/include_clicktracker|nothing"
+            ></div>
+          </div>
+          <aside data-tile="${workspace_url}/@@sidebar.default?groupname=${request/groupname|nothing}"
+                 tal:condition="view/show_sidebar"
+          ></aside>
+          <nav class="navigation workspace-tabs"
+               id="workspace-tabs"
+               data-tile="${workspace_url}/@@workspace.tabs.tile"
+          ></nav>
+        </div>
+      </div>
+    </metal:content>
+  </body>
+</html>

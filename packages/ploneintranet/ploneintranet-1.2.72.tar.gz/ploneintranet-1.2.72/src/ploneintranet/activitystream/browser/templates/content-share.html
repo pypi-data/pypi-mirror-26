@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      >
+  <body i18n:domain="ploneintranet">
+
+    <tal:comment condition="nothing">
+      <!--
+           extracted from prototype/_layouts/document.html
+           rendered via content-stream.html
+           into workspace/browser/basecontent/templates/document_view.pt
+        -->
+    </tal:comment>
+
+    <div class="document-comments-header">
+      <a href="${view/portal_url}/author/${here/userid}">
+        <img tal:replace="structure view/avatar">
+        <h4 class="name">${view/fullname}</h4>
+      </a>
+      <p class="byline">
+        <em class="action" i18n:translate=""
+            ><span tal:omit-tag="" i18n:name="action_verb" i18n:translate="">${context/action_verb}</span> this item</em>
+        <time class="datestamp pat-display-time"
+              data-pat-display-time="from-now: true; locale: ${view/portal/plone_portal_state/language}"
+              datetime="${context/date/ISO}"
+              >${context/date/ISO}</time>
+      </p>
+
+      <!-- not part of proto, but here to support files extracted from stream attachments -->
+      <section class="comment-content" tal:condition="view/context/text|nothing">
+        <p>
+          <span tal:replace="structure view/decorated_text">
+            The text of the comment
+          </span>
+          <a tal:condition="context/original_text"
+             class="edited-toggle"
+             id="edited-toggle-${context/thread_id}-comment-${context/id}">
+            (<span tal:omit-tag="" i18n:translate="">Edited</span>
+            <time class="pat-display-time"
+                  data-pat-display-time="from-now: true; locale: ${view/portal/plone_portal_state/language}"
+                  datetime="${context/edited/ISO}"
+                  >${context/edited/ISO}</time>
+            )</a>
+        </p>
+        <section tal:condition="context/original_text"
+                 class="original-text pat-collapsible closed"
+                 data-pat-collapsible="trigger: #edited-toggle-${context/thread_id}-comment-${context/id}">
+          <p>
+            <strong i18n:translate="">Original text:</strong>
+            ${context/original_text}
+          </p>
+        </section>
+     </section>
+
+
+    </div>
+    <div id="comment-trail-share-${context/id}" class="comment-trail">
+      <tal:loop
+         tal:repeat="comment_view view/comment_views"
+         tal:content="structure comment_view"
+         />
+    </div>
+    <tal:commentable condition="view/commentable">
+      <div id="new-comment-${context/id}"></div>
+      <div tal:replace="structure view/context/@@update-social.html" />
+    </tal:commentable>
+</body>
+</html>
