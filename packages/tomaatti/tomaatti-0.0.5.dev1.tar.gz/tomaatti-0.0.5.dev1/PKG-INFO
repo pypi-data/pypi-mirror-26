@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tomaatti
+Version: 0.0.5.dev1
+Summary: Pomodoro timer with i3 integration
+Home-page: https://github.com/thuetz/i3-tomaatti
+Author: Tim Hütz
+Author-email: tim@huetz.biz
+License: GPLv3
+Description: Pomodoro timer with i3 integration
+Platform: Linux
