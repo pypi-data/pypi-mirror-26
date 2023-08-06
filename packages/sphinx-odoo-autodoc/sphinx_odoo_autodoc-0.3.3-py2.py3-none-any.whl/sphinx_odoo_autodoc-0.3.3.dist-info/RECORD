@@ -1,0 +1,9 @@
+sphinx_odoo_autodoc-0.3.3.dist-info/DESCRIPTION.rst,sha256=XdxpGESnybjQtg6bKA2UA-cbS1eB5GMpbtFiK4mmicw,511
+sphinx_odoo_autodoc-0.3.3.dist-info/METADATA,sha256=y_G9b09aDKkJJHZZ1ZOPm8i4MF2eYW-BLBle2RfWMyY,838
+sphinx_odoo_autodoc-0.3.3.dist-info/RECORD,,
+sphinx_odoo_autodoc-0.3.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+sphinx_odoo_autodoc-0.3.3.dist-info/metadata.json,sha256=VZzPUQLbJxNgXTXp7nWkcClU-qdjv6SYG0rT4_HvyBQ,554
+sphinx_odoo_autodoc-0.3.3.dist-info/top_level.txt,sha256=ovJeTNM0MkcHZv36R5Brai8VuQVKT8J3GiofuV0dSoA,18
+sphinxodooautodoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxodooautodoc/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxodooautodoc/ext/autodoc.py,sha256=xYTQQERxYcHLL08p2itGm0Wz6Bufh1qVAu-CwV8xuD0,1966
