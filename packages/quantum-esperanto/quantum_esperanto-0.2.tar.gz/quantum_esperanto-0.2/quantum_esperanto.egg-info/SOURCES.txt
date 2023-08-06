@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+include/fast_atof.h
+include/fast_atoi.h
+quantum_esperanto/__init__.py
+quantum_esperanto.egg-info/PKG-INFO
+quantum_esperanto.egg-info/SOURCES.txt
+quantum_esperanto.egg-info/dependency_links.txt
+quantum_esperanto.egg-info/requires.txt
+quantum_esperanto.egg-info/top_level.txt
+src/fast_atof.c
+src/fast_atoi.c
+src/vasp.c
