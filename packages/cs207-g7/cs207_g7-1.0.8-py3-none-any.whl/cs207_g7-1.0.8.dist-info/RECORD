@@ -1,0 +1,10 @@
+cs207_g7-1.0.8.dist-info/DESCRIPTION.rst,sha256=aLmIFQM4XX1r6Ou-yipYgCwjIBhfmweZbctsSxMITEU,4524
+cs207_g7-1.0.8.dist-info/METADATA,sha256=OrrUGgeHwtptJCx7ZRf65zmJHe8HoMg48V_CltHrVms,5160
+cs207_g7-1.0.8.dist-info/RECORD,,
+cs207_g7-1.0.8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+cs207_g7-1.0.8.dist-info/metadata.json,sha256=6AIZitAypOMmGJMXewHXapwoq3VBGLTMePedD2LimKk,767
+cs207_g7-1.0.8.dist-info/top_level.txt,sha256=3ODE0s7nFEQ9aIZhN6VHp0G5A87fwUGzkbgho_eeEIU,9
+kinetics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kinetics/chemkin.py,sha256=wkHftN-ssQiXuHeE3EO9fVukNGGtaky5O-ljKYe6dUw,14621
+kinetics/nasa.py,sha256=FEveqkYjkGUHojlgg27lKlNR8aGrh7Q_zQsgUtbffJg,1158
+kinetics/data/NASA.sqlite,sha256=dt-OavIiL10wDpzBdOiPuip6wU3tu2-eHZj8uukiPDI,28672
