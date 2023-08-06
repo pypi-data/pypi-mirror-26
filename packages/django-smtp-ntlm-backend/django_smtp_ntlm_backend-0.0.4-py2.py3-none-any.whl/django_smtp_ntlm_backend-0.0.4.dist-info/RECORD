@@ -1,0 +1,10 @@
+django_smtp_ntlm_backend/__init__.py,sha256=bBhiIacbCAYveFPsI4zX7KtQAjzW9cuEVbFS65qhFcg,1205
+django_smtp_ntlm_backend/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_smtp_ntlm_backend/settings.py,sha256=m2bfyd_u9gS1bTJpagokiANlta48ouszUqgKLn-jo_c,826
+django_smtp_ntlm_backend/tests.py,sha256=HFqjCGxqb54FdqegUIP4VnSBIr-eDtXw2sEYDd_MSNA,1367
+django_smtp_ntlm_backend-0.0.4.dist-info/DESCRIPTION.rst,sha256=gi6trbB631zV5gXIItpO25YkeyGc-a0CV52-hjIP3dQ,1491
+django_smtp_ntlm_backend-0.0.4.dist-info/METADATA,sha256=CWBo3dlqJ5676uiWozA7ld-px50idmNQG8Urtow6bVY,2636
+django_smtp_ntlm_backend-0.0.4.dist-info/RECORD,,
+django_smtp_ntlm_backend-0.0.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_smtp_ntlm_backend-0.0.4.dist-info/metadata.json,sha256=Zbfp_ti8edzpBDhFYmFpsb0fHsgywAclpmrMjtmzZPc,1261
+django_smtp_ntlm_backend-0.0.4.dist-info/top_level.txt,sha256=GMYAtOi7kCo29iDgDgKXKPCybsI3eTu3vdPdkn1LdxQ,25
