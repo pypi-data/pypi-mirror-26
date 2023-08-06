@@ -1,0 +1,11 @@
+nltk
+requests
+
+[test]
+pytest
+pytest-mock
+requests_mock
+coverage
+pytest-coverage
+codecov
+flake8
