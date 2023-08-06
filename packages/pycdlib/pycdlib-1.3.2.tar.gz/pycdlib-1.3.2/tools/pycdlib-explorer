@@ -1,0 +1,416 @@
+#!/usr/bin/python3
+
+from __future__ import print_function
+
+import cmd
+import collections
+import os
+import sys
+
+import pycdlib
+
+
+class PyCdlibCmdLoop(cmd.Cmd):
+    def __init__(self, iso):
+        cmd.Cmd.__init__(self)
+        self.iso = iso
+        self.cwd = '/'
+        self.jolietcwd = '/'
+        self.print_mode = 'iso9660'
+
+    prompt = '(pycdlib) '
+
+    def help_exit(self):
+        print("> exit")
+        print("Exit the program.")
+
+    def do_exit(self, line):
+        if line:
+            print("No parameters allowed for exit")
+            return False
+        return True
+
+    def help_quit(self):
+        print("> quit")
+        print("Exit the program.")
+
+    def do_quit(self, line):
+        if line:
+            print("No parameters allowed for quit")
+            return False
+        return True
+
+    def do_EOF(self, line):  # pylint: disable=unused-argument
+        print()
+        return True
+
+    def help_print_mode(self):
+        print("> print_mode [iso9660|rr|joliet]")
+        print("Change which 'mode' of filenames are printed out.  There are three main\n"
+              "modes: ISO9660 (iso9660, the default), Rock Ridge (rr), and Joliet (joliet).\n"
+              "The original iso9660 mode only allows filenames of 8 characters, plus 3 for\n"
+              "the extension.  The Rock Ridge extensions allow much longer filenames and\n"
+              "much deeper directory structures.  The Joliet extensions also allow longer\n"
+              "filenames and deeper directory structures, but in an entirely different\n"
+              "namespace (though in most circumstances, the Joliet namespace will mirror\n"
+              "the ISO9660/Rock Ridge namespace).  Any given ISO will always have ISO9660\n"
+              "mode, but may have any combination of Rock Ridge and Joliet (including\n"
+              "neither).  Running this command with no arguments prints out the current\n"
+              "mode.  Passing 'iso9660' as an argument sets it to the original ISO9660\n"
+              "mode.  Passing 'rr' as an argument sets it to Rock Ridge mode.  Passing\n"
+              "'joliet' as an argument sets it to Joliet mode.")
+
+    def do_print_mode(self, line):
+        split = line.split()
+        splitlen = len(split)
+        if splitlen == 0:
+            print(self.print_mode)
+            return False
+        elif splitlen != 1:
+            print("Only a single parameter allowed for print_mode")
+            return False
+
+        if split[0] not in ['iso9660', 'rr', 'joliet']:
+            print("Parameter for print_mode must be one of 'iso9660', 'rr', or 'joliet'")
+            return False
+
+        if split[0] == 'rr' and not self.iso.rock_ridge:
+            print("Can only enable Rock Ridge names for Rock Ridge ISOs")
+            return False
+
+        if split[0] == 'joliet' and self.iso.joliet_vd is None:
+            print("Can only enable Joliet names for Joliet ISOs")
+            return False
+
+        self.print_mode = split[0]
+
+        return False
+
+    def help_ls(self):
+        print("> ls")
+        print("Show the contents of the current working directory. The format of the output is:\n")
+        print("TYPE(F=file, D=directory) NAME")
+
+    def do_ls(self, line):
+        if line:
+            print("No parameters allowed for ls")
+            return
+
+        wd = self.jolietcwd if self.print_mode == 'joliet' else self.cwd
+
+        for child in self.iso.list_dir(wd, self.print_mode == 'joliet'):
+            prefix = "F"
+            if child.is_dir():
+                prefix = "D"
+
+            name = child.file_identifier()
+            if self.print_mode == 'rr':
+                name = ""
+                if child.is_dot():
+                    name = "."
+                elif child.is_dotdot():
+                    name = ".."
+                else:
+                    if child.rock_ridge is not None and child.rock_ridge.name() != "":
+                        name = "%s" % (child.rock_ridge.name())
+                        if child.rock_ridge.is_symlink():
+                            name += " -> %s" % (child.rock_ridge.symlink_path())
+                            prefix += "S"
+
+            print("%2s %s" % (prefix, name))
+
+        return False
+
+    def help_cd(self):
+        print("> cd <iso_dir>")
+        print("Change directory to <iso_dir> on the ISO.")
+
+    def do_cd(self, line):
+        split = line.split()
+        if len(split) != 1:
+            print("The cd command supports one and only one parameter")
+            return False
+
+        directory = split[0]
+
+        if directory == '/':
+            tmp = '/'
+        else:
+            wd = self.jolietcwd if self.print_mode == 'joliet' else self.cwd
+            tmp = os.path.normpath(os.path.join(wd, directory))
+
+        rec = self.iso.get_entry(tmp, self.print_mode == 'joliet')
+        if not rec.is_dir():
+            print("Entry %s is not a directory" % (directory))
+            return False
+
+        if self.print_mode == 'joliet':
+            self.jolietcwd = tmp
+        else:
+            self.cwd = tmp
+
+        return False
+
+    def help_get(self):
+        print("> get <iso_file> <out_file>")
+        print("Get the contents of <iso_file> from the ISO and write them to <out_file>.")
+
+    def do_get(self, line):
+        split = line.split()
+        if len(split) != 2:
+            print("The get command must be passed two parameters.")
+            return False
+
+        iso_file = split[0]
+        outfile = split[1]
+
+        if iso_file[0] != '/':
+            # In this case, it is a relative path, so we should prepend the
+            # cwd.
+            if self.print_mode == 'joliet':
+                iso_file = os.path.join(self.jolietcwd, iso_file)
+            else:
+                iso_file = os.path.join(self.cwd, iso_file)
+
+        with open(outfile, 'wb') as outfp:
+            self.iso.get_and_write_fp(iso_file, outfp)
+
+        return False
+
+    def help_cwd(self):
+        print("> cwd")
+        print("Show the current working directory.")
+
+    def do_cwd(self, line):
+        if line:
+            print("No parameters allowed for cwd")
+            return False
+
+        if self.print_mode == 'joliet':
+            print(self.jolietcwd)
+        else:
+            print(self.cwd)
+
+        return False
+
+    def help_tree(self):
+        print("> tree")
+        print("Print all files and subdirectories below the current directory (similar to the Unix 'tree' command).")
+
+    def do_tree(self, line):
+        if line:
+            print("No parameters allowed for tree")
+            return False
+
+        wd = self.jolietcwd if self.print_mode == 'joliet' else self.cwd
+
+        utf8_corner = "\342\224\224\342\224\200\342\224\200"
+        utf8_middlebar = "\342\224\234\342\224\200\342\224\200"
+        utf8_vertical_line = "\342\224\202\302\240\302\240"
+        entry = self.iso.get_entry(wd, self.print_mode == 'joliet')
+        dirs = collections.deque([(entry, [])])
+        while dirs:
+            dir_record, lasts = dirs.popleft()
+            prefix = ""
+            for index, last in enumerate(lasts):
+                if last:
+                    if index == (len(lasts) - 1):
+                        prefix += utf8_corner + " "
+                    else:
+                        prefix += "    "
+                else:
+                    if index == (len(lasts) - 1):
+                        prefix += utf8_middlebar + " "
+                    else:
+                        prefix += utf8_vertical_line + " "
+
+            name = dir_record.file_identifier()
+            if self.print_mode == 'rr':
+                if dir_record.rock_ridge is not None and dir_record.rock_ridge.name() != "":
+                    name = "%s" % (dir_record.rock_ridge.name())
+
+            print("%s%s" % (prefix, name))
+
+            if dir_record.is_dir():
+                tmp = []
+                for index, child in enumerate(dir_record.children):
+                    if child.is_dot() or child.is_dotdot():
+                        continue
+                    last = index == (len(dir_record.children) - 1)
+                    tmp.append((child, lasts + [last]))
+                dirs.extendleft(reversed(tmp))
+
+        return False
+
+    def help_write(self):
+        print("> write <out_file>")
+        print("Write the current ISO contents to <out_file>.")
+
+    def do_write(self, line):
+        split = line.split()
+        if len(split) != 1:
+            print("The write command supports one and only one parameter.")
+            return False
+
+        out_name = split[0]
+
+        self.iso.write(out_name)
+
+        return False
+
+    def help_add_file(self):
+        print("> add_file <iso_path> <src_filename> [rr_name=<rr_name>] [joliet_path=<joliet_path>]")
+        print("Add the contents of <src_filename> to the ISO at the location specified in <iso_path>.")
+        print("If the ISO is a Rock Ridge ISO, <rr_name> must be specified; otherwise, it must not be.")
+        print("If the ISO is not a Joliet ISO, <joliet_path> must not be specified.  If the ISO is a")
+        print("Joliet ISO, <joliet_path> is optional, but highly recommended to supply.")
+
+    def do_add_file(self, line):
+        split = line.split()
+
+        if len(split) < 2 or len(split) > 4:
+            self.help_add_file()
+            return False
+
+        iso_path = split[0]
+        src_path = split[1]
+        rr_name = None
+        joliet_path = None
+
+        for arg in split[2:]:
+            keyval = arg.split('=')
+            if len(keyval) != 2:
+                print("Invalid key/val pair, must be rr_name=<rr_name> or joliet_path=<joliet_path>")
+                return False
+
+            key = keyval[0]
+            val = keyval[1]
+
+            if key == 'rr_name':
+                rr_name = val
+            elif key == 'joliet_path':
+                joliet_path = val
+            else:
+                print("Unknown key, must be rr_name=<rr_name> or joliet_path=<joliet_path>")
+                return False
+
+        if self.iso.rock_ridge and rr_name is None:
+            print("The ISO is Rock Ridge, so a <rr_name> parameter must be specified.")
+            return False
+
+        if iso_path[0] != '/':
+            iso_path = os.path.join(self.cwd, iso_path)
+
+        self.iso.add_file(src_path, iso_path, rr_name=rr_name, joliet_path=joliet_path)
+
+        return False
+
+    def help_rm_file(self):
+        print("> rm_file <iso_path>")
+        print("Remove the contents of <iso_path> from the ISO.")
+
+    def do_rm_file(self, line):
+        split = line.split()
+        if len(split) != 1:
+            print("The rm_file command takes one and only one parameter (iso path).")
+            return False
+
+        iso_path = split[0]
+
+        if iso_path[0] != '/':
+            iso_path = os.path.join(self.cwd, iso_path)
+
+        self.iso.rm_file(iso_path)
+
+        return False
+
+    def help_mkdir(self):
+        print("> mkdir <iso_path> [rr_name=<rr_name>] [joliet_path=<joliet_path>]")
+        print("Make a new directory called <iso_path>.")
+        print("If the ISO is a Rock Ridge ISO, <rr_name> must be specified; otherwise, it must not be.")
+        print("If the ISO is not a Joliet ISO, <joliet_path> must not be specified.  If the ISO is a")
+        print("Joliet ISO, <joliet_path> is optional, but highly recommended to supply.")
+
+    def do_mkdir(self, line):
+        split = line.split()
+
+        if len(split) < 1 or len(split) > 3:
+            self.help_mkdir()
+            return False
+
+        iso_path = split[0]
+        rr_name = None
+        joliet_path = None
+
+        for arg in split[1:]:
+            keyval = arg.split('=')
+            if len(keyval) != 2:
+                print("Invalid key/val pair, must be rr_name=<rr_name> or joliet_path=<joliet_path>")
+                return False
+
+            key = keyval[0]
+            val = keyval[1]
+
+            if key == 'rr_name':
+                rr_name = val
+            elif key == 'joliet_path':
+                joliet_path = val
+            else:
+                print("Unknown key, must be rr_name=<rr_name> or joliet_path=<joliet_path>")
+                return False
+
+        if self.iso.rock_ridge and rr_name is None:
+            print("The ISO is Rock Ridge, so a <rr_name> parameter must be specified.")
+            return False
+
+        if iso_path[0] != '/':
+            iso_path = os.path.join(self.cwd, iso_path)
+
+        self.iso.add_directory(iso_path, rr_name=rr_name, joliet_path=joliet_path)
+
+        return False
+
+    def help_rmdir(self):
+        print("> rmdir <iso_path>")
+        print("Remove the directory at <iso_path>.  Note that the directory must be empty for the command to succeed.")
+
+    def do_rmdir(self, line):
+        split = line.split()
+        if len(split) != 1:
+            print("The rmdir command takes one and only one parameter (iso path).")
+            return False
+
+        iso_path = split[0]
+
+        if iso_path[0] != '/':
+            iso_path = os.path.join(self.cwd, iso_path)
+
+        self.iso.rm_directory(iso_path)
+
+        return False
+
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: %s <isofile>" % (sys.argv[0]))
+        sys.exit(1)
+
+    iso = pycdlib.PyCdlib()
+    fp = open(sys.argv[1], 'rb')
+    iso.open_fp(fp)
+
+    done = False
+    cmdloop = PyCdlibCmdLoop(iso)
+    while not done:
+        try:
+            cmdloop.cmdloop()
+            done = True
+        except Exception as e:  # pylint: disable=broad-except
+            print(e)
+
+    iso.close()
+    fp.close()
+
+
+if __name__ == "__main__":
+    main()
