@@ -1,0 +1,28 @@
+FROM centos:7
+RUN yum update -y && \
+    yum install -y wget vim bzip2 gcc gcc-c++ make libgl1-mesa-glx mesa-libGL qt5-qtbase-gui git nano tree gdb
+
+ENV miniconda_dl 'Miniconda3-latest-Linux-x86_64.sh'
+ENV envconfig 'environment_pinned_v0.1.yml'
+ENV envname 'py3'
+ENV git_lfs_v='2.1.1'
+
+RUN /bin/bash -i -c "cd /root; wget https://repo.continuum.io/miniconda/$miniconda_dl ; \
+    bash -i /root/$miniconda_dl -b ; \
+    rm -f /root/$miniconda_dl"
+
+# copy some needed stuff to /root
+COPY *.yml /root/
+
+# create an environment with all packages specified in $envconfig
+RUN /bin/bash -i -c "source /root/miniconda3/bin/activate ; \
+    conda env create -n $envname -f /root/$envconfig"
+
+# install git lfs
+RUN /bin/bash -i -c "curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | bash"
+
+# installing git large file support, see here: https://git-lfs.github.com/ , change version number below for future upgrades
+RUN /bin/bash -i -c "wget https://github.com/git-lfs/git-lfs/releases/download/v${git_lfs_v}/git-lfs-linux-amd64-${git_lfs_v}.tar.gz; \
+    tar -zxvf git-lfs-linux-amd64-${git_lfs_v}.tar.gz; \
+    cd git-lfs-${git_lfs_v}; \
+    bash ./install.sh"
