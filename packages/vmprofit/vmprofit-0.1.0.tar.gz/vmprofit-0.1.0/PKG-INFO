@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: vmprofit
+Version: 0.1.0
+Summary: vmprof helpers
+Home-page: https://github.com/lopuhin/vmprofit
+Author: Konstantin Lopuhin
+Author-email: kostia.lopuhin@gmail.com
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
