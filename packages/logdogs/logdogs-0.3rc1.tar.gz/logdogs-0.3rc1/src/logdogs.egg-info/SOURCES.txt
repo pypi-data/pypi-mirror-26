@@ -1,0 +1,8 @@
+README.rst
+setup.py
+src/logdogs.py
+src/logdogs.egg-info/PKG-INFO
+src/logdogs.egg-info/SOURCES.txt
+src/logdogs.egg-info/dependency_links.txt
+src/logdogs.egg-info/requires.txt
+src/logdogs.egg-info/top_level.txt
