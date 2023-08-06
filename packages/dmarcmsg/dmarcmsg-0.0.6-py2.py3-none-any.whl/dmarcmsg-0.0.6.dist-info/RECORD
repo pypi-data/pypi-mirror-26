@@ -1,0 +1,14 @@
+dmarcmsg/__init__.py,sha256=GtID_1mlNwW-pJKB-pqAEsHPpa5UP4aqEWl7pHyFg3I,131
+dmarcmsg/__init__.pyc,sha256=hvk4lXdeFneyb_t7wjb9Z34-OnY8uTdZAaSB7uTbNfQ,335
+dmarcmsg/construct.py,sha256=W3JhzjU1KZIxHctwRoIXYIbmK6e0S4YTsTzq87rwF_U,11381
+dmarcmsg/construct.pyc,sha256=DGA8LfluX0Ha0F8-8pcovE9_oyYaaWIj-NH6rgxe0Z0,5790
+dmarcmsg/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmarcmsg/util/__init__.pyc,sha256=79m4qeJSfkL0bvdQWtLC4FRv2age6TK_i15WGQA41Qo,112
+dmarcmsg/util/content_disposition.py,sha256=ohSAACLSX-OvHj6aBptVBvGrB5qqazXNUWZLkTxW6DQ,1085
+dmarcmsg/util/content_disposition.pyc,sha256=OJQPfPEg-DVsbuDHM19EXoCcqWVox7NGiUZjNTspxL4,809
+dmarcmsg-0.0.6.dist-info/DESCRIPTION.rst,sha256=blCAIHopQc601kb8GRSzpetvEqCT9x3rIWKEIHrjwaw,226
+dmarcmsg-0.0.6.dist-info/METADATA,sha256=3on_hAdbb-xtyy7p617P-eTNOAv2eWRN4mMsCxnIy58,1578
+dmarcmsg-0.0.6.dist-info/RECORD,,
+dmarcmsg-0.0.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dmarcmsg-0.0.6.dist-info/metadata.json,sha256=xc1bvgxgO96BiHeWTtR0G0GAi--L-X5HFAeJKYvuzUg,1416
+dmarcmsg-0.0.6.dist-info/top_level.txt,sha256=Q_02cihpt6MW-zvArLOhsqE8N_BTwgMxTn5hiy1zhTQ,9
