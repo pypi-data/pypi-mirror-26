@@ -1,0 +1,9 @@
+include LICENSE
+include README.rst
+include tests/*.py
+include scrapenhl2/data/other/*
+include scrapenhl2/data/parsed/pbp/2017/*
+include scrapenhl2/data/parsed/toi/2017/*
+include scrapenhl2/scrape/*
+include scrapenhl2/manipulate/*
+include scrapenhl2/plot/*
