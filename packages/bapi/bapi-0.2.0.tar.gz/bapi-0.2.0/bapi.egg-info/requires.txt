@@ -1,0 +1,5 @@
+beancount
+flask
+flask-restplus
+click
+gitpython

@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: bapi
+Version: 0.2.0
+Summary: A Beancount REST API
+Home-page: https://github.com/tarioch/bapi
+Author: Patrick Ruckstuhl
+Author-email: patrick@ch.tario.org
+License: GPLv2
+Description-Content-Type: UNKNOWN
+Description: .. image:: https://img.shields.io/pypi/l/bapi.svg
+           :target: https://pypi.python.org/pypi/bapi
+        .. image:: https://img.shields.io/pypi/v/bapi.svg
+           :target: https://pypi.python.org/pypi/bapi
+        .. image:: https://img.shields.io/travis/tarioch/bapi.svg
+            :target: https://travis-ci.org/tarioch/bapi?branch=master
+        
+        BAPI
+        ====
+        
+        Provide a REST API for the double-entry bookkeeping software `beancount
+        <http://furius.ca/beancount/>`__.
+        
+        
+Keywords: beancount rest api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Python: >=3
