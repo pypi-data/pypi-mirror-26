@@ -1,0 +1,8 @@
+setup.py
+smic/__init__.py
+smic/smic.py
+smic.egg-info/PKG-INFO
+smic.egg-info/SOURCES.txt
+smic.egg-info/dependency_links.txt
+smic.egg-info/requires.txt
+smic.egg-info/top_level.txt
