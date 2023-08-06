@@ -1,0 +1,12 @@
+jodel_api/__init__.py,sha256=ayfPEuCQ71p8vfNvdQwlbEIpv5qWhyFcQCa3rMxpBZY,233
+jodel_api/gcmhack.py,sha256=BsYGVNtz8TPne1z0J1I2H4Q5GciA8ydalaZcmpsRWvw,6286
+jodel_api/jodel_api.py,sha256=LB42Hp24Q_XmHU0qBnIyl6gn1Y14T3TdZas2o1Fcukk,16060
+jodel_api/protos/__init__.py,sha256=EqD46FuhlfLc061G9anfZVkieT3a17bsz3fw-NMkmQs,78
+jodel_api/protos/checkin_pb2.py,sha256=5VASH2kFei81BeoViNJi6eRO5ZRJ6pXZV2m0kDUuBKQ,44429
+jodel_api/protos/mcs_pb2.py,sha256=wNUFyjwVX-PSuHbFE74lT98FWOl8tn4bWvCE1tSUNTY,52076
+jodel_api-1.2.6.dist-info/DESCRIPTION.rst,sha256=j2LI9k3y-tXDoESgYbK92EBL9lqQNvTLEj3JeBu9f2o,11225
+jodel_api-1.2.6.dist-info/METADATA,sha256=lLAtmVguiB8R0FMCEd4B0Gj355jO9MX4l9azMomKzXc,12244
+jodel_api-1.2.6.dist-info/RECORD,,
+jodel_api-1.2.6.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+jodel_api-1.2.6.dist-info/metadata.json,sha256=4lWcUIGwLZhfKTIoJJiYywYqI1sK6kueq84tbxPMG6o,1163
+jodel_api-1.2.6.dist-info/top_level.txt,sha256=8bA5sEdCjtUkuvOstKQMaC1cGpWt3hoT-DV8Dln6Fkc,10
