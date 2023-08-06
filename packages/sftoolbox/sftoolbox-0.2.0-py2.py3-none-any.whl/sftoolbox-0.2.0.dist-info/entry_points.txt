@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        sftoolbox=sftoolboxqt.cli:main
+    
