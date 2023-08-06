@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: segments
+Version: 1.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/cldf/segments
+Author: Steven Moran and Robert Forkel
+Author-email: steven.moran@uzh.ch
+License: Apache 2.0
+Description-Content-Type: UNKNOWN
+Description: ===============================
+        segments
+        ===============================
+        
+        .. image:: https://travis-ci.org/cldf/segments.png?branch=master
+                :target: https://travis-ci.org/cldf/segments
+        
+        .. image:: https://codecov.io/gh/cldf/segments/branch/master/graph/badge.svg
+                :target: https://codecov.io/gh/cldf/segments
+        
+        .. image:: https://pypip.in/d/segments/badge.png
+                :target: https://crate.io/packages/segments?version=latest
+        
+        A Python package implementing tokenization using orthography profiles.
+        
+        
+        Requirements
+        ------------
+        
+        - Python >= 2.7 or >= 3.4
+        
+        License
+        -------
+        
+        Apache License Version 2.0
+        
+Keywords: tokenizer
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
