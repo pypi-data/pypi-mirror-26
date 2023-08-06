@@ -1,0 +1,124 @@
+Metadata-Version: 2.0
+Name: djangocms-lightgallery
+Version: 0.1.12
+Summary: DjangoCMS Plugin for LighGallery library
+Home-page: https://github.com/oesah/djangocms-lightgallery
+Author: Özer Sahin
+Author-email: o.sahin@oesah.de
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: djangocms-lightgallery
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: django-filer
+Requires-Dist: jsonfield
+
+=============================
+djangocms-lightgallery
+=============================
+
+.. image:: https://badge.fury.io/py/djangocms-lightgallery.svg
+    :target: https://badge.fury.io/py/djangocms-lightgallery
+
+.. image:: https://travis-ci.org/oesah/djangocms-lightgallery.svg?branch=master
+    :target: https://travis-ci.org/oesah/djangocms-lightgallery
+
+.. image:: https://codecov.io/gh/oesah/djangocms-lightgallery/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/oesah/djangocms-lightgallery
+
+DjangoCMS Plugin for `LightGallery <http://sachinchoolur.github.io/lightGallery/>`_.
+
+Documentation
+-------------
+
+The full documentation is at https://djangocms-lightgallery.readthedocs.io.
+
+Quickstart
+----------
+
+Requirements
+
+* django-filer
+
+Install djangocms-lightgallery::
+
+    pip install djangocms-lightgallery
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'djangocms_lightgallery',
+        ...
+    )
+
+
+Features
+--------
+
+* create image galleries with `lightGallery`
+* displays images in gallery as a thumbnail preview
+
+
+Running Tests
+-------------
+
+Does the code actually work?
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install tox
+    (myenv) $ tox
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+*  LightGallery_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+.. _LightGallery: http://sachinchoolur.github.io/lightGallery/
+
+
+ToDo
+----
+
+* make the thumbnail preview customizable
+* give more styling options
+
+
+
+History
+-------
+
+0.1.8 (2017-11-17)
+++++++++++++++++++
+
+* fixed icon overlay bug on thumbnails
+
+0.1.0 (2017-11-17)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
