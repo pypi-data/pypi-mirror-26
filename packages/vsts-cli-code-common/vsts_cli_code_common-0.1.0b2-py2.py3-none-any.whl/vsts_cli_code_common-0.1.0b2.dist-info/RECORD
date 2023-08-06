@@ -1,0 +1,13 @@
+vsts/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/code/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/code/common/__init__.py,sha256=tgaJt_VIxea35CzjM39E07y-i1owyPUjHAP34jCm2ts,349
+vsts/cli/code/common/git_alias.py,sha256=SmZop_ocXmY6dLJ4Od6P1NX5XnyO5vDO9QN2NjXM2cA,1481
+vsts/cli/code/common/pull_request.py,sha256=QYB4R9BiHUvBnaBnBuD5rQwbWX9jYoYwKsTyAxnT28c,38734
+vsts/cli/code/common/repository.py,sha256=UwiYzduCNFnffRL0lFjFa_UCPHRvg6erOGpK4Rwh_jw,5296
+vsts_cli_code_common-0.1.0b2.dist-info/DESCRIPTION.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsts_cli_code_common-0.1.0b2.dist-info/METADATA,sha256=r3OdpxgmpVu2uw_ux8s856mAlc48211e-psE8drtoy4,900
+vsts_cli_code_common-0.1.0b2.dist-info/RECORD,,
+vsts_cli_code_common-0.1.0b2.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+vsts_cli_code_common-0.1.0b2.dist-info/metadata.json,sha256=HGJS-_WboZdmFetHEE-IW_dd0xrITNuoIBpco365Ees,1036
+vsts_cli_code_common-0.1.0b2.dist-info/top_level.txt,sha256=r-Q1CPVoe51isile67MY1CdCYdDF5a1ghu3YlrUuU0E,5
