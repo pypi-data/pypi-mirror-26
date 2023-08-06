@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: moratab
+Version: 0.5.2
+Summary: Persian markdown convertor.
+Home-page: http://www.sobhe.ir/moratab/
+Author: Alireza Nourian
+Author-email: az.nourian@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Natural Language :: Persian
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: mistune (==0.7.1)
+
+UNKNOWN
+
+
