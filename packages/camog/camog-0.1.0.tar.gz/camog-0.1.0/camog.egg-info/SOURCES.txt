@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+camog/__init__.py
+camog/_csv.py
+camog/_version.py
+camog.egg-info/PKG-INFO
+camog.egg-info/SOURCES.txt
+camog.egg-info/dependency_links.txt
+camog.egg-info/top_level.txt
+src/fastcsv.c
+src/fastcsv.h
+src/osx_pthread_barrier.h
+src/pyfastcsv.c
