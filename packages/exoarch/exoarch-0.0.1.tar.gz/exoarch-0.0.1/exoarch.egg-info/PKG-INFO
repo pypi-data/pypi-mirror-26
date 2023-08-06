@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: exoarch
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/dfm/exoarch
+Author: Daniel Foreman-Mackey
+Author-email: foreman.mackey@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

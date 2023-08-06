@@ -1,0 +1,9 @@
+README.md
+exoarch.py
+setup.py
+exoarch.egg-info/PKG-INFO
+exoarch.egg-info/SOURCES.txt
+exoarch.egg-info/dependency_links.txt
+exoarch.egg-info/requires.txt
+exoarch.egg-info/top_level.txt
+exoarch.egg-info/zip-safe
