@@ -1,0 +1,3 @@
+[nose.plugins]
+plan-loader = raptorlink.raptorlink:RaptorPlugin
+
