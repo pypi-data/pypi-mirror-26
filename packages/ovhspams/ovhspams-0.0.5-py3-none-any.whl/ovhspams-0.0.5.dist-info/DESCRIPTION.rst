@@ -1,0 +1,55 @@
+Gestion des SAPMS
+=================
+
+Getting Started
+---------------
+
+- Change directory into your newly created project::
+
+    cd ovhspams
+
+- Create a Python virtual environment::
+
+    python3 -m venv env
+
+- Upgrade packaging tools::
+
+    env/bin/pip install --upgrade pip setuptools
+
+- Install the project in editable mode with its testing requirements::
+
+    env/bin/pip install -e ".[testing]"
+
+- Run your project's tests::
+
+    env/bin/pytest
+
+- Download ini files::
+
+    wget http://static.frkb.fr/ovhspams/development.ini
+    wget http://static.frkb.fr/ovhspams/production.ini
+
+- Adapt ``domaines`` entry in ``[app:main]`` section from ini file
+	see on https://api.ovh.com/ how to obtain keys.
+
+- Run your project::
+
+    env/bin/pserve development.ini
+    or
+    env/bin/pserve production.ini
+
+- Acces your project:
+
+  http://localhost:6543
+
+
+
+Change log
+----------
+
+- **0.0.5** 2017/11/01
+
+	Déplacement de la configuration des domaines et de leurs clés chez OVH
+	dans les fichier .ini
+
+
