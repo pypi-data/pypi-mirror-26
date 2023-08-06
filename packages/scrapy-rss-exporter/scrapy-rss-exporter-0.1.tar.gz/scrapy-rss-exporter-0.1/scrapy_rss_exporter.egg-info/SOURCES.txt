@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+scrapy_rss_exporter/exporters.py
+scrapy_rss_exporter/items.py
+scrapy_rss_exporter.egg-info/PKG-INFO
+scrapy_rss_exporter.egg-info/SOURCES.txt
+scrapy_rss_exporter.egg-info/dependency_links.txt
+scrapy_rss_exporter.egg-info/requires.txt
+scrapy_rss_exporter.egg-info/top_level.txt
