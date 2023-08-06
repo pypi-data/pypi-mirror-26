@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: pvt
+Version: 0.1
+Summary: Python virtual environment tool
+Home-page: https://github.com/rcook/pvt
+Author: Richard Cook
+Author-email: rcook@rcook.org
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: pvt by Richard Cook
+        ===================
+        
+        |View on PyPI| |Licence|
+        
+        Python virtual environment tool
+        
+        Clone repository
+        ----------------
+        
+        ::
+        
+            git clone https://github.com/rcook/pvt.git
+        
+        Developer notes
+        ---------------
+        
+        Various package properties are defined in ``pvt/__init__py``:
+        
+        -  ``__project_name__``
+        -  ``__version__``
+        -  ``__description__``
+        
+        When publishing a new build of the package, ensure that ``__version__``
+        is incremented as appropriate.
+        
+        Licence
+        -------
+        
+        Released under `MIT License <LICENSE>`__
+        
+        .. |View on PyPI| image:: https://img.shields.io/pypi/v/pvt.svg
+           :target: https://pypi.python.org/pypi/pvt
+        .. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg
+           :target: https://raw.githubusercontent.com/rcook/pvt/master/LICENSE
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
