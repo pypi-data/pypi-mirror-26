@@ -1,0 +1,6 @@
+six
+securesystemslib==0.10.8
+attrs
+canonicaljson
+python-dateutil
+iso8601
