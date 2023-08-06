@@ -1,0 +1,82 @@
+Cluster Searcher
+================
+
+For David's clusters
+
+Installation
+------------
+
+### Prerequisites ###
+
+* Python 3.6
+
+### Obtaining ###
+
+```bash
+$    (sudo) pip install cluster_searcher
+```
+
+Usage
+-----
+
+### Manual search ###
+
+```bash
+$   cluster_searcher
+$   load_leca /Users/martinrusilowicz/mnt/milstore-shared/LECA/conservedclustergeneannotations.txt
+    INF 3892 clusters loaded.
+$   gene_search ccdc61
+    CLUSTER 11784
+    ENSP00000469909.1 pep
+    chromosome:GRCh38:19:45995471:46003501:1
+    gene:ENSG00000104983.8
+    transcript:ENST00000594672.5
+    gene_biotype:protein_coding
+    transcript_biotype:protein_coding
+    gene_symbol:CCDC61
+    description:coiled-coil domain containing 61 [
+    Source:HGNC Symbol;Acc:HGNC:33629]
+```
+
+### Automated map to KEGG ##
+
+Download the XML from KEGG - e.g. go to the page [Cell Cycle](http://www.genome.jp/kegg-bin/show_pathway?hsa04110), select "Reference Pathway (KO)" and select "Download KGML".
+
+```bash
+$   cluster_searcher "load_leca /Users/martinrusilowicz/mnt/milstore-shared/LECA/conservedclustergeneannotations.txt : load_kegg /Users/martinrusilowicz/Desktop/cellcycle.xml : resolve"
+```
+
+Copy and paste the output into the "User data mapping" setting on the original KEGG webpage.
+
+### Quick legend ###
+
+* Red - Not found
+* Green - Found
+* Yellow, Blue - Probably not found
+* Black, White - Unknown
+
+### Detailed legend ###
+
+* Red - Not found, e.g. no gene matches `CYC25`
+* Green - Exact match, e.g. `CYC25` found as `gene:CYC25`
+* Yellow - Found with number, e.g. `CYC` found as `gene:CYC25`. Only applies to non-numerical searches, so `CYC25` will _not_ match `CYC251`.
+* Blue - Found in description, could be a positive match like `description:CYC25, Cyclin 25`, or a negative match like `description:ABC42, activator of CYC25` or `description:ABCCYC251PQ Spam`. Please check manually with `gene.search`.
+* Black - Unable to apply colouring due to KEGG limitations. Please check manually with `gene.search`.
+* White - Gene not in original KGML. Did you select "Reference Pathway (KO)"?
+
+### Troubleshooting ###
+
+* No "KGML" download option - Select "Reference Pathway (KO)"
+* "Not found" error in KEGG - You're probably pasting the output into a different pathway.
+* No/few results - Select "Reference Pathway (KO)"
+* ***False negatives*** - KEGG wildcards (e.g. `Slk1/2` or `Slk1_2`) and differences in naming (e.g. `Slk-beta` vs `Slkβ`). Please check manually.
+* Slow loading LECA file - copy the file locally
+
+Meta
+----
+
+```ini
+language=python3
+type=cli
+host=bitbucket,pypi
+```
