@@ -1,0 +1,3 @@
+
+git+https://github.com/darklow/django-suit.git@v2#egg=django-suit
+git+https://github.com/mariocesar/sorl-thumbnail.git#egg=sorl-thumbnail
