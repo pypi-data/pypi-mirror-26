@@ -1,0 +1,7 @@
+{
+	"line": null,
+	"listdir": "import os\r\nos.listdir('{data}')",
+	"fileread": "f = open('{name}', 'r')\r\ndata = f.read()\r\nf.close()\r\nprint(data)",
+	"filewrite": "f = open('{name}','w')\r\n{data}\r\nf.close()",
+	"filewriteline": "f.write('{data}')"
+}
