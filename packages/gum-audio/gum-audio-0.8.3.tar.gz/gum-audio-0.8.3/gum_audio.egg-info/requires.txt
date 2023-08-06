@@ -1,0 +1,5 @@
+numpy
+pyalsaaudio>=0.6
+samplerate
+pysndfile
+enum34
