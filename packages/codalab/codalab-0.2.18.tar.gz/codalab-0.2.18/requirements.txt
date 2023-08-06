@@ -1,0 +1,5 @@
+# Install the worker
+-e worker
+
+# Client uses the same requirements as the worker
+-r worker/requirements.txt
