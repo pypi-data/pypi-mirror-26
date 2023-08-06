@@ -1,0 +1,15 @@
+{% load thumbnail %}
+{% load laporem_tag %}
+
+{% for obj in objs %}
+    <div class="laporem_lslide" data-id="{{ obj.id }}">
+        <div class="checkblock" onclick="select(this, '{{ obj.id }}', '{{ obj.unique }}')"></div>
+        <div class="loader"></div>
+        <img class="w100" src="{% thumbnail obj.file 0x200 crop %}">
+        <div class="laporem_menu">
+            <div class="l_ico check" onclick="select(this, '{{ obj.id }}', '{{ obj.unique }}')"></div>
+            <a id="change_id_{{ obj.unique }}" href="{{ obj|get_admin_url:'change' }}" onclick='return showRelatedObjectLookupPopup(this);'><div class="l_ico setting"></div></a>
+            <div class="l_ico delete" onclick="delete_laporem_obj('{{ laporem_model_file }}', '{{ obj.id }}', this)"></div>
+        </div>
+    </div>
+{% endfor %}
