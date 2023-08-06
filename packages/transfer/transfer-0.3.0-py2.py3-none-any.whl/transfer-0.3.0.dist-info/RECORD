@@ -1,0 +1,17 @@
+transfer/__init__.py,sha256=JJjD_HW3D9qQ8tOPKsnRI6g2tDR5U5GcYjge1PPaAtE,330
+transfer/__main__.py,sha256=z-uyFvCTqgG-85eyKmx_KUOJEXl70LPJP3p5-38y9SY,4168
+transfer/augment_arrays.py,sha256=KJw78bE4NJIvWVP_CMyQUee1jGqLbextTfLP4tWtTAQ,4019
+transfer/images_to_array.py,sha256=IVbdqlGwmJCT2eKQV1W4okpkb_jUKiulsc9hf-_cz50,1757
+transfer/input.py,sha256=KOo65O5kcJWrezaC0ku00ImTmrmx_GoZ12_xCc6rjrE,2461
+transfer/model.py,sha256=NWYKf7Zv1KF1Z3XLnTwqchV9Dnr68lCujBr2pU98feg,6491
+transfer/pre_model.py,sha256=TXPevfjAuoiov85mGGXWMrfSEE1923PNVgXMkOWi5No,1920
+transfer/project.py,sha256=-vQQ3zzqEFaUalAoIlj94G3quZ53RjvljSOEiPdKNfw,8607
+transfer/resnet50.py,sha256=DZabHYFRAZ4KRzNWMtnZAV9Uyok66HA1vycwN0Berzk,3216
+transfer/split.py,sha256=kHnlaiFTUIrJAeKTSUCxs_R2L_jZg0S9hHnd-PHltc8,3021
+transfer-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+transfer-0.3.0.dist-info/METADATA,sha256=AkkmGtdh8Rm0vmor26Ufe3N-o1CqXMI4GzRkhIk5PY4,600
+transfer-0.3.0.dist-info/RECORD,,
+transfer-0.3.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+transfer-0.3.0.dist-info/entry_points.txt,sha256=yP7MI55kg-PpGpkXvCtcpZcvKZvu-Ax_PGdhhAue0l8,53
+transfer-0.3.0.dist-info/metadata.json,sha256=eXI574MoezEwMFUJCyz0YzlnP5_WFhoKau-LJrdxyNo,960
+transfer-0.3.0.dist-info/top_level.txt,sha256=cEy_ai6LXWAkD6XCnJIYZxFTxXZtx3nhtA52OhlAWqI,9
