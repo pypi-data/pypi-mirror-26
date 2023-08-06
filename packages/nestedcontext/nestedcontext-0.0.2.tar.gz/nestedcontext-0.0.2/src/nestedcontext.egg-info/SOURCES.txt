@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/nestedcontext/__init__.py
+src/nestedcontext/context.py
+src/nestedcontext.egg-info/PKG-INFO
+src/nestedcontext.egg-info/SOURCES.txt
+src/nestedcontext.egg-info/dependency_links.txt
+src/nestedcontext.egg-info/top_level.txt
