@@ -1,0 +1,54 @@
+FROM {{ PIPELINE_IMAGE_REGISTRY_URL }}/{{ PIPELINE_IMAGE_REGISTRY_REPO }}/{{ PIPELINE_IMAGE_REGISTRY_NAMESPACE }}:{{ PIPELINE_IMAGE_REGISTRY_BASE_TAG }}
+
+ENV \
+  PIPELINE_MODEL_TYPE={{ PIPELINE_MODEL_TYPE }}
+
+ENV \
+  PIPELINE_MODEL_NAME={{ PIPELINE_MODEL_NAME }}
+
+ENV \
+  PIPELINE_MODEL_TAG={{ PIPELINE_MODEL_TAG }}
+
+ENV \
+  PIPELINE_MODEL_PATH=/root/model/{{ PIPELINE_MODEL_TYPE }}/{{ PIPELINE_MODEL_NAME }}/{{ PIPELINE_MODEL_TAG }}
+
+COPY {{ PIPELINE_MODEL_PATH }} $PIPELINE_MODEL_PATH
+
+RUN \
+   echo "PIPELINE_MODEL_PATH=$PIPELINE_MODEL_PATH"
+
+ENV \
+  PIPELINE_MODEL_TRAIN_CONDA_ENV_NAME=pipeline-{{ PIPELINE_IMAGE_REGISTRY_NAMESPACE }}-{{ PIPELINE_MODEL_TYPE }}-{{ PIPELINE_MODEL_NAME }}-{{ PIPELINE_MODEL_TAG }}
+
+RUN \
+  ls $PIPELINE_MODEL_PATH/pipeline_conda_environment.yml 
+
+RUN \
+  if [ -f "$PIPELINE_MODEL_PATH/pipeline_conda_environment.yml" ]; then \
+    echo "" \
+    && echo "Creating Conda Environment '$PIPELINE_MODEL_TRAIN_CONDA_ENV_NAME' with '$PIPELINE_MODEL_PATH/pipeline_conda_environment.yml'..." \
+    && echo "" \
+    && conda env update --name $PIPELINE_MODEL_TRAIN_CONDA_ENV_NAME --file $PIPELINE_MODEL_PATH/pipeline_conda_environment.yml \ 
+    && echo "" \
+    && echo "...Conda Environment Updated!" \
+    && echo ""; \
+  else \
+    echo "ERROR: '$PIPELINE_MODEL_TRAIN_CONDA_ENV_NAME' was not created.  Make sure '$PIPELINE_MODEL_PATH/pipeline_conda_environment.yml' exists."; \
+  fi
+
+RUN \
+  echo "source activate $PIPELINE_MODEL_TRAIN_CONDA_ENV_NAME" >> ~/.bashrc
+
+RUN \
+  conda info --envs && source activate $PIPELINE_MODEL_TRAIN_CONDA_ENV_NAME && conda list
+
+RUN \
+   if [ -f "$PIPELINE_MODEL_PATH/pipeline_setup.sh" ]; then \
+     chmod a+x $PIPELINE_MODEL_PATH/pipeline_setup.sh \
+     && echo "Running '$PIPELINE_MODEL_PATH/pipeline_setup.sh'..." \
+     && echo "" \
+     && $PIPELINE_MODEL_PATH/pipeline_setup.sh \
+     && echo "" \
+     && echo "...Successfully Trained!" \
+     && echo ""; \
+   fi
