@@ -1,0 +1,3 @@
+[console_scripts]
+sup = kzconfig.cli:sup_cmd
+
