@@ -1,0 +1,9 @@
+README.rst
+pythonic_sqlalchemy_query.py
+setup.cfg
+setup.py
+pythonic_sqlalchemy_query.egg-info/PKG-INFO
+pythonic_sqlalchemy_query.egg-info/SOURCES.txt
+pythonic_sqlalchemy_query.egg-info/dependency_links.txt
+pythonic_sqlalchemy_query.egg-info/requires.txt
+pythonic_sqlalchemy_query.egg-info/top_level.txt
