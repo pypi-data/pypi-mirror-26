@@ -1,0 +1,9 @@
+fluffy-1.5.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+fluffy-1.5.0.dist-info/METADATA,sha256=dcNmK8cD9YW-pZuOgFL5AVAF8YKmY-92gysGtk5KGtc,296
+fluffy-1.5.0.dist-info/RECORD,,
+fluffy-1.5.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+fluffy-1.5.0.dist-info/entry_points.txt,sha256=wChTipzfpXi8RPIX6XA9vo4GzzPRALwzFC_vukAKCn8,87
+fluffy-1.5.0.dist-info/metadata.json,sha256=fvLVAryO3HbQ80wRnXe7eewrE9ARbejwLmkWgj5utnw,694
+fluffy-1.5.0.dist-info/top_level.txt,sha256=CCiSLHWLsUGQA1cw8oDkpvSUWeUuIEcs2brL7qyMXiM,11
+fluffy_cli/__init__.py,sha256=wShy9YfBfroz0HjRH_aNNehkEu1_PLsd_GjTU5aCDPk,22
+fluffy_cli/main.py,sha256=t2OQP026hvXMs1C4H_XjMB5dgHgpPsLa7usUPOTqiyE,6059
