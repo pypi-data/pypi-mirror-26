@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: pygeppetto-django
+Version: 0.0.1
+Summary: Python Geppetto Core Server developed in Django
+Home-page: https://github.com/MetaCell/pygeppetto-django
+Author: MetaCell
+Author-email: info@metacell.us
+License: MIT
+Description: =====
+        PyGeppetto-Server
+        =====
+        
+        PyGeppetto-Server is a simple Django app that implements the basic functionality to run a Geppetto instance.
+        
+        To read more about it. Just go to https://github.com/MetaCell/pygeppetto-django
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
