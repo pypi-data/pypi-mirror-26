@@ -1,0 +1,12 @@
+setup.py
+lambda_face_recognition_prebuilt/__init__.py
+lambda_face_recognition_prebuilt/unpack.py
+lambda_face_recognition_prebuilt.egg-info/PKG-INFO
+lambda_face_recognition_prebuilt.egg-info/SOURCES.txt
+lambda_face_recognition_prebuilt.egg-info/dependency_links.txt
+lambda_face_recognition_prebuilt.egg-info/entry_points.txt
+lambda_face_recognition_prebuilt.egg-info/requires.txt
+lambda_face_recognition_prebuilt.egg-info/top_level.txt
+lambda_face_recognition_prebuilt/../README.md
+lambda_face_recognition_prebuilt/../VERSION
+lambda_face_recognition_prebuilt/../requirements.txt
