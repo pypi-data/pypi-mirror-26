@@ -1,0 +1,4 @@
+requests
+crayons
+click
+beautifulsoup4
