@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: awsauth
+Version: 0.3.3
+Summary: AWS STS/MFA auth helper script
+Home-page: https://github.com/ConnectedHomes/dp-awsauth
+Author: Piotr Wreczycki
+Author-email: piotr.wreczycki@hivehome.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

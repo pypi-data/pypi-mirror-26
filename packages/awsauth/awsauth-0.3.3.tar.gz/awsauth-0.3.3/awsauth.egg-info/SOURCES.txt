@@ -1,0 +1,9 @@
+setup.py
+awsauth/__init__.py
+awsauth.egg-info/PKG-INFO
+awsauth.egg-info/SOURCES.txt
+awsauth.egg-info/dependency_links.txt
+awsauth.egg-info/not-zip-safe
+awsauth.egg-info/requires.txt
+awsauth.egg-info/top_level.txt
+bin/awsauth.py
