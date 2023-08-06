@@ -1,0 +1,8 @@
+dioivo
+setup.py
+dioivo.egg-info/PKG-INFO
+dioivo.egg-info/SOURCES.txt
+dioivo.egg-info/dependency_links.txt
+dioivo.egg-info/top_level.txt
+dioivo_meta/__init__.py
+dioivo_meta/globals.py
