@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+PlasFlow.py
+README.md
+setup.py
+plasflow/__init__.py
+plasflow.egg-info/PKG-INFO
+plasflow.egg-info/SOURCES.txt
+plasflow.egg-info/dependency_links.txt
+plasflow.egg-info/requires.txt
+plasflow.egg-info/top_level.txt
