@@ -1,0 +1,46 @@
+<macros>
+    <token name="@MIMODD_VERSION_REQUIRED@">0.1.8</token>
+    <token name="@MIMODD_REAL_VERSION@">0.1.8</token>
+    <token name="@MIMODD_WRAPPER_VERSION@">0.1.8_0</token>
+    <token name="@HELP_FOOTER@"><![CDATA[
+----
+
+.. class:: infomark
+
+   For **additional help** see these resources: 
+
+- The complete `MiModD User Guide <http://mimodd.readthedocs.io/en/v0.1.8/usage_toc.html>`__
+
+- The `MiModD help forum <https://groups.google.com/forum/#!forum/mimodd>`__ reachable also via `email <mailto:mimodd@googlegroups.com>`__
+
+   ]]></token>
+    <xml name="requirements">
+        <requirements>
+            <requirement type="package" version="@MIMODD_VERSION_REQUIRED@">MiModD</requirement>
+            <yield />
+        </requirements>
+    </xml>
+    <xml name="stdio">
+        <stdio>
+            <exit_code range="1:" />
+        </stdio>
+    </xml>
+    <xml name="version_command">
+        <version_command><![CDATA[mimodd version -q]]></version_command>
+    </xml>
+    <xml name="citations">
+        <citations>
+            <citation type="bibtex">
+@misc{
+maier_mimodd_2014,
+title = {{MiModD} - {Mutation} {Identification} in {Model} {Organism} {Genomes}},
+shorttitle = {{MiModD}},
+url = {https://sourceforge.net/projects/mimodd/},
+author = {Maier, Wolfgang and Moos, Katharina and Seifert, Mark and Baumeister, Ralf},
+year = {2014}, publisher={SourceForge.net} }
+            </citation>
+        </citations>
+    </xml>
+</macros>
+
+
