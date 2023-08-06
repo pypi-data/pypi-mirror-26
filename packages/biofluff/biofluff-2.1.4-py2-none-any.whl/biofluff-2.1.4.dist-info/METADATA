@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: biofluff
+Version: 2.1.4
+Summary: fluff : exploratory analysis and visualization of high-throughput sequencing data
+Home-page: https://github.com/simonvh/fluff/
+Author: Georgios Georgiou
+Author-email: g.georgiou@science.ru.nl
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: HTSeq
+Requires-Dist: Pycluster
+Requires-Dist: colorbrewer
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyBigWig
+Requires-Dist: pybedtools
+Requires-Dist: pysam
+Requires-Dist: scipy
+
+UNKNOWN
+
+
