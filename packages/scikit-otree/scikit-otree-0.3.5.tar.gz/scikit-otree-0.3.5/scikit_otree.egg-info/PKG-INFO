@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: scikit-otree
+Version: 0.3.5
+Summary: oTree integration to the scientific Python Stack
+Home-page: https://github.com/leliel12/scikit-otree
+Author: Juan BC
+Author-email: jbc.develop@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: ============
+        Scikit oTree
+        ============
+        
+        .. image:: https://travis-ci.org/leliel12/scikit-otree.svg?branch=master
+            :target: https://travis-ci.org/leliel12/scikit-otree
+            :alt: Build-Status
+            
+        .. image:: https://badge.fury.io/py/scikit-otree.svg
+            :target: https://badge.fury.io/py/scikit-otree
+            
+        .. image:: https://img.shields.io/badge/License-MIT-blue.svg
+           :target: https://opensource.org/licenses/MIT
+           :alt: License
+        
+        .. image:: https://img.shields.io/badge/python-3.5-blue.svg
+           :target: https://badge.fury.io/py/scikit-otree
+           :alt: Python 3.5
+        
+        
+        `oTree <http://www.otree.org/>`_ integration to the scientific Python Stack
+        
+        Based on:
+        
+            Chen, D. L., Schonger, M., & Wickens, C. (2016).
+            oTree-An open-source platform for laboratory, online, and field experiments.
+            Journal of Behavioral and Experimental Finance, 9, 88-97.
+        
+        
+        Quickstart
+        ----------
+        
+        Typical setup
+        ~~~~~~~~~~~~~
+        
+        .. code-block:: bash
+        
+            $ pip install --upgrade scikit-otree
+        
+        
+        Support
+        -------
+        
+        -   **Full Documentation and Tutorial:** `tutorial.ipynb <tutorial.ipynb>`_
+        -   **Contact:** jbc.develop@gmail.com
+        -   **Issues:** If you have issues please report them as a issue
+            here: https://github.com/leliel12/scikit-otree/issues
+        
+        
+        
+        Test
+        ----
+        
+        Clone or download this project and inside the project folder run:
+        
+        .. code-block:: bash
+        
+            $ pip install tox
+            $ tox
+        
+Keywords: mcda,mcdm,ahp,moora,muti,criteria
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
