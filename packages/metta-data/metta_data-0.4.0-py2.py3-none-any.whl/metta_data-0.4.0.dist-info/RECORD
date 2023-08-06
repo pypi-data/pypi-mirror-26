@@ -1,0 +1,10 @@
+metta/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+metta/datafiles.py,sha256=Iz_hSXjuhINiXUkBQ1SDptq5CFd6QW0GjGPhkpahQvQ,307
+metta/metta_io.py,sha256=RpkFlQbsGmV8Rt5WHHHZRzTMlMILEmPx0wx1lsQXl7Q,8671
+metta/upload_s3.py,sha256=SkwzsTeqLlL8qZubaoCCmuY-iDmIhIOsJeQrTMckEkY,2701
+metta_data-0.4.0.dist-info/DESCRIPTION.rst,sha256=WTx7JVuIRtlduneq49fQmvlXZJ0xW8N8FmGwWrHXQoA,7560
+metta_data-0.4.0.dist-info/METADATA,sha256=xlwXH-cFcVY0CX5tWGE0JG31PflV8_8IRiIhcn_Q-vQ,8017
+metta_data-0.4.0.dist-info/RECORD,,
+metta_data-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+metta_data-0.4.0.dist-info/metadata.json,sha256=D6HUcJxDfqlx0OLDPuTUbxn1kQGgM_h2m4s7OMIrD7E,739
+metta_data-0.4.0.dist-info/top_level.txt,sha256=JwWQFApqZ5jvkWCRrJqdPsgPg3LaVFUnKekvvatmVdU,6
