@@ -1,0 +1,3 @@
+[console_scripts]
+pynotifyx = pynotifyx.__init__:main
+

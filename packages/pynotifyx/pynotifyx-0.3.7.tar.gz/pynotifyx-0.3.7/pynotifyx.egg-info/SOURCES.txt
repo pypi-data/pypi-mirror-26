@@ -1,0 +1,15 @@
+AUTHORS
+COPYING
+MANIFEST.in
+NEWS
+README
+setup.py
+setuplib.py
+pynotifyx/__init__.py
+pynotifyx/__main__.py
+pynotifyx/binding.c
+pynotifyx.egg-info/PKG-INFO
+pynotifyx.egg-info/SOURCES.txt
+pynotifyx.egg-info/dependency_links.txt
+pynotifyx.egg-info/entry_points.txt
+pynotifyx.egg-info/top_level.txt
