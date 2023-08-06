@@ -1,0 +1,7 @@
+README.md
+setup.py
+ChessComAPILibrary.egg-info/PKG-INFO
+ChessComAPILibrary.egg-info/SOURCES.txt
+ChessComAPILibrary.egg-info/dependency_links.txt
+ChessComAPILibrary.egg-info/requires.txt
+ChessComAPILibrary.egg-info/top_level.txt
