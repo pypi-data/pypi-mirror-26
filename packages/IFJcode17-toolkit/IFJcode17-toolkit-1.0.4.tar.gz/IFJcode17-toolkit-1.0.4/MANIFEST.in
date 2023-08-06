@@ -1,0 +1,7 @@
+graft ifj2017
+graft tests
+graft data
+include ide.py
+include test.py
+include README.md
+include setup.cfg
