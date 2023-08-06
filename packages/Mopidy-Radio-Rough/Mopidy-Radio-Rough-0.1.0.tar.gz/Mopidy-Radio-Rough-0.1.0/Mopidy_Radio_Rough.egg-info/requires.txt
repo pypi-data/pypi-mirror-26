@@ -1,0 +1,10 @@
+setuptools
+Mopidy>=1.0
+Mopidy-Podcast-iTunes
+Mopidy-Youtube
+Mopidy-Rough-Base
+Pykka>=1.1
+psutil
+feedparser
+jsonpickle
+mutagen
