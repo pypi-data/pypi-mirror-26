@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: discuss
+Version: 0.0.0.dev1
+Summary: UNKNOWN
+Home-page: https://github.com/biwin/discuss
+Author: Biwin John
+Author-email: biwinjohn@gmail.com
+License: GPL
+Download-URL: https://github.com/biwin/discuss/
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: discuss,python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
