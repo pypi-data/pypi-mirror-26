@@ -1,0 +1,6 @@
+chardet
+click
+configparser
+jinja2
+future
+backports.csv
