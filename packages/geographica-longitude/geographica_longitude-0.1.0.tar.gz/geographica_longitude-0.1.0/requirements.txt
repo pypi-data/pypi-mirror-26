@@ -1,0 +1,11 @@
+carto==1.1.1
+certifi==2017.11.5
+chardet==3.0.4
+future==0.15.2
+idna==2.6
+pyrestcli==0.6.4
+python-dateutil==2.5.3
+redis==2.10.6
+requests==2.18.4
+six==1.11.0
+urllib3==1.22
