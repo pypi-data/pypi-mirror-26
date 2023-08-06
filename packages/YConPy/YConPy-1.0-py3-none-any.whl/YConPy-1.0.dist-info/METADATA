@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: YConPy
+Version: 1.0
+Summary: Yaml to python config
+Home-page: https://github.com/Kyushi/yconpy
+Author: Franziskus Nakajima
+Author-email: info@franziskusnakajima.net
+License: BSD
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
