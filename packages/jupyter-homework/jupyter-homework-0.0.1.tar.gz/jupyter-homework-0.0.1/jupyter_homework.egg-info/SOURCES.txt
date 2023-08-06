@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+jupyter-homework/__init__.py
+jupyter-homework/static/._bootbox.min.js
+jupyter-homework/static/bootbox.min.js
+jupyter-homework/static/common.js
+jupyter-homework/static/notebook.js
+jupyter-homework/static/tree.js
+jupyter_homework.egg-info/PKG-INFO
+jupyter_homework.egg-info/SOURCES.txt
+jupyter_homework.egg-info/dependency_links.txt
+jupyter_homework.egg-info/requires.txt
+jupyter_homework.egg-info/top_level.txt
