@@ -1,0 +1,128 @@
+% \usepackage{tikz}
+% \usetikzlibrary{arrows,external}
+% \usepackage{pgfplots}
+% \pgfplotsset{compat=1.10}
+% \usepackage[detect-family]{siunitx}
+% \usepackage[eulergreek]{sansmath}
+% \sisetup{text-sf=\sansmath}
+% \usepackage{relsize}
+%
+{%- if external_filename %}
+    \tikzsetnextfilename{ {{- external_filename -}} }
+{%- endif %}
+\pgfkeysifdefined{/artist/width}
+    {\pgfkeysgetvalue{/artist/width}{\defaultwidth}}
+    {\def\defaultwidth{ {{ width }} }}
+%
+{%- if height %}
+    \pgfkeysifdefined{/artist/height}
+        {\pgfkeysgetvalue{/artist/height}{\defaultheight}}
+        {\def\defaultheight{ {{ height }} }}
+{%- endif %}
+%
+\begin{sansmath}
+\begin{tikzpicture}[
+        font=\sffamily,
+        every pin/.style={inner sep=2pt, font={\sffamily\smaller}},
+        every label/.style={inner sep=2pt, font={\sffamily\smaller}},
+        every pin edge/.style={<-, >=stealth', shorten <=2pt},
+        pin distance=2.5ex,
+    ]
+    \begin{axis}[
+            axis background/.style={ {{ axis_background }} },
+            xmode={{ xmode }},
+            ymode={{ ymode }},
+            width=\defaultwidth,
+            {%- if height %}
+                height=\defaultheight,
+            {%- endif %}
+            scale only axis,
+            axis equal={{ axis_equal | lower }},
+            %
+            title={ {{ title }} },
+            %
+            xlabel={ {{ xlabel }} },
+            ylabel={ {{ ylabel }} },
+            %
+            xmin={ {{ limits.xmin }} },
+            xmax={ {{ limits.xmax }} },
+            ymin={ {{ limits.ymin }} },
+            ymax={ {{ limits.ymax }} },
+            %
+            {%- if xscale %}
+            x={ 1cm/{{ xscale }} },
+            {%- endif %}
+            {%- if yscale %}
+            y={ 1cm/{{ yscale }} },
+            {%- endif %}
+            %
+            xtick={ {{ ticks.x | join(', ') }} },
+            ytick={ {{ ticks.y | join(', ') }} },
+            {%- if ticks.xlabels %}
+                xticklabels={ {{ ticks.xlabels | join(', ') }} },
+            {%- endif %}
+            {%- if ticks.ylabels %}
+                yticklabels={ {{ ticks.ylabels | join(', ') }} },
+            {%- endif %}
+            {%- if ticks.xsuffix %}
+                xticklabel=$\pgfmathprintnumber{\tick}{{ ticks.xsuffix }}$,
+            {%- endif %}
+            {%- if ticks.ysuffix %}
+                yticklabel=$\pgfmathprintnumber{\tick}{{ ticks.ysuffix }}$,
+            {%- endif %}
+            xticklabel style={ {{ ticks.xlabel_style }} },
+            yticklabel style={ {{ ticks.ylabel_style }} },
+            %
+            tick align=outside,
+            max space between ticks=40,
+            every tick/.style={},
+            axis on top,
+            {%- if colorbar %}
+                colorbar {% if colorbar.horizontal %}horizontal{% endif %},
+                colorbar style={
+                    tick align=outside,
+                    xtick pos=left,
+                    ytick pos=right,
+                    {%- if colorbar.horizontal %}
+                        xlabel={{ colorbar.label }},
+                    {%- else %}
+                        ylabel={{ colorbar.label }},
+                    {%- endif %}
+                    },
+            {%- endif %}
+            point meta min={ {{ limits.mmin }} },
+            point meta max={ {{ limits.mmax }} },
+            colormap={coolwarm}{
+                rgb255=( 59, 76,192)
+                rgb255=( 98,130,234)
+                rgb255=(141,176,254)
+                rgb255=(184,208,249)
+                rgb255=(221,221,221)
+                rgb255=(245,196,173)
+                rgb255=(244,154,123)
+                rgb255=(222, 96, 77)
+                rgb255=(180,  4, 38)},
+            colormap={whiteblack}{gray=(1) gray=(0)},
+            colormap={blackwhite}{gray=(0) gray=(1)},
+            {%- if colormap %}
+                colormap name={{ colormap }},
+            {%- endif %}
+            {%- if axis_options %}
+                {{ axis_options }}
+            {%- endif %}
+        ]
+
+        {%- if has_graph_paper %}
+        \draw[step=1mm, line width=0.2mm, black!20!white] (rel axis cs: 0,0)
+          grid (rel axis cs: 1,1);
+        \draw[step=5mm, line width=0.2mm, black!40!white] (rel axis cs: 0,0)
+          grid (rel axis cs: 1,1);
+        \draw[step=1cm, line width=0.2mm, black!60!white] (rel axis cs: 0,0)
+          grid (rel axis cs: 1,1);
+        {%- endif %}
+
+        {% include 'subplot.tex' %}
+
+    \end{axis}
+\end{tikzpicture}
+\end{sansmath}
