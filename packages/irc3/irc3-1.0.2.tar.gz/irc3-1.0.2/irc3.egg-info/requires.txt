@@ -1,0 +1,15 @@
+venusian>=1.0
+docopt
+
+[:python_version=="3.3"]
+asyncio
+
+[test]
+pytest-asyncio==0.5.0
+feedparser
+requests
+pysocks
+twitter
+aiocron
+redis
+pytest
