@@ -1,0 +1,3 @@
+[console_scripts]
+pyrses = pyrses.pyrses:cli
+
