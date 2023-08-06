@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+fspk/__init__.py
+fspk/cli.py
+fspk/fspk_apig.py
+fspk/fspk_common.py
+fspk/fspk_lambda.py
+fspk/fspk_log.py
+fspk/fspk_s3_utils.py
+fspk.egg-info/PKG-INFO
+fspk.egg-info/SOURCES.txt
+fspk.egg-info/dependency_links.txt
+fspk.egg-info/entry_points.txt
+fspk.egg-info/not-zip-safe
+fspk.egg-info/requires.txt
+fspk.egg-info/top_level.txt

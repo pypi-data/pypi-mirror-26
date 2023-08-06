@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: fspk
+Version: 0.0.4
+Summary: Manage FaaSPacks via Command Line
+Home-page: https://github.com/floodfx/fspk-cli
+Author: Donnie Flood
+Author-email: pypi@floodfx.com
+License: Apache2.0
+Description: 
+        Manage FaaSPacks via Command Line
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
