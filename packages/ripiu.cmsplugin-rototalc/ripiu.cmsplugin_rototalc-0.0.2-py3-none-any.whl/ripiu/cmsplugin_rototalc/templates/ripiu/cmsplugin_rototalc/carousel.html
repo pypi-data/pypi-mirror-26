@@ -1,0 +1,15 @@
+{% load cms_tags menu_tags staticfiles sekizai_tags %}
+{% if instance.child_plugin_instances %}
+  {% addtoblock "css" %}<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>{% endaddtoblock %}
+  {% addtoblock "css" %}<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>{% endaddtoblock %}
+  {% addtoblock "css" %}<link rel="stylesheet" href="{% static "ripiu/cmsplugin_rototalc/css/carousel.css" %}">{% endaddtoblock %}
+  {% addtoblock "js" %}<script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>{% endaddtoblock %}
+  {% addtoblock "js" %}<script>$(document).ready(function(){$('#{{ cid }}').slick();});</script>{% endaddtoblock %}
+  <section id="{{ cid }}"
+           class="ripiu rototalc carousel"
+           data-slick='{{ conf }}'>
+    {% for plugin in instance.child_plugin_instances %}
+      {% render_plugin plugin %}
+    {% endfor %}
+  </section>
+{% endif %}
