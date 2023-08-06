@@ -1,0 +1,8 @@
+setup.py
+ai/__init__.py
+ai.egg-info/PKG-INFO
+ai.egg-info/SOURCES.txt
+ai.egg-info/dependency_links.txt
+ai.egg-info/top_level.txt
+tests/__init__.py
+tests/test_sample.py
