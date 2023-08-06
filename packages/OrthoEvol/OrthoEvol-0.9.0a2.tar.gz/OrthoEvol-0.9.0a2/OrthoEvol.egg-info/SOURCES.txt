@@ -1,0 +1,510 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+Docs/README.md
+Docs/createdocs.py
+Docs/docs/source/Makefile
+Docs/docs/source/alignreadme.rst
+Docs/docs/source/biosqlreadme.rst
+Docs/docs/source/blastreadme.rst
+Docs/docs/source/conf.py
+Docs/docs/source/cookiesreadme.rst
+Docs/docs/source/ftpreadme.rst
+Docs/docs/source/genbankreadme.rst
+Docs/docs/source/index.rst
+Docs/docs/source/iqtreereadme.rst
+Docs/docs/source/logitreadme.rst
+Docs/docs/source/managerreadme.rst
+Docs/docs/source/mpireadme.rst
+Docs/docs/source/mygenereadme.rst
+Docs/docs/source/orthoevolreadme.rst
+Docs/docs/source/orthologsreadme.rst
+Docs/docs/source/otherutilsreadme.rst
+Docs/docs/source/pamlreadme.rst
+Docs/docs/source/pandocreadme.rst
+Docs/docs/source/parallelreadme.rst
+Docs/docs/source/phylogeneticsreadme.rst
+Docs/docs/source/phymlreadme.rst
+Docs/docs/source/pipelinereadme.rst
+Docs/docs/source/pybasherreadme.rst
+Docs/docs/source/send2serverreadme.rst
+Docs/docs/source/sgereadme.rst
+Docs/docs/source/slackifyreadme.rst
+Docs/docs/source/toolsreadme.rst
+OrthoEvol/__init__.py
+OrthoEvol.egg-info/PKG-INFO
+OrthoEvol.egg-info/SOURCES.txt
+OrthoEvol.egg-info/dependency_links.txt
+OrthoEvol.egg-info/entry_points.txt
+OrthoEvol.egg-info/not-zip-safe
+OrthoEvol.egg-info/top_level.txt
+OrthoEvol/Cookies/README.md
+OrthoEvol/Cookies/__init__.py
+OrthoEvol/Cookies/cookie_jar.py
+OrthoEvol/Cookies/utils.py
+OrthoEvol/Cookies/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Cookies/__pycache__/cookie_jar.cpython-36.pyc
+OrthoEvol/Cookies/__pycache__/utils.cpython-36.pyc
+OrthoEvol/Cookies/new_app/cookiecutter.json
+OrthoEvol/Cookies/new_app/hooks/new_app.py
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/global.R
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/index.html
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/server.R
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/ui.R
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/data/.gitkeep
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/scripts/.gitkeep
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/tests/.gitkeep
+OrthoEvol/Cookies/new_app/{{ cookiecutter.app_name }}/www/.gitkeep
+OrthoEvol/Cookies/new_basic_project/cookiecutter.json
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/archive/.gitkeep
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/data/README.md
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/existing_databases
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/ITIS/README.md
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/NCBI/README.md
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/NCBI/blast/db/.gitkeep
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/NCBI/blast/windowmasker_files/.gitkeep
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/NCBI/pub/taxonomy/.gitkeep
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/databases/NCBI/refseq/release/.gitkeep
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/index/README.md
+OrthoEvol/Cookies/new_basic_project/{{ cookiecutter.project_name }}/raw_data/README.md
+OrthoEvol/Cookies/new_database_repo/cookiecutter.json
+OrthoEvol/Cookies/new_database_repo/hooks/new_db.py
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/.gitkeep
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/ITIS/.gitkeep
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/NCBI/.gitkeep
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/NCBI/README.md
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/NCBI/blast/db/.gitkeep
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/NCBI/blast/windowmasker_files/.gitkeep
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/NCBI/pub/taxonomy/.gitkeep
+OrthoEvol/Cookies/new_database_repo/{{ cookiecutter.db_name }}/NCBI/refseq/release/.gitkeep
+OrthoEvol/Cookies/new_project/cookiecutter.json
+OrthoEvol/Cookies/new_project/hooks/post_gen_project.py
+OrthoEvol/Cookies/new_project/{{ cookiecutter.project_name }}/.gitkeep
+OrthoEvol/Cookies/new_project/{{ cookiecutter.project_name }}/archive/.gitkeep
+OrthoEvol/Cookies/new_repository/cookiecutter.json
+OrthoEvol/Cookies/new_repository/hooks/imports.py
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/.gitignore
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/__init__.py
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/setup.py
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Phylogenetic Analysis Flowchart.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Background Information/.gitkeep
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Background Information/README.md
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Biopython/Basic BioSQL with Biopython.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Biopython/Biopython Tutorial and Cookbook.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Linux/Bash Beginners Guide.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Linux/Linux Fundamentals.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/MCSR & Linux/Bash Beginners Guide.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/MCSR & Linux/Linux Fundamentals.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Phylogenetics/PAML Worked Example.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Phylogenetics/pamlDOC.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/docs/Standalone BLAST/BLAST Command Line Applications User Manual.pdf
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/users/.gitkeep
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/web/flask/.gitkeep
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/web/ftp/.gitkeep
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/web/shiny/.gitkeep
+OrthoEvol/Cookies/new_repository/{{ cookiecutter.repository_name }}/web/wasabi/.gitkeep
+OrthoEvol/Cookies/new_research/cookiecutter.json
+OrthoEvol/Cookies/new_research/hooks/new_research.py
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/data/.gitkeep
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/data/README.md
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/index/.gitkeep
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/index/README.md
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/raw_data/.gitkeep
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/raw_data/README.md
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/web/.gitkeep
+OrthoEvol/Cookies/new_research/{{ cookiecutter.research_type }}/{{ cookiecutter.research_name }}/web/README.md
+OrthoEvol/Cookies/new_user/cookiecutter.json
+OrthoEvol/Cookies/new_user/hooks/new_user.py
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/archive/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/README.md
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/ITIS/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/NCBI/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/NCBI/README.md
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/NCBI/blast/db/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/NCBI/blast/windowmasker_files/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/NCBI/pub/taxonomy/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/databases/NCBI/refseq/release/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/index/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/index/README.md
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/log/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/log/README.md
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/manuscripts/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/manuscripts/README.md
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/other/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/projects/.gitkeep
+OrthoEvol/Cookies/new_user/{{ cookiecutter.user_name }}/projects/README.md
+OrthoEvol/Cookies/new_website/.gitignore
+OrthoEvol/Cookies/new_website/.travis.yml
+OrthoEvol/Cookies/new_website/README.rst
+OrthoEvol/Cookies/new_website/cookiecutter.json
+OrthoEvol/Cookies/new_website/tasks.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/.bowerrc
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/.gitignore
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/.isort.cfg
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/.travis.yml
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/LICENSE
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/Procfile
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/README.rst
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/autoapp.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/bower.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/requirements.txt
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/setup.cfg
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/hooks/post_gen_project.sh
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/requirements/dev.txt
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/requirements/prod.txt
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/__init__.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/conftest.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/factories.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/test_config.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/test_forms.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/test_functional.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/tests/test_models.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/__init__.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/app.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/assets.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/commands.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/compat.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/database.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/extensions.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/settings.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/utils.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/public/__init__.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/public/forms.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/public/views.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/css/style.css
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/js/plugins.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/js/script.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/.bower.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/Gruntfile.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/LICENSE
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/README.md
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/bower.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/package.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/package.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/fonts/glyphicons-halflings-regular.eot
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/fonts/glyphicons-halflings-regular.svg
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/fonts/glyphicons-halflings-regular.ttf
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/fonts/glyphicons-halflings-regular.woff
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/fonts/glyphicons-halflings-regular.woff2
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/.jshintrc
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/bs-commonjs-generator.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/bs-glyphicons-data-generator.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/bs-lessdoc-parser.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/bs-raw-files-generator.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/configBridge.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/grunt/sauce_browsers.yml
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/.jscsrc
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/.jshintrc
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/affix.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/alert.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/button.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/carousel.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/collapse.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/dropdown.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/modal.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/popover.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/scrollspy.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/tab.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/tooltip.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/js/transition.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/.csscomb.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/.csslintrc
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/alerts.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/badges.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/bootstrap.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/breadcrumbs.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/button-groups.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/buttons.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/carousel.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/close.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/code.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/component-animations.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/dropdowns.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/forms.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/glyphicons.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/grid.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/input-groups.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/jumbotron.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/labels.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/list-group.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/media.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/modals.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/navbar.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/navs.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/normalize.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/pager.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/pagination.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/panels.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/popovers.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/print.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/progress-bars.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/responsive-embed.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/responsive-utilities.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/scaffolding.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/tables.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/theme.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/thumbnails.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/tooltip.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/type.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/utilities.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/variables.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/wells.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/alerts.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/background-variant.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/border-radius.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/buttons.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/center-block.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/clearfix.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/forms.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/gradients.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/grid-framework.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/grid.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/hide-text.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/image.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/labels.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/list-group.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/nav-divider.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/nav-vertical-align.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/opacity.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/pagination.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/panels.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/progress-bar.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/reset-filter.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/reset-text.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/resize.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/responsive-visibility.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/size.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/tab-focus.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/table-row.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/text-emphasis.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/text-overflow.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/bootstrap/less/mixins/vendor-prefixes.less
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/css/font-awesome.css
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/css/font-awesome.min.css
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/fonts/FontAwesome.otf
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/fonts/fontawesome-webfont.eot
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/fonts/fontawesome-webfont.svg
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/fonts/fontawesome-webfont.ttf
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/fonts/fontawesome-webfont.woff
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/font-awesome4/fonts/fontawesome-webfont.woff2
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/.bower.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/MIT-LICENSE.txt
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/bower.json
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/attributes.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/callbacks.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/core.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/data.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/deferred.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/deprecated.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/dimensions.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/effects.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/event.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/intro.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/jquery.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/manipulation.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/offset.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/outro.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/queue.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/selector-native.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/selector-sizzle.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/selector.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/serialize.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/traversing.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/wrap.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax/jsonp.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax/load.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax/parseJSON.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax/parseXML.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax/script.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/ajax/xhr.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/attributes/attr.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/attributes/classes.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/attributes/prop.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/attributes/support.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/attributes/val.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/core/access.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/core/init.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/core/parseHTML.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/core/ready.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css/addGetHookIf.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css/curCSS.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css/defaultDisplay.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css/hiddenVisibleSelectors.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css/support.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/css/swap.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/data/Data.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/data/accepts.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/effects/Tween.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/effects/animatedSelector.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/event/ajax.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/event/alias.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/event/support.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/exports/amd.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/exports/global.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/manipulation/_evalUrl.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/manipulation/support.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/queue/delay.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/libs/jQuery/src/traversing/findFilter.js
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/public/.gitkeep
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/public/css/.gitkeep
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/static/public/js/.gitkeep
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/401.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/404.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/500.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/footer.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/layout.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/nav.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/public/about.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/public/home.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/public/register.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/templates/users/members.html
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/user/__init__.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/user/forms.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/user/models.py
+OrthoEvol/Cookies/new_website/{{cookiecutter.website_name}}/{{cookiecutter.website_name}}/user/views.py
+OrthoEvol/Manager/__init__.py
+OrthoEvol/Manager/data_management.py
+OrthoEvol/Manager/database_management.py
+OrthoEvol/Manager/management.py
+OrthoEvol/Manager/utils.py
+OrthoEvol/Manager/webster.py
+OrthoEvol/Manager/BioSQL/__init__.py
+OrthoEvol/Manager/BioSQL/biosql.py
+OrthoEvol/Manager/BioSQL/biosql_repo/__init__.py
+OrthoEvol/Manager/BioSQL/biosql_repo/scripts/__init__.py
+OrthoEvol/Manager/BioSQL/biosql_repo/sql/__init__.py
+OrthoEvol/Manager/config/README.md
+OrthoEvol/Manager/config/__init__.py
+OrthoEvol/Manager/config/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/data/HTR1A_Homo_sapiens.gb
+OrthoEvol/Manager/config/data/MAFV3.1.csv
+OrthoEvol/Manager/config/data/MAFV3.2(original).csv
+OrthoEvol/Manager/config/data/MAFV3.2.csv
+OrthoEvol/Manager/config/data/MAFV3.3.csv
+OrthoEvol/Manager/config/data/MAFV3.3_short.csv
+OrthoEvol/Manager/config/data/__init__.py
+OrthoEvol/Manager/config/data/organisms_and_taxonomy_ids.csv
+OrthoEvol/Manager/config/data/shinydir_mana.txt
+OrthoEvol/Manager/config/data/taxids.csv
+OrthoEvol/Manager/config/data/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/paml_control_files/__init__.py
+OrthoEvol/Manager/config/paml_control_files/codeml-8-11-2017.ctl
+OrthoEvol/Manager/config/paml_control_files/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/references/Fast_Scalable_Generation_of_High-Quality_Protein_Multiple_Sequence_Alignments_Using_Clustal_Omega.pdf
+OrthoEvol/Manager/config/references/GUIDANCE2_Accurate_Detection_of_Unreliable_Alignment_Regions_Accounting_for_the_Uncertainty_of_Multiple_Parameters.pdf
+OrthoEvol/Manager/config/references/IQ-TREE_A_Fast_and_Effective_Stochastic_Algorithm_for_Estimating_Maximum-Likelihood_Phylogenies.pdf
+OrthoEvol/Manager/config/references/Local_Reliability_Measures_from_Sets_of_Co-optimal_Multiple_Sequence_Alignments.pdf
+OrthoEvol/Manager/config/references/PAL2NAL_ Robust_Conversion_of_Protein_Sequence_Alignments_into_the_Corresponding_Codon_Alignments.pdf
+OrthoEvol/Manager/config/references/__init__.py
+OrthoEvol/Manager/config/references/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/scripts/__init__.py
+OrthoEvol/Manager/config/scripts/get_gi_lists.py
+OrthoEvol/Manager/config/scripts/get_gi_lists.sh
+OrthoEvol/Manager/config/scripts/pipeline.pbs
+OrthoEvol/Manager/config/scripts/pipeline.py
+OrthoEvol/Manager/config/scripts/script.py
+OrthoEvol/Manager/config/scripts/worker.py
+OrthoEvol/Manager/config/scripts/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/templates/__init__.py
+OrthoEvol/Manager/config/templates/temp.pbs
+OrthoEvol/Manager/config/templates/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/test/__init__.py
+OrthoEvol/Manager/config/test/test.aln
+OrthoEvol/Manager/config/test/test.faa
+OrthoEvol/Manager/config/test/test.ffn
+OrthoEvol/Manager/config/test/test.tree
+OrthoEvol/Manager/config/test/test.tree.ctl
+OrthoEvol/Manager/config/test/test_blast.csv
+OrthoEvol/Manager/config/test/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/webster/__init__.py
+OrthoEvol/Manager/config/webster/archive_options.yml
+OrthoEvol/Manager/config/webster/byte_size_options.yml
+OrthoEvol/Manager/config/webster/reference_options.yml
+OrthoEvol/Manager/config/webster/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Manager/config/yml/FULL_config_template.yml
+OrthoEvol/Manager/config/yml/__init__.py
+OrthoEvol/Manager/config/yml/config_template.yml
+OrthoEvol/Manager/config/yml/config_template_existing.yml
+OrthoEvol/Manager/config/yml/config_template_new.yml
+OrthoEvol/Manager/config/yml/cookie_recipes.yml
+OrthoEvol/Manager/config/yml/database_config
+OrthoEvol/Manager/config/yml/db_config
+OrthoEvol/Manager/config/yml/db_config_comparison.py
+OrthoEvol/Manager/config/yml/__pycache__/__init__.cpython-36.pyc
+OrthoEvol/Orthologs/__init__.py
+OrthoEvol/Orthologs/command_line.py
+OrthoEvol/Orthologs/utils.py
+OrthoEvol/Orthologs/Align/__init__.py
+OrthoEvol/Orthologs/Align/guidance2.py
+OrthoEvol/Orthologs/Align/msa.py
+OrthoEvol/Orthologs/Align/orthoclustal.py
+OrthoEvol/Orthologs/Align/pal2nal.py
+OrthoEvol/Orthologs/Blast/__init__.py
+OrthoEvol/Orthologs/Blast/base_blastn.py
+OrthoEvol/Orthologs/Blast/comparative_genetics.py
+OrthoEvol/Orthologs/Blast/orthologs_blastn.py
+OrthoEvol/Orthologs/Blast/test.py
+OrthoEvol/Orthologs/Blast/utils.py
+OrthoEvol/Orthologs/GenBank/__init__.py
+OrthoEvol/Orthologs/GenBank/genbank.py
+OrthoEvol/Orthologs/GenBank/utils.py
+OrthoEvol/Orthologs/Phylogenetics/__init__.py
+OrthoEvol/Orthologs/Phylogenetics/IQTree/__init__.py
+OrthoEvol/Orthologs/Phylogenetics/IQTree/best_tree.py
+OrthoEvol/Orthologs/Phylogenetics/IQTree/consensus.py
+OrthoEvol/Orthologs/Phylogenetics/IQTree/iqtree.py
+OrthoEvol/Orthologs/Phylogenetics/PAML/__init__.py
+OrthoEvol/Orthologs/Phylogenetics/PAML/codeml.py
+OrthoEvol/Orthologs/Phylogenetics/PAML/ete3paml.py
+OrthoEvol/Orthologs/Phylogenetics/PhyML/__init__.py
+OrthoEvol/Orthologs/Phylogenetics/PhyML/orthophyml.py
+OrthoEvol/Orthologs/Phylogenetics/Phylip/__init__.py
+OrthoEvol/Orthologs/Phylogenetics/Phylip/orthophylip.py
+OrthoEvol/Orthologs/Phylogenetics/PhyloTree/__init__.py
+OrthoEvol/Orthologs/Phylogenetics/PhyloTree/treeviz.py
+OrthoEvol/Pipeline/__init__.py
+OrthoEvol/Pipeline/blastpipeline.py
+OrthoEvol/Pipeline/testpipelinetask.py
+OrthoEvol/Tools/__init__.py
+OrthoEvol/Tools/ftp/__init__.py
+OrthoEvol/Tools/ftp/baseftp.py
+OrthoEvol/Tools/ftp/ncbiftp.py
+OrthoEvol/Tools/ftp/test.py
+OrthoEvol/Tools/logit/__init__.py
+OrthoEvol/Tools/logit/logit.py
+OrthoEvol/Tools/mpi/__init__.py
+OrthoEvol/Tools/mpi/multi_dbupload.py
+OrthoEvol/Tools/mygene/__init__.py
+OrthoEvol/Tools/mygene/mygene.py
+OrthoEvol/Tools/otherutils/__init__.py
+OrthoEvol/Tools/otherutils/other_utils.py
+OrthoEvol/Tools/pandoc/__init__.py
+OrthoEvol/Tools/pandoc/pandoc.py
+OrthoEvol/Tools/parallel/__init__.py
+OrthoEvol/Tools/parallel/multiprocess.py
+OrthoEvol/Tools/pybasher/__init__.py
+OrthoEvol/Tools/pybasher/bash.py
+OrthoEvol/Tools/send2server/__init__.py
+OrthoEvol/Tools/send2server/s2s.py
+OrthoEvol/Tools/sge/__init__.py
+OrthoEvol/Tools/sge/qstat.py
+OrthoEvol/Tools/sge/qsubmitter.py
+OrthoEvol/Tools/sge/sge_test.py
+OrthoEvol/Tools/sge/sgejob.py
+OrthoEvol/Tools/sge/sgepipelinetask.py
+OrthoEvol/Tools/sge/sgeutils.py
+OrthoEvol/Tools/sge/sgeconfig/__init__.py
+OrthoEvol/Tools/slackify/__init__.py
+OrthoEvol/Tools/slackify/notify.py
+OrthoEvol/Tools/streamieo/__init__.py
+OrthoEvol/Tools/streamieo/streamieo.py
+Tests/README.md
+Tests/test_manager.py
+Tests/test_orthologs.py
+Tests/test_pipeline.py
+Tests/test_tools.py

@@ -1,0 +1,3 @@
+[console_scripts]
+orthoevol = OrthoEvol.Orthologs.command_line:main
+
