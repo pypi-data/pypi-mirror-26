@@ -1,0 +1,17 @@
+curequests/__init__.py,sha256=VZ2gmWTWkuhsmUINk6Nl7CiAcP7rr6DB8LjP2TK0wXk,491
+curequests/adapters.py,sha256=YkeE4tWAnKuBz4ondq1X2Gt6qeTfaWOoMEEyGf6kqN4,8687
+curequests/api.py,sha256=tQZBip_B7VO9dTfH6QXEZLI_CO-56V70ySH4lglPy0o,6247
+curequests/connection_pool.py,sha256=d0JhL1fVOTrrZrPvB8HLLh_CtfJhLVmsb_WZkOCIYhA,5818
+curequests/contextlib.py,sha256=v4ip-IGo1jp8gbYNzLbl36NBmMxLug6hs2NZyZvsKFQ,16148
+curequests/cuhttp.py,sha256=yk0H_DOThD8YuFp3Owy9lsO3txDBtjqNu-ZYWei9E04,7159
+curequests/future.py,sha256=pNONVaeyeJmf_mEL81pAVz1YMwC4godUI5MxWNOKPwA,787
+curequests/models.py,sha256=7eo2klw8CXNVycCkOs1xbs6lPoA-NcAQs6XEgcVLj6w,5421
+curequests/resource_pool.py,sha256=2ha_q6Jwmu3VRlRgcsvN4-GPTXI0RgY7L7_9NMyD1Ug,7057
+curequests/sessions.py,sha256=j9O_WMEE7LSCs___1wfsfTHp0hrB2gVH2jFFBpmegGs,2538
+curequests/utils.py,sha256=BvD2goJ4IK3gFDR3JFNcZKWPdTrSPYi1oPg1MbMECXM,873
+curequests-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+curequests-0.1.0.dist-info/METADATA,sha256=zM1Nwx650ulJZ2x3_AsOdkmRTKE3aMNiZJ3KHQsfbr4,672
+curequests-0.1.0.dist-info/RECORD,,
+curequests-0.1.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+curequests-0.1.0.dist-info/metadata.json,sha256=v57fLK5I9VxyKS62sytWjX9z0u8VnAj4d0e7RSxJEno,799
+curequests-0.1.0.dist-info/top_level.txt,sha256=cQrytLhFmNVacWQ90-Bkw3v4BBtp7GLNv3dgDuJAFj8,11
