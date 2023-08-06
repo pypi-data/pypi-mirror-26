@@ -1,0 +1,11 @@
+_clstm.cpython-34m.so,sha256=LpgnXoQHyhsAg25Hb_plRYZAmk6Nh9Hd_zmljDPE18w,14918936
+clstm.py,sha256=ojjXSBYdqIbkt6KYlAL9ffnpimDE1iXh7wEyxfRonmo,31861
+clstm-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+clstm-0.0.1.dist-info/METADATA,sha256=TOWehouernRBACsCkckcNqehDm7GD0uSLM67--j3xSU,481
+clstm-0.0.1.dist-info/RECORD,,
+clstm-0.0.1.dist-info/WHEEL,sha256=-w08owRQVnrIufLHviE4y_7bILmDe7DWyhErUpfJkB0,109
+clstm-0.0.1.dist-info/metadata.json,sha256=SWKNDf63MbeVzBGplCVgi7rgWy-B0r4nyVSLDrMeAyI,609
+clstm-0.0.1.dist-info/top_level.txt,sha256=0fd7ft2FxFSSDa1yLFpo9SeAS3O4tCRh-GFw2lSdloY,13
+.libs_clstm/libpng12-6eaa99ab.so.0.10.0,sha256=z4PnWTIdmMw_RbG0mYH5m8H_QDOd3_p7-_0HjWxHwRo,159848
+.libs_clstm/libprotobuf-55450f1d.so.6.0.0,sha256=PjSe1gxBNqsu6lfBlYLjGjMY0Oi6ReiDfs1hih9tXaE,1498616
+.libs_clstm/libz-a147dcb0.so.1.2.3,sha256=1IGoOjRpujOMRn7cZ29ERtAxBt6SxTUlRLBkSqa_lsk,87848
