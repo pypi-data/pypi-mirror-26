@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: hbr_client
+Version: 0.1.2
+Summary: Python Library to consume HBR Cloud API
+Home-page: https://github.com/HotBlackRobotics/hbr_client_python
+Author: HotBlack Robotics
+Author-email: info@hotblackrobotics.com
+License: UNKNOWN
+Download-URL: https://github.com/HotBlackRobotics/hbr_client_python/archive/0.1.2.tar.gz
+Description: UNKNOWN
+Keywords: HBR,logging
+Platform: UNKNOWN
