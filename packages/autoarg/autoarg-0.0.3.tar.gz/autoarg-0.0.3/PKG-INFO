@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: autoarg
+Version: 0.0.3
+Summary: simple argument parser like as python-fire
+Home-page: https://github.com/dade-ai/autoarg
+Author: dade
+Author-email: aiplore@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
