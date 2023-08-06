@@ -1,0 +1,8 @@
+PyQt5/QtPurchasing.pyd,sha256=ec97200f8dadfe5d15722f1a0209fa2ef7b11447024a8191bad36b5b76c4a98e,33280
+PyQt5/Qt/bin/Qt5Purchasing.dll,sha256=2502d79bf59aa69d5738f6233250bac0cebb98c98f8e1b2ad17714b0f96ec6dc,38912
+PyQt5/Qt/qml/QtPurchasing/declarative_purchasing.dll,sha256=a4195dc21247e589c5445a93cf4cc90565ded54a4ccea0745ec2e8b42d6edeea,38400
+PyQt5/Qt/qml/QtPurchasing/plugins.qmltypes,sha256=d2a743af10bb24985f8e16c5010581832c085f46b5933edbafa1e14f6df4d94a,3527
+PyQt5/Qt/qml/QtPurchasing/qmldir,sha256=f0dd70cffefd373ebf39e2bdb45e8986a3d07e3b4263354017a83e35fb9e9745,111
+PyQtPurchasing-5.9.1.dist-info/METADATA,sha256=f74a514f71c9739c6f1a80ac92149d6ba9a61fc43cd14cd3c52396c22735218b,1609
+PyQtPurchasing-5.9.1.dist-info/WHEEL,sha256=6ff4c413eb75e54dc474c1f4eda6ed1e9424dc90517540dbce00592b0fb3b8fe,105
+PyQtPurchasing-5.9.1.dist-info\RECORD,,
