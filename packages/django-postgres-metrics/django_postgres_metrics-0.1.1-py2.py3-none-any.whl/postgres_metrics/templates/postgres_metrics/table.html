@@ -1,0 +1,54 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static postgres_metrics %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/changelists.css" %}" />
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-list{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:index' %}#postgres-metrics">{% trans 'PostgreSQL Metrics' %}</a>
+    &rsaquo; {{ metric.label }}
+</div>
+{% endblock %}
+
+{% block coltype %}flex{% endblock %}
+
+{% block content %}
+<h1>{{ metric.label }}</h1>
+
+<div>
+    {{ metric.description|safe }}
+</div>
+
+<div id="content-main">
+    {% for result in results %}
+    <h2>{{ result.alias }} ({{ result.dsn }})</h2>
+    <div class="module" id="changelist">
+        <div class="results">
+            <table id="result_list">
+                <thead>
+                    <tr>
+                        {% for header in result.headers %}
+                        <th scope="col">
+                            <div class="text">{{ header }}</div>
+                        </th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in result.records %}
+                    <tr class="{% cycle 'row1' 'row2' %}">{% for item in row %}<td>{{ item }}</td>{% endfor %}</tr>
+                    {% endfor %}
+                    {% resetcycle %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
