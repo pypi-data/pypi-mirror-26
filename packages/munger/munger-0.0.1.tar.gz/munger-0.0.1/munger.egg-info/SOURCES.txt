@@ -1,0 +1,9 @@
+README.md
+setup.py
+munger/__init__.py
+munger/automunge.py
+munger/munger.py
+munger.egg-info/PKG-INFO
+munger.egg-info/SOURCES.txt
+munger.egg-info/dependency_links.txt
+munger.egg-info/top_level.txt
