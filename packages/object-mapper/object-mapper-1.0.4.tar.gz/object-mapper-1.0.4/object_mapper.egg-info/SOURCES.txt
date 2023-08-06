@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+mapper/__init__.py
+mapper/casedict.py
+mapper/object_mapper.py
+mapper/object_mapper_exception.py
+object_mapper.egg-info/PKG-INFO
+object_mapper.egg-info/SOURCES.txt
+object_mapper.egg-info/dependency_links.txt
+object_mapper.egg-info/requires.txt
+object_mapper.egg-info/top_level.txt
+tests/__init__.py
+tests/object_mapper_test.py
