@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pubchemprops
+Version: 0.1.1
+Summary: This is a simple wrapper for PubChem PUG REST API that helps to get various information from PubChem
+Home-page: https://github.com/mawansui/pubchemprops
+Author: Maxim Shevelev
+Author-email: mdshev7@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pubchem,search,compound,api,chemoinformatics,cheminformatics,chemistry,databases
+Platform: UNKNOWN
