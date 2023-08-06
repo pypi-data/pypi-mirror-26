@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: sqlemon
+Version: 0.8.0
+Summary: Manage sqlalchemy connections to Google Cloud SQL
+Home-page: https://github.com/DanielSank/sqlemon
+Author: Daniel Sank
+Author-email: sank.daniel@gmail.com
+License: MIT
+Download-URL: https://github.com/DanielSank/sqlemon/tarball/0.8.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: sql
+Platform: UNKNOWN
