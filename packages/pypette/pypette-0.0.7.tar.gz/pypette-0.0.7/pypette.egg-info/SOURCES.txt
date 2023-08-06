@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pypette/__init__.py
+pypette/__version__.py
+pypette/jobs.py
+pypette/pipes.py
+pypette.egg-info/PKG-INFO
+pypette.egg-info/SOURCES.txt
+pypette.egg-info/dependency_links.txt
+pypette.egg-info/requires.txt
+pypette.egg-info/top_level.txt
