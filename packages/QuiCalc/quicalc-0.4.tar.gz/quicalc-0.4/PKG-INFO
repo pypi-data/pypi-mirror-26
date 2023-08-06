@@ -1,0 +1,46 @@
+Metadata-Version: 1.2
+Name: quicalc
+Version: 0.4
+Summary: Simple Terminal Calculator
+Home-page: http://pythonhosted.org/QuiCalc
+Author: Abhishta Gatya
+Author-email: abhishtagatya@yahoo.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: # QuiCalc by Abhishta
+        
+        ![quicalc-preview](docs/preview.png)
+        
+        Welcome and Thank You for using Quick Calculator. Please do contribute and give feedbacks on this little program and hopes it developes better over time.
+        
+        The goal here is to insert a quite powerful calculator in the Terminal so you can do math on the fly and back again. We use simple built-in python modules / libraries that may fit your needs. But feel free to put your own modules inside by tweaking the import section of the 'calc.py'.
+        
+        ## Installation
+        **pip3 and python3 is required**
+        Works on all Operating Systems (Windows, Mac, Linux, BSD, etc)
+        
+        ```
+        pip3 install quicalc
+        ```
+        Once it is complete, you can access quicalc on your terminal!
+        
+        ## Guide
+        
+        To open quicalc on the terminal, simply type 'calc' and it will open QuiCalc for you. If you are having troubles figuring out how to use QuiCalc and its modules simply type in 'help' in quicalc.
+        
+        ![quicalc-help](docs/helper.png)
+        
+        ## Contribution
+        
+        Feel free to contribute your own modules and configurations to help make quicalc better over time. But note that quicalc is under the fair use of the MIT License, so rules are applied.
+        
+        Please do not redistribute this program. Although it is free to use, make sure to give credit where credit is done.
+        
+        Have fun and hope to make everything easier.
+        
+Keywords: tools math terminal python calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3
