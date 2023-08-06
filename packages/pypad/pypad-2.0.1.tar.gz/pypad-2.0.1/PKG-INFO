@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pypad
+Version: 2.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/GoodiesHQ/PyPad
+Author: Austin Archer
+Author-email: goodies@protonmail.com
+License: GPL3.0
+Description: UNKNOWN
+Keywords: cipher block pad padding iso10126 ansix923 x923 pkcs7
+Platform: UNKNOWN
