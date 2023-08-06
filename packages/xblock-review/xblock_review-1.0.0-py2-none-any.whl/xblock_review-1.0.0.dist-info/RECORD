@@ -1,0 +1,13 @@
+review/__init__.py,sha256=dkAOAAeTiJP-Fk_ZzB1TnGZh1Bku2zXJ0dUgpSdPzPk,55
+review/configuration.py,sha256=QMnv1r1YVkCV12ZuXDhYrTOB8HP3L0C3xCpM4y3eavk,1324
+review/get_review_ids.py,sha256=9F84tBQJQgVJYFFZwx1ulybXDTu7IlNsMoAwGj0-3ng,9163
+review/review.py,sha256=QYTGT63Si6488so-8iUcXZ1hlM_B7oTx-r2dxA1HusU,4837
+review/static/css/review.css,sha256=R2EurYKHGASEiBSBf3kOW_EX2A_qHhFZUzOI7sX1R9k,599
+review/static/js/src/review.js,sha256=3TzyV8HEo5U0V_ND2APbSz76IqaDgeoAymdQ-QGIgJk,2986
+xblock_review-1.0.0.dist-info/DESCRIPTION.rst,sha256=FGNzpaIQ88XlXcZdU7VagoRGWLL7nPGzDvcMAelU4Jo,1439
+xblock_review-1.0.0.dist-info/METADATA,sha256=y3N8pkzZuYg-mfV2bqBsOHiqOKE4l50RpkWiI0Fc-g4,1738
+xblock_review-1.0.0.dist-info/RECORD,,
+xblock_review-1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+xblock_review-1.0.0.dist-info/entry_points.txt,sha256=kNwE9pKKNjtDIalASARSBX2J_CZsRfUkHnKp0B30v58,42
+xblock_review-1.0.0.dist-info/metadata.json,sha256=vv83j7P9usizlAKT8OIWz4EsU76OZnVnhflhxuCbk9A,589
+xblock_review-1.0.0.dist-info/top_level.txt,sha256=RSt7ZC4yXLK1sgrChTatqLCtMSIXqYq3_yMzBgO2MSY,7
