@@ -1,0 +1,5 @@
+include README.rst
+graft CosmoBolognaLib
+prune CosmoBolognaLib/.git
+prune CosmoBolognaLib/Examples
+prune CosmoBolognaLib/Doc
