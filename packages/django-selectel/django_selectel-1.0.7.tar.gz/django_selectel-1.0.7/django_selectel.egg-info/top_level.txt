@@ -1,0 +1,2 @@
+django_selectel
+django_selectel/storages
