@@ -1,0 +1,12 @@
+README.rst
+setup.py
+publicdata/__init__.py
+publicdata/censusreporter.py
+publicdata/nlsy.py
+publicdata.egg-info/PKG-INFO
+publicdata.egg-info/SOURCES.txt
+publicdata.egg-info/dependency_links.txt
+publicdata.egg-info/entry_points.txt
+publicdata.egg-info/requires.txt
+publicdata.egg-info/top_level.txt
+publicdata.egg-info/zip-safe

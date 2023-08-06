@@ -1,0 +1,6 @@
+[appurl.urls]
+censusreporter: = pandasreporter.censusreporter:CensusReporterURL
+
+[rowgenerators]
+CRJSON+ = pandasreporter.censusreporter:CensusReporterSource
+
