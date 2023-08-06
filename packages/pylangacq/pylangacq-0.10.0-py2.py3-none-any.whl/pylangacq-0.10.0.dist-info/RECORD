@@ -1,0 +1,19 @@
+pylangacq/VERSION,sha256=ESee5Q9SrT-bYNHp3rqpc6CN-kdvsM3c-Hho_8ZHU1Q,6
+pylangacq/__init__.py,sha256=e3v6GwaZOmFR2F4_JqXaQXfHXUkxb6tnZ6wIWQR_Ldg,179
+pylangacq/chat.py,sha256=P06dmFb1BcyDAXVdCjAGAJWmwHjtG7BSSU1pqrNabxo,64630
+pylangacq/dependency.py,sha256=ysscj9JphjWBNbOdRM7u510VDAFyHXW6Jyk_Dc8k9DA,4917
+pylangacq/measures.py,sha256=-hF-9AVu4q0CuCvvPyKWdK9L0bZX26zLCETXRDvtU6o,42144
+pylangacq/util.py,sha256=jnTSHFg_irFC8UDa-8TpZlu9fvTQXpyK_ovE-UgAtYY,11669
+pylangacq/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylangacq/tests/test_chat.py,sha256=6HkCRg42bIYNJ0wWAexz1Uy-CfheYhUNrqxP4f-xbrg,12222
+pylangacq/tests/test_dependency.py,sha256=4fkI8S4QLDF7i94erPSSJ6aJInNhC0MGYnxHKdYBYe0,1427
+pylangacq/tests/test_util.py,sha256=OvJoyOQQKfHa6vzEQq7zLXnqZOf8V3ukF3YHS0u_bLs,2737
+pylangacq-0.10.0.dist-info/DESCRIPTION.rst,sha256=wxHB5U-zlWbzswPmhO-CWpmj5bcj7gxJ2-3c7YAKgWw,2240
+pylangacq-0.10.0.dist-info/LICENSE.txt,sha256=IPCCLgWr39Ad-cKjxU4u0EkNDBSAKjKj6bHWH5P50wA,1080
+pylangacq-0.10.0.dist-info/METADATA,sha256=goAEY46wiLkprcPSAn7kCuTy-eOKOIxJKP7aIAhU5io,3801
+pylangacq-0.10.0.dist-info/PKG-INFO (jackson-home-ubuntu's conflicted copy 2017-10-30),sha256=pIx7p60RBCokBrMCYD-kioKokEonJeOquuhlj_gMtP0,4409
+pylangacq-0.10.0.dist-info/RECORD,,
+pylangacq-0.10.0.dist-info/SOURCES (jackson-home-ubuntu's conflicted copy 2017-10-30).txt,sha256=SNZM4LKf3eTY1w9MQOXkxGPpz5kVWY0MzpYlErMonFU,514
+pylangacq-0.10.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pylangacq-0.10.0.dist-info/metadata.json,sha256=0vbDEOxqhk1y-Hs9d2ZN-z3D0_gqU2B1z0jBTfeXMrY,1649
+pylangacq-0.10.0.dist-info/top_level.txt,sha256=cwaonYTKEdsiCOB9WD3dm3SH7m6rJ-cP3mQGXCjv2iw,10
