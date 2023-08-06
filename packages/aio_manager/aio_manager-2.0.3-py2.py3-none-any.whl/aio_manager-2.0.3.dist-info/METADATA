@@ -1,0 +1,80 @@
+Metadata-Version: 2.0
+Name: aio-manager
+Version: 2.0.3
+Summary: Script manager for aiohttp.
+Home-page: https://github.com/rrader/aio_manager
+Author: Sviatoslav Sydorenko (@webknjaz)
+Author-email: antigluk@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Platform: POSIX
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 4 - Beta
+Provides: aio_manager
+Requires-Python: >=3.5
+Requires-Dist: aiohttp
+Requires-Dist: colorama
+Provides-Extra: mysql
+Requires-Dist: PyMySQL (>=0.7.5); extra == 'mysql'
+Requires-Dist: sqlalchemy (>=0.9); extra == 'mysql'
+Provides-Extra: postgres
+Requires-Dist: psycopg2 (>=2.5.2); extra == 'postgres'
+Requires-Dist: sqlalchemy (>=0.9); extra == 'postgres'
+Provides-Extra: sa
+Requires-Dist: sqlalchemy (>=0.9); extra == 'sa'
+
+.. image:: https://img.shields.io/pypi/v/aio_manager.svg
+   :target: https://pypi.org/project/aio_manager
+
+.. image:: https://img.shields.io/travis/rrader/aio_manager/master.svg
+   :target: http://travis-ci.org/rrader/aio_manager
+
+.. image:: https://img.shields.io/pypi/pyversions/aio_manager.svg
+
+
+Script manager for aiohttp.
+========
+
+Quick Start
+------------------
+
+Install from PYPI:
+
+.. code:: shell
+
+    pip install aio_manager
+
+For optional features, feel free to depend on extras:
+
+.. code:: shell
+
+    pip install aio_manager[mysql,postgres]
+    pip install aio_manager[sa]
+
+OR (less popular) via ``setup.py``:
+
+.. code:: shell
+
+    python -m setup install
+
+Example
+------------------
+
+.. code:: python
+   :number-lines:
+
+    app = build_application()
+    manager = Manager(app)
+
+    sqlalchemy.configure_manager(manager, app, Base,
+                                 DATABASE_USERNAME,
+                                 DATABASE_NAME,
+                                 DATABASE_HOST,
+                                 DATABASE_PASSWORD)
+
+

@@ -1,0 +1,14 @@
+aio_manager/__init__.py,sha256=rEAND5QZiOiIYIgGpYqwbKX4-Dzb6JJ2fyH0lw7gzQk,1734
+aio_manager/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_manager/commands/example.py,sha256=qM5t-rHUkcd0QafjWF4pS7vTfN6FMSZY9jtD-VsiUuQ,242
+aio_manager/commands/runserver.py,sha256=9vLZJRL3qyYEapFAWXMN6LtMGc-o3wZNjGmCpOn48lE,1959
+aio_manager/commands/shell.py,sha256=_uNK6gJJEGRL95SSBLHkFRL-0HuC3YZp3umQu8-HuHI,2742
+aio_manager/commands/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_manager/commands/ext/sqlalchemy.py,sha256=ROu_mea439UBJuj9U70K-Ub8_LrA6YVRSRv-9i-vcuU,2809
+aio_manager-2.0.3.dist-info/DESCRIPTION.rst,sha256=lzxocVpbPe10j1nHzO0etbQm7xDo1JpF_Yr2Ht_olFk,1044
+aio_manager-2.0.3.dist-info/LICENSE.txt,sha256=Y9z99EDsYVYsO_u7SdWSpRhLnzNiuwDrGGOPsszuIDg,1499
+aio_manager-2.0.3.dist-info/METADATA,sha256=WlEZhXX9f8PDt_WLpWxDyMGsCsny5ibuOb2brigC7D8,2072
+aio_manager-2.0.3.dist-info/RECORD,,
+aio_manager-2.0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+aio_manager-2.0.3.dist-info/metadata.json,sha256=2WBS8aP5BKpz4k1f1aNOgUOuaX7dAtN7yHt58uZY_98,1164
+aio_manager-2.0.3.dist-info/top_level.txt,sha256=HjM340GL2oUq0nULnIuXQKpz5nSvs0YK2Oyl52qh-K4,12
