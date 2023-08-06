@@ -1,0 +1,37 @@
+dist: trusty
+
+language: python
+python:
+  - "2.7"
+  - "3.6"
+
+env:
+  fast_finish: true
+
+#sudo: required
+#services: 
+#    - docker
+#
+#before_install:
+#    - 'if [ -n "$GOOGLE_CREDENTIALS_ENCODED" ]; then docker pull peterzhokhoff/studioml; fi'
+
+install:
+  - pip install -e .
+  - pip install pycodestyle
+  # - pip install -r extra_test_requirements.txt
+
+  - 'if [ -n "$GOOGLE_CREDENTIALS_ENCODED" ]; then echo "$GOOGLE_CREDENTIALS_ENCODED" | base64 --decode > ./credentials.json && export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/credentials.json; fi'
+
+script:
+  - echo $GOOGLE_APPLICATION_CREDENTIALS
+  - nosetests -v --processes=16 --process-timeout=900
+  - pycodestyle --show-source .
+  - python setup.py sdist
+
+deploy:
+  provider: pypi
+  distributions: "sdist"
+  user: $PYPI_USER
+  password: $PYPI_PASSWORD
+  on:
+    tags: true
