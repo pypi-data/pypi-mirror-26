@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: positron
+Version: 0.1.0
+Summary: A simple logger for Python
+Home-page: UNKNOWN
+Author: Nickolay Ilyushin
+Author-email: nickolay02@inbox.ru
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Logging
