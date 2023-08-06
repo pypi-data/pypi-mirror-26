@@ -1,0 +1,27 @@
+{% extends "orga/base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block headline %}
+    {% trans "Dashboard" %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="dashboard-list">
+        {% for event in request.orga_events %}
+            <a href="{{ event.orga_urls.base }}"><div class="dashboard-block">
+                <h1>{{ event.name }}</h1>
+                <span class="dashboard-description">
+                    {% if event.date_from %}{{ event.date_from }} – {{ event.date_to }}<br>{% endif %}
+                    /{{ event.slug }}
+                </span>
+            </div></a>
+        {% endfor %}
+        <a href="{% url "orga:event.create" %}"><div class="dashboard-block">
+            <h1><span class="fa fa-plus"></span>{% trans "New event" %}</h1>
+            <span class="dashboard-description">{% trans "Uh, a new event?<br>Head over here, please!" %}</span>
+        </div></a>
+    </div>
+
+{% endblock %}

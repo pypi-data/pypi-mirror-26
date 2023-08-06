@@ -1,0 +1,97 @@
+{% extends "agenda/base.html" %}
+{% load compress %}
+{% load i18n %}
+{% load rich_text %}
+{% load staticfiles %}
+
+{% block agenda_custom_header %}
+<meta name="twitter:card" content="summary" />
+<meta property="og:title" content="{{ talk.title }}" />
+<meta property="og:description" content="{{ talk.description|default:talk.abstract|default:"" }}" />
+{% endblock %}
+
+{% block content %}
+
+    <h3 class="talk-title">
+        »{{ talk.title }}«
+        {% if request.user in talk.speakers.all %}
+            <a href="{{ talk.urls.user_base }}"
+                    class="btn btn-sm btn-secondary">
+                <span class="fa fa-pencil"></span>{{ phrases.base.edit }}
+            </a>
+        {% endif %}
+        {% if talk.does_accept_feedback %}
+            <a href="{{ talk.urls.feedback }}"
+                    class="btn btn-sm btn-primary">
+                <span class="fa fa-comments"></span>{{ phrases.agenda.feedback }}
+            </a>
+        {% endif %}
+        <small>
+            <a href="{{ talk.urls.ical }}">
+                <span class="fa fa-calendar"></span>
+            </a>
+            {{ talk.slot.start.date|date:"c" }}, {{ talk.slot.start|date:"H:i" }}–{{ talk.slot.end|date:"H:i" }}, {{ talk.slot.room.name }}
+        </small>
+    </h3>
+    <div class="talk row">
+        <div class="talk-content col-lg-8 col-md-6 col-xs-12">
+            {% if talk.do_not_record %}
+                <span class="fa-stack">
+                    <i class="fa fa-video-camera fa-stack-1x"></i>
+                    <i class="fa fa-ban fa-stack-2x do-not-record" aria-hidden="true" title="{{ phrases.agenda.schedule_do_not_record }}"></i>
+                </span>
+                <em>{{ phrases.agenda.schedule.do_not_record }}</em>
+            {% endif %}
+            {% if talk.recording_url %}
+                {{ talk.rendered_recording_iframe|safe }}
+            {% endif %}
+            <div class="abstract">
+                {{ talk.abstract|rich_text }}
+            </div>
+            <div class="description">
+                {{ talk.description|rich_text }}
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+            {% if speakers|length %}
+            <div class="speakers">
+                <div class="speaker-header">
+                    {% if speakers.1 %}
+                        {% trans "Speakers" %}
+                    {% elif speakers.0 %}
+                        {% trans "Speaker" %}
+                    {% endif %}
+                </div>
+                {% for speaker in speakers %}
+                    <div class="speaker">
+                        <a href="{% url "agenda:speaker" code=speaker.code event=request.event.slug %}">
+                            <div class="name">
+                                {{ speaker.get_display_name }}
+                            </div>
+                        </a>
+                        <div class="info">
+
+                            {% if speaker.other_talks.count > 1 %}
+                                {{ phrases.agenda.speaker_other_talks }}
+                                {% trans 'Other talks by this speaker:' %}
+                                <ul class="speaker-talks">
+                                    {% for talk in speaker.other_talks %}
+                                    <li class="speaker-talk">
+                                        <a href='{{ talk.submission.urls.public }}'>{{ talk.submission.title }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            {% elif speaker.other_talks.count == 1 %}
+                                <span class="speaker-talk">
+                                    {{ phrases.agenda.speaker_other_talk }}
+                                    "<a href='{{ speaker.other_talks.0.submission.urls.public }}'>{{ speaker.other_talks.0.submission.title }}</a>".
+                                </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "orga/base.html" %}
+{% load i18n %}
+{% block headline %}
+    {% trans "Submissions" %}
+{% endblock %}
+{% block content %}
+{% if submission %}
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a
+          class="nav-link {% if "submissions.content" in url_name %}active{% endif %}"
+          href="{{ submission.orga_urls.base }}"
+        >
+            {% trans "Content" %}
+        </a>
+      </li>
+      {% if request.is_orga %}
+      <li class="nav-item">
+          <a
+            class="nav-link {% if "submissions.speakers" in url_name %}active{% endif %}"
+            href="{{ submission.orga_urls.speakers }}"
+          >
+            {% trans "Speakers" %}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a
+            class="nav-link {% if "submissions.questions" in url_name %}active{% endif %}"
+            href="{{ submission.orga_urls.questions }}"
+          >
+            {% trans "Questions" %}
+          </a>
+      </li>
+      <li class="nav-item">
+          <a
+            class="nav-link {% if "submissions.feedback" in url_name %}active{% endif %}"
+            href="{{ submission.orga_urls.feedback }}"
+          >
+            {% trans "Feedback" %}
+          </a>
+      </li>
+    {% endif %}
+    {% if request.is_reviewer %}
+      <li class="nav-item">
+          <a
+            class="nav-link {% if "reviews" in url_name %}active{% endif %}"
+            href="{{ submission.orga_urls.reviews }}"
+          >
+            {% trans "Reviews" %}
+          </a>
+      </li>
+    {% endif %}
+    </ul>
+    <legend>
+        »{{ submission.title }}«
+        {% if submission.speakers.exists %}
+            by {{ submission.display_speaker_names }}
+        {% endif %}
+        ({% include "cfp/event/fragment_state.html" with state=submission.state %})
+    </legend>
+{% endif %}
+
+    {% block submission_content %}
+    {% endblock %}
+
+{% endblock %}

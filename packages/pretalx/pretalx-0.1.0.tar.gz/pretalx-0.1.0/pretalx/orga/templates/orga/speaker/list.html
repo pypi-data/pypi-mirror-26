@@ -1,0 +1,36 @@
+{% extends "orga/cfp/base.html" %}
+{% load i18n %}
+
+{% block headline %}
+    {% trans "Speakers" %}
+{% endblock %}
+{% block content %}
+
+    <legend>
+        {{ speakers.count }}
+        {% blocktrans trimmed count count=speakers.count %}
+        speaker
+        {% plural %}
+        speakers
+        {% endblocktrans %}
+    </legend>
+    {% include "common/search_form.html" %}
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>{% trans "Name" %}</th>
+                <th>{% trans "Submissions" %}</th>
+                <th>{% trans "Accepted submissions" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for speaker in speakers %}
+                <tr>
+                    <td><a href="{% url "orga:speakers.view" event=request.event.slug pk=speaker.pk %}">{{ speaker.nick }}</a></td>
+                    <td>{{ speaker.submissions.count }}</td>
+                    <td></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

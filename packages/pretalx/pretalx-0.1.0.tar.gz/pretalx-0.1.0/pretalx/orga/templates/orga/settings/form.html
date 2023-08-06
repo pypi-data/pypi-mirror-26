@@ -1,0 +1,39 @@
+{% extends "orga/settings/base.html" %}
+{% load bootstrap4 %}
+{% load i18n %}
+{% block headline %}
+{% endblock %}
+{% block settings_content %}
+
+<div class="flex-container"><div class="flex-content">
+
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        <legend>
+            {% if action == "create" %}
+                {% trans "Step One: Fill in your basic information." %}
+            {% else %}
+                {% trans "Event settings" %}
+            {% endif %}
+        </legend>
+        {% if action == "create" %}
+            <div class="alert alert-info">
+                {% trans "Don't worry if you don't know something yet – you can always come back later!" %}
+            </div>
+        {% endif %}
+        {% bootstrap_form form layout='horizontal' %}
+        <div class="form-group row">
+            <div class="ml-auto col-md-9">
+                {% if action == "create" %}
+                    <button type="submit" class="btn btn-primary">{% trans "Create event" %}</button>
+                {% elif action == "edit" %}
+                    <button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
+                {% elif action == "view" %}
+                    <a class="btn btn-primary" href={{ request.event.orga_urls.edit_settings }}>{% trans "Edit" %}</a>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+</div></div>
+
+{% endblock %}
