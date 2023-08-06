@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+zx-emulator-module.cpp
+zx.h
+test/__init__.py
+test/test_zx_spectrum48.py
+z80/z80.h
+zx.egg-info/PKG-INFO
+zx.egg-info/SOURCES.txt
+zx.egg-info/dependency_links.txt
+zx.egg-info/top_level.txt
