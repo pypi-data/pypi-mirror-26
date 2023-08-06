@@ -1,0 +1,6 @@
+pandas>=0.21
+cffi
+numpy
+tqdm
+dask
+toolz
