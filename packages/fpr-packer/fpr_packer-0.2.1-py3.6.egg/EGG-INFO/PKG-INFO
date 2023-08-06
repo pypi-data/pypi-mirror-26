@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: fpr-packer
+Version: 0.2.1
+Summary: Python utilities for packer deploiments
+Home-page: UNKNOWN
+Author: Guillaume Doumenc
+Author-email: gdoumenc@fpr-coworks.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6

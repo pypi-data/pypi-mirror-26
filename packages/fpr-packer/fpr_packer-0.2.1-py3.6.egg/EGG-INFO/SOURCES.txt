@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+aws/__init__.py
+aws/aws.py
+aws/fixtures.py
+fpr_packer.egg-info/PKG-INFO
+fpr_packer.egg-info/SOURCES.txt
+fpr_packer.egg-info/dependency_links.txt
+fpr_packer.egg-info/top_level.txt
