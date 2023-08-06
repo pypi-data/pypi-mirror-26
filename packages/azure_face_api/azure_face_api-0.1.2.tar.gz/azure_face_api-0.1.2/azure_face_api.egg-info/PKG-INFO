@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: azure-face-api
+Version: 0.1.2
+Summary: API wrapper for azure face api
+Home-page: https://github.com/PandaWhoCodes/azure_face_api
+Author: Thomas Ashish Cherian
+Author-email: ufoundashish@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        API wrapper for azure face api
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
