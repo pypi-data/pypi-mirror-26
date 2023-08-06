@@ -1,0 +1,13 @@
+<h1 id="dev-env">dev-env</h1>
+<p><embed src="https://img.shields.io/maintenance/yes/2017.svg?style=flat" /> <a href="http://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT license" /></a> <embed src="https://img.shields.io/pypi/pyversions/dev-env.svg?style=flat" /> <embed src="https://img.shields.io/pypi/status/dev-env.svg?style=flat" /> <a href="https://pypi.python.org/pypi/dev-env"><embed src="https://img.shields.io/pypi/v/dev-env.svg?style=flat" /></a> <a href="https://requires.io/github/simonsdave/dev-env/requirements/?branch=release-0.5.1"><embed src="https://requires.io/github/simonsdave/dev-env/requirements.svg?branch=release-0.5.1" /></a> <a href="https://travis-ci.org/simonsdave/dev-env"><embed src="https://travis-ci.org/simonsdave/dev-env.svg?branch=release-0.5.1" /></a></p>
+<p>This repo was originally created as a way to centralize the code/configuration used to provision development environments. As time went on it became clear that it would be helpful to centralize other common development tools and utilities. This repo now contains tools, scripts and utilities which:</p>
+<ul>
+<li>provision development environments</li>
+<li>automate cutting releases</li>
+<li>simplify integration testing</li>
+</ul>
+<h2 id="what-next">What Next</h2>
+<ul>
+<li><a href="https://github.com/simonsdave/dev-env/tree/release-0.5.1/docs/using.md">here's</a> a description of how to start using <code>dev-env</code></li>
+<li>if you'd like to help contribute to <code>dev-env</code> see <a href="https://github.com/simonsdave/dev-env/tree/release-0.5.1/docs/contributing.md">this</a></li>
+</ul>
