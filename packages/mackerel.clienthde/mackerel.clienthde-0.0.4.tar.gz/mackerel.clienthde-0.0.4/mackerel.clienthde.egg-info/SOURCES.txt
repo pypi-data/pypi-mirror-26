@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+./mackerel/__init__.py
+./mackerel/clienthde.py
+./mackerel/host.py
+./mackerel/monitor.py
+./mackerel/runner.py
+mackerel.clienthde.egg-info/PKG-INFO
+mackerel.clienthde.egg-info/SOURCES.txt
+mackerel.clienthde.egg-info/dependency_links.txt
+mackerel.clienthde.egg-info/entry_points.txt
+mackerel.clienthde.egg-info/requires.txt
+mackerel.clienthde.egg-info/top_level.txt
