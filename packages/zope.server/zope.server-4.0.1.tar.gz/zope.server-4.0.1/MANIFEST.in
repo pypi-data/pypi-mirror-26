@@ -1,0 +1,13 @@
+include *.py
+include *.txt
+include *.rst
+include .travis.yml
+include tox.ini
+include .coveragerc
+include buildout.cfg
+include test.ini
+
+recursive-include src *.txt *.py *.rst
+
+# added by check_manifest.py
+include *.yml
