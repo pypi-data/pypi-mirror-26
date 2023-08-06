@@ -1,0 +1,15 @@
+# Requirements definition for pip-compiler
+
+# Runtime dependencies
+-e .[test]
+
+# Setup requirements
+setuptools_scm
+
+# Test requirements
+mock
+pytest
+pytest-cov
+
+# Documentation build
+sphinx
