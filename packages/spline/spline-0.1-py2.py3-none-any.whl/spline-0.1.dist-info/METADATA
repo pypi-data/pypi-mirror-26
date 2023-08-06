@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: spline
+Version: 0.1
+Summary: the pipeline tool
+Home-page: https://github.com/Nachtfeuer/pipeline
+Author: Thomas Lehmann
+Author-email: thomas.lehmann.private@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: pipeline tool ci/cd bash docker
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: pyaml
+Requires-Dist: pykwalify
+
+(sh)ell oriented (p)ipe(line) tool
+
+
