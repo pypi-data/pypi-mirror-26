@@ -1,0 +1,15 @@
+Mopidy_Rough_Base-2.0.5.dist-info/DESCRIPTION.rst,sha256=kgWtCRUvOQkQY0seME2op7z6WW_GaB1ZE2wTJnZBEw4,782
+Mopidy_Rough_Base-2.0.5.dist-info/METADATA,sha256=fZFN30tGAWTC88jgXs1gBBDI-EgLQyeIYxzkE5NvJd8,1760
+Mopidy_Rough_Base-2.0.5.dist-info/RECORD,,
+Mopidy_Rough_Base-2.0.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Mopidy_Rough_Base-2.0.5.dist-info/metadata.json,sha256=noTwIS8FQ0innfu2oRHRQacUmSu4uwjZTU1HQ54EJHk,1060
+Mopidy_Rough_Base-2.0.5.dist-info/top_level.txt,sha256=Aq-XHhZNCJvy7ugV8xPag7K_V14-MfPhxnMGHF1q--g,18
+mopidy_rough_base/__init__.py,sha256=f2l_5UNqVDKj_tCWE4yETkYavSBqr_nrH3ObcRAe0os,23
+mopidy_rough_base/favourites.py,sha256=ytbHuKEqttuEZGRmBTKu97GGVAMtfOs6mSTKjrgIh0w,1190
+mopidy_rough_base/feedparsing.py,sha256=NPbQultfnCnMg3ztLpT_Qj4y-ylV-KedMY64uX3No5s,5938
+mopidy_rough_base/mopidy_browser.py,sha256=h586vsTqLywQqG5pWG_9VU0XUmWxtdkHntjlFixfLEM,22710
+mopidy_rough_base/mopidy_known_schemes.py,sha256=93_n6d3JDkgbXlBFc-q48bxlc9_SOWXszMRC6kkXFjI,1043
+mopidy_rough_base/mopidy_play_control.py,sha256=y7-vNhB8Ep4nE3zRmDYqNClY4x2-h6QoZ9nDdAL6gwI,3289
+mopidy_rough_base/mopidy_search.py,sha256=TJxqz6A7ejEhgnxKhuM1_1r3mimwddobmWbPjINOjRo,2204
+mopidy_rough_base/podcasts.py,sha256=kyqjnAeuhbwBp0jWwRbRX5Fl_MEAkOsw-f_nNMqZQ0Q,15097
+mopidy_rough_base/util.py,sha256=DWd4qPUxJ_EBLuaRKHeBpI3-vAfcJzjkasPcZU5SRZI,6941
