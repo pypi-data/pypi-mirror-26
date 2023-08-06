@@ -1,0 +1,14 @@
+setup.py
+cwrap/__init__.py
+cwrap/basecclass.py
+cwrap/basecenum.py
+cwrap/basecvalue.py
+cwrap/cfile.py
+cwrap/clib.py
+cwrap/metacwrap.py
+cwrap/prototype.py
+cwrap.egg-info/PKG-INFO
+cwrap.egg-info/SOURCES.txt
+cwrap.egg-info/dependency_links.txt
+cwrap.egg-info/requires.txt
+cwrap.egg-info/top_level.txt
