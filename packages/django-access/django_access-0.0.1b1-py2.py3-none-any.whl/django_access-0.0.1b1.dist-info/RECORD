@@ -1,0 +1,10 @@
+access/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+access/admin.py,sha256=FTxkwGPu8E4NLbdXarmqm7PLCz6IPacfUiA3cLPmiKA,20339
+access/managers.py,sha256=XUesevidbXiABVAD2MTiyBdGEcmiCwxWKZG-GWUU8LI,7475
+access/plugins.py,sha256=Nd_v-AoGnvqJbiJdQdL7dvTlHgvbkRHuYg9wL60BaOg,9062
+django_access-0.0.1b1.dist-info/DESCRIPTION.rst,sha256=c_F1u9qqlQ6U8IraD3_fEPcza5gPyn0SD_jaa2KeuN8,216
+django_access-0.0.1b1.dist-info/METADATA,sha256=1AD-yc8q_InLSEEodbD6liEPnTpcgt4eNUKMmzPQH-s,1364
+django_access-0.0.1b1.dist-info/RECORD,,
+django_access-0.0.1b1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+django_access-0.0.1b1.dist-info/metadata.json,sha256=GE3BsfjWmj5oJlDRrEob-QN-1uBnwqthwuO6-9fkPuc,1356
+django_access-0.0.1b1.dist-info/top_level.txt,sha256=dKU9Xvk9JgcB3ufviuSVfTY6KZ2eihlcvYerY_-00OQ,7
