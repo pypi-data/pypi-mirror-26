@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: gmql
+Version: 0.0.7
+Summary: Python library for GMQL
+Home-page: https://github.com/DEIB-GECO/PyGMQL
+Author: Mustafa Anil Tuncel
+Author-email: tuncel.manil@gmail.com
+License: MIT
+Download-URL: https://github.com/DEIB-GECO/PyGMQL/tarball/0.0.7
+Keywords: genomics big data pandas python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: fancyimpute
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: psutil
+Requires-Dist: py4j
+Requires-Dist: pyclustering
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: strconv
+Requires-Dist: tqdm
+Requires-Dist: wordcloud
+
+PyGMQL is a python module that enables the user to perform operation on genomic data in a scalable way.
+
+
