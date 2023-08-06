@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: guanciale
+Version: 1.0a0
+Summary: Grab information needed by Carbonara
+Home-page: https://github.com/Carbonara-Project/Guanciale
+Author: Andrea Fioraldi, Luigi Paolo Pileggi
+Author-email: andreafioraldi@gmail.com, willownoises@gmail.com
+License: BSD 2-clause
+Download-URL: https://github.com/Carbonara-Project/Guanciale/archive/1.0alpha.tar.gz
+Description-Content-Type: UNKNOWN
+Description: # Guanciale -- Carbonara Project
+        
+        Grab informations needed by Carbonara from executables and disassemblers databases
+        
+        ## Install
+        ```bash
+        $ sudo apt install radare2 python python-pip
+        $ pip install -r requirements.txt
+        $ python setup.py install
+        ```
+        
+        
+        
+Platform: UNKNOWN
