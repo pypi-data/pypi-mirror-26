@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/helpers.py,sha256=rY4aGVZ7JVjM_oFapfxHDH7jTOKbrHkfEWGuK-63Jq4,457
+tests/test_timer.py,sha256=ZkjcTmIJEK0jdp_XYRYapL0Q0Pr62NhW7AWeYZApcvo,3057
+timemarker/__init__.py,sha256=hWr4XVwMLaKs-OC-bEG6N5VPNUmmaaW9NmWSVVMJ7FM,159
+timemarker/timer.py,sha256=eDxOUQwYhGjMmaMlgrGHygpRkDqLYpQgjvmXTt4kF9w,4857
+timemarker-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+timemarker-0.1.0.dist-info/METADATA,sha256=1Ah0IM5BG_4j_F6YDxAW-5FHnQRAdU_93QjMWoYt_zo,1015
+timemarker-0.1.0.dist-info/RECORD,,
+timemarker-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+timemarker-0.1.0.dist-info/metadata.json,sha256=eEGaOxgRv4OeStBhfJ3rE7BV_DCePO0TrgmVfYT87p8,1040
+timemarker-0.1.0.dist-info/top_level.txt,sha256=2kMqBofUq-1pMroh1yK6c_Yma60D7a-VZXeypMN2kEI,17
