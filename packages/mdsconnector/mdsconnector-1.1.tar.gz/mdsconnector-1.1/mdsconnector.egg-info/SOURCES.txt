@@ -1,0 +1,8 @@
+mdsconnector.py
+setup.py
+mdsconnector.egg-info/PKG-INFO
+mdsconnector.egg-info/SOURCES.txt
+mdsconnector.egg-info/dependency_links.txt
+mdsconnector.egg-info/not-zip-safe
+mdsconnector.egg-info/requires.txt
+mdsconnector.egg-info/top_level.txt
