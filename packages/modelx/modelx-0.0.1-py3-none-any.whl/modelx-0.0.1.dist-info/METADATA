@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: modelx
+Version: 0.0.1
+Summary: Spreadsheet alternative for multi-dimensional data.
+Home-page: https://github.com/fumitoh/modelx
+Author: Fumito Hamamura
+Author-email: fumito.ham@gmail.com
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Dist: networkx
+
+modelx
+
+
