@@ -1,0 +1,12 @@
+minfraud/__init__.py,sha256=2_JBFqS5Fv5OyhVFO926KFwJfQCcFSKNvrdiMui8OgU,311
+minfraud/errors.py,sha256=wyGK74Iw7_BqBBptILr33IPH3308OZMogW8e6IoWNTY,1287
+minfraud/models.py,sha256=vepPisV0l8nVToe3117ZlbbYhDhNLe4RbWn6gRoF_2s,29538
+minfraud/validation.py,sha256=pmlJJ7dYBA3OJNiZlJBTt8uRTt1lHshmClpSHWr3QT0,7736
+minfraud/version.py,sha256=Sxt-VwxdXlCcnrHd1SxrnsQ2rUCBRrSVP3cazNHaIgw,84
+minfraud/webservice.py,sha256=giPdcapHLvI151lzEs_TizXLls8w3tCWlhkMw-DVjMw,9202
+minfraud-1.5.0.dist-info/DESCRIPTION.rst,sha256=sXuj1Lnp0RX7IvztXCSCOlGfexm9INJSpAP4uZ27ADU,7397
+minfraud-1.5.0.dist-info/METADATA,sha256=EirrLLEHtfxC8d4dvifMBIOmkE27L3JeiJ14Fj_Sb6Y,8560
+minfraud-1.5.0.dist-info/RECORD,,
+minfraud-1.5.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+minfraud-1.5.0.dist-info/metadata.json,sha256=2mY7BX_tSmN8xiCvxh7M_S_5Jz9t1NAFOZiUf3PSKzI,1316
+minfraud-1.5.0.dist-info/top_level.txt,sha256=9vHl4ueCZ3_UeQd8UvcVctQ5-6afF-1C78-cUqu4x1M,9
