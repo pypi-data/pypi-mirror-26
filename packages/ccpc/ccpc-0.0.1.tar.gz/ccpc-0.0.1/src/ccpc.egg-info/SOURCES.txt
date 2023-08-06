@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/ccpc/__init__.py
+src/ccpc/chimp.py
+src/ccpc.egg-info/PKG-INFO
+src/ccpc.egg-info/SOURCES.txt
+src/ccpc.egg-info/dependency_links.txt
+src/ccpc.egg-info/entry_points.txt
+src/ccpc.egg-info/namespace_packages.txt
+src/ccpc.egg-info/requires.txt
+src/ccpc.egg-info/top_level.txt
