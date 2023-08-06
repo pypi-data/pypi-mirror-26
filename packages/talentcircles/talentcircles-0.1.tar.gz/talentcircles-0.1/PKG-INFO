@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: talentcircles
+Version: 0.1
+Summary: A module for accessing the TalentCircles REST API
+Home-page: https://github.com/talentcircles/python_sdk
+Author: Tom Clowers
+Author-email: tom@talentcircles.com
+License: UNKNOWN
+Download-URL: https://github.com/talentcircles/python_sdk/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: hr,talent,jobs
+Platform: UNKNOWN
