@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/workspace.py
+src/livingbio_workspace.egg-info/PKG-INFO
+src/livingbio_workspace.egg-info/SOURCES.txt
+src/livingbio_workspace.egg-info/dependency_links.txt
+src/livingbio_workspace.egg-info/not-zip-safe
+src/livingbio_workspace.egg-info/requires.txt
+src/livingbio_workspace.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/models.py
+src/tests/settings.py
+src/tests/test_django_workspace.py
+src/tests/test_workspace.py
