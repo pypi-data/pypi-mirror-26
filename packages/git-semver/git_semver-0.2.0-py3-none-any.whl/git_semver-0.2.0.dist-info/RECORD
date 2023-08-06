@@ -1,0 +1,10 @@
+git_semver/__init__.py,sha256=Tyhlq8GiX0Mzt8dc1BLWVLXzxUCKCsG34fvpU0U0yII,451
+git_semver/__main__.py,sha256=KNZ2lfvCB1qht6foJm9cJS2sIW6zyXjUQti52YZxLJk,1276
+git_semver/_version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+git_semver-0.2.0.dist-info/DESCRIPTION.rst,sha256=3GicH59WchAROymQItFIXLTQZZMzAaX0F8d-91dtl8o,1133
+git_semver-0.2.0.dist-info/METADATA,sha256=YUwRB1_BNIdp8dmZ21z-SvIclv956E_ks1bcdfxpz-g,1861
+git_semver-0.2.0.dist-info/RECORD,,
+git_semver-0.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+git_semver-0.2.0.dist-info/entry_points.txt,sha256=N7IkV3LtHmcnwKVg9Trcm3PgN8LzVj1hHSyB39pLE38,57
+git_semver-0.2.0.dist-info/metadata.json,sha256=9_c8n8mWzb7HBDmR47GyR2jvpuvvUgpumaVb5DedMuI,989
+git_semver-0.2.0.dist-info/top_level.txt,sha256=w9yR2TRm6bAMuwxNlUcm2PRAUbP-fr30xd6KideUhPc,11
