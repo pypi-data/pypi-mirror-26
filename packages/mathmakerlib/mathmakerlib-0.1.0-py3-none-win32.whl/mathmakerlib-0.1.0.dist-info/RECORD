@@ -1,0 +1,11 @@
+mathmakerlib/__init__.py,sha256=HFuxrZ6s5YkuKWq0uSS6TGmiN7pVqMBlxMGBASsAb5M,2005
+mathmakerlib/calculus/__init__.py,sha256=XkurLOBdhB8pk8Z1VJ5DIHji5wDw1yRg7wVPCi-YzB8,873
+mathmakerlib/calculus/number.py,sha256=9x4yuZvOTKVzx4MuC3w4r6cBaOGnDYi2KYY39eTxiTI,13192
+mathmakerlib/core/__init__.py,sha256=XkurLOBdhB8pk8Z1VJ5DIHji5wDw1yRg7wVPCi-YzB8,873
+mathmakerlib/core/printable.py,sha256=EEtHQcpc_50ZfeyQGxjt3aX0K3tF8MyTEWQcuVKQxeo,1532
+mathmakerlib-0.1.0.dist-info/DESCRIPTION.rst,sha256=8yDsdOC5QMNp6d5aqCAvjDI4oXk-szrtCzI8A0KAMs8,1912
+mathmakerlib-0.1.0.dist-info/METADATA,sha256=NfHTuFve9T9q9HfbqCkM38-6MOvXHEgR0DZq7tiiXOI,2858
+mathmakerlib-0.1.0.dist-info/RECORD,,
+mathmakerlib-0.1.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+mathmakerlib-0.1.0.dist-info/metadata.json,sha256=6WDDJXZCP7PC1TZeWBg6wO91GQh4stVt79Rr4uhfsJA,1136
+mathmakerlib-0.1.0.dist-info/top_level.txt,sha256=ZXUAyQ8OzOuDZffZ-Xqpo4Vg2x4aIXYudS1v7hnmAfs,13
