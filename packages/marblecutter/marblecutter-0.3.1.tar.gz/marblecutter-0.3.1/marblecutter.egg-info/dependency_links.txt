@@ -1,0 +1,1 @@
+https://github.com/mojodna/rasterio/archive/warped-vrt-boundless-reads.tar.gz#egg=rasterio[s3]
