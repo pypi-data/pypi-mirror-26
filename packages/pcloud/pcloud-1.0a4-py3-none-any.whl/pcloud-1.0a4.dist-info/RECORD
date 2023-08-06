@@ -1,0 +1,17 @@
+pcloud/__init__.py,sha256=ux7eFhKjr2vKy1zOM6rKbiFIWX6leoG7zL2KIgMNCoc,77
+pcloud/api.py,sha256=Ieob-L3L4EXxldyj2moR6euVwHrpWOg5uDRYu7jT_Rc,7868
+pcloud/pcloudfs.py,sha256=EW06Dks9sYyiFVniXW4-9F53-vXEe8-I9hYzL80QZi8,5563
+pcloud/validate.py,sha256=5nxrPczqFtS6CNGpYh_0PqmAAP17uXILrf_14dsfEpE,826
+pcloud/tests/server.py,sha256=8aUtBqscmiQ6aUwZnU9ejoihTrNyJQbHUTj7QxyRw2g,1291
+pcloud/tests/test_api.py,sha256=JBCXGLdUoRJeaaRrv2Pfd2UYdpKKGoKJqM0HhNxkQsQ,924
+pcloud/tests/test_validate.py,sha256=efDYa8YvAikMdOoK7cY9PuXt1rOQc5xckb6iDW-RZrU,551
+pcloud/tests/data/getdigest.json,sha256=lvhmZP1Grg87H_zf2d_2q4FDv0va9UFFkC1-t6794bw,129
+pcloud/tests/data/upload.txt,sha256=PukWZ6v2i_v5lGLu0mOiRYFz1jwXX98m8FgLm0n5zbc,14
+pcloud/tests/data/userinfo.json,sha256=r1Rko-EGyhqbJfH51lzZBc0ieOyfwl1lFlMSMq7w-CM,41
+pcloud-1.0a4.dist-info/DESCRIPTION.rst,sha256=6bPhKXdWZfFzbn2UhOIoMzOLKgPkvkXuIdo_Q27vvzk,2032
+pcloud-1.0a4.dist-info/METADATA,sha256=Ct9e3sJezs2JgJOkZn6rlbm57hWHkzvtWwWpEtkztuY,2758
+pcloud-1.0a4.dist-info/RECORD,,
+pcloud-1.0a4.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pcloud-1.0a4.dist-info/entry_points.txt,sha256=KdZHkH-r_L7ko4EWbjf3KRWJn0BgtBNDCmFIgNoPL3Y,99
+pcloud-1.0a4.dist-info/metadata.json,sha256=yZjgVtMuQOunST-k0dTYwi5wHL4xIPmCHPqKNzKpmlA,1086
+pcloud-1.0a4.dist-info/top_level.txt,sha256=iYHAoM2nMeU2j14EbtX-fcme3Id7UFAknkkvCxvjpZc,7
