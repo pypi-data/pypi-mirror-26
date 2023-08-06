@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: speculator
+Version: 0.2.4
+Summary: Speculator predicts the price trend of cryptocurrencies like Bitcoin and Ethereum with machine learning models and technical analysis.
+Home-page: https://github.com/amicks/Speculator
+Author: Allston Mickey
+Author-email: allston.mickey@gmail.com
+License: MIT
+Download-URL: https://github.com/amicks/Speculator/archive/0.2.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: Contributing
+        ~~~~~~~~~~~~
+        Test!
+        
+Keywords: finance,analysis,machine learning,artificial intelligence,bitcoin,ethereum,cryptocurrency,crypto
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
