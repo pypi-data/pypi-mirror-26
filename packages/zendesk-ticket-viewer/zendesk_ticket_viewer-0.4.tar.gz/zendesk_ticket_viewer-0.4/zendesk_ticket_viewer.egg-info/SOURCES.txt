@@ -1,0 +1,11 @@
+setup.py
+zendesk_ticket_viewer/__init__.py
+zendesk_ticket_viewer/api.py
+zendesk_ticket_viewer/main.py
+zendesk_ticket_viewer/ticket.py
+zendesk_ticket_viewer.egg-info/PKG-INFO
+zendesk_ticket_viewer.egg-info/SOURCES.txt
+zendesk_ticket_viewer.egg-info/dependency_links.txt
+zendesk_ticket_viewer.egg-info/not-zip-safe
+zendesk_ticket_viewer.egg-info/requires.txt
+zendesk_ticket_viewer.egg-info/top_level.txt
