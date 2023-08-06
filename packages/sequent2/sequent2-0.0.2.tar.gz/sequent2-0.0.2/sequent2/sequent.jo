@@ -1,0 +1,188 @@
+(+union Den
+  <fun-den>
+  <type-cons-den>
+  <data-cons-den>)
+
+(+data <fun-den>
+  (. .type .body Exp))
+(+data <type-cons-den>
+  (. .type Exp)
+  (. .fields String List)
+  (. .data-cons-name-list String List))
+(+data <data-cons-den>
+  (. .type Exp)
+  (. .fields String List))
+
+(+union Exp
+  <call-exp>
+  <get-local-exp>
+  <set-local-exp>
+  <arrow-exp>
+  <clo-exp>
+  <begin-exp>
+  <match-exp>)
+
+(+data <call-exp> (. .name String))
+(+data <get-local-exp> (. .local-name String))
+(+data <set-local-exp> (. .local-name String))
+(+data <arrow-exp> (. .ante .succ Exp))
+(+data <clo-exp> (. .body Exp))
+(+data <begin-exp> (. .body Exp List))
+(+data <match-exp>
+  (. .values Exp)
+  (. .pattern-list String List List)
+  (. .clause-list Exp List))
+
+(note
+  (: f (-> A -- B))
+  (: g (-> A -- B))
+  (:= (~ f g)
+      (-> :x : A -- (= :x f :x g))))
+
+(note
+  (+fun append (-> (: :l0 :m :<t> <vector>)
+                   (: :l1 :n :<t> <vector>)
+                -- :m :n add :<t> <vector>)
+    (match :l1
+      null :l0
+      cons [:l0 :l1.cdr recur :l1.car cons]))
+
+  (+fun append (-> :l0 : :m :<t> <vector>
+                   :l1 : :n :<t> <vector>
+                -- :m :n add :<t> <vector>)
+    (match :l1
+      null :l0
+      cons [:l0 :l1.cdr recur :l1.car cons]))
+
+  (-> N new :m!
+      N new :n!
+      Type new :<t>!
+      :m :<t> <vector> dup new :l0!
+      :n :<t> <vector> dup new :l1!
+   -- :m :n add :<t> <vector>))
+
+(+union Obj
+  <data-obj>
+  <arrow-obj>
+  <clo-obj>
+  <var-obj>
+  <trunk-obj>)
+
+(+data <data-obj>
+  (. .type Obj)
+  (. .name String)
+  (. .fields Obj List))
+
+(+data <arrow-obj>
+  (. .type Obj)
+  (. .ante .succ Obj List))
+
+(+data <clo-obj>
+  (. .type Obj)
+  (. .body Exp))
+
+(+data <var-obj>
+  (. .id String)
+  (. .type Obj)
+  (. .value Obj))
+
+(+data <trunk-obj>
+  (. .types Obj List)
+  (. .body Exp)
+  (. .args Obj List)
+  (. .results Obj List)
+  (. .index Nat))
+
+(+data <thread>
+  (. .ds Obj Stack)
+  (. .rs <return-point> Stack)
+  (. .us <unification> Stack)
+  (. .gs <goal> Stack))
+
+(+data <return-point>
+  (. .jojo Exp List)
+  (. .locals String Obj Dict)
+  (. .index Nat))
+
+(+jojo rp-at-the-end? (-> :rp <return-point> -- Bool)
+  :rp.index :rp.jojo list-length eq?)
+
+(+jojo rp-next (-> :rp <return-point> -- Exp)
+  :rp.jojo :rp.index list-ref
+  :rp.index inc :rp .index!)
+
+(+data <unification>
+  (. .lhs <var-obj>)
+  (. .rhs Obj))
+
+(+data <goal>
+  (. .lhs Obj List)
+  (. .rhs Obj List)
+  (. .index Nat))
+
+(+jojo exe-one-step (-> :th <thread> --)
+  :th.rs stack-pop :rp!
+  :rp rp-next :exp!
+  (when [:rp rp-at-the-end? not]
+    :rp :th.rs stack-push)
+  :th :exp exp-exe)
+
+(+gene exp-exe (-> :th :exp --)
+  "- exp-exe fail" p nl
+  "  unknown exp : " p :exp p nl
+  error)
+
+(+disp exp-exe (-> :th <thread> :exp <call-exp> --)
+  :exp .name global-get den-exe)
+
+(+gene den-exe (-> :th :den --)
+  "- den-exe fail" p nl
+  error)
+
+(note
+  (+disp den-exe (-> :th <thread> :den <fun-den>)
+    :den.type
+    :den.body))
+
+(note
+  (+disp den-exe (-> :th <thread> :den <type-cons-den>)
+    ))
+
+(note
+  (+disp den-exe (-> :th <thread> :den <data-cons-den>)
+    ))
+
+
+
+
+
+(note
+  (+disp exp-exe (-> :th <thread> :exp <arrow-exp> --)
+    :exp.ante
+    :exp.succ ))
+
+
+
+
+
+
+
+(+gene cut (-> :th :exp --)
+  "- cut fial" p nl
+  error)
+
+(note
+  (+disp cut (-> :th <thread> :exp <call-exp> --)
+    ))
+
+
+
+
+
+
+
+
+
+
+
+
