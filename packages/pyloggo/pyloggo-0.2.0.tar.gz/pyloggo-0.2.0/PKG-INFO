@@ -1,0 +1,59 @@
+Metadata-Version: 1.1
+Name: pyloggo
+Version: 0.2.0
+Summary: Python logging handlers
+Home-page: https://github.com/mhetrerajat/pyloggo
+Author: Rajat Mhetre
+Author-email: mhetrerajat@gmail.com
+License: MIT license
+Description: ========
+        pyloggo
+        ========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/pyloggo.svg
+                :target: https://pypi.python.org/pypi/pyloggo
+        
+        .. image:: https://img.shields.io/travis/mhetrerajat/pyloggo.svg
+                :target: https://travis-ci.org/mhetrerajat/pyloggo
+        
+        .. image:: https://readthedocs.org/projects/pyloggo/badge/?version=latest
+                :target: https://pyloggo.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/mhetrerajat/pyloggo/shield.svg
+             :target: https://pyup.io/repos/github/mhetrerajat/pyloggo/
+             :alt: Updates
+        
+        
+        Python logging handlers
+        
+        
+        * Free software: MIT license
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2017-11-20)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: pyloggo
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
