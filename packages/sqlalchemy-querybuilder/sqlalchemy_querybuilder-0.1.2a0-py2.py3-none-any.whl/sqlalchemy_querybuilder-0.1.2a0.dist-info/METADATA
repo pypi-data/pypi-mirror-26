@@ -1,0 +1,101 @@
+Metadata-Version: 2.0
+Name: sqlalchemy-querybuilder
+Version: 0.1.2a0
+Summary: Build sqlalchemy queries from jQuery-Query json
+Home-page: https://bitbucket.org/ocurero/sqlalchemy-querybuilder
+Author: Oscar Curero
+Author-email: oscar@curero.es
+License: Apache License version 2
+Keywords: json,querybuilder,jquery,sqlalchemy
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries
+Provides: sqlalchemy_querybuilder
+Requires-Dist: SQLAlchemy
+
+SQLAlchemy query builder for jQuery QueryBuilder
+================================================
+
+This package implements a sqlalchemy query builder for json data
+generated with (but not limited to) `jQuery
+QueryBuilder <http://querybuilder.js.org/>`__.
+
+Installation
+------------
+
+::
+
+    #!python
+        pip install sqlalchemy-querybuilder
+
+Quickstart
+----------
+
+Using **sqlalchemy-querybuilder** is very simple:
+
+::
+
+    #!python
+
+        from sqlalchemy_querybuilder import Filter
+        from myapp import models, query
+
+            rule = {
+                    "condition": "OR",
+                    "rules": [{
+                                "field": "mytable.myfield",
+                                "operator": "equal",
+                                "value": "foo"
+                                },
+                            ],
+            }
+
+        myfilter = Filter(models, query)
+        print(myfilter)
+
+The following attributes from the rules are ignored and therefore can be
+omitted:
+
+-  ``id``
+-  ``type``
+-  ``input``
+
+WARNING
+~~~~~~~
+
+sqlalchemy-querybuilder does not do any kind of json validation.
+
+Filter class
+------------
+
+``Filter`` accepts two arguments, ``models`` and ``query``:
+
+-  models - can either be a module defining classes which inherit from
+   ``declarative_base`` or a dict of such classes with the name of the tables
+   as keys.
+-  query - a SQLAlchemy query object. Optionaly loaded with some entity.
+
+Release History
+---------------
+
+0.1.2 (2017-11-19)
+==================
+
+**Bugfixes**
+
+- Fixed issue when models parameter was a dict() of classes.
+- Added missing test for models parameter
+
+0.1 (2017-07-10)
+================
+
+**Improvements**
+
+- First release
+
+
