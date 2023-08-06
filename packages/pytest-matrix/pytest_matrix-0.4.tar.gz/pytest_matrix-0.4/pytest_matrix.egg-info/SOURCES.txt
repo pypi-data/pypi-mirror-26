@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pytest_matrix/__init__.py
+pytest_matrix/exceptions.py
+pytest_matrix/mixin.py
+pytest_matrix/plugin.py
+pytest_matrix.egg-info/PKG-INFO
+pytest_matrix.egg-info/SOURCES.txt
+pytest_matrix.egg-info/dependency_links.txt
+pytest_matrix.egg-info/entry_points.txt
+pytest_matrix.egg-info/not-zip-safe
+pytest_matrix.egg-info/requires.txt
+pytest_matrix.egg-info/top_level.txt
