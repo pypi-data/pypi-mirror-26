@@ -1,0 +1,3 @@
+[console_scripts]
+omgircd3 = omgircd3.ircd:run
+
