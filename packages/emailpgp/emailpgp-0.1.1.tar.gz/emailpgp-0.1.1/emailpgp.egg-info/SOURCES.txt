@@ -1,0 +1,6 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mimepgp/__init__.py
+mimepgp/multipartpgp.py
