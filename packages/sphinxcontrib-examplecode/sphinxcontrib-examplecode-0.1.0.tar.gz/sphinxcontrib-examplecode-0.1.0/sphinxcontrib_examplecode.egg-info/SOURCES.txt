@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/examplecode.css
+sphinxcontrib/examplecode.js
+sphinxcontrib/examplecode.py
+sphinxcontrib_examplecode.egg-info/PKG-INFO
+sphinxcontrib_examplecode.egg-info/SOURCES.txt
+sphinxcontrib_examplecode.egg-info/dependency_links.txt
+sphinxcontrib_examplecode.egg-info/namespace_packages.txt
+sphinxcontrib_examplecode.egg-info/not-zip-safe
+sphinxcontrib_examplecode.egg-info/requires.txt
+sphinxcontrib_examplecode.egg-info/top_level.txt

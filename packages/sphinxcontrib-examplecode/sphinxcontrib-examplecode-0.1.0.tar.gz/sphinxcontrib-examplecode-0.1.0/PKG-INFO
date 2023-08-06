@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: sphinxcontrib-examplecode
+Version: 0.1.0
+Summary: Sphinx "examplecode" extension
+Home-page: http://bitbucket.org/birkenfeld/sphinx-contrib
+Author: Serge Domkowski
+Author-email: sergedomk@gmail.com
+License: BSD
+Download-URL: http://pypi.python.org/pypi/sphinxcontrib-examplecode
+Description-Content-Type: UNKNOWN
+Description: 
+        This package contains the examplecode Sphinx extension.
+        
+        This extension adds support for a multiple language code block
+        widget to Sphinx.
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
