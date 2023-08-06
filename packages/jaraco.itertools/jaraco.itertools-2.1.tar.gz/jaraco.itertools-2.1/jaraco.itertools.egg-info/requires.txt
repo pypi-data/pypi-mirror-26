@@ -1,0 +1,13 @@
+six
+more_itertools>=2.6
+inflect
+
+[docs]
+sphinx
+jaraco.packaging>=3.2
+rst.linker>=1.9
+
+[testing]
+pytest>=2.8
+pytest-sugar
+collective.checkdocs
