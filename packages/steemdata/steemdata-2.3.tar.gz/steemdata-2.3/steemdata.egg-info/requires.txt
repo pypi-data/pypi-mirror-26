@@ -1,0 +1,11 @@
+pymongo
+python-dateutil
+requests
+funcy
+werkzeug
+
+[dev]
+check-manifest
+
+[test]
+coverage
