@@ -1,0 +1,4 @@
+configparser
+click
+Flask
+requests
