@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+xcy_MVtest/__init__.py
+xcy_MVtest/__version__.py
+xcy_MVtest/core.py
+xcy_MVtest.egg-info/PKG-INFO
+xcy_MVtest.egg-info/SOURCES.txt
+xcy_MVtest.egg-info/dependency_links.txt
+xcy_MVtest.egg-info/top_level.txt

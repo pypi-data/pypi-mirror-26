@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: xcy-MVtest
+Version: 1.0.0
+Summary: A Distribution-Free Test of Independence Based on Mean Variance Index. 
+Home-page: https://github.com/ChuanyuXue/MVtest
+Author: ChuanyuXue
+Author-email: cs_xcy@126.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        📦 setup.py (for humans)
+        ========================
+        
+         Distribution-Free Test of Independence Based on Mean Variance Index.
+        If you have any problems or advice, send them to my Email cs_xcy@126.com
+        
+        
+        ✨🍰✨
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
