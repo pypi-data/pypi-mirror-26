@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: entity-extract
+Version: 0.0.1
+Summary: Used for the entity extraction of a text and a corpora and to comapre and reduce entity lists
+Home-page: https://github.com/DulanjanaYasara/entity
+Author: Dulanjana Liyanagama
+Author-email: dulanjanayasara1@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS

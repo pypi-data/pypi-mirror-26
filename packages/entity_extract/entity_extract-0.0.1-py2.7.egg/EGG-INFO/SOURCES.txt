@@ -1,0 +1,10 @@
+COPYING.txt
+MANIFEST.in
+README.txt
+setup.py
+entity/__init__.py
+entity/entity.py
+entity_extract.egg-info/PKG-INFO
+entity_extract.egg-info/SOURCES.txt
+entity_extract.egg-info/dependency_links.txt
+entity_extract.egg-info/top_level.txt
