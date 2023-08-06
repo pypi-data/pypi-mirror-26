@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: mariocli
+Version: 0.0.1
+Summary: Another package management tool; works well with endpointer.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Keywords: documentation,hugo,static-content
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.6
+Requires-Dist: click
+Requires-Dist: jsonschema
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: pylint; extra == 'dev'
+
+UNKNOWN
+
+
