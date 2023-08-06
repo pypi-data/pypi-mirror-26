@@ -1,0 +1,11 @@
+vsts/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/build/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/build/common/__init__.py,sha256=MLSsBF0_p-Boy3anv-bjRsmaPYSM0tl6OgLKEB6S6r4,586
+vsts/cli/build/common/custom.py,sha256=Z9gEEvJlZVluc99fiMTN_o7b243KB0hDpcgBdqJlWro,13385
+vsts_cli_build_common-0.1.0b1.dist-info/DESCRIPTION.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsts_cli_build_common-0.1.0b1.dist-info/METADATA,sha256=FctRJ-nOfyci-_0WVvv5uHYE15oEX-J32o7EsGeyT-E,903
+vsts_cli_build_common-0.1.0b1.dist-info/RECORD,,
+vsts_cli_build_common-0.1.0b1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+vsts_cli_build_common-0.1.0b1.dist-info/metadata.json,sha256=QyrJqgQrAOXY9-nLCmhtWoaijPTpEXMmqT-V6nQaJV4,1039
+vsts_cli_build_common-0.1.0b1.dist-info/top_level.txt,sha256=r-Q1CPVoe51isile67MY1CdCYdDF5a1ghu3YlrUuU0E,5
