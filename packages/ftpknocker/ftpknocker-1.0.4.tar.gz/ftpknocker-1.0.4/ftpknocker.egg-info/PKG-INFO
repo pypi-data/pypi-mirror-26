@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: ftpknocker
+Version: 1.0.4
+Summary: ftpknocker is a multi-threaded scanner for finding anonymous FTP servers
+Home-page: https://github.com/kennell/ftpknocker
+Author: Kevin Kennell
+Author-email: kevin@kennell.de
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: ftp,security
+Platform: UNKNOWN

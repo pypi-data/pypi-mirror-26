@@ -1,0 +1,3 @@
+[console_scripts]
+ftpknocker = ftpknocker.cli:main
+
