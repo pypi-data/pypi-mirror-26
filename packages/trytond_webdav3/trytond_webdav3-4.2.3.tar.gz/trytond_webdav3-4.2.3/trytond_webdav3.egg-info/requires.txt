@@ -1,0 +1,2 @@
+PyWebDAV3-GNUHealth>=0.10.1
+trytond<4.3,>=4.2
