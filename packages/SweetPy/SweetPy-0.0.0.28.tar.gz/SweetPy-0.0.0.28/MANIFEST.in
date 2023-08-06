@@ -1,0 +1,9 @@
+include *.txt
+include SweetPy/*.*
+
+recursive-include examples *.txt *.py
+prune examples/sample?/build
+prune SweetPy/DevelopMain.py
+prune SweetPy/TestMain.py
+prune SweetPy/Main.py
+prune SweetPy/TestCase
