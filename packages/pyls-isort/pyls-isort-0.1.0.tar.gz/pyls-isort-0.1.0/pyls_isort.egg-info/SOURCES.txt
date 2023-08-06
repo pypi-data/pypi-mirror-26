@@ -1,0 +1,10 @@
+setup.py
+pyls_isort/__about__.py
+pyls_isort/__init__.py
+pyls_isort/plugin.py
+pyls_isort.egg-info/PKG-INFO
+pyls_isort.egg-info/SOURCES.txt
+pyls_isort.egg-info/dependency_links.txt
+pyls_isort.egg-info/entry_points.txt
+pyls_isort.egg-info/requires.txt
+pyls_isort.egg-info/top_level.txt
