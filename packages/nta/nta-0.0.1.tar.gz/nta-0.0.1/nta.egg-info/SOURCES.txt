@@ -1,0 +1,11 @@
+README.md
+setup.py
+nta/__init__.py
+nta/nta.py
+nta/payload.py
+nta/template.py
+nta/utils.py
+nta.egg-info/PKG-INFO
+nta.egg-info/SOURCES.txt
+nta.egg-info/dependency_links.txt
+nta.egg-info/top_level.txt
