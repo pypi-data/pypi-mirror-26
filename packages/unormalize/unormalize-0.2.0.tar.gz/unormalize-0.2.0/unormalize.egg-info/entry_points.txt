@@ -1,0 +1,7 @@
+[console_scripts]
+nfc = unormalize.__init__:nfc
+nfd = unormalize.__init__:nfd
+nfkc = unormalize.__init__:nfkc
+nfkd = unormalize.__init__:nfkd
+unormalize = unormalize.__init__:main
+
