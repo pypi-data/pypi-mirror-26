@@ -1,0 +1,5 @@
+#! /usr/bin/env python3
+
+# Parse objgraph.show_growth output to display data in a graph
+
+import sys

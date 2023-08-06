@@ -1,0 +1,68 @@
+advene (3.5-1) unstable; urgency=medium
+
+  * [6e7cbd5] New upstream version 3.5
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Fri, 17 Nov 2017 21:54:14 +0100
+
+advene (3.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Thu, 12 Oct 2017 18:12:07 +0200
+
+advene (3.3-3) unstable; urgency=medium
+
+  * Quick bugfix related to snapshotter
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Thu, 12 Oct 2017 18:10:54 +0200
+
+advene (3.3-2) unstable; urgency=medium
+
+  * Update description
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Wed, 02 Aug 2017 19:15:45 +0200
+
+advene (3.3-1) unstable; urgency=medium
+
+  * New upstream release, with port to Python3.
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Wed, 02 Aug 2017 17:09:35 +0200
+
+advene (3.1-1) unstable; urgency=medium
+
+  * New upstream release. Various bugfixes.
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Sun, 18 Jun 2017 23:27:56 +0200
+
+advene (3.0-1) unstable; urgency=medium
+
+  * New upstream relase, with port to Gtk3/Gst1
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Thu, 01 Jun 2017 11:05:40 +0200
+
+advene (1.1-2) unstable; urgency=medium
+
+  * add video/ogg as supported mime type for Ogg Theora; closes: #763174.
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Mon, 20 Oct 2014 17:00:30 +0200
+
+advene (1.1-1) unstable; urgency=medium
+
+  [ Olivier Aubert ]
+  * New upstream release; closes: #752215.
+  * Remove python-aeidon dependency; closes: #714201.
+  * Replace firefox | www-browser in Depends with a longer list of
+    alternative browsers; closes: #674177.
+
+  [ Alessio Treglia ]
+  * Add myself to the Uploaders field.
+  * Refresh debian/copyright.
+  * Bump Standards.
+
+ -- Olivier Aubert <contact@olivieraubert.net>  Mon, 14 Jul 2014 01:27:35 +0200
+
+advene (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #508451)
+
+ -- Olivier Aubert <olivier.aubert@liris.cnrs.fr>  Tue, 20 Dec 2011 17:27:37 +0100

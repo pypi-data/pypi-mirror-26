@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: advene
+Version: 3.5
+Summary: Annotate DVds, Exchange on the NEt
+Home-page: http://www.advene.org/
+Author: Olivier Aubert
+Author-email: contact@olivieraubert.net
+License: GPL
+Description-Content-Type: UNKNOWN
+Description: Annotate DVds, Exchange on the NEt
+        
+         The Advene (Annotate DVd, Exchange on the NEt) project is aimed
+         towards communities exchanging discourses (analysis, studies) about
+         audiovisual documents (e.g. movies) in DVD format. This requires that
+         audiovisual content and hypertext facilities be integrated, thanks to
+         annotations providing explicit structures on  audiovisual streams, upon
+         which hypervideo documents can be engineered.
+         .
+         The cross-platform Advene application allows users to easily
+         create comments and analyses of video comments, through the
+         definition of time-aligned annotations and their mobilisation
+         into automatically-generated or user-written comment views (HTML
+         documents). Annotations can also be used to modify the rendition
+         of the audiovisual document, thus providing virtual montage,
+         captioning, navigation... capabilities. Users can exchange their
+         comments/analyses in the form of Advene packages, independently from
+         the video itself.
+         .
+         The Advene framework provides models and tools allowing to design and reuse
+         annotations schemas; annotate video streams according to these schemas;
+         generate and create Stream-Time Based (mainly video-centred) or User-Time
+         Based (mainly text-centred) visualisations of the annotations. Schemas
+         (annotation- and relation-types), annotations and relations, queries and
+         views can be clustered and shared in units called packages. Hypervideo
+         documents are generated when needed, both from packages (for annotation and
+         view description) and DVDs (audiovisual streams).
+        
+Keywords: dvd,video,annotation
+Platform: UNKNOWN
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Video :: Non-Linear Editor
