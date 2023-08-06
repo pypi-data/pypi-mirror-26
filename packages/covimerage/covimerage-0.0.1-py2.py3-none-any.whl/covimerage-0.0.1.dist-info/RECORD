@@ -1,0 +1,16 @@
+covimerage/__init__.py,sha256=MqfCUTr8CDsKCnUhBP-X3JwFRYxkihc1ZEGpdZI0aCY,18053
+covimerage/__main__.py,sha256=0ckzher_CRGt3Kfl1kUumcl18_9ulor-vP5dG1btPnE,64
+covimerage/__version__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+covimerage/_compat.py,sha256=F6R9TtOuThIw3wlLuZ7JMf8BMgR-IoCAHxUWCqxKXSQ,750
+covimerage/cli.py,sha256=1vlOotkKiANVV9jYd5Bxm69g91FLmbJ_eL-MdSUnKW8,9569
+covimerage/coveragepy.py,sha256=0GtR7rcduxXpVD0b73b26ZR9ojZcWOr11BHQ1NfQTN8,5905
+covimerage/logger.py,sha256=GQhZpcakSM6EBJafDB6kTVa7EYV8yjqBhsuqAPLPjJQ,495
+covimerage/plugin.py,sha256=-6vJ9MoL4iikQZ_I8ZXlRUY4w-0GkqPiuf_cfA1e7og,1505
+covimerage/utils.py,sha256=VB6YxpYvuL2_JCwZPabQ6Bn6F_RIDvPFFXlCtI7EgI0,1690
+covimerage-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+covimerage-0.0.1.dist-info/METADATA,sha256=P8mpE9Af5dP2EH3WTjxDCvUuJBe20NkAjEcrrrYmqUc,1592
+covimerage-0.0.1.dist-info/RECORD,,
+covimerage-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+covimerage-0.0.1.dist-info/entry_points.txt,sha256=ZVNgdGBNNpNORMN0jVUWXpTFRJv4jmNubXiCyxpo0Yc,52
+covimerage-0.0.1.dist-info/metadata.json,sha256=shTNpnZ57ack5kQ1SmpRHIocUDNl5NA5rFEPzaneiPQ,1438
+covimerage-0.0.1.dist-info/top_level.txt,sha256=GKhww9SVJWYYsFi8rNVcSZ1g1eaH9Y67jGZ-ME8uP9M,11
