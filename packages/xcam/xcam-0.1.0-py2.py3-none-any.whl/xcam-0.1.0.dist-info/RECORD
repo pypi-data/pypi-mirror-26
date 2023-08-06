@@ -1,0 +1,13 @@
+tests/unittests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unittests/test_xcam.py,sha256=h9KYRqCcqjqIaVKC6K1Oh_3jopDwWDq0fXaYcE-3nZM,254
+xcam/QuickUsb.py,sha256=oeAflZzSnN0dpwomB6FsZ-LF1Ct1bRjIxOvIPib1R-w,157988
+xcam/__init__.py,sha256=OV1rLXSFro-kW1t1nlxvOdbngRvc1lq2VOM1QfDrExw,175
+xcam/cli.py,sha256=ZGrpKuYvI43CGV92km_JUMf-KRxiljWEmtw5Pu1Toxc,14570
+xcam/xcam.py,sha256=misYePeBWZEG0LIPkPnLzWavrTDp7cWiAjGu_ajQ_sw,83710
+xcam-0.1.0.dist-info/DESCRIPTION.rst,sha256=Yuk_qrZkCYdjuU201kEMCCU6L_zUMc2f0tfMWQVp0Js,22
+xcam-0.1.0.dist-info/METADATA,sha256=olv7-Irw1bkdCJhjNfegECYDqgktqXGs2Xvi-PmgzWk,251
+xcam-0.1.0.dist-info/RECORD,,
+xcam-0.1.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+xcam-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+xcam-0.1.0.dist-info/metadata.json,sha256=dQwe9OKgIBXV2Xk1RCg8lHfgBCwzSHBjD9f12gL2C_w,517
+xcam-0.1.0.dist-info/top_level.txt,sha256=AK-6f1X9Q2rBWYLA1AXkDZIWQJrff2irHMA6zgqA030,11

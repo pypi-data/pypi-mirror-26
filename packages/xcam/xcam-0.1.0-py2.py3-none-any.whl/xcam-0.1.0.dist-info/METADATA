@@ -1,0 +1,12 @@
+Metadata-Version: 2.0
+Name: xcam
+Version: 0.1.0
+Summary: Driver for the XCAM rack to control and readout CCD sensors 
+Home-page: https://gitlab.esa.int/HansSmit/rpc
+Author: Hans Smit
+Author-email: hans.smit@esa.int
+License: MIT
+
+XCAM CCD Controller
+
+
