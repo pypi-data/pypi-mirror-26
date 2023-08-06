@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: forrest
+Version: 0.0.5
+Summary: Utility for run ephemeral applications on cloud instances
+Home-page: UNKNOWN
+Author: Hector Vergara
+Author-email: hvergara@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
