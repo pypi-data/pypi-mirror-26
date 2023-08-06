@@ -1,0 +1,17 @@
+ipympl/__init__.py,sha256=dlYOov-lHHatnmHnbK_K7ItQvKl93Od1SAQnz9zRwXQ,596
+ipympl/_version.py,sha256=grfcAtvSG_PPYryLQgW9aJrjL6jz63hVTbAzGqCdrCM,72
+ipympl/backend_nbagg.py,sha256=s_PNLrZ1Fvadem55eG1bM02cphGGfRS-31qtaSN0SOA,8249
+ipympl/static/extension.js,sha256=S61Q9H3jtT0cpOMQXp5x2Sa1JdTJqVMmFk-qDAAOaAI,2812
+ipympl/static/index.js,sha256=q3io6d8e6oQXZAKEXTe5b55zVJyFOut06QXKf9BUdsc,847416
+ipympl/static/index.js.map,sha256=ZOb8V8wwjK31nvNCv7d1hPYiijXs23LKAXiLY99CjLA,1063012
+ipympl/static/package.json,sha256=_81Sx-YAe6jBirJAefgtRoqKeqZpJWJ3bFx2FSxxPzU,928
+ipympl-0.0.8.data/data/share/jupyter/nbextensions/jupyter-matplotlib/extension.js,sha256=S61Q9H3jtT0cpOMQXp5x2Sa1JdTJqVMmFk-qDAAOaAI,2812
+ipympl-0.0.8.data/data/share/jupyter/nbextensions/jupyter-matplotlib/index.js,sha256=q3io6d8e6oQXZAKEXTe5b55zVJyFOut06QXKf9BUdsc,847416
+ipympl-0.0.8.data/data/share/jupyter/nbextensions/jupyter-matplotlib/index.js.map,sha256=ZOb8V8wwjK31nvNCv7d1hPYiijXs23LKAXiLY99CjLA,1063012
+ipympl-0.0.8.data/data/share/jupyter/nbextensions/jupyter-matplotlib/package.json,sha256=_81Sx-YAe6jBirJAefgtRoqKeqZpJWJ3bFx2FSxxPzU,928
+ipympl-0.0.8.dist-info/DESCRIPTION.rst,sha256=snNEZW8VcDMDhXwTrwjh1vCRsp5rQVlJOZK_1Ot7C2s,31
+ipympl-0.0.8.dist-info/METADATA,sha256=P7yErrib2RwddfrudCbNzYvw-6RlEVrAzpliAzuhdS8,944
+ipympl-0.0.8.dist-info/RECORD,,
+ipympl-0.0.8.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ipympl-0.0.8.dist-info/metadata.json,sha256=Nwvm_LDedcthGFVgZPl72b80_3UuTeD_pFtkdFjykIc,1028
+ipympl-0.0.8.dist-info/top_level.txt,sha256=vk63LdrWWpUYsEcfp_7Q7cFpcq94EtsKH9q00mBtjco,7
