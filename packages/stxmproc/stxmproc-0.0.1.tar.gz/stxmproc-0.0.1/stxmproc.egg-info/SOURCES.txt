@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/data_file
+stxmproc/__init__.py
+stxmproc/myRoll.py
+stxmproc/stxmproc.py
+stxmproc.egg-info/PKG-INFO
+stxmproc.egg-info/SOURCES.txt
+stxmproc.egg-info/dependency_links.txt
+stxmproc.egg-info/entry_points.txt
+stxmproc.egg-info/requires.txt
+stxmproc.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[gui_scripts]
+stxmProc = stxmproc.stxmproc:gui
+
