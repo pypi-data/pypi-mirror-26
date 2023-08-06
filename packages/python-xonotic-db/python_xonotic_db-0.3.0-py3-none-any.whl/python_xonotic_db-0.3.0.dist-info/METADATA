@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: python-xonotic-db
+Version: 0.3.0
+Summary: library to read and write Xonotic databases
+Home-page: https://github.com/nsavch/python-xonotic-db
+Author: Nick Savchenko
+Author-email: nsavch@gmail.com
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Keywords: xonotic
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Games/Entertainment
+Requires-Dist: setuptools
+Requires-Dist: click (>=6.7)
+
+library to read and write Xonotic databases
+
+
