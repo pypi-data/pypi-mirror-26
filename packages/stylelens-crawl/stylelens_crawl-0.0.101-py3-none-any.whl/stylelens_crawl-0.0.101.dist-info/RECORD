@@ -1,0 +1,11 @@
+stylelens_crawl/__init__.py,sha256=puD6QzIC8OR0jPGwOQuv6qFjC3sr5_Z2nWbm72_mhyE,96
+stylelens_crawl/stylens_crawl.py,sha256=AwSeJrMFfc-FxAUfDiS_YG2tIJ8D-gAqekZ76wyAGz4,2601
+stylelens_crawl/services/DeBow.py,sha256=fjaA02AUvXx7QNXhDGj2IVMwaanMPGgu_HJLj4NV-Zg,2744
+stylelens_crawl/services/DoubleSixGirls.py,sha256=lZpWTkfhaMbiWeuLOsF8ClojkdWkYkOdhLyQXUcnnEo,7533
+stylelens_crawl/services/__init__.py,sha256=hpZ0e_GVace2QYvayogwdnU7ZzgUDj6DV0g5QUTl04s,506
+stylelens_crawl-0.0.101.dist-info/DESCRIPTION.rst,sha256=n_t0aqghDSeFrWmXsDkByFOqOq2W3dzJT-46FrbraVY,85
+stylelens_crawl-0.0.101.dist-info/METADATA,sha256=SvNV1jgntkDL833KybgFcjNFFCqU9T454X_BbWmgUvo,728
+stylelens_crawl-0.0.101.dist-info/RECORD,,
+stylelens_crawl-0.0.101.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+stylelens_crawl-0.0.101.dist-info/metadata.json,sha256=I1kfrfAPzohzlJkWXGHAcgeHJJprui2JcGjY6ejrgcg,803
+stylelens_crawl-0.0.101.dist-info/top_level.txt,sha256=2RP87tMFWIZeeWbe8zPR-WTjFGwiSm0pexDL1lH7IRc,16
