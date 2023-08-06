@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+screenshots/lyrics-translate.png
+screenshots/lyrics.png
+src/__init__.py
+src/__main__.py
+src/termify.py
+termify.egg-info/PKG-INFO
+termify.egg-info/SOURCES.txt
+termify.egg-info/dependency_links.txt
+termify.egg-info/entry_points.txt
+termify.egg-info/requires.txt
+termify.egg-info/top_level.txt
