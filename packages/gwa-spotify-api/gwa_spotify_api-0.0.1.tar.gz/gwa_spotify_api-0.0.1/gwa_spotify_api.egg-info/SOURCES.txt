@@ -1,0 +1,7 @@
+README.rst
+setup.py
+gwa_spotify_api.egg-info/PKG-INFO
+gwa_spotify_api.egg-info/SOURCES.txt
+gwa_spotify_api.egg-info/dependency_links.txt
+gwa_spotify_api.egg-info/requires.txt
+gwa_spotify_api.egg-info/top_level.txt
