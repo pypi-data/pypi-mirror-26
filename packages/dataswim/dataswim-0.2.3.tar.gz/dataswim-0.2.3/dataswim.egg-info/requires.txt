@@ -1,0 +1,6 @@
+pandas
+pandas_profiling
+holoviews
+bokeh
+dataset
+goerr
