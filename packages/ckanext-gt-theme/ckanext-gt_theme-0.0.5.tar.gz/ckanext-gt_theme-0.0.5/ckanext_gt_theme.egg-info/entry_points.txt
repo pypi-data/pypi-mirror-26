@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        gt_theme=ckanext.gt_theme.plugin:Gt_ThemePlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
