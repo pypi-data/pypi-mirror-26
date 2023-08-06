@@ -1,0 +1,16 @@
+mathmakerlib/__init__.py,sha256=3wFuzL8KrniS2Ls5_GoT9t7BqYM1KFl-VWbX41Gn6uc,2007
+mathmakerlib/calculus/__init__.py,sha256=XkurLOBdhB8pk8Z1VJ5DIHji5wDw1yRg7wVPCi-YzB8,873
+mathmakerlib/calculus/exponented.py,sha256=X5ahRlfgpSw0UtsoUGGR1ko9_Y1Dpqc9f7PTIpdtkgA,3274
+mathmakerlib/calculus/number.py,sha256=2tB-ZD3ziytV4cATFXJfGEcmUUsy83o28XUEG3mcTJg,23697
+mathmakerlib/calculus/unit.py,sha256=qqKOjVflWqS0pU7gEVbhgqlR77DM8IxM7dYScMUrqic,3339
+mathmakerlib/core/__init__.py,sha256=XkurLOBdhB8pk8Z1VJ5DIHji5wDw1yRg7wVPCi-YzB8,873
+mathmakerlib/core/evaluable.py,sha256=Ofmeg79MxT77tNQ0L8VitJ_iN3VdfWbVyleJ0fkTF3c,1090
+mathmakerlib/core/printable.py,sha256=kEwBJxTWZhYnCYQ3XSlfw84N-mKmOGgZsJGwTyPALJ8,1542
+mathmakerlib/core/signed.py,sha256=eqBluAxT31ABb2RseGgCKGEmNeQw6F9J9bPV1n3vvuk,1075
+mathmakerlib/core/word.py,sha256=nFDpyys42MjijfmqI_tO8LrI8u8IfJMRJaMDC5zfV08,1037
+mathmakerlib-0.2.0.dist-info/DESCRIPTION.rst,sha256=QYZOv5yy6FWQsDXmkHf92ZzwZvDeLTFxe_1Y0CEVtAM,2133
+mathmakerlib-0.2.0.dist-info/METADATA,sha256=inrfNAURD8-CQwh80M3wP_vCbDWkoIFV1uLkwZdzITU,3079
+mathmakerlib-0.2.0.dist-info/RECORD,,
+mathmakerlib-0.2.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+mathmakerlib-0.2.0.dist-info/metadata.json,sha256=C9uLalOKb7UVvRiWHsyYsp2K0mnt5PN7KcQ8ZpDD9PM,1136
+mathmakerlib-0.2.0.dist-info/top_level.txt,sha256=ZXUAyQ8OzOuDZffZ-Xqpo4Vg2x4aIXYudS1v7hnmAfs,13
