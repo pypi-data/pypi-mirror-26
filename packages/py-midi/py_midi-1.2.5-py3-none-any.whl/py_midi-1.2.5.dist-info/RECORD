@@ -1,0 +1,10 @@
+midi/__init__.py,sha256=RCL4ZeFhquL5bAhZlU1f46dg-bNaA9Xh1Hgo2QvR3UY,20
+midi/midi.py,sha256=T9xkvA3_gQCqDhby1AJHp7_ffNs7czGeXjJyWB-ohCg,11777
+midi/midiTypeMessage.py,sha256=yp5BvT-r7JTTgKlwOehdjL-fknAw9JP3P29SwHyOxSo,2134
+midi/types.py,sha256=NftDmkXkiLskEvVOVeWE_N2HzFXD4BkbGUDhxW_MUlE,6743
+py_midi-1.2.5.dist-info/DESCRIPTION.rst,sha256=4lkZkh_FtFl8O2eGB4S7w2ZYg5HdOaMshi__s6lXnsc,6765
+py_midi-1.2.5.dist-info/METADATA,sha256=nxoypEv0CRmrF8DmyfUPgBtSY172nUP-2Jy7xC8evf4,7524
+py_midi-1.2.5.dist-info/RECORD,,
+py_midi-1.2.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+py_midi-1.2.5.dist-info/metadata.json,sha256=ltNT2GCmaic_450CemVoPyfdCQ35zWk-Wpn1x1F9X1g,951
+py_midi-1.2.5.dist-info/top_level.txt,sha256=MJwSS9LDJKCE5BCb3VGgmby22afKQnu6UQU4pT2uW_Q,5
