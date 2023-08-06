@@ -1,0 +1,7 @@
+pyinotify
+posttroll
+trollsift
+netifaces
+pyzmq
+scp
+paramiko
