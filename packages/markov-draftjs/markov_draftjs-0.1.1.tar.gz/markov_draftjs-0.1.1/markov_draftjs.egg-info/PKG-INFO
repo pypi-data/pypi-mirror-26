@@ -1,0 +1,123 @@
+Metadata-Version: 1.1
+Name: markov-draftjs
+Version: 0.1.1
+Summary: Draft.js sample content generated with Markov chains of Project Gutenberg books.
+Home-page: https://github.com/thibaudcolas/markov_draftjs
+Author: Thibaud Colas
+Author-email: thibaudcolas@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: markov_draftjs ` <https://pypi.python.org/pypi/markov_draftjs>`_ ` <https://www.npmjs.com/package/markov_draftjs>`_ ` <https://travis-ci.org/thibaudcolas/markov_draftjs>`_
+        ===========================================================================================================================================================================
+        
+        > Draft.js sample content generated with `Markov chains <https://en.wikipedia.org/wiki/Markov_chain>`_ of `Project Gutenberg <https://www.gutenberg.org/>`_ books.
+        
+        This sample content is meant to be used while testing projects based on Draft.js, in particular `Draftail <https://github.com/springload/draftail>`_ and `draftjs_exporter <https://github.com/springload/draftjs_exporter>`_.
+        
+        Using the sample content
+        ------------------------
+        
+        In order to simplify using the samples across multiple projects, they are published as packages on `npm <https://www.npmjs.com/package/markov_draftjs>`_ and `PyPI <https://pypi.python.org/pypi/markov_draftjs>`_.
+        
+        .. code-block:: sh
+        
+            # JavaScript projects.
+            npm install markov_draftjs
+            # Python projects.
+            pip install markov_draftjs
+            
+        
+        
+        Then, in JavaScript:
+        
+        .. code-block:: js
+        
+            const contentStates = require('markov_draftjs');
+            
+        
+        
+        And in Python:
+        
+        .. code-block:: py
+        
+            from markov_draftjs import get_content_sample
+            
+            content_states = get_content_sample()
+            
+        
+        
+        The sample content is also available from GitHub, eg. with RawGit (warning - big file): `https://cdn.rawgit.com/thibaudcolas/markov_draftjs/44827d98/markov_draftjs/content.json <https://cdn.rawgit.com/thibaudcolas/markov_draftjs/44827d98/markov_draftjs/content.json>`_.
+        
+        Development
+        -----------
+        
+        > Requirements: `virtualenv`, `pyenv`, `twine`
+        
+        .. code-block:: sh
+        
+            git clone git@github.com:thibaudcolas/markov_draftjs.git
+            cd markov_draftjs/
+            
+            # Install the git hooks.
+            ./.githooks/deploy
+            
+            # Install dependencies
+            nvm install
+            npm install
+            
+            # Unarchive sample text.
+            cd corpora/
+            tar -xzvf *.tar.gz
+            cd ..
+            
+            # Install the Python environment.
+            virtualenv .venv
+            source ./.venv/bin/activate
+            make init
+            
+            # Install required Python versions
+            pyenv install --skip-existing 2.7.11
+            pyenv install --skip-existing 3.4.4
+            # Make required Python versions available globally.
+            pyenv global system 2.7.11 3.4.4
+            
+            # Generate new sample content.
+            npm run start
+            
+        
+        
+        Releases
+        --------
+        
+        - Use `irish-pub` to confirm the content of the npm package.
+        - Make a new branch for the release of the new version.
+        - Update the `CHANGELOG <CHANGELOG.md>`_.
+        - Update the version number in `markov_draftjs/__init__.py`, and `package.json`, following semver.
+        - Make a PR and squash merge it.
+        - Back on master with the PR merged, use `make publish` (confirm, and enter your password) and `npm publish`.
+        - Finally, go to GitHub and create a release and a tag for the new version.
+        - Done!
+        
+        See also
+        --------
+        
+        - https://github.com/jsvine/markovify
+        - https://github.com/catseye/Guten-gutter
+        
+Keywords: d,e,v,e,l,o,p,m,e,n,t
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Word Processors
