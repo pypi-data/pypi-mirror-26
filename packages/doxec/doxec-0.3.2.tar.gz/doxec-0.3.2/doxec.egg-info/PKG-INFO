@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: doxec
+Version: 0.3.2
+Summary: Run documentation and test whether the examples work.
+Home-page: https://gitlab.sauerburger.com/frank/doxec
+Author: Frank Sauerburger
+Author-email: frank@sauerburger.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Documentation
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Interpreters

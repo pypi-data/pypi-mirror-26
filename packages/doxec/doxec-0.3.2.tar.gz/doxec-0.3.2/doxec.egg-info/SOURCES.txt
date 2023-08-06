@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+bin/doxec
+doxec/__init__.py
+doxec.egg-info/PKG-INFO
+doxec.egg-info/SOURCES.txt
+doxec.egg-info/dependency_links.txt
+doxec.egg-info/requires.txt
+doxec.egg-info/top_level.txt
