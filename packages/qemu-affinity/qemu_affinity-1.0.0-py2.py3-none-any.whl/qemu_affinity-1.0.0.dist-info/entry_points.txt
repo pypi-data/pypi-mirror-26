@@ -1,0 +1,3 @@
+[console_scripts]
+qemu-affinity = qemu_affinity:main
+
