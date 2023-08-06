@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: tangerine
+Version: 0.1.0
+Summary: API for the Tangerine Bank
+Home-page: https://github.com/kevinjqiu/tangerine
+Author: Kevin J. Qiu
+Author-email: kevin@idempotent.ca
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+```
+ _____                           _            
+|_   _|_ _ _ __   __ _  ___ _ __(_)_ __   ___ 
+  | |/ _` | '_ \ / _` |/ _ \ '__| | '_ \ / _ \
+  | | (_| | | | | (_| |  __/ |  | | | | |  __/
+  |_|\__,_|_| |_|\__, |\___|_|  |_|_| |_|\___|
+                 |___/                        
+```
+
+tangerine
+=========
+
+.. image:: https://img.shields.io/pypi/v/tangerine.svg
+    :target: https://pypi.python.org/pypi/tangerine
+    :alt: Latest PyPI version
+
+API for the Tangerine Bank
+
+Licence
+-------
+
+Authors
+-------
+
+`tangerine` was written by `Kevin J. Qiu <kevin@idempotent.ca>`_.
+
+
