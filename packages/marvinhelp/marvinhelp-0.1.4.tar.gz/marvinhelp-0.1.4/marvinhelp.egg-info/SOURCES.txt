@@ -1,0 +1,14 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+bin/marvin-advice
+docs/marvinfesto.txt
+marvinhelp/__init__.py
+marvinhelp/marvinhelp.py
+marvinhelp.egg-info/PKG-INFO
+marvinhelp.egg-info/SOURCES.txt
+marvinhelp.egg-info/dependency_links.txt
+marvinhelp.egg-info/requires.txt
+marvinhelp.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+Hello. This is silly little program almost full of content almost entirely
+plagiarized from the Hitchhiker's Guide to the Galaxy.
+
+It's based on a character named Marvin. Marvin is a robot who is morose because
+he's 50 billion times smarter than the average human.
+
+Anyway. Not necessary to say much more.

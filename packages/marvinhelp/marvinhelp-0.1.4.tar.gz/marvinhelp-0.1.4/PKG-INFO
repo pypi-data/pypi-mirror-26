@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: marvinhelp
+Version: 0.1.4
+Summary: Unhelpful advice from a very smart robot.
+Home-page: https://github.com/rolfantlers
+Author: Anders Amundson
+Author-email: amundson@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: nonsense,robots,advice
+Platform: UNKNOWN
+Requires-Python: >=3
