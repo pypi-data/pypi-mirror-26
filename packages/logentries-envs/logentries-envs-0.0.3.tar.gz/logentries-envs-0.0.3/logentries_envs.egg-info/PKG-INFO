@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: logentries-envs
+Version: 0.0.3
+Summary: Logentries Handler to get Token from environment variable.
+Home-page: https://github.com/debonzi/logentries-envs
+Author: Daniel Debonzi
+Author-email: debonzi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
