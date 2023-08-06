@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.adoc
+dashing.py
+demo.py
+setup.cfg
+setup.py
+dashing.egg-info/PKG-INFO
+dashing.egg-info/SOURCES.txt
+dashing.egg-info/dependency_links.txt
+dashing.egg-info/not-zip-safe
+dashing.egg-info/requires.txt
+dashing.egg-info/top_level.txt
