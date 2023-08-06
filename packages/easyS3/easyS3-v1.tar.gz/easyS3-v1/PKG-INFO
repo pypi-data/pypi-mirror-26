@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: easyS3
+Version: v1
+Summary: A simple and extremely user friendly s3 client
+Home-page: https://github.com/fauzanbaigm/easyS3
+Author: Fauzan Baig M
+Author-email: fauzanbaig16@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/fauzanbaigm/easyS3/releases/tag/easyS3v1.tar.gz
+Description: UNKNOWN
+Keywords: s3,aws s3,sqs,aws sqs,ses,aws ses,sns,aws sns,amazon
+Platform: UNKNOWN
