@@ -1,0 +1,8 @@
+flask
+pymongo
+requests
+toolz
+
+[prod_matsci]
+gunicorn
+pymatgen

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h3>Request Login Link</h3>
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="user">Email address</label>
+          <input type="email" class="form-control" required
+                 name="user" placeholder="user@example.gov">
+          <input class="honey" type="text" name="honey" value="" />
+        </div>
+        {% set a = remote_app %}
+        <span class="help-block">Be sure your email address above is
+        linked to a <a href="{{a.uri}}">{{a.name}}</a> user account.</span>
+        <button type="submit" class="btn btn-primary">Request</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block pagescript %}
+{{ super() }}
+<script>
+ $("input.honey").addClass("hidden");
+</script>
+{% endblock %}
