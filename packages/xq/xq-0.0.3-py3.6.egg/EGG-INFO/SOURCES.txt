@@ -1,0 +1,13 @@
+README.rst
+setup.py
+tests/__init__.py
+tests/test_html.py
+tests/test_xml.py
+xq/__init__.py
+xq/__main__.py
+xq.egg-info/PKG-INFO
+xq.egg-info/SOURCES.txt
+xq.egg-info/dependency_links.txt
+xq.egg-info/entry_points.txt
+xq.egg-info/requires.txt
+xq.egg-info/top_level.txt

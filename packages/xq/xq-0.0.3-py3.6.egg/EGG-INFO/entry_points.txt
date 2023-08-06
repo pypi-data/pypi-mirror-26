@@ -1,0 +1,3 @@
+[console_scripts]
+xq = xq.__main__:main
+
