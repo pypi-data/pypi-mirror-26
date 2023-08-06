@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: Scrapy_mingle
+Version: 0.1.30
+Summary: Some useful tools for Scrapy
+Home-page: https://github.com/xuhaomin/scrapy_mingle
+Author: xuhaomin
+Author-email: xhmgreat@sina.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: ======
+        Scrapy_mingle
+        ======
+        
+        
+        Overview
+        ========
+        
+        Some Scrapy download middleware used for change proxy, monitor running stats of scrapy
+        
+        Requirements
+        ============
+        
+        * Python 3.3+ 
+        * Scrapy
+        
+        contract
+        =======
+        
+        wechat: xuhaomin
+        
+        you can get more information from my wechat
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Scrapy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
