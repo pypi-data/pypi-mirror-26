@@ -1,0 +1,8 @@
+django_cluster_redis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cluster_redis/cache.py,sha256=08MTvlNYFKYVLucG5t8xhhCXa_1ZbVqzl0ALWjjfc5U,3979
+django_cluster_redis-1.0.4.dist-info/DESCRIPTION.rst,sha256=Kunz4DqLwWJ76wSIzDERaaILFXSVRDZ415Jdw8svtg0,76
+django_cluster_redis-1.0.4.dist-info/METADATA,sha256=TQCzixsgLuWlYLUFcoz0mh5aR0BIbc7uzq-N3VeRf54,433
+django_cluster_redis-1.0.4.dist-info/RECORD,,
+django_cluster_redis-1.0.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_cluster_redis-1.0.4.dist-info/metadata.json,sha256=5nWHfpAt8ya7PwgoC57968tw-4P5zra2Km3G1eKXUfI,544
+django_cluster_redis-1.0.4.dist-info/top_level.txt,sha256=4uya_xyYRP0hxHZnxfQegcdetnjb6gfJszxu67lj0ys,21
