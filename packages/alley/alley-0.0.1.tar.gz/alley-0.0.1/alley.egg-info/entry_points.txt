@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        alley=alley.alley_cli:cli
+    
