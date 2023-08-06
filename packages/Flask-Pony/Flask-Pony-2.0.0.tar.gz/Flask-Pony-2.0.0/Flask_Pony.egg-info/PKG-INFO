@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: Flask-Pony
+Version: 2.0.0
+Summary: PonyORM for your Flask application
+Home-page: https://github.com/kyzima-spb/flask-pony
+Author: Kirill Vercetti
+Author-email: office@kyzima-spb.com
+License: Apache-2.0
+Description: 
+        Flask-Pony
+        ----------
+        
+        PonyORM for your Flask application.
+        
+        GitHub
+        ------
+        
+        `Uses and documentation <https://github.com/kyzima-spb/flask-pony>`_
+        
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
