@@ -1,0 +1,7 @@
+setup.py
+SFMT/SFMT.c
+pysfmt.egg-info/PKG-INFO
+pysfmt.egg-info/SOURCES.txt
+pysfmt.egg-info/dependency_links.txt
+pysfmt.egg-info/requires.txt
+pysfmt.egg-info/top_level.txt
