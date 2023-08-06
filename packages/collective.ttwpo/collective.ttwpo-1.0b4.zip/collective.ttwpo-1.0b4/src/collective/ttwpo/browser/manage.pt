@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xml:lang="en" lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.ttwpo">
+
+<body>
+
+<metal:main fill-slot="main">
+  <tal:if tal:condition="python: view.domain is None">
+    <h1 i18n:translate="manage_listing_heading">Manage I18N-Domains</h1>
+    <p i18n:translate="">Select an i18n-domain to manage.</p>
+    <ul>
+      <li tal:repeat="domain view/get_domains">
+        <a href="${python:context.absolute_url()}/ttwpo-manage/${domain}">${domain}</a>
+      </li>
+    </ul>
+  </tal:if>
+  <tal:if tal:condition="python: view.domain is not None">
+    <h1 i18n:translate="manage_single_heading">Manage I18N-Domain <span i18n:name="domain">${view/domain}</span></h1>
+    <table class="listing"
+           tal:define="info view/info">
+      <thead>
+        <tr>
+          <th i18n:translate="">Locale</th>
+          <th i18n:translate="">Gettext (*.po) Files</th>
+          <th i18n:translate="">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tal:loop tal:repeat="locale python:info['locales']">
+          <tr>
+            <td rowspan="${python:1 + len(info['locales'][locale])}">${locale}</td>
+            <td>
+              <form action="${python:context.absolute_url()}/ttwpo-manage-upload/${view/domain}" method="post" enctype="multipart/form-data">
+                <div class="input-group input-group-sm">
+                  <span tal:replace="structure context/@@authenticator/authenticator"/>
+                  <input type="hidden" name="locale" value="${locale}" />
+                  <label class="btn plone-btn plone-btn-default">
+                    <input type="file" class="form-control" name="pofile" />
+                  </label>
+                  <label class="btn plone-btn plone-btn-default">
+                    <input type="checkbox" name="current" aria-label="set to current" /> make current
+                  </label>
+                  <span class="input-group-btn">
+                    <button class="btn plone-btn plone-btn-success" type="submit">Upload</button>
+                  </span>
+                </div>
+              </form>
+            </td>
+            <td>
+              <a tal:condition="python:info['settings'].get('servicename', None)"
+                 href="${python:context.absolute_url()}/ttwpo-manage-fetch/${view/domain}?locale=${locale}&_authenticator=${context/@@authenticator/token}"
+                 class="btn plone-btn plone-btn-primary plone-btn-sm"
+                 role="button"
+                 i18n:translate="">
+                fetch from <span i18n:name="servicename">${python:info['settings']['servicename']}</span>
+              </a>
+            </td>
+          </tr>
+          <tr tal:repeat="file python:reversed(info['locales'][locale].keys())">
+            <td><strong tal:omit-tag="python:not view.is_current(locale, file)">${file}</strong></td>
+            <td>
+              <a href="${python:context.absolute_url()}/ttwpo-manage-delete/${view/domain}?locale=${locale}&filename=${file}&_authenticator=${context/@@authenticator/token}"
+                 i18n:translate=""
+                 role="button"
+                 class="plone-btn plone-btn-danger plone-btn-sm">delete</a>
+              <a tal:condition="python: not view.is_current(locale, file)"
+                 href="${python:context.absolute_url()}/ttwpo-manage-current/${view/domain}?locale=${locale}&filename=${file}&_authenticator=${context/@@authenticator/token}"
+                 i18n:translate=""
+                 role="button"
+                 class="plone-btn plone-btn-primary plone-btn-sm">make current</a>
+            </td>
+          </tr>
+        </tal:loop>
+      </tbody>
+    </table>
+  </tal:if>
+</metal:main>
+</body>
+</html>
