@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: asciicanvas
+Version: 0.0.3
+Summary: ASCII canvas for drawing in console using ASCII chars
+Home-page: https://github.com/delimitry/ascii_canvas
+Author: Dmitry Alimov
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: ascii canvas console terminal
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Graphics

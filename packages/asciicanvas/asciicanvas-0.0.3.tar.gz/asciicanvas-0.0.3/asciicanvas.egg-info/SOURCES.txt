@@ -1,0 +1,11 @@
+README.md
+setup.py
+asciicanvas/__init__.py
+asciicanvas/asciicanvas.py
+asciicanvas/colors.py
+asciicanvas/style.py
+asciicanvas.egg-info/PKG-INFO
+asciicanvas.egg-info/SOURCES.txt
+asciicanvas.egg-info/dependency_links.txt
+asciicanvas.egg-info/not-zip-safe
+asciicanvas.egg-info/top_level.txt
