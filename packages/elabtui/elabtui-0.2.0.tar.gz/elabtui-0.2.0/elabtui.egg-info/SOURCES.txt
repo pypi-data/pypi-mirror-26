@@ -1,0 +1,11 @@
+README.md
+setup.py
+elabtui/__init__.py
+elabtui/__main__.py
+elabtui/elabtui.py
+elabtui.egg-info/PKG-INFO
+elabtui.egg-info/SOURCES.txt
+elabtui.egg-info/dependency_links.txt
+elabtui.egg-info/entry_points.txt
+elabtui.egg-info/requires.txt
+elabtui.egg-info/top_level.txt
