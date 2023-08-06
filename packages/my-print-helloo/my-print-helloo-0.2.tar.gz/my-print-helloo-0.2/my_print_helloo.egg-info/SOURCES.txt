@@ -1,0 +1,6 @@
+02.py
+setup.py
+my_print_helloo.egg-info/PKG-INFO
+my_print_helloo.egg-info/SOURCES.txt
+my_print_helloo.egg-info/dependency_links.txt
+my_print_helloo.egg-info/top_level.txt
