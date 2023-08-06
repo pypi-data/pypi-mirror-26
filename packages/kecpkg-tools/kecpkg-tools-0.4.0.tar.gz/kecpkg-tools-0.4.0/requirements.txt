@@ -1,0 +1,12 @@
+-e .
+click
+atomicwrites
+jinja2
+pykechain
+
+
+# testing
+tox
+#hatch
+toml
+
