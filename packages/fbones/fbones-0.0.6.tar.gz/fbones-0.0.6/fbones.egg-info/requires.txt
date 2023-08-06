@@ -1,0 +1,6 @@
+flask
+click
+alembic
+flask_doc
+gunicorn
+meinheld
