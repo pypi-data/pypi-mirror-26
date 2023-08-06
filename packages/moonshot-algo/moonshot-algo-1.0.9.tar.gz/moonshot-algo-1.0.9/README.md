@@ -1,0 +1,1 @@
+# core for common entities and functionality in algo
