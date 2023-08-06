@@ -1,0 +1,3 @@
+[console_scripts]
+sqs-s3-logger = sqs_s3_logger.main:main
+
