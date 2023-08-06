@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyplotz
+Version: 0.20
+Summary: A light weight wrapper for matplotlib users with Chinese characters supported
+Home-page: https://github.com/201528015329004/pyplotz
+Author: Ray Williams
+Author-email: rock307977586@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/201528015329004/pyplotz/archive/0.20.tar.gz
+Description: UNKNOWN
+Keywords: pyplot,chinese,matplotlib,python,plt,pltz
+Platform: UNKNOWN
