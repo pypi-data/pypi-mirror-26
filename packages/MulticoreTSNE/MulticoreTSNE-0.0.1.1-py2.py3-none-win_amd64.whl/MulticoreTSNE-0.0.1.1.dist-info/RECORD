@@ -1,0 +1,10 @@
+MulticoreTSNE/__init__.py,sha256=Q35tr-s_3MZJR39PrtmOOxidVUyyogu6d-BGnjOf6t4,4603
+MulticoreTSNE/tsne_multicore.dll,sha256=y3JsD9mXBfpiLnYZowC4uN3S-VfByq3e7Vl2KFvuhMs,43520
+MulticoreTSNE/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MulticoreTSNE/tests/test_base.py,sha256=fmOeXxda8H8JFqeGWUnrfEK7gIHRuHaATNjVaP_Y6KU,2295
+MulticoreTSNE-0.0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+MulticoreTSNE-0.0.1.1.dist-info/METADATA,sha256=UP9PCPSPyyq-oYy7I4AbWsXitai1z8ulAkwCR6ky7oY,492
+MulticoreTSNE-0.0.1.1.dist-info/RECORD,,
+MulticoreTSNE-0.0.1.1.dist-info/WHEEL,sha256=3o6dJ54ci-MtRFdJCPkLCK5G-vO7QSv3lIQ-NrhglGk,106
+MulticoreTSNE-0.0.1.1.dist-info/metadata.json,sha256=u8_MhuwKZV4EIgUebfBW6Kxc9tPl0BWJzxwtjXOCa4o,693
+MulticoreTSNE-0.0.1.1.dist-info/top_level.txt,sha256=UXo3K_Ee4Ti7dd48mkTCjypUJSh4QtNo_KveQB2FFbs,14
