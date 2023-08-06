@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: nadds
+Version: 0.1.2
+Summary: Low level linux api calls for python
+Home-page: https://github.com/orlof/python-nadds/
+Author: Orlof
+Author-email: orlof@users.noreply.github.com
+License: GNU LGPL
+Download-URL: https://github.com/orlof/python-nadds/archive/0.1.2.tar.gz
+Description-Content-Type: UNKNOWN
+Description: Nadds is a library of Python extensions that complement the standard
+        libraries in parts where full support for the UNIX API (or the Linux
+        API) is missing.
+        
+        Most of the functions wrapped by Nadds are low-level, dirty, but
+        absolutely necessary functions for real systems programming. These 
+        functions are mostly added to mainstream Python3.
+        
+        Current list of features included:
+        
+        - recvmsg(2) and sendmsg(2), including use of cmsg(3)
+        
+        - socketpair(2)
+        
+        - support for TUN/TAP virtual network interfaces
+Keywords: python,api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities

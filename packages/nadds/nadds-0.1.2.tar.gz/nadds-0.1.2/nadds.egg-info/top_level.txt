@@ -1,0 +1,6 @@
+_tuntap
+nadds
+recvmsg
+sendmsg
+socket_const
+socketpair
