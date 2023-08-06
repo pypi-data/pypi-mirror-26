@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: mltest
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Chase Roberts
+Author-email: keeper6928@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+
+UNKNOWN
+
+
