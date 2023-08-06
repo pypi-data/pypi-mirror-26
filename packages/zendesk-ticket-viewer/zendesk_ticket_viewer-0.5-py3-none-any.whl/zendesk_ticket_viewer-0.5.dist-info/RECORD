@@ -1,0 +1,10 @@
+zendesk_ticket_viewer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zendesk_ticket_viewer/api.py,sha256=R1y9jDqtEnyGkF-mCA3zaZM4O82egRoFQIynAx_dpsg,4327
+zendesk_ticket_viewer/main.py,sha256=bZAl4hGQplhSCodEh2qd9u35bcYhRc8biSvfi-6KOis,2657
+zendesk_ticket_viewer/ticket.py,sha256=O_NoJz71CInTRk-wTjJ2a8LLm88J8uHYXN7Q0daAKss,1394
+zendesk_ticket_viewer-0.5.dist-info/DESCRIPTION.rst,sha256=UHVI2js0JCFiclXbfJSL2Gz6xddvQ3-dN2D6tKHE4y0,288
+zendesk_ticket_viewer-0.5.dist-info/METADATA,sha256=LSG2Ao92ogvWrHXb72_W1f_NV0pu5t8KOR0lGB0XZVM,630
+zendesk_ticket_viewer-0.5.dist-info/RECORD,,
+zendesk_ticket_viewer-0.5.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+zendesk_ticket_viewer-0.5.dist-info/metadata.json,sha256=CVYoXELODeWSCCmn1t-uoQl2rfZJljzh3SPQWQoSvgY,508
+zendesk_ticket_viewer-0.5.dist-info/top_level.txt,sha256=20G1fdIqsz7tIOR40KyY2uFXYSqWsk7WhOyjqjyddW8,22

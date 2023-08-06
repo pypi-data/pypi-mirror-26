@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: zendesk-ticket-viewer
+Version: 0.5
+Summary: A command line tool to view Zendesk tickets
+Home-page: UNKNOWN
+Author: Louis Stekhoven-Smith
+Author-email: louis.stekhoven@gmail.com
+License: GPL-3.0
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: zdesk
+Requires-Dist: pytest
+
+Zendesk Ticket Viewer for Command line
+=======================================
+
+Still in development - please refer to readme for more information
+https://github.com/LouisKnuckles/Zendesk_Ticket_Viewer
+
+Current features
+^^^^^^^^^^^^^^^^
+    - View all tickets
+    - View a single ticket
+
