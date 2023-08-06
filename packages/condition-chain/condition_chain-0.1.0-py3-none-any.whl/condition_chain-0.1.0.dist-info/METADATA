@@ -1,0 +1,53 @@
+Metadata-Version: 2.0
+Name: condition-chain
+Version: 0.1.0
+Summary: Process a series of conditional judgement with a chained call.
+Home-page: https://github.com/duyixian1234/condition_chain
+Author: Yixian Du
+Author-email: duyixian1234@outlook.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+
+Condition Chain
+===============
+
+Process a series of conditional judgement with a chained call.
+
+Example
+-------
+
+>>> from condition_chain import Condition
+>>> condition = Condition(1).be(2).equal(2.0 - 2)\
+        .differ('a').instance_of(str).expect(lambda x: x, 1)
+>>> print(condition.result(), condition.success, condition.failures, sep='\n')
+False
+[('be', 2), ('equal', 0.0), ('differ', 'a'), ('instance_of', 'str'), ('expect', ('<lambda>', 1))]
+[('be', 2), ('equal', 0.0), ('instance_of', 'str')]
+>>> condition = Condition([1,2,3]).contain(1).have('append').hold(3)
+True
+[('contain', 1), ('have', 'append'), ('hold', 3)]
+[]
+
+Install
+-------
+
+.. code-block:: shell
+pip install condition_chain
+
+Author
+------
+Yixian Du (duyixian1234@outlook.com)
+
