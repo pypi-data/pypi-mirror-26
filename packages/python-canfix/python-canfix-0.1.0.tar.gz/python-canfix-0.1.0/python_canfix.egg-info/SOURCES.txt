@@ -1,0 +1,10 @@
+README.rst
+setup.py
+canfix/__init__.py
+canfix/canfix.xml
+canfix/protocol.py
+python_canfix.egg-info/PKG-INFO
+python_canfix.egg-info/SOURCES.txt
+python_canfix.egg-info/dependency_links.txt
+python_canfix.egg-info/requires.txt
+python_canfix.egg-info/top_level.txt
