@@ -1,0 +1,16 @@
+recursive-include sdelib\*.py
+recursive-include sdelib\GUI\ *.py
+include sdelib\Operation.jpg
+include sdelib\GUI\Operation.qrc
+include sdelib\GUI\calcSolver.py
+include sdelib\GUI\chooseSolvers.py
+include sdelib\GUI\FullExampSpec.py
+include sdelib\GUI\probRealActions.py
+include sdelib\GUI\mainWin.py
+include sdelib\GUI\newF.py
+include sdelib\GUI\newG.py
+include sdelib\GUI\newFunc.py
+include sdelib\GUI\newReal.py
+include sdelib\GUI\newSpec.py
+include sdelib\GUI\solPlot.py
+include sdelib\GUI\solActions.py

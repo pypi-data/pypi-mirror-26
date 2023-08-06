@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: sdelib
+Version: 0.905
+Summary: Performs various actions on Ito SDEs
+Home-page: https://github.com/perhauan/sdelib
+Author: Per Hauan
+Author-email: perman07@hotmail.com
+License: UNKNOWN
+Download-URL: https://github.com/perhauan/sdelib/archive/master.zip
+Description: sdelib is a Python package (written in Python 3.5) for performing various
+        actions on Ito stochastic differential equations (SDE). These actions include:
+        1) Input SDEs as SDEprob objects.
+        2) Solve SDEs with an SDEint class that performs numerical Ito integration on
+        SDEprob objects.
+        3) Estimate strong and weak orders of convergence through a SDEanalysis class
+        4) Perform these actions either through creating a Python script which uses the
+        above classes, or running gui.py which allows you to perform these actions
+        quickly through a GUI.
+        
+        sdelib was written as part of a Master's thesis and is intended to be able to
+        do simple actions on SDEs without requiring a lot of coding to do so.
+        
+        
+        This version requires Python 3 or later;
+        
+Keywords: SDE,Ito,convergence,stability
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
