@@ -1,0 +1,13 @@
+keras_model_specs/__init__.py,sha256=F7NtyXWWBeTX6nqrGA9B2IOHYSqpGqqfjnFE-QRsNxQ,62
+keras_model_specs/model_spec.py,sha256=u4sD-L6-ooXyEXnu6MbR_ozCt6DnMuxgQbNcoFLaEiU,2380
+keras_model_specs/model_specs.json,sha256=hz7dX4exu2gnQUl8rp40wpjBITJq81T110fIvs6X8SQ,1428
+keras_model_specs/models/__init__.py,sha256=t8m77ll4UfjmRXS8T7QBocreZNQbp9VhP9enou7c1rY,122
+keras_model_specs/models/custom_layers.py,sha256=-HhyrrrpgQh0ZERt-jVZDPVM5Z9G5KbGmYnw55EoGtc,4482
+keras_model_specs/models/inception_v4.py,sha256=ouizAwcuprpaFaYj0sC6CxYv9gqj5kOzHqFIAWp-9Z0,10862
+keras_model_specs/models/resnet152.py,sha256=dShQP38sHiLqd48G3lAnO-wLLkkovwJsndFM77gwuPM,9326
+keras_model_specs-0.0.13.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+keras_model_specs-0.0.13.dist-info/METADATA,sha256=pArDE47goGp_x9Z2i-0vyrzohZlGk2ooIQgw4aqV4wU,426
+keras_model_specs-0.0.13.dist-info/RECORD,,
+keras_model_specs-0.0.13.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+keras_model_specs-0.0.13.dist-info/metadata.json,sha256=PBjPzPhi7Yg29Cp4VZk7d1cyPS_eZ42-rDK-Ksj5S7o,580
+keras_model_specs-0.0.13.dist-info/top_level.txt,sha256=fdM91YGvsfTteAC_o-4exFAXNQkeydWztapQ17yTnEQ,18
