@@ -1,0 +1,110 @@
+#!python
+# coding: utf-8
+# Copyright (c) Linyuan Shi.
+# Distributed under the terms of the MIT License.
+import argparse
+import sys
+import os.path
+from shutil import copyfile
+from string import Template
+from lmpIndentation import PACKAGE_PATH
+
+
+class GenerateInputFile(argparse.Action):
+    def __init__(self, option_strings, dest, nargs,  **kwargs):
+        super(GenerateInputFile, self).__init__(
+            option_strings, dest, nargs, **kwargs)
+
+    def __call__(self, parser, namespace, values, option_string=None):
+        setattr(namespace, self.dest, values)
+        self.generate_input(values[0])
+
+    def generate_input(self, values):
+        with open(os.path.join(PACKAGE_PATH, 'templates/elastic/in.elastic.template'), 'r') as f:
+            input_file = Template(f.read())
+        text = input_file.safe_substitute(pressure=values)
+        with open(os.path.join('.', 'in.elastic'), 'w') as f:
+            f.write(text)
+
+
+class CopyTemplate(argparse.Action):
+    def __init__(self, option_strings, dest, nargs, const,  **kwargs):
+        super(CopyTemplate, self).__init__(
+            option_strings, dest, nargs, const, **kwargs)
+
+    def __call__(self, parser, namespace, values, option_string=None):
+
+        setattr(namespace, self.dest, values)
+        self.copy_all(values)
+
+    def copy_all(self, destination):
+        file_init_src = os.path.join(
+            PACKAGE_PATH, './templates/elastic/init.mod')
+        file_init_dst = os.path.join(destination, 'init.mod')
+        file_displace_src = os.path.join(
+            PACKAGE_PATH, './templates/elastic/displace.mod')
+        file_displace_dst = os.path.join(destination, 'displace.mod')
+        file_potential_src = os.path.join(
+            PACKAGE_PATH, './templates/elastic/potential.mod')
+        file_potential_dst = os.path.join(destination, 'potential.mod')
+        file_in_src = os.path.join(
+            PACKAGE_PATH, './templates/elastic/in.elastic')
+        file_in_dst = os.path.join(destination, 'in.elastic')
+        self.copy(file_init_src, file_init_dst)
+        self.copy(file_displace_src, file_displace_dst)
+        self.copy(file_potential_src, file_potential_dst)
+        self.copy(file_in_src, file_in_dst)
+
+    def copy(self, source, target):
+        try:
+            copyfile(source, target)
+        except IOError as e:
+            print("Unable to copy file. %s" % e)
+            sys.exit(1)
+        except:
+            print("Unexpected error:", sys.exc_info())
+            sys.exit(1)
+
+
+class ReplaceLatticeConstant(argparse.Action):
+    def __init__(self, option_strings, dest, nargs, metavar, ** kwargs):
+        super(ReplaceLatticeConstant, self).__init__(
+            option_strings, dest, nargs, metavar=metavar, **kwargs)
+
+    def __call__(self, parser, namespace, values, option_string=None):
+        setattr(namespace, self.dest, values)
+        self.generate_file(values)
+
+    def generate_file(self, values):
+        file_path = values[0]
+        with open(file_path, 'r') as f:
+            content = Template(f.read())
+        text = content.safe_substitute(lattice_constant=values[1])
+        with open(os.path.join('.', 'init.mod'), 'w') as f:
+            f.write(text)
+
+
+parser = argparse.ArgumentParser(
+    description='Calculate elatsic at different conditions.')
+parser.add_argument(
+    '--pressure',
+    metavar='pressure_value',
+    nargs=1,
+    action=GenerateInputFile,
+    help='Generate in.elastic at local file direction')
+parser.add_argument(
+    '--template',
+    metavar='file_path',
+    const='.',
+    nargs='?',
+    action=CopyTemplate,
+    help='Copy elastic lammps input file to specific file direction')
+
+parser.add_argument(
+    '--lattice_constant',
+    metavar=('file_path', 'lattice_constant'),
+    nargs=2,
+    action=ReplaceLatticeConstant,
+    help='Copy elastic lammps input file to specific file direction')
+
+parser.parse_args()

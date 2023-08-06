@@ -1,0 +1,8 @@
+# include README.rst
+# include docs/*.txt
+# include funniest/data.json
+include lmpIndentation/templates/elastic/displace.mod
+include lmpIndentation/templates/elastic/in.elastic
+include lmpIndentation/templates/elastic/in.elastic.template
+include lmpIndentation/templates/elastic/init.mod
+include lmpIndentation/templates/elastic/potential.mod
