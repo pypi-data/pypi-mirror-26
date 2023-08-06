@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cc-core
+Version: 0.1
+Summary: Curious Containers is an application management service that is able to execute thousands of short-lived applications in a distributed cluster by employing Docker container engines.
+Home-page: https://github.com/curious-containers/cc-agent
+Author: Christoph Jansen, Michael Witt, Maximilian Beier
+Author-email: Christoph.Jansen@htw-berlin.de
+License: Apache-2.0
+Description: UNKNOWN
+Platform: any
