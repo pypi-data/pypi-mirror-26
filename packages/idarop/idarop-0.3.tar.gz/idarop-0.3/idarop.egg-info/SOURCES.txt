@@ -1,0 +1,14 @@
+MANIFEST.in
+__ida_setup__.py
+setup.cfg
+setup.py
+idarop/__init__.py
+idarop/engine.py
+idarop/manager.py
+idarop/ui.py
+idarop.egg-info/PKG-INFO
+idarop.egg-info/SOURCES.txt
+idarop.egg-info/dependency_links.txt
+idarop.egg-info/requires.txt
+idarop.egg-info/top_level.txt
+plugins/idarop_plugin_t.py

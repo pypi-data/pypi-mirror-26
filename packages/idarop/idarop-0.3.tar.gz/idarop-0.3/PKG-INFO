@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: idarop
+Version: 0.3
+Summary: ROP search and visualization plugin for IDA
+Home-page: https://github.com/lucasg/idarop
+Author: lucasg
+Author-email: lucas.georges@outlook.com
+License: UNKNOWN
+Description: ROP search and visualization plugin for IDA
+Platform: UNKNOWN

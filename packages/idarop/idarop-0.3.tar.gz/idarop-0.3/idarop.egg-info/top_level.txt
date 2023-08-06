@@ -1,0 +1,3 @@
+__ida_setup__
+idarop
+plugins/idarop_plugin_t
