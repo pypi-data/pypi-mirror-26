@@ -1,0 +1,12 @@
+numpy>=1.9
+sympy>=0.7.6, !=1.1.0
+pyparsing
+jinja2>=2.7
+py-cpuinfo>=0.1.6
+setuptools>=6.0
+
+[docs]
+sphinx>=1.5
+
+[test]
+nosetests>=1.0
