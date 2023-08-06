@@ -1,0 +1,17 @@
+txwebbackendbase/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+txwebbackendbase/logging.py,sha256=54xNT0JSvzH7Djbh9NiSHTdDww18Lo2p-QCYHXcgi5E,3654
+txwebbackendbase/requests.py,sha256=t-VTCWZlaMQ4CE8lkM8rOxpde1jHDHdgZfnyF9bUVlQ,559
+txwebbackendbase/singleton.py,sha256=IyAQh4pE1EbXHIrpj7_34uA4WIggVp8oCmdDl4UBz28,2553
+txwebbackendbase/threading.py,sha256=dakdHBdhZ3SRGqDKsXCZZKaa43VZi0XV09GjbXzMJOc,5920
+txwebbackendbase/txutils.py,sha256=1_3bUsp2S-hGYEsNe0eyPYQUr6NYCbJ44Pf7gIdZ_g0,15699
+txwebbackendbase/utils.py,sha256=gEzHCe7_eB6CPjG8K3lUzK4cXDosamlR_j1bhQN6U-M,634
+txwebbackendbase/tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+txwebbackendbase/tests/test_logging.py,sha256=IW35kS2-_BxLBM7wSr_i50mob3dF9VVvCoDx9wWiMN0,833
+txwebbackendbase/tests/test_txwebbackendbase.py,sha256=hbexViQQ1Jz0OK593yZ7APYQFnmUPeFksq1HA5RjlRE,539
+txwebbackendbase-0.2.1.dist-info/DESCRIPTION.rst,sha256=RLPIpwb8Pp2Y5lML4lA7SRhZXFynJOG5ADdbTpnKmeo,2503
+txwebbackendbase-0.2.1.dist-info/METADATA,sha256=jkeqSUo6hI_6-KG1g1jp_PsV1s0ZwI_sajECD3klFN4,3318
+txwebbackendbase-0.2.1.dist-info/RECORD,,
+txwebbackendbase-0.2.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+txwebbackendbase-0.2.1.dist-info/metadata.json,sha256=JrTiauIocm65b8CGwlVHWxZ18FON_1BZDslhnUC9ILI,944
+txwebbackendbase-0.2.1.dist-info/pbr.json,sha256=MvHBT3NZvSkLgTQ0snWddGBo0Zp0gobsPHHEEHyQ_OY,47
+txwebbackendbase-0.2.1.dist-info/top_level.txt,sha256=AlujSKfhVb0lhH53rDkISuwyifT542JleBCsgkZ_OYw,17
