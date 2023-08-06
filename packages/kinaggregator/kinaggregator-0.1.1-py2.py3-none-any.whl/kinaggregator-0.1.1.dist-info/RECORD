@@ -1,0 +1,11 @@
+kinaggregator/__init__.py,sha256=qYxPQvCTnh_qD6Pt3R9LoXmPL2odb4ObL6CjglniSUY,975
+kinaggregator/aggregator.py,sha256=NXNqLLJcRy0h9adO9w-aPbGL9uIly6dI6zU6ubkNieo,16877
+kinaggregator/deaggregator.py,sha256=mT1bQlxPPeJlWltvU_hjOYNGaHQbXZx-AHNuaz2wtuc,7386
+kinaggregator/kpl_pb2.py,sha256=xilT3KehwzJKvta5HMyNARvyYR7rFSsI6BOgkSuxEtk,7291
+kinaggregator-0.1.1.dist-info/DESCRIPTION.rst,sha256=BCMKu9-pyNBgeoeDkKLRotF1dA0pUVnoXi6zR_l88hc,14132
+kinaggregator-0.1.1.dist-info/LICENSE.txt,sha256=I-Ju91hnYzhzUufqsPo2c2WMD0uD7GMNsCj_8KJbBEM,4756
+kinaggregator-0.1.1.dist-info/METADATA,sha256=Ek58WXWduTvbLabDKx4FoZrxXtYAhC6_Sc5smVUQcgE,15109
+kinaggregator-0.1.1.dist-info/RECORD,,
+kinaggregator-0.1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+kinaggregator-0.1.1.dist-info/metadata.json,sha256=geVSJolWyLtKLYxcGDf69EtLUSdMsg0u_ub9yPTFlI4,1164
+kinaggregator-0.1.1.dist-info/top_level.txt,sha256=EuJ62-ogkDqRbY80tlYsLTU4pSxPiejXa39lCBbSMs8,14
