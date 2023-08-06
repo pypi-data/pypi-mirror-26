@@ -1,0 +1,3 @@
+[console_scripts]
+sample_random = sample_random.try_random:main
+
