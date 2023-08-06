@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+py_daily/__init__.py
+py_daily/contours/__init__.py
+py_daily/filesystem/__init__.py
+py_daily/filesystem/batch_rename.py
+py_daily/images/__init__.py
+py_daily/plots/__init__.py
+py_daily/plots/subplot.py
+py_daily/slides/__init__.py
+pydaily.egg-info/PKG-INFO
+pydaily.egg-info/SOURCES.txt
+pydaily.egg-info/dependency_links.txt
+pydaily.egg-info/top_level.txt
