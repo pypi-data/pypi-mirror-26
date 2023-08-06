@@ -1,0 +1,68 @@
+CHANGES
+=======
+
+0.4.11
+------
+
+* update api for transmute
+* try sanic transmute for swagger model
+* make update should keep dev environment
+* sync test should still use unittest.TestCase
+* minor fixes
+* Note about MANIFEST.in
+* use MANIFEST.in to exclude files in sdist
+* using asynctest.TestCase
+* # coding: utf-8 simpler
+* remove \_\_import\_\_ since python 3
+* created queued task
+* Status page auto refresh
+
+0.4.10
+------
+
+* flake8 check bad list comprehension
+* flake8 to enforce encodings header
+* Fix background task reports
+* refactor task managers & remove periodic tasks
+* Rename DopplerrExecutors in TaskManager
+* reworked subliminal wrapper
+* Minor fixes
+
+0.4.9
+-----
+
+* fix root log level
+* remove recursive\_iglob
+* using my new logging factory
+* removing logging
+
+0.4.8
+-----
+
+* pylint
+* starting to play with apscheduler
+* imported good old logging splitter
+* use moved singleton and iglob
+* Fix dirty db override
+* asyncio debug mode
+* rework a bit color logs
+* remove dependency on txwebbackendbase
+* task unit tests
+* add minor tweaks
+* install pip in current venv3 in travis
+* remove UseMyLoggingSanic class
+* add task unit test base
+* gather tasks in tasks.executors
+* task manager
+* reenable cfgtree unit tests
+* Forget about transaction
+* use SqliteQueueDatabase instead of pysqlite
+* rework response structure
+* using executor to process tasks (still blocking)
+* ln venv link to whole venv
+* info in makefile
+* rename sonarr on download notif
+* ln -s venv in .venv
+* explosion of: notification, descriptors, tasks
+* replace klein by sanic
+* Initial readme for cfgtree
