@@ -1,0 +1,176 @@
+CHANGES
+=======
+
+5.0.0
+-----
+
+* Correct list of parameters
+* Move CreateInstancePubPrivNetTests test to staging
+* Increse ssh timeout in Ansible
+* Fix to a UserSettings pydoc explaination of an attribute
+* Grant the new user to os\_creds.project\_name
+* Get the correct endpoints URL based on OS\_REGION\_NAME env property
+* Specify segmentation\_id when creating network
+* Fix validate\_ssh\_client
+* Scripts to allow Jenkins to run the SNAPS-OO tests
+* Assign a role to the new user
+* SNAPS Stack creators can now return SNAPS network creators
+* Added feature to update the quotas on a project/tenant
+* Added test ability for 2 VMs on different networks to ping each other
+* Configure requirements for AAVMF(UEFI) with Cirros image on AArch64
+* Refactored neutron\_utils#get\_router\_by\_name() to get\_router()
+* Refactored neutron\_utils#get\_security\_group()
+* Add domain name when creating projects and users
+* Refactored neutron\_utils#get\_subnet\_by\_name() to get\_subnet()
+* Refactor server retrieval API calls
+* Refactored port retrieval to include PortSettigs
+* Delete 'default' security group associated to new projects
+* Add domain name when creating projects and users
+* Refactor network retrieval API calls
+* Fixed logging out the OSCreds
+* Fixed failing router test on Aricent pod
+* Changed keystone\_utils#get\_project to accept settings
+* Reformat auth\_url based on the ID API version
+* Changed heat\_utils#get\_stack\_by\_name to get\_stack
+* Added image\_settings parameter to get\_image()
+* Attempt to fix domain support
+* Remove TODOs from create\_router.py
+* Removed floating IP list from OpenStackVmInstance
+* Ensure library and tests close all necessary resources
+* Changes to enable overriding the OSCreds for tests
+* Updated docs for the OSCreds class
+* Expand OpenStackSecurityGroup class tests
+* Expanded project creation tests and validation
+* Comment housekeeping..
+* Removed TODO from comment about the physical network value
+* Removed TODO comment from lanucher app
+* Removed TODO comment from sample playbook
+* Added configuration for keypair size
+* Added region support
+* Added validation router is attached to the external network
+* Added keypair config for key file deletion
+* Updated docs
+* Fixed problems when setting the OpenStack project ID
+* Fixed potential problems with image creation exceptions
+* Added and improved flavor creation tests
+* Refactor glance\_utils.py v1 image creation
+* Remove temporary directory created for tests
+* Created new classes RouterSettingsError & RouterCreationError
+* Default OSCreds cacert attribute to False
+* Created new exceptions for security group settings
+* Created new class ProjectSettingsError
+* Created new exception classes for networks
+* Changes required for running CI tests (Pike pod)
+* Created new class KeypairSettingsError
+* Fixed logger name
+* Created custom exceptions for VM instance creation
+* Created new class FlavorSettingsError
+* Created new class AnsibleException
+* Added proper assertion config NIC test
+* Created new class NovaException
+* Last task necessary to stop users from easily obtaining OS objects
+* Created new class KeystoneException
+* Created new class GlanceException
+* Created new class NeutronException
+* Created domain classes for networks and subnets
+* Created domain class for routers
+* Created domain class for roles
+* Created domain class for ports
+* Crteated domain class for projects
+* Fix the unittest of get\_endpoint
+* Demo script to show how to use the library
+* Created domain classes for security groups
+* Added ability to add a user to a role
+* Allow ssh when testing via ansible
+* Fixed stack create status check on error
+* Changed validation logic to check for DHCP lease before SSH connection
+* Fix get\_endpoint
+* Created domain object for users
+* Created domain object for keypairs
+* Completed tests for creating networks of different types
+* Created domain object for flavors
+* Added support for using '~' for SSH key location
+* Making test user password dynamic for testing against secure pods
+* Refactor OSCreds to leverage kwargs instead of named parameters
+* Add a warning of keypair creation
+* Sync requirements.txt with OpenStack (novaclient)
+* Fixed tests to delete security groups
+* Changed credentials for deploying heat templates
+* FIX mistake in import keypair
+* Fixed test to not download images when configured with a disk file path
+* Added offline test support to NovaUtilsInstanceTests missed initially
+* Enable snaps work using public endpoint
+* Use neutron to create floating IPs
+* Enable https for Openstack in Snaps
+* Fixed launcher app to support new settings kwargs
+* Changes UserSettings constructor to use kwargs
+* Changes StackSettings constructor to use kwargs
+* Changes SecurityGroupSettings & SecurityGroupRuleSettings constructor to use kwargs
+* Changes to RouterSettings constructors to use kwargs
+* Changes to ProjectSettings constructors to use kwargs
+* Changes to NetworkSettings, SubnetSettings, and PortSettings constructors to use kwargs
+* Changes to KeypairSettings constructor to use kwargs
+* Changes to VMInstanceSettings and FloatingIPSettings constructors
+* Changes ImageSettings constructor to use kwargs
+* Changes FlavorSettings constructor to use kwargs
+* Ignore several files
+* Leverage on pbr (Python Build Reasonableness)
+* Need to move file resources required by tests
+* Changed logic to return only active availability zones
+* Create download directory if not exists before downloading image file
+* Missed image config for configuring multiple NICs test
+* Fixed problems found in Functest after implementing offline testing
+* Removed current working directory logic retrieving test file resources
+* Added custom security group with ICMP and SSH rules
+* Added support for applying Heat Templates
+* Fixed RST warning
+* Refactor keystone endpoint tests to the proper test class. Also added documentation for those three tests
+* Updated installation documents and fixed problems found during investigation
+* Find packages in setup.py
+* Fix typo in setup.py
+* Fixed error in ansible\_utils\_tests.py and added ansible helper method to the OpenStackVMInstance class
+* Add the function of getting endpoint
+* bugfix: get\_security\_group\_by\_id always return first element
+* Added support for offline testing
+* Ensure creators' constructors cannot raise exceptions
+* Fixed some redundant dict() key checks that can cause runtime errors
+* Modified code to support both Python 2.7 and 3.x
+* Restricted dependency of the novaclient
+* Changed image metadata to support cirros, ubuntu, and centos
+* Matching test\_check\_vm\_ip\_dhcp on ip only
+* Refactored multi-part images
+* Fixed issue caused previous patch which did not merge correctly
+* Fixed the Glance connection test routines. test\_glance\_connect\_success gave a false positive and test\_glance\_connect\_fail gave a false negative. Both were calling incorrect APIs due to copying from the equivalent nova\_utils.py test
+* Fixed test for security groups when checking for project/tenant ID
+* Added support for Glance v2
+* Run all test suites when none chosen
+* Ensuring each port manipulation test waits for the instance to become active
+* Refactored SNAPS tests to take in the actual OSCreds object
+* Renamed test application and added new command line arguments
+* Fixed two tests that never had their networks removed on tearDown()
+* Problem found while working on FUNCTEST-577 where instances with security groups need to be active before application
+* Call to ansible\_utils.apply\_playbook needed named paramteters
+* Fixed cleanup after failed deploy
+* Correcting minor issues with the documentation
+* Check for kernel\_url and ramdisk\_url keys in dict
+* Add DEBUG logs to SimpleHealthCheck for VM console output
+* reduce instance's memory size
+* Adapt integration tests to use custom image config
+* Add check that SSH validate returns true
+* Adapt simple health check to use 3-part image
+* Added the ability to give the tests the ability to add in flavor metadata
+* Fixed docs build and examples
+* Removed test class in question from the test builder
+* Added new 3-part image tests to test\_suite\_builder.py and documented them in IntegrationTests.rst
+* Add support for extra properties in an image
+* Ensuring all instances must have ports/network. Fixing the addition of security groups during server instantiation
+* Added Ansible substitution value support for flavor IDs, image IDs, and image\_user values to the SNAPS-OO application deploy\_venv.py
+* Improve way to check instances getting an IP
+* Make SNAPS repo installable as a python module
+* Added the ability to create custom flavors with the deploy\_venv.py application
+* Accidentally checked in changes to this file
+* Added the ability to add in configurable metadata to flavor creation. In order to properly support standard and DPDK installations, the default metadata value is hw:mem\_page\_size=any
+* Converted existing markdown documentation to RST format. Removed MD versions. Moved examples directory up one under repo root Moved RST files under docs/how-to-use
+* Initial patch with all code from CableLabs repository
+* Adding INFO and LICENSE for review
+* Initial empty repository
