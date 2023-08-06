@@ -1,0 +1,13 @@
+LICENSE,sha256=XxWaaQOAS9fd2OyL4bYAgoJE2bnJR3I-985_7Bv3_rA,1072
+VERSION,sha256=y-NTX1iTRVRydKI09GknkRSUGWd6Z3N7bhfzcbY_3e0,5
+requirements.txt,sha256=7HJCDfXfvc5BEfcVyWM43zt8t19Y5HjSRJyXIOVg3ow,8
+pythosf/__init__.py,sha256=BSQjM-djuPmm9iqBW0WJj4j3mDPY2QrTvyLdXW_gvqI,34
+pythosf/client.py,sha256=_5oM3P6ObI3iVIlKzClMGER-ae4k30CyunLG0AvdIRs,10505
+pythosf/exceptions.py,sha256=npps1HBIcyOTp0qc3y3F_6jv3WkBZ33a_SdJQD1S-nw,147
+pythosf/utils.py,sha256=KpCCurKNOwMDc8jMdEZqoZcbUtXRRtv7Ye_gOvWCbAQ,472
+pythosf-0.0.2.dist-info/DESCRIPTION.rst,sha256=BZRNHjwTFgb80_vaZ9OJZrgCQ-6X96R7eK5ijiXIYi4,682
+pythosf-0.0.2.dist-info/METADATA,sha256=8E2RKLGcB6y9ks_IiH0fEg4_yIUtweU-SuhynkLzmAw,1378
+pythosf-0.0.2.dist-info/RECORD,,
+pythosf-0.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pythosf-0.0.2.dist-info/metadata.json,sha256=yENU2JM7avWBWIwJzVZ20PbUCeV9FcaG8BWYJIQztLI,848
+pythosf-0.0.2.dist-info/top_level.txt,sha256=YnQ-Yce-J-A1nZEweAHmchkY6YxtMBxQJj_d4oU6p2U,8
