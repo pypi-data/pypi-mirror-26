@@ -1,0 +1,14 @@
+mojang_api/__init__.py,sha256=fbBJM1eDt5h5AQOnARGGVPtbzYPEnsmrpdui3h2EnrE,80
+mojang_api/utils.py,sha256=buImG2DnZJsRuA1Al4PgK09MsxEmoakk__ZblpGnmto,101
+mojang_api/api/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+mojang_api/api/_common.py,sha256=GwVT3tXAp48u6l60WazpD4fFmitQR8IsH8T_U2tqb9s,736
+mojang_api/api/api.py,sha256=OJBNfrhpyjhof9uto9r8PBV6Q0RpXTxY25F3AXXwgKE,2684
+mojang_api/api/authserver.py,sha256=sLw03GAPnqiBirEGX2t4b-2Er9yDlXwaE9iGvn3JibE,2014
+mojang_api/api/sessionserver.py,sha256=SXr2lXFZqNBdAoXWG1ccXzVWlK4b2C8iZkpgORZUz6Y,618
+mojang_api/api/status.py,sha256=am1MH62TNU1P7TY3eUAUUjKibiwzPIL8UVSHsy9F5hk,340
+mojang_api-0.2.0.dist-info/DESCRIPTION.rst,sha256=1_YaZlukvG_ZmO9V8oPcNEndHhSB7qjhYYdyKUzTiVM,153
+mojang_api-0.2.0.dist-info/METADATA,sha256=XyG83OHcpKN82xogmp9fEkBpTW8qP6thzRzzV683ofI,987
+mojang_api-0.2.0.dist-info/RECORD,,
+mojang_api-0.2.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+mojang_api-0.2.0.dist-info/metadata.json,sha256=Hjh5Retmum4Kfthl_bZKViREtSkZFvhMkYADVVGAwcM,985
+mojang_api-0.2.0.dist-info/top_level.txt,sha256=M1k7uRsNZDyp9298cbSIBce18H6UhWwF-YQ4vxxsJf8,11
