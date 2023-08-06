@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+rpy2==2.7.8
+pandas
+scipy
+tensorflow==0.10.0.rc0
