@@ -1,0 +1,12 @@
+netCDF4/__init__.py,sha256=DUZ8jlRTx_T9WpFlMAsI73fpv1xn_Eu9pXHYhEE63QQ,686
+netCDF4/_netCDF4.pyd,sha256=qQzq7S6VyrNEQcH2Y1FT2WQxO1tcX9fmnuDCBouacF4,5954560
+netCDF4/utils.py,sha256=6vKCw8dNuqgOt61OE0XWGPL51vhJrAO11NAIjYRt0Ng,36534
+netCDF4-1.3.1.dist-info/DESCRIPTION.rst,sha256=JRCWU27beTqJzPaDrf__DJyLezYNCl9LC6TnMIP-qYs,588
+netCDF4-1.3.1.dist-info/METADATA,sha256=mJasi3-oGK18xdniOY4pTtx4tsAd_vZSKF5rplGlZVs,1747
+netCDF4-1.3.1.dist-info/RECORD,,
+netCDF4-1.3.1.dist-info/WHEEL,sha256=7pXE7FIXmTfpOoo1hQOaYXJLsnqe0Fv1cCOPIGJp4sE,102
+netCDF4-1.3.1.dist-info/entry_points.txt,sha256=SOaA1ioikuEHrv2NnxYU7BBVds5ZzBNOLWA5LN3p5Yk,117
+netCDF4-1.3.1.dist-info/metadata.json,sha256=cLysQY7dlOfj2-9xwhv738Rt-8M1rxAX5PukrZEocoo,1611
+netCDF4-1.3.1.dist-info/top_level.txt,sha256=Dbr2T6yP1P09q8guSHItr7hbiKZ0Xz22cT7F7F8XqwQ,19
+netcdftime/__init__.py,sha256=JsP0AZ4Y6uE6HffExzz8RPoXZcToeqzErkXw-0lcCS0,520
+netcdftime/_netcdftime.pyd,sha256=D2NLRpV8T4E2lqDgnu8bfhX44E1oechaTrM_wYb58Dc,339968
