@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: pybuilder-pylint-extended
+Version: 1.1.0
+Summary: PyBuilder Pylint Extended Plugin
+Home-page: https://github.com/AlexeySanko/pybuilder_pylint_extended
+Author: Alexey Sanko
+Author-email: alexeycount@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: pylint
+
+Please visit https://github.com/AlexeySanko/pybuilder_pylint_extended for more information!
+
+
