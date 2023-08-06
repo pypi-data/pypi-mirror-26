@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Ofpp
+Version: 0.1
+Summary: A simple Python code for parse OpenFOAM data to Numpy.array
+Home-page: UNKNOWN
+Author: XU Xianghua
+Author-email: dayigu@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
