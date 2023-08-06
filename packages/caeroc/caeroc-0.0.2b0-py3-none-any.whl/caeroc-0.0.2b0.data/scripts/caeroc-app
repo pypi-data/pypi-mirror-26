@@ -1,0 +1,8 @@
+#!python
+import caeroc
+
+try:
+    caeroc.launch()
+except AttributeError:
+    app = caeroc.gui.CalcApp()
+    app.run()
