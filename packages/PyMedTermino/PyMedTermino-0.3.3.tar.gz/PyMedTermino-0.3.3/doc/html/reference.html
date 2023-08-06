@@ -1,0 +1,1172 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Module reference &#8212; PyMedTermino 0.3.3 documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.3.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tutoriel PyMedTermino (French version / version française)" href="tuto_fr.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tuto_fr.html" title="Tutoriel PyMedTermino (French version / version française)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyMedTermino 0.3.3 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pymedtermino">
+<span id="module-reference"></span><h1>Module reference<a class="headerlink" href="#module-pymedtermino" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pymedtermino">
+<h2>pymedtermino<a class="headerlink" href="#pymedtermino" title="Permalink to this headline">¶</a></h2>
+<p>PyMedTermino (Medical Terminologies for Python) is a Python module for easy access to the main medical terminologies in Python, including SNOMED CT, ICD10, MedDRA, UMLS and VCM icons.</p>
+<p>PyMedTermino is available under the GNU LGPL licence, and it has been created by Jean-Baptiste Lamy,
+LIMICS, Paris 13 University, Sorbonne Paris Cité, INSERM UMRS 1142, Paris 6 University
+74 rue Marcel Cachin
+93017 Bobigny, France</p>
+<p>This module includes Pymedtermino’s global parameters, the base classes for terminology-specific modules, and utility classes.</p>
+<div class="section" id="global-parameters">
+<h3>Global parameters<a class="headerlink" href="#global-parameters" title="Permalink to this headline">¶</a></h3>
+<dl class="data">
+<dt id="pymedtermino.DATA_DIR">
+<code class="descclassname">pymedtermino.</code><code class="descname">DATA_DIR</code><em class="property"> = '/home/jiba/src/pymedtermino'</em><a class="headerlink" href="#pymedtermino.DATA_DIR" title="Permalink to this definition">¶</a></dt>
+<dd><p>the directory where SQLite3 database files containing terminologies are located. Default : PyMedTermino directory.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pymedtermino.LANGUAGE">
+<code class="descclassname">pymedtermino.</code><code class="descname">LANGUAGE</code><em class="property"> = 'en'</em><a class="headerlink" href="#pymedtermino.LANGUAGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the default language used for terms, when several translations are available. If the desired language is not available, it defaults to English.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">this parameter must be set BEFORE loading terminologies. Default : “en” (English).</p>
+</div>
+</dd></dl>
+
+<dl class="data">
+<dt id="pymedtermino.REMOVE_SUPPRESSED_CONCEPTS">
+<code class="descclassname">pymedtermino.</code><code class="descname">REMOVE_SUPPRESSED_CONCEPTS</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.REMOVE_SUPPRESSED_CONCEPTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>if True, concepts tagged as suppressed or depreciated in terminologies are skipped.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pymedtermino.REMOVE_SUPPRESSED_TERMS">
+<code class="descclassname">pymedtermino.</code><code class="descname">REMOVE_SUPPRESSED_TERMS</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.REMOVE_SUPPRESSED_TERMS" title="Permalink to this definition">¶</a></dt>
+<dd><p>if True, terms (=translations) tagged as suppressed or depreciated in terminologies are skipped.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pymedtermino.REMOVE_SUPPRESSED_RELATIONS">
+<code class="descclassname">pymedtermino.</code><code class="descname">REMOVE_SUPPRESSED_RELATIONS</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.REMOVE_SUPPRESSED_RELATIONS" title="Permalink to this definition">¶</a></dt>
+<dd><p>if True, relations tagged as suppressed or depreciated in terminologies are skipped.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="general-functions">
+<h3>General functions<a class="headerlink" href="#general-functions" title="Permalink to this headline">¶</a></h3>
+<p>The following function can get any concept from a “terminology:code” string:</p>
+<dl class="function">
+<dt id="pymedtermino.get_concept">
+<code class="descclassname">pymedtermino.</code><code class="descname">get_concept</code><span class="sig-paren">(</span><em>full_code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.get_concept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a concept from a ‘full code’ including both terminology name and concept code (for example “icd10:I10”).</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bases-classes">
+<h3>Bases classes<a class="headerlink" href="#bases-classes" title="Permalink to this headline">¶</a></h3>
+<p>This module also defined the <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">Terminology</span></code></a>, <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">Concept</span></code></a>, <a class="reference internal" href="#pymedtermino.Mapping" title="pymedtermino.Mapping"><code class="xref py py-class docutils literal"><span class="pre">Mapping</span></code></a>
+classes that are used as base classes for the various terminologies.</p>
+<dl class="class">
+<dt id="pymedtermino.Terminology">
+<em class="property">class </em><code class="descclassname">pymedtermino.</code><code class="descname">Terminology</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all terminologies.</p>
+<dl class="attribute">
+<dt id="pymedtermino.Terminology.name">
+<code class="descname">name</code><a class="headerlink" href="#pymedtermino.Terminology.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>name of the terminology</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.first_levels">
+<code class="descname">first_levels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.first_levels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the root concepts in the terminology (=concepts without parents).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for concepts whose terms match the given text (free-text search).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a list of concept.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.all_concepts">
+<code class="descname">all_concepts</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.all_concepts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retuns a generator for iterating over <em>all</em> concepts in the terminology.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.all_concepts_no_double">
+<code class="descname">all_concepts_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.all_concepts_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retuns a generator for iterating over <em>all</em> concepts in the terminology, each concept being iterated only once (for multiaxial terminologies).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retuns the concept of the given code, or None if no such concept.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.has_concept">
+<code class="descname">has_concept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.has_concept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retuns True if the terminology has a concept of the given code.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Terminology.concept">
+<code class="descname">concept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Terminology.concept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retuns the concept of the given code; raise ValueError if it does not exist.
+Also available as Terminology[code] (i.e. Terminology.__getitem__).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.Concept">
+<em class="property">class </em><code class="descclassname">pymedtermino.</code><code class="descname">Concept</code><span class="sig-paren">(</span><em>code</em>, <em>term</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all concepts, in any terminology.</p>
+<dl class="attribute">
+<dt id="pymedtermino.Concept.terminology">
+<code class="descname">terminology</code><a class="headerlink" href="#pymedtermino.Concept.terminology" title="Permalink to this definition">¶</a></dt>
+<dd><p>the terminology this concept is extracted from.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Concept.code">
+<code class="descname">code</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.Concept.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>the code of the concept</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Concept.term">
+<code class="descname">term</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.Concept.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>the preferred term (i.e. label) of the concept</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Concept.terms">
+<code class="descname">terms</code><a class="headerlink" href="#pymedtermino.Concept.terms" title="Permalink to this definition">¶</a></dt>
+<dd><p>the list of terms for this concept.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Concept.parents">
+<code class="descname">parents</code><a class="headerlink" href="#pymedtermino.Concept.parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>the list of parent concepts.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Concept.parents is <em>always</em> a list, even for terminologies with single inheritance (like ICD10). This allows to write terminology-independent code.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Concept.children">
+<code class="descname">children</code><a class="headerlink" href="#pymedtermino.Concept.children" title="Permalink to this definition">¶</a></dt>
+<dd><p>the list of children concepts.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Concept.relations">
+<code class="descname">relations</code><a class="headerlink" href="#pymedtermino.Concept.relations" title="Permalink to this definition">¶</a></dt>
+<dd><p>the list of the available relations for this concept. The available relations depend of the terminology, and is-a relations are not included (use parents and children attributes). Each relation corresponds to an attribute of the concept.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.full_code">
+<code class="descname">full_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.full_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the ‘full code’ for this concept, including both terminology name and concept code (for example “icd10:I10”).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.get_translation">
+<code class="descname">get_translation</code><span class="sig-paren">(</span><em>language</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the preferred term for this concept, in the given language. Not supported by all terminology.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.get_translations">
+<code class="descname">get_translations</code><span class="sig-paren">(</span><em>language</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.get_translations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all concept’s terms, in the given language. Not supported by all terminology.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.is_a">
+<code class="descname">is_a</code><span class="sig-paren">(</span><em>concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.is_a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if this concept is a child of the given concept (or if both concepts are the same).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.__rshift__">
+<code class="descname">__rshift__</code><span class="sig-paren">(</span><em>destination_terminology</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.__rshift__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maps the concept to the destination_terminology. See <a class="reference internal" href="tuto_en.html"><span class="doc">PyMedTermino tutorial</span></a> for more info.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.ancestors">
+<code class="descname">ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all ancestors of this concept.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.ancestors_no_double">
+<code class="descname">ancestors_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.ancestors_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all ancestors of this concept. Each concept is only yielded once (useful for multiaxial terminologies).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.self_and_ancestors">
+<code class="descname">self_and_ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.self_and_ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all ancestors of this concept, including the concept itself.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.self_and_ancestors_no_double">
+<code class="descname">self_and_ancestors_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.self_and_ancestors_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all ancestors of this concept, including the concept itself. Each concept is only yielded once (useful for multiaxial terminologies).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.descendants">
+<code class="descname">descendants</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.descendants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all descendants of this concept.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.descendants_no_double">
+<code class="descname">descendants_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.descendants_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all descendants of this concept. Each concept is only yielded once (useful for multiaxial terminologies).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.self_and_descendants">
+<code class="descname">self_and_descendants</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.self_and_descendants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all descendants of this concept, including the concept itself.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concept.self_and_descendants_no_double">
+<code class="descname">self_and_descendants_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concept.self_and_descendants_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for iterating over all descendants of this concept, including the concept itself. Each concept is only yielded once (useful for multiaxial terminologies).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.Mapping">
+<em class="property">class </em><code class="descclassname">pymedtermino.</code><code class="descname">Mapping</code><span class="sig-paren">(</span><em>terminology1</em>, <em>terminology2</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Mapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for a mapping between two terminologies.</p>
+<dl class="method">
+<dt id="pymedtermino.Mapping.__call__">
+<code class="descname">__call__</code><span class="sig-paren">(</span><em>concepts</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Mapping.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maps the given concept(s) using this mapping.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You only need this method if you have several mappings with the same origin and destination terminologies.
+In other situations, you should rather use <code class="docutils literal"><span class="pre">concept(s)</span> <span class="pre">&gt;&gt;</span> <span class="pre">destination_terminology</span></code>.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Mapping.terminology1">
+<code class="descname">terminology1</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.Mapping.terminology1" title="Permalink to this definition">¶</a></dt>
+<dd><p>origin terminology for the mapping</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.Mapping.terminology2">
+<code class="descname">terminology2</code><em class="property"> = None</em><a class="headerlink" href="#pymedtermino.Mapping.terminology2" title="Permalink to this definition">¶</a></dt>
+<dd><p>destination terminology for the mapping</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Mapping.register">
+<code class="descname">register</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Mapping.register" title="Permalink to this definition">¶</a></dt>
+<dd><p>Registers the mapping as the default mapping between its origin and destination terminologies.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="utility-classes">
+<h3>Utility classes<a class="headerlink" href="#utility-classes" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="pymedtermino.Concepts">
+<em class="property">class </em><code class="descclassname">pymedtermino.</code><code class="descname">Concepts</code><a class="headerlink" href="#pymedtermino.Concepts" title="Permalink to this definition">¶</a></dt>
+<dd><p>A set of concepts. The set can contain each concept only once, and it
+inherits from Python’s <code class="xref py py-class docutils literal"><span class="pre">set</span></code> the methods for computing intersection, union, difference, …, of two sets.</p>
+<dl class="method">
+<dt id="pymedtermino.Concepts.__rshift__">
+<code class="descname">__rshift__</code><span class="sig-paren">(</span><em>destination_terminology</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.__rshift__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maps the set of concepts to the destination_terminology. See <a class="reference internal" href="tuto_en.html"><span class="doc">PyMedTermino tutorial</span></a> for more info.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>parent_concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the first concept of the set that is a descendant of parent_concept (including parent_concept itself).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.imply">
+<code class="descname">imply</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.imply" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns true if all concepts in the OTHER set are descendants of (at least) one of the concept in this set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.is_semantic_subset">
+<code class="descname">is_semantic_subset</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.is_semantic_subset" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns true if all concepts in this set are descendants of (at least) one of the concept in the OTHER set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.is_semantic_disjoint">
+<code class="descname">is_semantic_disjoint</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.is_semantic_disjoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns true if all concepts in this set are disjoint from all concepts in the OTHER set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.keep_most_specific">
+<code class="descname">keep_most_specific</code><span class="sig-paren">(</span><em>more_specific_than=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.keep_most_specific" title="Permalink to this definition">¶</a></dt>
+<dd><p>keeps only the most specific concepts, i.e. remove all concepts that are more general that another concept in the set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.keep_most_generic">
+<code class="descname">keep_most_generic</code><span class="sig-paren">(</span><em>more_generic_than=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.keep_most_generic" title="Permalink to this definition">¶</a></dt>
+<dd><p>keeps only the most general concepts, i.e. remove all concepts that are more specific that another concept in the set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.extract">
+<code class="descname">extract</code><span class="sig-paren">(</span><em>parent_concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all concepts of the set that are descendant of parent_concept (including parent_concept itself).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.subtract">
+<code class="descname">subtract</code><span class="sig-paren">(</span><em>parent_concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.subtract" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a new set after removing all concepts that are descendant of parent_concept (including parent_concept itself).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.subtract_update">
+<code class="descname">subtract_update</code><span class="sig-paren">(</span><em>parent_concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.subtract_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>same as <cite>func</cite>:subtract, but modify the set <em>in place</em>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.lowest_common_ancestors">
+<code class="descname">lowest_common_ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.lowest_common_ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the lowest common ancestors between this set of concepts.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.Concepts.all_subsets">
+<code class="descname">all_subsets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.Concepts.all_subsets" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all the subsets included in this set.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<span class="target" id="module-pymedtermino.snomedct"></span><div class="section" id="pymedtermino-snomedct">
+<h2>pymedtermino.snomedct<a class="headerlink" href="#pymedtermino-snomedct" title="Permalink to this headline">¶</a></h2>
+<p>PyMedtermino module for SNOMEDCT.</p>
+<dl class="class">
+<dt id="pymedtermino.snomedct.SNOMEDCT">
+<em class="property">class </em><code class="descclassname">pymedtermino.snomedct.</code><code class="descname">SNOMEDCT</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The SNOMED CT terminology. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only SNOMED CT-specific members are described here.</p>
+<dl class="method">
+<dt id="pymedtermino.snomedct.SNOMEDCT.CORE_problem_list">
+<code class="descname">CORE_problem_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCT.CORE_problem_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator iterating over all SNOMED CT concepts that are included in the CORE problem list.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.snomedct.Group">
+<em class="property">class </em><code class="descclassname">pymedtermino.snomedct.</code><code class="descname">Group</code><a class="headerlink" href="#pymedtermino.snomedct.Group" title="Permalink to this definition">¶</a></dt>
+<dd><p>A group, grouping several SNOMED CT relation together in the definition of a Concept.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept">
+<em class="property">class </em><code class="descclassname">pymedtermino.snomedct.</code><code class="descname">SNOMEDCTConcept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept" title="Permalink to this definition">¶</a></dt>
+<dd><p>A SNOMED CT concept. See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only SNOMED CT-specific members are described here.</p>
+<dl class="attribute">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.is_in_core">
+<code class="descname">is_in_core</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.is_in_core" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if this concept belongs to the SNOMED CT CORE problem list.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.groups">
+<code class="descname">groups</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of the groups in the concept’s definition. Each group include one or more relations, grouped together.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.out_of_group">
+<code class="descname">out_of_group</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.out_of_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>A special group that includes all relations that do <em>not</em> belongs to a group.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.active">
+<code class="descname">active</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.active" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if this concept is still active in SNOMED CT; False if it has been removed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.definition_status">
+<code class="descname">definition_status</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.definition_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.module">
+<code class="descname">module</code><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Additional attributes are available for relations, and are listed in the <a class="reference internal" href="#pymedtermino.Concept.relations" title="pymedtermino.Concept.relations"><code class="xref py py-attr docutils literal"><span class="pre">relations</span></code></a> attribute.</p>
+<dl class="method">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.descendant_parts">
+<code class="descname">descendant_parts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.descendant_parts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sub-parts of this concept, recursively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.ancestor_parts">
+<code class="descname">ancestor_parts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.ancestor_parts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the super-part of this concept, recursively.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.snomedct.SNOMEDCTConcept.associated_clinical_findings">
+<code class="descname">associated_clinical_findings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.snomedct.SNOMEDCTConcept.associated_clinical_findings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the clinical finding concepts associated to this concept (which is expected to be a anatomical structure, a morphology, etc).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-pymedtermino.icd10"></span><div class="section" id="pymedtermino-icd10">
+<h2>pymedtermino.icd10<a class="headerlink" href="#pymedtermino-icd10" title="Permalink to this headline">¶</a></h2>
+<p>PyMedtermino module for ICD10. Currently supports English and (ATIH) French version of ICD10.</p>
+<dl class="class">
+<dt id="pymedtermino.icd10.ICD10">
+<em class="property">class </em><code class="descclassname">pymedtermino.icd10.</code><code class="descname">ICD10</code><a class="headerlink" href="#pymedtermino.icd10.ICD10" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ICD10 terminology. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only ICD10-specific members are described here.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pymedtermino.icd10.ATIH_EXTENSION">
+<code class="descclassname">pymedtermino.icd10.</code><code class="descname">ATIH_EXTENSION</code><a class="headerlink" href="#pymedtermino.icd10.ATIH_EXTENSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to True, include ATIH extension to ICD10 (available only in French).
+Defaults to false.
+Must be set <strong>before</strong> loading ICD10 concepts.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.icd10.Text">
+<em class="property">class </em><code class="descclassname">pymedtermino.icd10.</code><code class="descname">Text</code><span class="sig-paren">(</span><em>id</em>, <em>concept</em>, <em>relation</em>, <em>text</em>, <em>text_en</em>, <em>dagger</em>, <em>reference</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.icd10.Text" title="Permalink to this definition">¶</a></dt>
+<dd><p>A text in an ICD10 definition for a concept (for example, an exclusion, and inclusion, etc).</p>
+<dl class="method">
+<dt id="pymedtermino.icd10.Text.get_translation">
+<code class="descname">get_translation</code><span class="sig-paren">(</span><em>language</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.icd10.Text.get_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates this text in the given language.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.icd10.ICD10Concept">
+<em class="property">class </em><code class="descclassname">pymedtermino.icd10.</code><code class="descname">ICD10Concept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept" title="Permalink to this definition">¶</a></dt>
+<dd><p>An ICD10 concept. See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only ICD10-specific members are described here.</p>
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.dagger">
+<code class="descname">dagger</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.dagger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.star">
+<code class="descname">star</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.star" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.morbidity">
+<code class="descname">morbidity</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.morbidity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.mortality1">
+<code class="descname">mortality1</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.mortality1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.mortality2">
+<code class="descname">mortality2</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.mortality2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.mortality3">
+<code class="descname">mortality3</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.mortality3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.mortality4">
+<code class="descname">mortality4</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.mortality4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.atih_extension">
+<code class="descname">atih_extension</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.atih_extension" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the concept is an ATIH extension.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.icd10.ICD10Concept.pmsi_restriction">
+<code class="descname">pmsi_restriction</code><a class="headerlink" href="#pymedtermino.icd10.ICD10Concept.pmsi_restriction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restriction of use of this concept for PMSI coding in France.</p>
+</dd></dl>
+
+<p>Additional attributes can be available, and are listed in the <a class="reference internal" href="#pymedtermino.Concept.relations" title="pymedtermino.Concept.relations"><code class="xref py py-attr docutils literal"><span class="pre">relations</span></code></a> attribute.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-pymedtermino.meddra"></span><div class="section" id="pymedtermino-meddra">
+<h2>pymedtermino.meddra<a class="headerlink" href="#pymedtermino-meddra" title="Permalink to this headline">¶</a></h2>
+<p>PyMedtermino module for MedDRA.</p>
+<p>Several concepts can share the same code in MedDRA.
+For example, a preferred term (PT) and a low-level term (LLT) can have the same code and label.
+In order to distinguish them, PyMedTermino does not use directly the MedDRA codes,
+but associates the term’s level with the code to obtain a unique code, for example “SOC_10019805” or “PT_10069435”.</p>
+<dl class="class">
+<dt id="pymedtermino.meddra.MEDDRA">
+<em class="property">class </em><code class="descclassname">pymedtermino.meddra.</code><code class="descname">MEDDRA</code><a class="headerlink" href="#pymedtermino.meddra.MEDDRA" title="Permalink to this definition">¶</a></dt>
+<dd><p>The MedDRA terminology. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only MedDRA-specific members are described here.</p>
+<dl class="method">
+<dt id="pymedtermino.meddra.MEDDRA.first_levels">
+<code class="descname">first_levels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.meddra.MEDDRA.first_levels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the root concepts in MedDRA (=the SOC), in international order.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.meddra.MEDDRA.get_by_meddra_code">
+<code class="descname">get_by_meddra_code</code><span class="sig-paren">(</span><em>meddra_code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.meddra.MEDDRA.get_by_meddra_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of MedDRA concepts corresponding to the given MedDRA numeric code (e.g. 10073496).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.meddra.MEDDRAConcept">
+<em class="property">class </em><code class="descclassname">pymedtermino.meddra.</code><code class="descname">MEDDRAConcept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.meddra.MEDDRAConcept" title="Permalink to this definition">¶</a></dt>
+<dd><p>A MedDRA concept. See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only MedDRA-specific members are described here.</p>
+<p>Additional attributes are available for relations, and are listed in the <a class="reference internal" href="#pymedtermino.Concept.relations" title="pymedtermino.Concept.relations"><code class="xref py py-attr docutils literal"><span class="pre">relations</span></code></a> attribute.</p>
+<dl class="attribute">
+<dt id="pymedtermino.meddra.MEDDRAConcept.meddra_code">
+<code class="descname">meddra_code</code><a class="headerlink" href="#pymedtermino.meddra.MEDDRAConcept.meddra_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The original numeric MedDRA code.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.meddra.MEDDRAConcept.meddra_type">
+<code class="descname">meddra_type</code><a class="headerlink" href="#pymedtermino.meddra.MEDDRAConcept.meddra_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of MedDRA term (SOC, HLGT, HLT, PT or LLT).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.meddra.MEDDRAConcept.abbrev">
+<code class="descname">abbrev</code><a class="headerlink" href="#pymedtermino.meddra.MEDDRAConcept.abbrev" title="Permalink to this definition">¶</a></dt>
+<dd><p>The abbreviated name associated to a SOC (only available for SOC).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.meddra.MEDDRAConcept.international_order">
+<code class="descname">international_order</code><a class="headerlink" href="#pymedtermino.meddra.MEDDRAConcept.international_order" title="Permalink to this definition">¶</a></dt>
+<dd><p>The international order associated to a SOC (only available for SOC).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.meddra.MEDDRAConcept.primary_soc">
+<code class="descname">primary_soc</code><a class="headerlink" href="#pymedtermino.meddra.MEDDRAConcept.primary_soc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The primary SOC associated to a PT (only available for PT).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-pymedtermino.cdf"></span><div class="section" id="pymedtermino-cdf">
+<h2>pymedtermino.cdf<a class="headerlink" href="#pymedtermino-cdf" title="Permalink to this headline">¶</a></h2>
+<p>PyMedtermino module for CDF (Thériaque French drug database).</p>
+<dl class="class">
+<dt id="pymedtermino.cdf.CDF">
+<em class="property">class </em><code class="descclassname">pymedtermino.cdf.</code><code class="descname">CDF</code><a class="headerlink" href="#pymedtermino.cdf.CDF" title="Permalink to this definition">¶</a></dt>
+<dd><p>The CDF terminology. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only CDF-specific members are described here.</p>
+<p>A CDF to ICD10 mapping (from Thériaque) is also provided.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.cdf.connect_to_theriaque_db">
+<code class="descclassname">pymedtermino.cdf.</code><code class="descname">connect_to_theriaque_db</code><span class="sig-paren">(</span><em>host=''</em>, <em>port=''</em>, <em>user='theriaque'</em>, <em>password=''</em>, <em>db_name='theriaque'</em>, <em>encoding='latin1'</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.cdf.connect_to_theriaque_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects to a Thériaque PostgreSQL database.
+This function <strong>must</strong> be called before using CDF. Default values should be OK for a local Theriaque installation with PostgresQL.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.cdf.CDFConcept">
+<em class="property">class </em><code class="descclassname">pymedtermino.cdf.</code><code class="descname">CDFConcept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.cdf.CDFConcept" title="Permalink to this definition">¶</a></dt>
+<dd><p>A CDF concept. See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only CDF-specific members are described here.</p>
+<p>Additional attributes are available for relations, and are listed in the <a class="reference internal" href="#pymedtermino.Concept.relations" title="pymedtermino.Concept.relations"><code class="xref py py-attr docutils literal"><span class="pre">relations</span></code></a> attribute.</p>
+<dl class="attribute">
+<dt id="pymedtermino.cdf.CDFConcept.cdf_numero">
+<code class="descname">cdf_numero</code><a class="headerlink" href="#pymedtermino.cdf.CDFConcept.cdf_numero" title="Permalink to this definition">¶</a></dt>
+<dd><p>The original CDF “numero” code.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.cdf.CDFConcept.cdf_code">
+<code class="descname">cdf_code</code><a class="headerlink" href="#pymedtermino.cdf.CDFConcept.cdf_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The original CDF “code”.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-pymedtermino.umls"></span><div class="section" id="pymedtermino-umls">
+<h2>pymedtermino.umls<a class="headerlink" href="#pymedtermino-umls" title="Permalink to this headline">¶</a></h2>
+<p>PyMedtermino module for UMLS.</p>
+<dl class="class">
+<dt id="pymedtermino.umls.UMLS_CUI">
+<em class="property">class </em><code class="descclassname">pymedtermino.umls.</code><code class="descname">UMLS_CUI</code><a class="headerlink" href="#pymedtermino.umls.UMLS_CUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>The UMLS CUI terminology (concepts). See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only UMLS-specific members are described here.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.umls.UMLS_AUI">
+<em class="property">class </em><code class="descclassname">pymedtermino.umls.</code><code class="descname">UMLS_AUI</code><a class="headerlink" href="#pymedtermino.umls.UMLS_AUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>The UMLS AUI terminology (atoms). See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only UMLS-specific members are described here.</p>
+<dl class="method">
+<dt id="pymedtermino.umls.UMLS_AUI.extract_terminology">
+<code class="descname">extract_terminology</code><span class="sig-paren">(</span><em>original_terminology_name</em>, <em>has_int_code=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.umls.UMLS_AUI.extract_terminology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract a terminology from UMLS.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>original_terminology_name</strong> – the name of the terminology in UMLS (see UMLS docs).</li>
+<li><strong>has_int_code</strong> – True if the source terminology uses integer code (in this case, PyMedtermino will accept both integer and string as code).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a new terminology, that uses the source codes (and not UMLS AUI codes).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.umls.UMLS_SRC">
+<em class="property">class </em><code class="descclassname">pymedtermino.umls.</code><code class="descname">UMLS_SRC</code><a class="headerlink" href="#pymedtermino.umls.UMLS_SRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>The UMLS SRC terminology (source terminology). See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only UMLS-specific members are described here.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.umls.connect_to_umls_db">
+<code class="descclassname">pymedtermino.umls.</code><code class="descname">connect_to_umls_db</code><span class="sig-paren">(</span><em>host</em>, <em>user</em>, <em>password</em>, <em>db_name='umls'</em>, <em>encoding='latin1'</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.umls.connect_to_umls_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects to an UMLS MySQL database.
+This function <strong>must</strong> be called before using UMLS.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.umls.UMLSConcept">
+<em class="property">class </em><code class="descclassname">pymedtermino.umls.</code><code class="descname">UMLSConcept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.umls.UMLSConcept" title="Permalink to this definition">¶</a></dt>
+<dd><p>A UMLS concept. See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only UMLS-specific members are described here.</p>
+<dl class="attribute">
+<dt id="pymedtermino.umls.UMLSConcept.original_terminologies">
+<code class="descname">original_terminologies</code><a class="headerlink" href="#pymedtermino.umls.UMLSConcept.original_terminologies" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the terminology this concept comes from.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.umls.UMLSConcept.definitions">
+<code class="descname">definitions</code><a class="headerlink" href="#pymedtermino.umls.UMLSConcept.definitions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The concept’s definitions (if available); in a dict mapping original terminology names to the definition in these terminologies.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.umls.UMLSConcept.attributes">
+<code class="descname">attributes</code><a class="headerlink" href="#pymedtermino.umls.UMLSConcept.attributes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.umls.UMLSConcept.active">
+<code class="descname">active</code><a class="headerlink" href="#pymedtermino.umls.UMLSConcept.active" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if this concept is still active in UMLS; False if it has been removed / suppressed.</p>
+</dd></dl>
+
+<p>Additional attributes are available for relations, and are listed in the <a class="reference internal" href="#pymedtermino.Concept.relations" title="pymedtermino.Concept.relations"><code class="xref py py-attr docutils literal"><span class="pre">relations</span></code></a> attribute.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-pymedtermino.vcm"></span><div class="section" id="pymedtermino-vcm">
+<h2>pymedtermino.vcm<a class="headerlink" href="#pymedtermino-vcm" title="Permalink to this headline">¶</a></h2>
+<p>PyMedtermino module for VCM icons.</p>
+<dl class="class">
+<dt id="pymedtermino.vcm.VCM">
+<em class="property">class </em><code class="descclassname">pymedtermino.vcm.</code><code class="descname">VCM</code><a class="headerlink" href="#pymedtermino.vcm.VCM" title="Permalink to this definition">¶</a></dt>
+<dd><p>The VCM icons terminology. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only VCM-specific members are described here.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.vcm.VCM_CONCEPT">
+<em class="property">class </em><code class="descclassname">pymedtermino.vcm.</code><code class="descname">VCM_CONCEPT</code><a class="headerlink" href="#pymedtermino.vcm.VCM_CONCEPT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The VCM medical concept terminology. It is used to describe the medical concept represented by VCM icons. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only VCM-specific members are described here.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.vcm.VCM_CONCEPT_MONOAXIAL">
+<em class="property">class </em><code class="descclassname">pymedtermino.vcm.</code><code class="descname">VCM_CONCEPT_MONOAXIAL</code><a class="headerlink" href="#pymedtermino.vcm.VCM_CONCEPT_MONOAXIAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mono-axial (=single inheritance) version of <a class="reference internal" href="#pymedtermino.vcm.VCM_CONCEPT" title="pymedtermino.vcm.VCM_CONCEPT"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.vcm.VCM_CONCEPT</span></code></a>. All anatomical structures have been associated to a single parents. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only VCM-specific members are described here.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.vcm.VCM_LEXICON">
+<em class="property">class </em><code class="descclassname">pymedtermino.vcm.</code><code class="descname">VCM_LEXICON</code><a class="headerlink" href="#pymedtermino.vcm.VCM_LEXICON" title="Permalink to this definition">¶</a></dt>
+<dd><p>The VCM lexicon terminology. It describes the colors, shapes and pictograms used by VCM icons. See <a class="reference internal" href="#pymedtermino.Terminology" title="pymedtermino.Terminology"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Terminology</span></code></a> for common terminology members; only VCM-specific members are described here.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.vcm.VCMLexiconConcept">
+<em class="property">class </em><code class="descclassname">pymedtermino.vcm.</code><code class="descname">VCMLexiconConcept</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept" title="Permalink to this definition">¶</a></dt>
+<dd><p>A VCM lexicon concept. See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only VCM-specific members are described here.</p>
+<p>VCM lexicon defines “graphical is a” relation in addition to standard “is a”. A concept A is considered as “graphically being” a concept B if (and only if) the pictogram associated to A include the pictogram associated to B.</p>
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.category">
+<code class="descname">category</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.category" title="Permalink to this definition">¶</a></dt>
+<dd><p>The category of lexicon (0: central color, 1: modifier, etc).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.graphical_parents">
+<code class="descname">graphical_parents</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.graphical_parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of concepts that are graphically more general than this one.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.graphical_children">
+<code class="descname">graphical_children</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.graphical_children" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of concepts that are graphically more specific than this one.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.abstract">
+<code class="descname">abstract</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.abstract" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if this concept is a lexicon category, rather than a concrete color, shape or pictogram.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.empty">
+<code class="descname">empty</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.empty" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if this concept is an ‘empty’ lexicon, such as “no pictogram”.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.priority">
+<code class="descname">priority</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.priority" title="Permalink to this definition">¶</a></dt>
+<dd><p>The priority of this lexicon concept, for icon sorting.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.second_priority">
+<code class="descname">second_priority</code><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.second_priority" title="Permalink to this definition">¶</a></dt>
+<dd><p>The second priority of this lexicon concept, for icon sorting. Only used (non-zero) for some transverse modifiers ; these modifiers use a different priority if they are used along with a central pictogram or not.</p>
+</dd></dl>
+
+<p>Additional attributes can be available, listed in the <a class="reference internal" href="#pymedtermino.Concept.relations" title="pymedtermino.Concept.relations"><code class="xref py py-attr docutils literal"><span class="pre">relations</span></code></a> attribute.</p>
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.is_graphically_a">
+<code class="descname">is_graphically_a</code><span class="sig-paren">(</span><em>concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.is_graphically_a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.is_a" title="pymedtermino.Concept.is_a"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.is_a()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.graphical_ancestors">
+<code class="descname">graphical_ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.graphical_ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.ancestors" title="pymedtermino.Concept.ancestors"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.ancestors()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.graphical_descendants">
+<code class="descname">graphical_descendants</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.graphical_descendants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.descendants" title="pymedtermino.Concept.descendants"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.descendants()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_ancestors">
+<code class="descname">self_and_graphical_ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.self_and_ancestors" title="pymedtermino.Concept.self_and_ancestors"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.self_and_ancestors()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_ancestors_no_double">
+<code class="descname">self_and_graphical_ancestors_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_ancestors_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.self_and_ancestors_no_double" title="pymedtermino.Concept.self_and_ancestors_no_double"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.self_and_ancestors_no_double()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_descendants">
+<code class="descname">self_and_graphical_descendants</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_descendants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.self_and_descendants" title="pymedtermino.Concept.self_and_descendants"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.self_and_descendants()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_descendants_no_double">
+<code class="descname">self_and_graphical_descendants_no_double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.self_and_graphical_descendants_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.self_and_descendants_no_double" title="pymedtermino.Concept.self_and_descendants_no_double"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.self_and_descendants_no_double()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.graphical_ancestors_no_double">
+<code class="descname">graphical_ancestors_no_double</code><span class="sig-paren">(</span><em>already=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.graphical_ancestors_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.ancestors_no_double" title="pymedtermino.Concept.ancestors_no_double"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.ancestors_no_double()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMLexiconConcept.graphical_descendants_no_double">
+<code class="descname">graphical_descendants_no_double</code><span class="sig-paren">(</span><em>already=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMLexiconConcept.graphical_descendants_no_double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.descendants_no_double" title="pymedtermino.Concept.descendants_no_double"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.descendants_no_double()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pymedtermino.vcm.VCMIcon">
+<em class="property">class </em><code class="descclassname">pymedtermino.vcm.</code><code class="descname">VCMIcon</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>A VCM icon (=a concept in the VCM terminology). See <a class="reference internal" href="#pymedtermino.Concept" title="pymedtermino.Concept"><code class="xref py py-class docutils literal"><span class="pre">pymedtermino.Concept</span></code></a> for common terminology members; only VCM-specific members are described here.</p>
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.lexs">
+<code class="descname">lexs</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.lexs" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of lexicon concept in this icon.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.physio">
+<code class="descname">physio</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.physio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.patho">
+<code class="descname">patho</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.patho" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.etiology">
+<code class="descname">etiology</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.etiology" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.quantitative">
+<code class="descname">quantitative</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.quantitative" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.process">
+<code class="descname">process</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.transverse">
+<code class="descname">transverse</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.transverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>All these attributes returns the shape modifier of the corresponding category (or None if no such modifiers).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.short_code">
+<code class="descname">short_code</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.short_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The short icon code, compressed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.long_code">
+<code class="descname">long_code</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.long_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>The entire icon code, including optional component.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.consistent">
+<code class="descname">consistent</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.consistent" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the icon is consistent, according to the VCM ontology.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.concepts">
+<code class="descname">concepts</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.concepts" title="Permalink to this definition">¶</a></dt>
+<dd><p>The set of VCM medical concepts associated to this icon.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pymedtermino.vcm.VCMIcon.priority">
+<code class="descname">priority</code><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.priority" title="Permalink to this definition">¶</a></dt>
+<dd><p>The priority of this icon (for sorting purpose).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMIcon.derive">
+<code class="descname">derive</code><span class="sig-paren">(</span><em>central_color=None</em>, <em>modifiers=None</em>, <em>central_pictogram=None</em>, <em>top_right_color=None</em>, <em>top_right_pictogram=None</em>, <em>second_top_right_pictogram=None</em>, <em>shadow=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.derive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and returns a new VCM icon, using this icon as a string point, and adding the given VCM lexicon concepts.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMIcon.derive_lexs">
+<code class="descname">derive_lexs</code><span class="sig-paren">(</span><em>lexs</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.derive_lexs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and returns a new VCM icon, using this icon as a string point, and adding the given VCM lexicon concepts, as a list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pymedtermino.vcm.VCMIcon.is_graphically_a">
+<code class="descname">is_graphically_a</code><span class="sig-paren">(</span><em>concept</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.VCMIcon.is_graphically_a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#pymedtermino.Concept.is_a" title="pymedtermino.Concept.is_a"><code class="xref py py-func docutils literal"><span class="pre">pymedtermino.Concept.is_a()</span></code></a> but using “graphically is a” relation rather than standard “is a”.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.vcm.keep_most_graphically_specific_icons">
+<code class="descclassname">pymedtermino.vcm.</code><code class="descname">keep_most_graphically_specific_icons</code><span class="sig-paren">(</span><em>self</em>, <em>on_del=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.keep_most_graphically_specific_icons" title="Permalink to this definition">¶</a></dt>
+<dd><p>keeps only the most specific icons, i.e. remove all concepts that are more general that another concept in the set, using “graphical is a” relations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>self</strong> – the list of icons.</li>
+<li><strong>on_del</strong> – an optional callable, called for each icon removed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the new list of icons.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.vcm.keep_most_graphically_generic_icons">
+<code class="descclassname">pymedtermino.vcm.</code><code class="descname">keep_most_graphically_generic_icons</code><span class="sig-paren">(</span><em>self</em>, <em>on_del=None</em>, <em>add_shadow=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.keep_most_graphically_generic_icons" title="Permalink to this definition">¶</a></dt>
+<dd><p>keeps only the most generic icons, i.e. remove all concepts that are more general that another concept in the set, using “graphical is a” relations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>self</strong> – the list of icons.</li>
+<li><strong>on_del</strong> – an optional callable, called for each icon removed.</li>
+<li><strong>add_shadow</strong> – if True, automatically adds shadow below icons that are present several times.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the new list of icons.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.vcm.generalize_icons">
+<code class="descclassname">pymedtermino.vcm.</code><code class="descname">generalize_icons</code><span class="sig-paren">(</span><em>icons</em>, <em>on_del=None</em>, <em>fail_if_too_much_information_is_lost=0</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.generalize_icons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalizes the given list of icons, and returns the lowest common ancestor icon.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>icons</strong> – the list of icons.</li>
+<li><strong>on_del</strong> – an optional callable, called for each icon removed.</li>
+<li><strong>fail_if_too_much_information_is_lost</strong> – if True, returns None when too much information is lost (i.e. central pictogram).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the new list of icons.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.vcm.simplify_icons">
+<code class="descclassname">pymedtermino.vcm.</code><code class="descname">simplify_icons</code><span class="sig-paren">(</span><em>icons</em>, <em>on_del=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.simplify_icons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simplifies the given list of icons, and returns a new list.
+The list is simplified by keeping the lowest common ancestor icons, whenever possible without loosing any central pictograms.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>icons</strong> – the list of icons.</li>
+<li><strong>on_del</strong> – an optional callable, called for each icon removed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the new list of icons.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pymedtermino.vcm.remove_duplicate_icons">
+<code class="descclassname">pymedtermino.vcm.</code><code class="descname">remove_duplicate_icons</code><span class="sig-paren">(</span><em>icons</em>, <em>on_del=None</em>, <em>add_shadow=1</em><span class="sig-paren">)</span><a class="headerlink" href="#pymedtermino.vcm.remove_duplicate_icons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes dupplicated icons in the given list, and returns a new list.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>icons</strong> – the list of icons.</li>
+<li><strong>on_del</strong> – an optional callable, called for each icon removed.</li>
+<li><strong>add_shadow</strong> – if True, automatically adds shadow below icons that are present several times.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the new list of icons.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Module reference</a><ul>
+<li><a class="reference internal" href="#pymedtermino">pymedtermino</a><ul>
+<li><a class="reference internal" href="#global-parameters">Global parameters</a></li>
+<li><a class="reference internal" href="#general-functions">General functions</a></li>
+<li><a class="reference internal" href="#bases-classes">Bases classes</a></li>
+<li><a class="reference internal" href="#utility-classes">Utility classes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pymedtermino-snomedct">pymedtermino.snomedct</a></li>
+<li><a class="reference internal" href="#pymedtermino-icd10">pymedtermino.icd10</a></li>
+<li><a class="reference internal" href="#pymedtermino-meddra">pymedtermino.meddra</a></li>
+<li><a class="reference internal" href="#pymedtermino-cdf">pymedtermino.cdf</a></li>
+<li><a class="reference internal" href="#pymedtermino-umls">pymedtermino.umls</a></li>
+<li><a class="reference internal" href="#pymedtermino-vcm">pymedtermino.vcm</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tuto_fr.html"
+                        title="previous chapter">Tutoriel PyMedTermino (French version / version française)</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tuto_fr.html" title="Tutoriel PyMedTermino (French version / version française)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyMedTermino 0.3.3 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, Jean-Baptiste Lamy.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>
