@@ -1,0 +1,14 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+test-requirements.txt
+pyEXOS/__init__.py
+pyEXOS/exceptions.py
+pyEXOS/exos.py
+pyEXOS.egg-info/PKG-INFO
+pyEXOS.egg-info/SOURCES.txt
+pyEXOS.egg-info/dependency_links.txt
+pyEXOS.egg-info/requires.txt
+pyEXOS.egg-info/top_level.txt
+test/test_unittest.py
