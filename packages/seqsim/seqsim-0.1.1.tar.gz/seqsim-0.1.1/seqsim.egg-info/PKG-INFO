@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: seqsim
+Version: 0.1.1
+Summary: Package for calculating sequence similarity (string similarity).
+Home-page: https://github.com/tresoldi/seqsim
+Author: Tiago Tresoldi
+Author-email: tresoldi@gmail.com
+License: MIT
+Download-URL: https://github.com/tresoldi/seqsim/archive/0.1.1.tar.gz
+Description: # seqsim
+        Python package for calculating sequence similarity (especially string similarity)
+        
+        [![Build Status](https://travis-ci.org/tresoldi/seqsim.svg?branch=master)](https://travis-ci.org/tresoldi/seqsim)
+        
+Keywords: sequence similarity,string similarity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries

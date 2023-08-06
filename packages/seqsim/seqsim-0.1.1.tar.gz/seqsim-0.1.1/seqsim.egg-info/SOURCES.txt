@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+seqsim/__init__.py
+seqsim.egg-info/PKG-INFO
+seqsim.egg-info/SOURCES.txt
+seqsim.egg-info/dependency_links.txt
+seqsim.egg-info/top_level.txt
