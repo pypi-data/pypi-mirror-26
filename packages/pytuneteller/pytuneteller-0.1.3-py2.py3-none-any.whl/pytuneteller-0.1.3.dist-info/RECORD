@@ -1,0 +1,14 @@
+pytuneteller/__init__.py,sha256=Z86bC6-RanbVu7ZNes3fE1tL8AJnpxx7naU4KRBcLLs,198
+pytuneteller/exceptions.py,sha256=aHeUSzGYGcKpwY5oSps1wWoWMiyktgwH-aLpV4c44KY,139
+pytuneteller/pytuneteller.py,sha256=BmGYRgTtJE9aVADebcs-f2eXFoDwoY8GWr1vuacY1bc,4350
+pytuneteller/utils.py,sha256=U48pLjZYZ7-zzDHOxIRbonEidNjmsbjlEwCnKTaQRrw,628
+pytuneteller/version.py,sha256=8x2gMl9ONuW1AC8mkvzEtTSPrLuL259wC_wUIGjZ4p4,226
+pytuneteller/words/adjectives.txt,sha256=9JV4quVOk2U6r6hkg6b0FyV4ph9tevMPijekZZFfLUI,21
+pytuneteller/words/nouns.txt,sha256=P53EqPhHdSs5-tUdsJQuumj2J9u3_A4vqXgtUVHy9hM,23
+pytuneteller-0.1.3.dist-info/DESCRIPTION.rst,sha256=FpA0wB-aowXVjgLicEyYPjSphBPwL3aPJoTG1aOANMw,2409
+pytuneteller-0.1.3.dist-info/METADATA,sha256=jjKYz1YrsvtOj_UV048RwUFUOf0o4eG617H7KqO3LFY,3288
+pytuneteller-0.1.3.dist-info/RECORD,,
+pytuneteller-0.1.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pytuneteller-0.1.3.dist-info/entry_points.txt,sha256=uu-rELj4b76ICfbE-us1eNaaEbF1fPLC_BW1-ULqzy8,52
+pytuneteller-0.1.3.dist-info/metadata.json,sha256=2iJm_83Jw4W2SHyPtn4cTwlhoE9VB2mf8uIbGoZTqDI,1234
+pytuneteller-0.1.3.dist-info/top_level.txt,sha256=4Vg-ip9AJJ6TSLsDeyc0kNCerh64v2BU4IJyew7U4JE,13
