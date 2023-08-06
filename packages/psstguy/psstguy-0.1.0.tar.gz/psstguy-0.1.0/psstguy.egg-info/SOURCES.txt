@@ -1,0 +1,6 @@
+setup.py
+psstguy.egg-info/PKG-INFO
+psstguy.egg-info/SOURCES.txt
+psstguy.egg-info/dependency_links.txt
+psstguy.egg-info/entry_points.txt
+psstguy.egg-info/top_level.txt
