@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+py_piwik.egg-info/PKG-INFO
+py_piwik.egg-info/SOURCES.txt
+py_piwik.egg-info/dependency_links.txt
+py_piwik.egg-info/not-zip-safe
+py_piwik.egg-info/requires.txt
+py_piwik.egg-info/top_level.txt
+pypiwik/__init__.py
