@@ -1,0 +1,12 @@
+django_graphql_countries-0.0.1.dist-info/DESCRIPTION.rst,sha256=UmfTaJOIY5PpU_bOaqJZUrW8EaFRIERGgx-y9xpDiEo,1521
+django_graphql_countries-0.0.1.dist-info/METADATA,sha256=OjCQLNAGqKIkA-swauTdHcjKcfapH8CdWphXYWyE7bE,2434
+django_graphql_countries-0.0.1.dist-info/RECORD,,
+django_graphql_countries-0.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_graphql_countries-0.0.1.dist-info/metadata.json,sha256=vvqk8aqVBYLwdFJ_BIIPmi_pBdbRcjaoYxTzPrTF6GQ,1219
+django_graphql_countries-0.0.1.dist-info/top_level.txt,sha256=9HA8bsdKftX2R5f3gAOItFC46TEXn_tzS-5CYR7ra5E,18
+graphql_countries/__init__.py,sha256=tXghxfJ0DdWHt-6M74OCboDA9oQ_ECof2zLPTwTaWhU,71
+graphql_countries/lookups.py,sha256=8MFC-6OcZ4xGFgnaE5Nkd110n4lgLMPOqv97qeOVE0A,236
+graphql_countries/nodes.py,sha256=b7TuKKy3mKRBNaMK5cPIA0oZ4pzjWDqCW08Vx4wKRGQ,2754
+graphql_countries/queries.py,sha256=dE_lOuwVRme1DjjYcj5dg0aZLg0k3Ca6P3Xm4YFMn6c,841
+graphql_countries/types.py,sha256=WioxqPXciELw8V2bvRPlQ520TM1kMtnMFP8QfhT2xxU,315
+graphql_countries/utils.py,sha256=Ukwzre4kckY8M19XcqmQlLE87Fbt6Uli3mjtWW7q45k,312
