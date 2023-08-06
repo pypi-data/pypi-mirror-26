@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+mosaiq_transfer_check/__init__.py
+mosaiq_transfer_check/create_report.py
+mosaiq_transfer_check/mosaiq_transfer_check.py
+mosaiq_transfer_check/msq_field2csv.py
+mosaiq_transfer_check/report_template.html
+mosaiq_transfer_check/user_interface.ipynb
+mosaiq_transfer_check.egg-info/PKG-INFO
+mosaiq_transfer_check.egg-info/SOURCES.txt
+mosaiq_transfer_check.egg-info/dependency_links.txt
+mosaiq_transfer_check.egg-info/entry_points.txt
+mosaiq_transfer_check.egg-info/requires.txt
+mosaiq_transfer_check.egg-info/top_level.txt

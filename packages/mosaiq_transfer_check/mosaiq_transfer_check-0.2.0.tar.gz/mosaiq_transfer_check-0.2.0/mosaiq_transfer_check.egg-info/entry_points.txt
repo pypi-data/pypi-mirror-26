@@ -1,0 +1,3 @@
+[console_scripts]
+mosaiq_transfer_check = mosaiq_transfer_check:main
+
