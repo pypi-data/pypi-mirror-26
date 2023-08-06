@@ -1,0 +1,9 @@
+temagics/__init__.py,sha256=2jr_kYyGNHK0AUe0KuWj4NLfEAmt4kv1DeYxztmYVV8,442
+temagics/comm_handlers.py,sha256=gUQ-MRbXdhx47HdbFCu97BAZjihv1-UrZxCsS5o-zrw,8913
+temagics/magics.py,sha256=2gKCA2lFTWE-IXyjjBpG1Oiprmip0Xe-wvU1Hucl_AM,2783
+temagics-1.0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+temagics-1.0.8.dist-info/METADATA,sha256=YD_xzM8yRJOathrVumSuIrWBK69g2B6QRdPXLgghfrE,227
+temagics-1.0.8.dist-info/RECORD,,
+temagics-1.0.8.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+temagics-1.0.8.dist-info/metadata.json,sha256=ZT7__qAGB9MsvdBh8J-7JWXkOzXAL1cbXZn56wsUEzM,361
+temagics-1.0.8.dist-info/top_level.txt,sha256=gwT5jENGWgDqYbHXr2wgKN_b1oA7wA8qriaqu7IV6oc,9
