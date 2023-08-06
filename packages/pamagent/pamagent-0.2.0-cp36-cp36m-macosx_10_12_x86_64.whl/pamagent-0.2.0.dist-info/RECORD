@@ -1,0 +1,17 @@
+pamagent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pamagent/agent.py,sha256=N17uFYs83pyWxRAeeypFl-Nmz_UfPFkobbxhpJ6IYR0,326
+pamagent/pamagent_core.cpython-36m-darwin.so,sha256=elVDJIferK9O9ijjK7pK70s-MW4W_T2X5OoggOUdtQA,840212
+pamagent/trace.py,sha256=hTmZ7YOVpFW48WAns2JkDzdbiAlJA9gi5-fozEb34WQ,3671
+pamagent/transaction.py,sha256=dGKfeGFzl49ZixziP5QbOvsoV6GBZKoge3uW7QSEw0A,3944
+pamagent/transaction_cache.py,sha256=JTxYOnzvYIdb3CWSNf3tOp3kuF6MOpms4oiTnSyue0E,1522
+pamagent/web_transaction.py,sha256=qS_V3CPYzLScoYoO_vM_BR7VUk1tHWsdEJK73cNlhy0,4585
+pamagent/wrapper.py,sha256=oDFNfnagH49jxdkVx1FmwidZrO5lsIzVBLFssLLD8rg,5262
+pamagent/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pamagent/hooks/django_hook.py,sha256=anoz3dqOL9lfPGP4xpd81TzVlx6GHXL1dJ61ZdX4Ucg,592
+pamagent/hooks/requests_hook.py,sha256=89__bWyJBpVr0Qt05gpmVz_1NySKmvwSWHFePRsEvSg,834
+pamagent-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pamagent-0.2.0.dist-info/METADATA,sha256=YKQ8cjO-2YqDdDAseTyGslu3MgEtnI2H_A_NBt1D6Qo,493
+pamagent-0.2.0.dist-info/RECORD,,
+pamagent-0.2.0.dist-info/WHEEL,sha256=AResBSRx4okok4JPS_snJiXrQGI20IXf-W55lMTT9gg,111
+pamagent-0.2.0.dist-info/metadata.json,sha256=bpHfajYmZuUG9ZM3SU_eqnQ5XCyJxD1SPpdQMajszwQ,789
+pamagent-0.2.0.dist-info/top_level.txt,sha256=0oIJ8a7I4N3bu7sBt39-DUK735t6z-SKjwvxdHLhYwY,9
