@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+twix/__init__.py
+twix/tweets_extractor.py
+twix.egg-info/PKG-INFO
+twix.egg-info/SOURCES.txt
+twix.egg-info/dependency_links.txt
+twix.egg-info/requires.txt
+twix.egg-info/top_level.txt
