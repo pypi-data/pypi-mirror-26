@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: cti-toolkit
+Version: 1.1.0
+Summary: CERT Australia cyber threat intelligence (CTI) toolkit
+Home-page: https://github.com/certau/cti-toolkit/
+Author: CERT Australia, Australian Government
+Author-email: info@cert.gov.au
+License: BSD
+Description-Content-Type: UNKNOWN
+Keywords: STIX TAXII
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: configargparse
+Requires-Dist: lxml
+Requires-Dist: libtaxii
+Requires-Dist: cybox (==2.1.0.13)
+Requires-Dist: stix (==1.1.1.8)
+Requires-Dist: stix-ramrod
+Requires-Dist: mixbox
+Requires-Dist: pymisp (>=2.4.71)
+Requires-Dist: requests
+
+UNKNOWN
+
+
