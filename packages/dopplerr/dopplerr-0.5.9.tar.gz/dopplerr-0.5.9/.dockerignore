@@ -1,0 +1,8 @@
+.venv
+.travis.*
+assets
+frontend/node_modules
+frontend/test
+Pipfile.lock
+requirements.txt
+requirements-dev.txt
