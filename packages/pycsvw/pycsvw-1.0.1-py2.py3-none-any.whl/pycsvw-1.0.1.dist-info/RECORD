@@ -1,0 +1,15 @@
+pycsvw/__init__.py,sha256=Gp_-dB9UjwHIVYaDRlQDi9n4Lv2i6zKLicfYMdA9Fno,699
+pycsvw/csvw.py,sha256=kej3SQiIdoe5JNKk5cFGFPyGCtbBHw6Yed4RzrETeQk,14390
+pycsvw/csvw_exceptions.py,sha256=wQ2nvbnf9AX_AM4HIK3b3ZRkk86-wFDpK-TZ_q0dGR0,2636
+pycsvw/generator_utils.py,sha256=chka1WAtDcDEoW1wqfi8lRkCNgXYsH5SOJfpqRepbeA,5081
+pycsvw/nt_serializer.py,sha256=ei6hhYO6nQ68j20wyMaBkZmOsvoZWeNilodW3FBFeZA,11307
+pycsvw/rdf_utils.py,sha256=Us_1Psok-l-cazW0p97dNVTjWEfZ_Ve0CJWvF9OWRZ0,4026
+pycsvw/scripts/__init__.py,sha256=niq-BhNwSeO3ogwCqa4Nh_bYUxAOs2xXamvxiK7qkEA,579
+pycsvw/scripts/cli.py,sha256=_SbQgWJj1qcW1f1aRqsKiJdQ5mWoFgLVAzbWrBbeSlw,2395
+pycsvw-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pycsvw-1.0.1.dist-info/METADATA,sha256=_6LHnVRv0Xi3lt7N9_bJ5ShHelxeHR3j8t3jhssXsyg,740
+pycsvw-1.0.1.dist-info/RECORD,,
+pycsvw-1.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pycsvw-1.0.1.dist-info/entry_points.txt,sha256=SGcBMShMrsudMX8ktM65RO6fKaVQOtkbx3B8-rxKQYU,82
+pycsvw-1.0.1.dist-info/metadata.json,sha256=I-t5bX17JkmKCgfeUtlNXFMcLZh3fR8wZq-IMVQMx4k,1068
+pycsvw-1.0.1.dist-info/top_level.txt,sha256=HgVoG-QnbED6flyH89ELRSeszqKzHc-10BwfmEvCQBw,7
