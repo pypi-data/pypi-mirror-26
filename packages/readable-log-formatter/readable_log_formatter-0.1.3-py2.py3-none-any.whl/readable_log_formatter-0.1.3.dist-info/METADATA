@@ -1,0 +1,45 @@
+Metadata-Version: 2.0
+Name: readable-log-formatter
+Version: 0.1.3
+Summary: A human readable log formatter for Python
+Home-page: https://github.com/ipmb/readable-log-formatter
+Author: Peter Baumgartner
+Author-email: pete@lincolnloop.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Keywords: readable-log-formatter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+Pretty logs for local development.
+
+.. code-block:: python
+
+        pip install readable-log-formatter
+
+Provides the class ``readable_log_formatter.ReadableFormatter`` to be used
+with Python's logging:
+
+.. code-block:: python
+
+        import logging
+        from readable_log_formatter import ReadableFormatter
+
+        log = logging.getLogger()
+        log.setLevel(logging.INFO)
+        hndl = logging.StreamHandler()
+        hndl.setFormatter(ReadableFormatter())
+        log.addHandler(hndl)
+
+.. image:: .screenshot.png
+
+
