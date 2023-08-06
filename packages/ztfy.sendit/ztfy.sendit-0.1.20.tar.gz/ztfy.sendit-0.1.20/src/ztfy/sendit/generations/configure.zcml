@@ -1,0 +1,10 @@
+<configure
+		xmlns="http://namespaces.zope.org/zope"
+		i18n_domain="onf.medialib">
+
+	<utility
+		name="ztfy.sendit"
+		component=".schemaManager"
+		provides="zope.generations.interfaces.ISchemaManager" />
+
+</configure>
