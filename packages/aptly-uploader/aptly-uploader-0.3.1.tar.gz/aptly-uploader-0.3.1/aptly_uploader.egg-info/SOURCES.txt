@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+aptly_uploader.egg-info/PKG-INFO
+aptly_uploader.egg-info/SOURCES.txt
+aptly_uploader.egg-info/dependency_links.txt
+aptly_uploader.egg-info/requires.txt
+aptly_uploader.egg-info/top_level.txt
+bin/aptly-upload
