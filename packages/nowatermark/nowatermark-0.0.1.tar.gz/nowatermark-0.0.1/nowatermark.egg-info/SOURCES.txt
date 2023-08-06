@@ -1,0 +1,9 @@
+README
+setup.py
+nowatermark/WatermarkRemover.py
+nowatermark/__init__.py
+nowatermark.egg-info/PKG-INFO
+nowatermark.egg-info/SOURCES.txt
+nowatermark.egg-info/dependency_links.txt
+nowatermark.egg-info/requires.txt
+nowatermark.egg-info/top_level.txt
