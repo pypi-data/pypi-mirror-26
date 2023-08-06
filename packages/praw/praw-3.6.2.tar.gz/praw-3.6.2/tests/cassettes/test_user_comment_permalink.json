@@ -1,0 +1,230 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2017-10-28T22:33:51",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "passwd=111111&user=PyAPITestUser2&api_type=json"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "47"
+          ],
+          "Content-Type": [
+            "application/x-www-form-urlencoded"
+          ],
+          "User-Agent": [
+            "PRAW_test_suite PRAW/3.6.1 Python/3.6.2 b'Darwin-16.7.0-x86_64-i386-64bit'"
+          ]
+        },
+        "method": "POST",
+        "uri": "https://api.reddit.com/api/login/.json"
+      },
+      "response": {
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"json\": {\"errors\": [], \"data\": {\"need_https\": true, \"modhash\": \"6a4o6ypjwre46c5a58ef532b44c914b68f79ffbd6e13dba412\", \"cookie\": \"7302867,2017-10-28T15:33:51,bbaae77e17613a772a98f828c7b6af318dcc976a\"}}}"
+        },
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "201"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "Date": [
+            "Sat, 28 Oct 2017 22:33:51 GMT"
+          ],
+          "Server": [
+            "snooserv"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=15552000; includeSubDomains; preload"
+          ],
+          "Via": [
+            "1.1 varnish"
+          ],
+          "X-Cache": [
+            "MISS"
+          ],
+          "X-Cache-Hits": [
+            "0"
+          ],
+          "X-Moose": [
+            "majestic"
+          ],
+          "X-Served-By": [
+            "cache-lax8642-LAX"
+          ],
+          "X-Timer": [
+            "S1509230031.744221,VS0,VE667"
+          ],
+          "cache-control": [
+            "private, s-maxage=0, max-age=0, must-revalidate, max-age=0, must-revalidate"
+          ],
+          "expires": [
+            "-1"
+          ],
+          "set-cookie": [
+            "loid=00000000000izf2n6k.2.1509230030801.Z0FBQUFBQlo5UVhQM18tdHZLUWZGRnlsRG43YjRqNG9Ua3VwSXM1cm1yR2JZdzQ1LWpZZlV1dmRNQ3lodlpORnZtQkdwV2RjTUFuTUYyUXJLcThiRkxzRlEwQlI3MnZBdVh4aFhpN2lHSng0eWdVR0s0b2FMTUFhOTFrZEpiSU5xN0QyNGVvVlNCQWU; Domain=reddit.com; Max-Age=63071999; Path=/; expires=Mon, 28-Oct-2019 22:33:51 GMT; secure",
+            "session_tracker=ht606wpOvEGyXRiyW7.0.1509230030797.Z0FBQUFBQlo5UVhQMTlSeF9uSFFXeFBYY2h3cWRBUTlOX0FXc1FablZUNFdWMEw4SXpicGtydDR4WTAxQVhzelpNNnBZazlmM0tGSThVSEVwRG1tWWZPeEZsSGxRUm1uUEJwME9seHM0ZE1pdDZqY3pZMkdkaDVOQ2FLSTRmcndpLTJUbUdOSnRlaXQ; Domain=reddit.com; Max-Age=7199; Path=/; expires=Sun, 29-Oct-2017 00:33:51 GMT; secure",
+            "reddit_session=7302867%2C2017-10-28T15%3A33%3A51%2Cbbaae77e17613a772a98f828c7b6af318dcc976a; Domain=reddit.com; Path=/; secure; HttpOnly",
+            "edgebucket=JXqaEjdoTGbTWYJSZB; Domain=reddit.com; Max-Age=63071999; Path=/;  secure"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-ua-compatible": [
+            "IE=edge"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.reddit.com/api/login/.json"
+      }
+    },
+    {
+      "recorded_at": "2017-10-28T22:33:51",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Cookie": [
+            "edgebucket=JXqaEjdoTGbTWYJSZB; loid=00000000000izf2n6k.2.1509230030801.Z0FBQUFBQlo5UVhQM18tdHZLUWZGRnlsRG43YjRqNG9Ua3VwSXM1cm1yR2JZdzQ1LWpZZlV1dmRNQ3lodlpORnZtQkdwV2RjTUFuTUYyUXJLcThiRkxzRlEwQlI3MnZBdVh4aFhpN2lHSng0eWdVR0s0b2FMTUFhOTFrZEpiSU5xN0QyNGVvVlNCQWU; reddit_session=7302867%2C2017-10-28T15%3A33%3A51%2Cbbaae77e17613a772a98f828c7b6af318dcc976a; session_tracker=ht606wpOvEGyXRiyW7.0.1509230030797.Z0FBQUFBQlo5UVhQMTlSeF9uSFFXeFBYY2h3cWRBUTlOX0FXc1FablZUNFdWMEw4SXpicGtydDR4WTAxQVhzelpNNnBZazlmM0tGSThVSEVwRG1tWWZPeEZsSGxRUm1uUEJwME9seHM0ZE1pdDZqY3pZMkdkaDVOQ2FLSTRmcndpLTJUbUdOSnRlaXQ"
+          ],
+          "User-Agent": [
+            "PRAW_test_suite PRAW/3.6.1 Python/3.6.2 b'Darwin-16.7.0-x86_64-i386-64bit'"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.reddit.com/user/PyAPITestUser2/comments.json?sort=new&t=all"
+      },
+      "response": {
+        "body": {
+          "base64_string": "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",
+          "encoding": "UTF-8"
+        },
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "2004"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "Date": [
+            "Sat, 28 Oct 2017 22:33:51 GMT"
+          ],
+          "Server": [
+            "snooserv"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=15552000; includeSubDomains; preload"
+          ],
+          "Vary": [
+            "accept-encoding"
+          ],
+          "Via": [
+            "1.1 varnish"
+          ],
+          "X-Cache": [
+            "MISS"
+          ],
+          "X-Cache-Hits": [
+            "0"
+          ],
+          "X-Moose": [
+            "majestic"
+          ],
+          "X-Served-By": [
+            "cache-lax8642-LAX"
+          ],
+          "X-Timer": [
+            "S1509230032.524627,VS0,VE197"
+          ],
+          "cache-control": [
+            "private, s-maxage=0, max-age=0, must-revalidate, max-age=0, must-revalidate"
+          ],
+          "expires": [
+            "-1"
+          ],
+          "set-cookie": [
+            "loid=00000000000004cixf.2.1284611485984.Z0FBQUFBQlo5UVhQUTJfYWhXa2pmRzdkS2paSTM1aGE0UG1YN3BBSkhZVmR3YlBJdjMtRVJSQU9NVFIwMEowYnpfcFJZVW5wcVBmYmQ5VUY3cWZWZTFHNjVESHE1UFZqTzFCcm5ubUhUYmg3TERwZVh5NlA1Ry1adUNjTWk1ei1lYWhoWFNpaEFrNzY; Domain=reddit.com; Max-Age=63071999; Path=/; expires=Mon, 28-Oct-2019 22:33:51 GMT; secure",
+            "session_tracker=ht606wpOvEGyXRiyW7.0.1509230031575.Z0FBQUFBQlo5UVhQZXluNWVxbGRzMndSbVhpeG4wbldLcVF1akJHVGNTb0ZwUi1MTTBKWXozSkhtaVpsZWZmVUdCdTFBTk4xTDg0TmxOMFdjRE50R3VEaWxfdm1FczB5U2hPME4ybXkxQjV2dWRaT09TbE50WVM1WWwybUgyNnJ1a1ZfX3JNMUFmaS0; Domain=reddit.com; Max-Age=7199; Path=/; expires=Sun, 29-Oct-2017 00:33:51 GMT; secure",
+            "loid_old=00000000000izf2n6k; Domain=reddit.com; Max-Age=5183999; Path=/; expires=Wed, 27-Dec-2017 22:33:51 GMT; secure"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-ratelimit-remaining": [
+            "288"
+          ],
+          "x-ratelimit-reset": [
+            "369"
+          ],
+          "x-ratelimit-used": [
+            "12"
+          ],
+          "x-ua-compatible": [
+            "IE=edge"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.reddit.com/user/PyAPITestUser2/comments.json?sort=new&t=all"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.0"
+}
