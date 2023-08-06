@@ -1,0 +1,3 @@
+trytond_account_dunning >= 4.6, < 4.7
+trytond_account_product >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
