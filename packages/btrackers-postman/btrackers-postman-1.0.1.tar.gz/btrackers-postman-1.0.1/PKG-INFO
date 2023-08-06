@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: btrackers-postman
+Version: 1.0.1
+Summary: BitTorrent Trackers Postman, fetch BitTorrent Trackers URL list from https://github.com/ngosang/trackerslist and post to your aria2 server via jsonrpc.
+Home-page: https://github.com/asmoker/btrackers-postman
+Author: asmoker
+Author-email: blog.smoker.cc@gmail.com
+License: Apache-2.0
+Description: # btrackers-postman
+        
+        ![](./logo.png)
+        
+        BitTorrent Trackers Postman, fetch BitTorrent Trackers URL list from [ngosang/trackerslist](https://github.com/ngosang/trackerslist) and post to your aria2 server via jsonrpc.
+        
+        
+        ## License
+        
+        The library is available as open source under the terms of the [Apache-2.0](https://opensource.org/licenses/Apache-2.0).
+Keywords: BitTorrent Trackers aria2 trackerslist jsonrpc update post postman
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
