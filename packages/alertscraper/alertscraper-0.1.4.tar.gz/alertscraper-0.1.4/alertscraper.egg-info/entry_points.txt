@@ -1,0 +1,3 @@
+[console_scripts]
+alertscraper = alertscraper.alertscraper:cli
+

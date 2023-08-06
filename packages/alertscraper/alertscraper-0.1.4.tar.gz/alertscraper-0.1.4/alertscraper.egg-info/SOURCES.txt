@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+alertscraper/__init__.py
+alertscraper/alertscraper.py
+alertscraper.egg-info/PKG-INFO
+alertscraper.egg-info/SOURCES.txt
+alertscraper.egg-info/dependency_links.txt
+alertscraper.egg-info/entry_points.txt
+alertscraper.egg-info/requires.txt
+alertscraper.egg-info/top_level.txt
+test/test_alertscraper.py
