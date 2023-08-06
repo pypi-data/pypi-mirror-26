@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: jtune
+Version: 3.0.0
+Summary: A high precision Java CMS optimizer
+Home-page: https://github.com/linkedin/JTune
+Author: LinkedIn
+Author-email: jeward@linkedin.com
+License: Apache
+Description: A high precision Java CMS optimizer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7

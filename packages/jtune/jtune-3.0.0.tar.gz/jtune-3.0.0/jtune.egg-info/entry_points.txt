@@ -1,0 +1,3 @@
+[console_scripts]
+jtune = jtune.jtune:main
+
