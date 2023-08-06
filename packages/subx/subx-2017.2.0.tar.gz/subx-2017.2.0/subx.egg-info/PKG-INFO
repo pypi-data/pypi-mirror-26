@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: subx
+Version: 2017.2.0
+Summary: subx: Datastructure SubprocessResult
+Home-page: https://github.com/guettli/subx/
+Author: Thomas Guettler
+Author-email: info.subx@thomas-guettler.de
+License: Apache Software License 2.0
+Description: .. image:: https://travis-ci.org/guettli/subx.svg?branch=master
+            :target: https://travis-ci.org/guettli/subx
+            
+        subx: Datastructure SubprocessResult - for the Python programming language 
+        ==================================================================
+        
+        
+        https://github.com/guettli/subx
+        
+        SubprocessResult
+        ================
+        
+        ..
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
