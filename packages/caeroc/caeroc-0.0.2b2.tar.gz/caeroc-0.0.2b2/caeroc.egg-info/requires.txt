@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+scikit-aero>=0.2.dev0
+
+[pyqt]
+PyQt5
+
+[pyside]
+PySide
