@@ -1,0 +1,9 @@
+JacobiEstimation-1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+JacobiEstimation-1.0.dist-info/METADATA,sha256=qakyQz4bWEeh3oi1zKI4NNcOl3xdnjIdJlc0Es4wXqo,217
+JacobiEstimation-1.0.dist-info/RECORD,,
+JacobiEstimation-1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+JacobiEstimation-1.0.dist-info/metadata.json,sha256=A5UWbp9L8Dttc3WcCuZ5yCxddNByTb_gXFUsBuGVVx8,319
+JacobiEstimation-1.0.dist-info/top_level.txt,sha256=16vNbKE06T5BvFpHaGLiEg628JZejWtnRjBq0mgI_9U,7
+jacobi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jacobi/jacobi.py,sha256=MJGqm_NH07scIt7WeZT8pQMBDSieBqT6gE0056TZC6E,2270
+jacobi/runner.py,sha256=gs30kNp5kcKfv4QiRuhwTLzvuYlYcuIwAHQmenwavKw,614
