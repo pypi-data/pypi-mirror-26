@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pyzanata/__init__.py
+src/pyzanata/restapi.yaml
+src/pyzanata/tests.py
+src/pyzanata.egg-info/PKG-INFO
+src/pyzanata.egg-info/SOURCES.txt
+src/pyzanata.egg-info/dependency_links.txt
+src/pyzanata.egg-info/not-zip-safe
+src/pyzanata.egg-info/requires.txt
+src/pyzanata.egg-info/top_level.txt
