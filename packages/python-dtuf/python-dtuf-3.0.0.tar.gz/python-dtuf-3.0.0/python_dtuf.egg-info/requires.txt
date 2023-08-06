@@ -1,0 +1,8 @@
+decorator>=4.0.10
+fasteners>=0.14.1
+iso8601>=0.1.11
+python-dxf>=7.0.0
+pytimeparse>=1.1.5
+securesystemslib>=0.10.8
+tqdm>=4.10.0
+tuf>=0.10.1
