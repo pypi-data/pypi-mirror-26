@@ -1,0 +1,15 @@
+gpkg.mnist-0.1.0.post11-py2.7-nspkg.pth,sha256=3xb90dBivDFXdtzoeCL9KXHrd-f6F3608fOH6f5Ond0,529
+gpkg/mnist/MODELS,sha256=7bXAQQh9c-OXL4IO2b3ulLiLq7QSjMSm5G9UnqqdSPk,669
+gpkg/mnist/README.md,sha256=MG1d5TEq2mbjFfn9OxJYkxkpEebWqr3CmIVVa7IMUis,157
+gpkg/mnist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpkg/mnist/cnn.py,sha256=fMLSSmg85-9oZ8Ut1cqupTPI5ZNea5i5F9oqHwUCsHw,5770
+gpkg/mnist/softmax.py,sha256=fAYkAF6JfwT7rpgI40MU5Z-0GnJsbORrUHZVCPYqDHE,5118
+gpkg.mnist-0.1.0.post11.dist-info/DESCRIPTION.rst,sha256=Cbe8jc7s9iCgTJdYWzYGOHRqOmI2czApuUlbU_9RTw8,688
+gpkg.mnist-0.1.0.post11.dist-info/METADATA,sha256=nY4_eJ8meiHF_7T7Qi5yoa-0MC3zZK54tPzpJa7Yv0Y,1067
+gpkg.mnist-0.1.0.post11.dist-info/PACKAGE,sha256=Wcuu0pW85o0shNMV1xKYRa4iQGCBxBBQVtC6GCH5q1k,363
+gpkg.mnist-0.1.0.post11.dist-info/RECORD,,
+gpkg.mnist-0.1.0.post11.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gpkg.mnist-0.1.0.post11.dist-info/entry_points.txt,sha256=0dH-ttrN-RdU8UgrilSZ6jG-zLk4pTI5wsOSfN4QJJI,114
+gpkg.mnist-0.1.0.post11.dist-info/metadata.json,sha256=u1lm1SiBCeZowR5VK4BhWWKYHlK4JE21aiTb0BUnq_U,769
+gpkg.mnist-0.1.0.post11.dist-info/namespace_packages.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.mnist-0.1.0.post11.dist-info/top_level.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
