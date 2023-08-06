@@ -1,0 +1,3 @@
+[console_scripts]
+nextcode = nextcode.__init__:main
+
