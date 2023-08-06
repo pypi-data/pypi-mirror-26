@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: json_obj
+Version: 2.0.1
+Summary: Safe JSON decoding to objects in Python
+Home-page: https://github.com/emman27/json_obj
+Author: Emmanuel Goh
+Author-email: emmanuel.goh.7@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
