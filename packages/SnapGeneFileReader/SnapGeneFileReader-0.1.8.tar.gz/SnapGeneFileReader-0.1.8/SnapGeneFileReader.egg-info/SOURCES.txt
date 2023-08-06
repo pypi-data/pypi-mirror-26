@@ -1,0 +1,7 @@
+README.md
+setup.py
+SnapGeneFileReader.egg-info/PKG-INFO
+SnapGeneFileReader.egg-info/SOURCES.txt
+SnapGeneFileReader.egg-info/dependency_links.txt
+SnapGeneFileReader.egg-info/requires.txt
+SnapGeneFileReader.egg-info/top_level.txt
