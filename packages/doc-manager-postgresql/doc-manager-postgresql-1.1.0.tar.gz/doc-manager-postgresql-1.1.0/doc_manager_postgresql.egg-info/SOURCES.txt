@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+doc_manager_postgresql.egg-info/PKG-INFO
+doc_manager_postgresql.egg-info/SOURCES.txt
+doc_manager_postgresql.egg-info/dependency_links.txt
+doc_manager_postgresql.egg-info/requires.txt
+doc_manager_postgresql.egg-info/top_level.txt
+mongo_connector/__init__.py
+mongo_connector/doc_managers/__init__.py
+mongo_connector/doc_managers/mapping_schema.py
+mongo_connector/doc_managers/mappings.py
+mongo_connector/doc_managers/postgresql_manager.py
+mongo_connector/doc_managers/sql.py
+mongo_connector/doc_managers/utils.py

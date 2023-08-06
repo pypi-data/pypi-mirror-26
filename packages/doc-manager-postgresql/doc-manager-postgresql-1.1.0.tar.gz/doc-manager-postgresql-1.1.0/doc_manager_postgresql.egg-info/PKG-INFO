@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: doc-manager-postgresql
+Version: 1.1.0
+Summary: Copy of Hopworks Doc Manager debugged when using several doc manager
+Home-page: https://github.com/JulieRossi/mongo-connector-postgresql/tree/pypi
+Author: Julie Rossi
+Author-email: julierossi06@gmail.com
+License: http://www.apache.org/licenses/LICENSE-2.0.html
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: any
