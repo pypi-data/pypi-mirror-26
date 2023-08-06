@@ -1,0 +1,10 @@
+pythonic_sqlalchemy_query.py,sha256=7qM5tbnv41RTEoNbYhl0QwsL7IlMraEYp2V5aEVOaso,14806
+pythonic_sqlalchemy_query/__init__.py,sha256=uPnXgn0bqZg6v6OC58G7PfSfHlYf-js7pZlbToVDv8Q,1563
+pythonic_sqlalchemy_query/core.py,sha256=kNOG-JD3g-eG97-yGRhFJPCDRplkqBJyJyRE4SeE8II,15227
+pythonic_sqlalchemy_query/flask.py,sha256=UtiXEJGBYV4g8JG5pX9ax9T5yCOIIAjecFKABYsuCdw,4416
+pythonic_sqlalchemy_query-1.1.1.dist-info/DESCRIPTION.rst,sha256=cV-sPe1ULL_X4qMjeWPO9sdCmdjZkIKQROSmOaGwpeU,3219
+pythonic_sqlalchemy_query-1.1.1.dist-info/METADATA,sha256=KjffFxXZ8BwnV40vD6KKrSxs3lmYfOXA2OKtfkGwCr4,4329
+pythonic_sqlalchemy_query-1.1.1.dist-info/RECORD,,
+pythonic_sqlalchemy_query-1.1.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+pythonic_sqlalchemy_query-1.1.1.dist-info/metadata.json,sha256=i1WYhXBJJkpfQVn6I-d7-zGP-Tn5qsZTeWpLG_qn_Bg,1219
+pythonic_sqlalchemy_query-1.1.1.dist-info/top_level.txt,sha256=RY6TlnGokFH5mC6hBib04lHJF5SeAjwT0lEvcAAQVxc,26
