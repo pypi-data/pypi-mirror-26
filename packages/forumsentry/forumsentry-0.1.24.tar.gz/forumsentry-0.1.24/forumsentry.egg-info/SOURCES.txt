@@ -1,0 +1,9 @@
+README.rst
+setup.py
+forumsentry/__init__.py
+forumsentry.egg-info/PKG-INFO
+forumsentry.egg-info/SOURCES.txt
+forumsentry.egg-info/dependency_links.txt
+forumsentry.egg-info/not-zip-safe
+forumsentry.egg-info/requires.txt
+forumsentry.egg-info/top_level.txt
