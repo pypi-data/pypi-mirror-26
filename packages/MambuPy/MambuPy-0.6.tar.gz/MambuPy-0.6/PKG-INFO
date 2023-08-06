@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: MambuPy
+Version: 0.6
+Summary: A python lib for using Mambu APIs
+Home-page: https://github.com/jstitch/MambuPy
+Author: Javier Novoa C.
+Author-email: jstitch@gmail.com
+License: GPL
+Description-Content-Type: UNKNOWN
+Description:                  MambuPy, an API library to access Mambu objects
+                         
+Keywords: mambu
+Platform: UNKNOWN
