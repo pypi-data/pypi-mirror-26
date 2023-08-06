@@ -1,0 +1,4 @@
+cachetools
+six
+blosc;platform_system!="Windows"
+requests[security]>=2.16.0
