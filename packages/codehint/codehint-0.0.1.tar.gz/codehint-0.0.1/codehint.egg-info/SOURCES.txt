@@ -1,0 +1,11 @@
+README.rst
+setup.py
+codehint/__init__.py
+codehint.egg-info/PKG-INFO
+codehint.egg-info/SOURCES.txt
+codehint.egg-info/dependency_links.txt
+codehint.egg-info/not-zip-safe
+codehint.egg-info/requires.txt
+codehint.egg-info/top_level.txt
+codehint/tests/__init__.py
+codehint/tests/test_codehint.py
