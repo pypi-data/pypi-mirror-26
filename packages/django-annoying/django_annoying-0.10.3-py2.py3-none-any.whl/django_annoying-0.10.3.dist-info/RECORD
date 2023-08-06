@@ -1,0 +1,14 @@
+annoying/__init__.py,sha256=p7Y7Pj__NSPug3-N_G5_DOVAulnLz9FnuEpcTlIh7W0,23
+annoying/decorators.py,sha256=coCtTcDghXb5FvwFHyF-LjFvhaAeZNNtp7hJOfvAUp8,7856
+annoying/exceptions.py,sha256=M0sv_tr0r0kZ3g45oC7rLjP2uVszu_cQpvVVyb_sjfc,122
+annoying/fields.py,sha256=t576FiAMph4t6sHQe0A0B_Vc2AoKian2qXFAoCZoCCc,4898
+annoying/functions.py,sha256=gti0qaYvUhThwh_3F7KXxMzj78jzPGetGTDfVua3j_c,1229
+annoying/middlewares.py,sha256=JyCIOTgChpXWo3PgkeIdGXXiFFagaAe-rjGsGYFVSs8,974
+annoying/utils.py,sha256=U8iH94Numv1Hve-vjTPkHjsnAlOFqhOvAegYtgMC_mM,754
+django_annoying-0.10.3.dist-info/DESCRIPTION.rst,sha256=gNqC_2PtP_Tm4P77BVeOMv3PTFkujDCYPTzYfERAJIk,1280
+django_annoying-0.10.3.dist-info/LICENSE.txt,sha256=JGVkmZUq6_ZqFe22kNm0bPW0w4unFwxUgzDJ4gEobJg,1446
+django_annoying-0.10.3.dist-info/METADATA,sha256=ULcckZSed-m7vttx_h8qbrXbqrv9XOFZh9cc4HGttxw,2380
+django_annoying-0.10.3.dist-info/RECORD,,
+django_annoying-0.10.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_annoying-0.10.3.dist-info/metadata.json,sha256=W80vuHj2YFKj7anejOm2Vivqx_WX4RPdCP05vWEDFQk,1228
+django_annoying-0.10.3.dist-info/top_level.txt,sha256=k9jwE7KwpD233h152Ni-83G02OfGnyAHxc8Sm0P593Q,9
