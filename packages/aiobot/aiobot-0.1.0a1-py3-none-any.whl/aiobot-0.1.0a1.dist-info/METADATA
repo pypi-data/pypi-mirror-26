@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: aiobot
+Version: 0.1.0a1
+Summary: Build Slack Bots using asyncio.
+Home-page: https://gitlab.com/pymatics/aiobot
+Author: Joshua Bourquin
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+
