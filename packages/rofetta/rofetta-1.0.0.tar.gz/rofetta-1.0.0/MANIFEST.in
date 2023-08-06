@@ -1,0 +1,11 @@
+include *.mkd
+recursive-include rofetta *.py
+
+exclude Makefile
+exclude contexts
+recursive-exclude contexts *.csv
+recursive-exclude contexts *.cxt
+recursive-exclude contexts *.lp
+recursive-exclude contexts *.mkd
+recursive-exclude contexts *.slf
+recursive-exclude contexts *.txt
