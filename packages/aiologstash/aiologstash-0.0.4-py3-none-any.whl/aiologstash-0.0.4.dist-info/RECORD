@@ -1,0 +1,8 @@
+aiologstash/__init__.py,sha256=Vv0hi9anne1STZzioQs9FwmZ3PbguDgwBZUoRMGfy0Y,1209
+aiologstash/base_handler.py,sha256=-jD3oO28RggJviptkwB_Q6NVJAUcf_63Bu9wifQB9pY,4122
+aiologstash/log.py,sha256=iQ0EJUiXttv-cWagj3gmN4GqVUdxxMEYIig4DXloQkI,57
+aiologstash/tcp_handler.py,sha256=s5UoOcWT4SJImG4ptGFCQmdABagUzbyk3jWNMjM-4AM,1282
+aiologstash-0.0.4.dist-info/LICENSE,sha256=VUTFynYxh8tD3fsXYijrdjKQAkQVM3GoFWk9BN8P-QY,1090
+aiologstash-0.0.4.dist-info/WHEEL,sha256=4y5SR-dQX1UHgNNWRiLC6Oy3P-69D-fxQIOzYZ56Uss,82
+aiologstash-0.0.4.dist-info/METADATA,sha256=tc2ljwh1gxFAYq-Zk8epljwifOY2AgLeqzo6gOgB-gk,1529
+aiologstash-0.0.4.dist-info/RECORD,,
