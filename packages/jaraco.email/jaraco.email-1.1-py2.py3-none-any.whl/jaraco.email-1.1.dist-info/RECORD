@@ -1,0 +1,13 @@
+jaraco.email-1.1-py3.6-nspkg.pth,sha256=Tr3Ap28XLzXVIejA1-jRQg4hHIGiCuCk-3j9JZMkTZA,539
+jaraco/email/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaraco/email/messages.py,sha256=v6gpeY9ET1e_L-F9UJRECWMkODcJW1m4wn1JP7OI0xw,5530
+jaraco/email/notification.py,sha256=8kWOJaQtPFb8bX5Z97Nf4iua0W3iwRUevfVwadJh2n8,3658
+jaraco/email/smtp.py,sha256=weP2JMBl0CdZYFbz_BFf20bSJqdN2hjsIIqhjdefk0g,783
+jaraco.email-1.1.dist-info/DESCRIPTION.rst,sha256=9ID-2f6tbCOPEMeO866A6Z8CdZBjHjZYmD_gsll-K6A,427
+jaraco.email-1.1.dist-info/LICENSE.txt,sha256=pV4v_ptEmY5iHVHYwJS-0JrMS1I27nPX3zlaM7o8GP0,1050
+jaraco.email-1.1.dist-info/METADATA,sha256=k9aTkAI7Cn6TNhtPuPY73qbqqY0XYgFuCux7ETpJMoY,1389
+jaraco.email-1.1.dist-info/RECORD,,
+jaraco.email-1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+jaraco.email-1.1.dist-info/metadata.json,sha256=1p1GFNVrgFKG591VLgOLx3_hYjxzEgnEpY-NTVahGOY,1004
+jaraco.email-1.1.dist-info/namespace_packages.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.email-1.1.dist-info/top_level.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
