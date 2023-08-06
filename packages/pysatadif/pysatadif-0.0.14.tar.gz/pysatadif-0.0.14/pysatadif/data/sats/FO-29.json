@@ -1,0 +1,11 @@
+{
+    "FO-29": {
+        "freq": "145.95",
+        "freqrx": "435.85",
+        "band": "2M",
+        "bandrx": "70CM",
+        "mode": "SSB",
+        "satmode": "SSB",
+        "myrig": "Yaesu FT-991"
+    }
+}

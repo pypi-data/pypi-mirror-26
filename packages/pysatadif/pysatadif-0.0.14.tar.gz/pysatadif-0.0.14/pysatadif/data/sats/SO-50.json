@@ -1,0 +1,10 @@
+{
+    "SO-50": {
+        "freq": "145.85",
+        "freqrx": "436.795",
+        "band": "2M",
+        "bandrx": "70CM",
+        "mode": "FM",
+        "satmode": "FM"
+    }
+}
