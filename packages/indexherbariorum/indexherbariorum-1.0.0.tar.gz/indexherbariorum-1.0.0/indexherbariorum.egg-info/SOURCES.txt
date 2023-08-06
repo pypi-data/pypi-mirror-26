@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+indexherbariorum/__init__.py
+indexherbariorum/client.py
+indexherbariorum.egg-info/PKG-INFO
+indexherbariorum.egg-info/SOURCES.txt
+indexherbariorum.egg-info/dependency_links.txt
+indexherbariorum.egg-info/requires.txt
+indexherbariorum.egg-info/top_level.txt
