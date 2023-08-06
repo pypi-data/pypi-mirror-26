@@ -1,0 +1,15 @@
+jvirtualenv/__init__.py,sha256=-yYBDkgMDSHYf_F_uX23wZsDSjrudhppJvm34su8_I4,23
+jvirtualenv/__main__.py,sha256=aNx81oXHmAXjRfqcuD3Az5bYZuHyQNu39TQ6g1yi6Bw,9724
+jvirtualenv/support/__init__.py,sha256=-yYBDkgMDSHYf_F_uX23wZsDSjrudhppJvm34su8_I4,23
+jvirtualenv/support/minghu6_support.py,sha256=BOH9uQo5y-56AbNRPaxISxMPYx6XcEmT2JZEjJzmhAw,7191
+jvirtualenv/template/__init__.py,sha256=-yYBDkgMDSHYf_F_uX23wZsDSjrudhppJvm34su8_I4,23
+jvirtualenv/template/activate_template.py,sha256=GFUtGX_tit5npcbglggVZco39WmCT7v-cyS9IDWYoqA,2763
+jvirtualenv/template/activate_template_bat.py,sha256=unWdBWbijj5D2pseCdPR7r4cJ9OTJCSCQp_-eLqGR6o,922
+jvirtualenv/template/deactivate_template_bat.py,sha256=kTFnX_J5vuFTZA2_t5mAeUJWtCVgg2DxitlPxEP7TSY,622
+jvirtualenv-0.1.0.dist-info/DESCRIPTION.rst,sha256=I_wG2wEwIcNAmqJUgMvKQzg61hfu9OiQRaxOh-cK29c,1410
+jvirtualenv-0.1.0.dist-info/METADATA,sha256=XHoPRXYIFAXGYHj38HZdPLSmeNE7R8EFGEOwiUZJazo,2019
+jvirtualenv-0.1.0.dist-info/RECORD,,
+jvirtualenv-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+jvirtualenv-0.1.0.dist-info/entry_points.txt,sha256=3_cJBzd77CxFZjpD-4Rsx1XNlTF3HluPjne5_L4lYCw,58
+jvirtualenv-0.1.0.dist-info/metadata.json,sha256=h95OIGPxVYJS0Y1K1LEFR35irW1BcAIypLA265K_YJ0,936
+jvirtualenv-0.1.0.dist-info/top_level.txt,sha256=ijc5sQTrPdSQpvR-lFGPLbs9aiTazjc5mvJ_6_clHEs,12
