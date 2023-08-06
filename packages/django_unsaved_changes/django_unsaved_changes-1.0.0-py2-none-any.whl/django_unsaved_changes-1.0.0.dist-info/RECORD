@@ -1,0 +1,13 @@
+django_unsaved_changes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_unsaved_changes/admin.py,sha256=SEnG7_L-QN4Uy8o4B_nKOwmE4SRjDpylLS0J7uOLPio,2670
+django_unsaved_changes/static/unsaved_changes/css/unsaved_changes.css,sha256=3D0vrMAWkqcPN0HFqBnVWzeRAH81sGvdCYKi9lJ92tc,4704
+django_unsaved_changes/static/unsaved_changes/js/unsaved_changes.jqueryplugin.js,sha256=0lcd8ceCRkfddNLvdCQTnMCtZa5D76Sn_KJAGqdIvSA,27828
+django_unsaved_changes/static/unsaved_changes/js/vendor/garlic.js,sha256=xj8IMdNFQICEuQ5ggVRmM-g6tDBPtFZCTZ8HtkgJrWQ,16484
+django_unsaved_changes/static/unsaved_changes/js/vendor/jquery.js,sha256=it5nQKHTz-34HijZJQkpNBIHsjpV8b6QzMJs9tmOBSo,273199
+django_unsaved_changes/templates/admin/django_unsaved_changes/change_form.html,sha256=KtRi4HzkucRv7vxr4T5rRimkd6AqRfa9gIKRM7Vvfqk,1956
+django_unsaved_changes-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_unsaved_changes-1.0.0.dist-info/METADATA,sha256=FJN7H-7TikSx4m7hme_-BFfccgfhpU_4cHOx-eG7Q-4,672
+django_unsaved_changes-1.0.0.dist-info/RECORD,,
+django_unsaved_changes-1.0.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+django_unsaved_changes-1.0.0.dist-info/metadata.json,sha256=ZHAe1orKSvARomjvN8yoCiN2IJoexedNtNj7RKQ0hZg,811
+django_unsaved_changes-1.0.0.dist-info/top_level.txt,sha256=HRKDUJrmvqJrr9AeOFzPM7dvttBrUUChpBvm2sobJyQ,23
