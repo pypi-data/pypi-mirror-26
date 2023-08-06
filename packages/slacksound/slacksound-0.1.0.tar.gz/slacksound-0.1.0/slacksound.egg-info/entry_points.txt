@@ -1,0 +1,3 @@
+[console_scripts]
+slacksound = slacksound.slacksound:main
+
