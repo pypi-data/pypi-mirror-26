@@ -1,0 +1,52 @@
+.. -*- Mode: rst -*-
+
+..
+   |IntervalArithmeticUrl|
+   |IntervalArithmeticHomePage|_
+   |IntervalArithmeticDoc|_
+   |IntervalArithmetic@github|_
+   |IntervalArithmetic@readthedocs|_
+   |IntervalArithmetic@readthedocs-badge|
+   |IntervalArithmetic@pypi|_
+
+.. |ohloh| image:: https://www.openhub.net/accounts/230426/widgets/account_tiny.gif
+   :target: https://www.openhub.net/accounts/fabricesalvaire
+   :alt: Fabrice Salvaire's Ohloh profile
+   :height: 15px
+   :width:  80px
+
+.. |IntervalArithmeticUrl| replace:: https://fabricesalvaire.github.io/python-interval-arithmetic
+
+.. |IntervalArithmeticHomePage| replace:: IntervalArithmetic Home Page
+.. _IntervalArithmeticHomePage: https://fabricesalvaire.github.io/python-interval-arithmetic
+
+.. |IntervalArithmetic@readthedocs-badge| image:: https://readthedocs.org/projects/IntervalArithmetic/badge/?version=latest
+   :target: http://IntervalArithmetic.readthedocs.org/en/latest
+
+.. |IntervalArithmetic@github| replace:: https://github.com/FabriceSalvaire/python-interval-arithmetic
+.. .. _IntervalArithmetic@github: https://github.com/FabriceSalvaire/python-interval-arithmetic
+
+.. |IntervalArithmetic@pypi| replace:: https://pypi.python.org/pypi/IntervalArithmetic
+.. .. _IntervalArithmetic@pypi: https://pypi.python.org/pypi/IntervalArithmetic
+
+.. |Build Status| image:: https://travis-ci.org/FabriceSalvaire/IntervalArithmetic.svg?branch=master
+   :target: https://travis-ci.org/FabriceSalvaire/IntervalArithmetic
+   :alt: IntervalArithmetic build status @travis-ci.org
+
+.. |Pypi Version| image:: https://img.shields.io/pypi/v/IntervalArithmetic.svg
+   :target: https://pypi.python.org/pypi/IntervalArithmetic
+   :alt: IntervalArithmetic last version
+
+.. |Pypi License| image:: https://img.shields.io/pypi/l/IntervalArithmetic.svg
+   :target: https://pypi.python.org/pypi/IntervalArithmetic
+   :alt: IntervalArithmetic license
+
+.. |Pypi Python Version| image:: https://img.shields.io/pypi/pyversions/IntervalArithmetic.svg
+   :target: https://pypi.python.org/pypi/IntervalArithmetic
+   :alt: IntervalArithmetic python version
+
+..  coverage test
+..  https://img.shields.io/pypi/status/Django.svg
+..  https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star
+
+.. End
