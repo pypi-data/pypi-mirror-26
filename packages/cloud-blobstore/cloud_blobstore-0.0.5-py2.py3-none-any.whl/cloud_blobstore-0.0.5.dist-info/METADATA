@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: cloud-blobstore
+Version: 0.0.5
+Summary: Abstraction layer for cloud blobstores.
+Home-page: https://github.com/chanzuckerberg/cloud-blobstore
+Author: Human Cell Atlas contributors
+Author-email: tonytung@chanzuckerberg.com
+License: Apache Software License
+Description-Content-Type: UNKNOWN
+Platform: MacOS X
+Platform: Posix
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: boto3
+Requires-Dist: google-cloud-storage
+Requires-Dist: requests
+
+# cloud-blobstore
+
+This library provides an abstraction layer for the most basic functionality provided by the cloud providers.  These are the basic functions required by the [Human Cell Atlas](https://www.humancellatlas.org/) [Data Storage Service](https://github.com/HumanCellAtlas/data-store).
+
+#### Running tests
+
+Run `make test` in the top-level directory.
+
+
