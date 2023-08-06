@@ -1,0 +1,189 @@
+yatr
+====
+
+.. image:: https://travis-ci.org/mbodenhamer/yatr.svg?branch=master
+    :target: https://travis-ci.org/mbodenhamer/yatr
+    
+.. image:: https://img.shields.io/coveralls/mbodenhamer/yatr.svg
+    :target: https://coveralls.io/r/mbodenhamer/yatr
+
+.. image:: https://readthedocs.org/projects/yatr/badge/?version=latest
+    :target: http://yatr.readthedocs.org/en/latest/?badge=latest
+
+Yet Another Task Runner.  Or alternatively, YAml Task Runner.  Yatr is a YAML-based task runner that attempts to implement and extend the best features of GNU Make for 21st-century software development contexts that are not centered around the compilation of C/C++ code.  The project is very much in preliminary development, but is nonetheless functional for basic applications.
+
+Installation
+------------
+::
+
+    $ pip install yatr
+
+
+Usage
+-----
+::
+
+    usage: yatr [-h] [-f <yatrfile>] [--version] [--validate] [--dump]
+            [--dump-path] [--pull]
+            [<task>] [ARGS [ARGS ...]]
+
+    Yet Another Task Runner.
+
+    positional arguments:
+      <task>                The task to run
+      ARGS                  Additional arguments for the task
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -f <yatrfile>, --yatrfile <yatrfile>
+			    The yatrfile to load
+      --version             Print version
+      --validate            Only validate the yatrfile
+      --dump                Dump macro values
+      --dump-path           Print yatrfile path
+      --pull                Force download of URL includes and imports
+
+
+If not supplied, ``<yatrfile>`` will default to a file matching the regular expression ``^[Yy]atrfile(.yml)?$``.  If such a file is not present in the current working directory, yatr will search rootward up the filesystem tree looking for a file that matches the expression.  This is intended as a feature of convenience, so that tasks can be easily executed when working in a project sub-directory.  If it is unclear which yatrfile has been loaded, the ``--dump-path`` option may be supplied to disambiguate.  Likewise, the ``-f`` option may be supplied in order to force the loading of a particular yatrfile.
+
+Example(s)
+----------
+
+Suppose you have the following ``yatrfile.yml`` in your current working directory::
+
+    include:
+      - "{{urlbase}}/test/test2.yml"
+
+    macros:
+      urlbase: https://raw.githubusercontent.com/mbodenhamer/yatrfiles/master/yatrfiles
+      b: bar
+      c: "{{b}} baz"
+
+    tasks:
+      cwd: pwd
+
+      bar:
+	- foo
+	- "echo {{c}} {{_1|default('xyz')}}"
+
+      cond1:
+	command: foo
+	if: "true"
+
+      cond2:
+	command: foo
+	if: "false"
+
+      cond3:
+	command: foo
+	ifnot: "true"
+
+      cond4:
+	command: foo
+	ifnot: "false"
+
+
+As illustrated in this example, yatr currently supports three top-level keys in the yatrfile: ``include``, ``macros``, and ``tasks``.  The ``macros`` section must be a mapping of macro names to macro definitions.  Macro definitions may either be plain strings or `Jinja2 templates`_.
+
+The ``include`` section must be a list of strings, each of which must be either a filesystem path or a URL specifying the location of another yatrfile.  When a yatrfile is "included" in this manner, its macros and tasks are added to the macros and tasks defined by the main yatrfile.  Nested includes are supported, following the rule that conflicts in macro or task names are resolved by favoring the definition closest to the main yatrfile.  
+
+For example, suppose yatr is invoked on a yatrfile named ``C.yml``, which includes ``B.yml``, which includes ``A.yml``, as follows:
+
+``A.yml``::
+
+    macros:
+      a: foo
+      b: def
+      c: xyz
+
+
+``B.yml``::
+
+    include:
+      - A.yml
+
+    macros:
+      a: bar
+      b: ghi
+
+
+``C.yml``::
+
+    include:
+      - B.yml
+
+    macros:
+      a: baz
+
+
+In this case, the macro values would resolve as follows::
+
+    $ yatr -f C.yml --dump
+    a = baz
+    b = ghi
+    c = xyz
+
+
+Name conflicts of tasks from includes are resolved the same way as macros.
+
+Include paths or URLs may use macros, as the main example above demonstrates, having an include defined in terms of the ``urlbase`` macro.  However, any such macros must be defined in the yatrfile itself, and cannot be defined in an included yatrfile or depend on the macros defined in an included yatrfile for their proper resolution.
+
+If an include path is a URL, yatr will attempt to download the file and save it in a cache directory.  The cache directory is currently set to ``~/.yatr/``, but future releases will make this configurable.  If the URL file already exists in the cache directory, yatr will load the cached file without downloading.  To force yatr to re-download all URL includes specified by the yatrfile, supply the ``--pull`` option at the command line.
+
+Tasks are defined in the ``tasks`` section of the yatrfile.  Tasks may be defined as a single command string.  In this example, the task ``cwd`` is simply defined as the system command ``pwd``.  If your current working directory happens to be ``/foo/baz``, then::
+
+    $ yatr cwd
+    /foo/baz
+
+
+After includes are processed, macros are not resolved until task runtime.  The example yatrfile specifies the inclusion of a file named `test2.yml`_, which defines a task named ``foo``.  However, ``foo`` is defined in terms of a macro named ``b``, which is not defined in ``test2.yml``.  The macro ``b`` is defined in the main yatrfile, however, which induces the following behavior::
+
+    $ yatr foo
+    bar
+
+
+Tasks may also be defined as a list of command strings, to be executed one after the other, as illustrated by ``bar``::
+
+    $ yatr bar
+    foo
+    bar baz xyz
+
+
+If the command string is the name of a defined task, then yatr will simply execute that task instead of trying to execute that string as a system command.  The ``bar`` task will first execute the ``foo`` task defined in `test2.yml`_, and then run the ``echo`` command.
+
+The ``bar`` task also illustrates another feature of yatr:  command-line arguments may be passed to tasks for execution.  For example::
+
+    $ yatr bar foo
+    foo
+    bar baz foo
+
+
+Unless, explicitly re-defined, the macro ``_1`` denotes the first task command-line argument, ``_2`` denotes the second task command-line argument, and so on.  Default values may be specified using the Jinja2 ``default`` filter, as is illustrated in the definition of ``bar``.
+
+Tasks may be defined to execute conditionally upon the successful execution of a command, using the keys ``if`` and ``ifnot``.  If these or other command options are used, the command itself must be explicitly identified by use of the ``command`` key.  These principles are illustrated in the ``cond1``, ``cond2``, ``cond3``, and ``cond4`` tasks::
+
+    $ yatr cond1
+    bar
+    $ yatr cond2
+    $ yatr cond3
+    $ yatr cond4
+    bar
+
+
+As currently implemented, the strings supplied to ``if`` and ``ifnot`` must be system commands, not tasks, and must not contain any macros.  If a value is supplied for ``if``, the command will be executed only if the return code of the test command is zero.  Likewise, if a value is supplied for ``ifnot``, the command will be executed only if the return code of the test command is non-zero.  Supporting macros and task references in the test command specification is planned for future releases.
+
+.. _Jinja2 templates: http://jinja.pocoo.org/docs/latest/templates/
+.. _test2.yml: https://github.com/mbodenhamer/yatrfiles/blob/master/yatrfiles/test/test2.yml
+
+.. _Future Features:
+
+Future Features
+---------------
+
+As an inspection of the source code might reveal, three additional top-level keys are also allowed in a yatrfile:  ``import``, ``secrets``, and ``contexts``.  The ``import`` section, much like ``include``, specifies a list of paths or URLs.  However, unlike ``include``, which specifies other yatrfiles, the ``import`` section specifies Python modules to import that will extend the functionality of yatr.  While implemented at a basic level, the future shape of this feature is uncertain and thus its use is not recommended at this time.  However, the goal of this feature is to enable the functionality of yatr to be extended in arbitrarily-complex ways when necessary, while preserving the simplicity of the default YAML specification for the other 95% of use cases that do not require such complexity.
+
+The ``secrets`` section defines a special type of macro, specifying a list of names corresponding to secrets that should not be stored as plaintext.  In future releases, yatr will attempt to find these values in the user keyring, and then prompt the user to enter their values via stdin if not present.  There will also be an option to store values so entered in the user keyring to avoid having to re-enter them on future task invocations.  No support for secrets is implemented at present, however.
+
+The ``contexts`` section allows the specification of custom execution contexts in which tasks are invoked.  For example, one might define a custom shell execution context that specifies the values of various environment variables to avoid cluttering up a task definition with extra macros or statements.  This feature is not currently supported, and its future is uncertain.
+
+A top-level ``settings`` section is also planned for configuring the default behavior of tasks in various ways.

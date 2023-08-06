@@ -1,0 +1,30 @@
+include:
+  - "{{urlbase}}/test/test2.yml"
+
+macros:
+  urlbase: https://raw.githubusercontent.com/mbodenhamer/yatrfiles/master/yatrfiles
+  b: bar
+  c: "{{b}} baz"
+
+tasks:
+  cwd: pwd
+
+  bar:
+    - foo
+    - "echo {{c}} {{_1|default('xyz')}}"
+
+  cond1:
+    command: foo
+    if: "true"
+
+  cond2:
+    command: foo
+    if: "false"
+
+  cond3:
+    command: foo
+    ifnot: "true"
+
+  cond4:
+    command: foo
+    ifnot: "false"
