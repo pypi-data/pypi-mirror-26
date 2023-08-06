@@ -1,0 +1,8 @@
+pytest
+Jinja2
+matplotlib
+msgpack_python
+seaborn
+six
+pyzmq
+python-snappy
