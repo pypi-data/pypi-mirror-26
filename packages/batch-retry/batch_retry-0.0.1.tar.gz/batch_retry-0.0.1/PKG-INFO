@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: batch_retry
+Version: 0.0.1
+Summary: Batch send data with retries and exponential backoff
+Home-page: https://github.com/envato/batch_retry
+Author: probinson
+Author-email: patrick.robinson@envato.com
+License: MIT
+Description: README.md
+Platform: UNKNOWN
