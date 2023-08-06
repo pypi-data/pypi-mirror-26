@@ -1,0 +1,14 @@
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/sale_order_action_invoice_create_hook/README.rst,sha256=Hxem7lhQ_oolAcCjsBbTn5Cn0_yAuhinn7kJojsUL64,2044
+odoo/addons/sale_order_action_invoice_create_hook/__init__.py,sha256=2tp7AhE9CD9nyN0o9xhFbeB0OH9zgdBsAS6w2PXpZXQ,181
+odoo/addons/sale_order_action_invoice_create_hook/__manifest__.py,sha256=h2kEEf4hcSyduAgHJSRXnEbGh8tHdARBbAxdIOfbJ5g,483
+odoo/addons/sale_order_action_invoice_create_hook/model/__init__.py,sha256=YK3pgXzBtWOxMSCyyDU8FsBgX2EJgdgM6wlJ95CmdXc,186
+odoo/addons/sale_order_action_invoice_create_hook/model/sale_order.py,sha256=wstL_e-ibDEVlJ1RInTK8qbaGJUFfOSZ221TIT7jHAQ,5870
+odoo/addons/sale_order_action_invoice_create_hook/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/DESCRIPTION.rst,sha256=Pg8pI9-UDl--qkwX3YIajurf1ZX4gHg9TGaLTqxVsMM,2046
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/METADATA,sha256=Ybe4TcOD0v7G59KTgrCiJXU9NAy-WA4r1kn3jEpbenY,2585
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/RECORD,,
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/metadata.json,sha256=janKZGAoskCeva-xLblP1YS3KysxrncgUHZxuN8OnsE,756
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_sale_order_action_invoice_create_hook-10.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
