@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: aiommy
+Version: 0.0.1
+Summary: A helpful tools for building web API
+Home-page: https://github.com/dennypenta/aiommy
+Author: Denis Dvornikov
+Author-email: candyboobers@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: There would an aiommy description.
+        Something about how to use and what is it for.
+        
+        # TODO:
+          test installing
+          refactoring
+        
+          license
+          makefile
+          travis
+        
+          responses
+          validators
+          views
+        
+          other extensions for peewee
+        
+Keywords: Web API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
