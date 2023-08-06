@@ -1,0 +1,2 @@
+invisibleroads-macros>=0.9.0
+invisibleroads-uploads>0.4.0crosscompute>=0.7.0
