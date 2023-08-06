@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+awsencrpytioncli.egg-info/PKG-INFO
+awsencrpytioncli.egg-info/SOURCES.txt
+awsencrpytioncli.egg-info/dependency_links.txt
+awsencrpytioncli.egg-info/top_level.txt
