@@ -1,0 +1,6 @@
+bpmn_dmn.egg-info/PKG-INFO
+bpmn_dmn.egg-info/SOURCES.txt
+bpmn_dmn.egg-info/dependency_links.txt
+bpmn_dmn.egg-info/requires.txt
+bpmn_dmn.egg-info/top_level.txt
+bpmn_dmn.egg-info/zip-safe
