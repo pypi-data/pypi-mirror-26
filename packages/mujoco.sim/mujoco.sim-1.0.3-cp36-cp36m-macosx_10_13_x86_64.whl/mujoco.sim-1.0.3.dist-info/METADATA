@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: mujoco.sim
+Version: 1.0.3
+Summary: Python wrapper for MuJoCo physics simulation.
+Home-page: https://github.com/lobachevzky/mujoco
+Author: Ethan Brooks
+Author-email: ethanbrooks@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: physics mujoco wrapper python-wrapper physics-simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Cython (==0.27.3)
+Requires-Dist: numpy (==1.13.3)
+
+`Documentation <http://mujoco.readthedocs.io/>`_
+
+.. inclusion-marker-do-not-remove
+
+MuJoCo for Python!
+==================
+
+This is a simple python wrapper around the MuJoCo physics simulation. I wrote it when I couldn't get `mujoco-py 
+<https://github.com/openai/mujoco-py>`_ to work. 
+
+Installation
+------------
+
+.. code-block:: bash
+
+  pip install mujoco
+
+
