@@ -1,0 +1,16 @@
+LICENSE,sha256=PYH_lOCKgap0bR6Y__PzQ8HhLwZqqwl705GrPI6gB0Q,1072
+README.md,sha256=TrTKTVN1mMz28HobtfoKhHfqv5PH4bjJ4fpzit-UJgM,1161
+VERSION,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+requirements.txt,sha256=4J9lbBMLnAiyxatxh8iRKV5Entd_6-oqbO7pzJjMsPw,6
+tidy_headers/__init__.py,sha256=gZOJe_CYaiw3zplD4ZeymKTN42s8kiTqWCgLOFuZ-ic,85
+tidy_headers/__version__.py,sha256=A8uvf53LSYj13DMH-Qjr3-_CShmxpBdGjTtFGS8zPb8,559
+tidy_headers/_main.py,sha256=ykwTxA3MmWDTBHMLf1fmYqSrP8sgDThPhnujZFLyP2M,1708
+tidy_headers/_parse_array.py,sha256=CiBpe80QzG40EB1IkeoixogB5WTjyC5VqkfjB5wi-E4,2092
+tidy_headers/_parse_item.py,sha256=eWgFcphDeetKz_gPlCDL-fX0rYL1-WIAmWpeOh76BuE,3006
+tidy_headers/_utilities.py,sha256=Irw2k7sS7NTyCqtodwbeqPUcyCSFec39p7ctZLbEA-Y,1144
+tidy_headers-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+tidy_headers-0.2.0.dist-info/METADATA,sha256=R05QVKP5SaPustFqYvFCjWHGnBWmB6OKcV4dfwLoJjc,826
+tidy_headers-0.2.0.dist-info/RECORD,,
+tidy_headers-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+tidy_headers-0.2.0.dist-info/metadata.json,sha256=ezpao0zBSUMreyF6rcJG3G3DT7m_CEajMQ5V2Xt6rSw,1028
+tidy_headers-0.2.0.dist-info/top_level.txt,sha256=Oh0RkJttT-3ayb8RIiCcJfSUhs5TnAkedGmxhYECYrY,13
