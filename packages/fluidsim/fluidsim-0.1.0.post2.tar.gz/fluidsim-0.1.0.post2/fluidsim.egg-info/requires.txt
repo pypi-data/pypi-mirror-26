@@ -1,0 +1,12 @@
+fluiddyn>=0.1.6
+future>=0.16
+h5py
+pyfftw>=0.10.4
+fluidfft
+
+[doc]
+Sphinx>=1.1
+numpydoc
+
+[parallel]
+mpi4py
