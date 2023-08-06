@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block bodyclass %}wiki-page{% endblock %}
+
+{% block title %}{{ content["title"] }}{% endblock %}
+
+{% block body %}
+  <div style="padding:2%">
+    <p>  {{ content["text"] }} </p>
+    {% if content["sub_page"] %}
+      <a href="_dir/index.html"> See sub page</a>
+    {% endif %}
+  </div>
+{% endblock %}
+

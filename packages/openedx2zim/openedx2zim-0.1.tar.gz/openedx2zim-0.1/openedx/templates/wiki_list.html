@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block bodyclass %}wiki-list{% endblock %}
+
+{% block title %} Wiki {% endblock %}
+
+{% block body %}
+  <div style="padding:2%">
+    <ul>
+    {% for page in pages %}
+      <li><a href="{{ page["url"]  }}/index.html"> {{ page["title"] }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

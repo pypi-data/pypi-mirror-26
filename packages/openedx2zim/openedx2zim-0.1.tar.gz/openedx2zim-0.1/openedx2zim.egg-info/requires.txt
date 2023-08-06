@@ -1,0 +1,8 @@
+docopt
+bs4
+lxml
+webvtt-py
+youtube-dl
+awesome-slugify
+jinja2
+mistune
