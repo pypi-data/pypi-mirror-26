@@ -1,0 +1,9 @@
+numpy
+pandas
+jinja2
+IPython
+csv_compare
+mosaiq_connection
+mosaiq_field_export
+notebook
+centre_config
