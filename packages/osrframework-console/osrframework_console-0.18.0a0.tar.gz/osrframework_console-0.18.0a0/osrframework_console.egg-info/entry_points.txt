@@ -1,0 +1,3 @@
+[console_scripts]
+osrframework_console_v0.18 = osrframework_console.console:main
+
