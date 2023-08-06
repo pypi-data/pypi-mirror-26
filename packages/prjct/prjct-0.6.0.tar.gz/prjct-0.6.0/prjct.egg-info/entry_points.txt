@@ -1,0 +1,4 @@
+[console_scripts]
+jrnl = prjct._vendor.jrnl.cli:run
+prjct = prjct.cli:main
+
