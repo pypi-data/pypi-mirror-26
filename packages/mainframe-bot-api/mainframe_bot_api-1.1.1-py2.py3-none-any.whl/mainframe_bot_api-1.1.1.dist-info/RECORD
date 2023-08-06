@@ -1,0 +1,10 @@
+mainframe/__init__.py,sha256=xnOqJKJ8EgEi0Jefnd1z5-HB9vpjfG3em-doFc6mxl4,1700
+mainframe/array_type.py,sha256=hcLDg71qxV_qmD7RGYeCZNiBaqp13_0vdxgWwwEgl28,128
+mainframe/client.py,sha256=IUfIhjx3wiVUS_LhVN0xmEmoLQHmBZ_XJZS9O0KJT38,2415
+mainframe/response.py,sha256=lCDQqPODC0p9iKFs73PtDqdmhznKYvWOVK6hhE-_Ggc,1654
+mainframe_bot_api-1.1.1.dist-info/DESCRIPTION.rst,sha256=BpgoUFSM6eGhGHV3IUNgB8MDI-rTAhadgWzuRaFWIH4,148
+mainframe_bot_api-1.1.1.dist-info/METADATA,sha256=XTUXcldw8PZejEUhLiZGVT0-NhFC-nAni-owzbMQyBM,1188
+mainframe_bot_api-1.1.1.dist-info/RECORD,,
+mainframe_bot_api-1.1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+mainframe_bot_api-1.1.1.dist-info/metadata.json,sha256=ul2Uq7UziDXihaQzKrtH31LRySeIgdjLs4_USSWFb-k,1168
+mainframe_bot_api-1.1.1.dist-info/top_level.txt,sha256=LbxulWZAhD9kWoyhovYn4wIHdQLm6nogKg5NCtm0mhg,10
