@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+jsonparser.egg-info/PKG-INFO
+jsonparser.egg-info/SOURCES.txt
+jsonparser.egg-info/dependency_links.txt
+jsonparser.egg-info/top_level.txt
