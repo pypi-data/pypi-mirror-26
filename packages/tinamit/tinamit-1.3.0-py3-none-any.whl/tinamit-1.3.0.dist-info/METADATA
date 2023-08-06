@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: tinamit
+Version: 1.3.0
+Summary: Conexión de modelos socioeconómicos (dinámicas de los sistemas) con modelos biofísicos.
+Home-page: https://tinamit.readthedocs.io
+Author: Julien Jean Malard
+Author-email: julien.malard@mail.mcgill.ca
+License: GNU GPL 3
+Download-URL: https://github.com/julienmalard/Tinamit
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires: numpy
+Requires: matplotlib
+Requires: scipy
+Requires: taqdir
+
+Tinamït permite conectar modelos biofísicos con modelos socioeconómicos de dinámicas de lossistemas (MDS). Es muy útil para proyectos de modelización participativa, especialmenteen proyectos de manejo del ambiente. El interaz gráfico traducible facilita la adopción porcomunidades en cualquier parte del mundo.
+
+
