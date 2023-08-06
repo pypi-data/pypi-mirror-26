@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: attainia-django-extensions
+Version: 0.2.0
+Summary: A collection of helpful utilities to be used in Attainia Django/Rest Framework projects
+Home-page: https://github.com/Attainia/attainia-django-extensions
+Author: Attainia
+Author-email: developers@attainia.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        Attainia Django Extensions
+        ======================================================================================================================
+        
+        Attainia Django Extensions is a collection of helpful utilities to be used in Attainia Django/Rest Framework projects
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy

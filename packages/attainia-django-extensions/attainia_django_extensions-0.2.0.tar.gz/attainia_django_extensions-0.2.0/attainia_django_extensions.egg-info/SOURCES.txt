@@ -1,0 +1,13 @@
+AUTHORS
+MANIFEST.in
+README.md
+setup.py
+attainia_django_extensions/__init__.py
+attainia_django_extensions/__version__.py
+attainia_django_extensions/models.py
+attainia_django_extensions/utils.py
+attainia_django_extensions.egg-info/PKG-INFO
+attainia_django_extensions.egg-info/SOURCES.txt
+attainia_django_extensions.egg-info/dependency_links.txt
+attainia_django_extensions.egg-info/requires.txt
+attainia_django_extensions.egg-info/top_level.txt
