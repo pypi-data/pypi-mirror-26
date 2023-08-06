@@ -1,0 +1,11 @@
+cerise_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cerise_client/errors.py,sha256=NE9c42ll-QH9Df_u9HDirvvPKkIjER3cLk3alxpY28w,1642
+cerise_client/job.py,sha256=mQDD2fQWzZ7_sevdzQT70Cum_AUaD_329C7hCbl0jY8,6795
+cerise_client/output_file.py,sha256=MPBZOLkmRQeUjmgE_bOzMHL3i9vjce2XDKu8LRgWenA,1810
+cerise_client/service.py,sha256=evEMVoI8vYR0GowMzQLMPd3ZILendV89mCJttpjb4Os,17302
+cerise_client-0.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cerise_client-0.2.1.dist-info/METADATA,sha256=wJ6p1e8jcgqlCCogkc8ljwqtF8Gd6WMrCiLU1aSx6Io,962
+cerise_client-0.2.1.dist-info/RECORD,,
+cerise_client-0.2.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+cerise_client-0.2.1.dist-info/metadata.json,sha256=uBEKrhCQo-t71tb4JBqOFs9GCtfA-QIzDkxMOwx-Wf8,1120
+cerise_client-0.2.1.dist-info/top_level.txt,sha256=mS-e0le-k6sGhrcBfOzkI3IvBV-r_ndZAxrcYviCUQI,14
