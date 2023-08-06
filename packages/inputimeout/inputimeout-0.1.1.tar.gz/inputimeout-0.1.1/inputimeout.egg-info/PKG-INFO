@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: inputimeout
+Version: 0.1.1
+Summary: Standard input with timeout.
+Home-page: http://github.com/johejo/inputimeout
+Author: Mitsuo Heijo
+Author-email: mitsuo_h@outlook.com
+License: MIT
+Description: # inputimeout
+        
+        ## Description
+        Standard input with timeout.
+        
+        ## Install
+        
+        ```bash
+        $ pip install inputimeout
+        ```
+        
+        ## Usage
+        
+        ```python
+        from inputimeout import inputimeout, TimeoutOccurred
+        try:
+            something = inputimeout(prompt='>>', timeout=5)
+        except TimeoutOccurred:
+            print('Timeout!')
+            something = 'something'
+        print(something)
+        ```
+        ## 
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
