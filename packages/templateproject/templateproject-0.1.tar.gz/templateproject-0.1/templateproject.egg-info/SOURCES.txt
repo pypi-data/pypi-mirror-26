@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+templateproject/__init__.py
+templateproject/command_line.py
+templateproject/templateproject.py
+templateproject.egg-info/PKG-INFO
+templateproject.egg-info/SOURCES.txt
+templateproject.egg-info/dependency_links.txt
+templateproject.egg-info/entry_points.txt
+templateproject.egg-info/not-zip-safe
+templateproject.egg-info/top_level.txt
