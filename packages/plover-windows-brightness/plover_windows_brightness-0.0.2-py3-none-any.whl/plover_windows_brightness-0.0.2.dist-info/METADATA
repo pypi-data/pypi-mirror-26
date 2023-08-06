@@ -1,0 +1,60 @@
+Metadata-Version: 2.0
+Name: plover-windows-brightness
+Version: 0.0.2
+Summary: Change Windows monitor brightness with Plover
+Home-page: https://github.com/morinted/plover_windows_brightness
+Author: Ted Morin
+Author-email: morinted@gmail.com
+License: GNU General Public License v2 or later (GPLv2+)
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: plover (>=4.0.0.dev0)
+Requires-Dist: pymi
+
+Plover Windows Brightness Control
+=================================
+
+Add support for controlling Windows monitor brightness from Plover.
+
+Sample Usage
+------------
+
+Monitor brightness is a value between 0 and 100. You have three
+available commands to manipulate this brightness: BRIGHTNESS_SET, BRIGHTNESS_UP, and BRIGHTNESS_DOWN.
+
+Increase Brightness
+~~~~~~~~~~~~~~~~~~~
+
+-  ``{PLOVER:BRIGHTNESS_UP}``
+
+   Increase brightness by 10 points.
+-  ``{PLOVER:BRIGHTNESS_UP:20}``
+
+   Increase brightness, specifying 20 points.
+
+Decrease Brightness
+~~~~~~~~~~~~~~~~~~~
+
+-  ``{PLOVER:BRIGHTNESS_DOWN}``
+
+   Decrease brightness by 10 points.
+-  ``{PLOVER:BRIGHTNESS_DOWN:20}``
+
+   Decrease brightness, specifying 20 points.
+
+Setting Brightness
+~~~~~~~~~~~~~~~~~~
+
+-  ``{PLOVER:BRIGHTNESS_SET:50}``
+
+   Set brightness to half.
+
