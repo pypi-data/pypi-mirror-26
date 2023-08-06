@@ -1,0 +1,17 @@
+emission/EmissionJSONReader.py,sha256=0sAaHBV6DB42a3M0u0u7elLUeX3AWcDcWCTTOjypGfY,12318
+emission/Extrapolate.py,sha256=ZjOIfT7XXdydziqQuxV_E4S1jz7t-pRCNHOl_YEpbjQ,810
+emission/Interpolate.py,sha256=JxtFlxWMX9KDu1So3py16NnbTStyGkjF7vOJqpYTkNA,847
+emission/Pollutants.py,sha256=rR0RtmLwxgoB5qLbtwwkF0oyGUsynaR1mbFLYT7UaIA,649
+emission/__init__.py,sha256=qz1sU9fPlc_gkG_V8LgcG3HL0DqKiEiJjqrPxis4cSE,409
+emission/__version__.py,sha256=XtWUl6HPylv5jZLd2KkgtPptuzuda93kC2REmOrF-Cs,22
+emission/exceptions.py,sha256=JXDBGz2STZO1u8uzCyBzSnb672QWHBUmVUNfnRP19Q4,143
+emission/planner.py,sha256=pXZecxA0wKoK_6LOjzbi5roA6jZPDRHwawwdN4lKWtk,9805
+emission/roadTransport.json.gz,sha256=uUVjaK0HZqdtn6-wgZTtNY2Sx9oxILOLev8kbbjWXr4,1193445
+emission/trucksEmissions.json.gz,sha256=0oqQTuttkWa5JFp6EgGCeX3SLCuMPFVZNVyh9oRHRhs,834587
+emission/vehicles.py,sha256=6RkN2vffU9rh2QhjWxQFR8SYxf-DkauRjJuztoPGOLs,3421
+emission-0.2.3.dist-info/DESCRIPTION.rst,sha256=N4iV9ImhX-CWR7l5yO9vQgdcQaDNblCoZW-E4cpboog,1140
+emission-0.2.3.dist-info/METADATA,sha256=mcOV61uU2_b_KXroRoemMIhhLLErOfqZwi2xWbnsgUo,2103
+emission-0.2.3.dist-info/RECORD,,
+emission-0.2.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+emission-0.2.3.dist-info/metadata.json,sha256=ag_tBmrkC3B5oY5I9yodHvb7PtNSb0kQ_6VgKFcwCJs,1143
+emission-0.2.3.dist-info/top_level.txt,sha256=ekt7ZhTF9o8IYGVbZofofo-DLk9OTzalEbz87IAiYq0,9
