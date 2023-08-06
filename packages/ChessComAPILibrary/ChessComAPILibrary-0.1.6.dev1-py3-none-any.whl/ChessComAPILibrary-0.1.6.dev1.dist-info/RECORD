@@ -1,0 +1,16 @@
+ChessComAPILibrary-0.1.6.dev1.dist-info/DESCRIPTION.rst,sha256=BSuIFM8d3u7x7FLUqGm6K24ycdxDYOHVwqHRe05OaP8,21
+ChessComAPILibrary-0.1.6.dev1.dist-info/METADATA,sha256=yJE6L-bVI4M24u3L0Uz4k9QEkvGo3ZQszao-SHTmcfg,375
+ChessComAPILibrary-0.1.6.dev1.dist-info/RECORD,,
+ChessComAPILibrary-0.1.6.dev1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+ChessComAPILibrary-0.1.6.dev1.dist-info/metadata.json,sha256=g9wq8XFi-YtHYh8NApsuZN-b7r0SJ3oZrMMZTt0CMHA,635
+ChessComAPILibrary-0.1.6.dev1.dist-info/top_level.txt,sha256=Y4Gm_EgxdKQKfx1v7xMagpoCaRvdHabAtA9epFJzPno,15
+library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+library/playerdata/__init__.py,sha256=I6xZYJEVsprYg1g9ujYN2wrcGjy0-_GbJBUz9OhZ6RE,80
+library/playerdata/games.py,sha256=GwTkU8tVUJon-9zdYoKOHa0yOpLaHYzHUcn0FdZN93Q,2147
+library/playerdata/profile.py,sha256=dJoWG2wz6tux7h4ZBou6bwhzByCfsRbVy47krQMmdmc,1066
+pubapi_library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubapi_library/playerdata/__init__.py,sha256=I6xZYJEVsprYg1g9ujYN2wrcGjy0-_GbJBUz9OhZ6RE,80
+pubapi_library/playerdata/games.py,sha256=GwTkU8tVUJon-9zdYoKOHa0yOpLaHYzHUcn0FdZN93Q,2147
+pubapi_library/playerdata/profile.py,sha256=ErQfHAj0BZjFulHlZB21otD84utpqhb23axodBLBOC4,1069
+pubapi_library/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubapi_library/tests/test_playerdata.py,sha256=C7tTZYfiRXWifDD9ifjGK-xKsJUu9NxZXRK4VKgnV4M,6785
