@@ -1,0 +1,6 @@
+deap
+future
+matplotlib
+numpy
+pandas
+scipy
