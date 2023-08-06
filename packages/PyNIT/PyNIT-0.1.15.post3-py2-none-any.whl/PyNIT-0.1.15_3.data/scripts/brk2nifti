@@ -1,0 +1,24 @@
+#!python
+
+__author__ = 'SungHo Lee (shlee@unc.edu)'
+__version_info__ = ('2017', '03', '25')
+__version__ = '-'.join(__version_info__) + 'REV04'
+
+import argparse, os
+from pynit.handler.images import BrukerRawData
+
+
+def main():
+    parser = argparse.ArgumentParser(prog='brk2nifti', description="Convert Bruker raw data to Nifti formated image")
+    parser.add_argument("pid", help="Proccessed ID (in case image is reconstructed)")
+    parser.add_argument("path", help="Folder location for the Bruker raw data", type=str)
+    parser.add_argument("filename", help="Filename w/o extension to export NifTi image", type=str)
+    parser.add_argument("-V", "--version", action="version", version="%(prog)s ("+__version__+")")
+    parser.add_argument("-o", "--orient", help="Reorientation to correct space", action='store_true', default=0)
+    args = parser.parse_args()
+
+    img = BrukerRawData(os.getcwd(), args.path, args.pid, ori=args.orient, convert=True)
+    img.nii.to_filename('{}.nii.gz'.format(args.filename))
+
+if __name__ == '__main__':
+    main()
