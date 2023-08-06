@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+json2hive/__about__.py
+json2hive/__init__.py
+json2hive/cli.py
+json2hive/generators.py
+json2hive/utils.py
+json2hive.egg-info/PKG-INFO
+json2hive.egg-info/SOURCES.txt
+json2hive.egg-info/dependency_links.txt
+json2hive.egg-info/entry_points.txt
+json2hive.egg-info/not-zip-safe
+json2hive.egg-info/requires.txt
+json2hive.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+json2hive = json2hive.cli:main
+
