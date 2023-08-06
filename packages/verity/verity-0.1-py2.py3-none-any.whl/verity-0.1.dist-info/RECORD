@@ -1,0 +1,9 @@
+verity/__init__.py,sha256=uS0MJ8VHUtOjooYY-83Dk3zcJQPA5uKSlbdm0BYidqM,1239
+verity/__version__.py,sha256=GYSaz6YoWmoWlM33L9u6g9o8K19gKWoc7vF2s6WCrx0,60
+verity/json.py,sha256=Mi9Wxf-7kdIUS_9YN3pthrHhb50y9nG534Sn2N9m18s,261
+verity-0.1.dist-info/DESCRIPTION.rst,sha256=ScTio8N6STLhFOENlXBMVJi191PH8lY8ZWqVttpgUxA,1360
+verity-0.1.dist-info/METADATA,sha256=JNCMMnB-B1D1hledh6dl6cg_x7BFNPzlAmTSOvptbI4,2083
+verity-0.1.dist-info/RECORD,,
+verity-0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+verity-0.1.dist-info/metadata.json,sha256=0D3NIiFeGCoHUyHVyOu5vRR0HXhssBVUBvuuSlVZBuk,845
+verity-0.1.dist-info/top_level.txt,sha256=_b1_mxjHlOVHAlI91qi3-nWoJnbH7RRr9hgrVHwPJas,7
