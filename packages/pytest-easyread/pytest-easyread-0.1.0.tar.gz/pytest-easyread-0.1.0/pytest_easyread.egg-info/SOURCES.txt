@@ -1,0 +1,14 @@
+CHANGES.md
+MANIFEST.in
+README.md
+pytest_easyread.py
+setup.cfg
+setup.py
+test_pytest_easyread.py
+pytest_easyread.egg-info/PKG-INFO
+pytest_easyread.egg-info/SOURCES.txt
+pytest_easyread.egg-info/dependency_links.txt
+pytest_easyread.egg-info/entry_points.txt
+pytest_easyread.egg-info/not-zip-safe
+pytest_easyread.egg-info/requires.txt
+pytest_easyread.egg-info/top_level.txt

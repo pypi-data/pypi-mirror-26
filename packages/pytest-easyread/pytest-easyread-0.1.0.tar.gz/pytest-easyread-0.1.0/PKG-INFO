@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: pytest-easyread
+Version: 0.1.0
+Summary: pytest plugin that makes terminal printouts of the reports easier to read
+Home-page: https://github.com/CrystalPea/pytest-easyread
+Author: Pea Tyczynska
+Author-email: m.a.tyczynska@gmail.com
+License: BSD
+Download-URL: https://github.com/CrystalPea/pytest-easyread/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: # pytest-easyread
+        
+        This is a pytest plugin that aims to make the way pytest reports to terminal easier to read.
+        
+        ### Requirements
+        
+        You will need the following prerequisites in order to use pytest-easyread:  
+        
+        Python (tested on versions 2.7 and 3.4)
+        pytest 3.0.4 or newer  
+        
+        
+        ### Installation
+        
+        To install pytest-easyread:  
+        
+        ```
+        $ pip install git+https://github.com/CrystalPea/pytest-easyread.git
+        ```
+        
+        Then add --easy flag when you run the tests, like this:
+        ```
+        $ pytest --easy
+         ```
+        
+         ### Ideal use
+        
+         - pytest-easyread is optimised for use with tests names that use underscores, like "test_this_feature_works"  
+         - For now pytest-easyread is set to verbose mode only  
+        
+Keywords: testing,readability,terminal
+Platform: any
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
