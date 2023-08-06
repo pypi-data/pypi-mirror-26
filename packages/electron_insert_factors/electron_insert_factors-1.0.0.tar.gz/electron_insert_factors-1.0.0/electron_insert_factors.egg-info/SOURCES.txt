@@ -1,0 +1,8 @@
+setup.py
+electron_insert_factors/__init__.py
+electron_insert_factors/electron_insert_factors.py
+electron_insert_factors.egg-info/PKG-INFO
+electron_insert_factors.egg-info/SOURCES.txt
+electron_insert_factors.egg-info/dependency_links.txt
+electron_insert_factors.egg-info/requires.txt
+electron_insert_factors.egg-info/top_level.txt
