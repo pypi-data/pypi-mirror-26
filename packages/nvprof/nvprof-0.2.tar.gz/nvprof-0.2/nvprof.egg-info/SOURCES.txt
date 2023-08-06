@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+nvprof/__init__.py
+nvprof/__main__.py
+nvprof.egg-info/PKG-INFO
+nvprof.egg-info/SOURCES.txt
+nvprof.egg-info/dependency_links.txt
+nvprof.egg-info/entry_points.txt
+nvprof.egg-info/not-zip-safe
+nvprof.egg-info/top_level.txt
