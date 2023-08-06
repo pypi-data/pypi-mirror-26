@@ -1,0 +1,12 @@
+setup.py
+tcs_sdk/__init__.py
+tcs_sdk/storage.py
+tcs_sdk/tf_task.py
+tcs_sdk.egg-info/PKG-INFO
+tcs_sdk.egg-info/SOURCES.txt
+tcs_sdk.egg-info/dependency_links.txt
+tcs_sdk.egg-info/not-zip-safe
+tcs_sdk.egg-info/requires.txt
+tcs_sdk.egg-info/top_level.txt
+tcs_sdk/example/__init__.py
+tcs_sdk/example/minst_task.py
