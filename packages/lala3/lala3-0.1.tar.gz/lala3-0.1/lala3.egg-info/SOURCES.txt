@@ -1,0 +1,7 @@
+setup.py
+lala3/__init__.py
+lala3.egg-info/PKG-INFO
+lala3.egg-info/SOURCES.txt
+lala3.egg-info/dependency_links.txt
+lala3.egg-info/not-zip-safe
+lala3.egg-info/top_level.txt
