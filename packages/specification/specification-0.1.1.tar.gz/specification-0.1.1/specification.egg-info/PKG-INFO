@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: specification
+Version: 0.1.1
+Summary: Python implementaion of the `Specification` pattern
+Home-page: https://github.com/mamrhein/specification
+Author: Michael Amrhein
+Author-email: michael@adrhinum.de
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: # Python implementation of the *Specification* pattern.
+        
+        > The central idea of Specification is to separate the statement of how to
+        match a candidate, from the candidate object that it is matched against. As
+        well as its usefulness in selection, it is also valuable for validation and
+        for building to order.
+        
+        [E. Evans, M. Fowler - Specifications](https://martinfowler.com/apsupp/spec.pdf)
+        
+Keywords: specification predicate
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
