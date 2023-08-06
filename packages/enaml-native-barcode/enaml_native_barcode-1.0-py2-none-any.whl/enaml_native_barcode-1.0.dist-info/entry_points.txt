@@ -1,0 +1,3 @@
+[p4a_recipe]
+enaml_native_barcode = enaml_native_barcode:get_recipe
+
