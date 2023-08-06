@@ -1,0 +1,9 @@
+-r requirements/default-lt32.txt
+setuptools
+wheel
+twine
+Sphinx
+recommonmark
+sphinx-autobuild
+sphinx-pypi-upload
+coverage

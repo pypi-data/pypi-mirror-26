@@ -1,0 +1,14 @@
+
+[develop]
+setuptools
+wheel
+twine
+Sphinx
+recommonmark
+sphinx-rtd-theme
+sphinx-autobuild
+sphinx-pypi-upload
+coverage
+
+[test]
+coverage
