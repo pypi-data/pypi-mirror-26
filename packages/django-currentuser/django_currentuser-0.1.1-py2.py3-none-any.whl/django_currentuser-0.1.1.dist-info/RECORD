@@ -1,0 +1,11 @@
+django_currentuser/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+django_currentuser/middleware.py,sha256=1DuE72oNYlyJM-qXnpTdVOIOsoEhLfa1TvG2AxSncUE,1199
+django_currentuser/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_currentuser/db/models/__init__.py,sha256=Lzn99zMCGQFl7Nc5bfaHBYvXERoxHqX7RQXXErEA5YE,98
+django_currentuser/db/models/fields.py,sha256=sFgns-ZnpdCTbslcLfCopDmgJ0A3l4WhkCES8ePQTVI,1192
+django_currentuser-0.1.1.dist-info/DESCRIPTION.rst,sha256=gZKionR1FPG7lrwGqrKWuW-l4Tkbfi-GTVmqhM-SFJ8,3816
+django_currentuser-0.1.1.dist-info/METADATA,sha256=CkIFi8--d-UE9nWPC3jjVCZo6ArUd-WYECM7_JK6_Gk,4875
+django_currentuser-0.1.1.dist-info/RECORD,,
+django_currentuser-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_currentuser-0.1.1.dist-info/metadata.json,sha256=RyluRvZ9UbRApgX2MCFy8LjeAkMBvsRFBuxWCUrBdnM,1161
+django_currentuser-0.1.1.dist-info/top_level.txt,sha256=AlJIshEw6RgbCQSHS2uiX0vH1zWEaM2AQ9egFHwga0k,19
