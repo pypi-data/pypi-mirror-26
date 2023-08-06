@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: trytond-calendar-webdav3
+Version: 4.2.1
+Summary: CalDAV module for GNU Health and Python3
+Home-page: http://health.gnu.org
+Author: GNU Solidario
+Author-email: health@gnusolidario.org
+License: GPL-3
+Download-URL: http://ftp.gnu.org/gnu/health/
+Description-Content-Type: UNKNOWN
+Description: GNU Health Calendar for WebDAV3
+        ===============================
+        
+        The package if the continuation of the CalDAV functionality
+        for the discontinued Tryton package.
+        
+        It has been ported to Python 3 and GNU Health.
+        
+Keywords: GNUHealth calendar caldav
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: Bulgarian
+Classifier: Natural Language :: Catalan
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Czech
+Classifier: Natural Language :: Dutch
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Natural Language :: German
+Classifier: Natural Language :: Hungarian
+Classifier: Natural Language :: Italian
+Classifier: Natural Language :: Polish
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Natural Language :: Russian
+Classifier: Natural Language :: Slovenian
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Office/Business

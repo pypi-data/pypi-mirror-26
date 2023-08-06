@@ -1,0 +1,10 @@
+vobject>=0.8.0
+PyWebDAV3-GNUHealth>=0.10.1
+python-dateutil
+pytz
+python-sql>=0.4
+trytond_webdav<4.3,>=4.2
+trytond<4.3,>=4.2
+
+[test]
+caldav
