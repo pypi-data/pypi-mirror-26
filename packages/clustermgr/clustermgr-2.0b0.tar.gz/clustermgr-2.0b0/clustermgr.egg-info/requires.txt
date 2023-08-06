@@ -1,0 +1,12 @@
+flask<=0.12
+flask-wtf
+celery
+flask-sqlalchemy
+redis
+requests
+flask-migrate
+ldap3
+paramiko
+cryptography
+ipaddress
+enum34
