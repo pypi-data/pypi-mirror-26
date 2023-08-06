@@ -1,0 +1,261 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>tt - the Boolean expression toolbox &#8212; tt 0.6.3 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.6.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="User Guide" href="user_guide.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tt-the-boolean-expression-toolbox">
+<h1>tt - the Boolean expression toolbox<a class="headerlink" href="#tt-the-boolean-expression-toolbox" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the documentation site for tt.</p>
+<hr class="docutils" />
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">tt is heavily tested and fully usable, but is still pre-1.0/stable software with <strong>no guarantees</strong> of avoiding breaking API changes until hitting version 1.0.</p>
+</div>
+<p><a class="reference external" href="https://pypi.python.org/pypi/ttable"><img alt="tt's PyPI page" src="https://img.shields.io/pypi/v/ttable.svg?style=flat-square&amp;label=pypi" /></a> <a class="reference external" href="https://pypi.python.org/pypi/ttable"><img alt="tt runs on Python 2.7, 3.3, 3.4, 3.5, and 3.6" src="https://img.shields.io/pypi/pyversions/ttable.svg?style=flat-square" /></a> <a class="reference external" href="http://tt.brianwel.ch/en/latest/"><img alt="tt documentation site" src="https://img.shields.io/badge/docs-latest-c944ff.svg?style=flat-square" /></a> <a class="reference external" href="https://travis-ci.org/welchbj/tt"><img alt="Linux build on Travis CI" src="https://img.shields.io/travis/welchbj/tt/develop.svg?style=flat-square&amp;label=mac%2Flinux%20build" /></a> <a class="reference external" href="https://ci.appveyor.com/project/welchbj/tt"><img alt="Windows build on AppVeyor" src="https://img.shields.io/appveyor/ci/welchbj/tt/develop.svg?style=flat-square&amp;label=windows%20build" /></a></p>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>tt (<strong>t</strong>ruth <strong>t</strong>able) is a library aiming to provide a Pythonic toolkit for working with Boolean expressions and truth tables. Please see the <a class="reference external" href="http://tt.brianwel.ch">project site</a> for guides and documentation, or check out <a class="reference external" href="http://www.bool.tools">bool.tools</a> for a simple web application powered by this library.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>tt is tested on CPython 2.7, 3.3, 3.4, 3.5, and 3.6. You can get the latest release from PyPI with:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ttable</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<p>Parse expressions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">tt</span> <span class="k">import</span> <span class="n">BooleanExpression</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">BooleanExpression</span><span class="p">(</span><span class="s1">&#39;A impl not (B nand C)&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">tokens</span>
+<span class="go">[&#39;A&#39;, &#39;impl&#39;, &#39;not&#39;, &#39;(&#39;, &#39;B&#39;, &#39;nand&#39;, &#39;C&#39;, &#39;)&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">tree</span><span class="p">)</span>
+<span class="go">impl</span>
+<span class="go">`----A</span>
+<span class="go">`----not</span>
+<span class="go">     `----nand</span>
+<span class="go">          `----B</span>
+<span class="go">          `----C</span>
+</pre></div>
+</div>
+<p>Transform expressions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">tt</span> <span class="k">import</span> <span class="n">to_primitives</span><span class="p">,</span> <span class="n">to_cnf</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_primitives</span><span class="p">(</span><span class="s1">&#39;A xor B&#39;</span><span class="p">)</span>
+<span class="go">&lt;BooleanExpression &quot;(A and not B) or (not A and B)&quot;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cnf</span><span class="p">(</span><span class="s1">&#39;(A nand B) impl (C or D)&#39;</span><span class="p">)</span>
+<span class="go">&lt;BooleanExpression &quot;(A or C or D) and (B or C or D)&quot;&gt;</span>
+</pre></div>
+</div>
+<p>Evaluate expressions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">BooleanExpression</span><span class="p">(</span><span class="s1">&#39;(A /\ B) -&gt; (C \/ D)&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">B</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">D</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">B</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">D</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Interact with expression structure:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">BooleanExpression</span><span class="p">(</span><span class="s1">&#39;(A and ~B and C) or (~C and D) or E&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">is_dnf</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">clause</span> <span class="ow">in</span> <span class="n">b</span><span class="o">.</span><span class="n">iter_dnf_clauses</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">clause</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">A and ~B and C</span>
+<span class="go">~C and D</span>
+<span class="go">E</span>
+</pre></div>
+</div>
+<p>Exhaust SAT solutions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">BooleanExpression</span><span class="p">(</span><span class="s1">&#39;~(A or B) xor C&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">sat_solution</span> <span class="ow">in</span> <span class="n">b</span><span class="o">.</span><span class="n">sat_all</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">sat_solution</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">A=0, B=1, C=1</span>
+<span class="go">A=1, B=0, C=1</span>
+<span class="go">A=1, B=1, C=1</span>
+<span class="go">A=0, B=0, C=0</span>
+</pre></div>
+</div>
+<p>Find just a few:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">b</span><span class="o">.</span><span class="n">constrain</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">sat_solution</span> <span class="ow">in</span> <span class="n">b</span><span class="o">.</span><span class="n">sat_all</span><span class="p">():</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">sat_solution</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">A=1, B=0, C=1</span>
+<span class="go">A=1, B=1, C=1</span>
+</pre></div>
+</div>
+<p>Or just one:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">sat_one</span><span class="p">()</span>
+<span class="go">&lt;BooleanValues [A=0, B=1, C=1]&gt;</span>
+</pre></div>
+</div>
+<p>Build truth tables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">tt</span> <span class="k">import</span> <span class="n">TruthTable</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">TruthTable</span><span class="p">(</span><span class="s1">&#39;A iff B&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="go">+---+---+---+</span>
+<span class="go">| A | B |   |</span>
+<span class="go">+---+---+---+</span>
+<span class="go">| 0 | 0 | 1 |</span>
+<span class="go">+---+---+---+</span>
+<span class="go">| 0 | 1 | 0 |</span>
+<span class="go">+---+---+---+</span>
+<span class="go">| 1 | 0 | 0 |</span>
+<span class="go">+---+---+---+</span>
+<span class="go">| 1 | 1 | 1 |</span>
+<span class="go">+---+---+---+</span>
+</pre></div>
+</div>
+<p>And <a class="reference external" href="http://tt.brianwel.ch/en/stable/user_guide.html">much more</a>!</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>tt uses the <a class="reference external" href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="want-to-learn-more">
+<h2>Want to learn more?<a class="headerlink" href="#want-to-learn-more" title="Permalink to this headline">¶</a></h2>
+<p>If you’re just getting started and looking for tutorial-style documentation, head on over to the <a class="reference internal" href="user_guide.html"><span class="doc">User Guide</span></a>. If you would prefer a comprehensive view of this library’s functionality, check out the API docs:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/cli.html"><code class="docutils literal"><span class="pre">cli</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/definitions.html"><code class="docutils literal"><span class="pre">definitions</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/errors.html"><code class="docutils literal"><span class="pre">errors</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/expressions.html"><code class="docutils literal"><span class="pre">expressions</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/satisfiability.html"><code class="docutils literal"><span class="pre">satisfiability</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/tables.html"><code class="docutils literal"><span class="pre">tables</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/transformations.html"><code class="docutils literal"><span class="pre">transformations</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/trees.html"><code class="docutils literal"><span class="pre">trees</span></code></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="#">
+    <img class="logo" src="_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">the Boolean expression toolbox</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=welchbj&repo=tt&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prior_art.html">Prior Art</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special_thanks.html">Special Thanks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="author.html">Author</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/cli.html"><code class="docutils literal"><span class="pre">cli</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/definitions.html"><code class="docutils literal"><span class="pre">definitions</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/errors.html"><code class="docutils literal"><span class="pre">errors</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/expressions.html"><code class="docutils literal"><span class="pre">expressions</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/satisfiability.html"><code class="docutils literal"><span class="pre">satisfiability</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/tables.html"><code class="docutils literal"><span class="pre">tables</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/transformations.html"><code class="docutils literal"><span class="pre">transformations</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/trees.html"><code class="docutils literal"><span class="pre">trees</span></code></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="user_guide.html" title="next chapter">User Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Brian Welch.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
