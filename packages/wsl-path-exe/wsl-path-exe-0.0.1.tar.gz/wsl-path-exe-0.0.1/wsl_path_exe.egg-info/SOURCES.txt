@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+wsl_path_exe/__init__.py
+wsl_path_exe/__main__.py
+wsl_path_exe.egg-info/PKG-INFO
+wsl_path_exe.egg-info/SOURCES.txt
+wsl_path_exe.egg-info/dependency_links.txt
+wsl_path_exe.egg-info/entry_points.txt
+wsl_path_exe.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+wsl-path-exe = wsl_path_exe.__main__:main
+
