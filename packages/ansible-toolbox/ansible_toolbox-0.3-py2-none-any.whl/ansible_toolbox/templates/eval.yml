@@ -1,0 +1,10 @@
+---
+# This playbook was generated automatically.
+
+- hosts: {{ hosts }}
+  gather_facts: {{ gather }}
+  tasks:
+    - copy:
+        content: "{{ expr }}"
+        dest: "{{ output }}"
+
