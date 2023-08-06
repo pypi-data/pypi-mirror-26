@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cityscapesScripts
+Version: 1.0.4
+Summary: This repository contains scripts forinspection, preparation, and evaluation of the Cityscapes dataset.
+Home-page: https://github.com/mcordts/cityscapesScripts
+Author: mcordts
+Author-email: UNKNOWN
+License: custon
+Description: UNKNOWN
+Platform: UNKNOWN
