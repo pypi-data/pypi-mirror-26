@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: netoi_check
+Version: 0.3
+Summary: CLI for solution submission to NetOI
+Home-page: http://github.com/lionell/netoi-check
+Author: Ruslan Sakevych
+Author-email: xlionell@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
