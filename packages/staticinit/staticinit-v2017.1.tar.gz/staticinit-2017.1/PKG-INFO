@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: staticinit
+Version: 2017.1
+Summary: A class decorator for invoking static constructors.
+Home-page: https://github.com/phohenecker/static-init
+Author: Patrick Hohenecker
+Author-email: mail@paho.at
+License: MIT
+Download-URL: https://github.com/phohenecker/static-init/archive/2017.1.tar.gz
+Description: static-init
+        ===========
+        
+        The module [staticinit](staticinit.py) defines the decorator `@staticinit.init()` for classes, which executes a static
+        constructor after the annotated class has been created.
+        By default, the name of the according constructor method is assumed to be `__static_init__`, but an alternative name may
+        be specified via the keyword arg `init_meth`. 
+        Notice further that the constructor has to be a class method.
+        
+        The following example illustrates how to use this module: 
+        ```python
+        import staticinit
+        
+        @staticinit.init()
+        class SomeClass(object):
+        
+            @classmethod
+            def __static_init__(cls):
+                # do some initialization stuff here...
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
