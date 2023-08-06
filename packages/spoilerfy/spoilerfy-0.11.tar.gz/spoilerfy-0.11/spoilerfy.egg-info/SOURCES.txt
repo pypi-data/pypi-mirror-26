@@ -1,0 +1,10 @@
+setup.py
+spoilerfy/__init__.py
+spoilerfy/command_line.py
+spoilerfy.egg-info/PKG-INFO
+spoilerfy.egg-info/SOURCES.txt
+spoilerfy.egg-info/dependency_links.txt
+spoilerfy.egg-info/entry_points.txt
+spoilerfy.egg-info/not-zip-safe
+spoilerfy.egg-info/requires.txt
+spoilerfy.egg-info/top_level.txt
