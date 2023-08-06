@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyamex
+Version: 0.2.1
+Summary: Python Library for accessing American Express account data
+Home-page: https://github.com/nm523/pyamex
+Author: Niall McConville
+Author-email: niall.mcconville@cantab.net
+License: MIT
+Description: UNKNOWN
+Keywords: american express,amex
+Platform: UNKNOWN
