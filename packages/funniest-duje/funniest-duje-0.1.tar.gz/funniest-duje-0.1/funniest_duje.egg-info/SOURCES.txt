@@ -1,0 +1,7 @@
+setup.py
+funniest-duje/__init__.py
+funniest_duje.egg-info/PKG-INFO
+funniest_duje.egg-info/SOURCES.txt
+funniest_duje.egg-info/dependency_links.txt
+funniest_duje.egg-info/not-zip-safe
+funniest_duje.egg-info/top_level.txt
