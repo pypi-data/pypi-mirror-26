@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: brainSimulator
+Version: 0.5.3
+Summary: Nuclear brain imaging synthesis with python
+Home-page: https://github.com/SiPBA/brainSimulator
+Author: SIPBA@UGR
+Author-email: sipba@ugr.es
+License: GPL-3.0+
+Download-URL: https://github.com/SiPBA/brainSimulator/archive/0.5.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: brain,image,synthesis,PCA,neuroimaging,ICA
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
