@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: gci-validator
+Version: 0.0.2
+Summary: CSV validator for the Google Code-in web API
+Home-page: UNKNOWN
+Author: Daniel Hsing
+Author-email: hsing.daniel@gmail.com
+License: LICENSE
+Description: # gci-csv-validator
+        
+        CSV validator for the [Google Code-in Web API](https://developers.google.com/open-source/gci/api)
+Platform: UNKNOWN
