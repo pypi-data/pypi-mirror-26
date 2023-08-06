@@ -1,0 +1,11 @@
+README.md
+setup.py
+marcolibrary/__init__.py
+marcolibrary/myTime.py
+marcolibrary/myUrl.py
+marcolibrary/mysqlite.py
+marcolibrary/myurn.py
+marcolibrary.egg-info/PKG-INFO
+marcolibrary.egg-info/SOURCES.txt
+marcolibrary.egg-info/dependency_links.txt
+marcolibrary.egg-info/top_level.txt
