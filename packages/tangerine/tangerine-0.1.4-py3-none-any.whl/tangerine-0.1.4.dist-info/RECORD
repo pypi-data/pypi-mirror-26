@@ -1,0 +1,14 @@
+tangerine/__init__.py,sha256=RdfLhL_2AsnBlEo9-fLnlDl9GApmNOJAKnMaOJphi3k,361
+tangerine/client.py,sha256=QTIlBJZQ_PYw_xHFPaNjwh_F2XaEw1V3bpBAsRGK9II,4780
+tangerine/exceptions.py,sha256=vhIAbAOCmUgm6yJNmtIB_V9CB4KamE9-TPckqoI4NbU,507
+tangerine/login.py,sha256=n5__ypeUpooDnoFOAL5PScliAkwwOmb7YLvBEp2sWrU,3291
+tangerine/secret_provider.py,sha256=4l1BkCmvVpx6KfGU4ObbEIXb3J6wQcjs7CXDpqtwqEw,1672
+tangerine-0.1.4.dist-info/DESCRIPTION.rst,sha256=OUsoA-eYg4No2UWRVc771GXDjSR6UVFYnJjI1e19UTM,2238
+tangerine-0.1.4.dist-info/METADATA,sha256=GUTR0BeGk4zndei8bsODpe8DcPq5ZDd4humdMRKCezs,2908
+tangerine-0.1.4.dist-info/RECORD,,
+tangerine-0.1.4.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+tangerine-0.1.4.dist-info/metadata.json,sha256=8c7knrwN71oA5MW9LyF-kKrVoqNfOi-CQ04uSHaqWdQ,799
+tangerine-0.1.4.dist-info/top_level.txt,sha256=zSqGl7yZSpr-WoyE4dyGefQlV5O3rQ-6iU20TuARsmM,16
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_secret_provider.py,sha256=rcboe0JqpStJrdAlPExeBtHHCwr1qpNyAfmOM1glYxE,2070
+tests/test_tangerine.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
