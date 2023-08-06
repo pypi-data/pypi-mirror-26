@@ -1,0 +1,11 @@
+zoopla/__init__.py,sha256=8bfdKOujFYmZ_GN_88YvUbGY0KBOSQIt2rwWDu8VriY,24
+zoopla/api.py,sha256=xPtpA-Dpj81qOmy4QgjIVq8tmAM_tC1sGSmvekfjsdU,5662
+zoopla/exceptions.py,sha256=9KaWFbKUQeeuAB6TNlW--L1xjAV5lhF0UxO56w_Ar94,465
+zoopla/fields.py,sha256=GiOju8b3ni5tX6F_J1mNf114U959ulDSbxWiIKOkKzc,232
+zoopla/schemas.py,sha256=R7CXvWDwJzVUoIgjl5bLocg0QCdt8XgObZJ8FXqZlwA,6747
+zoopla-0.6.1.dist-info/DESCRIPTION.rst,sha256=6kpl8PDrOvzDUD9AMSVWdwDZB-U0QAYqaeUnuhgVlz8,2437
+zoopla-0.6.1.dist-info/METADATA,sha256=x3UA91v015SSQ8NCDMJgp6zlaa0U8L6mxRhRIldw-OM,3086
+zoopla-0.6.1.dist-info/RECORD,,
+zoopla-0.6.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+zoopla-0.6.1.dist-info/metadata.json,sha256=szACriaZ8i8KOzFPIVi0yKlBZbbRemdbxCpw8rU50qg,846
+zoopla-0.6.1.dist-info/top_level.txt,sha256=7InT-easzQMN4T1cUfhdI_SXlRNAew0rWc7ssI53zvk,7
