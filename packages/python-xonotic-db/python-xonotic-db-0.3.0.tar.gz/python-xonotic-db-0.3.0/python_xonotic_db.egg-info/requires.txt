@@ -1,0 +1,2 @@
+setuptools
+click>=6.7
