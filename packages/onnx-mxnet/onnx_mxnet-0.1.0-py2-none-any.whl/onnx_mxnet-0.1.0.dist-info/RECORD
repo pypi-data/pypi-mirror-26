@@ -1,0 +1,10 @@
+onnx_mxnet/__init__.py,sha256=UnD8hCoXoq8boaArzu9rNl1JCKskW9U-2CIXHh2pmww,1199
+onnx_mxnet/common.py,sha256=ParzaM4Ch2Yl11O1ICX-wWKgDB5J0gnkWJlTiXI6Th8,5700
+onnx_mxnet/import_helper.py,sha256=n4prgDL80qHp5rBW_y9krEtRAp-9shfE41ENEqb_VEI,7199
+onnx_mxnet/import_onnx.py,sha256=ALmzoCSA9895maIvYlMGH4rQzh7QubclLC1vs3xFpmU,10311
+onnx_mxnet-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+onnx_mxnet-0.1.0.dist-info/METADATA,sha256=32sLPTSWCW9P6lY5YZ3UGF5_zbzOn3ZgywFhI36A8WM,368
+onnx_mxnet-0.1.0.dist-info/RECORD,,
+onnx_mxnet-0.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+onnx_mxnet-0.1.0.dist-info/metadata.json,sha256=OKfaGcAjWIiTDm9OJjUJei3S4Blg8Gkh-iWWLRzKiKc,602
+onnx_mxnet-0.1.0.dist-info/top_level.txt,sha256=J8L61xuyEfqUU3sQpL--ZuiZloHDfxUIweUdzdW5QrQ,11
