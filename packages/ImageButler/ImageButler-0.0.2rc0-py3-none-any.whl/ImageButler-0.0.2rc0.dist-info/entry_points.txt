@@ -1,0 +1,4 @@
+
+        [flask.commands]
+        user=imagebutler.commands:user
+    
