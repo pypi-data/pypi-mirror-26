@@ -1,0 +1,13 @@
+MalCat-0.0.6.dist-info/DESCRIPTION.rst,sha256=gLdXgDcTpZycFf7TBrVM6_ED1yQ1iCZxhO9hNiQ2JkQ,742
+MalCat-0.0.6.dist-info/METADATA,sha256=rIhSpFBBoeyXAtjspZR68bu_gU582y43v0bi3vSd-YA,1203
+MalCat-0.0.6.dist-info/RECORD,,
+MalCat-0.0.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+MalCat-0.0.6.dist-info/metadata.json,sha256=UnlTLVy8nHxF8bZOY2ySBpmiiVBdCmpykn-hqJXXHAk,669
+MalCat-0.0.6.dist-info/top_level.txt,sha256=qYc4fByrs2N2-X2KxwYtRUVP5KawxPgSp2UNeS03HRM,19
+malcat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+malcat/generator.py,sha256=ZuU4JqnjXAxSLRN-KFfNRQEP_1G6B5fODiHq_DFcVcE,2804
+malcat/series.py,sha256=rxaauXIwei9QWKZW-XJHOyyJjJ_l4wq6U7RT0t4uuzo,748
+malcat/status.py,sha256=t9knUjWX1kwV1jPmKZwxJu58LR0wPIL5TgyCAv_ADEk,617
+myanimelist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myanimelist/api.py,sha256=he5YCeo0K08RJbAxqh7E-ZhM0AnM0nuRZ5efBQ3-AAU,3515
+myanimelist/models.py,sha256=neeGTx6kSv7qLP9MXlOwwNPE8jo2ixtCsf7zbqThRMw,907
