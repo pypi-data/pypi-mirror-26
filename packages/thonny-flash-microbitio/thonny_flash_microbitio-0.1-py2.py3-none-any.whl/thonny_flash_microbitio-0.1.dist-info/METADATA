@@ -1,0 +1,44 @@
+Metadata-Version: 2.0
+Name: thonny-flash-microbitio
+Version: 0.1
+Summary: Easily flash I/O .hex to from Thonny.
+Home-page: https://github.com/schellenberg/thonny-flash-microbitio
+Author: Dan Schellenberg
+Author-email: schellenberg@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: IDE education programming microbit thonny
+Platform: Windows
+Platform: macOS
+Platform: Linux
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Freeware
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Requires-Python: >=3.4
+Requires-Dist: thonny (>=2.1.0b1)
+Requires-Dist: pyserial
+Requires-Dist: uflash
+
+This is a plug-in for Thonny which lets you flash 
+a BBC micro:bit with an IO .hex file to support using the micro:bit as
+a sensor/output device. You need to install the cs20-microbitio package to 
+make this useful. More info about Thonny: http://thonny.org
+
