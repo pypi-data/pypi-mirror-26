@@ -1,0 +1,16 @@
+FlockMP-1.2.0b6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+FlockMP-1.2.0b6.dist-info/METADATA,sha256=ZLzokaI6OYa2LS4P-1wdE0V3gU-8ir1zL489WBdtRts,873
+FlockMP-1.2.0b6.dist-info/RECORD,,
+FlockMP-1.2.0b6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+FlockMP-1.2.0b6.dist-info/metadata.json,sha256=SClZ0u3nBhgaRrRcuIu1uLZU88Q_XmBt3hodvvCmiEA,1020
+FlockMP-1.2.0b6.dist-info/top_level.txt,sha256=FF4vki5x739hrh22f3uXZ8Ht3ZhU3iBdSYhI-hxZnZo,8
+flockmp/__init__.py,sha256=9x5VLCD2Zl3FNTwiS67P3ShTv2UsT-6vQNZ9YrLZA3k,1025
+flockmp/errors.py,sha256=0xiF6P0PN13JeMt2PaiAXT6nEA4u0hyvLr-b_3FBdGo,140
+flockmp/tools.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flockmp/base/__init__.py,sha256=BgyDX3IbdI5F7yQCjpQC_dCnsSerK2oh3tZh1kW5jvE,5239
+flockmp/database/__init__.py,sha256=lFosnHkygh6pQ-wbT6piDLZbh04SvLi88REq4KcrXZo,4819
+flockmp/database/setup.py,sha256=eGVNMku5pxQVOXjs-hEor1btmmplDqNPOYaNarR4Mik,507
+flockmp/dataframe/__init__.py,sha256=uiCWp5t7KcJionNQ6JTTi384ZDOtrj9wGCElGnvTiiM,2322
+flockmp/list/__init__.py,sha256=uEyO4vVh5AQXi5PPDqXHK8sc-w6l7-pT0vGL6lacRMs,601
+flockmp/utils/__init__.py,sha256=ucruPS3anX_84274CX3xDwRRCUu3DodxyZn0iuUdiaA,808
+flockmp/utils/logger.py,sha256=-jj8cW8bXoj9yjctiC6iJCKyZED5Yl07DW_nU6oq7Lc,2783
