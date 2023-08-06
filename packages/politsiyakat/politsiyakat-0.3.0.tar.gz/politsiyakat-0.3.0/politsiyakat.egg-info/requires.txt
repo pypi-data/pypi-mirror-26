@@ -1,0 +1,6 @@
+numpy
+matplotlib
+futures
+python-casacore
+scipy
+progress
