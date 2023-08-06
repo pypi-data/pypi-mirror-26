@@ -1,0 +1,16 @@
+#!/usr/bin/with-contenv bash
+
+umask 022
+
+cd /app
+
+exec \
+    s6-setuidgid abc dopplerr \
+        --configfile /config/config.json \
+        --general-no-color \
+        --general-verbose \
+        --general-basedir / \
+        --general-port 8086 \
+        --general-appdir /app \
+        --general-configdir /config \
+        --general-frontenddir /frontend
