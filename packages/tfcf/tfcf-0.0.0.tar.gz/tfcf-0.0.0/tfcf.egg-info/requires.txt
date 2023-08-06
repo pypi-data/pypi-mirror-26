@@ -1,0 +1,4 @@
+requests
+pandas
+numpy
+tensorflow>=1.2.0

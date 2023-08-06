@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: tfcf
+Version: 0.0.0
+Summary: A tensorflow-based recommender system.
+Home-page: https://github.com/WindQAQ/tf-recsys
+Author: Tzu-Wei Sung
+Author-email: windqaq@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: recommender system,collaborative filtering,tensorflow,SVD,SVD++
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
