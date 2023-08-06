@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+transperm/TransPerm.py
+transperm/__init__.py
+transperm.egg-info/PKG-INFO
+transperm.egg-info/SOURCES.txt
+transperm.egg-info/dependency_links.txt
+transperm.egg-info/requires.txt
+transperm.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: transperm
+Version: 1.0.0
+Summary: Библиотека для получения расписания транспорта г. Перми.
+Home-page: https://github.com/axp-dev/py-transperm-api
+Author: Alexander Pushkarev
+Author-email: axp-dev@yandex.com
+License: MIT
+Description: UNKNOWN
+Keywords: transperm perm api
+Platform: UNKNOWN
