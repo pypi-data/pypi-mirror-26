@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nbconvert-grader
+Version: 0.0.1
+Summary: An nbconvert preprocessor that grades a Jupyter notebook
+Home-page: https://github.com/kylekyle/nbconvert_grader
+Author: Kyle King
+Author-email: kylejking@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

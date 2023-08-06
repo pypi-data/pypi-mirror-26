@@ -1,0 +1,7 @@
+setup.py
+nbconvert_grader/__init__.py
+nbconvert_grader.egg-info/PKG-INFO
+nbconvert_grader.egg-info/SOURCES.txt
+nbconvert_grader.egg-info/dependency_links.txt
+nbconvert_grader.egg-info/requires.txt
+nbconvert_grader.egg-info/top_level.txt
