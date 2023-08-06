@@ -1,0 +1,3 @@
+[console_scripts]
+git-ls-anytree = git_ls_anytree.cli_file:cli
+
