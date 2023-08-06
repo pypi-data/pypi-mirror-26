@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: pydigree
+Version: 1.0.1
+Summary: A package for operations on pedigree and genotype data
+Home-page: https://github.com/jameshicks/pydigree
+Author: James Hicks
+Author-email: jhicks22@wustl.edu
+License: MIT
+Download-URL: https://github.com/jameshicks/pydigree/tarball/0.8a
+Description: UNKNOWN
+Keywords: genetics,pedigree,kinship,simulation,vcf,plink,gwas
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Cython
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Sociology :: Genealogy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Requires: numpy
+Requires: scipy
+Requires: pandas
+Requires: cython

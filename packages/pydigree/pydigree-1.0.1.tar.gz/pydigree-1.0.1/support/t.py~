@@ -1,0 +1,4 @@
+r = xrange(10)
+
+for x in r:
+    print r+10
