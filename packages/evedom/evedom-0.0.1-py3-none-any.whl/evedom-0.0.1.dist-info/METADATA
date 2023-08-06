@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: evedom
+Version: 0.0.1
+Summary: Allow to manage python-eve endpoint(s) in a structured mannerand to get all endpoint(s) automatically loaded
+Home-page: https://github.com/nam4dev/evedom
+Author: nam4dev
+Author-email: namat4css@gmail.com
+License: MIT
+Keywords: eve evedom
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
