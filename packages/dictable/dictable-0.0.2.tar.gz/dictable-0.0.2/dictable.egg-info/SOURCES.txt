@@ -1,0 +1,14 @@
+README.md
+setup.py
+dictable/__init__.py
+dictable/dict_table.py
+dictable/dict_table_row.py
+dictable/dict_tsql.py
+dictable/number_utils.py
+dictable/query_deliverer.py
+dictable/query_utils.py
+dictable/storage.py
+dictable.egg-info/PKG-INFO
+dictable.egg-info/SOURCES.txt
+dictable.egg-info/dependency_links.txt
+dictable.egg-info/top_level.txt
