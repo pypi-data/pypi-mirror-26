@@ -1,0 +1,3 @@
+[console_scripts]
+dicom2cloud = dicom2cloud.clientgui:main
+
