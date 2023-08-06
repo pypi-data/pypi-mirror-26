@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1",
+  "deviceConnectionString": "",
+  "homeDir": "",
+  "hostName": "",
+  "logLevel": "info",
+  "security": {
+    "certificates": {
+      "option": "selfSigned",
+      "selfSigned": {
+        "forceRegenerate": false,
+        "forceNoPasswords": true
+      },
+      "preInstalled": {
+        "deviceCACertificateFilePath": "",
+        "serverCertificateFilePath": ""
+      }
+    }
+  },
+  "deployment": {
+    "type": "docker",
+    "docker": {
+      "uri": "",
+      "edgeRuntimeImage": "microsoft/azureiotedge-agent:1.0-preview",
+      "registries": [
+      ],
+      "loggingOptions": {
+        "log-driver": "json-file",
+        "log-opts": {
+          "max-size": "10m"
+        }
+      }
+    }
+  }
+}
