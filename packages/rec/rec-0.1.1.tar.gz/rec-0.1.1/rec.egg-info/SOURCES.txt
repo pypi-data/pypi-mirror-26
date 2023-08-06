@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+rec/__init__.py
+rec/__version__.py
+rec/main.py
+rec.egg-info/PKG-INFO
+rec.egg-info/SOURCES.txt
+rec.egg-info/dependency_links.txt
+rec.egg-info/not-zip-safe
+rec.egg-info/top_level.txt
