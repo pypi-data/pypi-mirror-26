@@ -1,0 +1,17 @@
+python_hologram_api/__init__.py,sha256=YFMWrRJ1Nd34pmXKuXnwBxyBwc7QqPFIiOIJdMVRk7Y,159
+python_hologram_api/cellular.py,sha256=lYUqacoO40BBtMNvj8dcn0B7SWWNXGSwDoEkmarLuVQ,4526
+python_hologram_api/client.py,sha256=UYocm3_1XI6WpA8ACNddW2Nw-KrVHJbiXYq2Vj0gVpc,1407
+python_hologram_api/cloud_messaging.py,sha256=whPtSKFzEKy_XkXMcfhYDlojqw3DN4iswc8xii6J6HY,6050
+python_hologram_api/constants.py,sha256=LX9EEpp8BPpRajZMER9QouIMsDk-NkwqlaQOS48w8_c,87
+python_hologram_api/data_plans.py,sha256=5R8K8_78gkPPJ8EyyFSxsb9O7ysTGxugBADAMtBwcms,1348
+python_hologram_api/device_tags.py,sha256=ZR6ZKyYT1ZG5wOEXFn5Q4AMjdI1GM0tfWSFKiawPPag,2850
+python_hologram_api/devices.py,sha256=JKESI4lfuyWnfWpKJklbxTY7LvZR9hcOlPJfr4Ttvd4,1215
+python_hologram_api/organization.py,sha256=QqJRlZfqL2G0ZafMzNpxQMSJNaBVziEVO2nfcblKpj0,3086
+python_hologram_api/spacebridge.py,sha256=o-dIgJ3E9jMxvVJ0qmC1LW1A671455yg14qxB_AtaOA,2615
+python_hologram_api/user.py,sha256=m72TVm2u6IY3wNd1YXIlCTJLe5EXdZW8PrAg_6z6W2Y,2178
+python_hologram_api-0.1.6.dist-info/DESCRIPTION.rst,sha256=SvfnQSnZHNydYxuz3eSZVLXtjgwsEATShtJsfmt8_IA,2912
+python_hologram_api-0.1.6.dist-info/METADATA,sha256=MVWXBTqY4Chg8Ok6m5E8tnSLddvCcW72wdMZeinYFro,3752
+python_hologram_api-0.1.6.dist-info/RECORD,,
+python_hologram_api-0.1.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+python_hologram_api-0.1.6.dist-info/metadata.json,sha256=oCRsJBDFcCuCyLKPlY8ECmji1wDzHUZBImgt3B1GOu4,1046
+python_hologram_api-0.1.6.dist-info/top_level.txt,sha256=HZtKvithrsZnOCtTpVFoRRPLZqFoErs2KV82kcBnisg,20
