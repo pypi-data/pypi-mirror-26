@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: marquee-scroll
+Version: 1.0.0
+Summary: Text scroller
+Home-page: https://git.mgoral.org/mgoral/marquee
+Author: Michał Góral
+Author-email: dev@mgoral.org
+License: GPLv3+
+Platform: linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+
+UNKNOWN
+
+
