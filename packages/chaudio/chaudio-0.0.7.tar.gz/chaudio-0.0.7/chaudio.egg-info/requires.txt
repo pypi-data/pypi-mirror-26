@@ -1,0 +1,8 @@
+numpy
+scipy
+
+[output]
+simpleaudio
+
+[test]
+coverage
