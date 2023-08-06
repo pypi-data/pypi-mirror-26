@@ -1,0 +1,11 @@
+README.rst
+__version__.py
+mox.py
+setup.cfg
+setup.py
+stubout.py
+pymox.egg-info/PKG-INFO
+pymox.egg-info/SOURCES.txt
+pymox.egg-info/dependency_links.txt
+pymox.egg-info/requires.txt
+pymox.egg-info/top_level.txt
