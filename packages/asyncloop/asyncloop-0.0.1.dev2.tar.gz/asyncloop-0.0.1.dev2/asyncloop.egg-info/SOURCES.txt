@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+asyncloop/__init__.py
+asyncloop/job.py
+asyncloop/set.py
+asyncloop/thread.py
+asyncloop.egg-info/PKG-INFO
+asyncloop.egg-info/SOURCES.txt
+asyncloop.egg-info/dependency_links.txt
+asyncloop.egg-info/not-zip-safe
+asyncloop.egg-info/top_level.txt
