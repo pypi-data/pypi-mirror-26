@@ -1,0 +1,10 @@
+---
+- name: Stop all the components of a loom server
+  hosts: "{{lookup('env','LOOM_SERVER_NAME')}}"
+  remote_user: "{{loom_remote_user}}"
+  vars_files:
+    - vars/common.yml
+    - vars/gcloud_server.yml
+  tasks:
+    - include: tasks/delete_server_containers.yml
+    - include: tasks/delete_static_volumes.yml
