@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: roslaunch-api-wrapper
+Version: 0.1
+Summary: wrapper for rosalunch python api
+Home-page: https://github.com/ACarfi/roslaunch_api_wrapper
+Author: Alessandro Carfi
+Author-email: carfi.alessandro@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
