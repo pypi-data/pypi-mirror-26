@@ -1,0 +1,15 @@
+pydocstring/__init__.py,sha256=-8HZAegHZtqrVo-Q2D_ximgKWxI5SPAPdJnSgfTkZU0,2888
+pydocstring/cli.py,sha256=WvyXeA6ksCn2v-JJy6A-7ZssELXK8VhkHbTYAv74I7s,3307
+pydocstring/exc.py,sha256=xKppNHb-_KsSTyNlLI3-UsWTCZ904iT0VjOSeiB1G-U,293
+pydocstring/formatters/__init__.py,sha256=l1OQcjcveK5Nn6xQXFwK7HDdt_BxlPHlBPc6OkXiZa8,534
+pydocstring/formatters/format_utils.py,sha256=nJAAQWuzA4swW8-OBr83gp0RZ0oC3ocjuH3AGIM1EB4,2049
+pydocstring/formatters/google.py,sha256=D-sefGzkFgN9tWUpOhEgRD_4NzarMfdqCRNFVh1mIvk,4473
+pydocstring/formatters/numpy.py,sha256=Lx-pFz1zf3Jh28ftMhR1mYLPxzq5HxIkyc3Dr1QBySY,4637
+pydocstring/formatters/reST.py,sha256=mAhPseyst3vrc9D_lxOPWTNV-cF1XuhzBrnRz4GgZPI,4415
+pydocstring-0.1.5.dist-info/DESCRIPTION.rst,sha256=aEn1pdZ5vtwFGUyvEciZ5NI-sqtI2OwnjPr00fNcSs4,2287
+pydocstring-0.1.5.dist-info/METADATA,sha256=y-UySr4jE-F9-ZjwtkBcTzXnU2Q7yjkLlIw1_eUWcIY,3252
+pydocstring-0.1.5.dist-info/RECORD,,
+pydocstring-0.1.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pydocstring-0.1.5.dist-info/entry_points.txt,sha256=3yBHLy4ChCd50deA2OY_dDmSWgd5bFGf1EgLbnrFZWA,54
+pydocstring-0.1.5.dist-info/metadata.json,sha256=Jy71Rwb8c1uDjYxU755DuKl0j_Ysdd5DDICTg2Ne6tk,1250
+pydocstring-0.1.5.dist-info/top_level.txt,sha256=UL3LvPCcwQn1JghZeLg8dbUXr633QQMZajnYS_2NoOA,12
