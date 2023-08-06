@@ -1,0 +1,34 @@
+Changelog
+---------
+
+
+1.1.2
+*****
+
+Supported geoLink schema version: 20170214
+
+- All attributes are optional, as defined in the schema
+
+
+1.1.1
+*****
+
+Supported geoLink schema version: 20170214
+
+- Allow documents with empty file list
+
+
+1.1.0
+*****
+
+Supported geoLink schema version: 20170214
+
+- Add support for Python 3
+
+
+1.0.0
+*****
+
+Supported geoLink schema version: 20170214
+
+- Initial version
