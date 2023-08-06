@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiobot/__init__.py
+aiobot.egg-info/PKG-INFO
+aiobot.egg-info/SOURCES.txt
+aiobot.egg-info/dependency_links.txt
+aiobot.egg-info/requires.txt
+aiobot.egg-info/top_level.txt
