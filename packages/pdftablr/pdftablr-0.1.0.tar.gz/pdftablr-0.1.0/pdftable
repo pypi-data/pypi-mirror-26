@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+from pdftablr import table_extractor
+
+table_extractor.command_line()

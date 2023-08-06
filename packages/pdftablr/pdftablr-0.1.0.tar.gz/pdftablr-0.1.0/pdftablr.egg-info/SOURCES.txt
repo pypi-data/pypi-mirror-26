@@ -1,0 +1,11 @@
+README.md
+pdftable
+setup.cfg
+setup.py
+pdftablr/__init__.py
+pdftablr/table_extractor.py
+pdftablr.egg-info/PKG-INFO
+pdftablr.egg-info/SOURCES.txt
+pdftablr.egg-info/dependency_links.txt
+pdftablr.egg-info/not-zip-safe
+pdftablr.egg-info/top_level.txt
