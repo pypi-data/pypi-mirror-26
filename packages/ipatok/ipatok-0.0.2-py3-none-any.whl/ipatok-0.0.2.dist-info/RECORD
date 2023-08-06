@@ -1,0 +1,14 @@
+ipatok/__init__.py,sha256=0-2XXLfg-FBUmV0foHyoA9GhJFC31TBPgKTGVu0C-18,39
+ipatok/__version__.py,sha256=ZIcthrC--5rw9WkqkU9nHr5wejcvP3fEqLzPjoXXF3c,18
+ipatok/ipa.py,sha256=MphRXotp-SdrupZrQRbbc2mRdkNtz4b6eiKnEKESBJ4,2940
+ipatok/tokens.py,sha256=7g6u5glid0K1JxfDRor0cKDTc5ymz7isX-NXKoo5z8c,1626
+ipatok/data/ipa.tsv,sha256=t0Zq8JJkojG9etbpwX6E-J9E8tXr1Hibp4h0H3qNI5Y,4544
+ipatok/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipatok/tests/test_ipa.py,sha256=UCXmpC4CvBLRPbb41z357BKdKr2eG4A32XrLIr9OPWc,1237
+ipatok/tests/test_tokens.py,sha256=-xfyc26awCt0gVm6EACNn5Nb6iS-4hPAwR99ctnH5Bw,2095
+ipatok-0.0.2.dist-info/DESCRIPTION.rst,sha256=cc9LksBB4WxHWS9Vyr3YBe9-y4OshqiEja_19KtdFao,1766
+ipatok-0.0.2.dist-info/METADATA,sha256=-RjD752wqDjPqK1YEBPGK-EanR1u-7iOBpPMY7r3SEk,2308
+ipatok-0.0.2.dist-info/RECORD,,
+ipatok-0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ipatok-0.0.2.dist-info/metadata.json,sha256=yN_JekRmzZPGlyFTgaJBOxxaDpQ1d6VzLkpu7XDVd3U,704
+ipatok-0.0.2.dist-info/top_level.txt,sha256=2rnO8kjFWwE-FSaF3_FXj0fxQLp9V5OATCAyjM61tCc,7
