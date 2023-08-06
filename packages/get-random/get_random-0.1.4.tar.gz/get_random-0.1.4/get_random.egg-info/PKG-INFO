@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: get-random
+Version: 0.1.4
+Summary: A sample progrram
+Home-page: https://stash.office.webassign.net:7999/~sgambino/project-random.git
+Author: Steve Gambino
+Author-email: steve.gambino@cengage.com
+License: MIT
+Description: A sample program
+        ================
+        
+        This is a sample program unintended for much use except to serve as a means
+        to learn about python packaging with setuptools.
+        
+Keywords: Utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
