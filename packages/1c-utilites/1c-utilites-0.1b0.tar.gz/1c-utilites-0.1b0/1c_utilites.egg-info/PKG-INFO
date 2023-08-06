@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: 1c-utilites
+Version: 0.1b0
+Summary: Utilites for maintenance 1C services
+Home-page: UNKNOWN
+Author: Sergey Klyukov
+Author-email: onegreyonewhite@mail.ru
+License: AGPL+
+Description: 1C Utils
+        =========
+        
+        **1C Utils** это набор скриптов для управления и обслуживания серверов 1С.
+        
+        Репозиторий:
+        https://gitlab.com/onegreyonewhite/1c-utilites
+        
+        Для вопросов и предложений используйте трекер задач:
+        https://gitlab.com/onegreyonewhite/1c-utilites/issues
+        
+        Возможности
+        --------
+        
+        На данный момент поддерживается только архивация PostgreSQL и файловых БД 1С.
+        
+        
+        Quickstart
+        ----------
+        
+        Поддерживается любая Linux-система с наличием в ней Python 2.7/3.4/3.5
+        и необходимых утилит обслуживания:
+        * pg_dump для архивации PostgreSQL баз
+        * tar для упаковывания файловых баз
+        
+        Установка:
+            .. sourcecode:: bash
+        
+              pip install 1c-utilites
+              1c-utilites --help
+        
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Utilities

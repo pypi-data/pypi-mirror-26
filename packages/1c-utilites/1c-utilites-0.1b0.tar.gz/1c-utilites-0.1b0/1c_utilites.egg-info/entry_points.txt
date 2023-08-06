@@ -1,0 +1,3 @@
+[console_scripts]
+1c-utilites = utilites_1c.manager:main
+
