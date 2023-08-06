@@ -1,0 +1,12 @@
+DESCRIPTION.rst
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+flapjack_stack/__init__.py
+flapjack_stack/flapjack_stack.py
+flapjack_stack.egg-info/PKG-INFO
+flapjack_stack.egg-info/SOURCES.txt
+flapjack_stack.egg-info/dependency_links.txt
+flapjack_stack.egg-info/requires.txt
+flapjack_stack.egg-info/top_level.txt
