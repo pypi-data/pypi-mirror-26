@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: tcs-sdk
+Version: 1.2
+Summary: Tensorflow as service  Python Sdk
+Home-page: https://github.com/yowenter
+Author: Wenter W
+Author-email: wenter.wu@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: tcs sdk
+Keywords: tensorflow sdk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
