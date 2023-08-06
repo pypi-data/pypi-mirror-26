@@ -1,0 +1,13 @@
+collections_extended/__init__.py,sha256=vaIZISuZhbFDixtcNAXrtNVPnARaALW5-22tYSgBVzE,1276
+collections_extended/_compat.py,sha256=h0Ll35m1zdwoEPvNiwK-TeddiTIpNag_EoVcJp67zOk,1096
+collections_extended/_util.py,sha256=qYnMmJb9e96S2w6aTLeIYwzoq4UqYu6c2CFXKn1JVJE,465
+collections_extended/bags.py,sha256=WxjoifSgfaM0Q2-lWW6jvVhf4XgpiPALLyhHtJlqs4k,12626
+collections_extended/bijection.py,sha256=_OZ-MBKwCmTvps2PCFxJcZ6_irw42p8lfjoVDam3lWU,1965
+collections_extended/range_map.py,sha256=S0D0kkWMbOR3X2emMmml6u4QzmitBIuOyl0XnOe0mEw,9776
+collections_extended/setlists.py,sha256=DFHPs5BP9phpNP9rXL2xE1zUZbaD77A4zHKHtSdW68M,13515
+collections_extended-1.0.0.dist-info/DESCRIPTION.rst,sha256=mkw_FYixoTsNSEDy9qpGSsv6I4mZe6Q3WS07zO5HUlA,3151
+collections_extended-1.0.0.dist-info/METADATA,sha256=1sv7mfP5U_6Jr80djlvLIGwEPVU5E7-I1z4t5Jpk-i8,4426
+collections_extended-1.0.0.dist-info/RECORD,,
+collections_extended-1.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+collections_extended-1.0.0.dist-info/metadata.json,sha256=AbGs7Cmc4ArzJwmfdMdUsFEhpLZ7ieE9-RCabIBbnaY,1434
+collections_extended-1.0.0.dist-info/top_level.txt,sha256=3_7UCqBQskj4kTf9zH2pj9CW4NlPNAhstvfPVYnRkWU,21
