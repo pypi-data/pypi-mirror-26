@@ -1,0 +1,4 @@
+Click>=6.8a99
+bobtemplates.plone>=3.0.0a3
+mr.bob
+zest.releaser
