@@ -1,0 +1,14 @@
+spiceypy/__init__.py,sha256=o5mGzZ141CNK_L4ykcXdRy07xraVBMBPobMPwS0ASkA,1313
+spiceypy/config.py,sha256=N9C5swdOsq_X-ByjMKxpk-X3xI7GkZCbEcDroM4TgVY,1123
+spiceypy/spiceypy.py,sha256=mfcv0Xpdl5j7zSygdOotabW83X1KPUA10ZqVkc-GTOM,500194
+spiceypy/utils/__init__.py,sha256=MLwYb3gHvL_w3uLAuuW_p8o88c5vaKUHEpy5-5hkzCQ,1096
+spiceypy/utils/callbacks.py,sha256=e-89LdMscoSnWqk80s2Hmm3VVwxDygLN70ogJ_P59EQ,2415
+spiceypy/utils/cspice.dll,sha256=swXVjTRsZOp00z70u_0C4S4kpm-my2VRfuE17T4PbFM,2483200
+spiceypy/utils/libspicehelper.py,sha256=souyGPlQ7paQJjiVRLH7nodyDrkiX1RznQQRPGdBhwQ,60492
+spiceypy/utils/support_types.py,sha256=r97w0znRBHJdpL0hkJN2Ojk0hFPFpfS4rKhmU2-sp0E,24762
+spiceypy-2.1.0.dist-info/DESCRIPTION.rst,sha256=VGUkbt9bRw_qR9yMOB21WACsuQiS1XWgHPU8I6iSKYY,4436
+spiceypy-2.1.0.dist-info/METADATA,sha256=1L0bq8eCq6UNF8WHwcBMPX6CAmypG5Xs5WzE8ETQpPg,5433
+spiceypy-2.1.0.dist-info/RECORD,,
+spiceypy-2.1.0.dist-info/WHEEL,sha256=7S6KrB2moVda57S-ojYFaX8AKzStN8ZWEyoI-dTtszc,104
+spiceypy-2.1.0.dist-info/metadata.json,sha256=qUpUJD4OazhpDjutv5nYqhWZfbrxiBpFI67nPDmrxfs,1209
+spiceypy-2.1.0.dist-info/top_level.txt,sha256=H7m8yRXAXpr4nr66RZNmYNw819WGYTEVnRxgRJnIcAQ,9
