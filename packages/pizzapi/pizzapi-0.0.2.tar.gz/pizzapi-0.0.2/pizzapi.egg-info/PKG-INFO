@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pizzapi
+Version: 0.0.2
+Summary: A Python wrapper for the Dominos Pizza API
+Home-page: https://github.com/wardcraigj/pizzapi
+Author: wardcraigj forked from aluttik
+Author-email: ward.craig.j@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: dominos pizza api
+Platform: UNKNOWN
