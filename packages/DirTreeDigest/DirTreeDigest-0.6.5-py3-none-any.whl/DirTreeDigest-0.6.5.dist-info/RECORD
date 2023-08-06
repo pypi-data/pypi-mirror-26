@@ -1,0 +1,16 @@
+DirTreeDigest-0.6.5.dist-info/DESCRIPTION.rst,sha256=vcQtrfUTHWtWbrQiBN6uFwKrYWDhPqHcFEbwnCXCOmk,280
+DirTreeDigest-0.6.5.dist-info/METADATA,sha256=StnccjVWq2txLAzo59qK6x5P7YmAwRuOHJ8cjdq-_YY,1021
+DirTreeDigest-0.6.5.dist-info/RECORD,,
+DirTreeDigest-0.6.5.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+DirTreeDigest-0.6.5.dist-info/entry_points.txt,sha256=hWvIOtWA2s-iPEr1Z04akHwppDe42DA2YXEJIh4SFqQ,111
+DirTreeDigest-0.6.5.dist-info/metadata.json,sha256=bCAY3NAgJhB-DzRNnOMwyd3aUyVpnvnUJPygYdE36qo,1179
+DirTreeDigest-0.6.5.dist-info/top_level.txt,sha256=yAm0fgvyUBhZ1aDdBfUZGN6KMcKJVqqEVyvTH7CKZ1M,14
+dirtreedigest/__config__.py,sha256=i_ZQo9-XFc50zECMcgqT7c8cDp0THoLD-HaadHTaNd4,3773
+dirtreedigest/__init__.py,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+dirtreedigest/comparator.py,sha256=PkQdjCFHQ4V0cYvJgmkHzly7H5Uw70Ve4yCWxllLN6M,12072
+dirtreedigest/digester.py,sha256=DH6vgLcO-PDY99j7tukHBA1h63-YLsG0p3MsVfiHT8U,13280
+dirtreedigest/main_compare.py,sha256=midTTOg81MRLBBVf9XM2DwU7ha3GrUFSqzNU5JdPdDs,5872
+dirtreedigest/main_digest.py,sha256=b2ouNLGCtscwXyk1huLVm7M9thUVG06cQgz3pi2XvOM,10981
+dirtreedigest/utils.py,sha256=q4zCF9_sXaEGel_Xr3RhDD_BGfIlfGniHu1CG95OBrE,4473
+dirtreedigest/walker.py,sha256=_B5yrk6TRxnJZF0lrmJY4ofaEMbQVYflqOuJjfVFLuI,12903
+dirtreedigest/worker.py,sha256=UTvTqDgcYjWDnEA2sVcCR9H3xgnsQkZEpsRzm6VScCs,4288
