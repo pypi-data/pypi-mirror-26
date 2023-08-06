@@ -1,0 +1,9 @@
+README.rst
+cern_sso.py
+setup.py
+bin/cern-get-sso-cookie.py
+python_cern_sso_krb.egg-info/PKG-INFO
+python_cern_sso_krb.egg-info/SOURCES.txt
+python_cern_sso_krb.egg-info/dependency_links.txt
+python_cern_sso_krb.egg-info/requires.txt
+python_cern_sso_krb.egg-info/top_level.txt
