@@ -1,0 +1,9 @@
+README.md
+setup.py
+aiobernhard/__init__.py
+aiobernhard/proto_pb2.py
+aiobernhard.egg-info/PKG-INFO
+aiobernhard.egg-info/SOURCES.txt
+aiobernhard.egg-info/dependency_links.txt
+aiobernhard.egg-info/requires.txt
+aiobernhard.egg-info/top_level.txt
