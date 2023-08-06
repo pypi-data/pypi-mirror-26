@@ -1,0 +1,5 @@
+appdirs
+click
+google-cloud-bigquery>=0.28.0
+tinydb
+tinyrecord
