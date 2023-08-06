@@ -1,0 +1,192 @@
+Metadata-Version: 2.0
+Name: ztfy.sendit
+Version: 0.1.20
+Summary: ZTFY application used to share files
+Home-page: http://hg.ztfy.org/ztfy.sendit
+Author: Thierry Florac
+Author-email: tflorac@ulthar.net
+License: zpl
+Keywords: ZTFY sendit application
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: ZODB
+Classifier: Framework :: Zope3
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Requires-Dist: fanstatic
+Requires-Dist: hurry.query
+Requires-Dist: setuptools
+Requires-Dist: uuid
+Requires-Dist: z3c.form
+Requires-Dist: z3c.formjs
+Requires-Dist: z3c.jsonrpc
+Requires-Dist: z3c.language.negotiator
+Requires-Dist: z3c.language.switch
+Requires-Dist: z3c.table
+Requires-Dist: zc.catalog
+Requires-Dist: zope.annotation
+Requires-Dist: zope.app.content
+Requires-Dist: zope.app.file
+Requires-Dist: zope.app.publication
+Requires-Dist: zope.authentication
+Requires-Dist: zope.browserpage
+Requires-Dist: zope.catalog
+Requires-Dist: zope.component
+Requires-Dist: zope.componentvocabulary
+Requires-Dist: zope.container
+Requires-Dist: zope.dublincore
+Requires-Dist: zope.event
+Requires-Dist: zope.i18n
+Requires-Dist: zope.i18nmessageid
+Requires-Dist: zope.interface
+Requires-Dist: zope.intid
+Requires-Dist: zope.lifecycleevent
+Requires-Dist: zope.location
+Requires-Dist: zope.pluggableauth
+Requires-Dist: zope.principalannotation
+Requires-Dist: zope.processlifetime
+Requires-Dist: zope.publisher
+Requires-Dist: zope.schema
+Requires-Dist: zope.security
+Requires-Dist: zope.sendmail
+Requires-Dist: zope.site
+Requires-Dist: zope.tales
+Requires-Dist: zope.traversing
+Requires-Dist: ztfy.appskin (>=0.2.0)
+Requires-Dist: ztfy.captcha
+Requires-Dist: ztfy.extfile (>=0.2.13)
+Requires-Dist: ztfy.file
+Requires-Dist: ztfy.i18n
+Requires-Dist: ztfy.jqueryui
+Requires-Dist: ztfy.mail
+Requires-Dist: ztfy.scheduler
+Requires-Dist: ztfy.security
+Requires-Dist: ztfy.skin (>=0.6.0)
+Requires-Dist: ztfy.utils (>=0.4.4)
+Provides-Extra: test
+Requires-Dist: zope.testing; extra == 'test'
+
+.. contents::
+
+Introduction
+============
+
+ztfy.sendit is a small package which provides an application which authenticated users can
+use to send files to remote contacts, like in SendIt web site.
+
+It's main use case is for principals from inside an organization who want to share documents
+with their remote contacts; contacts selection can be done via any registered authentication
+plug-in.
+
+You can customize your application so that external users registration is opened or made only
+by organization's inner principals.
+
+
+- Thierry Florac <tflorac@ulthar.net> - Author
+
+
+HISTORY
+=======
+
+0.1.20
+------
+ - added packet backup time option of 8 weeks
+
+0.1.19
+------
+ - force packet registration in outbox display
+ - force unicode in packet history attributes
+
+0.1.18
+------
+ - small correction in XML-RPC API to add check on packet description
+
+0.1.17
+------
+ - added views to allow registered users to receive a new profile activation message
+ - added minified resources
+
+0.1.16
+------
+ - make user login case insensitive
+
+0.1.15
+------
+ - added "trusted_redirects" attribute in security configuration interface to allow usage of
+   application behind an application firewall using another protocol (HTTP / HTTPS)
+
+0.1.14
+------
+ - use all file content instead of 4Kb sample to extract MIME type to prevent
+   errors when checking MS-Office files
+
+0.1.13
+------
+ - use (I)I18nBaseContent classes from "ztfy.i18n" package
+ - add tests to correctly handle admin account in dev-mode
+
+0.1.12
+------
+ - user new "getMagicContentType()" function from ztfy.extfile package
+
+0.1.11
+------
+ - add missing permissions to application administrator role
+
+0.1.10
+------
+ - use unicode when defining default user's profile company name
+
+0.1.9
+-----
+ - use last ZTFY.base and ZTFY.skin interfaces and classes
+
+0.1.8
+-----
+ - added new ztfy.appskin IApplicationResources interface adapter
+
+0.1.7
+-----
+ - french translation update
+
+0.1.6
+-----
+ - corrected handling of non-unicode inputs in XML-RPC services
+ - corrected display condition of dashboard legend
+ - removed unnecessary output from scheduler tasks
+
+0.1.5
+-----
+ - added XML-RPC services with client module
+
+0.1.4
+-----
+ - apply empty string instead of null value in principals description to allow
+   plug-ins search methods to operate without error
+ - updated quota usage progress indicator image for quota usage greater than 100%
+
+0.1.3
+-----
+ - removed unneeded check about "open registration" setting in registration
+   confirmation form
+ - added quota usage gauge in dashboard and outbox
+ - added external users domain name in recipients search widget
+ - small change in packet reject message
+ - correctly handle null values in MIME type filter plug-in
+
+0.1.2
+-----
+ - updated login form to prevent storage of bad credentials in session
+
+0.1.1
+-----
+ - modifications in login form
+ - CSS classes updates
+
+0.1.0
+-----
+ - first release
+
+
