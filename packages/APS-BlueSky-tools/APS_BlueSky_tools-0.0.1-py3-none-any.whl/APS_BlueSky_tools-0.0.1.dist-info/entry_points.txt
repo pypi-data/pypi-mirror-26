@@ -1,0 +1,5 @@
+[console_scripts]
+motor_qt = motorqt_demo.motor_qt:main
+multimotor = motorqt_demo.multimotor:main
+pvview = bcdaqwidgets.pvview:main
+
