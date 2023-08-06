@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: stegpng
+Version: 1.0.0b3
+Summary: A python package to make png steganography easier
+Home-page: https://github.com/WHGhost/stegPNG
+Author: WHGhost
+Author-email: wghosth@gmail.com
+License: GPL-3.0
+Description-Content-Type: UNKNOWN
+Keywords: png library steganography image analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: requests
+
+A pure python package with the goal to make png steganography and
+analysis easier
+
