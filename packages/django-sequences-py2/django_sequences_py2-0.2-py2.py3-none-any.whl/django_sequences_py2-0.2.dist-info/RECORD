@@ -1,0 +1,15 @@
+django_sequences_py2-0.2.dist-info/DESCRIPTION.rst,sha256=z3qFOzENP2DPwYzLQyZba5IkaFer0IHt-3yUqUkzniY,5276
+django_sequences_py2-0.2.dist-info/METADATA,sha256=iE7Z58fpQXPX71tP6bqJJd6H73rym2kLvgacdwMyLuE,6222
+django_sequences_py2-0.2.dist-info/RECORD,,
+django_sequences_py2-0.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_sequences_py2-0.2.dist-info/metadata.json,sha256=JxnGwsBhTIm1ueWFu32vtANsXLenokriJR2yo1_uHI4,1037
+django_sequences_py2-0.2.dist-info/top_level.txt,sha256=K1a3I78e96M5Z32uPJb599OUUpSNTH7nMiZVPHvdTOI,10
+sequences/__init__.py,sha256=IeY46DFRmq0xvjtJ85CalyuDPsmstwG46Kzs1N61DMw,1736
+sequences/admin.py,sha256=jY5tfV6PUjjt-aSwFrLAmKwiZEE1X4QMcFk0okadKj8,214
+sequences/apps.py,sha256=MrnwsEFW_3lFszSMWdgoSuoRe3K41yK0OApH-oDFLhw,183
+sequences/models.py,sha256=7dt2Wb0WqpOGQ-IJKi1qW_3cmt5fLjm2pCK7spMPD10,541
+sequences/test_postgresql_settings.py,sha256=78g7upQ0Sh-7hiTE03owPXMJLCBLE4lFqB9_p6QG094,352
+sequences/test_settings.py,sha256=CAQG3b1P-0QyX68roXeHJpCDsSDxZ5E6KRMxiMGiYBE,56
+sequences/tests.py,sha256=bgT6DzWuGx-u9gDS7HPTwDYvdpIJeWGhvYBcr7QY6vM,9340
+sequences/migrations/0001_initial.py,sha256=QdJ_K--po6UxoZpsD72JAT0yfDr4PnEygPKzphELOFM,706
+sequences/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
