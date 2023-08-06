@@ -1,0 +1,177 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>eph.config package &#8212; eph 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="eph-config-package">
+<h1>eph.config package<a class="headerlink" href="#eph-config-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-eph.config.config">
+<span id="eph-config-config-module"></span><h2>eph.config.config module<a class="headerlink" href="#module-eph.config.config" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="eph.config.config.create_config_file">
+<code class="descclassname">eph.config.config.</code><code class="descname">create_config_file</code><span class="sig-paren">(</span><em>out_filename</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.config.create_config_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.config.config.get_config_dirs">
+<code class="descclassname">eph.config.config.</code><code class="descname">get_config_dirs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.config.get_config_dirs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.config.config.get_config_files">
+<code class="descclassname">eph.config.config.</code><code class="descname">get_config_files</code><span class="sig-paren">(</span><em>config_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.config.get_config_files" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.config.config.get_default_config_file">
+<code class="descclassname">eph.config.config.</code><code class="descname">get_default_config_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.config.get_default_config_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.config.config.get_parser">
+<code class="descclassname">eph.config.config.</code><code class="descname">get_parser</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.config.get_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.config.config.read_config">
+<code class="descclassname">eph.config.config.</code><code class="descname">read_config</code><span class="sig-paren">(</span><em>config_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.config.read_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-eph.config.exceptions">
+<span id="eph-config-exceptions-module"></span><h2>eph.config.exceptions module<a class="headerlink" href="#module-eph.config.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>Defines configuration related exceptions.</p>
+<dl class="exception">
+<dt id="eph.config.exceptions.ConfigError">
+<em class="property">exception </em><code class="descclassname">eph.config.exceptions.</code><code class="descname">ConfigError</code><a class="headerlink" href="#eph.config.exceptions.ConfigError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<p>Base class for configuration related exceptions.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="eph.config.exceptions.ConfigNotFoundError">
+<em class="property">exception </em><code class="descclassname">eph.config.exceptions.</code><code class="descname">ConfigNotFoundError</code><span class="sig-paren">(</span><em>search_list</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.exceptions.ConfigNotFoundError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#eph.config.exceptions.ConfigError" title="eph.config.exceptions.ConfigError"><code class="xref py py-class docutils literal"><span class="pre">eph.config.exceptions.ConfigError</span></code></a></p>
+<p>A <a class="reference internal" href="#eph.config.exceptions.ConfigNotFoundError" title="eph.config.exceptions.ConfigNotFoundError"><code class="xref py py-class docutils literal"><span class="pre">ConfigNotFoundError</span></code></a> exception is raised when trying to read configurations from
+files that don’t exist.</p>
+<dl class="method">
+<dt id="eph.config.exceptions.ConfigNotFoundError.format_search_list">
+<code class="descname">format_search_list</code><span class="sig-paren">(</span><em>delimiter='</em>, <em>'</em>, <em>bullet=''</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.config.exceptions.ConfigNotFoundError.format_search_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-eph.config">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-eph.config" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">config</span></code> package contains configuration-related data and modules.</p>
+<p><code class="xref py py-mod docutils literal"><span class="pre">config</span></code> package contains:</p>
+<ul class="simple">
+<li><cite>config.ini</cite>: configuration files containing all project wide default configuration.
+The file is copied at installation time to <cite>~/.ephrc</cite> so that it can be edited by the end user.
+If the installed file is deleted or not found by eph scripts <cite>config.ini</cite> configurations are kept.</li>
+<li><code class="xref py py-mod docutils literal"><span class="pre">config</span></code> module: this python module defines functions related to the creation, editing and
+storing of configurations.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">eph.config package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-eph.config.config">eph.config.config module</a></li>
+<li><a class="reference internal" href="#module-eph.config.exceptions">eph.config.exceptions module</a></li>
+<li><a class="reference internal" href="#module-eph.config">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/eph.config.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Flavio Grandin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/eph.config.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

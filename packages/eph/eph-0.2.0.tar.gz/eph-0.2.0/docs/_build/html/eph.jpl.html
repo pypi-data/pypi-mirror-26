@@ -1,0 +1,594 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>eph.jpl package &#8212; eph 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="eph-jpl-package">
+<h1>eph.jpl package<a class="headerlink" href="#eph-jpl-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-eph.jpl.exceptions">
+<span id="eph-jpl-exceptions-module"></span><h2>eph.jpl.exceptions module<a class="headerlink" href="#module-eph.jpl.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>Defines Jpl Horizons related exceptions.</p>
+<dl class="exception">
+<dt id="eph.jpl.exceptions.JplBadParamError">
+<em class="property">exception </em><code class="descclassname">eph.jpl.exceptions.</code><code class="descname">JplBadParamError</code><a class="headerlink" href="#eph.jpl.exceptions.JplBadParamError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/eph.jpl.html#eph.jpl.exceptions.JplError" title="eph.jpl.exceptions.JplError"><code class="xref py py-class docutils literal"><span class="pre">eph.jpl.exceptions.JplError</span></code></a></p>
+<p>A <a class="reference internal" href="source/eph.jpl.html#eph.jpl.exceptions.JplBadParamError" title="eph.jpl.exceptions.JplBadParamError"><code class="xref py py-class docutils literal"><span class="pre">JplBadParamError</span></code></a> is raised when a <code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code> tries to set a parameter that do not match
+with Jpl Horizons specifications.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="eph.jpl.exceptions.JplBadReqError">
+<em class="property">exception </em><code class="descclassname">eph.jpl.exceptions.</code><code class="descname">JplBadReqError</code><a class="headerlink" href="#eph.jpl.exceptions.JplBadReqError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/eph.jpl.html#eph.jpl.exceptions.JplError" title="eph.jpl.exceptions.JplError"><code class="xref py py-class docutils literal"><span class="pre">eph.jpl.exceptions.JplError</span></code></a></p>
+<p>A <a class="reference internal" href="source/eph.jpl.html#eph.jpl.exceptions.JplBadReqError" title="eph.jpl.exceptions.JplBadReqError"><code class="xref py py-class docutils literal"><span class="pre">JplBadReqError</span></code></a> exceptions is raised when a request (<code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code>) to the Horizons service cannot
+be interpreted by the Horizons system.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="eph.jpl.exceptions.JplError">
+<em class="property">exception </em><code class="descclassname">eph.jpl.exceptions.</code><code class="descname">JplError</code><a class="headerlink" href="#eph.jpl.exceptions.JplError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<p>Base class for Horizons service related errors.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="eph.jpl.exceptions.JplParserError">
+<em class="property">exception </em><code class="descclassname">eph.jpl.exceptions.</code><code class="descname">JplParserError</code><a class="headerlink" href="#eph.jpl.exceptions.JplParserError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/eph.jpl.html#eph.jpl.exceptions.JplError" title="eph.jpl.exceptions.JplError"><code class="xref py py-class docutils literal"><span class="pre">eph.jpl.exceptions.JplError</span></code></a></p>
+<p>A <a class="reference internal" href="source/eph.jpl.html#eph.jpl.exceptions.JplParserError" title="eph.jpl.exceptions.JplParserError"><code class="xref py py-class docutils literal"><span class="pre">JplParserError</span></code></a> exception is raised when problems are found in parsing a response (<code class="xref py py-class docutils literal"><span class="pre">JplRes</span></code>)
+from Horizons service.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-eph.jpl.horizons">
+<span id="eph-jpl-horizons-module"></span><h2>eph.jpl.horizons module<a class="headerlink" href="#module-eph.jpl.horizons" title="Permalink to this headline">¶</a></h2>
+<p>Defines variables and functions used to interfacing with Jpl Horizons system.</p>
+<dl class="function">
+<dt id="eph.jpl.horizons.codify_obj">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">codify_obj</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.codify_obj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tries to translate a human readable celestial object name to the corresponding Jpl Horizons code.
+If the name is not known the name itself will be returned.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – the name to be translated.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the code of the object (stringified version of the id).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.codify_site">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">codify_site</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.codify_site" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tries to translate a human readable celestial object name to the corresponding Jpl Horizons site code.
+If the name is not known the name itself will be returned preceded by a &#64; sign
+if &#64; is not already present in the name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – the name to be translated.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the code of the site.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.format_time">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">format_time</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.format_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modify time data <code class="docutils literal"><span class="pre">t</span></code> so that <code class="docutils literal"><span class="pre">str(t)</span></code> can be interpreted by Jpl.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>t</strong> – the time data. It can be a <code class="docutils literal"><span class="pre">str</span></code>, an <code class="docutils literal"><span class="pre">astropy.time.Time</span></code> object or an object such as <code class="docutils literal"><span class="pre">str(t)</span></code> can be understood by Jpl.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the final object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.get_col_dim">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">get_col_dim</code><span class="sig-paren">(</span><em>col</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.get_col_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the physical dimension of a column by its name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>col</strong> (<em>str</em>) – the name of the column.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the physical dimensions of the given column.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.humanify">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">humanify</code><span class="sig-paren">(</span><em>code</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.humanify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tries to interpret a Jpl object or site code as a human readable celestial object name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>code</strong> (<em>str</em>) – the code to be translated.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the corresponding human readable name.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.transform">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">transform</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms an input key-value pair in a Jpl-compatible one.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> (<em>str</em>) – the key to be interpreted or translated.</li>
+<li><strong>value</strong> – a <code class="docutils literal"><span class="pre">str</span></code> to be translated or the object such as <code class="docutils literal"><span class="pre">str(value)</span></code> is Jpl-compatible.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the final key-value pair.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.transform_key">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">transform_key</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.transform_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tranforms an input key to a Jpl-compatible parameter key.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>key</strong> (<em>str</em>) – the key to be interpreted and translated.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the interpreted Jpl-compatible key.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">JplBadParamError</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.horizons.transform_value">
+<code class="descclassname">eph.jpl.horizons.</code><code class="descname">transform_value</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.horizons.transform_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms an input value into a Jpl-compatible one or it leaves as is.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>key</strong> (<em>str</em>) – the Jpl-compatible key.</li>
+<li><strong>value</strong> – a <code class="docutils literal"><span class="pre">str</span></code> to be translated or an object such as <code class="docutils literal"><span class="pre">str(value)</span></code> can be interpreted by Jpl.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the transofrmed value.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-eph.jpl.interface">
+<span id="eph-jpl-interface-module"></span><h2>eph.jpl.interface module<a class="headerlink" href="#module-eph.jpl.interface" title="Permalink to this headline">¶</a></h2>
+<p>Contains classes and functions useful to interact with the <a class="reference external" href="https://ssd.jpl.nasa.gov/?horizons">Jpl Horizons service</a> from NASA.</p>
+<dl class="class">
+<dt id="eph.jpl.interface.JplReq">
+<em class="property">class </em><code class="descclassname">eph.jpl.interface.</code><code class="descname">JplReq</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplReq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/eph.jpl.html#eph.jpl.models.BaseMap" title="eph.jpl.models.BaseMap"><code class="xref py py-class docutils literal"><span class="pre">eph.jpl.models.BaseMap</span></code></a></p>
+<p>A requests to Jpl Horizons service.</p>
+<p>It can be thought as a <code class="xref py py-class docutils literal"><span class="pre">dict</span></code> where key-value pairs represents Jpl Horizons parameters.
+Jpl parameters can be also set as attributes of the <a class="reference internal" href="#eph.jpl.interface.JplReq" title="eph.jpl.interface.JplReq"><code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code></a> instance.
+Furthermore, keys and values are adjusted to match Jpl Horizons interface in order to enhance
+readability and usability.</p>
+<dl class="method">
+<dt id="eph.jpl.interface.JplReq.query">
+<code class="descname">query</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplReq.query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the query to the Jpl Horizons service.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the response from Jpl Horizons service.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#eph.jpl.interface.JplRes" title="eph.jpl.interface.JplRes"><code class="xref py py-class docutils literal"><span class="pre">JplRes</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">ConnectionError</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="eph.jpl.interface.JplReq.read">
+<code class="descname">read</code><span class="sig-paren">(</span><em>filename</em>, <em>section='jplparams'</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplReq.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads configurations parameters from an ini file.</p>
+<p>Reads the <cite>section</cite> section of the ini config file <cite>filename</cite> and set all parameters
+for the Jpl request.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<em>str</em>) – the config file to be read.</li>
+<li><strong>section</strong> (<em>str</em>) – the section of the ini config file to be read.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the object itself.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#eph.jpl.interface.JplReq" title="eph.jpl.interface.JplReq"><code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="eph.jpl.interface.JplReq.url">
+<code class="descname">url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplReq.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the Jpl Horizons url corresponding to the <a class="reference internal" href="#eph.jpl.interface.JplReq" title="eph.jpl.interface.JplReq"><code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code></a> object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the url with the Jpl parameters encoded in the query string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="eph.jpl.interface.JplRes">
+<em class="property">class </em><code class="descclassname">eph.jpl.interface.</code><code class="descname">JplRes</code><span class="sig-paren">(</span><em>http_response</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplRes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A response from the Jpl Horizons service.</p>
+<dl class="method">
+<dt id="eph.jpl.interface.JplRes.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplRes.get_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="eph.jpl.interface.JplRes.get_footer">
+<code class="descname">get_footer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplRes.get_footer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="eph.jpl.interface.JplRes.get_header">
+<code class="descname">get_header</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplRes.get_header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="eph.jpl.interface.JplRes.parse">
+<code class="descname">parse</code><span class="sig-paren">(</span><em>target=&lt;class 'astropy.table.table.QTable'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplRes.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the http response from Jpl Horizons and return, according to target</p>
+<blockquote>
+<div><ul class="simple">
+<li>an <a href="#id1"><span class="problematic" id="id2">`astropy.table.Table`_</span></a> object.</li>
+<li>an <a href="#id3"><span class="problematic" id="id4">`astropy.table.QTable`_</span></a> object.</li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="eph.jpl.interface.JplRes.raw">
+<code class="descname">raw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.interface.JplRes.raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the content of the Jpl Horizons http response as is.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-eph.jpl.models">
+<span id="eph-jpl-models-module"></span><h2>eph.jpl.models module<a class="headerlink" href="#module-eph.jpl.models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="eph.jpl.models.BaseMap">
+<em class="property">class </em><code class="descclassname">eph.jpl.models.</code><code class="descname">BaseMap</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.models.BaseMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">collections.abc.MutableMapping</span></code></p>
+<dl class="method">
+<dt id="eph.jpl.models.BaseMap.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.models.BaseMap.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-eph.jpl.parsers">
+<span id="eph-jpl-parsers-module"></span><h2>eph.jpl.parsers module<a class="headerlink" href="#module-eph.jpl.parsers" title="Permalink to this headline">¶</a></h2>
+<p>Defines parsing functions to read Jpl Horizons ephemeris.</p>
+<dl class="function">
+<dt id="eph.jpl.parsers.check_csv">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">check_csv</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.check_csv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.get_sections">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">get_sections</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.get_sections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split a Jpl Horizons ephemeris in header, data and footer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<em>str</em>) – the content of the Jpl Horizons ephemeris data output.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a tuple of strings containing header, data and footer sections respectively.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.get_subsections">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">get_subsections</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.get_subsections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split a source string in a list of sections separated by one or more *.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>source</strong> (<em>str</em>) – the source string to be splitted.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the lists of subsections.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">list</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.parse">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">parse</code><span class="sig-paren">(</span><em>source</em>, <em>target=&lt;class 'astropy.table.table.QTable'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses an entire Jpl Horizons ephemeris and build an <a class="reference external" href="http://docs.astropy.org/en/stable/table/">astropy</a> table out of it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>source</strong> (<em>str</em>) – the content of the Jpl Horizons data file.</li>
+<li><strong>target</strong> – the type of table to produce (Table or QTable).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the table containing data from Jpl Horizons source ephemeris.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">table</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.parse_cols">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">parse_cols</code><span class="sig-paren">(</span><em>header</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.parse_cols" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds and parses ephemeris column names in a Jpl Horizons ephemeris.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>header</strong> (<em>str</em>) – the header of a Jpl Horizons ephemeris.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a tuple with the names of columns.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.parse_data">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">parse_data</code><span class="sig-paren">(</span><em>data</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.parse_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the data section of a Jpl Horizons ephemeris in a <em>list of lists</em> table.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> (<em>str</em>) – the section containing data of a Jpl Horizons ephemeris.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the list of lists representing a data table.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">list</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.parse_jplparams">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">parse_jplparams</code><span class="sig-paren">(</span><em>source</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.parse_jplparams" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.parse_meta">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">parse_meta</code><span class="sig-paren">(</span><em>header</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.parse_meta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="eph.jpl.parsers.parse_units">
+<code class="descclassname">eph.jpl.parsers.</code><code class="descname">parse_units</code><span class="sig-paren">(</span><em>meta</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.parsers.parse_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-eph.jpl.shortcuts">
+<span id="eph-jpl-shortcuts-module"></span><h2>eph.jpl.shortcuts module<a class="headerlink" href="#module-eph.jpl.shortcuts" title="Permalink to this headline">¶</a></h2>
+<p>Defines shortcut functions useful to ease the access of Jpl Horizons data.</p>
+<dl class="function">
+<dt id="eph.jpl.shortcuts.raw_data_from_req_file">
+<code class="descclassname">eph.jpl.shortcuts.</code><code class="descname">raw_data_from_req_file</code><span class="sig-paren">(</span><em>req_file</em><span class="sig-paren">)</span><a class="headerlink" href="#eph.jpl.shortcuts.raw_data_from_req_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>It returns a raw Jpl Horizons response from a request built from a config ini file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>req_file</strong> (<em>str</em>) – the filename from which the request has to be load.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the raw text output from Jpl.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-eph.jpl">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-eph.jpl" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">jpl</span></code> package contains modules related to retrieve and parse ephemeris from the <a class="reference external" href="https://ssd.jpl.nasa.gov/?horizons">Jpl Horizons</a> service.</p>
+<p>The main classes defined by <code class="xref py py-mod docutils literal"><span class="pre">jpl</span></code> package are</p>
+<ul class="simple">
+<li><code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code>: this class represents a Jpl request to the Horizons service.
+A <code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code> object is like a <code class="xref py py-class docutils literal"><span class="pre">dict</span></code> containing Jpl service parameters used to specify an ephemeris.</li>
+<li><code class="xref py py-class docutils literal"><span class="pre">JplRes</span></code>: this represents a Jpl response from the Horizons service.
+A <code class="xref py py-class docutils literal"><span class="pre">JplRes</span></code> object contains the http response obtained from the Horizons service through a query
+performed by a <code class="xref py py-class docutils literal"><span class="pre">JplReq</span></code> instance. The <code class="xref py py-class docutils literal"><span class="pre">JplRes</span></code> object can parse the response in an
+<a class="reference external" href="http://docs.astropy.org/en/stable/table/">astropy</a> table or return the raw text response.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">eph.jpl package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-eph.jpl.exceptions">eph.jpl.exceptions module</a></li>
+<li><a class="reference internal" href="#module-eph.jpl.horizons">eph.jpl.horizons module</a></li>
+<li><a class="reference internal" href="#module-eph.jpl.interface">eph.jpl.interface module</a></li>
+<li><a class="reference internal" href="#module-eph.jpl.models">eph.jpl.models module</a></li>
+<li><a class="reference internal" href="#module-eph.jpl.parsers">eph.jpl.parsers module</a></li>
+<li><a class="reference internal" href="#module-eph.jpl.shortcuts">eph.jpl.shortcuts module</a></li>
+<li><a class="reference internal" href="#module-eph.jpl">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/eph.jpl.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Flavio Grandin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/eph.jpl.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
