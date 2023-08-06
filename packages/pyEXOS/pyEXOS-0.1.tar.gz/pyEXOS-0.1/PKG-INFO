@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyEXOS
+Version: 0.1
+Summary: Python API to interact with network devices running EXOS
+Home-page: https://github.com/LINXNet/pyexos/
+Author: Elisa Jasinska
+Author-email: elisa@bigwaveit.org
+License: UNKNOWN
+Download-URL: https://github.com/LINXNet/pyexos/tarball/0.1
+Description: UNKNOWN
+Keywords: EXOS,Extreme Networks,networking
+Platform: UNKNOWN
