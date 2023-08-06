@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: tubbe
+Version: 0.2
+Summary: A failure-tolerant library for fallback acquired module.
+Home-page: UNKNOWN
+Author: torpedoallen
+Author-email: torpedoallen@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: failure-tolerant fallback
+Platform: UNKNOWN
+Requires-Dist: gevent (>=1.2.2)
+
+UNKNOWN
+
+
