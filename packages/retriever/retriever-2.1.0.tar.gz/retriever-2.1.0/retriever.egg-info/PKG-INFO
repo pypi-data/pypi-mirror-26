@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: retriever
+Version: 2.1.0
+Summary: Data Retriever
+Home-page: https://github.com/weecology/retriever
+Author: Ben Morris, Akash Goel, Henry Senyondo, Ethan White
+Author-email: ethan@weecology.org
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
