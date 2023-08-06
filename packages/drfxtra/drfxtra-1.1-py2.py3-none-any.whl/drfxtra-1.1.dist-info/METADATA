@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: drfxtra
+Version: 1.1
+Summary: Extra features for Django Rest Framework viewsets and serializers
+Home-page: https://github.com/primal100/drf-xtra
+Author: Paul Martin
+Author-email: greatestloginnameever@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+Drf-xtra adds numerous features to Django Rest Framework including autocomplete views, foreign key fields which return both PK and string and fieldsets to customise which fields to return in a GET request.
+
+

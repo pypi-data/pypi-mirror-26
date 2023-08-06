@@ -1,0 +1,16 @@
+drfxtra/__init__.py,sha256=bE6kvmIABPl91-CUh2t711lzdZ2aNqX_YPRNlIfKOO8,19
+drfxtra/apps.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+drfxtra/factories.py,sha256=wzy7LiYDRaCcBkT-5N90U7aLMjntlpc4sJBv4MfKAq0,2734
+drfxtra/mixins.py,sha256=ayhUGNHz2SZAHzAJIsY-O73PPqNBDov6F6bYRFLaXA4,6719
+drfxtra/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drfxtra/permissions.py,sha256=i2DpWLWAmxIPFjXWqlmdvwkS_ETxZRd0DWyy7Ax16Wo,4436
+drfxtra/serializers.py,sha256=1pHN81XoyPaeyRFrfJ502fj4GbF9HGx6h2PXMwmy2oA,8421
+drfxtra/viewsets.py,sha256=6bVX_dcgpqQie2Gk7baF3ISxDcLoizRmNA8pLPuceVg,5094
+drfxtra/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drfxtra/templatetags/defxtra.py,sha256=6RsOrgVHzuNWq-0CfiQod2wqDKMld5Ro8XnpwUv6VLI,244
+drfxtra-1.1.dist-info/DESCRIPTION.rst,sha256=CRr0mpwiqreiaJWWU6fzigfqWg9mJ5XPj5iID3noo6A,208
+drfxtra-1.1.dist-info/METADATA,sha256=GPpp9Hv5rFtOYm6LYNttZeBMjzp-eAU9E2V5umob_4A,907
+drfxtra-1.1.dist-info/RECORD,,
+drfxtra-1.1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+drfxtra-1.1.dist-info/metadata.json,sha256=5_YiVNE5QmauJi8e9X7Gt5YYv7AYtHrJ8XOOqogAmAw,799
+drfxtra-1.1.dist-info/top_level.txt,sha256=_2v3dlRLYieUODMHkjPEwFsqQBIjwB0ikxZOWtgVh7Y,8
