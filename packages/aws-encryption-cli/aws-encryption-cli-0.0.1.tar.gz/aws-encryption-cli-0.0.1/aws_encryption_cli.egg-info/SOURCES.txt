@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+aws_encryption_cli.egg-info/PKG-INFO
+aws_encryption_cli.egg-info/SOURCES.txt
+aws_encryption_cli.egg-info/dependency_links.txt
+aws_encryption_cli.egg-info/top_level.txt
