@@ -1,0 +1,10 @@
+Cupboard-0.2.2.dist-info/DESCRIPTION.rst,sha256=eb2Qe94bjBCr0kCCflI-Y7zA423DeQi0IguP3jRjcFY,443
+Cupboard-0.2.2.dist-info/METADATA,sha256=1B7DQwhoa7Rf-9INVa-TS9MJnuQ5-81wNqO9luerlcs,1720
+Cupboard-0.2.2.dist-info/RECORD,,
+Cupboard-0.2.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+Cupboard-0.2.2.dist-info/metadata.json,sha256=JYvv0QBvyn1ZV7n7EmpJVwuf77vmzLKnKvfdsz48LDE,1245
+Cupboard-0.2.2.dist-info/top_level.txt,sha256=HLQENLRv3f18OXGINTLsY_StNpZCKmsWPAgTc_JkPpU,9
+cupboard/__init__.py,sha256=D4SUsZ7T_U8o95zV_sKmCIG7Ga7PYh1J1eUcnWv0-BY,5999
+cupboard/backend.py,sha256=irOtqYRSou9JpaVdoN2O20lcsI8g_qtKKDIrBIo9nCw,6715
+cupboard/marshal.py,sha256=F4Wl_kOWxNdnDMhW-ZnFaT5xnl4Q6ickVOtNDgohG1I,6626
+cupboard/store.py,sha256=htX7XxOnwlgY5_XXHPOgUb3KhaJqxH06-5aIsilD88Q,14963
