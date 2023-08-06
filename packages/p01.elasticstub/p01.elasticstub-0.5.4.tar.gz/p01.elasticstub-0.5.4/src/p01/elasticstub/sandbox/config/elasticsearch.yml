@@ -1,0 +1,13 @@
+# Cluster Settings
+cluster:
+  name: p01_elasticstub_testing
+
+network:
+    host: 127.0.0.1
+
+http:
+  port: 45200-45300
+
+transport:
+  tcp:
+    port: 45300-45400
