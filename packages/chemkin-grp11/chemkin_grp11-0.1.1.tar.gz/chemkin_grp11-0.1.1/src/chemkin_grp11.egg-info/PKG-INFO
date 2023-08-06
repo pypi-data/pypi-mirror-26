@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: chemkin-grp11
+Version: 0.1.1
+Summary: Simple chemical kinetics code
+Home-page: https://github.com/cs207-group11/chemkin_grp11
+Author: hs
+Author-email: hsim13372@gmail.com
+License: MIT
+Description: chemkin_grp11
+        =============
+        
+        Test repo for packaging
+        
+Platform: UNKNOWN

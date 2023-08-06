@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+src/chemkin_grp11/__init__.py
+src/chemkin_grp11.egg-info/PKG-INFO
+src/chemkin_grp11.egg-info/SOURCES.txt
+src/chemkin_grp11.egg-info/dependency_links.txt
+src/chemkin_grp11.egg-info/not-zip-safe
+src/chemkin_grp11.egg-info/requires.txt
+src/chemkin_grp11.egg-info/top_level.txt
