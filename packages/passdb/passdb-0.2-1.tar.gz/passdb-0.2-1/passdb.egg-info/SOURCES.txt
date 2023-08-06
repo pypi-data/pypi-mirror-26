@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+passdb/__init__.py
+passdb/manage_passdb.py
+passdb/passdb.py
+passdb.egg-info/PKG-INFO
+passdb.egg-info/SOURCES.txt
+passdb.egg-info/dependency_links.txt
+passdb.egg-info/entry_points.txt
+passdb.egg-info/requires.txt
+passdb.egg-info/top_level.txt

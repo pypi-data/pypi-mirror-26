@@ -1,0 +1,4 @@
+[console_scripts]
+manage-passdb = passdb.manage_passdb:main
+passdb = passdb.passdb:main
+
