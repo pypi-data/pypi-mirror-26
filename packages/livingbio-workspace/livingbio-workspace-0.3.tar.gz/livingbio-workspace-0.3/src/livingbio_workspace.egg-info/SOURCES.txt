@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/workspace.py
+src/livingbio_workspace.egg-info/PKG-INFO
+src/livingbio_workspace.egg-info/SOURCES.txt
+src/livingbio_workspace.egg-info/dependency_links.txt
+src/livingbio_workspace.egg-info/not-zip-safe
+src/livingbio_workspace.egg-info/requires.txt
+src/livingbio_workspace.egg-info/top_level.txt
