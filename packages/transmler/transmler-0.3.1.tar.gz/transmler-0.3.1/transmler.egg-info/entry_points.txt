@@ -1,0 +1,3 @@
+[console_scripts]
+transmile = transmler.run:main
+
