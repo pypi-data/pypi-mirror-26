@@ -1,0 +1,76 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.ttwpo">
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.ttwpo"
+      type="plone"
+      directory="static"
+      />
+
+  <!-- Control Panel -->
+  <browser:pages
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      layer="collective.ttwpo.interfaces.ICollectiveTTWPoLayer"
+      class=".controlpanel.ControlPanelView"
+      permission="cmf.ManagePortal"
+      >
+    <browser:page
+        name="ttwpo-controlpanel"
+        template="controlpanel.pt"
+        />
+    <browser:page
+        name="ttwpo-controlpanel-createdomain"
+        attribute="create_domain"
+        />
+    <browser:page
+        name="ttwpo-controlpanel-savedomainoptions"
+        attribute="save_domain_options"
+        />
+    <browser:page
+        name="ttwpo-controlpanel-deletedomain"
+        attribute="delete_domain"
+        />
+    <browser:page
+        name="ttwpo-controlpanel-addlocales"
+        attribute="add_locales"
+        />
+    <browser:page
+        name="ttwpo-controlpanel-deletelocale"
+        attribute="delete_locale"
+        />
+  </browser:pages>
+
+  <!-- Manage Domain -->
+  <browser:pages
+      for="plone.app.layout.navigation.interfaces.INavigationRoot"
+      layer="collective.ttwpo.interfaces.ICollectiveTTWPoLayer"
+      class=".manage.ManageView"
+      permission="cmf.ManagePortal"
+      >
+    <browser:page
+        name="ttwpo-manage"
+        template="manage.pt"
+        />
+    <browser:page
+        name="ttwpo-manage-upload"
+        attribute="upload"
+        />
+    <browser:page
+        name="ttwpo-manage-delete"
+        attribute="delete"
+        />
+    <browser:page
+        name="ttwpo-manage-current"
+        attribute="current"
+        />
+    <browser:page
+        name="ttwpo-manage-fetch"
+        attribute="fetch"
+        />
+  </browser:pages>
+
+</configure>
