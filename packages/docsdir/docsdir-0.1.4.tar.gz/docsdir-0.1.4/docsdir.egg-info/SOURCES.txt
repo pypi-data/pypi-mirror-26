@@ -1,0 +1,9 @@
+README.rst
+setup.py
+docsdir/__init__.py
+docsdir/__main__.py
+docsdir.egg-info/PKG-INFO
+docsdir.egg-info/SOURCES.txt
+docsdir.egg-info/dependency_links.txt
+docsdir.egg-info/requires.txt
+docsdir.egg-info/top_level.txt
