@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: time_intervals
+Version: 1.0.0
+Summary: Operations on intervals
+Home-page: UNKNOWN
+Author: Sotiria Lampoudi
+Author-email: slampoud@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5

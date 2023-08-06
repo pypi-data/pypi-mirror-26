@@ -1,0 +1,12 @@
+setup.py
+test/test_intervals.py
+test/test_intervals_dict_datetime.py
+test/test_intervals_dict_int.py
+test/test_intervals_tuple_datetime.py
+test/test_intervals_tuple_int.py
+time_intervals/__init__.py
+time_intervals/intervals.py
+time_intervals.egg-info/PKG-INFO
+time_intervals.egg-info/SOURCES.txt
+time_intervals.egg-info/dependency_links.txt
+time_intervals.egg-info/top_level.txt
