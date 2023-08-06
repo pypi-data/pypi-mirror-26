@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bin/hlmm_chr.py
+docs/_build/_sources/index.rst.txt
+docs/_build/_sources/intro.rst.txt
+docs/_build/_sources/tutorial.rst.txt
+hlmm/__init__.py
+hlmm/hetlm.py
+hlmm/hetlmm.py
+hlmm.egg-info/PKG-INFO
+hlmm.egg-info/SOURCES.txt
+hlmm.egg-info/dependency_links.txt
+hlmm.egg-info/not-zip-safe
+hlmm.egg-info/requires.txt
+hlmm.egg-info/top_level.txt
