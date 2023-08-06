@@ -1,0 +1,8 @@
+setup.py
+pycr/__init__.py
+pycr/mock.py
+pycr.egg-info/PKG-INFO
+pycr.egg-info/SOURCES.txt
+pycr.egg-info/dependency_links.txt
+pycr.egg-info/not-zip-safe
+pycr.egg-info/top_level.txt
