@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: mnistdb
+Version: 0.1.6
+Summary: A library to load the MNIST database of handwritten digits into numpy arrays.
+Home-page: https://github.com/daniel-e/mnistdb
+Author: daniel-e
+Author-email: git.daniele@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/daniel-e/mnistdb/archive/0.1.6.tar.gz
+Description: UNKNOWN
+Keywords: mnist,ml,machinelearning
+Platform: UNKNOWN
