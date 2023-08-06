@@ -1,0 +1,10 @@
+README.md
+maxcli.py
+setup.cfg
+setup.py
+MaxSmart_CLI.egg-info/PKG-INFO
+MaxSmart_CLI.egg-info/SOURCES.txt
+MaxSmart_CLI.egg-info/dependency_links.txt
+MaxSmart_CLI.egg-info/entry_points.txt
+MaxSmart_CLI.egg-info/requires.txt
+MaxSmart_CLI.egg-info/top_level.txt
