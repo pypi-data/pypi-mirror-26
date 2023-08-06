@@ -1,0 +1,8 @@
+pyldap
+
+[test]
+nose
+Mock
+coverage
+unittest2
+pyldap
