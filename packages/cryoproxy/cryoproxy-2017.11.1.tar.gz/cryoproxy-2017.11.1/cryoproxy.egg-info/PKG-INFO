@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cryoproxy
+Version: 2017.11.1
+Summary: Cryostream asynchronous serial port proxy daemon based on asyncio
+Home-page: https://hg.3lp.cx/cryoproxy
+Author: Vadim Dyadkin
+Author-email: diadkin@esrf.fr
+License: GPL
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
