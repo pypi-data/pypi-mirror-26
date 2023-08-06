@@ -1,0 +1,10 @@
+boto3
+pylint
+
+[dev]
+check-manifest
+
+[test]
+coverage
+mock
+nosetests
