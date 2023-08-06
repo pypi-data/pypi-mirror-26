@@ -1,0 +1,32 @@
+{
+ "omas_extras.shot": {
+  "full_path": "omas_extras.shot",
+  "coordinates": [],
+  "data_type": "INT_0D",
+  "description": "shot number"
+ },
+ "omas_extras.run": {
+  "full_path": "omas_extras.run",
+  "coordinates": [],
+  "data_type": "INT_0D",
+  "description": "run number"
+ },
+ "omas_extras.user": {
+  "full_path": "omas_extras.user",
+  "coordinates": [],
+  "data_type": "STR_0D",
+  "description": "user name"
+ },
+ "omas_extras.tokamak": {
+  "full_path": "omas_extras.tokamak",
+  "coordinates": [],
+  "data_type": "STR_0D",
+  "description": "tokamak name"
+ },
+ "omas_extras.imas_version": {
+  "full_path": "omas_extras.imas_version",
+  "coordinates": [],
+  "data_type": "STR_0D",
+  "description": "imas version"
+ }
+}
