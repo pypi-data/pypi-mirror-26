@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: polyinterface
+Version: 1.0.9
+Summary: UDI Polyglot v2 Interface
+Home-page: https://github.com/Einstein42/udi-polyglot-interface
+Author: James Milne
+Author-email: milne.james@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.5
