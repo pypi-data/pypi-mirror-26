@@ -1,0 +1,3 @@
+[console_scripts]
+yfm = yfm.scripts.yfmcli:main
+
