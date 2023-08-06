@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: github_watcher
+Version: 1.2
+Summary: Monitors files/directories in github for changes
+Home-page: https://github.com/akellehe/github-watcher
+Author: Andrew Kelleher
+Author-email: keats.kelleher@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
