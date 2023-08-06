@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: quoine
+Version: 0.0.1
+Summary: (Unofficial) Python bindings for Quoinex/Qryptos API
+Home-page: https://github.com/seanlim1/python-quoine
+Author: Sean Lim
+Author-email: seanlim0101@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: quoine,quoinex,qryptos,apitrading-platform,cryptocurrency
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial
