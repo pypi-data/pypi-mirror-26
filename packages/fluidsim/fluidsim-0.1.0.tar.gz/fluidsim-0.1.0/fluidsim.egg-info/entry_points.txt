@@ -1,0 +1,4 @@
+[console_scripts]
+fluidsim = fluidsim.util.console.__main__:run
+fluidsim-test = fluidsim.util.testing:run
+
