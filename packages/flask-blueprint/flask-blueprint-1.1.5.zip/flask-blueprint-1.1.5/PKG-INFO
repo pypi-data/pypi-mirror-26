@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: flask-blueprint
+Version: 1.1.5
+Summary: Flask blueprint generator
+Home-page: https://github.com/aiscenblue/flask-blueprint
+Author: Jeffrey Marvin Forones
+Author-email: aiscenblue@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: flask,blueprint,flask-blueprint
+Platform: UNKNOWN
