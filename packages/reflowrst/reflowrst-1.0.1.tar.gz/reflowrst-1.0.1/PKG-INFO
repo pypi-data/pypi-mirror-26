@@ -1,0 +1,99 @@
+Metadata-Version: 1.1
+Name: reflowrst
+Version: 1.0.1
+Summary: Modify valid rst text to fit within given width
+Home-page: https://github.com/doakey3/reflowrst
+Author: doakey3
+Author-email: reflowrst.dmodo@spamgourmet.com
+License: MIT
+Download-URL: https://github.com/doakey3/reflowrst/tarball/1.0.1
+Description-Content-Type: UNKNOWN
+Description: =========
+        reflowrst
+        =========
+        
+        Dependencies
+        ============
+        * DashTable_
+        
+        .. _DashTable: https://github.com/doakey3/DashTable
+        
+        Installation
+        ============
+        
+        >>> sudo pip install reflowrst
+        
+        Usage
+        =====
+        Modify valid rst text to fit within a given space
+        
+        For example:
+        
+        >>> from reflowrst import reflow
+        >>> text = '''
+            +------------------------+------------+----------+----------+
+            | Header row, column 1   | Header 2   | Header 3 | Header 4 |
+            | (header rows optional) |            |          |          |
+            +========================+============+==========+==========+
+            | body row 1, column 1   | column 2   | column 3 | column 4 |
+            +------------------------+------------+----------+----------+
+            | body row 2             | Cells may span columns.          |
+            +------------------------+------------+---------------------+
+            | body row 3             | Cells may  | - Table cells       |
+            +------------------------+ span rows. | - contain           |
+            | body row 4             |            | - body elements.    |
+            +------------------------+------------+---------------------+
+            '''
+        
+        >>> print(reflow(text, 65))
+        
+        >>>
+            +------------------------------+----------+----------+----------+
+            | Header row, column 1 (header | Header 2 | Header 3 | Header 4 |
+            | rows optional)               |          |          |          |
+            +==============================+==========+==========+==========+
+            | body row 1, column 1         | column 2 | column 3 | column 4 |
+            +------------------------------+----------+----------+----------+
+            | body row 2                   | Cells may span columns.        |
+            +------------------------------+----------+---------------------+
+            | body row 3                   | Cells    | - Table cells       |
+            +------------------------------+ may span | - contain           |
+            | body row 4                   | rows.    | - body elements.    |
+            +------------------------------+----------+---------------------+
+        
+        You can also get the longest possible form of the rst text by using 0
+        for the space. For example:
+        
+        >>> paragraph = '\n'.join(['line 1',
+                                   'line 2'])
+        >>> print(reflow(paragraph, 0))
+        >>> 'line 1 line 2'
+        
+        Todo
+        ====
+        * |+| Titles
+        * |-| Transitions
+        * |+| Paragraphs
+        * |+| Bullet Lists
+        * |+| Enumerated Lists
+        * |+| Definitions
+        * |+| Fields
+        * |+| Options
+        * |-| Literal Blocks
+        * |-| Quoted Literal Blocks
+        * |-| Line Blocks
+        * |+| Block Quotes
+        * |-| Doctest Blocks
+        * |+| Grid Tables
+        * |-| Simple Tables
+        * |+| Footnotes
+        * |-| Citations
+        * |-| Hyperlink Targets
+        * |-| Directives
+        * |-| Substitution Definitions
+        * |-| Comments
+        
+        .. |+| unicode:: U+2611
+        .. |-| unicode:: U+2610
+        
+Platform: UNKNOWN
