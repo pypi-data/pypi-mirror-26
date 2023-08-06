@@ -1,0 +1,47 @@
+---
+engine: 'sqlite:///test.sql'
+socket: 'tcp'
+listen_port: 4444
+listen_host: ''
+
+ingest:
+  # Example of space separated log output
+  data: 'time (?P<time>[\d\-\_\:\+]+) time_response (?P<time_response>[\d\-]+) mac_source (?P<mac_source>[\d\w\:\-]+) ip_source (?P<ip_source>[\d\.\-]+) squid_request_status (?P<squid_request_status>[\w\_\-]+) http_status_code (?P<http_status_code>[\d\-]+) http_reply_size (?P<http_reply_size>[\d\-]+) http_request_method (?P<http_request_method>[\w\-]+) http_request_url (?P<http_request_url>[\d\w\.\:\-\/\?]+) user_name (?P<user_name>[\w\-]+) squid_hier_code (?P<squid_hier_code>[\w\_\-]+) ip_destination (?P<ip_destination>[\d\.\-]+) http_content_type (?P<http_content_type>[\w\-\_\/]+)'
+
+  rotate: '^R'
+  truncate: '^T'
+  reopen: '^O'
+  flush: '^F'
+  rotatecount: '^r(\d+)'
+  bufferoutput: '^b(\d)'
+
+process:
+  data:
+    action: store
+    tablename: access_logs
+    schema:
+      time: String
+      time_response: String
+      mac_source: String
+      ip_source: String
+      squid_request_status: String
+      http_status_code: String
+      http_reply_size: String
+      http_request_method: String
+      http_request_url: String
+      user_name: String
+      squid_hier_code: String
+      ip_destination: String
+      http_content_type: String
+  rotate:
+    action: drop
+  truncate:
+    action: drop
+  reopen:
+    action: drop
+  flush:
+    action: drop
+  rotatecount:
+    action: drop
+  bufferoutput:
+    action: drop
