@@ -1,0 +1,13 @@
+tensorrec/__init__.py,sha256=fkpg9aNbnpWERK61wnlQz58JjWNTCQfjBkfdOejhO3U,166
+tensorrec/eval.py,sha256=ZEkQj7Bi09zlYEeuST-3S7ERfdLeLZKuM8P6qJqT9KE,3869
+tensorrec/loss_graphs.py,sha256=lQ1jwMIhF_nUIaxDMSgLKZOsBSpXszpjkofvXFfh618,1661
+tensorrec/representation_graphs.py,sha256=nuOQ5hWnMtuPvF4gpc8WRuLWEhzW-qn2zpJvFY8_aJA,1429
+tensorrec/session_management.py,sha256=7n3U8vG1kKSQi-mE23VCeV2DY4FTBlOD9M8vpDp7x8w,400
+tensorrec/tensorrec.py,sha256=bXzX6LZKeUk79JmeLhCF06hRIN-UOv6Nl9ytTva9tqQ,16080
+tensorrec/util.py,sha256=OjOCRSsoTKSTgS-EFAI7rJaz1T0_iXBy611esehqiHg,1292
+tensorrec-0.1.dist-info/DESCRIPTION.rst,sha256=s0H1Z6TdYw23Z6ZQ15WzmD-hc9Z-SeCflmja64tMVdA,5604
+tensorrec-0.1.dist-info/METADATA,sha256=-daDKaJbU_04McNZiaony4QA5SNQBl4U7CISLlGOLGI,5933
+tensorrec-0.1.dist-info/RECORD,,
+tensorrec-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+tensorrec-0.1.dist-info/metadata.json,sha256=LE8AqbuUyNUmYfVH2nFpkzevNPOF8TEd8_CESpekKWk,509
+tensorrec-0.1.dist-info/top_level.txt,sha256=YBDQRdiniNEB0WxbXfC3Np0FsXdDRvb3v7FI9n_NzbM,10
