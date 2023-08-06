@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: bondcomp
+Version: 0.1.1
+Summary: Bond benchmark suggestions.
+Home-page: https://github.com/rolfantlers
+Author: Anders Amundson
+Author-email: amundson@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: datetime
+Requires-Dist: nose
+
+UNKNOWN
+
+
