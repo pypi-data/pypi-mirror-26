@@ -1,0 +1,6 @@
+SQLAlchemy
+SQLAlchemy-utils
+psycopg2
+bottle
+sqlalchemy_seed
+docker
