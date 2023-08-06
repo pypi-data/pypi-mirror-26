@@ -1,0 +1,16 @@
+pypiserver/__init__.py,sha256=PAX-aq_JjWqi6EgbYv65gqrtyUEfIUWcN3r32t4Hz7M,6273
+pypiserver/__main__.py,sha256=zYbsxXitqyeaaI6x-uTXGl2CjVTPW_JEBtuTT3bVG6c,11464
+pypiserver/_app.py,sha256=2EE0ax6UxtmksoNico8dJFOmnGchrEDMTaqPwTFOjnE,9987
+pypiserver/bottle.py,sha256=ZoAlWljCWWZMrXBcll3H5p3_watBAIR4n8OBxbOWZrc,150189
+pypiserver/cache.py,sha256=BqgBPoFBnWG8ttL2grn5yo3jFds4-U09YygTmeG9E5M,3742
+pypiserver/core.py,sha256=wC_pFd2R7bC-QBZ6OIgD-TfoozLIAqt0LaI9xR8ROcc,9286
+pypiserver/manage.py,sha256=zKIW1Sio_L6Aeho-s98-XhQUEJRBSvpn56w7Mxv8zaI,4586
+pypiserver/welcome.html,sha256=5Z1AMK6Z3OmMz6JASt86D8nSOCYzrXkzYVzuH3DuyIs,783
+pypiserver-1.2.1.dev0.dist-info/DESCRIPTION.rst,sha256=x9pBZHNMrTCOhqLeI3VvAznu7bUHlEpCc-5ECpm0xTg,30085
+pypiserver-1.2.1.dev0.dist-info/METADATA,sha256=dY2ul9ueZx2US5oe-64ygDk1j0DIrG2Udp_eGljOiaQ,31455
+pypiserver-1.2.1.dev0.dist-info/RECORD,,
+pypiserver-1.2.1.dev0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pypiserver-1.2.1.dev0.dist-info/entry_points.txt,sha256=TJalNBWfG9x0EJf-5J-nqO6CeGF9faD5oeLaD139Zv4,115
+pypiserver-1.2.1.dev0.dist-info/metadata.json,sha256=o-0djsd2hzUaf8jQG10BoEzbk8BOeZBJg5czX9MvHYg,1765
+pypiserver-1.2.1.dev0.dist-info/top_level.txt,sha256=rh5JyKpbrQiaReWV-miWI0eUN1bqQyqOnohUNv4cd7o,11
+pypiserver-1.2.1.dev0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
