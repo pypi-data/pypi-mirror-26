@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyepd
+Version: 0.1
+Summary: Package for generating the image format used by Pervasive Display's modules (EPD)
+Home-page: https://github.com/Gordonei/pyepd
+Author: Gordon Inggs
+Author-email: gordon.e.inggs@ieee.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Software Development :: Embedded Systems
