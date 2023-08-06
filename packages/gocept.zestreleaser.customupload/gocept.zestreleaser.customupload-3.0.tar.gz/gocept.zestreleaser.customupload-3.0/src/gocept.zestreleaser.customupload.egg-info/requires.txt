@@ -1,0 +1,6 @@
+setuptools
+six
+zest.releaser>=5.0
+
+[test]
+mock
