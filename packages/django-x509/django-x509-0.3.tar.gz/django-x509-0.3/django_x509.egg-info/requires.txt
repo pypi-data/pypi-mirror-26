@@ -1,0 +1,5 @@
+six
+pyopenssl<17.4.0,>=17.1.0
+django<1.12,>=1.10
+django-model-utils
+jsonfield
