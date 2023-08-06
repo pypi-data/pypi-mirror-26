@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: tdk
+Version: 0.1
+Summary: A command line tool to query meaning of Turkish word from official dictionary.
+Home-page: https://github.com/efe/tdk-cli
+Author: Efe Öge
+Author-email: UNKNOWN
+License: GPL3
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: Turkish
+Requires-Dist: Click
+Requires-Dist: bs4
+Requires-Dist: requests
+
+UNKNOWN
+
+
