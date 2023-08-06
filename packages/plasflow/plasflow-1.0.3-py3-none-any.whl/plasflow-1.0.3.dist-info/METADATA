@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: plasflow
+Version: 1.0.3
+Summary: PlasFlow - predicting plasmid sequences in metagenomic data
+Home-page: https://github.com/smaegol/PlasFlow
+Author: Pawel Krawczyk
+Author-email: p.krawczyk@ibb.waw.pl
+License: GPLv3+
+Description-Content-Type: UNKNOWN
+Keywords: plasmid metagenome genome signature ML
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: rpy2 (==2.7.8)
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+PlasFlow is a TensorFlow-based classifier
+used to predict plasmid sequences in metagenomic data
+
+
