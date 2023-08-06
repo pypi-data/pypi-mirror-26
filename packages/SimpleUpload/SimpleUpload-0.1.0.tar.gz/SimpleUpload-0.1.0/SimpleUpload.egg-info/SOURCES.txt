@@ -1,0 +1,8 @@
+README.rst
+setup.py
+SimpleUpload.egg-info/PKG-INFO
+SimpleUpload.egg-info/SOURCES.txt
+SimpleUpload.egg-info/dependency_links.txt
+SimpleUpload.egg-info/requires.txt
+SimpleUpload.egg-info/top_level.txt
+simple_upload/__init__.py
