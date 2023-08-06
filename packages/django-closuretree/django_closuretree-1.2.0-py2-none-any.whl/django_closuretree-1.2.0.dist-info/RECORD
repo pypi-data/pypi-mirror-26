@@ -1,0 +1,10 @@
+closuretree/__init__.py,sha256=qP4LSWtGJdgXNAHgrZKIVDq5QqkUmD8OPk557khV13A,66
+closuretree/models.py,sha256=qKhsN6r7OxEvkzurIKF3Yzee9bnWLTqx3UF0ERfpgQQ,12632
+closuretree/tests.py,sha256=SDCCjhFqiLKeKgWwkAU9PoWd_GGeCpBMFoQ7yF6uh1U,15526
+closuretree/version.py,sha256=l3pw8E-BJ2XNto5rQ4zXzcmWTeNf0eFJwJVrRTP0Boo,22
+django_closuretree-1.2.0.dist-info/DESCRIPTION.rst,sha256=hkY-5GfUpcmnbXNrcjvrrIKtoLAMFGpRJ39aCqTkcIg,3268
+django_closuretree-1.2.0.dist-info/METADATA,sha256=j_4yuEZdMDVRTVLGnsR7HxIDgwUnYwbgo8YoiudNiBc,4219
+django_closuretree-1.2.0.dist-info/RECORD,,
+django_closuretree-1.2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+django_closuretree-1.2.0.dist-info/metadata.json,sha256=zYcUaRjKAW_Uidra4zG4zR1OU9eSfdrjukvq-WTh4Kk,1111
+django_closuretree-1.2.0.dist-info/top_level.txt,sha256=4A2iTJ4kVMrAj97aPPW_O-Zj9J9LGfA07NjSvfGVbyo,12
