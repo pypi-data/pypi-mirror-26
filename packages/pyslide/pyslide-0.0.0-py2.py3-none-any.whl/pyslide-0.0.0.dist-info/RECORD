@@ -1,0 +1,12 @@
+pyslide/__init__.py,sha256=YnZsQyODJQSHQu9hfQhqtop2y802UtJ9QS1IAao9oVs,174
+pyslide/hello.py,sha256=ZJNWlgjSP5ooFtnOex10E5T--hixlqCzNqHRwA_tVFg,64
+pyslide/setup.py,sha256=8AukORVi-GG20WnBk-vVORSDnbbw1AuZXuhHtwYHXKE,779
+pyslide/io/__init__.py,sha256=2zzQVJ1lnaCyDnvnyc7wRK9LJOlEpNQf0WA0p7KJqg4,70
+pyslide/io/setup.py,sha256=xs0WTT3gywd-McA_VMXD4Je4h6XmCOLHpYDA-4KjpJg,698
+pyslide/io/tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+pyslide-0.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyslide-0.0.0.dist-info/METADATA,sha256=F0n-KfIyRtoiK_NyZ8PMnPsQO_DVjrMtKLErnEyRpPA,817
+pyslide-0.0.0.dist-info/RECORD,,
+pyslide-0.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pyslide-0.0.0.dist-info/metadata.json,sha256=JwGHfscsc4iJIm8KIL9ZO1Xbdz4mpr0Rb-LZt2VRbcE,961
+pyslide-0.0.0.dist-info/top_level.txt,sha256=4bhgMGN0heaVK5DK71GUR__ba8Zp_K4pJHN5hPfNrs0,8
