@@ -1,0 +1,10 @@
+COPYING.txt
+MANIFEST.in
+README.rst
+kv.py
+setup.py
+kv.egg-info/PKG-INFO
+kv.egg-info/SOURCES.txt
+kv.egg-info/dependency_links.txt
+kv.egg-info/entry_points.txt
+kv.egg-info/top_level.txt

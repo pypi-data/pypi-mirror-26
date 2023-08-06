@@ -1,0 +1,3 @@
+[console_scripts]
+kv-cli = kv:main
+
