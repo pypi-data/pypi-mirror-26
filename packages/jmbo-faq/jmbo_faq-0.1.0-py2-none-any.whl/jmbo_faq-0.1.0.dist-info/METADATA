@@ -1,0 +1,59 @@
+Metadata-Version: 2.0
+Name: jmbo-faq
+Version: 0.1.0
+Summary: FAQs App for JMBO
+Home-page: http://github.com/praekelt/jmbo-faq
+Author: Praekelt Consulting
+Author-email: dev@praekelt.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django-simplemde
+
+Jmbo FAQ
+========
+**FAQs App for JMBO.**
+
+.. figure:: https://travis-ci.org/praekelt/jmbo-faq.svg?branch=develop
+    :align: center
+    :alt: Travis
+
+.. contents:: Contents
+    :depth: 5
+
+Content types
+-------------
+
+FAQ
+***
+
+FAQ introduces 2 fields called `Question` and `Answer`.
+
+1.  Question is a text field.
+2.  Answer is a rich-text field of arbitrary length.
+
+Authors
+=======
+
+Praekelt Consulting
+-------------------
+
+* Jonathan Bydendyk
+* Ruan de Sousa
+
+Changelog
+=========
+
+next
+----
+#. Models Created
+
+
+
