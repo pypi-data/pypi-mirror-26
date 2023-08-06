@@ -1,0 +1,6 @@
+biopython
+PyMySQL
+six
+bson
+pytz
+numpy
