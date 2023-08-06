@@ -1,0 +1,11 @@
+logxstract/__init__.py,sha256=6TZxG-orDlGJ9mpTmiUHHYjmGk82Di9MhF1NPjUoduQ,87
+logxstract/__main__.py,sha256=0074L5xlsWafPSkHtj0X93e3_5gytO9W7XOLDuR6Vt4,673
+logxstract/lib.py,sha256=GhEdBfee88mo90EpZoqKnFm8oXgbQVJIL-AFpms6yTw,2007
+logxstract/test.py,sha256=yJc8Os8ZwvqyUVlFsjz4vM5tsZAEZ5w8ildpn8mr3Vg,752
+logxstract-0.0.1.dist-info/DESCRIPTION.rst,sha256=lAE29YKKFSa3xen4X8XJ4eQOep-giqJ2lnGoQ15F-pU,741
+logxstract-0.0.1.dist-info/METADATA,sha256=AQLcyxQYDJj6L4lAeVIFKJ8WC-Qmd6ew7gtvuH4LlWY,1651
+logxstract-0.0.1.dist-info/RECORD,,
+logxstract-0.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+logxstract-0.0.1.dist-info/entry_points.txt,sha256=tULaYlMFZOdt0nuJFYUTW0kkTi44lcXnmcu8of0kFZM,57
+logxstract-0.0.1.dist-info/metadata.json,sha256=XFQaQOl2uwtjmvRkoaa1biZ40zBSI6dD6RxjWajjATg,1253
+logxstract-0.0.1.dist-info/top_level.txt,sha256=yxyhoHNVLXvPK-vsZKfHJZV5-caXIdgralKENfb_qOA,11

@@ -1,0 +1,71 @@
+Metadata-Version: 2.0
+Name: logxstract
+Version: 0.0.1
+Summary: Library for extracting xml from logs to output file.
+Home-page: https://github.com/nuncjo/logxstract
+Author: Nuncjo
+Author-email: zoreander@gmail.com
+License: MIT license
+Description-Content-Type: UNKNOWN
+Keywords: xml extractor,xml logs,extract from logs,logs filtering,log
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: lxml
+
+logxstract
+==========
+
+Library for extracting xml from logs. Finds xml matching criteria and
+saves results to file.
+
+Install
+-------
+
+.. code:: shell
+
+    $ pip install logxstract
+
+Usage as library
+----------------
+
+.. code:: python
+
+
+            from logxstract import extract_xml_from_file
+
+            extract_xml_from_file(
+                path='/item',
+                body='/item',
+                input_file='sample.log',
+                output_file='result.txt'
+            )
+            #extracted xml is now in result.txt file
+
+Usage in shell
+--------------
+
+.. code:: shell
+
+    $ logxtract -p /item -b /item -f sample.log -o result.txt
+
+
+=======
+History
+=======
+
+0.0.1 (2017-11-04)
+------------------
+
+* First release on PyPI.
+
+
