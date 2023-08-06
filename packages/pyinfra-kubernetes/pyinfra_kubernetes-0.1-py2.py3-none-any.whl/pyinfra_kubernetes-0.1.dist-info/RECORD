@@ -1,0 +1,11 @@
+pyinfra_kubernetes/__init__.py,sha256=MhkSfVI-6_XCTRxdpWff4Bpt-UeKiRGWmdNdzYM6nN0,1938
+pyinfra_kubernetes/configure.py,sha256=iEX3mTpV5A0njUwFQRuc0nQsxTLGI_E1cxsYY0zLelM,1792
+pyinfra_kubernetes/defaults.py,sha256=-tOul140t9wjcUIifJfXbda8T4dOucnjuRi4js48bXs,403
+pyinfra_kubernetes/install.py,sha256=1PoURw4jAf4FVN19od9kKzA_hWeuWkiMdAIEsGEluiY,2425
+pyinfra_kubernetes/util.py,sha256=AaASTn0p0jBrueQB9dmgS2eDmctDEMAIuoUfI5xPsqE,154
+pyinfra_kubernetes-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyinfra_kubernetes-0.1.dist-info/METADATA,sha256=hEEBrl2mZ2QnCfm-ZKTHX73Jk9cPrZn19_HAfFW-93A,337
+pyinfra_kubernetes-0.1.dist-info/RECORD,,
+pyinfra_kubernetes-0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pyinfra_kubernetes-0.1.dist-info/metadata.json,sha256=7X6PrRub_f0xC7qQ8nXx96aa6etbrTlIMEhDBtmHTDY,554
+pyinfra_kubernetes-0.1.dist-info/top_level.txt,sha256=sfrFRTyMOxApslKMkdbd2LHDdMIbuuF2xDLo6HGkIDk,19
