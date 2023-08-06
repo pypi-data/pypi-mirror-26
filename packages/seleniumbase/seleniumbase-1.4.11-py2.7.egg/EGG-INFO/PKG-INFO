@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: seleniumbase
+Version: 1.4.11
+Summary: Enterprise-Level Selenium Test Framework - seleniumbase.com
+Home-page: http://seleniumbase.com
+Author: Michael Mintz
+Author-email: mdmintz@gmail.com
+License: The MIT License
+Description-Content-Type: UNKNOWN
+Description: Enterprise-Level Selenium Test Automation Framework
+Platform: Mac * Windows * Linux * Docker
