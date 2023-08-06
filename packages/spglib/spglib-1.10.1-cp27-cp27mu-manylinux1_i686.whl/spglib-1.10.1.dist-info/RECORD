@@ -1,0 +1,9 @@
+spglib-1.10.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+spglib-1.10.1.dist-info/METADATA,sha256=kG46Y_QFQ5kx0X0yYsMA399ZgbHc1gr5Bk5yL69T1cw,265
+spglib-1.10.1.dist-info/RECORD,,
+spglib-1.10.1.dist-info/WHEEL,sha256=eBCbJuZFFtHdt34I-Uny_TWE-1oCOeIpamuvv3hr49Q,108
+spglib-1.10.1.dist-info/metadata.json,sha256=R5smDAFYl8C-hTWkS_-wtFqWDKF2ykGHTeD7yAMO_D0,483
+spglib-1.10.1.dist-info/top_level.txt,sha256=CNMzkZzggIXHWmc5CQpyO1DSgiAoCJSkrXzaNQCnczo,7
+spglib/_spglib.so,sha256=4FLDuCPaPJsE83vaQr3BgmPT7knBXU75ldwM-K439wk,588033
+spglib/spglib.py,sha256=8RQYoBUcsxY-37IQ4JvpdQbdBTP_M0-3clkJxlo2nL8,28114
+spglib/__init__.py,sha256=26SjDvipl8ilGVfm9vJbx92lpcdvWkmDellrdhTeyKI,2475
