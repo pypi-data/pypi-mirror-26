@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: enaml-native-icons
+Version: 1.0
+Summary: enaml-native-icons package for enaml-native-cli
+Home-page: UNKNOWN
+Author: Jairus Martin
+Author-email: frmdstryr@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: enaml-native-cli
+
+# enaml-native-icons
+Iconfiy icons for enaml-native
+
+

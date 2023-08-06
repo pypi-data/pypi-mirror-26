@@ -1,0 +1,3 @@
+[p4a_recipe]
+enaml_native_icons = enamlnative_icons:get_recipe
+
