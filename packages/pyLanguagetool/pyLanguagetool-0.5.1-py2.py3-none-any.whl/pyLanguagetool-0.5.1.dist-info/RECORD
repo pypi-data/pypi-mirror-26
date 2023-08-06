@@ -1,0 +1,10 @@
+pyLanguagetool-0.5.1.dist-info/DESCRIPTION.rst,sha256=FUuofGQJmqT5wNsNJFMu--KOGn88Ebq9frwYndvu1_Y,5909
+pyLanguagetool-0.5.1.dist-info/METADATA,sha256=5tVKI9-UkdU0Htw6N3YZeMDVgHvEUYyhulcJKR4CL1k,7338
+pyLanguagetool-0.5.1.dist-info/RECORD,,
+pyLanguagetool-0.5.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+pyLanguagetool-0.5.1.dist-info/entry_points.txt,sha256=rCcam5BNBms3DayoPnsOkhqtCoGd_6vRvdbSPDUtOaw,56
+pyLanguagetool-0.5.1.dist-info/metadata.json,sha256=7x4s5ig5BxfpRO599PZcYx1vjlBd8rRZ5IwiA9WOefw,1571
+pyLanguagetool-0.5.1.dist-info/top_level.txt,sha256=vRTsVoJZoWu8qVjVBmqkZ8TUPZ_psh_oQ2lQ0dWavEQ,15
+pylanguagetool/__init__.py,sha256=zECo2ST5GfuKMSOWGrpA-irfW_LNnt6yZBEeM4o7N5s,6813
+pylanguagetool/api.py,sha256=vCE7byfE1ttDGymuk0MP5hZLexlODkIlhQzcktdcPSY,1281
+pylanguagetool/converters.py,sha256=C239GFd85xeEo6f-OXOc0z7RwJA2CTQACKcJm6P8igA,1993
