@@ -1,0 +1,10 @@
+sklearn_features/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sklearn_features/transformers.py,sha256=efzdykQLNDEiSKTmPeSRrGIAJkK6nhRVxcz9RcJD9RI,7231
+sklearn_features/tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sklearn_features/tests/test_transformers.py,sha256=MbE4Z7ccO5Zz1_f_m9_hISjgWzT5-9A7_mrtqwCgqeQ,7620
+sklearn_features-0.0.1.dev0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sklearn_features-0.0.1.dev0.dist-info/METADATA,sha256=o9CQ2wZUzKhj5_uEXiAWAaAclaVQJTl0k-P0T4NVvrM,680
+sklearn_features-0.0.1.dev0.dist-info/RECORD,,
+sklearn_features-0.0.1.dev0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+sklearn_features-0.0.1.dev0.dist-info/metadata.json,sha256=GVzdXfNe2rODraEOS_uos8wi0Qjs8TVeS9YH5QKQM7s,780
+sklearn_features-0.0.1.dev0.dist-info/top_level.txt,sha256=udCJ2G4xJAcvxnzcsp0dLLR8EKLKH21Ah16F6Ae2FYk,17
