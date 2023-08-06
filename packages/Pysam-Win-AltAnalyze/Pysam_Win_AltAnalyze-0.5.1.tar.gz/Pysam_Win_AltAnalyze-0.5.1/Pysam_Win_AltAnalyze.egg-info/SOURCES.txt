@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+Pysam_Win_AltAnalyze.egg-info/PKG-INFO
+Pysam_Win_AltAnalyze.egg-info/SOURCES.txt
+Pysam_Win_AltAnalyze.egg-info/dependency_links.txt
+Pysam_Win_AltAnalyze.egg-info/requires.txt
+Pysam_Win_AltAnalyze.egg-info/top_level.txt
