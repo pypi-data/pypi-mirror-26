@@ -1,0 +1,4 @@
+itchat
+urwid
+Pillow
+pypinyin
