@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: trkr
+Version: 0.1.0
+Summary: Py script for interfacing with our time tracker
+Home-page: https://https://github.com/D3MNetworks/trkr
+Author: The D3MNetworks Team
+Author-email: d3m.dev@teldio.com
+License: MIT
+Keywords: time tracking trello sheets
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Environment :: Console :: Curses
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: pygsheets
+Requires-Dist: py-trello
+Requires-Dist: pick
+
+# trkr
+
+
