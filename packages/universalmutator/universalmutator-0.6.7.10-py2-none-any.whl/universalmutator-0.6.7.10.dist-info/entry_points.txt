@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    mutate = universalmutator.genmutants:main
+    analyze_mutants = universalmutator.analyze:main
+    
