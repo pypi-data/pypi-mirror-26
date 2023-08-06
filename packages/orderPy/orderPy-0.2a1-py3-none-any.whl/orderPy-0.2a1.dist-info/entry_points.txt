@@ -1,0 +1,3 @@
+[console_scripts]
+orderPy = orderPy:order
+
