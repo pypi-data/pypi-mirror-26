@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+singlepy/__init__.py
+singlepy.egg-info/PKG-INFO
+singlepy.egg-info/SOURCES.txt
+singlepy.egg-info/dependency_links.txt
+singlepy.egg-info/top_level.txt
