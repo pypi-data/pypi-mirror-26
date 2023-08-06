@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+decopts.py
+setup.cfg
+setup.py
+decopts.egg-info/PKG-INFO
+decopts.egg-info/SOURCES.txt
+decopts.egg-info/dependency_links.txt
+decopts.egg-info/requires.txt
+decopts.egg-info/top_level.txt
