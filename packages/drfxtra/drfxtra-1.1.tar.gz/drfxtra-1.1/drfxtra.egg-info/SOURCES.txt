@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+drfxtra/__init__.py
+drfxtra/apps.py
+drfxtra/factories.py
+drfxtra/mixins.py
+drfxtra/models.py
+drfxtra/permissions.py
+drfxtra/serializers.py
+drfxtra/viewsets.py
+drfxtra.egg-info/PKG-INFO
+drfxtra.egg-info/SOURCES.txt
+drfxtra.egg-info/dependency_links.txt
+drfxtra.egg-info/top_level.txt
+drfxtra/templatetags/__init__.py
+drfxtra/templatetags/defxtra.py
