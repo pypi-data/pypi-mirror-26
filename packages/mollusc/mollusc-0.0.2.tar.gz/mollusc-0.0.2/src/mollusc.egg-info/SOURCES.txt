@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+src/mollusc/__init__.py
+src/mollusc/_sh.py
+src/mollusc.egg-info/PKG-INFO
+src/mollusc.egg-info/SOURCES.txt
+src/mollusc.egg-info/dependency_links.txt
+src/mollusc.egg-info/not-zip-safe
+src/mollusc.egg-info/requires.txt
+src/mollusc.egg-info/top_level.txt
+test/test_sh.py
