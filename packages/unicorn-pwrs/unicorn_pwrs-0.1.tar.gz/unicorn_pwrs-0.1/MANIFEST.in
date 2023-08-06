@@ -1,0 +1,9 @@
+include LICENSE.txt
+include README.rst
+
+# data in relationship to root e.g. where setup.py is
+include data/unicorn_click.wav
+include data/unicorn_bleep.wav
+include data/cover.txt
+include data/cv.txt
+include data/reference.txt

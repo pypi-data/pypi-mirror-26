@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: unicorn_pwrs
+Version: 0.1
+Summary: You only live once.
+Home-page: https://github.com/thomasoflight/unicorn_pwrs
+Author: A.M. 'Thomas'
+Author-email: thomasoflight@lightfaced.org
+License: APACHE 2.0
+Description: 
+        # Include the license file
+        include LICENSE.txt
+        
+        # Include the data files
+        recursive-include data *
+        
+Keywords: resume experimental command-line terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
