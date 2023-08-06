@@ -1,0 +1,17 @@
+battray/__init__.py,sha256=khh67VR_MELYlnszuggdeK3MZ7pTSZwGtGPnct7iseU,12982
+battray/platforms.py,sha256=elwExOax5NnsTqgBYVMGqXL_pFuH0O56MPvjlx8fxUU,8683
+battray/sound.py,sha256=CDiKcBs9XAj7iMG1Qv2-H5O1XWb79NGi3U0qGkzafZE,3548
+battray-2.3.data/data/share/battray/alert.wav,sha256=iG_RTTSDVSa3DoqpHHTH9TkZYZ8_aPI-TCZqG7MVWAw,66656
+battray-2.3.data/data/share/battray/battery.png,sha256=SkTcTRjKgiFRgS4dH9P0hgOrwn6juvnk5A-k_FBBRPg,152
+battray-2.3.data/data/share/battray/battrayrc.py,sha256=GWlJDGBVaSGjes3u4jeQWkIRwm0nenzITyN7eKgqweA,2658
+battray-2.3.data/data/share/battray/charging.png,sha256=na7DuCEUScnXEzsMZYQl2IsK2J_Uoz-mb7lboqs5DYg,179
+battray-2.3.data/data/share/battray/connected.png,sha256=okerutW2brE637IfLU3wnLXsPnzBzX3iZhjK5VlrYgw,167
+battray-2.3.data/data/share/battray/error.png,sha256=RpPe413xF2G5uXDrCXwlkkTYLdCMcsLf66JGGyhPnHs,294
+battray-2.3.data/data/share/battray/icon.png,sha256=E6Mx19Ci29soM8eLZHc8pxWk0F_4keB5QFctN4dR-HY,143
+battray-2.3.data/scripts/battray,sha256=LLRi-IEj8UHr_St72gR1vB0ysWTbKLGpZM1jPEGj0mk,2704
+battray-2.3.dist-info/DESCRIPTION.rst,sha256=iKmO0ZrrHnzQy_wt_llYgy99XN-sUKt-072LiPpDs4E,334
+battray-2.3.dist-info/METADATA,sha256=cUCsiMBVlr3KLQ0MKDBfnLknsh46NF38jmapo8TGP-A,1031
+battray-2.3.dist-info/RECORD,,
+battray-2.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+battray-2.3.dist-info/metadata.json,sha256=lLiJGx1xrsjMVHxvUracy5R0Ouu9ZdVPNFPm2UWyBbI,872
+battray-2.3.dist-info/top_level.txt,sha256=wDC77s1b5z54XngcRMwlYvfPCfqhGQV5yWFJDh2KrXE,8
