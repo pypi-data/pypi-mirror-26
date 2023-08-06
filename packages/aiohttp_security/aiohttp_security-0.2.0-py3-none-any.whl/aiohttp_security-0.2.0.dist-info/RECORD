@@ -1,0 +1,11 @@
+aiohttp_security/__init__.py,sha256=jYBAu2x8VcQHFBkHEFeQM_Ww6Civ7uVBFyPBhOVA34s,610
+aiohttp_security/abc.py,sha256=h_9C73piH90zgvsydSdZaDXEOowEYGEn9BQOl7suBJg,1589
+aiohttp_security/api.py,sha256=fZbTc5PDJO3PEBbEte925JiTSbR7dMtFyzVYxpkBqIw,5332
+aiohttp_security/cookies_identity.py,sha256=r_gEPjIxThC2gYDCxBXfCywRWk7ipNiGTyxk98IunrQ,948
+aiohttp_security/session_identity.py,sha256=mzd0VFgQSSng_N6FegI_IK3WBoDc7tOOYKZDbtFDFeI,1195
+aiohttp_security-0.2.0.dist-info/DESCRIPTION.rst,sha256=7Pv4UkfiE0rRiXAcgfdFDcrVhAOfmNf6l3cbdAkxncc,1318
+aiohttp_security-0.2.0.dist-info/METADATA,sha256=tq4UmBIsbfzjBTytbhusTfzXwF03GBZweSEFhzcQJ2E,2132
+aiohttp_security-0.2.0.dist-info/RECORD,,
+aiohttp_security-0.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aiohttp_security-0.2.0.dist-info/metadata.json,sha256=xrdmsy_VmK1sY1EU31vz_QiNTYddRvDeKY6GFg_zA8M,1031
+aiohttp_security-0.2.0.dist-info/top_level.txt,sha256=U02yYV4r75ie0c-Qd7YbyI78JOaKo_bw6ms3H5qoBf4,17
