@@ -1,0 +1,3 @@
+[guild.models]
+hello = guild.model:PackageModel
+
