@@ -1,0 +1,11 @@
+README.md
+setup.py
+cfcli/__init__.py
+cfcli/cf.py
+cfcli/cli.py
+cfcli.egg-info/PKG-INFO
+cfcli.egg-info/SOURCES.txt
+cfcli.egg-info/dependency_links.txt
+cfcli.egg-info/entry_points.txt
+cfcli.egg-info/requires.txt
+cfcli.egg-info/top_level.txt
