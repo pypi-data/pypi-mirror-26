@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+gesture_classifying_model/GestureClassifier.py
+gesture_classifying_model/__init__.py
+gesture_classifying_model/custom_objectives.py
+gesture_classifying_model/downloader.py
+gesture_classifying_model.egg-info/PKG-INFO
+gesture_classifying_model.egg-info/SOURCES.txt
+gesture_classifying_model.egg-info/dependency_links.txt
+gesture_classifying_model.egg-info/requires.txt
+gesture_classifying_model.egg-info/top_level.txt
