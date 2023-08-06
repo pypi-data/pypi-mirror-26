@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ProxyGeo
+Version: 1.0.0
+Summary: Use geoip2 to get the proxy geo info
+Home-page: https://github.com/ezirmusitua/geo_info
+Author: jferroal
+Author-email: jferroal@gmail.com
+License: MIT
+Download-URL: https://github.com/ezirmusitua/geo_info/releases
+Description: UNKNOWN
+Keywords: proxy,geo,geoip2
+Platform: UNKNOWN
