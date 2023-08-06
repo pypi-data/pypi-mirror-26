@@ -1,0 +1,11 @@
+arivo.om-0.1.12.dist-info/DESCRIPTION.rst,sha256=--ZilGyZ-rnPuL6Z_gDoglnBwqXU5wdd1J8-wN0GpKE,112
+arivo.om-0.1.12.dist-info/METADATA,sha256=To6tI4c9xwAEFfCtFkcCA1L8Q9yvs8TjJC6GmGR32Og,403
+arivo.om-0.1.12.dist-info/RECORD,,
+arivo.om-0.1.12.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+arivo.om-0.1.12.dist-info/metadata.json,sha256=Arz3Bl5wguznxjJp4BU5vl6BEBOW-r4FU7R5uL5r0Bs,384
+arivo.om-0.1.12.dist-info/top_level.txt,sha256=BzBtZsQekyPEhVAYnacnXoKeCX5VwDBBd4HCxbbf90o,3
+om/__init__.py,sha256=HUgSlrLaKtaNN1N1glDJnxhnDu_hCnV4h10uUSpAXtY,143
+om/message/__init__.py,sha256=PSgwTxdYd-aJYkhGhbE40b6oCTU3-pAzjN2iTSyNKPs,116
+om/message/message.py,sha256=uyCjVLJ4U6fHAcdU42faXBegtf-U_J7SVYEhgEOL1Rs,2411
+om/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+om/utils/config.py,sha256=VqijzFIzNUSLSrRbSONv6o10h_F4Rd7j2wkr38NrSSo,1390
