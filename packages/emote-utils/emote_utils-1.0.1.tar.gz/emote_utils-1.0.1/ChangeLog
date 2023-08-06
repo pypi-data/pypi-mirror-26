@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+1.0.1
+-----
+
+* Fixed bugs
+* Added social filters
+
+1.0.0
+-----
+
+* Use capitalize not title
+* Added get\_suffixes
+* Working commit
+* Initial commit
