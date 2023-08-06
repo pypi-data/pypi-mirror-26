@@ -1,0 +1,9 @@
+setup.py
+zaoshu/__init__.py
+zaoshu/zaoshu.py
+zaoshu/zaoshu_test.py
+zaoshu.egg-info/PKG-INFO
+zaoshu.egg-info/SOURCES.txt
+zaoshu.egg-info/dependency_links.txt
+zaoshu.egg-info/requires.txt
+zaoshu.egg-info/top_level.txt
