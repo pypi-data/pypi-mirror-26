@@ -1,0 +1,11 @@
+description.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolink_formatter/__init__.py,sha256=ejpUHDpojJrRiU4dcdlZ4sIZgdnyKPmLv8JQqPnMO4E,2088
+geolink_formatter/entity.py,sha256=SfhBa3HxCkVkun7dn51j-DlBiRG2fJMDl9jDwIvs6II,5197
+geolink_formatter/format.py,sha256=sGgC4VIt_krKu4hSO9P_7DE6O4WHAgpwCARchcERsPU,2494
+geolink_formatter/parser.py,sha256=TfHQ925SwuBaZ6NK80hkiZPQWbZR5j5vPN2RSt7R9L8,8280
+geolink_formatter-1.1.2.dist-info/DESCRIPTION.rst,sha256=XMWbe2Z60sIv98uFQINEnsjYFFYeraKc7tGYuDX9Vmk,1785
+geolink_formatter-1.1.2.dist-info/METADATA,sha256=vx5icB91LoKIiyDekq-LXdv1fL_QVYOlwAHbDG6AWjY,2730
+geolink_formatter-1.1.2.dist-info/RECORD,,
+geolink_formatter-1.1.2.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+geolink_formatter-1.1.2.dist-info/metadata.json,sha256=J7UuV4IuOkYYW2nXYQZMUlkR1lnlCyCE4F976XJc9tA,1100
+geolink_formatter-1.1.2.dist-info/top_level.txt,sha256=Cc_u90HgUsaCXckRQ-_oG0RyrdmhBbv6OFoPhZ6v4Kk,18
