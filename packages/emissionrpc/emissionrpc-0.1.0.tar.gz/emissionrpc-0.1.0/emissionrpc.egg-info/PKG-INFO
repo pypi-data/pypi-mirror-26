@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: emissionrpc
+Version: 0.1.0
+Summary: Emission, Another Wrapper JSON-RPC to Transmission
+Home-page: https://github.com/Germione/emissionrpc
+Author: Jerome Pradier
+Author-email: jerome.pradier@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: EmissionRPC
+        ========
+        
+        EmissionRPC, another wrapper JSON-RPC to Transmission
+        
+        
+        Usage
+        -----
+        
+        Still in development
+        
+        
+Keywords: torrent json rpc
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
