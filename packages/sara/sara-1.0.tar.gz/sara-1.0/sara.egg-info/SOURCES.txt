@@ -1,0 +1,9 @@
+README.md
+setup.py
+sara/virtualassistant.py
+sara.egg-info/PKG-INFO
+sara.egg-info/SOURCES.txt
+sara.egg-info/dependency_links.txt
+sara.egg-info/requires.txt
+sara.egg-info/top_level.txt
+sara.egg-info/zip-safe
