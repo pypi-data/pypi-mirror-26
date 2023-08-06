@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+chaudio/__init__.py
+chaudio/waves.py
+chaudio.egg-info/PKG-INFO
+chaudio.egg-info/SOURCES.txt
+chaudio.egg-info/dependency_links.txt
+chaudio.egg-info/requires.txt
+chaudio.egg-info/top_level.txt
+examples/addnoise.py
+examples/compose.py
+examples/simple.py
