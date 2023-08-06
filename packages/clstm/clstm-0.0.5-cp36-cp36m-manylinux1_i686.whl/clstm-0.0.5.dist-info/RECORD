@@ -1,0 +1,11 @@
+_clstm.cpython-36m-i386-linux-gnu.so,sha256=0lwRZA5VrmKbH8mLLjyANh70cyt7CjQr5KvA4Vp1nqs,12736872
+clstm.py,sha256=ojjXSBYdqIbkt6KYlAL9ffnpimDE1iXh7wEyxfRonmo,31861
+clstm-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+clstm-0.0.5.dist-info/METADATA,sha256=fZ8n7p-zYf0YTwpqAI7sctoC5wa3J_CDkPoGPtChAQ0,612
+clstm-0.0.5.dist-info/RECORD,,
+clstm-0.0.5.dist-info/WHEEL,sha256=4ZczNFHTmAaIBIasUz77fJZyeS8MmcarQnLMz6BlUZA,107
+clstm-0.0.5.dist-info/metadata.json,sha256=PN6Ynx4M8WWDJZ7-z51y6FhIaE43N-TleP0j-W7e-pc,758
+clstm-0.0.5.dist-info/top_level.txt,sha256=0fd7ft2FxFSSDa1yLFpo9SeAS3O4tCRh-GFw2lSdloY,13
+.libs_clstm/libz-83853723.so.1.2.3,sha256=RXg6ZNFYfXk1W4MF8PFDsOI7JPjgObAM5e99g2BilFo,75576
+.libs_clstm/libprotobuf-d65febe9.so.6.0.0,sha256=VrdCQYJxrRjKNEJlpsxo6Nc8XKgOCA3wO_fnX9fp5TE,1486360
+.libs_clstm/libpng12-61124c64.so.0.10.0,sha256=DN052hKwsaVtR-DIzYZ1mQ2no4nR9vYI987RJ0fIRWk,168212
