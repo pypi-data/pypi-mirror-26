@@ -1,0 +1,11 @@
+MANIFEST.in
+fastentrypoints.py
+setup.py
+profy/__init__.py
+profy/profy.py
+profy.egg-info/PKG-INFO
+profy.egg-info/SOURCES.txt
+profy.egg-info/dependency_links.txt
+profy.egg-info/entry_points.txt
+profy.egg-info/requires.txt
+profy.egg-info/top_level.txt

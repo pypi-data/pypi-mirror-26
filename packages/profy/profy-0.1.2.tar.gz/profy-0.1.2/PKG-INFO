@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: profy
+Version: 0.1.2
+Summary: quickly profile Python scripts or entry-scripts with cProfile and snakeviz
+Home-page: https://github.com/MichaelGrupp/profy
+Author: Michael Grupp
+Author-email: michael.grupp@tum.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

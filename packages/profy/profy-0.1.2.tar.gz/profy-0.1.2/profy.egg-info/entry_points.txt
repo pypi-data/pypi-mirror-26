@@ -1,0 +1,3 @@
+[console_scripts]
+profy = profy.profy:main
+
