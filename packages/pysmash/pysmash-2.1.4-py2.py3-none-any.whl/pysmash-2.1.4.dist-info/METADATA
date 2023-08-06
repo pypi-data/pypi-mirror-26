@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: pysmash
+Version: 2.1.4
+Summary: python bindings for Smash.gg API
+Home-page: https://github.com/PeterCat12/pysmash
+Author: Peter Wensel
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (==2.12.1)
+
+UNKNOWN
+
+
