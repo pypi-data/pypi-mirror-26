@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: pyquickder
+Version: 1.2.2
+Summary: Quick `n' Easy DER library
+Home-page: https://github.com/vanrein/quick-der
+Author: Rick van Rein
+Author-email: rick@openfortress.nl
+License: BSD-2
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: asn1ate (>=0.6.0)
+
+UNKNOWN
+
+
