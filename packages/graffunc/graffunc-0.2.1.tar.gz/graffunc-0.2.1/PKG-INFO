@@ -1,0 +1,61 @@
+Metadata-Version: 1.1
+Name: graffunc
+Version: 0.2.1
+Summary: high level graph of function
+Home-page: https://github.com/aluriak/graffunc
+Author: Lucas Bourneuf
+Author-email: lucas.bourneuf@laposte.net
+License: GPL
+Description: # Graffunc -- The graph of function data structure
+        Python package allowing manipulation of data by graph pathfinding.
+        
+        ## usage example
+        (see more in [tests](graffunc/test/) and [examples](examples/))
+        
+            from graffunc import graffunc, InconvertibleError
+        
+        
+            def my_a_to_b_converter(a):
+                b = a.upper()
+                return {'b': b}
+            def my_b_to_c_converter(b):
+                c = 'payload: ' + b + '/payload'
+                return {'c': c}
+            def my_a_to_c_converter(a):
+                raise InconvertibleError()
+        
+        
+            # creation of the main object
+            grfc = graffunc({
+                ('a',): {('b',): my_a_to_b_converter},
+            })
+            # dynamic modification of the object
+            grfc.add(my_b_to_c_converter, sources={'b'}, targets={'c'})
+            grfc.add(my_a_to_c_converter, sources={'a'}, targets={'c'})
+        
+        
+            assert {'a', 'b', 'c'} == grfc.reachables_types(sources={'a'})
+            assert {'b', 'c'} == grfc.reachables_types(sources={'b'})
+            assert {'c'} == grfc.reachables_types(sources={'c'})
+        
+            assert {'b': 'HELLO'} == grfc.convert(sources={'a': 'hello'}, targets={'b'})
+            assert {'c': 'payload: HELLO/payload'} == grfc.convert(sources={'a': 'hello'}, targets={'c'})
+        
+        
+        ## installation
+        
+            pip install graffunc
+        
+        
+        ## links
+        [github](http://github.com/aluriak/graffunc) and [pypi](http://pypi.python.org/pypi/graffunc)
+        
+Keywords: graph,function,data structure
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
