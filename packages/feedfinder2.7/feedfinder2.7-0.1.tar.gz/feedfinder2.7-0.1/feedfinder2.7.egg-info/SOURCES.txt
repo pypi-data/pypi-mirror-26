@@ -1,0 +1,8 @@
+README.md
+setup.py
+feedfinder/__init__.py
+feedfinder2.7.egg-info/PKG-INFO
+feedfinder2.7.egg-info/SOURCES.txt
+feedfinder2.7.egg-info/dependency_links.txt
+feedfinder2.7.egg-info/not-zip-safe
+feedfinder2.7.egg-info/top_level.txt

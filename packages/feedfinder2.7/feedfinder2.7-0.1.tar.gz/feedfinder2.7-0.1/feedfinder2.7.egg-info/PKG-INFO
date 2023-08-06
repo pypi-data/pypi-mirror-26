@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: feedfinder2.7
+Version: 0.1
+Summary: pip installable copy of original Mark Pilgrim/Aaron Swartz feedfinder script
+Home-page: https://github.com/rutherford/feedfinder
+Author: Matt Rutherford
+Author-email: rutherford@clientsideweb.net
+License: Public Domain
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
