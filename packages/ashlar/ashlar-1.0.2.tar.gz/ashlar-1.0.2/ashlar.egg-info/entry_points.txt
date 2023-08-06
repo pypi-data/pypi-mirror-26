@@ -1,0 +1,5 @@
+[console_scripts]
+make_alignment_movie = ashlar.scripts.make_alignment_movie:main
+mosaic = ashlar.scripts.mosaic:main
+preview_slide = ashlar.scripts.preview_slide:main
+
