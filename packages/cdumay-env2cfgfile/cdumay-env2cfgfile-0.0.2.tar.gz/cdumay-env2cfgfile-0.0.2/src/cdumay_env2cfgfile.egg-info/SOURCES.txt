@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+requirements.txt
+setup.py
+src/cdumay_env2cfgfile.egg-info/PKG-INFO
+src/cdumay_env2cfgfile.egg-info/SOURCES.txt
+src/cdumay_env2cfgfile.egg-info/dependency_links.txt
+src/cdumay_env2cfgfile.egg-info/entry_points.txt
+src/cdumay_env2cfgfile.egg-info/requires.txt
+src/cdumay_env2cfgfile.egg-info/top_level.txt
+src/cdumay_env2cfgfile.egg-info/zip-safe
+src/env2cfgfile/__init__.py
+src/env2cfgfile/script.py
