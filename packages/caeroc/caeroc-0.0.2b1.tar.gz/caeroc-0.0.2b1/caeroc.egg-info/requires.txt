@@ -1,0 +1,13 @@
+numpy
+scipy
+matplotlib
+scikit-aero>=0.2.dev0
+
+[plot]
+pandas
+
+[pyqt]
+PyQt5
+
+[pyside]
+PySide
