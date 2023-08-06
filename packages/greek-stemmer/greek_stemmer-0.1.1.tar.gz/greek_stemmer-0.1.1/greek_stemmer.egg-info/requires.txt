@@ -1,0 +1,5 @@
+PyYAML
+future
+
+[test]
+pytest
