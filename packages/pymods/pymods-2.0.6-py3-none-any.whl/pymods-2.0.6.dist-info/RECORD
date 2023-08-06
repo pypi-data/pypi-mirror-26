@@ -1,0 +1,17 @@
+pymods/__init__.py,sha256=IibW87IqnImT4kZR_knQP4NEXChNM2eeQTaJhOFXIYg,5377
+pymods/_lxml.py,sha256=36IydgZu5Qv4DFO59_MX9eTkqPPP2x4uVYSFD8-Dq-g,718
+pymods/constants.py,sha256=J7DR17296Xjj4kQgzv-8nMm-PE3Cjbw6dOfGri3kbk8,725
+pymods/exceptions.py,sha256=ZZ8VkKYmfDVGBUAiuIe0B5g_dYtboslJRSWDLyBbi4Y,446
+pymods/reader.py,sha256=m9SJZ4aD9Iu2vRBCqSYYKZ82YkIKylh9q-C-k8tSFEw,2008
+pymods/record.py,sha256=kQ2Pn1FRbr6xYn7OojjbQ_w0WVet2RvieWEZQike5xo,28202
+pymods/tests_cordmata.py,sha256=FqSX0JK-X1W1s6w5SdSIwqP1VAkOKV6F8l_4b6387NA,3396
+pymods/writer.py,sha256=1KEgQCjqb7NIZKQTJlG04-qHAjzxqPxvxrP1dwBumpM,3993
+pymods/writer_cordmata.py,sha256=1k-0FXaaBergmhFLIblvhw9Z2gKcWFt8E2pZDDr3uI4,9640
+pymods/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymods/tests/tests.py,sha256=rwcLAibtwn5N6ejb6NW6ve4tkMir1DKzFr6Tb2j3MzU,17847
+pymods-2.0.6.dist-info/DESCRIPTION.rst,sha256=lfwcFEp3uwAzyz7rcECEC1UnIqbtOq9lxq4nJLlN2aw,5360
+pymods-2.0.6.dist-info/METADATA,sha256=X87ILSEMxERvvxCjAeQiLX1-CiWoshAJriRSRXbgQAo,6228
+pymods-2.0.6.dist-info/RECORD,,
+pymods-2.0.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pymods-2.0.6.dist-info/metadata.json,sha256=sAnW9iK6-NTnuga4SHntuRL3ggdx1HcYsSyPjmGYHdo,1035
+pymods-2.0.6.dist-info/top_level.txt,sha256=BCGHjG0r1lGCSXJbU4HA4GZmi-sRV3qktVLZRcG6OVE,7
