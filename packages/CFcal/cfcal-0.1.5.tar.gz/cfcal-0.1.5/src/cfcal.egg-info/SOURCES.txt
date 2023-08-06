@@ -1,0 +1,13 @@
+DESCRIPTION.rst
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+versioneer.py
+src/cfcal/__init__.py
+src/cfcal/_version.py
+src/cfcal/cfcal.py
+src/cfcal.egg-info/PKG-INFO
+src/cfcal.egg-info/SOURCES.txt
+src/cfcal.egg-info/dependency_links.txt
+src/cfcal.egg-info/top_level.txt

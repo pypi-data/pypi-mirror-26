@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: cfcal
+Version: 0.1.5
+Summary: Python calculator for crystal fields
+Home-page: http://github.com/rayosborn/cfcal
+Author: Ray Osborn
+Author-email: rayosborn@mac.com
+License: BSD
+Description: CFcal: Python calculator for crystal fields
+        ===========================================
+        
+        This is a Python package for performing calculations of crystal field (CF) 
+        properties of rare earth ions using the Stevens Operator formalism [K. W. H. 
+        Stevens, Proc. Phys. Soc. A **65**, 209 (1952)]. Once the CF parameters have 
+        been initialized, the CF Hamiltonian can be diagonalized to determine the 
+        energies and wavefunctions of all the CF levels. These can be used to determine
+        the magnetic susceptibility and neutron scattering spectra as a function of 
+        temperature.
+        
+Keywords: rare earth crystal fields
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires: scipy
+Requires: numpy
