@@ -1,0 +1,11 @@
+README.rst
+setup.py
+libmetric/__init__.py
+libmetric/cli.py
+libmetric/query.py
+libmetric.egg-info/PKG-INFO
+libmetric.egg-info/SOURCES.txt
+libmetric.egg-info/dependency_links.txt
+libmetric.egg-info/entry_points.txt
+libmetric.egg-info/requires.txt
+libmetric.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+
+[console_scripts]
+range_meter=libmetric.cli:range_meter
+instant_meter=libmetric.cli:instant_meter
+range_alarm=libmetric.cli:range_alarm
+instant_alarm=libmetric.cli:instant_alarm
+    
