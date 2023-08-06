@@ -1,0 +1,3 @@
+[console_scripts]
+wait_response = wait_response:main
+
