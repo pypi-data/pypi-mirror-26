@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: langua
+Version: 1.0.1
+Summary: Faster port of Language detection built by Shuyo in Python
+Home-page: https://github.com/whiletruelearn/langua
+Author: Krishna Sangeeth KS
+Author-email: kskrishnasangeeth@gmail.com
+License: Copyright 2017-2018 Krishna Sangeeth KS
+Requires-Dist: numpy
+Requires-Dist: six
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+Description: # langua
+        A faster port of  https://code.google.com/archive/p/language-detection/ in Python
+        
+        
+        Basic usage
+        ===========
+        
+        To detect the language of the text:
+        
+        ```python
+        >>> from langua import DetectLang
+        >>> dt = DetectLang()
+        >>> dt.detect("War doesn't show who's right, just who's left.")
+        'en'
+        >>> dt.detect("Ein, zwei, drei, vier")
+        'de'
+        ```
+Keywords: language detection library
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
