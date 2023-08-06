@@ -1,0 +1,6 @@
+setup.py
+fsoopify.egg-info/PKG-INFO
+fsoopify.egg-info/SOURCES.txt
+fsoopify.egg-info/dependency_links.txt
+fsoopify.egg-info/top_level.txt
+fsoopify.egg-info/zip-safe
