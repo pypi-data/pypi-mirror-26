@@ -1,0 +1,13 @@
+Remarker-0.0.9.dist-info/DESCRIPTION.rst,sha256=1PXVF3WH7-f2uiJyuN3Hlle5q-qtizDN9ljM82Ts6HE,1687
+Remarker-0.0.9.dist-info/METADATA,sha256=0_ZqtFYC6rj9BPYByDh80Pnicvu3Z0G_5N9Mbwwtekw,2651
+Remarker-0.0.9.dist-info/RECORD,,
+Remarker-0.0.9.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+Remarker-0.0.9.dist-info/entry_points.txt,sha256=wF44RqcXgfBOKTqhWWKm3QfjbP2X6Iej1pcOn5IR7rU,52
+Remarker-0.0.9.dist-info/metadata.json,sha256=SlX2sRI0wi-daMuaC-C70Y0AZzkfQ8b0rkE9COlUn0U,1268
+Remarker-0.0.9.dist-info/top_level.txt,sha256=vS5gxhbxQ8r5qG2aM1evIxeq43f5Yks45z0TMqnG0ko,9
+remarker/__init__.py,sha256=D6nQAdrTJwEpeYi7ggWIVIVjiojbfz4wlVd8UssfNWY,248
+remarker/_version.py,sha256=RYAn76OAH0-5EkTNIPG8zXVN1jGTsuGi5SDBJhriUFI,471
+remarker/cli.py,sha256=Ji7-CH0G0M9_Qcdfx7ZaFMEHHCHg5rF7Byh2INF_Puw,2050
+remarker/presentation.py,sha256=CJno5flcogpbBb8n-GHhr4OP9GjI2fl-ugd5-n8njkQ,973
+remarker/templates/default.css,sha256=q8-oAsF8yJycq71bGvP-9achh7c-atM5ioWnEsY5V8A,420
+remarker/templates/default.html,sha256=tWceFN3xbrqwK9CYvhgp5V2PwIKiSspFF9yY0Tbcn5c,279
