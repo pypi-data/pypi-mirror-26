@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.cfg
+setup.py
+_fedmod/__init__.py
+_fedmod/__main__.py
+_fedmod/_depchase.py
+_fedmod/_repodata.py
+_fedmod/cli.py
+_fedmod/module_generator.py
+fedmod.egg-info/PKG-INFO
+fedmod.egg-info/SOURCES.txt
+fedmod.egg-info/dependency_links.txt
+fedmod.egg-info/entry_points.txt
+fedmod.egg-info/requires.txt
+fedmod.egg-info/top_level.txt
