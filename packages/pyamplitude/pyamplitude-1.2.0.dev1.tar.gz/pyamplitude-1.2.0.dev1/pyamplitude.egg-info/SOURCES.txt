@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pyamplitude/__init__.py
+pyamplitude/amplituderedshift.py
+pyamplitude/amplituderestapi.py
+pyamplitude/apiresources.py
+pyamplitude/behavioralcohortsapi.py
+pyamplitude/exportapi.py
+pyamplitude.egg-info/PKG-INFO
+pyamplitude.egg-info/SOURCES.txt
+pyamplitude.egg-info/dependency_links.txt
+pyamplitude.egg-info/top_level.txt
