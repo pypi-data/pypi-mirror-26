@@ -1,0 +1,13 @@
+lexpy/__init__.py,sha256=0Ih4S37Lh_HqF-b5gvqWj_78wHt53m7MVI_AAkKGjaY,6
+lexpy/_constants.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lexpy/_utils.py,sha256=6z6bl__HLKs9Jd5eOsNhCg7qE8IQqAcPmw9JBWzYLfM,2365
+lexpy/dawg.py,sha256=-4MLoCrsgJLxwreIi92D37Pq21-oHMLJLaWeiSRLgtE,2290
+lexpy/exceptions.py,sha256=zgQynBy_Qxbt-Jr3J3lM-0Rw8jTthCYwpXLysJBbzz4,258
+lexpy/trie.py,sha256=RkaOGZrW0UMyqW9hTwMOE-tUDsf_6dxDpK3kkZc4BBA,2050
+lexpy/utils.py,sha256=Dky6U1vXus9O92J6S7vJIEFKnkhQNbsRGdW8Uyg63hw,532
+lexpy-0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+lexpy-0.8.dist-info/METADATA,sha256=wb40Fp_tH2nthbexqwjBkpS9GLjci9-qQhEbFx8PANs,706
+lexpy-0.8.dist-info/RECORD,,
+lexpy-0.8.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+lexpy-0.8.dist-info/metadata.json,sha256=CIoDjFMp5VBOWgfAztVl-mh6quGJRP-Sf_GfwdyqKVg,846
+lexpy-0.8.dist-info/top_level.txt,sha256=Qrd-TLVwgl7DNvoBZe__B7V4Tq3MyQeOjZ3AmpLuOPQ,6
