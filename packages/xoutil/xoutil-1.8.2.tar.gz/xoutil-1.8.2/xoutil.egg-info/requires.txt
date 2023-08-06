@@ -1,0 +1,7 @@
+monotonic; python_version<"3.3"
+
+[extra]
+python-dateutil
+
+[testing]
+hypothesis>=3.34
