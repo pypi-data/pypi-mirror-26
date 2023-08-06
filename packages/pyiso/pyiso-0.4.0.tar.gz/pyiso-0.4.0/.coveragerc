@@ -1,0 +1,18 @@
+# .coveragerc to control coverage.py
+[run]
+source=
+    pyiso
+omit=
+    */tests/*
+    */tests.py
+    *__init__.py
+    */venv/*
+    *.virtualenvs*
+    *script.py
+
+[report]
+#CLI report config
+
+[html]
+#html report config
+directory = htmlcov

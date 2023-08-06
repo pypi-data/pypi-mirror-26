@@ -1,0 +1,34 @@
+language: python
+python:
+- '2.7'
+- '3.4'
+
+install:
+  # Install miniconda for python 2.7
+  - wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  # Useful for debugging any issues with conda
+  - conda info -a
+
+  # Install
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION
+  - conda install -n test-environment pandas>=0.18 requests==2.9.1
+  - source activate test-environment
+  - python setup.py install
+  - pip install -r requirements.txt
+  - pip install coveralls
+script: nosetests --with-coverage --cover-package=pyiso ./tests/unit/
+deploy:
+  provider: pypi
+  user: WattTime
+  password:
+    secure: "Jiezhw/tS1ZOatEflgSlCB7cXp+gv5AGorflKIMAJF6O3wqGNh+Y+fcfwkUoGD2ODewnKS0fU8W/58EoX8vu+jRX84aIUIZcOdND5nflMz2kdjbglujKx4vt3DAR7eWRdk5UL69+Ts0GOwTGcj+fCHOud9eNiKXCGkxStrtfhr0="
+  on:
+    tags: true
+    repo: WattTime/pyiso
+after_success:
+  - coveralls
