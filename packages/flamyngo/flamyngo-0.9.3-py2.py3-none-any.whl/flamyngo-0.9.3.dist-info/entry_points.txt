@@ -1,0 +1,3 @@
+[console_scripts]
+flm = flamyngo.flm:main
+
