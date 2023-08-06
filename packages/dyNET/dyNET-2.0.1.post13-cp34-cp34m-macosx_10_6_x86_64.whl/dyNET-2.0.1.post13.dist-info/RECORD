@@ -1,0 +1,11 @@
+_dynet.so,sha256=BMHzSUsaglIKuDSjpuRtZDO60tJlbCSv-1RzMD8AWsk,1571092
+dynet.py,sha256=-WWb3zxi-gVKbK3M9ZrzbvcEIwJhZpu2PQaewuLsjaY,902
+dynet_config.py,sha256=C1Coh3-EjRm7LlFeUTEKh0ekcUNkKzqKwt2sfRc945o,2247
+dynet_viz.py,sha256=BPrts76QTRjlWjfjAkT1khC1jbnQy7QAcc_WmyslGvM,39058
+libdynet.dylib,sha256=4M9gf506o61abQT2o2f8W0QyZqki3V00GVA0vX7xgmo,4913892
+dyNET-2.0.1.post13.dist-info/DESCRIPTION.rst,sha256=efpj4mRmIvpvVw1vbJ9VwoebGkMHF3uhIHoiVpET_FU,6534
+dyNET-2.0.1.post13.dist-info/METADATA,sha256=8ymVrbW49-2Zs1KP0ubnbfI9l2a9T4Z3q55_LUXaG4A,8033
+dyNET-2.0.1.post13.dist-info/RECORD,,
+dyNET-2.0.1.post13.dist-info/WHEEL,sha256=Ho8vnqsR7TFyDMnzbm8u7iKDHmwFN8ofsvupomjKwBs,110
+dyNET-2.0.1.post13.dist-info/metadata.json,sha256=c2XBZFAJWcL3BRwhP1IhIvIJrlxmDyXscP5XECP2X4I,1515
+dyNET-2.0.1.post13.dist-info/top_level.txt,sha256=qzwV1OnBtJvZ8TkaGZ24zFfXU8Sjkwmt1xe7jqpxDpw,36
