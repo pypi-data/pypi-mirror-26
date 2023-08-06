@@ -1,0 +1,37 @@
+## Fucking
+
+This is the first tool builded by myself that has the productivity :)
+
+Simply, this is a python tool which make English word to Chinese using the baidu translate. The feature is fucking once fetch the meaning of the word, it will save it to the local sqlite database. Then the next time you lookup the word, fucking will directly get the meaning of the word quickly from thr disk cache.
+
+And it is easy to use:
+
+```bash
+~ fucking -h
+Usage:
+	 fucking word             	 Get the pronunciation and the definition of the `word`.
+					            (double quotation marks are needed if the `word` is a phrase or a sentence)
+	 fucking -f|--force word  	 Force to fetch data from the Internet
+	 fucking -u|--update word 	 Update the local cache of the `word`(Has the same effect of the -f)
+	 fucking -p|--ping        	 Ping the target to check the connection
+	 fucking -h|--help        	 Print this help information
+```
+
+One example is :
+
+```bash
+~ fucking world
+From local cache:	***world***
+美音: [ wɜ:rld ]	英音: [ wɜ:ld ]
+释义:
+	n.    ['世界', '地球', '领域', '尘世']
+~ fucking -f world
+From Internet:   	***world***
+美音: [ wɜ:rld ]	英音: [ wɜ:ld ]
+释义:
+	n.    ['世界', '地球', '领域', '尘世']
+~ fucking -p
+Success!
+```
+
+Enjoy fucking !
