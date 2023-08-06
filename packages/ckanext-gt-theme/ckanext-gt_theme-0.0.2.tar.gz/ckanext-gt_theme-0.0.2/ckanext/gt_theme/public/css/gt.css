@@ -1,0 +1,264 @@
+body {
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+a, a:hover {
+    color: #124364;
+}
+
+
+/**************************************************
+top navbar
+**************************************************/
+
+nav.navbar {
+    background: #124364 url("../../../base/images/bg.png");
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.navbar-inverse {
+    background: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #dfdfdf;
+}
+
+
+/**************************************************
+Logos
+**************************************************/
+.scalated img {
+    width: 70%;
+    max-width: auto;
+    height: auto;
+}
+
+.header-image {
+    display: inline;
+}
+
+.header-image img {
+    padding: 8px;
+}
+
+.header-image .small img, 
+.red img {
+    max-width: 45%;
+}
+
+
+/**************************************************
+showcase - icons & text
+**************************************************/
+
+.showcase {
+    text-align: center;
+}
+
+.showcase p {
+    color: #124364;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.showcase img {
+    max-height: 84px;
+}
+
+
+/**************************************************
+section with background
+**************************************************/
+
+.img-background {
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.pseudo-black {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.text-white {
+    color: white;
+}
+
+.right-vertical-divisor {
+    border-right: 2px solid gray;
+    height: 100%;
+}
+
+.left-vertical-divisor {
+    border-left: 2px solid gray;
+    height: 100%;
+}
+
+.gradient-container .jumbotron {
+    border: 2px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(200, 200, 200, 1));
+    border-color: rgba(200, 200, 200, 1);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.png-white-to-gray {
+    -webkit-filter: invert(50%);
+    filter: invert(50%);
+}
+
+
+.polygon {
+    border-top: 32px solid white;
+    border-right: 32px solid transparent;
+    height: 0;
+    width: 56%;
+}
+
+
+/**************************************************
+div with gradient
+**************************************************/
+
+.solid-white .jumbotron{
+    height: 100%;
+    background: white;
+    color: white;
+    border-radius: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 0px;
+}
+
+.gradient {
+    /*background: linear-gradient(red, yellow);*/
+    padding-top: 24px;
+    margin-bottom: 24px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(200, 200, 200, 1));
+    height: 100%;
+}
+
+/**************************************************
+div with blue
+**************************************************/
+
+.solid-blue .jumbotron {
+    height: 100%;
+    background: #124364 url("../../../base/images/bg.png");
+    color: white;
+    border-radius: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.solid-blue a,
+.solid-blue a:hover {
+    color: white;
+}
+
+.solid-blue p {
+    padding: 12px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+/**************************************************
+Footer section
+**************************************************/
+
+.footer {
+    margin-top: 12px;
+    padding: 12px;
+    width: 100%;
+    background: #dbdbdb url("../../../base/images/bg.png");
+
+}
+
+.footer li, a, a:hover {
+    color: #356e99;
+    font-weight: bold;
+}
+
+.footer .list-unstyled {
+    margin: 0;
+    padding: 12px;
+}
+
+
+@media (max-width: 991px) {
+    .img-background {
+        background: white;
+    }
+
+    .pseudo-black {
+        background: white;
+    }
+
+    .right-vertical-divisor {
+        border-right: 0px;
+    }
+
+    .left-vertical-divisor {
+        border-left: 0px;
+    }
+    .solid-blue p {
+        padding-bottom: 48px;
+        padding-top: 48px;
+        font-size: 36px;
+    }
+
+    .showcase p {
+        margin-bottom: 48px;
+        font-size: 24px;
+    }
+
+    .text-white {
+        color: #124364;
+    }
+
+    .gradient {
+        background: #dbdbdb url("../../../base/images/bg.png");
+    }
+
+    .gradient-container .jumbotron {
+        background: #dbdbdb url("../../../base/images/bg.png");
+        padding-top: 64px;
+    }
+    
+    .list-unstyled .text-right {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .scalated img {
+        width: 100%;
+        max-width: auto;
+        height: auto;
+    }
+
+    .header-image .small img,
+    .red img {
+        max-width: 30%;
+    }
+}
