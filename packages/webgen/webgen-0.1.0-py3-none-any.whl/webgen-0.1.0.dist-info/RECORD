@@ -1,0 +1,10 @@
+webgen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webgen/dom.py,sha256=5I_ibtRI601MURutsgZEVDCM7lmSOlp9q3ar66t72_8,18925
+webgen/filegen.py,sha256=AJmXdmFYACzIsdlqjTic8Jlf5QhGbJXc0F2wcwKnxi4,1906
+webgen/wrapper.py,sha256=OoON_QIi5UWVpJF4rY48ZwRPf_Y3Bdi6-2DjZ1tfXNw,995
+webgen-0.1.0.dist-info/DESCRIPTION.rst,sha256=MyBSvpPRi9svoSgpY3NkiVM9LQrmVxeNUXPJl9zBzh8,9
+webgen-0.1.0.dist-info/METADATA,sha256=iqp4pXEEAUPwDEbyu7FFJSGvgm4Z5q5e3Snt3cslx24,433
+webgen-0.1.0.dist-info/RECORD,,
+webgen-0.1.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+webgen-0.1.0.dist-info/metadata.json,sha256=9UCDRW5JLJN3KmPW05RAZ4ymECV7avAEkPew9BUv8lw,649
+webgen-0.1.0.dist-info/top_level.txt,sha256=nW2W1MypA4eGzQz6Pt97GB0X1VtQwVZ2J1WThQDjXJs,7
