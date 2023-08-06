@@ -1,0 +1,3 @@
+[console_scripts]
+kartoffel=kartoffel:main
+
