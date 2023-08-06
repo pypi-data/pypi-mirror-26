@@ -1,0 +1,7 @@
+README.rst
+setup.py
+tensorplex/__init__.py
+tensorplex.egg-info/PKG-INFO
+tensorplex.egg-info/SOURCES.txt
+tensorplex.egg-info/dependency_links.txt
+tensorplex.egg-info/top_level.txt
