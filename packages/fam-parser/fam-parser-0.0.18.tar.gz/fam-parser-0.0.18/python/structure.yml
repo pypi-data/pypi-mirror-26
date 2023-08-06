@@ -1,0 +1,229 @@
+---
+- name: source
+  type: trim
+- name: name
+- name: id_number
+- name: family_drawn_by
+- name: number_of_members
+  type: int
+- name: # last_internal_id
+  size: 2
+- name: disease_loci
+  for: 7
+  structure:
+    - name: name
+    - name: colour
+      type: colour
+    - name:
+    - name: pattern
+      type: pattern
+- name: comments
+  type: comment
+- name: creation_date
+  type: date
+- name: last_updated
+  type: date
+- name:
+  size: 5
+- name: quantitative_value_loci
+  for: 7
+  structure:
+    - name: name
+- name: selected_id
+  type: int
+- name:
+  size: 7
+- name: markers
+  while:
+    operands:
+      - marker_delimiter
+      - separator
+    operator: ne
+    term: marker_term
+  structure:
+    - name: separator
+      type: short
+    - name:
+      size: 439
+- name:
+  size: 9
+- name: members
+  for: number_of_members
+  structure:
+    - name: surname
+    - name: other_surnames
+    - name: forenames
+    - name: known_as
+    - name: maiden_name
+    - name: origins # Ethnicity, origins.
+      for: 2
+      structure:
+        - name: self
+        - name: m_g_mother
+        - name: m_g_father
+        - name: p_g_mother
+        - name: p_g_father
+    - name: address
+      type: comment
+    - name: additional_information
+      type: comment
+    - name: date_of_birth
+      type: date
+    - name: date_of_death
+      type: date
+    - name: sex
+      type: sex
+    - name: id
+      type: int
+    - name: pedigree_number
+      type: int
+    - name: mother_id
+      type: int
+    - name: father_id
+      type: int
+    - name: internal_id # Remove?
+      type: int
+    - name: number_of_individuals
+      type: int
+    - name: age_gestation
+    - name: individual_id
+    - name: number_of_spouses
+      type: int
+    - name: spouses
+      for: number_of_spouses
+      structure:
+        - name: id
+          type: int
+        - name: flags
+          type: relationship
+        - name: name
+    - name: twin_id
+      type: int
+    - name: comment
+      type: comment
+    - name: adoption_type
+      type: adoption_type
+    - name: genetic_symbols
+      type: genetic_symbol
+    - name:
+    - name: flags
+      type: individual
+    - name: proband
+      type: proband
+    - name: x_coordinate
+      type: int
+    - name: y_coordinate
+      type: int
+    - name: annotation_1
+      type: annotation_1
+    - name: multiple_pregnancies
+      type: multiple_pregnancies
+    - name:
+    - name: crossover
+      for: 2
+      structure:
+        - name:
+          size: 2
+        - name: allele
+          while:
+            operands:
+              - crossover_delimiter
+              - separator
+            operator: ne
+            term: crossover_term
+          structure:
+            - name: separator
+              type: short
+            - name:
+              size: 11
+        - name:
+          size: 9
+    - name:
+      size: 12
+    - name: unknown_list
+      for: 7
+      structure:
+        - name:
+          size: 24
+    - name: annotation_2
+      type: annotation_2
+    - name: additional_symbols
+      type: short
+    # NOTE: DNA and BLOOD fields are switched in Cyrillic. i.e., if DNA is
+    # selected, the BLOOD_LOCATION field is stored and if BLOOD is
+    # selected, the DNA_LOCATION field is stored. This is probably a bug.
+    - name: dna_location
+      if:
+        operands:
+          - dna
+    - name: blood_location
+      if:
+        operands:
+          - blood
+    - name: cells_location
+      if:
+        operands:
+          - cells
+    - name: sample
+      type: sample
+    - name: sample_number
+    - name: # colour
+      size: 3
+    - name:
+      size: 17
+    - name: # pattern
+      size: 2
+- name: number_of_unknown_data
+  type: int
+- name:
+- name: unknown_data
+  for: number_of_unknown_data
+  structure:
+    - name:
+      size: 12
+- name: number_of_custom_descriptions
+  type: int
+- name: genetic_symbols
+  for: 19
+  structure:
+    - name: value
+- name: additional_symbols
+  for: 4
+  structure:
+    - name: value
+- name: custom_symbols
+  for: number_of_custom_descriptions
+  structure:
+    - name: name
+    - name: value
+- name:
+  size: 14
+- name: zoom
+  type: int
+- name: unknown_1 # Zoom.
+  type: raw
+  size: 4
+- name: unknown_2 # Zoom.
+  type: raw
+  size: 4
+- name:
+  size: 20
+- name: number_of_text_fields
+  type: int
+# TODO: x and y coordinates have more digits.
+- name: text
+  for: number_of_text_fields
+  structure:
+    - name: comment
+    - name:
+      size: 54
+    - name: x_coordinate
+      type: short
+    - name:
+      size: 3
+    - name: y_coordinate
+      type: short
+    - name:
+      size: 7
+- name: eof_marker
+  type: trim
