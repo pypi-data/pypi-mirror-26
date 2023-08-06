@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+mongo_shelve/__init__.py
+mongo_shelve/mongo_shelve_class.py
+mongo_shelve.egg-info/PKG-INFO
+mongo_shelve.egg-info/SOURCES.txt
+mongo_shelve.egg-info/dependency_links.txt
+mongo_shelve.egg-info/not-zip-safe
+mongo_shelve.egg-info/top_level.txt
