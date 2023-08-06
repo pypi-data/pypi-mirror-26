@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: goldfinder
+Version: 1.0.0
+Summary: App for locating materials in the Brandeis Goldfarb and Farber libraries
+Home-page: https://github.com/9999years/goldfinder
+Author: Rebecca Turner
+Author-email: 637275@gmail.com
+License: MIT
+Description: https://github.com/9999years/goldfinder/blob/master/readme.md
+Keywords: library brandeis
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
