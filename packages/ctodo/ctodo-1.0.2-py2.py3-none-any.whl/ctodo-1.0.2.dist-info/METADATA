@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: ctodo
+Version: 1.0.2
+Summary: A simple command line todo list
+Home-page: https://gitlab.com/marcobius/console_todo
+Author: Marcobius
+Author-email: marcobius@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: command line todo list
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: tinydb
+
+Simple command line 'todo'
+==========================
+
+Simple 'todo' command. It allows to mantain a todo-list in the form of a stack.
+Usage:
+
+$ ctodo [option][argument]
+
+Possible options are:
+  -h : prints this message
+  -a [text]: add a new todo to the stack
+  -p : pop the last position of the stack
+  -l : list all todos
+  -r [number]: removes position indicated by number
+
+----
+
+
+
+
