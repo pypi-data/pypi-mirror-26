@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+bin/resswitch
+resswitch/__init__.py
+resswitch/resSwitch.py
+resswitch/resistiveAnalysisClass.py
+resswitch/setReset.py
+resswitch.egg-info/PKG-INFO
+resswitch.egg-info/SOURCES.txt
+resswitch.egg-info/dependency_links.txt
+resswitch.egg-info/not-zip-safe
+resswitch.egg-info/requires.txt
+resswitch.egg-info/top_level.txt
+resswitch/ico/__init__.py
+resswitch/ico/resSwitch.ico
