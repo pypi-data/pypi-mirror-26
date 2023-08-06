@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+tgo/__init__.py
+tgo/_tgo.py
+tgo/new-joe-kuo-6.21201.gz
+tgo/sobol.cc
+tgo/sobol.py
+tgo.egg-info/PKG-INFO
+tgo.egg-info/SOURCES.txt
+tgo.egg-info/dependency_links.txt
+tgo.egg-info/not-zip-safe
+tgo.egg-info/requires.txt
+tgo.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+scipy
+numpy
+pytest
+pytest-cov
+
+[dill support]
+multiprocessing_on_dill

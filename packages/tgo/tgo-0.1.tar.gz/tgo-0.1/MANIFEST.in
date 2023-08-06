@@ -1,0 +1,6 @@
+include README.rst
+include tgo/_tgo.py
+include tgo/sobol
+include tgo/sobol.cc
+include tgo/sobol.py
+include tgo/new-joe-kuo-6.21201.gz
