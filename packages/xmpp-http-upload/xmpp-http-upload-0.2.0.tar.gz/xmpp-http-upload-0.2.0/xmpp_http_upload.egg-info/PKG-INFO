@@ -1,0 +1,68 @@
+Metadata-Version: 1.1
+Name: xmpp-http-upload
+Version: 0.2.0
+Summary: Flask-based HTTP service to handle XMPP HTTP upload requests from Prosody mod_http_upload_external
+Home-page: https://github.com/horazont/xmpp-http-upload
+Author: Jonas Wielicki
+Author-email: jonas@wielicki.name
+License: GPLv3+
+Description-Content-Type: UNKNOWN
+Description: XMPP HTTP Upload Service
+        ########################
+        
+        This provides a Flask-based HTTP service which can be used with
+        `mod_http_upload_external <https://modules.prosody.im/mod_http_upload_external.html>`_.
+        
+        Configuration
+        =============
+        
+        The configuration file is specified using the environment variable
+        ``XMPP_HTTP_UPLOAD_CONFIG``. It must contain the full path to the configuration
+        file.
+        
+        The configuration file must contain the following keys:
+        
+        ``SECRET_KEY``
+            A ``bytes`` object which is the shared secret between the Prosody module
+            and this service. See the `mod_http_upload_external documentation
+            <https://modules.prosody.im/mod_http_upload_external.html>`_ for details.
+        
+        ``DATA_ROOT``
+            Path to the directory where the service stores the uploaded files.
+        
+        ``NON_ATTACHMENT_MIME_TYPES``
+            A list of string globs which specify the content types which are *not* sent
+            as attachment. Defaults to the empty list if not given.
+        
+            Example use::
+        
+                NON_ATTACHMENT_MIME_TYPES = [
+                    "image/*",
+                    "video/*",
+                    "audio/*",
+                    "text/plain",
+                ]
+        
+            Everything which does not match any of the entries here will be sent with
+            ``Content-Disposition: attachment`` in order to prevent funny attacks.
+        
+            It is not recommended to add things like ``text/html`` or ``*`` to this
+            list.
+        
+        Issues, Bugs, Limitations
+        =========================
+        
+        * This service **does not handle any kind of quota**.
+        
+Keywords: xmpp http
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: XMPP
