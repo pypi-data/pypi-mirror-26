@@ -1,0 +1,13 @@
+flask
+requests
+pyjwt
+flask-sqlalchemy
+flask-restful
+octoclient
+flask-cors
+zeroconf
+flask-socketio
+eventlet
+alembic
+flask-migrate
+raven[flask]
