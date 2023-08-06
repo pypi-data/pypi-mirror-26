@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+netoi_check/__init__.py
+netoi_check.egg-info/PKG-INFO
+netoi_check.egg-info/SOURCES.txt
+netoi_check.egg-info/dependency_links.txt
+netoi_check.egg-info/entry_points.txt
+netoi_check.egg-info/not-zip-safe
+netoi_check.egg-info/requires.txt
+netoi_check.egg-info/top_level.txt
