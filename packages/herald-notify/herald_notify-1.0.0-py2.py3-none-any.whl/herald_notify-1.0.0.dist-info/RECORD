@@ -1,0 +1,13 @@
+herald/__init__.py,sha256=eQqdYpKuayShl-ReFv-ZTd-pjLtnFj75gkiCwnomyLQ,226
+herald/herald.py,sha256=JPoE1I4Dp6U9CkqO89iSJAHpnS_9kel32exz_Nz9BHQ,741
+herald/notifiers/__init__.py,sha256=6iphzc5CHnHD5wcgQCbAEZmgasiTu06mjHMfhN27P8A,63
+herald/notifiers/base.py,sha256=pNJFma7IuEXo2zIw0xhtXBXeRUYbxNvffHeC99fuQGY,928
+herald/notifiers/gmail.py,sha256=V-u-GuY1Y4ryOht3tQ0lccTpOzTqePt16N8U6_Z1c0M,3222
+herald/notifiers/outlook.py,sha256=R8hWr57IK-P6q8tr15A4feRYa1I9D87SYu75JXi1xQU,115
+herald/notifiers/twilio.py,sha256=j_CrjxxetAKNKGfOR9OqfKpgZ_8w8twZRqaJ-q9RzKY,1538
+herald_notify-1.0.0.dist-info/DESCRIPTION.rst,sha256=LP5P9AMOuy_UOtZWeydREk_81qzeXjYDae89Gt_vzO0,2076
+herald_notify-1.0.0.dist-info/METADATA,sha256=5UVd4H53p0BVJjLzkSK1QhZHfgZ71yHaGBgPQmJgL80,3155
+herald_notify-1.0.0.dist-info/RECORD,,
+herald_notify-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+herald_notify-1.0.0.dist-info/metadata.json,sha256=rK8jrwdBxvSMOwZ8MsUcyGzpeNwUeduSGAQY6cE5rHM,1209
+herald_notify-1.0.0.dist-info/top_level.txt,sha256=YG_vedLj6XWyu8_18Uroi8Vm7zhRb9WFOsQd3dhNabY,7
