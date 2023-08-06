@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: termchat
+Version: 0.0.4
+Summary: Chat through the terminal with hack.chat
+Home-page: https://github.com/alexanderepstein/termchat
+Author: Alexander Epstein
+Author-email: epsteina@wit.edu
+License: MIT
+Keywords: terminal,chat,client,console
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: websocket-client
+
+For information on this package refer to the github: https://github.com/alexanderepstein/termchat
+
+

@@ -1,0 +1,12 @@
+termchat-0.0.4.dist-info/DESCRIPTION.rst,sha256=2lWwOfK1WYF9klmDMyL1E7l0jfaCjLlB1glCdsWiSdQ,100
+termchat-0.0.4.dist-info/METADATA,sha256=HeM0-t_QsYymCXV7vvllVsf0AcJrkK7PU69ReJwRUfQ,786
+termchat-0.0.4.dist-info/RECORD,,
+termchat-0.0.4.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+termchat-0.0.4.dist-info/entry_points.txt,sha256=6o8v8F4yPx57Pw-mZ2l0Suavj9pZvBXM1gS_wXglaiw,57
+termchat-0.0.4.dist-info/metadata.json,sha256=izUKFzcZ09Vdxc_sPf7xQhYZf_0ounjk7RPeVpIBybQ,1042
+termchat-0.0.4.dist-info/top_level.txt,sha256=vmq_uwQb4tcGje9lM_KvLM0LLaPp0Di4wrxIxg9zaPM,29
+termchatDriver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termchatDriver/driver.py,sha256=-D7A7ZeXcnnl6PHXgBR0IPZjFBDUFIPRevDbVdrMbsk,2716
+termchatUtils/HChat.py,sha256=vGC0b6fv7Wm1eQTP2_UO3eLQkIK_OrXmfY4Er6wQTT4,3598
+termchatUtils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termchatUtils/interface.py,sha256=87RsY0hQfH7mZ9PNezPJwBTg17PI91zFzpsEDlV3e9k,14012
