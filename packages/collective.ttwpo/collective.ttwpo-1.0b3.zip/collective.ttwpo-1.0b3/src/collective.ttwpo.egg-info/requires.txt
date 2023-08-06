@@ -1,0 +1,15 @@
+plone.api
+products.cmfplone
+python-gettext
+setuptools
+
+[dev]
+pdbpp
+
+[test]
+plone.app.testing
+plone.app.robotframework[debug]
+plone.app.contenttypes[test]
+
+[zanata]
+pyzanata
