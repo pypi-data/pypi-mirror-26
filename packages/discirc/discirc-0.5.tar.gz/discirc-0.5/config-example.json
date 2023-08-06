@@ -1,0 +1,34 @@
+{
+  "_comments": "Discord app token",
+  "discordToken": "my_discord_token",
+
+  "_comments": "IRC server address",
+  "ircServer": "chat.freenode.org",
+
+  "_comments": "IRC server port",
+  "ircPort": "6667",
+
+  "_comments": "IRC SSL use",
+  "ircSSl": false,
+
+  "_comments": "IRC nick",
+  "ircNick": "discirc",
+
+  "_comments": "IRC nick password [OPTIONAL]",
+  "ircPass": "MyIRCPass",
+
+  "_comments": "Channels maps",
+  "mappingChannels": {
+    "discord_chan1": "#irc_chan1",
+    "discord_chan2": "#irc_chan2"
+  },
+
+  "_comments": "IRC channel passwords [OPTIONAL]",
+  "channelPass": {
+      "#irc_chan1": "ChannelPass1",
+      "#irc_chan2": "ChannelPass2"
+  },
+
+  "_comments": "Command chars to not interpret",
+  "commandChars": ["~", "!"]
+}

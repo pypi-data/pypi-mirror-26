@@ -1,0 +1,6 @@
+asyncblink
+blinker
+bottom
+click
+discord.py
+requests
