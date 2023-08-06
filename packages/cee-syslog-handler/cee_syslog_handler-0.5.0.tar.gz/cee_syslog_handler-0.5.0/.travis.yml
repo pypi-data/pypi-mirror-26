@@ -1,0 +1,24 @@
+language: python
+python:
+  - '2.7'
+  - '3.4'
+  - '3.6'
+install:
+  - pip install -r requirements_test.txt
+  - pip install coveralls
+  - python setup.py -q install
+script:
+  - py.test --cov-report html --junit-xml junit.xml
+  - python setup.py sdist bdist_wheel
+after_success:
+  - coveralls
+deploy:
+  provider: pypi
+  user: BY-jk
+  distributions: "sdist bdist_wheel"
+  password:
+    secure: "TLQV/uNXEXyFQEoOEfDbkrC2VdPItY8vhd5BYW5kW+MprJ3rJDx69aGW9SWeV1u1l7JQ3qeausdnV8iZYJJk53yJdlHx4BxZWVoZeGxwhti7yH1R4y3qRx+AluTOTA5701GgHMG1QG/eDmnyDJfv5G1WmBe5Yuu/y6NFeZi6cNw="
+  on:
+    all_branches: true
+    tags: true
+    repo: blue-yonder/cee_syslog_handler
