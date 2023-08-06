@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link href="/static/css/jquery-ui.css" rel="stylesheet">
+    <title>Certificate Management</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.standalone.min.css" />
+    <script>
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd'
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="/">
+            <img src="/static/img/image.png" alt="Certificate Management" height="32px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add/new">
+                        <i class="fa fa-plus-square-o" aria-hidden="true"></i> Add New Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/list/all">
+                        <i class="fa fa-list-alt" aria-hidden="true"></i> Show All Certificates</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0" action="/search">
+                <input class="form-control mr-sm-2" type="text" name="search_text" placeholder="Search" aria-label="Search">
+                <label class="custom-control custom-radio">
+                    <input id="radio1" name="criteria" type="radio" class="custom-control-input" value="worker">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description text-white">Worker</span>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radio2" name="criteria" type="radio" class="custom-control-input" value="cn" checked>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description text-white">CN</span>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radio3" name="criteria" type="radio" class="custom-control-input" value="not_completed">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description text-white">Not Completed</span>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radio4" name="criteria" type="radio" class="custom-control-input" value="completed">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description text-white">Completed</span>
+                </label>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        {% if data %}
+        <div class="card">
+            <div class="card-body">
+                <form action="/add/new/certificate/save" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="completed" class="col-form-label">Completed</label>
+                            <select class="form-control" id="completed" name="completed">
+                                <option value="No">No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="worker" class="col-form-label">Select Workder</label>
+                            <select class="form-control" id="worker" name="worker">
+                                <option value="None">None</option>
+                                <option value="Adam Karendys">Adam Karendys</option>
+                                <option value="Adam Kordjaczynski">Adam Kordjaczynski</option>
+                                <option value="Krzysztof Barabasz">Krzysztof Barabasz</option>
+                                <option value="Piotr Karys">Piotr Karys</option>
+                                <option value="Raul Balestra">Raul Balestra</option>
+                                <option value="Ricardo Silva">Ricardo Silva</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="team" class="col-form-label">Team</label>
+                            <input class="form-control" type="text" value="" id="team" name="team">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="has_to_be_replaced_before" class="col-form-label">Has to be replaced before</label>
+                            <input class="form-control" type="text" value="" id="has_to_be_replaced_before" name="has_to_be_replaced_before" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cn" class="col-form-label">CN</label>
+                            <input class="form-control" type="text" value="{{data.cn}}" id="cn" name="cn">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="type" class="col-form-label">Certificate Type</label>
+                            <input class="form-control" type="text" value="{{data.cn_type}}" id="type" name="type">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="expiration_date" class="col-form-label">Expiration Date</label>
+                            <input class="form-control" type="text" value="{{data.expiration_date}}" id="expiration_date" name="expiration_date" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="ticket_number" class="col-form-label">Ticket Number</label>
+                            <input class="form-control" type="text" value="" id="ticket_number" name="ticket_number">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="server_name" class="col-form-label">Server Name</label>
+                            <input class="form-control" type="text" value="" id="server_name" name="server_name">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="web_type" class="col-form-label">Web Type</label>
+                            <input class="form-control" type="text" value="" id="web_type" name="web_type">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="mail_to_co" class="col-form-label">Mail to Content Owner</label>
+                            <input class="form-control" type="text" value="" id="mail_to_co" name="mail_to_co" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="csr" class="col-form-label">CSR Created At</label>
+                            <input class="form-control " type="text" value="" id="csr" name="csr" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="answer_co" class="col-form-label">Answer From CO</label>
+                            <input class="form-control " type="text" value="" id="answer_co" name="answer_co" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="order_certificate" class="col-form-label">Certificate Ordered</label>
+                            <input class="form-control " type="text" value="" id="order_certificate" name="order_certificate" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="delivery_from_siemens" class="col-form-label">Delivered Date</label>
+                            <input class="form-control " type="text" value="" id="delivery_from_siemens" name="delivery_from_siemens" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="p12_and_zip" class="col-form-label">P12 and ZIP Created</label>
+                            <input class="form-control " type="text" value="" id="p12_and_zip" name="p12_and_zip" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="moved_to_server" class="col-form-label">Moved to Server</label>
+                            <input class="form-control " type="text" value="" id="moved_to_server" name="moved_to_server" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="implemented" class="col-form-label">Implemented</label>
+                            <input class="form-control " type="text" value="" id="implemented" name="implemented" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="deleted_gm4web" class="col-form-label">Deleted in GM4WEB</label>
+                            <input class="form-control " type="text" value="" id="deleted_gm4web" name="deleted_gm4web" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="evidence_in_ticket" class="col-form-label">Evidence In Ticket</label>
+                            <input class="form-control " type="text" value="" id="evidence_in_ticket" name="evidence_in_ticket" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="notes" class="col-form-label">Notes</label>
+                            <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-lg" value="Save">
+                    <input type="reset" class="btn btn-danger btn-lg" value="Clear All Fields">
+                    <a href="/" class="btn btn-info btn-lg" role="button">Go to Home</a>
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="card">
+            <div class="card-body">
+                <form action="/add/new/certificate/save" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="completed" class="col-form-label">Completed</label>
+                            <select class="form-control" id="completed" name="completed">
+                                <option value="No">No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="worker" class="col-form-label">Select Workder</label>
+                            <select class="form-control" id="worker" name="worker">
+                                <option value="None">None</option>
+                                <option value="Adam Karendys">Adam Karendys</option>
+                                <option value="Adam Kordjaczynski">Adam Kordjaczynski</option>
+                                <option value="Krzysztof Barabasz">Krzysztof Barabasz</option>
+                                <option value="Piotr Karys">Piotr Karys</option>
+                                <option value="Raul Balestra">Raul Balestra</option>
+                                <option value="Ricardo Silva">Ricardo Silva</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="team" class="col-form-label">Team</label>
+                            <input class="form-control" type="text" value="" id="team" name="team">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="has_to_be_replaced_before" class="col-form-label">Has to be replaced before</label>
+                            <input class="form-control" type="text" value="" id="has_to_be_replaced_before" name="has_to_be_replaced_before" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cn" class="col-form-label">CN</label>
+                            <input class="form-control" type="text" value="" id="cn" name="cn">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="type" class="col-form-label">Certificate Type</label>
+                            <input class="form-control" type="text" value="" id="type" name="type">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="expiration_date" class="col-form-label">Expiration Date</label>
+                            <input class="form-control" type="text" value="" id="expiration_date" name="expiration_date" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="ticket_number" class="col-form-label">Ticket Number</label>
+                            <input class="form-control" type="text" value="" id="ticket_number" name="ticket_number">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="server_name" class="col-form-label">Server Name</label>
+                            <input class="form-control" type="text" value="" id="server_name" name="server_name">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="web_type" class="col-form-label">Web Type</label>
+                            <input class="form-control" type="text" value="" id="web_type" name="web_type">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="mail_to_co" class="col-form-label">Mail to Content Owner</label>
+                            <input class="form-control" type="text" value="" id="mail_to_co" name="mail_to_co" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="csr" class="col-form-label">CSR Created At</label>
+                            <input class="form-control " type="text" value="" id="csr" name="csr" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="answer_co" class="col-form-label">Answer From CO</label>
+                            <input class="form-control " type="text" value="" id="answer_co" name="answer_co" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="order_certificate" class="col-form-label">Certificate Ordered</label>
+                            <input class="form-control " type="text" value="" id="order_certificate" name="order_certificate" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="delivery_from_siemens" class="col-form-label">Delivered Date</label>
+                            <input class="form-control " type="text" value="" id="delivery_from_siemens" name="delivery_from_siemens" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="p12_and_zip" class="col-form-label">P12 and ZIP Created</label>
+                            <input class="form-control " type="text" value="" id="p12_and_zip" name="p12_and_zip" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="moved_to_server" class="col-form-label">Moved to Server</label>
+                            <input class="form-control " type="text" value="" id="moved_to_server" name="moved_to_server" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="implemented" class="col-form-label">Implemented</label>
+                            <input class="form-control " type="text" value="" id="implemented" name="implemented" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="deleted_gm4web" class="col-form-label">Deleted in GM4WEB</label>
+                            <input class="form-control " type="text" value="" id="deleted_gm4web" name="deleted_gm4web" data-provide="datepicker" data-date-format="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="evidence_in_ticket" class="col-form-label">Evidence In Ticket</label>
+                            <input class="form-control " type="text" value="" id="evidence_in_ticket" name="evidence_in_ticket" data-provide="datepicker"
+                                data-date-format="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="notes" class="col-form-label">Notes</label>
+                            <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-lg" value="Save">
+                    <input type="reset" class="btn btn-danger btn-lg" value="Clear All Fields">
+                    <a href="/" class="btn btn-info btn-lg" role="button">Go to Home</a>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+    </main>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap-datepicker.min.js"></script>
+</body>
+
+</html>
