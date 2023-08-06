@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+transmaths.py
+transmaths.egg-info/PKG-INFO
+transmaths.egg-info/SOURCES.txt
+transmaths.egg-info/dependency_links.txt
+transmaths.egg-info/top_level.txt
