@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+noisepy/__init__.py
+noisepy/__main__.py
+noisepy.egg-info/PKG-INFO
+noisepy.egg-info/SOURCES.txt
+noisepy.egg-info/dependency_links.txt
+noisepy.egg-info/entry_points.txt
+noisepy.egg-info/requires.txt
+noisepy.egg-info/top_level.txt
+noisepy.egg-info/zip-safe

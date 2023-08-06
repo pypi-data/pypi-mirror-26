@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: noisepy
+Version: 0.1.4
+Summary: generates random noisey b/w images
+Home-page: https://lymbycfyk.github.io/noisepy/
+Author: lymbycfyk
+Author-email: lymbycfyk@posteo.de
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: NoisePy
+        -------
+        
+        generates a random noise image, based on given dimension and black ratio
+        
+        usage::
+        
+            $ python3 -m noisepy
+        
+        or::
+        
+            $ python3 -m noisepy -c 800 -r 600 -b 0.66
+        
+Keywords: noisepy noise image generator snow random
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Multimedia :: Graphics
