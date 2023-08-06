@@ -1,0 +1,7 @@
+appdirs
+pafy
+urwid
+urwid_readline
+click
+python-mpv
+logzero
