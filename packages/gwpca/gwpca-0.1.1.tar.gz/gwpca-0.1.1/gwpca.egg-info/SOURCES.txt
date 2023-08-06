@@ -1,0 +1,11 @@
+README.md
+setup.py
+gwpca/__init__.py
+gwpca/tasks.py
+gwpca.egg-info/PKG-INFO
+gwpca.egg-info/SOURCES.txt
+gwpca.egg-info/dependency_links.txt
+gwpca.egg-info/entry_points.txt
+gwpca.egg-info/not-zip-safe
+gwpca.egg-info/requires.txt
+gwpca.egg-info/top_level.txt
