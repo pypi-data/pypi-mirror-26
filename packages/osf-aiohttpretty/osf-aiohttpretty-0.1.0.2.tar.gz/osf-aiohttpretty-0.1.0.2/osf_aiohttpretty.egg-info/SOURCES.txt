@@ -1,0 +1,10 @@
+README.rst
+aiohttpretty.py
+setup.cfg
+setup.py
+osf_aiohttpretty.egg-info/PKG-INFO
+osf_aiohttpretty.egg-info/SOURCES.txt
+osf_aiohttpretty.egg-info/dependency_links.txt
+osf_aiohttpretty.egg-info/not-zip-safe
+osf_aiohttpretty.egg-info/requires.txt
+osf_aiohttpretty.egg-info/top_level.txt
