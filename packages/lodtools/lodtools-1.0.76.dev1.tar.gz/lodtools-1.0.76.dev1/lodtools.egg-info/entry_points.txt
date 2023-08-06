@@ -1,0 +1,3 @@
+[console_scripts]
+lod-tools = lod.lod_tools:main
+
