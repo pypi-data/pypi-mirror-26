@@ -1,0 +1,10 @@
+LICENSE,sha256=TZD51Yq7iJ0uEtObRTK6YGEgD8Uhqo4EUqTCJb69o5s,1126
+django_rediser/__init__.py,sha256=ccCV3aNhlvEr_qjwDVnafYY-oOfH-IU-3NjBWXsv2o0,353
+django_rediser/config.py,sha256=FxXYrkySUVeTLFox2EGHFvzDJPidJ-Z_szm6FtMC9Bs,27
+django_rediser/storage.py,sha256=wVpkZXZFZT6mwzdY7WOzqJofFF2dKlWvOGukbvZ9wzo,4782
+django_rediser-0.0.1.dev11.dist-info/DESCRIPTION.rst,sha256=j6BdxYBtTe80wkJLfWF44uriP_eEDVvdjGir5WWKJlA,1411
+django_rediser-0.0.1.dev11.dist-info/METADATA,sha256=u0cTXu0-y06tE-TgjzJG3V7Pe2u1mKm53FdXKRq2j0w,2369
+django_rediser-0.0.1.dev11.dist-info/RECORD,,
+django_rediser-0.0.1.dev11.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_rediser-0.0.1.dev11.dist-info/metadata.json,sha256=6ALf0Fnmd6xnQrGV_NjWVlLmaSNySfNu-YkItP3lteE,1140
+django_rediser-0.0.1.dev11.dist-info/top_level.txt,sha256=T5UFMaamjATISwbImYlwIqRdEfIs1gaPVXpESMBeI5c,15
