@@ -1,0 +1,16 @@
+Codado-0.4.995.data/scripts/jentemplate,sha256=bm6mRcJF08h9d2iAzqgNxurvYbO-d5T0QOR7XECOGcU,309
+Codado-0.4.995.data/scripts/urltool,sha256=2KmZ9CpEfPB38r-JcE1Cq2gnVSxVOHTAFboe82qO5iY,98
+Codado-0.4.995.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+Codado-0.4.995.dist-info/METADATA,sha256=ocxtLkr4ZGGcf7_7SK9Dg9j4dHWUSI-DjS9iaMOt9sk,466
+Codado-0.4.995.dist-info/RECORD,,
+Codado-0.4.995.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+Codado-0.4.995.dist-info/metadata.json,sha256=-h2zwnMLP9hcuLLDiXVXeG-LUoh0Qd2jxe7SIoJE57s,597
+Codado-0.4.995.dist-info/top_level.txt,sha256=_YuCAvv8KxtsL3rb7w-u0hi_uZIZR3ycskLoZ0V3e1c,7
+codado/__init__.py,sha256=Rt3v9WeQbk-Gxd5-C9k1q7Xarj4cT7uLZghfbLY74Ck,301
+codado/_version.py,sha256=MYKTO8oib5SrOtIIbDzTWKIQorFeh0B58bmrW5n2WR0,50
+codado/py.py,sha256=eVLKWJKiFPfWPLL08l3TlsM9ldOr9YonxvM2ghPso0Y,7115
+codado/tx.py,sha256=CiyYu4X6SA1bKFv8BFGjOw3OONrmEmc5vE4C5iPoVCc,2007
+codado/kleinish/__init__.py,sha256=XHK1AW3UA0ZrM0y14sX9u0GJSJYYdx6juNqo6zmdwig,661
+codado/kleinish/openapi.py,sha256=9FLaQ2L5gnLjP9pddEjuqheiXsTejSIV6FxtqPwLTuY,4169
+codado/kleinish/tree.py,sha256=UoT_B8z2HhZiaV0noBV9QrNHK1L2HN46x7cADdQsyi4,1334
+codado/kleinish/urltool.py,sha256=o3QM_LjjOS6tDxGkWX7Rrexb4GMAzek2bV78QRPl2ec,5768
