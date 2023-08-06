@@ -1,0 +1,5 @@
+[plover.win.command]
+BRIGHTNESS_DOWN = plover_windows_brightness:down
+BRIGHTNESS_SET = plover_windows_brightness:set
+BRIGHTNESS_UP = plover_windows_brightness:up
+
