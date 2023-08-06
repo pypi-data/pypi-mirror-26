@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+blesonwin.cpp
+setup.py
+blesonwin.egg-info/PKG-INFO
+blesonwin.egg-info/SOURCES.txt
+blesonwin.egg-info/dependency_links.txt
+blesonwin.egg-info/top_level.txt
