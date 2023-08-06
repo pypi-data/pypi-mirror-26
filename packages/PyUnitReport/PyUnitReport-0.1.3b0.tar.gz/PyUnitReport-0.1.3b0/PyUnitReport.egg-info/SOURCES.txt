@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+PyUnitReport.egg-info/PKG-INFO
+PyUnitReport.egg-info/SOURCES.txt
+PyUnitReport.egg-info/dependency_links.txt
+PyUnitReport.egg-info/not-zip-safe
+PyUnitReport.egg-info/requires.txt
+PyUnitReport.egg-info/top_level.txt
+examples/__init__.py
+examples/testcase.py
+pyunitreport/__init__.py
+pyunitreport/result.py
+pyunitreport/runner.py
+pyunitreport/template/report_template.html
