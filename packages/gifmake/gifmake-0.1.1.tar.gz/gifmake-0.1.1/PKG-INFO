@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: gifmake
+Version: 0.1.1
+Summary: A simple command line utility for creating GIFs with directories of images.
+Home-page: https://github.com/ericchang00/gifmake
+Author: Eric Chang
+Author-email: ericchang00@gmail.com
+License: MIT license
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: gifmake
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3.4
