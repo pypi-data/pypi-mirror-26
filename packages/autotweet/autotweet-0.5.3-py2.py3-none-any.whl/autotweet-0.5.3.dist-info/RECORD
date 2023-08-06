@@ -1,0 +1,16 @@
+autotweet/__init__.py,sha256=QUKjew0yHtOn7aImnAqr1FOS5zrL9_DRhSux-SR0WtM,196
+autotweet/command.py,sha256=mj8EXo-wFTMOGHhOeC7TFCrQsNQWMNADbuk8-ZNqIx8,8009
+autotweet/compat.py,sha256=ARF8cgAhcPEsA3mgXNbqfyFFf-fnubzu8D--ODfXpUs,304
+autotweet/daemons.py,sha256=B0d2qsj75jGq3iVNo4SZt2XzqejJTyF5IoxZHs1S4Vc,9648
+autotweet/database.py,sha256=_Js9_Q6Y-Sr6tsTeDzrSGP9FWgmr9wsy0ZdUASqbLbU,1936
+autotweet/learning.py,sha256=zJwv2UI6dgXQlc4V78UuffLOzv_v7f3CfJLOXrKImDo,6959
+autotweet/logger_factory.py,sha256=JvvwigK0Gjf59jc7WM-ss0aWKRzq9fcpOLRzfNx72Ns,315
+autotweet/telegram_bot.py,sha256=SegDZeFx2L6fAET5j9V6tefvP3aPjQZ4um_TRKd1BDw,3463
+autotweet/twitter.py,sha256=gzzcd9Y8tS5Aw9oDT4utNNga-DKvoRMPLt_UPWTr6R0,3787
+autotweet-0.5.3.dist-info/DESCRIPTION.rst,sha256=bW5ACNmACOBi47escR_hEIBkJMlpComSuf1WA1MPWRg,2113
+autotweet-0.5.3.dist-info/METADATA,sha256=SKwqiIcC63_YXdKSc9ZLEYjVbBGjHcx6ABpgy-G3lZ0,3050
+autotweet-0.5.3.dist-info/RECORD,,
+autotweet-0.5.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+autotweet-0.5.3.dist-info/entry_points.txt,sha256=r5akbLbzJV-jmwxYOpo1dNDdus2QdiEOSst6DqDirIA,54
+autotweet-0.5.3.dist-info/metadata.json,sha256=d69Jg5ItFbjGiGAAif3IMsDZEf0jXNV-2tm0clECibA,1286
+autotweet-0.5.3.dist-info/top_level.txt,sha256=8nStWWC2Qs_GjhHnkvUVIRMwcEHDWOvg7mrSvjxMRYU,10
