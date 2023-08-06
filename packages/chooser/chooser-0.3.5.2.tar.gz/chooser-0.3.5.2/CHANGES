@@ -1,0 +1,55 @@
+.. -*- rst -**
+
+Change Log
+==========
+
+Release 0.3.5.2 - (November 20, 2017)
+-------------------------------------
+* Placage pypi.
+
+Release 0.3.5.1 - (November 20, 2017)
+-------------------------------------
+* Allow wxPython 4 prereleases.
+
+Release 0.3.5 - (November 19, 2017)
+-----------------------------------
+* Add Python 3 support.
+* Require wxPython 4.
+* Remove deprecated ez_setup.py.
+
+Release 0.3.4 - (June 17, 2015)
+-------------------------------
+* Handle ESC properly.
+
+Release 0.3.3 - (January 1, 2015)
+---------------------------------
+* Add support for QupZilla.
+* Improve docs.
+* Automatically build man page when building sdist.
+
+Release 0.3.2 - (August 10, 2014)
+---------------------------------
+* Tidy up code.
+
+Release 0.3.1 - (March 2, 2014)
+-------------------------------
+* Switch to PEP 440 version numbering.
+* Include ez_setup.py.
+* Assume optional config file is in standard XDG_CONFIG_HOME location.
+* Access docutils programmatically when building man page.
+* Include built man page in source package so docutils isn't needed for
+  installation.
+
+Release 0.03 - (January 08, 2013)
+---------------------------------
+* Add support for optional configuration file.
+
+Release 0.02 - (April 11, 2012)
+-------------------------------
+* Add support for more browsers.
+* Add man page.
+* Use default icons.
+
+Release 0.01 - (March 05, 2012)
+-------------------------------
+* First public release.
