@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyesp/__init__.py
+pyesp/pyesp.py
+pyesp/run.py
+pyesp.egg-info/PKG-INFO
+pyesp.egg-info/SOURCES.txt
+pyesp.egg-info/dependency_links.txt
+pyesp.egg-info/entry_points.txt
+pyesp.egg-info/top_level.txt
+pyesp/data/api/mpython.json
+pyesp/data/api/nodemcu.json
+pyesp/data/serial/config.json
