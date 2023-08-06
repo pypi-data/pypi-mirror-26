@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>configuration.txt</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="configuring-breezy">
+<h1><a class="toc-backref" href="#id1">Configuring Breezy</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#configuring-breezy" id="id1">Configuring Breezy</a><ul>
+<li><a class="reference internal" href="#get-an-option-value" id="id2">Get an option value</a></li>
+<li><a class="reference internal" href="#add-a-new-option" id="id3">Add a new option</a></li>
+<li><a class="reference internal" href="#modify-an-option-value-or-delete-an-option" id="id4">Modify an option value or delete an option</a></li>
+<li><a class="reference internal" href="#old-and-new-configuration-code" id="id5">Old and new configuration code</a></li>
+<li><a class="reference internal" href="#adding-a-new-stack" id="id6">Adding a new stack</a></li>
+<li><a class="reference internal" href="#adding-a-new-store" id="id7">Adding a new store</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#breezy-conf" id="id8">breezy.conf</a></li>
+<li><a class="reference internal" href="#pkgimport-conf" id="id9">pkgimport.conf</a></li>
+<li><a class="reference internal" href="#location-conf" id="id10">location.conf</a></li>
+<li><a class="reference internal" href="#branch-conf" id="id11">branch.conf</a><ul>
+<li><a class="reference internal" href="#option" id="id12">Option</a></li>
+<li><a class="reference internal" href="#sections" id="id13">Sections</a></li>
+<li><a class="reference internal" href="#stores" id="id14">Stores</a></li>
+<li><a class="reference internal" href="#filtering-sections" id="id15">Filtering sections</a></li>
+<li><a class="reference internal" href="#stacks" id="id16">Stacks</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>As a Breezy developer there are a few things you need to know about
+configuration:</p>
+<ul class="simple">
+<li>how to add a new option,</li>
+<li>how add a new stack,</li>
+<li>how add a new store.</li>
+</ul>
+<p>The first sections in this document summarize the steps needed when adding a
+new configuration item, the rest of the document gives more internal details
+on how this is implemented.</p>
+<div class="section" id="get-an-option-value">
+<h2><a class="toc-backref" href="#id2">Get an option value</a></h2>
+<p>Options values are obtained with <tt class="docutils literal">stack.get(option_name)</tt> where <tt class="docutils literal">stack</tt>
+is one of the daughter classes of <tt class="docutils literal">config.Stack</tt>, see their docstrings for
+a description of which sections are used from which stores.</p>
+<p>The value returned is of the type declared for that <tt class="docutils literal">Option</tt> and if
+nothing is specifically declared you will get the default for that option.</p>
+</div>
+<div class="section" id="add-a-new-option">
+<h2><a class="toc-backref" href="#id3">Add a new option</a></h2>
+<p>You add a new <tt class="docutils literal">Option</tt> to the <tt class="docutils literal">option_registry</tt>, either inside
+<tt class="docutils literal">breezy/config.py</tt> or during initialization of your plugin (use
+<tt class="docutils literal">register_lazy</tt> in this case). New plugins should have systematic
+hierarchical names so that related values are grouped together:</p>
+<pre class="literal-block">
+option_registry.register(
+    Option('dirstate.fdatasync', default=True,
+          from_unicode=bool_from_store,
+          help=&quot;Flush dirstate changes onto physical disk? ....&quot;))
+</pre>
+<p>You then need to decide which stack is appropriate to implement the Option
+policy:</p>
+<ul class="simple">
+<li>which config files (aka <tt class="docutils literal">Store</tt>) needs to be queried, which sections are
+relevant and in what order,</li>
+<li>which section will receive the modifications (if relevant).</li>
+</ul>
+<p>The docstrings for the existing stacks cover most of the known use cases.</p>
+</div>
+<div class="section" id="modify-an-option-value-or-delete-an-option">
+<h2><a class="toc-backref" href="#id4">Modify an option value or delete an option</a></h2>
+<p>Just reading an option is what is needed most of the time, modifying option
+values or removing options is usually something that is not automated but
+left to the user (with <tt class="docutils literal">brz config</tt>).</p>
+<p>Nevertheless, if you need to save a modified option value, use
+<tt class="docutils literal">.set(option_name, value)</tt> and <tt class="docutils literal">.remove(option_name)</tt> to delete the
+option. Both methods are provided by the <tt class="docutils literal">Stack</tt> object.</p>
+<p>But before doing that, you must be sure that the stack you're using have a
+writable section (this is true for <tt class="docutils literal">GlobalStack</tt> which uses the
+<tt class="docutils literal">DEFAULT</tt> section in <tt class="docutils literal">breezy.conf</tt> and for <tt class="docutils literal"><span class="pre">BranchStack``which</span> uses the
+<span class="pre">no-name</span> section in ``branch.conf</tt>).</p>
+</div>
+<div class="section" id="old-and-new-configuration-code">
+<h2><a class="toc-backref" href="#id5">Old and new configuration code</a></h2>
+<p>There is (as of late 2011) some older and some newer configuration code. The
+old code has specific methods for various checks or uses classes like
+<tt class="docutils literal">GlobalConfig</tt>.  Don't add to to it; try to remove it.</p>
+<p>If you encounter an option using the old code you may want to migrate
+it. This generally involves:</p>
+<ul class="simple">
+<li>registering the option,</li>
+<li>replace the old config by a stack:<ul>
+<li><tt class="docutils literal">GlobalConfig</tt> became <tt class="docutils literal">GlobalStack</tt>,</li>
+<li><tt class="docutils literal">LocationConfig</tt> became <tt class="docutils literal">LocationStack</tt>,</li>
+<li><tt class="docutils literal">BranchConfig</tt> became <tt class="docutils literal">BranchStack</tt> (or in this case,
+<tt class="docutils literal">get_config()</tt> became <tt class="docutils literal">get_config_stack()</tt>.</li>
+</ul>
+</li>
+<li>replace the custom accessor calls with <tt class="docutils literal">conf.get(option_name)</tt>.</li>
+</ul>
+<p>The new config code provides some help for commonly encountered use cases
+that can allow further simplifications like:</p>
+<ul class="simple">
+<li>providing a default value when the option is not defined in any way by the
+user,</li>
+<li>convert the unicode string provided by the user into a suitable
+representation (integer, list, etc).</li>
+</ul>
+<p>If you start migrating a given option to the config stacks, don't stop
+mid-way, all its uses should be covered (tests included). There are some
+edge cases where updates via one API will be not be seen by the other API
+(see <a class="reference external" href="http://pad.lv/948339">http://pad.lv/948339</a> and <a class="reference external" href="http://pad.lv/948344">http://pad.lv/948344</a> for details). Roughly,
+the old API always trigger an IO while the new one cache values to avoid
+them. This works fine as long as a given option is handled via a single API.</p>
+</div>
+<div class="section" id="adding-a-new-stack">
+<h2><a class="toc-backref" href="#id6">Adding a new stack</a></h2>
+<p>Stacks capture the various places an option can be declared by the user with
+associated levels of generality and query them in the appropriate order
+returning the first definition found. For example, the
+<tt class="docutils literal">append_revisions_only</tt> option may be declared for all branches of a user
+in <tt class="docutils literal">breezy.conf</tt>, or for a hierarchy of branches in <tt class="docutils literal">locations.conf</tt> or
+in a single branch in <tt class="docutils literal">branch.conf</tt>.</p>
+<p>Defining a new stack means you need a new way to expose these levels to the
+user that is not covered by the existing stacks.</p>
+<p>This is achieved by declaring:</p>
+<ul class="simple">
+<li>which stores can provide a value for the option,</li>
+<li>which sections apply to the stack instance, some filtering for a given
+context can be defined,</li>
+<li>which (store, section) should receive the modifications.</li>
+</ul>
+<p>Mapping different sections to different stacks is a powerful way to organize
+the options and provide various levels of configuration to the user. This is
+achieved with <tt class="docutils literal">Store</tt> and <tt class="docutils literal">SectionMatcher</tt> objects.</p>
+</div>
+<div class="section" id="adding-a-new-store">
+<h2><a class="toc-backref" href="#id7">Adding a new store</a></h2>
+<p>The following stores are used by <tt class="docutils literal">brz</tt> in ways that illustrate various
+uses of sections.</p>
+</div>
+</div>
+<div class="section" id="breezy-conf">
+<h1><a class="toc-backref" href="#id8">breezy.conf</a></h1>
+<p><tt class="docutils literal">brz</tt> itself defines two sections here:</p>
+<ul class="simple">
+<li><tt class="docutils literal">DEFAULT</tt> where global options are defined,</li>
+<li><tt class="docutils literal">ALIASES</tt> where command aliases are defined. This section is <em>not</em>
+available via <tt class="docutils literal">GlobalStack</tt>, instead, the <tt class="docutils literal">brz alias</tt> command uses it
+for its own purposes.</li>
+</ul>
+<p>Plugins can define either additional options in the <tt class="docutils literal">DEFAULT</tt> section or
+new sections for their own needs (this is not especially encouraged
+though). The <tt class="docutils literal"><span class="pre">bzr-bookmarks</span></tt> plugin defines a <tt class="docutils literal">BOOKMARKS</tt> section there
+for example.</p>
+</div>
+<div class="section" id="pkgimport-conf">
+<h1><a class="toc-backref" href="#id9">pkgimport.conf</a></h1>
+<p>The Ubuntu package importer defines a store and two stacks involving
+<tt class="docutils literal">pkgimport.conf</tt>. A no-name section contains the options common to all
+packages and sections named after their corresponding package can also be
+defined.</p>
+<p>The <tt class="docutils literal">ImporterStack</tt> uses <tt class="docutils literal">locations.conf</tt> and the no-name section in
+<tt class="docutils literal">pkgimport.conf</tt> for the importer options.</p>
+<p>The <tt class="docutils literal">PackageStack</tt> uses only <tt class="docutils literal">pkgimport.conf</tt> and uses the section name
+after the package followed by the no-name section.</p>
+</div>
+<div class="section" id="location-conf">
+<h1><a class="toc-backref" href="#id10">location.conf</a></h1>
+<p><tt class="docutils literal">brz</tt> defines sections corresponding to URLs there and includes the
+relevant sections in <tt class="docutils literal">LocationStack</tt> and <tt class="docutils literal">BranchStack</tt>. No no-name
+section is recognized in this file.</p>
+</div>
+<div class="section" id="branch-conf">
+<h1><a class="toc-backref" href="#id11">branch.conf</a></h1>
+<p>This file defines the option for a given branch and uses only the no-name
+section.</p>
+<div class="section" id="option">
+<h2><a class="toc-backref" href="#id12">Option</a></h2>
+<p>The Option object is used to define its properties:</p>
+<ul>
+<li><p class="first">name: a name: a valid python identifier (even if it's not used as an
+identifier in python itself). This is also used to register the option.</p>
+</li>
+<li><p class="first">from_unicode: a callable accepting a unicode string and returning a
+suitable value for the option. If the string cannot be coerced it should
+return None.</p>
+</li>
+<li><p class="first">override_from_env: a list of environment variables. The first variable set
+will be used as the option value overriding any other definition of the
+option.</p>
+</li>
+<li><p class="first">default: the default value that Stack.get() should return if no value can
+be found for the option. This can also be a callable as long as it returns
+a unicode string.</p>
+</li>
+<li><p class="first">default_from_env: a list of environment variables. The first variable set
+will provide a default value overriding 'default' which remains the
+default value if <em>no</em> environment variable is set.</p>
+</li>
+<li><p class="first">help: a doc string describing the option, the first line should be a
+summary and can be followed by a blank line and a more detailed
+explanation. This will be displayed to the user with:</p>
+<pre class="literal-block">
+brz help &lt;option name&gt;
+</pre>
+</li>
+<li><p class="first">invalid: the action to be taken when an invalid value is encountered in a
+store (during a Stack.get()).</p>
+</li>
+</ul>
+<p>The value of an option is a unicode string or <tt class="docutils literal">None</tt> if it's not
+defined. By using <tt class="docutils literal">from_unicode</tt> you can turn this string into a more
+appropriate representation.</p>
+<p>If you need a list value, you should use <tt class="docutils literal">ListOption</tt> instead.</p>
+<p>For options that take their values from a <tt class="docutils literal">Registry</tt> object,
+<tt class="docutils literal">RegistryOption</tt> can be used. This will automatically take care of
+looking up the specified values in the dictionary and documenting the
+possible values in help.</p>
+</div>
+<div class="section" id="sections">
+<h2><a class="toc-backref" href="#id13">Sections</a></h2>
+<p>Options are grouped into sections which share some properties with the well
+known dict objects:</p>
+<ul class="simple">
+<li>the key is the name,</li>
+<li>you can get, set and remove an option,</li>
+<li>the value is a unicode string.</li>
+</ul>
+<p>MutableSection is needed to set or remove an option, ReadOnlySection should
+be used otherwise.</p>
+</div>
+<div class="section" id="stores">
+<h2><a class="toc-backref" href="#id14">Stores</a></h2>
+<p>Options can be persistent in which case they are saved into Stores.</p>
+<p><tt class="docutils literal">config.Store</tt> defines the abstract interface that all stores should
+implement.</p>
+<p>This object doesn't provide direct access to the options, it only provides
+access to Sections. This is deliberate to ensure that sections can be
+properly shared by reusing the same underlying objects. Accessing options
+should be done via the <tt class="docutils literal">Section</tt> objects.</p>
+<p>A <tt class="docutils literal">Store</tt> can contain one or more sections, each section is uniquely
+identified by a unicode string.</p>
+<p><tt class="docutils literal">config.IniFileStore</tt> is an implementation that use <tt class="docutils literal">ConfigObj</tt>.</p>
+<p>Depending on the object it is associated with (or not) a <tt class="docutils literal">Store</tt> also needs
+to implement a locking mechanism. <tt class="docutils literal">LockableIniFileStore</tt> implements such a
+mechanism for <tt class="docutils literal">IniFileStore</tt> based stores.</p>
+<p>Classes are provided for the usual Breezy configuration files and could be
+used as examples to define new ones if needed. The associated tests provides a
+basis for new classes which only need to register themselves in the right
+places to inherit from the existing basic tests and add their own specific
+ones.</p>
+<p>A <tt class="docutils literal">Store</tt> defines how option values are stored, this includes:</p>
+<ul class="simple">
+<li>defining the sections where the options are grouped,</li>
+<li>defining how the values are quoted/unquoted for storage purposes. Stacks
+use the unquoted values internally (default value handling and option
+expansion are simpler this way) and <tt class="docutils literal">brz config</tt> quote them when they
+need to be displayed.</li>
+</ul>
+</div>
+<div class="section" id="filtering-sections">
+<h2><a class="toc-backref" href="#id15">Filtering sections</a></h2>
+<p>For some contexts, only some sections from a given store will apply. The
+<tt class="docutils literal">SectionMatcher</tt> objects are used to define which sections in a store
+apply to a given context.</p>
+<p>The main constraint here is that a <tt class="docutils literal">SectionMatcher</tt> should delay the loading
+of the associated store as long as possible. The constructor should collect
+all data needed for the selection and uses it while processing the sections in
+<tt class="docutils literal">get_sections</tt>.</p>
+<p>Only <tt class="docutils literal">ReadOnlySection</tt> objects are manipulated here but a
+<tt class="docutils literal">SectionMatcher</tt> can return dedicated <tt class="docutils literal">Section</tt> objects to provide
+additional context (the <tt class="docutils literal">LocationSection</tt> add an <tt class="docutils literal">extra_path</tt> attribute
+to implement the section local options for example). If no sections match,
+an empty list is returned.</p>
+<p>Options local to a section can be defined for special purposes and be
+handled by <tt class="docutils literal">Section.get()</tt>. One such option is <tt class="docutils literal">relpath</tt> which is
+defined in <tt class="docutils literal">LocationSection</tt> as an alternative to the <tt class="docutils literal">appendpath</tt>
+policy.</p>
+<p>For <tt class="docutils literal">appendpath</tt>, the <tt class="docutils literal">LocationSection</tt> will carry <tt class="docutils literal">extra_path</tt> as the
+relative path between the section name and the location used. <tt class="docutils literal">relpath</tt>
+will be available as a <tt class="docutils literal">Section</tt> local option with the same
+value. <tt class="docutils literal">basename</tt> will carry the location base name and be available as a
+local option with the same name. Note that such options can only be expanded
+inside the section that defines them.</p>
+<p>Specific section matchers can be implemented by overriding <tt class="docutils literal">get_sections</tt>
+or just <tt class="docutils literal">match</tt>.</p>
+<p><tt class="docutils literal">breezy</tt> provides:</p>
+<ul class="simple">
+<li><tt class="docutils literal">NameMatcher(store, unique_id)</tt>: To select a single section matching
+<tt class="docutils literal">unique_id</tt>.</li>
+<li><tt class="docutils literal">LocationMatcher(store, location)</tt>: To select all sections that match
+<tt class="docutils literal">location</tt> sorted by decreasing number of path components.</li>
+<li><tt class="docutils literal">StartingPathMatcher(store, location)</tt>: To select all sections that
+match <tt class="docutils literal">location</tt> in the order they appear in the <tt class="docutils literal">store</tt>.</li>
+</ul>
+</div>
+<div class="section" id="stacks">
+<h2><a class="toc-backref" href="#id16">Stacks</a></h2>
+<p>An option can take different values depending on the context it is
+used. This can involve configuration files, options from the command line,
+default values in breezy and then some.</p>
+<p>Such a context is implemented by creating a list of <tt class="docutils literal">Section</tt> stacked upon
+each other. A <tt class="docutils literal">Stack</tt> can then be asked for an option value and returns the
+first definition found.</p>
+<p>This provides a great flexibility to decide priorities between sections when
+the stack is defined without to worry about them in the code itself.</p>
+<p>A stack also defines a mutable section (which can be None) to handle
+modifications.</p>
+<p>Many sections (or even stores) are aimed at providing default values for an
+option but these sections shouldn't be modified lightly as modifying an option
+used for different contexts will indeed be seen by all these contexts.</p>
+<p>Default values in configuration files are defined by users. Developers
+shouldn't have to modify them, as such, no mechanism nor heuristics are used
+to find which section (or sections) should be modified.</p>
+<p>A <tt class="docutils literal">Stack</tt> defines a mutable section when there is no ambiguity.  If there
+is one, then the <em>user</em> should be able to decide and in this case a new
+<tt class="docutils literal">Stack</tt> can be created cheaply.</p>
+<p>Different stacks can be created for different purposes, the existing
+<tt class="docutils literal">GlobalStack</tt>, <tt class="docutils literal">LocationStack</tt> and <tt class="docutils literal">BranchStack</tt> can be used as basis
+or examples. These classes are the only ones that should be used in code,
+<tt class="docutils literal">Stores</tt> can be used to build them but shouldn't be used otherwise, ditto
+for sections. Again, the associated tests could and should be used against the
+created stacks.</p>
+<p>Also note that <tt class="docutils literal">MemoryStack</tt> can be used without any disk resources which
+allows for simpler and faster tests. A common pattern is to accept a
+<tt class="docutils literal">config</tt> parameter related to a given feature and test it with predefined
+configurations without involving the whole
+stack. <tt class="docutils literal">breezy.tests.test_commit</tt>, <tt class="docutils literal">breezy.tests.test_gpg</tt> and
+<tt class="docutils literal">breezy.tests.test_smtp_connection</tt> are good examples.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

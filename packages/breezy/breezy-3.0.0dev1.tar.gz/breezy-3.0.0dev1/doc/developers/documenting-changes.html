@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Documenting Changes</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="documenting-changes">
+<h1 class="title">Documenting Changes</h1>
+
+<p>When you change bzr, please update the relevant documentation for the
+change you made:</p>
+<dl class="docutils">
+<dt>Changing existing behavior</dt>
+<dd>If the change will break existing command lines, or break
+interoperability with other versions of Bazaar, mention this in
+&quot;External Compatibility Breaks&quot; in NEWS, and also in &quot;What's New&quot;.</dd>
+<dt>Adding a new feature, function or option</dt>
+<dd>Describe this in NEWS, in the user guide, and in the &quot;What's New&quot;
+document.  Consider whether you should also update command help
+or any help topics.</dd>
+<dt>A new hook or extension point</dt>
+<dd>These are also described in NEWS, in the hook documentation, and in
+&quot;What's New.&quot;  Even though they might be API-only changes, the fact that
+they exist may interest users enough to write a new plugin that uses
+them.</dd>
+<dt>Fixing a bug</dt>
+<dd>If the bug has any user-visible impact, describe it in the NEWS file
+in such a way that users can tell whether the problem they're
+experiencing is the one that was fixed.</dd>
+<dt>Improving performance</dt>
+<dd>Mention this under &quot;improvements&quot; in NEWS, and if it's a notable
+improvement mention it in &quot;What's New&quot;.</dd>
+<dt>Deprecating an API, or adding a new recommended API</dt>
+<dd>Mention this in the &quot;API Changes&quot; of NEWS, if it's likely to affect
+plugin authors.  Consider whether you should also update the developer
+documentation.</dd>
+<dt>Changing the way the test suite works or adding more tests</dt>
+<dd>Mention this under &quot;Testing&quot; in NEWS, and update the developer guide
+to testing.</dd>
+<dt>Purely internal changes</dt>
+<dd>If the change has no user-visible impact and is not interesting to
+plugin developers, it doesn't need to be mentioned in NEWS.  If you're
+setting a new pattern or adding a new abstraction, update the developer
+docs.</dd>
+</dl>
+<div class="section" id="news-file">
+<h1>NEWS File</h1>
+<p>If you make a user-visible change, please add a note to the NEWS file.
+The description should be written to make sense to someone who's just
+a user of bzr, not a developer: new functions or classes shouldn't be
+mentioned, but new commands, changes in behaviour or fixed nontrivial
+bugs should be listed.  See the existing entries for an idea of what
+should be done.</p>
+<p>Within each release, entries in the news file should have the most
+user-visible changes first.  So the order should be approximately:</p>
+<ul class="simple">
+<li>changes to existing behaviour - the highest priority because the
+user's existing knowledge is incorrect</li>
+<li>new features - should be brought to their attention</li>
+<li>bug fixes - may be of interest if the bug was affecting them, and
+should include the bug number if any</li>
+<li>major documentation changes, including fixed documentation bugs</li>
+</ul>
+<p>People who made significant contributions to each change are listed in
+parenthesis.  This can include reporting bugs (particularly with good
+details or reproduction recipes), submitting patches, etc.</p>
+<p>To help with merging, NEWS entries should be sorted lexicographically
+within each section.</p>
+</div>
+<div class="section" id="commands">
+<h1>Commands</h1>
+<p>The docstring of a command is used by <tt class="docutils literal">bzr help</tt> to generate help output
+for the command. The list 'takes_options' attribute on a command is used by
+<tt class="docutils literal">bzr help</tt> to document the options for the command - the command
+docstring does not need to document them. Finally, the '_see_also'
+attribute on a command can be used to reference other related help topics.</p>
+</div>
+<div class="section" id="api-documentation">
+<h1>API Documentation</h1>
+<p>Functions, methods, classes and modules should have docstrings
+describing how they are used.</p>
+<p>The first line of the docstring should be a self-contained sentence.</p>
+<p>For the special case of Command classes, this acts as the user-visible
+documentation shown by the help command.</p>
+<p>The docstrings should be formatted as <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> (like this
+document), suitable for processing using the <a class="reference external" href="http://epydoc.sourceforge.net/">epydoc</a> tool into HTML
+documentation.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Format feature flags</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="format-feature-flags">
+<h1 class="title">Format feature flags</h1>
+
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#rationale" id="id1">Rationale</a></li>
+<li><a class="reference internal" href="#proposed-approach" id="id2">Proposed approach</a></li>
+<li><a class="reference internal" href="#feature-necessity" id="id3">Feature necessity</a></li>
+<li><a class="reference internal" href="#format-changes" id="id4">Format changes</a></li>
+<li><a class="reference internal" href="#api-changes" id="id5">API Changes</a></li>
+<li><a class="reference internal" href="#enabling-features" id="id6">Enabling features</a></li>
+<li><a class="reference internal" href="#see-also" id="id7">See also</a></li>
+</ul>
+</div>
+<div class="section" id="rationale">
+<h1><a class="toc-backref" href="#id1">Rationale</a></h1>
+<p>In the past when new features were added that required a change to the
+on-disk format, Bazaar has introduced a new format (in other words,
+a different string in .bzr/branch-format, .bzr/branch/format,
+.bzr/repository/format or .bzr/checkout/format). The main reason for this
+was that it made old versions of Bazaar give a sensible error message
+when they encountered on-disk data that they could not understand.</p>
+<p>There are also several disadvantages to such an approach:</p>
+<blockquote>
+<ul class="simple">
+<li>Once upgraded, a newer version of Bazaar is required to access the data
+(it is often possible to downgrade the format later on)</li>
+<li>Upgrading requires an explicit action by the user. It could be
+done automatically, but then accessing a repository with a newer version
+of Bazaar might accidentally render it inaccessible by older.</li>
+</ul>
+</blockquote>
+<p>Not all format changes should necessarily render the data inaccessible
+to older versions of Bazaar.</p>
+<p>There are also various plugins that store extra metadata in the Bazaar
+version control directory. They currently have no way of indicating that
+e.g. writing to the repository requires a particular plugin to be installed
+(so the metadata can be kept up to date, for example).</p>
+</div>
+<div class="section" id="proposed-approach">
+<h1><a class="toc-backref" href="#id2">Proposed approach</a></h1>
+<p>To allow for more granular changes to the format, this spec proposes
+to add feature flags to the Bazaar formats, indicating
+what kind of data is present in that repository. Each feature has
+a name and some sort of indicator that tells the bzr client its
+&quot;necessity&quot; - optional, required, ...</p>
+<p>bzr clients would be able to open data with features that are
+set as &quot;optional&quot; but that they do not support. If there are features
+that aren't supported which are marked &quot;required&quot; in the repository they
+would refuse to open the repository.</p>
+<p>Various kinds of metadata, e.g. ones that are generated from the
+repository itself and can be discarded without losing data (caches)
+would fall in the optional category.</p>
+</div>
+<div class="section" id="feature-necessity">
+<h1><a class="toc-backref" href="#id3">Feature necessity</a></h1>
+<p>The initial implementation will feature the following two possible
+settings for feature <tt class="docutils literal">necessity</tt>. Any format necessity that can't
+be understood should be interpreted as &quot;required&quot;, and an appropriate
+warning printed.</p>
+<blockquote>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>optional: the feature is present, but writing/reading of the</dt>
+<dd>repository/branch/checkout is possible without support for the
+feature. Useful for things like caches (e.g. bzr-search index,
+annotate cache)</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>required: read and write access is only possible if the feature</dt>
+<dd>is supported. Useful for things like nested trees.</dd>
+</dl>
+</li>
+</ul>
+</blockquote>
+<p>In the future, we might add more values for necessity. Older
+versions of bzr treat unknown necessities as &quot;required&quot;. Some likely
+candidates for new necessities that might be added in the future:</p>
+<blockquote>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>read-optional: read access is possible if the feature is not supported,</dt>
+<dd>but write access requires it</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>client-read-optional: directly writing to the object requires</dt>
+<dd>the feature, but reading or writing through an intermediary (such as
+a HPSS server) doesn't.</dd>
+</dl>
+</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="format-changes">
+<h1><a class="toc-backref" href="#id4">Format changes</a></h1>
+<p>The feature information would be included in the appropriate <tt class="docutils literal">format</tt> file
+(<tt class="docutils literal"><span class="pre">.bzr/branch-format</span></tt>, <tt class="docutils literal">.bzr/branch/format</tt>, <tt class="docutils literal">.bzr/repository/format</tt> or
+<tt class="docutils literal">.bzr/checkout/format</tt>). This file currently always contains a single
+line with the format name. Older versions of bzr read the full file.</p>
+<p>By using the other lines for feature information it is possible to add feature
+flags in a backwards compatible manner; older clients will simply fail to open
+repositories with feature flags set, giving a unknown format error.</p>
+<p>The other advantage of doing this is that we don't need any additional
+roundtrips when opening a remote format. An example .bzr/repository/format
+file could then look like this:</p>
+<pre class="literal-block">
+Bazaar repository format 2a (needs bzr 1.16 or later)
+optional git
+optional search
+optional tiplog
+required nested-trees
+</pre>
+<p>In other words, this is a &quot;2a&quot; bzr format which also stores a cache of
+Git Tree/Commit objects, a bzr-search index, and a reflog. It also contains
+revisions with nested trees.</p>
+</div>
+<div class="section" id="api-changes">
+<h1><a class="toc-backref" href="#id5">API Changes</a></h1>
+<p>Class methods will be added to <tt class="docutils literal">BzrFormat</tt> to allow registering
+and unregistering the presence of particular features.</p>
+<blockquote>
+<ul class="simple">
+<li>BzrFormat.register_feature(name)</li>
+<li>BzrFormat.unregister_feature(name)</li>
+</ul>
+</blockquote>
+<p>The namespace for features is global. It is assumed
+that the plugin that provides the feature X provides that feature
+in all objects that it is relevant for. For example, if a plugin
+provides the <tt class="docutils literal"><span class="pre">nested-trees</span></tt> feature, it is assumed to support
+that in both working trees and repositories. If this is not the case,
+it should use a different feature name for the working tree support
+and the repository support.</p>
+<p>BzrFormat is inherited by <tt class="docutils literal">BranchFormatMetaDir</tt>, <tt class="docutils literal">BzrDirFormat</tt>,
+<tt class="docutils literal">RepositoryFormatMetaDir</tt> and <tt class="docutils literal">WorkingTreeFormatMetaDir</tt>.</p>
+<p>Upon opening, BzrFormat will be responsible for checking that the
+required features are present.  lock_write will raise an exception
+when there is an unsupported mandatory feature required for write access.</p>
+<p>Methods will also be added to BzrFormat to allow plugins, etc,
+to check whether a feature is present and adding new features:</p>
+<blockquote>
+<ul class="simple">
+<li>BzrFormat.features.set(name, necessity)</li>
+<li>BzrFormat.features.get(name) -&gt; necessity</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="enabling-features">
+<h1><a class="toc-backref" href="#id6">Enabling features</a></h1>
+<p>Features are enabled through the <tt class="docutils literal">update_feature_flags</tt> method on
+<tt class="docutils literal">Repository</tt>, <tt class="docutils literal">Branch</tt>, <tt class="docutils literal">WorkingTree</tt> and <tt class="docutils literal">BzrDir</tt>.</p>
+<p>These methods are called by whatever needs to enable features.
+When they do that is up to them - e.g. bzr-search would enable its
+feature when <tt class="docutils literal">bzr index</tt> is first run.</p>
+</div>
+<div class="section" id="see-also">
+<h1><a class="toc-backref" href="#id7">See also</a></h1>
+<p>Mercurial has a similar feature, using its <a class="reference external" href="http://mercurial.selenic.com/wiki/RequiresFile">.hg/requires</a> file.</p>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</body>
+</html>

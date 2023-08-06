@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Authentication ring</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="authentication-ring">
+<h1 class="title">Authentication ring</h1>
+
+<p>When accessing a remote branch (specified as an URL), it may occur that the
+server requests an authentication.</p>
+<p>This authentication can be provided in different ways:</p>
+<p>1. Embedding the user and password
+in the URL:</p>
+<pre class="literal-block">
+bzr branch &lt;scheme&gt;://&lt;user&gt;:&lt;password&gt;&#64;host:port/path
+</pre>
+<ul class="simple">
+<li><tt class="docutils literal">scheme</tt>: Any transport protocol requiring authentication.</li>
+<li><tt class="docutils literal">user</tt>: The login used to authenticate.</li>
+<li><tt class="docutils literal">password</tt>: The associated password.</li>
+<li><tt class="docutils literal">host</tt>: The address of the server.</li>
+<li><tt class="docutils literal">port</tt>: The port the server is listening to.</li>
+<li><tt class="docutils literal">path</tt>: The path on the server.</li>
+</ul>
+<p>2. Embedding the user in the URL and let bzr find the right password or prompt
+for one:</p>
+<pre class="literal-block">
+bzr branch &lt;scheme&gt;://&lt;user&gt;&#64;host/path
+</pre>
+<p>3. Embedding nothing in the URL and let bzr find user and password or prompt
+for user and/or password:</p>
+<pre class="literal-block">
+bzr branch &lt;scheme&gt;://host/path
+</pre>
+<p>This specification proposes a mechanism that will allow users to
+just use <tt class="docutils literal">bzr branch <span class="pre">&lt;scheme&gt;://host/path</span></tt> or <tt class="docutils literal">bzr branch
+<span class="pre">&lt;scheme&gt;://&lt;user&gt;&#64;host/path</span></tt> and leaves bzr find the <tt class="docutils literal">user</tt>
+and <tt class="docutils literal">password</tt> in its configuration files.</p>
+<p>When no user is specified for <tt class="docutils literal">FTP</tt>, <tt class="docutils literal">SFTP</tt> or <tt class="docutils literal">SSH</tt>, the actual behavior
+of <tt class="docutils literal">bzr</tt> is to default to <tt class="docutils literal">getpass.get_user()</tt>.</p>
+<p>Any implementation of this specification should respect that behaviour.</p>
+<p>This specification also proposes a way to describe credentials so that several
+remote branches can use the same definition. This is particularily important
+for users handling a lot of passwords and who need to update them on a regular
+basis.</p>
+<div class="section" id="rationale">
+<h1>Rationale</h1>
+<p>Embedding user and passwords in the command line is a security
+hazard (see <a class="reference external" href="https://launchpad.net/products/bzr/+bug/34685">bug #34685</a>).</p>
+<p>Storing passwords in <tt class="docutils literal"><span class="pre">~/.config/breezy/breezy.conf</span></tt> or
+<tt class="docutils literal"><span class="pre">~/.config/breezy/locations.conf</span></tt> is also a security risk.</p>
+<p>Typing user and passwords is error-prone and boring.</p>
+<p>Yet, a safe way to store passwords, while allowing bzr to retrieve them, when
+needed, could improve the bzr user experience.</p>
+<p>This specification describes a way to provide user and passwords to bzr while
+storing them in a relatively safe way.</p>
+<p>Note that SSH servers can be configured to use keys instead of (<tt class="docutils literal">user</tt>,
+<tt class="docutils literal">password</tt>) and, when used with appropriate agents, provide the same kind of
+comfort this specification aims to provide for all other schemes. Since SSH
+agents provide a safer way to secure the passwords, this specification is
+restricted to providing <tt class="docutils literal">user</tt> but does not provide <tt class="docutils literal">password</tt> when used
+for SSH.</p>
+</div>
+<div class="section" id="authentication-definitions">
+<h1>Authentication definitions</h1>
+<p>There are two kinds of authentication used by the various schemes supported by
+bzr:</p>
+<ol class="arabic simple">
+<li>user and password</li>
+</ol>
+<p><tt class="docutils literal">FTP</tt> and <tt class="docutils literal">SFTP</tt> needs a (<tt class="docutils literal">user</tt>, <tt class="docutils literal">password</tt>) to authenticate against a
+<tt class="docutils literal">host</tt> (SFTP can use SSH keys too, but we don't talk about that in this
+specification as SSH agents provide a better solution).</p>
+<ol class="arabic simple" start="2">
+<li>user, realm and password</li>
+</ol>
+<p><tt class="docutils literal">HTTP</tt> and <tt class="docutils literal">HTTPS</tt> needs a (<tt class="docutils literal">user, realm, password</tt>) to authenticate
+against a host. But, by using <tt class="docutils literal">.htaccess</tt> files, for example, it is possible
+to define several (<tt class="docutils literal">user, realm, password</tt>) for a given <tt class="docutils literal">host</tt>. So what is
+really needed is (<tt class="docutils literal">user</tt>, <tt class="docutils literal">password</tt>, <tt class="docutils literal">host</tt>, <tt class="docutils literal">path</tt>). The <tt class="docutils literal">realm</tt>
+can be ignored<a class="footnote-reference" href="#ignored-realm" id="id1"><sup>1</sup></a> as long as it is still presented to the user
+when prompting for the password (unless someone found a way to declare two
+different realms for the same path).</p>
+<p><tt class="docutils literal">HTTP proxy</tt> can be handled as <tt class="docutils literal">HTTP</tt> (or <tt class="docutils literal">HTTPS</tt>) by explicitly
+specifying the appropriate port.</p>
+<table class="docutils footnote" frame="void" id="ignored-realm" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>The true purpose of realms is to allow the same credentials
+to be reused for disjoint hierarchies. Ignoring them in this specification
+aims to simplify the user experience while still allowing to share the same
+credentials for a whole hierarchy.</td></tr>
+</tbody>
+</table>
+<p>To take all schemes into account, the password will be deduced from a set of
+authentication definitions (<tt class="docutils literal">scheme</tt>, <tt class="docutils literal">host</tt>, <tt class="docutils literal">port</tt>, <tt class="docutils literal">path</tt>, <tt class="docutils literal">user</tt>,
+<tt class="docutils literal">password</tt>).</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">scheme</tt>: can be empty (meaning the rest of the definition can be used
+for any scheme), <tt class="docutils literal">SFTP</tt> and <tt class="docutils literal">bzr+ssh</tt> should not be used here, <tt class="docutils literal">ssh</tt>
+should be used instead since this is the real scheme regarding
+authentication,</li>
+<li><tt class="docutils literal">host</tt>: can be empty (to act as a default for any host),</li>
+<li><tt class="docutils literal">port</tt> can be empty (useful when an host provides several servers for the
+same scheme), only numerical values are allowed, this should be used only
+when the server uses a port different than the scheme standard port,</li>
+<li><tt class="docutils literal">path</tt>: can be empty (FTP or SFTP will never use it),</li>
+<li><tt class="docutils literal">user</tt>: can be empty (<tt class="docutils literal">bzr</tt> will defaults to Python's
+<tt class="docutils literal">getpass.get_user()</tt> for FTP, SFTP and SSH),</li>
+<li><tt class="docutils literal">password</tt>: can be empty (for security reasons, a user may use the
+definitions without storing the passwords but want to be prompted ; or the
+password will be provided by an external plugin via the
+<tt class="docutils literal">password_encoding</tt> mechanism decribed below). Must be left empty for
+<tt class="docutils literal">ssh</tt>.</li>
+<li><tt class="docutils literal">password_encoding</tt>: can be empty (default is <tt class="docutils literal">plaintext</tt>).</li>
+</ul>
+</blockquote>
+<p>Also note that an optional <tt class="docutils literal">verify_certificates=no</tt> field will allow the
+connection to <tt class="docutils literal">HTTPS</tt> hosts that provides a self certified certificate (the
+default should be to refuse the connection and inform the user). (Not
+implemented yet)</p>
+<p>Multiple definitions can be provided and, for a given URL, bzr will select a
+(<tt class="docutils literal">user</tt> [, <tt class="docutils literal">password</tt>]) based on the following rules :</p>
+<blockquote>
+<ol class="arabic simple">
+<li>the first match wins,</li>
+<li>empty fields match everything,</li>
+<li><tt class="docutils literal">scheme</tt> matches even if decorators are used in the requested URL,</li>
+<li><tt class="docutils literal">host</tt> matches exactly or act as a domain if it starts with '.'
+(<tt class="docutils literal">project.bzr.sf.net</tt> will match <tt class="docutils literal">.bzr.sf.net</tt> but <tt class="docutils literal">projectbzr.sf.net</tt>
+will not match <tt class="docutils literal">bzr.sf.net</tt>).</li>
+<li><tt class="docutils literal">port</tt> matches if included in the requested URL (exact matches only)</li>
+<li><tt class="docutils literal">path</tt> matches if included in the requested URL (and by rule #2 above,
+empty paths will match any provided path).</li>
+</ol>
+</blockquote>
+<p>An optional <tt class="docutils literal">password_encoding</tt> field may specify how the password is encoded
+but has no impact on the definition selection.</p>
+<p>Possible values are <tt class="docutils literal">plaintext</tt> (no encoding at all) and <tt class="docutils literal">base64</tt>. When the
+field is absent, <tt class="docutils literal">plaintext</tt> is assumed. Additional encodings may be added in
+future versions.</p>
+<p>Encoding passwords in <tt class="docutils literal">base64</tt>, while weak, provides protection against
+accidental reading (if an administrator have to look into the file, he will not
+see the passwords in clear).</p>
+<p>This specification intends to ease the authentication providing, not to secure
+it in the best possible way.</p>
+<p>Plugins can provide additional password encodings. The provided
+<tt class="docutils literal">netrc_credential_store</tt> plugin can be used as an example implementation.</p>
+<p>Future versions of this specification may provide additional
+encodings<a class="footnote-reference" href="#password-encoding" id="id2"><sup>2</sup></a>.</p>
+<table class="docutils footnote" frame="void" id="password-encoding" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Additional password encoding methods may be defined
+that will rely on external means to store the password which, in these
+cases, will not appear anymore in the definition. It is assumed that
+additional password encodings will provide a storage outside of the file
+described here. The <tt class="docutils literal">netrc</tt> encoding, for example, provides passwords by
+retrieving them from the <tt class="docutils literal">.netrc</tt> file.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="file-format">
+<h1>File format</h1>
+<p>Even if <tt class="docutils literal"><span class="pre">~/.config/breezy/breezy.conf</span></tt> and
+<tt class="docutils literal"><span class="pre">~/.config/breezy/locations.conf</span></tt> seems to provide most of the needed
+infrastructure, we choose to use a dedicated file
+for the authentication info <tt class="docutils literal"><span class="pre">~/.config/breezy/authentication.conf</span></tt> for the following
+reasons:</p>
+<blockquote>
+<ul class="simple">
+<li>allow the user to protect the content of one file only, relaxing security
+constraints on the others,</li>
+<li>while <tt class="docutils literal">locations.conf</tt> is organized around <em>local</em> branches,
+<tt class="docutils literal">authentication.conf</tt> is organized around <em>remote</em> branches or more
+generally servers. The same authentification definition can even be used
+for several schemes for servers providing those schemes.</li>
+</ul>
+</blockquote>
+<p><tt class="docutils literal"><span class="pre">~/.config/breezy//authentication.conf</span></tt> will use the same file format as
+<tt class="docutils literal"><span class="pre">~/.config/breezy/breezy.conf</span></tt>.</p>
+<p>Each section describes an authentication definition.</p>
+<p>The section name is an arbitrary string, only the <tt class="docutils literal">DEFAULT</tt> value is reserved
+and should appear as the <em>last</em> section.</p>
+<p>Each section should define:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">user</tt>: the login to be used,</li>
+</ul>
+</blockquote>
+<p>Each section could define:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">host</tt>: the remote server,</li>
+<li><tt class="docutils literal">port</tt>: the port the server is listening,</li>
+<li><tt class="docutils literal">verify_certificates</tt>: to control certificate verification (useful
+for self certified hosts). This applies to HTTPS only. Accepted values
+are yes and no, default to yes.</li>
+<li><tt class="docutils literal">path</tt>: the branch location,</li>
+<li><tt class="docutils literal">password</tt>: the password,</li>
+<li><tt class="docutils literal">password_encoding</tt>: the method used to encode the password if any,</li>
+</ul>
+</blockquote>
+<p>The default content of the file will be:</p>
+<pre class="literal-block">
+[DEFAULT]
+</pre>
+<p>This section could define:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">user</tt>: default user to be used (if not defined the usual
+bzr way applies, see below).</li>
+<li><tt class="docutils literal">password_encoding</tt>: default password encoding.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="use-cases">
+<h1>Use Cases</h1>
+<p>The use cases described below use the file format defined above.</p>
+<blockquote>
+<ul>
+<li><p class="first">all FTP connections to the foo.net domain are done with the same (<tt class="docutils literal">user</tt>,
+<tt class="docutils literal">password</tt>):</p>
+<pre class="literal-block">
+# Identity on foo.net
+[foo.net]
+scheme=ftp
+host=foo.net
+user=joe
+password=secret-pass
+</pre>
+<p>will provide ('joe', 'secret-pass') for:</p>
+<pre class="literal-block">
+bzr branch ftp://foo.net/bzr/branch
+bzr pull ftp://bzr.foo.net/bzr/product/branch/trunk
+</pre>
+</li>
+<li><p class="first">all connections are done with the same <tt class="docutils literal">user</tt> (the remote one for which
+the default bzr one is not appropriate) and the password is always prompted
+with some exceptions:</p>
+<pre class="literal-block">
+# Pet projects on hobby.net
+[hobby]
+host=r.hobby.net
+user=jim
+password=obvious1234
+
+# Home server
+[home]
+scheme=https
+host=home.net
+user=joe
+# Obtain the base64 encoded password by running 'echo -n &quot;secret-pass&quot; | base64'
+password='c2VjcmV0LXBhc3M='
+password_encoding=base64
+verify_certificates=no # Still searching a free certificate provider
+
+[DEFAULT]
+# Our local user is barbaz, on all remote sites we're known as foobar
+user=foobar
+</pre>
+</li>
+<li><p class="first">an HTTP server and a proxy:</p>
+<pre class="literal-block">
+# development branches on dev server
+[dev]
+scheme=https
+host=dev.company.com
+path=/dev
+user=user1
+password=pass1
+
+# toy branches
+[localhost]
+scheme=http
+host=dev.company.com
+path=/
+user=user2
+password=pass2
+
+# proxy
+[proxy]
+scheme=http
+host=proxy.company.com
+port=3128
+user=proxyuser1
+password=proxypass1
+</pre>
+</li>
+<li><p class="first">source hosting provider declaring sub-domains for each project:</p>
+<pre class="literal-block">
+[sfnet domain]
+# we use SFTP, but SSH is the scheme used for authentication
+scheme=ssh
+# The leading '.' ensures that 'sf.net' alone doesn't match
+host=.sf.net
+user=georges
+password=ben...son
+</pre>
+</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="ui-changes">
+<h1>UI Changes</h1>
+<p>Depending on the info provided in the URL, bzr will interact with the user in
+different ways:</p>
+<ol class="arabic simple">
+<li><tt class="docutils literal">user</tt> and <tt class="docutils literal">password</tt> given in the URL.</li>
+</ol>
+<blockquote>
+Nothing to do.</blockquote>
+<ol class="arabic simple" start="2">
+<li><tt class="docutils literal">user</tt> given in the URL.</li>
+</ol>
+<blockquote>
+Get a password from <tt class="docutils literal"><span class="pre">~/.config/breezy/authentication.conf</span></tt> or prompt
+for one if none is found.</blockquote>
+<ol class="arabic simple" start="3">
+<li>No <tt class="docutils literal">user</tt> given in the URL (and no <tt class="docutils literal">password</tt>).</li>
+</ol>
+<blockquote>
+Get a user from <tt class="docutils literal"><span class="pre">~/.config/breezy/authentication.conf</span></tt> or prompt for one if
+none is found. Continue as 2. (Not implemented yet)</blockquote>
+<p>Note: A user will be queried only if the server requires it for <tt class="docutils literal">HTTP</tt> or
+<tt class="docutils literal">HTTPS</tt>, other protocols always require a user.</p>
+<p>In any case, if the server refuses the authentication, bzr reports to the user
+and terminates.</p>
+</div>
+<div class="section" id="implementation-constraints">
+<h1>Implementation constraints</h1>
+<ul class="simple">
+<li>bzr should be able to prompt for a <tt class="docutils literal">user</tt> for a given (<tt class="docutils literal">scheme</tt>, <tt class="docutils literal">host</tt>
+[, <tt class="docutils literal">realm</tt>]). Note that <tt class="docutils literal">realm</tt> is available only after a first
+connection attempt to the server.</li>
+<li>No assumptions should be made about the clients of this service
+(i.e. Transport is the primary target but plugins must be able to use it as
+well, the definitions used: (<tt class="docutils literal">scheme, host, [port,] path</tt>) are general
+enough to described credentials for <tt class="docutils literal">svn</tt> servers or LaunchPad XML-RPC
+calls).</li>
+<li>Policies regarding default users may be taken into account by the
+implementations, there is no good way to represent that in this specification
+and stays flexible enough to accommodate various needs (default user policies
+may differ for different schemes and that may be easier to handle in the code
+than in the authentication file itself).</li>
+<li>If no user can be found by the mechanism described above, bzr should still
+default to <tt class="docutils literal">getpass.get_user()</tt> and may attempt a second matching to obtain
+a password.</li>
+<li>As this specification proposes a matching between some credentials
+definitions and real URLs, the implementation provides an optional UI
+feedback about which credential definition is used. Using <tt class="docutils literal"><span class="pre">-Dauth</span></tt> will
+output some traces in the <tt class="docutils literal">.bzr.log</tt> file metionning the sections
+used. This allows the user to validate his definitions.</li>
+</ul>
+</div>
+<div class="section" id="questions-and-answers">
+<h1>Questions and Answers</h1>
+<blockquote>
+<ul>
+<li><p class="first">What if a <tt class="docutils literal">.authinfo</tt> file exists ?</p>
+<ul class="simple">
+<li>It will be ignored,</li>
+<li>Automatic (one-time) conversions may be proposed if sufficient demand
+exists,</li>
+</ul>
+</li>
+<li><p class="first">What if a <tt class="docutils literal">.netrc</tt> file exists ?</p>
+<ul class="simple">
+<li>It is honored if the definition specifies
+<tt class="docutils literal">password_encoding=netrc</tt>.</li>
+</ul>
+</li>
+<li><p class="first">What mode should the authentication file use ?</p>
+<ul class="simple">
+<li>600 read/write for owner only by default, if another mode (more
+permissive) is used, a warning will be issued to inform the users of the
+potential risks.(Not implemented yet)</li>
+</ul>
+</li>
+<li><p class="first">What about using <tt class="docutils literal">seahorse</tt> on Ubuntu or <tt class="docutils literal">KeyChain Access</tt> on Mac OS X ?</p>
+<ul class="simple">
+<li>plugins can be written and registered to handle the associated
+<tt class="docutils literal">password_encoding</tt>.</li>
+</ul>
+</li>
+<li><p class="first">Could it be possible to encode the whole authentication file with an SSH key
+?</p>
+<ul class="simple">
+<li>yes and if the user configure a ssh-agent it will not be queried for
+pass-phrase every time we want to query the file for a password. But
+that seems a bit extreme for a first version.(Not implemented yet and
+may be never)</li>
+</ul>
+</li>
+<li><p class="first">Why can't bzr update the authentication file when it queried the user for a
+password ?</p>
+<ul>
+<li><p class="first">a future version may address that but:</p>
+<p>1. The user may want to decide which passwords are stored in the file and
+which aren't.</p>
+<p>2. The user should decide if the passwords are encoded (and how) or not
+(but we may default to base64).</p>
+<p>3. The right definition may be hard to get right, but reducing it to
+(<tt class="docutils literal">scheme, host, [port,] user, password</tt>) may be a good start. I.e. no
+path so that all paths on the host will match. The user will have to
+modify it for more complex configurations anyway.</p>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</body>
+</html>

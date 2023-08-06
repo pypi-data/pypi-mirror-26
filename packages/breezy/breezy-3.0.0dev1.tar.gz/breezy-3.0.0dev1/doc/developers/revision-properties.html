@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Revision Properties</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="revision-properties">
+<h1 class="title">Revision Properties</h1>
+
+<p>Bazaar repositories support setting of a key/value pairs for each revision.
+Applications can use these properties to store additional information
+about the revision.</p>
+<div class="section" id="usage">
+<h1>Usage</h1>
+<p>In general, revision properties are set by passing keyword argument
+<tt class="docutils literal">revprops</tt> to method <tt class="docutils literal">MutableTree.commit</tt>. For example:</p>
+<pre class="literal-block">
+properties = {}
+properties['my-property'] = 'test'
+tree.commit(message, revprops=properties)
+</pre>
+<p>Properties can be retrieved via the attribute <tt class="docutils literal">properties</tt> of
+instances of the class <tt class="docutils literal">Revision</tt>:</p>
+<pre class="literal-block">
+if 'my-property' in revision.properties:
+    my_property = revision.properties['my-property']
+    ...
+</pre>
+</div>
+<div class="section" id="well-known-properties">
+<h1>Well-known properties</h1>
+<p>At the moment, three standardized revision properties are recognized and used
+by bzrlib:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">authors</tt> - Authors of the change. This value is a &quot;\n&quot; separated set
+of values in the same format as the committer-id. This property can be
+set by passing a list to the keyword argument <tt class="docutils literal">authors</tt> of the function
+<tt class="docutils literal">MutableTree.commit</tt>.</li>
+<li><tt class="docutils literal">author</tt> - Single author of the change. This property is deprecated in
+favour of <tt class="docutils literal">authors</tt>. It should no longer be set by any code, but will
+still be read. It is ignored if <tt class="docutils literal">authors</tt> is set in the same revision.</li>
+<li><tt class="docutils literal"><span class="pre">branch-nick</span></tt> - Nickname of the branch. This can be specified by the user,
+but it defaults to the colocated branch name or the branch's directory name.
+The value is set automatically in <tt class="docutils literal">MutableTree.commit</tt>.</li>
+<li><tt class="docutils literal">bugs</tt> - A list of bug URLs and their statuses. The list is separated
+by the new-line character (\n) and each entry is in format
+'&lt;URL&gt; &lt;status&gt;'. Currently, bzrlib uses only status 'fixed'. See
+<a class="reference external" href="../en/user-guide/index.html#bug-trackers">Bug Trackers</a> for more details about using this feature.</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</body>
+</html>

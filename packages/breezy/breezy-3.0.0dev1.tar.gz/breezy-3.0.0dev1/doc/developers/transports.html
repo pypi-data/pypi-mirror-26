@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Developer guide to bzrlib transports</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="developer-guide-to-bzrlib-transports">
+<h1 class="title">Developer guide to bzrlib transports</h1>
+
+<p>This guide describes the <cite>Transport</cite> classes that Bazaar uses for most
+local and remote file access.  (Working tree files are the major
+exception (<cite>bug 606249 &lt;https://bugs.launchpad.net/bzr/+bug/606249&gt;</cite>).</p>
+<div class="section" id="handling-symlinks">
+<h1>Handling symlinks</h1>
+<p>A symlink creates an alias where files or directories can be accessed by a
+different name.  Symlinks are useful but raise a few annoying cases for
+bzr.</p>
+<p>It's important to have tests for symlinks but these tests can't run on
+Windows, so you need eg</p>
+<pre class="literal-block">
+_test_needs_features = [tests.SymlinkFeature]
+</pre>
+<p>or</p>
+<pre class="literal-block">
+self.requireFeature(tests.SymlinkFeature)
+</pre>
+<p>Bazaar versions symlinks as objects in their own right, whose content is
+the path they point to.  bzr doesn't care whether a versioned
+symlink is absolute or relative; or whether it points inside or outside
+the working tree; or whether its referent exists or not.  In Unix the
+target of a symlink is a byte string; bzr treats this as a Unicode string
+in the filesystem encoding (<cite>osutils._fs_enc</cite>).</p>
+<p>So when we say <tt class="docutils literal">bzr add symlink</tt>, this should always add the symlink to
+its containing working tree, and never dereference the symlink.</p>
+<p>However, <tt class="docutils literal">bzr add symlink/file</tt> shouldn't add <tt class="docutils literal">file</tt> as a child of
+<tt class="docutils literal">symlink</tt>.  (Symlinks don't have files underneath them: they may point to
+a directory which contains children, but if the symlink was pointed
+somewhere else those children would be unaffected.)  This could either add
+the file in its containing working tree, or fail outright.</p>
+<p>One interesting case for this is</p>
+<pre class="literal-block">
+bzr add ~/dev/bug123/a.c
+</pre>
+<p>where <tt class="docutils literal">~/dev</tt> is actually a symlink to <tt class="docutils literal">/srv/dev/joe/</tt>.  In this case
+clearly the user does want us to follow the symlink to open the tree.</p>
+<p>As of bzr2.2, when we open a <cite>WorkingTree</cite>, we typically immediately
+compute its real path and store that as <tt class="docutils literal">.basedir</tt>, but <cite>BzrDir</cite> stores
+its apparent path.  (This may not be the best thing.)</p>
+<div class="section" id="useful-functions">
+<h2>Useful functions</h2>
+<p><cite>bzrlib.osutils.dereference_path</cite> does the commonly useful operation of
+resolving the directory part of a path, but leaving the filename
+untouched.  In other words</p>
+<pre class="literal-block">
+ln -s x a
+ln -s y x/b
+dereference_path('a/b') =&gt; 'x/b'
+</pre>
+</div>
+<div class="section" id="relative-paths-beyond-symlinks">
+<h2>Relative paths beyond symlinks</h2>
+<p>Another interesting case is when a control directory contains a relative
+path, perhaps from a branch to its master or from a working tree to its
+branch.  If it contains <tt class="docutils literal">../</tt> parts as it typically will, these may have
+different effects depending on whether they're looked up relative to the
+real path or the apparent path given by the user.  It may be that some
+users expect different behaviours at different times.</p>
+<p>Resolving the path relative to the real directory makes it somewhat more
+consistent with what you would see by in a shell entering that directory
+and then opening the given name.  It may also make things more consistent
+when there are multiple links to the same bzrdir.  However it may cause
+problems when using a transport that hides symlinks.</p>
+<p>We could possibly handle this by doing less path arithmetic and asking the
+OS or server to open the path including <tt class="docutils literal">..</tt> and other relative
+elements, but that might cause other problems.  HTTP servers may do their
+own path arithmetic before passing it to the OS.</p>
+</div>
+<div class="section" id="transports-that-hide-symlinks">
+<h2>Transports that hide symlinks</h2>
+<p>On local, SFTP and bzr+ssh transports, we can directly see symlinks as
+symlinks.  Over HTTP (and FTP?) they're expanded by the server and we
+cannot detect them.  This can cause problems when bzr follows relative
+paths because typically we will join the paths, and we may do this
+inconsistently with how the server, which can see the symlinks, would do.</p>
+</div>
+<div class="section" id="symlinks-and-chroottransports">
+<h2>Symlinks and ChrootTransports</h2>
+<p>bzr has an internal concept of a <cite>ChrootTransport</cite> that locks access into
+a particular directory.  Symlinks should not break out of a chroot jail
+which implies they should be expanded and checked within bzrlib.
+(At least as long as the transport lets us see the symlink; otherwise it
+may not be possible.)</p>
+<blockquote>
+<!-- vim: ft=rst sw=4 -->
+</blockquote>
+</div>
+</div>
+</div>
+</body>
+</html>

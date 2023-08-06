@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>KnitPack repository format</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="knitpack-repository-format">
+<h1 class="title">KnitPack repository format</h1>
+
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#using-knitpack-repositories" id="id1">Using KnitPack repositories</a><ul>
+<li><a class="reference internal" href="#motivation" id="id2">Motivation</a></li>
+<li><a class="reference internal" href="#preparation" id="id3">Preparation</a></li>
+<li><a class="reference internal" href="#creating-a-new-knitpack-branch" id="id4">Creating a new knitpack branch</a></li>
+<li><a class="reference internal" href="#creating-a-new-knitpack-repository" id="id5">Creating a new knitpack repository</a></li>
+<li><a class="reference internal" href="#upgrading-an-existing-branch-or-repository-to-knitpack-format" id="id6">Upgrading an existing branch or repository to knitpack format</a></li>
+<li><a class="reference internal" href="#starting-a-new-knitpack-branch-from-one-in-an-older-format" id="id7">Starting a new knitpack branch from one in an older format</a></li>
+<li><a class="reference internal" href="#testing-packs-for-bzr-svn-users" id="id8">Testing packs for bzr-svn users</a></li>
+<li><a class="reference internal" href="#reporting-problems" id="id9">Reporting problems</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#technical-notes" id="id10">Technical notes</a></li>
+</ul>
+</div>
+<div class="section" id="using-knitpack-repositories">
+<h1><a class="toc-backref" href="#id1">Using KnitPack repositories</a></h1>
+<div class="section" id="motivation">
+<h2><a class="toc-backref" href="#id2">Motivation</a></h2>
+<p>KnitPack is a new repository format for Bazaar, which is expected to be
+faster both locally and over the network, is usually more compact, and
+will work with more FTP servers.</p>
+<p>Our benchmarking results to date have been very promising. We fully expect
+to make a pack-based format the default in the near future.  We would
+therefore like as many people as possible using KnitPack repositories,
+benchmarking the results and telling us where improvements are still needed.</p>
+</div>
+<div class="section" id="preparation">
+<h2><a class="toc-backref" href="#id3">Preparation</a></h2>
+<p>A small percentage of existing repositories may have some inconsistent
+data within them. It's is a good idea to check the integrity of your
+repositories before migrating them to knitpack format. To do this, run:</p>
+<pre class="literal-block">
+bzr check
+</pre>
+<p>If that reports a problem, run this command:</p>
+<pre class="literal-block">
+bzr reconcile
+</pre>
+<p>Note that this can take many hours for repositories with deep history
+so be sure to set aside some time for this if it is required.</p>
+</div>
+<div class="section" id="creating-a-new-knitpack-branch">
+<h2><a class="toc-backref" href="#id4">Creating a new knitpack branch</a></h2>
+<p>If you're starting a project from scratch, it's easy to make it a
+<tt class="docutils literal">knitpack</tt> one. Here's how:</p>
+<pre class="literal-block">
+cd my-stuff
+bzr init --pack-0.92
+bzr add
+bzr commit -m &quot;initial import&quot;
+</pre>
+<p>In other words, use the normal sequence of commands but add the
+<tt class="docutils literal"><span class="pre">--pack-0.92</span></tt> option to the <tt class="docutils literal">init</tt> command.</p>
+<p><strong>Note:</strong> In bzr 0.92, this format was called <tt class="docutils literal"><span class="pre">knitpack-experimental</span></tt>.</p>
+</div>
+<div class="section" id="creating-a-new-knitpack-repository">
+<h2><a class="toc-backref" href="#id5">Creating a new knitpack repository</a></h2>
+<p>If you're starting a project from scratch and wish to use a shared repository
+for branches, you can make it a <tt class="docutils literal">knitpack</tt> repository like this:</p>
+<pre class="literal-block">
+cd my-repo
+bzr init-repo --pack-0.92 .
+cd my-stuff
+bzr init
+bzr add
+bzr commit -m &quot;initial import&quot;
+</pre>
+<p>In other words, use the normal sequence of commands but add the
+<tt class="docutils literal"><span class="pre">--pack-0.92</span></tt> option to the <tt class="docutils literal"><span class="pre">init-repo</span></tt> command.</p>
+</div>
+<div class="section" id="upgrading-an-existing-branch-or-repository-to-knitpack-format">
+<h2><a class="toc-backref" href="#id6">Upgrading an existing branch or repository to knitpack format</a></h2>
+<p>If you have an existing branch and wish to migrate it to
+a <tt class="docutils literal">knitpack</tt> format, use the <tt class="docutils literal">upgrade</tt> command like this:</p>
+<pre class="literal-block">
+bzr upgrade --pack-0.92 path-to-my-branch
+</pre>
+<p>If you are using a shared repository, run:</p>
+<pre class="literal-block">
+bzr upgrade --pack-0.92 ROOT_OF_REPOSITORY
+</pre>
+<p>to upgrade the history database. Note that this will not
+alter the branch format of each branch, so
+you will need to also upgrade each branch individually
+if you are upgrading from an old (e.g. &lt; 0.17) bzr.
+More modern bzr's will already have the branch format at
+our latest branch format which adds support for tags.</p>
+</div>
+<div class="section" id="starting-a-new-knitpack-branch-from-one-in-an-older-format">
+<h2><a class="toc-backref" href="#id7">Starting a new knitpack branch from one in an older format</a></h2>
+<p>This can be done in one of several ways:</p>
+<ol class="arabic simple">
+<li>Create a new branch and pull into it</li>
+<li>Create a standalone branch and upgrade its format</li>
+<li>Create a knitpack shared repository and branch into it</li>
+</ol>
+<p>Here are the commands for using the <tt class="docutils literal">pull</tt> approach:</p>
+<pre class="literal-block">
+bzr init --pack-0.92 my-new-branch
+cd my-new-branch
+bzr pull my-source-branch
+</pre>
+<p>Here are the commands for using the <tt class="docutils literal">upgrade</tt> approach:</p>
+<pre class="literal-block">
+bzr branch my-source-branch my-new-branch
+cd my-new-branch
+bzr upgrade --pack-0.92 .
+</pre>
+<p>Here are the commands for the shared repository approach:</p>
+<pre class="literal-block">
+cd my-repo
+bzr init-repo --pack-0.92 .
+bzr branch my-source-branch my-new-branch
+cd my-new-branch
+</pre>
+<p>As a reminder, any of the above approaches can fail if the source branch
+has inconsistent data within it and hasn't been reconciled yet. Please
+be sure to check that before reporting problems.</p>
+</div>
+<div class="section" id="testing-packs-for-bzr-svn-users">
+<h2><a class="toc-backref" href="#id8">Testing packs for bzr-svn users</a></h2>
+<p>If you are using <tt class="docutils literal"><span class="pre">bzr-svn</span></tt> or are testing the prototype subtree support,
+you can still use and assist in testing KnitPacks. The commands to use
+are identical to the ones given above except that the name of the format
+to use is <tt class="docutils literal"><span class="pre">knitpack-subtree-experimental</span></tt>.</p>
+<p>WARNING: Note that the subtree formats, <tt class="docutils literal"><span class="pre">dirstate-subtree</span></tt> and
+<tt class="docutils literal"><span class="pre">knitpack-subtree-experimental</span></tt>, are <strong>not</strong> production strength yet and
+may cause unexpected problems. They are required for the bzr-svn
+plug-in but should otherwise only be used by people happy to live on the
+bleeding edge. If you are using bzr-svn, you're on the bleeding edge anyway.
+:-)</p>
+</div>
+<div class="section" id="reporting-problems">
+<h2><a class="toc-backref" href="#id9">Reporting problems</a></h2>
+<p>If you need any help or encounter any problems, please contact the developers
+via the usual ways, i.e. chat to us on IRC or send a message to our mailing
+list. See <a class="reference external" href="http://wiki.bazaar.canonical.com/BzrSupport">http://wiki.bazaar.canonical.com/BzrSupport</a> for contact details.</p>
+</div>
+</div>
+<div class="section" id="technical-notes">
+<h1><a class="toc-backref" href="#id10">Technical notes</a></h1>
+<p>Bazaar 0.92 adds a new format (experimental at first) implemented in
+<tt class="docutils literal">bzrlib.repofmt.pack_repo.py</tt>.</p>
+<p>This format provides a knit-like interface which is quite compatible
+with knit format repositories: you can get a VersionedFile for a
+particular file-id, or for revisions, or for the inventory, even though
+these do not correspond to single files on disk.</p>
+<p>The on-disk format is that the repository directory contains these
+files and subdirectories:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>packs/</td>
+<td>completed readonly packs</td>
+</tr>
+<tr><td>indices/</td>
+<td>indices for completed packs</td>
+</tr>
+<tr><td>upload/</td>
+<td>temporary files for packs currently being
+written</td>
+</tr>
+<tr><td>obsolete_packs/</td>
+<td>packs that have been repacked and are no
+longer normally needed</td>
+</tr>
+<tr><td>pack-names</td>
+<td>index of all live packs</td>
+</tr>
+<tr><td>lock/</td>
+<td>lockdir</td>
+</tr>
+</tbody>
+</table>
+<p>Note that for consistency we always write &quot;indices&quot; not &quot;indexes&quot;.</p>
+<p>This is implemented on top of pack files, which are written once from
+start to end, then left alone.  A pack consists of a body file, plus
+several index files.  There are four index files for each pack, which
+have the same basename and an extension indicating the purpose of the
+index:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="15%" />
+<col width="35%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">extn</th>
+<th class="head">Purpose</th>
+<th class="head">Key</th>
+<th class="head">References</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><tt class="docutils literal">.tix</tt></td>
+<td>File texts</td>
+<td><tt class="docutils literal">file_id, revision_id</tt></td>
+<td>per-file parents,
+compression basis
+per-file parents</td>
+</tr>
+<tr><td><tt class="docutils literal">.six</tt></td>
+<td>Signatures</td>
+<td><tt class="docutils literal">revision_id,</tt></td>
+<td><ul class="first last simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr><td><tt class="docutils literal">.rix</tt></td>
+<td>Revisions</td>
+<td><tt class="docutils literal">revision_id,</tt></td>
+<td>revision parents</td>
+</tr>
+<tr><td><tt class="docutils literal">.iix</tt></td>
+<td>Inventory</td>
+<td><tt class="docutils literal">revision_id,</tt></td>
+<td>revision parents,
+compression base</td>
+</tr>
+</tbody>
+</table>
+<p>Indices are accessed through the <tt class="docutils literal">bzrlib.index.GraphIndex</tt> class.
+Indices are stored as sorted files on disk.  Each line is one record,
+and contains:</p>
+<blockquote>
+<ul class="simple">
+<li>key fields</li>
+<li>a value string - for all these indices, this is an ascii decimal pair
+of &quot;offset length&quot; giving the position of the referenced data within
+the pack body file</li>
+<li>a list of zero or more reference lists</li>
+</ul>
+</blockquote>
+<p>The reference lists let a graph be stored within the index.  Each
+reference list entry points to another entry in the same index.  The
+references are represented as a byte offset for the target within the
+index file.</p>
+<p>When a compression base is given, it indicates that the body of the text
+or inventory is a forward delta from the referenced revision.  The
+compression base list must have length 0 or 1.</p>
+<p>Like packs, indexes are written only once and then unmodified.  A
+GraphIndex builder is a mutable in-memory graph that can be sorted,
+cross-referenced and written out when the write group completes.</p>
+<p>There can also be index entries with a value of 'a' for absent.  These
+records exist just to be pointed to in a graph.  This is used, for
+example, to give the revision-parent pointer when the parent revision is
+in a previous pack.</p>
+<p>The data content for each record is a knit data chunk.  The knits are
+always unannotated - the annotations must be generated when needed.
+(We'd like to cache/memoize the annotations.)  The data hunks can be
+moved between packs without needing to recompress them.</p>
+<p>It is not possible to regenerate an index from the body file, because it
+contains information stored in the knit index that's not in the body.
+(In particular, the per-file graph is only stored in the index.)
+We would like to change this in a future format.</p>
+<p>The lock is a regular LockDir lock.  The lock is only held for a much
+reduced scope, while updating the pack-names file.  The bulk of the
+insertion can be done without the repository locked.  This is an
+implementation detail; the repository user should still call
+<tt class="docutils literal">repository.lock_write</tt> at the regular time but be aware this does not
+correspond to a physical mutex.</p>
+<p>Read locks control caching but do not affect writers.</p>
+<p>The newly-added repository write group concept is very important to
+KnitPack repositories.  When <tt class="docutils literal">start_write_group</tt> is called, a new
+temporary pack is created and all modifications to the repository will
+go into it until either <tt class="docutils literal">commit_write_group</tt> or <tt class="docutils literal">abort_write_group</tt>
+is called, at which time it is either finished and moved into place or
+discarded respectively.  Write groups cannot be nested, only one can be
+underway at a time on a Repository instance and they must occur within a
+write lock.</p>
+<p>Normally the data for each revision will be entirely within a single
+pack but this is not required.</p>
+<p>When a pack is finished, it gets a final name based on the md5 of all
+the data written into the pack body file.</p>
+<p>The <tt class="docutils literal"><span class="pre">pack-names</span></tt> file gives the list of all finished non-obsolete
+packs.  (This should always be the same as the list of files in the
+<tt class="docutils literal">packs/</tt> directory, but the file is needed for read-only HTTP clients
+that can't easily list directories, and it includes other information.)
+The constraint on the <tt class="docutils literal"><span class="pre">pack-names</span></tt> list is that every file mentioned
+must exist in the <tt class="docutils literal">packs/</tt> directory.</p>
+<p>In rare cases, when a writer is interrupted, about-to-be-removed packs
+may still be present in the directory but removed from the list.</p>
+<p>As well as the list of names, the pack-names file also contains the
+size, in bytes, of each of the four indices.  This is used to bootstrap
+bisection search within the indices.</p>
+<p>In normal use, one pack will be created for each commit to a repository.
+This would build up to an inefficient number of files over time, so a
+<tt class="docutils literal">repack</tt> operation is available to recombine them, by producing larger
+files containing data on multiple revisions.  This can be done manually
+by running <tt class="docutils literal">bzr pack</tt>, and it also may happen automatically when a
+write group is committed.</p>
+<p>The repacking strategy used at the moment tries to balance not doing too
+much work during commit with not having too many small files left in the
+repository.  The algorithm is roughly this: the total number of
+revisions in the repository is expressed as a decimal number, e.g.
+&quot;532&quot;.  Then we'll repack until we have five packs containing a hundred
+revisions each, three packs containing ten revisions each, and two packs
+with single revisions.  This means that each revision will normally
+initially be created in a single-revision pack, then moved to a
+ten-revision pack, then to a 100-pack, and so on.</p>
+<p>As with other repositories, in normal use data is only inserted.
+However, in some circumstances we may want to garbage-collect or prune
+existing data, or reconcile indexes.</p>
+<!-- vim: tw=72 ft=rst expandtab -->
+</div>
+</div>
+</body>
+</html>

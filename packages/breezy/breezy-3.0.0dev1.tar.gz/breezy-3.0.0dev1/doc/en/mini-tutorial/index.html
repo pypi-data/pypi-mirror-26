@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Breezy in five minutes</title>
+<link rel="stylesheet" href="../../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="breezy-in-five-minutes">
+<h1 class="title">Breezy in five minutes</h1>
+
+<div class="section" id="introduction">
+<h1>Introduction</h1>
+<p>Breezy is a distributed version control system that makes it easier for
+people to work together on software projects.</p>
+<p>Over the next five minutes, you'll learn how to put your files under
+version control, how to record changes to them, examine your work, publish
+it and send your work for merger into a project's trunk.</p>
+</div>
+<div class="section" id="installation">
+<h1>Installation</h1>
+<p>This guide doesn't describe how to install Breezy but it's usually very
+easy. You can find installation instructions at:</p>
+<ul class="simple">
+<li><strong>GNU/Linux:</strong> Breezy is probably in your GNU/Linux distribution already.</li>
+<li><strong>Windows:</strong> <a class="reference external" href="http://wiki.bazaar.canonical.com/WindowsDownloads">installation instructions for Windows</a>.</li>
+<li><strong>Mac OS X:</strong> <a class="reference external" href="http://wiki.bazaar.canonical.com/MacOSXBundle">installation instructions for Mac OS X</a>.</li>
+</ul>
+<p>For other platforms and to install from source code, see the <a class="reference external" href="http://wiki.bazaar.canonical.com/Download">Download</a>
+and <a class="reference external" href="http://wiki.bazaar.canonical.com/InstallationFaq">Installation</a> pages.</p>
+</div>
+<div class="section" id="introducing-yourself">
+<h1>Introducing yourself</h1>
+<p>Breezy records changes to source code, and it records who made the change.
+The person is identified by their name and email address.  (If you're
+concerned about spam, you don't need to use a real address that you
+actually read, but the convention is that it looks like an email address.)</p>
+<p>Before you start working, let's tell Breezy who you are.  Using your name
+and email address, instead of John Doe's, type:</p>
+<pre class="literal-block">
+$ brz whoami &quot;John Doe &lt;john.doe&#64;gmail.com&gt;&quot;
+</pre>
+<p>You can check what identity is stored in Breezy's configuration:</p>
+<pre class="literal-block">
+$ brz whoami
+John Doe &lt;john.doe&#64;gmail.com&gt;
+</pre>
+</div>
+<div class="section" id="starting-a-new-project">
+<h1>Starting a new project</h1>
+<p>Let's suppose we want to store a new project under Breezy.  First, we'll
+make a <em>repository directory</em> to hold all our work related to this
+project, where developers can create branches to test development of
+specific features or, more generally, modifications to the working file
+set.</p>
+<p>After creating the repository, change to that directory, and create the
+project's main trunk branch.</p>
+<pre class="literal-block">
+$ brz init-repo sample
+Shared repository with trees (format: 2a)
+Location:
+  shared repository: sample
+$ brz init sample/trunk
+Created a repository tree (format: 2a)
+Using shared repository: /home/john/sample/
+</pre>
+</div>
+<div class="section" id="adding-files">
+<h1>Adding files</h1>
+<p>Now that we have the trunk, we need to move to that directory and
+create some example files for the first version of that project.  Create
+a file <tt class="docutils literal">test1.txt</tt> using a text editor (like emacs, nano, or notepad),
+and save it.  Then we'll &quot;add&quot; the file, which tells brz we want it to
+track changes:</p>
+<pre class="literal-block">
+$ cd sample/trunk
+# create the file test1.txt now
+$ brz add test1.txt
+adding test1.txt
+</pre>
+<p>and then commit, which saves a snapshot of all versioned files:</p>
+<pre class="literal-block">
+$ brz commit -m &quot;Added first line of text&quot;
+added test1.txt
+Committed revision 1.
+</pre>
+</div>
+<div class="section" id="making-changes-to-your-files">
+<h1>Making changes to your files</h1>
+<p>Let's change a file and commit that change to your branch.</p>
+<p>Edit <tt class="docutils literal">test1.txt</tt> in your favourite editor, then use <tt class="docutils literal">brz add</tt> to tell brz
+to track changes to this file</p>
+<pre class="literal-block">
+$ echo test test test &gt; test1.txt
+$ brz add test1.txt
+adding test1.txt
+</pre>
+<p><cite>brz diff</cite> shows the changes between the last revision in this branch, and your
+current tree (or, with the <tt class="docutils literal"><span class="pre">-r</span></tt> option, between any two trees).</p>
+<pre class="literal-block">
+$ brz diff
+=== modified file 'test1.txt'
+--- test1.txt   2007-10-08 17:56:14 +0000
++++ test1.txt   2007-10-08 17:46:22 +0000
+&#64;&#64; -0,0 +1,1 &#64;&#64;
++test test test
+</pre>
+<p>Commit your work to the Breezy branch:</p>
+<pre class="literal-block">
+$ brz commit -m &quot;Added first line of text&quot;
+Committing to: /home/john/sample/trunk/
+added test1.txt
+Committed revision 1.
+</pre>
+</div>
+<div class="section" id="viewing-the-revision-log">
+<h1>Viewing the revision log</h1>
+<p>You can see the history of your branch by browsing its log:</p>
+<pre class="literal-block">
+$ brz log
+revno: 1
+committer: John Doe &lt;john.doe&#64;gmail.com&gt;
+branch nick: trunk
+timestamp: Mon 2006-10-08 17:46:22 +0000
+message:
+  Initial import
+</pre>
+</div>
+<div class="section" id="publishing-your-branch-on-launchpad">
+<h1>Publishing your branch on Launchpad</h1>
+<p>Launchpad is a suite of development and hosting tools for
+software projects. You can use it to publish your branch.  (You can
+also publish branches onto your own server or other hosting services.)</p>
+<p>The steps to publishing branches on Launchpad are:</p>
+<ol class="arabic simple">
+<li>Create a Launchpad account: visit the <a class="reference external" href="https://launchpad.net/+login">Launchpad login page</a> and choose to create a new account.</li>
+</ol>
+<ol class="arabic" start="2">
+<li><p class="first">Breezy uses the SSH encryption and authentication protocol to connect
+to Launchpad.  You need to first <a class="reference external" href="https://help.launchpad.net/YourAccount/CreatingAnSSHKeyPair">create an SSH key</a> on your own computer,
+by running the command:</p>
+<pre class="literal-block">
+$ ssh-keygen
+</pre>
+</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><a class="reference external" href="https://launchpad.net/~/+editsshkeys">Upload your SSH public key to Launchpad</a>.</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><a class="reference external" href="https://help.launchpad.net/Teams/CreatingAndRunning">Make a team for your project</a>.  Even if you're starting as the only
+developer on this project, creating a new one now will let you more
+easily add other people later.</li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><a class="reference external" href="https://help.launchpad.net/Projects/Registering">Create a project</a>.</li>
+</ol>
+<ol class="arabic" start="6">
+<li><p class="first">Tell Breezy your Launchpad account name.  If your account is john.doe, type</p>
+<pre class="literal-block">
+$ brz launchpad-login john.doe
+</pre>
+</li>
+<li><p class="first"><a class="reference external" href="https://help.launchpad.net/Code/UploadingABranch">Push the branch for your project</a>.  Once you've committed your changes
+locally, you can publish them as the trunk of your new project by saying</p>
+<blockquote>
+<p>$ brz push lp:~sample-developers/sample/trunk</p>
+</blockquote>
+<p>(Of course, using the team and project names you just chose.)</p>
+</li>
+</ol>
+</div>
+<div class="section" id="creating-your-own-copy-of-another-branch">
+<h1>Creating your own copy of another branch</h1>
+<p>To work with someone else's code, you can make your own copy of their
+branch. Let's take a real-world example, Breezy's GTK interface:</p>
+<pre class="literal-block">
+$ brz init-repo ~/brz-gtk
+$ brz branch lp:~brz/brz-gtk/trunk ~/brz-gtk/john
+Branched 292 revision(s).
+</pre>
+<p>Breezy will download all the files and complete revision history from the
+brz-gtk project's trunk branch and create a copy called <tt class="docutils literal">john</tt>.</p>
+<p>Now, you have your own copy of the branch and can commit changes with
+or without a net connection. You can share your branch at any time by
+publishing it and, if the  brz-gtk team want to use your work, Breezy
+makes it easy for them to merge your branch back into their trunk branch.</p>
+</div>
+<div class="section" id="updating-your-branch-from-the-main-branch">
+<h1>Updating your branch from the main branch</h1>
+<p>While you commit changes to your branch, it's likely that other people will
+also continue to commit code to the parent branch.</p>
+<p>To make sure your branch stays up to date, you should merge changes from
+the parent into your personal branch:</p>
+<pre class="literal-block">
+$ brz merge
+Merging from saved parent location: http://bazaar.launchpad.net/~brz/brz-gtk/trunk
+All changes applied successfully.
+</pre>
+<p>Check what has changed:</p>
+<pre class="literal-block">
+$ brz diff
+</pre>
+<p>If different branches have made changes to the same areas of the same
+files, then merging them may generate conflicts.  When this happens,
+Breezy puts text markers like <tt class="docutils literal"><span class="pre">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></tt> into the files, and records them
+in a list of conflicted files.  You should edit the files to reflect the
+way you want to resolve the conflicts, use <tt class="docutils literal">brz diff</tt> to check the
+changes, and then <tt class="docutils literal">brz resolve</tt> to mark them as resolved.</p>
+<p>If you're happy with the changes, you can commit them to your personal
+branch:</p>
+<pre class="literal-block">
+$ brz commit -m &quot;Merge from main branch&quot;
+Committed revision 295.
+</pre>
+</div>
+<div class="section" id="learning-more">
+<h1>Learning more</h1>
+<p>You can find out more about Breezy in the
+<a class="reference external" href="../user-guide/index.html">Breezy User Guide</a>.</p>
+<p>To learn about Breezy on the command-line:</p>
+<pre class="literal-block">
+$ brz help
+</pre>
+<p>To learn about the ''foo'' topic or command:</p>
+<pre class="literal-block">
+$ brz help foo
+</pre>
+</div>
+<div class="section" id="licence">
+<h1>Licence</h1>
+<p>Copyright 2007-2011 Canonical Ltd. Breezy is free software, and you
+may use, modify and redistribute both Breezy and this document under
+the terms of the GNU General Public License version 2 or later. See
+&lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+</div>
+</div>
+</body>
+</html>

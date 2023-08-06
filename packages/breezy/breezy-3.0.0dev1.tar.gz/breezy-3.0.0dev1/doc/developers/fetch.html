@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Fetching data</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="fetching-data">
+<h1 class="title">Fetching data</h1>
+
+<div class="section" id="overview-of-a-fetch">
+<h1>Overview of a fetch</h1>
+<p>Inside bzr, a typical fetch happens like this:</p>
+<ul class="simple">
+<li>a user runs a command like <tt class="docutils literal">bzr branch</tt> or <tt class="docutils literal">bzr pull</tt></li>
+<li><tt class="docutils literal">Repository.fetch</tt> is called (by a higher-level method such as
+<tt class="docutils literal">ControlDir.sprout</tt>, <tt class="docutils literal">Branch.fetch</tt>, etc).</li>
+<li>An <tt class="docutils literal">InterRepository</tt> object is created.  The exact implementation of
+<tt class="docutils literal">InterRepository</tt> chosen depends on the format/capabilities of the
+source and target repos.</li>
+<li>The source and target repositories are compared to determine which data
+needs to be transferred.</li>
+<li>The repository data is copied.  Often this is done by creating a
+<tt class="docutils literal">StreamSource</tt> and <tt class="docutils literal">StreamSink</tt> from the source and target
+repositories and feeding the stream from the source into the sink, but
+some <tt class="docutils literal">InterRepository</tt> implementations do differently.</li>
+</ul>
+</div>
+<div class="section" id="how-objects-to-be-transferred-are-determined">
+<h1>How objects to be transferred are determined</h1>
+<p>See <tt class="docutils literal">InterRepository._walk_to_common_revisions</tt>.  The basic idea is to
+do a breadth-first search in the source repository's revision graph
+(starting from the head or heads the caller asked for), and look in the
+target repository to see if those revisions are already present.
+Eventually this will find the common ancestors in both graphs, and thus
+the set of revisions to be copied has been identified.</p>
+<p>All inventories for the copied revisions need to be present (and all
+parent inventories at the stacking boundary too, to support stacking).</p>
+<p>All texts versions introduced by those inventories need to be transferred
+(but see also stacking constraints).</p>
+</div>
+<div class="section" id="fetch-specs">
+<h1>Fetch specs</h1>
+<p>The most <tt class="docutils literal">fetch</tt> methods accept a <tt class="docutils literal">fetch_spec</tt> parameter.  This is how
+the caller controls what is fetched: e.g. all revisions for a given head
+(that aren't already present in the target), the full ancestry for one or
+more heads, or even the full contents of the source repository.</p>
+<p>The <tt class="docutils literal">fetch_spec</tt> parameter is an object that implements the interface
+defined by <tt class="docutils literal">AbstractSearchResult</tt> in <tt class="docutils literal">bzrlib.graph</tt>.  It describes
+which keys should be fetched.  Current implementations are
+<tt class="docutils literal">SearchResult</tt>, <tt class="docutils literal">PendingAncestryResult</tt>, <tt class="docutils literal">EmptySearchResult</tt>, and
+<tt class="docutils literal">EverythingResult</tt>.  Some have options controlling if missing revisions
+cause errors or not, etc.</p>
+<p>There are also some “search” objects, which can be used to conveniently
+construct a search result for common cases: <tt class="docutils literal">EverythingNotInOther</tt> and
+<tt class="docutils literal">NotInOtherForRevs</tt>.  They provide an <tt class="docutils literal">execute</tt> method that performs
+the search and returns a search result.</p>
+<p>Also, <tt class="docutils literal">Graph._make_breadth_first_searcher</tt> returns an object with a
+<tt class="docutils literal">get_result</tt> method that returns a search result.</p>
+</div>
+<div class="section" id="streams">
+<h1>Streams</h1>
+<p>A <strong>stream</strong> is an iterable of (substream type, substream) pairs.
+The <strong>substream type</strong> is a <tt class="docutils literal">str</tt> that will be one of <tt class="docutils literal">texts</tt>,
+<tt class="docutils literal">inventories</tt>, <tt class="docutils literal"><span class="pre">inventory-deltas</span></tt>, <tt class="docutils literal">chk_bytes</tt>, <tt class="docutils literal">revisions</tt> or
+<tt class="docutils literal">signatures</tt>.  A <strong>substream</strong> is a record stream.  The format of those
+records depends on the repository format being streamed, except for
+<tt class="docutils literal"><span class="pre">inventory-deltas</span></tt> records which are format-independent.</p>
+<p>A stream source can be constructed with <tt class="docutils literal">repo._get_source(to_format)</tt>,
+and it provides a <tt class="docutils literal">get_stream(search)</tt> method (among others).  A stream
+sink can be constructed with <tt class="docutils literal">repo._get_sink()</tt>, and provides an
+<tt class="docutils literal">insert_stream(stream, src_format, resume_tokens)</tt> method (among
+others).</p>
+</div>
+<div class="section" id="stacking-constraints">
+<h1>Stacking constraints</h1>
+<p><strong>In short the rule is:</strong> &quot;repositories must hold revisions' parent
+inventories and their new texts (or else all texts for those revisions).&quot;</p>
+<p>This is sometimes called &quot;the stacking invariant.&quot;</p>
+<div class="section" id="why-that-rule">
+<h2>Why that rule?</h2>
+<p>A stacked repository needs to be capable of generating a complete stream
+for the revisions it does hold without access to its fallback
+repositories<a class="footnote-reference" href="#id3" id="id1"><sup>1</sup></a>.  &quot;Complete&quot; here means that the stream for a revision (or
+set of revisions) can be inserted into a repository that already contains
+the parent(s) of that revision, and that repository will have a fully
+usable copy of that revision: a working tree can be built for that
+revision, etc.</p>
+<p>Assuming for a moment the stream has the necessary inventory, signature
+and CHK records to have a usable revision, what texts are required to have
+a usable revision?  The simple way to satisfy the requirement is to have
+<em>every</em> text for every revision at the stacking boundary.  Thus the
+revisions at the stacking boundary and all their descendants have their
+texts present and so can be fully reconstructed.  But this is expensive:
+it implies each stacked repository much contain <em>O(tree)</em> data even for a
+single revision of a 1-line change, and also implies transferring
+<em>O(tree)</em> data to fetch that revision.</p>
+<p>Because the goal is a usable revision <em>when added to a repository with the
+parent revision(s)</em> most of those texts will be redundant.  The minimal
+set that is needed is just those texts that are new in the revisions in
+our repository.  However, we need enough inventory data to be able to
+determine that set of texts.  So to make this possible every revision must
+have its parent inventories present so that the inventory delta between
+revisions can be calculated, and of course the CHK pages associated with
+that delta.  In fact the entire inventory does not need to be present,
+just enough of it to find the delta (assuming a repository format, like
+2a, that allows only part of an inventory to be stored).  Thus the stacked
+repository can contain only <em>O(changes)</em> data<a class="footnote-reference" href="#id4" id="id2"><sup>2</sup></a> and still deliver
+complete streams of that data.</p>
+<p>What about revisions at the stacking boundary with more than one parent?
+All of the parent inventories must be present, as a client may ask for a
+stream up to any parent, not just the left-hand parent.  If any parent is
+absent then all texts must be present instead.  Otherwise there will be
+the strange situation where some fetches of a revision will succeed and
+others fail depending the precise details of the fetch.</p>
+</div>
+<div class="section" id="implications-for-fetching">
+<h2>Implications for fetching</h2>
+<p>Fetches must retrieve the records necessary to satisfy that rule.  The
+stream source will attempt to send the necessary records, and the stream
+sink will check for any missing records and make a second fetch for just
+those missing records before committing the write group.</p>
+<p>Our repository implementations check this constraint is satisfied before
+committing a write group, to prevent a bad stream from creating a corrupt
+repository.  So a fetch from a bad source (e.g. a damaged repository, or a
+buggy foreign-format import) may trigger <tt class="docutils literal">BzrCheckError</tt> during
+<tt class="docutils literal">commit_write_group</tt>.</p>
+<p>To fetch from a stacked repository via a smart server, the smart client:</p>
+<ul class="simple">
+<li>first fetches a stream of as many of the requested revisions as possible
+from the initial repository,</li>
+<li>then while there are still missing revisions and untried fallback
+repositories fetches the outstanding revisions from the next fallback
+until either all revisions have been found (success) or the list of
+fallbacks has been exhausted (failure).</li>
+</ul>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>This is not just a theoretical concern.  The smart server always
+opens repositories without opening fallbacks, as it cannot assume it
+can access the fallbacks that the client can.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Actually <em>O(changes)</em> isn't quite right in practice.  In the
+current implementation the fulltext of a changed file must be
+transferred, not just a delta, so a 1-line change to a 10MB file will
+still transfer 10MB of text data.  This is because current formats
+require records' compression parents to be present in the same
+repository.</td></tr>
+</tbody>
+</table>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</div>
+</body>
+</html>

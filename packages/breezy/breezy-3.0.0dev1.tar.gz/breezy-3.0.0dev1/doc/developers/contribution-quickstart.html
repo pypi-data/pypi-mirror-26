@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Contributing to Bazaar</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="contributing-to-bazaar">
+<h1 class="title">Contributing to Bazaar</h1>
+
+<div class="section" id="talk-to-us">
+<h1>Talk to us</h1>
+<p>If you want to fix or improve something in Bazaar, we want to help you.
+You can ask at any time for help, on the list, on irc, or through a merge
+proposal on Launchpad.</p>
+<p>In particular, the rostered
+<a class="reference external" href="http://wiki.bazaar.canonical.com/PatchPilot">Patch Pilot</a>
+is an experienced developer who will help you get your changes in, through
+code review, advice, debugging, writing tests, or whatever it takes.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://lists.ubuntu.com/mailman/listinfo/bazaar">Bazaar mailing list</a></li>
+<li>IRC in channel <tt class="docutils literal">#bzr</tt> on <tt class="docutils literal">irc.ubuntu.com</tt></li>
+</ul>
+</div>
+<div class="section" id="starting">
+<h1>Starting</h1>
+<p>Before starting on a change it's a good idea to either file a bug, find a
+relevant existing bug, or send a proposal to the list.  If there is a bug
+you should set it to &quot;In Progress&quot; and if you wish assign it to yourself.</p>
+<p>You might like to start with a bug tagged <a class="reference external" href="https://bugs.launchpad.net/bzr/+bugs?field.tag=easy">easy</a>.</p>
+<p>If you are wondering if your understanding of the bug is correct, or if the
+approach you have in mind is likely to work, feel to ask about it on the bug,
+in <tt class="docutils literal">#bzr</tt> or on the mailing list.</p>
+</div>
+<div class="section" id="making-a-branch">
+<h1>Making a branch</h1>
+<p>First, get a local copy of Bazaar:</p>
+<pre class="literal-block">
+$ cd $HOME
+$ bzr init-repo bzr
+$ cd bzr
+$ bzr branch lp:bzr bzr.dev
+</pre>
+<p>Now make your own branch; we recommend you include the bug number and also
+a brief description:</p>
+<pre class="literal-block">
+$ bzr branch bzr.dev 123456-status-speed
+</pre>
+<p>and go ahead and commit in there.  Normally you should fix only one bug or
+closely-related cluster of bugs per branch, to make reviews and merges
+flow more smoothly.</p>
+<p>For bugs that exist in older supported branches of bzr like 2.0 or 2.1,
+you might want to fix the bug there so it can go into a bugfix release,
+ie</p>
+<pre class="literal-block">
+$ bzr branch lp:bzr/2.1 bzr.2.1
+$ bzr branch bzr.2.1 123458-2.1-status
+</pre>
+<p>You probably want this configuration in <tt class="docutils literal"><span class="pre">~/.bazaar/locations.conf</span></tt>:</p>
+<pre class="literal-block">
+[/home/USER/bzr]
+push_location = lp:~LAUNCHPAD_USER/bzr/
+push_location:policy = appendpath
+public_branch = http://bazaar.launchpad.net/~LAUNCHPAD_USER/bzr/
+public_branch:policy = appendpath
+</pre>
+<p>with your local and Launchpad usernames inserted.</p>
+</div>
+<div class="section" id="publishing-your-changes">
+<h1>Publishing your changes</h1>
+<p>After you've locally committed your changes, the configuration above
+should be enough that you can push them to Launchpad with a simple</p>
+<pre class="literal-block">
+$ bzr push
+</pre>
+</div>
+<div class="section" id="writing-tests">
+<h1>Writing tests</h1>
+<p>We value test coverage and generally all changes should have or update a
+test.  There is a powerful test framework but it can be hard to find the
+right place to put your test.  Don't hesitate to ask, or to propose a
+merge that does not yet have tests.</p>
+<p>Normally for command-line code you should look in
+<tt class="docutils literal">bzrlib.tests.blackbox</tt> and for library code in <tt class="docutils literal">bzrlib.tests</tt>.  For
+functions on an interface for which there are multiple implementations,
+like <cite>Transport</cite>, look in <tt class="docutils literal">bzrlib.tests.per_transport</tt>.</p>
+<p>It's a good idea to search the tests for something related to the thing
+you're changing and you may find a test you can modify or adapt.</p>
+<p>To run the tests:</p>
+<pre class="literal-block">
+$ ./bzr selftest
+</pre>
+<p>Normally the tests will skip if some library dependencies are not present.
+On Ubuntu, you can install them with this command (you must have source
+repositories enabled in Software Sources):</p>
+<pre class="literal-block">
+$ sudo apt-get build-dep bzr
+</pre>
+<p>To build the binary extensions:</p>
+<pre class="literal-block">
+$ make
+</pre>
+<p>For more information: <a class="reference external" href="testing.html">Testing Guide</a>.</p>
+</div>
+<div class="section" id="proposing-a-merge">
+<h1>Proposing a merge</h1>
+<p>Then propose a merge into bzr; for bzr 2.2 and later you can use the <tt class="docutils literal">bzr
+<span class="pre">lp-propose-merge</span></tt> command.  In the comment for your merge proposal please
+explain what you're trying to do and why.  For <a class="reference external" href="https://code.launchpad.net/~ian-clatworthy/bzr/whats-new-in-2.1/+merge/19677">example</a>:</p>
+<blockquote>
+As discussed on the mailing list, this patch adds a What's New document
+summarising the changes since 2.0.</blockquote>
+<p>If you make additional changes to your branch you don't need to resubmit;
+they'll automatically show up in the merge proposal.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://help.launchpad.net/Code/Review">Launchpad Code Review Help</a>.</li>
+</ul>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</body>
+</html>

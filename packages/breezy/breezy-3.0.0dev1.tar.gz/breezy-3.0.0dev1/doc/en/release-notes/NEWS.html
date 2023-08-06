@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Bazaar Release Notes</title>
+<link rel="stylesheet" href="../../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="bazaar-release-notes">
+<h1 class="title">Bazaar Release Notes</h1>
+
+<div class="contents topic" id="list-of-releases">
+<p class="topic-title first">List of Releases</p>
+<ul class="simple">
+<li><a class="reference internal" href="#brz-3-0-0" id="id1">brz 3.0.0</a><ul>
+<li><a class="reference internal" href="#external-compatibility-breaks" id="id2">External Compatibility Breaks</a></li>
+<li><a class="reference internal" href="#new-features" id="id3">New Features</a></li>
+<li><a class="reference internal" href="#improvements" id="id4">Improvements</a></li>
+<li><a class="reference internal" href="#bug-fixes" id="id5">Bug Fixes</a></li>
+<li><a class="reference internal" href="#documentation" id="id6">Documentation</a></li>
+<li><a class="reference internal" href="#api-changes" id="id7">API Changes</a></li>
+<li><a class="reference internal" href="#internals" id="id8">Internals</a></li>
+<li><a class="reference internal" href="#testing" id="id9">Testing</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>###
+Breezy Release Notes
+###</p>
+<p>brz 3.0.0 is the first release of <tt class="docutils literal">Breezy</tt>, a fork of Bazaar. For more
+information, see our release announcement on the Bazaar mailing list and
+README.</p>
+<div class="section" id="brz-3-0-0">
+<h1><a class="toc-backref" href="#id1">brz 3.0.0</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Codename:</th><td class="field-body">Pelican</td>
+</tr>
+<tr class="field"><th class="field-name">3.0.1:</th><td class="field-body">NOT RELEASED YET</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="external-compatibility-breaks">
+<h2><a class="toc-backref" href="#id2">External Compatibility Breaks</a></h2>
+<blockquote>
+<ul class="simple">
+<li>The bzr command has been renamed to brz, to prevent
+clashes with upstream Bazaar.
+(Martin Packman, Jelmer Vernooĳ)</li>
+<li>The --prefix/-p argument for <tt class="docutils literal">bzr diff</tt> now defaults to -p1 rather
+than -p0. (Jelmer Vernooĳ, #1695126)</li>
+<li>The <tt class="docutils literal">brz <span class="pre">register-branch</span></tt> command from the Launchpad plugin has been
+removed, because it has not worked for at least five years: it relies on
+password authentication rather than SSO, the relevant systems no longer
+have firewall-level access to the outside world, and in general the
+Mirrored branch type is deprecated.  Either just push the branch to
+Launchpad or use code imports instead
+(<a class="reference external" href="https://help.launchpad.net/VcsImports">https://help.launchpad.net/VcsImports</a>).
+(Colin Watson, #254567, #483689)</li>
+<li>brz no longer supports building the C extensions using Pyrex.
+Only Cython is supported. (Jelmer Vernooĳ)</li>
+<li>Support for HTTP support using &quot;pycurl&quot; and the associated
+URL schemes &quot;http+pycurl://&quot; and &quot;https+pycurl://&quot; has been dropped.
+(Jelmer Vernooij, #82086, #377389, #122258, #516222, #545776, #1696602)</li>
+<li>Support for medusa for FTP tests has been dropped, only
+pyftpdlib is now supported. (Jelmer Vernooĳ)</li>
+<li>The deprecated <tt class="docutils literal">brz get</tt> and <tt class="docutils literal">brz clone</tt> commands have been
+removed. (Jelmer Vernooĳ)</li>
+<li>The setting to ignore missing C extensions has been changed from
+<tt class="docutils literal">ignore_missing_extensions=True</tt> to
+<tt class="docutils literal">suppress_warnings=missing_extensions</tt>. (Jelmer Vernooĳ)</li>
+<li>Remove format names as options to <tt class="docutils literal">brz init</tt> and <tt class="docutils literal">brz
+<span class="pre">init-repository</span></tt>.. Now you must use <tt class="docutils literal">brz init <span class="pre">--format=...</span></tt>.
+This simplifies <tt class="docutils literal">brz init <span class="pre">--help</span></tt>.
+(Neil Martinsen-Burrell, #330494)</li>
+<li><tt class="docutils literal"><span class="pre">python-gpg</span></tt> is now used for checking GPG signatures rather than
+<tt class="docutils literal"><span class="pre">python-gpgme</span></tt>. (Jelmer Vernooĳ, #1702308)</li>
+<li><tt class="docutils literal"><span class="pre">python-gpg</span></tt> is now used for signing commits, rather than shelling
+out to the gnupg command. The <tt class="docutils literal">gpg_signing_command</tt> option has been
+removed.  (Jelmer Vernooĳ, #847388)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="new-features">
+<h2><a class="toc-backref" href="#id3">New Features</a></h2>
+<blockquote>
+<ul class="simple">
+<li>The 'bisect' plugin is now shipped with bzr. (Jelmer Vernooĳ)</li>
+<li>The 'fastimport' plugin is now bundled with Bazaar.
+(Jelmer Vernooĳ)</li>
+<li>The 'stats' plugin is now bundled with Bazaar.
+(Jelmer Vernooĳ)</li>
+<li>The 'upload' plugin is now bundled with Bazaar.
+(Jelmer Vernooĳ)</li>
+<li>The 'cvs' and 'mtn' plugins are now bundled with Bazaar.
+(Jelmer Vernooĳ)</li>
+<li>The 'email' plugin is now bundled with Bazaar.
+(Jelmer Vernooĳ)</li>
+<li>The 'import' command is now bundled with brz.
+Imported from bzrtools by Aaron Bentley. (Jelmer Vernooĳ, #773241)</li>
+<li>The 'link-tree' command is now bundled with brz.
+Imported from bzrtools by Aaron Bentley. (Jelmer Vernooĳ)</li>
+<li>The 'fetch-ghosts' command is now bundled with brz.
+Imported from bzrtools by Aaron Bentley. (Jelmer Vernooĳ)</li>
+<li>The 'commitfromnews' plugin is now bundled and
+can be enabled by setting <tt class="docutils literal">commit.template_from_files = NEWS</tt>.
+(Jelmer Vernooĳ)</li>
+<li>The 'darcs' plugin is now bundled.
+(Jelmer Vernooĳ)</li>
+<li>The functionality from <tt class="docutils literal"><span class="pre">bzr-guess</span></tt> is now merged into Breezy.
+It will provide suggestions if the user typoes a command.
+(Jelmer Vernooĳ)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="improvements">
+<h2><a class="toc-backref" href="#id4">Improvements</a></h2>
+<blockquote>
+<ul class="simple">
+<li>Doc generators now support the SOURCE_DATE_EPOCH environment
+variable (<a class="reference external" href="https://reproducible-builds.org/specs/source-date-epoch/">https://reproducible-builds.org/specs/source-date-epoch/</a>).
+(Jelmer Vernooĳ)</li>
+<li>The <tt class="docutils literal">repodebug</tt> plugin is now bundled.
+(Jelmer Vernooĳ)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="bug-fixes">
+<h2><a class="toc-backref" href="#id5">Bug Fixes</a></h2>
+<ul class="simple">
+<li>Support Server Name Indication (SNI) when talking to https servers.
+Cherry-picked from lp:~vila/bzr/1089352-sni-support
+(Vincent Ladeuil, #1089352)</li>
+<li>The <tt class="docutils literal">bisect</tt> command now works in non-<tt class="docutils literal">.bzr</tt> directories.
+(Jelmer Vernooĳ)</li>
+<li>When creating <tt class="docutils literal">authentication.conf</tt>, umask is now set so only the
+current user can read the file. Breezy warns if the file is
+accessible for other users when it starts.
+(Joke de Buhr, Jelmer Vernooĳ, #475501)</li>
+<li>Support <tt class="docutils literal">brz commit <span class="pre">-x</span></tt> in combination with iter_changes.
+(Jelmer Vernooĳ, #796582, #403811, #694946, #268135, #299879)</li>
+<li>Print a proper error when encountering ghost revisions in
+mainline in <tt class="docutils literal">bzr log</tt>. (Jelmer Vernooĳ, #726466)</li>
+<li>Security fix: hostnames starting with a dash in bzr+ssh URLs
+are now filtered out when using a subprocess SSH client.
+.
+Thanks to Augie Fackler for reporting.
+(Jelmer Vernooĳ, #1710979)</li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<h2><a class="toc-backref" href="#id6">Documentation</a></h2>
+<blockquote>
+<ul class="simple">
+<li>Various documents have been updated to explain that Breezy is a fork
+of Bazaar.</li>
+<li>Documentation translations into Japanese, Spanish and Russian have been
+removed since there are no current translators to update them.
+(Jelmer Vernooĳ)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="api-changes">
+<h2><a class="toc-backref" href="#id7">API Changes</a></h2>
+<blockquote>
+<ul class="simple">
+<li>bzrlib has been renamed to breezy. (Martin Packman, Jelmer Vernooĳ)</li>
+<li>Signature of <tt class="docutils literal">load_tests</tt> used by <tt class="docutils literal">TestLoader</tt> changed to be
+compatible with standard libarary unittest.  (Martin Packman)</li>
+<li>All previously deprecated functionality has been removed.
+(Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">CommitBuilder.record_entry_contents</tt> has been removed.
+(Jelmer Vernooĳ, #731433, #604953)</li>
+<li>Renamed <tt class="docutils literal">breezy.delta.report_delta</tt> parameter <tt class="docutils literal">filter=</tt> to
+<tt class="docutils literal">predicate=</tt>. (Martin Packman)</li>
+<li><tt class="docutils literal">Branch.bzrdir</tt>, <tt class="docutils literal">Repository.bzrdir</tt> and <tt class="docutils literal">WorkingTree.bzrdir</tt>
+have been renamed to <tt class="docutils literal">Branch.controldir</tt>, <tt class="docutils literal">Repository.controldir</tt>
+and <tt class="docutils literal">WorkingTree.controldir</tt>, respectively.
+(Jelmer Vernooĳ, #1695774)</li>
+<li><tt class="docutils literal">BzrBranch</tt> and the various bzr branch format implementations
+have been moved to <tt class="docutils literal">breezy.bzr</tt>. (Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">MetaDirBranchFormatFactory</tt> has been removed.
+Use lazy registration on <tt class="docutils literal">breezy.branch.format_registry</tt>
+instead. (Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">breezy.bzrdir.format_registry</tt> has been removed; use
+<tt class="docutils literal">breezy.controldir.format_registry</tt> instead.
+(Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">breezy.api</tt> has been removed.  (Jelmer Vernooĳ, #742192)</li>
+<li><tt class="docutils literal">ControlDir.find_bzrdirs</tt> has been renamed to
+<tt class="docutils literal">ControlDir.find_controldirs</tt>. (Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">Repository.get_revisions</tt> no longer accepts <tt class="docutils literal">None</tt> as
+argument. (Jelmer Vernooĳ)</li>
+<li>A new <tt class="docutils literal">Repository.iter_revisions</tt> method has been added.
+(Jelmer Vernooĳ)</li>
+<li>A new <tt class="docutils literal">WorkingTreeFormat.supports_setting_file_ids</tt> property
+has been added that can be set to False to indicate a working tree
+doesn't support e.g. passing a file_id into <tt class="docutils literal">WorkingTree.mkdir</tt>.
+(Jelmer Vernooĳ, #1707533)</li>
+<li>A new <tt class="docutils literal">RepositoryFormat.supports_setting_revision_ids</tt> property
+has been added that can be set to False to indicate a repository
+doesn't support passing revision ids to <tt class="docutils literal">CommitBuilder.commit</tt>.
+(Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">Repository.print_file</tt> and <tt class="docutils literal">Branch.print_file</tt> have been removed.
+(Jelmer Vernooĳ)</li>
+<li>Various <tt class="docutils literal">lock_write</tt> and <tt class="docutils literal">lock_read</tt> functions now return a
+context manager. (Jelmer Vernooĳ)</li>
+<li>The <tt class="docutils literal">BranchWriteLockResult.branch_token</tt> (returned by
+<tt class="docutils literal">Branch.lock_write</tt>) has been renamed to
+<tt class="docutils literal">BranchWriteLockResult.token</tt>. (Jelmer Vernooĳ)</li>
+<li><tt class="docutils literal">breezy.decorators.needs_write_lock</tt>,
+<tt class="docutils literal">breezy.decorators.needs_read_lock</tt> and
+<tt class="docutils literal">breezy.mutabletree.needs_tree_write_lock</tt> have been deprecated.
+Instead, use the context managers returned by <tt class="docutils literal">.lock_write</tt>,
+<tt class="docutils literal">.lock_read</tt> and <tt class="docutils literal">.lock_tree_write</tt> respectively. (Jelmer Vernooĳ)</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="internals">
+<h2><a class="toc-backref" href="#id8">Internals</a></h2>
+<!-- Major internal changes, unlikely to be visible to users or plugin
+developers, but interesting for brz developers. -->
+</div>
+<div class="section" id="testing">
+<h2><a class="toc-backref" href="#id9">Testing</a></h2>
+<blockquote>
+<ul class="simple">
+<li>A test isolation issue in <tt class="docutils literal">breezy.tests.test_ui</tt> was fixed,
+which caused <tt class="docutils literal">output_encoding = <span class="pre">iso-8859-1</span></tt> to be added to the
+users' bazaar.conf. (Jelmer Vernooĳ)</li>
+<li>Newer versions of <tt class="docutils literal">pyftpdlib</tt> are now supported for running FTP tests.
+(Jelmer Vernooĳ)</li>
+<li>The <tt class="docutils literal"><span class="pre">--subunit</span></tt> argument for <tt class="docutils literal">brz selftest</tt> has been renamed to
+<tt class="docutils literal"><span class="pre">--subunit1</span></tt>, and a new argument <tt class="docutils literal"><span class="pre">--subunit2</span></tt> has been added that
+outputs subunit v2.
+(Jelmer Vernooĳ, #1699346, #661205)</li>
+<li>Launchpad plugin tests no longer try to connect to production
+Launchpad. (Jelmer Vernooĳ, #723183)</li>
+<li>Set the <tt class="docutils literal">GPGHOME</tt> environment variable during testing, to prevent
+e.g. leaking keys into the users' GNUPG directory.
+(Jelmer Vernooĳ, #843885)</li>
+</ul>
+</blockquote>
+<!-- vim: tw=74 ft=rst ff=unix -->
+</div>
+</div>
+</div>
+</body>
+</html>

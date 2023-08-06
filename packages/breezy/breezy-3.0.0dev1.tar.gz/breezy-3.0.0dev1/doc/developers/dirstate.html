@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Dirstate</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="dirstate">
+<h1 class="title">Dirstate</h1>
+
+<p>Don't really need the hashes of the current versions - just knowing
+whether they've changed or not will generally be enough - and just the
+mtime and ctime of a point in time may be enough?</p>
+<div class="section" id="dirblock-state">
+<h1><tt class="docutils literal">_dirblock_state</tt></h1>
+<p>There are currently 4 levels that state can have.</p>
+<blockquote>
+<ol class="arabic simple">
+<li>NOT_IN_MEMORY
+The actual content blocks have not been read at all.</li>
+<li>IN_MEMORY_UNMODIFIED
+The content blocks have been read and are available for use. They have
+not been changed at all versus what was written on disk when we read
+them.</li>
+<li>IN_MEMORY_HASH_MODIFIED
+We have updated the in-memory state, but only to record the
+sha1/symlink target value and the stat value that means this
+information is 'fresh'.</li>
+<li>IN_MEMORY_MODIFIED
+We have updated an actual record. (Parent lists, added a new file,
+deleted something, etc.) In this state, we must always write out the
+dirstate, or some user action will be lost.</li>
+</ol>
+</blockquote>
+<div class="section" id="in-memory-hash-modified">
+<h2>IN_MEMORY_HASH_MODIFIED</h2>
+<p>This state is a bit special, so deserves its own topic.  If we are
+IN_MEMORY_HASH_MODIFIED, we only write out the dirstate if enough records
+have been updated. The idea is that if we would save future I/O by writing
+an updated dirstate, then we should do so. The threshold for this is set
+by &quot;worth_saving_limit&quot;. The default is that at least 10 entries must be
+updated in order to consider the dirstate file worth updating.</p>
+<p>Going one step further, newly added files, symlinks, and directory entries
+updates are treated specially. We know that we will always stat all
+entries in the tree so that we can observe <em>if</em> they have changed. In the
+case of directories, all the information we know about them is just from
+that stat value. There is no extra content to read. So an update directory
+entry doesn't cause us to update to IN_MEMORY_HASH_MODIFIED. However, if
+there are other modifications worth saving, we will go ahead and save the
+directory entry update at the same time.</p>
+<p>Similarly, symlink targets are commonly stored in the inode entry
+directly. So once we have stat'ed the symlink, we already have its target
+information in memory. The one caveat is if we used to think an object was
+a file, and it became a directory or symlink, then we will treat it as
+worth saving.</p>
+<p>In the case of newly added files, we never have to read their content to
+know that they are different from the basis tree. So saving the updated
+information also won't save a future read.</p>
+<!-- vim: ft=rst tw=74 et -->
+</div>
+</div>
+</div>
+</body>
+</html>

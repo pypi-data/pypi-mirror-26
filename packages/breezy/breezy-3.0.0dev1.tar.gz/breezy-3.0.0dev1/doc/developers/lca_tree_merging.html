@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>LCA Tree Merging</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="lca-tree-merging">
+<h1 class="title">LCA Tree Merging</h1>
+
+<p>There are 2 ways that you get LCA merge resolution in bzr. First, if you use
+<tt class="docutils literal">bzr merge <span class="pre">--lca</span></tt>, the <em>content</em> of files will be resolved using a Least Common
+Ancestors algorithm. That is described in &lt;lca-merge.html&gt; not here.</p>
+<p>This document describes how we handle merging tree-shape when there is not
+a single unique ancestor (criss-cross merge). With a single LCA, we use
+simple 3-way-merge logic.</p>
+<p>When there are multiple possible LCAs, we use a different algorithm for
+handling tree-shape merging. Described here.</p>
+<p>As a simple example, here is a revision graph which we will refer to often:</p>
+<pre class="literal-block">
+.    BASE
+.  /      \
+. LCA1   LCA2
+. |   \ /   |
+. |    X    |
+. |   / \   |
+. THIS  OTHER
+</pre>
+<p>In this graph, <tt class="docutils literal">THIS</tt> and <tt class="docutils literal">OTHER</tt> both have <tt class="docutils literal">LCA1</tt> and <tt class="docutils literal">LCA2</tt> in their
+ancestry but neither is an ancestor of the other, so we have 2 least common
+ancestors. The unique common ancestor is <tt class="docutils literal">BASE</tt>. (It should be noted that in
+this text we will talk directly about <tt class="docutils literal">LCA1</tt> and <tt class="docutils literal">LCA2</tt>, but the algorithms
+are designed to cope with more than 2 LCAs.)</p>
+<div class="section" id="scalars">
+<h1>Scalars</h1>
+<div class="section" id="definition">
+<h2>Definition</h2>
+<p>I'm defining scalar values as ones that cannot be 'merged' on their own. For
+example, the name of a file is &quot;scalar&quot;. If one person changes &quot;foo.txt&quot; to
+&quot;foo.c&quot; and someone else changes &quot;foo.txt&quot; to &quot;bar.txt&quot; we don't merge the
+changes to be &quot;bar.c&quot;, we simply conflict and expect the user to sort it out.</p>
+<p>We use a slightly different algorithm for scalars.</p>
+</div>
+<div class="section" id="resolution-algorithm">
+<h2>Resolution Algorithm</h2>
+<p>(This can be seen as <tt class="docutils literal">bzrlib.merge.Merge3Merger._lca_multi_way`</tt></p>
+<ol class="arabic">
+<li><p class="first">If <tt class="docutils literal">THIS</tt> and <tt class="docutils literal">OTHER</tt> have the same value, use it. There is no need to
+inspect any other values in this case. Either nothing was changed (all
+interesting nodes would have the same value), or we have &quot;accidental
+convergence&quot; (both sides made the same change.).</p>
+</li>
+<li><p class="first">Find the values from <tt class="docutils literal">LCA1</tt> and <tt class="docutils literal">LCA2</tt> which are not the same as
+<tt class="docutils literal">BASE</tt>. The idea here is to provide a rudimentary &quot;heads&quot; comparison.
+Often, the whole tree graph will have a criss-cross, but the per-file
+(per-scalar) graph would be linear, and the value in one LCA strictly
+dominates the other. It is possible to construct a scenario where one side
+dominates the other, but the dominated value is not <tt class="docutils literal">BASE</tt>, but a second
+intermediate value. Most scalars are rarely changed, so this is unlikely to
+be an issue. The trade-off is having to generate and inspect the
+per-scalar graph.</p>
+<p>If there are no LCA values that are different from <tt class="docutils literal">BASE</tt>, we use a simple
+3-way merge with <tt class="docutils literal">BASE</tt> as the base value.</p>
+</li>
+<li><p class="first">Find the unique set of LCA values that do not include the <tt class="docutils literal">BASE</tt> value.
+If there is only one unique LCA value, we again use three-way merge logic
+using that unique value as the base.</p>
+</li>
+<li><p class="first">At this point, we have determined that we have at least 2 unique values in
+our LCAs which means that <tt class="docutils literal">THIS</tt> and <tt class="docutils literal">OTHER</tt> would both have to resolve
+the conflict. If they resolved it in the same way, we would have caught that
+in step 1. So they either both picked a different LCA value, or one (or
+both) chose a new value to use.</p>
+<p>If <tt class="docutils literal">OTHER</tt> and <tt class="docutils literal">THIS</tt> both picked a different LCA value, we conflict.</p>
+<p>If <tt class="docutils literal">OTHER</tt> and <tt class="docutils literal">THIS</tt> both have values that are not LCA values, we also
+conflict. (Same as 3-way, both sides modified a value in different ways.)</p>
+</li>
+<li><p class="first">(optional) The only tricky part is this: if <tt class="docutils literal">OTHER</tt> has a LCA value, but
+<tt class="docutils literal">THIS</tt> does not, then we go with <tt class="docutils literal">THIS</tt>, and conversely if <tt class="docutils literal">THIS</tt> has
+an LCA value, but <tt class="docutils literal">OTHER</tt> does not, then we go with <tt class="docutils literal">OTHER</tt>. The idea is
+that <tt class="docutils literal">THIS</tt> and <tt class="docutils literal">OTHER</tt> may have resolved things in the same way, and
+then later changed the value to something newer. (They could have also
+resolved it differently, and then one side updated again.)</p>
+</li>
+</ol>
+</div>
+<div class="section" id="inventoryentry-revision">
+<h2><tt class="docutils literal">InventoryEntry.revision</tt></h2>
+<p>The last-modified revision for an entry gets treated differently. This is
+because how it is generated allows us to infer more information. Specifically,
+any time there is a change to an entry (rename, or content change) the last
+modified revision is updated. Further, if we are merging, and both sides
+updated the entry, then we update the last-modified revision at the merge
+point.</p>
+<p>For a picture example:</p>
+<pre class="literal-block">
+.   A
+.  / \
+. B   C
+.  \ /
+.   D
+</pre>
+<p>For a single entry, the last modified revision in <tt class="docutils literal">D</tt> is:</p>
+<ol class="arabic simple">
+<li><tt class="docutils literal">A</tt> if neither <tt class="docutils literal">B</tt> or <tt class="docutils literal">C</tt> modified it</li>
+<li><tt class="docutils literal">B</tt> if <tt class="docutils literal">B</tt> modified and <tt class="docutils literal">C</tt> did not</li>
+<li><tt class="docutils literal">C</tt> if <tt class="docutils literal">C</tt> modified and <tt class="docutils literal">B</tt> did not</li>
+<li><tt class="docutils literal">D</tt> if <tt class="docutils literal">B</tt> and <tt class="docutils literal">C</tt> modified it</li>
+</ol>
+<p>This means that if the last modified revision is the same, there have been no
+changes in the intermediate time. If <tt class="docutils literal">OTHER</tt> also has the same last modified
+revision as <em>any</em> LCA, then we know that all other LCAs' last-modified
+revisions are in the ancestry of that value. (Otherwise, when <tt class="docutils literal">OTHER</tt> would
+need to create a new last modified revision as part of the merge.)</p>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</div>
+</body>
+</html>

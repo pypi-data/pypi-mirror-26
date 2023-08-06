@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Indices</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="indices">
+<h1 class="title">Indices</h1>
+
+<div class="section" id="status">
+<h1><a class="toc-backref" href="#id1">Status</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Date:</th><td class="field-body">2007-07-14</td>
+</tr>
+</tbody>
+</table>
+<p>This document describes the indexing facilities within bzrlib.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#status" id="id1">Status</a></li>
+<li><a class="reference internal" href="#motivation" id="id2">Motivation</a></li>
+<li><a class="reference internal" href="#terminology" id="id3">Terminology</a></li>
+<li><a class="reference internal" href="#overview" id="id4">Overview</a></li>
+<li><a class="reference internal" href="#general-index-api" id="id5">General Index API</a><ul>
+<li><a class="reference internal" href="#services" id="id6">Services</a><ul>
+<li><a class="reference internal" href="#build-index" id="id7">Build index</a></li>
+<li><a class="reference internal" href="#retrieve-entries-from-the-index" id="id8">Retrieve entries from the index</a></li>
+<li><a class="reference internal" href="#merging-of-indices" id="id9">Merging of indices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#index-implementations" id="id10">Index implementations</a><ul>
+<li><a class="reference internal" href="#graphindex" id="id11">GraphIndex</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="motivation">
+<h1><a class="toc-backref" href="#id2">Motivation</a></h1>
+<p>To provide a clean concept of index that can be reused by different
+components within the codebase rather than being rewritten every time
+by different components.</p>
+</div>
+<div class="section" id="terminology">
+<h1><a class="toc-backref" href="#id3">Terminology</a></h1>
+<p>An <strong>index</strong> is a dictionary mapping opaque keys to opaque values.
+Different index types may allow some of the value data to be interpreted
+by the index. For example the <tt class="docutils literal">GraphIndex</tt> index stores a graph between
+keys as part of the index.</p>
+</div>
+<div class="section" id="overview">
+<h1><a class="toc-backref" href="#id4">Overview</a></h1>
+<p>bzr is moving to a write-once model for repository storage in order to
+achieve lock-free repositories eventually. In order to support this, we are
+making our new index classes <strong>immutable</strong>. That is, one creates a new
+index in a single operation, and after that it is read only. To combine
+two indices a <tt class="docutils literal">Combined*</tt> index may be used, or an <strong>index merge</strong> may
+be performed by reading the entire value of two (or more) indices and
+writing them into a new index.</p>
+</div>
+<div class="section" id="general-index-api">
+<h1><a class="toc-backref" href="#id5">General Index API</a></h1>
+<p>We may end up with multiple different Index types (e.g. GraphIndex,
+Index, WhackyIndex). Even though these may require different method
+signatures to operate would strive to keep the signatures and return
+values as similar as possible. e.g.:</p>
+<pre class="literal-block">
+GraphIndexBuilder - add_node(key, value, references)
+IndexBuilder - add_node(key, value)
+WhackyIndexBuilder - add_node(key, value, whackiness)
+</pre>
+<p>as opposed to something quite different like:</p>
+<pre class="literal-block">
+node = IncrementalBuilder.get_node()
+node.key = 'foo'
+node.value = 'bar'
+</pre>
+<div class="section" id="services">
+<h2><a class="toc-backref" href="#id6">Services</a></h2>
+<p>An initial implementation of indexing can probably get away with a small
+number of primitives. Assuming we have write once index files:</p>
+<div class="section" id="build-index">
+<h3><a class="toc-backref" href="#id7">Build index</a></h3>
+<p>This should be done by creating an <tt class="docutils literal">IndexBuilder</tt> and then calling
+<tt class="docutils literal">insert(key, value)</tt> many times. (Indices that support sorting,
+topological sorting etc, will want specialised insert methods).</p>
+<p>When the keys have all been added, a <tt class="docutils literal">finish</tt> method should be called,
+which will return a file stream to read the index data from.</p>
+</div>
+<div class="section" id="retrieve-entries-from-the-index">
+<h3><a class="toc-backref" href="#id8">Retrieve entries from the index</a></h3>
+<p>This should allow random access to the index using readv, so we probably
+want to open the index on a <tt class="docutils literal">Transport</tt>, then use <tt class="docutils literal">iter_entries(keys)</tt>,
+which can return an iterator that yields <tt class="docutils literal">(key, value)</tt> pairs in
+whatever order makes sense for the index.</p>
+</div>
+<div class="section" id="merging-of-indices">
+<h3><a class="toc-backref" href="#id9">Merging of indices</a></h3>
+<p>Merging of N indices requires a concordance of the keys of the index. So
+we should offer a <tt class="docutils literal">iter_all_entries</tt> call that has the same return type
+as the <tt class="docutils literal">iter_entries</tt> call.</p>
+</div>
+</div>
+</div>
+<div class="section" id="index-implementations">
+<h1><a class="toc-backref" href="#id10">Index implementations</a></h1>
+<div class="section" id="graphindex">
+<h2><a class="toc-backref" href="#id11">GraphIndex</a></h2>
+<p><tt class="docutils literal">GraphIndex</tt> supports graph based lookups. While currently unoptimised
+for reading, the index is quite space efficient at storing the revision
+graph index for bzr. The <tt class="docutils literal">GraphIndexBuilder</tt> may be used to create one
+of these indices by calling <tt class="docutils literal">add_node</tt> until all nodes are added, then
+<tt class="docutils literal">finish</tt> to obtain a file stream containing the index data. Multiple
+indices may be queried using the <tt class="docutils literal">CombinedGraphIndex</tt> class.</p>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</div>
+</body>
+</html>

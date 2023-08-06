@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Bazaar Developer Document Catalog</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="bazaar-developer-document-catalog">
+<h1 class="title">Bazaar Developer Document Catalog</h1>
+
+<div class="section" id="overall-developer-documentation">
+<h1>Overall developer documentation</h1>
+<ul class="simple">
+<li><a class="reference external" href="HACKING.html">Developer Guide</a></li>
+<li><a class="reference external" href="overview.html">Architectural Overview</a> — describes some of the
+most important classes and concepts.</li>
+<li><a class="reference external" href="http://people.canonical.com/~mwh/bzrlibapi/">bzrlib API reference</a>
+(external link)
+— automatically generated API reference information</li>
+<li><a class="reference external" href="http://wiki.bazaar.canonical.com/Integrating_with_Bazaar">Integrating with Bazaar</a>
+(wiki) — a guide for writing Python programs that work with Bazaar.</li>
+<li><a class="reference external" href="revision-properties.html">Revision Properties</a> — An application
+can set arbitrary per-revision key/value pairs to store app-specific
+data.</li>
+<li><a class="reference external" href="testing.html">Testing</a> — Guide to writing tests for Bazaar.</li>
+<li><a class="reference external" href="code-review.html">Code Review</a>.</li>
+<li><a class="reference external" href="code-style.html">Bazaar Code Style Guide</a>.</li>
+<li><a class="reference external" href="http://doc.bazaar.canonical.com/plugins/en/plugin-development.html">Writing plugins</a>
+— specific advice on writing Bazaar plugins. (web link)</li>
+<li><a class="reference external" href="documenting-changes.html">Documenting changes</a>.</li>
+</ul>
+</div>
+<div class="section" id="process">
+<h1>Process</h1>
+<ul class="simple">
+<li><a class="reference external" href="cycle.html">The Bazaar Development Cycle</a> — The monthly
+development cycle and how to run it.</li>
+<li><a class="reference external" href="releasing.html">Releasing Bazaar</a> —
+Checklist to make a release of Bazaar.</li>
+<li><a class="reference external" href="ppa.html">Managing the Bazaar PPA</a> — Packaging Bazaar for Ubuntu.</li>
+<li><a class="reference external" href="http://wiki.bazaar.canonical.com/BzrGivingBack">Giving back</a> (wiki) — How to get
+your changes to Bazaar integrated into a release.</li>
+<li><a class="reference external" href="profiling.html">Profiling notes</a> — Instructions on how to profile
+bzr code and visualize the results.</li>
+<li><a class="reference external" href="ec2.html">EC2 resources</a> — A team resource for
+Windows packaging and testing, and Ubuntu testing.</li>
+<li><a class="reference external" href="bug-handling.html">Tracking Bugs in Bazaar</a> — How we use the bug
+tracker.</li>
+</ul>
+</div>
+<div class="section" id="architecture-overviews">
+<h1>Architecture overviews</h1>
+<ul class="simple">
+<li><a class="reference external" href="transports.html">Transports</a> — Transport virtual filesystem
+abstraction.</li>
+</ul>
+</div>
+<div class="section" id="plans">
+<h1>Plans</h1>
+<ul class="simple">
+<li><a class="reference external" href="performance-roadmap.html">Performance roadmap</a> — The roadmap
+for fixing performance in bzr over the next few releases.</li>
+<li><a class="reference external" href="colocated-branches.html">Co-located branches</a> — Planned(?) support
+for storing multiple branches in one file-system directory.</li>
+<li><a class="reference external" href="tortoise-strategy.html">Bazaar Windows Shell Extension Options</a> —
+Implmentation strategy for Bazaar Windows Shell Extensions, aka
+TortoiseBzr.</li>
+<li><a class="reference external" href="improved_chk_index.html">CHK Optimized index</a></li>
+</ul>
+</div>
+<div class="section" id="specifications">
+<h1>Specifications</h1>
+<ul class="simple">
+<li><a class="reference external" href="api-versioning.html">API versioning</a> — bzrlib API versioning.</li>
+<li><a class="reference external" href="apport.html">Apport error reporting</a> — Capture data to report
+bugs.</li>
+<li><a class="reference external" href="authentication-ring.html">Authentication ring</a> — Configuring
+authentication.</li>
+<li><a class="reference external" href="bundles.html">Bundles</a> — All about bzr bundles.</li>
+<li><a class="reference external" href="container-format.html">Container format</a> — Notes on a container format
+for streaming and storing Bazaar data.</li>
+<li><a class="reference external" href="groupcompress-design.html">Groupcompress</a> — Notes on the compression
+technology used in CHK repositories.</li>
+<li><a class="reference external" href="indices.html">Indices</a> — The index facilities available within bzrlib.</li>
+<li><a class="reference external" href="inventory.html">Inventories</a> — Tree shape abstraction.</li>
+<li><a class="reference external" href="lca-merge.html">LCA merge</a> — A nice new merge algorithm.</li>
+<li><a class="reference external" href="network-protocol.html">Network protocol</a> — Custom network protocol.</li>
+<li><a class="reference external" href="plugin-api.html">Plugin APIs</a> — APIs plugins should use.</li>
+<li><a class="reference external" href="repository.html">Repositories</a> — What repositories do and are used for.</li>
+<li><a class="reference external" href="repository-stream.html">Repository stream</a> — Notes on streaming data
+for repositories (a layer above the container format).</li>
+<li><a class="reference external" href="integration.html">Integration Guide</a> — A guide to integrate bzrlib into
+any python application.</li>
+<li><a class="reference external" href="case-insensitive-file-systems.html">Bazaar and case-insensitive file systems</a>
+— How Bazaar operates on case-insensitive file systems such as commonly
+found on Windows, USB sticks, etc.</li>
+<li><a class="reference external" href="development-repo.html">Development repository formats</a> — How to
+work with repository formats that are still under development.
+Contains instructions for those implementing new formats, of course,
+but also for (bleeding-edge) end users of those formats.</li>
+</ul>
+</div>
+<div class="section" id="data-formats">
+<h1>Data formats</h1>
+<ul class="simple">
+<li><a class="reference external" href="packrepo.html">Knit pack repositories</a> — KnitPack repositories
+(new in Bazaar 0.92).</li>
+</ul>
+</div>
+<div class="section" id="implementation-notes">
+<h1>Implementation notes</h1>
+<ul class="simple">
+<li><a class="reference external" href="btree_index_prefetch.html">BTree Index Prefetch</a> — How bzr decides
+to pre-read extra nodes in the btree index.</li>
+<li><a class="reference external" href="last-modified.html">Computing last_modified values</a> for inventory
+entries</li>
+<li><a class="reference external" href="content-filtering.html">Content filtering</a></li>
+<li><a class="reference external" href="lca_tree_merging.html">LCA Tree Merging</a> — Merging tree-shape when
+there is not a single unique ancestor (criss-cross merge).</li>
+</ul>
+</div>
+<div class="section" id="miscellaneous">
+<h1>Miscellaneous</h1>
+<ul class="simple">
+<li><a class="reference external" href="dirstate.html">dirstate</a> — An observation re. the dirstate file</li>
+<li><a class="reference external" href="update.html">&quot;bzr update&quot; performance analysis</a> — &quot;bzr update&quot;
+performance analysis</li>
+</ul>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</body>
+</html>

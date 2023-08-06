@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Releasing Breezy</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="releasing-breezy">
+<h1 class="title">Releasing Breezy</h1>
+
+<p>This document describes the processes for making and announcing a Breezy
+release, and managing the release process.  This is just one phase of the
+<a class="reference external" href="http://doc.bazaar.canonical.com/developers/cycle.html">overall development cycle</a>, (go re-read this
+document to ensure it hasn't been updated since you last read it) but it's
+the most complex part.</p>
+<p>If you're doing your first release you can follow this document and read
+each step explanation. It's also a good practice to read it for any release
+to ensure you don't miss a step and to update it as the release process
+evolves.</p>
+<p>If you're helping the Release Manager (RM) for one reason or another, you
+may notice that he didn't follow that document scrupulously. He may have
+good reasons to do that but he may also have missed some parts.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#preconditions" id="id3">Preconditions</a></li>
+<li><a class="reference internal" href="#what-do-we-release" id="id4">What do we release</a></li>
+<li><a class="reference internal" href="#when-do-we-relase" id="id5">When do we relase ?</a></li>
+<li><a class="reference internal" href="#at-the-start-of-a-series-cycle" id="id6">At the start of a series cycle</a></li>
+<li><a class="reference internal" href="#at-the-start-of-a-release-cycle" id="id7">At the start of a release cycle</a></li>
+<li><a class="reference internal" href="#doing-a-particular-release" id="id8">Doing a particular release</a><ul>
+<li><a class="reference internal" href="#update-the-source-code" id="id9">Update the source code</a></li>
+<li><a class="reference internal" href="#making-the-source-tarball" id="id10">Making the source tarball</a></li>
+<li><a class="reference internal" href="#publishing-the-source-tarball" id="id11">Publishing the source tarball</a></li>
+<li><a class="reference internal" href="#kick-off-the-next-cycle" id="id12">Kick off the next cycle</a></li>
+<li><a class="reference internal" href="#the-final-beta-branching-and-translations" id="id13">The final beta - branching and translations</a></li>
+<li><a class="reference internal" href="#announcing-the-source-freeze" id="id14">Announcing the source freeze</a></li>
+<li><a class="reference internal" href="#publishing-the-release" id="id15">Publishing the release</a></li>
+<li><a class="reference internal" href="#announcing-the-release" id="id16">Announcing the release</a></li>
+<li><a class="reference internal" href="#merging-the-released-code-back-to-trunk" id="id17">Merging the released code back to trunk</a></li>
+<li><a class="reference internal" href="#releases-until-the-final-one" id="id18">Releases until the final one</a></li>
+<li><a class="reference internal" href="#getting-the-release-into-ubuntu" id="id19">Getting the release into Ubuntu</a></li>
+<li><a class="reference internal" href="#see-also" id="id20">See also</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="preconditions">
+<h1><a class="toc-backref" href="#id3">Preconditions</a></h1>
+<ol class="arabic">
+<li><p class="first">PQM access rights (or you won't be able to land any change)</p>
+</li>
+<li><p class="first">Download the pqm plugin and install it into your <tt class="docutils literal"><span class="pre">~/.bazaar/plugins</span></tt>:</p>
+<pre class="literal-block">
+brz branch lp:brz-pqm ~/.bazaar/plugins/pqm
+</pre>
+</li>
+<li><p class="first">Alternatively, you can download and install <tt class="docutils literal">lp:hydrazine</tt> (the main
+difference is that hydrazine requires the branch to land to be hosted on
+launchpad).</p>
+</li>
+</ol>
+</div>
+<div class="section" id="what-do-we-release">
+<h1><a class="toc-backref" href="#id4">What do we release</a></h1>
+<p>In this document, we're talking about source releases only, packages and
+installers are built from this but we won't talk about them here.</p>
+<p>Every release is part of a series, <tt class="docutils literal"><span class="pre">brz-2.4.1</span></tt> is part of series <tt class="docutils literal">2.4</tt>.</p>
+<p>We do two different kind of releases: the betas releases and the stable
+releases for a given series.</p>
+<p>For a given series, releases will be done to deliver new versions of brz to
+different kinds of users:</p>
+<ol class="arabic simple">
+<li>beta releases: named <tt class="docutils literal">x.ybn</tt> where <tt class="docutils literal">x.y</tt> is the series and <tt class="docutils literal">n</tt>
+starts at 1 and is incremented. These releases are targeted to beta
+testers who don't want to run from source but are interested in features
+or improvements.</li>
+<li>stable releases: name <tt class="docutils literal">x.y.z</tt> where <tt class="docutils literal">x.y.</tt> is the series and <tt class="docutils literal">z</tt>
+starts at 0 and is incremented. These releases are targeted at people
+that want bugfixes only and no new features.</li>
+</ol>
+<p>Differences in the release process between beta and stable release will be
+mentioned when needed.</p>
+</div>
+<div class="section" id="when-do-we-relase">
+<h1><a class="toc-backref" href="#id5">When do we relase ?</a></h1>
+<p>As of July 2011, we maintain four series (and one that is about to be EOLed).
+Concurrently releasing them all at the same time makes it harder to shorten
+the delay between the source availability and the package building longer
+than necessary (we delay the official announcement until most of our users
+can install the new release).</p>
+<p>In order to continue to do time-based releases, we need to plan the
+releases by series to minimize the collisions. In the end, it's the Release
+Manager call to decide whether he prefers to do all releases at once
+though, so the rules presented here are a conservative approach.</p>
+<p>We want to respect the following rules:</p>
+<ol class="arabic simple">
+<li>as much as possible releases should not disturb development, and
+ongoing development should not disturb releases,</li>
+<li>the most recent development series should release once a month during
+the beta period (see <a class="reference external" href="cycle.html">Development cycles</a> for more
+details),</li>
+<li>the most recent stable series should release every other month (based
+on the amount of bug fixes, this can be shorter or longer depending on
+the bugs importance),</li>
+<li>previous series should release on a regular basis without interfering
+with the most recent series with a decreasing order of priority (again
+this should be based on bugs importance and user feedback),</li>
+<li>the death of a series should be planned ahead of time. 6 months should
+give enough time to our users to migrate to a more recent series. This
+doesn't mean we will make a release at the end of the series, just that
+before the end date we <em>could</em> possibly put out another release if
+there was a sufficiently important fix.  Beyond that date, we won't
+even land changes on that branch (unless something causes a miraculous
+resurrection.)</li>
+<li>there should not be more than 2 releases in the same week (but the
+Release Manager is free to ignore this (get in touch with packagers
+though),</li>
+<li>the series are aligned with Ubuntu releases for convenience since we
+create a new series every 6 months. This means that we support the
+stable series for 18 months. Note that we also propose the most recent
+stable series via the stable PPA but that the SRU processs allow us to
+reach a wider audience.</li>
+</ol>
+</div>
+<div class="section" id="at-the-start-of-a-series-cycle">
+<h1><a class="toc-backref" href="#id6">At the start of a series cycle</a></h1>
+<p>To start a new series cycle:</p>
+<ol class="arabic">
+<li><p class="first">Create a new series <tt class="docutils literal">x.y</tt> at &lt;<a class="reference external" href="https://launchpad.net/bzr/+addseries">https://launchpad.net/bzr/+addseries</a>&gt;.</p>
+</li>
+<li><p class="first">Add milestones at &lt;<a class="reference external" href="https://launchpad.net/bzr/x.y/+addmilestone">https://launchpad.net/bzr/x.y/+addmilestone</a>&gt; to that
+series for the beta releases and the stable series mentioning their
+expected dates. Only the milestone associated to the next release in
+this series should be left active to avoid clutter when targeting bugs.</p>
+</li>
+<li><p class="first">If you made a new series, you will need to create a new pqm-controlled
+branch for this release series. This branch will be used only from the
+first non-beta release onwards. It needs to be created by a Canonical
+sysadmin (ask the core devs for instructions or to do it for you).</p>
+</li>
+<li><p class="first">Start a new release-notes file:</p>
+<pre class="literal-block">
+cd doc/en/release-notes
+cp series-template.txt brz-x.y.txt  # e.g. brz-2.3.txt
+brz add brz-x.y.txt
+</pre>
+</li>
+<li><p class="first">Start a new whats-new file:</p>
+<pre class="literal-block">
+cd doc/en/whats-new
+cp template.txt brz-x.y.txt  # e.g. brz-2.6.txt
+brz add brz-x.y.txt
+</pre>
+</li>
+<li><p class="first">Update <tt class="docutils literal">doc/en/index.txt</tt> to point to the new whats-new file.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="at-the-start-of-a-release-cycle">
+<h1><a class="toc-backref" href="#id7">At the start of a release cycle</a></h1>
+<p>To start a new release cycle:</p>
+<ol class="arabic">
+<li><p class="first">Send mail to the list with the key dates, who will be the release
+manager, and the main themes or targeted bugs.  Ask people to nominate
+objectives, or point out any high-risk things that are best done early,
+or that interact with other changes. This is called the metronome mail
+and is described in <a class="reference external" href="cycle.html">Development cycles</a>.</p>
+</li>
+<li><p class="first">Make a local branch to prepare the release:</p>
+<pre class="literal-block">
+brz branch lp:brz/x.y x.y-dev
+</pre>
+<p>If you're doing your first beta release, branch from trunk:</p>
+<pre class="literal-block">
+brz branch lp:brz x.y-dev
+</pre>
+<p>Note that you will generally reuse the same branch for all releases in a
+given series.</p>
+</li>
+<li><p class="first">Configure pqm-submit for this branch, with a section like this (where
+<tt class="docutils literal">x.y</tt> is the series for your release). <strong>Or use hydrazine for easier
+setup</strong> <tt class="docutils literal"><span class="pre">~/.bazaar/locations.conf</span></tt>:</p>
+<pre class="literal-block">
+    [/home/mbp/brz/x.y-dev]
+    pqm_email = Canonical PQM &lt;pqm&#64;bazaar-vcs.org&gt;
+    submit_branch = http://bazaar.launchpad.net/~brz-pqm/brz/x.y
+    parent_branch = http://bazaar.launchpad.net/~brz-pqm/brz/x.y
+    public_branch = http://bazaar.example.com/x.y-dev
+    submit_to = bazaar&#64;lists.canonical.com
+    smtp_server = mail.example.com:25
+
+Please see &lt;http://doc.bazaar.canonical.com/developers/HACKING.html#an-overview-of-pqm&gt;
+for more details on PQM
+</pre>
+</li>
+<li><p class="first">Update the version number in the <tt class="docutils literal">brz</tt> script, and the
+<tt class="docutils literal">breezy/__init__.py</tt> file:</p>
+<pre class="literal-block">
+version_info = (x, y, z, 'dev', 0)
+</pre>
+</li>
+<li><p class="first">Add a new section at the top of the current release notes (in
+<tt class="docutils literal"><span class="pre">doc/en/release-notes</span></tt>) about the new release, including its version
+number and the headings from <tt class="docutils literal"><span class="pre">release-template.txt</span></tt>.</p>
+</li>
+<li><p class="first">Update the &quot;What's New&quot; documents in <tt class="docutils literal"><span class="pre">doc/en/whats-new</span></tt>.</p>
+</li>
+<li><p class="first">Make sure a milestone exists for your release and that it is active,
+&lt;<a class="reference external" href="https://launchpad.net/bzr/x.y">https://launchpad.net/bzr/x.y</a>&gt; lists the existing milestones,
+&lt;<a class="reference external" href="https://launchpad.net/bzr/x.y/x.y.z/+edit">https://launchpad.net/bzr/x.y/x.y.z/+edit</a>&gt; allows you to toggle the
+active flag.</p>
+</li>
+<li><p class="first">Commit this and send it to PQM.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="doing-a-particular-release">
+<h1><a class="toc-backref" href="#id8">Doing a particular release</a></h1>
+<div class="section" id="update-the-source-code">
+<h2><a class="toc-backref" href="#id9">Update the source code</a></h2>
+<ol class="arabic">
+<li><p class="first">Check that there is a milestone for the release you're doing. If there
+is no milestone it indicates a process problem - make the milestone but
+also mail the list to raise this issue in our process. Milestones are
+found at &lt;<a class="reference external" href="https://launchpad.net/bzr/+milestone/x.y.z">https://launchpad.net/bzr/+milestone/x.y.z</a>&gt;.</p>
+</li>
+<li><p class="first">Merge into your branch all previous stable series fixes that haven't been
+merged yet. For example, if you're releasing 2.6.x, make sure the fixes
+on 2.5, 2.4, 2.3, etc have already been merged up:</p>
+<pre class="literal-block">
+brz merge lp:brz/2.4
+</pre>
+<p>and commit that merge in its own commit. This should happen only if the
+devs landing changes in previous releases forgot to merge them up. Since
+this can slow down the freeze, feel free to gently remind them about
+their duties ;) If you feel unsafe resolving the conflicts or it's too
+time consuming, contact the related devs and skip this merge.</p>
+</li>
+<li><p class="first">In the release branch, update  <tt class="docutils literal">version_info</tt> in <tt class="docutils literal">./breezy/__init__.py</tt>.
+Make sure the corresponding milestone exists.
+Double check that ./brz <tt class="docutils literal">_script_version</tt> matches <tt class="docutils literal">version_info</tt>. Check
+the output of <tt class="docutils literal">./brz <span class="pre">--version</span></tt>.</p>
+<p>For beta releases use:</p>
+<pre class="literal-block">
+version_info = (2, 6, 0, 'beta', SERIAL)
+</pre>
+<p>For instance 2.6b1:</p>
+<pre class="literal-block">
+version_info = (2, 6, 0, 'beta', 1)
+</pre>
+<p>For stable releases use:</p>
+<pre class="literal-block">
+version_info = (2, 6, 0, 'final', 0)
+</pre>
+</li>
+<li><p class="first">Update the <tt class="docutils literal"><span class="pre">./doc/en/release-notes/</span></tt> section for this release.</p>
+<p>Check that all news entries related to this release have been added in
+the right section. For example, if you're releasing 2.6b2, the following
+command should display a a single chuk diff for the 2.6b2 release:</p>
+<pre class="literal-block">
+brz diff -rbrz-2.6b2.. doc/en/release-notes/brz-2.6.txt
+</pre>
+<p>Fill out the date and a description of the release under the existing
+header (the diff above will help you summarizing). If there isn't one,
+follow the instructions above for using the <tt class="docutils literal"><span class="pre">release-template.txt</span></tt> file
+and remind people that they should document their changes there ;)</p>
+<p>See <em>2.6b1</em> or similar for an example of what this looks like.</p>
+</li>
+<li><p class="first">Add or check the summary of the release into the &quot;What's New&quot; document.</p>
+</li>
+</ol>
+<blockquote>
+<p>If this is the first release in a new series make sure to update the
+introduction mentioning:</p>
+<ul class="simple">
+<li>the date of this first release,</li>
+<li>until when the series is expected to be supported.</li>
+</ul>
+<p>Looking at <tt class="docutils literal">brz annotate</tt> for previous series should give you the right
+hints. The <tt class="docutils literal">doc/en/_templates/index.html</tt> file should also be updated.</p>
+</blockquote>
+<ol class="arabic">
+<li><p class="first">To check that all bugs mentioned in the release notes are actually
+marked as closed in Launchpad, you can run
+<tt class="docutils literal"><span class="pre">tools/check-newsbugs.py</span></tt>:</p>
+<pre class="literal-block">
+./tools/check-newsbugs.py doc/en/release-notes/brz-x.y.txt
+</pre>
+<p>As of 2011-07-18, all bugs mentioned in the output of the script requires
+some sort of intervention (either changing the status if it's not 'Fix
+Released' or setting a different milestone if the bug hasn't been
+fixed). A few false positives may remain in the older series, don't let
+this slow you down too much. This script accepts options you may find
+useful, use <tt class="docutils literal"><span class="pre">./tools/check-newsbugs.py</span></tt> to display its usage (<tt class="docutils literal"><span class="pre">-w</span></tt>
+will open each bug in your browser for example).</p>
+</li>
+<li><p class="first">For beta releases update the translation template:</p>
+<pre class="literal-block">
+BRZ_PLUGIN_PATH=-site make po/brz.pot
+</pre>
+<p>This is especially important for the final beta release which is when
+translations are frozen and translators are requested (see <a class="reference internal" href="#the-final-beta-branching-and-translations">The final
+beta - branching and translations</a>) to make the translations.</p>
+</li>
+<li><p class="first">For stable releases update the translations:</p>
+<pre class="literal-block">
+brz merge lp:~brz-core/brz/brz-translations-export-x.y
+</pre>
+</li>
+<li><p class="first">Commit these changes to the release branch, using a command like:</p>
+<pre class="literal-block">
+brz commit -m &quot;Release 2.3.1&quot;
+</pre>
+<p>The diff before you commit will be something like:</p>
+<pre class="literal-block">
+=== modified file 'breezy/__init__.py'
+--- breezy/__init__.py    2011-02-09 06:35:00 +0000
++++ breezy/__init__.py    2011-03-10 10:24:47 +0000
+&#64;&#64; -52,7 +52,7 &#64;&#64;
+ # Python version 2.0 is (2, 0, 0, 'final', 0).&quot;  Additionally we use a
+ # releaselevel of 'dev' for unreleased under-development code.
+
+-version_info = (2, 3, 1, 'dev', 0)
++version_info = (2, 3, 1, 'final', 0)
+
+ # API compatibility version
+ api_minimum_version = (2, 3, 0)
+
+=== modified file 'doc/en/release-notes/brz-2.3.txt'
+--- doc/en/release-notes/brz-2.3.txt      2011-03-09 08:30:16 +0000
++++ doc/en/release-notes/brz-2.3.txt      2011-03-10 10:40:47 +0000
+&#64;&#64; -8,23 +8,10 &#64;&#64;
+ brz 2.3.1
+ #########
+
+-:2.3.1: NOT RELEASED YET
+-
+-External Compatibility Breaks
+-*****************************
+-
+-.. These may require users to change the way they use Breezy.
+-
+-New Features
+-************
+-
+-.. New commands, options, etc that users may wish to try out.
+-
+-Improvements
+-************
+-
+-.. Improvements to existing commands, especially improved performance
+-   or memory usage, or better results.
++:2.3.1: 2011-03-10
++
++This is a bugfix release. Upgrading is recommended for all users of earlier
++2.3 releases.
+
+ Bug Fixes
+ *********
+
+=== modified file 'doc/en/whats-new/whats-new-in-2.3.txt'
+--- doc/en/whats-new/whats-new-in-2.3.txt 2011-02-03 16:29:18 +0000
++++ doc/en/whats-new/whats-new-in-2.3.txt 2011-03-10 11:10:36 +0000
+&#64;&#64; -17,8 +17,13 &#64;&#64;
+ improvements made to the core product, it highlights enhancements within the
+ broader Breezy world of potential interest to those upgrading.
+
+-Breezy 2.3.0 is fully compatible both locally and on the network with 2.0 2.1,
+-and 2.2, and can read and write repositories generated by all previous
++Breezy 2.3.1 includes all the fixes in the un-released 2.0.7, 2.1.4 and 2.2.5
++versions that weren't included in 2.3.0 and fixes some bugs on its own.
++
++See the :doc:`../release-notes/index` for details.
++
++Breezy 2.3 is fully compatible both locally and on the network with 2.0, 2.1,
++and 2.2. It can read and write repositories generated by all previous
+ versions.
+
+ Changed Behaviour
+</pre>
+</li>
+<li><p class="first">Tag the new release:</p>
+<pre class="literal-block">
+brz tag brz-2.6.0
+</pre>
+</li>
+<li><p class="first">Push those changes to a brz branch that is public and accessible on the
+Internet. PQM will pull from this branch when it attempts to merge your
+changes. Then submit those changes to PQM for merge into the appropriate
+release branch:</p>
+<pre class="literal-block">
+brz push
+brz pqm-submit -m &quot;(vila) Release 2.6.0 (Vincent Ladeuil)&quot;
+</pre>
+<p>Note that <tt class="docutils literal">brz push</tt> should mention updating one tag (which you just
+created). If it doesn't, double-check that you created (and pushed) this
+tag.</p>
+<p>Or with hydrazine:</p>
+<pre class="literal-block">
+brz lp-propose -m &quot;Release 1.14&quot; --approve lp:brz/1.14
+feed-pqm brz
+</pre>
+</li>
+<li><p class="first">When PQM succeeds, pull down the master release branch.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="making-the-source-tarball">
+<h2><a class="toc-backref" href="#id10">Making the source tarball</a></h2>
+<ol class="arabic">
+<li><p class="first">Change into the source directory and run</p>
+<pre class="literal-block">
+make dist
+</pre>
+</li>
+<li><p class="first">Now we'll try expanding this tarball and running the test suite
+to check for packaging problems:</p>
+<pre class="literal-block">
+make check-dist-tarball | subunit2pyunit
+</pre>
+<p>You may encounter failures while running the test suite caused by your
+locally installed plugins. Use your own judgment to decide if you can
+release with these failures. When in doubt, disable the faulty plugins
+one by one until you get no more failures. Alternatively, you can use
+<tt class="docutils literal">BRZ_DISABLE_PLUGINS</tt> or <tt class="docutils literal"><span class="pre">BRZ_PLUGIN_PATH=-site</span></tt> to disable one or
+all plugins.</p>
+<p>Until &lt;<a class="reference external" href="http://pad.lv/839461">http://pad.lv/839461</a>&gt; is fixed, you may encounter issues if you
+cut a release for old stable branches (&lt;= 2.2) and use a more recent
+OS/distro. If that's the case, check the bug status and use the following
+workaround if no fix is available:</p>
+<pre class="literal-block">
+export TTPATH=&lt;local branch of lp:testtools -r 0.9.2&gt;
+export SUPATH=&lt;local branch of lp:subunit -r 0.0.6&gt;
+PYTHONPATH=$TTPATH:$SUPATH/python PATH=$SUPATH/filters:${PATH} BRZ_PLUGIN_PATH=-site make check-dist-tarball PYTHON=python2.6 | subunit2pyunit
+</pre>
+<p>Remember that PQM has just tested everything too, this step is
+particularly testing that the cython extensions, which are updated
+by your local cython version when you run make dist, are in good
+shape.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="publishing-the-source-tarball">
+<h2><a class="toc-backref" href="#id11">Publishing the source tarball</a></h2>
+<ol class="arabic simple">
+<li>Go to the relevant &lt;<a class="reference external" href="https://launchpad.net/bzr/x.y">https://launchpad.net/bzr/x.y</a>&gt; series page in Launchpad.</li>
+<li>Create a release of the milestone, and upload the source tarball and
+the GPG signature.  Or, if you prefer, use the
+<tt class="docutils literal"><span class="pre">tools/packaging/lp-upload-release</span></tt> script to do this. Note that
+this changes what the download widget on the Launchpad brz home
+page shows, so don't stop the release process yet, or platform binary
+installers won't be made and the download list will stay very small!
+&lt;<a class="reference external" href="https://bugs.launchpad.net/launchpad/+bug/586445">https://bugs.launchpad.net/launchpad/+bug/586445</a>&gt;</li>
+</ol>
+</div>
+<div class="section" id="kick-off-the-next-cycle">
+<h2><a class="toc-backref" href="#id12">Kick off the next cycle</a></h2>
+<p>From that point, there is no possible return, the tarball has been uploaded
+so you can relax a bit.</p>
+<p>You're still holding a &quot;social&quot; lock on the launchpad branch though. Until
+your start the next cycle, nobody should land anything on this branch. If
+they do, they either targeted the wrong branch or didn't update the news
+file correctly, so the sooner the branch is opened again, the better.</p>
+<p>This matters more for <tt class="docutils literal">lp:brz</tt> than for <tt class="docutils literal">lp:brz/x.y</tt>, <tt class="docutils literal">lp:brz</tt> should
+always be open for landing, so you should do <a class="reference internal" href="#at-the-start-of-a-release-cycle">At the start of a release
+cycle</a> as soon as possible (i.e. update the version number in <tt class="docutils literal">brz</tt> and
+<tt class="docutils literal">breezy/__init__</tt>, create/update the news files and create/update the
+milestone for the next relase).</p>
+<p>You may also need to do <a class="reference internal" href="#at-the-start-of-a-series-cycle">At the start of a series cycle</a> if you're starting
+a new series.</p>
+</div>
+<div class="section" id="the-final-beta-branching-and-translations">
+<h2><a class="toc-backref" href="#id13">The final beta - branching and translations</a></h2>
+<p>A word of caution: the instructions above works well for all releases but
+there is one special case that requires a bit more care: when you release
+the <em>last</em> beta for a given <tt class="docutils literal">x.y</tt> series (from trunk aka lp:brz), you need
+to setup <em>two</em> branches for the next cycle:</p>
+<ol class="arabic simple">
+<li><tt class="docutils literal">lp:brz</tt> needs to be opened for the next <em>series</em> <tt class="docutils literal"><span class="pre">x.(y+1)</span></tt>.</li>
+<li><tt class="docutils literal">lp:brz/x.y</tt> needs to be opened for the next <em>release</em> <tt class="docutils literal">x.y.0</tt> in the
+series. Since this is first real use of <tt class="docutils literal">lp:brz/x.y</tt>, this is also the
+deadline for the PQM branch to be created.</li>
+</ol>
+<p>Both are important as <tt class="docutils literal">lp:brz</tt> should remain open so any change can be
+landed, <tt class="docutils literal">lp:brz/x.y</tt> on the other hand should be ready to receive bug
+fixes.</p>
+<p><tt class="docutils literal">lp:brz</tt> is generally more important as the bug fixes on <tt class="docutils literal">lp:brz/x.y</tt>
+won't be released sooner than a month from now whereas people may already
+been waiting to land on <tt class="docutils literal">lp:brz</tt>.</p>
+<p>In a nutshell:</p>
+<ol class="arabic simple">
+<li>Open <tt class="docutils literal">lp:brz</tt> for <tt class="docutils literal"><span class="pre">x.(y+1)</span></tt></li>
+<li>Create or update the <tt class="docutils literal">x.y</tt> PQM branch based on whatever revision you
+want to release. Since it takes time to create the PQM branch for the new
+series you should plan to get it created a few days before you need it
+and seed it with the revision from trunk you want to base your release of
+(ask a LOSA for pulling this revision from trunk and pushing it to the
+series branch (<tt class="docutils literal">lp:brz/x.y</tt>) when you're ready).</li>
+<li>Release <tt class="docutils literal">x.y.0</tt> from <tt class="docutils literal">lp:brz/x.y</tt></li>
+<li>Open <tt class="docutils literal">lp:brz/x.y</tt> for bug fixes</li>
+</ol>
+<p>You also need to ensure Launchpad is set up to import/export translations
+for the new branch and inform translators.</p>
+<ol class="arabic">
+<li><p class="first">Push the last beta release to a new branch:</p>
+<pre class="literal-block">
+brz push lp:~brz-core/brz/brz-translations-export-x.y
+</pre>
+</li>
+<li><p class="first">On the translations series synchronization settings page
+&lt;<a class="reference external" href="https://translations.launchpad.net/bzr/x.y/+translations-settings">https://translations.launchpad.net/bzr/x.y/+translations-settings</a>&gt;
+turn on <tt class="docutils literal">Import template files</tt> then for exports click <tt class="docutils literal">Choose a
+target branch</tt> and point it at the branch you just pushed.</p>
+</li>
+<li><p class="first">E-mail translators to announce that the forthcoming stable release of brz
+is ready for translations.  Send to
+<tt class="docutils literal"><span class="pre">launchpad-translators&#64;lists.launchpad.net</span></tt> and
+<tt class="docutils literal"><span class="pre">ubuntu-translators&#64;lists.ubuntu.com</span></tt>.</p>
+</li>
+<li><p class="first">The series is now frozen for strings and API, see below for adding
+that to the announcement.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="announcing-the-source-freeze">
+<h2><a class="toc-backref" href="#id14">Announcing the source freeze</a></h2>
+<ol class="arabic">
+<li><p class="first">Post to the <tt class="docutils literal">bazaar&#64;lists.canonical.com</tt> and
+<tt class="docutils literal"><span class="pre">brz-packagers&#64;lists.launchpad.net</span></tt> lists, saying that the source has
+been frozen. Be extra clear that this is only a <em>source</em> release targeted
+at packagers and installer builders (see
+&lt;<a class="reference external" href="https://bugs.launchpad.net/launchpad/+bug/645084">https://bugs.launchpad.net/launchpad/+bug/645084</a>&gt;).  This is the cue for
+platform maintainers and plugin authors to update their code.  This is
+done before the general public announcement of the release.</p>
+<p>The freeze announcement generally guess the date of the official public
+announcement, for the most recent stable series (the one supported by the
+installers and most of the distributions) it's generally a few days after
+the freeze. For older series supported only via SRUs for Ubuntu, we don't
+control the process as tightly so guessing the date is not appropriate.</p>
+<p>For the final beta release include in your announcement a notice of
+API and translation freezes noting that public methods should not
+be removed or changed and strings should not be added or changed.</p>
+</li>
+<li><p class="first">Pause for a few days.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="publishing-the-release">
+<h2><a class="toc-backref" href="#id15">Publishing the release</a></h2>
+<p>There is normally a delay of a few days after the source freeze to allow
+for binaries to be built for various platforms. Once they have been built,
+we have a releasable product.  The next step is to make it generally
+available to the world.</p>
+<ol class="arabic">
+<li><p class="first">Go to the release web page at &lt;<a class="reference external" href="https://launchpad.net/bzr/x.y/x.y.z">https://launchpad.net/bzr/x.y/x.y.z</a>&gt;</p>
+</li>
+<li><p class="first">Announce on the Breezy website.</p>
+</li>
+<li><p class="first">Check that the documentation for this release is available in
+&lt;<a class="reference external" href="http://doc.bazaar.canonical.com">http://doc.bazaar.canonical.com</a>&gt;.  It should be automatically build when
+the branch is created, by a cron script <tt class="docutils literal"><span class="pre">update-brz-docs</span></tt> on
+<tt class="docutils literal">escudero</tt>. When the first release is created in a new series, a branch
+needs to be created on <tt class="docutils literal">escudero</tt>:</p>
+<pre class="literal-block">
+ssh escudero.canonical.com
+sudo -u brz-web -s
+cd /srv/doc.bazaar.canonical.com/
+brz branch lp:brz/2.7 brz/brz.2.7
+</pre>
+<p>And the <tt class="docutils literal"><span class="pre">brz/bin/update-brz-docs</span></tt> script needs to refer to it.</p>
+<p>The <tt class="docutils literal"><span class="pre">lp:brz-alldocs</span></tt> branch also needs to be updated when a new series
+is introduced, see the <tt class="docutils literal">README</tt> file there for more instructions
+(looking at the branch history is also a good way to understand what
+needs to be done and to document any policy changes).</p>
+</li>
+</ol>
+</div>
+<div class="section" id="announcing-the-release">
+<h2><a class="toc-backref" href="#id16">Announcing the release</a></h2>
+<p>Now that the release is publicly available, tell people about it.</p>
+<ol class="arabic">
+<li><p class="first">Make an announcement mail.</p>
+<p>For beta releases, this is sent to the <tt class="docutils literal">bazaar&#64;lists.canonical.com</tt> and
+<tt class="docutils literal"><span class="pre">bazaar-announce&#64;lists.canonical.com</span></tt> lists.</p>
+<p>For stable releases (excluding SRUs which are for older stable releases),
+it should also be cc'd to <tt class="docutils literal"><span class="pre">info-gnu&#64;gnu.org</span></tt>,
+<tt class="docutils literal"><span class="pre">python-announce-list&#64;python.org</span></tt>, <tt class="docutils literal"><span class="pre">bug-directory&#64;gnu.org</span></tt>.</p>
+<p>In all cases, it is good to set <tt class="docutils literal"><span class="pre">Reply-To:</span> bazaar&#64;lists.canonical.com</tt>,
+so that people who reply to the announcement don't spam other lists.</p>
+<p>The announce mail will look something like this:</p>
+<pre class="literal-block">
+Subject: brz x.y.z released!
+
+The Breezy team is happy to announce availability of a new
+release of the brz adaptive version control system.
+
+Breezy is a fork of the Bazaar version control system.
+
+&lt;&lt;Summary paragraph from news&gt;&gt;
+
+Thanks to everyone who contributed patches, suggestions, and
+feedback.
+
+Breezy is now available for download from
+https://launchpad.net/bzr/x.y/x.y.z/ as a source tarball; packages
+for various systems will be available soon.
+
+&lt;&lt;release notes from this release back to the last major release&gt;&gt;
+</pre>
+<p>Feel free to tweak this to your taste.</p>
+</li>
+<li><p class="first">Make an announcement through &lt;<a class="reference external" href="https://launchpad.net/bzr/+announce">https://launchpad.net/bzr/+announce</a>&gt;
+mentioning the milestone URL &lt;<a class="reference external" href="https://launchpad.net/bzr/+milestone/x.y.z">https://launchpad.net/bzr/+milestone/x.y.z</a>&gt;
+so people get an easy access to details.</p>
+</li>
+<li><p class="first">Announce on <a class="reference external" href="https://freecode.com/projects/bazaar-vcs">https://freecode.com/projects/bazaar-vcs</a></p>
+<p>This should be done for beta releases and stable releases. If you do not
+have a Freecode account yet, ask one of the existing admins.</p>
+<p>The purpose here is to point users to the latest stable release
+(i.e. SRUs are excluded) while still publishing announcements for beta
+releases.</p>
+<p>There are several kinds of modifications that could be done there via the
+<tt class="docutils literal">Administration</tt> box in the lower right area of the page:</p>
+<ul class="simple">
+<li>Edit the project: This is where most of the URLs proposed in the
+<tt class="docutils literal">Links</tt> box are edited. This should rarely change except for the URLs
+related to the latest stable release.</li>
+<li>New announcement: When doing a release, put the summary of the release
+(you can't embed URLs there, the moderation staff remove them). Users
+can still access the releases notes via the <tt class="docutils literal">Release Notes</tt> URL in
+the <tt class="docutils literal">Links</tt> box in the upper right area of the page. When doing the
+first stable release in a series, delete the <tt class="docutils literal">Unstable installers</tt>
+&lt;<a class="reference external" href="https://launchpad.net/bzr/x.y/x.ybn">https://launchpad.net/bzr/x.y/x.ybn</a>&gt; and <tt class="docutils literal">Unstable source tarball</tt>
+&lt;<a class="reference external" href="http://launchpad.net/bzr/x.y/x.ybn/+download/brz-x.ybn.tar.gz">http://launchpad.net/bzr/x.y/x.ybn/+download/brz-x.ybn.tar.gz</a>&gt;
+links. Conversely, when creating the first beta in a development
+series, create these links again. Check all links when doing other
+kinds of release.</li>
+</ul>
+</li>
+<li><p class="first">Update <a class="reference external" href="http://en.wikipedia.org/wiki/Breezy_(software)">http://en.wikipedia.org/wiki/Breezy_(software)</a> -- this should
+be done for the stable and beta releases.</p>
+</li>
+<li><p class="first">Update the python package index: &lt;<a class="reference external" href="http://pypi.python.org/pypi/brz">http://pypi.python.org/pypi/brz</a>&gt;</p>
+<p>From the tarball created and tested earlier</p>
+<pre class="literal-block">
+twine upload -s ../brz-2.7.0.tar.gz
+</pre>
+<p>Remember to check the results afterward -- this should be done for
+stable releases but not for beta releases nor SRUs.</p>
+<p>The <tt class="docutils literal">twine</tt> command is provided by the <tt class="docutils literal">twine</tt> package on Debian and
+Ubuntu.</p>
+<p>If in doubt, you can test with &lt;<a class="reference external" href="https://testpypi.python.org/pypi">https://testpypi.python.org/pypi</a>&gt; where
+you can register yourself, register the brz project and upload (and then
+remove the upload and delete the project so a new release manager can
+enjoy the same facilities). If the project already exists, have one of
+the existing owners of the project add you to the group.</p>
+<p>To use the pypi test site, you need to record your credentials for an
+existing user (the registration process is manual and starts at
+&lt;<a class="reference external" href="https://testpypi.python.org/pypi?%3Aaction=register_form">https://testpypi.python.org/pypi?%3Aaction=register_form</a>&gt;.</p>
+<p>Once registered, you can record your crdentials in your <tt class="docutils literal">~/pypirc</tt> file
+with</p>
+<pre class="literal-block">
+[testpypi]
+username:&lt;login on testpypi&gt;
+password:&lt;password on testpypi&gt;
+repository = https://testpypi.python.org/pypi
+</pre>
+<p>Registering the brz project if doesn't exist is achieved with:</p>
+<pre class="literal-block">
+python setup.py -r https://testpypi.python.org/pypi register
+</pre>
+</li>
+</ol>
+<blockquote>
+<p>Uploading is done with:</p>
+<pre class="literal-block">
+ twine upload -r testpypi -s ../brz-2.7.0.tar.gz
+
+To be able to upload the release you must create an account on
+&lt;http://pypi.python.org/pypi&gt; and have one of the existing owners of the
+project add you to the group and update your ``[pypi]`` section in your
+``~/pypirc`` file.
+</pre>
+</blockquote>
+</div>
+<div class="section" id="merging-the-released-code-back-to-trunk">
+<h2><a class="toc-backref" href="#id17">Merging the released code back to trunk</a></h2>
+<p>Merge the release branch back into the trunk.  The <tt class="docutils literal"><span class="pre">doc/en/release-notes</span></tt>
+changes should be merged into the right place because each release series
+has its own release-notes file, but double-check.</p>
+<p>If it's not already done, advance the version number in <tt class="docutils literal">brz</tt> and
+<tt class="docutils literal">breezy/__init__.py</tt>.  Submit this back into pqm for brz.dev.</p>
+<p>As soon as you change the version number in trunk, make sure you have
+created the corresponding milestone to ensure the continuity in bug
+targeting or nominating. Depending on the change, you may even have to
+create a new series (if your change the major or minor release number), in
+that case go to <a class="reference internal" href="#at-the-start-of-a-series-cycle">At the start of a series cycle</a> and follow the
+instructions from there.</p>
+</div>
+<div class="section" id="releases-until-the-final-one">
+<h2><a class="toc-backref" href="#id18">Releases until the final one</a></h2>
+<p>Congratulations - you have made your first release.  Have a beer or fruit
+juice - it's on the house! If it was a beta, you're not finished
+yet. Another beta or hopefully a stable release is still to come.</p>
+<p>The process is the same as for the first release. Goto <a class="reference internal" href="#doing-a-particular-release">Doing a particular
+release</a> and follow the instructions again. Some details change between
+beta and stable releases, but they should be documented. If the instructions
+aren't clear enough, please fix them.</p>
+</div>
+<div class="section" id="getting-the-release-into-ubuntu">
+<h2><a class="toc-backref" href="#id19">Getting the release into Ubuntu</a></h2>
+<p>(Feel free to propose or add new sections here about what we should do to
+get brz into other places.)</p>
+<p>For the currently-under-development release of Ubuntu, no special action
+is needed: the release should be picked by Debian and synced from there into
+Ubuntu.</p>
+<p>Releases off stable brz branches should go in to the <tt class="docutils literal"><span class="pre">-updates</span></tt> of the
+Ubuntu release that originally contained that branch.  (Ubuntu Lucid had
+brz 2.2.0, so should get every 2.2.x update.)  This means going through
+the <a class="reference external" href="https://wiki.ubuntu.com/StableReleaseUpdates">SRU (Stable Release Updates)</a> process.</p>
+<p>Since September 2010, brz has received approval by the technical
+board for the <a class="reference external" href="https://wiki.ubuntu.com/StableReleaseUpdates/MicroReleaseExceptions">MicroReleaseExceptions</a>
+category so that whole bugfix releases can more easily be
+approved.</p>
+<p>Progress on these realeases is tracked on the <a class="reference external" href="http://wiki.bazaar.canonical.com/UbuntuStableReleaseUpdates">SRU wiki</a>
+page.</p>
+<p><strong>After making a brz stable-release release, nominate the most serious bug
+for the appropriate Ubuntu release and subscribe the `ubuntu-sru` team.</strong></p>
+<p>This requires a couple of tricks (please reconsider and tweak as things
+evolves from one release to the other):</p>
+<blockquote>
+<ul class="simple">
+<li>create a distro task with the <tt class="docutils literal">Also affects distribution</tt> button and
+select <tt class="docutils literal">brz (Ubuntu)</tt>.</li>
+<li>change the <em>URL</em> to point to <tt class="docutils literal"><span class="pre">ubuntu/+source/brz</span></tt> instead of <tt class="docutils literal">brz</tt>
+(this is needed if you create the distro task but not if it exists
+already). You should now be able to click the <tt class="docutils literal">Nominate for release</tt>
+button and select the right Ubuntu release. As of September 2010, this
+means:</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">quantal</tt> for the 2.6 series,</li>
+<li><tt class="docutils literal">precise</tt> for the 2.5 series,</li>
+<li><tt class="docutils literal">oneiric</tt> for the 2.4 series,</li>
+<li><tt class="docutils literal">natty</tt> for the 2.3 series,</li>
+<li><tt class="docutils literal">maverick</tt> for the 2.2 series,</li>
+<li><tt class="docutils literal">lucid</tt> for the 2.1 series,</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li>Subscribe the <tt class="docutils literal"><span class="pre">~ubuntu-sru</span></tt> team to the bug.</li>
+<li>Add a comment targeted to <tt class="docutils literal"><span class="pre">~ubuntu-sru</span></tt> explaining the expectations
+(we are targeting running the test suite during the build which, as of
+September 2010, fails for known reasons that are currently addressed).
+Search for bugs tagged with <tt class="docutils literal">sru</tt> for examples and don't forget to tag
+the bug you selected.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="see-also">
+<h2><a class="toc-backref" href="#id20">See also</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="ppa.html">Packaging into the brz PPA</a> to make and publish Ubuntu
+packages.</li>
+<li><a class="reference external" href="index.html">Breezy Developer Document Catalog</a></li>
+<li><a class="reference external" href="cycle.html">Development cycles</a>: things that happen during the cycle
+before the actual release.</li>
+</ul>
+<!-- vim: filetype=rst textwidth=74 ai shiftwidth=4 -->
+</div>
+</div>
+</div>
+</body>
+</html>

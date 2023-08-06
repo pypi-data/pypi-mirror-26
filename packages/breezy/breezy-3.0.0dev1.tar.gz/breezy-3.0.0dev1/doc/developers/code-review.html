@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Reviewing proposed changes to Bazaar</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="reviewing-proposed-changes-to-bazaar">
+<h1 class="title">Reviewing proposed changes to Bazaar</h1>
+
+<p>All non-trivial code changes coming in to Bazaar are reviewed by someone else.</p>
+<p>Anyone is welcome to review any patch.  You don't need to have a full
+understanding of the codebase to find problems in the code, the documentation,
+or the concept of the patch.</p>
+<p>Normally changes by core contributors are reviewed by one other core
+developer, and changes from other people are reviewed by two core
+developers.  Use intelligent discretion about whether the patch is trivial.</p>
+<p>No one likes their merge requests sitting in a queue going nowhere: this
+is pure waste.  We prioritize reviewing existing proposals.
+Canonical dedicates some staff time to providing prompt helpful reviews.
+(See &lt;<a class="reference external" href="http://wiki.bazaar.canonical.com/PatchPilot/">http://wiki.bazaar.canonical.com/PatchPilot/</a>&gt;.)</p>
+<p>From late 2009 on, we do all our code reviews through Launchpad's
+merge proposal interface.</p>
+<div class="section" id="reviewing-proposed-changes">
+<h1>Reviewing proposed changes</h1>
+<p>There are three main requirements for code to get in:</p>
+<ul class="simple">
+<li>Doesn't reduce test coverage: if it adds new methods or commands,
+there should be tests for them.  There is a good test framework
+and plenty of examples to crib from, but if you are having trouble
+working out how to test something feel free to post a draft patch
+and ask for help.</li>
+<li>Doesn't reduce design clarity, such as by entangling objects
+we're trying to separate.  This is mostly something the more
+experienced reviewers need to help check.</li>
+<li>Improves bugs, features, speed, or code simplicity.</li>
+</ul>
+<p>Code that goes in should not degrade any of these aspects.  Patches are
+welcome that only cleanup the code without changing the external
+behaviour.  The core developers take care to keep the code quality high
+and understandable while recognising that perfect is sometimes the enemy
+of good.</p>
+<p>It is easy for reviews to make people notice other things which should be
+fixed but those things should not hold up the original fix being accepted.
+New things can easily be recorded in the bug tracker instead.</p>
+<p>It's normally much easier to review several smaller patches than one large
+one.  You might want to use <tt class="docutils literal"><span class="pre">bzr-loom</span></tt> to maintain threads of related
+work, or submit a preparatory patch that will make your &quot;real&quot; change
+easier.</p>
+</div>
+<div class="section" id="checklist-for-reviewers">
+<h1>Checklist for reviewers</h1>
+<ul class="simple">
+<li>Do you understand what the code's doing and why?</li>
+<li>Will it perform reasonably for large inputs, both in memory size and
+run time?  Are there some scenarios where performance should be
+measured?</li>
+<li>Is it tested, and are the tests at the right level?  Are there both
+blackbox (command-line level) and API-oriented tests?</li>
+<li>If this change will be visible to end users or API users, is it
+appropriately documented in release notes and/or in whats-new ?</li>
+<li>Does it meet the <a class="reference external" href="code-style.html">coding standards</a>?</li>
+<li>If it changes the user-visible behaviour, does it update the help
+strings and user documentation?</li>
+<li>If it adds a new major concept or standard practice, does it update the
+developer documentation?</li>
+<li>(your ideas here...)</li>
+</ul>
+</div>
+<div class="section" id="reviews-on-launchpad">
+<h1>Reviews on Launchpad</h1>
+<p>Anyone can propose or comment on a merge proposal just by creating a
+Launchpad account.</p>
+<p>From &lt;<a class="reference external" href="https://code.launchpad.net/bzr/+activereviews">https://code.launchpad.net/bzr/+activereviews</a>&gt; you can see all
+currently active reviews, and choose one to comment on.  This page also
+shows proposals that are now approved and should be merged by someone with
+PQM access.</p>
+<p>&lt;<a class="reference external" href="https://help.launchpad.net/Code/Review">https://help.launchpad.net/Code/Review</a>&gt; explains the various merge proposal
+states.  Note that we don't use state <em>Approved</em> until the patch is completely
+ready to merge.</p>
+</div>
+<div class="section" id="landing-approved-changes">
+<h1>Landing approved changes</h1>
+<p>Once a merge proposal is approved and finished, it's sent to PQM (the patch
+queue manager) which will automatically test and integrate it.  The recommended
+way to start this off is by running the <tt class="docutils literal"><span class="pre">feed-pqm</span></tt> script from
+&lt;<a class="reference external" href="https://launchpad.net/hydrazine/">https://launchpad.net/hydrazine/</a>&gt;.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Container format</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="container-format">
+<h1 class="title">Container format</h1>
+
+<div class="section" id="status">
+<h1><a class="toc-backref" href="#id3">Status</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Date:</th><td class="field-body">2007-06-07</td>
+</tr>
+</tbody>
+</table>
+<p>This document describes the proposed container format for streaming and
+storing collections of data in Bazaar.  Initially this will be used for
+streaming revision data for incremental push/pull in the smart server for
+0.18, but the intention is that this will be the basis for much more
+than just that use case.</p>
+<p>In particular, this document currently focuses almost exclusively on the
+streaming case, and not the on-disk storage case.  It also does not
+discuss the APIs used to manipulate containers and their records.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#status" id="id3">Status</a></li>
+<li><a class="reference internal" href="#motivation" id="id4">Motivation</a></li>
+<li><a class="reference internal" href="#terminology" id="id5">Terminology</a></li>
+<li><a class="reference internal" href="#use-cases" id="id6">Use Cases</a><ul>
+<li><a class="reference internal" href="#streaming-data-between-a-smart-server-and-client" id="id7">Streaming data between a smart server and client</a><ul>
+<li><a class="reference internal" href="#incremental-push-or-pull" id="id8">Incremental push or pull</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#persistent-storage-on-disk" id="id9">Persistent storage on disk</a></li>
+<li><a class="reference internal" href="#usable-before-deep-model-changes-to-bazaar" id="id10">Usable before deep model changes to Bazaar</a></li>
+<li><a class="reference internal" href="#examples-of-possible-record-content" id="id11">Examples of possible record content</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#characteristics" id="id12">Characteristics</a><ul>
+<li><a class="reference internal" href="#no-length-prefixing-of-entire-container" id="id13">No length-prefixing of entire container</a></li>
+<li><a class="reference internal" href="#structured-as-a-self-contained-series-of-records" id="id14">Structured as a self-contained series of records</a></li>
+<li><a class="reference internal" href="#addressing-records" id="id15">Addressing records</a></li>
+<li><a class="reference internal" href="#reasonably-cheap-for-small-records" id="id16">Reasonably cheap for small records</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#specification" id="id17">Specification</a><ul>
+<li><a class="reference internal" href="#record-types" id="id18">Record types</a><ul>
+<li><a class="reference internal" href="#end-marker" id="id19">End Marker</a></li>
+<li><a class="reference internal" href="#bytes" id="id20">Bytes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#names" id="id21">Names</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="motivation">
+<h1><a class="toc-backref" href="#id4">Motivation</a></h1>
+<p>To create a low-level file format which is suitable for solving the smart
+server latency problem and whose layout and requirements are extendable in
+future versions of Bazaar, and with no requirements that the smart server
+does not have today.</p>
+</div>
+<div class="section" id="terminology">
+<h1><a class="toc-backref" href="#id5">Terminology</a></h1>
+<p>A <strong>container</strong> is a streamable file that contains a series of
+<strong>records</strong>.  Records may have <strong>names</strong>, and consist of bytes.</p>
+</div>
+<div class="section" id="use-cases">
+<h1><a class="toc-backref" href="#id6">Use Cases</a></h1>
+<p>Here's a brief description of use cases this format is intended to
+support.</p>
+<div class="section" id="streaming-data-between-a-smart-server-and-client">
+<h2><a class="toc-backref" href="#id7">Streaming data between a smart server and client</a></h2>
+<p>It would be nice if we could combine multiple containers into a single
+stream by something no more expensive than concatenation (e.g. by omitting
+end/start marker pairs).</p>
+<p>This doesn't imply that such a combination necessarily produces a valid
+container (e.g. care must be taken to ensure that names are still unique
+in the combined container), or even a useful container.  It is simply that
+the cost of assembling a new combined container is practically as cheap as
+simple concatenation.</p>
+<div class="section" id="incremental-push-or-pull">
+<h3><a class="toc-backref" href="#id8">Incremental push or pull</a></h3>
+<p>Consider the use case of incremental push/pull, which is currently (0.16)
+very slow on high-latency links due to the large number of round trips.
+What we'd like is something like the following.</p>
+<p>A client will make a request meaning &quot;give me the knit contents for these
+revision IDs&quot; (how the client determines which revision IDs it needs is
+unimportant here).  In response, the server streams a single container of:</p>
+<blockquote>
+<ul class="simple">
+<li>one record per file-id:revision-id knit gzip contents and graph data,</li>
+<li>one record per inventory:revision-id knit gzip contents and graph
+data,</li>
+<li>one record per revision knit gzip contents,</li>
+<li>one record per revision signature,</li>
+<li>end marker record.</li>
+</ul>
+</blockquote>
+<p>in that order.</p>
+</div>
+</div>
+<div class="section" id="persistent-storage-on-disk">
+<h2><a class="toc-backref" href="#id9">Persistent storage on disk</a></h2>
+<p>We want a storage format that allows lock-free writes, which suggests a
+format that uses <em>rename into place</em>, and <em>do not modify after writing</em>.</p>
+</div>
+<div class="section" id="usable-before-deep-model-changes-to-bazaar">
+<h2><a class="toc-backref" href="#id10">Usable before deep model changes to Bazaar</a></h2>
+<p>We want a format we can use and refine sooner rather than later.  So it
+should be usable before the anticipated model changes for Bazaar &quot;1.0&quot;
+land, while not conflicting with those changes either.</p>
+<p>Specifically, we'd like to have this format in Bazaar 0.18.</p>
+</div>
+<div class="section" id="examples-of-possible-record-content">
+<h2><a class="toc-backref" href="#id11">Examples of possible record content</a></h2>
+<blockquote>
+<ul class="simple">
+<li>full texts of file versions</li>
+<li>deltas of full texts</li>
+<li>revisions</li>
+<li>inventories</li>
+<li>inventory as tree items e.g. the inventory data for 20 files</li>
+<li>revision signatures</li>
+<li>per-file graph data</li>
+<li>annotation cache</li>
+</ul>
+</blockquote>
+</div>
+</div>
+<div class="section" id="characteristics">
+<h1><a class="toc-backref" href="#id12">Characteristics</a></h1>
+<p>Some key aspects of the described format are discussed in this section.</p>
+<div class="section" id="no-length-prefixing-of-entire-container">
+<h2><a class="toc-backref" href="#id13">No length-prefixing of entire container</a></h2>
+<p>The overall container is not length-prefixed.  Instead there is an end
+marker so that readers can determine when they have read the entire
+container.  This also does not conflict with the goal of allowing
+single-pass writing.</p>
+</div>
+<div class="section" id="structured-as-a-self-contained-series-of-records">
+<h2><a class="toc-backref" href="#id14">Structured as a self-contained series of records</a></h2>
+<p>The container contains a series of <em>records</em>.  Each record is
+self-delimiting.  Record markers are lightweight.  The overhead in terms
+of bytes and processing for records in this container vs. the raw contents
+of those records is minimal.</p>
+</div>
+<div class="section" id="addressing-records">
+<h2><a class="toc-backref" href="#id15">Addressing records</a></h2>
+<p>There is a requirement that each object can be given an arbitrary name.
+Some version control systems address all content by the SHA-1 digest of
+that content, but this scheme is unsatisfactory for Bazaar's revision
+objects.  We can still allow addressing by SHA-1 digest for those content
+types where it makes sense.</p>
+<p>Some proposed object names:</p>
+<blockquote>
+<ul class="simple">
+<li>to name a revision: &quot;<tt class="docutils literal">revision:</tt><em>revision-id</em>&quot;.  e.g.,
+<cite>revision:pqm&#64;pqm.ubuntu.com-20070531210833-8ptk86ocu822hjd5</cite>.</li>
+<li>to name an inventory delta: &quot;<tt class="docutils literal">inventory.delta:</tt><em>revision-id</em>&quot;.  e.g.,
+<cite>inventory.delta:pqm&#64;pqm.ubuntu.com-20070531210833-8ptk86ocu822hjd5</cite>.</li>
+</ul>
+</blockquote>
+<p>It seems likely that we may want to have multiple names for an object.
+This format allows that (by allowing multiple <tt class="docutils literal">name</tt> headers in a Bytes
+record).</p>
+<p>Although records are in principle addressable by name, this specification
+alone doesn't provide for efficient access to a particular record given
+its name.  It is intended that separate indexes will be maintained to
+provide this.</p>
+<p>It is acceptable to have records with no explicit name, if the expected
+use of them does not require them.  For example:</p>
+<blockquote>
+<ul class="simple">
+<li>a record's content could be self-describing in the context of a
+particular container, or</li>
+<li>a record could be accessed via an index based on SHA-1, or</li>
+<li>when streaming, the first record could be treated specially.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="reasonably-cheap-for-small-records">
+<h2><a class="toc-backref" href="#id16">Reasonably cheap for small records</a></h2>
+<p>The overhead for storing fairly short records (tens of bytes, rather than
+thousands or millions) is minimal.  The minimum overhead is 3 bytes plus
+the length of the decimal representation of the <em>length</em> value (for a
+record with no name).</p>
+</div>
+</div>
+<div class="section" id="specification">
+<h1><a class="toc-backref" href="#id17">Specification</a></h1>
+<p>This describes just a basic layer for storing a simple series of
+&quot;records&quot;.  This layer has no intrinsic understanding of the contents of
+those records.</p>
+<p>The format is:</p>
+<blockquote>
+<ul class="simple">
+<li>a <strong>container lead-in</strong>, &quot;<tt class="docutils literal">Bazaar pack format 1 (introduced in <span class="pre">0.18)\n</span></tt>&quot;,</li>
+<li>followed by one or more <strong>records</strong>.</li>
+</ul>
+</blockquote>
+<p>A record is:</p>
+<blockquote>
+<ul class="simple">
+<li>a 1 byte <strong>kind marker</strong>.</li>
+<li>0 or more bytes of record content, depending on the record type.</li>
+</ul>
+</blockquote>
+<div class="section" id="record-types">
+<h2><a class="toc-backref" href="#id18">Record types</a></h2>
+<div class="section" id="end-marker">
+<h3><a class="toc-backref" href="#id19">End Marker</a></h3>
+<p>An <strong>End Marker</strong> record:</p>
+<blockquote>
+<ul class="simple">
+<li>has a kind marker of &quot;<tt class="docutils literal">E</tt>&quot;,</li>
+<li>no content bytes.</li>
+</ul>
+</blockquote>
+<p>End Marker records signal the end of a container.</p>
+</div>
+<div class="section" id="bytes">
+<h3><a class="toc-backref" href="#id20">Bytes</a></h3>
+<p>A <strong>Bytes</strong> record:</p>
+<blockquote>
+<ul>
+<li><p class="first">has a kind marker of &quot;<tt class="docutils literal">B</tt>&quot;,</p>
+</li>
+<li><p class="first">followed by a mandatory <strong>content length</strong><a class="footnote-reference" href="#id2" id="id1"><sup>1</sup></a>:
+&quot;<em>number</em><tt class="docutils literal">\n</tt>&quot;, where <em>number</em> is in decimal, e.g:</p>
+<pre class="literal-block">
+1234
+</pre>
+</li>
+<li><p class="first">followed by zero or more optional <strong>names</strong>:
+&quot;<em>name</em><tt class="docutils literal">\n</tt>&quot;, e.g.:</p>
+<pre class="literal-block">
+revision:pqm&#64;pqm.ubuntu.com-20070531210833-8ptk86ocu822hjd5
+</pre>
+</li>
+<li><p class="first">followed by an <strong>end of headers</strong> byte: &quot;<tt class="docutils literal">\n</tt>&quot;,</p>
+</li>
+<li><p class="first">followed by some <strong>bytes</strong>, exactly as many as specified by the length
+prefix header.</p>
+</li>
+</ul>
+</blockquote>
+<p>So a Bytes record is a series of lines encoding the length and names (if
+any) followed by a body.</p>
+<p>For example, this is a possible Bytes record (including the kind marker):</p>
+<pre class="literal-block">
+B26
+example-name1
+example-name2
+
+abcdefghijklmnopqrstuvwxyz
+</pre>
+</div>
+</div>
+<div class="section" id="names">
+<h2><a class="toc-backref" href="#id21">Names</a></h2>
+<p>Names should be UTF-8 encoded strings, with no whitespace.  Names should
+be unique within a single container, but no guarantee of uniqueness
+outside of the container is made by this layer.  Names need to be at least
+one character long.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>This requires that the writer of a record knows the full length of
+the record up front, which typically means it will need to buffer an
+entire record in memory.  For the first version of this format this is
+considered to be acceptable.</td></tr>
+</tbody>
+</table>
+<!-- vim: ft=rst tw=74 ai -->
+</div>
+</div>
+</div>
+</body>
+</html>

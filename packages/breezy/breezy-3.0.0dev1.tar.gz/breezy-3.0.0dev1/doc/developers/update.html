@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>update.txt</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="bzr-update-performance-analysis">
+<h1>&quot;bzr update&quot; performance analysis</h1>
+<p>There are 5 different slightly different situations in which bzr update
+can be used:</p>
+<ul class="simple">
+<li>local only (no-op)</li>
+<li>lightweight checkout</li>
+<li>heavy checkout</li>
+<li>heavy checkout w/ local changes</li>
+<li>bzr update could work on &quot;bound branch&quot; w/no wt</li>
+</ul>
+</div>
+<div class="section" id="no-new-revisions">
+<h1>No new revisions</h1>
+<p>Should be O(1) to determine
+Tree base is up to date
+wt.last-rev == wt.b.last-rev</p>
+</div>
+<div class="section" id="no-local-changes-only-new-revisions">
+<h1>No local changes, only new revisions</h1>
+<ol class="arabic simple">
+<li>Need to move wt.last_rev (O(1))</li>
+<li>apply delta from base to new rev (O(changes))
+applying changes to files is approx (O(lines-in-files ^ 2))</li>
+<li>update meta-info (executable bits, etc) about modified files (O(changes))</li>
+</ol>
+<p>2/3 could be concurrent (but that may not necessarily be faster)</p>
+<p>potential issue w/ serialized is having 50k files in limbo/</p>
+<p>the limbo/ directory could be avoided in some cases, for example when
+adding new files in new directories.</p>
+<p>modifying in place: reduces fragmentation of fs, not atomic
+w/ local modification, potential of data loss
+w/o should be safe</p>
+<p>&quot;local mod&quot; is diff between disk and last commit, not merge base</p>
+<p>Detecting name conflicts should be O(siblings). Alternatively, conflicts
+with existing files can be detected using stat() and conflicts with new files
+can be detected by examining the pending transform. This changes
+complexity to O(changes).</p>
+</div>
+<div class="section" id="out-of-date-heavyweight-checkout-out-of-date-w-master">
+<h1>out of date heavyweight checkout, out of date w/master</h1>
+<ol class="arabic simple">
+<li>open working tree, check latest revision</li>
+<li>open working tree branch, check latest revision</li>
+<li>mismatch =&gt; update wt =&gt; wt.b.lastrev
+apply delta to tree O(changed file size)
+---- conflicts
+stop on conflicts
+stop always -&gt; inform user they need to repeat (why not?, GFD)</li>
+<li>pull new revs M =&gt; L O(newrevs)</li>
+<li>apply delta to wt
+local committed changes become a pending merge
+local uncommitted stay uncommitted
+local pending merges are retained (should be gc'd)</li>
+</ol>
+<p>offtopic:
+should bzr update report where the source is ?
+should bzr update handle both cases (local tree out-of-date w/local branch, checkout out-of-date w/master) ?</p>
+<p>if updating would diverge, give opportuniuty to branch/unbind instead
+local ahead, &quot;push to master&quot;</p>
+<p>ideas:
+1) can this be done as a single logical step?
+2) can this be done w/o modifying working tree until end? possible performance improvements
+3) if the pulling revision step could deliver full texts, that may help for the merge (same thing as &quot;bzr pull&quot;)</p>
+</div>
+</div>
+</body>
+</html>

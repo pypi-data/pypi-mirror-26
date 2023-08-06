@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Managing the Bazaar PPA</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="managing-the-bazaar-ppa">
+<h1 class="title">Managing the Bazaar PPA</h1>
+
+<p>See also: <a class="reference external" href="index.html">Bazaar Developer Document Catalog</a>.</p>
+<div class="section" id="background">
+<h1>Background</h1>
+<p>We build Ubuntu <tt class="docutils literal">.deb</tt> packages for Bazaar as an important part of the
+release process.  These packages are hosted in a few <a class="reference external" href="https://help.launchpad.net/PPAQuickStart">Personal Package
+Archives (PPA)</a> on Launchpad.</p>
+<blockquote>
+</blockquote>
+<p>As of January 2011, there are the following PPAs:</p>
+<dl class="docutils">
+<dt>&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/ppa">https://launchpad.net/~bzr/+archive/ppa</a>&gt;</dt>
+<dd>Final released versions and updates.
+Most users who want updates to bzr should add this.</dd>
+<dt>&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/proposed">https://launchpad.net/~bzr/+archive/proposed</a>&gt;</dt>
+<dd>Proposed uploads to move into ~bzr/ppa, awaiting testing.</dd>
+<dt>&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/obsolete">https://launchpad.net/~bzr/+archive/obsolete</a>&gt;</dt>
+<dd>A preserved copy of the final version of packages from ~bzr/ppa for
+obsolete Ubuntu series.</dd>
+<dt>&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/beta">https://launchpad.net/~bzr/+archive/beta</a>&gt;</dt>
+<dd>Beta releases.</dd>
+<dt>&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/beta-obsolete">https://launchpad.net/~bzr/+archive/beta-obsolete</a>&gt;</dt>
+<dd>A preserved copy of the final version of packages from
+~bzr/beta for obsolete Ubuntu series.</dd>
+<dt>&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/daily">https://launchpad.net/~bzr/+archive/daily</a>&gt;</dt>
+<dd>Automatic nightly builds from trunk.</dd>
+</dl>
+<p>We build a distinct package for each distrorelease.
+If you upload a release-specific version, you should add a suffix to the
+package version, e.g. <tt class="docutils literal"><span class="pre">1.3-1~bazaar1~dapper1</span></tt>.</p>
+<p>Dapper uses the <tt class="docutils literal"><span class="pre">python-support</span></tt> framework and later distributions use
+<tt class="docutils literal"><span class="pre">python-central</span></tt>.  This has little effect on everyday packaging but does
+mean that some of the control files are quite different.</p>
+<p>Beta releases of bzr and plugins are uploaded into the beta PPA.</p>
+<p>Final release versions are first uploaded into the proposed PPA, which
+serves as a staging area to allow for new packages to be tested, and also
+so that a complete set of Bazaar core and plugin updated versions can be
+prepared together, when negotiating an API version transition.</p>
+<p>Once ready, packages can be copied from the proposed PPA to the main PPA
+using the lp-promote-ppa script found within the hydrazine project.  This
+procedure reduces the risk of broken packages or dependencies between
+packages in the main PPA from which many people get bzr updates.</p>
+<p>The packaging information is kept in branches of bzr on Launchpad, named
+like
+&lt;<a class="reference external" href="https://code.launchpad.net/~bzr/ubuntu/hardy/bzr/bzr-ppa">https://code.launchpad.net/~bzr/ubuntu/hardy/bzr/bzr-ppa</a>&gt;.
+or
+&lt;lp:~bzr/ubuntu/hardy/bzr/bzr-ppa&gt;.  These branches are intended to be used
+with the <tt class="docutils literal"><span class="pre">bzr-builddeb</span></tt> plugin.</p>
+<p>The page &lt;<a class="reference external" href="http://wiki.bazaar.canonical.com/PpaPackagingBranches">http://wiki.bazaar.canonical.com/PpaPackagingBranches</a>&gt; is a
+reference to where the PPA packaging branches for each of the source
+packages in the <tt class="docutils literal">~bzr</tt> PPAs may be found.</p>
+</div>
+<div class="section" id="supported-releases">
+<h1>Supported releases</h1>
+<p>We build packages for every supported Ubuntu release
+&lt;<a class="reference external" href="https://wiki.ubuntu.com/Releases">https://wiki.ubuntu.com/Releases</a>&gt;.  Packages need no longer be updated
+when the release passes end-of-life because all users should
+have upgraded by then.</p>
+<p>As of August 2010, the following releases are supported:</p>
+<ul class="simple">
+<li>Maverick</li>
+<li>Lucid LTS</li>
+<li>Karmic</li>
+<li>Jaunty (support ends October 2010)</li>
+<li>Hardy LTS</li>
+<li>Dapper LTS (supported but no longer updated for new releases)</li>
+</ul>
+<p>The <tt class="docutils literal">rmadison bzr</tt> command will gives you an up-to-date summary
+of which bzr releases are current in each Ubuntu release.</p>
+</div>
+<div class="section" id="preconditions">
+<h1>Preconditions</h1>
+<ul class="simple">
+<li>You must have a Launchpad account and be a member of the team
+that owns these PPAs (<tt class="docutils literal">~bzr</tt>).</li>
+<li>You must have a GPG key registered to your Launchpad account.</li>
+</ul>
+<p>On reasonably recent versions of Ubuntu you no longer need special dput
+configuration, because you can just say</p>
+<pre class="literal-block">
+dput ppa:bzr/proposed source.changes
+</pre>
+<p>However, you may still want to add these lines to <tt class="docutils literal"><span class="pre">~/.dput.cf</span></tt> prevent
+inadvertently attempting to upload into Ubuntu or Debian, which will
+give a somewhat unclear error:</p>
+<pre class="literal-block">
+[DEFAULT]
+default_host_main = notspecified
+</pre>
+<ul>
+<li><p class="first">You need a Ubuntu (or probably Debian) machine, and</p>
+<pre class="literal-block">
+sudo apt-get install build-essential devscripts dput quilt patch libcrypt-ssleay-perl debhelper cdbs python-docutils
+</pre>
+<p>Please update this document if you encounter unmet dependencies or find a
+shorter way to express them.</p>
+</li>
+<li><p class="first">You will also want to have the <a class="reference external" href="http://launchpad.net/bzr-builddeb">bzr-builddeb</a> plugin installed.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="packaging-bazaar">
+<h1>Packaging Bazaar</h1>
+<div class="section" id="overview-of-packaging-with-builddeb">
+<h2>Overview of packaging with builddeb</h2>
+<ul>
+<li><p class="first">First update the oldest supported branch, using <tt class="docutils literal">bzr <span class="pre">merge-upstream</span></tt>.</p>
+</li>
+<li><p class="first">Run <tt class="docutils literal">bzr builddeb <span class="pre">-S</span> <span class="pre">--</span> <span class="pre">-sa</span></tt> to build a source package, then put
+that into the ppa.</p>
+<p>(<tt class="docutils literal"><span class="pre">-S</span></tt> says to make a source-only upload, which is
+required for Launchpad's builders.  <tt class="docutils literal"><span class="pre">-sa</span></tt> says to include the
+<tt class="docutils literal">.orig.tgz</tt> even if this doesn't seem to be the first upload for an
+upstream release: this is often needed when rebuilding something that's
+previously been uploaded to Debian or Ubuntu or into a different PPA.)</p>
+</li>
+<li><p class="first">Now merge across that change into each supported branch with a
+simple <tt class="docutils literal">bzr merge</tt>.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="locally-testing-using-pbuilder">
+<h2>Locally testing using pbuilder</h2>
+<p>It may be useful to locally test builds inside pbuilder.  You may want to
+use the script from &lt;<a class="reference external" href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=255165">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=255165</a>&gt;
+to wrap it, and to give it sensible defaults for your local machine.</p>
+</div>
+<div class="section" id="update-all-packages-in-proposed-before-copying-to-the-main-ppa">
+<h2>Update all packages in proposed before copying to the main ppa</h2>
+<p>If one updates bzr, and there are plugins that are not compatible with the
+new version of bzr, this can cause pain for users using the ppa. In order to
+avoid this, we first get all packages up to date in the proposed ppa, and then
+copy them to the main ppa.</p>
+</div>
+<div class="section" id="short-form">
+<h2>Short form</h2>
+<p>For people who have already set up everything they need, building the
+release packages is as simple as:</p>
+<pre class="literal-block">
+cd ~/dev/bzr/releases/packaging
+export VERSION=&quot;1.17~rc1-1~bazaar1&quot;
+export PACKAGE=&quot;bzr&quot;
+export UBUNTU_RELEASES=&quot;dapper hardy intrepid jaunty karmic&quot;
+~/dev/bzr/bzr.dev/tools/packaging/update-packaging-branches.sh
+* Optionaly merge debian unstable.
+~/dev/bzr/bzr.dev/tools/packaging/update-changelogs.sh
+~/dev/bzr/bzr.dev/tools/packaging/update-control.sh 1.16 1.17 1.18
+~/dev/bzr/bzr.dev/tools/packaging/build-packages.sh
+dput ppa:bzr/proposed ${PACKAGE}_$VERSION*.changes
+</pre>
+<p>Rinse and repeat for all the plugins by changing VERSION and PACKAGE.</p>
+</div>
+<div class="section" id="long-form">
+<h2>Long Form</h2>
+<ol class="arabic">
+<li><p class="first">You will end up checking out a separate directory for each supported
+release. Such as <tt class="docutils literal">~/dev/bzr/releases/packaging/hardy</tt>. In each of these
+branches, you will produce the package for the release.</p>
+<p>The scripts will also create the branches and produce packages for
+bzrtools and bzr-svn.</p>
+</li>
+<li><p class="first">Decide on the final version number.  It should be of this form:</p>
+<pre class="literal-block">
+bzr-1.17~rc1-1~bazaar1~hardy1
+</pre>
+<p><strong>Note:</strong> There are three hyphen-separated parts: the <em>package name</em>,
+the <em>upstream version</em>, and the <em>packaging version</em>.</p>
+<p><strong>Caution:</strong> Upstream betas or release candidates must insert a tilde
+to make them sort before the final release, like this:
+<tt class="docutils literal"><span class="pre">bzr-1.17~rc1-1~bazaar1~hardy1</span></tt>.</p>
+<p>Final releases will use a release string of the form:
+<tt class="docutils literal"><span class="pre">bzr-1.17-1~bazaar1~hardy1</span></tt></p>
+<p>Set this base of this up as a usable environment variable:</p>
+<pre class="literal-block">
+export VERSION=&quot;1.17~rc1-1~bazaar1&quot;
+</pre>
+</li>
+<li><p class="first">Export the distroreleases that you will be packaging for:</p>
+<pre class="literal-block">
+export UBUNTU_RELEASES=&quot;dapper hardy intrepid jaunty karmic&quot;
+</pre>
+</li>
+<li><p class="first">Export the program you are packaging:</p>
+<pre class="literal-block">
+export PACKAGE=&quot;bzr&quot;
+</pre>
+</li>
+<li><p class="first">Checkout (or update) the packaging branch for each supported release:</p>
+<pre class="literal-block">
+bzr co lp:~bzr/ubuntu/hardy/bzr/bzr-ppa
+</pre>
+<p>There is a script available to help:</p>
+<pre class="literal-block">
+tools/packaging/update-packaging-branches.sh
+</pre>
+</li>
+<li><p class="first">Optionaly, merge the Debian unstable branch into each of the packaging
+branches. You can find the Debian unstable branch here:
+<a class="reference external" href="http://bzr.debian.org/pkg-bazaar/">http://bzr.debian.org/pkg-bazaar/</a></p>
+</li>
+<li><p class="first">The <tt class="docutils literal"><span class="pre">bzr-builddeb</span></tt> step will download the original tarball if you do
+not already have it, putting it into a <tt class="docutils literal">tarballs</tt> directory.</p>
+</li>
+<li><p class="first">For Bazaar plugins, change the <tt class="docutils literal">debian/control</tt> file to express a
+dependency on the correct version of <tt class="docutils literal">bzr</tt>.</p>
+<p>For bzrtools this is typically:</p>
+<pre class="literal-block">
+Build-Depends-Indep: bzr (&gt;= 1.17~), rsync
+Depends: ${python:Depends}, bzr (&gt;= 1.17~), bzr (&lt;&lt; 1.18~), patch
+</pre>
+<p>There is a helper script which will update the control file and commit it
+for all of your <tt class="docutils literal">$UBUNTU_RELEASES</tt>. It is available as:</p>
+<pre class="literal-block">
+tools/packaging/update-control.sh
+</pre>
+<p>You must supply the versions as arguments as follows
+OLD_VERSION CURRENT_VERSION NEXT_VERSION, such as:</p>
+<pre class="literal-block">
+tools/packaging/update-control.sh 1.16 1.17 1.18
+</pre>
+</li>
+<li><p class="first">Make a new <tt class="docutils literal">debian/changelog</tt> entry for the new release,
+either by using <tt class="docutils literal">dch</tt> or just editing the file:</p>
+<pre class="literal-block">
+dch -v '1.17~rc1-1~bazaar1~hardy1' -D hardy
+</pre>
+<p>dch will default to the distro you're working in and this isn't checked
+against the version number (which is just our convention), so make sure
+to specify it.</p>
+<p>Make sure you have the correct email address for yourself (you may need
+export DEBEMAIL=`bzr whoami` if it isn't already set), version number, and
+distribution.  It should look something like this:</p>
+<pre class="literal-block">
+bzr (1.17~rc1-1~bazaar1~hardy1) hardy; urgency=low
+
+ * New upstream release.
+
+-- John Sample &lt;sample&#64;example.com&gt;  Mon, 31 Mar 2008 12:36:27 +1100
+</pre>
+<p>If you need to upload the package again to fix a problem, normally you
+should increment the last number in the version number, following the
+distro name.  Make sure not to omit the initial <tt class="docutils literal"><span class="pre">-1</span></tt>, and make sure
+that the distro name in the version is consistent with the target name
+outside the parenthesis.</p>
+<p>You will also want to commit these changes into the packaging branch.</p>
+<p>There is a helper script which will build all the packages
+for all of your <tt class="docutils literal">$UBUNTU_RELEASES</tt>. It is available as:</p>
+<pre class="literal-block">
+tools/packaging/update-changelogs.sh
+</pre>
+</li>
+<li><p class="first">Build the source packages:</p>
+<pre class="literal-block">
+cd bzr-$DISTRO; bzr builddeb -S
+</pre>
+<p>This will create a <tt class="docutils literal">.changes</tt> file.  If you didn't configure builddeb
+to automatically sign them, you can use</p>
+<pre class="literal-block">
+debsign -m$UID *.changes
+</pre>
+<p>where <tt class="docutils literal">$UID</tt> is the gpg key you want to use to sign the changes.</p>
+<p>There is a helper script which will build the package
+for all of your <tt class="docutils literal">$UBUNTU_RELEASES</tt>. It is available as:</p>
+<pre class="literal-block">
+tools/packaging/build-packages.sh
+</pre>
+</li>
+<li><p class="first">Upload into the PPA for each release:</p>
+<pre class="literal-block">
+dput dput ppa:bzr/proposed bzr*1.17-1*.changes
+</pre>
+</li>
+<li><p class="first">You should soon get an &quot;upload accepted&quot; mail from Launchpad, which
+means that your package is waiting to be built.  You can then track its
+progress in &lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/proposed">https://launchpad.net/~bzr/+archive/proposed</a>&gt; and
+&lt;<a class="reference external" href="https://launchpad.net/~bzr/+archive/proposed/+builds">https://launchpad.net/~bzr/+archive/proposed/+builds</a>&gt;.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="packaging-bzr-svn">
+<h2>Packaging bzr-svn</h2>
+<p>bzr-svn uses a packaging branch that contains both the source
+(including any changes against upstream) and the <tt class="docutils literal">debian/</tt> directory.</p>
+<p>To build bzr-svn:</p>
+<ol class="arabic">
+<li><p class="first">Get a checkout of <tt class="docutils literal"><span class="pre">lp:~bzr/bzr-svn/hardy-ppa/</span></tt></p>
+</li>
+<li><p class="first">Merge from <tt class="docutils literal"><span class="pre">http://bzr.debian.org/pkg-bazaar/bzr-svn/unstable/</span></tt></p>
+<p>This should bring in both upstream and packaging changes for the new
+release, and it's updated as part of the bzr-svn release process.</p>
+<p>It's quite possible you will need to resolve some conflicts.</p>
+</li>
+<li><p class="first">Run <tt class="docutils literal">dch <span class="pre">-v</span> <span class="pre">0.4.15-1~bazaar1-hardy1</span> <span class="pre">-D</span> hardy</tt> or similar</p>
+</li>
+<li><p class="first">Run <tt class="docutils literal">bzr builddeb <span class="pre">--source</span></tt></p>
+<p>bzr-builddeb will automatically check out the appropriate tag from the
+main branch of bzr-svn, build, and package it.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">dput ppa:bzr/proposed <span class="pre">../bzr-svn_0.4.15-1~bazaar1~hardy1_source.changes</span></tt></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="monitoring-the-contents-of-ppas">
+<h1>Monitoring the contents of PPAs</h1>
+<p>If you add all the bzr PPAs to your <tt class="docutils literal">sources.list</tt> then you can see a
+summary of current package versions with:</p>
+<pre class="literal-block">
+apt-cache madison bzr
+</pre>
+</div>
+<div class="section" id="testing-the-contents-of-the-ppa">
+<h1>Testing the contents of the PPA</h1>
+<p>A somewhat crude but useful way to test the contents of the PPA is to
+install the relevant packages into an schroot:</p>
+<pre class="literal-block">
+schroot -c hardy-test -u root -- \
+  apt-get install -o 'APT::Install-Suggests=&quot;true&quot;' \
+  -o 'APT::Install-Recommends=&quot;true&quot;' \
+  bzr
+</pre>
+<p>This should make sure everything can be installed; it won't guarantee that</p>
+</div>
+<div class="section" id="packaging-dependencies">
+<h1>Packaging dependencies</h1>
+<p>Some of our updates to bzr in previous releases require backports of our
+dependencies.  Specific branches holding these backports:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">lp:~bzr/ubuntu/dapper/configobj/dapper-backport</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">lp:~bzr/ubuntu/hardy/python-central-debhelper-sequence-addon/bzr-ppa</span></tt></li>
+</ul>
+</blockquote>
+<!-- vim: filetype=rst textwidth=74 ai shiftwidth=4 -->
+</div>
+</div>
+</body>
+</html>

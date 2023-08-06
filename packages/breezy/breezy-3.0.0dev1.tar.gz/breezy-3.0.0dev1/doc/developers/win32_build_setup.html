@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Setting Up A Windows Build Host</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="setting-up-a-windows-build-host">
+<h1 class="title">Setting Up A Windows Build Host</h1>
+
+<p>This document describes the steps taken to set up a Windows build host. It is
+intended to be step-by-step instructions of what packages need to be installed,
+where they can be gotten from, and how they are configured.</p>
+<div class="section" id="baseline">
+<h1>Baseline</h1>
+<p>This was written as a step-by-step as I set up the Amazon EC2 'desolation'
+instance. This was based on an Amazon Windows 2003 instance. Also note that for
+Amazon EC2, all programs were installed into the &quot;C:&quot; drive, as the &quot;D:&quot; drive
+is essentially <tt class="docutils literal">/tmp</tt> and is not preserved between launched instances.</p>
+</div>
+<div class="section" id="install-packages">
+<h1>Install Packages</h1>
+<ol class="arabic">
+<li><p class="first">Download cygwin's setup.exe from <a class="reference external" href="http://www.cygwin.com">http://www.cygwin.com</a>
+At present the current version is 1.5.25-15. This is used primarily to
+install the build scripts and gcc-mingw. Note that we explicitly <em>don't</em>
+install cygwin's python or bzr package. As we are only interested in
+running the native version of bzr. For information on running the cygwin
+port of bzr, look elsewhere.</p>
+<p>Probably not all of these packages are necessary, but they make life easier.</p>
+<ol class="loweralpha simple">
+<li>gcc-mingw32</li>
+<li>make</li>
+<li>openssh</li>
+<li>rsync</li>
+<li>vim</li>
+<li>wget</li>
+<li>zip</li>
+<li>unzip</li>
+<li>patch</li>
+<li>gettext-devel # brings 'msgfmt'</li>
+</ol>
+</li>
+<li><p class="first">Download the supported versions of python from <a class="reference external" href="http://www.python.org">http://www.python.org</a></p>
+<ol class="loweralpha simple">
+<li>python 2.6.4</li>
+<li>python 2.5.4 <a class="reference external" href="http://www.python.org/ftp/python/2.5.4/python-2.5.4.msi">http://www.python.org/ftp/python/2.5.4/python-2.5.4.msi</a></li>
+<li>python 2.4.4 (there is no Windows installer for 2.4.5 or 2.4.6)
+<a class="reference external" href="http://www.python.org/ftp/python/2.4.4/python-2.4.4.msi">http://www.python.org/ftp/python/2.4.4/python-2.4.4.msi</a></li>
+</ol>
+<p>Note that for Amazon EC2, all of these were installed int</p>
+</li>
+<li><p class="first">Configure 'distutils' for the compiler that you will be using. For python
+2.4 and 2.5 we use gcc-mingw32, for 2.6 we use Visual Studio 2008.</p>
+<p>Edit <tt class="docutils literal"><span class="pre">D:\Python25\Lib\disutils\distutils.cfg</span></tt> (you have to create the
+file). You want to add a section like:</p>
+<pre class="literal-block">
+[build]
+compiler = mingw32
+</pre>
+<p>This also requires 'fixing' the cygwin gcc installation so that distutils
+can find it. Specifically, it knows to look for <tt class="docutils literal">gcc.exe</tt> however, the
+latest versions of cygwin start using &quot;alternatives&quot; and making <tt class="docutils literal">gcc</tt> just
+a symlink.</p>
+<p>You also need to add <tt class="docutils literal"><span class="pre">C:\cygwin\bin</span></tt> and <tt class="docutils literal"><span class="pre">C:\cygwin\lib</span></tt> into your
+environment path. This is generally done with:</p>
+<pre class="literal-block">
+Right Click My Computer / Properties / Advanced / Environment Variables
+System Variables / Select 'PATH' / Edit
+</pre>
+</li>
+<li><p class="first">Download important python libraries. At the moment, the official Windows
+all-in-one installer is built using python 2.5. We will likely soon switch
+to python 2.6.</p>
+<ol class="loweralpha">
+<li><p class="first"><a class="reference external" href="http://pypi.python.org/pypi/setuptools">http://pypi.python.org/pypi/setuptools</a></p>
+<p>Installing this first should make it easier to install some of the other
+tools. To install something using easy install, it is generally best to
+open up a <tt class="docutils literal">cmd.exe</tt> shell (<em>not</em> a cygwin shell) and do:</p>
+<pre class="literal-block">
+cd C:\Python25
+python.exe Scripts\easy_install-script.py -Z -O1 PACKAGE
+</pre>
+<p>The '-Z' tells it to install as a regular directory. This generally works
+better with py2exe.</p>
+</li>
+<li><p class="first">pywin32 <a class="reference external" href="http://sourceforge.net/projects/pywin32/files/">http://sourceforge.net/projects/pywin32/files/</a></p>
+</li>
+<li><p class="first">easy_install paramiko
+This will also bring in PyCrypto and compile it, so it is important to
+have configured step (3) correctly.</p>
+</li>
+<li><p class="first">easy_install Pyrex    (or Cython)
+Note, you should probably install pyrex for all versions of python. All
+of them need to run 'setup.py bdist_wininst' and so it is good to have it
+build automatically, rather than setting up an explicit build order based
+on which one has pyrex.</p>
+</li>
+<li><p class="first">easy_install cogapp</p>
+</li>
+<li><p class="first">install py2exe (easy_install failed)
+<a class="reference external" href="http://sourceforge.net/projects/py2exe/files/">http://sourceforge.net/projects/py2exe/files/</a></p>
+</li>
+<li><p class="first">easy_install docutils</p>
+</li>
+<li><p class="first">Install PyQt
+<a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</a></p>
+<p>Currently they only seem to offer PyQt 4.4.3 for python 2.5 and PyQt
+4.6.1 for python 2.6. They generally don't make it easy to install old
+versions of PyQt.</p>
+</li>
+<li><p class="first">Install pyreadline
+<a class="reference external" href="https://launchpad.net/pyreadline/+download">https://launchpad.net/pyreadline/+download</a></p>
+</li>
+<li><p class="first">easy_install pygments</p>
+</li>
+<li><p class="first">Patch pycrypto, so that it supports older Windows installs. (see bugs
+#248522, #272791, #497733). The direct link to the patch is:
+<a class="reference external" href="http://launchpadlibrarian.net/16133025/win32_clock.patch">http://launchpadlibrarian.net/16133025/win32_clock.patch</a>
+This may not end up necessary w/ pycrypto 2.1, especially if paramiko can
+be taught to use the new functionality (avoiding the warning).</p>
+</li>
+<li><p class="first">easy_install testtools</p>
+</li>
+</ol>
+</li>
+<li><p class="first">Get Pageant, not strictly necessary, but it is a pretty good ssh-agent for
+Windows, and paramiko knows how to use keys from Pageant.</p>
+<p><a class="reference external" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a></p>
+<p>Note that you probably want to set the environment variable
+<tt class="docutils literal">BZR_SSH=paramiko</tt> at this time. Otherwise it will try to use the
+<tt class="docutils literal">ssh.exe</tt> that it finds on your PATH (as configured in step 3), and
+cygwin's openssh does <em>not</em> know how to access Pageant.</p>
+<p>I usually get the 'all-in-one' installer, but only because it is easier. You
+only really need <tt class="docutils literal">pageant.exe</tt> and possibly <tt class="docutils literal">puttygen.exe</tt>.</p>
+<p>If you do this, you'll probably also want to install a shortcut to
+<tt class="docutils literal">pageant.exe</tt> in Start / Programs / Startup so that it always starts when
+you log in (though you still have to manually add your SSH keys.)</p>
+<p>Note that on the Amazon EC2 machine, I'm having problems with temp files
+being created without the permission for the current user to actually read
+them. They seem to be owned by <tt class="docutils literal">Administrator</tt> rather than by
+<tt class="docutils literal">Administrators</tt>.</p>
+</li>
+<li><p class="first">Install bzr. Usually it is easiest to just get the latest all-in-one
+installer from <a class="reference external" href="https://launchpad.net/bzr/+download">https://launchpad.net/bzr/+download</a></p>
+</li>
+<li><p class="first">Install INNOSetup from:
+<a class="reference external" href="http://www.jrsoftware.org/isdl.php">http://www.jrsoftware.org/isdl.php</a></p>
+<p>After installing, you'll want to add <tt class="docutils literal"><span class="pre">C:\Program</span> Files\Inno Setup 5</tt> to
+your PATH.</p>
+</li>
+<li><p class="first">Fix distutils for the specific version of gcc. Distutils in python2.4.4 has
+a bug where it assumes version strings have only 3 digits. The fix is to
+just change one '?' in the regex into a '*':</p>
+<pre class="literal-block">
+--- version.py  2009-11-05 14:41:47.497212900 -0800
++++ version.py  2009-11-05 14:39:57.684712900 -0800
+&#64;&#64; -97,7 +97,7 &#64;&#64;
+     in the distutils documentation.
+     &quot;&quot;&quot;
+
+-    version_re = re.compile(r'^(\d+) \. (\d+) (\. (\d+))? ([ab](\d+))?$',
++    version_re = re.compile(r'^(\d+) \. (\d+) (\. (\d+))* ([ab](\d+))?$',
+                             re.VERBOSE)
+</pre>
+</li>
+<li><p class="first">If you want to build in the source tree, you need the zlib dll and
+associated libraries, put somewhere on your path. The buildout routines grab
+this directly and add it to the build path, but that doesn't work for
+<tt class="docutils literal">setup.py</tt>.
+<a class="reference external" href="http://www.zlib.net/zlib123-dll.zip">http://www.zlib.net/zlib123-dll.zip</a></p>
+<p>I usually download and extract this to something like <tt class="docutils literal"><span class="pre">C:\local\</span></tt> so that
+I end up with a <tt class="docutils literal"><span class="pre">C:\local\lib</span></tt> and <tt class="docutils literal"><span class="pre">C:\local\include</span></tt> directory. I then
+modify the <tt class="docutils literal">distutils.cfg</tt> file to tell the compiler where to find these
+headers and libraries:</p>
+<pre class="literal-block">
+[build_ext]
+include-dirs = C:/local/include
+library-dirs = C:/local/lib
+</pre>
+<p>Note that you'll probably want to put the <tt class="docutils literal">zlib1.dll</tt> into your path. You
+can:</p>
+<blockquote>
+<ol class="arabic simple">
+<li>Add <tt class="docutils literal"><span class="pre">C:\local</span></tt> to your PATH variable in
+&quot;My Computer/Properties/Advanced/Environment Variables&quot;</li>
+<li>More logically, move <tt class="docutils literal">zlib1.dll</tt> to either 'lib' or 'bin'
+subdirectories and add that.</li>
+<li>Copy it to <tt class="docutils literal"><span class="pre">C:\Windows\</span></tt>.</li>
+</ol>
+</blockquote>
+<p>I recommend 3, mostly because lots of apps will want to use zlib1.dll in the
+long run. (You may already have it.)</p>
+</li>
+<li><p class="first">Install Visual Studio 2008 Professional
+<a class="reference external" href="http://www.microsoft.com/downloads/details.aspx?FamilyId=83C3A1EC-ED72-4A79-8961-25635DB0192B&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?FamilyId=83C3A1EC-ED72-4A79-8961-25635DB0192B&amp;displaylang=en</a></p>
+<p>This is a 3GB DVD iso image. You can mount it directly with Microsofts
+iso mounting utility:
+<a class="reference external" href="http://download.microsoft.com/download/7/b/6/7b6abd84-7841-4978-96f5-bd58df02efa2/winxpvirtualcdcontrolpanel_21.exe">http://download.microsoft.com/download/7/b/6/7b6abd84-7841-4978-96f5-bd58df02efa2/winxpvirtualcdcontrolpanel_21.exe</a></p>
+<p>You need at least Windows XP (which introduced direct iso support, I
+believe.)</p>
+<p>Note that there is a Service Pack 1 for Visual Studio. The ISO can be
+downloaded here:
+<a class="reference external" href="http://www.microsoft.com/downloads/thankyou.aspx?familyId=27673c47-b3b5-4c67-bd99-84e525b5ce61&amp;displayLang=en">http://www.microsoft.com/downloads/thankyou.aspx?familyId=27673c47-b3b5-4c67-bd99-84e525b5ce61&amp;displayLang=en</a></p>
+<p>However, on EC2, there isn't enough room on C: to actually run the
+installer. You need approx 6GB of free disk space. And EC2 only gives your
+10GB and Windows itself takes up about 5GB. So we are currently running
+stock VS 2008 with no service packs. (Even installing VS 2008 to a
+different drive doesn't leave enough room on C: to run the upgrader.)</p>
+<p>When installing on EC2, it seems their 2003 Server comes with a Visual
+Studio key already supplied. There is also the possibility of using Visual
+Studio Express Edition, but it is currently unable to compile TortoiseBzr.</p>
+</li>
+</ol>
+<!-- vim: ft=rst tw=79 et -->
+</div>
+</div>
+</body>
+</html>

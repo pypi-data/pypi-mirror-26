@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Check Notes</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="check-notes">
+<h1 class="title">Check Notes</h1>
+
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#overview" id="id1">Overview</a></li>
+<li><a class="reference internal" href="#repository" id="id2">Repository</a></li>
+<li><a class="reference internal" href="#branch" id="id3">Branch</a></li>
+<li><a class="reference internal" href="#tree" id="id4">Tree</a></li>
+<li><a class="reference internal" href="#duplicate-work" id="id5">Duplicate work</a></li>
+<li><a class="reference internal" href="#outline-of-approach" id="id6">Outline of approach</a></li>
+</ul>
+</div>
+<div class="section" id="overview">
+<h1><a class="toc-backref" href="#id1">Overview</a></h1>
+<p>Check has multiple responsibilities:</p>
+<ul class="simple">
+<li>Ensure that the data as recorded on disk is accessible intact and unaltered.</li>
+<li>Ensure that a branch/repository/tree/whatever is ready for upgrade.</li>
+<li>Look for and report on recorded-data issues where previous bzr's, or changing
+situations have lead so some form of inconsistency.</li>
+<li>Report sufficient information for a user to either fix the issue themselves
+or report a bug that will hopefully be sufficiently detailed we can fix based
+on the initial report.</li>
+<li>Not scare users when run if everything is okey-dokey.</li>
+</ul>
+<p>Ideally one check invocation can do all these things.</p>
+</div>
+<div class="section" id="repository">
+<h1><a class="toc-backref" href="#id2">Repository</a></h1>
+<p>Things that can go wrong:
+* Bit errors or alterations may occur in raw data.
+* Data that is referenced may be missing
+* There could be a lot of garbage in upload etc.
+* File graphs may be inconsistent with inventories and parents.
+* The revision graph cache can be inconsistent with the revision data.</p>
+</div>
+<div class="section" id="branch">
+<h1><a class="toc-backref" href="#id3">Branch</a></h1>
+<p>Things that can go wrong:
+* Tag or tip revision ids may be missing from the repo.
+* The revno tip cache may be wrong.
+* Various URLS could be problematic (not inaccessible, just invalid)
+* Stacked-on branch could be inaccessible.</p>
+</div>
+<div class="section" id="tree">
+<h1><a class="toc-backref" href="#id4">Tree</a></h1>
+<p>Things that can go wrong:
+* Bit errors in dirstate.
+* Corrupt or invalid shelves.
+* Corrupt dirstates written to disk.
+* Cached inventories might not match repository.</p>
+</div>
+<div class="section" id="duplicate-work">
+<h1><a class="toc-backref" href="#id5">Duplicate work</a></h1>
+<p>If we check every branch in a repo separately we will encounter duplicate
+effort in assessing things like missing tags/tips, revno cache etc.</p>
+</div>
+<div class="section" id="outline-of-approach">
+<h1><a class="toc-backref" href="#id6">Outline of approach</a></h1>
+<p>To check a repository, we scan for branches, open their trees and generate
+summary data. We then collect all the summary data in as compact a form as
+possible and do a detailed check on the repository, calling back out to branch
+and trees as we encounter the actual data that that tree/branch requires to
+perform its check.</p>
+</div>
+</div>
+</body>
+</html>

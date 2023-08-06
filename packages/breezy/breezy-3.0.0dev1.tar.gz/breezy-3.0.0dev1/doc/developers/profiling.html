@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Profiling</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="profiling">
+<h1 class="title">Profiling</h1>
+
+<div class="section" id="using-profilers">
+<h1>Using profilers</h1>
+<p>Bazaar has some built-in support for collecting and saving profiling
+information. In the simpliest case, the <tt class="docutils literal"><span class="pre">--lsprof</span></tt> option can be used as
+shown below:</p>
+<pre class="literal-block">
+bzr --lsprof ...
+</pre>
+<p>This will dump the profiling information to stdout before exiting.
+Alternatively, the <tt class="docutils literal"><span class="pre">--lsprof-file</span></tt> option can be used to specify a filename
+to save the profiling data into to. By default, profiling data saved to a
+file is a pickled Python object making it possible to reload the data and
+do with it what you will. For convenience though:</p>
+<ul class="simple">
+<li>if the filename ends in <tt class="docutils literal">.txt</tt>, it will be dumped in a text format.</li>
+<li>if the filename either starts with <tt class="docutils literal">callgrind.out</tt> or ends with
+<tt class="docutils literal">.callgrind</tt>, it will be converted to a format loadable by the
+KCacheGrind visualization tool.</li>
+</ul>
+<p>Note that KCacheGrind's Open Dialog has a default filter than only shows
+files starting with <tt class="docutils literal">callgrind.out</tt> so the longer filename is usually
+preferable. Here is an example of how to use the <tt class="docutils literal"><span class="pre">--lsprof-file</span></tt> option
+in combination with KCacheGrind to visualize what the <tt class="docutils literal">status</tt> command
+is doing:</p>
+<pre class="literal-block">
+bzr --lsprof-file callgrind.out.st001 status
+kcachegrind callgrind.out.st001 &amp;
+</pre>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">bzr also has a <tt class="docutils literal"><span class="pre">--profile</span></tt> option that uses the hotshot profiler
+instead of the lsprof profiler. The hotshot profiler can be useful
+though the lsprof one is generally recommended. See
+<a class="reference external" href="http://docs.python.org/lib/node795.html">http://docs.python.org/lib/node795.html</a>.</p>
+</div>
+<p>Note that to use <tt class="docutils literal"><span class="pre">--lsprof</span></tt> you must install the lsprof module, which you
+can get with:</p>
+<pre class="literal-block">
+svn co http://codespeak.net/svn/user/arigo/hack/misc/lsprof
+</pre>
+</div>
+<div class="section" id="profiling-locks">
+<h1>Profiling locks</h1>
+<p>Bazaar can log when locks are taken or released, which can help in
+identifying unnecessary lock traffic.  This is activated by the <tt class="docutils literal"><span class="pre">-Dlock</span></tt>
+global option.</p>
+<p>This writes messages into <tt class="docutils literal"><span class="pre">~/.bzr.log</span></tt>.
+At present this only logs actions relating to the on-disk lockdir.  It
+doesn't describe actions on in-memory lock counters, or OS locks (which
+are used for dirstate.)</p>
+</div>
+<div class="section" id="profiling-hpss-requests">
+<h1>Profiling HPSS Requests</h1>
+<p>When trying to improve network performance, it is often useful to know
+what requests are being made, and how long they are taking. The <tt class="docutils literal"><span class="pre">-Dhpss</span></tt>
+global option will enable logging smart server requests, including the
+time spent in each request.</p>
+</div>
+</div>
+</body>
+</html>

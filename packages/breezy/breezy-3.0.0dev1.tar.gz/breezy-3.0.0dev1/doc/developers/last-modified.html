@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>Computing last_modified values</title>
+<link rel="stylesheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<div class="document" id="computing-last-modified-values">
+<h1 class="title">Computing last_modified values</h1>
+
+<div class="section" id="introduction">
+<h1>Introduction</h1>
+<p>Bazaar (through at least 0.19) computes a <tt class="docutils literal">last_modified</tt>
+attribute for all inventory entries and stores it at commit time.
+This is the <tt class="docutils literal">revision_id</tt> that last changed or merged the file.  It is
+used in knit and weave repositories to look up the file text, and to index
+into the file graph.  It's also used to determine which revisions of the
+file text to pull during <tt class="docutils literal">fetch</tt>.</p>
+<p>This data is not natively stored by most other systems so we need to
+synthesize it during conversion.</p>
+<p>This is a case of non-core data that we might wish to treat as cached,
+rather than always stored.</p>
+</div>
+<div class="section" id="definition">
+<h1>Definition</h1>
+<p>Take the set of all &quot;heads&quot;: all the versions of these files in parent
+trees.</p>
+<p>Reduce the heads by eliminating any whose last_modified is an ancestor of
+the last_modified of any other head.</p>
+<p>If there is still more than one head, a new last_modified is assigned.
+This points to the merge point in the file graph.</p>
+<p>If the file text and properties are the same as the sole remaining head,
+its last_modified is inherited. Property changes include executable bit,
+filename, and containing directory.</p>
+<p>Otherwise, a new last_modified is used.</p>
+<p>(This is meant to be the simplest statement, but it may not be the most
+efficient algorithm; anything that gives equivalent results can be used.)</p>
+</div>
+<div class="section" id="generation-in-commit">
+<h1>Generation in commit</h1>
+<p>Commit and converters both need this when writing into Bazaar native
+formats.</p>
+<p>This is an O(tree) operation because it needs to check for files with
+multiple heads.  It could be reduced to O(changed_or_merged_files) if that
+was faster to determine.  So it needs to be fast.</p>
+<p>For the single-parent commit case, we just need to determine which files have
+changed compared to the parent.  If the file was changed, it gets the
+revision id of the new revision; otherwise it inherits the value from the
+parent tree.</p>
+<p>In the multi-parent commit case (commit of a merge), it can take the value
+from any of the parent trees, or of the new revision.</p>
+<p>Commit in a dirstate tree should be able to do this more easily by looking
+at a row of the dirstate to get the per-file parents.  It still needs to
+look at the revision or file graph information to work out whether heads can be
+eliminated as previously merged.  At the moment <tt class="docutils literal">find_previous_heads</tt> works on
+inventories, so needs to spend considerable effort building whole
+inventories, including files that are not modified or merged.  (Called
+from <tt class="docutils literal">record_entry_contents</tt>.)  It might be better to have the commit
+builder pass in the per-entry parents so that dirstate can generate just
+those that are necessary.  (See also the spec for
+<tt class="docutils literal">iter_changes_multiple_parents</tt>.)</p>
+<p>If merge used a per-file graph then it would know when one version fully
+supersedes another, and it could emit only a single parent.  Merge could
+in fact do this even when not using per-file graphs.  In the current
+dirstate format we need to store the full data for all trees because they
+can be extracted from the dirstate, but it could mark some parents as
+already merged.</p>
+<p>Alternatively, we could change the dirstate to include
+only the base and current trees, and cache the merged-in parents
+elsewhere.</p>
+<p>(Offtopic other dirstate changes: we could also omit the working-copy
+hash, and just have a stat-fingerprint of when it was last known equal to
+the basis revision.  That reduces the amount of data stored and possibly
+makes it simpler to update, and shouldn't penalize common cases.)</p>
+</div>
+<div class="section" id="generation-during-conversion">
+<h1>Generation during conversion</h1>
+<p>Accessing a foreign branch requires synthesizing this information.
+If last_modified is removed from a future bzr version, we will also need
+to synthesize it to pull back to earlier formats.</p>
+<p>Because last_modified is not natively stored in the foreign branches, we
+want to take advantage of any conversion we've already done, so that we
+don't need to recursively generate them on every access.  We'd
+prefer to find a revision that's already converted to a Bazaar inventory
+within another related repository, such as the target of a conversion.</p>
+</div>
+<div class="section" id="avoiding-last-modified">
+<h1>Avoiding last_modified</h1>
+<p>last_modified is potentially expensive to determine and we may not want to
+store it in inventories in future.  Therefore we should use it only when
+necessary:</p>
+<ul class="simple">
+<li>When writing out an inventory format that includes it.</li>
+<li>In Bazaar formats that use it as a key for the file text or file
+ancestry.  This should be hidden behind the Repository/RevisionTree
+interface.</li>
+<li>When a user operation specifically requires the last_modified (e.g.
+hypothetical annotate directory).</li>
+</ul>
+<p>We already do this in most cases.</p>
+</div>
+<div class="section" id="compared-to-annotate">
+<h1>Compared to annotate</h1>
+</div>
+<div class="section" id="use-cases">
+<h1>Use cases</h1>
+</div>
+<div class="section" id="cases-to-test">
+<h1>Cases to test</h1>
+<ol class="arabic simple">
+<li>Single parent, unmodified file</li>
+<li>Single parent, modified file</li>
+<li>Two parents, one descended from the other, modified in one parent only</li>
+<li>Two parents, one descended from the other, modified in one parent only,
+but also modified locally.</li>
+<li>Two parents, not descended from each other, modified in one parent only.</li>
+<li>Two parents, not descended from each other, modified in one parent only,
+but also modified locally.</li>
+<li>Two parents, modified in both to different values.</li>
+<li>Two parents, modified in both to the same value.</li>
+<li>Two parents, modified in both, and reverted in both back to the
+original text.</li>
+<li>Three parents, modified in only one</li>
+<li>Three parents, modified in only one, also modified locally.</li>
+<li>Three parents, modified in 2</li>
+<li>Three parents, modified in 2, and locally.</li>
+<li>Three parents, modified in 2, but one is a descendant of the other.</li>
+</ol>
+</div>
+<div class="section" id="performance-considerations">
+<h1>Performance considerations</h1>
+<p>Often we'll want the last_modified information for multiple files, perhaps
+everything in a directory or in a whole tree.  It may be more efficient
+for the api to accommodate this.  Often the last_modified will be similar
+for multiple files, and if we process them all at once we can avoid some
+repeated work in calculating their heads.</p>
+</div>
+<div class="section" id="open-questions">
+<h1>Open questions</h1>
+<ul class="simple">
+<li>How does caching <tt class="docutils literal">find_heads</tt> interact with cherry-picks?</li>
+</ul>
+<div class="section" id="possible-structure">
+<h2>Possible structure</h2>
+<p>For a single file, if I am different from all parents, 'new'. (Do not need
+to evaluate last modified).</p>
+<!-- vim: ft=rst tw=74 -->
+</div>
+</div>
+</div>
+</body>
+</html>
