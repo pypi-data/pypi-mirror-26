@@ -1,0 +1,10 @@
+acme<0.20,>=0.19
+requests
+cryptography
+pyOpenSSL
+pytz
+mock
+
+[tests]
+pycodestyle
+pylint
