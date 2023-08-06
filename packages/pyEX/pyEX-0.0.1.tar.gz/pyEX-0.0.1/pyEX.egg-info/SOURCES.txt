@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyEX/__init__.py
+pyEX/api.py
+pyEX.egg-info/PKG-INFO
+pyEX.egg-info/SOURCES.txt
+pyEX.egg-info/dependency_links.txt
+pyEX.egg-info/top_level.txt
