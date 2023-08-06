@@ -1,0 +1,11 @@
+django_dbcache_fields/__init__.py,sha256=HlfWXwK_mQMxLfY_8EpTxPikzpf8B7DeT_FZN-S9mzg,1052
+django_dbcache_fields/apps.py,sha256=DZ4Mr6BBsQBFJnlxbYSldfVB4WxIQ3QcX2gsvwL2alE,1288
+django_dbcache_fields/decorators.py,sha256=9dhObGEVru-zpilZpak1SiuCwSpl4gKbLIPd-d_Xop8,5109
+django_dbcache_fields/receivers.py,sha256=1yKcAINGWmDnwENOnrt0BO0awY5VyAvICwZP7EB-leo,5669
+django_dbcache_fields/utils.py,sha256=EW59vuy0fvIWgJF81O7Xg4-8lwaYcOLPvIFKHafxFiU,3213
+django_dbcache_fields-0.9.1.dist-info/DESCRIPTION.rst,sha256=7IJuYVSx8hCl9vhRIRjl4NePhf8NhkcLOkXj3_7hmHE,3753
+django_dbcache_fields-0.9.1.dist-info/METADATA,sha256=AtFQpriANjXOKwIlvY0VrXd-3nxxusYSeESCE_sXNMs,5179
+django_dbcache_fields-0.9.1.dist-info/RECORD,,
+django_dbcache_fields-0.9.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+django_dbcache_fields-0.9.1.dist-info/metadata.json,sha256=pY-D4qS0jSWCh3H-yvaSjpCN5mAPMqt4VxFBeXq-ovg,1507
+django_dbcache_fields-0.9.1.dist-info/top_level.txt,sha256=wmX6r1_gXQT06d0g6C4g_W4IijIEwCXRLKgG5MWl00s,22
