@@ -1,0 +1,16 @@
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5-py2.7-nspkg.pth,sha256=yjZbgHQAw5gimz4qZY5xWkpHSWWWy2Wr32eLa0psiH4,370
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/DESCRIPTION.rst,sha256=IT7a9Ufb9KN_SaWP-g0BLazr4WHC7Kvgzfymzk2iuo0,660
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/METADATA,sha256=vgT8Yj_AZZnYzwuau6xJrH32U10L4A6VKSwTRdHGPc0,1294
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/RECORD,,
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/metadata.json,sha256=4NKyvv888fhw0n3TB349Gc4H8ZGlg_ZY_RTUdmctw6g,827
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_l10n_fr_base_location_geonames_import-8.0.0.1.0.99.dev5.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo_addons/l10n_fr_base_location_geonames_import/__init__.py,sha256=GCQKFzINVToYDlnC20Tt4ss3fUw4I-iNfTxSvnfYsfM,1081
+odoo_addons/l10n_fr_base_location_geonames_import/__openerp__.py,sha256=qHS-FENeDW50o3j6hvHmWBv1vpkcpUudu_glEY8ww9A,2251
+odoo_addons/l10n_fr_base_location_geonames_import/i18n/fr.po,sha256=oETyXOA7mbeAyx4atuHjuBjwnVRZUa4v2jxZAorijCE,952
+odoo_addons/l10n_fr_base_location_geonames_import/i18n/it.po,sha256=y3Q1wcluwOf_j7EqpkGevVjipFaDHDCA_zr8ca0_wAg,831
+odoo_addons/l10n_fr_base_location_geonames_import/i18n/sl.po,sha256=bhC9ZjHt_A5f4WHVeHR2Zu52Vepzglkhsjgk1ceF6xU,898
+odoo_addons/l10n_fr_base_location_geonames_import/i18n/tr.po,sha256=AksNbWBBLE2lCMHExW_NVvxtNoWaEVSanEVP-dcLR68,836
+odoo_addons/l10n_fr_base_location_geonames_import/wizard/__init__.py,sha256=5TEk9R4BsB1mqcBQ3dtYoyW7gp6HHyPupRiaqTDtlNw,1090
+odoo_addons/l10n_fr_base_location_geonames_import/wizard/geonames_import.py,sha256=rKd0YUo_IWhBgP0H8nLQvZXZcJJFf52TZdOpqGg_B8k,4216
