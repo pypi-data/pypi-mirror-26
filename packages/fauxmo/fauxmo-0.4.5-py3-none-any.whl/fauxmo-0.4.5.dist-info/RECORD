@@ -1,0 +1,14 @@
+fauxmo/__init__.py,sha256=Dg9z-eBbRd-h2a3wJOQg7RnUDrFFkVgclvN18FTrYpE,477
+fauxmo/cli.py,sha256=pAjucRoMx6fUnbChBkPSazYk-44M-Om3NlWn-efScvk,1087
+fauxmo/fauxmo.py,sha256=GMSxlXZHHe3AK7Of_U5A9jIntVmiqtvI1hIVtC50YdE,5264
+fauxmo/protocols.py,sha256=OaIGo_yWZGL4s6J8M-aA8iJdrm8zM-aFBKmtuDDp_VE,9388
+fauxmo/utils.py,sha256=Fso-5iR5RDX5KELrjapr85rgdrCP_oUotY_HVIaojiI,3035
+fauxmo/plugins/__init__.py,sha256=ugGMOVttW28oCK_hxNpKG9-KSdoX40ioM-8baiL2rqc,2379
+fauxmo/plugins/simplehttpplugin.py,sha256=HljYByOlNzg9pQNsSyK6o0JBHAHq8_x5rVdlS5_087Q,6771
+fauxmo-0.4.5.dist-info/DESCRIPTION.rst,sha256=SZd-HpjGI2FuOKjVJY8YmyvjM4fy3nuzzFE23k4KUb0,22399
+fauxmo-0.4.5.dist-info/METADATA,sha256=QtOWn3KQM0eQ8w6HIGWuhTr48EKX5YNcjmk7fIji8T4,23662
+fauxmo-0.4.5.dist-info/RECORD,,
+fauxmo-0.4.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+fauxmo-0.4.5.dist-info/entry_points.txt,sha256=-D2Bn6y5Z_wZk3Xpa0Gyk6fAlxtakn5y-Vh9XBDilj8,43
+fauxmo-0.4.5.dist-info/metadata.json,sha256=E5tBpyIqWL3gnZO62tsiSJ296osB573WuAabEQM4tHw,1473
+fauxmo-0.4.5.dist-info/top_level.txt,sha256=puqpYOK62lJXYzskYtqOClKeBw64ct9gHoghtwfRsqQ,7
