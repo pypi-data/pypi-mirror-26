@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ecsjobs/__init__.py
+ecsjobs/runner.py
+ecsjobs/version.py
+ecsjobs.egg-info/PKG-INFO
+ecsjobs.egg-info/SOURCES.txt
+ecsjobs.egg-info/dependency_links.txt
+ecsjobs.egg-info/entry_points.txt
+ecsjobs.egg-info/requires.txt
+ecsjobs.egg-info/top_level.txt
+ecsjobs/tests/__init__.py
+ecsjobs/tests/test_version.py
