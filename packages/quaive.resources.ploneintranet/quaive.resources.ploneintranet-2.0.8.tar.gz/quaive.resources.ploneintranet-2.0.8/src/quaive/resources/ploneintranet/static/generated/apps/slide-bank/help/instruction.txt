@@ -1,0 +1,33 @@
+**Thank you for using Slide Bank!** Slide Bank is a tool that allows you to find, select and download from a vast collection of slides which you can use as a base to create your own presentations. Here's how it works:
+
+## 1. Find the slides
+
+In the sidebar on the left hand side of the screen you can find presentations by browsing its folders or by searching. The sidebar search field will search all the slides in Slide Bank for matching keywords in both presentation names and content. 
+
+![Slide Bank sidebar](help/slide-bank-sidebar-search-log.png)
+
+When you click on the name of a presentation, it will appear on the right hand side of the screen. You will see a preview of the presentation. If the presentation contains more than one slide, a clickable table of contents will be shown too.
+
+## 2. Preview the slides
+
+You can view the presentation by clicking on the 'play' button in the head of the document. 
+
+![Slide Bank sidebar](help/slide-bank-document-header-circled-icon-play.png)
+
+The presentation will fill the browser window. If the presentation contains multiple slides, then you can navigate them with the left/right arrow buttons of the keyboard. If you press 'f' on the keyboard when in presentation mode, the presentation will go full screen (in compatible browsers). You can leave presentation mode with the escape key on the keyboard. 
+
+Bear in mind that animations slide transitions that are used in the PowerPoint will not be shown online.
+
+## 3. Download the slides
+
+In the head of the document you'll also find two icons related to downloading the slides. The arrow down symbol lets you download the file directly. This is convenient if you were only looking for one file. If you're shopping for more files, you can click on the shopping basket icon with the '+' on it. Slide Bank will then add the file to your personal shopping basket.
+
+![Slide Bank sidebar](help/slide-bank-document-header-circled-icons-download-basket.png)
+
+The shopping basket can be accessed through the link that says 'PowerPoint shopping basket' at the top right of the screen. After you click it a panel will appear listing all the files that you put into your shopping basket. The contents of the basket is personal and will be kept for you, even after you've logged out.
+
+![Slide Bank sidebar](help/slide-bank-shopping-basket.png)
+
+If you click on the button 'Download selection', then your slides will download, bundled in a ZIP file. 
+
+This was a short introduction to Slide Bank, but it has more to offer than what is mentioned here. For tips on more advanced use of Slide Bank, you can consult the [Stardesk help centre](https://portal.staralliance.com/stardesk/workspaces/videospace-1/).

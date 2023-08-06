@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+  <!-- GENERIC RULES WHICH APPLY ALWAYS -->
+
+  <copy attributes="lang"
+        css:content="html"
+        css:theme="html"
+  />
+
+  <!-- remove from the prototype head the things we do not need … -->
+  <drop theme="/html/head/meta[@name='viewport'] | /html/head/script | /html/head/link | /html/head/title | /html/body/script" />
+  <drop attributes="onload" theme="/html/body" />
+
+  <!-- … and deliver the ones from Plone -->
+  <after theme-children="/html/head"
+         content="/html/head/title | /html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
+
+  <!-- Add the globalstatusmessage viewlet. -->
+  <append css:theme="body" css:content="#global-statusmessage" />
+  <append css:theme="body" css:content-children="#webstats_js" />
+
+  <!-- Copy over the id/class attributes on the body tag, this is
+       important for Kupu and per-section styling -->
+  <merge attributes="class" css:content="body" css:theme="body" />
+  <copy attributes="id dir data-base-url data-pat-pickadate data-portal-url data-pat-tinymce data-pat-plone-modal data-i18ncatalogurl"
+        css:content="body" css:theme="body" />
+
+  <!-- Logo -->
+  <replace css:theme="#mobile-menu" css:content="#mobile-menu" />
+  <drop css:theme="div.application-label a.suite-logo" />
+  <drop css:theme="nav.breadcrumbs" />
+  <append css:theme="div.application-label" css:content-children="#site-logo" />
+  <!-- insert the breadcrumbs into the header bar -->
+  <append css:theme="div.application-label" css:content="nav.breadcrumbs" />
+
+
+  <replace css:content="#notification-link"
+           css:theme="#notification-link" />
+  <replace css:content="#messages-link"
+           css:theme="#messages-link" />
+  <replace css:theme="#global-settings-link"
+           css:content="#global-settings-link" />
+  <before css:content="#root-zope-user-warning"
+           css:theme="#user-avatar" />
+
+  <!-- drop from theme elements that should not be visible to anonymous -->
+  <rules css:if-content="body.userrole-anonymous">
+    <drop css:theme="header#global-header > a" />
+    <drop css:theme="header#global-header > form" />
+  </rules>
+
+  <!-- Portal Personal Tools -->
+  <replace css:content-children="#portal-personaltools-wrapper"
+           css:theme="#user-avatar" />
+
+  <!-- adaptation of the global-nav -->
+  <drop css:theme="#portal .tabs a:not(.organisation)" />
+  <drop css:theme="#osh-target-back-to-portal" />
+  <replace css:theme="#osh-target-hamburger"
+           css:content="#osh-target-hamburger" />
+  <append css:theme="#portal .tabs nav" css:content="#portal-globalnav li a" />
+
+  <replace css:content="#buddies-toggle"
+           css:theme="#buddies-toggle" />
+
+  <replace css:content="#global-nav-search"
+           css:theme="#global-nav-search" />
+  <replace css:content="#osh-toggle"
+           css:theme="#osh-toggle" />
+
+  <!-- MAIN SECTION RULES -->
+
+  <!-- dashboard and main apps/workspaces listings BEFORE following rules -->
+  <rules css:if-content="body.template-dashboard-html,
+                         body.template-tagstream,
+                         body.template-apps-html,
+                         body.template-workspaces-html">
+    <theme href="generated/empty-home.html" />
+    <before css:content-children="#splash-message-diazo-marker" css:theme="#main"/>
+    <append css:content-children="#portal-column-content" css:theme="#portal-content" />
+  </rules>
+
+  <rules css:if-content="body.app-news">
+    <rules css:if-content="body.portaltype-ploneintranet-news-app.template-view,
+                           body.portaltype-ploneintranet-news-section.template-view,
+                           body.template-newsitem_view">
+      <theme href="generated/news.html" />
+      <replace css:content="#portal-content"
+               css:theme="#portal-content" />
+    </rules>
+    <rules css:if-content="body.template-publisher,
+                           body.template-edit-html">
+      <theme href="generated/apps/news/index.html" />
+      <replace css:content="#application-body" css:theme="#application-body" />
+    </rules>
+    <rules css:if-content="body.template-panel-create-news-html,
+                           body.template-panel-edit-news-section-info-html">
+      <theme href="generated/empty.html" />
+      <replace css:content-children="#content" css:theme-children="#original-content" />
+    </rules>
+  </rules>
+
+
+  <rules css:if-content="body.app-library">
+    <rules css:if-content="body.portaltype-ploneintranet-library-app,
+                           body.portaltype-ploneintranet-library-section,
+                           body.portaltype-ploneintranet-library-folder,
+                           body.app-library.portaltype-document,
+                           body.app-library.portaltype-news-item,
+                           body.app-library.portaltype-link
+                           body.app-library.portaltype-image,
+                           body.app-library.portaltype-file">
+      <theme href="generated/library.html" />
+      <replace css:theme="#portal-content"
+               css:content="#portal-column-content #portal-content"/>
+      <!-- hide tags for now -->
+      <drop css:content="#viewlet-below-content #category" />
+    </rules>
+  </rules>
+
+  <rules css:if-content="body.app-workspace,
+                         body.template-workspace-calendar,
+                         body.diazo-theme-bookmarks"
+  >
+    <rules css:if-content="#application-body">
+      <theme href="generated/empty-workspace.html" />
+      <replace css:content="#application-body" css:theme="#application-body" />
+    </rules>
+  </rules>
+
+  <rules css:if-content="body.diazo-theme-panel">
+    <theme href="generated/feedback/panel-app-not-available.html" />
+    <replace css:theme-children="#document-content"
+             css:content-children="#document-content"
+    />
+  </rules>
+
+  <rules css:if-content="body.template-userprofile-view,
+                         body.template-edit.portaltype-ploneintranet-userprofile-userprofile">
+    <theme href="generated/liz-baker.html" />
+    <drop css:theme-children="#person-timeline aside" />
+    <drop css:theme-children="#person-timeline div.columns" />
+    <append css:content-children="#portal-column-content aside" css:theme="aside" />
+    <append css:content-children="#portal-column-content #main" css:theme="div.columns" />
+  </rules>
+
+
+  <!-- INFREQUENTLY USED PAGES -->
+
+  <rules css:if-content="body.template-notifications, body.template-post">
+    <theme href="generated/notifications.html" />
+    <drop css:theme-children="div.container" />
+    <append css:content-children="#portal-column-content" css:theme="div.container" />
+  </rules>
+
+
+  <!-- Login Form -->
+  <rules css:if-content="body.template-insufficient_privileges">
+    <theme href="generated/unauthorised.html" />
+    <replace css:content-children="#content .documentFirstHeading"
+             css:theme-children="#document-content .error-unauthorised > h1"
+      />
+    <replace css:content-children="#content .documentDescription"
+             css:theme-children="#document-content .error-unauthorised > p"
+      />
+  </rules>
+
+  <rules css:if-content="body.template-login_form, body.template-logged_out, body.template-login_failed">
+    <theme href="generated/index.html" />
+    <copy attributes="method action" css:content="form#login_form" css:theme="form#login-panel" />
+    <append css:theme="form fieldset.vertical" css:content="#login-form input[type='hidden']" />
+    <replace css:theme="form fieldset.vertical input[type=text]" css:content="#login-form input[type=text]" />
+    <replace css:theme="form fieldset.vertical input[type=password]" css:content="#login-form input[type=password]" />
+    <replace css:theme="figure.splash" css:content="figure.splash" />
+    <replace css:theme="p.colofon" css:content="p.colofon" />
+    <replace css:theme="p.button-bar" css:content="p.button-bar" />
+    <replace css:theme="section.disclaimer" css:content-children="#section-disclaimer" />
+  </rules>
+
+  <!-- reset password forms -->
+  <rules css:if-content="body.template-mail_password_form, body.template-pwreset_form, body.template-change-password, body.template-pwreset_finish, body.template-pwreset_invalid, body.template-mail_password_response">
+    <theme href="generated/password-lost.html" />
+    <replace css:theme="#document-content" css:content="#document-content" />
+  </rules>
+
+  <!-- this catches typical plone info pages -->
+  <rules css:if-content="body.template-login_success,
+                         body.template-insufficient_privileges,
+                         body.template-configuration_registry,
+                         body.template-login-as">
+    <theme href="generated/empty-home.html" />
+    <append css:content-children="#content" css:theme="div.container" />
+  </rules>
+
+
+  <rules css:if-content="body.template-default_error_message">
+    <theme href="generated/404.html" />
+    <replace css:content-children="#content" css:theme-children="article.error-page" />
+  </rules>
+
+
+  <!-- FINAL FALLBACK RULES -->
+  <rules css:if-content="#visual-portal-wrapper" >
+    <replace css:content-children="#content"
+             css:theme-children="#original-content"/>
+    <theme href="generated/empty.html"/>
+  </rules>
+
+  <notheme css:if-content="body.diazo.off"/>
+
+</rules>

@@ -1,0 +1,16 @@
+<registry>
+
+  <record name="plone.generate_tabs"
+          interface="plone.app.controlpanel.navigation.INavigationSchema">
+    <value>True</value>
+  </record>
+
+  <records prefix="plone.resources/ploneintranet"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'
+           remove="true" />
+
+  <records prefix="plone.bundles/ploneintranet"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'
+            remove="true" />
+
+</registry>

@@ -1,0 +1,9 @@
+graft src/quaive
+graft docs
+include requirements.txt
+include *.rst
+exclude Makefile
+include LATEST
+recursive-include scripts *.py
+global-exclude *.pyc
+global-exclude *~
