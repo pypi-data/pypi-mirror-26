@@ -1,0 +1,13 @@
+curequests/__init__.py,sha256=VZ2gmWTWkuhsmUINk6Nl7CiAcP7rr6DB8LjP2TK0wXk,491
+curequests/adapters.py,sha256=uit3--SQ5GrXSu7SUBHupZQa7T-5fvnwOV5Q0qGE0LY,7033
+curequests/api.py,sha256=tQZBip_B7VO9dTfH6QXEZLI_CO-56V70ySH4lglPy0o,6247
+curequests/cuhttp.py,sha256=8NOE-QkqkMr5ZsHK3PSX3l1uzNTp38jLYbudhmiNFfs,6380
+curequests/models.py,sha256=xURF5a2kfmH6IKPKx0IRAcM7ty_D744Wp34sCuAcLdg,4911
+curequests/sessions.py,sha256=zNYSrJgO5-7MIhBaFDGqc5Q-AboyPGf7aDYStpOsI_8,2555
+curequests/utils.py,sha256=yjBPvtKeOcMOv7sbZVJSXHRc5QA0LIqVE0sayK7w4sA,746
+curequests-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+curequests-0.0.1.dist-info/METADATA,sha256=qULo6qfgBHSlvCbSWRcYyZOnGHnGhFfnYpATKgTZMyU,647
+curequests-0.0.1.dist-info/RECORD,,
+curequests-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+curequests-0.0.1.dist-info/metadata.json,sha256=VrOTnd2WcrfSRilW_M3T_BSlAlUoixsLfns9nXAhqXM,786
+curequests-0.0.1.dist-info/top_level.txt,sha256=cQrytLhFmNVacWQ90-Bkw3v4BBtp7GLNv3dgDuJAFj8,11
