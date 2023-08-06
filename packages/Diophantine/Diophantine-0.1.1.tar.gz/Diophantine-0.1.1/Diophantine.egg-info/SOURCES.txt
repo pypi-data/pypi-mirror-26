@@ -1,0 +1,11 @@
+LICENCE.txt
+MANIFEST.in
+README.rst
+diophantine.py
+setup.cfg
+setup.py
+Diophantine.egg-info/PKG-INFO
+Diophantine.egg-info/SOURCES.txt
+Diophantine.egg-info/dependency_links.txt
+Diophantine.egg-info/requires.txt
+Diophantine.egg-info/top_level.txt
