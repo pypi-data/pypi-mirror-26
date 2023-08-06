@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: autology
+Version: 0.1.0
+Summary: File-based life log
+Home-page: UNKNOWN
+Author: Robert Robinson
+Author-email: rerobins@meerkatlabs.org
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.6, <4

@@ -1,0 +1,14 @@
+dict-recursive-update<2,>=1.0.0
+Jinja2<3,>=2.9.6
+Markdown<3,>=2.6.9
+munch<3,>=2.2.0
+Pypubsub<5,>=4.0.0
+python-frontmatter<0.5,>=0.4.2
+PyYAML<4,>=3.12
+requests>=2.18.4
+GitPython>=2.1.7<3
+
+[dev]
+pylint>=1.7.4
+
+[test]
