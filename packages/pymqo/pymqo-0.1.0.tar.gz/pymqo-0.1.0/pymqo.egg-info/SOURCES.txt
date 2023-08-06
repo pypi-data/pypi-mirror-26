@@ -1,0 +1,12 @@
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+pymqo/__init__.py
+pymqo/base.py
+pymqo/rabbit.py
+pymqo.egg-info/PKG-INFO
+pymqo.egg-info/SOURCES.txt
+pymqo.egg-info/dependency_links.txt
+pymqo.egg-info/requires.txt
+pymqo.egg-info/top_level.txt
