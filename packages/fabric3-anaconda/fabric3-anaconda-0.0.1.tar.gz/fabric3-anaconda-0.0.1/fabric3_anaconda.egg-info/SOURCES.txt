@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+fabric3_anaconda.egg-info/PKG-INFO
+fabric3_anaconda.egg-info/SOURCES.txt
+fabric3_anaconda.egg-info/dependency_links.txt
+fabric3_anaconda.egg-info/requires.txt
+fabric3_anaconda.egg-info/top_level.txt
+fabriconda/__init__.py

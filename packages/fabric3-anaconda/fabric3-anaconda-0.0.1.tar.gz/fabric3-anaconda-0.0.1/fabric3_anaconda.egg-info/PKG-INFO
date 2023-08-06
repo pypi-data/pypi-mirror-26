@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: fabric3-anaconda
+Version: 0.0.1
+Summary: Some additional functions for working with anaconda environments in Fabric3.
+Home-page: http://pypi.python.org/pypi/fabric3-anaconda/
+Author: Barnaby Gray
+Author-email: barnaby@pickle.me.uk
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Package for working with anaconda environments in Fabric
+        =========================================================
+        
+        Usage::
+        
+        	import fabriconda
+        
+        	def setup():
+        	    fabriconda.install()
+        
+        	def deploy():
+        	    put('environment.yml', '/path/to/environment.yml')
+        	    fabriconda.create_env('/path/to/environment.yml', 'name')
+        	    with fabriconda.env('name'):
+        	    	pass # do stuff in the environment
+        
+Platform: UNKNOWN
