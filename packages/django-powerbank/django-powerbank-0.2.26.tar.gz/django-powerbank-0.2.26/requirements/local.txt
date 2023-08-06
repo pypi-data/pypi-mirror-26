@@ -1,0 +1,11 @@
+-r test.txt
+bumpversion
+wheel
+invoke
+watchdog
+Sphinx
+babel
+django_babel
+
+# Your app in editable mode.
+-e ./
