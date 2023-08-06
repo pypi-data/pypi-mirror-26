@@ -1,0 +1,3 @@
+[console_scripts]
+mfs = mfs.cli:main
+
