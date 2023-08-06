@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Fold
+Version: 0.1.1
+Summary: A binary encoding scheme (optionally keyed)
+Home-page: https://github.com/pvial00/Fold
+Author: Karl Zander
+Author-email: pvial@kryptomagik.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: cryptography,encryption,security,encoding
+Platform: UNKNOWN
