@@ -1,0 +1,6 @@
+hedgehog-protocol
+hedgehog-utils[discovery]
+pycreate2
+
+[test]
+hedgehog-server
