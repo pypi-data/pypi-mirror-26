@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: awsencrytpioncli
+Version: 0.0.1
+Summary: Did you mean to install aws-encryption-sdk-cli?
+Home-page: http://aws-encryption-sdk-cli.readthedocs.io/en/latest/
+Author: Amazon Web Services
+Author-email: aws-cryptools@amazon.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: 
+        This package has been parked by Amazon Web Services to protect you against packages
+        adopting names that might be common mistakes when looking for ours. You probably
+        wanted to install aws-encryption-sdk-cli. For more information, see http://aws-encryption-sdk-cli.readthedocs.io/en/latest/.
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
