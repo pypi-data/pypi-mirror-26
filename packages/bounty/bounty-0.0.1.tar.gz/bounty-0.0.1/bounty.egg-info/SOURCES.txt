@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+bounty/__init__.py
+bounty.egg-info/PKG-INFO
+bounty.egg-info/SOURCES.txt
+bounty.egg-info/dependency_links.txt
+bounty.egg-info/top_level.txt
