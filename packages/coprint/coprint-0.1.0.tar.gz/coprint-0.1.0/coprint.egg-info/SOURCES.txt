@@ -1,0 +1,5 @@
+setup.py
+coprint.egg-info/PKG-INFO
+coprint.egg-info/SOURCES.txt
+coprint.egg-info/dependency_links.txt
+coprint.egg-info/top_level.txt
