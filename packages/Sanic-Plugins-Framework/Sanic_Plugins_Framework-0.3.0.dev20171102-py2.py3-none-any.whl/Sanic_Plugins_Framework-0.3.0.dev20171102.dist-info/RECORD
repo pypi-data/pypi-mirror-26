@@ -1,0 +1,9 @@
+Sanic_Plugins_Framework-0.3.0.dev20171102.dist-info/DESCRIPTION.rst,sha256=1glhg2vgx5EusP5W048iKnFUKqHGSnuMezzN8lG5Gv0,7049
+Sanic_Plugins_Framework-0.3.0.dev20171102.dist-info/METADATA,sha256=f5PddnOe7OxocLUKd0TvGZKgk4o2RgkWW3MwYsjuy5w,8025
+Sanic_Plugins_Framework-0.3.0.dev20171102.dist-info/RECORD,,
+Sanic_Plugins_Framework-0.3.0.dev20171102.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Sanic_Plugins_Framework-0.3.0.dev20171102.dist-info/metadata.json,sha256=AAI4qDD0b-7lzO5IEcSGvGKp1u5D3ytW6zCQqbL3gPo,1106
+Sanic_Plugins_Framework-0.3.0.dev20171102.dist-info/top_level.txt,sha256=izAYSRYFnvErnezhjKqmERyaXXMiE8fwzzdgzG6vgxY,4
+spf/__init__.py,sha256=PyD3P5WI0KGVQ5MGUhHRfHDi9mygANufD0XcMTvL1BM,181
+spf/context.py,sha256=h9tASlX5pYm2xzrtzoKEnIx5naUssxa8tbw8ar4yUQ0,2455
+spf/plugin.py,sha256=JwDPryayxVAhIGkYSrxJ9NO3H2yHp6OtZq6FBFxhnUM,30869
