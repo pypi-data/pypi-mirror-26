@@ -1,0 +1,10 @@
+README.rst
+setup.py
+darpy/__init__.py
+darpy/main.py
+darpy/version.py
+darpy.egg-info/PKG-INFO
+darpy.egg-info/SOURCES.txt
+darpy.egg-info/dependency_links.txt
+darpy.egg-info/entry_points.txt
+darpy.egg-info/top_level.txt
