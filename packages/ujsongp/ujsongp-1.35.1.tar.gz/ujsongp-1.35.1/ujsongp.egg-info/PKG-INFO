@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: ujsongp
+Version: 1.35.1
+Summary: Ultra fast JSON encoder and decoder for Python
+Home-page: http://www.esn.me
+Author: Jonas Tarnstrom
+Author-email: jonas.tarnstrom@esn.me
+License: BSD License
+Download-URL: https://github.com/cordalace/ultrajson
+Description-Content-Type: UNKNOWN
+Description: UltraJSON with Gentoo patches
+        =============================
+        
+        UltraJSON fork with `Gentoo patches`_ applied.
+        
+        .. _Gentoo patches: https://gitweb.gentoo.org/repo/gentoo.git/tree/dev-python/ujson/files
+        
+        To install it just run Pip as usual:
+        
+        .. code-block:: sh
+        
+            $ pip install ujsongp
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 2.4
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
