@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+pyquat/__init__.py
+pyquat/plot.py
+pyquat/pyquat.c
+pyquat/random.py
+pyquat/wahba.py
+pyquat.egg-info/PKG-INFO
+pyquat.egg-info/SOURCES.txt
+pyquat.egg-info/dependency_links.txt
+pyquat.egg-info/requires.txt
+pyquat.egg-info/top_level.txt
+test/__init__.py
+test/assertions.py
+test/test_pyquat.py
+test/test_random.py
+test/test_wahba.py
