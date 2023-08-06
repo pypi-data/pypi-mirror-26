@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ProxyAnonymityDetector
+Version: 0.1.1
+Summary: detect proxy anonymity with headers information
+Home-page: https://github.com/ezirmusitua/proxy-anonymity-detector
+Author: jferroal
+Author-email: jferroal@gmail.com
+License: MIT
+Download-URL: https://github.com/ezirmusitua/proxy-anonymity-detector/releases
+Description: UNKNOWN
+Keywords: proxy,request,http,anonymity
+Platform: UNKNOWN
