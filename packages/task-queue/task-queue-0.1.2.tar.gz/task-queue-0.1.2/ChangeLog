@@ -1,0 +1,20 @@
+CHANGES
+=======
+
+0.1.2
+-----
+
+* fix: need to strip project\_name in case there's extra whitespace
+* feat: backwards compatible secrets
+* fix: add queue\_server to MockTaskQueue's constructor
+
+0.1.1
+-----
+
+* fix: restore default project\_name
+
+0.1.0
+-----
+
+* feat: Initial commit
+* Initial commit
