@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: cruiser
+Version: 0.0.1
+Summary: data collection from redis, then feeding to graphite
+Home-page: https://github.com/liujinliu/anan
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML
+Requires-Dist: redis
+
+UNKNOWN
+
+

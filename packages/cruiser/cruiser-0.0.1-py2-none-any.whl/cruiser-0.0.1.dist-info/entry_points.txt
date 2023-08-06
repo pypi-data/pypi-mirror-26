@@ -1,0 +1,3 @@
+[console_scripts]
+cruiser-run = cruiser.main:cruiser_run
+
