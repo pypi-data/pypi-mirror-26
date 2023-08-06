@@ -1,0 +1,15 @@
+opus_api/__init__.py,sha256=CwVRWR3GcuxkDA28OSvPnbs-xRwhWCc-TH4xTFNMCj4,155
+opus_api/cache.py,sha256=poyHD1DDvLMEtzl1koURz51n4J_Wdv5nOpSXBQfWUlM,912
+opus_api/cli.py,sha256=6bmAmWAarvivVHiqGEuV9on6mjW6Hl1Dnkwq8cf7acQ,2567
+opus_api/crawler.py,sha256=c1pqvwFBXh7V5nAnHdRJ9OKb9gh4jXxaE0t51qWaY3k,509
+opus_api/exceptions.py,sha256=uRsbLzYRNE0IBpJONKD-BiflYHOTIar1Z-lD3VfaR-k,642
+opus_api/opus_api.py,sha256=JBntsnpBCetsyKv7k-eWvi01RobPBx1dHRY6nlWZBGU,2804
+opus_api/settings.py,sha256=nDsgqmn1nF11BvI-iOyzsGkO8ryqtKbQtIWoPZGynwg,34
+opus_api/util.py,sha256=pdOh4klIpncL2IZa-2C4zL3DyKG_oCa5peNs2LDXi_Q,639
+opus_api-0.4.0.dist-info/DESCRIPTION.rst,sha256=1r_4H5LmBTYRUvJnpmC_ds7c8lCIDR_vIS3aSo-gpWo,107
+opus_api-0.4.0.dist-info/METADATA,sha256=m0_sHBqXm11K3wKrrJYaqffOCXV49fKrsyh-UTY40A4,1121
+opus_api-0.4.0.dist-info/RECORD,,
+opus_api-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+opus_api-0.4.0.dist-info/entry_points.txt,sha256=vefUKIzoRc1ZCZlWsAn6RJ0wTkRFosS2hvVFITenXME,48
+opus_api-0.4.0.dist-info/metadata.json,sha256=1edMd6DE4qT6SggavuryVkkIx350-JbCcNS1rlCGdl4,1242
+opus_api-0.4.0.dist-info/top_level.txt,sha256=w2JcCxXq1sXDBia-0zNO8Oxj2gf2uqa7PxmU699mlu4,9
