@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+task_runner.egg-info/PKG-INFO
+task_runner.egg-info/SOURCES.txt
+task_runner.egg-info/dependency_links.txt
+task_runner.egg-info/top_level.txt
+taskrunner/__init__.py
+taskrunner/runner.py
+tests/__init__.py
+tests/bot_test.py
+tests/context.py
