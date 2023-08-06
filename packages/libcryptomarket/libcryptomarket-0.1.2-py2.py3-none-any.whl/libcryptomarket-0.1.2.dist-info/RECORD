@@ -1,0 +1,14 @@
+libcryptomarket/__init__.py,sha256=BBqX9RodLnA5n6GE9J24OThHOK-JODYLkX0AZ1dtmzk,156
+libcryptomarket/historical.py,sha256=Y_r6G2PSqjCBtrboGhFeFFltqdMMURdEAvtvlPCmefk,5412
+libcryptomarket/instrument.py,sha256=IjFIXk078dkVzLzEwFQw5vno0887U-Rl1p7WwJ6O5aM,859
+libcryptomarket/price.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libcryptomarket/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libcryptomarket/api/coinmarketcap_api.py,sha256=l6a7uukTIw5VHBYGd-YhXiIVWxWjN17kQHeNLKqhhQo,2187
+libcryptomarket/api/cryptocompare_api.py,sha256=YLT7YlBSHGzdnfnooiOvtidCfE9c6O2UfFo-OVLeeQ8,3081
+libcryptomarket/api/poloniex_api.py,sha256=HmVY2fhnkvBTPskBzm3CgBm5XfygsjOWbdnaHU1NRnM,1087
+libcryptomarket-0.1.2.dist-info/DESCRIPTION.rst,sha256=TKq7-tiHU6Dm8-wZR8PSoPkV4RhWf3meRVEeD7f1RjI,2434
+libcryptomarket-0.1.2.dist-info/METADATA,sha256=dHZnRdLC7G_Azl4CImE2rgxw1cNcJpOu_3Zns2GBp1c,3238
+libcryptomarket-0.1.2.dist-info/RECORD,,
+libcryptomarket-0.1.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+libcryptomarket-0.1.2.dist-info/metadata.json,sha256=fWVlwQlnvGI--stVFT9EtC8NZsqs4WDZlgnH_biWy3c,1016
+libcryptomarket-0.1.2.dist-info/top_level.txt,sha256=4_tvU_9BzduAHmek4wlcCmdMFmkIsKxbsIdKV5Ma-6A,16
