@@ -1,0 +1,7 @@
+pandas
+openpyxl
+regex
+fire
+XlsxWriter
+numpy
+xlrd
