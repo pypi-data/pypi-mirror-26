@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+gifmake/__init__.py
+gifmake/gifmake.py
+gifmake.egg-info/PKG-INFO
+gifmake.egg-info/SOURCES.txt
+gifmake.egg-info/dependency_links.txt
+gifmake.egg-info/entry_points.txt
+gifmake.egg-info/not-zip-safe
+gifmake.egg-info/requires.txt
+gifmake.egg-info/top_level.txt
