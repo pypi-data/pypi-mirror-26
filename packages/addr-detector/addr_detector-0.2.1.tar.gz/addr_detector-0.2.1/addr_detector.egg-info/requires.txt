@@ -1,0 +1,5 @@
+Cython
+numpy
+scipy
+postal==1.0
+scikit_learn==0.19
