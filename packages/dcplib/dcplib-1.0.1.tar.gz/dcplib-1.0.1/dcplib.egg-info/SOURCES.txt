@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+dcplib/__init__.py
+dcplib.egg-info/PKG-INFO
+dcplib.egg-info/SOURCES.txt
+dcplib.egg-info/dependency_links.txt
+dcplib.egg-info/not-zip-safe
+dcplib.egg-info/requires.txt
+dcplib.egg-info/top_level.txt
+dcplib/media_types/__init__.py
+dcplib/media_types/dcp_media_type.py
+dcplib/media_types/media_type.py
+tests/media_types/__init__.py
+tests/media_types/test_dcp_media_type.py
+tests/media_types/test_media_type.py
