@@ -1,0 +1,15 @@
+bdt2cpp/Node.py,sha256=-wDCfNSXUpSp304GDqWYyaWns2o_OqHdj20rzbYTA20,911
+bdt2cpp/TMVAParser.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdt2cpp/XGBoostParser.py,sha256=Njcmga4akLma7CNdiuaLJzE_RhdGxMNmBcD3PVVcBdA,3879
+bdt2cpp/__init__.py,sha256=MiM2VtjY0eMIbx6rLEbPAIBNQD9k_8eqx2ZPqE3FMZg,2043
+bdt2cpp/templates/Makefile.template,sha256=3HcmmwLwA239LpmOkQ_G8Az74hKPZJd07zBol8nzMAY,293
+bdt2cpp/templates/main.cpp.template,sha256=jZ68MCJNr21_-6usfDHKP6CYi1Q0kSdOPDg2nEEFexU,953
+bdt2cpp/templates/standalone.function.template,sha256=mjQzzdPE16L9ANavw0s1m_-6FU_qRFbTCWxKMi7cO9g,59
+bdt2cpp/templates/tree.function.template,sha256=uWrN1gybWA1alX57RwDaMqO30Z1Uh80esTUck_FEass,690
+bdt2cpp-0.0.3.data/scripts/bdt2cpp,sha256=Rz7Pjuh9zmfMWl6WgvnfqP3mGQvG9itPs2Erf_PdQ64,1223
+bdt2cpp-0.0.3.dist-info/DESCRIPTION.rst,sha256=mkUfXIViRYqMUDCveuj2pvfBEHtXzGKCyw2yDuoNCiY,340
+bdt2cpp-0.0.3.dist-info/METADATA,sha256=OtA9nkuCuEVa1DCgBhqgC51xjehd71_VH1NeeMlh9NU,577
+bdt2cpp-0.0.3.dist-info/RECORD,,
+bdt2cpp-0.0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+bdt2cpp-0.0.3.dist-info/metadata.json,sha256=IP6D1UPWekfOALY3_s2s2SwFA0OAsDHND-LbxucY5qg,332
+bdt2cpp-0.0.3.dist-info/top_level.txt,sha256=3iVGKm1lSKZ536gFxWsxpbgE-5igK0Rkq4HAXW-k6Kk,8
