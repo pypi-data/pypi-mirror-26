@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: dict2uml
+Version: 1.0
+Summary: Converts a Python dictionary to PlantUML
+Home-page: https://www.python.org/sigs/distutils-sig/
+Author: Martin Isaksson
+Author-email: martin@martisak.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: jupyter,ipython,uml,plantuml,dictionary
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Framework :: IPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
