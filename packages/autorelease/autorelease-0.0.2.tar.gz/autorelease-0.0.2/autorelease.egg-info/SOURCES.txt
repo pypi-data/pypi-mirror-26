@@ -1,0 +1,17 @@
+README.md
+setup.py
+autorelease/__init__.py
+autorelease/_version.py
+autorelease/check_runners.py
+autorelease/git_repo_checks.py
+autorelease/root_dir_checks.py
+autorelease/utils.py
+autorelease/version.py
+autorelease/version_checks.py
+autorelease.egg-info/PKG-INFO
+autorelease.egg-info/SOURCES.txt
+autorelease.egg-info/dependency_links.txt
+autorelease.egg-info/requires.txt
+autorelease.egg-info/top_level.txt
+autorelease/tests/__init__.py
+autorelease/tests/test_check_runners.py
