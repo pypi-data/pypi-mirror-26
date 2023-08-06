@@ -1,0 +1,17 @@
+Mopidy_Radio_Rough-2.0.4.dist-info/DESCRIPTION.rst,sha256=1hbqrI_rgLjzlk9TIFH8dzEyokeLFKOlem4AW7l2cZk,918
+Mopidy_Radio_Rough-2.0.4.dist-info/METADATA,sha256=m3RlgwnvVKpdF8dePERBgDT1Q4bbpf6kiVFsjboUm1k,1896
+Mopidy_Radio_Rough-2.0.4.dist-info/RECORD,,
+Mopidy_Radio_Rough-2.0.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Mopidy_Radio_Rough-2.0.4.dist-info/entry_points.txt,sha256=ZmkLaWbq8hWsBZeex3rrr_kYsOasjpUGu_tdGl9DG-4,57
+Mopidy_Radio_Rough-2.0.4.dist-info/metadata.json,sha256=mt2OqQBeJVUSZ65tMXPWLjOWGjjQABRe98gqBE8BJ3E,1143
+Mopidy_Radio_Rough-2.0.4.dist-info/top_level.txt,sha256=Te7CnPQDcf3Sb-lZlsWT5OEEXTJtj0gDZ9Srn4YThkU,19
+mopidy_radio_rough/__init__.py,sha256=0srbFUXqWbZquAYuBJlhYr2yMy8GkA9sLFj1-yXVjTQ,688
+mopidy_radio_rough/ext.conf,sha256=KenQMDzR6h-hMfAn8_llVK3BSYKylhPJSs3LyIocL-8,29
+mopidy_radio_rough/mopidy_radio_rough.py,sha256=TuRYK9pROp0qAid2idourpdE-YQwgUyonOnkvPBQitQ,1073
+mopidy_radio_rough/radio_rough.desktop,sha256=fJMrJgi7xc2OfIfOMNp1BYNVd5GF_lk_JUmH1bSiA5E,197
+mopidy_radio_rough/rough.py,sha256=EGBxOwMK00URy3eI_E_319X4eJ7Ug74Ahwpuewtrhdc,22853
+mopidy_radio_rough/search_dialog.py,sha256=tzzpS_Uomlez-oiiPqVX6KgaD0bqM8jxDf7P-AKWM_A,1261
+mopidy_radio_rough/tooltip.py,sha256=4_876OjjPGUzkDNa5M_zsINTAvL2PwRscxKRfT5Rkd8,4707
+mopidy_radio_rough/ucc.gif,sha256=BMOh2KlCRpg_tdlOUEKG2pTo4lur3dAUdtsPy01lTfY,6120
+mopidy_radio_rough/ucc.png,sha256=VhZGd1yY8l_gwfvD57k2szYxdGu7V4ng1F3facHw8ak,5526
+mopidy_radio_rough/ucc_64.png,sha256=LFisZKFVEazN9rfCpIQ5eYeq8EAOPKEfYJ9_dA_B4LY,727
