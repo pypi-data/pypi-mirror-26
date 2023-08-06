@@ -1,0 +1,10 @@
+include LICENSE.txt
+include README.txt
+
+include *.pickle *.json *.txt *.xlsm
+recursive-include *.pickle *.json *.txt *.py *.xlsm
+
+exclude tox.ini requirements.txt
+
+prune tests
+

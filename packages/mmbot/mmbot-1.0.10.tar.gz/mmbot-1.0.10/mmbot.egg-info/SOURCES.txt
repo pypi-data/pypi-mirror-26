@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cli/mmbot
+mmbot/__init__.py
+mmbot/mmbot.py
+mmbot.egg-info/PKG-INFO
+mmbot.egg-info/SOURCES.txt
+mmbot.egg-info/dependency_links.txt
+mmbot.egg-info/requires.txt
+mmbot.egg-info/top_level.txt
+mmbot/model/modeldata.pickle
+mmbot/model/vocab.txt

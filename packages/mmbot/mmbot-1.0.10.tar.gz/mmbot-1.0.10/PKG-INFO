@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mmbot
+Version: 1.0.10
+Summary: Malicious Macro Bot: Python module to classify and cluster Microsoft office documents.  Uses machine learning techniques to determine if VBA code is malicious or benign and groups similar documents together.
+Home-page: https://github.com/egaus/mmbot
+Author: Evan Gaustad
+Author-email: evan.gaustad@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: mmbot malicious macro bot office document security cyber malware
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
