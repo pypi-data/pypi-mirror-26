@@ -1,0 +1,3 @@
+[console_scripts]
+logfilenamer = logfilenamer:main
+
