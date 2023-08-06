@@ -1,0 +1,20 @@
+include *.txt
+include SweetPy/TTAdmin/*.*
+include SweetPy/TTAdmin/static/*.*
+include SweetPy/TTAdmin/static/css/*.*
+include SweetPy/TTAdmin/static/echart/*.*
+include SweetPy/TTAdmin/static/echart/chart/*.*
+include SweetPy/TTAdmin/static/fonts/*.*
+include SweetPy/TTAdmin/static/images/*.*
+include SweetPy/TTAdmin/static/js/*.*
+include SweetPy/TTAdmin/templete/*.*
+include SweetPy/plugin/*.*
+include SweetPy/core/*.*
+include SweetPy/common/*.*
+include SweetPy/connection/*.*
+recursive-include examples *.txt *.py
+prune examples/sample?/build
+prune SweetPy/DevelopMain.py
+prune SweetPy/TestMain.py
+prune SweetPy/Main.py
+prune SweetPy/TestCase
