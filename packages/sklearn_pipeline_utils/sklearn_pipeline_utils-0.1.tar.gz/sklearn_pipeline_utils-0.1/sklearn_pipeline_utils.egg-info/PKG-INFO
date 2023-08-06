@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sklearn-pipeline-utils
+Version: 0.1
+Summary: custom transformers for sklearn pipeline to make life easier
+Home-page: https://github.com/gautham20/sklearn_pipeline_utils
+Author: gautham20
+Author-email: gautham.kumaran11@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
