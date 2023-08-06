@@ -1,0 +1,11 @@
+
+
+How to distribute
+=================
+
+Adjust version in setup.py, then:
+
+rm -rf dist
+python setup.py sdist
+twine register --repository-url https://test.pypi.org/legacy/ -u camilletesthuot -p "Patapouf0" dist/*
+
