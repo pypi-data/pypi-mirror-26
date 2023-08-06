@@ -1,0 +1,17 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+requirements.txt
+seahorse.png
+setup.py
+keyring_otp.egg-info/PKG-INFO
+keyring_otp.egg-info/SOURCES.txt
+keyring_otp.egg-info/dependency_links.txt
+keyring_otp.egg-info/entry_points.txt
+keyring_otp.egg-info/requires.txt
+keyring_otp.egg-info/top_level.txt
+kotp/__init__.py
+kotp/cli.py
+kotp/kotp.py
+kotp/tests/__init__.py
+kotp/tests/test_kotp.py
