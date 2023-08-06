@@ -1,0 +1,9 @@
+/usr/local/lib/python3.5/dist-packages/numtogreek/__init__.py
+/usr/local/lib/python3.5/dist-packages/numtogreek/numtogreek.py
+/usr/local/lib/python3.5/dist-packages/numtogreek/data/VERSION
+/usr/local/lib/python3.5/dist-packages/numtogreek/data/gpl-3.0.txt
+/usr/local/lib/python3.5/dist-packages/numtogreek/data/README.rst
+/usr/local/lib/python3.5/dist-packages/numtogreek/data/CHANGELOG
+/usr/local/lib/python3.5/dist-packages/numtogreek/__pycache__/__init__.cpython-35.pyc
+/usr/local/lib/python3.5/dist-packages/numtogreek/__pycache__/numtogreek.cpython-35.pyc
+/usr/local/lib/python3.5/dist-packages/numtogreek-1.0.1.egg-info
