@@ -1,0 +1,9 @@
+django_tastypie_hmacauth-0.1.dist-info/DESCRIPTION.rst,sha256=Iq5fFJceed0pQ1CPdTGP9AZnVRTOD6Um0twbVd4rrU8,9593
+django_tastypie_hmacauth-0.1.dist-info/METADATA,sha256=bD1nhJ4Z63dHkj7ti80wbvf-nJMLxJmddNcpSFlsKeM,10656
+django_tastypie_hmacauth-0.1.dist-info/RECORD,,
+django_tastypie_hmacauth-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+django_tastypie_hmacauth-0.1.dist-info/entry_points.txt,sha256=lexK7RzT1xMyCvalZCkEXUV_pXjWKxyNU2NGRfSYmuo,40
+django_tastypie_hmacauth-0.1.dist-info/metadata.json,sha256=SotYfdtt5fZMtR2ZIdPL-VSx65kOq38S3_Mwupyh6Ro,1346
+django_tastypie_hmacauth-0.1.dist-info/top_level.txt,sha256=TNDNnjROG91OcDjWUwMB-r6snCvn7D6qelWWMrkgMnQ,18
+tastypie_hmacauth/__init__.py,sha256=e03_ZOGs_8QiltMw2vqVxgzeQRBvP5Zu7m0Jb0BzS-s,68
+tastypie_hmacauth/authentication.py,sha256=1qDI1CK7ry-4XFK7egYxp6E6ItPMTqvnaHPN3bu_aVI,4126
