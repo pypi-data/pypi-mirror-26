@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: logger-server
+Version: 1.0.1
+Summary: An async TCP logging server base on tornado.ioloop, which serve for logging.handlers.SocketHandler.
+Home-page: https://github.com/kehr/LoggerServer
+Author: Kehr
+Author-email: kehr.china@gmail.com
+License: Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+Description: LoggerServer
+        ============
+        
+        An async TCP logging server base on tornado.ioloop, which serve for logging.handlers.SocketHandler.
+        
+        See `LoggerServer Documentation <http://loggerserver.readthedocs.io/>`_.
+        
+Keywords: logging server SocketHandler tornado ioloop
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

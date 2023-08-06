@@ -1,0 +1,3 @@
+[console_scripts]
+logger-server = logger_server.server:main
+
