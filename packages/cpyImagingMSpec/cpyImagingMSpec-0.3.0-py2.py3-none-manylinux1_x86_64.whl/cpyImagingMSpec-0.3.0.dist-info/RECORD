@@ -1,0 +1,13 @@
+cpyImagingMSpec/__init__.py,sha256=dWXw1SMEmzNzk2iLV62sMJE-A8bd5PJs_wZ8hyELxwo,41
+cpyImagingMSpec/ims.h,sha256=GbKyWzpnkCU4j69VtAlnCuYMQIz7pWvdXvvHjJkUbxE,3276
+cpyImagingMSpec/io.py,sha256=iiFpPrXHWXkHaZ_4Sb1PKKv8ULn7aUixQ9p0SkRvoew,5342
+cpyImagingMSpec/libims_cffi.so,sha256=A9U7NNefa1WEM73WxVhast0SySXHBn8OBotb5E0IWf4,927616
+cpyImagingMSpec/metrics.py,sha256=9vvv-kysC-DF9ekmgJcUsHV3JzekH65JDvSXHn5WjWY,2606
+cpyImagingMSpec/utils.py,sha256=QvadDQ3iyFaq-ckCvEup0OMGmK5Po5BqN-aTDxQgJo8,1462
+cpyImagingMSpec-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cpyImagingMSpec-0.3.0.dist-info/METADATA,sha256=Xhuz7BjeyyWVzvTUqn6XCosWOjt7htIf-hQswYFkAaE,596
+cpyImagingMSpec-0.3.0.dist-info/RECORD,,
+cpyImagingMSpec-0.3.0.dist-info/WHEEL,sha256=Cvx655U6u0eKwcx6gjO41kC98w7KSb71786hpJLXkmo,138
+cpyImagingMSpec-0.3.0.dist-info/metadata.json,sha256=MMwTJggvekEoIXVDKrZjUXKJSO3mwxzhxJ3fVUjd62M,765
+cpyImagingMSpec-0.3.0.dist-info/pbr.json,sha256=B5QpkkZG_yfCO-0LmatAea880CzUy5oR4-IjYx7YZbg,47
+cpyImagingMSpec-0.3.0.dist-info/top_level.txt,sha256=cOKZ_N0dLH6tab6WvAn4y095_ZlwwFpwzsf2iGfrCaQ,16
