@@ -1,0 +1,13 @@
+README
+setup.py
+vq
+vquery/__init__.py
+vquery/pchelper.py
+vquery/vqconfig.py
+vquery/vqconnect.py
+vquery/vqcore.py
+vquery.egg-info/PKG-INFO
+vquery.egg-info/SOURCES.txt
+vquery.egg-info/dependency_links.txt
+vquery.egg-info/requires.txt
+vquery.egg-info/top_level.txt

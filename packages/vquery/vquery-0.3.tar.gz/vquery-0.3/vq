@@ -1,0 +1,294 @@
+#!/usr/bin/env python
+"""
+Usage:
+  vq --help
+  vq vm [<search>...] [--all] [--datastore] [--network] [--host] [--cluster] [--datacenter] [--folder] [--powerstate] [--ip] [--os] [--snapshot] [options]
+  vq datastore [<search>...] [--all] [--vm] [--host] [--datacenter] [options]
+  vq network [<search>...] [--all] [--vm] [--host] [--datacenter] [options]
+  vq host [<search>...] [--all] [--vm] [--datastore] [--network] [--cluster] [--datacenter] [options]
+  vq cluster [<search>...] [--all] [--vm] [--datastore] [--network] [--host] [--datacenter] [options]
+  vq datacenter [<search>...] [--all] [--datastore] [--network] [options]
+  vq folder [<search>...] [--all] [--vm] [options]
+
+Options:
+  -a, --all		  Get all info properties.
+  -v, --vm		  Get associated VMs.
+  -d, --datastore	  Get associated datastores.
+  -n, --network		  Get associated networks.
+  -h, --host		  Get associated hosts.
+  -c, --cluster		  Get associated cluster.
+  -r, --datacenter	  Get associated datacenter.
+
+  -f, --folder		  Get folder path of VM.
+  -p, --powerstate	  Get power state of VM.
+  -i, --ip		  Get guest IP address of VM.
+  -o, --os		  Get guest OS of VM.
+  -s, --snapshot	  Get Snapshot information of VM.
+
+  -e, --exact		  Only return exact search matches.
+
+  --debug		  Debug level information.
+
+AUTHENTICATION:
+  --server=<server>       Specify IP or hostname of vCenter.
+  --username=<username>   Specify username for vCenter connection.
+  --password=<password>   Specify password for vCenter connection.
+  --vc=<configID>         Specify the ID of vCenter connection from config file. 
+"""
+
+from vquery import *
+from datetime import date
+
+__version__ = 0.3
+
+def getfolderpath(item, path):
+	pathname = item.name + "/" + path
+	try:
+		return getfolderpath(item.parent, pathname)
+	except:
+		return pathname
+
+def main():
+	# Set up vars from docopt args.
+	argument = docopt(__doc__, version=__version__)
+
+	# Main type
+	vm = argument['vm']
+	datastore = argument['datastore']
+	network = argument['network']
+	host = argument['host']
+	cluster = argument['cluster']
+	datacenter = argument['datacenter']
+	folder = argument['folder']
+
+	search = argument['<search>']
+
+	# Command
+	_all = argument['--all']
+	_folder = argument['--folder']
+	_vm = argument['--vm']
+	_datastore = argument['--datastore']
+	_network = argument['--network']
+	_host = argument['--host']
+	_cluster = argument['--cluster']
+	_datacenter = argument['--datacenter']
+	_powerstate = argument['--powerstate']
+	_guestip = argument['--ip']
+	_guestos = argument['--os']
+	_snapshot = argument['--snapshot']
+
+	# Options
+	_exact = argument['--exact']
+	_debug = argument['--debug']
+
+	# Authentication
+	_config_id = argument['--vc']
+	_server = argument['--server']
+	_username = argument['--username']
+	_password = argument['--password']
+
+	# Select properties
+	_properties = { "all": _all, 
+			"folder": _folder, 
+			"vm": _vm, 
+			"datastore": _datastore, 
+			"network": _network, 
+			"host": _host, 
+			"cluster": _cluster,
+			"datacenter": _datacenter, 
+			"powerstate": _powerstate, 
+			"guestip": _guestip,
+			"guestos": _guestos,
+			"snapshot": _snapshot }
+
+	# Set quick to True if all values in _properties are False
+	_quick = all(v == False for v in _properties.itervalues())
+
+	# Set up connection
+	si = setup_connection(_server, _username, _password, _config_id, debug=_debug) 
+
+	# Retrieve information
+	if datastore:
+		vimType = vim.Datastore
+	elif network:
+		vimType = vim.Network
+	elif host:
+		vimType = vim.HostSystem
+	elif cluster:
+		vimType = vim.ClusterComputeResource
+	elif datacenter:
+		vimType = vim.Datacenter
+	elif folder:
+		vimType = vim.Folder
+	else:
+		vimType = vim.VirtualMachine
+	items = get_items(si, vimType, properties=_properties, exact=_exact, search_keys=search)
+
+	# Print information
+	if _quick:
+		for item in items:
+			if "name" in item:
+				print(item["name"])
+	else:
+		for item in items:
+			if vm:
+				if "parent" in item:
+					print("%s: VM Folder Location [%s]" % (item["name"], getfolderpath(item["parent"], "")))
+				if "runtime.powerState" in item:
+					if item["runtime.powerState"] == "poweredOn":
+						_powerstate = "On"
+					elif item["runtime.powerState"] == "poweredOff":
+						_powerstate = "Off"
+					else:
+						_powerstate = "Unknown"
+					print("%s: Power State [%s]" % (item["name"], _powerstate))
+				if "runtime.host" in item and (_all or _host):
+					print("%s: Host [%s]" % (item["name"], item["runtime.host"].name))
+				if "runtime.host" in item and (_all or _cluster):
+					try:
+						print("%s: Cluster [%s]" % (item["name"], item["runtime.host"].parent.name))
+					except:
+						pass
+				if "runtime.host" in item and (_all or _datacenter):
+					try:
+						print("%s: Datacenter [%s]" % (item["name"], item["runtime.host"].parent.parent.parent.name))
+					except:
+						pass
+				if "datastore" in item:
+					for idx, d in enumerate(item["datastore"]):
+						print("%s: %s #%d [%s]" % (item["name"], "Datastore", idx+1, d.name))
+				if "network" in item:
+					for idx, d in enumerate(item["network"]):
+						print("%s: %s #%d [%s]" % (item["name"], "Network", idx+1, d.name))
+				if "summary.config.memorySizeMB" in item:
+					print("%s: RAM configured [%d MB]" % (item["name"], item["summary.config.memorySizeMB"]))
+				if "summary.config.numCpu" in item:
+					print("%s: CPU's configured [%d]" % (item["name"], item["summary.config.numCpu"]))
+				if "config.version" in item:
+					print("%s: VM version [%s]" % (item["name"], item["config.version"]))
+				if "guestHeartbeatStatus" in item:
+					print("%s: Heartbeat Status [%s]" % (item["name"], item["guestHeartbeatStatus"]))
+				if "overallStatus" in item:
+					print("%s: Overall Status [%s]" % (item["name"], item["overallStatus"]))
+				if "summary.guest.ipAddress" in item:
+					print("%s: Guest IP Address [%s]" % (item["name"], item["summary.guest.ipAddress"]))
+				if "summary.guest.hostName" in item:
+					print("%s: Guest Hostname [%s]" % (item["name"], item["summary.guest.hostName"]))
+				if "summary.guest.guestFullName" in item:
+					print("%s: Guest OS Type [%s]" % (item["name"], item["summary.guest.guestFullName"]))
+				if "summary.guest.toolsRunningStatus" in item and "summary.guest.toolsStatus" in item:
+					print("%s: VMware Tools Status [%s (%s)]" % (item["name"], item["summary.guest.toolsRunningStatus"], item["summary.guest.toolsStatus"]))
+				if "summary.guest.toolsVersionStatus" in item and "summary.guest.toolsVersionStatus2" in item:
+					print("%s: VMware Tools Version [%s (%s)]" % (item["name"], item["summary.guest.toolsVersionStatus"], item["summary.guest.toolsVersionStatus2"]))
+				if "summary.config.vmPathName" in item:
+					print("%s: VMX Path %s" % (item["name"], item["summary.config.vmPathName"]))
+				if "summary.quickStats.hostMemoryUsage" in item and "summary.quickStats.guestMemoryUsage" in item:
+					print("%s: Memory Usage [%d MB on Host, %d MB in Guest]" % (item["name"], item["summary.quickStats.hostMemoryUsage"], item["summary.quickStats.guestMemoryUsage"]))
+				if "summary.storage.committed" in item and "summary.storage.uncommitted" in item:
+					storage_total = (item["summary.storage.committed"] + item["summary.storage.uncommitted"]) / 1024**3
+					storage_committed = item["summary.storage.committed"] / 1024**3
+					print("%s: Storage committed [%d GB / %d GB]" % (item["name"], storage_committed, storage_total))
+				if "guest.disk" in item:
+					for idx, disk in enumerate(item["guest.disk"]):
+						print("%s: Guest Disk #%d (%s) [%d%% free (capacity %d GB)]" % (item["name"], idx+1, disk.diskPath, 100*disk.freeSpace/disk.capacity, disk.capacity/1024**3))
+				if "config.template" in item:
+					print("%s: Template [%s]" % (item["name"], item["config.template"]))
+				if "snapshot" in item:
+					snapshot_date_string = str(item["snapshot"].rootSnapshotList[0].createTime).split()[0] # Get a yyyy-mm-dd string
+					snapshot_date_split = snapshot_date_string.split("-") 
+					snapshot_date = date(int(snapshot_date_split[0]), int(snapshot_date_split[1]), int(snapshot_date_split[2]))
+					snapshot_age = date.today() - snapshot_date
+					#print("%s: Snapshot date [%s]" % (item["name"], str(item["snapshot"].rootSnapshotList[0].createTime).split()[0]))
+					print("%s: Snapshot age (days) [%s]" % (item["name"], snapshot_age.days))
+				if "summary.quickStats.uptimeSeconds" in item:
+					seconds = item["summary.quickStats.uptimeSeconds"]
+					minutes, seconds = divmod(seconds, 60)
+					hours, minutes = divmod(minutes, 60)
+					days, hours = divmod(hours, 24)
+					print("%s: Uptime [%d days, %d hours, %d minutes and %d seconds]" % (item["name"], days, hours, minutes, seconds)) 
+			elif folder:
+				if "childEntity" in item:
+					for d in item["childEntity"]:
+						if _all and hasattr(d, 'childType'):
+							print("%s: Folder [%s]" % (item["name"], d.name))
+						elif hasattr(d, 'summary'):
+							print("%s: VM [%s]" % (item["name"], d.name))
+			else:
+				if "vm" in item:
+					if _vm:
+						for d in item["vm"]:
+							print("%s: VM [%s]" % (item["name"], d.name))
+					else:
+						print("%s: VMs # [%s]" % (item["name"], len(item["vm"])))
+				if "host" in item:
+					if datastore and _host:
+						for d in item["host"]:
+							print("%s: Host [%s]" % (item["name"], d.key.name))
+					elif network and _host:
+						for d in item["host"]:
+							print("%s: Host [%s]" % (item["name"], d.name))
+					elif cluster and _vm:
+						for hst in item["host"]:
+							for d in hst.vm:
+								print("%s: VM [%s]" % (item["name"], d.name))
+					elif cluster and _host:
+						for d in item["host"]:
+							print("%s: Host [%s]" % (item["name"], d.name))
+					else:	
+						print("%s: Hosts # [%s]" % (item["name"], len(item["host"])))
+				if "network" in item:
+					if _network:
+						for d in item["network"]:
+							print("%s: Network [%s]" % (item["name"], d.name))
+					else:	
+						print("%s: Networks # [%s]" % (item["name"], len(item["network"])))
+				if "datastore" in item:
+					if _datastore:
+						for d in item["datastore"]:
+							print("%s: Datastore [%s]" % (item["name"], d.name))
+					else:	
+						print("%s: Datastores # [%s]" % (item["name"], len(item["datastore"])))
+				if "parent" in item: # Clusters and Datacenters
+					if host and _cluster or host and _all:
+						print("%s: Cluster [%s]" % (item["name"], item["parent"].name))
+					if host and _datacenter or host and _all:
+						print("%s: Datacenter [%s]" % (item["name"], item["parent"].parent.parent.name))
+					elif _datacenter or _all:
+						print("%s: Datacenter [%s]" % (item["name"], item["parent"].parent.name))
+				if "summary.capacity" in item:
+					print("%s: Capacity [%d GB]" % (item["name"], int(item["summary.capacity"]/1024**3)))
+				if "summary.freeSpace" in item:
+					print("%s: Free Space [%d GB]" % (item["name"], int(item["summary.freeSpace"]/1024**3))) 
+				if "summary.capacity" in item and "summary.freeSpace" in item:	
+					print("%s: Committed [%d GB]" % (item["name"], int((item["summary.capacity"]-item["summary.freeSpace"])/1024**3)))
+				if "summary.uncommitted" in item:
+					print("%s: Uncommited [%d GB]" % (item["name"], int(item["summary.uncommitted"]/1024**3))) 
+				if "summary.type" in item:
+					print("%s: Type [%s]" % (item["name"], item["summary.type"]))
+					if item["summary.type"] == "VMFS" and "info" in item: 
+						print("%s: VMFS Version [%s]" % (item["name"], item["info"].vmfs.version)) 
+				if "summary.quickStats.overallCpuUsage" in item:
+					print("%s: CPU usage [%s]" % (item["name"], item["summary.quickStats.overallCpuUsage"]))
+				if "summary.quickStats.overallMemoryUsage" in item:
+					print("%s: Memory usage [%s]" % (item["name"], item["summary.quickStats.overallMemoryUsage"]))
+				if "summary.hardware.model" in item:
+					print("%s: Hardware [%s]" % (item["name"], item["summary.hardware.model"])) 
+				if "summary.hardware.numCpuCores" in item:
+					print("%s: CPU Cores # [%d]" % (item["name"], item["summary.hardware.numCpuCores"])) 
+				if "summary.hardware.numCpuPkgs" in item:
+					print("%s: CPU Sockets # [%d]" % (item["name"], item["summary.hardware.numCpuPkgs"]))
+				if "summary.hardware.memorySize" in item:
+					print("%s: RAM [%d GB]" % (item["name"], int(item["summary.hardware.memorySize"]/1024**3)))
+				if "summary.hardware.numNics" in item:
+					print("%s: Nics # [%d]" % (item["name"], item["summary.hardware.numNics"]))
+				if "summary.hardware.uuid" in item:
+					print("%s: UUID [%s]" % (item["name"], item["summary.hardware.uuid"]))
+				if "summary.quickStats.uptime" in item:
+					seconds = item["summary.quickStats.uptime"]
+					minutes, seconds = divmod(seconds, 60)
+					hours, minutes = divmod(minutes, 60)
+					days, hours = divmod(hours, 24)
+					print("%s: Uptime [%d days, %d hours, %d minutes and %d seconds]" % (item["name"], days, hours, minutes, seconds)) 
+	
+if __name__ == "__main__":
+	main()

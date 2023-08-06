@@ -1,0 +1,80 @@
+VQUERY
+A tool for querying vCenter servers for various useful information.
+It is designed to return simple parsable output.
+
+
+INSTALL
+$ sudo python setup.py install
+
+
+AUTHENTICATION
+There are two ways to input your vCenter credentials 
+- supply them as parameters on the command line
+- specify credentials in the file ~/.vquery
+
+The .vquery file
+The file will be created for you (if it doesn't already exist) once you launch vQuery without credentials.
+The purpose of the .vquery file is to store connection profiles, which will make life a lot easier for you,
+especially if you connect to various vCenter servers on a regular basis.
+
+(A brief note on security: Storing your password in plain text is obviously not ideal. My recommendation is
+to omit the password and let vQuery prompt you for it instead. If you choose to store complete credentials in
+.vquery, I advise you to set up a vCenter account with read-only access.)
+
+The command line authentication parameters are:
+  --server=<server>              Specify IP or hostname of vCenter.
+  --username=<username>          Specify username for vCenter connection.
+  --password=<password>          Specify password for vCenter connection.
+  --vc=<connection profile>      Specify the ID of vCenter connection profile from config file. 
+
+If you have specified a connection profile called 'default' in .vquery, this profile will be used to 'fill in
+the blanks' whenever any credentials are missing.
+
+
+USAGE GUIDE
+The usage structure of the command is:
+$ vq (object type) [search names...] [optional flags] [auth options]
+The object type can be vm, datastore, network, host, cluster, datacenter or folder.
+
+$ vq --help
+A pretty good place to start.
+
+$ vq vm
+This will simply list all VM names in the environment, using connection profile 'default' if it exists.
+
+$ vq host --vc=lab
+List all hosts, using connection profile 'lab' as specified in my ~/.vquery file.
+
+$ vq datastore --server=myvc.vsphere.local --username=admin@vsphere.local
+List all datastores, supplying some credentials on the command line.
+
+$ vq datastore myDS01 --vm
+You can provide search names to narrow down results. --vm flag will list VMs stored on said datastore.
+
+$ vq vm myVM01 myVM02 --network
+We can provide several search names. --network flag displays associated networks.
+
+$ vq vm --ip
+List all VMs and associated guest IP addresses.
+
+$ vq host ESXi02 --all
+Search for host ESXi02 and display verbose information.
+
+$ vq vm myVM01 -pfio
+We can use the shorthand version of flags and combine them. 
+Here we search for VM myVM01 and display power state, folder location, IP address and Guest OS.
+
+As you can see, almost all object types and flags can be combined to retrieve all sorts of information.
+For instance, you can quickly figure out which datastores or networks are connected to each host, which
+VMs are connected to a network, which datastores have an older VMFS version, which VMs have ageing 
+snapshots, or simply check how much storage space is left on a guest. Many more use cases are possible!
+
+
+VERSION
+0.2 / I've rewritten the script to use property templates for much speedier queries. Earlier script
+did not scale well in larger environments.
+
+
+CREDITS
+Script by Jakob Svanholm - jakob@rymdlego.se
+I tip my hat to 'dnaeon' for pchelper property templates.
