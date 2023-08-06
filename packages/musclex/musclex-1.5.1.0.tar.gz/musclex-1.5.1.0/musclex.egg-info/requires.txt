@@ -1,0 +1,15 @@
+scikit-image
+tifffile
+numpy
+pandas
+scikit-learn
+lmfit
+ConfigParser
+pillow
+fabio
+peakutils
+h5py
+scipy
+matplotlib<=2.1.0
+musclexflibs
+PyMca5
