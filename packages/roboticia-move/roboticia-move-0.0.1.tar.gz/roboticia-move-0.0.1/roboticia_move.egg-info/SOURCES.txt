@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+roboticia_move/__init__.py
+roboticia_move/_version.py
+roboticia_move/roboticia_move.py
+roboticia_move.egg-info/PKG-INFO
+roboticia_move.egg-info/SOURCES.txt
+roboticia_move.egg-info/dependency_links.txt
+roboticia_move.egg-info/not-zip-safe
+roboticia_move.egg-info/requires.txt
+roboticia_move.egg-info/top_level.txt
+roboticia_move/configuration/roboticia_move.json
+roboticia_move/primitives/__init__.py
+roboticia_move/sensor/__init__.py
+roboticia_move/tutorial/quick_start_roboticia_drive.ipynb

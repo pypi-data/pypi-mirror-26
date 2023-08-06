@@ -1,0 +1,2 @@
+include roboticia_move/configuration/*.json
+include roboticia_move/vrep-scene/*.ttt
