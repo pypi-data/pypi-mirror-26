@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: docker_chaos_monkey
+Version: 0.1
+Summary: Chaos monkey for your Docker containers
+Home-page: https://github.com/marouni/python-docker-chaos
+Author: Abbass MAROUNI
+Author-email: marouni@marouni.fr
+License: Apache 2
+Description-Content-Type: UNKNOWN
+Description: Test your dockerized applications' resilience by simulating random container behavior
+Keywords: python docker chaos chaos-monkey chaos-engineering
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities

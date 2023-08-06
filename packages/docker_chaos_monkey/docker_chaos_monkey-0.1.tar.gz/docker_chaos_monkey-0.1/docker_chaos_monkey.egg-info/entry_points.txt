@@ -1,0 +1,3 @@
+[console_scripts]
+docker-chaos-monkey = docker_chaos_monkey.command_line:main
+
