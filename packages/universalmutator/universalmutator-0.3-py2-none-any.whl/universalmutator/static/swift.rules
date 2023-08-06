@@ -1,0 +1,6 @@
+var  ==> let 
+
+true ==> false
+false ==> true
+
+[.+] ==> []
