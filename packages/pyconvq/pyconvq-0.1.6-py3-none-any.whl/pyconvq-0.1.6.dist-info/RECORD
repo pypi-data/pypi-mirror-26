@@ -1,0 +1,15 @@
+pyavrophonetic/__init__.py,sha256=bee2qJXtKo7gooEPEaiUDmC6SrdXoNUuFveVMbll4KY,959
+pyavrophonetic/avro.py,sha256=zHIHWy8__4u_jWRBlMTreHZbmV2KbNqHpPXcMXRe25w,9317
+pyavrophonetic/config.py,sha256=y4VAlMi5cE6eXsROc7iq8texsoD5pbzh6fVdZ8ND4PQ,1612
+pyavrophonetic/resources/avrodict.json,sha256=ZPi0f7Rh3xGyEcxual4J2oA6hnBU7RAarfIyNKW-x5E,49575
+pyavrophonetic/utils/__init__.py,sha256=YBLzaDe8C1tk8fR8hrD6u3_nraZRq7R75ctNT5XjEBI,1120
+pyavrophonetic/utils/count.py,sha256=O4lDVnwQA-wzsf6xwGXsUwzOBukYarq0wbEwdClhncA,1357
+pyavrophonetic/utils/validate.py,sha256=ad3WWfac9ZawqLVYAodgmHmLATrd4cYXtu6sWU3hX0I,2352
+pyconvq/__init__.py,sha256=b5ztDDkpgJXm0P_VwVU_M5afGuKS9-oiaN_RPERbVEs,20
+pyconvq/conv.py,sha256=Hu_1uebbTRUCF8WAKayQEQuZFBYmQlJTj7paYvnBPgY,2431
+pyconvq-0.1.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyconvq-0.1.6.dist-info/METADATA,sha256=hC7Xmuk1NcnBFeN5ixqo_ySJXer4rTXiLTNTlpkjDOo,357
+pyconvq-0.1.6.dist-info/RECORD,,
+pyconvq-0.1.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pyconvq-0.1.6.dist-info/metadata.json,sha256=D6a2uXw2YjY7zzCD9M_qoNYP8Mcs87wdepwl3Yw2MSY,513
+pyconvq-0.1.6.dist-info/top_level.txt,sha256=coMPYmSH-8-PLqnHs2CLcypIpJQItbB2pOoW6kKqFCA,23
