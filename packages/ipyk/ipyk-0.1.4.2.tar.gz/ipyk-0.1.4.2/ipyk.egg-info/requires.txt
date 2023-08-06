@@ -1,0 +1,6 @@
+ipython>=4.0.0
+ipykernel>=4.0.0
+jupyter_client>=4.0.0
+jupyter_core>=4.0.0
+setproctitle
+six
