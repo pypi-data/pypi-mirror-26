@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+Makefile
+README.md
+setup.cfg
+setup.py
+nbinteract/__init__.py
+nbinteract/exporter.py
+nbinteract.egg-info/PKG-INFO
+nbinteract.egg-info/SOURCES.txt
+nbinteract.egg-info/dependency_links.txt
+nbinteract.egg-info/entry_points.txt
+nbinteract.egg-info/requires.txt
+nbinteract.egg-info/top_level.txt
