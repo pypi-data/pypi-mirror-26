@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        packer_build=fpr_packer.scripts:packer_build
+        packer_install=fpr_packer.scripts:packer_install
+    
