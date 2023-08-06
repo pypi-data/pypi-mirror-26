@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: stormbot-fortune
+Version: 1.2.1
+Summary: fortune plugin for stormbot
+Home-page: https://git.paulfariello.fr/Stormbot/stormbot-fortune
+Author: Paul Fariello
+Author-email: paul@fariello.eu
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Stormbot fortune plugin
+        =======================
+        
+        This is a Stormbot_ plugin that tell random fortune::
+        
+            <master>   | stormbot: fortune
+            <stormbot> | Il faut pas respirer la compote, ça fait tousser.
+        
+        .. _Stormbot: https://pypi.org/project/stormbot
+        
+        Install
+        =======
+        
+        ::
+        
+            pip install stormbot-fortune
+        
+        Example
+        =======
+        
+        ::
+        
+            stormbot --plugins stormbot_fortune.fortune
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Communications :: Chat
+Classifier: Programming Language :: Python
