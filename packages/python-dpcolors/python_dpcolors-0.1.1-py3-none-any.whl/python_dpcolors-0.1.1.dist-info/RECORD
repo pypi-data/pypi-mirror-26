@@ -1,0 +1,15 @@
+dpcolors/__init__.py,sha256=Hpvm8-G8p94ABaVt6REem5e0GObW3VudKvstXtGgqqM,10707
+dpcolors/grammars/__init__.py,sha256=IQHZ64hcJIaMIThwhBEXOzmJi-sg54z17w3_mssntkE,1453
+dpcolors/grammars/dp.py,sha256=3W3Vx0XFwuEZl4v9A_zSOkeMblCifWZXBUXWhk7dPOY,7524
+dpcolors/grammars/irc.py,sha256=idpVhQUNtubxVjmMMfjhD80rhd1C8dXFXT-qpiGWrBc,1400
+python_dpcolors-0.1.1.dist-info/DESCRIPTION.rst,sha256=9RbwMuXxn9XnI-Zow3Qr0FXXwvp0bort5dSBQqJmz74,666
+python_dpcolors-0.1.1.dist-info/METADATA,sha256=b_eGnXB4M_mFbk2LVO-pZ7u1HPPzIUUoUx_N33GUiU4,1759
+python_dpcolors-0.1.1.dist-info/RECORD,,
+python_dpcolors-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+python_dpcolors-0.1.1.dist-info/metadata.json,sha256=CG6dZhxecG6ONvwduKq_5-ihp6xpSnBUwH0qXx1gexQ,1206
+python_dpcolors-0.1.1.dist-info/top_level.txt,sha256=EhfmpH5JAgDQQtfn2C6Mudq10FdvLMZW0QRTcUxLqf8,15
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=0MgovWNS9w7PHPa8McFSw_xx8SLb5-85w3wfpEi4s7U,151
+tests/test_conversion.py,sha256=7jBQAxc8YcqSF2_0DgB9rO5Teanawku6fKzu_ASs9D4,652
+tests/test_dp.py,sha256=qEA8HoSTa6v04pBlaZPnnTG7LUNpzOfLzI6g0A3mZ54,568
+tests/test_irc.py,sha256=4dyIs-IKa79o5FWP701ngxeX_J66-2gCh8jfQGrmw78,381
