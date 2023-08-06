@@ -1,0 +1,4 @@
+requests
+zdesk
+pytest
+setuptools

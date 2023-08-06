@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: zendesk-ticket-viewer
+Version: 0.1
+Summary: A command line tool to view Zendesk tickets
+Home-page: UNKNOWN
+Author: Louis Stekhoven-Smith
+Author-email: louis.stekhoven@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Displayed on pyPi prokect page.
+Platform: UNKNOWN
