@@ -1,0 +1,11 @@
+urlnormalizer/__init__.py,sha256=Zohw-p6f9SpoPnmivXzNBa2m2MW6vnWuiJmn6SoNFsk,141
+urlnormalizer/constants.py,sha256=LnYmFiOHofMAMs5TeWMdbwQfvDHYNOwecNahja97xIU,493
+urlnormalizer/normalizer.py,sha256=ED_L3bcgrcL5j_b3w-Mt90sa2GenywGwjrEQUgaUDzw,4059
+urlnormalizer/utils.py,sha256=lheDKtjXdtmtpbXlVZ5OXbSVgakaiMyn92shb1Hz7ow,3348
+urlnormalizer/validator.py,sha256=GRvPP2cXTo3rC6P0XxYwkXx6wolWawBvmsy4Q49H4-A,1658
+urlnormalizer-1.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+urlnormalizer-1.0.2.dist-info/METADATA,sha256=kwecs3Y7L_HeOFt1Y5Ojo3-HklL2DH8XFc53WH9VxBU,608
+urlnormalizer-1.0.2.dist-info/RECORD,,
+urlnormalizer-1.0.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+urlnormalizer-1.0.2.dist-info/metadata.json,sha256=K0ciUxm6FmC3RC4n_kBCb1Wfi28EqHKtnE3Z96H2vEQ,833
+urlnormalizer-1.0.2.dist-info/top_level.txt,sha256=5oKOptJ2TgV2iZ0_bZW3u8dCjOObtB40JJQmsgTsdcY,14
