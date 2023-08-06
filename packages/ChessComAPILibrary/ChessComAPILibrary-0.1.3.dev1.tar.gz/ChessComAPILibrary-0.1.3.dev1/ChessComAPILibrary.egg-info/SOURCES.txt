@@ -1,0 +1,14 @@
+README.md
+setup.py
+ChessComAPILibrary.egg-info/PKG-INFO
+ChessComAPILibrary.egg-info/SOURCES.txt
+ChessComAPILibrary.egg-info/dependency_links.txt
+ChessComAPILibrary.egg-info/requires.txt
+ChessComAPILibrary.egg-info/top_level.txt
+library/__init__.py
+library/playerdata/__init__.py
+library/playerdata/games.py
+library/playerdata/profile.py
+library/playerdata/__init__.py
+library/playerdata/games.py
+library/playerdata/profile.py
