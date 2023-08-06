@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+cfmr/__init__.py
+cfmr/emitter.py
+cfmr/mapper.py
+cfmr/reducer.py
+cfmr.egg-info/PKG-INFO
+cfmr.egg-info/SOURCES.txt
+cfmr.egg-info/dependency_links.txt
+cfmr.egg-info/top_level.txt
