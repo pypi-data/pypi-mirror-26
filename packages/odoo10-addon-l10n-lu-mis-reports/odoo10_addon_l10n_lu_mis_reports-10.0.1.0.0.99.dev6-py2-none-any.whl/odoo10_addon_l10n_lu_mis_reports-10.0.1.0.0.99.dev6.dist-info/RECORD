@@ -1,0 +1,17 @@
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/l10n_lu_mis_reports/README.rst,sha256=Vq_m9s8mqvFBEM277_Qyy4ELEimCYlXEV4n-gR6QD-U,2457
+odoo/addons/l10n_lu_mis_reports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/l10n_lu_mis_reports/__manifest__.py,sha256=USBkxOX4o_HXgweDgu0RrHs9Pn5JSv2QSudlHwwJFKs,770
+odoo/addons/l10n_lu_mis_reports/data/mis_report_abr_bs.xml,sha256=7yuR6dF3Ps_stZhRW8Vmio29pW6qBBbpcDWUw6x47mw,17425
+odoo/addons/l10n_lu_mis_reports/data/mis_report_abr_pl.xml,sha256=zepuBBQya9E_QwqZLc6UBYwbUGTQY5DIoUzPmy0wFjY,20681
+odoo/addons/l10n_lu_mis_reports/data/mis_report_bs.xml,sha256=Kevz0NRgq5JNLyvBOsvtCnBeymaQHFciu5ooETdlQeE,52592
+odoo/addons/l10n_lu_mis_reports/data/mis_report_ca.xml,sha256=sOviaiSi7ALD_wm_3BRnmZkmiVyrl6AjOSruMB-EpSc,544822
+odoo/addons/l10n_lu_mis_reports/data/mis_report_pl.xml,sha256=11NigYP1UwXJaHR00T3NTboskuk2u11t5kkEbyyu12Y,22375
+odoo/addons/l10n_lu_mis_reports/data/mis_report_styles.xml,sha256=N9FTsGuzk5AE18oaVdMx7wiNfprnRlsAaQIrwlSAP18,1611
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/DESCRIPTION.rst,sha256=G_wB088vq0jTwv2GQLxOMSeYy_FrXx_lU-RLK0Eirn0,2459
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/METADATA,sha256=mRZau14SByefLDco8ZfE9DpIu2qM4zOnmLGVLPyHlwE,3028
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/RECORD,,
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/metadata.json,sha256=8navkRIiYHNlfpY1FzPZ5lYlaksMk6FnolNY-0pMsVU,774
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_l10n_lu_mis_reports-10.0.1.0.0.99.dev6.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
