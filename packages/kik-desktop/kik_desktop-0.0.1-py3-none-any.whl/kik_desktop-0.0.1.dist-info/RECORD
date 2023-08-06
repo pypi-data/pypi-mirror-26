@@ -1,0 +1,16 @@
+kik_desktop/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+kik_desktop/app.py,sha256=nBXkulfw9vH9mBX2oV1nch31z4Jvgnr0ZSCRcIb9H6E,6740
+kik_desktop/dark_theme.css,sha256=2tKTW24qj-z_EUE4PE946Sxc3KksuoHhUFpsFPTTp6k,1004
+kik_desktop/kik_thread.py,sha256=0yYkZpijl6t70_mK19AooCEH4Ohxq926VDr4RQtsWXI,3744
+kik_desktop/light_theme.css,sha256=ylEwV9-ZcC3KHFgiPOECb4GzJjAZCz3xBeTwYUMbk7s,1585
+kik_desktop/util.py,sha256=2tJpTa2Th3qCjB2UoUlNG5g6OoUy0zIWQQ73GVqZYG0,124
+kik_desktop/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kik_desktop/ui/login_widget.py,sha256=8mzeWBPRV9eFLJWs9ECDeXOrNdHtPtDX8reNrHPeuLk,3684
+kik_desktop/ui/main_widget.py,sha256=D41277ap2U9JDWBXLf3s53lxUvwCW4Nf7Qx0VRd1koo,8336
+kik_desktop-0.0.1.dist-info/DESCRIPTION.rst,sha256=fHrXRDBeOcUDD6S93OyDyBBCswgRSVv207pomu988co,130
+kik_desktop-0.0.1.dist-info/METADATA,sha256=TYTV_1pHcuOL78U65cl069vyfQyY6_ToVpn8o_CQI0I,786
+kik_desktop-0.0.1.dist-info/RECORD,,
+kik_desktop-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+kik_desktop-0.0.1.dist-info/entry_points.txt,sha256=nBfQ_245geOlRudnUzQKncKmumGSCWdFPN0VX7JZYIg,57
+kik_desktop-0.0.1.dist-info/metadata.json,sha256=7r23OjvP7xY3kOlDf9oGFkrFPfwQKj9dk2mZzXWRt24,980
+kik_desktop-0.0.1.dist-info/top_level.txt,sha256=6E-5htA9CJQOA8x4GQgkVpZY7kwI2mpGhs-jzWCjgUI,12
