@@ -1,0 +1,9 @@
+README.rst
+go.py
+setup.py
+stuff.py
+python_wars_solo.egg-info/PKG-INFO
+python_wars_solo.egg-info/SOURCES.txt
+python_wars_solo.egg-info/dependency_links.txt
+python_wars_solo.egg-info/entry_points.txt
+python_wars_solo.egg-info/top_level.txt
