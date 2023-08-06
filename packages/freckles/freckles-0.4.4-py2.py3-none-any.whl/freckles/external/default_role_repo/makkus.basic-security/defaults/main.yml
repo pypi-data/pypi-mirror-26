@@ -1,0 +1,18 @@
+---
+# defaults file for basic-security
+
+# not a default, but can be set externally
+# basic_security_root_pw: 'secure password'
+# basic_security_user_name: 'admin'
+# basic_security_user_pw: 'secure password'
+basic_security_user_shell: '/bin/bash'
+basic_security_user_public_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7aU6CklhCjy8dHQ1JRA0TO8nkWhuooNoNux0+Zbw0+wax8FbViTKUe+Op9R3N4Mca23oa4Sni8l2NKcKTlzoKTugRx+4INv/2DxDzNK++UHiIME4w3TZAQ++ZF+Ujyvw/FlSIfCFaosLUvxLls2rO7qQEoBxrimrXXarGZ7PBEQ2Nxe8RTrcO84ffmj+rn6+ge1dtgdg9VzWQN1znMJqoaRZTO1ks6W0XB4D/ArTUK6J0Q0giKutq91QwW5MMIgx2tdHeKfICZkMOcmDfb5iQGo4YNmBzQb0jxQc25xgkJpVkqdp9h/aX06E/XhT3eZk2odqiUxGTY8pegO6zmA7/ cardno:000604944474
+basic_security_packages: []
+basic_security_ssh_port: 22
+basic_security_mosh_from_port: 60000
+basic_security_mosh_to_port: 60010
+basic_security_disable_ssh_password_auth: true
+basic_security_disable_ssh_root_access: true
+basic_security_enable_passwordless_sudo: false
+basic_security_autoupdate_enabled: true
