@@ -1,0 +1,62 @@
+Metadata-Version: 1.1
+Name: pyfloip
+Version: 0.0.1
+Summary: Converts FLOIP Results data package to XForm
+Home-page: https://github.com/onaio/floip-py
+Author: Ona Systems LLC
+Author-email: tech@ona.io
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: pyfloip
+        =======
+        
+        |travis|
+        
+        .. |travis| image:: https://travis-ci.org/onaio/floip-py.svg?branch=master
+                    :target: https://travis-ci.org/onaio/floip-py
+        
+        A library for converting the questions in a FLOIP Data Package descriptor to an
+        ODK XForm.
+        
+        Getting Started
+        ---------------
+        
+        ::
+        
+            $ pip install pyfloip
+            $ floip data/flow-results-example-1.json
+        
+        Example
+        ^^^^^^^
+        
+        Reading a FLOIP results data package and generating the XML ODK XForm.
+        
+        .. code:: python
+        
+            from floip import FloipSurvey
+            suvey = FloipSurvey('data/flow-results-example-1.json')
+            print(survey.xml())
+        
+        Testing
+        -------
+        
+        ::
+        
+            $ pip install -r requirements.txt
+            $ py.test --pylint
+        
+        Documentation
+        -------------
+        
+        FloipSurvey
+        ^^^^^^^^^^^
+        
+        A class that converts a FLOIP results data package to an ODK XForm.
+        
+Keywords: FLOIP ODK XForm pyxform XLSForm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6

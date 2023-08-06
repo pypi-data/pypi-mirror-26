@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+floip/__init__.py
+floip/cli.py
+pyfloip.egg-info/PKG-INFO
+pyfloip.egg-info/SOURCES.txt
+pyfloip.egg-info/dependency_links.txt
+pyfloip.egg-info/entry_points.txt
+pyfloip.egg-info/requires.txt
+pyfloip.egg-info/top_level.txt
