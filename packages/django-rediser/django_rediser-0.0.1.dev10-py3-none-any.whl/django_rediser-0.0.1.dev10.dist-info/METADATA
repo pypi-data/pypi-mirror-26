@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: django-rediser
+Version: 0.0.1.dev10
+Summary: Django Redis Helper
+Home-page: http://lexycore.github.io/django-rediser
+Author: Alexander Kovalev
+Author-email: ak@alkov.pro
+License: MIT
+Download-URL: https://github.com/lexycore/django-rediser.git
+Keywords: development,cache
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: redis
+
+UNKNOWN
+
+
