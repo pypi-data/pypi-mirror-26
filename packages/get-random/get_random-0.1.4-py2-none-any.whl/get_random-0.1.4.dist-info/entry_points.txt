@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        get_random=get_random.get_random:main
+    
