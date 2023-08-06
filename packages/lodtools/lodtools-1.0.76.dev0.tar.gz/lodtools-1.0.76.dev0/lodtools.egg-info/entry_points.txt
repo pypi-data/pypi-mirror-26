@@ -1,0 +1,3 @@
+[console_scripts]
+lod-tools = collab.lod_tools:main
+
