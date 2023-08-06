@@ -1,0 +1,14 @@
+calysto_lc3/__init__.py,sha256=DqVoI5NdH2pXf8LwfNUofp2GHZ9-7X1lzNUmsIgXFWk,126
+calysto_lc3/__main__.py,sha256=cvfQTVfJfXEDMV8z-eJUHmRY931xjNWYaztADAlYbWU,137
+calysto_lc3/_version.py,sha256=0nUyn4_GHcif_mf-CvrJ6pT3_g1pyjLqIRnpvpSI8EA,80
+calysto_lc3/install.py,sha256=fNuQobe2Yf2ZQeAp0D9JKYpD8u0wduY86DtqL5yVCfk,888
+calysto_lc3/kernel.py,sha256=g1dJNqwDWag1UVW-aQuH-d9R_FUKMJBQ7cjZr7_6mGE,4191
+calysto_lc3/lc3.py,sha256=g8bc8-uBcHsHC6dRhp8nukq9R9ishAHibctR5k06BaI,75232
+calysto_lc3/images/logo-32x32.png,sha256=wGA2dnlCEC8NdFAtqnwkzpndanxqBZRIlFLXjGIlaB0,731
+calysto_lc3/images/logo-64x64.png,sha256=Rp5lq5aAXeyPXGG4GpmWKyQxthCvtV_Ys16tb16QfIY,1724
+calysto_lc3-0.6.dist-info/DESCRIPTION.rst,sha256=01rPLJVGccIPyPV4dYIS-Dlvd_5tfdWlOZmFweMlCKY,1323
+calysto_lc3-0.6.dist-info/METADATA,sha256=igP_ovPoV2mTnIN_ObJCVfzpAs2ox4cEW-wakxDCcGM,1878
+calysto_lc3-0.6.dist-info/RECORD,,
+calysto_lc3-0.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+calysto_lc3-0.6.dist-info/metadata.json,sha256=E57jmtYDz0cJwMGaCZkvB7yzCFWbEjEdA953yn1kmSk,718
+calysto_lc3-0.6.dist-info/top_level.txt,sha256=RQ8FrGigln-igITSpaNV1rV67EtemLdWECGpvgu9ZXU,12
