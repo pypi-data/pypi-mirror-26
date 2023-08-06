@@ -1,0 +1,176 @@
+####################################################################################################
+#
+# Music Instruments
+#
+####################################################################################################
+
+####################################################################################################
+#
+# Indentation: 4 spaces
+#
+# Pitches are noted using SPN
+#   C4 = middle C
+#   A4 = A 440 Hz
+#   Sharp is noted # e.g. C#4
+#   Bemol is noted - e.g. C-4
+#
+# "8va bassa" means an octave lower, 8ve lower
+#
+# Transposition: The instrument's key tells which pitch will sound when the player plays a note
+#   written as C/Do.
+#
+# Staff Key:
+#   G    Sol G4 Treble
+#   C    Do  C4 Alto, Tenor
+#   F    Fa  F3 Bass
+#   G8vb     G3
+#   F8vb     F2
+#
+####################################################################################################
+
+####################################################################################################
+
+Brass Family:
+
+   # valved, slide
+   # natural, keyed or fingered
+
+    Trombone:
+        staff key: F
+        written range: E2 F5
+        # a 9th lower, when written in treble clef as a Bb transposing instrument
+        transposing: False
+
+    Trumpet:
+        staff key: G # Sol
+        written range: F#3 D6
+        transposing: # commonly Bb and C
+            C:  C  # Do, Ut, as written
+            Bb: B- # Sib, a whole step lower, M2 lower
+            A:  A  # a minor 3rd lower
+            G:  G  # a perfect 5th higher
+            F:  F  # a perfect 4th higher
+            E:  E  # a major 3rd higher
+            Eb: E- # a minor 3rd higher
+            D:  D  # a whole step higher
+
+    # Piccolo Trumpet
+    Trumpet/Piccolo:
+        staff key: G # Sol
+        written range: F#3 G5
+        transposing:
+            Bb: B- # a minor 7th higher
+            A:  A  # a major 6th higher
+
+    Tuba:
+        transposing: False
+
+####################################################################################################
+
+Keyboard Family:
+
+    Piano:
+        staff key: F G # Fa Sol
+        written range: A0 C8
+        transposing: False
+        # real sound: True
+
+####################################################################################################
+
+Strings Family:
+
+    Banjo:
+        staff key: G
+        written range: C3 A4
+        transposing: False
+
+    Double Bass:
+        staff key: F # Fa
+        written range: C2 C5 # also A2, B2
+        transposing: 8va bassa
+
+    Guitare:
+        writings:
+            classic:
+                # 1) Sol à l'octave supérieure des sons réels
+                staff key: G
+                written range: E3 E6
+                transposing: 8va bassa
+            usual:
+                # 2) Sol8 puis Sol à octave réel
+                staff key: G8vb # 8va bassa, Sol8
+
+    Guitare/Bass:
+        # 1) Fa à l'octave supérieure des sons réels
+        # 2) Fa8 puis Fa à octave réel
+        staff key: F8vb # Fa8
+
+    Violin:
+        staff key: G # Sol
+        written range: G3 A7
+        transposing: False # excepting scordatura
+
+####################################################################################################
+
+Woodwind Family: # Bois
+
+    Clarinet:
+        staff key: G # Sol
+        written range: E3 C7
+        transposing:
+            Bb: Bb # Sib, a whole step lower
+            A:  A  # La,  a minor 3rd lower
+            D:  B  # Ré,  a whole step higher
+            Eb: Eb # Mib, a minor 3rd higher
+
+    Saxophone:
+        staff key: G # Sol
+        written range: Bb3 G6
+        transposing:
+            Bass:     B- # 1 octave + 9th lower / 2- 8ves + M2 lower
+            Baritone: E- # 1 octave + 6th lower / 8ve + M6 lower
+            Tenor:    B- # a 9th lower, Sib, écrit une neuvième majeure au dessus du son réel
+            Alto:     E- # a 6th lower, Mib, écrit une sixte majeure au dessus du son réel
+            Soprano:  B- # a whole step lower, Sib, écrit un ton au dessus du son réel
+
+####################################################################################################
+
+Percussion Family:
+
+####################################################################################################
+
+Voices:
+    Bass:
+        staff key: F # bass
+        transposing: False
+        ambitus:
+            Cantante:   F2  F4
+            Profundo:   D-2 D4
+            Contrabass: B-1 G3
+    Baritone:
+        staff key: F # bass
+        transposing: False
+        ambitus:
+            Lyric:    A2  G4
+            Dramatic: A2  G4
+            Bass:     F#2 E4
+    Tenor:
+        staff key: G # treble (open score) / bass (short score)
+        transposing: 8va bassa in treble / as written in bass
+        ambitus:
+            Countertenor: G3 F#5
+            Lyric:        C3 C5
+            Dramatic:     C3 B-4
+    Alto:
+        staff key: G # treble
+        transposing: False
+        ambitus:
+            Contralto: F3 F#5
+    Soprano:
+        staff key: G # treble
+        transposing: False
+        ambitus:
+            Coloratura: C4  E-6
+            Lyric:      B-3 C6
+            Dramatic:   A-3 C6
+            Mezzo:      G3  B-5
