@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: python3-anticaptcha
+Version: 0.6
+Summary: Python 3 AntiCaptcha library.
+Home-page: https://github.com/AndreiDrang/python3-anticaptcha
+Author: AndreiDrang, redV0ID
+Author-email: drang.andray@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: captcha
+				anticaptcha
+				python3
+				flask
+				recaptcha
+				captcha
+				security
+				api
+				python-library
+				python-anticaptcha
+				rucaptcha-client
+Platform: UNKNOWN
+Requires-Python: >=3.3
