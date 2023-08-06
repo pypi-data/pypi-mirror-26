@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: KahootBot
+Version: 29.10.17.2
+Summary: A bot to play kahoot for you
+Home-page: https://github.com/the42ndturtle/KahootBot
+Author: the42ndturtle
+Author-email: throwawayemail@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/the42ndturtle/KahootBot/archive/0.2.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: kahoot,bot,win
+Platform: UNKNOWN
+Requires-Dist: pillow
+
+UNKNOWN
+
+
