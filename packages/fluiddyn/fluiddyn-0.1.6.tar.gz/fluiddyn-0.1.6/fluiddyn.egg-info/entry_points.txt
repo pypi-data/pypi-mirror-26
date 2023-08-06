@@ -1,0 +1,3 @@
+[console_scripts]
+fluidinfo = fluiddyn.util.info:main
+
