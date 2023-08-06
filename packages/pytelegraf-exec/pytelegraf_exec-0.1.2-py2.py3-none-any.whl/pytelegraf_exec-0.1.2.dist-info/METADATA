@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: pytelegraf-exec
+Version: 0.1.2
+Summary: A easy to use line format convertor for influxdb.
+Home-page: UNKNOWN
+Author: Randy Coburn
+Author-email: development@newvoicemedia.com
+License: MIT
+Keywords: telegraf influxdb monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+=====================================
+Description
+=====================================
+pytelegraf_exec is used to create telegraf line text which and be passed in to the telegraf exec plugin.
+
+=====
+Usage
+=====
+
+
+| import pytelegraf_exec
+| 
+| # Create a new tracker
+| out = pytelegraf_exec.TelegrafExec("test")
+|
+| # Add your tags that you want. Can be called multiple times
+| out.add_tags({"t1":"t1", "t2":"t2"})
+| 
+| # Add your values that you want. Can be called multiple times
+| out.add_values({"v1":"1", "v2":"v2"})
+| 
+| text = out.output()
+| # You will get a returned line like so
+| # 'test,t2=t2,t1=t1 v1=1,v2=v2'
+| # Or print directly
+| 
+| out.print_output()
+| # You will get something like this in stdout.
+| # "test,t2=t2,t1=t1 v1=1,v2=v2\n"
+
+
