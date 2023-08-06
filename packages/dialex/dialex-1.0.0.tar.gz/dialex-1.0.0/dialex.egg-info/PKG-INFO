@@ -1,0 +1,70 @@
+Metadata-Version: 1.1
+Name: dialex
+Version: 1.0.0
+Summary: Python Client for HyperLab Dialex API
+Home-page: https://github.com/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python
+Author: Riyadh Al Nur
+Author-email: riyadh.alnur@hyperlab.xyz
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: Dialex SDK for Python
+        =====================
+        
+        Python Client for HyperLab Dialex API
+        
+        |Build Status| |Coverage Status| |Known Vulnerabilities|
+        
+        Install
+        -------
+        
+        .. code:: bash
+        
+            $ pip install -U dialex
+        
+        Quick Start
+        -----------
+        
+        .. code:: python
+        
+            from dialex import dialex
+            dial = dialex.Dialex('apiKey')
+        
+        Developing
+        ----------
+        
+        | Clone using git:
+        | ``git clone git@github.com:HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python.git``
+        
+        | Install pipenv:
+        | ``pip install -U pipenv``
+        
+        | Install dependencies:
+        | ``pipenv install --dev``
+        
+        | Run tests:
+        | ``python setup.py test``
+        
+        .. |Build Status| image:: https://travis-ci.org/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python.svg?branch=master
+           :target: https://travis-ci.org/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python
+        .. |Coverage Status| image:: https://coveralls.io/repos/github/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python/badge.svg?branch=master
+           :target: https://coveralls.io/github/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python?branch=master
+        .. |Known Vulnerabilities| image:: https://snyk.io/test/github/hyperlab-solutions-sdn-bhd/dialex-sdk-python/badge.svg
+           :target: https://snyk.io/test/github/hyperlab-solutions-sdn-bhd/dialex-sdk-python
+        
+Keywords: hyperlab,python,sdk,nlp
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Development Status :: 5 - Production/Stable

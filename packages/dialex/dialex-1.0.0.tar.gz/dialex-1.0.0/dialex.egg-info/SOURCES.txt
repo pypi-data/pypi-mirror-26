@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dialex/__init__.py
+dialex/dialex.py
+dialex.egg-info/PKG-INFO
+dialex.egg-info/SOURCES.txt
+dialex.egg-info/dependency_links.txt
+dialex.egg-info/not-zip-safe
+dialex.egg-info/requires.txt
+dialex.egg-info/top_level.txt
