@@ -1,0 +1,8 @@
+README.txt
+setup.cfg
+setup.py
+Webshare/Webshare.py
+Webshare.egg-info/PKG-INFO
+Webshare.egg-info/SOURCES.txt
+Webshare.egg-info/dependency_links.txt
+Webshare.egg-info/top_level.txt

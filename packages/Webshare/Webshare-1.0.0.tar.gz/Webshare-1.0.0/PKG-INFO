@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Webshare
+Version: 1.0.0
+Summary: Webshare wrapper with randomization & threading
+Home-page: https://github.com/HLXCo/Webshare
+Author: Sergio Molanes
+Author-email: sergio@hlx.co
+License: UNKNOWN
+Download-URL: https://github.com/HLXCo/Webshare/tarball/0.1.1
+Description: UNKNOWN
+Keywords: proxy,webshare,threaded,mining
+Platform: UNKNOWN
