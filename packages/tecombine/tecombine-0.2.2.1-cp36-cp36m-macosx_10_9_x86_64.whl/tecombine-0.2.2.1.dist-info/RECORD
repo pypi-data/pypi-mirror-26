@@ -1,0 +1,9 @@
+tecombine/__init__.py,sha256=w5L2mkmAmXXxk2JafBdHUgSAcnFGkJHiU9LJyh3goFk,93
+tecombine/_libcombine.so,sha256=QGAIFRXnUGD2Kn0y5qk2bnI_yCHcCHwkceGvLaasVwc,9519932
+tecombine/libcombine.py,sha256=XusdguYhF5toIX877Xsq5xjOPKnPYKILL_hL9AP1OVM,270232
+tecombine-0.2.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+tecombine-0.2.2.1.dist-info/METADATA,sha256=3AuUyeKbp3wqzVi_Qge8M3rAEZy0fL4mdqQUTNC0EbQ,504
+tecombine-0.2.2.1.dist-info/RECORD,,
+tecombine-0.2.2.1.dist-info/WHEEL,sha256=0nMG4Tko1T_KOypW2gYk7bMMhOn7w6PhD2u8OAW0n8k,108
+tecombine-0.2.2.1.dist-info/metadata.json,sha256=aY9L6wrMhyrhBLU6X7ItsZBgX7LNoGRyPRsrLvGaQ4c,610
+tecombine-0.2.2.1.dist-info/top_level.txt,sha256=1OqmpUxj-ZVC6qPR-hDKapH5IzRKRxa311MxNWwIxwg,10
