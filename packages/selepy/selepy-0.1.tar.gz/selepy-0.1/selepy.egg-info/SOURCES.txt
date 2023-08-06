@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+selepy/__init__.py
+selepy.egg-info/PKG-INFO
+selepy.egg-info/SOURCES.txt
+selepy.egg-info/dependency_links.txt
+selepy.egg-info/top_level.txt
+test/test_google.py
