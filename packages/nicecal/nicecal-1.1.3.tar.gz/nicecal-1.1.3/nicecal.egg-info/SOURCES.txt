@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+nicecal/__init__.py
+nicecal.egg-info/PKG-INFO
+nicecal.egg-info/SOURCES.txt
+nicecal.egg-info/dependency_links.txt
+nicecal.egg-info/top_level.txt
