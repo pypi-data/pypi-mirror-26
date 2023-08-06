@@ -1,0 +1,16 @@
+CodeChat/CodeToRest.py,sha256=sXb5AIBJUcs4zIgPt0d3cdHEh_7jFeZEd-4_dlTE2Zs,68668
+CodeChat/CodeToRestSphinx.py,sha256=tmImwHWIs_82UbNLS7-WT_gFrxg6rBpYKi_pcgXvbWw,11488
+CodeChat/CommentDelimiterInfo.py,sha256=E2Il0aDWHUIF_tDo2M2q1ha8ISOpm8LB_QFcvAJCW6U,8382
+CodeChat/LICENSE.html,sha256=z6kqgIN4F60557Ur1m_u4weLZInLSb1LNJshnUbsqBA,38045
+CodeChat/RestToCode.py,sha256=h3WMq5vHl2kEuZFKs0JhB_9k-Q2M2qJ_fADoMJCqwxw,25477
+CodeChat/__init__.py,sha256=dmcFhsjFYNqguc2qdA268wLT5fknxE2uJfKb3NcTewY,1182
+CodeChat/template/CodeChat.css,sha256=r6eanGDvuLGHE66RjDaQRE_peBiJdMXkmAPW4PZvUp4,2243
+CodeChat/template/conf.py,sha256=ZdIQ0pyI7rwrJOmYu9UwoYTfqqMCa-xhhQ8mfojvaxE,12807
+CodeChat/template/default.css,sha256=g6-x_D-hXtPTXSqDCwpzyQAg2QPjeM9rnWIL0JLqJCE,4176
+CodeChat/template/index.rst,sha256=_tAbD9CYrlOHoT1lM7LbLXllAVXnW_yh0PNn2qT-1cc,494
+CodeChat-1.5.7.dist-info/DESCRIPTION.rst,sha256=2daFtauuYUmDFzvtHjzK7IyzaxMZTlvRKFZuJJKIZ_k,6512
+CodeChat-1.5.7.dist-info/METADATA,sha256=zkXzaCMfxr_AB574RIFXn6S2_HQiDf_JcvVPbOWukbo,7558
+CodeChat-1.5.7.dist-info/RECORD,,
+CodeChat-1.5.7.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+CodeChat-1.5.7.dist-info/metadata.json,sha256=oHbDE4zTsRpzT0CnedClxxJ2ce9wS9nox7ysKEI6WLw,1166
+CodeChat-1.5.7.dist-info/top_level.txt,sha256=FtKil3p6L-CHgsMFDMmXbxFD2KTZtq4T9reK-CwX-6s,9
