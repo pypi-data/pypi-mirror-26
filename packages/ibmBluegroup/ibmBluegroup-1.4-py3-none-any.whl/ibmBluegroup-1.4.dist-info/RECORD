@@ -1,0 +1,10 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/ibmBluegroup.py,sha256=tO2d0a-XZMfZcnW76WzJNdnId2XdgZXirpDXTUMc4N8,191
+ibmBluegroup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ibmBluegroup/ibmBluegroup.py,sha256=y1yAqw0fnJd3BtRggS0HXEGSpKpMxgzqw2nn2sfYdzs,1499
+ibmBluegroup-1.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ibmBluegroup-1.4.dist-info/METADATA,sha256=EzDQd6BxTzya521rLLKN5_7UP-0jNAyeh9ntTnp4kJg,329
+ibmBluegroup-1.4.dist-info/RECORD,,
+ibmBluegroup-1.4.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+ibmBluegroup-1.4.dist-info/metadata.json,sha256=HqOw1tA_ebCryVGiNQPWvn781z8qx0Z96rRmakfHvh8,553
+ibmBluegroup-1.4.dist-info/top_level.txt,sha256=bA7W5vJt6hr4SWkEfZ_3nnUN6F2qu93WcvKu55BLvk4,22
