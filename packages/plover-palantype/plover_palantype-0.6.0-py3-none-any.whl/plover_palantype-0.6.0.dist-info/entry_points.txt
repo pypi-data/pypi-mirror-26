@@ -1,0 +1,6 @@
+[plover.machine]
+Palantype = plover_palantype.machine:Palantype
+
+[plover.system]
+Possum Palantype = plover_palantype.system
+
