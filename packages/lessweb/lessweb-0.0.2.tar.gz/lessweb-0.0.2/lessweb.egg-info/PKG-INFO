@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: lessweb
+Version: 0.0.2
+Summary: Web framework for python3.6+
+Home-page: https://github.com/qorzj/lessweb
+Author: qorzj
+Author-email: inull@qq.com
+License: MIT
+Description: 
+        README: https://github.com/qorzj/lessweb
+Keywords: lessweb web web.py
+Platform: any
