@@ -1,0 +1,11 @@
+mongo_adapter/__init__.py,sha256=SNqb3XIVDeOQm-GJcHiEw-4DNKp6o2mEX75HiEtOTQo,84
+mongo_adapter/__version__.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+mongo_adapter/adapter.py,sha256=rSnU6qiPmk_7u_ApZ5CdpAs8TYV_8nhqC96NoTZfWik,1411
+mongo_adapter/client.py,sha256=rrIxsA112dv0_rUKTz0ei_6HWJM_OGzn6OJFkY8saDE,1745
+mongo_adapter/exceptions.py,sha256=ZH_Qu8SE2t6dBJuwnDHgfJbSNFNLwbqlaE6FIsZwzPM,1993
+mongo_adapter-0.1.1.dist-info/DESCRIPTION.rst,sha256=kHNxnafM4a5moZbdh40_Te9n7OfEEC1aT7JycgOLbhI,3273
+mongo_adapter-0.1.1.dist-info/METADATA,sha256=Jq2u__ilcGy1Ho63uzzdvRGIZyFORsc95oAj1z_ZnXU,4237
+mongo_adapter-0.1.1.dist-info/RECORD,,
+mongo_adapter-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mongo_adapter-0.1.1.dist-info/metadata.json,sha256=5eOlTYT41b6498mgwSyVCEDJaTfZnwdYpD3O_aBO8Zc,1089
+mongo_adapter-0.1.1.dist-info/top_level.txt,sha256=tU1lDlXcbR7rfR_u7rNUxemC0OrgYvhq6txVNNNmgT0,14
