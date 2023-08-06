@@ -1,0 +1,66 @@
+#!/usr/bin/env python
+
+import logging
+import argparse
+import sys
+
+
+from falkuslib.core import Falkus
+
+
+FALKUS_VERSION = "1.0"
+
+
+def main():
+    args = parse_arguments(sys.argv[1:])
+    configure_logging(args)
+    logging.info("falkus version {}".format(FALKUS_VERSION))
+    f = Falkus()
+    f.execute(args)
+
+
+def parse_arguments(argv):
+    parser = argparse.ArgumentParser(description='Falkus {} - a build system for AWS serverless website/app'.format(FALKUS_VERSION))
+    parser.add_argument('-ss', '--ssilent', action='store_true', help="Log only errors")
+    parser.add_argument('-s', '--silent', action='store_true', help="Log only warning and errors")
+    parser.add_argument('-v', '--verbose', action='store_true', help="Log also debug")
+    subparsers = parser.add_subparsers()
+    make_std_subparser(subparsers, "info", "print project info and terminate")
+    make_std_subparser(subparsers, "test", "run unit and integration tests on the local environment or a remote stack")
+    make_std_subparser(subparsers, "start-local", "start a local server (using SAM local)")
+    make_aws_init_stage_subparser(subparsers)
+    make_aws_deploy_subparser(subparsers)
+    return parser.parse_args(argv)
+
+
+def make_std_subparser(subparsers, command_name, help_str):
+    parser = subparsers.add_parser(command_name, help=help_str)
+    parser.set_defaults(command=command_name)
+    return parser
+
+
+def make_aws_init_stage_subparser(subparsers):
+    parser = make_std_subparser(subparsers, "aws-init-stage", "create AWS users / groups / permissions / buckets")
+    parser.add_argument('stage', help="Stack to deploy to")
+    return parser
+
+
+def make_aws_deploy_subparser(subparsers):
+    parser = make_std_subparser(subparsers, "aws-deploy", "deploy backend and frontend")
+    parser.add_argument('stage', help="Stack to deploy to")
+    return parser
+
+
+def configure_logging(args):
+    if args.ssilent:
+        logging.basicConfig(level=logging.ERROR)
+    elif args.silent:
+        logging.basicConfig(level=logging.WARNING)
+    elif args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.INFO)
+
+
+if __name__ == '__main__':
+    main()
