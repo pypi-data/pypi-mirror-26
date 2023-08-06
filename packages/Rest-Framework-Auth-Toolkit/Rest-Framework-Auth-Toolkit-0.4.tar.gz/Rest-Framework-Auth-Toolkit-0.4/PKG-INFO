@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Rest-Framework-Auth-Toolkit
+Version: 0.4
+Summary: UNKNOWN
+Home-page: https://github.com/caravancoop/configstore
+Author: Éric Araujo
+Author-email: earaujo@caravan.coop
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
