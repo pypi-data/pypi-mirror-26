@@ -1,0 +1,8 @@
+django_httpxforwardedfor-0.2.0.dist-info/DESCRIPTION.rst,sha256=bVV1cblIyogqoozasICBeLSBNNHi_h44prHiTRGy9sk,3277
+django_httpxforwardedfor-0.2.0.dist-info/METADATA,sha256=jixQGPRRVaWLZjJaOiXHfXQP4f1u3humHiPNb26oldw,4255
+django_httpxforwardedfor-0.2.0.dist-info/RECORD,,
+django_httpxforwardedfor-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_httpxforwardedfor-0.2.0.dist-info/metadata.json,sha256=7wVVuqttyQE_CZ-63S8XV94pzrF_JT1mh_wMkQSV0_Y,1095
+django_httpxforwardedfor-0.2.0.dist-info/top_level.txt,sha256=NS-7X-RBVPuJtx-6a6htuhOLJ7xrFnZTeDnfOAVgmLg,18
+httpxforwardedfor/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+httpxforwardedfor/middleware.py,sha256=b64CVNDbf5sSg00KS1uIHMo9K4Gjrd2OcUbaM_IpYio,2150
