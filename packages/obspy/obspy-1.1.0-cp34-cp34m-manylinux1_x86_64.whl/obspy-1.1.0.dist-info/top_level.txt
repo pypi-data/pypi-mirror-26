@@ -1,0 +1,7 @@
+libevresp_Linux_64bit_py34
+libgse2_Linux_64bit_py34
+libmseed_Linux_64bit_py34
+libsegy_Linux_64bit_py34
+libsignal_Linux_64bit_py34
+libtau_Linux_64bit_py34
+obspy
