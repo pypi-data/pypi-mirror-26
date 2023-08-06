@@ -1,0 +1,48 @@
+Metadata-Version: 2.0
+Name: django-no-last-login
+Version: 0.1.0
+Summary: Disable the update of last_login field on user login
+Home-page: https://github.com/MSA-Argentina/django-no-last-login
+Author: Franco Mariluis
+Author-email: me@fmariluis.info
+License: BSD License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+
+=====
+django-no-last-login
+=====
+
+This is a extremely simple way to disable Django's behavior of updating a user last_login field on login.
+You could use this to connect a Django app to a read-only database, such as a replica, and still having a more or less functional application.
+
+Quick start
+-----------
+
+1. Add "nolastlogin" to your INSTALLED_APPS setting like this:
+
+::
+
+    INSTALLED_APPS = [
+        ...
+        'nolastlogin',
+    ]
+
+2. Add this to the settings:
+
+::
+
+    NO_UPDATE_LAST_LOGIN = True
+
+

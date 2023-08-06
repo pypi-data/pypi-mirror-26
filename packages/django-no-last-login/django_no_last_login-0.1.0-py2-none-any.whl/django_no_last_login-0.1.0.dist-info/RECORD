@@ -1,0 +1,9 @@
+django_no_last_login-0.1.0.dist-info/DESCRIPTION.rst,sha256=sUMRTatB2mlrB9Gzh3Jo-VEYWfDmVxnwKMmyFPBIwho,510
+django_no_last_login-0.1.0.dist-info/METADATA,sha256=N36e2ZfkER1u7nZA8t7BeRgKuSZ6H_IU6CbqVQiWA4Q,1348
+django_no_last_login-0.1.0.dist-info/RECORD,,
+django_no_last_login-0.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+django_no_last_login-0.1.0.dist-info/metadata.json,sha256=K5sbBBbomWMB8fzPjAh1N8TmgGM-r10meneWKzrUoqI,933
+django_no_last_login-0.1.0.dist-info/top_level.txt,sha256=_OgDPhWXqaPgaw2wu3QiNbkxJe--g9NZuq7_77YfCo8,12
+nolastlogin/__init__.py,sha256=qDTMLqr0e86llnioC5DwxnpCXD1ADSCx6MwdhJXScAo,42
+nolastlogin/apps.py,sha256=x0lG_3iLssx0_MB8SKVZDdbWOX7h4trrq4M1WjmVMaA,91
+nolastlogin/models.py,sha256=9_ssi5WnwXm5RLII0Hhaam8AKiwhvly1UO3IHppKc2I,291
