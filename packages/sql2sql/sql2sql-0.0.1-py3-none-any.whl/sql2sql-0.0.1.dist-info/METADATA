@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: sql2sql
+Version: 0.0.1
+Summary: A simple lightweight tool to perform ETL jobs between two SQL databases
+Home-page: https://github.com/joeyism/sql2sql
+Author: Joey Sham
+Author-email: sham.joey@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/joeyism/sql2sql/dist/0.0.1.tar.gz
+Keywords: sql,ETL
+Platform: UNKNOWN
+
+UNKNOWN
+
+
