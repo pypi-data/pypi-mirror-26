@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+s3cache/__init__.py
+s3cache/s3cache.py
+s3werkzeugcache.egg-info/PKG-INFO
+s3werkzeugcache.egg-info/SOURCES.txt
+s3werkzeugcache.egg-info/dependency_links.txt
+s3werkzeugcache.egg-info/not-zip-safe
+s3werkzeugcache.egg-info/requires.txt
+s3werkzeugcache.egg-info/top_level.txt
