@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pandas_jalali/__init__.py
+pandas_jalali/converter.py
+pandas_jalali.egg-info/PKG-INFO
+pandas_jalali.egg-info/SOURCES.txt
+pandas_jalali.egg-info/dependency_links.txt
+pandas_jalali.egg-info/entry_points.txt
+pandas_jalali.egg-info/requires.txt
+pandas_jalali.egg-info/top_level.txt
+tests/__init__.py
+tests/test_converter.py
