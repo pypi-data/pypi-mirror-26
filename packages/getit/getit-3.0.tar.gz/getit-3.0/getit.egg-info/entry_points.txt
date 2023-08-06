@@ -1,0 +1,3 @@
+[console_scripts]
+getit = getit.getit:main
+

@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+config.cfg
+setup.cfg
+setup.py
+getit/__init__.py
+getit/getit.py
+getit.egg-info/PKG-INFO
+getit.egg-info/SOURCES.txt
+getit.egg-info/dependency_links.txt
+getit.egg-info/entry_points.txt
+getit.egg-info/requires.txt
+getit.egg-info/top_level.txt
