@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: iotapy
+Version: 0.1.2
+Summary: A Pure-Python implementation of IOTA node
+Home-page: https://github.com/mlouielu/iota-python
+Author: Louie Lu
+Author-email: git@louie.lu
