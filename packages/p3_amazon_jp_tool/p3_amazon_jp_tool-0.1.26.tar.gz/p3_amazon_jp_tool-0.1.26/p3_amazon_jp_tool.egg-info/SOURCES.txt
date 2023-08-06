@@ -1,0 +1,12 @@
+MANIFEST.in
+amazon_uni.csv
+setup.py
+bin/amazon_uni.csv
+bin/p3_amazonjp_sales_report
+p3_amazon_jp_tool/__init__.py
+p3_amazon_jp_tool/sales_report.py
+p3_amazon_jp_tool.egg-info/PKG-INFO
+p3_amazon_jp_tool.egg-info/SOURCES.txt
+p3_amazon_jp_tool.egg-info/dependency_links.txt
+p3_amazon_jp_tool.egg-info/requires.txt
+p3_amazon_jp_tool.egg-info/top_level.txt
