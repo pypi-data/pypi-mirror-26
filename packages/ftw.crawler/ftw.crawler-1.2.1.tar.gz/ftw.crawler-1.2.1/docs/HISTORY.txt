@@ -1,0 +1,31 @@
+Changelog
+=========
+
+
+1.2.1 (2017-10-30)
+------------------
+
+- Encode URL in UTF-8 before generating MD5-Hash.
+  [raphael-s]
+
+
+1.2.0 (2017-06-22)
+------------------
+
+- Support Slack notifications.
+  [raphael-s]
+
+
+1.1.0 (2016-10-04)
+------------------
+
+- Support configuration of absolute sitemap urls. [jone]
+
+- Slow down on too many requests. [jone]
+
+
+1.0 (2015-11-09)
+----------------
+
+- Initial implementation.
+  [lgraf]

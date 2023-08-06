@@ -1,0 +1,17 @@
+setuptools
+requests[security]
+lxml
+python-dateutil
+pytz
+python-slugify
+BeautifulSoup
+chardet
+
+[slack]
+slacker
+
+[tests]
+unittest2
+mock
+testfixtures
+ftw.crawler [slack]
