@@ -1,0 +1,3 @@
+[console_scripts]
+torstream = torstream.streamer:argParser
+
