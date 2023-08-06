@@ -1,0 +1,7 @@
+configparser
+future
+pandas
+requests
+tqdm
+typing
+enum34
