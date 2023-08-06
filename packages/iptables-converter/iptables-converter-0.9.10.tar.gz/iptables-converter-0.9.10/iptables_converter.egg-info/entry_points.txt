@@ -1,0 +1,4 @@
+[console_scripts]
+ip6tables-converter = iptables_conv.iptables_converter:main
+iptables-converter = iptables_conv.iptables_converter:main
+
