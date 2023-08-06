@@ -1,0 +1,8 @@
+setup.py
+crawler/Wyn88Crawler.py
+crawler/__init__.py
+hotelindex.egg-info/PKG-INFO
+hotelindex.egg-info/SOURCES.txt
+hotelindex.egg-info/dependency_links.txt
+hotelindex.egg-info/not-zip-safe
+hotelindex.egg-info/top_level.txt
