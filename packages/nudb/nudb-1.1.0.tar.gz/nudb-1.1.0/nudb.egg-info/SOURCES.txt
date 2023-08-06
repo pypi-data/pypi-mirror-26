@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+docs/CHANGELOG.txt
+docs/LICENSE.txt
+docs/README.txt
+nudb/__init__.py
+nudb/nudb.py
+nudb/tools.py
+nudb.egg-info/PKG-INFO
+nudb.egg-info/SOURCES.txt
+nudb.egg-info/dependency_links.txt
+nudb.egg-info/requires.txt
+nudb.egg-info/top_level.txt

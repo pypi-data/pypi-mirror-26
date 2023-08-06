@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: nudb
+Version: 1.1.0
+Summary: For nudb
+Home-page: https://github.com/wshs0713/nudb
+Author: Szu-Hsuan, Wu
+Author-email: shuan0713@gmail.com
+License: docs/LICENSE.txt
+Description-Content-Type: UNKNOWN
+Description: NuDB is a database and search engine.  
+        For more detail: https://github.com/wshs0713/nudb.git
+        
+Keywords: nudb
+Platform: UNKNOWN
