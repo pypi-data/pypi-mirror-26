@@ -1,0 +1,15 @@
+swytcher/__init__.py,sha256=Rz4ArZryOmXXw138uw8A_ihgUcmn2oKRPc7MghrW7oA,131
+swytcher/cli.py,sha256=K0QwjnnxfuSMFQHJMfQbglnCMjmYMX2zJxU3gs83mAA,1272
+swytcher/config.ini,sha256=aLicBKucj2f9At1Yf_kB7yfl5u68ZGaUlv8Q3FoAMvA,727
+swytcher/log_conf.ini,sha256=foHFbqcMlhv7k8BQAclfxT4yWfnESVN5q62XCm_ANkU,327
+swytcher/settings.py,sha256=n9aUldOHhKpKJWoan1-_OR-NaJw56G3CCKKoY_zY8PY,3794
+swytcher/swytcher.py,sha256=uKrLaH__1NzK9Op4WOk1HDAQ6Zqo00vzvQIu1-GyzUk,3436
+swytcher/util.py,sha256=FCDZvpIIFnNWdhnlqCRC7sS6HzFGbd63Iwq-ZskGOqs,1560
+swytcher/xwindow.py,sha256=75t0wLeE-SrzTLvrDSGKSwYebauMaNfh3GrmK4KgZnE,3047
+swytcher-0.3.2.dist-info/DESCRIPTION.rst,sha256=3eZMNQQpLUhqzoUpzEG3BG2yUHceOsRqbTwA876Pe2M,3046
+swytcher-0.3.2.dist-info/METADATA,sha256=6R7Mtl16Bm3Xplh2gCfJ4uHiIyt0UIfSUXvN0OhBDs0,3858
+swytcher-0.3.2.dist-info/RECORD,,
+swytcher-0.3.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+swytcher-0.3.2.dist-info/entry_points.txt,sha256=9OnGNyPLkQGVaWg51OCj9LB44YYSGtJvur-t23cnzJA,48
+swytcher-0.3.2.dist-info/metadata.json,sha256=qpCRbimo9wg-48hHvKA5XwsT_Y4EMP0sYkCN1_9FcVA,1166
+swytcher-0.3.2.dist-info/top_level.txt,sha256=xT1i_58Df-4Xv4r1xpvk6qlUmHvT4cpc6-iHBA_1YU4,9
