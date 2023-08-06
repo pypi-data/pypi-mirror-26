@@ -1,0 +1,94 @@
+pyzanata
+========
+
+Alternative `Zanata <http://zanata.org/>`_ restapi client.
+
+Usage
+-----
+
+In order to get started two imports are needed::
+
+    from pyzanata import ZanataCredentials
+    from pyzanata import ZanataClient
+
+First credentials needs to be set::
+
+    credentials = ZanataCredentials('http://zanata.exampl.com', 'johndoe', 'secret')
+
+Then the client can be initialized::
+
+    client = ZanataClient(credentials)
+
+Now Zanata infos can be fetched (or set) like so::
+
+    client.ProjectsResource.projects.GET()
+    client.ProjectResource.project.GET(projectSlug='myproject')
+
+It has always the form ``client.RESOURCE.ENDPOINT.METHOD(data=None, **path_replacements)``.
+
+RESOURCE
+    name of the resource according the the declaration (first level).
+
+ENDPOINT
+    name of the endpoint according the the declaration (second level).
+
+METHOD
+    one of the http-methods (depends on endpint, as configured in declaration)
+
+data
+    payload or body passed to ``requests`` call.
+
+path_replacements
+    keyword arguments used to replace the dynamic path elements as configured in the declaration.
+
+Consult the `Zanata REST API Documentation <https://zanata.ci.cloudbees.com/job/zanata-api-site/site/zanata-common-api/rest-api-docs/index.html#resources>`_ for details. Deprecated APIs are not implemented.
+
+See also the `Declaration YAML File (GitHub) <https://github.com/collective/pyzanata/blob/master/src/pyzanata/restapi.yaml>`_. This file is read by the generic API runtime code and declares the API.
+
+
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/bluedynamics/pyzanata/issues
+- Source Code: https://github.com/bluedynamics/pyzanata
+
+
+Support
+-------
+
+If you are having issues, please let me know: jens@bluedynamics.com
+
+
+
+License
+=======
+
+Copyright (c) 2017, BlueDynamics Alliance, Austria, Germany, Switzerland
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice, this
+  list of conditions and the following disclaimer in the documentation and/or
+  other materials provided with the distribution.
+* Neither the name of the BlueDynamics Alliance nor the names of its
+  contributors may be used to endorse or promote products derived from this
+  software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY BlueDynamics Alliance ``AS IS`` AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL BlueDynamics Alliance BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
