@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: cfmr
+Version: 0.0.9
+Summary: Python support library for CFMR
+Home-page: https://github.com/floodfx/cfmr-python
+Author: Donnie Flood
+Author-email: pypi@floodfx.com
+License: UNKNOWN
+Download-URL: https://github.com/floodfx/cfmr-python/archive/0.0.8.tar.gz
+Description: UNKNOWN
+Keywords: map,reduce,cloud,function,aws,lambda,azure,google,cloud
+Platform: UNKNOWN
