@@ -1,0 +1,8 @@
+django_session_timeout/__init__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+django_session_timeout/middleware.py,sha256=toTlrYx7CXf3pc4mJ1voT0M2A_UZ2KdVWIHe4FMwxuA,1013
+django_session_timeout-0.0.2.dist-info/DESCRIPTION.rst,sha256=ssFkzXjXXbskyyVtHVgWcF6-6vWJCQblTt0GRLgLO2Y,1273
+django_session_timeout-0.0.2.dist-info/METADATA,sha256=TihL8NdtoUaQuFyBEZqiY2ZPJU1I3RZeuoMqymPc8Ko,2724
+django_session_timeout-0.0.2.dist-info/RECORD,,
+django_session_timeout-0.0.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_session_timeout-0.0.2.dist-info/metadata.json,sha256=bl7WwzY-T7Qj3dvMoOM8NeqCmnJFuZ16ytSA3phLCXM,1579
+django_session_timeout-0.0.2.dist-info/top_level.txt,sha256=VfM43fbZ2jKJXIUaVgPbujNr3GmfdZTNKlmNV5_k460,23
