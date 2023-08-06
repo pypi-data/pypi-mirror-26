@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: anndata
+Version: 0.1
+Summary: Single-Cell Analysis in Python.
+Home-page: http://github.com/theislab/anndata
+Author: F. Alexander Wolf, P. Angerer
+Author-email: alex.wolf@helmholtz-muenchen.de
+License: BSD-3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN

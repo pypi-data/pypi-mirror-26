@@ -1,0 +1,6 @@
+README.rst
+setup.py
+anndata.egg-info/PKG-INFO
+anndata.egg-info/SOURCES.txt
+anndata.egg-info/dependency_links.txt
+anndata.egg-info/top_level.txt
