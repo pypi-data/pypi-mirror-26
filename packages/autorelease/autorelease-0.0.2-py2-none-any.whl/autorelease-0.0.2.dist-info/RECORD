@@ -1,0 +1,16 @@
+autorelease/__init__.py,sha256=h3Nwskcd8yJEk0Cy34X82p8qdq0da2_a041EGKA59d4,261
+autorelease/_version.py,sha256=uOMcw75SRJdJgm-l-jetbHMu1AoFRKir7QreSbk9MlY,225
+autorelease/check_runners.py,sha256=ID4N63RdzzhNge-Fmrp2wo6XCshCdo3sEBE_PPczJ-M,3067
+autorelease/git_repo_checks.py,sha256=2KqePHu7Zgvo_juq0SU8U5mgM5AW1ecucb2OMO1TzCY,2584
+autorelease/root_dir_checks.py,sha256=St-abn8NYTPXVTHpnTlq0FpKqsxBSn3QZpJhvNzW6V8,1188
+autorelease/utils.py,sha256=BAyOumZrgWoQ5BS6LLqiXC365_gYLzgBJSVsw2bnaeI,156
+autorelease/version.py,sha256=gHWThMcRMQzD3I12q5UzbTh6Fnl4Uy31BEKNLJCdje0,2095
+autorelease/version_checks.py,sha256=ITdguhRAgKaAwO5BbQdH59je_3TKXS1cLhSOEH9RSXQ,2498
+autorelease/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autorelease/tests/test_check_runners.py,sha256=yL2slHsh_lmienpTeXj2z32f69GN63ZYduD69VkHnlQ,126
+autorelease-0.0.2.dist-info/DESCRIPTION.rst,sha256=ig6TffCQSGN4jLWdN87zH322AdGehw1auO2Co43Oj4Q,115
+autorelease-0.0.2.dist-info/METADATA,sha256=Dqo6pKEC3l95XZnK2D2G-0Ih44FkWY4AdOoOHEAFVGQ,1314
+autorelease-0.0.2.dist-info/RECORD,,
+autorelease-0.0.2.dist-info/WHEEL,sha256=JTb7YztR8fkPg6aSjc571Q4eiVHCwmUDlX8PhuuqIIE,92
+autorelease-0.0.2.dist-info/metadata.json,sha256=tf9GDGrw-gRjJTB_BVBVjtu2c7RtLbCeQMFNQkeO2Jw,1273
+autorelease-0.0.2.dist-info/top_level.txt,sha256=07jnVd7yXgjf-CZyR5t2LFbOQ1VwDM4nw0y_OL47SkA,12
