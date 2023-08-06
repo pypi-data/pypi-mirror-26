@@ -1,0 +1,10 @@
+pytiff/__init__.py,sha256=w1HxnFzINIm2TKJq1orHOwblkM6alccXSiT6ZctCf7E,370
+pytiff/_pytiff.cp36-win_amd64.pyd,sha256=HdCTFHgNauy4zQqibRFKXLgOO4v7pTMToFFEUucHzYI,427520
+pytiff/utils.py,sha256=YZxQrem6X0Kh7B6M7cQh5_9HCH7KkSfBiywVRaZ9_dc,817
+pytiff/_version/__init__.py,sha256=c19hQAyR2yafSGK8WiAmbVEqCwTdGfVYWnOAN42yUjk,416
+pytiff-0.7.5.dist-info/DESCRIPTION.rst,sha256=hilQ2p_YyDZw7GMHmermjOUPwEZoEvSObUb7TVzpZQY,290
+pytiff-0.7.5.dist-info/METADATA,sha256=lxunBIRMdNhXfogfBoZnXDg_KamJjoyEumJVRQvyk_4,610
+pytiff-0.7.5.dist-info/RECORD,,
+pytiff-0.7.5.dist-info/WHEEL,sha256=4fkP9V5fUlnPlEu2h0nt7u0cPpJipYsJO32nXNevnFk,106
+pytiff-0.7.5.dist-info/metadata.json,sha256=2hZD_yYH5-WEc1KSmdLI6lkcjOIJhe1h5uoLlwPtupQ,570
+pytiff-0.7.5.dist-info/top_level.txt,sha256=q0JiTdGjiDrG_0ZyqnmzIOxAT9gE7MIy4T_Nfs1vGF8,7
