@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: Flask-SlimREST
+Version: 0.1.2
+Summary: Flask extension for building RESTful APIs
+Home-page: https://github.com/fabian-rump/flask-slimrest/
+Author: Fabian Rump
+Author-email: fabian@cgro.net
+License: MIT
+Platform: any
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: flask (>=0.10)
+Requires-Dist: marshmallow (>=2.0.0)
+
+UNKNOWN
+
+
