@@ -1,0 +1,10 @@
+gkeepapi/__init__.py,sha256=KPDq-Y1LmYnowsQ-EHxlKHi2fQ0OPVCgUlvfNzqPY5w,17245
+gkeepapi/node.py,sha256=EzW5-K5YAA052yRPmgQf8f1Xa9mzYuGkfvIyXeX0kPQ,36217
+gkeepapi-0.9.0.dist-info/DESCRIPTION.rst,sha256=WySg-DB6wopwZIPx6FaiR9T3HlOEOdF5Fyu1YA059VQ,47
+gkeepapi-0.9.0.dist-info/METADATA,sha256=8YW9iWn7-JcMkm_ei2L7Fotg39L59V9jtzUFdbQUufI,744
+gkeepapi-0.9.0.dist-info/RECORD,,
+gkeepapi-0.9.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+gkeepapi-0.9.0.dist-info/metadata.json,sha256=k3DQ8a0GptnsMlX2FFmKWNt-0nS1Nzr95oagvYdXxqw,865
+gkeepapi-0.9.0.dist-info/top_level.txt,sha256=d3QQ-9H4MBm37EL4JpIdhWb-3lsW8zBpufnVzjtNBVg,14
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_nodes.py,sha256=_H_ByKMSlKC84CSt9RenwZA6YlkQvzhMsL7ZcgLF4W0,7293
