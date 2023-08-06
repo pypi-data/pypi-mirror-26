@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+mtprof/__init__.py
+mtprof/__main__.py
+mtprof.egg-info/PKG-INFO
+mtprof.egg-info/SOURCES.txt
+mtprof.egg-info/dependency_links.txt
+mtprof.egg-info/top_level.txt
+mtprof/tests/__init__.py
+mtprof/tests/__main__.py
+mtprof/tests/test_mtprof.py
