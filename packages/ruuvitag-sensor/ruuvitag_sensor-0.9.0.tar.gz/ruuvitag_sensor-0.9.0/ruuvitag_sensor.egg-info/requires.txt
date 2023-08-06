@@ -1,0 +1,7 @@
+rx
+
+[:platform_system == "Linux"]
+psutil
+
+[:python_version < "3.3"]
+futures
