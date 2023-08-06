@@ -1,0 +1,13 @@
+README.md
+setup.py
+logxstract/__init__.py
+logxstract/__main__.py
+logxstract/lib.py
+logxstract/test.py
+logxstract.egg-info/PKG-INFO
+logxstract.egg-info/SOURCES.txt
+logxstract.egg-info/dependency_links.txt
+logxstract.egg-info/entry_points.txt
+logxstract.egg-info/not-zip-safe
+logxstract.egg-info/requires.txt
+logxstract.egg-info/top_level.txt

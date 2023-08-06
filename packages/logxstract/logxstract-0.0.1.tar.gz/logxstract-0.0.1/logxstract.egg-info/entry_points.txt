@@ -1,0 +1,3 @@
+[console_scripts]
+logxstract = logxstract.__main__:main
+
