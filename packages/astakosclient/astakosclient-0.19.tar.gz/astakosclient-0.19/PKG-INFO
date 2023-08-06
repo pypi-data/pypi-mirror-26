@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: astakosclient
+Version: 0.19
+Summary: A client for the astakos authentication service.
+Home-page: http://www.synnefo.org/
+Author: Synnefo development team
+Author-email: synnefo-devel@googlegroups.com
+License: GNU GPLv3
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
