@@ -1,0 +1,5 @@
+tensorflow
+weka
+Orange3
+networkx
+matplotlib
