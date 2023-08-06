@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: cfcli
+Version: 0.0.2
+Summary: Cloudflare CLI is a simple command-line interface for cloudflare
+Home-page: https://github.com/lucascaro/cloudflare-cli
+Author: Lucas Caro
+Author-email: lucascaro@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: Click
+Requires-Dist: Cloudflare
+
+UNKNOWN
+
+

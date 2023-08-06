@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        cfcli=cfcli.cli:cli
+    
