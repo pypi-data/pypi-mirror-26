@@ -1,0 +1,8 @@
+setup.py
+easy_ansible/__init__.py
+easy_ansible/ansible_19_api.py
+easy_ansible/ansible_24_api.py
+easy_ansible.egg-info/PKG-INFO
+easy_ansible.egg-info/SOURCES.txt
+easy_ansible.egg-info/dependency_links.txt
+easy_ansible.egg-info/top_level.txt
