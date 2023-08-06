@@ -1,0 +1,6 @@
+trf2csv>=0.1.4
+mosaiq_connection>=0.1.2
+centre_config
+attrs
+pyyaml
+python-dateutil

@@ -1,0 +1,9 @@
+setup.py
+logfilenamer/__init__.py
+logfilenamer/logfilenamer.py
+logfilenamer.egg-info/PKG-INFO
+logfilenamer.egg-info/SOURCES.txt
+logfilenamer.egg-info/dependency_links.txt
+logfilenamer.egg-info/entry_points.txt
+logfilenamer.egg-info/requires.txt
+logfilenamer.egg-info/top_level.txt
