@@ -1,0 +1,7 @@
+README.rst
+gdb_mi.py
+setup.py
+python_gdb_mi.egg-info/PKG-INFO
+python_gdb_mi.egg-info/SOURCES.txt
+python_gdb_mi.egg-info/dependency_links.txt
+python_gdb_mi.egg-info/top_level.txt

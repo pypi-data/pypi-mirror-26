@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: python-gdb-mi
+Version: 1.0.0
+Summary: A parser for GDB Machine Interface (MI) events.
+Home-page: https://github.com/hydra-dbg/python-gdb-mi
+Author: Di Paola Martin, Di Tomaso Nicolas
+Author-email: no-email@example.com
+License: GNU LGPLv3
+Description-Content-Type: UNKNOWN
+Description: Python GDB MI
+        =============
+        
+        A parser for GDB Machine Interface (MI) events.
+        
+Keywords: debugger gdb
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.6
