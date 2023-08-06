@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+cs207_g7.egg-info/PKG-INFO
+cs207_g7.egg-info/SOURCES.txt
+cs207_g7.egg-info/dependency_links.txt
+cs207_g7.egg-info/top_level.txt
+data/__init__.py
+src/__init__.py
+src/chemkin.py
+src/nasa.py
+test/__init__.py
+test/test_NASA_coeff.py
+test/test_Reaction_component_coefficient.py
+test/test_XML_reader.py
+test/test_backward_reaction_rate_coeff.py
+test/test_reaction.py
+test/test_reaction_coeff.py
