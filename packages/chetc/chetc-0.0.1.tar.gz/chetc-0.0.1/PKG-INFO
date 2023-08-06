@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: chetc
+Version: 0.0.1
+Summary: Converter from plain text Leiden convention to Epidoc XML
+Home-page: https://github.com/EpiDoc/ETC.py/
+Author: Thibault Clérice
+Author-email: leponteineptique@gmail.com
+License: GNU GPL v2
+Description: UNKNOWN
+Platform: UNKNOWN

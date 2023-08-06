@@ -1,0 +1,10 @@
+setup.py
+chetc/__init__.py
+chetc/converter.py
+chetc.egg-info/PKG-INFO
+chetc.egg-info/SOURCES.txt
+chetc.egg-info/dependency_links.txt
+chetc.egg-info/top_level.txt
+chetc/configs/__init__.py
+chetc/configs/base.py
+chetc/configs/clauss.py
