@@ -1,0 +1,14 @@
+HISTORY.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyphihue/__init__.py
+pyphihue/bridge.py
+pyphihue/light.py
+pyphihue.egg-info/PKG-INFO
+pyphihue.egg-info/SOURCES.txt
+pyphihue.egg-info/dependency_links.txt
+pyphihue.egg-info/requires.txt
+pyphihue.egg-info/top_level.txt
