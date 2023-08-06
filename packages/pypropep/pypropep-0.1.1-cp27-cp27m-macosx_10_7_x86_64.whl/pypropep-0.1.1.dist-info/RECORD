@@ -1,0 +1,16 @@
+cpropep_build.py,sha256=qdWGqcuSHstk2Edv5Q5ymG9dGokLOLqd46vOQhdWzr8,7899
+pypropep/__init__.py,sha256=Xx8kR-Q-SaVQgOXAp04udMAu5_gJw-LpedclJGbDpiY,3529
+pypropep/equilibrium.py,sha256=FMY-wA_iEv9Mz6BxhJ0TqBAcAuO-7YRFjnADIIQCFmA,6556
+pypropep/error.py,sha256=I4VG5jULVqQp3rKuOGbCHozmz_s9t0D62bfAatHpg_U,276
+pypropep/performance.py,sha256=FeWYDL8dPiCF6hIrkYQLMKVlTYPnz_EbSxGQde7af6Q,7632
+pypropep/propellant.py,sha256=yhX1tmP2HW_DiMtQ5DpTqIzE7Rt40bYhDHUpTqX2lx8,3463
+pypropep/cpropep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypropep/cpropep/_cpropep.so,sha256=VAFW8Ee6QGJ0cIAegNB9UgDVXbNbU_6QV1uRPqEGt94,121868
+pypropep/data/propellant.dat,sha256=KjO6zdjNHWex7aRmxhquXZbkX2wDBZu4bo8UJ3UvxHs,90118
+pypropep/data/thermo.dat,sha256=_ARJNUDkPcqNBOTg1R_xXvrtVJobSJzRE5T9KEy4Gl0,1175851
+pypropep-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pypropep-0.1.1.dist-info/METADATA,sha256=_ApSo8kEhoOdUxodB1DrOobdjhJgr2eZGlmmLxkBH7o,347
+pypropep-0.1.1.dist-info/RECORD,,
+pypropep-0.1.1.dist-info/WHEEL,sha256=wVVRbMO_cVv3uQNLxo4S1gsp3mU87Q-7ztdbAsUL4SI,110
+pypropep-0.1.1.dist-info/metadata.json,sha256=8t_n28YjafEr1bL1DjonOmf60-QJAHRQbPpcemd8RxM,552
+pypropep-0.1.1.dist-info/top_level.txt,sha256=03w4gwlsCOYMyIqiiOmoQMIPi_dwKCEXkoaYKZoiIZo,23
