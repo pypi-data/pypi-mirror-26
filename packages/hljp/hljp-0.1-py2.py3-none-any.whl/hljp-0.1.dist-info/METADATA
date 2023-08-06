@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: hljp
+Version: 0.1
+Summary: Lets you post to your 401 learning journal from the terminal
+Home-page: UNKNOWN
+Author: H. Cody Dibble
+Author-email: hcodydibble@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: tox; extra == 'test'
+
+UNKNOWN
+
+
