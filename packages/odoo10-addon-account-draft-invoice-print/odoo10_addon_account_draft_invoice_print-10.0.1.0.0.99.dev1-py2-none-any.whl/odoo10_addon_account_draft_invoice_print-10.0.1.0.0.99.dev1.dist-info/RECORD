@@ -1,0 +1,14 @@
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/account_draft_invoice_print/README.rst,sha256=0l8OPioMDiJsF45W3VI3CnDYejRclGpp0D9ZRHt77Ak,1935
+odoo/addons/account_draft_invoice_print/__init__.py,sha256=CUGdw05eDS_OKoI4gZcoi62FiuOdOdDTdNFGHwVVn8k,965
+odoo/addons/account_draft_invoice_print/__manifest__.py,sha256=xjd7oPTZaPYlkjfOs-wGtCN9Hqk4iNPmhm5EOidqAXY,1319
+odoo/addons/account_draft_invoice_print/i18n/account_draft_invoice_print.pot,sha256=Pt-goXxRAr-5b7GDJKyIlC_X9-ayAIKHqG4Tzbd-ag0,981
+odoo/addons/account_draft_invoice_print/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_draft_invoice_print/views/invoice_view.xml,sha256=Qs_Kpogasv0n4VZ689yxbHwuqJ2sGh7V0CopTd1Bc78,906
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/DESCRIPTION.rst,sha256=rukQJI_Tz9s2LXYtwQx-KnnGILHvV8nBGlUxh-_PGTU,1937
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/METADATA,sha256=Ukrn6gA9uOaDochqr8h4ONSx-jz_59XtH-izmrqyhaE,2446
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/RECORD,,
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/metadata.json,sha256=8c5BB7EwEj6-lqrH-XWQ-y9DPkDNZunqWz8kt6qbd0o,726
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_account_draft_invoice_print-10.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
