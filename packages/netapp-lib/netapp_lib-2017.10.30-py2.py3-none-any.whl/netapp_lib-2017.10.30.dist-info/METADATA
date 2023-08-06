@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: netapp-lib
+Version: 2017.10.30
+Summary: netapp-lib is a transport helper to interact with NetApp storage systems.
+Home-page: http://netapp.io
+Author: NetApp, Inc.
+Author-email: ng-openstack-dev@netapp.com
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Keywords: openstack,netapp,cinder,manila,netapp_lib,ansible
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: xmltodict
+
+UNKNOWN
+
+
