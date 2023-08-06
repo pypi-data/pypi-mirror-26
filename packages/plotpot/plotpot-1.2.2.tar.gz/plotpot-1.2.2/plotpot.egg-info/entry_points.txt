@@ -1,0 +1,3 @@
+[console_scripts]
+plotpot = plotpot.__main__:main
+
