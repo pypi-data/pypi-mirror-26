@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: breach-buster-redux
+Version: 0.1
+Summary: BREACH resistant gzip middleware for Django
+Home-page: https://github.com/miki725/breach_buster
+Author: Adam DePrince
+Author-email: adeprince@nypublicradio.org
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: django
+Requires-Dist: six
+
+
+breach_buster
+=================
+
+Replacement for Django's gzip middleware.  Protects against BREACH.
+
+
+
