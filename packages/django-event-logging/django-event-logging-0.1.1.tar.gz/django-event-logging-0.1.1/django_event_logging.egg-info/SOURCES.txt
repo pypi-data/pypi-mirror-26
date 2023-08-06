@@ -1,0 +1,14 @@
+README.md
+setup.py
+django_event_logging.egg-info/PKG-INFO
+django_event_logging.egg-info/SOURCES.txt
+django_event_logging.egg-info/dependency_links.txt
+django_event_logging.egg-info/top_level.txt
+event_logging/__init__.py
+event_logging/admin.py
+event_logging/apps.py
+event_logging/models.py
+event_logging/tests.py
+event_logging/views.py
+event_logging/migrations/0001_initial.py
+event_logging/migrations/__init__.py
