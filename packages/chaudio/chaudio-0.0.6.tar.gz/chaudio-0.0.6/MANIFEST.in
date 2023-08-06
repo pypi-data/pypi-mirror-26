@@ -1,0 +1,4 @@
+include README.md
+recursive-include chaudio *.py
+include chaudio/samples/*
+include examples/*
