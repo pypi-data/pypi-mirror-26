@@ -1,0 +1,7 @@
+setup.py
+excelmustdie.egg-info/PKG-INFO
+excelmustdie.egg-info/SOURCES.txt
+excelmustdie.egg-info/dependency_links.txt
+excelmustdie.egg-info/not-zip-safe
+excelmustdie.egg-info/requires.txt
+excelmustdie.egg-info/top_level.txt
