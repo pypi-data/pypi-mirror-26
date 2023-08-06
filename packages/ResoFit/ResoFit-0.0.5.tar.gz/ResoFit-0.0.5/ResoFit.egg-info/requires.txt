@@ -1,0 +1,9 @@
+numpy
+pandas
+ImagingReso
+pprint
+scipy
+lmfit
+peakutils
+matplotlib
+cerberus
