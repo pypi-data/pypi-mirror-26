@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: brizzy
+Version: 0.1
+Summary: easily plot spectra from ocean optics
+Home-page: https://github.com/conchoecia/brizzy
+Author: Darrin Schultz
+Author-email: dts@ucsc.edu
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Requires: python (>3.0)
+Provides: brizzy
+Requires-Dist: matplotlib (>=2.0.2)
+Requires-Dist: numpy (>=1.12.1)
+Requires-Dist: pandas (>=0.20.1)
+Requires-Dist: progressbar2 (>=3.18.1)
+Requires-Dist: scipy (>=0.19.0)
+
+
+    'brizzy' is a package for easily taking spectra from ocean optics
+spectrometers. No more hitting the pause button every time you want a
+spectrum!
+
+You can visit the gitub page for more detailed information here:
+https://github.com/conchoecia/brizzy
+
+
