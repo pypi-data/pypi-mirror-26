@@ -1,0 +1,11 @@
+Sanic_Cors-0.9.0.dist-info/DESCRIPTION.rst,sha256=pzMRE_H6_SiowO9iPygd45BynL1llCLqLT06nErINd4,4796
+Sanic_Cors-0.9.0.dist-info/METADATA,sha256=0klzRTF7DQOS3i9cdhxSMq1CdGudFBgoDtEWYosPGaY,5747
+Sanic_Cors-0.9.0.dist-info/RECORD,,
+Sanic_Cors-0.9.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Sanic_Cors-0.9.0.dist-info/metadata.json,sha256=gkbbqSM3_1YbmJ0q-zSIFcQM9nXGt0Z0HZPCTtfkPis,1159
+Sanic_Cors-0.9.0.dist-info/top_level.txt,sha256=Sbj9hXeNPMJWOuXy1SsYezhoOuzpKeZjFDGgKxEESak,11
+sanic_cors/__init__.py,sha256=_rKCSXFi05xb4xxjGAZs-j8Fh5TOT1nBvX0YXgG2Qgg,964
+sanic_cors/core.py,sha256=PjbuQUGBNthl-hW4uZQGa7lm1nz38RZu9o8fEoT3Oag,14405
+sanic_cors/decorator.py,sha256=JVBVP6vvrjv1-IASSTKcTTr50J7hyLIy6QDBOwHzoeA,4417
+sanic_cors/extension.py,sha256=sPePYogkXGBAi3dZcfJru3o0yU0UzL2Cdnt8obl4l-g,12951
+sanic_cors/version.py,sha256=_DlwPNmTZTKflLiAF8YIqSr2ao66CTjj4bQtA6hz0jM,22
