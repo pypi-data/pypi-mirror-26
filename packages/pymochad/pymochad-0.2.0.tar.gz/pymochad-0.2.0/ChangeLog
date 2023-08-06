@@ -1,0 +1,31 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Fix pep8 issues
+* Remove .testr.conf file
+* Add unit test jobs to travis config
+* Switch test runner to stestr
+* Add pro forma unit tests
+* Add python 3.6 to supported python versions
+* Add travis configuration to repo
+* Deduplicate the connection logic
+* Reconnect method added to recover mochad connection
+* Update README.rst
+* Update device.py to include getstatussec method
+
+0.1.0
+-----
+
+* Add device method to get on/off status
+* Fix typos and oversights
+* Update the readme a bit
+* Add a device class to pymochad
+* Update controller to separate read and write
+* Update gpl header with pymochad
+* Remove pycmus refs from readme
+* Add status function
+* Add docs and testing setup
+* Initial commit
