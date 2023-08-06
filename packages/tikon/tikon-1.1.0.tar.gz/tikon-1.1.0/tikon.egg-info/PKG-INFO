@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: tikon
+Version: 1.1.0
+Summary: Modelos de redes agroecológicas
+Home-page: https://tikon.readthedocs.io
+Author: Julien Jean Malard
+Author-email: julien.malard@mail.mcgill.ca
+License: GNU 3
+Download-URL: https://github.com/julienmalard/Tikon
+Description-Content-Type: UNKNOWN
+Description: Tiko'n es una herramienta para desarrollar modelos de agroecología (relaciones tróficasentre insectos, enfermedades, y plantas). Está escrito para permitir la integración de modelosde cultivos existentes.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires: pymc
+Requires: numpy
+Requires: matplotlib
+Requires: scipy
+Requires: SALib
