@@ -1,0 +1,17 @@
+genericclient_aiohttp/__init__.py,sha256=6EdpCXcAH7H8jIAAC9ixLFnF1yZf6YoslbMCSALIjng,6386
+genericclient_aiohttp/exceptions.py,sha256=jPVmt2ag7AZkgfPsutcd4a3SFIILj7OXLJpsZtc-TNc,52
+genericclient_aiohttp/routes.py,sha256=c2vkPTftEgPXrESNNOeIIekVjA4K5qoA1u1XPyWiEQg,528
+genericclient_aiohttp-0.0.7.dist-info/DESCRIPTION.rst,sha256=hdNYuVWEPcBfxMO8JOxg_vg9RRK_6FepOtoNEB9q7Uc,5601
+genericclient_aiohttp-0.0.7.dist-info/LICENSE.txt,sha256=Uja0RnNIx86sXfvg2TvythG2U8s_oXyWzcb8tezSWsY,1061
+genericclient_aiohttp-0.0.7.dist-info/METADATA,sha256=5Jpep5NzNXzYBM-JrmgsASHJ9hU1aedS8pShsucPgMA,6315
+genericclient_aiohttp-0.0.7.dist-info/RECORD,,
+genericclient_aiohttp-0.0.7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+genericclient_aiohttp-0.0.7.dist-info/metadata.json,sha256=HHrry_zURWKcuDcO5gL7Nn9UmDvb4YW9xEqIXSihVCI,949
+genericclient_aiohttp-0.0.7.dist-info/top_level.txt,sha256=w07SZWaPJTM5fb5n0GV-qavsK3BaD2B_mv0_RvC_5z0,28
+tests/__init__.py,sha256=BNpdukXS4u-daNe-PMjvqBqDfq80-fYFZgmDfbeGF0c,522
+tests/test_client.py,sha256=U4qigQ8sIjHqPP7nSIJryeX-Q3ySewIuCmgaq97puag,696
+tests/test_endpoint.py,sha256=RWHk6Kuxun-CjKU5QR8GzDJpksH-JcFaFh6vAQ9IeMw,5234
+tests/test_endpoint_trailing_slash.py,sha256=lCxyiiaRibQtMqwvXOC19l2etzMFGUW5IVNTSaVtwmI,4974
+tests/test_resource.py,sha256=B8o2fCJrbaIUnOesWLB57hqF3yK8f9Qgrp8l4d8H0Q0,2524
+tests/test_resource_trailing_slash.py,sha256=yiXzk1ocNFJYrWsSAPcvtU4W977vR4ifvo1WBGb7bG0,1662
+tests/test_routes.py,sha256=-e2sd5oeSMBme7K1wSj7ZgC9UenAbDwzqKejtKK-eSg,1846
