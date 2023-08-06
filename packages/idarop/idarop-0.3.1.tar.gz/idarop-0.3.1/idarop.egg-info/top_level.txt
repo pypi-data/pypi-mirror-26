@@ -1,0 +1,4 @@
+__ida_setup__
+idarop
+netnode
+plugins/idarop_plugin_t
