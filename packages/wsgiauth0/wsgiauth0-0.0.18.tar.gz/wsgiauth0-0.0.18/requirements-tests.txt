@@ -1,0 +1,8 @@
+flake8-import-order
+mock
+moto
+pylama
+pytest
+pytest-cov
+pytest-runner
+tox
