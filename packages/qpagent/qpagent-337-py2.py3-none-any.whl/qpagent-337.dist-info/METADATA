@@ -1,0 +1,85 @@
+Metadata-Version: 2.0
+Name: qpagent
+Version: 337
+Summary: agent
+Home-page: https://git.elenet.me/waimaiqa/qualityplatform.agent.git
+Author: mafei
+Author-email: fei.ma03@ele.me
+License: MIT Licence
+Description-Content-Type: UNKNOWN
+Platform: any
+Requires-Dist: bottle (==0.12.13)
+Requires-Dist: requests (==2.7.0)
+Requires-Dist: click (==6.7)
+Requires-Dist: shutit (==1.0.15)
+Requires-Dist: enum34 (==1.0.4)
+Requires-Dist: appetizer (==1.0.0)
+Requires-Dist: selenium (==3.5.0)
+Requires-Dist: apscheduler (==3.3.1)
+Requires-Dist: raven (==6.1.0)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: Sphinx (==1.6.5)
+Requires-Dist: sphinxcontrib-napoleon (==0.6.1)
+Requires-Dist: sphinx-rtd-theme (==0.2.4)
+Requires-Dist: pylint (==1.7.1)
+Requires-Dist: nose (==1.3.7)
+Requires-Dist: coverage (==4.4.2)
+Requires-Dist: Appium-Python-Client (==0.24)
+Requires-Dist: recommonmark (==0.4.0)
+Requires-Dist: flask (==0.12.2)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: PyUnitReport (==0.1.4)
+Requires-Dist: urllib3 (==1.22)
+Requires-Dist: requests-ntlm (==1.1.0)
+
+Installation
+============
+
+Install ``qpagent`` for the first time::
+
+    $ pip install qpagent -i http://pypi.dev.elenet.me/eleme/eleme --trusted-host pypi.dev.elenet.me
+
+
+Upgrade
+-------
+
+If you have installed ``qpagent`` before and want to upgrade to the latest version, you can use the ``-U`` option.
+
+This option works on each installation method described above. ::
+
+    $ pip install -U qpagent -i http://pypi.dev.elenet.me/eleme/eleme --trusted-host pypi.dev.elenet.me
+
+Check Installation
+------------------
+
+When qpagent is installed, a **qpagent** command should be available in your shell (if you're not using
+virtualenv—which you should—make sure your python script directory is on your path).
+
+To see ``qpagent`` version: ::
+
+    $ qpagent -v
+    A Terminal Tools For agent Agent
+    Version: 239
+
+To see available options, run::
+
+    $ qpagent --help
+    A Terminal Tools For agent Agent
+    Usage: qpagent [OPTIONS]
+
+    Options:
+        -v, --version           show the version of this tool
+        -e, --environment TEXT  select a development environment such as
+                          alpha|beta|prod
+        --help                  Show this message and exit.
+
+
+Supported Python Versions
+-------------------------
+
+qpagent supports Python 2.7.
+
+``qpagent`` has been tested on ``macOS`` platforms.
+
+
+
