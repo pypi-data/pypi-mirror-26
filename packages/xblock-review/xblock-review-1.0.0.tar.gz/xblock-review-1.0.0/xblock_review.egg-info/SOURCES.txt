@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+review/__init__.py
+review/configuration.py
+review/get_review_ids.py
+review/review.py
+review/static/css/review.css
+review/static/js/src/review.js
+xblock_review.egg-info/PKG-INFO
+xblock_review.egg-info/SOURCES.txt
+xblock_review.egg-info/dependency_links.txt
+xblock_review.egg-info/entry_points.txt
+xblock_review.egg-info/requires.txt
+xblock_review.egg-info/top_level.txt
