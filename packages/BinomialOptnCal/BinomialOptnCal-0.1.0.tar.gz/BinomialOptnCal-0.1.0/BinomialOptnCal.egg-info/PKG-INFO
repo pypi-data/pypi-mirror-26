@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: BinomialOptnCal
+Version: 0.1.0
+Summary: This is a calculator for option pricing based on binomial model.
+Home-page: https://github.com/timtam12138/OptionCalculator
+Author: Henry Guo
+Author-email: henryguoziheng@gmail.com
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
