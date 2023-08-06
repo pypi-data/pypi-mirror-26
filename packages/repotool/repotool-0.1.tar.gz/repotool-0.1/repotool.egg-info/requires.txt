@@ -1,0 +1,4 @@
+pyprelude
+pysimplevcs
+pyyaml
+requests_oauthlib
