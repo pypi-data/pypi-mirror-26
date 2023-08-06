@@ -1,0 +1,12 @@
+pycp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycp/main.py,sha256=_3XBW1ApEQQnJCT64KbfwUL_lwcd_vbIgYXM1c8Ynig,3678
+pycp/progress.py,sha256=bVQCCP_6WWglciNdBC7eQRd-L22RAhDhZB4jSbk9b6I,12641
+pycp/transfer.py,sha256=yhLnedGld3HtTxIfgBONOk2P8JHljA1wT8SKmGiBKHM,11178
+pycp/util.py,sha256=8tdkHFek1chQSWvOuEPXGjK89bqGlhXYIhLND8JQ1Bs,3958
+pycp-8.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pycp-8.0.5.dist-info/METADATA,sha256=GT3Te7RTcpEPiiQV8bqKDuLrIKKvzUoaqPkvRQy8JY4,532
+pycp-8.0.5.dist-info/RECORD,,
+pycp-8.0.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pycp-8.0.5.dist-info/entry_points.txt,sha256=k6B9sszTBiyiNjY6ZSnH6ILMMflEwT69q17gt-Vs81E,63
+pycp-8.0.5.dist-info/metadata.json,sha256=gMeR-TKxBfI49_caEszZtpvMHNnMuYnB2t_02REJfdM,893
+pycp-8.0.5.dist-info/top_level.txt,sha256=MfAcgVw9rW-YjqH3sYRBy0ObYoqCHQRTtQp9YLTzGfc,5
