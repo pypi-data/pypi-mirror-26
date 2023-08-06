@@ -1,0 +1,10 @@
+cfmr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfmr/emitter.py,sha256=DWcfFdIJiAC89DP_K_MqT5FEA2NpH_jR3t3s2YTUjLk,1744
+cfmr/mapper.py,sha256=3LmZwzjbKQJmkTTBw_74vdROXwvZK8o3b43exjMpvWY,877
+cfmr/reducer.py,sha256=VUmtrO5XQkifjxgIBanpF0W6ruwf2d4CrH9hlnLEtG4,1377
+cfmr-0.0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cfmr-0.0.8.dist-info/METADATA,sha256=oTsZHIBQBu02nqOVD9kM8_gJHx8Mr-MPgy_M2LN_mno,377
+cfmr-0.0.8.dist-info/RECORD,,
+cfmr-0.0.8.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+cfmr-0.0.8.dist-info/metadata.json,sha256=R-0TWqqsXA7Gqxt-CbCtTdv6sk--r_aszqCiF5YkrWg,567
+cfmr-0.0.8.dist-info/top_level.txt,sha256=N43pOuEvFM-e6wCVH1jOBDj_88mZ7ed4nJRpeSVRw7A,5
