@@ -1,0 +1,7 @@
+README.md
+setup.py
+suggestparse.py
+suggestparse.egg-info/PKG-INFO
+suggestparse.egg-info/SOURCES.txt
+suggestparse.egg-info/dependency_links.txt
+suggestparse.egg-info/top_level.txt
