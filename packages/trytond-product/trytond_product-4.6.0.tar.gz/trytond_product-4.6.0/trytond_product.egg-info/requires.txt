@@ -1,0 +1,3 @@
+python-sql
+trytond_company >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
