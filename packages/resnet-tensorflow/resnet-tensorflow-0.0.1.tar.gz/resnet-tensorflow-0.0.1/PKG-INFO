@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: resnet-tensorflow
+Version: 0.0.1
+Summary: Deep Residual Neural Network
+Home-page: https://github.com/AndersonJo/residual-network
+Author: Chang Min Jo (Anderson Jo)
+Author-email: a141890@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: tensorflow,resnet,residual,neural network,cifar,cifar-10
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
