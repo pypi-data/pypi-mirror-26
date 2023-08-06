@@ -1,0 +1,10 @@
+
+        [ckan.plugins]
+        rq=ckanext.rq.plugin:RqPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+
+        [paste.paster_command]
+        jobs = ckanext.rq.cli:JobsCommand
+    
