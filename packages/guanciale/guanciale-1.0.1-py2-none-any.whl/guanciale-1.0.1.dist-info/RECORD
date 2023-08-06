@@ -1,0 +1,13 @@
+guanciale/__init__.py,sha256=tv_RVLX6qy5-9PAJe5mi3sy41iyNLT6RL9RjgDrYUEk,14961
+guanciale/config.py,sha256=2a_h6TVuvWZMGoerJkVWQodkh0lOMrYZxdKCCqhwJT8,10785
+guanciale/idascript.py,sha256=oAirH3YqZfMHbegtkAFHRsstejbNlmoWpxbc-sGG7B8,9479
+guanciale/idblib.py,sha256=j6OGZ9P1wDO3fpyo6BW0tKdcxg1DuN3vPqAdgfdsCT4,43065
+guanciale/matching.py,sha256=PPqMeHOiNYpYKYNcobqhLrESOEkfZ6YLYDIVCVS-i6I,13168
+guanciale/r2handler.py,sha256=MEk7knzdMlP06p_Ud8GVe9sEK3xB8X2muATi0juXC5I,3172
+guanciale/status.py,sha256=TkY2L-yHbbKbAJZaEbK35xgX0yQyhv9VVfQxkqs2QgM,225
+guanciale-1.0.1.dist-info/DESCRIPTION.rst,sha256=9UasS9QQnRQVGky7QtAXB3UlInx1z85WFIMM9BbS8C8,599
+guanciale-1.0.1.dist-info/METADATA,sha256=iKcDImcAJMTsb9JN7r52D5LJO8wSgexbgq_iKUB1AD8,1106
+guanciale-1.0.1.dist-info/RECORD,,
+guanciale-1.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+guanciale-1.0.1.dist-info/metadata.json,sha256=34o3daCsK1Wm8ODLsvZij6qJDBFI2n2aMAaBY2AXEEo,686
+guanciale-1.0.1.dist-info/top_level.txt,sha256=SS_H91pgxuLTSSpXgDlcgRsbWATT7Snemzew_cLFIco,10
