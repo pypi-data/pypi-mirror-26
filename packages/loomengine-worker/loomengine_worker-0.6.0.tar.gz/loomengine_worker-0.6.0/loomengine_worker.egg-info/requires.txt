@@ -1,0 +1,10 @@
+apache-libcloud==1.5.0
+docker-py==1.10.6
+google-api-python-client==1.6.2
+google-apitools>=0.5.8
+google-cloud==0.26.1
+google-resumable-media==0.3.0
+python-dateutil==2.6.0
+PyYAML==3.12
+requests==2.13.0
+loomengine_utils==0.6.0
