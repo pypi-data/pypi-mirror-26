@@ -1,0 +1,14 @@
+serial/__init__.py,sha256=5Eg9PpLwd-uQ1FQr6OuuoKhsbXMT1W10UaV5eD7Wbq4,607
+serial/errors.py,sha256=XJBuBU3YG8oRm1vWakzNieewbKC3cF1D4OvLtVB2Y1g,495
+serial/hooks.py,sha256=QnwbEr-43r4Kz_tUi4fUrdWbWtT1BMg-rLEe2l5OhEI,5199
+serial/meta.py,sha256=G3cRMtHl-bUBnKC_M1Ry6Ajm4JyicGcAMEq6QnaDyfg,15825
+serial/model.py,sha256=_ZYI1kiasHRgVH4cfyk7ymRuszTV01O5hMoQPCcr45A,47590
+serial/properties.py,sha256=u6HSetdem8rKUw0zUMkHRwgB6KT7Ub_iVNuo6HHanSU,26654
+serial/test.py,sha256=7R6zYo79FVf5ZzbS1peWPtUPAe9eiQF80uXlAM7HYMs,4580
+serial/utilities.py,sha256=mIgbFYGDLUZBDu8-eVGBCdyAdheshMfgBFkgJ2ofpBA,7166
+serial-0.0.17.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+serial-0.0.17.dist-info/METADATA,sha256=fBEakXvXMLUzGKwQQkdJibF19-viihE9q6YxSXWK3ow,683
+serial-0.0.17.dist-info/RECORD,,
+serial-0.0.17.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+serial-0.0.17.dist-info/metadata.json,sha256=InGgAipTJVWDoo37VDrKp0E5kgCRASg4rmhy-XJBQS0,859
+serial-0.0.17.dist-info/top_level.txt,sha256=FSjfWHWw-VjPiEqOhttbiP-F8OHn-liixq1wKL2fWOA,7
