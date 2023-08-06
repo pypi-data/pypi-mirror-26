@@ -1,0 +1,17 @@
+numpy
+scipy
+pandas
+xarray
+cv2
+scikit-learn
+scikit-image
+photutils
+xml
+matplotlib
+lmfit
+
+[dev]
+check-manifest
+
+[test]
+coverage
