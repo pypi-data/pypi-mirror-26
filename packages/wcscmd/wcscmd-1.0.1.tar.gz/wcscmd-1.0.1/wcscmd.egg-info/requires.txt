@@ -1,0 +1,7 @@
+requests>=2.11.1
+poster
+logging
+argparse
+lockfile
+requests_toolbelt
+pyyaml
