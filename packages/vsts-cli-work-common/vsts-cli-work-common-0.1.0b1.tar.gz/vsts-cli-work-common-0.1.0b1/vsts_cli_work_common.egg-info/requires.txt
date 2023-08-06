@@ -1,0 +1,4 @@
+knack
+python-dateutil
+vsts~=0.1.0b1.dev
+vsts-cli-common==0.1.0b1
