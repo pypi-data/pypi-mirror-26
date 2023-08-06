@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: negotiator2
+Version: 2.1.0
+Summary: Framework neutral HTTP Content Negotiation for Python
+Home-page: https://github.com/zimeon/negotiator2
+Author: Richard Jones and Simeon Warner
+Author-email: simeon.warner@cornell.edu
+License: CC0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
