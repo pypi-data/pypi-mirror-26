@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: zerolib
+Version: 0.0.0.dev1
+Summary: A minimalist ZeroNet protocol library
+Home-page: https://github.com/MuxZeroNet/zerolib
+Author: MuxZeroNet and zerolib contributors
+Author-email: muxzeronet@users.noreply.github.com
+License: GPLv3+
+Keywords: development bitcoin zeronet
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+
+UNKNOWN
+
+
