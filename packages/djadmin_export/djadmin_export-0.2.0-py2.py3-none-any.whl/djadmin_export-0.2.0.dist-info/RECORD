@@ -1,0 +1,13 @@
+djadmin_export/__init__.py,sha256=5wnijg4Kc5X8d1xJWgll_8T6DnIwam2CCLqU04Fo2CU,219
+djadmin_export/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djadmin_export/register.py,sha256=806eM26949vdtWExTOfG6iRBAQzbC73R-BhhfZVwTvA,1625
+djadmin_export/utils.py,sha256=O6CdA6hVWTLz0SXULu7SbZuesS8Wblkh9WBRn0z4Fmk,1074
+djadmin_export/exporters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djadmin_export/exporters/base.py,sha256=kZFgFOh98chsZsv4POaI0IFDOcuswVBC8IxCYYvaU2U,5160
+djadmin_export/exporters/xlsx.py,sha256=8p2gYpPoJALtBP013xJ5xhcJXqddySBezMhdhlXYei4,2259
+djadmin_export-0.2.0.dist-info/DESCRIPTION.rst,sha256=29nTrwkej4-JONiS5Uw5COSxxlBftwsQJ7M6fn3zjEk,1311
+djadmin_export-0.2.0.dist-info/METADATA,sha256=2q8vDrXvgYbpu1j-PzEP2yXoZ4uUXud7MPw1obmakE0,2677
+djadmin_export-0.2.0.dist-info/RECORD,,
+djadmin_export-0.2.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+djadmin_export-0.2.0.dist-info/metadata.json,sha256=RGxt_bjYZFKn-B1CJUyKCygZeaW3CkoH4oIQ2ICqHmQ,1488
+djadmin_export-0.2.0.dist-info/top_level.txt,sha256=p5FNtjuJMi7pX0ouOcD_CgdyM3W6m5OX123SBQ5mLAc,15
