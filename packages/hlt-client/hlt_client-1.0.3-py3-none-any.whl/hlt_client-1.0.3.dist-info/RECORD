@@ -1,0 +1,12 @@
+hlt_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hlt_client/client.py,sha256=u-hTMynwfW5Hmc7d2xXiNTYMHo5KbzHZXsfjCNWGcAM,9902
+hlt_client/compare_bots.py,sha256=N4kkIipbEYkaUGXkErsew_biagUT0RMbEMtnaR_Gtu4,2093
+hlt_client/download_game.py,sha256=XtLRYt_cNVAIo37dBlFC7Muj3dz225-9YBNsW38SJls,7782
+hlt_client/upload_bot.py,sha256=oE9DL29J2IhMHLPYIlEUmqr5kmFVztcLQA3wAjf9-ag,3103
+hlt_client-1.0.3.data/scripts/hlt,sha256=GxFx_oBerrKUvLlf8jQIVx2PK-eGQttHeGX8_z-AtPc,54
+hlt_client-1.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+hlt_client-1.0.3.dist-info/METADATA,sha256=z9hwYX0LO5SAiLHYPDJoEXxP4Ca31EgdavFY3sRmNe4,518
+hlt_client-1.0.3.dist-info/RECORD,,
+hlt_client-1.0.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+hlt_client-1.0.3.dist-info/metadata.json,sha256=HCmz2ICj3EATM5YrLq144uGgFo2ZPZVnwyIsEdmR8j8,704
+hlt_client-1.0.3.dist-info/top_level.txt,sha256=-rXyJbmfy4GzXjKmi7y48tnqDxyDmWgxPIr17NCVzIs,11
