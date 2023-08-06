@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pynqpandas/__init__.py
+pynqpandas.egg-info/PKG-INFO
+pynqpandas.egg-info/SOURCES.txt
+pynqpandas.egg-info/dependency_links.txt
+pynqpandas.egg-info/top_level.txt
+tests/__init__.py
+tests/test_data.py
