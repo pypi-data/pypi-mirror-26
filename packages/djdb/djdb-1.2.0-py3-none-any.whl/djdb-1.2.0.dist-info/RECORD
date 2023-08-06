@@ -1,0 +1,14 @@
+djdb-1.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+djdb-1.2.0.dist-info/METADATA,sha256=OV7RMEJSyA3SNAH0bKDz2UspxPEQCrbE5bPRR4fEOtU,286
+djdb-1.2.0.dist-info/RECORD,,
+djdb-1.2.0.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+djdb-1.2.0.dist-info/metadata.json,sha256=lrVZYAQwzc4cOeoWxo7cIJbDg2YP8V6KxWldHXT1u7o,481
+djdb-1.2.0.dist-info/top_level.txt,sha256=RfAB8iuhVvRcyem4bE0GB01ZkXm9qSmznxkHHKD5KYE,5
+pydb/__init__.py,sha256=FloWfNanaM7WtGd0Uy36qkxeZl-h9vMyw_jRMfWnyec,1005
+pydb/session.py,sha256=b-9feM5zup-9u5xlTKAzaF5TkfdKp-JkedZ0NjfcOaY,2323
+pydb/demo_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydb/demo_db/conf.py,sha256=oI-HRsf8Qbvy8JTV0WH16oU3e332jucSzZAWp9OEphM,27
+pydb/demo_db/models.py,sha256=p_R1JOAvy7p4KucF7N1UuhVaJANsrqTRoOH6GEwb6U4,122
+pydb/model/__init__.py,sha256=jt-DMqp9UyN48JQ7DYaNjZBSELMR2GBXaTBrTvmV4cM,30
+pydb/settings/__init__.py,sha256=h-K30iIJGqiVAd1WCZr59AhROgkmoeDc4YqUw41B0SM,44
+pydb/settings/default_settings.py,sha256=5_nHAOfYwZ5YXDu9UZfEjW0EOlB2GVvIRJmtDZUdFEY,469
