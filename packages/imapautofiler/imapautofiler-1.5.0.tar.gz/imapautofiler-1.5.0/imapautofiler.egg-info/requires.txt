@@ -1,0 +1,13 @@
+PyYAML>=3.11
+imapclient<2.0.0,>=1.0.1
+keyring>=10.0.0
+
+[docs]
+Sphinx
+
+[test]
+coverage
+testrepository
+testtools
+fixtures
+flake8
