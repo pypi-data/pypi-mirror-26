@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: CubeSocket256
+Version: 0.3.1
+Summary: Socket bindings using the Cube256 cipher for encryption and decryption (Uses DHE)
+Home-page: https://github.com/pvial00/CubeSocket256
+Author: Karl Zander
+Author-email: pvial@kryptomagik.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: cryptography,encryption,security,network
+Platform: UNKNOWN
