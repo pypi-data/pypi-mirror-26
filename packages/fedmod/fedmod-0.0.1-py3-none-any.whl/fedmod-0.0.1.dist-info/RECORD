@@ -1,0 +1,13 @@
+_fedmod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_fedmod/__main__.py,sha256=30s46Pvyc62woTREagOC0cOsbSfJy72i6RsX6kIWvJE,153
+_fedmod/_depchase.py,sha256=6LRA9_ktZEw7zVcPHRFnhMbeE3A5Jz1hjNbjJb_It6A,8875
+_fedmod/_repodata.py,sha256=kJyunVEf2S8kbJ5TP29o349U6kvMF6WAwAdhVEgTdHQ,17458
+_fedmod/cli.py,sha256=d5Nwt4hME-w1i4uRLK1IRDVRM69Xl9gZ7ch-LAKAQxs,2426
+_fedmod/module_generator.py,sha256=q5KuU7_ZuePpZoJJrpxsz3Xya4RytfLwduYzXq-kHoc,6027
+fedmod-0.0.1.dist-info/DESCRIPTION.rst,sha256=ozlwLN8K8rVViU_aFecYx07YX-nHDQFItHlbjKsLB6Q,134
+fedmod-0.0.1.dist-info/METADATA,sha256=5MmeZogSYXAoj3aKorW-JjTMc2B_Lb9fpA3QitNMjbQ,617
+fedmod-0.0.1.dist-info/RECORD,,
+fedmod-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+fedmod-0.0.1.dist-info/entry_points.txt,sha256=nEyTCoRtlOpwZaHltzpZlRKsFkdDApuk5H9NBqr_bsw,44
+fedmod-0.0.1.dist-info/metadata.json,sha256=zs-RniBro3QlqUe9rd9f7JpiioP54hMNazr-2cDy05E,807
+fedmod-0.0.1.dist-info/top_level.txt,sha256=mhJZd6GiWv3vPMj2mWbx0Ap20jDpZ8aJBfqqfyQp-Lo,8
