@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: physplotlib
+Version: 0.1.1
+Summary: Library for plotting quickly data from log files
+Home-page: https://github.com/danieljosesilva/physplotlib
+Author: Daniel Silva
+Author-email: djsilva99@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: p,l,o,t,t,i,n,g, ,n,u,m,e,r,i,c,a,l, ,s,i,m,u,l,a,t,i,o,n,s, ,h,e,a,t,r,a,p,y, ,l,o,g, ,f,i,l,e,s
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Physics
