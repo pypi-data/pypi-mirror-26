@@ -1,0 +1,3 @@
+[console_scripts]
+inotify_httpd = inotify_httpd.inotify_httpd:main
+
