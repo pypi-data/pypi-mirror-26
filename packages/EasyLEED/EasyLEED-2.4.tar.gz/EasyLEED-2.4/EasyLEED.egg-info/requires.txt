@@ -1,0 +1,11 @@
+numpy
+matplotlib
+scipy
+pillow
+pathlib
+
+[fits]
+pyfits
+
+[skimage]
+scikit-image
