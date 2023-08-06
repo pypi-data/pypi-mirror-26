@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: wsdottraffic
+Version: 3.0.0
+Summary: Retrieves data from WSDOT Traffic API
+Home-page: https://github.com/WSDOT-GIS/wsdot-traffic-gp
+Author: Washington State Department of Transportation
+Author-email: WSDOTGISDevelopers@WSDOT.WA.GOV
+License: Unlicense
+Description-Content-Type: UNKNOWN
+
+wsdot-traffic-gp
+
+
