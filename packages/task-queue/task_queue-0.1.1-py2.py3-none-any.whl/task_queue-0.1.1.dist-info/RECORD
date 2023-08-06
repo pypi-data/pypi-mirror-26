@@ -1,0 +1,11 @@
+task_queue-0.1.1.dist-info/DESCRIPTION.rst,sha256=atrZFRq6sG3OgpDid1QUP1GEnZqCB2ku3ULCfQmgKKA,138
+task_queue-0.1.1.dist-info/METADATA,sha256=22Y_6qV5L6yG7YHhFZCdRDT8_7ZGgDrlMbSQzKH2mW0,1025
+task_queue-0.1.1.dist-info/RECORD,,
+task_queue-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+task_queue-0.1.1.dist-info/metadata.json,sha256=ZfNZN36qxvSyIFw2180g1Fd2e6TJE7ZDbad-nJQBEbI,982
+task_queue-0.1.1.dist-info/pbr.json,sha256=o89AHT60ePtQFM5qjLQmvuHLma02XusXlDAdbw5QH4w,46
+task_queue-0.1.1.dist-info/top_level.txt,sha256=hA3SM1ik2K8iPqtlt_-_nJ4TAePwHPN3vsOc4EiynqU,10
+taskqueue/__init__.py,sha256=7joL59wCLQCfhze0Jj6hdXfmK64jPGqJT9Y6cwvkDns,169
+taskqueue/appengine_queue_api.py,sha256=ws48FWg8c7S6SJiaKwuWqpuBMyEp31UuVABWiRGoiMM,3675
+taskqueue/secrets.py,sha256=snWd4RHyNC7YHg2lVgIU8bwOTJUsBwcg67pPJJ4q7mU,1148
+taskqueue/taskqueue.py,sha256=9qMSWnyy3anBUD9vxvw-g7w9nS8r78OEQ2BpYbO_CI4,9051
