@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+xgbfir/__init__.py
+xgbfir/main.py
+xgbfir.egg-info/PKG-INFO
+xgbfir.egg-info/SOURCES.txt
+xgbfir.egg-info/dependency_links.txt
+xgbfir.egg-info/entry_points.txt
+xgbfir.egg-info/requires.txt
+xgbfir.egg-info/top_level.txt
