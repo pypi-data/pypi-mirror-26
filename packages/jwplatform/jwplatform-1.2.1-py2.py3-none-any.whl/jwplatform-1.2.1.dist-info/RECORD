@@ -1,0 +1,10 @@
+jwplatform/__init__.py,sha256=Ljd8kXDL0mQ4z65vILk5MvQdDKZRXQaandmv3zk8Tn4,157
+jwplatform/client.py,sha256=WkIuGzBAEODIV9ljM3kBwsncPDIOow5Zb1D2BqLe3PE,3625
+jwplatform/errors.py,sha256=XawqS87G2VKji9dwcUVjtR76knFburmckLWDX814ilI,2934
+jwplatform/resource.py,sha256=omF5xqdWZXTyZf0_EjR1V8kbBzs3PBMSvipokvA3uBY,3244
+jwplatform-1.2.1.dist-info/DESCRIPTION.rst,sha256=S-BPqMnclCLsA_LxzQ6mQRGgUX3Qye2m6PQ3Qa1etQQ,3811
+jwplatform-1.2.1.dist-info/METADATA,sha256=fHi7zJrG2BG1JAO775jep0zFx7nEjfQ-VY-3QT8jQRs,4671
+jwplatform-1.2.1.dist-info/RECORD,,
+jwplatform-1.2.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+jwplatform-1.2.1.dist-info/metadata.json,sha256=vU1vKW2PT8xwNoDxv3pKlRewu4CS6IDwCUEwbK4ZIeA,1128
+jwplatform-1.2.1.dist-info/top_level.txt,sha256=WjaohiD69whF5y7iTyYd_dvahrR0xbkUm96Ya8MrqzY,11
