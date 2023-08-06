@@ -1,0 +1,13 @@
+tabview/README.rst,sha256=NHxy3XM2djXWn4Im1A7eLpAUHl1L8npJ6OzKjEeu1kA,5676
+tabview/__init__.py,sha256=L93yQ_U0aABYFWQePMMWyh0x62gjSgAx2ZtC7qaUBgo,34
+tabview/tabview.py,sha256=5ZHTx0m9aGRVWT2SMMBbKlBYoDs2l8cmHeLUDS5_3Tw,47856
+tabview-1.4.3.data/data/share/doc/tabview/CHANGELOG.rst,sha256=WZN-EP3WUTQuHkF8FuGwVNd4YSjNBbQI3MYpbmPCZT8,1918
+tabview-1.4.3.data/data/share/doc/tabview/LICENSE.txt,sha256=1OdfOntqqmZDxHnMlWwe08S3yLDG4Rp7Pr-u5_iQm9s,1223
+tabview-1.4.3.data/data/share/doc/tabview/README.rst,sha256=NHxy3XM2djXWn4Im1A7eLpAUHl1L8npJ6OzKjEeu1kA,5676
+tabview-1.4.3.data/scripts/tabview,sha256=vnMMtueYJM2M7pIzcQ9egpGpQG4pMduaCb-R_igh3MU,4529
+tabview-1.4.3.dist-info/DESCRIPTION.rst,sha256=sK3Sond9zUzQ2tlTdELU4XbaNoUhJWRrDZOLW8cEuLg,5670
+tabview-1.4.3.dist-info/METADATA,sha256=WzWKactM33SishMiNa1xx-6ypEkCXQM9yraQToUFDgU,6835
+tabview-1.4.3.dist-info/RECORD,,
+tabview-1.4.3.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+tabview-1.4.3.dist-info/metadata.json,sha256=34e3JCYzZRvhW5vu_wd-c8aEcvA99SI6DJT4dBzWyjo,1266
+tabview-1.4.3.dist-info/top_level.txt,sha256=is54LGobgDsuQg9oZxTR1g2BtE6dZ_2KDS9AZlp4l2I,8
