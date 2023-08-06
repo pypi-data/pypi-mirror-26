@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+plotlyhtmlexporter/__init__.py
+plotlyhtmlexporter/exporters.py
+plotlyhtmlexporter/preprocessors.py
+plotlyhtmlexporter.egg-info/PKG-INFO
+plotlyhtmlexporter.egg-info/SOURCES.txt
+plotlyhtmlexporter.egg-info/dependency_links.txt
+plotlyhtmlexporter.egg-info/entry_points.txt
+plotlyhtmlexporter.egg-info/not-zip-safe
+plotlyhtmlexporter.egg-info/requires.txt
+plotlyhtmlexporter.egg-info/top_level.txt
+plotlyhtmlexporter/templates/plot.tpl

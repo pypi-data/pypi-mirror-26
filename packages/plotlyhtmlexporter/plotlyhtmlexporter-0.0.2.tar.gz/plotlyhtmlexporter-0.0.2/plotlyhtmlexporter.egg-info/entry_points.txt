@@ -1,0 +1,3 @@
+[nbconvert.exporters]
+plotlyhtml = plotlyhtmlexporter:PlotlyHTMLExporter
+
