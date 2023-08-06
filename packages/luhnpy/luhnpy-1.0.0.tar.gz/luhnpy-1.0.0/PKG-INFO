@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: luhnpy
+Version: 1.0.0
+Summary: A minimalistic implementation of Luhn algorithm
+Home-page: https://github.com/mfuentesg/luhnpy
+Author: Marcelo Fuentes
+Author-email: marceloe.fuentes@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/mfuentesg/luhnpy/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: luhn,algorithm
+Platform: UNKNOWN
