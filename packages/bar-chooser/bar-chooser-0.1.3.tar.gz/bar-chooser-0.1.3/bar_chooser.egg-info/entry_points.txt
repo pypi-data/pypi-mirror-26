@@ -1,0 +1,3 @@
+[console_scripts]
+bar-chooser = bar_chooser.__init__:main
+
