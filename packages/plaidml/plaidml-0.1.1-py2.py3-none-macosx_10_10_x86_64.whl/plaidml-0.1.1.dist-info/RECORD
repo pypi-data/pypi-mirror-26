@@ -1,0 +1,16 @@
+plaidml/__init__.py,sha256=f85i2yrLQkYE9F6DoDOXygXZugTqj6Md2QC0MR1Dr6Q,52497
+plaidml/config.json,sha256=DO_-bXAJDhiTcTcWe0mzLEld3cin96x4S4H1rMzmvxc,1975
+plaidml/context.py,sha256=38RN-vod6i5NoPgtQYksus0_lgnK29zXeLtIs6Qlp6Q,865
+plaidml/exceptions.py,sha256=LWz8BA36urDyZFDucEWS5aHhBdgEP8JatdMACaC6-Q0,1787
+plaidml/experimental.json,sha256=PQKaYAYvOIWV_hsz2ZK_PMzBZqFjiPMwlqoN2MTneZk,2874
+plaidml/libplaidml.so,sha256=mIFzUnFZWtKSKQGXUkqeeFqOavRRI7uyrn6FP6MuB_c,10107036
+plaidml/library.py,sha256=w1evO4O8v3IvjbJlNFqvDDleOw8u2SBNdZRpH6h9eW8,5216
+plaidml/plaidml_setup.py,sha256=WT73quKno-gFCltiA44iAdfNILfHlZ70HMNpvMNLiGk,4230
+plaidml/settings.py,sha256=AgO7ws35T43Qlq-oAOge04gluJmWb7KXqfkTiDYLyPE,4756
+plaidml-0.1.1.dist-info/DESCRIPTION.rst,sha256=8UjCw1uxQyMSRhwkzVrbPBKHeAu7qTOZW0dIylvY12A,70
+plaidml-0.1.1.dist-info/METADATA,sha256=RIb-_vyReUHpLyEoubxVgePpFtLYvzhZTyqJjKqjJ1w,654
+plaidml-0.1.1.dist-info/RECORD,,
+plaidml-0.1.1.dist-info/WHEEL,sha256=9uwSJjAuPiFOUnl1T_yKUkF-a2pdvGmblR6uUqiRn9Q,142
+plaidml-0.1.1.dist-info/entry_points.txt,sha256=PlhopOrvXwp_bKSQA5nGc2kp5bWA1X7T2Je1tMDUqns,62
+plaidml-0.1.1.dist-info/metadata.json,sha256=EM59Q4KAgeazCWPcJHRBHx9_Xi51-d2W0nrqpB2gFFs,943
+plaidml-0.1.1.dist-info/top_level.txt,sha256=vbe5GeTYkpqiimm8hIXV1-tKs035NAMhCLZYBxzlMW8,8

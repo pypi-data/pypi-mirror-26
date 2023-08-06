@@ -1,0 +1,126 @@
+{
+  "platform": {
+    "@type": "type.vertex.ai/vertexai.tile.local_machine.proto.Platform",
+    "hals": [
+      {
+        "@type": "type.vertex.ai/vertexai.tile.hal.opencl.proto.Driver",
+        "sel": {
+          "value": true
+        }
+      }
+    ],
+    "hardware_configs": [
+      {
+        "description": "AMD config",
+        "sel": {
+          "or": {
+            "sel": [
+              { "vendor_regex": "Advanced Micro Devices.*" },
+              { "vendor_regex": "AMD" }
+            ]
+          }
+        },
+        "settings": {
+          "threads": 256,
+          "vec_size": 1,
+          "mem_width": 128,
+          "max_mem": 32768,
+          "max_regs": 16384,
+          "goal_groups": 1,
+          "goal_flops_per_byte": 50
+        }
+      },
+      {
+        "description": "Intel GPU config",
+        "sel": {
+          "or": {
+            "sel": [
+              { "name_regex": ".*Iris.*" },
+              { "name_regex": ".*HD Graphics.*" }
+            ]
+          }
+        },
+        "settings": {
+          "threads": 64,
+          "vec_size": 1,
+          "mem_width": 256,
+          "max_mem": 7300,
+          "max_regs": 4000,
+          "goal_groups": 1,
+          "goal_flops_per_byte": 50
+        }
+      },
+      {
+        "description": "NVIDIA config",
+        "sel": {
+          "vendor_regex": "NVIDIA.*"
+        },
+        "settings": {
+          "threads": 256,
+          "vec_size": 1,
+          "mem_width": 64,
+          "max_mem": 15360,
+          "max_regs": 32768,
+          "goal_groups": 7,
+          "goal_flops_per_byte": 46
+        }
+      },
+      {
+        "description": "Intel CPU config",
+        "sel": {
+          "and": {
+            "sel": [
+              { "vendor_regex": "Intel.*" },
+              { "name_regex": ".*CPU.*" }
+            ]
+          }
+        },
+        "settings": {
+          "threads": 32,
+          "vec_size": 1,
+          "mem_width": 64,
+          "max_mem": 32768,
+          "max_regs": 32768
+        }
+      },
+      {
+        "description": "ARM Mali config",
+        "sel": {
+          "and": {
+            "sel": [
+              { "vendor_regex": "ARM" },
+              { "name_regex": "Mali-T760" }
+            ]
+          }
+        },
+        "settings": {
+          "threads": 128,
+          "vec_size": 2,
+          "mem_width": 16,
+          "max_mem": 16000,
+          "max_regs": 16000,
+          "use_global": true
+        }
+      },
+      {
+        "description": "ARM Mali config",
+        "sel": {
+          "and": {
+            "sel": [
+              { "vendor_regex": "ARM" },
+              { "name_regex": "Mali-T628" }
+            ]
+          }
+        },
+        "settings": {
+          "threads": 256,
+          "vec_size": 1,
+          "mem_width": 16,
+          "max_mem": 16000,
+          "max_regs": 32000,
+          "use_global": true
+        }
+      }
+    ]
+  }
+}
