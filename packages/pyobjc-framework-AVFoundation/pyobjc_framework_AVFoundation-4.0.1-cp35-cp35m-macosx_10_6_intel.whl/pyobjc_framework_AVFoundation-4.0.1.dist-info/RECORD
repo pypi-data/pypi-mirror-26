@@ -1,0 +1,10 @@
+AVFoundation/_AVFoundation.cpython-35m-darwin.so,sha256=R7F7gMsaikkdON8drkVFqt7MT3hRP3j576yL8-kEtDY,46940
+AVFoundation/__init__.py,sha256=wiQEp4vo9Ng1wPWCTlNv0N43CGf46efPCKXa5MRmK9c,811
+AVFoundation/_inlines.cpython-35m-darwin.so,sha256=_mr2Si8p8rNtU4V4PdHos_f4GFpY2LiBDcaqeF6TwOE,30736
+AVFoundation/_metadata.py,sha256=qmwBXWclR1_jRhf8FW3MYqu4MLcssnRB27e5mVRozjE,98029
+pyobjc_framework_AVFoundation-4.0.1.dist-info/DESCRIPTION.rst,sha256=bqJ7YJWjD10rISQnoWnQYXStZjPrU4SFl67tqW4E_xE,556
+pyobjc_framework_AVFoundation-4.0.1.dist-info/METADATA,sha256=vmj2lh5A4VNKDMEf9KL1nM9Z8gW0fh6Ye9CWOyhUwbs,2161
+pyobjc_framework_AVFoundation-4.0.1.dist-info/RECORD,,
+pyobjc_framework_AVFoundation-4.0.1.dist-info/WHEEL,sha256=kYEVqlgzsayTy7F_lPTU0_aKWgzbfmSiMqREYReNFOI,109
+pyobjc_framework_AVFoundation-4.0.1.dist-info/metadata.json,sha256=EtUVg0RZn3HYqxxefibgN6OZzqqzYVfG49043MQstOI,1599
+pyobjc_framework_AVFoundation-4.0.1.dist-info/top_level.txt,sha256=YbV2KFCPDIX3Xp23u1Vp0XUErBiGdM0sxUVZNrQDaKU,13
