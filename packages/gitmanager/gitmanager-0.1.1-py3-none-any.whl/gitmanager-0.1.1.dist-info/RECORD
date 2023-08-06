@@ -1,0 +1,13 @@
+git_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_manager/cli.py,sha256=2jLDLVNV41Ddw15CF9sq1OWRgKmoDaV4GZuErfla__s,875
+git_manager/db.py,sha256=gf75NHnVwRo9Go7alJzBWuavo1YTf3jhEzpyClaK74k,192
+git_manager/git_manager.py,sha256=-ByHm14xlLwGJAu670RfyhUzH6F8lhK7qn4pwYMRpE0,5337
+git_manager/lolcat.py,sha256=QVDd4Tg52uUZigR8e5Im393LAJspl4UQyZzT9q6dxug,6335
+git_manager/models.py,sha256=e6K-qVgrUoJ5KbolXyUwA5kJVYC4RXgAhIhDbRRkwkg,482
+gitmanager-0.1.1.dist-info/DESCRIPTION.rst,sha256=uOz4ZmUWuGOatARbDBHZ1Ku0dNlPRUyOCkoec9NGebI,588
+gitmanager-0.1.1.dist-info/METADATA,sha256=MDFOzbvVg5JT1dPSXug7MLvHXqdnlSSxNiILZBxtnvo,1106
+gitmanager-0.1.1.dist-info/RECORD,,
+gitmanager-0.1.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+gitmanager-0.1.1.dist-info/entry_points.txt,sha256=DSJg_OSeLJ3A6NMHrnDInr837RSTiSudaQ94xGmmC54,63
+gitmanager-0.1.1.dist-info/metadata.json,sha256=PTBcBfRYWCTdMbrDUZO0im8nG1Ri6Ln-7lSiqB1_Hg8,695
+gitmanager-0.1.1.dist-info/top_level.txt,sha256=LoWj_9cmdG7gFrl37v5YXzIdLuKgRR7h4sKlNE_EgS8,12

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gim=git_manager.cli:cli
+    
