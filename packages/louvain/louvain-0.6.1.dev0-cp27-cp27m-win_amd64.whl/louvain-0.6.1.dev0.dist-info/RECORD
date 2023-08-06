@@ -1,0 +1,13 @@
+louvain/Optimiser.py,sha256=RdSQDopy518N50inhZd2DbjYryfX38uQadX1Q4u00Rc,16839
+louvain/VertexPartition.py,sha256=KciXWqaVlGgawSIcW8lARL-y4_zj1shWlEOCGIS0KnQ,37654
+louvain/__init__.py,sha256=o_6f26PHtQ5ivlISS4WZNcpM-3GzqF0wlir23-umt8M,3046
+louvain/_c_louvain.pyd,sha256=TISCq4qzjx2f7ako9XdO8sVP8r3ZBypjpF3z5WL2TUc,1373184
+louvain/_version.py,sha256=OPGn2vhZGUE8o6HNbC7jhLeshKvw-NEDVl7y7W8vRwU,523
+louvain/functions.py,sha256=DO8YD4bCv2OTyaxKWNcvUgX8cmGvQQCCLF7djzYUxPo,18149
+louvain-0.6.1.dev0.dist-info/DESCRIPTION.rst,sha256=g_5t5FKND7JT08Hl0N82-JvwOzg72sko3ZaNf7FbOgc,379
+louvain-0.6.1.dev0.dist-info/METADATA,sha256=2veCDVtpWVtXrMDrXq3d3c4wRbEx-CH_o5By-d4sDTw,1487
+louvain-0.6.1.dev0.dist-info/RECORD,,
+louvain-0.6.1.dev0.dist-info/WHEEL,sha256=Jmq6HlU3-gun8Kdi3LY3f3pFZ0JqJ7Bn8GbGn_XfX0M,106
+louvain-0.6.1.dev0.dist-info/metadata.json,sha256=9hzYVwpf_GZMBajOd9z_UeTdihUx4JlYJpkpDVMagNc,1195
+louvain-0.6.1.dev0.dist-info/pbr.json,sha256=4QiWI3NQmfJ_qJ5UFYw_u1HXJb47ZNAZhSlgRoEpBiw,47
+louvain-0.6.1.dev0.dist-info/top_level.txt,sha256=_uGptjKo4FbjodRFDADZjZkGMPLP1s-WRXsYPHSGzJI,8
