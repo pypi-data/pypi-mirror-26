@@ -1,0 +1,7 @@
+tornado
+
+[dev]
+check-manifest
+
+[test]
+coverage
