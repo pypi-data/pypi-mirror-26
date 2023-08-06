@@ -1,0 +1,12 @@
+setup.py
+TWchat/__init__.py
+TWchat/gui.py
+TWchat/leftBox.py
+TWchat/mbox.py
+TWchat/mtxt.py
+TWchat.egg-info/PKG-INFO
+TWchat.egg-info/SOURCES.txt
+TWchat.egg-info/dependency_links.txt
+TWchat.egg-info/entry_points.txt
+TWchat.egg-info/requires.txt
+TWchat.egg-info/top_level.txt
