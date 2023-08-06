@@ -1,0 +1,7 @@
+setup.py
+centre_config/__init__.py
+centre_config/centre_config.py
+centre_config.egg-info/PKG-INFO
+centre_config.egg-info/SOURCES.txt
+centre_config.egg-info/dependency_links.txt
+centre_config.egg-info/top_level.txt
