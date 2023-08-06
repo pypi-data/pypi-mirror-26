@@ -1,0 +1,4 @@
+include Makefile
+include README.rst
+include LICENSE.txt
+include LICENSE_Apache.txt

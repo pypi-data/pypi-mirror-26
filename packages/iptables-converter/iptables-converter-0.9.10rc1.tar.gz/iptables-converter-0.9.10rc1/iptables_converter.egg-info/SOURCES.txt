@@ -1,0 +1,14 @@
+LICENSE.txt
+LICENSE_Apache.txt
+MANIFEST.in
+Makefile
+README.rst
+setup.cfg
+setup.py
+iptables_conv/__init__.py
+iptables_conv/iptables_converter.py
+iptables_converter.egg-info/PKG-INFO
+iptables_converter.egg-info/SOURCES.txt
+iptables_converter.egg-info/dependency_links.txt
+iptables_converter.egg-info/entry_points.txt
+iptables_converter.egg-info/top_level.txt
