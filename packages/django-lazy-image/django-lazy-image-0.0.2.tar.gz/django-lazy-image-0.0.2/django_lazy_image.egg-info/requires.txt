@@ -1,0 +1,4 @@
+sorl-thumbnail
+Jinja2
+django<1.12,>=1.11
+django-jinja>=2.2

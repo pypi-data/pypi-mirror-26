@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: django-lazy-image
+Version: 0.0.2
+Summary: An image utility that renders images lazily as well as intrinsically sizes them.
+Home-page: https://github.com/dan-gamble/django-lazy-image/
+Author: Dan Gamble
+Author-email: dan@dangamble.co.uk
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: I am what to do
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
