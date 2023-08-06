@@ -1,0 +1,15 @@
+gwa_spotify_api/__init__.py,sha256=iwS4Hu3HC_hEZUQK_jzFekA316hYHFW8ARE5G4KYCmI,111
+gwa_spotify_api/exceptions.py,sha256=zAtFdUAUqoFc3uEVVsiIkhW6TlpxQVLL8qkUL0T78fQ,2058
+gwa_spotify_api/spotify_api.py,sha256=eBmyyc7iJ2cRwB7-pBJvuQfDg7xVBYmaiebS8f2jVJs,6019
+gwa_spotify_api/spotify_auth_api.py,sha256=OWFoNatgCGlzgg1dq8NtzgBkOkq9l86CSr4YhYCCdSg,2495
+gwa_spotify_api-0.0.2.data/data/data/spotify-token.pickle,sha256=WSzi2i2an90QTwsyfeZrCrU-r3ty48lLTWMlWwXB-7k,20
+gwa_spotify_api-0.0.2.dist-info/DESCRIPTION.rst,sha256=HeZpuj8jWYXmyHZgRyZa1VDYwVPzcXjkhd0aChttEeY,381
+gwa_spotify_api-0.0.2.dist-info/METADATA,sha256=PR73UgotTFhGxH8d2LclqF8SCya3K3M7BK-C83hN0B8,922
+gwa_spotify_api-0.0.2.dist-info/RECORD,,
+gwa_spotify_api-0.0.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+gwa_spotify_api-0.0.2.dist-info/metadata.json,sha256=ElqxmUMHCA-Pk9aityZftPEqK6KlvvKx0L_KrIoLU-U,767
+gwa_spotify_api-0.0.2.dist-info/top_level.txt,sha256=BOcuHqhL-QWalFTm7IbyFAPTyxbU0XKjnjBYafcm5QE,16
+spotify_api/__init__.py,sha256=gNEl-URzLiTTKDOWyZ03x9xsRLey3Fx2ja9ZYJr07KI,79
+spotify_api/exceptions.py,sha256=zAtFdUAUqoFc3uEVVsiIkhW6TlpxQVLL8qkUL0T78fQ,2058
+spotify_api/spotify_api.py,sha256=jC2rQALFc1mKNtL4ETun6QANOuecguQUKEcARQDuxmA,6005
+spotify_api/spotify_auth_api.py,sha256=MJJ7u9pCg5VZaAR0_mZypL0_Buz8L5Yie2vWAdYVneA,2443
