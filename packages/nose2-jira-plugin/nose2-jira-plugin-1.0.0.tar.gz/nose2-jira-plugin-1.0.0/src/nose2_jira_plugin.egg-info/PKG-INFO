@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: nose2-jira-plugin
+Version: 1.0.0
+Summary: A nose2 test runner plugin to deal with jira bugtracker
+Home-page: https://github.com/artragis/nose2-jira-plugin
+Author: François (artragis) Dambrine
+Author-email: artragis@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: unittest,testing,tests
+Platform: UNKNOWN
