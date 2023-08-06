@@ -1,0 +1,13 @@
+comp_match-0.0.0.dev0.dist-info/DESCRIPTION.rst,sha256=Fs4HUH8DkdvQjUclqy7LmtKTW2nh7K2sz5rKSQL_pM4,77
+comp_match-0.0.0.dev0.dist-info/METADATA,sha256=JGtkuffmDbmGWmGI2TFXfnZOnrfShE57ttSme7Z7e-0,705
+comp_match-0.0.0.dev0.dist-info/RECORD,,
+comp_match-0.0.0.dev0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+comp_match-0.0.0.dev0.dist-info/metadata.json,sha256=XJ_-9gLU2hzwXmyRdUQsAX3B5itBvIZo8-81TMbzMAc,831
+comp_match-0.0.0.dev0.dist-info/top_level.txt,sha256=6No6nM5OG8lDjtUOsFgSdUQ3xlxbdOmEVQxAeKOSkro,9
+matchers/__init__.py,sha256=USYbkKGCkyR1gvwpuTKRTbLb-WUMJQaCiAB47G0sbAg,326
+matchers/_utils.py,sha256=7zEMzq786_EsliQNd73De7ii8A_VGQlgXcPB3vquImQ,7411
+matchers/base.py,sha256=BN-t9ZEuptiWUBr5uOYYKFwyHGiCxp-g-aP-OTb1qgw,3334
+matchers/google_finance.py,sha256=awluP3JGcSHDGH2MtZk-PoJe3vkGPlFv_J5dB8KA7yg,3797
+matchers/yahoo_finance.py,sha256=ovbjy7bQOLU-FrxKOggsU5cN3yLpMpwNbNR4r0x0B8E,3182
+matchers/resources/exchanges.json,sha256=L50DuZOq70rwDYKFxE31o6LZvrsSDf0rt1r-g4hG9NU,15159
+matchers/resources/iso_countries.json,sha256=wE3V9DUl_GQdwn0gpupslzbx02qkFdFYlu05r-vFtLk,36692

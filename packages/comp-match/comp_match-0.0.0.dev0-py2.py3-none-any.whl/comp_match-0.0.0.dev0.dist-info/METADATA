@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: comp-match
+Version: 0.0.0.dev0
+Summary: Match company names to underline, stock symbols and more
+Home-page: https://github.com/franklingu/comp-match
+Author: franklingu
+Author-email: franklingujunchao@gmail.com
+License: MIT
+Keywords: match company name stock
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5, <4
+Requires-Dist: lxml (>=3.7.3)
+Requires-Dist: requests (>=2.13.0)
+
+[WIP]Match company names to stock symbols, compare company names, and etc.
+
+
