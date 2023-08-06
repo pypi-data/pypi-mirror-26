@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+aioamqp_ext/__init__.py
+aioamqp_ext/base.py
+aioamqp_ext/base_consumer.py
+aioamqp_ext/base_producer.py
+aioamqp_ext/serializer.py
+aioamqp_ext.egg-info/PKG-INFO
+aioamqp_ext.egg-info/SOURCES.txt
+aioamqp_ext.egg-info/dependency_links.txt
+aioamqp_ext.egg-info/requires.txt
+aioamqp_ext.egg-info/top_level.txt
