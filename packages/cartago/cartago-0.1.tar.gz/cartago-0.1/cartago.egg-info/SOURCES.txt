@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+CartaGo/PBXCarthageScriptBuildPhase.py
+CartaGo/__init__.py
+CartaGo/cartago.py
+cartago.egg-info/PKG-INFO
+cartago.egg-info/SOURCES.txt
+cartago.egg-info/dependency_links.txt
+cartago.egg-info/entry_points.txt
+cartago.egg-info/requires.txt
+cartago.egg-info/top_level.txt
