@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: Bucket-Limiter
+Version: 0.2.0
+Summary: Token bucket like limiter library based on redis storage
+Home-page: https://github.com/TheWaWaR/bucket-limiter-py
+Author: Qian Linfeng
+Author-email: thewawar@gmail.com
+License: MIT
+Description: 
+        Bucket Limiter
+        ----------------
+        
+        Example
+        ```````
+        
+        .. code:: python
+        
+            TODO:
+        
+        Links
+        `````
+        
+        * `Github <https://github.com/TheWaWaR/bucket-limiter-py>`
+        
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7

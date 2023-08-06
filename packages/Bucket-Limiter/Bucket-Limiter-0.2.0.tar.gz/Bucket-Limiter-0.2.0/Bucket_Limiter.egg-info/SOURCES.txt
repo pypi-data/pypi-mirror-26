@@ -1,0 +1,9 @@
+README.md
+setup.py
+Bucket_Limiter.egg-info/PKG-INFO
+Bucket_Limiter.egg-info/SOURCES.txt
+Bucket_Limiter.egg-info/dependency_links.txt
+Bucket_Limiter.egg-info/not-zip-safe
+Bucket_Limiter.egg-info/requires.txt
+Bucket_Limiter.egg-info/top_level.txt
+bucket_limiter/__init__.py
