@@ -1,0 +1,7 @@
+setup.py
+ibmBluegroup.egg-info/PKG-INFO
+ibmBluegroup.egg-info/SOURCES.txt
+ibmBluegroup.egg-info/dependency_links.txt
+ibmBluegroup.egg-info/not-zip-safe
+ibmBluegroup.egg-info/requires.txt
+ibmBluegroup.egg-info/top_level.txt
