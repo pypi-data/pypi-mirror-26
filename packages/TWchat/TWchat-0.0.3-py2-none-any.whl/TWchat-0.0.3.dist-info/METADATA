@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: TWchat
+Version: 0.0.3
+Summary: A Geek style client for WeChat
+Home-page: https://github.com/huanglizhuo/TWchat
+Author: huanglizhuo
+Author-email: huanglizhuo1991@gmail.com
+License: MIT
+Keywords: wechat,Geek,cli,terminal
+Platform: UNKNOWN
+Requires-Dist: itchat
+Requires-Dist: urwid
+
+UNKNOWN
+
+
