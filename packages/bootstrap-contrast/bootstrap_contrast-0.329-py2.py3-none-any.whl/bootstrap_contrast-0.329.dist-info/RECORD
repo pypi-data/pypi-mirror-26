@@ -1,0 +1,12 @@
+.DS_Store,sha256=LcVC_ptO01337P2ZusrSLKr2Aym7A6k7ZIKHMW6b9Aw,6148
+bootstrap_contrast/__init__.py,sha256=wDaek7SKQ70TarolFhIldnGZyaC1nSPBF82jW-TFTqw,53
+bootstrap_contrast/bootstrap_contrast.py,sha256=4wIua9ZpIuwM586Qd_Cm3KSt8luuYZQLkBC5wyYV5O0,27470
+bootstrap_contrast/bootstrap_tools.py,sha256=0M3pGLcf7kyiOr5f7pTLE999ep1L2r2sxo0CFGVks_k,11446
+bootstrap_contrast/misc_tools.py,sha256=xnXK-TuVs2mJ5dqOb4c0LGn70nVQD4xdAtCQECmeCZk,388
+bootstrap_contrast/plot_tools.py,sha256=kkrQGYqrgR4mezYqrFwEtpWHfgyavEIcBGrBvFD9hdU,3409
+bootstrap_contrast-0.329.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+bootstrap_contrast-0.329.dist-info/METADATA,sha256=6XpQyNofKasaU2RQM8AioSAz9B8a4yrCFtVru1bYxKI,303
+bootstrap_contrast-0.329.dist-info/RECORD,,
+bootstrap_contrast-0.329.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+bootstrap_contrast-0.329.dist-info/metadata.json,sha256=eZnfCzObL4o4_nLiYZf8jrwu7ljI3GrkUpIz-rrLsCA,479
+bootstrap_contrast-0.329.dist-info/top_level.txt,sha256=OqqaTFmbfwPffAoboB9r3Xk6wsRUlzxYN3SX2czMaO0,19
