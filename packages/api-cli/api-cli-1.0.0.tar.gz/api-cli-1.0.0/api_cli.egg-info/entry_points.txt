@@ -1,0 +1,3 @@
+[console_scripts]
+api-cli = api_cli.main:cli
+
