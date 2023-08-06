@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pysfmt
+Version: 0.0.3
+Summary: python wrapper of SIMD-oriented Fast Mersenne Twister
+Home-page: https://github.com/odanado/pysfmt
+Author: odanado
+Author-email: odan3240@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
