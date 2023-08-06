@@ -1,0 +1,12 @@
+MANIFEST.in
+readme.markdown
+setup.py
+Misspeller.egg-info/PKG-INFO
+Misspeller.egg-info/SOURCES.txt
+Misspeller.egg-info/dependency_links.txt
+Misspeller.egg-info/top_level.txt
+misspeller/__init__.py
+misspeller/misspeller.py
+misspeller/data/__init__.py
+misspeller/data/en.py
+misspeller/data/ru.py

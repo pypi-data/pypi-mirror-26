@@ -1,0 +1,41 @@
+Metadata-Version: 1.2
+Name: Misspeller
+Version: 0.1.dev0
+Summary: Module that makes typos
+Home-page: https://github.com/LARPY/misspeller
+Author: Igor Trofimov
+Author-email: mister.larpy@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: # MISSPELLER
+        
+        Module that makes typos.
+        
+        Works with Python 3.
+        
+        ## Installation
+            pip install misspeller
+        
+        ## Usage
+            >>> import misspeller
+        
+            >>> misspeller.change_text('Why so serious?')
+            'Whg so srriojs?'
+        
+            >>> misspeller.change_word('hello')
+            'yello'
+        
+            >>> misspeller.change_symbol('b')
+            'n'
+        
+Keywords: misspeller misspelling typo error
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
