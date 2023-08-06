@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: golumn
+Version: 0.3.0
+Summary: Graphical CSV viewer. `column` with a "g"
+Home-page: https://github.com/ddrscott/golumnpy
+Author: Scott Pierce
+Author-email: ddrscott@gmail.com
+License: MIT
+Keywords: csv development desktop wxWidgets
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: MacOS X :: Cocoa
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: License :: OSI Approved
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Desktop Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: wxPython
+
+Golumn
+------
+
+Golumn is a visual CSV viewer. `column` with a "g". It behaves similar to the
+`column` command, but with a graphic interface.
+
+
