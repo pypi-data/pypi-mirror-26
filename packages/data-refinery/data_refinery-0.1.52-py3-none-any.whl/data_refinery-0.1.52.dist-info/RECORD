@@ -1,0 +1,13 @@
+data_refinery-0.1.52.dist-info/DESCRIPTION.rst,sha256=gkvQfnrd6ZXcOU4ZsyQRkRzsTpA_lBg2_zxsMrqOsL0,1579
+data_refinery-0.1.52.dist-info/METADATA,sha256=rWT5bAiXpYPdMAObKJ0DVlFdr15WYhPIoKgpiQ3KFbM,2188
+data_refinery-0.1.52.dist-info/RECORD,,
+data_refinery-0.1.52.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+data_refinery-0.1.52.dist-info/metadata.json,sha256=z5lVBlUyF9X3OOr9gXaPWhIgKr9nHwZdyOMXOeMOn-A,777
+data_refinery-0.1.52.dist-info/top_level.txt,sha256=1tujy9Fe3nMWiTNdPGIun8JjVXznAggGen1HEVkaaB4,13
+datarefinery/FieldOperations.py,sha256=8QI6MtiQwTovnjODRJUwduLv7og8WZs6-LHCP8HftfM,10207
+datarefinery/Tr.py,sha256=6K-m-rSfBZ8CXHnY6-veAHzpw8YVZGrjQClYo1G_-7U,2053
+datarefinery/__init__.py,sha256=a0I1dwCuD4FDNvZFSYf2-kgU0iBtcnnrBta6PjuB7l8,588
+datarefinery/tuple/Formats.py,sha256=B8gW-dSptjx9-419Qr-N2nRD8lbZ3aDMQGI3LIAVKRw,2383
+datarefinery/tuple/TupleDSL.py,sha256=Lp7vj-UkhU_MlUDf95NaTFFhyECoEqyvjO5XDeJN84M,2382
+datarefinery/tuple/TupleOperations.py,sha256=aUS7UiKsSbz4Kyiktj8M4Imm-iTxd2PF60n28n2Lh_Q,4644
+datarefinery/tuple/__init__.py,sha256=kHP_6uYxs2Czl67YwTRK4fxl-DUWshq6nJRVYcZpl4M,568
