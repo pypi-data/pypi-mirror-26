@@ -1,0 +1,76 @@
+Metadata-Version: 1.1
+Name: fileNameTranslation
+Version: 0.1
+Summary: This package will allow you to translate your file names to you desire language
+Home-page: https://github.com/aviadlevy/fileNameTranslation/
+Author: Aviad Levy
+Author-email: aviadlevy1@gmail.com
+License: LGPLv3
+Description: File Name Translation
+        =====================
+        
+        Auto-Translate-File-Names
+        -------------------------
+        
+        .. image:: http://img.shields.io/pypi/v/fileNameTranslation.svg
+            :target: https://pypi.python.org/pypi/fileNameTranslation
+            :alt: Latest Version
+        
+        
+        .. image:: http://img.shields.io/badge/license-LGPLv3-blue.svg
+            :target: https://pypi.python.org/pypi/fileNameTranslation
+            :alt: LGPLv3 License
+        
+        
+        This package will allow you to translate the names of your files
+        
+        
+        Install
+        -------
+        
+        Install with `pip <http://www.pip-installer.org/>`_::
+        
+            $ pip install fileNameTranslation
+        
+        Upgrade
+        -------
+        
+        Upgrade with `pip <http://www.pip-installer.org/>`_::
+        
+            $ pip install fileNameTranslation --upgrade
+        
+        Usage
+        -----
+        
+        Just run cmd (WinKey + R, then type *cmd* and Enter) then::
+        
+            $ fileNameTranslation -h
+        
+        
+        TODO List:
+        ----------
+        -
+        
+        :Author:
+            Aviad Levy
+        
+        :Version: 0.1
+        
+        :License: `LGPLv3 license <http://www.gnu.org/licenses/lgpl.html>`_
+        
+        
+        ChangeLog
+        =========
+        
+        0.1 (2017-30-10)
+        ----------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Desktop Environment :: File Managers

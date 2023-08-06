@@ -1,0 +1,3 @@
+[console_scripts]
+fileNameTranslation = fileNameTranslation.__main__:main
+
