@@ -1,0 +1,3 @@
+[plover.gui.qt.tool]
+layout_display = layout_display.layout_display:LayoutDisplay
+

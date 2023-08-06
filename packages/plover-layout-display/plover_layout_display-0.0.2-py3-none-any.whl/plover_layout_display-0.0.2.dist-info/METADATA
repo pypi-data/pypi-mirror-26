@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: plover-layout-display
+Version: 0.0.2
+Summary: Display last chord hit in Plover
+Home-page: https://github.com/morinted/plover_layout_display
+Author: Ted Morin
+Author-email: morinted@gmail.com
+License: GNU General Public License v2 or later (GPLv2+)
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: plover (>=4.0.0.dev2)
+
+Plover Layout Display
+=====================
+
+Display the last stroke in a visual format for English stenography.
+
+.. image:: https://i.imgur.com/678YpG9.png
+
+Current Features
+----------------
+
+- Display the last stroke that was hit.
+
+Wishlist
+--------
+
+**Pull requests are welcome!**
+
+This plugin isn't high on my priority list so please feel free to implement any of the below, or suggest new features.
+
+- Add a settings area.
+- Add optional key labeling.
+- Support customizing the colors.
+- Add a fade for the last chord to a user-specified time.
+- Support other theories and custom layouts.
+
+License
+-------
+
+This plugin is licensed under GPLv2, or any later version.
+
+
