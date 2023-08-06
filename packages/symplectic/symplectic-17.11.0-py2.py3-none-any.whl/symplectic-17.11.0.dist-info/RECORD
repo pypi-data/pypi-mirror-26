@@ -1,0 +1,15 @@
+symplectic/__init__.py,sha256=24_WzQScZ1iQNPrgGrTxsSNeHAS4wtpbJfCGH3jiuHE,178
+symplectic/_version.py,sha256=RnsfTpc7U6OxvHkb6SKdgY7pIHMA9PBmdxQGi7i889Y,270
+symplectic/jsonformat.py,sha256=GRbk6fPXU2xbeobzorIlJoR5UmQlVNf0KrHax7HbdL8,534
+symplectic/posts.py,sha256=IkOKsi43G6XlUFtKLGuiaJCQpjUizQ5qt7nvQ8Oj4Rg,1238
+symplectic/render.py,sha256=6Sp_MraZ17cJbUNihIeN3EMYy9woB9D0k7YZTe-X1AU,1995
+symplectic/rest.py,sha256=ZW29ExqJagqkiXl-t-kJhdiFx_ihHtabonG0lN54TcQ,1714
+symplectic/basic/list.html,sha256=OgRJOi89Gdzw33baqShPdlkErCyXEyHSFA7krDhbbuQ,718
+symplectic/basic/post.html,sha256=BR6x74OAf_8kVLI3ewYKmDtM_q4bkfFskfDP-U6TN8Q,1050
+symplectic/basic/river.html,sha256=FcS_aZg0HoBbfQWl0FdAw7AhT_MdFwVBsjZN4OspVdo,1131
+symplectic-17.11.0.dist-info/DESCRIPTION.rst,sha256=aqEA9V6kfxfifyVWuwAnW44xOUJ90ETN87PXTA5APM0,88
+symplectic-17.11.0.dist-info/METADATA,sha256=_2bRfNwAPY5eMYvJuxETEXSU5vP7VkQ4pERjIouFO2M,396
+symplectic-17.11.0.dist-info/RECORD,,
+symplectic-17.11.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+symplectic-17.11.0.dist-info/metadata.json,sha256=t3vE7drAD9KvbkgGjDDbzPEMFvgTkLHM2iJ5g2vkZoA,474
+symplectic-17.11.0.dist-info/top_level.txt,sha256=AqsA3H_nOglDB6dWX-YWHRQF4bo9M2CyTbcfW1-nTgw,11

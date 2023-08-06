@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: symplectic
+Version: 17.11.0
+Summary: symplectic: generating blogs
+Home-page: UNKNOWN
+Author: Moshe Zadka
+Author-email: zadka.moshe@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: attrs
+Requires-Dist: incremental
+Requires-Dist: chameleon
+
+Symplectic
+==========
+
+A blog generation system.
+Rigid some ways.
+Flexible in others.
+
+

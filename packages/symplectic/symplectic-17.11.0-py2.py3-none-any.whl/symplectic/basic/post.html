@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="master"
+      tal:define="master load:master.html">
+  <head>
+    <title tal:content="metadata.title">Blog Template for Bootstrap</title>
+  </head>
+  <body>
+        <div metal:fill-slot="main">
+          <div class="blog-post">
+            <h2 class="blog-post-title" tal:content="post.title">Sample blog post</h2>
+            <p class="blog-post-meta"><span tal:content="post.formatted_date">January 1, 2014</span> by <span tal:content="post.author">Mark</span></p>
+
+            <div tal:content="structure:post.contents">
+            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+            </div>
+          </div><!-- /.blog-post -->
+        </div> <!-- /slot=main -->
+  </body>
+</html>
