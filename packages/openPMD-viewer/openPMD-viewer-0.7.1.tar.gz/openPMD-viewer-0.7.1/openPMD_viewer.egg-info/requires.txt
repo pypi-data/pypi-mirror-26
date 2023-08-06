@@ -1,0 +1,10 @@
+numpy
+scipy
+h5py
+
+[GUI]
+ipywidgets
+matplotlib
+
+[plot]
+matplotlib
