@@ -1,0 +1,3 @@
+[pytest11]
+jasmine = pytest_jasmine
+

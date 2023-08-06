@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pytest-jasmine
+Version: 0.0.2
+Summary: Run jasmine tests from your pytest test suite
+Home-page: https://github.com/dwoz/pytest-jasmine
+Author: Daniel Wozniak
+Author-email: dan@woz.io
+License: UNKNOWN
+Download-URL: https://github.com/dwoz/pytest-jasmine/archive/0.0.2.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: testing,pytest,plugin,fixture
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Framework :: Pytest
