@@ -1,0 +1,5 @@
+inflection
+Jinja2
+pyprelude
+pysimplevcs
+pyyaml
