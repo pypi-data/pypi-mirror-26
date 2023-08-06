@@ -1,0 +1,3 @@
+dlib
+scipy
+numpy
