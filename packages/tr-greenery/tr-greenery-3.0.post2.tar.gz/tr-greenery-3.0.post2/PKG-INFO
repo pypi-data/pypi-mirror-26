@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: tr-greenery
+Version: 3.0.post2
+Summary: Greenery allows manipulation of regular expressions as finite state machines
+Home-page: https://github.com/ferno/greenery
+Author: ferno
+Author-email: ferno.code@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: re regex regexp regular expression deterministic finite state machine automaton fsm dfsm fsa dfsa greenery
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
