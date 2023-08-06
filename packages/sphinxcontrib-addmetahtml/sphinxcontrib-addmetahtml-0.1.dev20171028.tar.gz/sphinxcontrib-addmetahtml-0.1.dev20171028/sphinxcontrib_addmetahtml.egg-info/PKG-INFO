@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sphinxcontrib-addmetahtml
+Version: 0.1.dev20171028
+Summary: Sphinx "addmetahtml" extension
+Home-page: https://github.com/0xHiteshPatel/sphinxcontrib-addmetahtml
+Author: Hitesh Patel
+Author-email: hp@hiteshpatel.net
+License: BSD
+Download-URL: http://pypi.python.org/pypi/sphinxcontrib-addmetahtml
+Description: Sphinx extension that enables addition of user-defined HTML to docs
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
