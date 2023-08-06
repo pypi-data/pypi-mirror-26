@@ -1,0 +1,6 @@
+python-socketio
+aiohttp
+socketIO-client
+retrying
+logzero
+zeroconf
