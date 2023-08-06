@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: tempus
+Version: 1.1.0
+Summary: Tempus est de essentia
+Home-page: https://github.com/chunkhang/tempus
+Author: Marcus Mu
+Author-email: chunkhang@gmail.com
+License: UNLICENSE
+Description: UNKNOWN
+Keywords: tempus
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
