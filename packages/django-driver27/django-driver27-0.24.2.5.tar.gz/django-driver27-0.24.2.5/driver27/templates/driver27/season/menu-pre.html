@@ -1,0 +1,10 @@
+{% load i18n %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ season.competition.get_absolute_url }}">{{ season.competition }}</a>
+    </li>
+    <li class="nav-item">
+        <a><<</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ season.get_absolute_url }}">{{ season }}</a>
+    </li>

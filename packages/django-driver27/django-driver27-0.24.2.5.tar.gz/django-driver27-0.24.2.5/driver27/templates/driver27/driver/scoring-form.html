@@ -1,0 +1,26 @@
+{% load i18n %}
+    {% if scoring_list %}
+        <div class="change_punctuation">
+            {% if season %}
+                <form method="POST" action="{% url 'driver27:season:driver' season.competition.slug season.year %}">
+             {% elif competition %}
+                <form method="POST" action="{% url 'driver27:competition:driver' competition.slug %}">
+             {% else %}
+                <form method="POST" action="{% url 'driver27:global:driver' %}">
+             {% endif %}
+            {% csrf_token %}
+                <div class="form-group">
+                    <select id="scoring" name="scoring" class="form-control input-sm" >
+                    <option value="">---</option>
+                    {% for sc_code, sc_label in scoring_list %}
+                    <option value="{{ sc_code }}" {% if sc_code == scoring_code %}selected{% endif %}>{{ sc_label }}</option>
+                    {% endfor %}
+                    </select>
+                    <input type="checkbox" id="by_season" name="by_season" value="1" {% if by_season %}checked{% endif %}><label for="by_season">{% trans 'Top By season' %}</label>
+                    <input type="submit" value="Change punctuation" class="btn btn-xs btn-primary">
+                </div>
+
+            </form>
+        </div>
+
+    {% endif %}

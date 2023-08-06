@@ -1,0 +1,39 @@
+{% load i18n %}
+{% if rank %}
+    <table class="table table-condensed table-striped table-hover">
+        <thead>
+        <tr>
+
+
+            {% if by_season %}
+                <th class="col-md-3">{% trans 'Points' %}</th>
+                <th class="col-md-7">{% trans 'Team' %}</th>
+                <th class="col-md-2">{% trans 'Season' %}</th>
+            {% else %}
+
+                <th class="col-md-4">{% trans 'Points' %}</th>
+                <th class="col-md-8">{% trans 'Team' %}</th>
+            {% endif %}
+        </tr>
+        </thead>
+        {% for entry in rank %}
+            <tr>
+                <td>{{ entry.points }}</td>
+                <td>
+                    {% with team=entry.team %}
+                        <i class="flag2x {{ team.country.flag_css }}"></i>
+                        <a href="{{ team.get_absolute_url }}">{{ team }}</a>
+                    {% endwith %}
+
+                </td>
+                {% if by_season %}
+                    <td>{{ entry.season }}</td>
+
+                {% endif %}
+            </tr>
+        {% endfor %}
+
+    </table>
+{% else %}
+    <p>No teams</p>
+{% endif %}

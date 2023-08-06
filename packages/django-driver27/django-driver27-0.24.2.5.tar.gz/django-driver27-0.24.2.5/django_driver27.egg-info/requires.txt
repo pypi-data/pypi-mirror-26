@@ -1,0 +1,8 @@
+six
+djangorestframework>=3.7.0
+django-swapfield
+django-filter
+django-countries
+python-slugify
+django-bootstrap3
+django-tabbed-admin
