@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: cognious
+Version: 1.2
+Summary: Cognious API Python Client
+Home-page: https://github.com/tarunpaul/cognious-client-python
+Author: Tarun Paul
+Author-email: tarunpaul@cognious.com
+License: Apache 2.0
+Download-URL: https://github.com/tarunpaul/cognious-client-python/tarball/1.2
+Description: UNKNOWN
+Keywords: cognious,api,machinelearning,imagerecognition,sentimentanalysis
+Platform: UNKNOWN
