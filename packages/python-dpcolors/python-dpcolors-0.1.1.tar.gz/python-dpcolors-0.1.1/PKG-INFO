@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: python-dpcolors
+Version: 0.1.1
+Summary: library to convert Xonotic color strings to various other formats
+Home-page: https://github.com/nsavch/python-dpcolors
+Author: Nick Savchenko
+Author-email: nsavch@gmail.com
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: # python-dpcolors
+        
+        [![Build Status](https://travis-ci.org/nsavch/python-dpcolors.svg?branch=master)](https://travis-ci.org/nsavch/python-dpcolors)
+        
+        Python library for converting DarkPlaces color strings to various other formats
+        
+        Supports the following conversions
+        
+         * dp -> irc
+         * dp -> ansi 8 bit
+         * dp -> ansi 24 bit
+         * irc -> dp
+         * irc -> ansi 8 bit
+         * irc -> ansi 24 bit
+        
+        # Installation
+        
+        ```bash
+        pip install python-dpcolors
+        ```
+        
+        # Example usage
+        
+        ```python
+        from dpcolors import ColorString
+        
+        cs = ColorString.from_dp('^3hello')
+        print(cs.to_irc())
+        print(cs.to_ansi_8bit())
+        print(cs.to_ansi_24bit())
+        
+        cs = ColorString.from_irc('\x0305hello')
+        print(cs.to_dp())
+        ```
+        
+Keywords: xonotic
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Games/Entertainment
