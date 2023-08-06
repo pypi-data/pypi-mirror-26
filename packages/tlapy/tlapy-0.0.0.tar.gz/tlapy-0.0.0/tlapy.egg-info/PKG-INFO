@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tlapy
+Version: 0.0.0
+Summary: Python tools for working with TLA+ specifications.
+Home-page: https://github.com/johnyf/tlapy
+Author: Ioannis Filippidis
+Author-email: jfilippidis@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
