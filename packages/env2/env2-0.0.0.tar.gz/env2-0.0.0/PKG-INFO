@@ -1,0 +1,79 @@
+Metadata-Version: 1.1
+Name: env2
+Version: 0.0.0
+Summary: os.environ on steroids
+Home-page: https://github.com/memogarcia/env2
+Author: Memo Garcia
+Author-email: root@memogarcia.io
+License: UNKNOWN
+Description: # Env2
+        
+        os.environ on stereoids
+        
+        env2 allows raising errors on missing environment variables without too much bolierplate code. This is very useful when developing microservices that depends on environment variables.
+        
+        ## How it works
+        
+        With env2 you can replace this:
+        
+        ```python
+        import os
+        
+        var = os.environ.get('key', None)
+        if not var:
+            raise Exception(f'{key} not found in environment variables')
+        return var
+        ```
+        
+        With this:
+        
+        ```python
+        from env2 import env2
+        
+        var = env2('key')
+        ```
+        
+        env2 will automatically raise on a missing key, to avoid that:
+        
+        ```python
+        from env2 import env2
+        
+        var = env2('key', raise_error=False)
+        ```
+        
+        env2 allows to set default values as well:
+        
+        ```python
+        from env2 import env2
+        
+        var = env2('key', default='key2')
+        ```
+        
+        ## License
+        
+        This software is under [WTFPL](http://www.wtfpl.net) license
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: NetBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix

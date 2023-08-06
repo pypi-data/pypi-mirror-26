@@ -1,0 +1,13 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.md
+env2.py
+setup.cfg
+setup.py
+env2.egg-info/PKG-INFO
+env2.egg-info/SOURCES.txt
+env2.egg-info/dependency_links.txt
+env2.egg-info/not-zip-safe
+env2.egg-info/pbr.json
+env2.egg-info/top_level.txt
