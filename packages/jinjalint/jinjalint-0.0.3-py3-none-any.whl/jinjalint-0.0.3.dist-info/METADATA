@@ -1,0 +1,64 @@
+Metadata-Version: 2.0
+Name: jinjalint
+Version: 0.0.3
+Summary: A linter for Jinja-like templates
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (==17.2.0)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: parsy (==1.1.0)
+
+
+# jinjalint
+
+A prototype linter which checks the indentation and the correctness of
+[Jinja][jinja]-like/HTML templates. It works with
+[Django’s templates][djangotemplates] too, it should work with
+[Twig](https://twig.symfony.com/) and similar template languages.
+
+This linter parses both HTML and Jinja tags and will report mismatched
+tags and indentation errors:
+
+```html
+<div>
+    {% if something %}
+    </div>
+{% endif %}
+```
+
+```html
+<div>
+    <span>
+    </div>
+</span>
+```
+
+```html
+  {% if something %}
+ <div> not indented properly
+      </div>
+   {% endif %}
+```
+
+```html
+{% if something %}<a href="somewhere">{% endif %}
+    <p>something</p>
+{% if not something %}</a>{% endif %}
+```
+
+This is a work in progress. Feel free to contribute :upside_down_face:
+
+[jinja]: http://jinja.pocoo.org/docs/2.9/
+[djangotemplates]: https://docs.djangoproject.com/en/1.11/ref/templates/language/
+
+
