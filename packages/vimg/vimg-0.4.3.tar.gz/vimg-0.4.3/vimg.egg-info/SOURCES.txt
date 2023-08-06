@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+vimg/__init__.py
+vimg/canvas.py
+vimg/image.py
+vimg/main.py
+vimg/main2.py
+vimg.egg-info/PKG-INFO
+vimg.egg-info/SOURCES.txt
+vimg.egg-info/dependency_links.txt
+vimg.egg-info/entry_points.txt
+vimg.egg-info/not-zip-safe
+vimg.egg-info/requires.txt
+vimg.egg-info/top_level.txt
