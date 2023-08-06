@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: bruno
+Version: 0.0.1
+Summary: Bruno Rocha Utilities, Magics and Gambiarras
+Home-page: https://github.com/rochacbruno/bruno
+Author: Bruno Rocha
+Author-email: rochacbruno@gmail.com
+License: ISC license
+Description: UNKNOWN
+Keywords: bruno
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

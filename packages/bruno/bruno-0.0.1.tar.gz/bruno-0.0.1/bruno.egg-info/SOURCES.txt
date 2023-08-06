@@ -1,0 +1,10 @@
+setup.py
+bruno/__init__.py
+bruno/cli.py
+bruno.egg-info/PKG-INFO
+bruno.egg-info/SOURCES.txt
+bruno.egg-info/dependency_links.txt
+bruno.egg-info/entry_points.txt
+bruno.egg-info/not-zip-safe
+bruno.egg-info/requires.txt
+bruno.egg-info/top_level.txt
