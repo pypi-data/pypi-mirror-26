@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+bin/img2epd
+pyepd/DisplayPanelController.py
+pyepd/ImageHandler.py
+pyepd/__init__.py
+pyepd.egg-info/PKG-INFO
+pyepd.egg-info/SOURCES.txt
+pyepd.egg-info/dependency_links.txt
+pyepd.egg-info/not-zip-safe
+pyepd.egg-info/requires.txt
+pyepd.egg-info/top_level.txt
