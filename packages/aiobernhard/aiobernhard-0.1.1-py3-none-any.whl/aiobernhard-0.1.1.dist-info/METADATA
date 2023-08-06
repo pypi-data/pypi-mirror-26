@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: aiobernhard
+Version: 0.1.1
+Summary: An async bernhard client
+Home-page: https://github.com/thebenwaters/aio-bernhard
+Author: Ben Waers
+Author-email: bsawyerwaters@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: protobuf
+
+UNKNOWN
+
+
