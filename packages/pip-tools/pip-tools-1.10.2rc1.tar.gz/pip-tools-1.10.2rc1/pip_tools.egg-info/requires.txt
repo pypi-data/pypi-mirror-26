@@ -1,0 +1,7 @@
+click>=6
+first
+six
+setuptools
+
+[:python_version < "3.0"]
+contextlib2
