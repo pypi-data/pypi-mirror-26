@@ -1,0 +1,17 @@
+review/__init__.py,sha256=WVCf2gaRalO0i71bznMLNb7Neapd0dhvotmuw1PACM0,33
+review/get_review_ids.py,sha256=nNNQ-5rtQFBq6j6n-2J_uvZ4-wQRPvshOCkA0_V1qmc,8223
+review/review.py,sha256=T8ZBfy5c83w9rzgKcG8HGi1rQPzU6n0oKFW2aXuhiRk,3664
+review/static/README.txt,sha256=bdJ-FpDeHWYyrxLCGpUvvscSMVrci-pKHC5R7shvg9M,767
+review/static/css/review.css,sha256=nlJHTUylUXHh6G6JOLDydZOc1_AKm5RaiGdfkNq95jk,586
+review/static/html/no_review.html,sha256=VPl2HF3_z-GFfNrPMFihexlYuJNt5-LKTY8UjJKMnuI,190
+review/static/html/review.html,sha256=8Sk3NTl1lEkLF69IlkCU2Gqb2wRy31VzMePY28ArYPI,180
+review/static/html/review_content_problem.html,sha256=6SUxDh7UMVwA3r1ZIZXf6peJ2am1JDlAJEWjYlULrik,567
+review/static/html/review_content_vertical.html,sha256=qjJ-N4bIvrZruJCzuNlmqarMo3SdD_bn1Sori1BAUdQ,432
+review/static/js/src/review.js,sha256=nT1gIoJ1wWjvlS_kTN4XyNOSwdm6KPAyeANSj_Ymla8,2652
+xblock_review-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+xblock_review-0.1.dist-info/METADATA,sha256=RbOISdJ5CV3PM2sXXTE5hS3M5Z-fbh8A8_GZxd7V_eI,240
+xblock_review-0.1.dist-info/RECORD,,
+xblock_review-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+xblock_review-0.1.dist-info/entry_points.txt,sha256=kNwE9pKKNjtDIalASARSBX2J_CZsRfUkHnKp0B30v58,42
+xblock_review-0.1.dist-info/metadata.json,sha256=_yNxBtgCHm5dLN3GsWg4wZwdN5j-_H-NaLFvmARAnmI,393
+xblock_review-0.1.dist-info/top_level.txt,sha256=RSt7ZC4yXLK1sgrChTatqLCtMSIXqYq3_yMzBgO2MSY,7
