@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_cache_friendly_timestamp_signer/__init__.py
+django_cache_friendly_timestamp_signer/signer.py
+django_cache_friendly_timestamp_signer.egg-info/PKG-INFO
+django_cache_friendly_timestamp_signer.egg-info/SOURCES.txt
+django_cache_friendly_timestamp_signer.egg-info/dependency_links.txt
+django_cache_friendly_timestamp_signer.egg-info/not-zip-safe
+django_cache_friendly_timestamp_signer.egg-info/top_level.txt

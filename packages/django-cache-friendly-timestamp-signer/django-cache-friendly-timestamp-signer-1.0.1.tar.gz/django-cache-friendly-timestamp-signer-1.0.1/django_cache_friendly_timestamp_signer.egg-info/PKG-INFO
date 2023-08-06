@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: django-cache-friendly-timestamp-signer
+Version: 1.0.1
+Summary: Signed URLs that can be kept in browser's cache
+Home-page: https://github.com/PokaInc/django-cache-friendly-timestamp-signer
+Author: Raphael Riel
+Author-email: rriel@poka.io
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: signed url timestamp cache django
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
