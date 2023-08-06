@@ -1,0 +1,5 @@
+setup.py
+nbcrawler.egg-info/PKG-INFO
+nbcrawler.egg-info/SOURCES.txt
+nbcrawler.egg-info/dependency_links.txt
+nbcrawler.egg-info/top_level.txt

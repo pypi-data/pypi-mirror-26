@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: nbcrawler
+Version: 0.0.1
+Summary: A crawler framework for NewBanker
+Home-page: http://github.com/zhnlk/nbcrawler
+Author: zhnlk
+Author-email: tomleader0828@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: quant quantitative investment trading algotrading
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
