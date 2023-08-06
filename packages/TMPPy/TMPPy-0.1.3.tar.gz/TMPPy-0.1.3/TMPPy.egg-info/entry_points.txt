@@ -1,0 +1,3 @@
+[console_scripts]
+py2tmp = py2tmp:main
+
