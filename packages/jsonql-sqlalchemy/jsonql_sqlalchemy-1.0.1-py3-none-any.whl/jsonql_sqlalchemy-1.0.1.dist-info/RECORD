@@ -1,0 +1,10 @@
+jsonql_sqlalchemy/__init__.py,sha256=pxGwIJ2k4uw3RvbwSR0TqGUdS7BqBYOvj4zXjhWdEKM,198
+jsonql_sqlalchemy/query.py,sha256=ZLwGP2ficCoEpgXFTeMcGJjYVjrg0FJpTgkOownMfb8,4407
+jsonql_sqlalchemy/types.py,sha256=Ut3hoZnpw_93-pHEjuzG4VsnXjvwBaCHMIwBg8Bv0SY,4610
+jsonql_sqlalchemy/utils.py,sha256=U5gMPusfLE3yUlIJQ3p0f7lRkGWFFgGdlIZXywQzMN8,1902
+jsonql_sqlalchemy-1.0.1.dist-info/DESCRIPTION.rst,sha256=XVokKqb_OV8-Cb99qaCGZY4vN92pPEea3UbaDNBiT2s,55
+jsonql_sqlalchemy-1.0.1.dist-info/METADATA,sha256=3oVm0_Wna9ryB0xT1vxdUsiCZuCXVzAtAhSMoo6IDMo,748
+jsonql_sqlalchemy-1.0.1.dist-info/RECORD,,
+jsonql_sqlalchemy-1.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+jsonql_sqlalchemy-1.0.1.dist-info/metadata.json,sha256=nDH3X3lw8HYZPubN9chN88oq1KhrgYeUrfQ6PHnaH3k,893
+jsonql_sqlalchemy-1.0.1.dist-info/top_level.txt,sha256=dI9Po6_hczEGd4gFMvIjdH_GjsUI6UPkr67qpGpZhPE,18

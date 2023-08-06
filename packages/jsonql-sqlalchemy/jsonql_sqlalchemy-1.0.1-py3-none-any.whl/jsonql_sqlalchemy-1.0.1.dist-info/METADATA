@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: jsonql-sqlalchemy
+Version: 1.0.1
+Summary: Simple JSON-Based CRUD Query Language for SQLAlchemy
+Home-page: https://github.com/kde713/jsonql-sqlalchemy
+Author: kde713
+Author-email: kde713@gmail.com
+License: MIT
+Keywords: query json orm sqlalchemy jsonql
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: SQLAlchemy
+
+Simple JSON-Based CRUD Query Language for SQLAlchemy
+
+
