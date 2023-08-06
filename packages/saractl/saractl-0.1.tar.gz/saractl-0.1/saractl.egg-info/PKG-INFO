@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: saractl
+Version: 0.1
+Summary: S.A.R.A.'s userspace utilities.
+Home-page: https://smeso.it/sara
+Author: Salvatore Mesoraca
+Author-email: s.mesoraca16@gmail.com
+License: GPLv3+
+Description: =======
+        saractl
+        =======
+        
+        `saractl` is the userspace counterpart of the S.A.R.A. LSM.
+        You can find more information about S.A.R.A. at <https://smeso.it/sara>.
+        
+        Licensing
+        =========
+        `saractl` is released under `GPLv3 <https://www.gnu.org/licenses/gpl-3.0.html>`_ or later.
+        
+        Issues
+        ======
+        For any problem please open an issue `here <https://github.com/smeso/saractl/issues>`_
+        
+Keywords: linux lsm linux-security-module sara security w^x
+Platform: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Classifier: Topic :: Utilities

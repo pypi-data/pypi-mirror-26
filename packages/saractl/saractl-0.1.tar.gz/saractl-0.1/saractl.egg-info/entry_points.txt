@@ -1,0 +1,4 @@
+[console_scripts]
+sara-xattr = sara.main:main [xattr]
+saractl = sara.main:main
+

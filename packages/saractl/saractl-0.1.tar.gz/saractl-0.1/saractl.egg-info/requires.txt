@@ -1,0 +1,10 @@
+
+
+[xattr]
+pyxattr
+
+[elfcheck]
+pyelftools
+
+[capabilities]
+pythonprctl
