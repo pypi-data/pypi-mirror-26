@@ -1,0 +1,11 @@
+oauth2_sso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oauth2_sso/apps.py,sha256=_YA6dNSKVqqdA0_wT0jdh9GRbtWN6x2FmhygJWto4V8,91
+oauth2_sso/backends.py,sha256=8-5toS3cnQkccOJVgfigNtQaexgbnJkRW8j_C2LRzH0,4622
+oauth2_sso/urls.py,sha256=OeDXdY88E6QK5m8cr52OdCrWy00NAQDqqJtTQtipK0s,227
+oauth2_sso/views.py,sha256=j3zkuY3j1gA9Zxw2YBxWoiDHerw1TI_5-UvB4E8n5pE,1569
+oauth2_sso-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+oauth2_sso-0.2.0.dist-info/METADATA,sha256=n66VMcApySOEMxAKD6WZ6Gn35hIFyr6zamHT81G4k7o,1240
+oauth2_sso-0.2.0.dist-info/RECORD,,
+oauth2_sso-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+oauth2_sso-0.2.0.dist-info/metadata.json,sha256=S3h-HiN45IUlwuHsmreECeH7-KIGgW1SR_lg45Idi_M,1366
+oauth2_sso-0.2.0.dist-info/top_level.txt,sha256=Z-BxFyf-0VoZ03zLJ2MhPHc-tQGZTa_MS7IbSeAuC7M,11
