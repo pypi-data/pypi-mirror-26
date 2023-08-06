@@ -1,0 +1,7 @@
+setup.py
+hutil/__init__.py
+hutil.egg-info/PKG-INFO
+hutil.egg-info/SOURCES.txt
+hutil.egg-info/dependency_links.txt
+hutil.egg-info/not-zip-safe
+hutil.egg-info/top_level.txt
