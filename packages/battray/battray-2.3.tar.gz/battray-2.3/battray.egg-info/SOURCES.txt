@@ -1,0 +1,16 @@
+setup.py
+battray/__init__.py
+battray/platforms.py
+battray/sound.py
+battray.egg-info/PKG-INFO
+battray.egg-info/SOURCES.txt
+battray.egg-info/dependency_links.txt
+battray.egg-info/requires.txt
+battray.egg-info/top_level.txt
+data/alert.wav
+data/battery.png
+data/battrayrc.py
+data/charging.png
+data/connected.png
+data/error.png
+data/icon.png

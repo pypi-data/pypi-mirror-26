@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: battray
+Version: 2.3
+Summary: simple tray icon to show your laptop’s battery status.
+Home-page: http://arp242.net/code/battray
+Author: Martin Tournoij
+Author-email: martin@arp242.net
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Battray is a fairly simple tray icon to show your laptop’s battery status.
+        It's simple, easy, fairly environment-independent, and ‘just works’ without
+        tons of {Gnome,KDE,..} dependencies.
+        
+        You can also configure it to play annoying sounds if your battery is getting low,
+        dim the screen when you switch from AC to battery, etc.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
