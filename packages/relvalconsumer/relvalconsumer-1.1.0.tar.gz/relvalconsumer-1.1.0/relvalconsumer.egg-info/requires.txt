@@ -1,0 +1,6 @@
+fedfind
+fedmsg[consumers]
+mwclient
+rpm-python
+setuptools
+wikitcms
