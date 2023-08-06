@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: plytype
+Version: 0.3.1
+Summary: PLY with get_type and set_type
+Home-page: UNKNOWN
+Author: Jian Wang
+Author-email: yt4766269@126.com
+License: MIT License
+Description: UNKNOWN
+Keywords: python,lexer,parser
+Platform: linux
