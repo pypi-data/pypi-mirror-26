@@ -1,0 +1,175 @@
+Metadata-Version: 1.0
+Name: magicdir
+Version: 0.1.2a
+Summary: intuitive python directory tree management for all
+Home-page: https://github.com/jvrana/magicdir
+Author: Justin Dane Vrana
+Author-email: justin.vrana@gmail.com
+License: MIT
+Description: |travis build| |Coverage Status| |PyPI version|
+        
+        .. figure:: images/module_icon.png?raw=true
+           :alt: module\_icon
+        
+           module\_icon
+        
+        Build/Coverage Status
+        ^^^^^^^^^^^^^^^^^^^^^
+        
+        +-------------------+------------------+---------------------+
+        | Branch            | Build            | Coverage            |
+        +===================+==================+=====================+
+        | **master**        | |travis build|   | |Coverage Status|   |
+        +-------------------+------------------+---------------------+
+        | **development**   | |travis build|   | |Coverage Status|   |
+        +-------------------+------------------+---------------------+
+        
+        TreeHouse
+        =========
+        
+        Dealing with paths and directories can be a pain. **Treehouse** allows
+        you to build directory trees by treating your directory tree as a
+        first-class object.
+        
+        So fancy. So perfect. Forever.
+        
+        .. code:: python
+        
+            from treehouse import TreeHouse
+        
+            env = TreeHouse('bin')
+            env.add('level1')
+        
+            # paths can be accessed as attributes
+            env.level1
+        
+            # paths and attributes are heirarchical
+            env.level1.add('level2')
+            env.level1.level2
+        
+            # by default, attributes get 'pushed' back to root for quick access to your paths
+            env.level2 == env.level1.level2
+        
+            # attribute aliases can be defined
+            env.level2.add('level2', alias='level2a')
+            env.level2a
+        
+            # print the expected tree
+            env.print_tree()
+        
+            # alias of directory
+            env.alias
+            env.level1.alias
+        
+            # name of directory
+            env.name
+            env.level1.name
+        
+            # print root path
+            env.path # relative path
+            env.path.absolute()
+            env.abspath
+        
+            # print paths in tree
+            env.paths # relative paths
+            env.paths.absolute() # absolute paths
+            env.abspaths
+        
+            # all attributes return another TreeHouse object
+            l2 = env.level2
+            print("tree")
+            env.print_tree()
+        
+            print("level2 tree")
+            l2.print_tree()
+        
+            # set the parent directory this directory tree will exist in
+            env.set_dir('..')
+        
+            # instantly make the directory tree
+            env.mkdirs()
+        
+            # remove the directory tree (be careful!)
+            env.rmdirs()
+        
+            # move the directory tree
+            env.mvdirs()
+        
+            # copy the directory tree
+            env.cpdirs()
+        
+            # get root
+            assert env is env.misc.root
+        
+            #
+            env.misc.somethingelse = 5
+            assert not hasattr(env, 'somethingelse')
+            assert hasattr(env.misc, 'somethingelse')
+        
+            # fancy things
+            env.misc.ancestors(include_self=True).name # name of all attributes for parents
+            env.descendents(include_self=True).name # name of all children
+            env.paths.absolute().resolve() # chain things together
+        
+            env.paths # all paths of all children
+            env.paths.absolute() # apply absolute() to each path, return ChainList
+            env.paths.resolve() # apply absolute() and then resolve() to each path, return ChainList
+        
+            # quickly writing files
+        
+        The following are equivalent ways to produce the following directory
+        structure:
+        
+        .. code:: python
+        
+            env = TreeHouse('bin')
+            env.add('.secrets', alias='secrets')
+            env.secrets.add('misc')
+            env.add('public')
+            env.public.add('category1')
+            env.public.add('category2')
+        
+            env.mkdirs()
+        
+        .. code:: python
+        
+            env = TreeHouse('bin')
+            env.add('.secrets', alias='secrets').add('misc')
+            env.add('public').add('category1')
+            env.public.add('category2')
+        
+            env.mkdirs()
+        
+        .. code:: python
+        
+            env = TreeHouse('bin')
+            env.add('.secrets', alias='secrets').add('misc')
+            env.add('public/category1')
+            env.add('public/category2')
+            env.mkdirs()
+        
+        Quickly access your paths:
+        
+        .. code:: python
+        
+            env.category1 # 'bin/public/category1'
+            env.category2 # 'bin/public/category2'
+            env.public  # 'bin/public'
+            env.secrets # 'bin/.secrets'
+            env.misc # 'bin/.secrets/misc'
+        
+        .. |travis build| image:: https://img.shields.io/travis/USER/REPO.svg
+           :target: https://travis-ci.org/USER/REPO
+        .. |Coverage Status| image:: https://coveralls.io/repos/github/USER/REPO/badge.svg?branch=master
+           :target: https://coveralls.io/github/USER/REPO?branch=master
+        .. |PyPI version| image:: https://badge.fury.io/py/REPO.svg
+           :target: https://badge.fury.io/py/REPO
+        .. |travis build| image:: https://img.shields.io/travis/USER/REPO/master.svg
+           :target: https://travis-ci.org/USER/REPO/master
+        .. |travis build| image:: https://img.shields.io/travis/USER/REPO/development.svg
+           :target: https://travis-ci.org/USER/REPO/development
+        .. |Coverage Status| image:: https://coveralls.io/repos/github/USER/REPO/badge.svg?branch=development
+           :target: https://coveralls.io/github/USER/REPO?branch=development
+        
+Keywords: directory python tree
+Platform: UNKNOWN
