@@ -1,0 +1,15 @@
+gamegrid/__init__.py,sha256=U5mpp1YE8CbecXsR0I54Qt3Xt0Gflby7n0INmePtLnA,264
+gamegrid/_version.py,sha256=o8fBnKpyytICy5tfxcqRhqMyOGWFs-vRsY2b2NbcRUM,287
+gamegrid/gamegrid.py,sha256=HqtV0p_SF4bsDe3TLvYBTodRR_M6TxGfji5Hct4OoUo,2878
+gamegrid/static/extension.js,sha256=-7AZABOhMGK7t6uIVGVjm1E1ft1Ls1fNsc47M5bEV0A,3039
+gamegrid/static/index.js,sha256=bo_wyO8QOuBek0tjgliFhXFTXNMiG9eLnH3k8zUUZn4,77972
+gamegrid/static/index.js.map,sha256=LiS78q854DK9-J0OUp7QtSTDDOXxKNrW7KcD7JYj3NA,94070
+gamegrid-0.5.0a6.data/data/share/jupyter/nbextensions/gamegrid/extension.js,sha256=-7AZABOhMGK7t6uIVGVjm1E1ft1Ls1fNsc47M5bEV0A,3039
+gamegrid-0.5.0a6.data/data/share/jupyter/nbextensions/gamegrid/index.js,sha256=bo_wyO8QOuBek0tjgliFhXFTXNMiG9eLnH3k8zUUZn4,77972
+gamegrid-0.5.0a6.data/data/share/jupyter/nbextensions/gamegrid/index.js.map,sha256=LiS78q854DK9-J0OUp7QtSTDDOXxKNrW7KcD7JYj3NA,94070
+gamegrid-0.5.0a6.dist-info/DESCRIPTION.rst,sha256=g1cgEnl5AwiALVlmRgXZPUG2CcOPveVp9lr5aAmllIo,34
+gamegrid-0.5.0a6.dist-info/METADATA,sha256=55mJX9TNMdYexSbKJbekvEyPnEYahw2mRtEwd3u5nqg,844
+gamegrid-0.5.0a6.dist-info/RECORD,,
+gamegrid-0.5.0a6.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+gamegrid-0.5.0a6.dist-info/metadata.json,sha256=smvvMOYLM8VzkOoxCBZe9Iw05VQbafLqZvFtKvdmHNA,941
+gamegrid-0.5.0a6.dist-info/top_level.txt,sha256=l_rqp3_mkd1b6hSDkNJwnDfc6g-4WdKmbDi1XLpi7OI,9
