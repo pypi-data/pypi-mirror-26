@@ -1,0 +1,433 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "format": "url",
+            "type": "string"
+        },
+        "_collections": {
+            "items": {
+                "enum": [
+                    "Jobs"
+                ],
+                "type": "string"
+            },
+            "minItems": 1,
+            "title": "Collections to which this record belongs",
+            "type": "array",
+            "uniqueItems": true
+        },
+        "_private_notes": {
+            "items": {
+                "additionalProperties": false,
+                "description": "This is used to add, besides the `value`, the `source` where this value\ncame from.",
+                "properties": {
+                    "source": {
+                        "$ref": "source.json"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "value"
+                ],
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "address": {
+            "items": {
+                "$schema": "http://json-schema.org/schema#",
+                "additionalProperties": false,
+                "properties": {
+                    "cities": {
+                        "description": "Sometimes conferences and institutes are officially located in a\nlittle-known place, but their location is widely known as being in\na major neighboring city.  In this way, we can store information\nabout both the technically correct but little-known place and the\nwell-known but technically incorrect place.\n\nThe cities should be ordered from most specific to least specific.\n\n:example: ``[\"Batavia\", \"Chicago\"]``",
+                        "items": {
+                            "description": ":example: ``Geneva``",
+                            "title": "A city",
+                            "type": "string"
+                        },
+                        "title": "List of cities",
+                        "type": "array",
+                        "uniqueItems": true
+                    },
+                    "country_code": {
+                        "$ref": "country_code.json"
+                    },
+                    "latitude": {
+                        "description": ":example: 50.7736",
+                        "title": "Latitude of the location",
+                        "type": "number"
+                    },
+                    "longitude": {
+                        "description": ":example: 6.07532",
+                        "title": "Longitude of the location",
+                        "type": "number"
+                    },
+                    "place_name": {
+                        "description": "Name of the specific place where this is located.\n\n- For a Conference record, this could be an institution or a hotel\n  hosting the conference.\n\n  :MARC: ``270__b``\n  :example: ``Dan Panorama hotel``\n\n- For an Institution record representing an independent institute\n  and not a department, this could be a university where it is\n  located.\n\n  :MARC: Not present.\n  :example: ``U. Libre Brussels``",
+                        "type": "string"
+                    },
+                    "postal_address": {
+                        "description": "Full postal address in the original language, with\none element for every line, but excluding the country.\n\n:example: ``[\"Notkestra\u00dfe 85\", \"22607 Hamburg\"]``\n\n.. note::\n\n    This is used for Institution records, but not for Conferences.",
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "uniqueItems": false
+                    },
+                    "postal_code": {
+                        "description": ":example: 1050",
+                        "title": "Postal code of the location",
+                        "type": "string"
+                    },
+                    "state": {
+                        "description": "For American states, standard 2-letter codes are used.\n\n:example: TX",
+                        "title": "State or province of the location",
+                        "type": "string"
+                    }
+                },
+                "title": "Location associated to the record",
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "closed_date": {
+            "format": "date",
+            "title": "Date when the job was closed",
+            "type": "string"
+        },
+        "contact_details": {
+            "items": {
+                "$schema": "http://json-schema.org/schema#",
+                "additionalProperties": false,
+                "description": "Contact person's data",
+                "properties": {
+                    "email": {
+                        "description": "Contact person's e-mail",
+                        "format": "email",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Contact person's name",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "control_number": {
+            "type": "integer"
+        },
+        "deadline_date": {
+            "format": "date",
+            "title": "Application deadline",
+            "type": "string"
+        },
+        "deleted": {
+            "type": "boolean"
+        },
+        "deleted_records": {
+            "description": "List of deleted records referring to this record",
+            "items": {
+                "$schema": "http://json-schema.org/schema#",
+                "additionalProperties": false,
+                "properties": {
+                    "$ref": {
+                        "description": "URL to the referenced resource",
+                        "format": "url",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "$ref"
+                ],
+                "title": "Reference to another record",
+                "type": "object"
+            },
+            "title": "Deleted Records",
+            "type": "array"
+        },
+        "description": {
+            "title": "Job description",
+            "type": "string"
+        },
+        "experiments": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "curated_relation": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "title": "Experiment name",
+                        "type": "string"
+                    },
+                    "record": {
+                        "$schema": "http://json-schema.org/schema#",
+                        "additionalProperties": false,
+                        "properties": {
+                            "$ref": {
+                                "description": "URL to the referenced resource",
+                                "format": "url",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "$ref"
+                        ],
+                        "title": "Reference to another record",
+                        "type": "object"
+                    }
+                },
+                "title": "Experiments associated with Job",
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "external_system_identifiers": {
+            "items": {
+                "anyOf": [
+                    {
+                        "additionalProperties": false,
+                        "properties": {
+                            "schema": {
+                                "enum": [
+                                    "SPIRES"
+                                ],
+                                "type": "string"
+                            },
+                            "value": {
+                                "pattern": "^JOBS-\\d+$",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "schema",
+                            "value"
+                        ],
+                        "type": "object"
+                    }
+                ]
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "inspire_categories": {
+            "items": {
+                "$schema": "http://json-schema.org/schema#",
+                "additionalProperties": false,
+                "description": ":MARC: ``65017`` with ``2:INSPIRE``\n\nThe Inspire category (also called field category) classifies the subject\nthis record is related to.  This classification schema is similar to the\narXiv one (see `elements/arxiv_categories.json`) and there is a way to map\nfrom arXiv categories to Inspire categories.",
+                "properties": {
+                    "source": {
+                        "enum": [
+                            "curator",
+                            "magpie",
+                            "arxiv",
+                            "user",
+                            "undefined"
+                        ],
+                        "type": "string"
+                    },
+                    "term": {
+                        "enum": [
+                            "Accelerators",
+                            "Astrophysics",
+                            "Computing",
+                            "Data Analysis and Statistics",
+                            "Experiment-HEP",
+                            "Experiment-Nucl",
+                            "General Physics",
+                            "Gravitation and Cosmology",
+                            "Instrumentation",
+                            "Lattice",
+                            "Math and Math Physics",
+                            "Other",
+                            "Phenomenology-HEP",
+                            "Theory-HEP",
+                            "Theory-Nucl"
+                        ],
+                        "type": "string"
+                    }
+                },
+                "title": "Inspire category",
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "institutions": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "curated_relation": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "title": "Institution name",
+                        "type": "string"
+                    },
+                    "record": {
+                        "$schema": "http://json-schema.org/schema#",
+                        "additionalProperties": false,
+                        "properties": {
+                            "$ref": {
+                                "description": "URL to the referenced resource",
+                                "format": "url",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "$ref"
+                        ],
+                        "title": "Reference to another record",
+                        "type": "object"
+                    }
+                },
+                "title": "Institution",
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "legacy_creation_date": {
+            "format": "date",
+            "type": "string"
+        },
+        "new_record": {
+            "$schema": "http://json-schema.org/schema#",
+            "additionalProperties": false,
+            "properties": {
+                "$ref": {
+                    "description": "URL to the referenced resource",
+                    "format": "url",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "$ref"
+            ],
+            "title": "Reference to another record",
+            "type": "object"
+        },
+        "position": {
+            "title": "Job position",
+            "type": "string"
+        },
+        "public_notes": {
+            "items": {
+                "additionalProperties": false,
+                "description": "This is used to add, besides the `value`, the `source` where this value\ncame from.",
+                "properties": {
+                    "source": {
+                        "$ref": "source.json"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "value"
+                ],
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "ranks": {
+            "items": {
+                "$schema": "http://json-schema.org/schema#",
+                "enum": [
+                    "STAFF",
+                    "SENIOR",
+                    "JUNIOR",
+                    "VISITOR",
+                    "POSTDOC",
+                    "PHD",
+                    "MASTER",
+                    "UNDERGRADUATE",
+                    "OTHER"
+                ],
+                "title": "Rank of academic position",
+                "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "reference_email": {
+            "items": {
+                "description": "FIXME: what is the difference from contact_email!?",
+                "format": "email",
+                "title": "Reference email",
+                "type": "string"
+            },
+            "type": "array",
+            "uniqueItems": true
+        },
+        "regions": {
+            "items": {
+                "enum": [
+                    "Africa",
+                    "Australasia",
+                    "Asia",
+                    "Europe",
+                    "Middle East",
+                    "North America",
+                    "South America"
+                ],
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "self": {
+            "$schema": "http://json-schema.org/schema#",
+            "additionalProperties": false,
+            "properties": {
+                "$ref": {
+                    "description": "URL to the referenced resource",
+                    "format": "url",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "$ref"
+            ],
+            "title": "Reference to another record",
+            "type": "object"
+        },
+        "urls": {
+            "items": {
+                "$schema": "http://json-schema.org/schema#",
+                "additionalProperties": false,
+                "description": ":MARC: ``8564``",
+                "properties": {
+                    "description": {
+                        "description": ":MARC: ``8654__y``",
+                        "type": "string"
+                    },
+                    "value": {
+                        "description": ":MARC: ``8564_u``",
+                        "format": "url",
+                        "type": "string"
+                    }
+                },
+                "title": "URL of related document",
+                "type": "object"
+            },
+            "type": "array",
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "_collections"
+    ],
+    "title": "HEP Job",
+    "type": "object"
+}

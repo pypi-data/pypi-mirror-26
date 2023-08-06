@@ -1,0 +1,8 @@
+autosemver
+jsonschema
+idutils
+inspire-utils
+isodate
+pyyaml
+six
+unidecode
