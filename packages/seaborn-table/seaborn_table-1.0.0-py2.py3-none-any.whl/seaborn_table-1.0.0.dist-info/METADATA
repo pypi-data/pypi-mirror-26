@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: seaborn-table
+Version: 1.0.0
+Summary: SeabornTable reads and writes tables in csv and md and acts like a list and dict."
+Home-page: https://github.com/christensonb/SeabornTable
+Author: Ben Christenson
+Author-email: Python@BenChristenson.com
+License: MIT License
+Download-URL: https://github.com/christensonb/SeabornTable/tarball/download
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: test
+Requires-Dist: test-chain; extra == 'test'
+
+UNKNOWN
+
+
