@@ -1,0 +1,12 @@
+pyoozie/__init__.py,sha256=Q0IOhsi6wHO9ywNkoihpDLR4hJhrHV37skjOVNGobN4,2128
+pyoozie/client.py,sha256=JtPefM5TeFpDmHu_5mGvCKJ9FABcZ6CUrNum2VAqxP8,26772
+pyoozie/exceptions.py,sha256=yG7fqL8cpfIjgRNeupS405lscVcn41zIR7NJlMj9CWs,2785
+pyoozie/model.py,sha256=EkvASwsdYhaC5a94f3iEHecLRdOWzIp218EuMkyiB_w,19255
+pyoozie/tags.py,sha256=QeTtQOh7zWCkjmkHo7oUBp5JafQ9YoZKS7Le398sAMM,29969
+pyoozie/xml.py,sha256=_EkvAYlIzgDChgLxtXdoWQ319EBka1yNDsP3B8Mxn3E,3244
+pyoozie-0.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyoozie-0.0.3.dist-info/METADATA,sha256=rKY-mUJp8riphX7HNBqLttu-SOwW-_sB9KUxnZM072Q,1806
+pyoozie-0.0.3.dist-info/RECORD,,
+pyoozie-0.0.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+pyoozie-0.0.3.dist-info/metadata.json,sha256=lTcJkeMDjmQZG6Wfz9uS3qzBoKjqomcwlZ7MOjNwHcw,1511
+pyoozie-0.0.3.dist-info/top_level.txt,sha256=n4U-3fY8ICshZQyx_ahe76efb7pAmI7RtqB04-I06o0,8
