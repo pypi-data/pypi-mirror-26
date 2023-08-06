@@ -1,0 +1,12 @@
+cpyImagingMSpec/__init__.py,sha256=dWXw1SMEmzNzk2iLV62sMJE-A8bd5PJs_wZ8hyELxwo,41
+cpyImagingMSpec/ims.h,sha256=GbKyWzpnkCU4j69VtAlnCuYMQIz7pWvdXvvHjJkUbxE,3276
+cpyImagingMSpec/io.py,sha256=iiFpPrXHWXkHaZ_4Sb1PKKv8ULn7aUixQ9p0SkRvoew,5342
+cpyImagingMSpec/libims_cffi.dll,sha256=r9wc43iuriaMoEB7zZR3r-BhSXAFdbWHFbhq764JYGU,6544199
+cpyImagingMSpec/metrics.py,sha256=9vvv-kysC-DF9ekmgJcUsHV3JzekH65JDvSXHn5WjWY,2606
+cpyImagingMSpec/utils.py,sha256=Q60APi8H6684TLBOZy8IhVpatBtfJoU6deGNUKH9Fn0,1462
+cpyImagingMSpec-0.3.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cpyImagingMSpec-0.3.2.dist-info/METADATA,sha256=Yv5YfEOlszhdH3mRloI7BYB7IWsBa70y0qAPwVwQIHU,616
+cpyImagingMSpec-0.3.2.dist-info/RECORD,,
+cpyImagingMSpec-0.3.2.dist-info/WHEEL,sha256=ZmWBBWm-qxQHjOir6UuV6BTowC6w1BYUWh20TzICs9M,128
+cpyImagingMSpec-0.3.2.dist-info/metadata.json,sha256=_nDzll88dtXYa_cp7k5CwM06mfPXzJi-zIS6d_HIRtg,765
+cpyImagingMSpec-0.3.2.dist-info/top_level.txt,sha256=cOKZ_N0dLH6tab6WvAn4y095_ZlwwFpwzsf2iGfrCaQ,16
