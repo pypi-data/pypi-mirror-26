@@ -1,0 +1,73 @@
+Metadata-Version: 2.0
+Name: pickpeak
+Version: 0.0.8
+Summary: PickPeak: a PyQtGraph-based tool for fast peak selections of spectrum ploats.
+Home-page: http://carlos.reis@gitlab.elettra.eu/carlos.reis/pickpeak.git
+Author: Elettra SciComp
+Author-email: carlos.reis@elettra.eu
+License: MIT
+Keywords: spectra peak selection GUI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: numpy
+Requires-Dist: pyqtgraph
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+Pick Peak
+=======================
+
+Pick Peak is a `PyQtGraph <http://www.pyqtgraph.org/>`_-based tool. It aims
+to provide a graphical user interface to allow the user easily selecting peaks of a
+spectrum ploat.
+
+
+----
+
+README
+""""""""""""""""" 
+
+**Introduction**
+
+To do.
+
+**Installation**
+
+For standard Python installations, install pickpeak using pip:
+
+.. code:: bash
+
+    pip install -U pip setuptools
+    pip install pickpeak
+
+**Usage**
+
+.. code:: python
+
+	from pickpeak.pickpeak import pickpeak as pp
+	import numpy as np
+	spectrum = np.random.random(20) #sample of spectrum
+	peaks = pp(spectrum) #spectrum shoud be type numpy.ndarray 1D
+	print peaks # list of peaks
+
+
+**Requirements**
+
+* `Python 2.7 <https://www.python.org/downloads/>`_.
+* `Setuptools <https://setuptools.readthedocs.io/en/latest/>`_.
+* `PyQtGraph <http://www.pyqtgraph.org/>`_.
+* `NumPy <http://www.numpy.org/>`_.
+
+
+**Status**
+
+* We choose to move to PyQtGraph to have more GUI resources without losing simplicity.
+
+
