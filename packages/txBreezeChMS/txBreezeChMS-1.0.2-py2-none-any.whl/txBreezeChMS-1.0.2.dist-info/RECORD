@@ -1,0 +1,9 @@
+txBreezeChMS-1.0.2.dist-info/DESCRIPTION.rst,sha256=JRXk6hjP-J6uhViGb-5oFoazzFTa88lC7CWyYYb02jk,726
+txBreezeChMS-1.0.2.dist-info/METADATA,sha256=wA-1Shgb71iWtPZJyH4vCnQMoe1axWdUqNfpF3RPZTU,1478
+txBreezeChMS-1.0.2.dist-info/RECORD,,
+txBreezeChMS-1.0.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+txBreezeChMS-1.0.2.dist-info/metadata.json,sha256=EtKPlgEU-K9O0FkdMwboxilWfanQmcg2lEVTtWaZdYw,943
+txBreezeChMS-1.0.2.dist-info/top_level.txt,sha256=JKDE7WuUnPE3PBc8X8JkR4KlaAw1GQIdJJQ3gD3-TNQ,9
+txbreeze/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txbreeze/breeze.py,sha256=ZHxnU3MXW5eV-Sp_AHcuUNhykvo-JBHa-84SK9H0ECw,20517
+txbreeze/utils.py,sha256=FmEJF5aU7foaVurOzX8g3vgkZyAxbU_VR5RSm1Szarc,744
