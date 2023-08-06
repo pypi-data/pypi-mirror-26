@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+pandas_interactive_html/__init__.py
+pandas_interactive_html/bundle.js
+pandas_interactive_html/formatter.py
+pandas_interactive_html/register.py
+pandas_interactive_html.egg-info/PKG-INFO
+pandas_interactive_html.egg-info/SOURCES.txt
+pandas_interactive_html.egg-info/dependency_links.txt
+pandas_interactive_html.egg-info/requires.txt
+pandas_interactive_html.egg-info/top_level.txt

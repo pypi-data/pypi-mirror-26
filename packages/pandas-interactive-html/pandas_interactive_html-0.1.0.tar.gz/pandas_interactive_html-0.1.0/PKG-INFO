@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pandas_interactive_html
+Version: 0.1.0
+Summary: add to_interactive_html method to pandas
+Home-page: https://github.com/philopon/pandas_interactive_html
+Author: Hirotomo Moriwaki
+Author-email: philopon.dependence@gmail.com
+License: BSD-3-Clause
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: any
