@@ -1,0 +1,5 @@
+python-sql >= 0.5
+trytond_product >= 4.6, < 4.7
+trytond_stock >= 4.6, < 4.7
+trytond_stock_lot >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
