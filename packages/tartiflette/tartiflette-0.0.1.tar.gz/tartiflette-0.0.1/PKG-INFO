@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: tartiflette
+Version: 0.0.1
+Summary: Work in progress
+Home-page: UNKNOWN
+Author: Dailymotion
+Author-email: tartiflette@dailymotion.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
