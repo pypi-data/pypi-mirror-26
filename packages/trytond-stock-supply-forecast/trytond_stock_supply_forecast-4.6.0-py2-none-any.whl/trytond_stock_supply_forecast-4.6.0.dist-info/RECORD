@@ -1,0 +1,10 @@
+trytond/modules/stock_supply_forecast/__init__.py,sha256=N92nMJyb3X3s8nIZwoibIoeXfpeiu50veXbaDAS0o6w,324
+trytond/modules/stock_supply_forecast/purchase_request.py,sha256=i4d4fzKxlt2lOi2-0WGjXcxbAcUl8YxlQEAHZSEww_U,796
+trytond/modules/stock_supply_forecast/tryton.cfg,sha256=pFfOv25_RbM5m5HJPA87jkMGOn_Cv0dCQ6qfEzgYDXA,75
+trytond_stock_supply_forecast-4.6.0.dist-info/DESCRIPTION.rst,sha256=14LH1P17ZREHVSCHBJgbFhojOWTOBCOra-lBN7r9JHA,592
+trytond_stock_supply_forecast-4.6.0.dist-info/METADATA,sha256=vTcMbV7pPtVpAc6LDf6nLLgmowWYWe2YBIsYQvzlBCA,2537
+trytond_stock_supply_forecast-4.6.0.dist-info/RECORD,,
+trytond_stock_supply_forecast-4.6.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+trytond_stock_supply_forecast-4.6.0.dist-info/entry_points.txt,sha256=xOHPIRncOaxLtVvpmJqzUXbzvzBVC_bpCfpdcpVOHuc,93
+trytond_stock_supply_forecast-4.6.0.dist-info/metadata.json,sha256=5braau4pGo8va1FH8DmlnyoII1EMN_2iEdusXyFrajI,2009
+trytond_stock_supply_forecast-4.6.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
