@@ -1,0 +1,7 @@
+numpy
+scipy
+six
+mock
+tabulate
+matplotlib
+json-tricks
