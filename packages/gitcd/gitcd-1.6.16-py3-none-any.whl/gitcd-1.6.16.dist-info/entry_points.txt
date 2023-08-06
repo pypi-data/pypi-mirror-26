@@ -1,0 +1,3 @@
+[console_scripts]
+git-cd = gitcd.__main__:main
+
