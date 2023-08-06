@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: dioivo
+Version: 1.1.3
+Summary: HTTP Benchmarking tool using access log to extract requests and simulate traffic
+Home-page: https://github.com/diego-treitos/dioivo
+Author: Diego Blanco
+Author-email: diego.blanco@treitos.com
+License: GPLv3
+Download-URL: https://github.com/diego-treitos/diovio/archive/v1.1.3.tar.gz
+Description: HTTP Benchmarking tool using access log to extract requests and simulate traffic
+        Author: Diego Blanco <diego.blanco@treitos.com>
+        Project: https://github.com/diego-treitos/dioivo
+        
+Keywords: http,benchmark,web,performance,access.log,log,plot
+Platform: UNKNOWN
