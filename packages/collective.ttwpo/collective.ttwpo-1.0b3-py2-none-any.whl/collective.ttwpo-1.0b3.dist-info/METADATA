@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: collective.ttwpo
+Version: 1.0b3
+Summary: Manage your PO Translation Files TTW and Sync with Translationservices
+Home-page: https://pypi.python.org/pypi/collective.ttwpo
+Author: Jens W. Klein
+Author-email: jk@kleinundpartner.at
+License: GNU General Public License v2 (GPLv2)
+Keywords: Python Plone Translation PO gettext ttwpo
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Dist: plone.api
+Requires-Dist: products.cmfplone
+Requires-Dist: python-gettext
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: pdbpp; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: plone.app.testing; extra == 'test'
+Requires-Dist: plone.app.robotframework[debug]; extra == 'test'
+Requires-Dist: plone.app.contenttypes[test]; extra == 'test'
+Provides-Extra: zanata
+Requires-Dist: pyzanata; extra == 'zanata'
+
+file: README.rst, CHANGES.rst, LICENSE.rst
+
+
