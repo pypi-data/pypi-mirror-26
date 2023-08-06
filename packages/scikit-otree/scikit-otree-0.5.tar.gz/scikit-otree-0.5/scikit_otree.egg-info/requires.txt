@@ -1,0 +1,4 @@
+otree-core>=1.4.18
+pyquery
+lxml
+pandas
