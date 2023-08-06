@@ -1,0 +1,11 @@
+README
+setup.cfg
+setup.py
+daglet/__init__.py
+daglet/_utils.py
+daglet/view.py
+daglet.egg-info/PKG-INFO
+daglet.egg-info/SOURCES.txt
+daglet.egg-info/dependency_links.txt
+daglet.egg-info/requires.txt
+daglet.egg-info/top_level.txt

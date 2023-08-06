@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: daglet
+Version: 0.0.1
+Summary: DAG tools for Python
+Home-page: https://github.com/kkroening/daglet
+Author: Karl Kroening
+Author-email: karlk@kralnet.us
+License: UNKNOWN
+Download-URL: https://github.com/kkroening/daglet/archive/v0.0.1.zip
+Description-Content-Type: UNKNOWN
+Description: DAG tools for Python
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
