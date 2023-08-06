@@ -1,0 +1,15 @@
+README.rst
+setup.py
+uncalled/__init__.py
+uncalled/__main__.py
+uncalled/ast_finder.py
+uncalled/iterative.py
+uncalled/regex_finder.py
+uncalled/single_pass.py
+uncalled/whitelist.py
+uncalled.egg-info/PKG-INFO
+uncalled.egg-info/SOURCES.txt
+uncalled.egg-info/dependency_links.txt
+uncalled.egg-info/entry_points.txt
+uncalled.egg-info/requires.txt
+uncalled.egg-info/top_level.txt

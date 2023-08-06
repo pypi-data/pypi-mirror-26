@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: uncalled
+Version: 0.1.3
+Summary: Find unused functions in Python projects
+Home-page: https://github.com/elazarg/uncalled
+Author: Elazar Gershuni
+Author-email: elazarg@gmail.com
+License: GNU
+Description: uncalled
+        --------
+        
+        Find unused functions in Python projects
+        
+        ::
+        
+            $ uncalled path/to/project
+        
+        for more options, see ``uncalled --help``
+Keywords: linting quality
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.4
