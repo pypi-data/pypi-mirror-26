@@ -1,0 +1,15 @@
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10-py2.7-nspkg.pth,sha256=yjZbgHQAw5gimz4qZY5xWkpHSWWWy2Wr32eLa0psiH4,370
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/DESCRIPTION.rst,sha256=PoNjL6XIkmuM8pnYzyU6ZOOCmuhC8ZZ9XkVP2c03hg4,1732
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/METADATA,sha256=wguRWZE5gRdHDWVyew_FFnSuAeQn7UPzvzN470Chp0o,2291
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/RECORD,,
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/metadata.json,sha256=atJmg17gBXJ7Zl3bhjI9_aIu1_-EemeDYC2nmboNHnM,776
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo9_addon_account_invoice_line_sequence-9.0.1.0.0.99.dev10.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo_addons/account_invoice_line_sequence/README.rst,sha256=P25kcb6kG2RutlXgnOfYBr3rCtbRMIKho3ZmQFPu9Tg,1730
+odoo_addons/account_invoice_line_sequence/__init__.py,sha256=xrguIIHs0icuM9Ez_9boEqIIeNd8uvcSrnGs6VeDk_c,302
+odoo_addons/account_invoice_line_sequence/__openerp__.py,sha256=iA-5bD8V9Lc696rk4vHYLGrnwdtP2tVsdQmOTnhy9HM,848
+odoo_addons/account_invoice_line_sequence/models/__init__.py,sha256=LrSV5jLu8hZhFLNYub4L4itjCeVRRLfezOGjTsD_5Z0,303
+odoo_addons/account_invoice_line_sequence/models/invoice.py,sha256=esyJln-GYSmVIl0ThcMRYgM7zRuIZsDyNzbcFONdkh8,2009
+odoo_addons/account_invoice_line_sequence/views/account_invoice_view.xml,sha256=hWlDf9FkRDpIehiDoMbB4kR33QbpuKXvNFX3MnHepYs,1880
+odoo_addons/account_invoice_line_sequence/views/report_invoice.xml,sha256=eU1k8Wc_ITQ3AeK6BV1U0-zvoKwa3X0rwhyRr4Oy6Mw,520
