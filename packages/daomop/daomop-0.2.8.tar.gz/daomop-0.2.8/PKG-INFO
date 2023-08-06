@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: daomop
+Version: 0.2.8
+Summary: Dominion Astrophysical Observatory Moving Object Pipeline: daomop
+Home-page: http://github.com/ijiraq/daomop
+Author: JJ Kavelaars
+Author-email: jjk@uvic.ca
+License: UNKNOWN
+Description: See github repp
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)

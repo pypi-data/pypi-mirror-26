@@ -1,0 +1,8 @@
+[console_scripts]
+daomop_canfar_job = daomop.canfar_job:main
+daomop_cat = daomop.build_cat:main
+daomop_populate = daomop.populate:main
+daomop_stationary = daomop.stationary:main
+daomop_validate = daomop.web_validate:main
+hpx_map = daomop.hpx_map:main
+
