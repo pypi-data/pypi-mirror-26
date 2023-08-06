@@ -1,0 +1,16 @@
+ipyevents/__init__.py,sha256=5fju_UQG3oz66N4syskECRKDPN3ZMoURWW59Jepj2t8,253
+ipyevents/_version.py,sha256=F1JS3b3dS8dGRw1O2pl8G3dhadc0Wv2rbMVI0nPvbvA,362
+ipyevents/events.py,sha256=GQkGzp8ISURT_VdYL-cKew23cYOko-9rLx4QqKrWKp4,2456
+ipyevents/example.py,sha256=YmcKR6ouE-Ag1JD1ezucMmea0cgwaI08T1ANigixvsI,535
+ipyevents/static/extension.js,sha256=6c78DNv9acX2jc63JRfwl6DLsVHXBM4MYE-4CyHT27U,3021
+ipyevents/static/index.js,sha256=jZ6OGdDcptYBAhnF8bWem8qPXQQansLtwPcJ0DAZ9Lw,70246
+ipyevents/static/index.js.map,sha256=iJcPAh5nfKiBJSR05tTHvfUOPPeGVjvXh9ac6mkHx0s,82268
+ipyevents-0.0.1.data/data/share/jupyter/nbextensions/ipyevents/extension.js,sha256=6c78DNv9acX2jc63JRfwl6DLsVHXBM4MYE-4CyHT27U,3021
+ipyevents-0.0.1.data/data/share/jupyter/nbextensions/ipyevents/index.js,sha256=jZ6OGdDcptYBAhnF8bWem8qPXQQansLtwPcJ0DAZ9Lw,70246
+ipyevents-0.0.1.data/data/share/jupyter/nbextensions/ipyevents/index.js.map,sha256=iJcPAh5nfKiBJSR05tTHvfUOPPeGVjvXh9ac6mkHx0s,82268
+ipyevents-0.0.1.dist-info/DESCRIPTION.rst,sha256=M2lFXOdz8qz3QVBPDK7-xz6FHgejTc0R8bmqtsJutWE,68
+ipyevents-0.0.1.dist-info/METADATA,sha256=Cx7gq945w_qNFASBgSGHLhAVjGHomljOl7n1tUQUv-s,855
+ipyevents-0.0.1.dist-info/RECORD,,
+ipyevents-0.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ipyevents-0.0.1.dist-info/metadata.json,sha256=mkDOSEfp_QiTcQ8M0dKTdLoXSeIWj3W6LyvAge8TC1s,963
+ipyevents-0.0.1.dist-info/top_level.txt,sha256=YEMhaU5bhnzJU44Q0aI0grvK-Fl-utYsfutovxS-j9U,10
