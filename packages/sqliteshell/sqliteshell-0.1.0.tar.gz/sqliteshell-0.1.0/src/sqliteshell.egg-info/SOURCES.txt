@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/sqliteshell/__init__.py
+src/sqliteshell/_sqliteshell.py
+src/sqliteshell/_version.py
+src/sqliteshell.egg-info/PKG-INFO
+src/sqliteshell.egg-info/SOURCES.txt
+src/sqliteshell.egg-info/dependency_links.txt
+src/sqliteshell.egg-info/top_level.txt
+src/sqliteshell.egg-info/zip-safe
