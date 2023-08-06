@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+MalCat.egg-info/PKG-INFO
+MalCat.egg-info/SOURCES.txt
+MalCat.egg-info/dependency_links.txt
+MalCat.egg-info/requires.txt
+MalCat.egg-info/top_level.txt
+malcat/__init__.py
+malcat/generator.py
+malcat/series.py
+malcat/status.py
+myanimelist/__init__.py
+myanimelist/api.py
+myanimelist/models.py
