@@ -1,0 +1,14 @@
+gpwm/__init__.py,sha256=Fjtz12fN46CHbWLGcygZEwhElwEigYIlPV1o9zsuXaI,601
+gpwm/cli.py,sha256=XF5iuqVd1I2HRYntCoklrjj-JIrYEPq6Q6Fk--TeZ5k,6622
+gpwm/utils.py,sha256=8pSIV1dA0LhvHDJlmff76YpSOLIOjFJmJzsxR-Hxljk,9026
+gpwm/stacks/__init__.py,sha256=tzaYcRk00DI2SUXQPzobvVP3qxyrd1MnlxCO6ONMmFQ,1779
+gpwm/stacks/aws.py,sha256=z1V8Jf1cUY8H5EFElshydBp7VAM0VWjgSWSgU0nmsRA,7525
+gpwm/stacks/gcp.py,sha256=-hOU8uK7VGPV2o5crdsgl8Cazc3-uEUTAXr_jyLtyyo,5712
+gpwm/stacks/shell.py,sha256=fdfuyghX6uX_GvKM7ecf5nwU92Noz_3ycTcSvOAd5Go,4649
+gpwm-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+gpwm-1.0.0.dist-info/METADATA,sha256=tRy9qp7nMgteuzE0Lq39bzkO5hOE6m1ZoBxBbsuFMEM,566
+gpwm-1.0.0.dist-info/RECORD,,
+gpwm-1.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+gpwm-1.0.0.dist-info/entry_points.txt,sha256=zYxQGxw3_hyHlDI3iLcPeN7o_NNuUCoO17ZN_YKLOIs,40
+gpwm-1.0.0.dist-info/metadata.json,sha256=6p_NmQPrStUl305i_U1WHw0NttkBbtGtIdZOYey6sy4,974
+gpwm-1.0.0.dist-info/top_level.txt,sha256=zxwJ_G9uxWthfaSNdtwkjPt6wyEJYXLsTxXdxVgBvg4,5

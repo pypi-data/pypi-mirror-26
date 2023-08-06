@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: gpwm
+Version: 1.0.0
+Summary: Multi cloud provider infrastructure-as-code wrapper
+Home-page: https://github.com/tiadobatima/gpwm
+Author: Gustavo Baratto
+Author-email: gbaratto@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: awscli (<1.12.0,>=1.11.0)
+Requires-Dist: boto3 (<1.5.0,>=-1.4.0)
+Requires-Dist: google-api-python-client (<1.7.0,>=1.6.0)
+Requires-Dist: jinja2 (<2.10.0,>=2.9.0)
+Requires-Dist: Mako (<1.1.0,>=1.0.0)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: requests (<2.20.0,>=2.13.0)
+Requires-Dist: six
+
+UNKNOWN
+
+
