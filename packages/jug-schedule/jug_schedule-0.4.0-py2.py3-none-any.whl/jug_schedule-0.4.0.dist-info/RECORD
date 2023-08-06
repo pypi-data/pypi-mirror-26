@@ -1,0 +1,12 @@
+jug_schedule/__init__.py,sha256=qZ83AHq6nqcdvRcC-5lcTB2ZFD3SoxvfYEOBqVKUTKY,121
+jug_schedule/errors.py,sha256=ORBdAVSXWNpRHSrM17Nr6YGeNi0icxeLU6Z6t49yep8,828
+jug_schedule/queues.py,sha256=stmcc_BBsU1OYsH5fV8nmVmz9ZRFwaPVQ00S_kknMYM,2718
+jug_schedule/resources.py,sha256=FTkDHVMwW-W80b8Qmu8ENXvH_7bt1a2DrVglT6BUoYE,2739
+jug_schedule/schedule.py,sha256=k5ke7yx0em4RK3HvsoVJshBRmCsvMd34AlbK1B3961o,26128
+jug_schedule/version.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+jug_schedule-0.4.0.dist-info/DESCRIPTION.rst,sha256=bkKwNxACu6-poLUCHcQIaawvnxCv6MRE2Y0k0VumwwE,4685
+jug_schedule-0.4.0.dist-info/METADATA,sha256=Qn8Dszlee88rA6zy5yiGXxKuJ_eKJpztUllheNjpaMo,5807
+jug_schedule-0.4.0.dist-info/RECORD,,
+jug_schedule-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jug_schedule-0.4.0.dist-info/metadata.json,sha256=pD2BKNsGQ2XYSJY_-6kKOAMEu7zz-Y2lEK0du2Km0iI,1207
+jug_schedule-0.4.0.dist-info/top_level.txt,sha256=n5yoA9RCLSdAAphZCrYl8LjdnV_Tb3JuV2hcToKFPDU,13
