@@ -1,0 +1,3 @@
+ipywidgets>=7,<8
+numpy
+traittypes
