@@ -1,0 +1,108 @@
+CHANGES
+=======
+
+0.4.4
+-----
+
+* remove lost print
+* retrain pylint
+* cfgtree => dictxpath, cfg entrypoint => cfgstorage
+* retrain pylint
+
+0.4.3
+-----
+
+* rename cfgtree methods
+* Fix issue with username in cfg
+* fix travis build
+
+0.4.2
+-----
+
+* ignore config.json + fix log in docker
+
+0.4.1
+-----
+
+* fix docker run script
+* logs at startup
+
+0.4.0
+-----
+
+* full version in the ui
+* travis build frontend + update requirements
+* txwebbackendbase>=0.2.1 for multi setupLogger
+* split environment config
+* Support load/save jsonfile
+
+0.4.0.a1
+--------
+
+* Rework cfg #16
+* Update README
+* some dopplerr img
+
+0.3.0.a7
+--------
+
+* latest fetched series db
+* pushover notification on success
+* Cards in Landing page (fix #5)
+* WeUI: simplist events page fix #14
+* postman-like test + rework returned json
+* Display episode number in event
+* rework Web UI menu
+* handle no subtitle found
+* Handle filtered event
+* prepare frontend views
+
+0.3.0.a6
+--------
+
+* remove languages limitation
+*  txrwlock>=1.1.2 txwebbackendbase>=0.1.7
+
+0.3.0.a5
+--------
+
+* ignoring lock files for building
+
+0.3.0.a4
+--------
+
+* pipenv-to-requirements >= 0.1.9
+
+0.3.0.a3
+--------
+
+* regenerate README
+* pipenv-to-requirements >= 0.1.6
+
+0.3.0.a2
+--------
+
+* fix -e . in Pipfile
+* Auto generation of requirements\*.txt
+* Ignoring Pipfile.lock
+* new target in makefile: make requirements
+* New dev dependency: pipenv-to-requirements
+* Update README.md
+
+0.3.0.a1
+--------
+
+* typo
+* fix bad frontend site copy in docker build
+* update readme
+
+0.2.18
+------
+
+* version api
+* pytlint
+* Fix travis apt install
+* ensure docker gets the right version
+* rework docker
+* rework buildsystem
+* make UI accessible
