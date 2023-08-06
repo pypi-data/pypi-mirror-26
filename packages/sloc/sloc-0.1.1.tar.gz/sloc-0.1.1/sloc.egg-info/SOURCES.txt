@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+sloc/__init__.py
+sloc.egg-info/PKG-INFO
+sloc.egg-info/SOURCES.txt
+sloc.egg-info/dependency_links.txt
+sloc.egg-info/not-zip-safe
+sloc.egg-info/top_level.txt
