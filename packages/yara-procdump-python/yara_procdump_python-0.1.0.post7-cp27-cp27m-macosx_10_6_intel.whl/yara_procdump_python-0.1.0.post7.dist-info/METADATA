@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: yara-procdump-python
+Version: 0.1.0.post7
+Summary: A Python extension to wrap the Yara process memory access API.
+Home-page: https://github.com/google/yara-procdump-python
+Author: Andreas Moser
+Author-email: amoser@google.com
+License: Apache 2.0
+Platform: UNKNOWN
+
+# yara-procdump-python
+A Python extension to wrap the Yara process memory access API.
+
+This is not an official Google product.
+
+
