@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: date-query
+Version: 0.9.0
+Summary: A program to query dates
+Home-page: https://github.com/sgambino/project-packaging
+Author: Steve Gambino
+Author-email: stevegambino@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: A date query program
+        ====================
+        
+        This is a date query program. It is in its initial stages. Currently, it
+        supports requests for the first occurrence of a given weekday for a given year.
+        
+        The need for this program arose when I needed to provide a list of dates to
+        someone to schedule a year's worth of meetings on the first Tuesday of
+        every month.
+        
+Keywords: date scheduling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
