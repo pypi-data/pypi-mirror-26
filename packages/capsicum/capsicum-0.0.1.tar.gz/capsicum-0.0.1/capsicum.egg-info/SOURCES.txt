@@ -1,0 +1,8 @@
+README.md
+setup.py
+capsicum/__init__.py
+capsicum.egg-info/PKG-INFO
+capsicum.egg-info/SOURCES.txt
+capsicum.egg-info/dependency_links.txt
+capsicum.egg-info/requires.txt
+capsicum.egg-info/top_level.txt
