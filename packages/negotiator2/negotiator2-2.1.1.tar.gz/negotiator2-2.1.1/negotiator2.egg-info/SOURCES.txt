@@ -1,0 +1,12 @@
+README
+setup.py
+negotiator2/__init__.py
+negotiator2/memento.py
+negotiator2/negotiator.py
+negotiator2/util.py
+negotiator2.egg-info/PKG-INFO
+negotiator2.egg-info/SOURCES.txt
+negotiator2.egg-info/dependency_links.txt
+negotiator2.egg-info/pbr.json
+negotiator2.egg-info/requires.txt
+negotiator2.egg-info/top_level.txt
