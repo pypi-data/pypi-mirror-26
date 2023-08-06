@@ -1,0 +1,9 @@
+py_nifcloud/__init__.py,sha256=gxdyi4JXDfgc9mJbaGcYipeXEgh0ysSkOeJ_DL78fGk,90
+py_nifcloud/computing_client.py,sha256=SHBkbCfkt34lPo09Po2DNMjOHYYvdauxDmd23hKU98c,500
+py_nifcloud/nifcloud_client.py,sha256=MxMg1bDvYT2l71VcFuJL9u_2GyOwW7Qu3H5U82a8SrA,5498
+py_nifcloud-0.0.3.dist-info/DESCRIPTION.rst,sha256=gjbBTG19LqlYW_XaMK9vdLyRc2iEVv_ncBrFya_pQUo,1647
+py_nifcloud-0.0.3.dist-info/METADATA,sha256=fytZJwz-fNs3lH3Kv_qVn3ESTWOip80pq6AuLonWomY,2400
+py_nifcloud-0.0.3.dist-info/RECORD,,
+py_nifcloud-0.0.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+py_nifcloud-0.0.3.dist-info/metadata.json,sha256=2lC8qTZ_Z0T1-A9C7r938lbUK_NRLxMk1qa3oyDbCGA,892
+py_nifcloud-0.0.3.dist-info/top_level.txt,sha256=ElTSxKZmhwfnArnmaiwtQBemBt4BdXcg5aFLipSQS0E,12
