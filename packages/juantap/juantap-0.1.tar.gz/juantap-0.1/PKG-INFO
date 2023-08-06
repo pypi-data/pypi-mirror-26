@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: juantap
+Version: 0.1
+Summary: CLI for managing multiple dedicated CS:GO servers, based on a single root installation
+Home-page: https://github.com/mathiassmichno/juantap
+Author: Mathias Sass Michno
+Author-email: m@michno.me
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: csgo,linuxgsm,server management,overlayfs
+Platform: UNKNOWN

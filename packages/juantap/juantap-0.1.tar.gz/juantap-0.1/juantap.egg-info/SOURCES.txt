@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+juantap/__init__.py
+juantap/config.py
+juantap/instances.py
+juantap/root.py
+juantap.egg-info/PKG-INFO
+juantap.egg-info/SOURCES.txt
+juantap.egg-info/dependency_links.txt
+juantap.egg-info/entry_points.txt
+juantap.egg-info/requires.txt
+juantap.egg-info/top_level.txt
