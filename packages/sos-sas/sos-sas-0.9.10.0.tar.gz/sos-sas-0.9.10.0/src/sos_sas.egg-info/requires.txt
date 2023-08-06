@@ -1,0 +1,5 @@
+sos>=0.9.10.11
+sos-notebook>=0.9.10.9
+sas_kernel
+saspy
+sas7bdat
