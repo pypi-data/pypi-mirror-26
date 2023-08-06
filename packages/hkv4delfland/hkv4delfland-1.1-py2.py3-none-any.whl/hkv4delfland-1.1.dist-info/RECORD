@@ -1,0 +1,11 @@
+hkv4delfland/__init__.py,sha256=Lnl7sDjp0yFvAkIbtD8vUfee9jbFxgsNA8xLsCcQagU,656
+hkv4delfland/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hkv4delfland/core/plausibility.py,sha256=KRf3p9WOeZwFhTx-WuK35vPCVJgOgrXLxXUCrPU9VA8,11333
+hkv4delfland/core/waterlevelstat.py,sha256=0QITWjxSDjE8Ue6OLkFV92UgHqDO6BXvJI3xY14RPYg,33836
+hkv4delfland/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hkv4delfland/io/bui.py,sha256=YwwqvunGgEFWr6_3nGFzY4MbrwgQoKKSK7cwo-F5zdU,3668
+hkv4delfland/io/his.py,sha256=aJSHeQdx-yWR-WCMiu1t7q8AYao58i0OuLUu85cukDA,22682
+hkv4delfland-1.1.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+hkv4delfland-1.1.dist-info/WHEEL,sha256=RA_fzc0G9apkHJKy7p05CMHAeSfJ3NaDzVYRdT6OUBk,100
+hkv4delfland-1.1.dist-info/METADATA,sha256=i2HdzJPR3lym6W_OZj2Wh5rco0ZZz35HTs8C4jXZP7U,347
+hkv4delfland-1.1.dist-info/RECORD,,
