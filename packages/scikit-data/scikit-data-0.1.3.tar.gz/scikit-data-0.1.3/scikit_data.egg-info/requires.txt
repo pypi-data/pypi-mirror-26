@@ -1,0 +1,10 @@
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+ipython
+jupyter
+ipywidgets
+h5py
+odo
