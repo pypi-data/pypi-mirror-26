@@ -1,0 +1,9 @@
+BabelGladeExtractor-0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+BabelGladeExtractor-0.3.dist-info/METADATA,sha256=QPPARy0jqMGbYs0EOnuBrc3VB3Rla8zSoTr8fOmdi1Y,380
+BabelGladeExtractor-0.3.dist-info/RECORD,,
+BabelGladeExtractor-0.3.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+BabelGladeExtractor-0.3.dist-info/entry_points.txt,sha256=G9s1aRZ1q_Zs37EZKJ5sPti3MFJtgIrlWnAp9FXx7SI,73
+BabelGladeExtractor-0.3.dist-info/metadata.json,sha256=nujsVveJsU6QPw2EBKb63Wgmi-04FYo58Y-1mdj6JDo,706
+BabelGladeExtractor-0.3.dist-info/top_level.txt,sha256=SjIlGFsGcUzQGKQ4BwBoqGfw2U1OTgkbD-KUAkP3ua8,11
+babelglade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+babelglade/extract.py,sha256=rf59zG5TuF02VGPFeT63h90BzTV_PBZHDjCdUiV8yfw,3742
