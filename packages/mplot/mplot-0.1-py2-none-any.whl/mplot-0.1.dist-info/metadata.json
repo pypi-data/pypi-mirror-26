@@ -1,0 +1,1 @@
+{"name": "mplot", "metadata_version": "2.0", "generator": "bdist_wheel (0.24.0)", "summary": "This is a plotting library designed to be similar in usage to maple", "version": "0.1", "extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}, "contacts": [{"role": "author", "email": "steve.h.mohr@gmail.com", "name": "Steve Mohr"}]}}}
