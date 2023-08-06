@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: excel2xx
+Version: 0.1.1
+Summary: Export something(e.g. json, msgpack, sql, lua) from Excel to file.
+Home-page: https://github.com/cupen/excel2xx
+Author: cupen
+Author-email: cupen@foxmail.com
+License: WTFPL
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
