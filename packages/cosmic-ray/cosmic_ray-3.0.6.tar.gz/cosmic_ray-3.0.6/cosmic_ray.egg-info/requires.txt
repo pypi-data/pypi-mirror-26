@@ -1,0 +1,17 @@
+astunparse
+decorator
+docopt_subcommands>=2.3.0
+pathlib
+pyyaml
+qprompt
+stevedore
+tinydb>=3.2.1
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[test]
+hypothesis
+pytest
+tox
