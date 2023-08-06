@@ -1,0 +1,4 @@
+[console_scripts]
+dirtreecmp = dirtreedigest.main_compare:main
+dirtreedigest = dirtreedigest.main_digest:main
+
