@@ -1,0 +1,6 @@
+[console_scripts]
+patzilla = patzilla.commands:run
+
+[paste.app_factory]
+main = patzilla:main
+
