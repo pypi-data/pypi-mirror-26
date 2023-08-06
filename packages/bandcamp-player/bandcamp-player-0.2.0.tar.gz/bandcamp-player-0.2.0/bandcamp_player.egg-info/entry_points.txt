@@ -1,0 +1,3 @@
+[console_scripts]
+bandcamp-player = bandcamp_player.__init__:main
+

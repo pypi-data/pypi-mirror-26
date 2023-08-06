@@ -1,0 +1,14 @@
+README.rst
+setup.py
+bandcamp_parser/__init__.py
+bandcamp_parser/album.py
+bandcamp_parser/request.py
+bandcamp_parser/tag.py
+bandcamp_parser/track.py
+bandcamp_player/__init__.py
+bandcamp_player.egg-info/PKG-INFO
+bandcamp_player.egg-info/SOURCES.txt
+bandcamp_player.egg-info/dependency_links.txt
+bandcamp_player.egg-info/entry_points.txt
+bandcamp_player.egg-info/requires.txt
+bandcamp_player.egg-info/top_level.txt

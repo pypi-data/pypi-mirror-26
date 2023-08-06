@@ -1,0 +1,2 @@
+bandcamp_parser
+bandcamp_player

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: bandcamp-player
+Version: 0.2.0
+Summary: Utility for streaming random music from bandcamp by specified tag
+Home-page: https://github.com/strizhechenko/bandcamp-player
+Author: Oleg Strizhechenko
+Author-email: oleg.strizhechenko@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3.6
