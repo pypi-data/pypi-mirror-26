@@ -1,0 +1,8 @@
+README.rst
+setup.py
+bin/puppet-enc-ec2
+puppet_enc_ec2.egg-info/PKG-INFO
+puppet_enc_ec2.egg-info/SOURCES.txt
+puppet_enc_ec2.egg-info/dependency_links.txt
+puppet_enc_ec2.egg-info/requires.txt
+puppet_enc_ec2.egg-info/top_level.txt
