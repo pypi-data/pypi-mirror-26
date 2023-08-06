@@ -1,0 +1,3 @@
+[console_scripts]
+checkx = iphone_checker:check_x
+
