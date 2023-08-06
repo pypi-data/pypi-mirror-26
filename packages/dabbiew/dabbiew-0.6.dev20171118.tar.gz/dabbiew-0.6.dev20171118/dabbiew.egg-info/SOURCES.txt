@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+RELEASE-VERSION
+setup.cfg
+setup.py
+bin/dabbiew
+dabbiew/__init__.py
+dabbiew/dabbiew.py
+dabbiew/version.py
+dabbiew.egg-info/PKG-INFO
+dabbiew.egg-info/SOURCES.txt
+dabbiew.egg-info/dependency_links.txt
+dabbiew.egg-info/requires.txt
+dabbiew.egg-info/top_level.txt
