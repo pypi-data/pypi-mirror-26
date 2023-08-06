@@ -1,0 +1,3 @@
+[console_scripts]
+dregutil = docker_registry_util.cli:main
+

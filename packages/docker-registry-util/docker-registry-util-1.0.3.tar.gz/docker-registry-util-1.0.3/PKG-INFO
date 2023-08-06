@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: docker-registry-util
+Version: 1.0.3
+Summary: Search and cleanup on Docker Registry v2.
+Home-page: https://github.com/merll/docker-registry-util
+Author: Matthias Erll
+Author-email: matthias@erll.de
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: docker,registry,query,cleanup
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Software Distribution
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
