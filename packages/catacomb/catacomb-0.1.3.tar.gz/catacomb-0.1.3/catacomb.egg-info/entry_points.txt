@@ -1,0 +1,3 @@
+[console_scripts]
+tomb = catacomb.catacomb:tomb
+
