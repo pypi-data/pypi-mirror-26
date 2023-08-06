@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sshit
+Version: 0.0.2
+Summary: Simple SSH CLI
+Home-page: https://github.com/igorbrites/sshit
+Author: Igor Brites
+Author-email: igor.brites.87@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/igorbrites/sshit/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: ssh,cli
+Platform: UNKNOWN
