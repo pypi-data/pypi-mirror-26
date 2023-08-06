@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+roslaunch_api_wrapper/__init__.py
+roslaunch_api_wrapper/launcher.py
+roslaunch_api_wrapper/node.py
+roslaunch_api_wrapper.egg-info/PKG-INFO
+roslaunch_api_wrapper.egg-info/SOURCES.txt
+roslaunch_api_wrapper.egg-info/dependency_links.txt
+roslaunch_api_wrapper.egg-info/not-zip-safe
+roslaunch_api_wrapper.egg-info/top_level.txt
