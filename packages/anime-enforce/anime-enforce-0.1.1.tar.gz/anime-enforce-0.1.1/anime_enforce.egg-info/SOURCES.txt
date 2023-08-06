@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+anime_enforce/__init__.py
+anime_enforce/enforcer.py
+anime_enforce.egg-info/PKG-INFO
+anime_enforce.egg-info/SOURCES.txt
+anime_enforce.egg-info/dependency_links.txt
+anime_enforce.egg-info/requires.txt
+anime_enforce.egg-info/top_level.txt
