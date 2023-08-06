@@ -1,0 +1,50 @@
+[[source]]
+
+verify_ssl = true
+url = "https://pypi.python.org/simple"
+
+
+[requires]
+
+python_version = "3.6"
+
+
+[dev-packages]
+
+pandoc = "*"
+pytest = "*"
+cryptography = "*"
+yapf = "*"
+tox = "*"
+isort = "*"
+pylint = "*"
+"autopep8" = "*"
+pyyaml = "*"
+"flake8" = "*"
+pipenv-to-requirements = ">=0.1.9"
+pytest-asyncio = "*"
+pytest-catchlog = "*"
+"flake8-coding" = "*"
+"flake8-comprehensions" = "*"
+asynctest = "*"
+pytest-sugar = "*"
+dopplerr = {path = ".", editable = true}
+pyannotate = "*"
+mypy = "*"
+"flake8-logging-format" = "*"
+"flake8-docstrings" = "*"
+
+
+[packages]
+
+sanic-transmute = "*"
+subliminal = { git = "https://github.com/stibbons/subliminal" }
+peewee = "*"
+pbr = "*"
+colorlog = "*"
+setuptools = "!=36.0.0"
+sanic = "*"
+aiohttp = "*"
+apsw = "*"
+apscheduler = "*"
+aiofiles = "*"
