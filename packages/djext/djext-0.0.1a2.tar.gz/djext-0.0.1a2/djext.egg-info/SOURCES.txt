@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+djext.egg-info/PKG-INFO
+djext.egg-info/SOURCES.txt
+djext.egg-info/dependency_links.txt
+djext.egg-info/requires.txt
+djext.egg-info/top_level.txt
