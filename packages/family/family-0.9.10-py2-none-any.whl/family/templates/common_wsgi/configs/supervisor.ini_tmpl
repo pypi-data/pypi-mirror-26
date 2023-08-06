@@ -1,0 +1,9 @@
+[program:{{package}}]
+command=/data/home/work/{{package}}/.venv/bin/gunicorn -c configs/gunicorn_production.py --preload {{package}}.wsgi:app
+directory=/data/home/work/{{package}}
+user=work
+autostart=true
+autorestart=true
+stopasgroup=true
+stopsignal=SIGTERM
+stopwaitsecs=120

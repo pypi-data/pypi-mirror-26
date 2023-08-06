@@ -1,0 +1,15 @@
+[uwsgi]
+chdir = %d..
+module = {{package}}.wsgi
+# the virtualenv (full path)
+home = %(chdir)/.venv
+http-socket = :port
+master = true
+lazy-apps = true
+pidfile = /tmp/{{package}}-uwsgi-%U.pid
+# logfile
+logto = /tmp/{{package}}-uwsgi-%U.log
+# determined by number of cpu cores
+processes = 2 * %k + 1
+# memory report
+memory-report = true
