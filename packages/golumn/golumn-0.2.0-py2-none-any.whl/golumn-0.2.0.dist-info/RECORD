@@ -1,0 +1,14 @@
+golumn/App.py,sha256=TuAuT1ObYo80XPdV65QmHnnPfrCYbAatvD_OaAZqbXg,5974
+golumn/ArrayGrid.py,sha256=f2lBEowwkki5B-0Jspg7AKl3jblfICbG7IC1VpIw6U0,5188
+golumn/ArrayTable.py,sha256=qMJToWzAdSG3oyxsIooqv7r_8AjXC1g1xJfbpeXG4Mc,2855
+golumn/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+golumn/__main__.py,sha256=wMTNFFhLQXk93gqdAf00fk1-ulq7v_WTzZiLZQn--c8,112
+golumn/cli.py,sha256=AQRlEcOEUIMNChsR4r7Jo1NNzQMXd5UDHcVFO1D_f88,2283
+golumn/images.py,sha256=f59u6sowqRnLQlYV4HV4EcW90-fHM7LM_sx6jIxPgsQ,2891
+golumn-0.2.0.dist-info/DESCRIPTION.rst,sha256=48Cc0k_PQQrou1Xly1RPpuybbb2eVlHY6z4WBuvKP2U,143
+golumn-0.2.0.dist-info/METADATA,sha256=cmgBSf_IeW_WKyGRmbmELulBFnopBoeDLq_VhymgziU,1305
+golumn-0.2.0.dist-info/RECORD,,
+golumn-0.2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+golumn-0.2.0.dist-info/entry_points.txt,sha256=nw8K6zG6UOiboI1l_2ZmV-f9Oqdymrk8C56eU8Lg7sM,44
+golumn-0.2.0.dist-info/metadata.json,sha256=Xm8kztkAtcjWq7veZmzNUQmqTm5nyS6kElWnNnHJuLU,1404
+golumn-0.2.0.dist-info/top_level.txt,sha256=wguKfr0Hv0Vb_yeObl6cuoa5M8cuP-PChfz5DfbzPLU,7
