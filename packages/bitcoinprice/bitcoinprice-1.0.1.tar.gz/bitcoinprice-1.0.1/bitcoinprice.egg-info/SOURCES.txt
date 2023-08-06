@@ -1,0 +1,7 @@
+README.md
+setup.py
+bitcoinprice.egg-info/PKG-INFO
+bitcoinprice.egg-info/SOURCES.txt
+bitcoinprice.egg-info/dependency_links.txt
+bitcoinprice.egg-info/requires.txt
+bitcoinprice.egg-info/top_level.txt
