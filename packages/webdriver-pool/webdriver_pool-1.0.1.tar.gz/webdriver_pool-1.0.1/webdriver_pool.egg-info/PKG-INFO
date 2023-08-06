@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: webdriver-pool
+Version: 1.0.1
+Summary: A package for building Webdriver Pool when using Selenium
+Home-page: https://github.com/Jiramew/webdriver_pool
+Author: Jiramew
+Author-email: hanbingflying@sina.com
+License: BSD License
+Description: UNKNOWN
+Platform: all
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
