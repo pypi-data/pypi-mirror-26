@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: webstarts
+Version: 2.9.0
+Summary: Entry point for modern flask/gunicorn/sentry/celery web applications
+Home-page: https://github.com/j-walker23/webstarts
+Author: john
+Author-email: john@chaosdevs.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: Python entry point setup best practices for modern webapps
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.6
