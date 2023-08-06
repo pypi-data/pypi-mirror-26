@@ -1,0 +1,10 @@
+# Your app requirements and the app in editable mode..
+-r ../requirements/local.txt
+-e ../
+
+# This example in editable mode
+-e .
+
+# This example requirements that are not already included in the app requirements
+django
+django-environ
