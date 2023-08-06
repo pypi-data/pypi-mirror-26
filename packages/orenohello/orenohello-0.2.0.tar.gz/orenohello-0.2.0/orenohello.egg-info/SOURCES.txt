@@ -1,0 +1,8 @@
+setup.py
+hello/__init__.py
+hello/hello.py
+orenohello.egg-info/PKG-INFO
+orenohello.egg-info/SOURCES.txt
+orenohello.egg-info/dependency_links.txt
+orenohello.egg-info/entry_points.txt
+orenohello.egg-info/top_level.txt
