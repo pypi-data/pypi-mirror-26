@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+diainjector/__init__.py
+diainjector/injector.py
+diainjector.egg-info/PKG-INFO
+diainjector.egg-info/SOURCES.txt
+diainjector.egg-info/dependency_links.txt
+diainjector.egg-info/not-zip-safe
+diainjector.egg-info/top_level.txt

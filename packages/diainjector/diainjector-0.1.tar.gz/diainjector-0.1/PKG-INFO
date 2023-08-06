@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: diainjector
+Version: 0.1
+Summary: Dependency injector used in dia-backend project
+Home-page: https://github.com/koyadovic/diainjector
+Author: Miguel Collado
+Author-email: m.collado.gomez@gmail.com
+License: GPL 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
