@@ -1,0 +1,131 @@
+# Transfer client
+This package provides functions for communication with the Restful Transfer
+Server.
+
+## Installation
+Via [pypi](https://pypi.python.org/pypi/transfer-client):
+
+    pip install transfer_client
+
+From source:
+
+    git clone https://git.lumc.nl/j.f.j.laros/transfer_client.git
+    cd transfer_client
+    pip install .
+
+### Server certificate
+If the server uses a self-signed certificate, the administrator of the server
+needs to add this certificate to the list of trusted authorities (change
+`server_name` and `domain`):
+
+    openssl s_client -connect server_name.domain:443 < /dev/null | \
+      openssl x509 > /usr/local/share/ca-certificates/server_name.crt
+    update-ca-certificates
+
+## Configuration
+The client creates a configuration file named
+`.config/transfer_client/config.yml`. The `config` subcommand is used to
+manipulate this file.
+
+In the following example, we set the server to `server_name.domain`, add a
+project named `test` and set this project as the default project.
+
+    transfer_client config set server server_name.domain
+    transfer_client config add test "This is a placeholder."
+    transfer_client config set project test
+
+By default, JSON is used as output format, but YAML is supported as well.
+
+    transfer_client config set output_format yaml
+
+If the server certificate can not be installed, it might be convenient to
+disable the SSL certificate check by default.
+
+    transfer_client config set ssl_check false
+
+List of all configuration variables:
+
+    transfer_client config defaults
+
+List all projects:
+
+    transfer_client config projects
+
+## Command line interface
+Use the command `transfer_client -h` for a list of subcommands. For every
+subcommand a separate help is available, e.g.,
+
+```
+$ transfer_client users -h
+usage: transfer_client users [-h] [-o OUTPUT] SERVER USER
+
+Gives a JSON object of a user together with its transfers.
+
+positional arguments:
+  SERVER      server name
+  USER        user id
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -o OUTPUT   output file
+  -n          disable ssl certificate check
+```
+
+### Typical usage
+The following high level subcommands are probably the only ones needed.
+
+To transfer a list of files, use the `transfer` subcommand. We assume that the
+server name is `server_name.domain` and the user ID is `xxxxxxxx`.
+
+    transfer_client transfer server_name.domain xxxxxxxx *.gz
+
+A directory including its subdirectories can be transferred as a gzipped
+tarfile in chunks of 10G with the `transfer_dir` command. The receiver will see
+these chunks as files, together with a `README.md` containing unpacking
+instructions.
+
+    transfer_client transfer_dir server_name.domain xxxxxxxx directory
+
+Any (possibly required) additional metadata can be passed to these functions
+via the `-a` parameter.
+
+    transfer_client transfer -a other.json server_name.domain xxxxxxxx *.gz
+
+If a transfer is interrupted for some reason, it can be resumed with the
+`resume` subcommand.
+
+    transfer_client resume server_name.domain xxxxxxxx
+
+To cancel an interrupted transfer, the `cancel` subcommand can be used.
+
+    transfer_client cancel server_name.domain xxxxxxxx
+
+### Other JSON schemas
+The client assumes the minimal JSON schema can be used. If this is not the
+case, the metadata needs to be generated beforehand. This metadata is used in a
+separate step to initiate the transfer with the `transfers` subcommand.
+
+    tranfer_client transfers server_name.domain xxxxxxxx meta.json
+
+Now the `resume` command can be used to upload the data.
+
+    transfer_client resume server_name.domain xxxxxxxx
+
+## Library
+The library implements an interface to the API of the Restful Transfer server.
+Full documentation can be found [here](https://git.lumc.nl/j.k.vis/transfer).
+
+### Usage
+To use the interface, we first make a class instance of `TransferClient`, then
+we can use the API endpoints.
+
+```python
+>>> from transfer_client import TransferClient
+>>>
+>>> # Create a class instance for a server running on server_name.domain.
+>>> tc = TransferClient('server_name.domain')
+>>>
+>>> # Get user information together with its transfers.
+>>> tc.users('xxxxxxxx')
+{ ... }
+```
