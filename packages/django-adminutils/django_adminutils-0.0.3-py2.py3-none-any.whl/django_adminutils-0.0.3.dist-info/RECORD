@@ -1,0 +1,11 @@
+adminutils/__init__.py,sha256=T_VwkJP_n1HHFlfkIR-FA9r0Nq5KXGyg6Bba1ISzDoo,3861
+adminutils/actions.py,sha256=8JvtFqoyPvdrN5vjEvdo1kW4d8kpkSpgEv2cZ8y9y0o,807
+adminutils/decorators.py,sha256=t5_wISioWbZnqIWYXzbyoq1UZmMF7vHtm8g1cnhq1gY,260
+adminutils/images.py,sha256=d76EmCmQK1qeAGScHOxmJ3lv4b57osECjkqhHwHrXe4,1597
+adminutils/widgets.py,sha256=4lCxgo7ElQ-5NkUDmhfgHAI7xPMsX2dLotz6hcbdjOI,1320
+django_adminutils-0.0.3.dist-info/DESCRIPTION.rst,sha256=xcaxEIpxXmoct62SUmmfEU2dHnTvad5qwDzeDSATtUc,485
+django_adminutils-0.0.3.dist-info/METADATA,sha256=4An89BeTdAInov6PSjfkGddB0beilQuigye1TLlgdZk,1331
+django_adminutils-0.0.3.dist-info/RECORD,,
+django_adminutils-0.0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_adminutils-0.0.3.dist-info/metadata.json,sha256=xDGqImV2b6AUr5TSfhl_DeFO1NN-pwJ_LNuvHGy0XhQ,973
+django_adminutils-0.0.3.dist-info/top_level.txt,sha256=7NgN5wNzzmV-xTpcS0tzObVRlrVA7ZbSyl9CAoox4Qc,11
