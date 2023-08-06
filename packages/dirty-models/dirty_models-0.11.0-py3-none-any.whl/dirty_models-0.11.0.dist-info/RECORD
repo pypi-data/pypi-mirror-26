@@ -1,0 +1,13 @@
+dirty_models/__init__.py,sha256=8IGNEM11KwXlQ4IJXKyj6VPmcvSIYG5EQ19vTnA2ekQ,136
+dirty_models/base.py,sha256=lZg9d0jMWr2VpNJ8mrPzW3NB219VFEFmKYvGMzdijAM,2420
+dirty_models/fields.py,sha256=2OTzg45DcDXa-Jyzb_VpleQbCJxvu2l6rgCEEBjLT0c,28904
+dirty_models/model_types.py,sha256=WSOVaJBnggTrYz2cO4YjnhFDOlY2d_UVnrtQ4KJEXU0,15594
+dirty_models/models.py,sha256=ZXNFWhwN7IF9ayAtGP5X9pvznk8yj8w3F95TC9Qxh9w,32876
+dirty_models/utils.py,sha256=1M07zXgC_vDT73fyxMaHOdkZcck5bUwJ3GNTyEjxVZc,2862
+dirty_models-0.11.0.dist-info/DESCRIPTION.rst,sha256=H0xoq0am8_jLlswqijhCCPiyXjL7cJEc_ul04jRdw4U,10186
+dirty_models-0.11.0.dist-info/METADATA,sha256=GvD61dEgippAGMOdvVYmSbPIFd7yuYno-vAccV_QkCQ,10873
+dirty_models-0.11.0.dist-info/RECORD,,
+dirty_models-0.11.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dirty_models-0.11.0.dist-info/metadata.json,sha256=uuygX0EWjNCziSqSv7y2fBZLvoNdakW5F0CtUdEG7mE,859
+dirty_models-0.11.0.dist-info/top_level.txt,sha256=RxIvzZ9-y02m3DvF-zUNTT77Bpu578Q3o6fWbuptIgU,13
+dirty_models-0.11.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
