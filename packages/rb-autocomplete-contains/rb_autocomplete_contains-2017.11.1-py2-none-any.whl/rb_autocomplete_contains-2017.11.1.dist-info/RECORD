@@ -1,0 +1,10 @@
+rb_autocomplete_contains/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rb_autocomplete_contains/extension.py,sha256=ofm5bDHBz07jemgNJ0PF29Tp4MIOmkg9o8IQCkSz1BI,1673
+rb_autocomplete_contains/templates/autocomplete_contains/modify_field.html,sha256=r9tbkXEg54lrwVX_TksDvUXi4_R_DZDS2ZMt-_vHJv4,508
+rb_autocomplete_contains-2017.11.1.dist-info/DESCRIPTION.rst,sha256=wzLlrFPAiYnM0yj324K_sBdEpDe5tB1c3XUCl8dhtYo,818
+rb_autocomplete_contains-2017.11.1.dist-info/METADATA,sha256=0eR11geChGuaDFByccfFikfuXHnHwN7095mRW9aVBRc,1456
+rb_autocomplete_contains-2017.11.1.dist-info/RECORD,,
+rb_autocomplete_contains-2017.11.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+rb_autocomplete_contains-2017.11.1.dist-info/entry_points.txt,sha256=SBWL-Djum_pvaFSVh-gHZxyToLQXfSEcp4mcdgqu2vM,109
+rb_autocomplete_contains-2017.11.1.dist-info/metadata.json,sha256=ckAqSU6jvlBkDqQhE05ek7qmS7cDmLDT-esSX_47lxo,905
+rb_autocomplete_contains-2017.11.1.dist-info/top_level.txt,sha256=_Z0cPfFuLCuM-dbMwcCuwUSaoaiGlRboL1rwSoG2X1Y,25
