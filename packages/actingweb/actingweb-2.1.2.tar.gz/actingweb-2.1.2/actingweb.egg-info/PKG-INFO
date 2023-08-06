@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: actingweb
+Version: 2.1.2
+Summary: The official ActingWeb library
+Home-page: http://actingweb.org
+Author: Greger Wedel
+Author-email: greger@support.io
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: <3
