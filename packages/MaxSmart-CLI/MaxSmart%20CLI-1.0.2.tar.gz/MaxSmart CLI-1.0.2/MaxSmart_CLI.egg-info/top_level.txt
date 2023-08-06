@@ -1,0 +1,3 @@
+explorer
+maxcli
+maxsmart_http
