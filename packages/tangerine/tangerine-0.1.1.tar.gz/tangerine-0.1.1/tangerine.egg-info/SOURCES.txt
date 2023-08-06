@@ -1,0 +1,15 @@
+README.md
+setup.py
+tangerine/__init__.py
+tangerine/client.py
+tangerine/exceptions.py
+tangerine/login.py
+tangerine/secret_provider.py
+tangerine.egg-info/PKG-INFO
+tangerine.egg-info/SOURCES.txt
+tangerine.egg-info/dependency_links.txt
+tangerine.egg-info/requires.txt
+tangerine.egg-info/top_level.txt
+tests/__init__.py
+tests/test_secret_provider.py
+tests/test_tangerine.py
