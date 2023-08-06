@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: jaeger-client-contrib
+Version: 0.1.0
+Summary: Jaeger Python Client with Zipkin
+Home-page: https://github.com/timonwong/jaeger-client-python-contrib
+Author: Timon Wong
+Author-email: timon86.wang@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Jaeger Python Client with Zipkin
+        ================================
+        
+        .. image:: https://img.shields.io/pypi/v/jaeger-client-contrib.svg
+            :target: https://pypi.python.org/pypi/jaeger-client-contrib
+        
+        .. image:: https://img.shields.io/pypi/l/jaeger-client-contrib.svg
+            :target: https://pypi.python.org/pypi/jaeger-client-contrib
+        
+        .. image:: https://img.shields.io/pypi/pyversions/jaeger-client-contrib.svg
+            :target: https://pypi.python.org/pypi/jaeger-client-contrib
+        
+        .. image:: https://codecov.io/github/timonwong/jaeger-client-python-contrib/coverage.svg?branch=master
+            :target: https://codecov.io/github/timonwong/jaeger-client-python-contrib
+            :alt: codecov.io
+        
+        Install
+        -------
+        
+        ``jaeger_client_contrib`` is on the Python Package Index (PyPI):
+        
+        ::
+        
+            pip install jaeger_client_contrib
+        
+Keywords: jaeger tracing opentracing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
