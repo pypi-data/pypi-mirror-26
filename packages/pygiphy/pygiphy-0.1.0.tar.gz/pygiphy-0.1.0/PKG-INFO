@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pygiphy
+Version: 0.1.0
+Summary: Python interface for the Giphy API
+Home-page: https://github.com/MichaelYusko/PyGiphy
+Author: Mike Yusko
+Author-email: freshjelly12@yahoo.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
