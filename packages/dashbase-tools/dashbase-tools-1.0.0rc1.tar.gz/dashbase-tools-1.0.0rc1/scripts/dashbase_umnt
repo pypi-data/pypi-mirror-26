@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script is used to exit fuse.
+
+kill $(pgrep -f dashbase_mnt) >/dev/null 2>&1
