@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+TOMSO.egg-info/PKG-INFO
+TOMSO.egg-info/SOURCES.txt
+TOMSO.egg-info/dependency_links.txt
+TOMSO.egg-info/requires.txt
+TOMSO.egg-info/top_level.txt
+tomso/__init__.py
+tomso/adipls.py
+tomso/gyre.py
+tomso/io.py
+tomso/mesa.py
+tomso/stars.py
