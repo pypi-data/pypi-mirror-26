@@ -1,0 +1,9 @@
+setup.py
+cerca/__init__.py
+cerca/cerca.py
+cerca.egg-info/PKG-INFO
+cerca.egg-info/SOURCES.txt
+cerca.egg-info/dependency_links.txt
+cerca.egg-info/not-zip-safe
+cerca.egg-info/top_level.txt
+scripts/cerca
