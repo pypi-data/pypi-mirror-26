@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: safe_extractor
+Version: 0.0.2
+Summary: Some code that supposedly extracts zip/tar archives safely.
+Home-page: https://github.com/jonathanporta/safe_extractor
+Author: Jonathan Porta
+Author-email: jonathan@jonathanPorta.com
+License: MIT
+Description: # safe_extractor
+        Some code that supposedly extracts zip/tar archives safely.
+        
+        No guarantees.
+        
+        ## Install
+        `pip install safe_extractor`
+        
+        ## Usage
+        ```
+          from safe_extractor import safe_extractor
+          safe_extractor.untar_it("myfile.tar.gz", extract_path='.')
+          safe_extractor.unzip_it("myfile.zip", extract_path='.')
+        ```
+        
+Keywords: tar zip extract archive
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
