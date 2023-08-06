@@ -1,0 +1,11 @@
+MaterialsTools-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+MaterialsTools-0.0.1.dist-info/METADATA,sha256=ascnh6FxuR2L6tMogYOds5a83k4Mzg0JGm8fl0XlXvI,238
+MaterialsTools-0.0.1.dist-info/RECORD,,
+MaterialsTools-0.0.1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+MaterialsTools-0.0.1.dist-info/metadata.json,sha256=kcke9osPQEgzCPyK7oIstujcX3sgjY_ro9iDi9uoRIY,355
+MaterialsTools-0.0.1.dist-info/top_level.txt,sha256=E1PZa9_yTO_2tL8OP1LYuapBzAwRAiYb9gQflH9DKPw,20
+ModelingTools/GenerateAbsorbPoint.py,sha256=25fDUO6pp7BA-lbBVqjY0oEPPKyRaej5aKrAij3ipRA,754
+ModelingTools/GenerateSlab.py,sha256=iG5jN22zaSjJvoMQ-98hT9vFJBktXZOXlZpbCkSLaoc,468
+ModelingTools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Utils/SurfaceUtils.py,sha256=TLw8Ndu2hzx3DcKZE8eMNuA8E0PFlXEI2ZPdkHKqfls,1264
+Utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
