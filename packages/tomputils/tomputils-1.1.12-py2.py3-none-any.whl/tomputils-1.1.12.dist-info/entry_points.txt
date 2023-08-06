@@ -1,0 +1,4 @@
+[console_scripts]
+downloader = tomputils.downloader.downloader_console:download
+mattermost = tomputils.mattermost.mattermost_console:do_command
+
