@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pysam_win.egg-info/PKG-INFO
+pysam_win.egg-info/SOURCES.txt
+pysam_win.egg-info/dependency_links.txt
+pysam_win.egg-info/top_level.txt
+pysam_windows/Pileup.py
+pysam_windows/Pileup.pyc
+pysam_windows/__init__.py
+pysam_windows/__init__.pyc
+pysam_windows/namedtuple.py
+pysam_windows/namedtuple.pyc
+pysam_windows/version.py
+pysam_windows/version.pyc
