@@ -1,0 +1,8 @@
+setup.py
+Nextcode.egg-info/PKG-INFO
+Nextcode.egg-info/SOURCES.txt
+Nextcode.egg-info/dependency_links.txt
+Nextcode.egg-info/entry_points.txt
+Nextcode.egg-info/requires.txt
+Nextcode.egg-info/top_level.txt
+nextcode/__init__.py
