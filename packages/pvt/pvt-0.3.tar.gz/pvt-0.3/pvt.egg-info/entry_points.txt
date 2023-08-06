@@ -1,0 +1,3 @@
+[console_scripts]
+pvt = pvt.__main__:_main
+
