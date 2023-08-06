@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+datetimewindow/__init__.py
+datetimewindow/datetimewindow.py
+datetimewindow.egg-info/PKG-INFO
+datetimewindow.egg-info/SOURCES.txt
+datetimewindow.egg-info/dependency_links.txt
+datetimewindow.egg-info/requires.txt
+datetimewindow.egg-info/top_level.txt

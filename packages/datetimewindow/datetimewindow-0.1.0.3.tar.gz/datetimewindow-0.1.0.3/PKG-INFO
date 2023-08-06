@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: datetimewindow
+Version: 0.1.0.3
+Summary: Data type for windows of datetimes.
+Home-page: https://github.com/jbryanscott/datetimewindow
+Author: JBS
+Author-email: jbs@jbryanscott.com
+License: UNKNOWN
+Download-URL: https://github.com/jbryanscott/datetimewindow/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: datetime,window,interval,range
+Platform: UNKNOWN
