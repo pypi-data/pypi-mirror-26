@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: anndata
+Version: 0.3.0.2
+Summary: An annotated data matrix.
+Home-page: http://github.com/theislab/anndata
+Author: Philipp Angerer, Alex Wolf
+Author-email: alex.wolf@helmholtz-muenchen.de
+License: BSD-3-Clause
+Description-Content-Type: UNKNOWN
+Description: |Build Status| |Docs|
+        
+        .. |Build Status| image:: https://travis-ci.org/theislab/anndata.svg?branch=master
+           :target: https://travis-ci.org/theislab/anndata
+        .. |Docs| image:: https://readthedocs.org/projects/scanpy/badge/?version=latest
+           :target: https://scanpy.readthedocs.io
+        
+        AnnData
+        =======
+        
+        ``anndata.AnnData`` stores a data matrix ``.X`` as an array or sparse matrix, annotation of samples ``.smp`` and variables ``.var`` as dataframes and unstructured annotation ``.uns`` as dictionary.
+        
+        Read the `documentation <http://scanpy.readthedocs.io/api/scanpy.api.AnnData.html>`_.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
