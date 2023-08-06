@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: w163
+Version: 1.0.1
+Summary: this is a test package for packing python liberaries tutorial.
+Home-page: https://pypi.python.org/pypi
+Author: liulangdao
+Author-email: langdao5@aol.com
+License: MIT
+Description: UNKNOWN
+Keywords: w163
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

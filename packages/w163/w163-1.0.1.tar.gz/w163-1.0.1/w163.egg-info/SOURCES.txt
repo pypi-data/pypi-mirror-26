@@ -1,0 +1,10 @@
+README.rst
+setup.py
+w163/__init__.py
+w163/getw163.py
+w163/getw163extract.py
+w163.egg-info/PKG-INFO
+w163.egg-info/SOURCES.txt
+w163.egg-info/dependency_links.txt
+w163.egg-info/top_level.txt
+w163.egg-info/zip-safe
