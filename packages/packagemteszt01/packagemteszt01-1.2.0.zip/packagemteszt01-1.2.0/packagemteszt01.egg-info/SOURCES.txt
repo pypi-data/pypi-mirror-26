@@ -1,0 +1,10 @@
+README.rst
+setup.py
+packagemteszt01/__init__.py
+packagemteszt01/demo.py
+packagemteszt01.egg-info/PKG-INFO
+packagemteszt01.egg-info/SOURCES.txt
+packagemteszt01.egg-info/dependency_links.txt
+packagemteszt01.egg-info/entry_points.txt
+packagemteszt01.egg-info/requires.txt
+packagemteszt01.egg-info/top_level.txt
