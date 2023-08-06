@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: cmsplugin_ss_icon
+Version: 0.1.0b1
+Summary: Add support for font awesome icons to django cms
+Home-page: https://github.com/alexjbartlett/djangocms-ss-icon
+Author: Alex J Bartlett
+Author-email: alex@sourceshaper.com
+License: MIT
+Description: .. image:: https://travis-ci.org/alexjbartlett/djangocms-ss-icon.svg?branch=master
+            :target: https://travis-ci.org/alexjbartlett/djangocms-ss-icon
+        
+        djangocms font-awesome icon plugin
+        ==================================
+        
+        A simple plugin for djangocms that renders a font awesome icon using a <i> tag.
+        
+        Installation
+        ------------
+        
+            pip install cmsplugin_ss_icon
+        
+        In your settings.py
+        
+            INSTALLED_APPS = (
+                ...
+                'cmsplugin_ss_icon',
+            )
+        
+        This package assumes that font-awesome css and fonts are already available in your build.  For information
+        about how to include font-awesome on your site see the official documentation_.
+        
+        .. _documentation: http://fontawesome.io/get-started/
+        
+        Tested on
+            * Python 2.7. 3.4, 3.5
+            * Django 1.8, 1.9, 1.10
+            * DjangoCms 3.4
+        
+Keywords: djangocms fontawesome
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cmsplugin_ss_icon/__init__.py
+cmsplugin_ss_icon/cms_plugins.py
+cmsplugin_ss_icon/models.py
+cmsplugin_ss_icon/test.py
+cmsplugin_ss_icon.egg-info/PKG-INFO
+cmsplugin_ss_icon.egg-info/SOURCES.txt
+cmsplugin_ss_icon.egg-info/dependency_links.txt
+cmsplugin_ss_icon.egg-info/top_level.txt
+cmsplugin_ss_icon/migrations/0001_initial.py
+cmsplugin_ss_icon/migrations/__init__.py
+cmsplugin_ss_icon/templates/cmsplugin_ss_icon/icon.html
