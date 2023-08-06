@@ -1,0 +1,3 @@
+[console_scripts]
+wifi-qrcode-generator = wifi_qrcode_generator:main
+

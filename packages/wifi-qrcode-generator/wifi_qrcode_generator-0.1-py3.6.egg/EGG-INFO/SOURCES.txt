@@ -1,0 +1,8 @@
+setup.py
+wifi_qrcode_generator.py
+wifi_qrcode_generator.egg-info/PKG-INFO
+wifi_qrcode_generator.egg-info/SOURCES.txt
+wifi_qrcode_generator.egg-info/dependency_links.txt
+wifi_qrcode_generator.egg-info/entry_points.txt
+wifi_qrcode_generator.egg-info/requires.txt
+wifi_qrcode_generator.egg-info/top_level.txt
