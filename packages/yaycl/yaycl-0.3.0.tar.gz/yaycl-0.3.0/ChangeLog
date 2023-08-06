@@ -1,0 +1,36 @@
+CHANGES
+=======
+
+0.3.0
+-----
+
+* Update tests for py3 compatibility
+
+0.2.0
+-----
+
+* functionalized yaml loading, extension is customizeable
+* lya unpinned
+* pin lya version to 15.8.0
+* Update README.md
+
+0.1.2
+-----
+
+* runtime overrides don't stomp all keys in updated leaf on update
+
+0.1.1
+-----
+
+* wheel support
+* Inheritance should no longer recurse into a RuntimeError
+* create\_test\_yaml isn't a context manager, test imports by importing
+* Stinking badges..
+* Messing with travis config..
+
+0.1.0
+-----
+
+* setup.cfg cleanup (correct license classifier)
+* README is markdown
+* initial commit
