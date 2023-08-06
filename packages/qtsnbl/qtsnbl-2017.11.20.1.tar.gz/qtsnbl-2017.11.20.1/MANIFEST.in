@@ -1,0 +1,3 @@
+exclude .hgignore
+exclude _test.py
+prune resources
