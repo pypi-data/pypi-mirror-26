@@ -1,0 +1,11 @@
+README.rst
+setup.py
+shgo/__init__.py
+shgo/_shgo.py
+shgo/_tgo.py
+shgo.egg-info/PKG-INFO
+shgo.egg-info/SOURCES.txt
+shgo.egg-info/dependency_links.txt
+shgo.egg-info/not-zip-safe
+shgo.egg-info/requires.txt
+shgo.egg-info/top_level.txt
