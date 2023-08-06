@@ -1,0 +1,10 @@
+http-parser #https://github.com/benoitc/http-parser/
+Sphinx==1.6.3
+sphinxcontrib-plantuml #https://pypi.python.org/pypi/sphinxcontrib-plantuml
+browsercookie==0.7.2 #https://pypi.python.org/pypi/browsercookie/0.7.2
+gevent #http://www.gevent.org/servers.html
+keyring==8.7
+pyyaml
+sphinxcontrib-inlinesyntaxhighlight
+flask
+requests-toolbelt

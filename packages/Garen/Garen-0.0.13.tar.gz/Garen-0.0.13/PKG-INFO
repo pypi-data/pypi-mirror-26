@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: Garen
+Version: 0.0.13
+Summary: # garan
+
+[![PyPI version](https://badge.fury.io/py/Garen.svg)](https://badge.fury.io/py/Garen)
+
+# 文档
+
+[中文文档](README-zh.md)
+
+easy use proxy app for web develop
+
+
+
+# design 
+
+![xx](./docs/images/design.png)
+
+# 捐赠
+
+<img src="https://ws4.sinaimg.cn/large/006tNc79ly1fl4wwvbz15j30u015575y.jpg" width="320">
+Home-page: UNKNOWN
+Author: timger
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.6, <3.0
