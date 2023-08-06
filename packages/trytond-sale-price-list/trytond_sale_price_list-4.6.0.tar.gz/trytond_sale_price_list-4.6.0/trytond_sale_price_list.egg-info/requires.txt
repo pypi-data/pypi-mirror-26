@@ -1,0 +1,5 @@
+trytond_company >= 4.6, < 4.7
+trytond_party >= 4.6, < 4.7
+trytond_product_price_list >= 4.6, < 4.7
+trytond_sale >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
