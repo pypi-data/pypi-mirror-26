@@ -1,0 +1,11 @@
+vsphere_guest_run/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsphere_guest_run/vgr.py,sha256=wVDPJvUf_DBbALgNCUHD4jm7GeH8oWhHYjxMRoDstf0,6984
+vsphere_guest_run/vsphere.py,sha256=ZtvNVBeEwZM47nsWHoe5AKWatZ3sawMzgqkIgBEHkeY,8854
+vsphere_guest_run-0.0.1.dev14.dist-info/DESCRIPTION.rst,sha256=BXgbLoQ5ZTsC3mXlloA-R5OVI7b_2RVGVH-QxJDlCQQ,1097
+vsphere_guest_run-0.0.1.dev14.dist-info/METADATA,sha256=r0fvXtb699VLwsUg7OIB7lvaR7vAbonSNcCaG1XW8gY,1864
+vsphere_guest_run-0.0.1.dev14.dist-info/RECORD,,
+vsphere_guest_run-0.0.1.dev14.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+vsphere_guest_run-0.0.1.dev14.dist-info/entry_points.txt,sha256=oX3OxcNfjWgJAlk6QlZwhDp8q2rHN1iKBdGZCj3Bxo4,51
+vsphere_guest_run-0.0.1.dev14.dist-info/metadata.json,sha256=uY25VN_t2KR9n2UNZsjCE_sroiuj5OzoU0_W1HTeFXw,1123
+vsphere_guest_run-0.0.1.dev14.dist-info/pbr.json,sha256=Pk-meB5diNLoOgeYdXWNpfTiGs0LgaJ9QGr8-t-UDug,47
+vsphere_guest_run-0.0.1.dev14.dist-info/top_level.txt,sha256=bZg_AO1xTR72SM-qLgc4TYCn-uZ11n88kzmM6X4d7oc,18
