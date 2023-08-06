@@ -1,0 +1,11 @@
+README.rst
+setup.py
+almanac_bot.egg-info/PKG-INFO
+almanac_bot.egg-info/SOURCES.txt
+almanac_bot.egg-info/dependency_links.txt
+almanac_bot.egg-info/requires.txt
+almanac_bot.egg-info/top_level.txt
+almanacbot/__init__.py
+almanacbot/almanacbot.py
+almanacbot/config.py
+almanacbot/constants.py
