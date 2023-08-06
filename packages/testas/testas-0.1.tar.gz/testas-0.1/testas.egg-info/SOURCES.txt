@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+testas.egg-info/PKG-INFO
+testas.egg-info/SOURCES.txt
+testas.egg-info/dependency_links.txt
+testas.egg-info/entry_points.txt
+testas.egg-info/requires.txt
+testas.egg-info/top_level.txt
