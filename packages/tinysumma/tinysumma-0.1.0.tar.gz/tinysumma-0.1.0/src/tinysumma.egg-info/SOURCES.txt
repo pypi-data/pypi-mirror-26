@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+src/tinysumma/__init__.py
+src/tinysumma/main.py
+src/tinysumma/version.py
+src/tinysumma.egg-info/PKG-INFO
+src/tinysumma.egg-info/SOURCES.txt
+src/tinysumma.egg-info/dependency_links.txt
+src/tinysumma.egg-info/entry_points.txt
+src/tinysumma.egg-info/requires.txt
+src/tinysumma.egg-info/top_level.txt
+src/tinysumma/data/messages.csv
+src/tinysumma/data/urls.csv

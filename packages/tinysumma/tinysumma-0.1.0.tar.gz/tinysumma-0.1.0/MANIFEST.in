@@ -1,0 +1,3 @@
+include README.rst
+include src/tinysumma/data/messages.csv
+include src/tinysumma/data/urls.csv
