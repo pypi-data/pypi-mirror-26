@@ -1,0 +1,15 @@
+MANIFEST.in
+readme.md
+setup.py
+./gec/__init__.py
+./gec/__main__.py
+./gec/abstract.py
+./gec/algorithm.py
+./gec/fields.py
+./gec/groups.py
+./gec/contrib/__init__.py
+./gec/contrib/bitcoin.py
+gec.egg-info/PKG-INFO
+gec.egg-info/SOURCES.txt
+gec.egg-info/dependency_links.txt
+gec.egg-info/top_level.txt

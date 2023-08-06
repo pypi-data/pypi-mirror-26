@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: gec
+Version: 0.1.1
+Summary: A ECC implementation via oop style abstract algebra
+Home-page: UNKNOWN
+Author: ryankung
+Author-email: ryankung@ieee.org
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: 
+        # A Pure Python implementtation of Calculator over ECC Groups
+        
+        
+        * in `tests/test_bitcoin_genpub.py` you can check the bitcoin case, verified with `Vitalik Buterin`'s `pybitcointools`.
+        
+        Note that, this implementation may cause 10 times slower than `Vitalik Buterin`'s `fast jacobian` implementation.
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
