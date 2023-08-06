@@ -1,0 +1,4 @@
+# Include README
+include README.md
+
+# Include the data files
