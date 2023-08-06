@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/data_file
+sample/__init__.py
+sample/package_data.dat
+sample/sample.py
+sample/test1.py
+sample_zewei2.egg-info/PKG-INFO
+sample_zewei2.egg-info/SOURCES.txt
+sample_zewei2.egg-info/dependency_links.txt
+sample_zewei2.egg-info/entry_points.txt
+sample_zewei2.egg-info/requires.txt
+sample_zewei2.egg-info/top_level.txt

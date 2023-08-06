@@ -1,0 +1,3 @@
+[console_scripts]
+sample_exe = sample.sample:main
+
