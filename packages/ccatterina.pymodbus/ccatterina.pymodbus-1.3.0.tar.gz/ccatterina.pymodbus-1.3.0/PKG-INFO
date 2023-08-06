@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: ccatterina.pymodbus
+Version: 1.3.0
+Summary: A fully featured modbus protocol stack in python
+Home-page: https://github.com/ccatterina/pymodbus/
+Author: Galen Collins
+Author-email: ccatterina@energievalsabbia.it
+License: BSD
+Description: 
+            Fork of https://github.com/riptideio/pymodbus.
+            Pymodbus aims to be a fully implemented modbus protocol stack implemented
+            using twisted.  Its orignal goal was to allow simulation of thousands of
+            modbus devices on a single machine for monitoring software testing.
+            
+Keywords: modbus,twisted,scada
+Platform: Linux
+Platform: Mac OS X
+Platform: Win
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Framework :: Twisted
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
