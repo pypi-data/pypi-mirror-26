@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+numeraicb.py
+setup.py
+numeraicb.egg-info/PKG-INFO
+numeraicb.egg-info/SOURCES.txt
+numeraicb.egg-info/dependency_links.txt
+numeraicb.egg-info/requires.txt
+numeraicb.egg-info/top_level.txt
