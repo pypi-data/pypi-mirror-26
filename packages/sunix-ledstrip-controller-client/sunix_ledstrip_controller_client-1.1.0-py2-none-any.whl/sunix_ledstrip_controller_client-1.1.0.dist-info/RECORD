@@ -1,0 +1,15 @@
+sunix_ledstrip_controller_client/__init__.py,sha256=WbfC3H2vehP6saNXgJrLtfFWuzdQ_LsbMQqRC63cDBI,193
+sunix_ledstrip_controller_client/client.py,sha256=2xntwr1FUYIOb0Gk9Hq6TQa7mxPTMkUI6U2SiWZXQts,7327
+sunix_ledstrip_controller_client/controller.py,sha256=VXIORp5whyBWsAupBUg6vMXfgPpMf5LzjRU0bELQaPY,2410
+sunix_ledstrip_controller_client/functions.py,sha256=luILI0T8s4kFMXlmsz0pK8g3fEJ4wXuw9z9NGTkq-eQ,1093
+sunix_ledstrip_controller_client/packets/__init__.py,sha256=XL7sFLX795ozsJ0LBnb_I-6NqLlba_MRRSZmACJkNIM,774
+sunix_ledstrip_controller_client/packets/requests.py,sha256=5VHYUha8CZhu6MQTLjgNb7G6QXD5YULsUIa9nIxTRvs,8006
+sunix_ledstrip_controller_client/packets/responses.py,sha256=uOymf0Y0JNe6yPTGXFwht5sPVIxJQcx_RVpO82stspg,1245
+sunix_ledstrip_controller_client-1.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sunix_ledstrip_controller_client-1.1.0.dist-info/METADATA,sha256=gTIWO4eCWPj5686C1Ef0pueNkm_CXu0XOC9jMNbjF9k,523
+sunix_ledstrip_controller_client-1.1.0.dist-info/RECORD,,
+sunix_ledstrip_controller_client-1.1.0.dist-info/WHEEL,sha256=90z-L1FjHEv_g8pMPaPbaXuhBIvSlvYObRaa122x8ag,97
+sunix_ledstrip_controller_client-1.1.0.dist-info/metadata.json,sha256=ySL3-RRC6K_wDAsmCmf25EAvXoga-_mzDgauY7YIY9M,708
+sunix_ledstrip_controller_client-1.1.0.dist-info/top_level.txt,sha256=fXABHCcdNiMGYt-ZebBJBOcKDEFfZHdh_ry2FvDtigI,39
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/basic_test.py,sha256=Up-JWTjjczrEQTmeugJLEzrSO0JiOmYlxtZBemXwg_w,1730
