@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: pynamics
+Version: 0.0.2
+Summary: Foldable robotics is a package for designing and analyzing foldable laminate robots
+Home-page: https://github.com/idealabasu/code_pynamics
+Author: Dan Aukes
+Author-email: danaukes@danaukes.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: idealab-tools
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+
+UNKNOWN
+
+
