@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+VERSION
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+django_py_zipkin/__init__.py
+django_py_zipkin/middleware.py
+django_py_zipkin/tasks.py
+django_py_zipkin/transport.py
+django_py_zipkin.egg-info/PKG-INFO
+django_py_zipkin.egg-info/SOURCES.txt
+django_py_zipkin.egg-info/dependency_links.txt
+django_py_zipkin.egg-info/not-zip-safe
+django_py_zipkin.egg-info/requires.txt
+django_py_zipkin.egg-info/top_level.txt
