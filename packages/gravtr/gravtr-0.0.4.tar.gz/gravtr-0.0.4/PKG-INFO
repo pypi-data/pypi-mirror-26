@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: gravtr
+Version: 0.0.4
+Summary: Simple gravatar url generator
+Home-page: https://github.com/gfabricio/gravtr
+Author: Guilherme Fabricio
+Author-email: gfabricio@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: gravatar avatar gravtr
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
