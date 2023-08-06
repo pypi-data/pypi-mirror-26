@@ -1,0 +1,11 @@
+README.md
+setup.py
+mytestpackage/__init__.py
+mytestpackage/mod1.py
+mytestpackage.egg-info/PKG-INFO
+mytestpackage.egg-info/SOURCES.txt
+mytestpackage.egg-info/dependency_links.txt
+mytestpackage.egg-info/top_level.txt
+mytestpackage/group1/__init__.py
+mytestpackage/group1/sample1.py
+mytestpackage/group1/sample2.py
