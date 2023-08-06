@@ -1,0 +1,13 @@
+pyrequirements/__init__.py,sha256=d63k_BfR2U316pXt3ctm5dvsR6xDjqZphLAw5YsqYns,127
+pyrequirements/_version.py,sha256=_jTJcT-A5okO6N-HiT7RCcQOsmqyyZ_3wYpU-W1C0oE,18471
+pyrequirements/conf.py,sha256=AVfAI95RejuVf_ajo5XoS_ytU50GCzbTgN0ABS9dyAw,1359
+pyrequirements/list.py,sha256=PeNt4Sa_XdCgcPWe1-HcTUiFWEM9aobKtGhFywwHsxE,109
+pyrequirements/main.py,sha256=b3CAoHcxqSrie6-7CTiqTPhEhUlKKU1Nyvx04Kd1xTY,1067
+pyrequirements/resource/requirements.ini,sha256=o4_QpXpTjMa1QKL9cg8MONRHTHarBjLii-LasnzkX-E,34
+PyRequirements-0.1.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+PyRequirements-0.1.2.dist-info/entry_points.txt,sha256=8A3lwngj4W-iPLvB_5mAwERHg_J0zCaB4QSn_7UgbFY,61
+PyRequirements-0.1.2.dist-info/METADATA,sha256=Ooae7nAtTF5TYnGW1ZjA5PJ1oOo5EqdIJENc6fQuPik,598
+PyRequirements-0.1.2.dist-info/metadata.json,sha256=PwiBuIKZqQApKIvIN_OMF-ahMis46DqFpW03kWFYxcc,904
+PyRequirements-0.1.2.dist-info/RECORD,,
+PyRequirements-0.1.2.dist-info/top_level.txt,sha256=cxFefeJVgV7yBh4cHbdcpgArk4Pada_vfdDV6F7hjv4,15
+PyRequirements-0.1.2.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
