@@ -1,0 +1,659 @@
+CHANGES
+=======
+
+5.0.0
+-----
+
+* Add release note for Euphrates
+* Harmonization titles of the doc of the test projects
+* Fix bug in \`\`qtip/scripts/quickstart.sh\`\`
+* Lookup in enviroment for OPNFV release name
+* Download ramspeed from new url
+* Disable tty in CI scripts to remove color in ansible output
+* Add user and config guide for web portal
+* Freeze requirements for Euphrates
+* Fix output path of testing results
+* delete legacy code from branch stable/euphrates
+* Fix error in compute docker compose file
+* Fix script path error
+* Fix error in CI job
+* Fix output path
+* Refactor CI scripts
+* Use minimal output
+* Removed used setting in qtip package configuration
+* Mitigating for missing values in storage QPI
+* Add system info for compute report
+* Keep tests/data consistent with repository structure
+* Add score calculation module for storperf
+* Fix bug that start\_job script exit unexpectedly
+* Add developer guide for QTIP-WEB services
+* Use legacy storperf images instead of master branch
+* Move storage-qpi proposal to devguide
+* Refactor storperf testing scripts into ansible role
+* Skip container and docker image clean up
+* Some Optimizations
+* Setup CI job for storage benchmarking on apex
+* Add example storage benchmarking project running on zte-pod4
+* refactor storperf scripts structure
+* Fix compute CI job
+* Migrate contents from benchmarks to resources
+* Create entry script for CI
+* compute-qpi CI scripts
+* Add basic ui
+* bugfix: install the missing package openssh-client
+* Fix permission issue on apex
+* refactor: run storperf scripts in qtip container
+* Optimize Dockerfile
+* Refactor QPI module
+* Fix bug in apex inventory
+* install setuptools's latest version in container
+* Fix bug in running storperf.sh when WORKSPACE is defined
+* Find nova vs. vm mapping relation
+* run storperf test by using these scripts
+* Replace example with test result from zte apex virtual pod
+* revert the usage of qgrid since it is not supported by nbviewer
+* Deprecate plan and metric loader
+* Deprecate library qtip.driver
+* Add section headers to user guide
+* Implement benchmark running and logging the output
+* Update userguide for command completion
+* Fix verification failure caused by connexion version
+* Add system information and test condition proposal for storage QPI
+* Add ceph-disk-info role to get the ceph disk and journal info from ceph nodes
+* Add ceph-cache-info role to get the ceph client cache info from ceph nodes
+* Add ceph-network-info role to get the cluster network info and interface network info from ceph nodes
+* Add further enhancements into compute-report
+* Update release note for Danube 3.0
+* Add Authentication and Basic CRUD for Repos
+* Add "NODE\_NAME" in "envs" otherwise it will fails when docker run
+* Beautify table and figure output
+* Define Database models
+* add a handling process when testapi\_url is None
+* Add juyter-notebook for visualization
+* Create example of storage qpi report
+* Setup Django framework for qtip web servies
+* Add an testapi\_url option in the ci script
+* Make same workloads distinguishable for report. Issue encountered in case of "memory" results
+* Integrate Report with CLI
+* Amend compute QPI design document
+* Fix bug in aggregation
+* Fix bug in QPI calculation
+* Refactor output format
+* Initial draft for storage QPI
+* Add missing description in compute QPI spec
+* Add description of each workload
+* bugfix: installer is not defined in report.yml
+* bugfix regex for cpu
+* add system\_info and condition to qpi report
+* Fix bug in apex module
+* Beautify the argument names
+* Fix argument typo in example configuration
+* Pass on unhandled options
+* Refactor Cli
+* Add more badges
+* metrics baseline in compute-baseline.json
+* Pass on all unhandled options
+* Update getting started guide
+* Add codeship badge to show pypi deployment status
+* give a sample compute baseline
+* bugfix memory report
+* Add support for create new project from different templates
+* improve the regex for matching "cpu"
+* Update documentation
+* bugfix CI failure
+* use the git link to replace qtip\_spec
+* bugfix unixbench report templates
+* Revert "correct arithmetic baseline"
+* update run\_ci.sh
+* correct arithmetic baseline
+* No need to list the other nodes system information
+* Remove "plan" module. Replaced by "project"
+* Add cli-prompts while creating workspace
+* Add support for manually installed (not using installer) OPNFV pod
+* delete unuse code in directory /qtip
+* Add arithmetic metrics
+* delete unuse code in directory legacy
+* Implement sunburst badge for QPI
+* Switch to qtip-cli for ci job
+* Remove prompt for teardown
+* Refactoring workspace related commands to \`project\` group
+* Update readme of running with native \`ansible-playbook\` command
+* Check ssh-agent before running tests. Fail playbook if not running
+* Get rid of \`changed=false\` flag in test result
+* The script for CI
+* delete test scripts which are copied from releng/jjb/qtip
+* Implement setup/run command
+* Fix warning on missing ansible hosts file
+* Set installer and master-host as required options
+* Fix document index error
+* update Dockerfile
+* Remove prompts for options while creating workspace
+* Include index files in master doc
+* remove ansible.cfg.default which is no longer in use
+* Implement qtip workspace create
+* Fix release notes link
+* Update release note to Danube 2.0
+* Copy integration test scripts from releng/jjb/qtip
+* Add user guide about install from source code
+* Allow executing benchmark under non-root user
+* Revert "Merge workspace files into one folder"
+* bugfix: regex node role
+* miss dependencies for ubuntu
+* Add developer guide for framework
+* Add user guide for using ansible-playbook to run QTIP benchmarks
+* Add support for reporting to testapi
+* Add support for result aggregation
+* Include memory metrics to calculation
+* Add dpi metrics to calculation
+* Organize common tasks under qtip-common role
+* Rewrite \`export\_to\_file\` as decorator
+* Add ssl aes metrics in qpi calculation
+* Prompt for variables required for creating workspace
+* Export collected metrics to json as inputs for calculating
+* Support running collect stage only
+* Fix package missing on debian hosts
+* Collect arithmetic metrics from unixbench
+* Save logs before collecting
+* Unify workdir
+* Cleanup metrics report
+* Add support for render a justified output from list and dict
+* Organize \*\*all\*\* tasks into ansible role \`qtip\`
+* Organize results in folder named with pod and current date
+* Rename folders
+* Fix bug on apex
+* correct document of module apex\_generate\_inventory
+* Dump unixbench results without top folder
+* Fix issues when running qtip first time
+* Add AES testing in SSL metrics
+* Set default folder for dump data
+* Organize testapi tasks into ansible roles
+* Cleanup customizable variables of workspace
+* Group test results and report under node
+* Add comments about workspace parameters
+* Reorganize benchmarking tasks into ansible roles which helps to
+* Fix workspace creator
+* Automate QTIP upload to PyPI
+* Restore default content of ansible.cfg
+* Create workspace by ansible playbook
+* Add UnixBench benchmarking role
+* Use ansible roles to setup development tools
+* Use different folder for cached data
+* Fix error in details
+* fix apex integration
+* Set default width to 80 for justify filter
+* Set plugfest demo site for default testapi url
+* Create ramspeed report
+* Backport ramspeed benchmarking playbook from qtip.driver
+* Add unittests for testapi client
+* Fix warnings on same name of host and group in Ansible 2.3
+* Collect dpi metrics and report
+* Optimize nDPI repeating speed
+* Add E release development version
+* Add nDPI tasks
+* Fix hardcode dump file
+* Enable task profiling
+* Remove samples from repository
+* apex integration
+* push results to testapi
+* Update .gitignore
+* Add testapi setup task
+* Aggregate qpi score from all nodes
+* Move YAML resources to /resources
+* Load benchmark specification from external file
+* Add usage of testapi client
+* Fix error in py35
+* User friendly messages for exceptions
+* Consume OPNFV TestAPI to push results
+* Dump collected facts
+* rename output file to sample
+* Refactoring connection task
+* Fix format error
+* Fix reporting tasks
+* Add document about how to release QTIP Python package
+* Implement a sample qpi report to show how to retrieve variables from benchmark results
+* Normalize system info variables and report
+* Integrate openssl metrics for qpi calculate
+* Implement calculator PoC
+* Add todo items for integration
+* Integrate reporter
+* Add integration test
+* Update index page for docs.qtip.io
+* Add ansible action plugin \`collect\`
+* Add ansible module \`fuel\`
+* bugfix in regex of ssl
+* Beautify compute report
+* Add more comprehensive document example
+* Add instructions for releasing
+* Add instructions about branching
+* Reorganize requirements
+* Add guide for exposing api port during docker run
+* Delete unnecessary material
+* Replace Qtip with QTIP
+* Replace Qtip with QTIP
+* Fix document title
+* Add missing license header
+* Update QTIP index
+* Create release note for Danube 1.0
+* Normalize all section headers
+* delete useless dependency coverage
+* init TOM: machine learning on test results
+* Configure docker to enable api autorun
+* Add path for QTIP docs
+* Add more content to developer overview
+* Add jinja2 filter justify
+* Add project introduction
+* update user docs
+* Add info about selective running
+* Add overview in developer guide
+* remove replicated dependencies
+* cite danube.rst in index.rst
+* Add API docs
+* Align folder structure \`docs/testing/developer\` to opnfvdocs template
+* Update ssh-key request
+* Cleanup DEVELOP.md
+* add qtip installation in Dockerfile
+* bugfix: regex for dpi
+* Update CLI docs
+* Integrate cli, runner and reporter
+* Rename docs/testing/developer/design to docs/testing/developer/devguide
+* Cleanup \`docs\` folder
+* Sync docs from stable/danube 05ef2c4f46a9dc7a704a290eb15817c80a52c2e6
+* Update CLI docs
+* Fix socker connection issue in qtip docker
+* Add unit tests for List and get in API
+* correct the path of .ansible.cfg
+* Add missing license headers
+* White space control in report
+* mistaken delete usefuel public key
+* Refactor reporter module
+* correct a mistake for os.getenv()
+* provide get\_one\_exceptions to unify get\_xx process
+* Implement 'show' command
+* Add aarch64 patch
+* add the cleanup step in runner.py
+* optimize console info
+* Miss \ in Dockerfile
+* Implement the workflow of compute qpi
+* parse benchmark result from logfile
+* env cleanup
+* Some modifications for ansible playbook
+* Implement 'list' command
+* Implement Retrieval of plans, QPIs, and metrics
+* fill benchmarks
+* bugfix benchmarks cannot be found
+* Add missing softwares
+* modify logfile directory structure
+* Add basic swagger specifications and corresponding controllers
+* regexes for dpi/ramspeed/ssl
+* Implement ansible driver
+* Refactor openssl playbook
+* Playbooks for unixbench
+* Adding Labels
+* playbook for ramspeed
+* Refactor dpi playbook
+* Remove hardcode from some playbooks
+* Add \`subrepo\` basic usage in developer guide
+* rework env.py
+* Implement debug option
+* Implement reporter module
+* Add missing license headers
+* Switch License tool to develop branch
+* bugfix on bash scripts
+* Restructure docs
+* Create draft of report template in console
+* Refactor dhrystone playbook
+* Install latest requirment packages
+* Qtip command completion
+* refactor code related with setup env
+* Rename test case to avoid possible name conflict
+* Deprecate unused drivers sample and yardstick
+* Create folder for TOM tool, R module for performance dataset processing
+* Fix bug when no paths is given for Plan constructor
+* add logger's unittest
+* guides for openssl issue in macOS
+* refactor logger to make unittest possible
+* Add reporter PoC
+* bugfix for grep
+* Update tox to produce coverage report
+* Add Api Basic framework skeleton
+* Refactoring qtip.runner
+* Addition of detail viewing command
+* Refactoring qtip.base.error
+* Cover also tests folder
+* Implement the collector regex for system info logfile
+* Move coverage config to .coveragerc
+* support multi-line search in grep parser
+* Include third party script for license checking and amending
+* Add licence header according to OPNFV contribution guidelines[1] by script[2]
+* code refactor: ansible playbook about system info
+* Move api server to legacy code
+* Fix error in loader test
+* Clean up tests folder
+* Migrate to Danube document guide
+* Deprecate options not sourceable to environment via Python. JIRA: QTIP-205
+* Implement logfile collector and grep parser
+* Refactoring collector initialization in plan loader
+* Add test for yaml\_file loader
+* Add unit test for BaseTransformer
+* Add test coverage to contributing guide
+* Add test coverage
+* Fix bug that metric test is not collected
+* Add missing dependenency for test
+* Removed unused deps
+* Refactor loader classes
+* Click's built in support for version option
+* Code refactoring about doctor QPI
+* Formalize constants for property names
+* refactor useful legacy code about preparing test enviroment
+* Small corrections
+* Plan module draft
+* QPI Module Outline
+* Enable pep8 in tox test by default
+* Metric module outline
+* Update Dockerfile
+* Move redundant files to legacy
+* Reorganize the project folders
+* sample QPI for doctor performance measured in verification job
+* Yardstick integration design specification
+* Add proposal of Fast Track review rule
+* Requesting to join qtip-reviewers group
+* Add developer guide outline
+* modify deprecated imports
+* Ignore AUTHORS and ChangeLog
+* Rework Cli
+* Retire \`qtip-desk\` server to save cost
+* Implement plan, qpi and metric constructors
+* Add module skeletons
+* Delete Ansible module. No longer required
+* Implment https://wiki.opnfv.org/display/qtip/Design
+* rename qtip-server to qtip-api
+* All unit tests
+* Exception handling for wrong testplan
+* Add skeletons of drivers, collector and reporter
+* Minor fix of compute QPI spec
+* create a new suite file for compute QPI
+* Unit Test for Ansible Module
+* make qtip-server installable
+* bugfix: solve upgrade setuptools failed problem
+* Basic testplan layout JIRA: QTIP-184
+* Add unit test for \`describe\` method
+* Add more comments to clarify runner prototype
+* Convert contributing guide to markdown to get it embedded in wiki
+* refactor qtip-server structure
+* bugfix: qtip install failed in docker mode
+* add ssh public key to users/files/
+* Fix role name error
+* Fix relative path in test case
+* Fix bugs in \`runner/benchmark\`
+* correct the path in push\_db.sh
+* Implement PerfTest prototype
+* Implement TestPlan prototype
+* Implement \_\_init\_\_ and list\_all in Suite
+* Skip unstable test \`tests.unit.utils.create\_zones\_test\`
+* [QTIP-157]fix docker build job
+* bugfix in run\_qtip.sh
+* Remove dell's directories under testplan/
+* correct module path in qtip.py
+* correct the path of transform/ in ansible scripts
+* Enable all unit tests except two failed cases
+* Committer retirement: Wenjing CHU
+* bugfix: recovery qtip CI
+* Entry point should be a calling a module function. Explained in [1] under entry\_points
+* Bugfix: fix the qtip restful server unit test problem
+* Fix test failing
+* Fix exception caused by missing log folder
+* Bugfix in new setup file
+* Write how is compute QPI calculated
+* Use \`pbr\` for setup configuration
+* Allow select test case to run
+* Update review guidelines
+* Reorganize the inventory
+* adapt testapi running script to use mongo container as TESTDB
+* Cli list related fixes
+* push test results to qtip dashboard server
+* deploy mongodb to qtip dashboard server
+* deploy testapi to qtip dashboard server
+* Architecture evolution skeleton
+* Bugfix: Correct the path in setup and entry points
+* Additional server test.qtip.io
+* Ansible related commands in its own module
+* Bugfix: Correct the path in unit test
+* Bugfix:Correct the import path in qtip\_server
+* Bugfix: Correct the path in supervisord.conf
+* New domain name for dev server
+* CLI-Installation Frame work
+* bugfix: remove process file opnfv-creds.sh
+* update path of test\_plan in docs
+* Need to go one level up to reach project/root directory for listing purposes
+* bugfix: correct the path of test\_plan
+* bugfix: miss \_\_init\_\_.py under module qtip
+* Rename command files
+* Rename to README.md so it can be parsed by Github
+* Adjust folder structure
+* rename cli\_ansible
+* Bugfix: cli.py and its unit test case
+* Move a process file ips.log to /home/opnfv/qtip/
+* Additional packages required for qtip
+* Start qtip server in qtip-dev host and add the qtip restful api online url in docs
+* rename test\_cases/ to test\_plan/
+* Add spec for time line diagram
+* Update docs due to reorganize result directory
+* Spec for comparison view
+* Directory independant 'perftest list' command execution
+* Rename section "Deviation" to "Stats" and add more details
+* Update README
+* Remove results directory out of repos
+* ELK Stack setup update according to new directory stucture
+* Fix ansible Syntax Error while loading YAML and separates docker,elk and nginx installing file
+* Remove directory fio\_jobs
+* Remove playbooks directory
+* Fix typo and bugs in perftest
+* Add new public key
+* Cli list option for suite
+* Outline of QPI dashboard design specification
+* Normalize headings according to "reStructuredText Primer"
+* Modify the file permission of cleanup\_script.sh
+* Create setuptool configuration for qtip-cli
+* Bugfix:Fix index always be 0 problem
+* Add host name for dev server
+* Update links for committer approval
+* Add link for committer update
+* Cli list option for perftest
+* Fix doc8 warning
+* Small amends in the documentation
+* Code refactor: spawn\_vm.py
+* Update docker information
+* bugfix on perftest
+* Remove Qtip private key files in repos
+* Removal of inactive committer
+* Make documents update to data
+* Nauman Ahad retires from committers
+* Add zhifeng ssh\_key
+* Use supervisor to start qtip\_server in docker
+* Remove directory test\_list
+* bugfix: cannot run qtip\_creds.sh
+* reorganize playbooks directory
+* Add directory suite under benchmarks/
+* Push test results to testdb at the end of qtip\_server job
+* Bugfix: Problems meet when following the step of introduction.rst
+* Nomination of committer promotion for wu.zhihui1@zte.com.cn
+* Fix warnings during sphinx-build
+* Pulling dockers using ansible also requires docker-py package
+* Reorganize existing documents
+* Deprecate docs/roadmap
+* add CLI framework for qtip
+* bugfix due to directory adjustment
+* add serena ssh\_keys
+* Add contributing guide
+* Playbook for setting up ELK
+* Adjust directory structure
+* Unit test bugfix: Remove the zte-pod1 in unit test
+* update known\_hosts path in ssh\_test()
+* Add ssh users with ansible roles
+* Refactor pushing suite result to test db
+* solve log path cannot be found issue
+* Add playbook to deploy nginx for elk
+* change log place
+* update test data in tests/args\_handler\_test.py
+* Add testdb url and node\_name in post parameters of restful server
+* bugfix: function name typo
+* remove test\_cases/zte-pod1
+* code refactor: create\_zones.py
+* change fetch\_compute\_ips.sh path
+* Some small spelling errors
+* Add primary contact to INFO
+* Rename \`suit\` to \`suite\`
+* Fix unit test problem:'spawn\_vm.py does not have attribute FetchImg'
+* Correct spelling error in function name
+* Rename 'max-minutes' to 'max\_minutes'
+* Rename class cli to Cli
+* Add benchmark name in post request parameters
+* Running a single benchmark as an option for user
+* Non-zero exit status should be used when teminated abnormally
+* Fix broken links in docs
+* Start restful server auto in docker
+* code refactor: run\_qtip.sh
+* Add qtip restful server usage in docs
+* Bugfix: Get private ip wrong in iperf vm test
+* Change result keys to lower-case and remove ' .'
+* Return the ansible playbook running results in driver.py and args\_handler.py
+* The original arguments were out of order. The docker name has to be after all the arguments, to be able to successfully run the docker
+* add unified logger process for qtip
+* Run benchmark test in restful server post api
+* Remove cpu limit patch for byte-unixbench
+* Fix issues found in security review
+* bugfix dpi.yaml
+* Bugfix:iperf benchmark run failed "privateip1 is undefined"
+* ansible playbook bugfix
+* Fix test cases yaml schema unit test problem,now host ip allow empty
+* Install the requirement packages in docker
+* Remove os environment in driver.py so that it can be called by restful server
+* Add ansible.cfg so that we can get ansible running time
+* Call ansible playbook by ansible api instead of os.system
+* correct error code and cleanup duplicated code in ssh\_test()
+* Add ssh option "UserKnownHostsFile=/dev/null"
+* Nominating Zhifeng Jiang <Jiang.Zhifeng@zte.com.cn> as new committer for QTIP project
+* bugfix: miss a whitespace in the playbook command
+* Revert "Nominate Zhifeng Jiang<Jiang.ZhiFeng@zte.com.cn> as new committer"
+* Adding new committers
+* Bugfix: some errors in env\_setup.py
+* Use test\_case/default instead of the directory named with a pod's name
+* Add some state change functions in db.py
+* Ignore .idea in git repo
+* Nominate Zhifeng Jiang<Jiang.ZhiFeng@zte.com.cn> as new committer
+* Code refactoring cli.py so that it can be reused by restful server
+* Add ansible\_api so that python call ansible playbook by api
+* Fetch all compute ips via installer Fuel
+* Fix unit test 'test\_cli\_error' always 'pass' problem
+* Code refactoring driver so that it can call ansible playbook by api
+* Doc updates according to DOCS project
+* Add restful server API in QTIP which can be called by Yardstick
+* Add LICENSE file
+* Fix Argument Parsing
+* update committer list
+* updates to use new doc toolchain
+* Fix the download fail and 'sshkey is not defined' problem in CI
+* Add parameter attempts in ping\_test()
+* Solving the facing problems when enable unit test
+* Fix pep8 errors for all the others python files
+* Add links of project approval and PTL changes
+* Use local QTIP\_CentOS.qcow2 img file
+* Fix pep8 errors for conf.py
+* Fix pep8 errors for python files in benchmarks,data,dashboard
+* Add some UT test cases and fix pep8 errors for spawn\_vm
+* Add some UT test cases and fix pep8 errors for create\_zone
+* Add some UT test cases and fix pep8 errors for driver
+* Add some UT test cases and fix pep8 errors for fetchimg
+* First draft for release D roadmap
+* Schema checking for yaml file in test\_cases
+* Add some UT test cases and fix pep8 errors for cli and env\_setup
+* Change the pod name from dell-us-testing-bm-1 to dell-pod1 in test\_cases
+* Update committer list
+* Run the test only when ping ok and try ping 20 times
+* Change the key in results to adapt to new testapi
+* Patch the ssh-copy-id in fuel 9.0
+* Change url to new testapi
+* Fix the pep8 error in qtip.py and validate\_yaml.py
+* Add the tox.ini and requirement list so that we can start pep8 check by "tox -e pep8"
+* dos2Unix the pushtoDb.py file
+* Add zte-pod1 test cases and  include proxy in playbooks
+* Correct the wrong default public network name when install is 'fuel' and version is 8.0
+* Fix typo in README
+* Correct the wrong host name in default storage fio test\_case
+* Clean up temporary files from repo
+* This change fix the iperf server port 5201 dropped by iptables problem
+* Read the proxy info from testcase, and set it to hosts when dhrystone benchmarks test
+* Change the args.benchmark which is not defined to benchmarks[items]
+* Add proxy info in sample-config.yaml and 03-usage-guide.rst
+* Correct some spelling mistakes
+* Changed upstream links for playbooks
+* Resolved bug for Compass CI Jobs
+* Resolved bug for CI error
+* qtip: add user name in case of apex and make the changes in ansible playbooks to cater for apex. Also reduce the verbosity for runnning ansbile plays
+* QTIP report generation docker dependencies resolved
+* Modifed documentation to generate improved PDFs in tool chain
+* qtip: apex integration, add heat-admin as user for apex nodes
+* QTIP output report format fixed
+* Fixed issue with SSL and IPERF
+* Bug Fixes for SSL index calculation
+* add sudo changes for joid
+* Fixed the index calculation for QTIP compute, network and storage suites
+* Corrected the openssl link
+* Fixed RAMSPEED and Whetstone bugs
+* Test\_case name included in final json result file
+* qtip: compass dependencies
+* qtip bug: storage playbook, update --become-user
+* qtip: add condition for switching user to joid
+* Pip requirements package changed
+* Modified Dockerfile for Report Generation dependencies
+* Report Generation for QTIP
+* update: address for testing db
+* bug-fix: fix bug in docker run file, replace $$ with &&
+* bug fix: result collection bug fix for docker images
+* Resolving bug for result collection
+* Documents for QTIP Compute and Storage Testcases
+* docs: add docs for usage, introduction and iperf testcase
+* bug fix: make installer specific changes for baremetal. cater for fuel
+* Dummy patch to trigger docker build for qtip
+* Push to DB script for Jenkins Jobs
+* qtip: remove white spaces
+* bug fix in pushtodb
+* run\_qtip.sh fix
+* Patch for fixing ramspeed result\_transform bug
+* error handling for the files being input to the framework. iperf bug fix for the bare metal testing, renamed all the iperf config files. added more detail to the help
+* Include Ramspeed Index calulcation
+* Updated the code to accept compute instead of compute.txt
+* Changed name for lab of dell-us-deploying-bm-3
+* Modifications to the index calculation script
+* Renamed test\_case list files
+* Slight changes to the run\_qtip.sh script
+* started work on the dashboard API
+* I have added the placeholder documentation files and folders. They will be editted in time for the release
+* QTIP Index calculation along with a script to run qtip from docker
+* Storage Result Transformation script
+* Scripts for inserting QTIP.pub key on installed nodes
+* Resolved bug in sys\_info\_collection playbook
+* Storage Benchmarks testcases along with result transformation script
+* Minor changes to the code, to prep for code freeze. the result format of iperf has been made consistent
+* Restructured QTIP directories and CLI
+* Dockerfile for QTIP docker container
+* Storage benchmarsk for QTIP
+* Python packages to be installed in QTIP docker
+* Patch for SSH issues after introducing qtip key
+* Script to modify key file permissions
+* files allowed
+* Removed Root previlages
+* Removed Root previlages
+* Networking Testcase: Iperf Implemented
+* Revert "Missing Result directory"
+* Missing Result directory
+* RAMSpeed Benchmarks Included along with Sys Info for Net testcases
+* Ansible compute benchmarks playbooks with system Info & result transform
+* Python Framework for QTIP
+* Example as code, documentation template for sphinx build
+* Deleted the earlier Heat file
+* Added full automation to scripts
+* Added automation script, 2 test cases, Heat template for test case, Project INFO files
+* Computing benchmark playbooks  including dhrystone, whetstone and cachebench
+* Adding Git review
+* Initial empty repository
