@@ -1,0 +1,7 @@
+pandas>=0.19
+
+[openpyxl]
+openpyxl>=2.4
+
+[xlsxwriter]
+xslxwriter>=0.9
