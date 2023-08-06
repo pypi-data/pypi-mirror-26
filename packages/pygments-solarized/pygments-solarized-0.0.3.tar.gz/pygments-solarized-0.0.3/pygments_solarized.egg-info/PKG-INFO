@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pygments-solarized
+Version: 0.0.3
+Summary: Pygments version of the solarized theme based on john2x/solarized-pygment.
+Home-page: https://github.com/meganlkm/pygments-solarized
+Author: meganlkm
+Author-email: devstuff.io@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Pygments version of the solarized theme based on john2x/solarized-pygment.
+Keywords: pygments style solarized
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
