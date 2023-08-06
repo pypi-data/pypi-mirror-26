@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: openrazer-effects
+Version: 1.0.3
+Summary: Effects for OpenRazer
+Home-page: https://github.com/explodes/openrazer_effects
+Author: Evan Leis
+Author-email: UNKNOWN
+License: GPLv2
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
