@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: LinearResponseVariationalBayes
+Version: 0.2.0
+Summary: Helper functions for linear response variational Bayes
+Home-page: https://github.com/rgiordan/LinearResponseVariationalBayes.py
+Author: Ryan Giordano
+Author-email: rgiordan@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: autograd
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+
+This is a library (very much still in development) intended to make
+sensitivity analysis easier for optimization problems, particularly
+variational approximations.
+
+For some background and motivations, see our preprint:
+
+Covariances, Robustness, and Variational Bayes
+Ryan Giordano, Tamara Broderick, Michael I. Jordan
+https://arxiv.org/abs/1709.02536
+
+
