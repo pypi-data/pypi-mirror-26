@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+release-history.rst
+requirements-dev.txt
+requirements-doc.txt
+requirements-test.txt
+requirements.txt
+setup.py
+fileshelf/__init__.py
+fileshelf/__init__.pyc
+fileshelf.egg-info/PKG-INFO
+fileshelf.egg-info/SOURCES.txt
+fileshelf.egg-info/dependency_links.txt
+fileshelf.egg-info/top_level.txt
