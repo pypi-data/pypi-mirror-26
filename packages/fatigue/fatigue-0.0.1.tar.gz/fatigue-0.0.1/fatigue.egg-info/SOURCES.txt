@@ -1,0 +1,8 @@
+README.md
+setup.py
+fatigue/__init__.py
+fatigue.egg-info/PKG-INFO
+fatigue.egg-info/SOURCES.txt
+fatigue.egg-info/dependency_links.txt
+fatigue.egg-info/requires.txt
+fatigue.egg-info/top_level.txt

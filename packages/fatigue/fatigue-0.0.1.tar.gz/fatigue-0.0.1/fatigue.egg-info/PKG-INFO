@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: fatigue
+Version: 0.0.1
+Summary: fatigue design
+Home-page: UNKNOWN
+Author: Lepy
+Author-email: lepy@mailbox.org
+License: MIT/Apache-2.0
+Description: # Fatigue
+Keywords: open data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
