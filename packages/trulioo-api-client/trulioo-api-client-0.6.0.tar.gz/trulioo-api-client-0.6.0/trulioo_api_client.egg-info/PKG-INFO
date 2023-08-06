@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: trulioo-api-client
+Version: 0.6.0
+Summary: Client library for the Trulioo API
+Home-page: https://github.com/threefoldfoundation/trulioo-api-client
+Author: Gig Technology
+Author-email: apps@greenitglobe.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: trulioo,api,client,kyc
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
