@@ -1,0 +1,13 @@
+ChomikBox/ChomikBox.py,sha256=jglNwlIiIn5NUXfUEpyANc7qMPleJVMteG9-b2O1S74,31221
+ChomikBox/PartFile.py,sha256=N66Z71iNo2IRLR6daH8djHc9IJZYcZM0CK4P8YqP0VU,1490
+ChomikBox/__init__.py,sha256=0HQ-Rd9povO76xZrL2pQM-Mrr_8Fh_Je3VOvpAtWeh8,91
+ChomikBox/__version__.py,sha256=0D6srYi9ejPUnwpjVmDoJB-oMuBqPSiP50LPRoM8G0I,23
+ChomikBox/utils/FileTransferProgressBar.py,sha256=R_-mhYWBflBHaUXPwcf0azCmn78blnNhHlmGYweRA2I,3166
+ChomikBox/utils/SeekableHTTPFile.py,sha256=V68cAc7LHdO8GHYRyPYNeBKB-MxqTR-ykqRP-Pa1Puk,2361
+ChomikBox/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyChomikBox-0.2.0.dist-info/DESCRIPTION.rst,sha256=iOKEuzvbzCNBd7_S0RD98dM-DvZAvkUdgnFeUN8QJRo,871
+pyChomikBox-0.2.0.dist-info/METADATA,sha256=gn-_l1RvVXGQeYaS6TZZdlSp3K1H6dWpD5Pam49faDI,1861
+pyChomikBox-0.2.0.dist-info/RECORD,,
+pyChomikBox-0.2.0.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+pyChomikBox-0.2.0.dist-info/metadata.json,sha256=oJgyOR6eU7libskbe_sLjpkYoaE_bjBkSQ-AVC5dldY,1160
+pyChomikBox-0.2.0.dist-info/top_level.txt,sha256=a_0tHEwCyuS6OffQcnlwR1jeRwOH1IH5MWgZ04wMxNE,10
