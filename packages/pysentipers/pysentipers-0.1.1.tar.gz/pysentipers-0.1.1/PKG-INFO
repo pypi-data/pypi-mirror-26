@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pysentipers
+Version: 0.1.1
+Summary: Python API for SentiPers Dataset
+Home-page: https://github.com/jayzee1992/pySentiPers
+Author: Javad Zarezadeh
+Author-email: jayzee1992@gmail.com
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: sentipers sentiment analysis
+Platform: UNKNOWN
+Requires-Python: >=3
