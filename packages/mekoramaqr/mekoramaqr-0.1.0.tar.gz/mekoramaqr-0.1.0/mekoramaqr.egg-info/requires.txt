@@ -1,0 +1,6 @@
+numpy
+Pillow
+qrcode>=5
+qrtools
+six
+zbar>=0.10

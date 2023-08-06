@@ -1,0 +1,3 @@
+[console_scripts]
+mekoramaqr = mekoramaqr.__main__:main
+
