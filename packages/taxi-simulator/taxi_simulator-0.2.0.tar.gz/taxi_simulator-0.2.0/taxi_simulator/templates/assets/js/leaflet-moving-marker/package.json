@@ -1,0 +1,65 @@
+{
+  "name": "leaflet-moving-marker",
+  "version": "0.3.0",
+  "description": "Leaflet moving marker",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prestart": "npm run watch &",
+    "start": "http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohsen1/leaflet-moving-marker.git"
+  },
+  "keywords": [
+    "Leaflet",
+    "Marker"
+  ],
+  "author": {
+    "name": "Mohsen Azimi",
+    "email": "me@azimi.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohsen1/leaflet-moving-marker/issues"
+  },
+  "homepage": "https://github.com/mohsen1/leaflet-moving-marker#readme",
+  "peerDependencies": {
+    "leaflet": "1.0.2"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.0.38",
+    "http-server": "^0.9.0",
+    "leaflet": "^1.0.2",
+    "typescript": "^2.1.4"
+  },
+  "gitHead": "087f920e7ff2a90d6aa6c501ffac1ed0caa1aefc",
+  "_id": "leaflet-moving-marker@0.3.0",
+  "_shasum": "c41645fc10be4b89183c9e2da569ec25b6a30d47",
+  "_from": "leaflet-moving-marker@",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.3.1",
+  "_npmUser": {
+    "name": "mohsen",
+    "email": "me@azimi.me"
+  },
+  "dist": {
+    "shasum": "c41645fc10be4b89183c9e2da569ec25b6a30d47",
+    "tarball": "https://registry.npmjs.org/leaflet-moving-marker/-/leaflet-moving-marker-0.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "mohsen",
+      "email": "me@azimi.me"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/leaflet-moving-marker-0.3.0.tgz_1481769643410_0.5739748461637646"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/leaflet-moving-marker/-/leaflet-moving-marker-0.3.0.tgz"
+}
