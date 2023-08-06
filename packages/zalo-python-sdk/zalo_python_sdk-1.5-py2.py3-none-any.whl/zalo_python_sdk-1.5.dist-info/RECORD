@@ -1,0 +1,10 @@
+src/APIConfig.py,sha256=ZoVa8Gywr_kFvw_paS6xzlerJHzAZbDbXKmN3nsRt9Y,370
+src/APIException.py,sha256=SfrtOM2FC-unNJNCwoaX66Is-QL65IQA1RkJ4-sytXA,423
+src/ZaloBaseClient.py,sha256=pLmQYrrW3ZDw-_qrBsUIG8OqtZXQJYiopKXPTNXsytE,1060
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zalo_python_sdk-1.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+zalo_python_sdk-1.5.dist-info/METADATA,sha256=Mqx-pCqEQtyGISnUE6DQ0jTMwCCy7YrMJZb6iemVqko,366
+zalo_python_sdk-1.5.dist-info/RECORD,,
+zalo_python_sdk-1.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+zalo_python_sdk-1.5.dist-info/metadata.json,sha256=Iyupq2OVDDKS0GKEL0P3T0tkG53hLVwg8NNCkdnY-IY,530
+zalo_python_sdk-1.5.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
