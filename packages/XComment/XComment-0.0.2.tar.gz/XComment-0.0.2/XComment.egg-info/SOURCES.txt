@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+comments_remover
+setup.py
+XComment/__init__.py
+XComment/comments_remover.py
+XComment.egg-info/PKG-INFO
+XComment.egg-info/SOURCES.txt
+XComment.egg-info/dependency_links.txt
+XComment.egg-info/requires.txt
+XComment.egg-info/top_level.txt
+tests/__init__.py
+tests/test_comments_remover.py
