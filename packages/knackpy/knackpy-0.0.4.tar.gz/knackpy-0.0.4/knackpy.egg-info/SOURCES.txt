@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+knackpy/__init__.py
+knackpy.egg-info/PKG-INFO
+knackpy.egg-info/SOURCES.txt
+knackpy.egg-info/dependency_links.txt
+knackpy.egg-info/requires.txt
+knackpy.egg-info/top_level.txt
