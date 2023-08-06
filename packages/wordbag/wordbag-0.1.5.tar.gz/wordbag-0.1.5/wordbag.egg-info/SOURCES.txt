@@ -1,0 +1,10 @@
+README.rst
+setup.py
+wordbag/__init__.py
+wordbag/word.py
+wordbag/word.txt
+wordbag.egg-info/PKG-INFO
+wordbag.egg-info/SOURCES.txt
+wordbag.egg-info/dependency_links.txt
+wordbag.egg-info/requires.txt
+wordbag.egg-info/top_level.txt
