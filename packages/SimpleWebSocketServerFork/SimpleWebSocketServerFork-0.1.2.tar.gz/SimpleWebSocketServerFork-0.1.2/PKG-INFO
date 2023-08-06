@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: SimpleWebSocketServerFork
+Version: 0.1.2
+Summary: A Simple Websocket Server written in Python (fork for PYPI)
+Home-page: https://github.com/talwrii/simple-websocket-server
+Author: Tal Wrii
+Author-email: talwrii@gmail.com
+License: UNKNOWN
+Description: See github README
+Platform: UNKNOWN
