@@ -1,0 +1,11 @@
+samtools
+bamtools
+bioawk
+bcftools
+bedtools
+sambamba
+graphviz==2.38
+seqtk
+pbzip2
+pigz
+dsrc
