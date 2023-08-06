@@ -1,0 +1,47 @@
+CHANGES
+=======
+
+* sync with atx-agent code
+* when device ip is empty, connect\_usb will be called
+* add pull support
+* support stop in app\_start
+* add app-stop-all method
+* add unlock cli
+* add watcher support
+* update install guide
+* add pypi version badge
+* add readme
+* am\_start add stop param
+* click when exists
+* add healthcheck and connect\_usb, close #3
+* add unlock method
+* add delay after click
+* fix abilist is empty error
+* add session check(check if app is alive when test is running
+* fix atx-agent install error
+* add clear cache support
+* add pushfile support
+* support kill all apps
+* support percent positions
+* fix detect device from adb devices -l error
+* remove useless print
+* support init multi devices
+* support percent tap, recode init logic
+* fix raise UiObjectNotFoundError error
+* fix incompatible in py3
+* tired, want to sleep
+* add output
+* fix auto install method
+* add auto install requirements scripts
+* update document
+* screenshot return PIL.Image
+* ref |> update function app\_start(..) can input packagename and activity to start app
+* update doc to lastest
+* add selector long\_click, update some doc
+* add example test
+* set default port to 7912
+* update readme
+* add connect(..) and add some doc
+* fix some error
+* initial project
+* Initial commit
