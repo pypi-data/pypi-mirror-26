@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""gci-validator.
+
+Usage: 
+    gci-validator (FILE) [options]
+
+Options:
+    -h --help    Show help text.
+    -v --version Show program version.
+    -b=<bvals>   Define boolean values. Separated by commas [default: yes, no].
+
+"""
+from docopt import docopt
+import csv
+import os
+import sys
+
+BOOLEAN_VALUES = ('yes', 'no')
+VALID_CATEGORIES = ('1', '2', '3', '4', '5')
+REQUIRED_FIELDS_FOR_PUBLISH = ("name", "max_instances",
+                               "description", "categories", "time_to_complete_in_days", "mentors")
+REQUIRED_FIELDS = (
+    "name", "description", "mentors", "categories", "time_to_complete_in_days"
+)
+FIELD_VALIDATORS = {
+    "name": (lambda x: len(x) <= 200, "'name' must be less than or equal to 200 characters"),
+    "description": (lambda x: len(x) <= 500, "'description' must be less than or equal to 500 characters"),
+    "status": (lambda x: x == "1" or x == "2", "valid 'status' values: [1, 2]"),
+    "max_instances": (lambda x: int(x) > 0 and int(x) <= 100, "'max_instances' must be between 0 and 100"),
+    "mentors": (lambda x: len(x.split(",")) <= 30, "'mentors' can contain at most 30 comma-separated list of emails"),
+    "is_beginner": (lambda x: x in BOOLEAN_VALUES, lambda: "valid 'is_beginner' values: {0}".format(list(BOOLEAN_VALUES))),
+    "tags": (lambda x: True, ""),
+    "categories": (lambda x: len([item for item in x.split(',') if item not in VALID_CATEGORIES]) == 0,
+                   "'categories' must be a comma-separated list of the following category IDs: {0}".format(VALID_CATEGORIES)),
+    "time_to_complete_in_days": (lambda x: int(x) >= 3 and int(x) <= 7, "'time_to_complete_in_days' must be between 3 and 7"),
+    "private_metadata": (lambda x: len(str(x)) <= 80, "'private_metadata' can contain a maximum of 80 characters"),
+    "external_url": (lambda x: True, "")
+}
+
+
+def validate_cli_args(args):
+    global BOOLEAN_VALUES
+    if len(args["-b"]) == 0:
+        exit("Option '-b' cannot be empty")
+    BOOLEAN_VALUES = tuple(value.strip() for value in args["-b"].split(","))
+
+
+def row_message(index, msg):
+    print("{0} - {1}".format(index, msg))
+
+
+def exit(msg):
+    print("{0}. Exiting...".format(msg))
+    sys.exit(0)
+
+
+def get_missing_fields(fields):
+    return list(set(REQUIRED_FIELDS) - set(fields) & set(REQUIRED_FIELDS))
+
+
+def validate_publish_fields(fields_status):
+    try:
+        return all([fields_status[field] for field in REQUIRED_FIELDS_FOR_PUBLISH])
+    except AttributeError as err:
+        return False  # will be False if 'max_instances' field is missing
+
+
+def validate_row(index, row):
+    fields_status = {field: False for field in row.keys()}
+    for field, value in row.items():
+        if not value:
+            if field in REQUIRED_FIELDS:
+                row_message(
+                    index, "Required field left blank: '{0}'".format(field))
+            else:
+                continue
+        elif field in FIELD_VALIDATORS.keys() and not FIELD_VALIDATORS[field][0](value):
+            error_msg = FIELD_VALIDATORS[field][1]
+            if callable(error_msg):
+                error_msg = error_msg()
+            row_message(index, "Field '{0}' with invalid value '{1}'. {2}".format(
+                field, value, error_msg))
+            continue
+        # Field is valid
+        fields_status[field] = True
+    if hasattr(row, "status") and row["status"] == 2\
+            and not validate_publish_fields(fields_status):
+        row_message(index, "The following fields must be valid for status to be 2: {0}".format(
+            REQUIRED_FIELDS_FOR_PUBLISH))
+
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version="0.0.6")
+    file_name = arguments["FILE"]
+    validate_cli_args(arguments)
+    if os.path.exists(file_name):
+        with open(file_name, mode="r") as file:
+            reader = csv.DictReader(file)
+            if not reader.fieldnames:
+                exit("Could not find CSV header")
+            missing_fields = get_missing_fields(reader.fieldnames)
+            if len(missing_fields) > 0:
+                exit("The following fields are required: {0}".format(
+                    missing_fields))
+            for index, row in enumerate(reader):
+                try:
+                    validate_row(index + 1, row)
+                except Exception as err:
+                    print(
+                        "Exception occured while validating {0}th record: {1}".format(
+                            index + 1, err)
+                    )
+            print("Finished")
+    else:
+        exit("File '{0}' not found".format(file_name))
