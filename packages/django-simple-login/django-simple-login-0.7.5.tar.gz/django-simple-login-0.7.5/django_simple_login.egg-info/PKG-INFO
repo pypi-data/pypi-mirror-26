@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: django-simple-login
+Version: 0.7.5
+Summary: A simple django app to make accounts creation a breeze.
+Home-page: https://github.com/byteshaft/django-simple-login
+Author: Omer Akram
+Author-email: om26er@gmail.com
+License: GNU GPL Version 3
+Download-URL: https://github.com/byteShaft/django-simple-login/tarball/0.7.5
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: django,accounts
+Platform: UNKNOWN
