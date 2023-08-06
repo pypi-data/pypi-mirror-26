@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: db2table
+Version: 0.2.1
+Summary: Extract data from database in html table
+Home-page: https://github.com/KhalidCK/db2table
+Author: Khalid Chakhmoun
+Author-email: fr.ckhalid@gmail.com
+License: UNKNOWN
+Keywords: db2table
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Click (>=6.0)
+Requires-Dist: awesome-slugify (==1.6.5)
+Requires-Dist: Jinja2
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+
