@@ -1,0 +1,3 @@
+[console_scripts]
+cerber = cerber:main
+
