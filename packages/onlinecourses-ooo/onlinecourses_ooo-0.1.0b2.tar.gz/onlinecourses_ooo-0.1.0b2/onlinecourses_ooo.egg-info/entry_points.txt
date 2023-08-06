@@ -1,0 +1,3 @@
+[console_scripts]
+onlinecourses = onlinecourses_ooo:main
+
