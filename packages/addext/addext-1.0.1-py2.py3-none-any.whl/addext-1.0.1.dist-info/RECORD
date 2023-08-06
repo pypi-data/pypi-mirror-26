@@ -1,0 +1,11 @@
+addext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addext/addext.py,sha256=-Z5TFNiCNIBa19txQ0UsL3oHMCDQzvKi3yLQaqNohbo,10178
+addext/pronom-xml-to-sqlite.py,sha256=4l-cD_nQpIgfM7WWcs69vtvyeMg9lC8nARgp-TlvhyE,4697
+addext/pronom.db,sha256=xdx-cdSrujLbJrqYhUyK77CgK7VYOnRwi_5zPsrpYrM,126976
+addext-1.0.1.data/scripts/addext.py,sha256=_-VrFBxcWF6_GbhKK-ay8Yty_1Ae6ISMXxluzVNDKh8,10165
+addext-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+addext-1.0.1.dist-info/METADATA,sha256=IgVkQBi2WtWlmY81zt4z43ZwOxi-51JXQDoSB07mqFA,1007
+addext-1.0.1.dist-info/RECORD,,
+addext-1.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+addext-1.0.1.dist-info/metadata.json,sha256=Hq6KEhcDAryCa1AAPv3Yut864LjvOyGtGgEenUs_wbw,1103
+addext-1.0.1.dist-info/top_level.txt,sha256=CH2h0qvq65B5qwrxeibGa3bek1r11k2amaVV6jZbAr8,7
