@@ -1,0 +1,8 @@
+Click
+supervisor
+pyyaml
+jinja2
+six
+requests
+futures
+sshuttle
