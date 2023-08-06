@@ -1,0 +1,9 @@
+requests<2.19,>=2.4.2
+future<0.17,>=0.16
+python-magic<0.5,>=0.4
+
+[docs]
+sphinx
+
+[testing]
+mock<2.1,>=2.0
