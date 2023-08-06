@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+ops/requirements.txt
+serafin.egg-info/PKG-INFO
+serafin.egg-info/SOURCES.txt
+serafin.egg-info/dependency_links.txt
+serafin.egg-info/requires.txt
+serafin.egg-info/top_level.txt
+src/serafin/__init__.py
+src/serafin/core.py
+src/serafin/core_serializers.py
+src/serafin/fieldspec.py
+src/serafin/util.py
