@@ -1,0 +1,84 @@
+Metadata-Version: 1.1
+Name: slacksound
+Version: 0.0.5
+Summary: Create playlists democratically by reactions in Slack
+Home-page: https://github.com/wefner/slacksound
+Author: Oriol Fabregas
+Author-email: fabregas.oriol@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ============================
+        SlackSound
+        ============================
+        
+        Create playlists democratically by reactions in Slack
+        
+        !! THIS IS STILL A BETA !!
+        
+        * Documentation (soon): https://slacksound.readthedocs.org/en/latest
+        
+        Features
+        --------
+        * Get Youtube videos reactions from message attachments and add the song to a Spotify playlist.
+        
+        
+        How does it work
+        ----------------
+        The application acts as a middle man between Slack and Spotify by getting the
+        reactions count from a message's attachment and then looking up the title on
+        Spotify's. If the title has been found, it will add the one that has best
+        popularity to the queue.
+        
+        In order to the bot pick up the song, a user must paste a Youtube URL in the
+        channel. The bot will start looking for reactions on that URL and get the title
+        of the video which it will be used as a search text for Spotify.
+        
+        A message will be shown back to the channel whether the bot could add the song
+        to the playlist or not.
+        
+        It is worth mention that the tracks of the playlist will be removed at every
+        time the bot it is started. This is by design as it in a jukebox.
+        
+        
+        
+        
+        History
+        -------
+        
+        0.0.1 (2017-10-13)
+        ------------------
+        
+        * First release
+        * Methods for Spotify API
+        * Slackclient wrapper
+        
+        0.0.2 (2017-10-14)
+        ------------------
+        
+        * CLI draft
+        * Credentials parsing
+        * Minimal logic
+        
+        0.0.3 (2017-10-14)
+        ------------------
+        
+        * Reaction name and reaction count configurable
+        
+        0.0.4 (2017-10-26)
+        ------------------
+        
+        * Refactored SpotifyClient with objects and methods
+        * Refactored SlackSound interface
+        
+        0.0.5 (2017-10-27)
+        ------------------
+        
+        * Entrypoint for main
+        
+Keywords: slacksound
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
