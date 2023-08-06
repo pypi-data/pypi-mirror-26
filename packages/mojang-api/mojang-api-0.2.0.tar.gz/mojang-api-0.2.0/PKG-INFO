@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: mojang-api
+Version: 0.2.0
+Summary: A Python interface to Mojang's API and Authentication scheme.
+Home-page: https://github.com/SyncMC/mojang-api
+Author: Synchronous
+Author-email: UNKNOWN
+License: MIT
+Description: mojang-api
+        ==========
+        
+        A Python interface to Mojang's `API <http://wiki.vg/Mojang_API>`_ and `Authentication <http://wiki.vg/Authentication>`_ scheme.
+        
+Keywords: mojang minecraft mc api authentication auth
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
