@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: streamsx.standard
+Version: 0.1.1
+Summary: IBM Streams Standard toolkit
+Home-page: https://github.com/ddebrunner/pypi.streamsx.standard
+Author: IBM Streams @ github.com
+Author-email: debrunne@us.ibm.com
+License: Apache License - Version 2.0
+Description: IBM Streams standard toolkit for Python
+        
+Keywords: streams,ibmstreams,streaming,analytics,streaming-analytics
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
