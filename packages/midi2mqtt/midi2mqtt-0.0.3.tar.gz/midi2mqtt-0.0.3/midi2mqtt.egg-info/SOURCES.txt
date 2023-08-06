@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+midi2mqtt/__init__.py
+midi2mqtt/config.py
+midi2mqtt/midi2mqtt.py
+midi2mqtt.egg-info/PKG-INFO
+midi2mqtt.egg-info/SOURCES.txt
+midi2mqtt.egg-info/dependency_links.txt
+midi2mqtt.egg-info/entry_points.txt
+midi2mqtt.egg-info/requires.txt
+midi2mqtt.egg-info/top_level.txt
