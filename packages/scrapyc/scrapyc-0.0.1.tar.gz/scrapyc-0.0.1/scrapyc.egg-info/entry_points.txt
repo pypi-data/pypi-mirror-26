@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        scrapyc = scrapyc.cli:main
+    
