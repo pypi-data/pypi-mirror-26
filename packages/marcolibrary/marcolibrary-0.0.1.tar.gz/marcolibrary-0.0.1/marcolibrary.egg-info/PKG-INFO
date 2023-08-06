@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: marcolibrary
+Version: 0.0.1
+Summary: A sample Python project
+Home-page: UNKNOWN
+Author: marco domenichetti
+Author-email: marcodomenichetti@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # prova10
+        raspberry:
+        ==========
+        
+            sudo apt-get install sqlite3
+        
+Keywords: sample setuptools development
+Platform: UNKNOWN
