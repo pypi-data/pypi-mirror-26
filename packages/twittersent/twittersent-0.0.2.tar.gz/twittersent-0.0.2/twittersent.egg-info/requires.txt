@@ -1,0 +1,4 @@
+python-twitter
+seaborn
+pandas
+textblob
