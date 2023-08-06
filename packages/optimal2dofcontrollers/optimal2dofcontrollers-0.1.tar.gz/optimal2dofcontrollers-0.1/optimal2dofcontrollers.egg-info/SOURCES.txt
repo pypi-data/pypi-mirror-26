@@ -1,0 +1,7 @@
+setup.py
+optimal2dofcontrollers.egg-info/PKG-INFO
+optimal2dofcontrollers.egg-info/SOURCES.txt
+optimal2dofcontrollers.egg-info/dependency_links.txt
+optimal2dofcontrollers.egg-info/not-zip-safe
+optimal2dofcontrollers.egg-info/requires.txt
+optimal2dofcontrollers.egg-info/top_level.txt
