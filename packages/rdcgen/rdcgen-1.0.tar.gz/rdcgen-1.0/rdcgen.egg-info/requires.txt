@@ -1,0 +1,4 @@
+click
+ldap3
+PyYAML
+lxml

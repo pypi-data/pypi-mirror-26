@@ -1,0 +1,12 @@
+README.md
+setup.py
+rdcgen/__init__.py
+rdcgen/cli.py
+rdcgen/grouptree.py
+rdcgen/utils.py
+rdcgen.egg-info/PKG-INFO
+rdcgen.egg-info/SOURCES.txt
+rdcgen.egg-info/dependency_links.txt
+rdcgen.egg-info/entry_points.txt
+rdcgen.egg-info/requires.txt
+rdcgen.egg-info/top_level.txt

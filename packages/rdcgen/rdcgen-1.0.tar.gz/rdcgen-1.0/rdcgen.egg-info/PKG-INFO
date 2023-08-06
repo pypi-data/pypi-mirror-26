@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: rdcgen
+Version: 1.0
+Summary: Generate RDCMan config files from Active Directory
+Home-page: https://github.com/johncornish/RDCGen
+Author: John Frederick Cornish IV
+Author-email: johncornishthe4th@gmail.com
+License: GPLv3
+Download-URL: https://github.com/johncornish/RDCGen/archive/1.0.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
