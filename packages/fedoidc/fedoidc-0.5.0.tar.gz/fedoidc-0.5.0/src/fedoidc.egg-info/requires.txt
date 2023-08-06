@@ -1,0 +1,7 @@
+argparse
+requests
+future
+six
+oic >= 0.11.0.1
+Cherrypy
+cherrypy-cors >= 1.5
