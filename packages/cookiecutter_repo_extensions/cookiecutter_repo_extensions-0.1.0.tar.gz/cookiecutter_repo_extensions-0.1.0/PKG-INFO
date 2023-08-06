@@ -1,0 +1,72 @@
+Metadata-Version: 1.1
+Name: cookiecutter_repo_extensions
+Version: 0.1.0
+Summary: Hacky Jinja plugin that allows other jinja extensions to be loaded from the extensions directory of the repo
+Home-page: https://github.com/ilsken/cookiecutter_repo_extensions
+Author: Christopher Tarquini
+Author-email: code@tarq.io
+License: MIT license
+Description: ============================
+        Cookiecutter Repo Extensions
+        ============================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/cookiecutter_repo_extensions.svg
+                :target: https://pypi.python.org/pypi/cookiecutter_repo_extensions
+        
+        .. image:: https://img.shields.io/travis/ilsken/cookiecutter_repo_extensions.svg
+                :target: https://travis-ci.org/ilsken/cookiecutter_repo_extensions
+        
+        .. image:: https://readthedocs.org/projects/cookiecutter-repo-extensions/badge/?version=latest
+                :target: https://cookiecutter-repo-extensions.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/ilsken/cookiecutter_repo_extensions/shield.svg
+             :target: https://pyup.io/repos/github/ilsken/cookiecutter_repo_extensions/
+             :alt: Updates
+        
+        
+        Hacky Jinja plugin that allows other jinja extensions to be loaded from the extensions directory of the repo. Just install it and add this module to the `_extensions` array of your `cookiecutter.json` before all other repo extensions.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://cookiecutter-repo-extensions.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2017-10-27)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: cookiecutter_repo_extensions
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
