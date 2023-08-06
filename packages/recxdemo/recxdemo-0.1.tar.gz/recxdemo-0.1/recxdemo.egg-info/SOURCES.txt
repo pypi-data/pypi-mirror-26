@@ -1,0 +1,8 @@
+setup.py
+demo/__init__.py
+demo/test.py
+recxdemo.egg-info/PKG-INFO
+recxdemo.egg-info/SOURCES.txt
+recxdemo.egg-info/dependency_links.txt
+recxdemo.egg-info/not-zip-safe
+recxdemo.egg-info/top_level.txt
