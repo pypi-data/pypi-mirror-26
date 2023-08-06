@@ -1,0 +1,193 @@
+Metadata-Version: 1.1
+Name: reflowrst
+Version: 1.0.7
+Summary: Modify valid rst text to fit within given width
+Home-page: https://github.com/doakey3/reflowrst
+Author: doakey3
+Author-email: reflowrst.dmodo@spamgourmet.com
+License: MIT
+Download-URL: https://github.com/doakey3/reflowrst/tarball/1.0.7
+Description-Content-Type: UNKNOWN
+Description: =========
+        reflowrst
+        =========
+        
+        Installation
+        ============
+        
+        >>> sudo pip install reflowrst
+        
+        Usage
+        =====
+        
+        Example:
+        
+        >>> from reflowrst import reflow
+        >>> text = '''
+            =================
+            Restructured Text
+            =================
+        
+            Title
+            =====
+            This is a paragraph and it will need to be wrapped because it is too
+            long.
+        
+            * Viris congue ad sit. Cu eum eros dignissim, nisl erroribus gubergren
+              at eam.
+        
+              - Voluptua argumentum consectetuer ius ei.
+              - Eam virtute recteque expetendis at, sit at modo tollit inermis.
+        
+            * Solum congue accumsan est id, eos dico ridens ea, mea consequat
+              maiestatis deseruisse ea.
+        
+              1. this enumerated list starts with 1
+              2. this number is out of order and will be corrected (the first
+                 enumerator in the enumerated list sets the order for all the rest)
+              3. this is the third item.
+        
+            9.   This enumerated list has enumerators of different lengths. When
+                 reflowed, the interspace between the enumerators and the text will
+                 be made uniform.
+            10. Legendos recusabo electram ius te.
+            11. In velit tractatos eum, eos tota oratio cu. Ea dicat vituperatoribus
+                his. Purto dissentiunt ea sed. [#footnote]_
+        
+            :Fields are Cool: Notice that these fields have field names of different
+                              length. When the text is reflowed, the interspace
+                              between field names and text will be made uniform.
+            :Dicam:                     ignota recusabo pro cu, vim ea munere
+                                        hendrerit. Dicunt detracto sed an.
+        
+            +------------------------------+----------+----------+----------+
+            | Header row, column 1 (header |          |          |          |
+            | rows optional)               | Header 2 | Header 3 | Header 4 |
+            |                              |          |          |          |
+            +==============================+==========+==========+==========+
+            | body row 1, column 1         | column 2 | column 3 | column 4 |
+            +------------------------------+----------+----------+----------+
+            | body row 2                   | Cells may span columns.        |
+            +------------------------------+----------+---------------------+
+            | body row 3                   | Cells    | - Table cells       |
+            +------------------------------+ may span | - contain           |
+            | body row 4                   | rows.    | - body elements.    |
+            +------------------------------+----------+---------------------+
+        
+            .. [#footnote] This is an example of a footnote. It might have a really
+               long amount of text that goes with it that will need to be reflowed.
+            '''
+        
+        >>> print(reflow(text, 47))
+        
+        >>>
+            =================
+            Restructured Text
+            =================
+        
+            Title
+            =====
+            This is a paragraph and it will need to be
+            wrapped because it is too long.
+        
+            * Viris congue ad sit. Cu eum eros dignissim,
+              nisl erroribus gubergren at eam.
+        
+              - Voluptua argumentum consectetuer ius ei.
+              - Eam virtute recteque expetendis at, sit at
+                modo tollit inermis.
+        
+            * Solum congue accumsan est id, eos dico ridens
+              ea, mea consequat maiestatis deseruisse ea.
+        
+              1. this enumerated list starts with 1
+              2. this number is out of order and will be
+                 corrected (the first enumerator in the
+                 enumerated list sets the order for all the
+                 rest)
+              3. this is the third item.
+        
+            9.    This enumerated list has enumerators of
+                  different lengths. When reflowed, the
+                  interspace between the enumerators and
+                  the text will be made uniform.
+            10. Legendos recusabo electram ius te.
+            11. In velit tractatos eum, eos tota oratio cu.
+                Ea dicat vituperatoribus his. Purto
+                dissentiunt ea sed. [#footnote]_
+        
+            :Fields are Cool: Notice that these fields have
+                              field names of different
+                              length. When the text is
+                              reflowed, the interspace
+                              between field names and text
+                              will be made uniform.
+            :Dicam:                               ignota
+                                                  recusabo
+                                                  pro cu,
+                                                  vim ea
+                                                  munere
+                                                  hendrerit.
+                                                  Dicunt
+                                                  detracto
+                                                  sed an.
+        
+            +-------------+----------+--------+--------+
+            | Header row, |          |        |        |
+            | column 1    |          | Header | Header |
+            | (header     | Header 2 | 3      | 4      |
+            | rows        |          |        |        |
+            | optional)   |          |        |        |
+            +=============+==========+========+========+
+            | body row 1, | column 2 | column | column |
+            | column 1    |          | 3      | 4      |
+            +-------------+----------+--------+--------+
+            | body row 2  | Cells may span columns.    |
+            +-------------+----------+-----------------+
+            | body row 3  | Cells    | - Table cells   |
+            |             | may span | - contain       |
+            +-------------+ rows.    | - body          |
+            | body row 4  |          |   elements.     |
+            +-------------+----------+-----------------+
+        
+            .. [#footnote] This is an example of a
+               footnote. It might have a really long amount
+               of text that goes with it that will need to
+               be reflowed.
+        
+        You can also get the longest possible form of the rst text by using 0
+        for the space. For example:
+        
+        >>> paragraph = '\n'.join(['line 1',
+                                   'line 2'])
+        >>> print(reflow(paragraph, 0))
+        >>> 'line 1 line 2'
+        
+        Todo
+        ====
+        * |+| Titles
+        * |-| Transitions
+        * |+| Paragraphs
+        * |+| Bullet Lists
+        * |+| Enumerated Lists
+        * |+| Definitions
+        * |+| Fields
+        * |+| Options
+        * |-| Literal Blocks
+        * |-| Quoted Literal Blocks
+        * |-| Line Blocks
+        * |+| Block Quotes
+        * |-| Doctest Blocks
+        * |+| Grid Tables
+        * |-| Simple Tables
+        * |+| Footnotes
+        * |-| Citations
+        * |+| Hyperlink Targets
+        * |+| Directives
+        * |+| Substitution Definitions
+        * |-| Comments
+        
+        .. |+| unicode:: U+2611
+        .. |-| unicode:: U+2610
+        
+Platform: UNKNOWN
