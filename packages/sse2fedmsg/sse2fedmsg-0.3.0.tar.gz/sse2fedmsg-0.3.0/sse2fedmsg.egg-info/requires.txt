@@ -1,0 +1,5 @@
+fedmsg[commands,consumers]
+sseclient
+
+[secure]
+fedmsg[crypto]
