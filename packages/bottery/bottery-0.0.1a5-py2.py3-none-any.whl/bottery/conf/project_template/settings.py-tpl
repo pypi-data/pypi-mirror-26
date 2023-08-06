@@ -1,0 +1,8 @@
+PLATFORMS = {
+    'telegram': {
+        'ENGINE': 'bottery.platform.telegram',
+        'OPTIONS': {
+            'token': '',
+        }
+    },
+}
