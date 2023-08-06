@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: superpadova
+Version: 0.0.1
+Summary: PADOVA isochrone interpolator.
+Home-page: http://github.com/hypergravity/superpadova
+Author: Bo Zhang
+Author-email: bozhang@mpia.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires: numpy
+Requires: scipy
+Requires: matplotlib
+Requires: astropy
+Requires: ezpadova
