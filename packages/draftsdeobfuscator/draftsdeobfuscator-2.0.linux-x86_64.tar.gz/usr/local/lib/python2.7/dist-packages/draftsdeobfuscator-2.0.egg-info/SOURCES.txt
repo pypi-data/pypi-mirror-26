@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+draftsdeobfuscator/__init__.py
+draftsdeobfuscator.egg-info/PKG-INFO
+draftsdeobfuscator.egg-info/SOURCES.txt
+draftsdeobfuscator.egg-info/dependency_links.txt
+draftsdeobfuscator.egg-info/entry_points.txt
+draftsdeobfuscator.egg-info/requires.txt
+draftsdeobfuscator.egg-info/top_level.txt
