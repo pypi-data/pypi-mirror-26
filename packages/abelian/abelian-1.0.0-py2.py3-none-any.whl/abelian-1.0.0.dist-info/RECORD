@@ -1,0 +1,17 @@
+abelian/__init__.py,sha256=0L94cxnCJZwV0Pr03INm0MTQJ21IUUb4zcu1j1DHDYY,409
+abelian/functions.py,sha256=OfbDJTRjPMgvwswEGflkJIPdH2M9H0ZNLvhJ1oXdw3c,29872
+abelian/groups.py,sha256=bXLXUKt70Ra5kA4kL2jqHBdYiYITB4JpiN0-rtcWGJE,24197
+abelian/morphisms.py,sha256=Ul3JCNcbiVrUrTfZJxu52mSFoa_vH6WC7I8EMGpEVlE,40969
+abelian/utils.py,sha256=0ummliY6s-2dHj5G3eAgM4AogwKGdNAlMaN63kN7HMM,4165
+abelian/linalg/__init__.py,sha256=StAfza8ohuJZl4suxWknWBySer4uppaPeMYJ04YLHjU,47
+abelian/linalg/factorizations.py,sha256=KKziEYzVtX1tncuWj2NP_uSp9Uv4aLnxqHiL_aNuGHc,8726
+abelian/linalg/factorizations_reals.py,sha256=0LhyrBmaq8c2StZRfyOAb20HoME_bUHHeTnSyLJx76c,6524
+abelian/linalg/free_to_free.py,sha256=nxEBhXa2ODBNK4L62nKlSIrPP9D3sDdv53hFjIsFeyM,13004
+abelian/linalg/solvers.py,sha256=6vQDLtZN1h-xV9rpQFtedaaSShpvRsy_lcdOGaQrrAo,6984
+abelian/linalg/utils.py,sha256=7fsMd3HiZKrMCn3mRy-QATJul7QA8UavyqSoA1FizIw,14831
+abelian-1.0.0.dist-info/DESCRIPTION.rst,sha256=8uvsUGN4qksSjb1tT8_2qPw_pT0ZTVwIQL9lbptbkZo,3597
+abelian-1.0.0.dist-info/METADATA,sha256=hHp0SK5TtpLtZVaHRj_22D7044JFJPE1L72hsRQCV74,3835
+abelian-1.0.0.dist-info/RECORD,,
+abelian-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+abelian-1.0.0.dist-info/metadata.json,sha256=xMNHNrW_JUJ8n8AdSVSqgRp1Y8p92s1p0VzThmAxTpI,402
+abelian-1.0.0.dist-info/top_level.txt,sha256=SFSbWmn7KeLbSVw8kzLsWVqb0qoYzZG30kh9NYFT2yw,8
