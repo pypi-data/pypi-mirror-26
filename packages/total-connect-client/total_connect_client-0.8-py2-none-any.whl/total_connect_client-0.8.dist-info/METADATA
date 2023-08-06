@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: total-connect-client
+Version: 0.8
+Summary: Interact with Total Connect 2 alarm systems
+Home-page: https://github.com/wardcraigj/total-connect-client
+Author: Craig J. Ward
+Author-email: ward.craig.j@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/wardcraigj/total-connect-client
+Keywords: alarm,TotalConnect
+Platform: UNKNOWN
+Requires-Dist: logging
+Requires-Dist: pprint
+Requires-Dist: sys
+Requires-Dist: zeep
+
+UNKNOWN
+
+
