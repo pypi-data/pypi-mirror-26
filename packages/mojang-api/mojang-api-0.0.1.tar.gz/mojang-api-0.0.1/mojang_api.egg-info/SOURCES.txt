@@ -1,0 +1,13 @@
+README.rst
+setup.py
+mojang_api/__init__.py
+mojang_api/api.py
+mojang_api/authserver.py
+mojang_api/common.py
+mojang_api/sessionserver.py
+mojang_api/status.py
+mojang_api.egg-info/PKG-INFO
+mojang_api.egg-info/SOURCES.txt
+mojang_api.egg-info/dependency_links.txt
+mojang_api.egg-info/requires.txt
+mojang_api.egg-info/top_level.txt

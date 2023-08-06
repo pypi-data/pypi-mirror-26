@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: mojang-api
+Version: 0.0.1
+Summary: A Python interface to Mojang's API and Authentication scheme.
+Home-page: https://github.com/SyncMC/mojang-api
+Author: Synchronous
+Author-email: UNKNOWN
+License: MIT
+Description: mojang-api
+        ==========
+        
+        A Python interface to Mojang's `API <http://wiki.vg/Mojang_API>`_ and `Authentication <http://wiki.vg/Authentication>`_ scheme.
+        
+Platform: UNKNOWN
