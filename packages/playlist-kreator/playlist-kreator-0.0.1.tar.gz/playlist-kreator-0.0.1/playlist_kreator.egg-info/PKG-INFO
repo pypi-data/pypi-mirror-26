@@ -1,0 +1,90 @@
+Metadata-Version: 1.1
+Name: playlist-kreator
+Version: 0.0.1
+Summary: Create playlists easily from a list of artists, using their top songs.
+Home-page: https://github.com/epayet/playlist_kreator
+Author: Emmanuel Payet
+Author-email: contact@emmanuel-payet.me
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ================
+        Playlist Kreator
+        ================
+        
+        Create playlists easily from a list of artists, using their top songs.
+        
+        Currently supported: Google Music.
+        
+        Requirements
+        ------------
+        
+        This project requires python 3+
+        
+        Installation
+        ------------
+        
+        TODO
+        
+        ::
+        
+            pip install playlist-kreator
+        
+        Example
+        -------
+        
+        ::
+        
+            playlist-kreator artists big_four_thrash.txt "Big Four of Thrash" --max-songs-per-artist=10
+        
+        This will create a playlist called "Big Four of Thrash".
+        The playlist will be composed of 10 top songs for each artist listed in the file `big_four_thrash.txt`.
+        Content of `big_four_thrash.txt`:
+        
+        ::
+        
+            Anthrax
+            Megadeth
+            Metallica
+            Slayer
+        
+        You can find more examples in the ``example_artists`` folder
+        
+        Known limitations
+        -----------------
+        
+        - Google Music needs an application password, you can set it here: https://myaccount.google.com/apppasswords
+        - Google Music has a limit of 1000 songs per playlist
+        - THe search can be wrong sometimes, a better solution is in progress
+        
+        Contributing
+        ------------
+        
+        Pull requests are welcome!
+        
+        Running locally
+        ```````````````
+        
+        ::
+        
+            pip install -r requirements.txt
+        
+        Inspiration
+        -----------
+        
+        Kreator is amazing. 🤘
+        
+        |Kreator|
+        
+        .. |Kreator| image:: http://kreator-terrorzone.de/images/releases/thumbs/cover_gods.jpg
+        
+Keywords: music googlemusic playlist
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

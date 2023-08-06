@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+bin/playlist-kreator
+playlist_kreator/__init__.py
+playlist_kreator/cli.py
+playlist_kreator/common.py
+playlist_kreator/gmusic.py
+playlist_kreator.egg-info/PKG-INFO
+playlist_kreator.egg-info/SOURCES.txt
+playlist_kreator.egg-info/dependency_links.txt
+playlist_kreator.egg-info/requires.txt
+playlist_kreator.egg-info/top_level.txt
