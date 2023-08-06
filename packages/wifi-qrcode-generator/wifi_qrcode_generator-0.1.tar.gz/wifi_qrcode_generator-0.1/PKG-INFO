@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: wifi_qrcode_generator
+Version: 0.1
+Summary: Generate a qr code for your wifi to let others quickly connect your wifi.
+Home-page: https://github.com/lakhanmankani/wifi_qrcode_generator
+Author: Lakhan Mankani
+Author-email: lakhan.mankani@gmail.com
+License: MIT
+Description: wifi_qrcode_generator
+        =====================
+        
+        Generate a qr code for your wifi network to let others quickly connect your wifi without having the need to tell them your long and complicated password.
+        
+        Dependencies:
+        
+        * Pillow
+        * qrcode
+        
+        Usage:
+        
+        .. code-block:: bash
+        
+            $ wifi-qrcode-generator
+        
+        Or as a Python API
+        
+        .. code-block:: python
+        
+            #!/usr/bin/env python3
+            import wifi_qrcode_generator
+        
+            wifi_qrcode_generator.wifi_qrcode(
+              'Home wifi', False, 'WPA', 'very complicated password'
+            )
+        
+        
+Keywords: WiFi,qrcode
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
