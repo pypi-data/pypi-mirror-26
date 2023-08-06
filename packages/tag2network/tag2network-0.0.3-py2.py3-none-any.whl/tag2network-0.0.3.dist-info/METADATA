@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: tag2network
+Version: 0.0.3
+Summary: Build similarity network from tagged documents
+Home-page: https://github.com/foodwebster/tag2network
+Author: foodwebster
+Author-email: foodwebster@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: networkx
+
+UNKNOWN
+
+
