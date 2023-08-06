@@ -1,0 +1,7 @@
+README.rst
+setup.py
+pySOM.egg-info/PKG-INFO
+pySOM.egg-info/SOURCES.txt
+pySOM.egg-info/dependency_links.txt
+pySOM.egg-info/requires.txt
+pySOM.egg-info/top_level.txt
