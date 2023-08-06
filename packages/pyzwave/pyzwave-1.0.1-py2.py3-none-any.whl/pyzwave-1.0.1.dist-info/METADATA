@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: pyzwave
+Version: 1.0.1
+Summary: A Z-Wave interfacing library in python
+Home-page: https://github.com/ebisso/pyzwave
+Author: Eric Bissonnette
+Author-email: ebisso.dev@gmail.com
+License: MIT
+Requires-Dist: pyserial
+
+A Z-Wave interfacing library in python
+
+
