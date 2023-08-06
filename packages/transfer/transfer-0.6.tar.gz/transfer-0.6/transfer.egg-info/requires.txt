@@ -1,0 +1,9 @@
+numpy
+keras
+tensorflow
+pyyaml
+tqdm
+pandas
+opencv-python
+termcolor
+colorama
