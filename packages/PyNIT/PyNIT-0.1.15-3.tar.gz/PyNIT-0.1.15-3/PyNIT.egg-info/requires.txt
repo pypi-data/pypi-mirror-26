@@ -1,0 +1,13 @@
+jupyter>=1.0.0
+tqdm
+pandas
+openpyxl
+xlrd
+nibabel
+matplotlib
+seaborn
+scikit-image
+numpy
+scipy
+scikit-learn
+psutil
