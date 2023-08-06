@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pysinonimos/__init__.py
+pysinonimos/sinonimos.py
+pysinonimos.egg-info/PKG-INFO
+pysinonimos.egg-info/SOURCES.txt
+pysinonimos.egg-info/dependency_links.txt
+pysinonimos.egg-info/requires.txt
+pysinonimos.egg-info/top_level.txt
