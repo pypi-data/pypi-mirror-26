@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+django_mp_misc.egg-info/PKG-INFO
+django_mp_misc.egg-info/SOURCES.txt
+django_mp_misc.egg-info/dependency_links.txt
+django_mp_misc.egg-info/top_level.txt
+misc/__init__.py
+misc/middleware.py
