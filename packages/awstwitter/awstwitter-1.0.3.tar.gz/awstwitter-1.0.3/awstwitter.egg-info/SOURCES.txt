@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+awstwitter/__init__.py
+awstwitter.egg-info/PKG-INFO
+awstwitter.egg-info/SOURCES.txt
+awstwitter.egg-info/dependency_links.txt
+awstwitter.egg-info/entry_points.txt
+awstwitter.egg-info/requires.txt
+awstwitter.egg-info/top_level.txt
