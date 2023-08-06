@@ -1,0 +1,9 @@
+sgp4
+requests
+
+[dev]
+hypothesis
+flake8
+hypothesis[datetime]
+mock
+logassert
