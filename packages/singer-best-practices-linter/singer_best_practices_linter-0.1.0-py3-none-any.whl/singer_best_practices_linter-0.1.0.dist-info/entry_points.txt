@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    singer-best-practices-linter=singer_best_practices_linter:main
+    
