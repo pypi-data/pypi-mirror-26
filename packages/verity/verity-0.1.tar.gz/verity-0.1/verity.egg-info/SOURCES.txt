@@ -1,0 +1,9 @@
+README.rst
+setup.py
+verity/__init__.py
+verity/__version__.py
+verity/json.py
+verity.egg-info/PKG-INFO
+verity.egg-info/SOURCES.txt
+verity.egg-info/dependency_links.txt
+verity.egg-info/top_level.txt
