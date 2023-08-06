@@ -1,0 +1,9 @@
+README.rst
+rgb2ansi.py
+setup.cfg
+setup.py
+rgb2ansi.egg-info/PKG-INFO
+rgb2ansi.egg-info/SOURCES.txt
+rgb2ansi.egg-info/dependency_links.txt
+rgb2ansi.egg-info/not-zip-safe
+rgb2ansi.egg-info/top_level.txt
