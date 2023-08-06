@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: easybase
+Version: 0.2
+Summary: A developer-friendly Python library to interact with Apache HBase,support thrift2. It's heavily references to happybase. thank Wouter Bolsterlee
+Home-page: https://github.com/wgzhao/easybase
+Author: wgzhao
+Author-email: wgzhao@gmail.com
+License: MIT
+Description: # EasyBase
+        
+        **HappyBase** is a developer-friendly Python library to interact with Apache
+        HBase.  But it not support Thrift 2 protocol. So I fork it and try to support Thrift 2 and name to **EasyBase**
+        
+        HBase thrift 2 cut all DDL schema and merge almost row manipulation. It mainly support
+        put,get and scan function.
+        
+        ## Installation
+        
+        `pip install easybase`
+        
+        
+        ## Demo
+        
+        you can view `DemoClient.py` to get detail.
+        
+Keywords: HBase,easybase,happybase
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
