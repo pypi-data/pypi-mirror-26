@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+seeuletter/__init__.py
+seeuletter/api_requestor.py
+seeuletter/compat.py
+seeuletter/error.py
+seeuletter/resource.py
+seeuletter/version.py
+seeuletter.egg-info/PKG-INFO
+seeuletter.egg-info/SOURCES.txt
+seeuletter.egg-info/dependency_links.txt
+seeuletter.egg-info/requires.txt
+seeuletter.egg-info/top_level.txt
