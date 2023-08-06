@@ -1,0 +1,14 @@
+totvserprm/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+totvserprm/auth.py,sha256=5bDYyLnNzs4Qk0eNPN2fgq8PhEnG2WMF4QLm3rxaibI,901
+totvserprm/baseapi.py,sha256=lZTOuQoKm-c70y1o0d3A89Fgv5czt93yA4rKy5u7LaM,2038
+totvserprm/educational.py,sha256=0736lH7uFAXBF1DRu1kmX1cILltdHVsxJLXbTuCTSC4,923
+totvserprm/exceptions.py,sha256=BpCVrepNI7-Zrl1wc18y7e1E1WhuxXcwjw1_EoLRzUs,341
+totvserprm/financial.py,sha256=VOvFw7sdxHia1u25B2X-CJBVEcrptc41fi996t3vTjQ,3528
+totvserprm/retrieve.py,sha256=XdzQIBj9W5XBbRiVqZMp3ZIKeaEmTxFiKboPYpniDkM,856
+totvserprm/utils.py,sha256=eiaXC2ijxyJh-ZyoRJJxbObeSzHjrspWnDrHa5V1dno,1381
+totvserprm-1.9.1.dist-info/DESCRIPTION.rst,sha256=n81V8vh78k4br5QI6L84KBHXwum1dFmVqzSpZHZstqg,3020
+totvserprm-1.9.1.dist-info/METADATA,sha256=2A52xeEgaRfSKB9hsE0ZlQgJJExtU8Q2WAtO7DSZGV8,3477
+totvserprm-1.9.1.dist-info/RECORD,,
+totvserprm-1.9.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+totvserprm-1.9.1.dist-info/metadata.json,sha256=2Od1pqsu2oT_JP3NNheq7pqO8pLaBySK3zLTKF_4aFs,674
+totvserprm-1.9.1.dist-info/top_level.txt,sha256=wHDcCh0hIUi6bpKjfXnbOixlynpqotVyzUxOx2f9Uho,11
