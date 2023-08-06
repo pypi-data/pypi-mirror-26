@@ -1,0 +1,15 @@
+cr_api/__init__.py,sha256=VMq4h21fkXL31P64irSV3OkX7HfD8X2sJ4_uu1owx1g,278
+cr_api/client.py,sha256=qfJsgoZZCzh7tZLDpDOl7woIgBdhC0zry9qHHX-P0J4,2607
+cr_api/client_async.py,sha256=eW38y8ZuZ5nvotL6cRyG8BlKvp_76OrCa7lAziJ4PV8,2998
+cr_api/exceptions.py,sha256=5-hYjyUs-GApcVU_BkVwcmIZUGtuiRlik-EmKXPEqFg,160
+cr_api/url.py,sha256=bvVfVOcHGUe44yOce0LXzuhvPTibuwnRPQIUjzylg7E,234
+cr_api/models/__init__.py,sha256=3MM1cQKzfX2i-q7FBZ_aMYrlu8byztKRq1XpkLmjNjw,105
+cr_api/models/base.py,sha256=qHtDhNc9Kzhbh1kze94GOpPN1Ey8DeUDZfdEWRKYhPs,3164
+cr_api/models/clan.py,sha256=JtLwDGsMlUhR4v8Zk7gOnv2lnlgyJmo-fqgH72acTaU,4038
+cr_api/models/constants.py,sha256=0Ju-4akWHj4diMeTRfwyKzrbtNevjVukV0EummTx9bs,1029
+cr_api/models/core.py,sha256=TmRnCBN4Qa-0RhpOFeZr0HT1Q2OYSB0dcoDjKmhE0iw,4841
+cr_api/models/player.py,sha256=v1pMNJERgBqfklAkII_-nFRT7dKHhYi7uxtLww6SIxU,4690
+cr-api-0.12.dist-info/LICENSE.txt,sha256=tMe7wztNehhVXbOxzAgjq7q8WpZ0PQM-QO-VGOd0O94,1082
+cr-api-0.12.dist-info/WHEEL,sha256=Ks1YmAgsfvETvk_vBs1MUBPbYhf3iZJEv1wvFWqgyKw,82
+cr-api-0.12.dist-info/METADATA,sha256=QkT6n6Q96bIJjIlwD1NY64_AjtaSr5Ns7w9R9QZRBGI,805
+cr-api-0.12.dist-info/RECORD,,
