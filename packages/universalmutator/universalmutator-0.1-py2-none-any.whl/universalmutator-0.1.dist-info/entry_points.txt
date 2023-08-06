@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    mutate = src.genmutants:main
+    handle_python_mutant = src.handlemutant:main
+    
