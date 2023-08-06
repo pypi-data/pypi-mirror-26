@@ -1,0 +1,1 @@
+The documentation can be found on the project's `github page <https://github.com/johannesber/orderPy/blob/master/README.md>`_.
