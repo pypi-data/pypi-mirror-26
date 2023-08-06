@@ -1,0 +1,16 @@
+pilosa/__init__.py,sha256=HccoGeTiS9ZMCmV4Li31AJXSuPU9RK3Q38Dse8lOweM,1662
+pilosa/client.py,sha256=f5swjidsEWkVrxDjZNWO8whZiN1f55Nrr2PR4m61gA8,19525
+pilosa/exceptions.py,sha256=Chii9Vpne1B_BihNbPWGx6cIK2M1dXLmq2GdJK3ocQw,1851
+pilosa/imports.py,sha256=OFZnHcqSciZR_TApNcGxDHvZshYZx9RDdRAiMg5Zho4,3115
+pilosa/orm.py,sha256=eoDCRZo-nYVxN5-yfKKhflhi8ErV9ZO8fC_uZrGtrdg,25104
+pilosa/response.py,sha256=-kWk9HZ4mgIG3aEjqBO0y4jx-nsTTBsBtfrHEhskTC4,5098
+pilosa/validator.py,sha256=s5RX_snwaWizMtcw3LOwl4tVbp-DapxakIuhrfRRhdo,2758
+pilosa/version.py,sha256=VA_Whm_1ncInDuimZgEAkDUesFgKAm4ziUnZoC0EqGM,2421
+pilosa/internal/__init__.py,sha256=Vx0d5Mgpg3FYQSdY2sP-mvnffhZFP99uaDWo-lhRNFo,1516
+pilosa/internal/public_pb2.py,sha256=MKpaSev-y6SzJgb8Tgai_-n2DcoHEEKj7wGSCkK0w0k,23198
+pilosa-0.8.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pilosa-0.8.0.dist-info/METADATA,sha256=ClEmIlF6jMbVWB5pUaVx6ew7jMeMtXJPdzoxgt0fNn8,875
+pilosa-0.8.0.dist-info/RECORD,,
+pilosa-0.8.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pilosa-0.8.0.dist-info/metadata.json,sha256=EL_cj5OJcCnquLD2WtJBKrUxvdA1vElH8jAMXAAkEX8,1087
+pilosa-0.8.0.dist-info/top_level.txt,sha256=h3zbDCpLgwsxhoB2hi2d_dt6Wc9JjFz-nKTJsh0JH1w,7
