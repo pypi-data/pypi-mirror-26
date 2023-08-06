@@ -1,0 +1,13 @@
+peforth/__init__.py,sha256=A-UmFKxItOtcRWOGDpy6riRX_VfIGsQA0U8CEroT1oY,4587
+peforth/__main__.py,sha256=HxS6-sHW7ewC4l9zzCVYIs_icph7rpJ3ddJzT9Yxj5k,233
+peforth/projectk.py,sha256=QRzi_h8dP9DdmzAfOyqjMi-Bd7VXGBDfsKyyXBh6QL0,20392
+peforth-1.11.data/data/lib/site-packages/peforth/peforth.f,sha256=fwgzlXYZE1P1odZN5LHTPFNu5GUBp2DFgsVp1gRQdu0,65199
+peforth-1.11.data/data/lib/site-packages/peforth/peforth.selftest,sha256=Fyc0HST5g6BxVRRUuKVpZjVjh-M6VyV6kvFbo87mdIo,20692
+peforth-1.11.data/data/lib/site-packages/peforth/quit.f,sha256=Uhz9fbq0Y2OtEj6ELbRo-MhuV7S8T9KXI9eXdDNI9Ns,7615
+peforth-1.11.data/data/lib/site-packages/peforth/version.txt,sha256=Qg7fTke77M104NrMaH-WLnt0O6vVRZcgX6TWWcRCzpU,20
+peforth-1.11.dist-info/DESCRIPTION.rst,sha256=DElZP28SMUzBSKSQCU52LiuEapdEI8GXe8B4SI9e4Oo,9993
+peforth-1.11.dist-info/METADATA,sha256=MHnIj78Ec1KlBPWNUpsKNrbtKGfJYrH63ySddW7vgS8,10315
+peforth-1.11.dist-info/RECORD,,
+peforth-1.11.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+peforth-1.11.dist-info/metadata.json,sha256=CXsEUTi3GXkYLPVSpz5egIJ9i-EYJj1Y9KVWpJnXfwA,512
+peforth-1.11.dist-info/top_level.txt,sha256=-zm-0nh9jsfqixTMQ53eD1W9wfquBQ3ECq6XuZfvHGw,8
