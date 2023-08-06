@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: roslaunch_api_wrapper
+Version: 0.6
+Summary: wrapper for rosalunch python api
+Home-page: https://github.com/ACarfi/roslaunch_api_wrapper
+Author: Alessandro Carfi
+Author-email: carfi.alessandro@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ============
+        Installation
+        ============
+        
+        To install this package use the command:
+        
+        ``$ sudo pip install roslaunch_api_wrapper``
+        
+        or
+        
+        ``$ sudo pip install "git+https://github.com/ACarfi/roslaunch_api_wrapper"``
+        
+Platform: UNKNOWN
