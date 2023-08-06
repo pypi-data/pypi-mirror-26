@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+emissionrpc/__init__.py
+emissionrpc/__version__.py
+emissionrpc/emitter.py
+emissionrpc/exceptions.py
+emissionrpc/helpers.py
+emissionrpc/server.py
+emissionrpc/specifications.py
+emissionrpc.egg-info/PKG-INFO
+emissionrpc.egg-info/SOURCES.txt
+emissionrpc.egg-info/dependency_links.txt
+emissionrpc.egg-info/requires.txt
+emissionrpc.egg-info/top_level.txt
