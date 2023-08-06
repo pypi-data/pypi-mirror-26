@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+tomaatti/__init__.py
+tomaatti/cli.py
+tomaatti.egg-info/PKG-INFO
+tomaatti.egg-info/SOURCES.txt
+tomaatti.egg-info/dependency_links.txt
+tomaatti.egg-info/entry_points.txt
+tomaatti.egg-info/not-zip-safe
+tomaatti.egg-info/top_level.txt
