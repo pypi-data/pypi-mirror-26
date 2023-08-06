@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+fpga_interface.txt
+setup.py
+larpix/__init__.py
+larpix/larpix.py
+larpix/larpix_control_demo.py
+larpix_control.egg-info/PKG-INFO
+larpix_control.egg-info/SOURCES.txt
+larpix_control.egg-info/dependency_links.txt
+larpix_control.egg-info/requires.txt
+larpix_control.egg-info/top_level.txt
+scripts/larpix-drivercheck-mac
+scripts/larpix-drivercheck-ubuntu
+scripts/larpix-find-device-mac
+scripts/larpix-find-device-ubuntu
+test/test_larpix.py
