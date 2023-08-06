@@ -1,0 +1,15 @@
+validatexmls-0.1.0.data/data/my_data/testfile.txt,sha256=0Qk9GsN8fxTOc_WfOiJfw0pv_tS13u-9SGkJo98RJWk,103
+validatexmls-0.1.0.data/data/xml1/35104616_49_30527.XML,sha256=ekzvkFgDotDjvOG6GLsnSFhZ1a65UWP7xzD4eELSyo0,947
+validatexmls-0.1.0.data/data/xml2/35104617_49_30527.XML,sha256=GAfio9TpvR-brlKzgXX-T7EYh5Z95bpyLlNMZGVqwYM,948
+validatexmls-0.1.0.data/data/xml3/35104887_114_40403.XML,sha256=S07APPBFFBh9FJsQlEr7dm21kr88xbrY3laYUOulV0w,1175
+validatexmls-0.1.0.data/data/xml4/35107864_119_40462.XML,sha256=_TuVZdKg73rOpcjJ4XPyldy7Bjnj2ZJ-W7Nr_7r1GbY,1171
+validatexmls-0.1.0.data/data/xml5/35108075_119_30561.XML,sha256=ME2-ojSqI_flpBVF6hh6gsyO-SHvc1gnnGI-5swYo48,1169
+validatexmls-0.1.0.data/data/xml6/35123529_78_40436.XML,sha256=43dS4KIlF2Xe08IHvlKjlAXLuYTCPCHV8P5vmZqVIws,736
+validatexmls-0.1.0.data/data/xsd/BC9.xsd,sha256=JwKEQ_AgjIz7SCMfakpGL4z3A5wRG21QQfuNDBGo7eY,13829
+validatexmls-0.1.0.dist-info/DESCRIPTION.rst,sha256=2dt-43yhsiORX6zB7-ShmeW4fGy5xvOZv_mVZZQ15Og,127
+validatexmls-0.1.0.dist-info/METADATA,sha256=-FxBJc-kIXsalsuIE-WG36M0XxzIdMvYtt84GM6-j2M,677
+validatexmls-0.1.0.dist-info/RECORD,,
+validatexmls-0.1.0.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+validatexmls-0.1.0.dist-info/entry_points.txt,sha256=THz5jil6DDPN8aF_6PxomcV4qr3iEPmxMiWl3xDt8a4,52
+validatexmls-0.1.0.dist-info/metadata.json,sha256=sETLxOyce5WfQyuBA4q2qe0K2mcqPi9qZWFOusy6kjI,892
+validatexmls-0.1.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

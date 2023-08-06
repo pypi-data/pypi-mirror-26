@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="DCS_MESSAGES">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="DCS_MESSAGE">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MOBILE_ID" type="xs:unsignedInt" />
+                            <xs:element name="ID" type="xs:unsignedInt" />
+                            <xs:element name="CRE_DATE_TIME" type="xs:string" />
+                            <xs:element name="STATUS" type="xs:unsignedByte" />
+                            <xs:element name="PRIORITY" type="xs:unsignedByte" />
+                            <xs:element name="DCS_GROUP" type="xs:string" />
+                            <xs:element name="MESSAGE_TYPE" />
+                            <xs:choice>
+                                <xs:group ref="MessageType_94_DebugErrorInformation" />
+                                <xs:group ref="MessageType_219_EmailTromToMobile_218" />
+                                <xs:group ref="MiddleGroup" />
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="REF_XML_OUT_FILENAME" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:group name="MiddleGroup">
+        <xs:sequence>
+            <xs:element name="X_COORD" type="xs:decimal" />
+            <xs:element name="Y_COORD" type="xs:decimal" />
+            <xs:element name="GPS_QUALITY" type="xs:unsignedByte" />
+            <xs:element name="ODO_METER" type="xs:unsignedInt" />
+            <xs:element name="ODO_INPUT" type="xs:unsignedInt" minOccurs="0" />
+            <xs:element name="SHIFT" type="xs:unsignedInt" minOccurs="0" />
+            <xs:element name="COST_DEPT" type="xs:unsignedInt" minOccurs="0" />
+            <xs:choice>
+                <xs:group ref="MessageType_61_EndBreak_65_StartBreak" />
+                <xs:group ref="MessageType_101_StartShift_119_EndShift" />
+                <xs:group ref="MessageType_113_StartUnloading" />
+                <xs:group ref="Time" />
+                <xs:group ref="MessageType_171_AnswerRequest" />
+                <xs:group ref="OrderNumber" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_61_EndBreak_65_StartBreak">
+        <xs:sequence>
+            <xs:element name="SHIFT_SEQUENCE" type="xs:unsignedInt" />
+            <xs:element name="START_TIME" type="xs:string" minOccurs="0" />
+            <xs:element name="END_TIME" type="xs:string" minOccurs="0" />
+            <xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+            <xs:choice>
+                <xs:group ref="Time" />
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:element name="REASON_TYPE" type="xs:unsignedByte" minOccurs="0" />
+                        <xs:element name="OTHER_REASON" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                    <xs:sequence>
+                        <xs:element name="START_TIME_BREAK" type="xs:string" minOccurs="0" />
+                        <xs:element name="PAUZE_TYPE_NR" type="xs:unsignedByte" minOccurs="0" />
+                        <xs:element name="PAUZE_TYPE" type="xs:string" minOccurs="0" />
+                    </xs:sequence>
+                    <xs:sequence>
+                        <xs:element name="ITEM_REFUELED" type="xs:unsignedInt" />
+                        <xs:element name="COMPANY_CODE" type="xs:unsignedInt" />
+                        <xs:element name="FUEL_TYPE" type="xs:unsignedInt" />
+                        <xs:element name="LITRES" type="xs:decimal" />
+                        <xs:element name="CURRENCY" type="xs:unsignedByte" />
+                        <xs:element name="AMOUNT" type="xs:decimal" />
+                        <xs:element name="FILLED" type="xs:boolean" />
+                        <xs:element name="ADBLUE_LITRES" type="xs:decimal" />
+                    </xs:sequence>
+                    <xs:sequence>
+                        <xs:element name="TRAILER" type="xs:string" />
+                    </xs:sequence>
+                    <xs:group ref="MessageType_74_StartWashing" />
+                </xs:choice>
+            </xs:choice>
+            <xs:group ref="MessageType_182_StartWaitDouane" />
+            <xs:group ref="MessageType_148_EndMiscelleneousActions" />
+            <xs:group minOccurs="0" ref="Address" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_182_StartWaitDouane">
+        <xs:sequence>
+            <xs:element name="DOUANE_CODE" type="xs:unsignedByte" minOccurs="0" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_148_EndMiscelleneousActions">
+        <xs:sequence>
+            <xs:element name="MENU_REASON" type="xs:unsignedByte" minOccurs="0" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_115_EndUnloading">
+        <xs:sequence>
+            <xs:element name="START_TIME" type="xs:string" />
+            <xs:element name="END_TIME" type="xs:string" minOccurs="0" />
+            <xs:group minOccurs="0" ref="MessageType_101_StartShift_119_EndShift" />
+            <xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+            <xs:element name="CARD_ID1" type="xs:string" minOccurs="0" />
+            <xs:group minOccurs="0" ref="Address" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_101_StartShift_119_EndShift">
+        <xs:sequence>
+            <xs:element name="START_TIME" type="xs:string" minOccurs="0" />
+            <xs:element name="END_TIME" type="xs:string" minOccurs="0" />
+            <xs:choice>
+                <xs:element name="DRIVER_1_NUMBER" type="xs:string" />
+                <xs:element name="AUTOMATIC" type="xs:unsignedByte" />
+            </xs:choice>
+            <xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+            <xs:element name="CARD_ID1" type="xs:string" minOccurs="0" />
+            <xs:group minOccurs="0" ref="Address" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_113_StartUnloading">
+        <xs:sequence>
+            <xs:element name="ROUTE_CODE" type="xs:unsignedInt" />
+            <xs:element name="ORDER_NUMBER" type="xs:string" minOccurs="0" />
+            <xs:element name="SHIFT_SEQUENCE" type="xs:unsignedInt" />
+            <xs:element name="COST_DEPT" type="xs:unsignedInt" minOccurs="0" />
+            <xs:group minOccurs="0" ref="MessageType_160_ArrivedAtHarbour" />
+            <xs:element name="TIME" type="xs:string" minOccurs="0" />
+            <xs:choice>
+                <xs:sequence>
+                    <xs:group ref="MessageType_20_VehicleEquipment" />
+                    <xs:group ref="Address" />
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="CMR_NUMBER" type="xs:unsignedInt" minOccurs="0" />
+                    <xs:element name="START_TIME_LOADING_OFFLOADING" type="xs:string" minOccurs="0" />
+                    <xs:element name="END_TIME_LOADING_OFFLOADING" type="xs:string" minOccurs="0" />
+                    <xs:element name="LOAD_UNLOAD_NUMBERS" type="xs:string" minOccurs="0" />
+                    <xs:element name="START_TIME" type="xs:string" minOccurs="0" />
+                    <xs:element name="END_TIME" type="xs:string" minOccurs="0" />
+                    <xs:element name="TRAILER" type="xs:string" minOccurs="0" />
+                    <xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+                    <xs:group minOccurs="0" ref="Address" />
+                    <xs:group ref="QUINTIQ_NUMBER" />
+                </xs:sequence>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_219_EmailTromToMobile_218">
+        <xs:sequence>
+            <xs:element name="MESSAGE" type="xs:string" minOccurs="0" />
+            <xs:element name="ANSWER_TYPE" type="xs:unsignedByte" />
+            <xs:element name="MESSAGE_ID2" type="xs:unsignedInt" />
+            <xs:choice>
+                <xs:element name="EMAIL_ADDRESS" type="xs:string" minOccurs="0" />
+                <xs:element name="RECIPIENT_CODE" type="xs:unsignedByte" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_78_Damage">
+        <xs:sequence>
+            <xs:element name="DAMAGE_TYPE" type="xs:string" />
+            <xs:element name="DAMAGE_DESCRIPTION" type="xs:string" />
+            <xs:element name="CURRENT_DRIVER" type="xs:string" />
+            <xs:element name="TRAILER_NUMBER" type="xs:string" minOccurs="0" />
+            <xs:group ref="Address" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_171_AnswerRequest">
+        <xs:sequence>
+            <xs:element name="REQUEST_TIME" type="xs:string" />
+            <xs:group ref="Address" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_49_CustomsDocuments">
+        <xs:sequence>
+            <xs:element name="REGISTRATION_TIME" type="xs:string" />
+            <xs:element name="DOCUMENT_SELECTION" type="xs:unsignedByte" />
+            <xs:element name="DOCUMENT_NR" type="xs:string" />
+            <xs:choice>
+                <xs:group ref="MessageType_183_EndWaitDouane" />
+                <xs:group ref="Address" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_183_EndWaitDouane">
+        <xs:sequence>
+            <xs:element name="DOUANE_CODE" type="xs:unsignedByte" />
+            <xs:group ref="Address" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="OrderNumber">
+        <xs:sequence>
+            <xs:element name="ORDER_NUMBER" type="xs:string" />
+            <xs:element name="SHIFT_SEQUENCE" type="xs:unsignedInt" />
+            <xs:element name="START_TIME" type="xs:string" minOccurs="0" />
+            <xs:element name="END_TIME" type="xs:string" minOccurs="0" />
+            <xs:choice>
+                <xs:group ref="MessageType_49_CustomsDocuments" />
+                <xs:group ref="MessageType_183_EndWaitDouane" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="Address">
+        <xs:sequence>
+            <xs:element name="STREET" type="xs:string" />
+            <xs:element name="STREET_NO" type="xs:string" minOccurs="0" />
+            <xs:element name="PLACE" type="xs:string" />
+            <xs:element name="COUNTRY" type="xs:string" />
+            <xs:element name="COUNTRY_CODE" type="xs:string" />
+            <xs:element name="COUNTY" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_94_DebugErrorInformation">
+        <xs:sequence>
+            <xs:element name="RESTART_REASON" type="xs:unsignedByte" />
+            <xs:element name="RECOVERD_LAST_TIME" type="xs:string" />
+            <xs:element name="RECOVERD_MESSAGES" type="xs:string" />
+            <xs:element name="NAVIGATION_SYSTEM" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_74_StartWashing">
+        <xs:sequence>
+            <xs:element name="LOCATION_NR" type="xs:unsignedInt" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_17_StartBreak">
+        <xs:sequence>
+            <xs:element name="START_TIME_BREAK" type="xs:string" minOccurs="0" />
+            <xs:element name="PAUZE_TYPE_NR" type="xs:unsignedByte" />
+            <xs:element name="PAUZE_TYPE" type="xs:string" />
+            <xs:element name="CURRENT_DRIVER" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="Time">
+        <xs:sequence>
+            <xs:element name="TIME" type="xs:string" />
+            <xs:choice>
+                <xs:group ref="MessageType_20_VehicleEquipment" />
+                <xs:group ref="MessageType_78_Damage" />
+                <xs:group ref="MessageType_17_StartBreak" />
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_20_VehicleEquipment">
+        <xs:sequence>
+            <xs:element name="VEHICLE_TYPE" type="xs:unsignedByte" />
+            <xs:element name="VEHICLE_CODE" type="xs:string" minOccurs="0" />
+            <xs:element name="INPUT_EQUIPMENT_1" type="xs:string" />
+            <xs:element name="INPUT_EQUIPMENT_2" type="xs:string" />
+            <xs:element name="INPUT_EQUIPMENT_3" type="xs:string" />
+            <xs:element name="CURRENT_DRIVER" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="MessageType_160_ArrivedAtHarbour">
+        <xs:sequence>
+            <xs:element name="ARRIVE_TIME" type="xs:string" />
+            <xs:element name="FERRY_CODE" type="xs:unsignedInt" />
+            <xs:element name="PASSENGER_COUNT" type="xs:unsignedInt" />
+        </xs:sequence>
+    </xs:group>
+    <xs:group name="QUINTIQ_NUMBER">
+        <xs:sequence>
+            <xs:element name="QUINTIQ_NUMBER" type="xs:unsignedInt" />
+            <xs:element name="TRIP_NUMBER" type="xs:unsignedInt" />
+            <xs:element name="CUSTOMER_NUMBER" type="xs:unsignedInt" />
+            <xs:element name="GARAGE_NUMBER" type="xs:string" />
+            <xs:element name="REPAIR_NUMBER" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+</xs:schema>
