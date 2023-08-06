@@ -1,0 +1,15 @@
+boom
+sphinx
+sphinxcontrib-napoleon
+recommonmark
+wheel
+conan
+
+[dev]
+wheel
+
+[test]
+coverage
+mypy
+mypy-extensions
+lxml
