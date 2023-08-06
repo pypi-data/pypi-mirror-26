@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: django_admin_links
+Version: 0.1
+Summary: Read-only link representation of foreign keys in django admin
+Home-page: https://github.com/pdrum/django_admin_links
+Author: Pedram Hajesmaeeli
+Author-email: pedram.esmaeeli@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/pdrum/django_admin_links/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: django,admin,foreign keys
+Platform: UNKNOWN
