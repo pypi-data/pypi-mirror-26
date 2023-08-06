@@ -1,0 +1,7 @@
+setup.py
+pyPiEx/__init__.py
+pyPiEx.egg-info/PKG-INFO
+pyPiEx.egg-info/SOURCES.txt
+pyPiEx.egg-info/dependency_links.txt
+pyPiEx.egg-info/not-zip-safe
+pyPiEx.egg-info/top_level.txt
