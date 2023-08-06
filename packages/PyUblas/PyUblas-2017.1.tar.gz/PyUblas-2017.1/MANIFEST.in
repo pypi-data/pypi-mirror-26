@@ -1,0 +1,17 @@
+include pyublas/include/pyublas/*.hpp
+
+include src/wrapper/*.hpp
+include test/*.py
+include test/*.cpp
+
+include doc/*.rst
+include doc/Makefile
+include doc/conf.py
+include doc/_static/*.css
+include doc/_templates/*.html
+
+include configure.py
+include Makefile.in
+include aksetup_helper.py
+include README_SETUP.txt
+include README.rst
