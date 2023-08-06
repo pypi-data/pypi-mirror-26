@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+icgc/__init__.py
+icgc.egg-info/PKG-INFO
+icgc.egg-info/SOURCES.txt
+icgc.egg-info/dependency_links.txt
+icgc.egg-info/requires.txt
+icgc.egg-info/top_level.txt
