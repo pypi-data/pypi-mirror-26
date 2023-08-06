@@ -1,0 +1,8 @@
+yt>=3.4.0
+h5py
+numpy
+matplotlib
+astropy
+requests
+setuptools
+future
