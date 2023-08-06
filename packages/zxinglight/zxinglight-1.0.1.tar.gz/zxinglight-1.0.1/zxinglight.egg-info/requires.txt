@@ -1,0 +1,11 @@
+Pillow
+
+[docs]
+Sphinx
+sphinx-autobuild
+sphinx_rtd_theme
+
+[test]
+flake8
+nose
+pep8-naming
