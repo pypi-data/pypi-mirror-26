@@ -1,0 +1,10 @@
+tptapi/__init__.py,sha256=FXxx56VND6o2oYfIN3wUicrBtVt_7rNWVTSukjq-HMk,105
+tptapi/__version__.py,sha256=X6xjd3BdZ9YaWMwVmAEb3X8crvN7GLW5ViNQ7PhY8pc,159
+tptapi/client.py,sha256=Q6he992EIhTmx8WTfFylt1fW7UV2H9V7rVlj1QxE8a8,10127
+tptapi/errors.py,sha256=dBcimQPlRdZ5IyEwPIuT703Eu7fl3AzYLrVsOCeWjXw,136
+tptapi-1.1.0.dist-info/DESCRIPTION.rst,sha256=8_tNhR46POd6MSmyO4yMWCaMts8qx0-BLaauP54xhLg,3523
+tptapi-1.1.0.dist-info/METADATA,sha256=yzTdoB3iEBdfl4xgIa6fkVq7mDJR3zFkspClRnpTVw8,4581
+tptapi-1.1.0.dist-info/RECORD,,
+tptapi-1.1.0.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+tptapi-1.1.0.dist-info/metadata.json,sha256=D2X7uVRU3E19grB1gNyVwEZJJOvNSz6a1a9XssSHQf4,1164
+tptapi-1.1.0.dist-info/top_level.txt,sha256=HQbNnlqO18g934wkWOFkWz8wXBj6Ces0j45uV8BWE6w,7
