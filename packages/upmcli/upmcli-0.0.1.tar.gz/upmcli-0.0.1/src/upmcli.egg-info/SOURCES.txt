@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/upmcli/__init__.py
+src/upmcli/cli.py
+src/upmcli.egg-info/PKG-INFO
+src/upmcli.egg-info/SOURCES.txt
+src/upmcli.egg-info/dependency_links.txt
+src/upmcli.egg-info/entry_points.txt
+src/upmcli.egg-info/not-zip-safe
+src/upmcli.egg-info/top_level.txt

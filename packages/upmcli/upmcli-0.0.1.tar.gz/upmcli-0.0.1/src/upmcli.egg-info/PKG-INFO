@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: upmcli
+Version: 0.0.1
+Summary: Universal Package Manager
+Home-page: https://github.com/assister-ai/upm
+Author: Keyvan Mir Mohammad Sadeghi, Mehdi Balouchi
+Author-email: keyvan.m.sadeghi@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # upm
+        Universal Package Manager
+        
+Keywords: packaging,package manager,container,docker,cli
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Archiving :: Packaging
