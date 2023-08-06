@@ -1,0 +1,21 @@
+# sauri
+
+A simple home automation project written in Python (only tested with Python 2.7)
+
+## Installing
+
+pip install sauri
+
+## Running the application
+
+Execute collector.py from the distribution directory and follow the help
+
+## Running the tests
+
+ * cd sauri
+ * ./run_tests.sh
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
