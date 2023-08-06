@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pshelf=pshelf.shell:shelf
+    

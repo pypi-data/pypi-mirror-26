@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: pshelf
+Version: 0.5
+Summary: A shelf-like pythonic structure
+Home-page: https://github.com/transhapHigsn/pshelf
+Author: transhap
+Author-email: fet.prashantsingh@gmail.com
+License: None
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.5
+Requires-Dist: Click
+
+UNKNOWN
+
+

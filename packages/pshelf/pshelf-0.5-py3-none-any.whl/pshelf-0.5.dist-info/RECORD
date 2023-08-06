@@ -1,0 +1,12 @@
+pshelf/__init__.py,sha256=vTpxqqgQ2kMoTpkhMnazHFauTcEgTgRAX0E1b--_vB8,24
+pshelf/alternatives.py,sha256=GUx8ka_hkcWSSnuJlAtBrJSyoOdPVdAxFcKgDs8ySvE,66
+pshelf/cleanup.py,sha256=iwFG1tnT9_4Qf59eLKu4ZwuaGH_36YPlRohHCMHqVh4,211
+pshelf/shell.py,sha256=QOpneKjuxOoJRq7H3A1QZmWiFeRcf-_eweB7H058lig,2944
+pshelf/userInput.py,sha256=3Sbhprbai4TUF-XpvPQZmyRX4TTZh4R5aziEtzr0xLE,4358
+pshelf-0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pshelf-0.5.dist-info/METADATA,sha256=egVZpOai-g3HTkB1WatRxvj39Osz4XRiVE_N7h8Bh4s,320
+pshelf-0.5.dist-info/RECORD,,
+pshelf-0.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pshelf-0.5.dist-info/entry_points.txt,sha256=sxhQTvRZfZNUOTkqNCRcHE9YEx9HmBMYYQzAvCzmyR4,65
+pshelf-0.5.dist-info/metadata.json,sha256=7u_8h8xXpyckl5dtrwDRJ78WCrr2nR080vfVfOqK6Oo,686
+pshelf-0.5.dist-info/top_level.txt,sha256=wuhdtjbF026yH2jUuE3-UqBgMMG9Gs9TI2V8Y2n_jJw,7
