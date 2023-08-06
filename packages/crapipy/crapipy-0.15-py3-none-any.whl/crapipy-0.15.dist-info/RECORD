@@ -1,0 +1,15 @@
+crapipy/__init__.py,sha256=XlH29OPKBQS1vtQWFAG89xoL4wGDuHukixmVH68Gz70,278
+crapipy/client.py,sha256=wMjGRPMot4vcXSe1_cZCmmS6iT89qt6wyECU41Bqa_4,2600
+crapipy/client_async.py,sha256=F7Hdy78gvXA-dQAaMnFDiUxakIfqx3t4LUYpqzClBHw,2953
+crapipy/exceptions.py,sha256=5-hYjyUs-GApcVU_BkVwcmIZUGtuiRlik-EmKXPEqFg,160
+crapipy/url.py,sha256=bvVfVOcHGUe44yOce0LXzuhvPTibuwnRPQIUjzylg7E,234
+crapipy/models/__init__.py,sha256=3MM1cQKzfX2i-q7FBZ_aMYrlu8byztKRq1XpkLmjNjw,105
+crapipy/models/base.py,sha256=qHtDhNc9Kzhbh1kze94GOpPN1Ey8DeUDZfdEWRKYhPs,3164
+crapipy/models/clan.py,sha256=JtLwDGsMlUhR4v8Zk7gOnv2lnlgyJmo-fqgH72acTaU,4038
+crapipy/models/constants.py,sha256=0Ju-4akWHj4diMeTRfwyKzrbtNevjVukV0EummTx9bs,1029
+crapipy/models/core.py,sha256=TmRnCBN4Qa-0RhpOFeZr0HT1Q2OYSB0dcoDjKmhE0iw,4841
+crapipy/models/player.py,sha256=v1pMNJERgBqfklAkII_-nFRT7dKHhYi7uxtLww6SIxU,4690
+crapipy-0.15.dist-info/LICENSE.txt,sha256=tMe7wztNehhVXbOxzAgjq7q8WpZ0PQM-QO-VGOd0O94,1082
+crapipy-0.15.dist-info/WHEEL,sha256=Ks1YmAgsfvETvk_vBs1MUBPbYhf3iZJEv1wvFWqgyKw,82
+crapipy-0.15.dist-info/METADATA,sha256=O4E1-gDw2IEwzXmX4Qn5I-OM7pkT6MMu11ZERhpcnlg,806
+crapipy-0.15.dist-info/RECORD,,
