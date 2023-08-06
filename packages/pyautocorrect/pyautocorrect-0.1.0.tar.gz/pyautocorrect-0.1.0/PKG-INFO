@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyautocorrect
+Version: 0.1.0
+Summary: Python 2/3 Spell Corrector
+Home-page: https://github.com/PandaWhoCodes/pyautocorrect
+Author: Thomas Ashish Cherian
+Author-email: ufoundashish@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: auto-correct spell corrector
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
