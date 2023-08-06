@@ -1,0 +1,4 @@
+[console_scripts]
+hsync = hsync.local:run
+hsyncd = hsync.server:run
+

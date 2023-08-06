@@ -1,0 +1,11 @@
+setup.py
+hsync/__init__.py
+hsync/__main__.py
+hsync/file.py
+hsync/local.py
+hsync/server.py
+hsync.egg-info/PKG-INFO
+hsync.egg-info/SOURCES.txt
+hsync.egg-info/dependency_links.txt
+hsync.egg-info/entry_points.txt
+hsync.egg-info/top_level.txt
