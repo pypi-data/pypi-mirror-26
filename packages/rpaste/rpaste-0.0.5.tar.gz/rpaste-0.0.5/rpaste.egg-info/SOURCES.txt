@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+rpaste/__init__.py
+rpaste/__main__.py
+rpaste/version.py
+rpaste.egg-info/PKG-INFO
+rpaste.egg-info/SOURCES.txt
+rpaste.egg-info/dependency_links.txt
+rpaste.egg-info/entry_points.txt
+rpaste.egg-info/top_level.txt
