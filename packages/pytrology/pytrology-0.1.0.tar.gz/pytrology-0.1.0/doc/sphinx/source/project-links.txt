@@ -1,0 +1,52 @@
+.. -*- Mode: rst -*-
+
+..
+   |PyMetrologyUrl|
+   |PyMetrologyHomePage|_
+   |PyMetrologyDoc|_
+   |PyMetrology@github|_
+   |PyMetrology@readthedocs|_
+   |PyMetrology@readthedocs-badge|
+   |PyMetrology@pypi|_
+
+.. |ohloh| image:: https://www.openhub.net/accounts/230426/widgets/account_tiny.gif
+   :target: https://www.openhub.net/accounts/fabricesalvaire
+   :alt: Fabrice Salvaire's Ohloh profile
+   :height: 15px
+   :width:  80px
+
+.. |PyMetrologyUrl| replace:: https://pymetrology.fabrice-salvaire.fr
+
+.. |PyMetrologyHomePage| replace:: PyMetrology Home Page
+.. _PyMetrologyHomePage: https://pymetrology.fabrice-salvaire.fr
+
+.. |PyMetrology@readthedocs-badge| image:: https://readthedocs.org/projects/pymetrology/badge/?version=latest
+   :target: http://pymetrology.readthedocs.org/en/latest
+
+.. |PyMetrology@github| replace:: https://github.com/FabriceSalvaire/PyMetrology
+.. .. _PyMetrology@github: https://github.com/FabriceSalvaire/PyMetrology
+
+.. |PyMetrology@pypi| replace:: https://pypi.python.org/pypi/PyMetrology
+.. .. _PyMetrology@pypi: https://pypi.python.org/pypi/PyMetrology
+
+.. |Build Status| image:: https://travis-ci.org/FabriceSalvaire/PyMetrology.svg?branch=master
+   :target: https://travis-ci.org/FabriceSalvaire/PyMetrology
+   :alt: PyMetrology build status @travis-ci.org
+
+.. |Pypi Version| image:: https://img.shields.io/pypi/v/PyMetrology.svg
+   :target: https://pypi.python.org/pypi/PyMetrology
+   :alt: PyMetrology last version
+
+.. |Pypi License| image:: https://img.shields.io/pypi/l/PyMetrology.svg
+   :target: https://pypi.python.org/pypi/PyMetrology
+   :alt: PyMetrology license
+
+.. |Pypi Python Version| image:: https://img.shields.io/pypi/pyversions/PyMetrology.svg
+   :target: https://pypi.python.org/pypi/PyMetrology
+   :alt: PyMetrology python version
+
+..  coverage test
+..  https://img.shields.io/pypi/status/Django.svg
+..  https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star
+
+.. End
