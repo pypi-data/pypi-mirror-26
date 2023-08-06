@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+thonny_flash_microbitio.egg-info/PKG-INFO
+thonny_flash_microbitio.egg-info/SOURCES.txt
+thonny_flash_microbitio.egg-info/dependency_links.txt
+thonny_flash_microbitio.egg-info/requires.txt
+thonny_flash_microbitio.egg-info/top_level.txt
+thonnycontrib/flash-microbitio/__init__.py
+thonnycontrib/flash-microbitio/res/bitio.hex
+thonnycontrib/flash-microbitio/res/bitio.png
+thonnycontrib/flash-microbitio/res/run-flashio.piskel
+thonnycontrib/flash-microbitio/res/run.flash_io.gif
