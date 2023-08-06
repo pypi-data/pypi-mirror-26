@@ -1,0 +1,14 @@
+qpsphere/__init__.py,sha256=BLzas7nvklreKxD_A5Xd3bxqQ-hVf952uGc-4Mqj0xQ,1975
+qpsphere/_version.py,sha256=H9VAu--V0Ji4IwnTfk590MjEy3y9b0Q7q_XndNWZZBA,4432
+qpsphere/_version_save.py,sha256=atVFF6H_rC7jjAr4R1-iMDvEOhB_Z3wgAK6WYd0hwoY,82
+qpsphere/edgefit.py,sha256=PZXY0Mty_30wlgxNT82zD7s2F_-KkZTAQ5nGaADsV84,10407
+qpsphere/imagefit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qpsphere/imagefit/model_projection.py,sha256=2wV6FxFIkPMPVAb5YPDS-GnTur1n4qF9m3sHCaJAZPU,4267
+qpsphere/models/__init__.py,sha256=zH_RIvE3p7uarkYuQvSEHwX6QtprdnurYAcayjZ5zhU,1269
+qpsphere/models/projection.py,sha256=-zpY0PMR-gxdaKo61IIFepwkNdj5fALojW7V-c_ML3A,1685
+qpsphere-0.1.1.dist-info/DESCRIPTION.rst,sha256=y_hUW8ODyVdXV6G9w-J-qjGbr2pmaIFxk4YVeFjBPm4,1049
+qpsphere-0.1.1.dist-info/METADATA,sha256=zVEuU9GVw0MQTCzCX7bAzHbGl_187Y9uocB6DZZU6uw,1749
+qpsphere-0.1.1.dist-info/RECORD,,
+qpsphere-0.1.1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+qpsphere-0.1.1.dist-info/metadata.json,sha256=6Jkb-u8OTcJFhLsKknw4cxPbG-qoeZMta1fiRHptAdk,966
+qpsphere-0.1.1.dist-info/top_level.txt,sha256=p1l5vK9nHJW1dTNiqIAh9McfA8Ua56FxHCLrskXSNyM,9
