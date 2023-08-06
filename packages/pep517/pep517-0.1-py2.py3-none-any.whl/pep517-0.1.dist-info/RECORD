@@ -1,0 +1,9 @@
+pep517/__init__.py,sha256=5QfqKNn28_hzMK4CAOhThmIX5rXowPHtoj899-el9g4,82
+pep517/_in_process.py,sha256=iWpagFk2GhNBbvl-Ca2RagfD0ALuits4WWSM6nQMTdg,5831
+pep517/compat.py,sha256=4SFG4QN-cNj8ebSa0wV0HUtEEQWwmbok2a0uk1gYEOM,631
+pep517/envbuild.py,sha256=BwhbNFWkFsTT0d8HMoTyfmNS4R2sd4PbEfEGtRSxI-E,5267
+pep517/wrappers.py,sha256=Qx2jXIQqjTf7PrR7oHEyabqpM-rOvGP9hb5f18gBLWM,4586
+pep517-0.1.dist-info/LICENSE,sha256=GyKwSbUmfW38I6Z79KhNjsBLn9-xpR02DkK0NCyLQVQ,1081
+pep517-0.1.dist-info/WHEEL,sha256=RA_fzc0G9apkHJKy7p05CMHAeSfJ3NaDzVYRdT6OUBk,100
+pep517-0.1.dist-info/METADATA,sha256=1LjyG-su1UI0AQ_ArtQI6H_ymvlcu2ShJEQ1uHnYDBA,2040
+pep517-0.1.dist-info/RECORD,,
