@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: codepunks
+Version: 0.1b2
+Summary: Codepunks, yet another base library
+Home-page: https://github.com/redshodan/codepunks
+Author: Chris Newton
+Author-email: redshodan@gmail.com
+License: Apache Software License
+Description-Content-Type: UNKNOWN
+Description: # codepunks
+        Another personal library of utilities
+        
+        
+        0.1
+        ---
+        
+        * Initial version
+        
+Platform: Any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
