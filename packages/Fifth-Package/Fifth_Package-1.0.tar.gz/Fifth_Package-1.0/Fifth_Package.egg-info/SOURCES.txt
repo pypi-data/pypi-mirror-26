@@ -1,0 +1,8 @@
+README.txt
+setup.py
+Fifth_Package/__init__.py
+Fifth_Package/core.py
+Fifth_Package.egg-info/PKG-INFO
+Fifth_Package.egg-info/SOURCES.txt
+Fifth_Package.egg-info/dependency_links.txt
+Fifth_Package.egg-info/top_level.txt
