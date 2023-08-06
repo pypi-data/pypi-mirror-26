@@ -1,0 +1,4 @@
+cchardet
+file-magic
+python-dateutil
+typing
