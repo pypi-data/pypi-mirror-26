@@ -1,0 +1,16 @@
+LICENCE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+get_template/__init__.py
+get_template.egg-info/PKG-INFO
+get_template.egg-info/SOURCES.txt
+get_template.egg-info/dependency_links.txt
+get_template.egg-info/entry_points.txt
+get_template.egg-info/requires.txt
+get_template.egg-info/top_level.txt
+get_template/cli/__init__.py
+get_template/cli/__main__.py
+get_template/cli/config/__init__.py
+get_template/cli/config/config.json

@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: get-template
+Version: 1.0.4
+Summary: Templating
+Home-page: https://gitlab.com/Dithyrambe/templator
+Author: dithyrambe
+Author-email: dithyrambe@outlook.fr
+License: WTFPL
+Description-Content-Type: UNKNOWN
+Description: # Get-Template
+        A simple tool use git repos as template for quick prototyping.
+        
+        ## Installation
+        ```bash
+        pip install get-template
+        ```
+        
+        ## Usage
+        Before your first usage, you need to set `get-template` to use a default remote source
+        ```bash
+        template config set --default-source git@gitlab:your_acount
+        ```
+        
+        Then pull your templates:
+        ```bash
+        template init your_template_repo your_dest_directory
+        ```
+        
+        A new git repository will be initialize in `your_dest_directory`.
+        
+        Thats all.
+Keywords: Template
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
