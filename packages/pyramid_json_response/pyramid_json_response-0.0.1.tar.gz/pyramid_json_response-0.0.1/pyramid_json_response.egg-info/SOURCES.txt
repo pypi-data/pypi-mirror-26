@@ -1,0 +1,7 @@
+pyramid_json_response.py
+setup.py
+pyramid_json_response.egg-info/PKG-INFO
+pyramid_json_response.egg-info/SOURCES.txt
+pyramid_json_response.egg-info/dependency_links.txt
+pyramid_json_response.egg-info/requires.txt
+pyramid_json_response.egg-info/top_level.txt

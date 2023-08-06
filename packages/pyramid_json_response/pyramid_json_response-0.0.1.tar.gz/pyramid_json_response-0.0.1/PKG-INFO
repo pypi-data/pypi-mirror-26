@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyramid_json_response
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/narusemotoki/pyramid_json_response
+Author: Motoki Naruse
+Author-email: motoki@naru.se
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: pyramid
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
