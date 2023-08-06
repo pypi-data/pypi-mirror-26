@@ -1,0 +1,4 @@
+docopt
+pyVmomi
+future
+six

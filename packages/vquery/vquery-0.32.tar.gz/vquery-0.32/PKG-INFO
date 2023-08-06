@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: vquery
+Version: 0.32
+Summary: A tool for querying vCenter for various information.
+Home-page: https://github.com/rymdlego/vquery
+Author: Jakob Svanholm
+Author-email: rymdlego@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: vSphere VMware vCenter
+Platform: UNKNOWN
