@@ -1,0 +1,14 @@
+falkus
+setup.py
+falkus.egg-info/PKG-INFO
+falkus.egg-info/SOURCES.txt
+falkus.egg-info/dependency_links.txt
+falkus.egg-info/requires.txt
+falkus.egg-info/top_level.txt
+falkuslib/__init__.py
+falkuslib/awsutils.py
+falkuslib/core.py
+falkuslib/lws.py
+falkustest/__init__.py
+falkustest/dynamodbrunner.py
+falkustest/integ.py

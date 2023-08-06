@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: falkus
+Version: 0.1
+Summary: Automation for quick setup of AWS SAM application with Python Lambda
+Home-page: https://gitlab.com/daniele.rigato.amz/falkus
+Author: Daniele Rigato
+Author-email: daniele.rigato@gmail.com
+License: GNU GPL v3
+Description: UNKNOWN
+Keywords: aws lambda SAM serverless
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2.7
