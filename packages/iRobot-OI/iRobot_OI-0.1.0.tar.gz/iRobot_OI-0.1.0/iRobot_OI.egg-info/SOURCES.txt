@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+iRobot_OI.py
+setup.py
+iRobot_OI.egg-info/PKG-INFO
+iRobot_OI.egg-info/SOURCES.txt
+iRobot_OI.egg-info/dependency_links.txt
+iRobot_OI.egg-info/requires.txt
+iRobot_OI.egg-info/top_level.txt
