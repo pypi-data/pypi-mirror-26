@@ -1,0 +1,2 @@
+eclipsegen==0.2.5
+plumbum>=1.6.2
