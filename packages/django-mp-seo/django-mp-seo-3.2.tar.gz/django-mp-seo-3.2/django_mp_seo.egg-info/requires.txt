@@ -1,0 +1,2 @@
+django-mp-misc>=1.8
+django-mp-trans>=1.0
