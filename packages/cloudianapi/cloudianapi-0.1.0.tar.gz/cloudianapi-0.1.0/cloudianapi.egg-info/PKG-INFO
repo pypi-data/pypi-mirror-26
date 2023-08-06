@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cloudianapi
+Version: 0.1.0
+Summary: Non-official Cloudian (TM) REST Admin API Client
+Home-page: https://github.com/romerojunior/cloudian-api
+Author: Romero Galiza Jr
+Author-email: rgaliza@schubergphilis.com
+License: UNKNOWN
+Download-URL: https://github.com/romerojunior/cloudian-api/archive/0.1.0.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: cloudian,api-client
+Platform: UNKNOWN
