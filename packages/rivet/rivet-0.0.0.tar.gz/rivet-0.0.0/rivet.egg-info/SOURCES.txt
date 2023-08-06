@@ -1,0 +1,5 @@
+setup.py
+rivet.egg-info/PKG-INFO
+rivet.egg-info/SOURCES.txt
+rivet.egg-info/dependency_links.txt
+rivet.egg-info/top_level.txt
