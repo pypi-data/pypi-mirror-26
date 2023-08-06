@@ -1,0 +1,9 @@
+README.md
+apistar_msgpack.py
+setup.py
+apistar_msgpack.egg-info/PKG-INFO
+apistar_msgpack.egg-info/SOURCES.txt
+apistar_msgpack.egg-info/dependency_links.txt
+apistar_msgpack.egg-info/requires.txt
+apistar_msgpack.egg-info/top_level.txt
+apistar_msgpack.egg-info/zip-safe
