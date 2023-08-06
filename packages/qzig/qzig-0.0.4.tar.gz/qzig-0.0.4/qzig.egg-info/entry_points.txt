@@ -1,0 +1,3 @@
+[console_scripts]
+qzig = qzig.main:main
+
