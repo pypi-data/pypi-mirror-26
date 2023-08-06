@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: cornflake
+Version: 0.2.3
+Summary: A simple library for converting to and from Python objects
+Home-page: https://github.com/renalreg/cornflake
+Author: Rupert Bedford
+Author-email: rupert.bedford@renalregistry.nhs.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: bleach
+Requires-Dist: iso8601
+Requires-Dist: pytz
+Requires-Dist: six
+Provides-Extra: sqlalchemy
+Requires-Dist: SQLAlchemy; extra == 'sqlalchemy'
+
+UNKNOWN
+
+
