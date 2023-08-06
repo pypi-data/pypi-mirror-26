@@ -1,0 +1,16 @@
+genericclient_aiohttp/__init__.py,sha256=_DBiUlTcS4L3P_znYmqGJn7tYodEG2u7ClRqwJZEqzc,5918
+genericclient_aiohttp/routes.py,sha256=c2vkPTftEgPXrESNNOeIIekVjA4K5qoA1u1XPyWiEQg,528
+genericclient_aiohttp-0.0.3.dist-info/DESCRIPTION.rst,sha256=hdNYuVWEPcBfxMO8JOxg_vg9RRK_6FepOtoNEB9q7Uc,5601
+genericclient_aiohttp-0.0.3.dist-info/LICENSE.txt,sha256=Uja0RnNIx86sXfvg2TvythG2U8s_oXyWzcb8tezSWsY,1061
+genericclient_aiohttp-0.0.3.dist-info/METADATA,sha256=_7FeSZTV9049xEDPHKotUBgA2We4su5d4TWr5Rj5EE4,6315
+genericclient_aiohttp-0.0.3.dist-info/RECORD,,
+genericclient_aiohttp-0.0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+genericclient_aiohttp-0.0.3.dist-info/metadata.json,sha256=y4VqImgVFlZ-T9T6CsJxDz9HG7iDKrpHlj_y3N6jVUU,920
+genericclient_aiohttp-0.0.3.dist-info/top_level.txt,sha256=w07SZWaPJTM5fb5n0GV-qavsK3BaD2B_mv0_RvC_5z0,28
+tests/__init__.py,sha256=2dfgO6NQDj6Q5gaXjE5j90lt_ts57xeiG1tQFnRDLZc,3194
+tests/test_client.py,sha256=CR8xNyMFRfJ-tWDPtnlFLEkPON2Xtm5By98WEQu_Neg,719
+tests/test_endpoint.py,sha256=x6KM8SRXZbgFFzWjda24rJgdgC7bO8dCM91zFKK_-Fg,4057
+tests/test_endpoint_trailing_slash.py,sha256=sJYMs3GZEHwT-PMWsgrqUi60Frg5KPtFuF7EYrNn8lA,3869
+tests/test_resource.py,sha256=B8o2fCJrbaIUnOesWLB57hqF3yK8f9Qgrp8l4d8H0Q0,2524
+tests/test_resource_trailing_slash.py,sha256=vNhybsKBYWVHpmAQ5LsGY3W8YFBwqROwE32Trp7pPig,1688
+tests/test_routes.py,sha256=-e2sd5oeSMBme7K1wSj7ZgC9UenAbDwzqKejtKK-eSg,1846
