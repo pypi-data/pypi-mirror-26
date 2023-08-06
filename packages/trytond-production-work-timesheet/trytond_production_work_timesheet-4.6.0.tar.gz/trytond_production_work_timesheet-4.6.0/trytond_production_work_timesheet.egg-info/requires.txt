@@ -1,0 +1,4 @@
+trytond_production_routing >= 4.6, < 4.7
+trytond_production_work >= 4.6, < 4.7
+trytond_timesheet >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
