@@ -1,0 +1,10 @@
+chardet
+pyfileinfo
+future
+
+[test]
+pytest
+pytest-cov
+flake8
+unittest-xml-reporting
+mock
