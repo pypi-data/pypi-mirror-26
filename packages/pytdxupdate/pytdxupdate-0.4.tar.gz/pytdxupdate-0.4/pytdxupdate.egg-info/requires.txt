@@ -1,0 +1,5 @@
+numpy
+pandas
+bcolz
+pytdx
+click
