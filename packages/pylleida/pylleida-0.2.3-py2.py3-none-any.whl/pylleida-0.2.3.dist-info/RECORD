@@ -1,0 +1,13 @@
+pylleida/__init__.py,sha256=g8NbFlIFXiSnD8mmMu-CbuJuFfWBtGkdszhtqcVMTJk,723
+pylleida/configuration.py,sha256=KjyLL-pJAv-Tzq0GkYJySTjYcGzhGe3vgh_YUJ7VFJw,445
+pylleida/api/__init__.py,sha256=mtLgeP0dNqBHuj7uQuUWMwf__56t8WZCVg-5_1XYdc0,2280
+pylleida/api/mail_cert.py,sha256=shv8-LCeF0U2JH58JN9MPUOhmobSVW1lwSGsHB0QNpw,3393
+pylleida/templates/download_pdf.xml,sha256=Hicf4Mwd5nsQkMgOO33G78Iy6rC1EU9PzckoTeaM5fU,179
+pylleida/templates/get_default_settings.xml,sha256=cOZZy9hRObe0POxC-pmVIgTVOfVnfAMankKOmtzkC7E,168
+pylleida/templates/list_pdf.xml,sha256=j42Byhi8jstx_OOJ3QMl1FvA6UtfEnlP4M1GkJNWlCE,945
+pylleida-0.2.3.dist-info/DESCRIPTION.rst,sha256=8V8BVnjv-_X_KGqr4-W0VSaCiubR_7T4I3v5FglRxdA,2287
+pylleida-0.2.3.dist-info/METADATA,sha256=kMWzikgaJJVco9ApWQWVT-b5D2i6IaAxYkla8vgfUbE,2984
+pylleida-0.2.3.dist-info/RECORD,,
+pylleida-0.2.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pylleida-0.2.3.dist-info/metadata.json,sha256=ZZdkUS_HD7liPQ8VxPtuAR1YZqHL8Y1Ob9_0Q6uqQgs,907
+pylleida-0.2.3.dist-info/top_level.txt,sha256=FAxnhUYCmjPNCF9gDK94rSK_DsjRQrClEHLKCK_LkPM,9
