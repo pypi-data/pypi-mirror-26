@@ -1,0 +1,3 @@
+[console_scripts]
+git-barry = gitbarry.main:run
+
