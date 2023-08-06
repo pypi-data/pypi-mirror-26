@@ -1,0 +1,16 @@
+normality/__init__.py,sha256=a5u-1ma0znTrVqjEuhcnNr9FyVwcfonH2Ny73d68gF0,2536
+normality/cleaning.py,sha256=fBbN8EQaRYvp-b7-zdLeg7GgL4QKts4uSjydBLm1Uws,2081
+normality/constants.py,sha256=pjJB1-mUUFaRsFgrjhkauAoeZe1WCMefdc8pjCvFxJk,666
+normality/encoding.py,sha256=nNWI9HAOni4OcqufGB23OXCcAH-Djs5CBxrNsPEQA4c,1072
+normality/paths.py,sha256=LwPSYHwnUXad3R1aj6K-SHFBuPB8QY_ZhaGWdyIpCHE,1341
+normality/ranges.py,sha256=CsKZ6aqY5EU1AMyFzCcZdcGvOb7O4uky94L2_rPOt_g,444
+normality/stringify.py,sha256=3-h9SDmia9ZugBjUD7vTp8TBD9j-L9Mqapv9bU9s7j8,1218
+normality/transliteration.py,sha256=r8iXpYCJL2vpU4yeWnQYbCm6m2qHdzHOteoSPBnH7u4,2447
+normality-0.5.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+normality-0.5.1.dist-info/METADATA,sha256=3fVSdE_9Uo6V6lS6skNBBjDAdaHDO6MxfK-L61XvJ4g,826
+normality-0.5.1.dist-info/RECORD,,
+normality-0.5.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+normality-0.5.1.dist-info/metadata.json,sha256=jBNx_WZH06GAcSWYbio6Xd-5zd6inhIfQPM6hVx03OQ,1008
+normality-0.5.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+normality-0.5.1.dist-info/top_level.txt,sha256=OSpuyS9gTsc5p9hUItdQ8WkTkNko2ozUIqbPdf71whc,10
+normality-0.5.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
