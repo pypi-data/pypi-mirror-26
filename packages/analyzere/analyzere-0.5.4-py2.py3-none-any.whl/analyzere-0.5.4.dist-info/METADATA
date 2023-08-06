@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: analyzere
+Version: 0.5.4
+Summary: Python wrapper for the Analyze Re API.
+Home-page: https://github.com/analyzere/analyzere-python
+Author: Analyze Re
+Author-email: support@analyzere.com
+License: MIT
+Requires-Dist: lazy-object-proxy (<2,>=1.0)
+Requires-Dist: requests (>=2.3,<3)
+Requires-Dist: six (>=1.9,<2)
+
+Analyze Re Python Client |travis|
+
+
