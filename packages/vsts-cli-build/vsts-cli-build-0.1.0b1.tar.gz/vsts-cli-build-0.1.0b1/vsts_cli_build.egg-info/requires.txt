@@ -1,0 +1,3 @@
+knack
+python-dateutil
+vsts-cli-build-common==0.1.0b1
