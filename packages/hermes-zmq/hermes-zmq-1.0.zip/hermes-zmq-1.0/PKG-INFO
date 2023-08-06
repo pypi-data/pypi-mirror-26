@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: hermes-zmq
+Version: 1.0
+Summary: ZMQ-based framework for building simple Pub-Sub Systems, written in Python 3.
+Home-page: UNKNOWN
+Author: Nils Diefenbach
+Author-email: 23okrs20+github@mykolab.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: zmq pubsub ipc distributed messaging
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial :: Investment
