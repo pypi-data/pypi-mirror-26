@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        smtp2zope = slc.smtp2zope:main
+    

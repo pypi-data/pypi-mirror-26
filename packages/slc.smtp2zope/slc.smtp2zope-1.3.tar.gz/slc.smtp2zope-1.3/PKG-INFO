@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: slc.smtp2zope
+Version: 1.3
+Summary: Provides smtp2zope integration script for slc.mailrouter.
+Home-page: https://github.com/syslabcom/slc.smtp2zope
+Author: Izak Burger, Syslab.com GmbH
+Author-email: isburger@gmail.com
+License: GPL
+Description-Content-Type: UNKNOWN
+Description: Introduction
+        ============
+        
+        slc.mailrouter bridges the gap between zope and email. It is based on the same
+        idea as products such as mailboxer: a script is invoked by your mail transfer
+        agent (postfix, exim) and the body of the email is passed to this script on
+        stdin. This is then communicate to zope using an http post, where it is parsed
+        and handled.
+        
+        This package implements the smtp2zope script.
+        
+Keywords: smtp2zope
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Plone

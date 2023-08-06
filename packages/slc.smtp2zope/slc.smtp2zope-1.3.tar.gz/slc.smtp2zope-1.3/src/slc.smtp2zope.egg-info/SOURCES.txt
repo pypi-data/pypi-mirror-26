@@ -1,0 +1,14 @@
+.gitignore
+MANIFEST.in
+README.txt
+setup.py
+src/slc/__init__.py
+src/slc.smtp2zope.egg-info/PKG-INFO
+src/slc.smtp2zope.egg-info/SOURCES.txt
+src/slc.smtp2zope.egg-info/dependency_links.txt
+src/slc.smtp2zope.egg-info/entry_points.txt
+src/slc.smtp2zope.egg-info/namespace_packages.txt
+src/slc.smtp2zope.egg-info/not-zip-safe
+src/slc.smtp2zope.egg-info/requires.txt
+src/slc.smtp2zope.egg-info/top_level.txt
+src/slc/smtp2zope/__init__.py
