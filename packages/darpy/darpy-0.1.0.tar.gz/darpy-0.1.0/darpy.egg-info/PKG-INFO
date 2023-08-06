@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: darpy
+Version: 0.1.0
+Summary: Distribute ARchived PYthon
+Home-page: UNKNOWN
+Author: Stephen Rosen
+Author-email: sirosen@globus.org
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: darpy
+        =====
+        
+        Distribute Archived Python
+        
+        How?
+        ----
+        
+        Use ``tar``, ``pip download``, ``pip freeze``, to make python archives which
+        can unpack and install without network access.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Console
