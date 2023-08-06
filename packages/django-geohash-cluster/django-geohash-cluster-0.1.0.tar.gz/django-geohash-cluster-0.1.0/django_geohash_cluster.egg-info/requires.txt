@@ -1,0 +1,7 @@
+django>=1.8
+
+[rest]
+python-geohash
+django-filter
+django-rest-framework
+djangorestframework-gis
