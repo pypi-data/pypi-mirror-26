@@ -1,0 +1,23 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Release 1.0.0
+* Specify that it is for Python
+* Adjust README
+* Cleanup README
+* Add readme
+* Add appveyor CI
+* Rename to globmatch
+* Do develop CI install for easier coverage reporting
+* Fix lru\_cache for py2.7
+* Fix imports
+* Fix use of altsep for posix
+* Set license
+* Add travis CI
+* Add tests
+* Adjust translated pattern join
+* Initial implementation
+* :space\_invader: Added .gitattributes & .gitignore files
