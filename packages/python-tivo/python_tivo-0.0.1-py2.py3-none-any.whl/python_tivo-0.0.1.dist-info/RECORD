@@ -1,0 +1,10 @@
+python_tivo/__init__.py,sha256=UKIMFZ9uKg8kE5JKr1lSVu6rvayolpOnb6PwwY9xyog,292
+python_tivo/connection.py,sha256=r8NHdxz1s3y6mtwL33GdRD4pU1F5YoSEsSR_vjYxVXo,4830
+python_tivo/const.py,sha256=jsj1fCPHK6vyMYQhGYvfYpLXqWtZUJ2X3Kc23LtlIzI,3084
+python_tivo/response.py,sha256=KiLnJsu7OfNS-cZUUF8axVHy9M9omgVCR79yaGQLStk,436
+python_tivo-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+python_tivo-0.0.1.dist-info/METADATA,sha256=d2rv7R6n1mQ82qthVxiIsILoKZMlGgKJiul48nOzTIU,308
+python_tivo-0.0.1.dist-info/RECORD,,
+python_tivo-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+python_tivo-0.0.1.dist-info/metadata.json,sha256=xqDDHuRFZ8jyuqGfm1_RlMWWBauImVRiCUJowq2uFAE,496
+python_tivo-0.0.1.dist-info/top_level.txt,sha256=EJC0lrDyyHdSV13wm6OFd-fAMh7ZWp0PMQf6KKyXjJ8,12
