@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: selepy
+Version: 0.3
+Summary: Browser automation framework
+Home-page: https://github.com/atomicfruitcake/selepy
+Author: Sam Bass
+Author-email: sam@wirewax.com
+License: MIT
+Download-URL: https://github.com/atomicfruitcake/selepy/archive/0.3.tar.gz
+Keywords: selenium,testing,automation,docker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: selenium
+
+Browser automation framework designed to allow automation scripts to work both locally and inside docker containers
+
+
