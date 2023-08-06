@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: libpysat
+Version: 1.2.3
+Summary: A tool to extract Spectral Profiler data and visualize the resultant spectra
+Home-page: https://github.com/USGS-Astrogeology/PySAT
+Author: Jay Laura
+Author-email: jlaura@usgs.gov
+License: Public Domain
+Description-Content-Type: UNKNOWN
+Keywords: planetary io
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pvl
+Requires-Dist: scipy
+Requires-Dist: sklearn
+
+UNKNOWN
+
+
