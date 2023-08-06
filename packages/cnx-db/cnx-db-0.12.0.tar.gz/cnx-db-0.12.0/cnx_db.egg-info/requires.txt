@@ -1,0 +1,8 @@
+psycopg2
+sqlalchemy
+venusian
+
+[test]
+pytest
+pytest-mock
+mock==1.0.1
