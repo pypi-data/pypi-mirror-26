@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: qubole-tco
+Version: 0.31
+Summary: Command line tool to download cloudwatch metrics of all cluster in your account
+Home-page: https://github.com/qubole/tco
+Author: qubole
+Author-email: dev@qubole.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
