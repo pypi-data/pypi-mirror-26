@@ -1,0 +1,14 @@
+slider_proj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slider_proj/settings.py,sha256=ZFdy03nS-tMjAmPIj17bkzwdV41ViO32T3pgqcl-MoA,2649
+slider_task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slider_task/models.py,sha256=zhTC3TQObsVOvAY7F-UQQZAcRR0UPwmBuDjpfyOlTvc,1643
+slider_task/pages.py,sha256=1dfoHVX2TkOGu05vsGgZyF7JgB-9dTubqb9cP0Xw3nY,2714
+slider_task/static/slider_task/sliders.css,sha256=jojkMLFhABVv0KyZx9Ozl7SM1rJRF57_8FGjxSWVaS8,1757
+slider_task/static/slider_task/sliders.js,sha256=AFgjPkffAGn_lgvm74OWFyP8LU4X0zwku4c34_iFQI0,416
+slider_task/templates/slider_task/SliderTaskPage.html,sha256=VwOgMtVrcYdoubbFS16e1j6icf_93kwrG-ggGFsoEFg,1278
+slider_task-0.1.1.dist-info/DESCRIPTION.rst,sha256=UNY2y1zMoACh4clxaKXJJByRez6OMbTYwzM_gdh3DJU,1979
+slider_task-0.1.1.dist-info/METADATA,sha256=BE-Y2z62nPMUHUJSSR3eUH0ARaktQRsmqeTYAC6MgVU,2270
+slider_task-0.1.1.dist-info/RECORD,,
+slider_task-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+slider_task-0.1.1.dist-info/metadata.json,sha256=cYpoy1O6w1Gaiqr1rxiBMrWPpwGptkzP1MafgyD7o74,486
+slider_task-0.1.1.dist-info/top_level.txt,sha256=326hgbRnLZfcSWKODzCyD-achFscDktAkB9BH0o5ZpI,24
