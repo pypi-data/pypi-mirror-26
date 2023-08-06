@@ -1,0 +1,9 @@
+indico_plugin_vc_dummy-1.0rc1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+indico_plugin_vc_dummy-1.0rc1.dist-info/METADATA,sha256=FP6DttT5IiMPAaizH1vc63HAhJxB5Rhtq3poAYBvsnk,593
+indico_plugin_vc_dummy-1.0rc1.dist-info/RECORD,,
+indico_plugin_vc_dummy-1.0rc1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+indico_plugin_vc_dummy-1.0rc1.dist-info/entry_points.txt,sha256=2NwAtpSZP6W5KwO24ANpUALC-i1EfmQybCQUFiG99sY,64
+indico_plugin_vc_dummy-1.0rc1.dist-info/metadata.json,sha256=3tivlDSftzbM8upTfXtaT3dPn-mHzxK2ZFAeuzxoaIQ,881
+indico_plugin_vc_dummy-1.0rc1.dist-info/top_level.txt,sha256=aoAz0-kuxXwkW2w-WLOhhBCpcBk-sSesD0D4-HWTrCU,16
+indico_vc_dummy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indico_vc_dummy/plugin.py,sha256=1LRxZQKiY9Cr9k9t1-wy4bRscfqRH_L28kqZFQAJapc,2766
