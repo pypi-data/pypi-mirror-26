@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+serverless_config/__init__.py
+serverless_config/cached_config.py
+serverless_config/composite_config.py
+serverless_config/config_base.py
+serverless_config/env_config.py
+serverless_config/ssm_config.py
+serverless_config.egg-info/PKG-INFO
+serverless_config.egg-info/SOURCES.txt
+serverless_config.egg-info/dependency_links.txt
+serverless_config.egg-info/top_level.txt
