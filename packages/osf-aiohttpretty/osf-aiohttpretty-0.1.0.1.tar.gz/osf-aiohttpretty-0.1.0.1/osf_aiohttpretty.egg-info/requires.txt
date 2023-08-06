@@ -1,0 +1,2 @@
+furl
+aiohttp>=0.18.0
