@@ -1,0 +1,16 @@
+papermill/__init__.py,sha256=kFAlA2vzX-JBM4pK2_GthIW2HI5MI-RDmwx9IF6-4BU,356
+papermill/_version.py,sha256=Hlof92Vl9SJ7B8XCjaKJSmiZUERDFLFPOhtQB5KhiWE,498
+papermill/api.py,sha256=-ut8L5VXm_mKcvaGCEhv9jNaFoSH1ePAhXnS11pbwvc,6917
+papermill/cli.py,sha256=BW2BcYZLshUNDMpXq6Rw0BHSxTLwCBBCZcBUA5jGGwM,3174
+papermill/conf.py,sha256=4cUOiPtv-565jkXntCG-7MsFo79hjnSzmB6yqGsNU1o,339
+papermill/exceptions.py,sha256=7eFkXqxrUMxNen8tVXFEHhdNEQ9-IDpcN9eciPMykhg,994
+papermill/execute.py,sha256=H-GeBlPh002sMCA6wBIMmxgLGVR48hQMVKsCKwt8e3c,10774
+papermill/iorw.py,sha256=gPXo_IPTJzs9JwTC39FlKjb6x_48I-TFt_ILdTpjX2g,3531
+papermill/s3.py,sha256=vBPt3yr3txWwX3_3lbrlIhM94MdI15xpGnpwt9Ly0xQ,24956
+papermill-0.10.0.dist-info/DESCRIPTION.rst,sha256=8Biu6dk5zBVXAeZAPO3544teqQIS1YLlbB3R0sJhT7Y,4915
+papermill-0.10.0.dist-info/METADATA,sha256=gqgP-gal9NwsuYBOQQ5HcMTuDi_8bVuhBfd_IxHr4vU,5487
+papermill-0.10.0.dist-info/RECORD,,
+papermill-0.10.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+papermill-0.10.0.dist-info/entry_points.txt,sha256=2GdkwG4HG5D0GX80G8RaRJF2YXdlyM9twtkuTXWztn4,55
+papermill-0.10.0.dist-info/metadata.json,sha256=gJBwZ62de9rgKJ0fRUBTnST7U1rWKjyNxz0m2tTmUC8,837
+papermill-0.10.0.dist-info/top_level.txt,sha256=9QrrfLGp4NKq2buDPQYhqEUr9njeY-ZnxUXLqR_WQXw,10
