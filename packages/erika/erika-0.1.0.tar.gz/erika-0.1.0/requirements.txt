@@ -1,0 +1,9 @@
+feedparser
+lxml
+mutagen
+mygpoclient
+peewee
+pillow
+requests
+setuptools
+vext.gi
