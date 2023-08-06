@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+PDUUSSDConverter/__init__.py
+PDUUSSDConverter/converter.py
+PDUUSSDConverter.egg-info/PKG-INFO
+PDUUSSDConverter.egg-info/SOURCES.txt
+PDUUSSDConverter.egg-info/dependency_links.txt
+PDUUSSDConverter.egg-info/top_level.txt
