@@ -1,0 +1,13 @@
+miniutils/__init__.py,sha256=ZT2KE2F34jx89qV7C3T9uSzGX5W4-wWoi_sjWeAGxJM,238
+miniutils/caching.py,sha256=Nz-Nvw0EoxIcOfMPIpGfFpm-KQ-FM3QLAlqVNHEUHzU,7351
+miniutils/magic_contract.py,sha256=tZR67ef90QuoEr7amW78UUDpxK6JsTsWR-gV3_8vFrY,810
+miniutils/opt_decorator.py,sha256=JpVM3_S7VgKMkRMOH9sa86FMfBuRBfjd-eHV3sXr46I,740
+miniutils/progress_bar.py,sha256=PPeHdGqgcJfYetDRmF6-OjF31hTipR79Q08fspOLg2U,6987
+miniutils/py2_template.py,sha256=zi1DF3j5vJ_VYFYhOUKiajPy1QCZW0F0CyljT_gIjVs,1089
+miniutils/py2_wrap.py,sha256=X9ATfA20pXz0auHECiP6Vh-W4udWwxNPaywnHXBTlNk,4074
+miniutils-0.0.1a2.dist-info/DESCRIPTION.rst,sha256=r7RSZFjdSCmzzzDCCib_k--f_IhgMqT5sL0ItXlQsxo,586
+miniutils-0.0.1a2.dist-info/METADATA,sha256=XICFtPkZ5hCHsweFSsoB0WPE_qIKGXJk2mV6m2nOf9E,1066
+miniutils-0.0.1a2.dist-info/RECORD,,
+miniutils-0.0.1a2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+miniutils-0.0.1a2.dist-info/metadata.json,sha256=WOH2rMZeRIBgY3iu7gjB3_Y0jJX9iZ46-tSD-BIMot0,721
+miniutils-0.0.1a2.dist-info/top_level.txt,sha256=d-xVP3ZfuAgFBdK0ekZKFtmAz83k6CDcSFT6CPtq30c,10

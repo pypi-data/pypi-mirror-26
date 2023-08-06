@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: miniutils
+Version: 0.0.1a2
+Summary: Small Python utilities for adding concise functionality and usability to your code
+Home-page: http://miniutils.readthedocs.io/en/latest/
+Author: scnerd
+Author-email: scnerd@gmail.com
+License: MIT
+Download-URL: https://github.com/scnerd/miniutils
+Description-Content-Type: UNKNOWN
+Keywords: miniutils,utilities,decorators,minimal
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: tqdm
+Requires-Dist: pycontracts
+
+Overview
+--------
+
+Full documentation for this module is available over at `ReadTheDocs <http://miniutils.readthedocs.io/>`_.
+
+This module provides numerous helper utilities for Python3.X code to add functionality with minimal code footprint. It has tools for the following tasks:
+
+- Progress bars on serial loops and parallel mappings (leveraging the excellent ``tqdm`` library)
+- Simple lazy-compute and caching of class properties, including dependency chaining
+- Executing Python2 code from within a Python3 program
+- More intuitive contract decorator (leveraging ``pycontracts``)
+
