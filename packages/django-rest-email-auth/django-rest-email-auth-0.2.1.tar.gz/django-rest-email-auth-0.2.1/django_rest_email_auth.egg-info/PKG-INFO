@@ -1,0 +1,54 @@
+Metadata-Version: 1.1
+Name: django-rest-email-auth
+Version: 0.2.1
+Summary: Django app for email based authentication and registration.
+Home-page: https://github.com/cdriehuys/django-rest-email-auth
+Author: Chathan Driehuys
+Author-email: cdriehuys@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ======================
+        django-rest-email-auth
+        ======================
+        
+        .. image:: https://img.shields.io/travis/cdriehuys/django-rest-email-auth.svg
+            :target: https://travis-ci.org/cdriehuys/django-rest-email-auth
+        
+        .. image:: https://img.shields.io/codecov/c/github/cdriehuys/django-rest-email-auth.svg
+            :target: https://codecov.io/gh/cdriehuys/django-rest-email-auth
+        
+        .. image:: https://img.shields.io/gemnasium/cdriehuys/django-rest-email-auth.svg
+            :target: https://gemnasium.com/github.com/cdriehuys/django-rest-email-auth
+        
+        .. image:: https://img.shields.io/pypi/v/django-rest-email-auth.svg
+            :target: https://pypi.python.org/pypi/django-rest-email-auth/
+        
+        Django app to handle authentication and registration by email.
+        
+        
+        License
+        =======
+        
+        This project is licensed under the MIT License.
+        
+        
+        Authors
+        =======
+        
+        Chathan Driehuys (chathan@driehuys.com)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
