@@ -1,0 +1,11 @@
+backupper/__init__.py,sha256=Et16SsneBL8X0RLv19x1bwiXwDejv29_0-_n-Pwx_8Y,22
+backupper/__main__.py,sha256=9to7HHlfERXMjYGm7WTpPlRDkTNz2peJL87R14VMV5c,39
+backupper/cli.py,sha256=sQvcECW7tVXoSv3Quu0hl1DDZHe5_xOxDR06wo-VyFA,7476
+backupper/utils.py,sha256=ZJbCYoBFy9LuVxMms56e99oWviNCoZGqNQOymwsszZc,3581
+backupper-0.1a3.dist-info/DESCRIPTION.rst,sha256=giCJ4nuiNXZgZCyBgsKxa87E_v_IMpzP_mzeVRNpYr4,3101
+backupper-0.1a3.dist-info/METADATA,sha256=DrxQopm9EnyDUJFa4HETZSM7FwbuT_EyZy2NOJDArTY,3812
+backupper-0.1a3.dist-info/RECORD,,
+backupper-0.1a3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+backupper-0.1a3.dist-info/entry_points.txt,sha256=zflb8k8eIH8q_-kuxOhCajSuUSKIPfZx7Wq566L6VfA,50
+backupper-0.1a3.dist-info/metadata.json,sha256=o3Ull5CTU2fdQkyYCP3MmjHlbhil3CUugKprBDkKmcY,1024
+backupper-0.1a3.dist-info/top_level.txt,sha256=nJCPmdL__mwElJ0U37o-EPKbdb3-Z96ZNJtwN5ncLBg,10
