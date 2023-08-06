@@ -1,0 +1,10 @@
+README.md
+setup.py
+inotify_httpd/__init__.py
+inotify_httpd/inotify_httpd.py
+inotify_httpd.egg-info/PKG-INFO
+inotify_httpd.egg-info/SOURCES.txt
+inotify_httpd.egg-info/dependency_links.txt
+inotify_httpd.egg-info/entry_points.txt
+inotify_httpd.egg-info/requires.txt
+inotify_httpd.egg-info/top_level.txt
