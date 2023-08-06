@@ -1,0 +1,263 @@
+{% extends 'base.html' %}
+
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Отправить команду</div>
+                    <div class="panel-body">
+                        <form id="request_form" class="form-inline">
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">mode</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="mode" name="mode" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">ctr</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="ctr" name="ctr" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">res</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="res" name="res" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">ch</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="ch" name="ch" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">cmd</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="cmd" name="cmd" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">fmt</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="fmt" name="fmt" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">d0</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="d0" name="d0" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">d1</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="d1" name="d1" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">d2</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="d2" name="d2" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">d3</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="d3" name="d3" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">id0</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="id0" name="id0" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">id1</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="id1" name="id1" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">id2</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="id2" name="id2" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">id3</label>
+                                <div class="col-sm-7">
+                                    <input type="number" class="form-control" id="id3" name="id3" value="0">
+                                </div>
+                            </div>
+                            <button class="btn btn-success">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Ответ <span class="label" id="request_status"></span>
+                        <button onclick="clear_response_table()" class="btn btn-default pull-right">Очистить таблицу</button>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>st</th>
+                                    <th>mode</th>
+                                    <th>ctr</th>
+                                    <th>togl</th>
+                                    <th class="byte_ch">ch</th>
+                                    <th class="byte_cmd">cmd</th>
+                                    <th>fmt</th>
+                                    <th class="byte_data">d0</th>
+                                    <th class="byte_data">d1</th>
+                                    <th class="byte_data">d2</th>
+                                    <th class="byte_data">d3</th>
+                                    <th class="byte_id">id0</th>
+                                    <th class="byte_id">id1</th>
+                                    <th class="byte_id">id2</th>
+                                    <th class="byte_id">id3</th>
+                                    <th>crc</th>
+                                    <th>sp</th>
+                                </tr>
+                            </thead>
+                            <tbody id="response_table_body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Справка</div>
+                    <div class="panel-body">
+                        <table class="table table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Параметр</th>
+                                    <th>Описание</th>
+                                    <th>Запрос</th>
+                                    <th>Ответ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>MODE</td>
+                                    <td>Режим работы адаптера</td>
+                                    <td colspan="2">
+                                        0 – режим nooLite TX<br>
+                                        1 – режим nooLite RX<br>
+                                        2 – режим nooLite-F TX<br>
+                                        3 – режим nooLite-F RX<br>
+                                        4 – сервисный режим работы с nooLite-F TX/RX (считывание карты привязки к адаптеру)<br>
+                                        5 – режим обновления ПО nooLite-F<br>
+                                        6 – настройка адаптера (скорость UART, сброс настроек, битрейт)<br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CTR</td>
+                                    <td>Управление адаптером/Код ответа</td>
+                                    <td>
+                                        0 – Передать команду<br>
+                                        1 – Передать команды с выдачей ответа (широковещательная команда)<br>
+                                        2 – Считать ответ (состояние приёмного буфера)<br>
+                                        3 – Включить привязку<br>
+                                        4 – Выключить привязку<br>
+                                        5 – Очистить ячейку (канал)<br>
+                                        6 – Очистить память (все каналы)<br>
+                                        7 – Отвязать адрес от канала<br>
+                                        8 – Передать команду по указанному адресу nooLite-F<br>
+                                    </td>
+                                    <td>
+                                        0 – Команда выполнена<br>
+                                        1 – Нет ответа от блока<br>
+                                        2 – Ошибка во время выполнения<br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>RES</td>
+                                    <td>Зарезервирован, не используется</td>
+                                    <td>
+                                        Значение=0<br>
+                                    </td>
+                                    <td>В ответе используется TOGL</td>
+                                </tr>
+                                <tr>
+                                    <td>TOGL</td>
+                                    <td>Количество оставшихся ответов от адаптера, значение TOGL</td>
+                                    <td>В ответе используется RES</td>
+                                    <td>
+                                        Для nooLite-F TX:<br>
+                                        В значении приводится количество пакетов, которые осталось передать адаптеру для завершения опроса канала.<br>
+                                        Для nooLite RX и nooLite-F RX:<br>
+                                        Значение TOGL. Изменяется при приходе новой команды на адаптер (увеличивается на единицу).<br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CH</td>
+                                    <td>Адрес канала, ячейки привязки</td>
+                                    <td colspan="2">
+                                        Значение адреса канала или номера ячейки для привязки: 0...31 для MTRF-32
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CMD</td>
+                                    <td>Команда</td>
+                                    <td colspan="2">
+                                        Команда, отправляемая с адаптера. См. описание в таблице «Список команд»
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>FMT</td>
+                                    <td>Формат</td>
+                                    <td colspan="2">
+                                        Количество данных, передаваемых вместе с командой и их назначение. См. описание в таблице «Формат и Данные»
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>D0-D3</td>
+                                    <td>Данные</td>
+                                    <td colspan="2">
+                                        Количество данных, передаваемых вместе с командой и их назначение. См. описание в таблице «Формат и Данные»
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ID0-ID3</td>
+                                    <td>Идентификатор блока</td>
+                                    <td colspan="2">
+                                        Адрес устройства в системе nooLite-F
+                                    </td>
+                                </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+      </div>
+{% endblock %}
+
+
+{% block js %}
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/moment-duration-format.js"></script>
+    <script src="js/api.js"></script>
+{% endblock %}

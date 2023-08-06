@@ -1,0 +1,4 @@
+include README.md
+recursive-include noolite_mqtt_webserver/static *
+recursive-include noolite_mqtt_webserver/templates *
+recursive-include noolite_mqtt_webserver/systemd_script *

@@ -1,0 +1,3 @@
+[console_scripts]
+noolite_web_server = noolite_mqtt_webserver.main:main
+

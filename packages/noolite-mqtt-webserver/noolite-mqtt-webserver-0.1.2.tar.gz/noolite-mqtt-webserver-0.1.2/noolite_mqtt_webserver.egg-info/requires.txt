@@ -1,0 +1,6 @@
+aiohttp
+aiodns
+Jinja2
+aiohttp-jinja2
+cchardet
+hbmqtt

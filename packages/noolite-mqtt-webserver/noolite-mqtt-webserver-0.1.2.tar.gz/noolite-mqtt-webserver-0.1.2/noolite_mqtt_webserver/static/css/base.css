@@ -1,0 +1,39 @@
+#request_form {
+    margin-top: 15px;
+}
+
+#request_form div.form-group > div {
+    padding: 0 2px;
+}
+
+#request_form div.form-group label {
+    position: absolute;
+    top: 50px;
+}
+
+#request_form input {
+    max-width: 63px;
+}
+
+
+.content {
+    margin-top: 70px;
+}
+
+
+/* Response bytes colors */
+.byte_id {
+    background: #f7eaed;
+}
+
+.byte_data {
+    background: #f7f7f7;
+}
+
+.byte_ch {
+    background: #f1f7e8;
+}
+
+.byte_cmd {
+    background: #eae7f7;
+}

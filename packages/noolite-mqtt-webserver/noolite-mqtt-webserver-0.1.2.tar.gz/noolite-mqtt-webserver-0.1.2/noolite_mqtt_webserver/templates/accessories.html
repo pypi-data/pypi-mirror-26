@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Устройства</div>
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Канал</th>
+                                <th>NooLite ID</th>
+                                <th>Удалить</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for accessory_name, accessory_data in accessories.items() %}
+                                <tr id="accessory_{{ accessory_name }}">
+                                    <td>{{ accessory_name }}</td>
+                                    {% if accessory_data.characteristics.noolite %}
+                                        <td>{{ accessory_data.characteristics.noolite.NooLiteChannel }}</td>
+                                        <td>{{ accessory_data.characteristics.noolite.NooLiteId }}</td>
+                                    {% else %}
+                                        <td></td>
+                                        <td></td>
+                                    {% endif %}
+                                    <td><button onclick="accessoryDelete('{{ accessory_name }}')"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Создать</div>
+                    <div class="panel-body">
+                        <form class="form form-horizontal" id="accessoryCreate">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Тип устройства</label>
+                                <div class="col-sm-9">
+                                    <select name="noolite_type" class="form-control">
+                                        <option value="slf">Силовой блок (новый протокол)</option>
+                                        <option value="su">Силовой блок (старый протокол)</option>
+                                        <option value="pt111">Датчик температуры и влажности PT111</option>
+                                        <option value="pt112">Датчик температуры PT112</option>
+                                        <option value="pm111">Датчик движения PM111</option>
+                                        <option value="pm112">Датчик движения PM112</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Тип HomeKit сервиса</label>
+                                <div class="col-sm-9">
+                                    <select name="service" class="form-control">
+                                        <option value="Switch">Switch</option>
+                                        <option value="Lightbulb_b">Dimmer Switch</option>
+                                        <option value="MotionSensor">Motion Sensor</option>
+                                        <option value="TemperatureSensor">Temperature Sensor</option>
+                                        <option value="HumiditySensor">Humidity Sensor</option>
+                                        <option value="Lightbulb">Lightbulb</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Имя (уникальное)</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="name" class="form-control" placeholder="Датчик движения на кухне">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Канал</label>
+                                <div class="col-sm-9">
+                                    <input type="number" min="0" max="64" name="channel" class="form-control" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">NooLite ID</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="noolite_id" class="form-control" placeholder="00:00:00:10">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Создать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Удалить</div>
+                    <div class="panel-body">
+                        <form class="form form-horizontal" id="accessoryDelete">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Имя</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="name" class="form-control" placeholder="Датчик движения на кухне">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Удалить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+{% endblock %}
+
+{% block js %}
+    <script src="js/accessories.js"></script>
+{% endblock %}
