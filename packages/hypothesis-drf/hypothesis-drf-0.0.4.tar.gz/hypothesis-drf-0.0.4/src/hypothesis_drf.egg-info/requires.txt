@@ -1,0 +1,8 @@
+hypothesis[fakefactory]
+hypothesis-fspaths
+djangorestframework
+
+[tests]
+pytest~=3.2
+Django<2
+flake8<4

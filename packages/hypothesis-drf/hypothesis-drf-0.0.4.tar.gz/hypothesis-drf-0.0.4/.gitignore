@@ -1,0 +1,9 @@
+.idea/
+.cache
+.hypothesis
+*.egg-info
+.eggs
+dist/
+.tox
+venv/
+__pycache__

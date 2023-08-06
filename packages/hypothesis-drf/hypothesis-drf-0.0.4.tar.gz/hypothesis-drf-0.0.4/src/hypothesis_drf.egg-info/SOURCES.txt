@@ -1,0 +1,17 @@
+.gitignore
+.gitlab-ci.yml
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tox.ini
+src/hypothesis_drf/__init__.py
+src/hypothesis_drf.egg-info/PKG-INFO
+src/hypothesis_drf.egg-info/SOURCES.txt
+src/hypothesis_drf.egg-info/dependency_links.txt
+src/hypothesis_drf.egg-info/not-zip-safe
+src/hypothesis_drf.egg-info/requires.txt
+src/hypothesis_drf.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_serializer.py
