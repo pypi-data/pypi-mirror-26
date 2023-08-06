@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: ChessComAPILibrary
+Version: 0.1.0.dev1
+Summary: Python client/helper library for chess.com's PubAPI.
+Home-page: https://github.com/walidmujahid/ChessComAPILibrary
+Author: Walid Mujahid وليد مجاهد
+Author-email: walid.mujahid.dev@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: chess.com rest readonly api pubapi client helper library
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: pytest
+Requires-Dist: requests
+Requires-Dist: tortilla
+Requires-Dist: vcrpy
+
+# ChessComAPILibrary
+Python client library for chess.com's Published-Data API -PubAPI for short.
+
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+
+
+
+
