@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: twoprocessmodel
+Version: 0.0.1
+Summary: An implementation of the two Process Model for circadian biology.
+Home-page: https://gitlab.com/fwahl/twoprocessmodel
+Author: Florian Wahl
+Author-email: florian.wahl@gmail.com
+License: MIT
+Keywords: two process model,circadian
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+
