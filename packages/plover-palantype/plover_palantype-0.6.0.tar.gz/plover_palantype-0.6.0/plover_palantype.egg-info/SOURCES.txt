@@ -1,0 +1,16 @@
+.gitignore
+README.rst
+setup.cfg
+setup.py
+plover_palantype/__init__.py
+plover_palantype/machine.py
+plover_palantype/system.py
+plover_palantype.egg-info/PKG-INFO
+plover_palantype.egg-info/SOURCES.txt
+plover_palantype.egg-info/dependency_links.txt
+plover_palantype.egg-info/entry_points.txt
+plover_palantype.egg-info/requires.txt
+plover_palantype.egg-info/top_level.txt
+plover_palantype.egg-info/zip-safe
+plover_palantype/dictionaries/sample.json
+plover_palantype/dictionaries/user.json
