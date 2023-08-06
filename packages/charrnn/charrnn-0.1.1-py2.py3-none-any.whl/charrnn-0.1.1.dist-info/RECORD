@@ -1,0 +1,17 @@
+charrnn/__init__.py,sha256=lM3p2XVnUNgb2YMCIiAHVQcTj5198bd9x3uo4drFX_M,850
+charrnn/__main__.py,sha256=hFMW67nQHH0KUuBRTz2bBapdf1Qsus39kKDpEBvdKdo,479
+charrnn/cli.py,sha256=PLMIXNmV5bgCbxGrvkjltdWX16m0Aw_K6ONXE9m28js,5048
+charrnn/const.py,sha256=dIffrKBxXGOrxPuQF4OCRK2eJ_B8y-9F2jtoI3jioME,317
+charrnn/decoder.py,sha256=gm2O6WPeWUu_m74ruP7EApo8iMQXMCD6Oang8g_HyJ0,1925
+charrnn/model.py,sha256=8A_ojqRYJkSp7D_kGzdWuAq37uAotae-s3h7OpnANys,14071
+charrnn/text.py,sha256=h4laeetcaPvvk2NHR5PCJyTIuyHofvykbA2UYD3i3No,979
+charrnn/train.py,sha256=xNYwIQ_xg5R9rsV5Lt6auOIbCx2E0KsdGfW6ZmpcnQc,5219
+charrnn/version.py,sha256=LVr5R_GSZaBLxMN13LXspwJQptFeRzPDiVPPDzWPoSo,133
+charrnn-0.1.1.dist-info/DESCRIPTION.rst,sha256=cgwsL75hTfI2gkIWlqg2EdrSa_VX8KK9a7LooOUk7y8,16182
+charrnn-0.1.1.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+charrnn-0.1.1.dist-info/METADATA,sha256=oM4GK8KfgMJ3EEbgScOkt2sXtjED2gsjb05a3yEawHU,17184
+charrnn-0.1.1.dist-info/RECORD,,
+charrnn-0.1.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+charrnn-0.1.1.dist-info/entry_points.txt,sha256=nE9PT0YIPlsGKYhzd8A983nKCOo9H_VhpNQvqJgvh3Q,51
+charrnn-0.1.1.dist-info/metadata.json,sha256=cEP5zDmxXcrm5ERg64FopVg9dp0xHkWena6UuKxQ-vQ,1280
+charrnn-0.1.1.dist-info/top_level.txt,sha256=th51EjZl_DOv1Tul6yBkIjQ5bhThWyli905P04CxWkU,8
