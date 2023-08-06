@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: xcrun
+Version: 0.1
+Summary: Python wrapper around the xcrun utility
+Home-page: https://github.com/dalemyers/xcrun
+Author: Dale Myers
+Author-email: dale@myers.io
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+

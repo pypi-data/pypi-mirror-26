@@ -1,0 +1,14 @@
+xcrun/__init__.py,sha256=UJQaEsO5nLFmK53Yz3Tv4OOByMh0MeZEOTK73at9jME,61
+xcrun/simctl/__init__.py,sha256=jVdi1t23E_9pPUNdtGYL8iovlUlkJcAVUsfM0v4okK0,2026
+xcrun/simctl/device.py,sha256=wXlzst_Gd4NpfgZYLiVa_baY59Ej9fZD5-Id1oxiYoo,7324
+xcrun/simctl/device_pair.py,sha256=rJ_IzYZmhoO9oynqlY9M7_iC8pLfd9s8cRzI7b2-EpA,1818
+xcrun/simctl/device_type.py,sha256=H1YRJZttuJ_xLpQbfXJnb_pGuQU88UHioLyKpm1MBzw,1519
+xcrun/simctl/listall.py,sha256=Z6Os2F3kDKQQbXhy6uUcidCJxp37nm1Vo3c-rUNG-BU,1313
+xcrun/simctl/runtime.py,sha256=D73sgjDxNQv--7ZZXruRR5Vm_59wjOrwbQeqg_049Ic,1548
+xcrun/simctl/simctl.py,sha256=F3MTznftYSLxwkc2p1ClkmnScCbzRAMuudb32CsdGzE,5204
+xcrun-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+xcrun-0.1.dist-info/METADATA,sha256=9N6bDvGKjwYgwiogrrhkw-McS1HY0Y2em92oSF0rDkI,231
+xcrun-0.1.dist-info/RECORD,,
+xcrun-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+xcrun-0.1.dist-info/metadata.json,sha256=MEAmCvuFBef-6eXwKOhxG_Ewk1QV0j5cP49FQWeXaCs,407
+xcrun-0.1.dist-info/top_level.txt,sha256=CQZDbCFnI91GTLLKw1v0Pmk3EUpOsY-dm_tgJmQCi3g,6
