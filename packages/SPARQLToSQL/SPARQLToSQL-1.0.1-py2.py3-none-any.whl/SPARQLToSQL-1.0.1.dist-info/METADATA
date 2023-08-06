@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: SPARQLToSQL
+Version: 1.0.1
+Summary: An SPARQL-to-SQL translator
+Home-page: https://github.com/munkhbayar17/sparql-to-sql
+Author: M. Nergui
+Author-email: muunuu17@gmail.com
+License: Apache2
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: Flask
+Requires-Dist: rdflib
+Requires-Dist: sqlparse
+
+An SPARQL-to-SQL translator based on a semantics-preserving translation approach by Artem Chebotko
+
+
