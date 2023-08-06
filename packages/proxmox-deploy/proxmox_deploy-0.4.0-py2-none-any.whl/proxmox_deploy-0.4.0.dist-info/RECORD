@@ -1,0 +1,17 @@
+proxmox_deploy-0.4.0.dist-info/DESCRIPTION.rst,sha256=U6x2TfVS-KklhpFfA9WmbjB3INoqpYm8hGz57LbMA_c,8699
+proxmox_deploy-0.4.0.dist-info/METADATA,sha256=EV1xqV5FJy58mk5RD7mqPzV7KPGuywMQUs65M00-Uw4,10169
+proxmox_deploy-0.4.0.dist-info/RECORD,,
+proxmox_deploy-0.4.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+proxmox_deploy-0.4.0.dist-info/entry_points.txt,sha256=VKpLco6ReJuWSKJMGt2PXP3bQl64U7OuRcuk0jkUprk,59
+proxmox_deploy-0.4.0.dist-info/metadata.json,sha256=N5IFs78XhhpK4EaRvERI4_jF4GO-LXfs0I40ZtbfN9U,1645
+proxmox_deploy-0.4.0.dist-info/top_level.txt,sha256=PiItUoRy3qvWgJhOA20WCtRjl_oGuRBfWfTufoptZGk,14
+proxmoxdeploy/__init__.py,sha256=BJ0u1JMZdktfshncr2oo560HfYC790e755DjqFYOnXk,748
+proxmoxdeploy/cli.py,sha256=EelO0wGrP57zcJkrJ3x6vzjA3iGSSMqQyFh2zYEuTEU,6033
+proxmoxdeploy/exceptions.py,sha256=tVUsS48xCNZsS8z9KtbglDfaPM3R4bsEKenmGnIbkp8,1128
+proxmoxdeploy/proxmox.py,sha256=KN5rWWJOciYdi5TUIif3SOf3EgGARt1Gfdmu1GqdK8Q,22678
+proxmoxdeploy/questions.py,sha256=_HXp3jrDz19H1iKf1iIA0OBgXJxO6bjGzUXF37CntjY,15474
+proxmoxdeploy/version.py,sha256=OZ8PqME_9Vpo7ZMBU6a4ErvlndDyQXFSVbzoFasSIq4,911
+proxmoxdeploy/cloudinit/__init__.py,sha256=cKOf-f79K_LuDsAyWucT0NO4aaS3cW51AINGcQGiLa8,4479
+proxmoxdeploy/cloudinit/templates/__init__.py,sha256=uuP4-tA3RVzzxfHBc4TzKZKEolE-oykBNasm0P5VjiA,8760
+proxmoxdeploy/cloudinit/templates/meta-data.j2,sha256=EFDRqNMs7ncB4cGF6_IWCbq2j4vlyyMAVy_4ad2CmVI,579
+proxmoxdeploy/cloudinit/templates/user-data.j2,sha256=A7SXwoWzD1KgItFKABvxU5Qj1WtG8v_RDrVZi_TbxMY,1457
