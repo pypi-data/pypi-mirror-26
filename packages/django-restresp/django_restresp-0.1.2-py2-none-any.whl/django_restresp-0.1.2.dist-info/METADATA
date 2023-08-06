@@ -1,0 +1,38 @@
+Metadata-Version: 2.0
+Name: django-restresp
+Version: 0.1.2
+Summary: Pseudo-standard responders for django DRF
+Home-page: https://github.com/acarmisc/django-restresp/
+Author: Andrea Carmisciano
+Author-email: andrea.carmisciano@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Django (>=1.9)
+Requires-Dist: djangorestframework
+
+# REST-RESP
+
+Example resp:
+
+```
+{
+    "msg": "ok",
+    "pagination": {
+      "next": "",
+      "prev": ""
+    },
+    "errors": [],
+    "payload": [
+        {
+            "id": 10,
+            "full_name": "John Doe",
+            "profile": {
+                "screen_name": "John Doe",
+            }
+        }
+    ]
+}
+```
+
+
