@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+python_tuxexchange_Wrapper.egg-info/PKG-INFO
+python_tuxexchange_Wrapper.egg-info/SOURCES.txt
+python_tuxexchange_Wrapper.egg-info/dependency_links.txt
+python_tuxexchange_Wrapper.egg-info/top_level.txt
