@@ -1,0 +1,11 @@
+frame_logging/__init__.py,sha256=to1LRR9KppL9RncRXf1NbFK4lT0WvmGL34p5lDkqj4A,87
+frame_logging/apps.py,sha256=-dIsCD-mglMc3OelBfyIZJ81lMsvJgiYIeNH132RZPM,120
+frame_logging/formatter.py,sha256=FHH8lAvLoluoQHbRjG_DQhkA0o-nC1yMMbypXhZals0,1266
+frame_logging/log.py,sha256=Gy9KGvsDsQ1TSExEhqkaI4zBCyO0khjeyTb9dtaBuyE,3988
+frame_logging/log_settings.py,sha256=SWFgDBs_ijzJnJeDNHaBmMpmd6LMvXgpjrT3ySlBGBA,327
+frame_logging-0.2.1.dist-info/DESCRIPTION.rst,sha256=bLCnWYbZT1x-ZgyiVSoEviyKLYr54cEEadqzosqSde8,2778
+frame_logging-0.2.1.dist-info/METADATA,sha256=TY_7xiPUCHe4eaHHQ29mCCO75k4KaIFkaA8xX8IlcoA,3607
+frame_logging-0.2.1.dist-info/RECORD,,
+frame_logging-0.2.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+frame_logging-0.2.1.dist-info/metadata.json,sha256=RmAy3O9DZw1tEu9EMIftKZWUrr2tBYTx4-zR_0a1GXE,945
+frame_logging-0.2.1.dist-info/top_level.txt,sha256=0GpXeEz5beAnNZCHORgsllB71NoxRO5y677ye6PRL3U,14
