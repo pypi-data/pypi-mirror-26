@@ -1,0 +1,11 @@
+logrus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logrus/cli.py,sha256=WdNlL_DRDGLipYZ-VZlG-k5ZAeKOK3NWHOjvpXCbmXg,2351
+logrus/time.py,sha256=JunXJlhw6vq8fVM9jS0Uyk8PGzsqR-wX8sg0G7hsCyg,1372
+logrus/utils.py,sha256=Aos_HM_fIV_RsZOkcZEQdMFnk-sgZjaRBNW9XBRA6Ag,2832
+logrus-0.2.31.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+logrus-0.2.31.dist-info/METADATA,sha256=gO_-x5qD7-AAR_BQqQzi5_-4kmOGhjhUuPP6Xr6pjZs,644
+logrus-0.2.31.dist-info/RECORD,,
+logrus-0.2.31.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+logrus-0.2.31.dist-info/entry_points.txt,sha256=6sZB6W7F_QoWMBEYU2GsgiAKXHSDTmOkNCN8sJgwE4s,63
+logrus-0.2.31.dist-info/metadata.json,sha256=i7wneyltZpO5yCG2Q1HjF7XyoqP6UQtnNwR_sPrbED4,966
+logrus-0.2.31.dist-info/top_level.txt,sha256=CD2AGcsvjlBEnP7BLLst8oBwCcT8UEh23yN5-x5IHb4,7
