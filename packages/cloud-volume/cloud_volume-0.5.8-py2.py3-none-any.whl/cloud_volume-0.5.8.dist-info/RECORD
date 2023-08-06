@@ -1,0 +1,17 @@
+cloud_volume-0.5.8.dist-info/DESCRIPTION.rst,sha256=CNqLnZaJJJDBK6W-wv5zTCJPBoKhiJ7sKWrAPWzGN7M,8762
+cloud_volume-0.5.8.dist-info/METADATA,sha256=5e7ZQBNN2JpkESIN6rZBjuwRyFtAVRDx2GdjAOA2PGM,10376
+cloud_volume-0.5.8.dist-info/RECORD,,
+cloud_volume-0.5.8.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+cloud_volume-0.5.8.dist-info/metadata.json,sha256=bbg608YRiJB7KCsHknbYGCZtJzLW0_pouUrJqT8Pyc0,1525
+cloud_volume-0.5.8.dist-info/pbr.json,sha256=uXAgExx747i0TEgW7UKSutvnHcTvo01t82_NMVOriqo,46
+cloud_volume-0.5.8.dist-info/top_level.txt,sha256=UJyICpzdF7UM-T3kXMUb-PURmg6zcpFYNl2LnJIdscE,12
+cloudvolume/__init__.py,sha256=F6PbPlRQ5iSfbXQYrX5gT-PJaSar8MLzdMrSlpl07g8,219
+cloudvolume/chunks.py,sha256=C6RIpsNL22if1tPEjY5CUCPiiZxBDeJQ0SJONe53mEU,3295
+cloudvolume/cloudvolume.py,sha256=SOXHedD_T1H7g7kq0aELaqhW1CcFjzqjyqZU9q82jy4,39648
+cloudvolume/connectionpools.py,sha256=Jkc5KcbrIgjLWHEgQd9JzaOpLVVtRqduWUOtjAFb-Og,3086
+cloudvolume/lib.py,sha256=3mTBKDTsBuh-Ue2-sPXzcVgFmQfoJAa6NA1qU_z1kdg,11666
+cloudvolume/mesh2obj.py,sha256=e-wdcabQBK5OvGued0GNN-soIOYIWQ8uC2bZbUGpAt0,2706
+cloudvolume/provenance.py,sha256=WI8xwuXRHCq4izqe50tP2AGw23B23JuUddxpA7tBkGg,2596
+cloudvolume/secrets.py,sha256=-ScBQAON_5rF_VPJKu-lbP66iTQaL0qWfgrZ_cGOYd0,1794
+cloudvolume/storage.py,sha256=JZxWsKC8bDDRCzRHWclBffFwANh7sYGZY6mM7LiiT4Y,18322
+cloudvolume/threaded_queue.py,sha256=TyFTtp52sKJT2Mb-FlXjxyuFVVmAbhYK-EaDYKeFAas,7131
