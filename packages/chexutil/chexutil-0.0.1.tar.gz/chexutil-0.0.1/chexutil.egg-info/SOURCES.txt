@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README
+README.md
+chexutil.cpp
+setup.cfg
+setup.py
+chexutil.egg-info/PKG-INFO
+chexutil.egg-info/SOURCES.txt
+chexutil.egg-info/dependency_links.txt
+chexutil.egg-info/not-zip-safe
+chexutil.egg-info/requires.txt
+chexutil.egg-info/top_level.txt
