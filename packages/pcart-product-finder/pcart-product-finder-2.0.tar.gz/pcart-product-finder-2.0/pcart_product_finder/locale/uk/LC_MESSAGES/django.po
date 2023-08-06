@@ -1,0 +1,162 @@
+# Ukrainian translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-11-15 13:13+0200\n"
+"PO-Revision-Date: 2017-11-15 13:14+0200\n"
+"Last-Translator: \n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: pcart_product_finder/apps.py:7 pcart_product_finder/cms_plugins.py:12
+msgid "Product finder"
+msgstr "Пошук товарів"
+
+#: pcart_product_finder/cms_plugins.py:13
+msgid "Product finder form"
+msgstr "Форма пошуку товарів"
+
+#: pcart_product_finder/models.py:15 pcart_product_finder/models.py:37
+#: pcart_product_finder/models.py:64 pcart_product_finder/models.py:104
+#: pcart_product_finder/models.py:160 pcart_product_finder/models.py:205
+msgid "Title"
+msgstr "Заголовок"
+
+#: pcart_product_finder/models.py:17
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: pcart_product_finder/models.py:18
+msgid "Position"
+msgstr "Позиція"
+
+#: pcart_product_finder/models.py:21 pcart_product_finder/models.py:162
+msgid "Filter name"
+msgstr "Назва фільтра"
+
+#: pcart_product_finder/models.py:22
+msgid "Filter names"
+msgstr "Назви фільтрів"
+
+#: pcart_product_finder/models.py:38 pcart_product_finder/models.py:65
+msgid "Image"
+msgstr "Зображення"
+
+#: pcart_product_finder/models.py:40 pcart_product_finder/models.py:67
+#: pcart_product_finder/models.py:86 pcart_product_finder/models.py:106
+msgid "Added"
+msgstr "Додано"
+
+#: pcart_product_finder/models.py:41 pcart_product_finder/models.py:68
+#: pcart_product_finder/models.py:87 pcart_product_finder/models.py:107
+msgid "Changed"
+msgstr "Змінено"
+
+#: pcart_product_finder/models.py:44 pcart_product_finder/models.py:61
+msgid "Object vendor"
+msgstr "Виробник об'єкта"
+
+#: pcart_product_finder/models.py:45
+msgid "Object vendors"
+msgstr "Виробники об'єктів"
+
+#: pcart_product_finder/models.py:71 pcart_product_finder/models.py:81
+msgid "Object model"
+msgstr "Модель об'єкта"
+
+#: pcart_product_finder/models.py:72
+msgid "Object models"
+msgstr "Моделі об'єктів"
+
+#: pcart_product_finder/models.py:84
+msgid "Start production"
+msgstr "Старт виробництва"
+
+#: pcart_product_finder/models.py:85
+msgid "Finish production"
+msgstr "Завершення виробництва"
+
+#: pcart_product_finder/models.py:90 pcart_product_finder/models.py:101
+msgid "Object generation"
+msgstr "Покоління об'єкта"
+
+#: pcart_product_finder/models.py:91
+msgid "Object generations"
+msgstr "Покоління об'єктів"
+
+#: pcart_product_finder/models.py:105
+msgid "Slug"
+msgstr "Слаг"
+
+#: pcart_product_finder/models.py:110 pcart_product_finder/models.py:157
+msgid "Object variant"
+msgstr "Варіант об'єкта"
+
+#: pcart_product_finder/models.py:111
+msgid "Object variants"
+msgstr "Варіанти об'єктів"
+
+#: pcart_product_finder/models.py:165
+msgid "Collection slug"
+msgstr "Слаг колекції"
+
+#: pcart_product_finder/models.py:167
+msgid "Tags"
+msgstr "Теги"
+
+#: pcart_product_finder/models.py:172
+msgid "Object filter"
+msgstr "Фільтр об'єктів"
+
+#: pcart_product_finder/models.py:173
+msgid "Object filters"
+msgstr "Фільтри об'єктів"
+
+#: pcart_product_finder/models.py:184
+msgid "Vendor title"
+msgstr "Заголовок виробника"
+
+#: pcart_product_finder/models.py:185
+msgid "Model title"
+msgstr "Заголовок моделі"
+
+#: pcart_product_finder/models.py:186
+msgid "Generation title"
+msgstr "Заголовок покоління"
+
+#: pcart_product_finder/models.py:187
+msgid "Variant title"
+msgstr "Заголовок варіанту"
+
+#: pcart_product_finder/models.py:191 pcart_product_finder/models.py:192
+msgid "Product finder config"
+msgstr "Конфігурація пошуку товарів"
+
+#: pcart_product_finder/models.py:207
+msgid "Collection"
+msgstr "Колекція"
+
+#: pcart_product_finder/templates/productfinder/plugins/form_plugin.html:1
+msgid "Loading..."
+msgstr "Завантаження..."
+
+#~ msgid "Tags group 1"
+#~ msgstr "Група тегів 1"
+
+#~ msgid "Tags group 2"
+#~ msgstr "Група тегів 2"
+
+#~ msgid "Tags group 3"
+#~ msgstr "Група тегів 3"

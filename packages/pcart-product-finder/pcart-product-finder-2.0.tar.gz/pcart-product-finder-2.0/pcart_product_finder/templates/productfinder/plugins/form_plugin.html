@@ -1,0 +1,6 @@
+{% load i18n %}
+{% if instance.title %}<h2>{{ instance.title }}</h2>{% endif %}
+<div id="{{ instance.collection.slug }}-finder-form-wrapper" class="__action--ajax-load"
+    data-src="{% url 'pcart_product_finder:product-finder-form' instance.collection.slug %}?target={{ instance.collection.slug }}-finder-form-wrapper">
+    {% trans "Loading..." %}
+</div>
