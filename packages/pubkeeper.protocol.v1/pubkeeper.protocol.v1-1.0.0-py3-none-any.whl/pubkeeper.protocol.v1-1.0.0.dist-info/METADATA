@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: pubkeeper.protocol.v1
+Version: 1.0.0
+Summary: Brew, Fill, Consume
+Home-page: http://github.com/pubkeeper/python-protocol
+Author: n.io
+Author-email: info@n.io
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: pubkeeper,python-protocol-v1
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+
+# Pubkeeper Protocol
+## Intro
+
+The goal of the Pubkeeper protocol is to facilitate a distributed Publisher/Subscriber model for topics of information.
+
+## Complete Documentation
+
+A more complete documentation of the Pubkeeper Protocol, and Pubkeeper System may be found at: [docs.pubkeeper.com](http://docs.pubkeeper.com)
+
+
