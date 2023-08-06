@@ -1,0 +1,10 @@
+appdirs
+click
+packaging
+py
+pyparsing
+PyYAML
+six
+backports.functools_lru_cache
+enum34
+tabulate
