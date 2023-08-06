@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+pacsretrieve/__init__.py
+pacsretrieve/pacsretrieve.py
+pacsretrieve.egg-info/PKG-INFO
+pacsretrieve.egg-info/SOURCES.txt
+pacsretrieve.egg-info/dependency_links.txt
+pacsretrieve.egg-info/not-zip-safe
+pacsretrieve.egg-info/requires.txt
+pacsretrieve.egg-info/top_level.txt
