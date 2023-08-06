@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: css-classes
+Version: 1.1
+Summary: Simple python analog of npm package "classnames"
+Home-page: https://github.com/Pentusha/css_classes
+Author: Ivan Larin
+Author-email: pentusha@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: css class
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
