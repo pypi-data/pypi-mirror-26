@@ -1,0 +1,16 @@
+contact_map/__init__.py,sha256=JSqu62jgXdP56M6cukYSQL5TUwhX-3g53wvUiUyfRU8,318
+contact_map/_version.py,sha256=uOMcw75SRJdJgm-l-jetbHMu1AoFRKir7QreSbk9MlY,225
+contact_map/contact_map.py,sha256=Q53wEgnUnocrOPDWZVXCx6v7rtKPZhNKCO6O1U2kzPk,24575
+contact_map/min_dist.py,sha256=G3eqf6AJArFKNMZdtkpwArFpgsCJbbbQ59-OasMaXqU,7845
+contact_map/version.py,sha256=a0ptp-i_yaANDmGJXSrStG9aPNWjinHp9I9v9xrR4WQ,2095
+contact_map/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contact_map/tests/test_contact_map.py,sha256=U4Ymm9BD8Ka8myB5WJomUVWIwPhyGl4ZFI6m4_ZgQPk,21269
+contact_map/tests/test_min_dist.py,sha256=mM-Xe-J4BKF5XT7o1IzTi3QkSPXQnqJjBFTbG-Z8PNc,7465
+contact_map/tests/trajectory.pdb,sha256=UohzAD3v-8P5zUZizsvVbAZcyHj7LPAjir6atdsjH_I,4758
+contact_map/tests/utils.py,sha256=Gk8W5QEb60y0-XdNMShMMu-KTm5f0C9eglhHJJ02IXI,335
+contact_map-0.1.5.dist-info/DESCRIPTION.rst,sha256=T8XhcVAuTP_qiGDGAf1TuHPkX6BHtF6EW4W-fO6J7mk,4143
+contact_map-0.1.5.dist-info/METADATA,sha256=P5NYqSBHeCrBdePDViLauFCHrTndKAjpuUwmAaeZl4k,5152
+contact_map-0.1.5.dist-info/RECORD,,
+contact_map-0.1.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+contact_map-0.1.5.dist-info/metadata.json,sha256=ttfNMWWAfjbOP55xhg6Z7KCN_aRMfD4Zn18JZERUuok,1113
+contact_map-0.1.5.dist-info/top_level.txt,sha256=ABy8N4NffktLtYS_uQRMz6U-cz993DFu_JyQ0XmJ7PI,12
