@@ -1,0 +1,13 @@
+graphscraper/__init__.py,sha256=uZxN9_Du_aqTvTh3uNqpfPz9uFd66NWd97ZDxuQKKFU,608
+graphscraper/base.py,sha256=0tSXPZIeUPmWrwlT9aSANvKL4LCszzxBqsopN5my0vE,29054
+graphscraper/db.py,sha256=HGIGcbo4dA-CHvwGRb-bA4lG0PNAFM2PLt_7lWLPMV8,22425
+graphscraper/demo.py,sha256=RVbqAW6BamllNsREQrt5pmfQkQyLeRF6Gaq1xC0gZcE,2816
+graphscraper/eventdispatcher.py,sha256=0f7pKvKt82lFo3ygdRkcV6uG0N4-RaAHew0NM2hZ5I8,8866
+graphscraper/igraphwrapper.py,sha256=0LuL7auQ9Te5Ta97mbS7k5RAyk-DVJtLsZMVM41AArU,7779
+graphscraper/spotifyartist.py,sha256=hP_-kxDsbQM_QXHhIyCbLMfVsOiaB66BVdEM7jXUcxo,14218
+graphscraper-0.3.0.dist-info/DESCRIPTION.rst,sha256=RW4bijrZOZjEuqqzj6UfT97vbCp2bmGu9BAyZ-avFr4,2114
+graphscraper-0.3.0.dist-info/METADATA,sha256=AIphR1uH6l2pUzlZZzyjXk4wuZGyR1mr9VyBxgwpzzs,3122
+graphscraper-0.3.0.dist-info/RECORD,,
+graphscraper-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+graphscraper-0.3.0.dist-info/metadata.json,sha256=uPLbmsPbhC0RrizOOwz2DFcECfxAP3XLYn8D1Yk_Imc,1138
+graphscraper-0.3.0.dist-info/top_level.txt,sha256=jbarIyPS-STZW9ax9p5obuob9e3Y17AC9LJgZYG2etA,13
