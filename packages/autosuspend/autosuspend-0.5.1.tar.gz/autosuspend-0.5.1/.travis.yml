@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "nightly"
+install:
+  - pip install pytest pytest-runner pytest-cov pytest-mock python-mpd2 python-coveralls psutil
+script:
+  - pytest --cov=autosuspend
+after_success:
+  - coveralls
