@@ -1,0 +1,12 @@
+simplejson
+pyserial
+pyopenssl>=16.2.0
+pyyaml
+coveralls
+unittest2
+click
+pylint
+flake8
+polib
+slumber
+transifex-client
