@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: datatyping
+Version: 0.5.0
+Summary: Pythonic type checking
+Home-page: https://github.com/Zaab1t/datatyping
+Author: Carl Bordum Hansen
+Author-email: carl@bordum.dk
+License: MIT
+Description: UNKNOWN
+Keywords: safe data validation typing type check
+Platform: UNKNOWN
