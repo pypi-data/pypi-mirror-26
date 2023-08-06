@@ -1,0 +1,60 @@
+CHANGES
+=======
+
+4.1.1
+-----
+
+* aggregates: make references optional
+* aggregates: rework API output
+* tests: Assert on NAN
+* make rest docs more consumable
+
+4.1.0
+-----
+
+* rest: allow to pass resource\_id in the metric creation payload
+* Move coordination\_url option out of the storage section
+* return empty series if empty series given
+* aggregates: new fill=drop-na
+* aggregates: remove useless checks
+* remove boundary requirements
+* gnocchi-api: add support for VIRTUAL\_ENV
+* incoming: use utils.parallel\_map rather than futures
+* Move coordinator out of utils
+* storage: do not create coordinator oneself
+* rolling window over matrix
+* aggregates: resources search api
+* transpose once
+* aggregates: more tests
+* aggregated: remove useless resample argument
+* aggregates: implements more operations
+* Rename storage.aggregation\_workers\_number to parallel\_operations
+* aggregates: fetch api
+* Update apache-ported-gnocchi.template
+* statsd: StatsdServer inherits from asyncio.Protocol
+* aggregates: make aggregated() extensible
+* Revert "batch GET metric interface"
+* aggregates: rename cross\_metric to aggregates
+* aggregate: remove transformation code
+* api: convert exceptions JSON data struct rather than just a string
+* api: remove abort unused extra arguments
+* incoming: fix logging on SackDetectionError
+* Set a correct default value for aggregation\_workers\_number
+* doc: update flavor list
+* metricd: factorize error handling in \_run\_job
+* rest: expose the gnocchi build
+* redis: do not emit notifications until sack is processed
+* rados: Bump min version
+* storage: remove process\_background\_tasks
+* metricd: cache sacks to process
+* metricd: fix coordinator not implemented error
+* metricd: be specific about tooz.NotImplemented
+* metricd: only re-add sack to be processed on failure
+* move Metric model to indexer
+* move Measure model to incoming
+* doc: simplify archive policy example, fix worst case scenario
+* Force to specify the number of agg methods in archive policy size tool
+* Fix gnocchi-archive-policy-size with recent Numpy switch
+* always return no overlap if there's no overlap
+* more tests for cross metric aggregation
+* bump tenacity req
