@@ -1,0 +1,3 @@
+[console_scripts]
+imagehash = imagehash_cli.cli:main
+

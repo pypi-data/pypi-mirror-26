@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+imagehash_cli/__init__.py
+imagehash_cli/cli.py
+imagehash_cli.egg-info/PKG-INFO
+imagehash_cli.egg-info/SOURCES.txt
+imagehash_cli.egg-info/dependency_links.txt
+imagehash_cli.egg-info/entry_points.txt
+imagehash_cli.egg-info/not-zip-safe
+imagehash_cli.egg-info/requires.txt
+imagehash_cli.egg-info/top_level.txt
