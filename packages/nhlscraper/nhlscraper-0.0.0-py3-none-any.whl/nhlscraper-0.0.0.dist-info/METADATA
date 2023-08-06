@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: nhlscraper
+Version: 0.0.0
+Summary: NHL Scraper API for Python
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: nhlscrapi
+Requires-Dist: requests (==2.13.0)
+
+UNKNOWN
+
+
