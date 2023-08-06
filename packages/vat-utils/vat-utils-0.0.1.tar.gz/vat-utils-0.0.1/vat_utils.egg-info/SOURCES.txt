@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+vat_utils/__init__.py
+vat_utils/config.py
+vat_utils/misc.py
+vat_utils.egg-info/PKG-INFO
+vat_utils.egg-info/SOURCES.txt
+vat_utils.egg-info/dependency_links.txt
+vat_utils.egg-info/requires.txt
+vat_utils.egg-info/top_level.txt
