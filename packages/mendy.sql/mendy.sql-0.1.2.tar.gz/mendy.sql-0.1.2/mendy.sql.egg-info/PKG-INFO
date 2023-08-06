@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mendy.sql
+Version: 0.1.2
+Summary: this is a test package for packing python liberaries tutorial.
+Home-page: UNKNOWN
+Author: Maidi
+Author-email: 15920164078@163.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: just have a try.
+Keywords: test python package
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

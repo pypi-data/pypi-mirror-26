@@ -1,0 +1,8 @@
+setup.py
+mendy.sql.egg-info/PKG-INFO
+mendy.sql.egg-info/SOURCES.txt
+mendy.sql.egg-info/dependency_links.txt
+mendy.sql.egg-info/requires.txt
+mendy.sql.egg-info/top_level.txt
+mendy.sql.egg-info/zip-safe
+mendy/sql/__init__.py
