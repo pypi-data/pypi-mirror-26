@@ -1,0 +1,4 @@
+[console_scripts]
+clustermgr-celery = clusterapp:run_celery
+clustermgr-cli = clusterapp:cli
+
