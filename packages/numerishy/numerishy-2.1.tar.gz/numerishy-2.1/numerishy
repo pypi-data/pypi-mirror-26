@@ -1,0 +1,189 @@
+#! /bin/env python3
+
+from graphic import Display
+from physics import Numb
+from time import sleep, time
+from random import random, choice
+from math import floor
+
+SPAWN_RATE = 5
+KEY_LASTS = 0.1
+PLAYER_SPEED = 10
+
+debug = {"show": []}
+
+titles_before = ["Bc.", "BcA.", "Ing.", "Ing.arch.", "MUDr.", "MVDr.", "MgA.", "Mgr.", "JUDr.", "PhDr.", "PharmDr.", "ThLic.", "ThDr.", "PaedDr.", "Dr.", "RNDr.", "doc.", "prof."]
+titles_after = ["Ph.D.", "Th.D.", "CSc.", "DrSc.", "dr.h.c.", "DiS."]
+titles = titles_before + titles_after
+
+names = ["Bob Bug", "Alex Smith", "Will White", "Andrew Ender", "Steve New", "James Smith", "Maria Garcia", "James Johnson", "Carson Stanford", "Casey Samuel", "Elias Kimberly", "Raven Travis"]
+
+class GameEnded(Exception):
+    pass
+
+class YouDied(GameEnded):
+    def __init__(self, score, message="You have died."):
+        message += "\nAnd achieved: %s" % str(score)
+        super().__init__(message)
+
+class WrongTitle(TypeError):
+    pass
+
+class Guy(Numb):
+    def __init__(self, items=2, x=0, y=0, flag=0, speed=(0, 0)):
+        super().__init__(items=items, x=x, y=y, flag=flag, speed=speed)
+        
+        self.name = choice(names)
+        
+        rank = self.items
+        self.items = set()
+        while len(self.items) < min(rank, len(set(titles))):
+            title = choice(titles)
+            if not title in self.items:
+                self.items.add(title)
+
+    def render(self):
+        before = ""
+        after = ""
+        for title in self.items:
+            if title in titles_before:
+                if before:
+                    before += ", "
+                before += title
+            elif title in titles_after:
+                after += ", " + title
+            else:
+                raise WrongTitle("'%s'" % title)
+        if before:
+            before += " "  
+        return ("%s%s%s" % (before, self.name, after))
+
+    def die(self):
+        return self.items
+    
+    def eat(self, items):
+        self.items |= items
+
+    def get_size(self):
+        return len(self.items)
+            
+            
+
+
+
+Game_obj = Guy
+
+def main(disp):
+    
+    player = Game_obj(x=disp.width//2, y=disp.height//2, flag=disp.get_color(("green", "black")))
+    enemies = []
+    keys_pressed = {}
+    moving = {"up":    False,
+              "down":  False,
+              "left":  False,
+              "right": False}
+    
+    last_spawn = time()
+    
+    while True:
+        
+        key = disp.get_key()
+        if key in keys_pressed:
+            keys_pressed[key][0] = time() + KEY_LASTS
+        else:
+            keys_pressed[key] = [time()+KEY_LASTS, lambda:None]
+
+        if key in ("left", "a", "j"):
+            if not moving["left"]:
+                player.change_speed(x=-2*PLAYER_SPEED)
+                keys_pressed[key][1] = lambda: (player.change_speed(x= 2*PLAYER_SPEED), moving.__setitem__("left", False))
+                moving["left"] = True
+
+        elif key in ("right", "d", "l"):
+            if not moving["right"]:
+                player.change_speed(x= 2*PLAYER_SPEED)
+                keys_pressed[key][1] = lambda: (player.change_speed(x=-2*PLAYER_SPEED), moving.__setitem__("right", False))
+                moving["right"] = True
+
+        elif key in ("up", "w", "i"):
+            if not moving["up"]:
+                player.change_speed(y=-PLAYER_SPEED)
+                keys_pressed[key][1] = lambda: (player.change_speed(y= PLAYER_SPEED), moving.__setitem__("up", False))
+                moving["up"] = True
+
+        elif key in ("down", "s", "k"):
+            if not moving["down"]:
+                player.change_speed(y= PLAYER_SPEED)
+                keys_pressed[key][1] = lambda: (player.change_speed(y=-PLAYER_SPEED), moving.__setitem__("down", False))
+                moving["down"] = True
+
+
+        elif key == "q":
+            raise KeyboardInterrupt
+
+        keys_to_delete = []
+        for key in keys_pressed:
+            if keys_pressed[key][0] < time():
+                keys_pressed[key][1]()
+                keys_to_delete.append(key) 
+        for key in keys_to_delete:
+            del keys_pressed[key]
+        
+        
+        while time() - last_spawn > 1/SPAWN_RATE:
+            last_spawn += 1/SPAWN_RATE
+
+            side = random() > 0.5
+            size = floor(random()*5*player.get_size())
+            disp.show(0,0, str(size))
+
+            enemies.append(Game_obj(items=size,x=-len(str(size)) if not side else disp.width+1, y=floor(random()*disp.height), speed=((floor(random()*PLAYER_SPEED*2)+5) * (-1 if side else 1), 0)))
+
+            if not side:
+                (x1, y1), (x2, y2) = enemies[-1].get_hitbox()
+                enemies[-1].change_xy(x=-max(x1, x2)-1)
+
+
+
+
+
+        player.move()
+        player.check_board(disp)
+        for enemy in enemies:
+            enemy.move()
+            if enemy & player:
+                if enemy < player or (not enemy != player and random()<0.5):
+                    del enemies[enemies.index(enemy)]
+                    items = enemy.die()
+                    player.eat(items)
+                else:
+                    raise YouDied(player.get_size())
+
+        
+        
+            
+        
+        
+        for enemy in enemies:
+            enemy.show(disp)
+        if enemies: disp.show(0, 0, str((enemies[-1].x, enemies[-1].y)))
+
+        player.show(disp)
+        
+        disp.refresh()
+
+
+disp = Display()
+try:
+    disp.run(main)
+except (GameEnded, KeyboardInterrupt):
+    text = "Game Over!" 
+    print("#" * (len(text)+4))
+    print("# %s #" % text)
+    print("#" * (len(text)+4))
+    print()
+    for el in debug["show"]: print(el)
+    print()
+    input("Hit enter to continue ...")
+
+
