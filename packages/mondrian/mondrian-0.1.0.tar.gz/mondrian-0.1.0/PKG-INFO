@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: mondrian
+Version: 0.1.0
+Summary: Logging with pretty coloured squares all over the place.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Description: mondrian
+        ========
+        
+        Mondrian helps you paint your standard python logger.
+        
+        Just use:
+        
+        .. code-block:: python
+        
+            import logging
+            import mondrian
+        
+            logger = mondrian.getLogger()
+            logger.setLevel(logging.INFO)
+        
+        Done.
+        
+        
+Platform: UNKNOWN
