@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: controltools
+Version: 0.1.4
+Summary: Control System Wrapper
+Home-page: https://github.com/Faggioni/controltools
+Author: Miguel Faggioni
+Author-email: miguelfaggioni@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: control
+Requires-Dist: numpy
+
+UNKNOWN
+
+
