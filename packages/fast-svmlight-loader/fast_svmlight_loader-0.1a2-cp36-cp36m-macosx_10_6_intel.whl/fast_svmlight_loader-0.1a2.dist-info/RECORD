@@ -1,0 +1,11 @@
+fast_svmlight_loader-0.1a2.data/purelib/fast_svmlight_loader/__init__.py,sha256=befR6IdyDaZJN_fhvb5sT_F8S3aC3r0kqiYvy3pLuKk,574
+fast_svmlight_loader-0.1a2.data/purelib/fast_svmlight_loader/compat.py,sha256=UNfF7BRceSzTBLWItgWtW0bMe83C-XaS1YVBAqa5cT8,1667
+fast_svmlight_loader-0.1a2.data/purelib/fast_svmlight_loader/core.py,sha256=6Mpgc5419mF5cKnsEQqxIhFnFSGTK4iBgwCaiCiJAQc,4253
+fast_svmlight_loader-0.1a2.data/purelib/fast_svmlight_loader/libfast_svmlight_loader.dylib,sha256=3hzPgxkrwYEyG03Y71FamxviQ8-eFvb6t6zE6DgmTVo,652656
+fast_svmlight_loader-0.1a2.data/purelib/fast_svmlight_loader/libpath.py,sha256=2kHPe3fKdGDXP84g_J96G1l5YX6HCfbg2PfelxK6DoY,2141
+fast_svmlight_loader-0.1a2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+fast_svmlight_loader-0.1a2.dist-info/METADATA,sha256=nWZWYwA9ml9HqcMPc2EfSA7o7KMsjeaSiN2x3w-J67M,322
+fast_svmlight_loader-0.1a2.dist-info/RECORD,,
+fast_svmlight_loader-0.1a2.dist-info/WHEEL,sha256=OFNdaJiI9g_GkizF_uxlV7QqkMhIg08EkykbDF40LSY,109
+fast_svmlight_loader-0.1a2.dist-info/metadata.json,sha256=VKDVfkyPZFacqFiErSHj_HlZG_coszvRAyg1pfva5Is,481
+fast_svmlight_loader-0.1a2.dist-info/top_level.txt,sha256=KXAzJepqSvgwjYBND0lfJs50T3F8vj96cd_usA93BT4,21
