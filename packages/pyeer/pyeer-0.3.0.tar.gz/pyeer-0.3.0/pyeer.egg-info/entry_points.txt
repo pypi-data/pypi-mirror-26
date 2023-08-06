@@ -1,0 +1,3 @@
+[console_scripts]
+geteerinf = pyeer.eer_info:get_eer_info
+
