@@ -1,0 +1,3 @@
+[console_scripts]
+view-spark-timeline = viewsparktimeline.cli:main
+
