@@ -1,0 +1,15 @@
+blanc_basic_assets/__init__.py,sha256=KStdR2_4jDvUiyOYqT2A2eAhfwlUrPCsWVj7LR8I_Mw,70
+blanc_basic_assets/admin.py,sha256=gFTrE72f0scnwfVzi0eC4Uyn9TLmAll8oBV0XbNHWNI,676
+blanc_basic_assets/apps.py,sha256=NnyDjujZ-tvRJhSTA-nD0_Hu_UkiKgRhiBZD2ARWRE0,244
+blanc_basic_assets/fields.py,sha256=cs5OpmyTsZy3c6GN0LRmCWbMb4QQm-OKmSEN7qfZkgk,2234
+blanc_basic_assets/listeners.py,sha256=6VuFnLxFmEfyFZRYuZWuUXGEOxnN1CyuIcKWap1yJgY,867
+blanc_basic_assets/models.py,sha256=j6fpMUI6cPS0pnFtWVI2j-PK3nRgwT2TUMi-_tp8GZs,1677
+blanc_basic_assets/tests.py,sha256=XBDamP62rVOP0zco5YqfJ0-h8EH17N2qWKnDrc7oyU8,383
+blanc_basic_assets/migrations/0001_initial.py,sha256=Kg7BB83tlYf1BjkN2jtY-jLpiqmMylp40UaKlxF4OCE,2575
+blanc_basic_assets/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blanc_basic_assets-0.3.3.dist-info/DESCRIPTION.rst,sha256=r6zqBEc_H0OYzXEMxtdC_QZ8bA8mcGdoaroho6yQAzc,454
+blanc_basic_assets-0.3.3.dist-info/METADATA,sha256=-0AEyXpsxcxBepe7kRqtXmHVsUGi_rK5atuYxzEI5ks,1458
+blanc_basic_assets-0.3.3.dist-info/RECORD,,
+blanc_basic_assets-0.3.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+blanc_basic_assets-0.3.3.dist-info/metadata.json,sha256=hey23MRPjnKKIT05gp3hOYeOLYVXf8GsjGfM_WqNzAM,1091
+blanc_basic_assets-0.3.3.dist-info/top_level.txt,sha256=VNxoObiZauGoHHrfw_ztt-yvSNE0PZ6PSdYLE2FLrhQ,19
