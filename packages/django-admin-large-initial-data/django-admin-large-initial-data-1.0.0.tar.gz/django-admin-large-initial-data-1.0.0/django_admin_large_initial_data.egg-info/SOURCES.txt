@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+django_admin_large_initial_data.egg-info/PKG-INFO
+django_admin_large_initial_data.egg-info/SOURCES.txt
+django_admin_large_initial_data.egg-info/dependency_links.txt
+django_admin_large_initial_data.egg-info/not-zip-safe
+django_admin_large_initial_data.egg-info/requires.txt
+django_admin_large_initial_data.egg-info/top_level.txt
+large_initial/__init__.py
