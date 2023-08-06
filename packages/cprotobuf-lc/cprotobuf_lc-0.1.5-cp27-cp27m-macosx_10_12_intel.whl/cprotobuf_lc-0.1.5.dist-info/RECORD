@@ -1,0 +1,10 @@
+cprotobuf/__init__.py,sha256=0G8nXA5eb9oK45F_muNjRMKVR7YpvNPi2Jfw5kmiBa4,98
+cprotobuf/internal.so,sha256=Z7ppjZlz6hysa_LoA1_vVYEP4epRJ2wt5gXHJcQ5Nz0,368128
+cprotobuf/plugin_pb.py,sha256=qlIH8RKw2Fd_-MdL0DDrCV3nujl_dKoQt89MGK6WQnw,8419
+cprotobuf_lc-0.1.5.data/scripts/protoc-gen-cprotobuf,sha256=-ETkbQYSBp0BGtrHvzEUE-bQp4dHapwqXxVv2EGdZik,6616
+cprotobuf_lc-0.1.5.dist-info/DESCRIPTION.rst,sha256=-L9OobLhNa9dBkwFUEAfwoSZZ7grWLct3cHE-30V4O8,5504
+cprotobuf_lc-0.1.5.dist-info/METADATA,sha256=GM6XZ_yAxZkd0PvSprHvlVOgoxoft1U8e_MmEUL-CuY,5777
+cprotobuf_lc-0.1.5.dist-info/RECORD,,
+cprotobuf_lc-0.1.5.dist-info/WHEEL,sha256=k-kdvEB1Gfd_WRAwycYnS5xFDyeibz8UoUSF6JzfWfI,110
+cprotobuf_lc-0.1.5.dist-info/metadata.json,sha256=Fz6zKJxLNKJTwbP5XUxMkmZHgTC0CMrUq6zTzrbupzw,442
+cprotobuf_lc-0.1.5.dist-info/top_level.txt,sha256=Iat-3KZA56K6nT_Frh3k-p3B-FwwkLF_WWQTMzzFNOc,10
