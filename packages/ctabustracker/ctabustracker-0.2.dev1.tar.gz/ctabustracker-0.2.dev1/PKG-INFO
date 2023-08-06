@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ctabustracker
+Version: 0.2.dev1
+Summary: A python wrapper for the Chicago Transit Authority's Bustracker API.
+Home-page: https://github.com/tsaylor/ctabustracker
+Author: Tim Saylor
+Author-email: tim.saylor@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
