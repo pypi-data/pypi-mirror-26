@@ -1,0 +1,12 @@
+cli_utils/__init__.py,sha256=40zC082Z3BwpLsAalHIDDefWCdTmKmKuDSotXQO9Z38,82
+cli_utils/get_time.py,sha256=iURQ_2LIzJvDUw__Vw0mGUx_G9AHHy2Oj5BjfzTsL30,8162
+cli_utils/menu.py,sha256=qfhz-Q1G4_I-0utZ-SDaoNdfcTpomjwazhLzb6r69gE,7584
+cli_utils/unit_tests/__init__.py,sha256=9K02lIPS6ZtAIJFBJFIbnEcmzIUXQ60V9tXj2XhYb5s,311
+cli_utils/unit_tests/menu_test.py,sha256=LT1Cf7v3Fwpfw7ZxixOdQaWj1aasej0_M3Cmo9Fi3EY,1990
+cli_utils-1.0.3.dist-info/DESCRIPTION.rst,sha256=oDl7kakANCRUspGh9wgBnzgMixOcH0cWb1SFaZtwX-g,178
+cli_utils-1.0.3.dist-info/METADATA,sha256=DiiRyL0eWdL8eKFPLniN-rwfRdYX839W8BUGiuUxS-0,876
+cli_utils-1.0.3.dist-info/RECORD,,
+cli_utils-1.0.3.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+cli_utils-1.0.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+cli_utils-1.0.3.dist-info/metadata.json,sha256=FPT4O5WIjXDzP9AQTXAN4Q9f_Mr6tgBoKkJZjwguZuQ,963
+cli_utils-1.0.3.dist-info/top_level.txt,sha256=qZqXTihe18opaAZuhUX4rjpUPKy0Xwvp8ROsbUBxJ7Q,10
