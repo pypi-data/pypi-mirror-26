@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: ChessComAPILibrary
+Version: 0.1.9.dev1
+Summary: Python client/helper pubapi_library for chess.com's PubAPI.
+Home-page: https://github.com/walidmujahid/ChessComAPILibrary
+Author: Walid Mujahid وليد مجاهد
+Author-email: walid.mujahid.dev@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Requires-Dist: tortilla
+
+ChessComAPILibrary
+
+
