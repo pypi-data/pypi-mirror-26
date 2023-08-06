@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: test-image-results
+Version: 0.0.2
+Summary: Upload test images to web service 
+Home-page: http://github.com/wiredfool/test-image-results
+Author: Eric Soroos
+Author-email: eric@soroos.net
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # Test Image Difference uploader.
+        
+        Uploads to a lambda function.
+        
+        
+        
+Keywords: Testing,image
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Testing
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
