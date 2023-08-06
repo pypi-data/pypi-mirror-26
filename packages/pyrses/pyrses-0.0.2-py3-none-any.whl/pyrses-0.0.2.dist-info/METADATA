@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: pyrses
+Version: 0.0.2
+Summary: ncurses based TUI framwork
+Home-page: https://github.com/jeremyCloud/pyrses.git
+Author: sloud
+Author-email: sloudly2@gmail.com
+License: MIT
+Keywords: TUI framework ncurses curses terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+

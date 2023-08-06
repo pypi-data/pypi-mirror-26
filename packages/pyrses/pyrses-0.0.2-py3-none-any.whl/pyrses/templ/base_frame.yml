@@ -1,0 +1,8 @@
+---
+frame_base:
+  name: null
+  controller: 'frame_base_ctl'
+  background_color: 'black'
+  defaults: null
+  pages: null
+  catch: null

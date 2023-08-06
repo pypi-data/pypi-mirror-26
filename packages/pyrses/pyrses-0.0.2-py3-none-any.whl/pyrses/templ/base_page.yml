@@ -1,0 +1,13 @@
+---
+page_base:
+  name: null
+  controller: 'page_base_ctl'
+  background_color: 'black'
+  defaults: null
+  position:
+    x: 0
+    y: 0
+  size:
+    width: 1.0
+    height: 1.0
+  
