@@ -1,0 +1,10 @@
+antismash_models/__init__.py,sha256=LvslsfUc0nROiIgxff5G0W7HYdqL9Mj9Kv06Ln9m6p0,105
+antismash_models/base.py,sha256=pkxyVTZJRmkmyXYOOe5GHGJpBSpBsahyKuXOatsZP2A,2944
+antismash_models/control.py,sha256=7RQQxX7LmIMcCeWj2NpW7AVzsNAAl4ElWQYhBGEYvVc,1021
+antismash_models/job.py,sha256=A4a2ulo-m3dLXbEKc83aCfFxFF1OebqJ9LwfeAHZtS8,4329
+antismash_models-0.1.2.dist-info/DESCRIPTION.rst,sha256=X1s40mtl3zq7HlxrqMihur5BtumSJk4aluJezacCpKM,478
+antismash_models-0.1.2.dist-info/METADATA,sha256=4ZEm3amCAn0AjAFN9xCs_edixvApZguKiL-lBhwNFmA,1635
+antismash_models-0.1.2.dist-info/RECORD,,
+antismash_models-0.1.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+antismash_models-0.1.2.dist-info/metadata.json,sha256=0n2b7jvUxzL2E3Cw4_7mJX2Ta4mmaG4Docolo-Wb-H4,1292
+antismash_models-0.1.2.dist-info/top_level.txt,sha256=NHjNBf88vnMANJjbih7l7CptnxXFpbvvLd3RdI63xxE,17
