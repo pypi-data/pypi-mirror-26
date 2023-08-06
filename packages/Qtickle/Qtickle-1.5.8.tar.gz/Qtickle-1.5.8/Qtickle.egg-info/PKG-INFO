@@ -1,0 +1,33 @@
+Metadata-Version: 1.0
+Name: Qtickle
+Version: 1.5.8
+Summary: 
+        A script designed to aid in saving values inside Qt objects.
+        It works by inspecting for object names and then collecting their
+        values.
+        
+Home-page: https://github.com/tisaconundrum2/Qtickle
+Author: Nicholas Finch
+Author-email: tisaconundrum2@github.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: =======
+        Qtickle
+        =======
+        
+        A script designed to aid in saving values inside Qt objects.
+        It works by inspecting for objectnames and then collecting their
+        values.
+        
+        The name is a portmanteau of Qt and pickle. Originally the script
+        utilized pickle to save data. Now data is returned in the form of
+        a dictionary. This way the user gets to choose what happens to the
+        data
+        
+        Install
+        -------
+        
+            pip install Qtickle
+        
+        
+Platform: UNKNOWN

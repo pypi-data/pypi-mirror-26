@@ -1,0 +1,9 @@
+README.rst
+setup.py
+Qtickle/Qtickle.py
+Qtickle/__init__.py
+Qtickle.egg-info/PKG-INFO
+Qtickle.egg-info/SOURCES.txt
+Qtickle.egg-info/dependency_links.txt
+Qtickle.egg-info/not-zip-safe
+Qtickle.egg-info/top_level.txt
