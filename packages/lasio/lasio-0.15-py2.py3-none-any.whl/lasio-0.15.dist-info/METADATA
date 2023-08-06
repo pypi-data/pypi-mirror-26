@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: lasio
+Version: 0.15
+Summary: Read/write well data from Log ASCII Standard (LAS) files
+Home-page: https://github.com/kinverarity1/lasio
+Author: Kent Inverarity
+Author-email: kinverarity@hotmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: ordereddict
+
+lasio
+
+
