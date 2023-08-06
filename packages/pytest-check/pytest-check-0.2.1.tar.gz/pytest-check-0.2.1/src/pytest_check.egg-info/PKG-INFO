@@ -1,0 +1,84 @@
+Metadata-Version: 1.1
+Name: pytest-check
+Version: 0.2.1
+Summary: A pytest plugin that allows multiple failures per test.
+Home-page: https://github.com/okken/pytest-check
+Author: Brian Okken
+Author-email: brian@pythontesting.net
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ============
+        pytest-check
+        ============
+        
+        A pytest plugin that allows multiple failures per test.
+        
+        ----
+        
+        This `Pytest`_ plugin was a rewrite and a rename of `pytest-expect`_.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+        Requirements
+        ------------
+        
+        * TODO
+        
+        
+        Installation
+        ------------
+        
+        Eventually, you'll be able to install "pytest-check" via `pip`_ from `PyPI`_::
+        
+            $ pip install pytest-check
+        
+        But for now, you'll have to install it from github.
+        
+        
+        Usage
+        -----
+        
+        * TODO
+        
+        Contributing
+        ------------
+        Contributions are very welcome. Tests can be run with `tox`_, please ensure
+        the coverage at least stays the same before you submit a pull request.
+        
+        License
+        -------
+        
+        Distributed under the terms of the `MIT`_ license, "pytest-check" is free and open source software
+        
+        
+        Issues
+        ------
+        
+        If you encounter any problems, please `file an issue`_ along with a detailed description.
+        
+        .. _`MIT`: http://opensource.org/licenses/MIT
+        .. _`file an issue`: https://github.com/okken/pytest-check/issues
+        .. _`pytest`: https://github.com/pytest-dev/pytest
+        .. _`tox`: https://tox.readthedocs.io/en/latest/
+        .. _`pip`: https://pypi.python.org/pypi/pip/
+        .. _`PyPI`: https://pypi.python.org/pypi
+        .. _`pytest-expect`: https://github.com/okken/pytest-expect
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
