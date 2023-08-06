@@ -1,0 +1,149 @@
+#!python
+
+"""
+Make this script your default browser in order to
+choose which browser to use when opening a URI. Make sure to pass
+the URI to the script via the "%s" variable.
+"""
+
+# Copyright (c) 2012-2017, Lev E. Givon
+# All rights reserved.
+# Distributed under the terms of the BSD license:
+# http://www.opensource.org/licenses/bsd-license
+
+import os
+import sys
+
+if sys.version_info.major == 2:
+    import ConfigParser as configparser
+else:
+    import configparser
+
+import wx
+import xdg.BaseDirectory
+
+# Set the URI to the first command line argument (if given):
+if len(sys.argv) > 1:
+    uri = sys.argv[1]
+else:
+    uri = ''
+
+def which(program):
+    """
+    Attempt to expand the path of a specified executable.
+    """
+
+    def is_exe(fpath):
+        return os.path.exists(fpath) and os.access(fpath, os.X_OK)
+
+    fpath, fname = os.path.split(program)
+    if fpath:
+        if is_exe(program):
+            return program
+    else:
+        for path in os.environ["PATH"].split(os.pathsep):
+            exe_file = os.path.join(path, program)
+            if is_exe(exe_file):
+                return exe_file
+    return None
+
+# Load browser names and paths from configuration file if present:
+possible_browsers = {}
+cfg_dir = xdg.BaseDirectory.load_first_config('chooser')
+if cfg_dir is not None:
+    config = configparser.ConfigParser()
+    config.optionxform = str
+    config.read(os.path.join(cfg_dir, 'chooserrc'))
+    if config.has_section('Browsers'):
+        for item in config.items('Browsers'):
+            possible_browsers[item[0]] = item[1]
+
+if possible_browsers == {}:
+
+    # Common browsers:
+    possible_browsers = {'Arora': 'arora',
+                         'Chromium': 'chromium-browser',
+                         'Dillo': 'dillo',
+                         'Epiphany': 'epiphany',
+                         'Firefox': 'firefox',
+                         'Konqueror': 'konqueror',
+                         'Midori': 'midori',
+                         'Opera': 'opera',
+                         'QupZilla': 'qupzilla'}
+
+browsers = {}
+for browser in possible_browsers:
+    name = possible_browsers[browser]
+    full_path = which(name)
+    if full_path:
+        browsers[browser] = (name, full_path)
+
+class AppFrame(wx.Frame):
+    def __init__(self, parent, id, title):
+
+        N = len(browsers.keys())
+
+        # Prevent the frame from being resized:
+        wx.Frame.__init__(self, parent, id, title, wx.DefaultPosition,
+                          wx.Size(80*N, 100),
+                          style=wx.CAPTION | wx.CLOSE_BOX)
+        panel = wx.Panel(self, wx.ID_ANY)
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        grid = wx.GridSizer(1, N, 1, 1)
+
+        # Dict to map button ids to browser commands:
+        img_size = (64, 64)
+        self.button_to_browser = {}
+        for browser in browsers.keys():
+            name, full_path = browsers[browser]
+
+            icon = wx.ArtProvider.GetIcon(name, wx.ART_OTHER, img_size)
+
+            # Load default web browser icon if no application-specific icon
+            # exists:
+            if not icon.IsOk():
+                icon = wx.ArtProvider.GetIcon('browser', wx.ART_OTHER, img_size)
+
+            bmp = wx.Bitmap()
+            bmp.CopyFromIcon(icon)
+            button = wx.BitmapButton(panel, -1, bmp, style=wx.NO_BORDER)
+            button.SetToolTip(browser)
+            grid.Add(button, 0, wx.EXPAND)
+            self.Bind(wx.EVT_BUTTON, self.OnClick, button)
+            self.button_to_browser[button.Id] = full_path
+        sizer.Add(grid, 0, wx.EXPAND | wx.ALL, 2)
+        panel.SetSizerAndFit(sizer)
+        self.Centre()
+
+        # Focus on the panel to catch keystrokes:
+        panel.SetFocusIgnoringChildren()
+
+        # Exit if the ESC key is pressed:
+        panel.Bind(wx.EVT_CHAR_HOOK, self.OnKeyDown)
+
+    def OnClick(self, event):
+
+        # The first parameter is the name to give to the executed
+        # process:
+        os.execl(self.button_to_browser[event.Id], '', uri)
+        
+    def OnKeyDown(self, event):
+        keycode = event.GetKeyCode()
+        if keycode == wx.WXK_ESCAPE:
+            self.Close()
+        event.Skip()
+
+class App(wx.App):
+    def OnInit(self):
+
+        # Exit if no browsers are found:
+        if len(browsers) == 0:
+            wx.MessageBox('No browsers found', 'Chooser Error')
+            sys.exit(1)
+        frame = AppFrame(None, -1, 'Select a Browser')
+        frame.Show(True)
+        self.SetTopWindow(frame)
+        return True
+
+app = App(0)
+app.MainLoop()
