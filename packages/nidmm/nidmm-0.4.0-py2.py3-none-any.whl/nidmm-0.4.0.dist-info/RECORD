@@ -1,0 +1,15 @@
+nidmm/__init__.py,sha256=VC3_7mOcbGwLqzwcChtp6AycON0nlHv364Y-2GOXYuw,259
+nidmm/attributes.py,sha256=t1sWDa4ehjZSyzOwVQZ2qUh1qEArWxJ8PpRJdjdqHKI,2294
+nidmm/enums.py,sha256=Og-mQAP3FDfPqL-7mZWc85DwoKEcj9tTUXnJhU-kEn0,10777
+nidmm/errors.py,sha256=CJoGpQm6ix0lanphfoCp0Z42fF8Gzj8_VwW1RKLxohE,2504
+nidmm/library.py,sha256=0aaSUHHjSl26Ng92Rz2QJd9TYdgerO2tf4pKJ_rHCXc,30927
+nidmm/library_singleton.py,sha256=m7bFlMT-rqVERGzzO5OIRUK9Nl4DqDBP6Vdy8W-BF9A,1792
+nidmm/session.py,sha256=ssl7ug1_MNrMierP6t_PmCxlKYanDUnGugETls8bKBU,126133
+nidmm/visatype.py,sha256=kUJlrNig5AcFzcIkHz-kTrkApVGEX988Nb2MvOSZUVY,600
+nidmm-0.4.0.dist-info/DESCRIPTION.rst,sha256=tZ5mvMq0jv52Rd4728tN8wr_jvYli5wTpNRd4Q4QIJ0,9542
+nidmm-0.4.0.dist-info/METADATA,sha256=e6WebCxydisdi5ebD-pYjfCQXHBjk1ZF3oRoguWG_ec,10680
+nidmm-0.4.0.dist-info/RECORD,,
+nidmm-0.4.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+nidmm-0.4.0.dist-info/metadata.json,sha256=N5ApWoYnBsbx2MwRqhSKohJKs0KiVMZTocFVDxvWB10,1309
+nidmm-0.4.0.dist-info/top_level.txt,sha256=hnE534sNbtl4qd-rHoZ9-Iqwj6nGXWUHwljmoEK3g3U,6
+nidmm-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
