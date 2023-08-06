@@ -1,0 +1,4 @@
+[console_scripts]
+timo-zappa = zappa.cli:handle
+tz = zappa.cli:handle
+
