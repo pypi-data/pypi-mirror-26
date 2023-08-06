@@ -1,0 +1,7 @@
+click
+lxml
+prettytable
+bs4
+selenium
+requests
+progressbar2
