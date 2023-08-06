@@ -1,0 +1,14 @@
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+setup.cfg
+setup.py
+yaspin/__init__.py
+yaspin/__version__.py
+yaspin/yaspin.py
+yaspin.egg-info/PKG-INFO
+yaspin.egg-info/SOURCES.txt
+yaspin.egg-info/dependency_links.txt
+yaspin.egg-info/top_level.txt
