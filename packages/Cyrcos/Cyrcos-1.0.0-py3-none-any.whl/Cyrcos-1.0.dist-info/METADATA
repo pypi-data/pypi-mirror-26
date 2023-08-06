@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: Cyrcos
+Version: 1.0
+Summary: A Circos-like implementation in Python 3 using Matplotlib
+Home-page: https://github.com/GKing-Dev/Cyrcos
+Author: Greg King
+Author-email: greg@king-dev.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: Circos matplotlib chord graph visualization graphics
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+UNKNOWN
+
+
