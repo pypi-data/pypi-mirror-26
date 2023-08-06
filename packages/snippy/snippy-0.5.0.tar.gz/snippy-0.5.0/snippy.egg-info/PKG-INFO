@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: snippy
+Version: 0.5.0
+Summary: Command and solution management from console.
+Home-page: https://github.com/heilaaks/snippy
+Author: Heikki J. Laaksonen
+Author-email: laaksonen.heikki.j@gmail.com
+License: Apache 2.0
+Description-Content-Type: UNKNOWN
+Description: Manage command examples and solutions directly from command line. The tool
+                                is intended to support software development and troubleshooting workflows by
+                                collecting command examples and troubleshooting solutions into one manager.
+Keywords: command solution snippet manager console
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
