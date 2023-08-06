@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyramid_default_cors/__init__.py
+pyramid_default_cors.egg-info/PKG-INFO
+pyramid_default_cors.egg-info/SOURCES.txt
+pyramid_default_cors.egg-info/dependency_links.txt
+pyramid_default_cors.egg-info/not-zip-safe
+pyramid_default_cors.egg-info/top_level.txt
