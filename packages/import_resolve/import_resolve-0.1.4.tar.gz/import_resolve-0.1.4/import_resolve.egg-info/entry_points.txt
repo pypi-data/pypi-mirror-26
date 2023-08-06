@@ -1,0 +1,3 @@
+[console_scripts]
+import_resolve = import_resolve.check:argParser
+
