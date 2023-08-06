@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+gtd.py.egg-info/PKG-INFO
+gtd.py.egg-info/SOURCES.txt
+gtd.py.egg-info/dependency_links.txt
+gtd.py.egg-info/entry_points.txt
+gtd.py.egg-info/requires.txt
+gtd.py.egg-info/top_level.txt
+todo/__init__.py
+todo/connection.py
+todo/display.py
+todo/exceptions.py
+todo/input.py
+todo/misc.py
