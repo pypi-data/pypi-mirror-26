@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+django_monitor_psutil.egg-info/PKG-INFO
+django_monitor_psutil.egg-info/SOURCES.txt
+django_monitor_psutil.egg-info/dependency_links.txt
+django_monitor_psutil.egg-info/top_level.txt
+monitor/__init__.py
+monitor/admin.py
+monitor/apps.py
+monitor/models.py
+monitor/tests.py
+monitor/urls.py
+monitor/views.py
+monitor/migrations/__init__.py
