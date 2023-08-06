@@ -1,0 +1,11 @@
+popcon/__init__.py,sha256=zq6v_OG0TAhRZEyZiFAP_yHqI5ECssa0O7gtX8mtYpg,182
+popcon/__main__.py,sha256=VUVMoCmL03E-ZhLsAzSl-6vGiiEY4ZVpUhPBSMsIaVc,264
+popcon/popcon.py,sha256=qRHdk1SNBhQmFtG6bYSHU7i0XKDLKtPxumJc0hKIA_g,10000
+popcon/version.py,sha256=wShy9YfBfroz0HjRH_aNNehkEu1_PLsd_GjTU5aCDPk,22
+python_popcon-1.5.0.dist-info/DESCRIPTION.rst,sha256=xO8HCNKjdBPLi_Mv37zUrWquzLzZgk8hMEx4tybjznI,70
+python_popcon-1.5.0.dist-info/METADATA,sha256=aa1ZMEhHfRBgrH7L4_0dGAitZ3YYuGm74FuwYwLCqRw,465
+python_popcon-1.5.0.dist-info/RECORD,,
+python_popcon-1.5.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+python_popcon-1.5.0.dist-info/entry_points.txt,sha256=gDXd4hB_ihjb6vsmHIVtY87wc3FtbVRkpXz5303iEew,49
+python_popcon-1.5.0.dist-info/metadata.json,sha256=UCr88Bkpk7SU2mV8oSwkj7923TByolXseeaev-xxkC8,755
+python_popcon-1.5.0.dist-info/top_level.txt,sha256=WDTHQJ0Sse4IqdibDYmfAHnsZT0Fk6Zjbb70ylMeLSY,7
