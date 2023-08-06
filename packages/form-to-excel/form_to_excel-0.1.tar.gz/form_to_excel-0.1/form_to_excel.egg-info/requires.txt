@@ -1,0 +1,4 @@
+openpyxl
+python_docx
+docx
+pdfminer.six
