@@ -1,0 +1,11 @@
+ipcbroker/__init__.py,sha256=X7GDo7fotLH2H5PIfmZR8PJ7hc5ngTAO0ZjQASJNt64,104
+ipcbroker/broker.py,sha256=hV2zhT4cZLsEDXzRyUD_Je2lg50Y9WQRMFRTISxID6M,4663
+ipcbroker/client.py,sha256=8Cq44nhGDISGgGH95sTS7ZGYByJ6waxFkzay7U9vTr8,6087
+ipcbroker/message.py,sha256=Q9fDEjkwO3qTdpH6amO3nYoMN6_b6TWm02SUeNKq6a0,979
+ipcbroker/threaded.py,sha256=VslS6nDQ3v76V4N_l38lF5GHhmJbcgyvaByoKgKMACo,1360
+ipcbroker-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ipcbroker-0.1.dist-info/METADATA,sha256=M8O-RMvmEn__zuVZM8kSzXQWyTp2ZnY3qe8Bkmbm7jQ,381
+ipcbroker-0.1.dist-info/RECORD,,
+ipcbroker-0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ipcbroker-0.1.dist-info/metadata.json,sha256=n2QyRq93xaxjN7U-mbZwZZJPZrr8l7eYkbGyBtHfnXo,559
+ipcbroker-0.1.dist-info/top_level.txt,sha256=MuoJCKxh3yomlvFTaGxh7TpExzbk_l_WtD8sBc8GmOE,10
