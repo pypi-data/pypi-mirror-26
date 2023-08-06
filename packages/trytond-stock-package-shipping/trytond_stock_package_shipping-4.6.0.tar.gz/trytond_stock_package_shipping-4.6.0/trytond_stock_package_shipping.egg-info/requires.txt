@@ -1,0 +1,8 @@
+trytond_carrier >= 4.6, < 4.7
+trytond_product >= 4.6, < 4.7
+trytond_stock >= 4.6, < 4.7
+trytond_stock_package >= 4.6, < 4.7
+trytond_stock_shipment_measurements >= 4.6, < 4.7
+trytond_sale_shipment_cost >= 4.6, < 4.7
+trytond_product_measurements >= 4.6, < 4.7
+trytond >= 4.6, < 4.7
