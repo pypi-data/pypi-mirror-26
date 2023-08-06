@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+hoops/__init__.py
+hoops/__version__.py
+hoops/cli.py
+hoops.egg-info/PKG-INFO
+hoops.egg-info/SOURCES.txt
+hoops.egg-info/dependency_links.txt
+hoops.egg-info/entry_points.txt
+hoops.egg-info/requires.txt
+hoops.egg-info/top_level.txt

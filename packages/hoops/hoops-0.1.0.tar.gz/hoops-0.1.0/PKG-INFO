@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: hoops
+Version: 0.1.0
+Summary: Hoops, The NBA cli
+Home-page: https://github.com/Germione/hoops
+Author: Jerome Pradier
+Author-email: jerome.pradier@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: Eleven
+        ========
+        
+        Packaging is like a Demogorgon : One of the most terrifying of monsters !!!
+        
+        This repository is here to simplify that.
+        
+        It's the start for all my future python repo's
+        
+        Still in Development
+        
+        Usage
+        -----
+        
+        Launch the command ``eleven``.
+        
+        
+        Acknowledgements
+        ------
+        
+        http://python-packaging.readthedocs.io/en/latest/index.html
+        
+        
+Keywords: packaging setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
