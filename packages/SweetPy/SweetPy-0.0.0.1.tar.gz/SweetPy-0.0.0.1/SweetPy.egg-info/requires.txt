@@ -1,0 +1,9 @@
+requests
+psycopg2
+SQLAlchemy
+japronto
+mutagen
+pycrypto
+jinja2
+psutil
+ldap3
