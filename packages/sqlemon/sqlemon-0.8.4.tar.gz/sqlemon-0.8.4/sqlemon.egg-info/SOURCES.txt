@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bin/cloud_sql_proxy
+bin/start_cloud_proxy
+bin/start_mysql_client
+sqlemon/__init__.py
+sqlemon/connection_strings.py
+sqlemon.egg-info/PKG-INFO
+sqlemon.egg-info/SOURCES.txt
+sqlemon.egg-info/dependency_links.txt
+sqlemon.egg-info/pbr.json
+sqlemon.egg-info/requires.txt
+sqlemon.egg-info/top_level.txt
