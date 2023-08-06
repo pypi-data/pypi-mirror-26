@@ -1,0 +1,553 @@
+// Format: Strict JSON, plus JavaScript single-line comments, like this. The
+//         comments are stripped before the contents of this file is parsed.
+//
+// Important: Comments are only allowed on otherwise empty lines; not behind
+//            non-whitespace characters.
+
+{
+    "settings": {
+
+        // Basic system settings
+        // =====================
+
+        // Primary fully qualified domain name of the Critic server.
+        "system.hostname": null,
+        // System email address, which is used as "Sender" of emails, and also
+        // as "From" when it doesn't make sense to use a user's email address.
+        // If null, a default address is constructed using the system username
+        // and FQDN.
+        "system.email": null,
+        // List of recipients of emails about the system, such as error reports
+        // or notifications about user registrations. If empty, such emails are
+        // not sent.
+        "system.recipients": [],
+        // True if this Critic instance is running in debug mode.
+        "system.is_debugging": false,
+        // True if this Critic instance is a development install.
+        "system.is_development": false,
+        // True if this Critic instance is "quick started."
+        "system.is_quickstart": false,
+        // True if this Critic instance is run by the testing framework.
+        "system.is_testing": false,
+
+
+        // Paths
+        // =====
+
+        // Directory into which almost all system data is installed/generated.
+        "paths.home": "/var/lib/critic/main",
+        // Directory in which Git repositories are housed.
+        "paths.repositories": "/var/git",
+        // Directory into which temporary data is written. This data will only
+        // affect performance if cleaned.
+        "paths.cache": "/var/cache/critic/main",
+        // Directory into which background service log files are written.
+        "paths.logs": "/var/log/critic/main",
+        // Directory in which runtime files (typically PID files and UNIX
+        // sockets) are created. It is perfectly fine if this location does not
+        // survive a system reboot.
+        "paths.runtime": "/var/run/critic/main",
+        // Directory in which system administration executables are created.
+        "paths.executables": "/usr/sbin",
+        // Directory to write coverage measuring data to. Only set/used when
+        // system.is_testing==true.
+        "paths.coverage": null,
+
+
+        // Executables
+        // ===========
+        // Unless otherwise specified, when set to null these default to what
+        // is found in the $PATH at runtime. The lookup is performed by calling
+        // `distutils.spawn.find_executable()`.
+
+        // Python executable. If null, `sys.executable` is used. Note that if
+        // Critic is installed in a virtual environment, this must be the
+        // Python executable from that virtual environment. Otherwise, it must
+        // be a Python 3.6 or later Python interpreter.
+        "executables.python": null,
+        // Git executable.
+        "executables.git": null,
+        // Git environment overrides. These are added to the environment of any
+        // Git process spawned by Critic.
+        "executables.git_environment": {},
+        // Tar (Tape ARchiver) executable.
+        "executables.tar": null,
+
+
+        // Web frontend settings
+        // =====================
+
+        // Configured HTTP(S) front-end. Available options:
+        //  "nginx"  - Use nginx as the front-end.
+        //  "uwsgi"  - Use uWSGI as the front-end.
+        //  "apache" - Use Apache as the front-end.
+        //  "none"   - Custom configuration. Critic will not attempt to install
+        //             or keep updated any configuration files.
+        "frontend.http_frontend": "nginx",
+        // Configured WSGI container. Available options:
+        //  "uwsgi" - Use uWSGI as the WSGI container.
+        //  "none"  - Custom configuration. Critic will not attempt to install
+        //            or keep updated any configuration files.
+        "frontend.wsgi_container": "uwsgi",
+        // Authentication mode. Available options:
+        //  "critic"  -  Critic handles authentication. Credentials are checked
+        //               using one of the supported databases (see below.)
+        //  "host"    -  The host web server handles authentication. Critic uses
+        //               the REMOTE_USER environment variable as the truth. If
+        //               it does not match a record in Critic's user table, a
+        //               matching record is inserted automatically.
+        //  <provider> - Name of an external OAuth2 provider.
+        "frontend.authentication_mode": "critic",
+        // Session type. Available options:
+        //  "cookie"   - A login dialog and a session cookie is used. HTTP
+        //               authentication is also accepted, but not requested.
+        //  "httpauth" - HTTP authentication is required. This is not compatible
+        //               with using an external OAuth2 provider.
+        // Not used if frontend.authentication_mode=="host".
+        "frontend.session_type": "cookie",
+        // Session max age in seconds. If zero, sessions stay valid until the
+        // user explicitly signs out.
+        // Not used if frontend.session_type!="cookie".
+        "frontend.session_max_age": 0,
+        // Supported front-end access scheme. Available options:
+        //  "http"  - Only HTTP.
+        //  "https" - Only HTTPS.
+        //  "both"  - Both HTTP and HTTPS.
+        // Primarily, this is determined by how the HTTP front-end is
+        // configured, which is outside the scope of these settings. Critic will
+        // install/maintain HTTP front-end configuration files that achieve the
+        // requested scheme, but in particular HTTPS requires additional
+        // configuration (and certificate management) that Critic will not take
+        // part in.
+        "frontend.access_scheme": "http",
+
+
+        // Authentication settings
+        // =======================
+
+        // Password hashing
+        // ----------------
+        // Accepted password hashing schemes. This applies to passwords
+        // currently stored in Critic's database. If the scheme used to hash
+        // a stored password is removed from this list, the user will not be
+        // able to authenticate.
+        "authentication.accepted_schemes": [
+            "argon2"
+        ],
+        // Default password hashing scheme. This is the scheme used to hash all
+        // new passwords, and also to which all current passwords are "migrated"
+        // upon authentication if currently hashed using another (accepted)
+        // scheme.
+        "authentication.default_scheme": "argon2",
+        // Minimum rounds of hashing to apply.
+        "authentication.minimum_rounds": 1024,
+
+        // Authentication databases
+        // ------------------------
+        // Authentication databases for Critic's internal authentication
+        // mechanism.
+        "authentication.databases": {
+            // Use hashed passwords stored in Critic's own database.
+            "internal": {},
+
+            // Use an external LDAP database.
+            "ldap": {
+                // List of input fields to show in Critic's UI.
+                "fields": [{
+                    "identifier": "username",
+                    "label": "Username:",
+                    "is_password": false,
+                    "description": null
+                }, {
+                    "identifier": "password",
+                    "label": "Passname:",
+                    "is_password": true,
+                    "description": null
+                }],
+
+                // URL of LDAP database.
+                "url": null,
+
+                // Use TLS when connecting to LDAP server.
+                "use_tls": true,
+
+                // Credentials field. The value is the identifier of one of the
+                // fields declared above, typically the password field.
+                "credentials": "password",
+
+                // The following two values are interpreted as Python format
+                // strings that can reference input fields by their identifier.
+
+                // LDAP search base.
+                "search_base": null,
+                // LDAP search filter.
+                "search_filter": "(uid=%(username)s)",
+
+                // If true, automatically create Critic user records when a
+                // previously not seen user authenticates successfully. This
+                // effectively makes Critic's user database a slave database
+                // to the LDAP database, which is probably a good thing.
+                "create_user": true,
+
+                // User name LDAP attribute. This is used to map a successful
+                // LDAP authentication to an existing Critic user record (or
+                // to create a new Critic user record.)
+                "username_attribute": "uid",
+
+                // Display name LDAP attribute. This is optionally used to
+                // set the initial display name for a created user.
+                "fullname_attribute": null,
+
+                // Email LDAP attribute. This is optionally used to set the
+                // initial primary email address for a create user.
+                "email_attribute": null,
+
+                // List of required LDAP groups. Each element is an object with
+                // three items:
+                //  "dn" - The LDAP group's distinguished name.
+                //  "members_attribute" - The group attribute that contains a
+                //                        list of members in the group.
+                //  "member_value" - The value to search for in the members
+                //                   list. This is a Python format string that
+                //                   can reference the input fields as above,
+                //                   and also "%(dn)s" for the authenticated
+                //                   user's distinguished name.
+                // If multiple groups are included in the list, the user must
+                // be a member of each of them.
+                "required_groups": [],
+
+                // Amount of time in seconds to cache a successful
+                // authentication before asking the LDAP server again. Zero or
+                // negative means no caching is done. Caching is especially
+                // useful when HTTP authentication is used, since the user is
+                // re-authenticated for every HTTP request made. When session
+                // cookies are used, the LDAP database will only be consulted
+                // once per session.
+                "cache_max_age": 0
+            }
+        },
+        // Authentcation database to use.
+        "authentication.database": "internal",
+        // If true, enable use of access tokens for authentication. An access
+        // token is a user-controlled set of revokable credentials that can be
+        // restricted in scope (to only support a specific type of access).
+        // They are especially useful when setting up scripted access to the
+        // system, to avoid storing a user's real credentials in plain text on
+        // the accessing system.
+        "authentication.enable_access_tokens": true,
+
+        // External authentication providers
+        // ---------------------------------
+        // External trusted services to delegate authentication to using the
+        // OAuth2 mechanism (or something similar).
+        "authentication.external_providers": {
+            // GitHub OAuth2 authentication. The Critic system must be
+            // registered as an application by a GitHub user at:
+            //
+            //   https://github.com/settings/applications/new
+            "github": {
+                // If true, allow users to authenticate using their GitHub
+                // accounts.
+                "enabled": false,
+
+                // If true, users authenticating via a GitHub are allowed to
+                // register Critic accounts. This overrides the generic
+                // users.allow_registration setting when set to true. If the
+                // generic setting is set to true, this setting is ignored.
+                "allow_user_registration": false,
+
+                // Bypass Critic's user creation UI when creating a new Critic
+                // user after authenticating via GitHub. GitHub account
+                // information is used to set the user's display name and email
+                // address.
+                "bypass_createuser": false,
+
+                // If true, require independent verification of email addresses
+                // received from GitHub. Since GitHub will have verified the
+                // address already, this is typically unnecessary. If the
+                // generic users.verify_email_addresses setting is set to false,
+                // this setting is ignored.
+                "verify_email_addresses": false,
+
+                // Authentication callback URI. This same value must be provided
+                // to GitHub when registering the Critic application.
+                "redirect_uri": "/oauth/github",
+
+                // GitHub application details.
+                "client_id": null,
+                "client_secret": null
+            },
+
+            // Google OAuth2-based authentication. The Critic system must be
+            // registered as a project at:
+            //
+            //   https://cloud.google.com/console/project
+            //
+            // and then have an OAuth2 client id created using the project
+            // administration UI.
+            "google": {
+                // If true, allow users to authenticate using their Google
+                // accounts.
+                "enabled": false,
+
+                // If true, users authenticating via a Google are allowed to
+                // register Critic accounts. This overrides the generic
+                // users.allow_registration setting when set to true. If the
+                // generic setting is set to true, this setting is ignored.
+                "allow_user_registration": false,
+
+                // Bypass Critic's user creation UI when creating a new Critic
+                // user after authenticating via Google. Google account
+                // information is used to set the user's display name and email
+                // address.
+                "bypass_createuser": false,
+
+                // If true, require independent verification of email addresses
+                // received from Google. Since Google will have verified the
+                // address already, this is typically unnecessary. If the
+                // generic users.verify_email_addresses setting is set to false,
+                // this setting is ignored.
+                "verify_email_addresses": false,
+
+                // Authentication callback URI. This same value must be provided
+                // to Google when registering the Critic application.
+                "redirect_uri": "/oauth/github",
+
+                // Google OAuth2 client details.
+                "client_id": null,
+                "client_secret": null
+            }
+        },
+
+
+        // User management
+        // ===============
+
+        // If true, most of the system is accessible without authentication.
+        "users.allow_anonymous": true,
+        // If true, new users can create Critic user records themselves, without
+        // involvement of Critic administrators.
+        "users.allow_registration": false,
+        // Valid user name pattern. A regular expression against which new user
+        // names are checked.
+        // Not used if users.allow_registration==false.
+        "users.name_pattern": "^\\w[-\\._\\w]*\\w$",
+        // User name pattern explaination. Displayed if a user's requested name
+        // is rejected because it doesn't match the pattern. Can be a single
+        // string or a list of strings.
+        "users.name_pattern_description": [
+            "Must contain only alpha-numerics, periods, underscores or ",
+            "dashes, and must start and end with alpha-numerics, and be at ",
+            "least two characters long."
+        ],
+        // If true, send a verification email to user-provided email addresses
+        // with a link they must follow to "activate" the email address.
+        "users.verify_email_addresses": true,
+
+
+        // Git repository management
+        // =========================
+
+        // If true, review branches belonging to closed or dropped reviews are
+        // "archived" a configuration amount of time after the review was
+        // closed or dropped. This is useful to avoid an endless build-up of
+        // mostly obsolete branches in the repository. All commits referenced
+        // by the branch are kept alive, and the branch can be "resurrected" at
+        // any time (including automatically if the review is reopened.)
+        "repositories.archive_review_branches": true,
+        // Supported repository URL types. Valid options are:
+        //  "git"  - "git://<hostname>/<path>"
+        //           Note that an administrator must run `git daemon` manually
+        //           and that access via this protocol is unauthenticated.
+        //  "http" - "<scheme>://<hostname>/<path>"
+        //           Note that HTTP/HTTPS are supported according to the front-
+        //           end configuration. This is the only option that requires
+        //           no extra administration to work fully.
+        //  "ssh"  - "ssh://<hostname>/<path>"
+        //           Note that SSH access must be granted to system accounts
+        //           with the same names as the corresponding Critic users.
+        //  "host" - "<hostname>:<path>"
+        //           Equivalent to "ssh", just a different syntax.
+        // Note that this setting primarily controls what URL types are
+        // advertised, and not so much what actually work.
+        "repositories.url_types": ["http"],
+
+
+        // Content and encodings
+        // =====================
+
+        // Default encodings. When converting bytes to text and the encoding is
+        // not known/declared, try these encodings in sequence, picking the
+        // first that converts with no errors. Note that some encodings, like
+        // "latin-1", maps every byte value to a character and thus cannot fail.
+        // It makes no sense to have more than one such encoding in the list, or
+        // to have it anything but last.
+        // If none of the encodings in the list succeed, the fallback is to
+        // convert to 7-bit ASCII, replacing all out-of-range bytes with
+        // question marks ('?').
+        // This mechanism is used primarily for Git metadata and for the content
+        // of files in repositories.
+        "content.default_encodings": ["utf-8"],
+        // File extension to MIME type mappings. The mappings provided by the
+        // built-in Python module `mimetypes` are used as a fallback, meaning it
+        // is typically quite safe to leave this setting empty.
+        // This mapping is used both for Critic's own resources and in some
+        // cases when displaying file content from repositories.
+        "content.mimetypes": {},
+
+
+        // Email delivery settings
+        // =======================
+
+        // False => no attempts will be made to deliver mail.
+        "smtp.configured": false,
+
+        // SMTP server connection details.
+        "smtp.host": null,
+        "smtp.port": 25,
+        "smtp.use_ssl": false,
+        "smtp.use_starttls": false,
+        // Credentials for SMTP authentication. This setting is "privileged",
+        // normal users will not be able to access it.
+        "smtp.credentials": null,
+
+
+        // Various limits
+        // ==============
+
+        // Maximum lines of added file to include in diffs, when the file's
+        // language or syntax is recognized. Added files larger than this are
+        // still mentioned in the diff, but the actual content is not fetched
+        // unless the user asks for it.
+        "limits.maximum_added_lines_recognized": 8000,
+
+        // Similar to above, but for file's whose language / syntax is not
+        // recognized.
+        "limits.maximum_added_lines_unrecognized": 2000,
+
+        // Maximum number of commits associated to a branch before resorting to
+        // a simpler list display of the branch log.
+        "limits.maximum_associated_commits": 4000,
+
+
+        // Extension settings
+        // ==================
+
+        // False => Extension support complete disabled.
+        "extensions.enabled": false,
+
+        // Directory to scan for system extensions. Null means no scanning, and
+        // thus no system extensions. 
+        "extensions.system_dir": null,
+        // Sub-directory in a user's home directory to scan for extensions. Null
+        // means regular users are not allowed to publish extensions.
+        "extensions.user_dir": "CriticExtensions",
+        // Supported extension flavors.
+        "extensions.flavors": {
+            "js/v8": {
+                "executable": null,
+                "library": "js/v8"
+            }
+        },
+        // Default flavor.
+        "extensions.default_flavor": "js/v8",
+        // Directory in which snapshots of extension versions are stored. If
+        // this is a relative directory, it will be relative to the data dir,
+        // which by default is /var/lib/critic/.
+        "extensions.install_dir": "extension-snapshots",
+        // Directory in which extension workcopy clones of repositories are
+        // stored. If null, such workcopies are not allowed. If this is a
+        // relative directory, it will be relative to the data dir, which by
+        // default is /var/lib/critic/.
+        "extensions.workcopy_dir": null,
+        // Timeout in seconds for "long" operations (e.g. "Page" roles.)
+        "extensions.long_timeout": 300,
+        // Timeout in seconds for "short" operations (e.g. "Inject" roles.)
+        "extensions.short_timeout": 5,
+
+
+        // Background services
+        // ===================
+
+        "services": {
+            // The service manager, responsible for running the other services.
+            "servicemanager": {},
+
+            // Syntax highlight generation/caching.
+            "highlight": {
+                // Maximum parallel worker processes. Default: number of CPU
+                // cores on the system.
+                "max_workers": null,
+                // Code context limits.
+                "min_context_length": 5,
+                "max_context_length": 256,
+                // Time of day to compact the cache.
+                "compact_at": "03:15"
+            },
+
+            // Changeset generation/caching.
+            "changeset": {
+                // Maximum parallel worker processes. Default: number of CPU
+                // cores on the system divided by two.
+                "max_workers": null,
+                // Time of day to purge old changesets from the database.
+                "purge_at": "02:15"
+            },
+
+            // Git hook service.
+            "githook": {},
+
+            // Branch tracker service. Fetches branches from repositories on
+            // other systems and pushes them to Critic's repositories.
+            "branchtracker": {},
+
+            // Branch updater service. Updates the database in response to ref
+            // updates in Critic's Git repositories.
+            "branchupdater": {
+                // Amount of time to wait between the pre-receive hook accepting
+                // a ref update and the ref update actually being performed.
+                // Git will not notify about updates aborted after running the
+                // pre-receive hook, so we need to just have a timeout.
+                "preliminary_timeout": 30
+            },
+
+            // Review updater service. Processes updates of review branches.
+            "reviewupdater": {},
+
+            // Mail delivery service. Delivers emails generated by other parts
+            // of Critic to the configured SMTP server.
+            "maildelivery": {
+                // Timeout in seconds before abandoning an attempt to connect to
+                // the SMTP server. Upon failure, the service will wait for a
+                // short amount of time and then simply try again.
+                "connection_timeout": 60,
+
+                // Amount of time in seconds to keep the SMTP server connection
+                // alive while idle before disconnecting.
+                "connection_idle_timeout": 30
+            },
+
+            // Maintenance. Performs daily maintenance tasks (not performed by
+            // other services themselves.)
+            "maintenance": {
+                // Time of day to perform maintenance tasks.
+                "run_at": "04:00"
+            },
+
+            // Extension tasks. Performs calls to asynchronous extension hooks.
+            "extensiontasks": {},
+
+            // Extension runner. Actually runs extension processes. Also
+            // maintains a cache of pre-started extension processes waiting to
+            // improve responsiveness.
+            "extensionrunner": {
+                // Number of pre-started processes to keep ready for duty.
+                "cached_processes": 5
+            }
+        }
+    },
+
+    "privileged": [
+        "smtp.credentials"
+    ]
+}

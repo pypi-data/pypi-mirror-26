@@ -1,0 +1,4 @@
+[console_scripts]
+criticctl = criticctl:main
+pre-post-receive = hooks.pre_post_receive:main
+
