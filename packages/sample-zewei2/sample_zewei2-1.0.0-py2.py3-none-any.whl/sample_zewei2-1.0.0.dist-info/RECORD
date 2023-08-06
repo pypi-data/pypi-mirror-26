@@ -1,0 +1,12 @@
+sample/__init__.py,sha256=EreorrdCq8fmcG7-goUqgd7vfL_-nIT6nJuSwBIedK0,115
+sample/package_data.dat,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+sample/sample.py,sha256=J2mM3FCKtsAE6iscgRigXd7pEENDfE8n6XbTYO6aVfg,64
+sample/test1.py,sha256=f-XEHTDMx54YYlxD-o6ylUkmt2YsNd5PmMkmcn5Cxwc,38
+sample_zewei2-1.0.0.data/data/my_data/data_file,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+sample_zewei2-1.0.0.dist-info/DESCRIPTION.rst,sha256=8KINK9-piD4aOcNzaTzBx9CBJzww_FowSm4lnbT-OBc,1084
+sample_zewei2-1.0.0.dist-info/METADATA,sha256=B9B2yyNXYhrmi4G7wym5uA1MM5RLuzVdXKZM3cJ98z4,2020
+sample_zewei2-1.0.0.dist-info/RECORD,,
+sample_zewei2-1.0.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+sample_zewei2-1.0.0.dist-info/entry_points.txt,sha256=r4Embxpt72TOTFlw-r6_pOwAvItV_Z_Rq0FzZ1trQTY,51
+sample_zewei2-1.0.0.dist-info/metadata.json,sha256=3GXnksOvpBdyO6QJqCknA7LFqD0B5MWraLVVFNH4skw,1230
+sample_zewei2-1.0.0.dist-info/top_level.txt,sha256=qvn_SI4HZ9peodVhGOb2WhbFYzsM78H6CJvTqxgQYT0,7
