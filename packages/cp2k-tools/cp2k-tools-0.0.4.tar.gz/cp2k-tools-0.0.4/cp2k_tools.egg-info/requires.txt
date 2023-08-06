@@ -1,0 +1,6 @@
+setuptools
+docopt
+parsimonious>=0.8
+click>=6.7
+regex>=2017.09.23
+numpy>=1.13.3
