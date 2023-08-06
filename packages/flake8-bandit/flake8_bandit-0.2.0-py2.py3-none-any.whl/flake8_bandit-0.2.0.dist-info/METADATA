@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: flake8-bandit
+Version: 0.2.0
+Summary: Automated security testing with bandit and flake8.
+Home-page: https://github.com/tylerwince/flake8-bandit
+Author: Tyler Wince
+Author-email: tyler@myndshft.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Flake8
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3
+Requires-Dist: flake8
+Requires-Dist: bandit
+
+
+# flake8-bandit
+
+Automated security testing built into flake8.
+
+## Getting Started
+
+`pip install flake8-bandit`
+
+This project is still in it's infancy! Please report any bugs you find or if it is not working in your code editor please let me know!
+
+
