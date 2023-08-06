@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: featureselection
+Version: 0.1
+Summary: Feature selection algotithm based on the ML model feature importances and permutations ranks
+Home-page: https://github.com/gasparian/featureSelection
+Author: gasparian
+Author-email: gasparian.andrey@yandex.ru
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

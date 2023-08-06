@@ -1,0 +1,8 @@
+setup.py
+featureSelection/__init__.py
+featureSelection/featureSelection.py
+featureselection.egg-info/PKG-INFO
+featureselection.egg-info/SOURCES.txt
+featureselection.egg-info/dependency_links.txt
+featureselection.egg-info/not-zip-safe
+featureselection.egg-info/top_level.txt
