@@ -1,0 +1,15 @@
+bruno_util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bruno_util/cached_property.py,sha256=bOB0_81iPtX4IlTYnf8vS5v8OcyiPtBA9h40m4zJqmY,1559
+bruno_util/exampleSimpleMapReduce.py,sha256=Xj6R-4KHjkpkfIEFya4HGDKvWNRSHMi-Kla30gdejl8,1664
+bruno_util/math.py,sha256=zikRoHWLRA0fSgYFhTxzdojDtEIZ2n-TUtHYsEM_BUU,700
+bruno_util/multiprocessing_mapreduce.py,sha256=10egob0k4Qi3ub1jboXCaKyjZKe6W5dECLroh_jBZU4,2664
+bruno_util/pandas_util.py,sha256=b5D3LNtfbk_5Zj7D6q-DwpGJrftClReAgz8sajXsu38,162
+bruno_util/path.py,sha256=njpUB6Er6dpc9Q-KhuB8nptlGNDfGO8_EjwAhm546Aw,539
+bruno_util/pickle_variables.py,sha256=obVd_se9QKvjMwVt2bQzekyZWkjzOheVSaO59azZlbs,953
+bruno_util/utils.py,sha256=gj8g8WAuPCtDFfAakOIeI-Msyl6nZlFf5VcFNppvNhY,6028
+bruno_util-1.2.0.dist-info/DESCRIPTION.rst,sha256=5tqH0E_N6fuDwbpGRF2bJJ-FIVrHcC_nIp5YXaEnrLY,196
+bruno_util-1.2.0.dist-info/METADATA,sha256=YhJGClEemUQ54zjKzbk6P8fpQC5mKjY3E9qurPxPTpU,761
+bruno_util-1.2.0.dist-info/RECORD,,
+bruno_util-1.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+bruno_util-1.2.0.dist-info/metadata.json,sha256=dQAl6SSPvqs9ZnlHuN2XrPAG05hxcxJEJZDPGX3HKr4,778
+bruno_util-1.2.0.dist-info/top_level.txt,sha256=O-_CHkwxmX0bczTPur97a51RISPFxXzRiwOrm5OGvpA,11
