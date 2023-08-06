@@ -1,0 +1,4 @@
+ginga
+astropy
+pillow
+hcam_widgets
