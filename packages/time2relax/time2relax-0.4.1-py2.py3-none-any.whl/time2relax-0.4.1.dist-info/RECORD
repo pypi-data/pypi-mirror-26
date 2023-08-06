@@ -1,0 +1,11 @@
+time2relax/__init__.py,sha256=CchxvUP4MGhrBGJ7PAJWEXX0Uve40bSRPXSiZSBeWgA,909
+time2relax/__version__.py,sha256=s7IWC4HCzKcHxW4OuNQOStN6z2W2CB6WL-87JZCYeEE,353
+time2relax/exceptions.py,sha256=XbV0YrDDPc88n_EaejNFaiB5rIjjULQ6ptKbiIqqPZk,696
+time2relax/models.py,sha256=hbrARkd9DuCYQGWKNtIum6oNBCatAjXala1DrHdMA-k,13696
+time2relax/utils.py,sha256=YyjHSqBIGtOYfvR-Qn4PcL3cu23aIXOjOsXgYzxbwVE,3816
+time2relax-0.4.1.dist-info/DESCRIPTION.rst,sha256=_pBRnC7R07Ua3akH5mSaiHhazNHm7F2N_kxjR-KjPfY,3589
+time2relax-0.4.1.dist-info/METADATA,sha256=Ttq05MlDTe5e9bTsYfEUCGDHHF4l5y8i16TFnZa_rQU,4466
+time2relax-0.4.1.dist-info/RECORD,,
+time2relax-0.4.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+time2relax-0.4.1.dist-info/metadata.json,sha256=tH9bp1spYR6kos8m9Bcvkg_NJgpN7joC7bfcEcId8gQ,1054
+time2relax-0.4.1.dist-info/top_level.txt,sha256=vepp6sYkzfAaHJyURJeZu69QaG7i-imUvFunB-thUzg,11
