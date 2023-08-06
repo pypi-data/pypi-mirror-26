@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+caighdean/__init__.py
+caighdean/exceptions.py
+caighdean/nltk_setup.py
+caighdean/translator.py
+caighdean.egg-info/PKG-INFO
+caighdean.egg-info/SOURCES.txt
+caighdean.egg-info/dependency_links.txt
+caighdean.egg-info/requires.txt
+caighdean.egg-info/top_level.txt

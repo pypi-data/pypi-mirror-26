@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: caighdean
+Version: 0.0.1
+Summary: Python Caighdean
+Home-page: https://github.com/phlax/caighdean
+Author: Ryan Northey
+Author-email: ryan@synca.io
+License: GPL3
+Description-Content-Type: UNKNOWN
+Description: Python caighdean
+Keywords: python caighdean
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2.7
