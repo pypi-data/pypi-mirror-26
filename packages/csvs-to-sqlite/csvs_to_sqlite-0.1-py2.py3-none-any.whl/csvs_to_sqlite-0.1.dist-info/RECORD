@@ -1,0 +1,10 @@
+csvs_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csvs_to_sqlite/cli.py,sha256=57nHed7MPne8b-qeFO2b3wIjyG4RSKbHIKhc6rPsHeg,1190
+csvs_to_sqlite/utils.py,sha256=JsNVDL0PF-79ROo6PdK3es-uH-Nbg8AVV-lIL4DyQAo,1470
+csvs_to_sqlite-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+csvs_to_sqlite-0.1.dist-info/METADATA,sha256=muGna-AFTkR9S0l_ydyAuG5i2_nNVK--W5WsuPx06Vg,747
+csvs_to_sqlite-0.1.dist-info/RECORD,,
+csvs_to_sqlite-0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+csvs_to_sqlite-0.1.dist-info/entry_points.txt,sha256=-8o0VzqKdZGOp_QzaZJVdqt1HZVfsMk6TUWml58fu1M,77
+csvs_to_sqlite-0.1.dist-info/metadata.json,sha256=u8YOvrzVmZwbwukFjQ7gvYsybRNMWJg4GenrlZLQye0,1045
+csvs_to_sqlite-0.1.dist-info/top_level.txt,sha256=4FCkq7_bvF-sPEoiApJk1jw20SN3yEXev9czl7uHN6I,15
