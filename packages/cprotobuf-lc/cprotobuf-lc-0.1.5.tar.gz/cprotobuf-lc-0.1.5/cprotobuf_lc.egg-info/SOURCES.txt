@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+protoc-gen-cprotobuf
+setup.py
+cprotobuf/__init__.py
+cprotobuf/internal.c
+cprotobuf/internal.pyx
+cprotobuf/plugin_pb.py
+cprotobuf/utils.pxi
+cprotobuf_lc.egg-info/PKG-INFO
+cprotobuf_lc.egg-info/SOURCES.txt
+cprotobuf_lc.egg-info/dependency_links.txt
+cprotobuf_lc.egg-info/top_level.txt
+test/test_decode_subobject.py
+test/test_pb.py
+test/test_pb2.py
+test/test_skip_optional.py
