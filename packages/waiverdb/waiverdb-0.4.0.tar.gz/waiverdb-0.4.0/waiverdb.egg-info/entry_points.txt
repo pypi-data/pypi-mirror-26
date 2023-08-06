@@ -1,0 +1,3 @@
+[console_scripts]
+waiverdb-cli = waiverdb.cli:cli
+
