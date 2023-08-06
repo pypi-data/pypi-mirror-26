@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mdmail/__init__.py
+mdmail/api.py
+mdmail/cli.py
+mdmail/helpers.py
+mdmail.egg-info/PKG-INFO
+mdmail.egg-info/SOURCES.txt
+mdmail.egg-info/dependency_links.txt
+mdmail.egg-info/entry_points.txt
+mdmail.egg-info/requires.txt
+mdmail.egg-info/top_level.txt
