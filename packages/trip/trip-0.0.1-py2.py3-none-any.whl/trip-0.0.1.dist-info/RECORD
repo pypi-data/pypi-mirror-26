@@ -1,0 +1,14 @@
+trip/__init__.py,sha256=LMlHxd19qhuEwP5-lcCrkXc78ZdMqzSBLf5hIiNCL2Q,431
+trip/__version__.py,sha256=-LGgpVzBvQsNFEbahLrAD1u9e1Ur3koil2eg54r1t7Y,23
+trip/adapters.py,sha256=Ekj_81V533TUzXR8wGcU2ScvrHqjmqpgpcIk3DDPBJY,19632
+trip/api.py,sha256=ZIYM2VEsEIoEzQWDmsbzBrzE2PVY1CGxk0q3m955pks,6352
+trip/exceptions.py,sha256=OH4bqHZMRzh44sKvI8MP2Re43xg-APk2EtJ64f2JCAg,422
+trip/models.py,sha256=kHmR0BHJC-NrcGn1PeIdeI7W2VdciSa14FnvD5QTiQ8,19470
+trip/sessions.py,sha256=kCwlz02k3OQ1TxvSgzXGoEBX7ewGm4O058myFkeEglw,18238
+trip/utils.py,sha256=n-8piOf_KrvHm0Y18_px68S3-hv68XhuH3ELuTegLIA,1484
+trip-0.0.1.dist-info/DESCRIPTION.rst,sha256=IPuJNz70CBkkydmC-p3YkDS0MIOFUcBf1zj3b3LNwmU,3883
+trip-0.0.1.dist-info/METADATA,sha256=gC6gA6rd8v9eNBsJkprmG_UOeprK-QTDUSdbS3Me7OY,4681
+trip-0.0.1.dist-info/RECORD,,
+trip-0.0.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+trip-0.0.1.dist-info/metadata.json,sha256=rz5WjAh3JCPixcYy09J9JqgLT-KoU6Serg7DlXE1b0I,834
+trip-0.0.1.dist-info/top_level.txt,sha256=UqZ7M6M9gwQ33JvQQLKw1rAJ3WWtGOLsEMWTYrqhY-M,5
