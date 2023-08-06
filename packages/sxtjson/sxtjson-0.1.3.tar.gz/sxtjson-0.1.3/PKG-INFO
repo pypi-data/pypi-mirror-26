@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sxtjson
+Version: 0.1.3
+Summary: simple json parse
+Home-page: http://www.bjsxt.com
+Author: sxt
+Author-email: justcodepy@gmail.com
+License: MIT
+Description: simple json parse
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python

@@ -1,0 +1,9 @@
+README.rst
+setup.py
+sxtjson/__init__.py
+sxtjson/jsonparser.py
+sxtjson.egg-info/PKG-INFO
+sxtjson.egg-info/SOURCES.txt
+sxtjson.egg-info/dependency_links.txt
+sxtjson.egg-info/requires.txt
+sxtjson.egg-info/top_level.txt
