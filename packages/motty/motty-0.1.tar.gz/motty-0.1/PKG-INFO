@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: motty
+Version: 0.1
+Summary: utils for http mocking
+Home-page: https://github.com/scalalang2/motty
+Author: David Lee
+Author-email: scalalang2@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/scalalang2/motty/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: mocking,motty,http
+Platform: UNKNOWN
