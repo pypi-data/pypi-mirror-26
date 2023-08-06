@@ -1,0 +1,12 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+flask_redislite.py
+setup.py
+Flask_Redislite.egg-info/PKG-INFO
+Flask_Redislite.egg-info/SOURCES.txt
+Flask_Redislite.egg-info/dependency_links.txt
+Flask_Redislite.egg-info/not-zip-safe
+Flask_Redislite.egg-info/requires.txt
+Flask_Redislite.egg-info/top_level.txt
