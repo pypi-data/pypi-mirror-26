@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: kms-encrypter
+Version: 0.1.2
+Summary: Encrypt using AWS KMS
+Home-page: https://github.com/haradashinya/kms_encrypter
+Author: furodrive
+Author-email: haradashinya@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
