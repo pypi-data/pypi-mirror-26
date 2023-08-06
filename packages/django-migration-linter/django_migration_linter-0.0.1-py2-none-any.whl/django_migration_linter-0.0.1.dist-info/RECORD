@@ -1,0 +1,15 @@
+django_migration_linter/migration_linter.py,sha256=iQ9pR_qL03MryiJOZ7BPzdr7ZNK-zfKJFeh17viY77o,11865
+django_migration_linter/__init__.py,sha256=KBTZobiVEactO2LSWCcuFJIkRUzXsLEgy4bOc6zlKZ0,39
+django_migration_linter-0.0.1.dist-info/DESCRIPTION.rst,sha256=bCmFU8ypjnmCLfs64n9dPdqufPo6XkfhYWmXjkSqyNw,1456
+django_migration_linter-0.0.1.dist-info/entry_points.txt,sha256=a8BvYuKprqZUH2X44cxrbffFbnmEWm1SiObaSLUjmWY,92
+django_migration_linter-0.0.1.dist-info/METADATA,sha256=hE4qu-AiPHuRlZB3urmwnPuJxilsyWYjJvG8AWfFHDg,2245
+django_migration_linter-0.0.1.dist-info/metadata.json,sha256=UaWKTotRjrEjSEw3tEbxn2YU48MKObgVh_EFesCgt14,1140
+django_migration_linter-0.0.1.dist-info/RECORD,,
+django_migration_linter-0.0.1.dist-info/top_level.txt,sha256=JuR6Cs6j_TSSmQFrr7G2N4lCou0a9XRfbUwIs8GUc5c,30
+django_migration_linter-0.0.1.dist-info/WHEEL,sha256=54bVun1KfEBTJ68SHUmbxNPj80VxlQ0sHi4gZdGZXEY,92
+tests/fixtures.py,sha256=ekxzx-9il_v8k9RF_dFUNf3iNOBUkux9BxT0n6UxMfc,2509
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/functional/test_migration_linter.py,sha256=aAvOjSKp0rXy5pvaVMYmwMGjwDUItUc_Rfnv1d_tfFU,3522
+tests/functional/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_utils.py,sha256=9z22tgYE3N12QjUE-Sqlkn6GGfzJNLyFv_mFEfwOzSU,1966
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
