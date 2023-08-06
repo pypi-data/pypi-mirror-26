@@ -1,0 +1,12 @@
+mapper/__init__.py,sha256=KtFqP77hKPbuWEjUlZzsdJEtpZpF6DUmXNQ68gh1AvM,52
+mapper/casedict.py,sha256=6lUfwXQCkoEdoAWQT7kdR7omeho9YTEMj31YDTTPOxg,2472
+mapper/object_mapper.py,sha256=Z2YRojAfs8w9cVm56TdP4S5BU0LSAxc-Cfic36taobU,6674
+mapper/object_mapper_exception.py,sha256=4jvEfdPyNVqUvP7Z4RY8eBfuR_1NXwikLx8AJUlkgxM,178
+object_mapper-1.0.4.dist-info/DESCRIPTION.rst,sha256=ALptTp2bhVMOM0dOXnYg7fH-r_l1I4eOalr2LDAaEg8,3584
+object_mapper-1.0.4.dist-info/METADATA,sha256=nc4JQuCcWZThcq2XpsVrbZra26VjzS82DAtrMvnro-M,4730
+object_mapper-1.0.4.dist-info/RECORD,,
+object_mapper-1.0.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+object_mapper-1.0.4.dist-info/metadata.json,sha256=w3QkD54B1Wj6f3Xww5R8VdI7a9oBJbRGzM-agUr5fTM,1274
+object_mapper-1.0.4.dist-info/top_level.txt,sha256=hOsi-28S63Ekb7iKgS9LaKAm_vGU7crkuvKetMgCopQ,13
+tests/__init__.py,sha256=KtFqP77hKPbuWEjUlZzsdJEtpZpF6DUmXNQ68gh1AvM,52
+tests/object_mapper_test.py,sha256=HsWHqZRX85g58XOTEa_54YV4RctQj8hen0kUp_7z9dQ,9422
