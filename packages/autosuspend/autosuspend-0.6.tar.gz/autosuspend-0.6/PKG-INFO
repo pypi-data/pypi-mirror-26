@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: autosuspend
+Version: 0.6
+Summary: A daemon to suspend your server in case of inactivity
+Home-page: UNKNOWN
+Author: Johannes Wienke
+Author-email: languitar@semipol.de
+License: GPL2
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

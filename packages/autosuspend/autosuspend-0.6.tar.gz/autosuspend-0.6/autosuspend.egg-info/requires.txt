@@ -1,0 +1,11 @@
+psutil
+
+[Kodi]
+requests
+
+[Mpd]
+python-mpd2
+
+[XPath]
+lxml
+requests

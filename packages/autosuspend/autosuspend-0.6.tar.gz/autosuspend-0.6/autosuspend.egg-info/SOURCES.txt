@@ -1,0 +1,14 @@
+README.md
+autosuspend-detect-suspend.service
+autosuspend-logging.conf
+autosuspend.conf
+autosuspend.py
+autosuspend.service
+setup.cfg
+setup.py
+autosuspend.egg-info/PKG-INFO
+autosuspend.egg-info/SOURCES.txt
+autosuspend.egg-info/dependency_links.txt
+autosuspend.egg-info/not-zip-safe
+autosuspend.egg-info/requires.txt
+autosuspend.egg-info/top_level.txt
