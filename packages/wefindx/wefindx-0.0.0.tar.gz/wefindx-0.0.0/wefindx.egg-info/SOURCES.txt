@@ -1,0 +1,7 @@
+README.rst
+setup.py
+wefindx.egg-info/PKG-INFO
+wefindx.egg-info/SOURCES.txt
+wefindx.egg-info/dependency_links.txt
+wefindx.egg-info/not-zip-safe
+wefindx.egg-info/top_level.txt
