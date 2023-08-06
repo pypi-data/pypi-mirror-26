@@ -1,0 +1,7 @@
+README.md
+rdpkg
+setup.py
+rdpkg.egg-info/PKG-INFO
+rdpkg.egg-info/SOURCES.txt
+rdpkg.egg-info/dependency_links.txt
+rdpkg.egg-info/top_level.txt

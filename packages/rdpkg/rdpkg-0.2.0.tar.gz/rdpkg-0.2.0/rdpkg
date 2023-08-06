@@ -1,0 +1,71 @@
+#!/usr/bin/env python
+
+import argparse
+import os
+import subprocess
+import sys
+import tempfile
+from urllib import request, parse
+
+
+def main(args):
+    if not os.getuid() == 0:
+        sys.stderr.write('rdpkg: error: requested operation requires superuser privilege\n')
+        exit()
+    else:
+        url = parse.urlparse(args.URL)
+        if not url.scheme or not url.netloc:
+            sys.stderr.write('rdpkg: error: invalid url parameter provided\n')
+            exit()
+        temp = tempfile.NamedTemporaryFile(delete=False)
+        request.urlretrieve(args.URL, temp.name, reporthook)
+
+        subprocess.call(['dpkg', '-i', temp.name])
+
+
+def reporthook(blocknum, blocksize, totalsize):
+    # Grabs where the last read ended
+    readsofar = blocknum * blocksize
+
+    # If reading has started
+    if totalsize > 0:
+
+        percent = readsofar * 1e2 / totalsize
+
+        # Creates the output string
+        percent_int = int(round(percent))
+
+        # Creates the progrss bar
+        output = '\r {0}% '.format(percent_int)
+        output += '['
+
+        # Adds filled in section
+        for x in range(0, int(percent_int)):
+            if x % 2 == 0:
+                output += '▇'
+
+        # Fills in the blanks so each bar is the same length
+        for x in range(int(round(percent_int / 2)), int(100 / 2)):
+            output += ' '
+        output += ']'
+
+        sys.stderr.write(output)
+
+        if readsofar >= totalsize:  # near the end
+            sys.stderr.write("\n")
+    # total size is unknown
+    else:
+        sys.stderr.write("read %d\n" % (readsofar,))
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='Remote dpkg installer.',
+        epilog='Installs a .deb package from a remote URL using dpkg.')
+    parser.add_argument(
+        'URL',
+        help='remote URL of the package to be installed',
+        metavar='URL')
+    args = parser.parse_args()
+
+main(args)

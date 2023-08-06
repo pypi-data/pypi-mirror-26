@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: rdpkg
+Version: 0.2.0
+Summary: Installs Debian packages from remote URLs
+Home-page: https://github.com/jmsnll/rdpkg
+Author: James Neill
+Author-email: jamesneill@protonmail.com
+License: Apache License 2.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: dpkg
+Platform: UNKNOWN
