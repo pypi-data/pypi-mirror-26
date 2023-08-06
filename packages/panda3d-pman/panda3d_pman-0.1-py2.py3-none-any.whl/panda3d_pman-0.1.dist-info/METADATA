@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: panda3d-pman
+Version: 0.1
+Summary: A Python package to help bootstrap and manage Panda3D applications
+Home-page: https://github.com/Moguri/pman
+Author: Mitchell Stokes
+Author-email: UNKNOWN
+License: MIT
+Keywords: panda3d gamedev
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
