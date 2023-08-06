@@ -1,0 +1,12 @@
+setup.py
+veriform/__init__.py
+veriform/decoder.py
+veriform/exceptions.py
+veriform/object.py
+veriform/parser.py
+veriform/varint.py
+veriform.egg-info/PKG-INFO
+veriform.egg-info/SOURCES.txt
+veriform.egg-info/dependency_links.txt
+veriform.egg-info/not-zip-safe
+veriform.egg-info/top_level.txt
