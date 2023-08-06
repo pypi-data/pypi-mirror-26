@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: chipseq-greylist
+Version: 1.0.0
+Summary: python implementation of GreyListChIP
+Home-page: https://github.com/roryk/chipesq-greylist
+Author: Rory Kirchner
+Author-email: roryk@alum.mit.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

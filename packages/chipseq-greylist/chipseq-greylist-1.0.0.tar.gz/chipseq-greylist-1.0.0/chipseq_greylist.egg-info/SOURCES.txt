@@ -1,0 +1,8 @@
+README.md
+setup.py
+chipseq_greylist.egg-info/PKG-INFO
+chipseq_greylist.egg-info/SOURCES.txt
+chipseq_greylist.egg-info/dependency_links.txt
+chipseq_greylist.egg-info/requires.txt
+chipseq_greylist.egg-info/top_level.txt
+scripts/chipseq-greylist
