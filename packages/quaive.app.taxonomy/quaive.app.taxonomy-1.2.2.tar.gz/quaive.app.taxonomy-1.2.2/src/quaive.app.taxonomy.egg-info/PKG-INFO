@@ -1,0 +1,230 @@
+Metadata-Version: 1.1
+Name: quaive.app.taxonomy
+Version: 1.2.2
+Summary: A taxonomy browser app for quaive
+Home-page: https://pypi.python.org/pypi/quaive.app.taxonomy
+Author: Alexander Pilz
+Author-email: pilz@syslab.com
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ==============================================================================
+        quaive.app.taxonomy
+        ==============================================================================
+        
+        A taxonomy browser for ploneintranet
+        
+        Features
+        --------
+        
+        - Allows browsing through a hierarchical taxonomy
+        - Supports search on taxonomy and on content within
+        - Dedicated search and group view for each taxonomy term
+        
+        
+        Background
+        ----------
+        
+        The app has been discussed and specified at
+        - https://github.com/quaive/ploneintranet.prototype/issues/272
+        
+        
+        Documentation
+        -------------
+        
+        Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.quaive.net
+        
+        
+        Translations
+        ------------
+        
+        This product has been translated into
+        
+        - German (thanks, Angela Merkel)
+        
+        
+        Installation
+        ------------
+        
+        Install quaive.app.taxonomy by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                quaive.app.taxonomy
+        
+        
+        Your Quaive instance will need to register a vdex vocabulary and add the identifier of that vocabulary to the solr index configuration.
+        
+        Run buildout to update your instance: ``bin/buildout``
+        
+        Add the vocabulary identifier to following registry entries::
+        
+          ploneintranet.search.filter_fields
+          ploneintranet.search.facet_fields
+        
+        Add an adapter to configure an app tile, see quaive/app/taxonomy/tests/configure.zcml for an example.
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/collective/quaive.app.taxonomy/issues
+        - Source Code: https://github.com/collective/quaive.app.taxonomy
+        - Documentation: https://docs.quaive.net
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        We have a mailing list located at: ploneintranet-dev@groups.io
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - Alexander Pilz, pilz@syslab.com
+        
+        
+        Changelog
+        =========
+        
+        
+        1.2.2 (2017-11-20)
+        ------------------
+        
+        - Public release.
+        
+        
+        1.2.1 (2017-08-28)
+        ------------------
+        
+        Fixes:
+        
+        - (slc #15736) Don't throw error if search term is unicode [deroiste]
+        
+        
+        1.2.0 (2017-05-02)
+        ------------------
+        
+        Fixes:
+        
+        - Decorate the app view with IAppView to make the app
+          compatible with ploneintranet master.
+          [ale]
+        
+        
+        1.1.7 (2016-12-01)
+        ------------------
+        
+        New features:
+        
+        - Translation labels.
+          [angeldasangel]
+        
+        
+        1.1.6 (2016-11-21)
+        ------------------
+        
+        - Nothing changed.
+        
+        
+        1.1.5 (2016-11-17)
+        ------------------
+        
+        Fixes:
+        
+        - Fix sidebar search injection [deroiste]
+        - Sidebar Search: search by partial taxonomy terms [deroiste]
+        
+        
+        1.1.4 (2016-10-24)
+        ------------------
+        
+        New features:
+        
+        - Sort by date when grouping by workspace and author [deroiste]
+        
+        Fixes:
+        
+        - Fix test setup: import config for docconv
+        
+        
+        1.1.3 (2016-10-14)
+        ------------------
+        
+        Fixes:
+        
+        - Adapt to new App structure. All parameters come from the App now,
+          not the request
+        - Adapt to changed search / proto view in ploneintranet
+        
+        
+        1.1.2 (2016-09-09)
+        ------------------
+        
+        Fixes:
+        
+        - Fix tests: use the app as the search tile context [deroiste]
+        - Fix sidebar enlarger target [pilz]
+        
+        
+        1.1.1 (2016-09-08)
+        ------------------
+        
+        Fixes:
+        
+        - Fix injection target [pilz]
+        
+        
+        1.1 (2016-09-08)
+        ----------------
+        
+        Fixes/New features:
+        
+        - Sort grouped results by title
+        - Add search grouping by workspace and author
+        - sidebar-search: use solr instead of the catalog
+          The normal Sidebar view uses the catalog, presumably to avoid the delay
+          caused by asynchronous indexing with solr.
+        - sidebar-search: handle unicode vocab terms
+        - Add the option to configure a separate vocab index
+          This allows the search index to have a different id from the
+          vocabulary. It's configured on the app_parameters e.g.
+          {'vocabulary_index': 'someidx'}
+        - Also search by vocab terms
+        - Implement sidebar search
+          Design: quaive/ploneintranet.prototype#272
+        - Updated to app objects
+          Also, the vocabulary does not need to be passed as a GET parameter any
+          more, since it is now defined in the app_parameters.
+        - Include documents in the sidebar, implement search
+        - Improved testing, better handling of values
+        
+        
+        1.0a1 (2016-07-16)
+        ------------------
+        
+        - Initial release.
+          [pilz]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
