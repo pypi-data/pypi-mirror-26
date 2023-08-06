@@ -1,0 +1,90 @@
+Metadata-Version: 2.0
+Name: radiocells
+Version: 0.3.0
+Summary: Get position based on wifi APs in proximity and radiocells.org database.
+Home-page: https://github.com/ways/locate-radiocells
+Author: Lars Falk-Petersen
+Author-email: dev@falkp.no
+License: AGPLv3+
+Description-Content-Type: UNKNOWN
+Keywords: location
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: System :: Networking
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Requires-Dist: wifi
+Requires-Dist: requests
+Requires-Dist: setuptools
+Provides-Extra: json
+Requires-Dist: development; extra == 'json'
+
+radiocells - Network Geolocation Services
+=========================================
+
+Locates the current wifi-enabled computer using nearby access points and
+https://radiocells.org/geolocation
+
+Project home: https://github.com/ways/locate-radiocells
+
+----
+
+Installation
+------------
+
+.. code:: bash
+
+  $ pip install radiocells
+
+Dependencies (handled by pip)
+-----------------------------
+
+* https://github.com/rockymeza/wifi/
+* https://pypi.python.org/pypi/requests/
+
+Usage
+-----
+
+Must run as root to get access to scanning on Linux.
+
+Example use:
+
+.. code:: python
+
+    import radiocells
+    accuracy, latlng = radiocells.locate(device='wlan0')
+
+Example script included in examples/, (prints out accuracy in meters, and coordinates):
+
+.. code:: bash
+
+  $ sudo ./locate-wifi.py wlan0
+  30 (59.12345, 10.12345)
+
+Compatibility
+-------------
+
+Python 2 and 3. Only tested on Linux (Ubuntu, Fedora, Arch).
+
+Development info
+----------------
+
+example query sent to radiocells.org:
+curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"wifiAccessPoints":[{"macAddress":"24-DE-C6-A8-C9-64","signalStrength":-57}]}' https://radiocells.org/backend/geolocate
+
+Example response:
+{"source": "wifis", "measurements": 14, "location": {"lat": 59.12345, "lng": 10.12345}, "accuracy": 30}
+
+or on fail:
+{'resultType': 'error', 'results': {'source': 'none', 'measurements': 0, 'location': {'lat': 0.0, 'lng': 0.0}, 'accuracy': 9999}, 'error': {'message': 'Empty request', 'code': 400, 'errors': [{'message': None, 'reason': 'parseError', 'domain': 'global'}]}}
+
+
+
