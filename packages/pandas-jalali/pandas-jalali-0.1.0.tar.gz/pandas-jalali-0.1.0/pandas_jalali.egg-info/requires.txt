@@ -1,0 +1,14 @@
+numpy
+pandas
+
+[tests]
+mock
+nose
+coverage
+yanc
+preggy
+tox<2.0
+coveralls
+django_nose
+pypandoc
+khayyam
