@@ -1,0 +1,9 @@
+mytestpackage/__init__.py,sha256=oM5SSVnU3_aMxdada1lfSj2gAxSBRw-hVn3IVXOAskM,111
+mytestpackage/__version__.py,sha256=z2u4bqAxVoNfyzztj24XtLcZqouG_qBcYsR8FLpngaI,63
+mytestpackage/mod1.py,sha256=BR9605WtOPZZsVAa3OJhLqpSLay7D6GZuMoGSJLedWM,83
+mytestpackage-1.2.3.dist-info/DESCRIPTION.rst,sha256=GR9n5FlSh3m89nOnB4Ta073G6ICnLdfiXxd3nkatkLE,3446
+mytestpackage-1.2.3.dist-info/METADATA,sha256=XlO03vZFzfYsjADQBuBGr1icqw71160w5QzrgTSgx-A,4020
+mytestpackage-1.2.3.dist-info/RECORD,,
+mytestpackage-1.2.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mytestpackage-1.2.3.dist-info/metadata.json,sha256=d9Wgb-Qqc7CUacE85ZiIOlM0ghdlogY8Kam5qWaF7_4,728
+mytestpackage-1.2.3.dist-info/top_level.txt,sha256=BvpFpMZNpvNYycoVfossb5nK4fDjNVRFWUZwsK6RmkM,14
