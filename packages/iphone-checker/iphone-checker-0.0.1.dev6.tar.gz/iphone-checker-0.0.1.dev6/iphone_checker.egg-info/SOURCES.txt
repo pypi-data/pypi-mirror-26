@@ -1,0 +1,17 @@
+AUTHORS
+ChangeLog
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+iphone_checker/__init__.py
+iphone_checker/api.py
+iphone_checker/iphone_checker.py
+iphone_checker/utils.py
+iphone_checker.egg-info/PKG-INFO
+iphone_checker.egg-info/SOURCES.txt
+iphone_checker.egg-info/dependency_links.txt
+iphone_checker.egg-info/entry_points.txt
+iphone_checker.egg-info/not-zip-safe
+iphone_checker.egg-info/pbr.json
+iphone_checker.egg-info/top_level.txt
