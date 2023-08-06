@@ -1,0 +1,20 @@
+{% load i18n %}
+<h3>{% trans 'By' %} {{ title }}</h3>
+<ul>
+  <li>
+    {{ spec.form.field }}
+  </li>
+</ul>
+<script>
+  (function ($) {
+    $(':input[name=' + '{{ spec.form.field_path }}' + ']').change(function (e) {
+      var val = $(this).val();
+      if (val) {
+        window.location = window.location.pathname + $(this).val();
+      } else {
+        var replace = '{{ spec.form.field_path }}=' + new URL(location.href).searchParams.get('{{ spec.form.field_path }}');
+        window.location = window.location.pathname + location.search.replace(replace, '');
+      }
+    })
+  })(yl.jQuery);
+</script>
