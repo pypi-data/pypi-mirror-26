@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: trollius-fixers
+Version: 0.1
+Summary: Convert trollius code to asyncio
+Home-page: https://github.com/bmerry/trollius_fixers
+Author: Bruce Merry
+Author-email: UNKNOWN
+License: PSF
+Description-Content-Type: UNKNOWN
+Description: 
+                A tool based on lib2to3 for converting code using trollius to use
+                asyncio. After installation, run *trollius2asyncio*. It works in the
+                same way as 2to3.
+                
+Keywords: 2to3 asyncio trollius
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Networking
