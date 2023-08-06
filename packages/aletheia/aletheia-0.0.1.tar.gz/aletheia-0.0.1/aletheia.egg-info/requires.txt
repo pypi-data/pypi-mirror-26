@@ -1,0 +1,6 @@
+cryptography==2.1.2
+requests==2.18.4
+
+[doc]
+sphinx
+sphinx_rtd_theme
