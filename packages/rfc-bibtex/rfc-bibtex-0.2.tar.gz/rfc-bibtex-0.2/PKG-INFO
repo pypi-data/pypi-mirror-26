@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: rfc-bibtex
+Version: 0.2
+Summary: Generate Bibtex entries for IETF RFCs and Internet-Drafts.
+Home-page: https://github.com/iluxonchik/rfc-bibtex/
+Author: Illya Gerasymchuk
+Author-email: giluxonchik@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/iluxonchik/rfc-bibtex/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: rfc,internet draft,latex,bibtex,ietf
+Platform: UNKNOWN
