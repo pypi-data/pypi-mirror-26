@@ -1,0 +1,132 @@
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:04:29 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:04:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:05:13 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:05:13 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:09:15 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:09:15 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:10:01 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:10:01 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:10:44 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:10:44 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:21:29 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:21:29 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:22:12 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:22:12 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:25:52 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:25:52 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:26:38 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:26:38 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:27:24 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:27:24 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active.
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Number of processes used by backend client: 1
+[2017-11-09 19:28:17 CET] WARNING: [alignak.module.backend_arbiter] no user token configured. It is recommended to set a user token rather than a user login in the configuration. Trying to get a token from the provided user login information...
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] bypass objects loading when Arbiter is in verify mode: False
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] configuration reload check period: 5 minutes
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] actions check period: 15 seconds
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] daemons state update period: 60 seconds
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide the last read Alignak configuration to the Arbiter.
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. No backend connection.
+[2017-11-09 19:28:17 CET] INFO: [alignak.module.backend_arbiter] Alignak backend importation script is active. Provide an empty objects list to the Arbiter.
