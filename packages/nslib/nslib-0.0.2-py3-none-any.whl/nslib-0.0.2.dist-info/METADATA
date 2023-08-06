@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: nslib
+Version: 0.0.2
+Summary: Full-featured library for the dutch railways (NS).
+Home-page: https://github.com/Boltgolt/nslib
+Author: boltgolt
+Author-email: boltgolt@gmail.com
+License: MIT
+Download-URL: https://github.com/Boltgolt/nslib/archive/0.0.2.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: transport,api
+Platform: UNKNOWN
+Requires-Dist: xmltodict (==0.11.0)
+Requires-Dist: requests (==2.13.0)
+Requires-Dist: cachetools (==2.0.0)
+
+UNKNOWN
+
+
