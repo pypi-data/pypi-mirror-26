@@ -1,0 +1,5 @@
+PyYAML
+py-trello
+pytest==2.9.2
+click
+prompt_toolkit
