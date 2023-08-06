@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: asana-cli
+Version: 0.0.1
+Summary: CLI for asana.
+Home-page: https://github.com/AlJohri/asana-cli
+Author: Al Johri
+Author-email: al.johri@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: click
+
+UNKNOWN
+
+
