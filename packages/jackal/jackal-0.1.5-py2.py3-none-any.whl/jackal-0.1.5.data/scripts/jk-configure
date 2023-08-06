@@ -1,0 +1,3 @@
+#!python
+from jackal.config import manual_configure
+manual_configure()
