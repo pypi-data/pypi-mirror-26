@@ -1,0 +1,17 @@
+digraph {
+	BAM
+	BED
+	BAM -> BED
+	BAM
+	SAM
+	BAM -> SAM
+	JSON
+	YAML
+	JSON -> YAML
+	SAM
+	CRAM
+	SAM -> CRAM
+	YAML
+	JSON
+	YAML -> JSON
+}

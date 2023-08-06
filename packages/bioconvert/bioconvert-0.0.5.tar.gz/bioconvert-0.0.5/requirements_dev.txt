@@ -1,0 +1,11 @@
+pytest
+pytest-cov
+pytest-xdist
+pytest-mock
+pytest-timeout
+pytest-runner
+pillow
+sphinx
+sphinx_rtd_theme
+numpydoc
+coveralls

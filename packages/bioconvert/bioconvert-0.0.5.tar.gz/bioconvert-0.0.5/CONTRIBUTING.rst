@@ -1,0 +1,4 @@
+- add new converter in ./converter
+- complete documentation
+- add tests
+- add data for testing 
