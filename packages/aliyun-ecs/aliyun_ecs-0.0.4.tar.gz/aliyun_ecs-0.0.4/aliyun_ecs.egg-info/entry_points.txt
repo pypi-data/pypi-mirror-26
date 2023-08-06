@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-metadata4vpc = ecs.metadata:main
+
