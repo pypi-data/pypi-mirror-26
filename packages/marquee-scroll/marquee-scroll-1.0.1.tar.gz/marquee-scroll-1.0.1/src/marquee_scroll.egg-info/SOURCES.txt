@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tox.ini
+src/marquee/__init__.py
+src/marquee/_version.py
+src/marquee/app.py
+src/marquee_scroll.egg-info/PKG-INFO
+src/marquee_scroll.egg-info/SOURCES.txt
+src/marquee_scroll.egg-info/dependency_links.txt
+src/marquee_scroll.egg-info/entry_points.txt
+src/marquee_scroll.egg-info/top_level.txt
