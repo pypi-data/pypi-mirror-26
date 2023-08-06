@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+authsch/__init__.py
+authsch/apps.py
+authsch/authentication.py
+django_social_authsch.egg-info/PKG-INFO
+django_social_authsch.egg-info/SOURCES.txt
+django_social_authsch.egg-info/dependency_links.txt
+django_social_authsch.egg-info/requires.txt
+django_social_authsch.egg-info/top_level.txt

@@ -1,0 +1,59 @@
+Metadata-Version: 1.1
+Name: django-social-authsch
+Version: 0.1
+Summary: A Django app for AuthSCH.
+Home-page: https://git.sch.bme.hu/kszk/devteam/django-authsch
+Author: Barnabas Czeman
+Author-email: barni2000@sch.bme.hu
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: django-social-authsch
+        =====
+        
+        Django Application for AuthSCH
+        
+        Quick start
+        -----------
+        
+        1. Add "authsch" to your INSTALLED_APPS setting like this::
+        
+            ````python
+            INSTALLED_APPS = [
+                ...
+                'social_django',
+                'authsch',
+            ]
+            ````
+        
+        2. settings.py
+        
+            ````python
+            SOCIAL_AUTH_URL_NAMESPACE = 'social'
+        
+            AUTHENTICATION_BACKENDS = [
+                'authsch.authentication.AuthSCHOAuth2',
+                'django.contrib.auth.backends.ModelBackend',
+            ]
+        
+            SOCIAL_AUTH_AUTHSCH_KEY = "key"
+            SOCIAL_AUTH_AUTHSCH_SECRET = "secret"
+            SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
+            LOGIN_URL = "login/authsch/"
+            ````
+        
+        3. Run `python manage.py migrate` to create the authsch models.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
