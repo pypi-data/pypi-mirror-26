@@ -1,0 +1,9 @@
+tesbml/__init__.py,sha256=AbOPl8Aci4n8WM-jDof035AfrsTcrA8agAeF7ErTwaQ,63
+tesbml/_libsbml.so,sha256=mWky_qDQ6Q22lw58vJeDErY69q90OL5fhpmWfGI9EGc,15810052
+tesbml/libsbml.py,sha256=7zjkDgk_6fN1n3xfrha9OqUJJtY8N5c_ZO85vk3GP04,5554631
+tesbml-5.15.0.1.dist-info/DESCRIPTION.rst,sha256=6uAxlxjYvfeNgEyDjmUGQpTWpgRWLHvY2axkBBxJS5I,290
+tesbml-5.15.0.1.dist-info/METADATA,sha256=NcnNnocGhZvq8xgDh2ZfY3kqU-r4oy7ImAGRPL6YxH8,723
+tesbml-5.15.0.1.dist-info/RECORD,,
+tesbml-5.15.0.1.dist-info/WHEEL,sha256=0nMG4Tko1T_KOypW2gYk7bMMhOn7w6PhD2u8OAW0n8k,108
+tesbml-5.15.0.1.dist-info/metadata.json,sha256=9xKm5Xd5YtZQCNISZruDy6_62xW9JR_aPxf_Yq2AKFw,591
+tesbml-5.15.0.1.dist-info/top_level.txt,sha256=4iyywXsPAJoALeOhOM27DlP_BR51vfe3fBa3COB9zNs,7
