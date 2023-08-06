@@ -1,0 +1,3 @@
+[console_scripts]
+kill-all-ssh-sessions = kill_all_ssh_sessions.cli:main
+

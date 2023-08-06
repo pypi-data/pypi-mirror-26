@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+kill_all_ssh_sessions/__init__.py
+kill_all_ssh_sessions/cli.py
+kill_all_ssh_sessions.egg-info/PKG-INFO
+kill_all_ssh_sessions.egg-info/SOURCES.txt
+kill_all_ssh_sessions.egg-info/dependency_links.txt
+kill_all_ssh_sessions.egg-info/entry_points.txt
+kill_all_ssh_sessions.egg-info/not-zip-safe
+kill_all_ssh_sessions.egg-info/requires.txt
+kill_all_ssh_sessions.egg-info/top_level.txt
