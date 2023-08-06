@@ -1,0 +1,10 @@
+.. _matplotlib: https://matplotlib.org
+.. _Numpy: https://www.numpy.org
+.. _astropy-healpix: https://astropy-healpix.readthedocs.io
+.. _scikit-image: http://scikit-image.org
+.. _Pillow: https://python-pillow.org/
+.. _HiPS paper: https://www.aanda.org/articles/aa/pdf/2015/06/aa26075-15.pdf
+.. _HiPS IVOA recommendation: http://www.ivoa.net/documents/HiPS/
+.. _HiPS at CDS: http://aladin.u-strasbg.fr/hips/
+.. _tqdm: https://pypi.python.org/pypi/tqdm
+.. _aiohttp: http://aiohttp.readthedocs.io/en/stable/
