@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: difflame
+Version: 0.2.0
+Summary: difflame is a tool to visualise differences using flame graphs
+Home-page: https://github.com/witchard/difflame
+Author: witchard
+Author-email: witchard@hotmail.co.uk
+License: MIT
+Download-URL: https://github.com/witchard/difflame/tarball/0.2.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: diff,flamegraph
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
