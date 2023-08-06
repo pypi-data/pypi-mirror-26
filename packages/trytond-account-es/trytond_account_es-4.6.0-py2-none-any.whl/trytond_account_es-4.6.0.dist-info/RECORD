@@ -1,0 +1,16 @@
+trytond/modules/account_es/__init__.py,sha256=-5OdjQ8rEVZvZALCT9wzhMNZf0ryRVaqgbkVmHOqmqE,144
+trytond/modules/account_es/account_normal.xml,sha256=xIOkSuY9gCHsnADGJ82Ov1EULruR5oB4F3PkKlOaoQ0,864759
+trytond/modules/account_es/account_pyme.xml,sha256=262FRCo295i8kS4Q1giKwtX3VMPqzydYoR7v7p_zcBU,706966
+trytond/modules/account_es/tax_groups.xml,sha256=mLctZ6Mgs0FOXj1fTDx5RzkoE1zWIA5_elYfR0Sdxf4,949
+trytond/modules/account_es/tax_normal.xml,sha256=RjgQZ6A9CtCs3Wb9-AydgaqLnqWRKBfs4mXk5G-KNGU,295911
+trytond/modules/account_es/tax_pyme.xml,sha256=xLxfLZaqs4f4dfDqBvYyPRWhNENtuZrZCCbWwxKPcDU,291353
+trytond/modules/account_es/tryton.cfg,sha256=yj90XqMpVfbdDeKuiB1210FaWZhAT_kXvy3F_IIvDbo,170
+trytond/modules/account_es/tests/__init__.py,sha256=FyZ1RHTaNFGCqs3iTEyeb-UdBFrwNDiwAWWJagz0RcA,301
+trytond/modules/account_es/tests/test_account_es.py,sha256=m7GOI8i5qPYpFWVaHRVdc5lenooQeeGIaDm9kkflqQg,510
+trytond_account_es-4.6.0.dist-info/DESCRIPTION.rst,sha256=5Zv_jz3YgNiGU8Yd-0c6C4zgUNlHA4hhgcmAvImUIs0,1065
+trytond_account_es-4.6.0.dist-info/METADATA,sha256=DxzbxSPWIf3lvHk1ET0-Df6ugnyBBFrvQ6gEXe90rMA,2406
+trytond_account_es-4.6.0.dist-info/RECORD,,
+trytond_account_es-4.6.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+trytond_account_es-4.6.0.dist-info/entry_points.txt,sha256=cCRVCLkOAUR7j5n_094Aj6KAfZltrObTfKJmpadbpf8,71
+trytond_account_es-4.6.0.dist-info/metadata.json,sha256=vNY4ZGpesqd1GHF3jqgslS1NlsgHSgSzMjLY_ykWlxo,1546
+trytond_account_es-4.6.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
