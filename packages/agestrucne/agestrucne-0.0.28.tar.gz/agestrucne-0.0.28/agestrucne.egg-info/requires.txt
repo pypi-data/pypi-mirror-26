@@ -1,0 +1,10 @@
+numpy
+scipy
+future
+psutil
+natsort
+simupop
+
+[:python_version == "2.7"]
+configparser
+pyttk
