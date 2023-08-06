@@ -1,0 +1,8 @@
+numpy
+spacy>=2.0.2
+requests
+tqdm
+
+[visualize]
+matplotlib
+networkx
