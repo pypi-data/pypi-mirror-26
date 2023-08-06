@@ -1,0 +1,4 @@
+pytest
+
+[log_requests]
+requests==2.18.*
