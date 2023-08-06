@@ -1,0 +1,6 @@
+twine
+keyring
+requests
+beautifulsoup4
+lxml
+click
