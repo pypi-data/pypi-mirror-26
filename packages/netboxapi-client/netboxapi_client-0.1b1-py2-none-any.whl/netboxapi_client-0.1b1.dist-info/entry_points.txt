@@ -1,0 +1,3 @@
+[console_scripts]
+netboxapi-client = netboxapi_client:main
+

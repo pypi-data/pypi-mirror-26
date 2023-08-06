@@ -1,0 +1,10 @@
+netboxapi_client/__init__.py,sha256=MdSk_7ZVh9ko5i4q_0kb7CwiNelRd942Hlv-1zaZp80,227
+netboxapi_client/__main__.py,sha256=Zef3pldI52nt-vmhQubhuzG8GDcTh2zNFWfyBJzdysc,3858
+netboxapi_client/netboxapi_client.py,sha256=vbgHUOs8pmpXemdiMqT51ljk5iQcuCZYwAAgTSwBBxo,11363
+netboxapi_client-0.1b1.dist-info/DESCRIPTION.rst,sha256=kGG80ekHrTbVY1qKK7fBdO2scO1KNzkKopnNP0jlURw,3169
+netboxapi_client-0.1b1.dist-info/METADATA,sha256=YhcSSs73JzoDSHEtdJVOosEZDyPbLmbFZ_DDzAUtp7w,3804
+netboxapi_client-0.1b1.dist-info/RECORD,,
+netboxapi_client-0.1b1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+netboxapi_client-0.1b1.dist-info/entry_points.txt,sha256=4gQ7iXIgjzHtPQsMYP6lQW6qLpt5DlDFNnAMFDOymoY,60
+netboxapi_client-0.1b1.dist-info/metadata.json,sha256=ys1Rx67QPO-oIyjjyJjTjyU-5ZH3vRoqtGjXpA_QrJU,986
+netboxapi_client-0.1b1.dist-info/top_level.txt,sha256=5fyTmL19X58edMzqwRYO1gbS0nLqo40KOFMCYZ38t6M,17
