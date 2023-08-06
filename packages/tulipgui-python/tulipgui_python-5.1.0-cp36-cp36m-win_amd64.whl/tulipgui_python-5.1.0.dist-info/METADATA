@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: tulipgui-python
+Version: 5.1.0
+Summary: Tulip GUI Python bindings
+Home-page: http://tulip.labri.fr/
+Author: David Auber and the Tulip development team
+Author-email: tulipdev@labri.fr
+License: LGPLv2+
+Description-Content-Type: UNKNOWN
+Requires-Dist: tulip-python
+
+`Package documentation <http://tulip.labri.fr/Documentation/current/tulip-python/html/index.html>`_
+
+
