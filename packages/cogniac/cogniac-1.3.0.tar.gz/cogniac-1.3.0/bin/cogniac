@@ -1,0 +1,7 @@
+import cogniac
+
+cc = cogniac.CogniacConnection()
+
+print cc.tenant
+
+
