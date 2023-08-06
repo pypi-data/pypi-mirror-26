@@ -1,0 +1,7 @@
+colorama
+cowsay
+dataset
+keras
+six
+requests[security]
+tqdm<=4.16.0
