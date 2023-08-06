@@ -1,0 +1,76 @@
+Metadata-Version: 2.0
+Name: smqtk
+Version: 0.7.0
+Summary: Python toolkit for pluggable algorithms and data structures for multimedia-based machine learning
+Home-page: https://github.com/Kitware/SMQTK
+Author: Kitware, Inc.
+Author-email: smqtk-developers@kitware.com
+License: BSD 3-Clause
+Description-Content-Type: UNKNOWN
+Platform: Linux
+Platform: Max OS-X
+Platform: Unix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Dist: Flask-Cors
+Requires-Dist: flask
+Requires-Dist: flask-basicauth
+Requires-Dist: flask-login
+Requires-Dist: imageio
+Requires-Dist: jinja2
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: pymongo
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+Provides-Extra: caffe
+Requires-Dist: protobuf; extra == 'caffe'
+Requires-Dist: scikit-image; extra == 'caffe'
+Provides-Extra: docs
+Requires-Dist: livereload; extra == 'docs'
+Requires-Dist: mock; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-argparse; extra == 'docs'
+Requires-Dist: sphinx-prompt; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Provides-Extra: flann
+Requires-Dist: pyflann (>=1.8.4); extra == 'flann'
+Provides-Extra: libmagic
+Requires-Dist: file-magic; extra == 'libmagic'
+Provides-Extra: magic
+Requires-Dist: file-magic; extra == 'magic'
+Provides-Extra: postgres
+Requires-Dist: psycopg2; extra == 'postgres'
+Provides-Extra: solr
+Requires-Dist: solrpy; extra == 'solr'
+
+# SMQTK
+![Build Status](https://travis-ci.org/Kitware/SMQTK.svg?branch=master)
+
+## Intent
+Social Multimedia Query ToolKit aims to provide a simple and easy to use API for:
+
+* Scalable data structure interfaces and implementations, with a focus on those relevant for machine learning.
+* Algorithm interfaces and implementations of machine learning algorithms with a focus on media-based functionality.
+* High-level applications and utilities for working with available algorithms and data structures for specific purposes.
+
+Through these features, users and developers are able to access various machine learning algorithms and techniques to use over different types of data for different high level applications.
+Examples of high level applications may include being able to search a media corpus for similar content based on a query, or providing a content-based relevancy feedback interface for a web application.
+
+## Documentation
+
+Documentation for SMQTK is maintained at [ReadtheDocs](http://smqtk.readthedocs.org), including [build instructions](http://smqtk.readthedocs.org/en/latest/building.html) and [examples](http://smqtk.readthedocs.org/en/latest/examples/overview.html).
+
+
+
