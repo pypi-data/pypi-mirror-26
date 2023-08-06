@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+dict2uml/__init__.py
+dict2uml/dict2svg.py
+dict2uml/dict2uml.py
+dict2uml.egg-info/PKG-INFO
+dict2uml.egg-info/SOURCES.txt
+dict2uml.egg-info/dependency_links.txt
+dict2uml.egg-info/entry_points.txt
+dict2uml.egg-info/top_level.txt

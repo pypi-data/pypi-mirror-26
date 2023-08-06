@@ -1,0 +1,3 @@
+[console_scripts]
+dict2uml = dict2uml.__main__:main
+
