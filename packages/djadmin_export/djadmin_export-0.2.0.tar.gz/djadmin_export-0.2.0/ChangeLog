@@ -1,0 +1,23 @@
+0.2.0 (2017-11-06)
+------------------
+
+*New:*
+
+    * Add Python3 compatibility
+    * Add Django>=1.8 compatibility
+
+v0.1.2 (24/10/2012)
+-------------------
+
+*Bugfix:*
+
+    * Fix :class:`~djadmin_export.exporters.xlsx.XLSXExporter` handling of non-native types
+
+v0.1.1 (23/10/2012)
+-------------------
+
+*New:*
+
+    * First layout
+
+.. vim:et:ts=4:sw=4:tw=79:ft=rst:
