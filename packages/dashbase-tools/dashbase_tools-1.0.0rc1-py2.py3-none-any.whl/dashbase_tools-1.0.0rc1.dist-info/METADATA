@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: dashbase-tools
+Version: 1.0.0rc1
+Summary: UNKNOWN
+Home-page: http://www.dashbase.io
+Author: khou
+Author-email: kevin@dashbase.io
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: colorama (==0.3.7)
+Requires-Dist: dateparser (==0.6.0)
+Requires-Dist: fusepy (==2.0.4)
+Requires-Dist: ruamel.ordereddict (==0.4.13)
+Requires-Dist: setuptools (>=12.2)
+Requires-Dist: simplejson (==3.12.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: terminaltables (==3.1.0)
+Requires-Dist: treelib (==1.4.0)
+Requires-Dist: urllib3 (==1.22)
+
+UNKNOWN
+
+

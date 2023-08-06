@@ -1,0 +1,6 @@
+
+        [console_scripts]
+        dash=tools.dbsql:main
+        logtail=tools.logtail:main
+        dashbase_mnt=tools.dashbase_mnt:main
+    
