@@ -1,0 +1,4 @@
+httpretty
+oauthlib
+requests
+requests_oauthlib
