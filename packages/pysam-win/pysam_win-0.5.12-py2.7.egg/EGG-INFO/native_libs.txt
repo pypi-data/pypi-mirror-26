@@ -1,0 +1,4 @@
+pysam_windows/csamtools.pyd
+pysam_windows/TabProxies.pyd
+pysam_windows/cvcf.pyd
+pysam_windows/ctabix.pyd
