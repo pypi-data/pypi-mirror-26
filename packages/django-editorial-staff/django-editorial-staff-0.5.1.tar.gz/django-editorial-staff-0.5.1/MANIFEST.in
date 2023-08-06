@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+recursive-include editorial_staff/static *
+recursive-include editorial_staff/templates *
+recursive-include editorial_staff/fixtures *
+recursive-include editorial_staff/staticapp/gulp *
+recursive-include editorial_staff/staticapp/js *
+recursive-include editorial_staff/staticapp/scss *
+include editorial_staff/staticapp/gulpfile.js
+include editorial_staff/staticapp/package.json
