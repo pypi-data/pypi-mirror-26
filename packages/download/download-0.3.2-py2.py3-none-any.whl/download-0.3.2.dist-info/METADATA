@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: download
+Version: 0.3.2
+Summary: A tiny module to make downloading with python super easy.
+Home-page: http://github.com/choldgraf/download
+License: UNKNOWN
+Author: Chris Holdgraf
+Author-email: choldgraf@berkeley.edu
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: tqdm
+Requires-Dist: six
