@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+intertext/__init__.py
+intertext/classes.py
+intertext/constants.py
+intertext/functions.py
+intertext.egg-info/PKG-INFO
+intertext.egg-info/SOURCES.txt
+intertext.egg-info/dependency_links.txt
+intertext.egg-info/requires.txt
+intertext.egg-info/top_level.txt
