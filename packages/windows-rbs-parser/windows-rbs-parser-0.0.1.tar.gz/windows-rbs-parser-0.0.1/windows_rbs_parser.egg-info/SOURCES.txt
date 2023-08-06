@@ -1,0 +1,9 @@
+README.md
+setup.py
+rbs_parser/__init__.py
+windows_rbs_parser.egg-info/PKG-INFO
+windows_rbs_parser.egg-info/SOURCES.txt
+windows_rbs_parser.egg-info/dependency_links.txt
+windows_rbs_parser.egg-info/entry_points.txt
+windows_rbs_parser.egg-info/requires.txt
+windows_rbs_parser.egg-info/top_level.txt

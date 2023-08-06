@@ -1,0 +1,3 @@
+[console_scripts]
+rbs-parser = rbs_parser:main
+
