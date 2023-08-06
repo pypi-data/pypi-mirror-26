@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wooqi
+Version: 1.2.0
+Summary: Pytest plugin allowing to parametrize all the test sequence thanks to a config file
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD-3
+Description: UNKNOWN
+Platform: UNKNOWN
