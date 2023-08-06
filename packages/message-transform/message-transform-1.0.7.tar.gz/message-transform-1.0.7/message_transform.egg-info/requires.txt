@@ -1,0 +1,8 @@
+six
+
+[dev]
+check-manifest
+
+[test]
+sys
+pytest
