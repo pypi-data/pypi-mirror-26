@@ -1,0 +1,4 @@
+include quantipy/spglib/_spglib.c
+graft quantipy/spglib/src
+include quantipy/quicked/_quicked.cpp
+graft quantipy/quicked/src

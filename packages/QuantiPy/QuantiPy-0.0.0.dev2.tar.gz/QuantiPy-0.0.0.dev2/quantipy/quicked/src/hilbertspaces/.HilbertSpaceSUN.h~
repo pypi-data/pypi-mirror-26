@@ -1,0 +1,393 @@
+/** @file HilbertSpace_SUN_incl.h
+ *   
+ *  @author Alexander Wietek  
+ * 
+ *  @brief Template Specializations and auxilary funcitons for SU(N) Hilbertspaces
+ *  
+ */
+
+#ifndef QUANTUMLIBRARY_HILBERTSPACES_HILBERTSPACESUNINCL_H
+#define QUANTUMLIBRARY_HILBERTSPACES_HILBERTSPACESUNINCL_H
+
+#include "HilbertSpace.h"
+#include "combinatorics.h"
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+// Template Specializations for different SU(N) Hilbertspaces
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+namespace QuantumLibrary
+{
+  
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU2_TYPE>(){ return 2; }
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU3_TYPE>(){ return 3; }
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU4_TYPE>(){ return 4; }
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU5_TYPE>(){ return 5; }
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU6_TYPE>(){ return 6; }
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU7_TYPE>(){ return 7; }
+  template <> inline uint32 local_dimension<HILBERTSPACE_SU8_TYPE>(){ return 8; }
+
+  //////////
+  // SU(2)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU2_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU2_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU2_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU2_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU2_TYPE>& b);
+
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU2_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU2_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU2_TYPE>(_n_sites, combinatorics::multinomial<2>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<2>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_);}
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<2, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<2,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<2,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<2,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<2,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  //////////
+  // SU(3)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU3_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU3_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU3_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU3_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU3_TYPE>& b);
+
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU3_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU3_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU3_TYPE>(_n_sites, combinatorics::multinomial<3>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<3>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_); }
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<3, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<3,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<3,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<3,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<3,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  //////////
+  // SU(4)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU4_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU4_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU4_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU4_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU4_TYPE>& b);
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU4_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU4_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU4_TYPE>(_n_sites, combinatorics::multinomial<4>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<4>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_); }
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<4, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<4,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<4,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<4,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<4,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  //////////
+  // SU(5)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU5_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU5_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU5_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU5_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU5_TYPE>& b);
+
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU5_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU5_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU5_TYPE>(_n_sites, combinatorics::multinomial<5>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<5>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_); }
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<5, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<5,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<5,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<5,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<5,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  //////////
+  // SU(6)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU6_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU6_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU6_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU6_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU6_TYPE>& b);
+
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU6_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU6_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU6_TYPE>(_n_sites, combinatorics::multinomial<6>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<6>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_); }
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<6, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<6,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<6,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<6,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<6,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  //////////
+  // SU(7)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU7_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU7_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU7_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU7_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU7_TYPE>& b);
+
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU7_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU7_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU7_TYPE>(_n_sites, combinatorics::multinomial<7>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<7>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_); }
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<7, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<7,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<7,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<7,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<7,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  //////////
+  // SU(8)
+  template <>
+  class HilbertSpace<HILBERTSPACE_SU8_TYPE> : public HilbertSpaceBase<HILBERTSPACE_SU8_TYPE>
+  {
+    friend class HilbertSpaceDetail::iterator<HILBERTSPACE_SU8_TYPE>;
+    friend bool operator==<>(const HilbertSpace<HILBERTSPACE_SU8_TYPE>& a,
+			     const HilbertSpace<HILBERTSPACE_SU8_TYPE>& b);
+
+  public:
+    typedef HilbertSpaceDetail::iterator<HILBERTSPACE_SU8_TYPE> iterator;
+
+    HilbertSpace<HILBERTSPACE_SU8_TYPE>(const uint32& _n_sites, const qn_t& _quantumnumber)
+    : HilbertSpaceBase<HILBERTSPACE_SU8_TYPE>(_n_sites, combinatorics::multinomial<8>(_n_sites, _quantumnumber.val)),
+      quantumnumber_(_quantumnumber),
+      valid_quantumnumbers_(BasisStateSUNDetail::_valid_quantumnumbers<8>(quantumnumber_.val, n_sites_)),
+      begin_(iterator(*this, 0)),
+      end_(valid_quantumnumbers_ ? iterator(*this, -1) : iterator(*this, 0))
+    {assert(valid_quantumnumbers_); }
+
+    inline qn_t quantumnumber() const  {return quantumnumber_;}
+    inline const iterator& begin() const { return begin_; }
+    inline const iterator& end() const { return end_;}     
+    state_t operator[](const uint64& idx) const
+    { return BasisStateSUNDetail::_get_nth_state<8, uint64>
+	(idx, quantumnumber_.val, n_sites_);};
+  private:
+    inline state_t get_first_state() const 
+    {return BasisStateSUNDetail::_get_first_state<8,uint64>(quantumnumber_.val);}
+    inline state_t get_next_state(const state_t& state) const 
+    {return BasisStateSUNDetail::_get_next_state<8,uint64>(state, n_sites_);}
+    inline state_t get_last_state() const  
+    {return BasisStateSUNDetail::_get_last_state<8,uint64>(quantumnumber_.val);}
+    inline state_t get_stopper() const  
+    {return BasisStateSUNDetail::_get_stopper<8,uint64>(quantumnumber_.val);}
+
+    const qn_t quantumnumber_;
+    const bool valid_quantumnumbers_;
+    const iterator begin_;
+    const iterator end_;
+  };
+
+
+  // ///////////////////////////////////////////////////////////////
+  // // Functions to get quantum numbers from state
+  // ///////////////////////////////////////////////////////////////
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU2_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU2_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU2_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU2_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<2,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }    
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU3_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU3_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU3_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU3_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<3,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }    
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU4_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU4_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU4_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU4_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<4,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }      
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU5_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU5_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU5_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU5_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<5,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }    
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU6_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU6_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU6_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU6_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<6,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }    
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU7_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU7_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU7_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU7_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<7,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }    
+    
+  // template <> inline quantumnumber_t<HILBERTSPACE_SU8_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SU8_TYPE>::type& state, const HilbertSpace<HILBERTSPACE_SU8_TYPE>& hs)
+  // {
+  //   quantumnumber_t<HILBERTSPACE_SU8_TYPE> qn;
+  //   BasisStateSUNDetail::_get_sun_quantumnumber<8,uint64>(state, hs.n_sites(), qn.val);
+  //   return qn;
+  // }
+}
+  
+#endif

@@ -1,0 +1,188 @@
+/** @file SymmetryEngine.h
+ *   
+ *  @author Alexander Wietek  
+ * 
+ *  @version 0.1 
+ *  @brief applying symmetries and finding representatives
+ *  
+ */
+
+#ifndef __QUICKED_SYMMETRIES_SYMMETRYENGINE_H__
+#define __QUICKED_SYMMETRIES_SYMMETRYENGINE_H__
+
+#include <cassert>
+#include <algorithm>
+
+#include "BasisState.h"
+#include "HilbertSpace.h"
+#include "SymmetryDetail.h"
+
+#include "common.h"
+
+namespace quicked
+{
+  // Forward declarations
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  class SymmetryEngine;
+
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  void swap(SymmetryEngine<THilbertSpace, TLocalSymmetry>& se1,
+	    SymmetryEngine<THilbertSpace, TLocalSymmetry>& se2);
+
+  
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  class SymmetryEngine
+  {
+    typedef typename state_t<THilbertSpace>::type state_t;
+  public:
+    SymmetryEngine(const std::vector<std::vector<uint32> >& symmetries,
+		   const std::vector<complex>& bloch_factors,
+		   const TLocalSymmetry& _local_symmetry);
+    SymmetryEngine(const SymmetryEngine& se);
+    ~SymmetryEngine();
+    friend void swap<>(SymmetryEngine& se1, SymmetryEngine& se2);
+    SymmetryEngine& operator=(SymmetryEngine rhs);
+
+    inline uint32 n_sites() const {return n_sites_;};
+    inline uint32 n_symmetries() const {return n_symmetries_;};
+    std::vector< std::vector<uint32> > lattice_symmetries() const { return orig_lattice_symmetries_;}
+
+    
+    void find_representative(const state_t& state, state_t* representative, complex* coeff) const;
+    inline void apply_symmetry(const state_t& state, const int& num_sym, state_t* derivedstate, 
+			       complex* coeff) const;
+  private:
+    uint32 n_sites_;
+    uint32 n_lattice_symmetries_;
+    uint32 n_symmetries_;
+    uint32 *lattice_symmetries_;  // dim = n_symmetries_*n_sites_
+    complex *bloch_factors_;      // dim = n_symmetries_
+
+    TLocalSymmetry local_symmetry_;
+    std::vector<std::vector<uint32> > orig_lattice_symmetries_;
+
+  };
+ 
+
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  SymmetryEngine<THilbertSpace, TLocalSymmetry>::SymmetryEngine
+  (const std::vector<std::vector<uint32> >& _symmetries,
+   const std::vector<complex>& _bloch_factors,
+   const TLocalSymmetry& _local_symmetry)
+    : n_sites_(_symmetries[0].size()),
+      n_lattice_symmetries_(_symmetries.size()),
+      n_symmetries_(_symmetries.size()*_local_symmetry.n_symmetries()),
+      local_symmetry_(_local_symmetry),
+      orig_lattice_symmetries_(_symmetries)
+  {
+    // Check whether lattice symmetries are well-formed
+    for (uint32 i = 0; i < _symmetries.size(); ++i)
+      {
+	assert(_symmetries[i].size() == n_sites_);
+	assert(SymmetryDetail::is_valid_permutation(_symmetries[i]));
+      }
+    assert(_bloch_factors.size() == n_lattice_symmetries_);
+
+    // Copy lattice symmetries to local array
+    lattice_symmetries_ = new uint32[n_symmetries_*n_sites_];
+    for (uint32 i = 0; i < local_symmetry_.n_symmetries(); ++i)
+      for (uint32 j = 0; j < n_lattice_symmetries_; ++j)
+	for (uint32 k = 0; k < n_sites_; ++k)
+	  lattice_symmetries_[i*n_lattice_symmetries_*n_sites_ + j*n_sites_ + k]
+	    = _symmetries[j][k];
+
+    // Precompute bloch factors of lattice and local symmetries
+    bloch_factors_ = new complex[n_symmetries_];
+     for (uint32 i = 0; i < local_symmetry_.n_symmetries(); ++i)
+      {
+	const complex coeff = local_symmetry_.bloch(i);
+	std::copy(_bloch_factors.begin(), _bloch_factors.end(),
+		  bloch_factors_ + i*n_lattice_symmetries_);
+	for (uint32 j = i*n_lattice_symmetries_; j < (i+1)*n_lattice_symmetries_; ++j)
+	  bloch_factors_ *= coeff;
+      }
+  }
+
+  
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  SymmetryEngine<THilbertSpace, TLocalSymmetry>::SymmetryEngine
+  (const SymmetryEngine& se)
+    : n_sites_(se.n_sites_),
+      n_lattice_symmetries_(se.n_lattice_symmetries_),
+      n_symmetries_(se.n_symmetries_),
+      local_symmetry_(se.local_symmetry_),
+      orig_lattice_symmetries_(se.orig_lattice_symmetries_)
+  {
+    lattice_symmetries_ = new uint32[n_symmetries_*n_sites_];
+    std::copy(se.lattice_symmetries_, se.lattice_symmetries_ + n_symmetries_*n_sites_);
+    bloch_factors_ = new complex[n_symmetries_*local_symmetry_.n_symmetries()];
+    std::copy(se.bloch_factors_, se.bloch_factors_ + se.n_symmetries_, bloch_factors_);
+  }
+
+  
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  SymmetryEngine<THilbertSpace, TLocalSymmetry>::~SymmetryEngine()
+  {
+    delete [] lattice_symmetries_;
+    delete [] bloch_factors_;
+  }
+
+  
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  void swap(SymmetryEngine<THilbertSpace, TLocalSymmetry>& se1,
+	    SymmetryEngine<THilbertSpace, TLocalSymmetry>& se2)
+  {
+    using std::swap; 
+    swap(se1.n_sites_, se2.n_sites_);
+    swap(se1.n_lattice_symmetries_, se2.n_lattice_symmetries_);
+    swap(se1.n_symmetries_, se2.n_symmetries_);
+    swap(se1.lattice_symmetries_, se2.lattice_symmetries_);
+    swap(se1.bloch_factors_, se2.bloch_factors_); 
+    swap(se1.local_symmetry_, se2.local_symmetry_);
+    swap(se1.orig_lattice_symmetries_, se2.orig_lattice_symmetries_);
+  }
+
+  
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  SymmetryEngine<THilbertSpace, TLocalSymmetry>&
+  SymmetryEngine<THilbertSpace, TLocalSymmetry>::operator=
+  (SymmetryEngine rhs)
+  {
+    swap(*this, rhs);
+    return *this;
+  }
+  
+
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  void SymmetryEngine<THilbertSpace, TLocalSymmetry>::find_representative
+  (const state_t& state, state_t* representative, complex* coeff) const
+  {
+    *representative = std::numeric_limits<uint64>::max();
+    for (uint32 sym = 0; sym < n_symmetries_; ++sym)
+    {
+      state_t translate;
+      complex coeff2;
+      apply_symmetry(state, sym, &translate, &coeff2);
+      if (translate < *representative)
+	{
+	  *representative = translate;
+	  *coeff = coeff2;
+	}
+    }
+  }
+
+  
+  template<hilbert_t THilbertSpace, class TLocalSymmetry>
+  void SymmetryEngine<THilbertSpace, TLocalSymmetry>::apply_symmetry
+  (const state_t& state, const int& num_sym, state_t* derivedstate, complex* coeff) const
+  {
+    // Apply lattice symmetry
+    *derivedstate = SymmetryDetail::apply_permutation<THilbertSpace>
+      (state, n_sites_, lattice_symmetries_ + num_sym*n_sites_);
+    // Apply local symmetry
+    local_symmetry_.apply_symmetry(num_sym/n_lattice_symmetries_, derivedstate);
+    *coeff = bloch_factors_[num_sym];
+  }
+  
+}
+#endif

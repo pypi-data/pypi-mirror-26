@@ -1,0 +1,158 @@
+/*  @file interface.h
+ *
+ *  @author Alexander Wietek 
+ *
+ *  @brief Implementation of Python interface functions
+ */
+#ifndef __QUICKED_INTERFACE_H__
+#define __QUICKED_INTERFACE_H__
+
+#include <iostream>
+#include <vector>
+
+#include "HilbertSpace.h"
+#include "SymmetryEngine.h"
+#include "common.h"
+
+namespace quicked { namespace interface
+  {
+    
+    // Convert sz to n_upspins used in quantum number in Spin Hilbert spaces
+    template <hilbert_t THilbertSpace>
+    inline int sz_to_n_upspins(const uint32& n_sites, const int& sz);
+
+    template <> inline int sz_to_n_upspins<HILBERTSPACE_SPINHALF_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return n_sites / 2 + sz; }
+    template <> inline int sz_to_n_upspins<HILBERTSPACE_SPIN_ONE_GEN_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return n_sites + sz; }
+    template <> inline int sz_to_n_upspins<HILBERTSPACE_SPIN_THREEHALF_GEN_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return 3 * n_sites / 2 + sz; }
+    template <> inline int sz_to_n_upspins<HILBERTSPACE_SPIN_TWO_GEN_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return 2 * n_sites + sz; }
+
+    
+    // max number up n_upspins
+    template <hilbert_t THilbertSpace>
+    inline int max_n_upspins(const uint32& n_sites);
+
+    template <> inline int max_n_upspins<HILBERTSPACE_SPINHALF_TYPE>
+    (const uint32& n_sites)
+    { return n_sites; }
+    template <> inline int max_n_upspins<HILBERTSPACE_SPIN_ONE_GEN_TYPE>
+    (const uint32& n_sites)
+    { return 2 * n_sites; }
+    template <> inline int max_n_upspins<HILBERTSPACE_SPIN_THREEHALF_GEN_TYPE>
+    (const uint32& n_sites)
+    { return 3 * n_sites; }
+    template <> inline int max_n_upspins<HILBERTSPACE_SPIN_TWO_GEN_TYPE>
+    (const uint32& n_sites)
+    { return 4 * n_sites; }
+    
+
+    // Get raw dimension of Hilbert spaces
+    template <hilbert_t THilbertSpace>
+    inline uint64 raw_dimension(const uint32& n_sites, const int& sz);
+
+    template <> inline uint64 raw_dimension<HILBERTSPACE_SPINHALF_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return quicked::combinatorics::binomial(n_sites, n_sites / 2 + sz); }
+    template <> inline uint64 raw_dimension<HILBERTSPACE_SPIN_ONE_GEN_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return quicked::combinatorics::bounded_partition(n_sites + sz, n_sites, 3); }
+    template <> inline uint64 raw_dimension<HILBERTSPACE_SPIN_THREEHALF_GEN_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return quicked::combinatorics::bounded_partition(3 * n_sites / 2 + sz, n_sites, 4); }
+    template <> inline uint64 raw_dimension<HILBERTSPACE_SPIN_TWO_GEN_TYPE>
+    (const uint32& n_sites, const int& sz)
+    { return quicked::combinatorics::bounded_partition(2 * n_sites + sz, n_sites, 5); }
+
+    
+    // Return all basis states (raw Hilbert space)
+    template <hilbert_t THilbertSpace>
+    void get_basis_states(const uint32& n_sites, const quantumnumber_t<THilbertSpace>& qn,
+			  uint64 *n_basis_states, uint64 **basis_states)
+    {
+      std::vector<uint64> basis_state_vec;
+
+      // Create all basis states
+      HilbertSpace<THilbertSpace> hs(n_sites, qn);
+      typedef typename HilbertSpace<THilbertSpace>::iterator iter_t;
+      iter_t start = hs.begin();
+      iter_t end = hs.end();
+      for(iter_t state = hs.begin(); state != hs.end(); ++state)
+	basis_state_vec.push_back(*state);
+
+      // Fill C array from C++ vector
+      *basis_states = new uint64[basis_state_vec.size()];
+      std::copy(basis_state_vec.begin(), basis_state_vec.end(), *basis_states);
+      *n_basis_states = basis_state_vec.size();
+    }
+
+    
+    // Return all basis states and norms (of the symmetrized Hilbert space)
+    template <hilbert_t THilbertSpace, template <hilbert_t> class TLocalSymmetry >
+    void get_basis_states_symmetrized(const uint32& n_sites,
+				      const quantumnumber_t<THilbertSpace>& qn,
+				      const std::vector<std::vector<uint32> >& symmetries,
+				      const std::vector<complex>& bloch_factors,
+				      const TLocalSymmetry& local_symmetry,
+				      uint64 *n_basis_states,
+				      uint64 **basis_states,
+				      double **norms)
+    {
+      SymmetryEngine<THilbertSpace, TLocalSymmetry> symmetry_engine
+	(symmetries, bloch_factors, local_symmetry);
+
+      // Create all basis states
+      std::vector<uint64> basis_states_vec;
+      std::vector<double> norms_vec;
+      HilbertSpace<THilbertSpace> hs(n_sites, qn);
+      typedef typename HilbertSpace<THilbertSpace>::iterator iter_t;
+      iter_t start = hs.begin();
+      iter_t end = hs.end();
+      for(iter_t state = hs.begin(); state != hs.end(); ++state)
+	{
+	  // Find if state is representative
+	  uint64 rep;
+	  complex coeff;
+	  symmetry_engine.find_representative(*state, &rep, &coeff);
+	  if (*state==rep)
+	    {
+	      // Compute norm
+	      complex amplitude = 0.0;
+	      for (uint32 symcnt = 0; symcnt < symmetry_engine.n_symmetries(); ++symcnt)
+		{
+		  uint64 derivedstate;
+		  complex coeff;
+		  symmetry_engine.apply_symmetry(rep, symcnt, &derivedstate, &coeff);
+		  if(derivedstate == rep)
+		    amplitude += coeff;
+		}
+	      // Append if non-zero norm
+	      if (std::abs(amplitude) > 1e-6)
+		{
+		  basis_states_vec.push_back(rep);
+		  norms_vec.push_back(std::sqrt(std::abs(amplitude))) = 0;
+		}     
+	    } 
+	}
+
+      // Fill C arrays from C++ vectors
+      *basis_states = new uint64[basis_states_vec.size()];
+      std::copy(basis_states_vec.begin(), basis_states_vec.end(), *basis_states);
+      *n_basis_states = basis_states_vec.size();
+      basis_states_vec.clear();
+
+      *norms = new uint64[norms_vec.size()];
+      std::copy(norms_vec.begin(), norms_vec.end(), *norms);
+      norms_vec.clear();      
+    }
+    
+  }
+}
+
+#endif

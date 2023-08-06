@@ -1,0 +1,204 @@
+/** @file HilbertSpace.h
+ *   
+ *  @author Alexander Wietek  
+ *  @date 25.7.2015 
+ * 
+ *  @version 0.1 
+ *  @brief General Interface class for Hilbert Spaces
+ *  
+ */
+
+#ifndef __QUICKED_HILBERTSPACES_HILBERTSPACE_H__
+#define __QUICKED_HILBERTSPACES_HILBERTSPACE_H__
+
+#include <cassert>
+#include <string.h>
+
+#include "common.h"
+#include "bitops.h"
+#include "utils.h"
+
+#include "HilbertSpaceTypes.h"
+#include "BasisState.h"
+
+#include "bitops.h"
+#include "bitops_dynamic_bitset.h"
+
+namespace quicked
+{
+  template <hilbert_t THilbertSpace> class HilbertSpace;
+  
+  template <hilbert_t THilbertSpace> inline bool operator ==
+  (const HilbertSpace<THilbertSpace>& a, const HilbertSpace<THilbertSpace>& b);
+  template <hilbert_t THilbertSpace> inline bool operator !=
+  (const HilbertSpace<THilbertSpace>& a, const HilbertSpace<THilbertSpace>& b);
+  
+
+  ///////////////////////////////////////////////////////////////
+  // Generic Hilbertspace Base Class 
+  ///////////////////////////////////////////////////////////////
+  template <hilbert_t THilbertSpace> 
+  class HilbertSpaceBase
+  {
+  public:
+    typedef typename state_t<THilbertSpace>::type state_t;
+    typedef quantumnumber_t<THilbertSpace> qn_t;
+
+    HilbertSpaceBase(const uint32& _n_sites, const uint64& _dimension)
+      : n_sites_(_n_sites),
+	dimension_(_dimension)
+    {}
+
+    // inline const hilbert_t type() const {return THilbertSpace;}
+    inline const uint32& n_sites() const {return n_sites_;}
+    inline const uint64& dimension() const {return dimension_;}
+
+  protected:
+    uint32 n_sites_;
+    uint64 dimension_;
+  };
+
+
+  // Declaration of an Iterator on Hilbertspaces
+  namespace HilbertSpaceDetail{template <hilbert_t THilbertSpace> class iterator;}
+  template <hilbert_t THilbertSpace> inline uint32 local_dimension();
+
+
+  ///////////////////////////////////////////////////////////////
+  // Template Definition for Hilbert Spaces (Specializations in ..._incl.h)
+  ///////////////////////////////////////////////////////////////
+  template <hilbert_t THilbertSpace> 
+  class HilbertSpace : public HilbertSpaceBase<THilbertSpace>
+  {
+    friend class HilbertSpaceDetail::iterator<THilbertSpace>;
+    friend bool operator==<>(const HilbertSpace<THilbertSpace>& a,
+			     const HilbertSpace<THilbertSpace>& b);
+  public:
+    typedef HilbertSpaceDetail::iterator<THilbertSpace> iterator;
+    using typename HilbertSpaceBase<THilbertSpace>::qn_t;
+    using typename HilbertSpaceBase<THilbertSpace>::state_t;
+
+    HilbertSpace(const uint32& _n_sites, const qn_t& _quantumnumber); 
+
+    inline qn_t quantumnumber() const;
+    inline const iterator& begin() const; 
+    inline const iterator& end() const;    
+        
+  private:
+    inline state_t get_first_state() const;
+    inline state_t get_next_state(const state_t& state) const;
+    inline state_t get_last_state() const;
+    inline state_t get_stopper() const;
+
+
+    const qn_t quantumnumber_;
+    const iterator begin_;
+    const iterator end_;
+
+  };
+
+
+  //////////////////////////////////////////////
+  // generic forward iterator on Hilbertspaces
+  namespace HilbertSpaceDetail
+  {
+    template <hilbert_t THilbertSpace>
+    class iterator
+    {
+    public:  
+      typedef typename state_t<THilbertSpace>::type state_t;
+
+      // Copy constructor
+      iterator(const iterator& iter)
+      : hilbertspace(iter.hilbertspace), current_state(iter.current_state){}  
+      // Copy assignment constructor
+      iterator& operator= (const iterator& other)
+      {
+	current_state = other.current_state;
+	return *this;
+      }
+
+      iterator(const HilbertSpace<THilbertSpace>& _hilbertspace,
+	       const int64 index)
+	: hilbertspace(_hilbertspace), 
+	  current_state(index==-1 ? hilbertspace.get_stopper() :
+			hilbertspace[index]){}  
+
+      inline bool operator==
+      (const typename HilbertSpace<THilbertSpace>::iterator& rhs) const 
+      { return (current_state == rhs.current_state); }
+
+      inline bool operator!=
+      (const typename HilbertSpace<THilbertSpace>::iterator& rhs) const 
+      {  return !operator==(rhs); }
+
+      inline iterator& operator++() 
+      { 
+	current_state = hilbertspace.get_next_state(current_state);
+	return *this;
+      }
+      
+      inline state_t operator*() const
+      { return current_state;}
+
+    private:
+      const HilbertSpace<THilbertSpace>& hilbertspace; 
+      state_t current_state;     
+    };   
+
+  }
+
+  //////////////////////////////////////////////
+  // Comparision for Hilbertspaces
+  template <hilbert_t THilbertSpace> inline bool operator ==
+  (const HilbertSpace<THilbertSpace>& a, const HilbertSpace<THilbertSpace>& b)
+  {return (a.n_sites_ == b.n_sites_) && (a.quantumnumber_ == b.quantumnumber_);}
+  template <hilbert_t THilbertSpace> inline bool operator !=
+  (const HilbertSpace<THilbertSpace>& a, const HilbertSpace<THilbertSpace>& b)
+  {return !(a==b);}
+
+  ///////////////////////////////////////////////////////////////
+  // Functions template to get quantum numbers from state
+  // ///////////////////////////////////////////////////////////////
+  // template <hilbert_t THilbertSpace> inline quantumnumber_t<THilbertSpace> quantumnumber
+  // (const typename state_t<THilbertSpace>::type& statem, const HilbertSpace<THilbertSpace>& hs);
+
+
+  // template <> inline quantumnumber_t<HILBERTSPACE_SPINHALF_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SPINHALF_TYPE>::type& state, 
+  //  const HilbertSpace<HILBERTSPACE_SPINHALF_TYPE>& hs)
+  // {const quantumnumber_t<HILBERTSPACE_SPINHALF_TYPE> qn = {popcnt(state)}; return qn;}    
+  
+  // template <> inline quantumnumber_t<HILBERTSPACE_SPINHALFLONG_TYPE> quantumnumber
+  // (const typename state_t<HILBERTSPACE_SPINHALFLONG_TYPE>::type& state, 
+  //  const HilbertSpace<HILBERTSPACE_SPINHALFLONG_TYPE>& hs)
+  // {const quantumnumber_t<HILBERTSPACE_SPINHALFLONG_TYPE> qn = {(uint32)state.count()}; return qn;}    
+
+
+  /////////////////////////////////////////////////////////////////////
+  // Function to get limits for parallelization of Hilbertspace walks
+  /////////////////////////////////////////////////////////////////////
+  template <hilbert_t THilbertSpace>
+  void get_parallel_limits(const HilbertSpace<THilbertSpace>& hs, const int& myid,
+			   const int& n_mpi_tasks, int64* lowerlimit,
+			   int64* upperlimit)
+  {
+    // returns -1 for last state in Hilbertspace
+    int64 chunksize = hs.dimension()/n_mpi_tasks;
+    *upperlimit = ( myid == n_mpi_tasks-1 ? -1 : (myid+1)*chunksize );
+    *lowerlimit = myid*chunksize;
+  }
+  
+}
+
+// Include Template specializations
+#include "HilbertSpaceSpinhalf.h"
+#include "HilbertSpaceSpinhalfLong.h"
+#include "HilbertSpaceSpinGeneric.h"
+#include "HilbertSpaceSUN.h"
+#include "HilbertSpaceSUNLong.h"
+#include "HilbertSpaceUnconstrained.h"
+
+#endif
+
+
