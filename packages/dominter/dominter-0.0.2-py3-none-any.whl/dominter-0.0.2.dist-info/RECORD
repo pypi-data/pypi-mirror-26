@@ -1,0 +1,12 @@
+dominter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dominter/bootstrap4.py,sha256=3yOz5XiZvddrxuXOMN7YfBF-NnK24sfXicKNTjcxl6E,3121
+dominter/dom.py,sha256=YeCG2oPN-cqGMf1p52BtNNc0RsO56iTjmh8yNuTyKCM,41152
+dominter/dominter.html,sha256=tDTQWcIUfjp_uOzsXZjsj4sNPc-7z630417wI8DLV24,168
+dominter/dominter.js,sha256=cWn_aecwO5W7tb7tvtu5HES6Go40uVXCbXJagkO5NZQ,9013
+dominter/pure1.py,sha256=cWOIN80ySCRneNSgL80gVEeaG3k7dYimC4c1hvMsbXg,3059
+dominter-0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dominter-0.0.2.dist-info/METADATA,sha256=ndbi9dOrJd6-aeBpXWJkG6YBSrIKxXXSEY4byt-A4lw,1360
+dominter-0.0.2.dist-info/RECORD,,
+dominter-0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dominter-0.0.2.dist-info/metadata.json,sha256=M4ixixtv-IyFfpcUEBtudpEgmE3a9rikQCoxq62pktc,1451
+dominter-0.0.2.dist-info/top_level.txt,sha256=7Ts30rI9iNJpo-RGjx-tQVTdqgt3jXTCxPbquj28Vbk,9

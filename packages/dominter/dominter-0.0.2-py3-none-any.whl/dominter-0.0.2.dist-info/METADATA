@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: dominter
+Version: 0.0.2
+Summary: A simple GUI package for small asynchronous web application
+Home-page: https://github.com/takd4com/dominter
+Author: Tamini Bean
+Author-email: takd4com@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: dom browser gui asynchronous web
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Dist: tornado
+
+UNKNOWN
+
+
