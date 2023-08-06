@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: slacklogging
+Version: 0.0.2
+Summary: Slack logging integration.
+Home-page: https://github.com/narusemotoki/slacklogging
+Author: Motoki Naruse
+Author-email: motoki@naru.se
+License: MIT License
+Description: Logging Handler for Slack
+        =========================
+        
+        You can log on Slack with this handler.
+        
+        
+        .. code-block:: python
+        
+           import logging
+        
+           import slacklogging
+        
+        
+           slack_logger = logging.getLogger('slack')
+           slack_logger.addHandler(slacklogging.Handler(token, channel, username))
+        
+        
+        You have to make a bot user for this logger, and need to invite the bot user to the channel.
+        
+Keywords: logging,slack
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License

@@ -1,0 +1,8 @@
+README.rst
+setup.py
+slacklogging.py
+slacklogging.egg-info/PKG-INFO
+slacklogging.egg-info/SOURCES.txt
+slacklogging.egg-info/dependency_links.txt
+slacklogging.egg-info/requires.txt
+slacklogging.egg-info/top_level.txt
