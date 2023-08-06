@@ -1,0 +1,3 @@
+[console_scripts]
+template = get_template.cli.__main__:template
+
