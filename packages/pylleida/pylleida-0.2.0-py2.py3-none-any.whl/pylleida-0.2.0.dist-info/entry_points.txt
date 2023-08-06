@@ -1,0 +1,3 @@
+[console_scripts]
+pylleida = pylleida.cli:main
+
