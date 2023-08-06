@@ -1,0 +1,12 @@
+inxs/__init__.py,sha256=SElSYdhTwwsq5jUuTXgDYSkkKJ0XMeSo9Lfp0OiODIk,29025
+inxs/cli.py,sha256=EvBqJ5upXWXErxmZOcgkA_DVnHLwMr-csnG-PajfZ6k,3827
+inxs/contrib.py,sha256=La7H1DgXSsNezCzCZYzg6qA3WacrCcaLFvy0Gd9mo8Y,1028
+inxs/lib.py,sha256=QHND_lbI2OSszX5U_J1Og7pbV3mGvh4hGlpRB9Phs_E,13745
+inxs/lxml_utils.py,sha256=hIu9mGWBk6NGWti6atAYTYQT3UaLD3_KN9piSj1Jcoc,2202
+inxs-0.1b2.dev1.dist-info/DESCRIPTION.rst,sha256=491tSXFfTwsgVIS0cj-cuuao-p3zoR8DWp0lYId9fmc,3100
+inxs-0.1b2.dev1.dist-info/METADATA,sha256=wY4J8VHZPFgsHZ3ZGcbCJkbPZwu1PEmGdiNV8HefmB0,3973
+inxs-0.1b2.dev1.dist-info/RECORD,,
+inxs-0.1b2.dev1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+inxs-0.1b2.dev1.dist-info/entry_points.txt,sha256=w1Wz-lmWor38ZKVz8AJbIahoFrd5xfvCOn8Z6gaDbrU,40
+inxs-0.1b2.dev1.dist-info/metadata.json,sha256=5qvgUj6nJprc2j0cMY_iGuh3GU8uCay75fiQloe5t_k,1236
+inxs-0.1b2.dev1.dist-info/top_level.txt,sha256=tk8T5Zoq6IS98Tz69qiOw0ZGqPTsPICsd4sBn9qiO1w,5
