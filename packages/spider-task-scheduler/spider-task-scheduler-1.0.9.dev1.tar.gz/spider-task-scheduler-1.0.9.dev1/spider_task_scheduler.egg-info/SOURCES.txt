@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+scheduler/__init__.py
+scheduler/scheudler.py
+spider_task_scheduler.egg-info/PKG-INFO
+spider_task_scheduler.egg-info/SOURCES.txt
+spider_task_scheduler.egg-info/dependency_links.txt
+spider_task_scheduler.egg-info/requires.txt
+spider_task_scheduler.egg-info/top_level.txt
