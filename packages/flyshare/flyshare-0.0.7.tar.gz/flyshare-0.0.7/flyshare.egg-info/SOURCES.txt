@@ -1,0 +1,10 @@
+README.md
+setup.py
+flyshare/__init__.py
+flyshare.egg-info/PKG-INFO
+flyshare.egg-info/SOURCES.txt
+flyshare.egg-info/dependency_links.txt
+flyshare.egg-info/top_level.txt
+flyshare/stock/__init__.py
+flyshare/stock/cons.py
+flyshare/stock/trading.py
