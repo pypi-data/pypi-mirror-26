@@ -1,0 +1,5 @@
+dbus-python==1.2.4
+numpy==1.13.3
+pgi==0.0.11.1
+PyAudio==0.2.11
+six==1.11.0
