@@ -1,0 +1,4 @@
+igraph
+jinja2
+matplotlib
+pypandoc
