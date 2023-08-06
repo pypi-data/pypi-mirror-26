@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: ohadlibs
+Version: 0.1.2
+Summary: A set of tools that I created for my personal work. I use them on a daily basis so I organized them inside a library. The library should get updated frequently.
+Home-page: https://github.com/ohadch/ohadlibs
+Author: Ohad Chaet
+Author-email: ohadch9518@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/peterldowns/mypackage/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: <3
