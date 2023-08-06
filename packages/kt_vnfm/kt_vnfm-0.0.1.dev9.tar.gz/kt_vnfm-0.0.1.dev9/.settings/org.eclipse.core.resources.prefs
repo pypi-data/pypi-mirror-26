@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//kt_vnfm/axgate_vpn.py=utf-8
+encoding//kt_vnfm/drivers/vnf.py=utf-8
+encoding//kt_vnfm/drivers/vnf_states.py=utf-8
+encoding//kt_vnfm/utils/auxiliary_functions.py=utf-8
+encoding//kt_vnfm/utils/ko_logger.py=utf-8

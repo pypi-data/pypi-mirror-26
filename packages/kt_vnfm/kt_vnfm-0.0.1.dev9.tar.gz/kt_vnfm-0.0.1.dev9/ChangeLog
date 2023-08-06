@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+* update axgate\_utm.py considering string manipulation difference between python 2 and python 3
+* add argparser in kt\_vnfm\_axgate
+* Update python code using 2to3 tool Remove codes using pyping - needs to be updated
+* Update to fit python 3.4
+* Update code for python3.4
+* update for packaging
+* implement get\_sw\_version for VPN
+* ADD README + update setup.cfg
+* Initial commit
+* Initial commit

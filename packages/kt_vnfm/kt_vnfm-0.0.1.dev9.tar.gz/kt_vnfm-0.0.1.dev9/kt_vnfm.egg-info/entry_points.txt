@@ -1,0 +1,3 @@
+[console_scripts]
+kt_vnfm_axgate = kt_vnfm.axgate_vpn:main
+
