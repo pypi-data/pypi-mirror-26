@@ -1,0 +1,5 @@
+sqlparse
+
+[dev]
+ipdb
+pep8

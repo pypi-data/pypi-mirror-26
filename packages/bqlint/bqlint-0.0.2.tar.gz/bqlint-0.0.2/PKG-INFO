@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bqlint
+Version: 0.0.2
+Summary: A linter for BigQuery's Standard SQL
+Home-page: https://github.com/TKNGUE/bqlint
+Author: TKNGUE
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
