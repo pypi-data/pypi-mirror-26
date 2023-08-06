@@ -1,0 +1,8 @@
+aiohttp
+bravado-core >= 4.2.2
+python-dateutil
+pyyaml
+
+[aiohttp_extras]
+aiodns
+cchardet
