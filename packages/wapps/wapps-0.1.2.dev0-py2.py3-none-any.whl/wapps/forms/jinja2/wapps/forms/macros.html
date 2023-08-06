@@ -1,0 +1,146 @@
+{% macro attrs(values) %}
+{% for name, value in values.items() %}{% if value != false %} {{ name }}{% if value != true %}="{{ value }}"{% endif %}{% endif %}{% endfor %}
+{% endmacro %}
+
+{% macro bootstrap_form(form, url=None, method='post', enctype='multipart/form-data', form_id=None, recaptcha=None, actions=None) %}
+{% set form_id = 'form-' + timehash()  %}
+<form id="{{ form_id }}" ref="{{ form_id }}" class="form-horizontal"
+        method="{{ method }}" {% if url %}action="{{ url }}"{% endif %}
+        enctype="{{ enctype }}"
+        @submit.prevent="onWappsFormsSubmit('{{ form_id }}')">
+    {% csrf_token %}
+    {% if recaptcha %}
+    <vue-recaptcha ref="{{ form_id }}-captcha" size="invisible"
+        sitekey="{{ recaptcha }}"
+        @verify="onWappsFormsVerify('{{ form_id }}')">
+    </vue-recaptcha>
+    {% endif %}
+    {% for error in form.non_field_errors() %}
+    <div class="form-group has-error text-danger">
+        <div class="col-sm-offset-3 col-sm-9">
+            <p class="form-control-static">{{ error }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    {% for hidden in form.hidden_fields() %}{{ hidden }}{% endfor %}
+    {% for field in form.visible_fields() %}
+        {{ bootstrap_field(field) }}
+    {% endfor %}
+    {% if actions %}
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            {% for action in actions %}
+            <button type="submit" class="{{ action.classes }}">{{ action.label }}</button>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</form>
+{% endmacro %}
+
+
+{% macro bootstrap_field(field) %}
+{% set widget = field.field.widget.__class__.__name__ %}
+<div class="form-group{% if field.errors %} has-error{% endif %}">
+    {% if widget == 'CheckboxInput' %}
+    {{ bootstrap_checkbox(field) }}
+    {% elif widget in ('DateInput', 'DateTimeInput', 'TimeInput') %}
+    {{ bootstrap_datetime(field) }}
+    {% elif widget in ('CheckboxSelectMultiple', 'RadioSelect') %}
+    {{ bootstrap_multiple_radio_checkbox(field) }}
+    {% else %}
+    {{ bootstrap_input(field) }}
+    {% endif %}
+</div>
+{% endmacro %}
+
+
+{% macro bootstrap_label(field) %}
+<label class="col-sm-3 control-label" {% if field.id_for_label %}for="{{ field.id_for_label.replace('_0', '') }}"{% endif %}>
+    {{ field.label }}
+    {% if field.field.required %}<span class="required">*</span>{% endif %}
+</label>
+{% endmacro %}
+
+
+{% macro bootstrap_help_errors(field) %}
+{% if field.help_text %}<p class="help-inline"><small>{{ field.help_text }}</small></p>{% endif %}
+{% if field.errors %}<span class="help-inline">
+    {% for error in  field.errors %}{{ error }}{% endfor %}
+</span>{% endif %}
+{% endmacro %}
+
+
+{% macro bootstrap_input(field) %}
+{{ bootstrap_label(field) }}
+<div class="col-sm-9 col-md-8 col-lg-7">
+    {{ field.as_widget(attrs={
+        'class': 'form-control',
+        '@invalid': 'onWappsFormsInvalid',
+        '@input': 'onWappsFormsChange',
+        '@change': 'onWappsFormsChange',
+    }) }}
+    {{ bootstrap_help_errors(field) }}
+</div>
+{% endmacro %}
+
+
+{% macro bootstrap_checkbox(field) %}
+<div class="col-sm-offset-3 col-sm-9 col-md-8 col-lg-7">
+    <div class="checkbox">
+        <label>
+            {{ field.as_widget(attrs={'@invalid': 'onWappsFormsInvalid', '@change': 'onWappsFormsChange'}) }}
+            {{ field.label }}
+            {% if field.field.required %}<span class="required">*</span>{% endif %}
+        </label>
+        {{ bootstrap_help_errors(field) }}
+    </div>
+</div>
+{% endmacro %}
+
+
+{% macro bootstrap_datetime(field) %}
+{% set input_type = field.field.widget.__class__.__name__.replace('Input', '').lower() %}
+{{ bootstrap_label(field) }}
+<div class="col-sm-9 col-md-8 col-lg-7">
+    <input type="{{ input_type }}" {% if field.id_for_label %}id="{{ field.id_for_label }}"{% endif %}
+        name="{{ field.html_name }}" class="form-control"
+        @invalid="onWappsFormsInvalid" @input="onWappsFormsChange" @change="onWappsFormsChange"
+        {% if field.value() != None %}value="{{ field.value() }}"{% endif %}
+    />
+    {{ bootstrap_help_errors(field) }}
+</div>
+{% endmacro %}
+
+
+{% macro bootstrap_multile_widgets(field) %}
+{% set widget=field.field.widget %}
+{% set id = field.id_for_label.replace('_0', '')  %}
+{#<ul{% if id %} id="{{ id }}"{% endif %}{% if widget.attrs.class %} class="{{ widget.attrs.class }}"{% endif %}>#}
+{% for group, options, index in widget.optgroups(field.name, field.value()) %}
+    {% set widget_id = '_'.join((id, index|string)) %}
+    {#% if group %}<li>{{ group }}<ul{% if id %} id="{{ id }}_{{ index }}"{% endif %}>{% endif %#}
+    {% for widget in options %}{{ caller(widget, id=widget_id) }}{% endfor %}
+    {#% if group %}</ul></li>{% endif %#}
+{% endfor %}
+{#</ul>#}
+{% endmacro %}
+
+
+{% macro bootstrap_multiple_radio_checkbox(field) %}
+{{ bootstrap_label(field) }}
+<div class="col-sm-9 col-md-8 col-lg-7">
+    {% call(widget, id=None) bootstrap_multile_widgets(field) %}
+    <div class="{{ widget.type }}">
+      <label>
+        <input type="{{ widget.type }}" name="{{ widget.name }}"
+        {% if id %}id="{{ id }}"{% endif %} value="{{ widget.value }}"
+        @invalid="onWappsFormsInvalid" @input="onWappsFormsChange" @change="onWappsFormsChange"
+        {{ attrs(widget.attrs) }}>
+        {{ widget.label }}
+      </label>
+    </div>
+    {% endcall %}
+    {{ bootstrap_help_errors(field) }}
+</div>
+{% endmacro %}

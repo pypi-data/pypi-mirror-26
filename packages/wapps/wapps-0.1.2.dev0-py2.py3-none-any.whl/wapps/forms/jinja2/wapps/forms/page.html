@@ -1,0 +1,14 @@
+{% from 'wapps/forms/macros.html' import bootstrap_form with context %}
+<html>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        {{ bootstrap_form(form, url=formdef.action_url, form_id=formdef.id, recaptcha=recaptcha, actions=[
+            {'label': button_label, 'classes': 'btn btn-primary'},
+        ]) }}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
