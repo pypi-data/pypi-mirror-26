@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/feed_media_backup/__init__.py
+src/feed_media_backup/cli.py
+src/feed_media_backup/utils.py
+src/feed_media_backup.egg-info/PKG-INFO
+src/feed_media_backup.egg-info/SOURCES.txt
+src/feed_media_backup.egg-info/dependency_links.txt
+src/feed_media_backup.egg-info/entry_points.txt
+src/feed_media_backup.egg-info/requires.txt
+src/feed_media_backup.egg-info/top_level.txt
