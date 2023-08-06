@@ -1,0 +1,191 @@
+Parameters:
+  Bucket:
+    Type: String
+    Description: Bucket used to store code and tasks
+  CodeS3Key:
+    Type: String
+    Description: Location of the most recent version of the lambda code
+  Environment:
+    Type: String
+    Description: Environment to run the function.
+  State:
+    Type: String
+    AllowedValues:
+      - ENABLED
+      - DISABLED
+    Description: State for CloudWatch event
+  CronExpression:
+    Type: String
+    Description: Cron expresion for lambda funcion frequency
+  AlarmEnabled:
+    Type: String
+    AllowedValues:
+      - 'True'
+      - 'False'
+  AlarmEmail:
+    Type: String
+    Default: ''
+  AlarmPeriod:
+    Type: String
+    Default: ''
+
+Conditions:
+  IsAlarmActive: !Equals [!Ref AlarmEnabled, 'True']
+
+Resources:
+  LambdaCronFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub LambdaCron-${Environment}
+      Code:
+        S3Bucket: !Ref Bucket
+        S3Key: !Ref CodeS3Key
+      Handler: main.handler
+      MemorySize: 128
+      Runtime: python2.7
+      Timeout: 60
+      Role: !GetAtt LambdaCronRole.Arn
+
+  LambdaCronRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub LambdaCron-${Environment}
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+            - lambda.amazonaws.com
+          Action:
+          - sts:AssumeRole
+      Policies:
+      - PolicyName: root
+        PolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+          - Effect: Allow
+            Action:
+              - logs:CreateLogGroup
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+            Resource: arn:aws:logs:*:*:*
+          - Effect: Allow
+            Action:
+              - s3:Get*
+              - s3:List*
+              - s3:PutObject
+            Resource: ['*']
+          - Effect: Allow
+            Action:
+              - sqs:SendMessage
+              - sqs:GetQueueUrl
+            Resource: arn:aws:sqs:*:*:*
+          - Effect: Allow
+            Action:
+              - lambda:InvokeFunction
+            Resource: ['*']
+          - Effect: Allow
+            Action:
+              - batch:SubmitJob
+            Resource: ['*']
+          - Effect: Allow
+            Action:
+              - athena:StartQueryExecution
+            Resource: ['*']
+
+  LambdaCronHourlyEvent:
+    Type: AWS::Events::Rule
+    Properties:
+      Description: !Sub LambdaCron-hourly-${Environment}
+      ScheduleExpression: !Ref CronExpression
+      State: !Ref State
+      Targets:
+        - Arn: !GetAtt LambdaCronFunction.Arn
+          Id: !Sub LambdaCron-hourly-${Environment}
+
+  LambdaCronEventPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref LambdaCronFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt LambdaCronHourlyEvent.Arn
+
+  LambdaCronSNSTopic:
+    Type: AWS::SNS::Topic
+    Condition: IsAlarmActive
+    Properties:
+      Subscription:
+        -
+          Endpoint: !Ref AlarmEmail
+          Protocol: "email"
+      TopicName: !Sub LambdaCron-${Environment}
+
+  LambdaCronLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/lambda/LambdaCron-${Environment}
+      RetentionInDays: 90
+
+  LambdaCronAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Condition: IsAlarmActive
+    Properties:
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      Threshold: 1
+      Statistic: Sum
+      Unit: Count
+      Period: !Ref AlarmPeriod
+      EvaluationPeriods: '1'
+      Dimensions:
+        - Name: FunctionName
+          Value:
+            Ref: LambdaCronFunction
+        - Name: Resource
+          Value:
+            Ref: LambdaCronFunction
+      AlarmActions:
+        - Ref: LambdaCronSNSTopic
+      AlarmDescription: !Sub Errors in LambdaCron ${Environment}
+      ActionsEnabled: True
+
+  LambdaCronErrorsMetric:
+    Type: AWS::Logs::MetricFilter
+    Properties:
+      LogGroupName: !Ref LambdaCronLogGroup
+      FilterPattern: "ERROR"
+      MetricTransformations:
+      - MetricValue: '1'
+        MetricNamespace: !Sub LambdaCron-${Environment}/Errors
+        MetricName: ErrorsCount
+
+  LambdaCronErrorsAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Condition: IsAlarmActive
+    Properties:
+      Namespace: !Sub LambdaCron-${Environment}/Errors
+      MetricName: ErrorsCount
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      Threshold: 1
+      Statistic: Sum
+      Period: !Ref AlarmPeriod
+      EvaluationPeriods: '1'
+      AlarmActions:
+        - Ref: LambdaCronSNSTopic
+      AlarmDescription: !Sub Errors running tasks for LambdaCron ${Environment}
+      ActionsEnabled: True
+
+Outputs:
+  LambdaCronFunction:
+    Value: !Ref LambdaCronFunction
+    Description: LambdaCronFunction
+  LambdaCronRole:
+    Value: !Ref LambdaCronRole
+    Description: LambdaCronRole
+  LambdaAlarmActive:
+    Value: !Ref AlarmEnabled
+    Description: IsAlarmActive
+

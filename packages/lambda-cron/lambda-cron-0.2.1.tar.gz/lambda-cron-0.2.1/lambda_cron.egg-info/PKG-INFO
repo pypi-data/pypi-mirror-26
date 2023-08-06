@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: lambda-cron
+Version: 0.2.1
+Summary: Serverless cron tool to run on AWS
+Home-page: https://github.com/mediaMath/lambda-cron
+Author: MediaMath
+Author-email: jbravo@mediamath.com
+License: UNKNOWN
+Download-URL: https://github.com/mediamath/lambda-cron/archive/v0.2.1.tar.gz
+Description: UNKNOWN
+Keywords: cron lambda aws serverless mediamath
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS

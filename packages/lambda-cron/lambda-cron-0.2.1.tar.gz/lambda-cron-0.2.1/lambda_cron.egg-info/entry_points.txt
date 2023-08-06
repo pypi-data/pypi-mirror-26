@@ -1,0 +1,3 @@
+[console_scripts]
+lambda-cron = lambda_cron.cli.cli_tool:main
+
