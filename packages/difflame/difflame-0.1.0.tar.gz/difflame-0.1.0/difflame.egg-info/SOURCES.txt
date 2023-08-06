@@ -1,0 +1,8 @@
+README.md
+difflame.py
+setup.py
+difflame.egg-info/PKG-INFO
+difflame.egg-info/SOURCES.txt
+difflame.egg-info/dependency_links.txt
+difflame.egg-info/requires.txt
+difflame.egg-info/top_level.txt
