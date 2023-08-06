@@ -1,0 +1,7 @@
+ruamel.yaml
+paramiko
+python-digitalocean
+memoized_property
+gems
+tokenmanager
+jinja2
