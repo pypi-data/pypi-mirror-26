@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: pubpub
+Version: 0.0.1.dev16
+Summary: "A package to turn jupyter notebooks into pdfs"
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: ari@fullstack.io
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: pbr
+Requires-Dist: pip
+Requires-Dist: setuptools
+
+## pubpub
+
+A package to turn Jupyter ipynb files into pdf files
+
+```bash
+pubpub --help
+```
+
+
+

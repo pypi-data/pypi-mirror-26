@@ -1,0 +1,13 @@
+pubpub/__init__.py,sha256=RqtkxURbZmMqvz0yOV6y1-i0wh9vvcu7-Gpct9gT9YQ,35
+pubpub/printer.py,sha256=Xf2Ez0CrdOxtUpHpfPb6x6pMVAQwTHMlXHiHs2gphEU,6592
+pubpub/version.py,sha256=5Y7zTKZohPRm_jixxm0M0ZAdXBvCkQlkvT0zxmvyuQc,91
+pubpub/cli/__init__.py,sha256=4VObWUEVXS7kmFa2wP2iaLSbq_qpwSFOkB9zEt7WgQs,21
+pubpub/cli/pubpub.py,sha256=u9Cvd62_noFpHhSgUVCqOn75Y0UEpVcG5gIZW9z8474,1216
+pubpub-0.0.1.dev16.dist-info/DESCRIPTION.rst,sha256=1Uc1dS6egIYH6AK-0_FFf-RJ8OSaWmFcGMKq2TuoDvs,94
+pubpub-0.0.1.dev16.dist-info/METADATA,sha256=9aZ4ISit6BNxxVYLX6vM4M1VXHmbGJC1IpkHT81aGXk,390
+pubpub-0.0.1.dev16.dist-info/RECORD,,
+pubpub-0.0.1.dev16.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pubpub-0.0.1.dev16.dist-info/entry_points.txt,sha256=ee13z4B6yoTza6IsP0g-XAWzsPaXyIgSawfFeNeI73U,68
+pubpub-0.0.1.dev16.dist-info/metadata.json,sha256=iMzJua9_ZMqAlgrZ_k7igOAiOgRUO3cIFf-cwAZdi5g,578
+pubpub-0.0.1.dev16.dist-info/pbr.json,sha256=EDbjany0oT514OLLVx_Guw5qVK_y5gm8NG5t4N07bSQ,47
+pubpub-0.0.1.dev16.dist-info/top_level.txt,sha256=2uDEWoMplh0jYDkgrn7crtc2of2MXjN5O_W3JVh1xX8,7
