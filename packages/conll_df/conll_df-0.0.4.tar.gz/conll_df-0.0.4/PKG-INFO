@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: conll_df
+Version: 0.0.4
+Summary: CONLL-U to Pandas DataFrame
+Home-page: http://github.com/interrogator/conll-df
+Author: Daniel McDonald
+Author-email: mcddjx@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: corpus,linguistics,nlp,treebank,parsing,conll,ud
+Platform: UNKNOWN
