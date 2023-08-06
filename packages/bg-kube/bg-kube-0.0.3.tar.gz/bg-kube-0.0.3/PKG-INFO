@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bg-kube
+Version: 0.0.3
+Summary: An interface that uses gcloud and kubectl to achieve blue-green deployments to GKE
+Home-page: https://github.com/stphivos/bg-kube
+Author: Phivos Stylianides
+Author-email: stphivos@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: kubernetes,blue-green,google cloud
+Platform: UNKNOWN
