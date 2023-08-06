@@ -1,0 +1,12 @@
+nbgitpuller/__init__.py,sha256=TT7yoHZFe6KG8igosYg3Y8kSJRovSWpmo133N-SbdSg,988
+nbgitpuller/handlers.py,sha256=RYn66a85Da-OLXOv-8VQ_D-IGeDuZ2AnzJxkhOpDjMk,5485
+nbgitpuller/pull.py,sha256=xh4zBxTBcli43atHqYCPffI8FFhR7Zn2HGTmkEeBYFg,8023
+nbgitpuller/static/index.js,sha256=RPFBXyGyir_oUp2VIHsiUv1SU7Mhd8UnljX-z8flcHY,11253
+nbgitpuller/templates/status.html,sha256=YdJgjmC9xtbyZiV7Vrr4mureXIHTV3eXyZbK4q-Q1xc,1809
+nbgitpuller-0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+nbgitpuller-0.3.dist-info/METADATA,sha256=hFWMM8IbEcVYgff9p8ktziG1a2E9vHADDR3r6m9zhCE,633
+nbgitpuller-0.3.dist-info/RECORD,,
+nbgitpuller-0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+nbgitpuller-0.3.dist-info/entry_points.txt,sha256=3nq4ntqYoy6wrO1Goe4oUrGeVimOSmHOWyKpN9e2VyQ,53
+nbgitpuller-0.3.dist-info/metadata.json,sha256=5LaC0K4cQIKwdtqJHfOLf-h3rrnnYY55uVvEwCTNThE,978
+nbgitpuller-0.3.dist-info/top_level.txt,sha256=p6zNmcuf8b-9aLdnjnxpoYmGxlK8O69NemENjv5QZmA,12
