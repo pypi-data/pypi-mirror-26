@@ -1,0 +1,13 @@
+devns/__init__.py,sha256=mUBAqhnQl21QT5HVu7IgxRiBtEagiRcixMSlZs7mD0g,1663
+devns/cli.py,sha256=OFxyy_ZW0gFs2WyptRRFtjtjZWb8fFkhCu7-X6C9vcw,2144
+devns/config.py,sha256=Y0nGmFPzerxuVq1SziiQsn1QElMqaO0ke0EjOS8PodI,3421
+devns/dns.py,sha256=GwTBfhMQcnSv4_Av48dV2twHE_iU0Ri9ApRogkI-rM0,5147
+devns/server.py,sha256=bN7iZal1-QLq8WR9qNDiV71KX4CT__lnKjd2Ra4ItWE,8969
+devns-0.4.7.dist-info/DESCRIPTION.rst,sha256=P_uD-uTHRpQ8PFt_upk-mkDSXwAEWDoSYWyVlPZnfCo,5472
+devns-0.4.7.dist-info/METADATA,sha256=TikLQOLzUTe60cI9npL7wNxRNLqGuj56VaCQW-rzeqA,6786
+devns-0.4.7.dist-info/RECORD,,
+devns-0.4.7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+devns-0.4.7.dist-info/entry_points.txt,sha256=3ri4_AUhAOzLZmVw8zMiwGKVF8F45DLQikJyR8XDV-8,42
+devns-0.4.7.dist-info/metadata.json,sha256=gT65oN60ssE6YaN3Ng4WzhRaNJMJRkAYbNM-zMNCygE,1626
+devns-0.4.7.dist-info/top_level.txt,sha256=mPhF1EKiA1oBxWYXm5m_6nVmq-_Wu4RYGBT9n1ElWfU,6
+devns-0.4.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
