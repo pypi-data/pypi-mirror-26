@@ -1,0 +1,9 @@
+mastercard_maws-1.0.0.dist-info/DESCRIPTION.rst,sha256=FxFPKQ_bQUJ63edRYuIHmEPemLxnISPFfxQHVzVv-Rk,28
+mastercard_maws-1.0.0.dist-info/METADATA,sha256=6f80X_PiF-RSl6geqptE5UREXOTyV7pFM37snnOfnZ0,611
+mastercard_maws-1.0.0.dist-info/RECORD,,
+mastercard_maws-1.0.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+mastercard_maws-1.0.0.dist-info/metadata.json,sha256=izHTWaASMzDhpiYF3uSy33nZBH6lTA1F4oRsy4SiIRg,825
+mastercard_maws-1.0.0.dist-info/top_level.txt,sha256=qfChW1uRzlb1AjFU4AkIVGzB99A9FqrfwHN6EK6LdNo,15
+mastercardmaws/__init__.py,sha256=vnq5TkDm_iKOZ2lRFGlhmNulo4cO06aH6qIYhOiLNlQ,185
+mastercardmaws/abu.py,sha256=pTnPtSBarqvx9uSVXksW1Undz3Mo9mWONiJHa5gaR_8,2780
+mastercardmaws/resourceconfig.py,sha256=X6SzY764H_r1K0QyRKfrBBKFa_ET5EGGNFU6zk2vXDc,3141
