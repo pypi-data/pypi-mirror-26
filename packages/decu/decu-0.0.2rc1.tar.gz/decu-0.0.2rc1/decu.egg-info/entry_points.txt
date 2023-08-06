@@ -1,0 +1,3 @@
+[console_scripts]
+decu = decu.__main__:main
+

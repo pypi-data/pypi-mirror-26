@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+decu/__init__.py
+decu/__main__.py
+decu/config.py
+decu/core.py
+decu/decu.cfg
+decu/io.py
+decu/logging.py
+decu.egg-info/PKG-INFO
+decu.egg-info/SOURCES.txt
+decu.egg-info/dependency_links.txt
+decu.egg-info/entry_points.txt
+decu.egg-info/not-zip-safe
+decu.egg-info/requires.txt
+decu.egg-info/top_level.txt
