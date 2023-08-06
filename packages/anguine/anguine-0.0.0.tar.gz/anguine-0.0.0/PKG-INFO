@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: anguine
+Version: 0.0.0
+Summary: anguine
+Home-page: https://github.com/vertexproject/anguine
+Author: visi
+Author-email: visi@vertex.link
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

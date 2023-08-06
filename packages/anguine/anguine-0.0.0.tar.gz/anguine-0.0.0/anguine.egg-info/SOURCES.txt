@@ -1,0 +1,6 @@
+README.rst
+setup.py
+anguine.egg-info/PKG-INFO
+anguine.egg-info/SOURCES.txt
+anguine.egg-info/dependency_links.txt
+anguine.egg-info/top_level.txt
