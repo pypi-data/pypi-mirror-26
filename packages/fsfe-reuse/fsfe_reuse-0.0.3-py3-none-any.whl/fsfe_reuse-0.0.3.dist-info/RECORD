@@ -1,0 +1,11 @@
+fsfe_reuse-0.0.3.dist-info/DESCRIPTION.rst,sha256=ym1H1-fQ_R0Gvtrw7jw4X1gHf_3JHFhsSg1fg8i576g,1005
+fsfe_reuse-0.0.3.dist-info/METADATA,sha256=nFzyWRwVHMYzb4sKaga9RiA0uCZX0otRank449kOXfs,1696
+fsfe_reuse-0.0.3.dist-info/RECORD,,
+fsfe_reuse-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+fsfe_reuse-0.0.3.dist-info/entry_points.txt,sha256=NeKza8BWvenBjVIF_-KlyXfir3g5SQcSMH21ghqDNxs,43
+fsfe_reuse-0.0.3.dist-info/metadata.json,sha256=GkJ1W9zr39lw0Psn13hIwZPFO2y4XLQuNSmTm4_li44,1050
+fsfe_reuse-0.0.3.dist-info/top_level.txt,sha256=rni1sDVj5YL6dsvG1tlFvHXer_A_-Gk-I6bvIjZbpUw,6
+reuse/__init__.py,sha256=0j52yi8_Z0nINs0c1HQonEuVe9V3BTppkSoPirVuHFk,9291
+reuse/_main.py,sha256=dSAtkvlIdvLcWO-wcNFK45PPfCWQzcZ-KSetbWjdCdo,3645
+reuse/_util.py,sha256=Q_4krb1dXphdi3LJCXBG45L8K-DNZroCHhPBvdQOIN0,2517
+reuse/licenses.py,sha256=27oN_k0G2XXLrMsDUuubyXAG1oslvIyfNjkZmllfZbs,7148
