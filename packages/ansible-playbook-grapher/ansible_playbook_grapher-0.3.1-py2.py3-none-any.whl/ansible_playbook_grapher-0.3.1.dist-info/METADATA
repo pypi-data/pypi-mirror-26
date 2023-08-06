@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: ansible-playbook-grapher
+Version: 0.3.1
+Summary: A command line tool to create a graph representing your Ansible playbook tasks and roles
+Home-page: https://github.com/haidaraM/ansible-playbook-grapher
+Author: HAIDARA Mohamed El Mouctar
+Author-email: elmhaidara@gmail.com
+License: MIT
+Download-URL: https://github.com/haidaraM/ansible-playbook-grapher/archive/v0.3.1.tar.gz
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: colour
+Requires-Dist: graphviz
+
+UNKNOWN
+
+
