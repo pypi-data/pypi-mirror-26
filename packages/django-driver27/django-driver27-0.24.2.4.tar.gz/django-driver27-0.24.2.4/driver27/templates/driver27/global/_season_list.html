@@ -1,0 +1,38 @@
+{% load champion_filter %}
+{% for season in seasons %}
+    <tr>
+        <td>
+            <a href="{{ season.get_absolute_url }}">
+                {{ season }}
+            </a>
+        </td>
+        {% if not request.GET.competition %}
+            <td>
+                <a href="{{ season.competition.get_absolute_url }}">
+                    {{ season.competition }}
+                </a>
+            </td>
+            <td>
+                {{ season.year }}
+            </td>
+        {% endif %}
+        <td>
+            {% if season.leader %}
+                {{ season.pk | champion_filter | safe }}
+                {{ season.leader.points }}
+                <a href="{{ season.leader.driver.get_absolute_url }}">{{ season.leader.driver }}</a> (
+                {{ season.leader.teams }})
+            {% else %}
+                -
+            {% endif %}
+        </td>
+        <td>
+            {% if season.team_leader %}
+                {{ season.team_leader.points }}
+                <a href="{{ season.team_leader.team.get_absolute_url }}">{{ season.team_leader.team }}</a>
+            {% else %}
+                -
+            {% endif %}
+        </td>
+    </tr>
+{% endfor %}

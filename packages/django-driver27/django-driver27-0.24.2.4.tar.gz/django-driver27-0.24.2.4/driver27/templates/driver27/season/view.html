@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block menu %}
+    {% include 'driver27/season/menu-pre.html' %}
+    {% include 'driver27/season/menu.html' %}
+{% endblock %}
+{% block content %}
+    {{ block.super }}
+
+    <div class="row">
+    <div class="col-md-6">
+        <div id="driver-rank" class="standing" data-standing-model="driver"></div>
+    </div>
+
+    <div class="col-md-6">
+        <div id="team-rank" class="standing" data-standing-model="team"></div>
+
+    </div>
+    </div>
+{% endblock %}
+
+{% block extra_script %}
+    {{ block.super }}
+    {% include 'driver27/include_rank_js.html' %}
+{% endblock %}

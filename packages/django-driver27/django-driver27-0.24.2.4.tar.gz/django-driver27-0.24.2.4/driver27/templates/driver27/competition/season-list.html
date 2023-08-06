@@ -1,0 +1,19 @@
+{% for competition in competitions %}
+    <tr>
+        <td><a href="{{ competition.get_absolute_url }}">{{ competition }}</a></td>
+        <td>
+            {% if competition.seasons.count %}
+                <ul>
+                    {% for season in competition.seasons.all %}
+                        <li>
+                            <a href="{{ season.get_absolute_url }}">
+                                {{ season }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+            {% endif %}
+        </td>
+    </tr>
+{% endfor %}

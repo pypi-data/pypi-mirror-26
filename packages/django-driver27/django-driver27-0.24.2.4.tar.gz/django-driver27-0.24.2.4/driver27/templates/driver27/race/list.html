@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+{% block menu %}
+    {% include 'driver27/season/menu-pre.html' %}
+    <li class="nav-item">
+        <a class="nav-link"
+           href="{{ season.get_races_url }}">{% trans 'Races' %}</a>
+    </li>
+{% endblock %}
+{% block content %}
+    {{ block.super }}
+    <table class="table">
+        <tr>
+            <th>{% trans 'Round' %}</th>
+            <th>{% trans 'Date' %}</th>
+            <th>{% trans 'Grand Prix' %}</th>
+            <th>{% trans 'Circuit' %}</th>
+            <th>{% trans 'Winner' %}</th>
+            <th>{% trans 'Winner team' %}</th>
+        </tr>
+        {% for race in races %}
+            <tr>
+                <td>
+                    <a href="{{ race.get_absolute_url }}">{{ race.round }}</a>
+                </td>
+                <td>{{ race.date }}</td>
+                <td>
+                    <i class="flag2x {{ race.grand_prix.country.flag_css }}"></i>
+                    {{ race.grand_prix }}
+                </td>
+                <td>
+                    <i class="flag2x {{ race.circuit.country.flag_css }}"></i>
+                    {{ race.circuit }}
+                </td>
+                {% if race.winner %}
+                    <td>
+                        {% with driver=race.winner.driver %}
+                            <i class="flag2x {{ driver.country.flag_css }}"></i>
+                            <a href="{{ driver.get_absolute_url }}">
+                                {{ driver }}
+                            </a>
+                        {% endwith %}
+                    </td>
+                    <td>
+                        {% with team=race.winner.team %}
+                            <i class="flag2x {{ team.country.flag_css }}"></i>
+                            <a href="{{ team.get_absolute_url }}">
+                                {{ team }}
+                            </a>
+                        {% endwith %}
+                    </td>
+                {% else %}
+                    <td>-</td>
+                    <td>-</td>
+                {% endif %}
+
+            </tr>
+        {% endfor %}
+
+    </table>
+
+{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'flags/sprite.css' %}">
+
+{% endblock %}

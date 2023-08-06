@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block menu %}
+
+    {% include 'driver27/_selector_menu.html' %}
+    {% include 'driver27/driver/menu.html' %}
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    {% with rank=season_or_competition.comeback_rank %}
+        {% if rank %}
+            <table class="table table-condensed table-hover comeback-table">
+                <thead>
+                <tr>
+                    <th>{% trans 'Comeback' %}</th>
+                    <th>{% trans 'Driver' %}</th>
+                    <th>{% trans 'Team' %}</th>
+                    <th>{% trans 'Race' %}</th>
+                    <th>{% trans 'Qualifying' %}</th>
+                    <th>{% trans 'Finish' %}</th>
+
+                </tr>
+                </thead>
+
+                {% for entry in rank %}
+                    <tr class="comeback-entry" data-finish="{{ entry.finish }}">
+                        <td>{{ entry.comeback }}</td>
+                        <td><a href="{{ entry.driver.get_absolute_url }}">{{ entry.driver }}</a></td>
+                        <td><a href="{{ entry.team.get_absolute_url }}">{{ entry.team }}</a></td>
+                        <td>{{ entry.race }}</td>
+                        <td>{{ entry.qualifying }}</td>
+                        <td>{{ entry.finish }}</td>
+                    </tr>
+                {% endfor %}
+
+            </table>
+
+        {% else %}
+            <p>No drivers</p>
+        {% endif %}
+    {% endwith %}
+{% endblock %}
+
+{% block extra_script %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.comeback-table tr.comeback-entry').each(function (index, element) {
+            if ($(element).data('finish') === 1) {
+                $(element).addClass('bg-info');
+            }
+        })
+    </script>
+{% endblock %}
