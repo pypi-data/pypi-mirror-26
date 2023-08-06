@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cobweb_scrapper
+Version: 0.1.0
+Summary: A package for easy scrapping
+Home-page: https://bitbucket.org/pollux_cast0r/cobweb/overview
+Author: Alexander Svito
+Author-email: alexandervirk@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: requests
+Requires: PyYAML
+Requires: pygtrie
+Requires: bs4
+Requires: urllib3
