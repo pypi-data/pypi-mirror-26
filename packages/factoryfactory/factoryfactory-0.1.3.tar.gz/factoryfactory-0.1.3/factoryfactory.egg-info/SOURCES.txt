@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+factoryfactory/__init__.py
+factoryfactory.egg-info/PKG-INFO
+factoryfactory.egg-info/SOURCES.txt
+factoryfactory.egg-info/dependency_links.txt
+factoryfactory.egg-info/not-zip-safe
+factoryfactory.egg-info/top_level.txt

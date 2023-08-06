@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: factoryfactory
+Version: 0.1.3
+Summary: A simple service locator in Python
+Home-page: https://github.com/jammycakes/factoryfactory
+Author: James McKay
+Author-email: code@jamesmckay.net
+License: MIT
+Download-URL: https://github.com/jammycakes/factoryfactory/archive/0.1.3.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: service-location,inversion-of-control,ioc
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
