@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: incuna-bookmarks
+Version: 0.6.1
+Summary: A reusable Django app for bookmark management.
+Home-page: http://github.com/incuna/incuna-bookmarks
+Author: Incuna Ltd
+Author-email: admin@incuna.com
+License: UNKNOWN
+Description: 
+        A reusable app for bookmark management.
+        
+        Based on work done for Pinax.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
