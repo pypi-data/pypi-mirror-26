@@ -1,0 +1,10 @@
+README.md
+setup.py
+roslaunch-api-wrapper/__init__.py
+roslaunch-api-wrapper/launcher.py
+roslaunch-api-wrapper/node.py
+roslaunch_api_wrapper.egg-info/PKG-INFO
+roslaunch_api_wrapper.egg-info/SOURCES.txt
+roslaunch_api_wrapper.egg-info/dependency_links.txt
+roslaunch_api_wrapper.egg-info/not-zip-safe
+roslaunch_api_wrapper.egg-info/top_level.txt
