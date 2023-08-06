@@ -1,0 +1,11 @@
+[bob.bio.config]
+utfvp-mc = bob.paper.isba2018_entropy.configurations.utfvp_mc
+utfvp-rlt = bob.paper.isba2018_entropy.configurations.utfvp_rlt
+utfvp-wld = bob.paper.isba2018_entropy.configurations.utfvp_wld
+vera-mc = bob.paper.isba2018_entropy.configurations.vera_mc
+vera-rlt = bob.paper.isba2018_entropy.configurations.vera_rlt
+vera-wld = bob.paper.isba2018_entropy.configurations.vera_wld
+
+[console_scripts]
+calculate_entropy.py = bob.paper.isba2018_entropy.scripts.calculate_entropy:main
+
