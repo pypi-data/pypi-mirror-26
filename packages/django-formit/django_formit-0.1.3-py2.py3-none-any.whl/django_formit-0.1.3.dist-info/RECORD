@@ -1,0 +1,15 @@
+django_formit-0.1.3.dist-info/DESCRIPTION.rst,sha256=8T7iOfxQ1qCr2-RJgMJJWfw5KFqKcr55EeXsJ8-BaSM,2444
+django_formit-0.1.3.dist-info/LICENSE.txt,sha256=dIXTPDUP3vNUIBS_LQpzDO8ZfTJCRVvnJ2nXcPVyMZk,1516
+django_formit-0.1.3.dist-info/METADATA,sha256=4s1i5oG9t0aq3j_Qq2wd_nGlBVnkRn6gylNfUTAh1i8,3145
+django_formit-0.1.3.dist-info/RECORD,,
+django_formit-0.1.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_formit-0.1.3.dist-info/metadata.json,sha256=O1Ryy2FVdLInQYOje31opCuujzbTANaT0QcKDdQH2BU,974
+django_formit-0.1.3.dist-info/top_level.txt,sha256=HgKSjppPJJhMDIMeeV1DDwRu7vKh74WmSmyTL0I6Vhw,7
+formit/__init__.py,sha256=SaH3XLiZqBiwCbo-2fb7CpsuVwmCG5lyRUnmP8ie518,495
+formit/apps.py,sha256=jyqoF5wUUghVhP0ybI5NPjDDMvvZDP-HxMQToL0jJ4k,256
+formit/settings.py,sha256=5H8JtCHKqJn2EJJZawM3uaIBrii8g4zR3sNIBFBuaAM,383
+formit/templates/formit/field.html,sha256=R6D0NHxEl3Z7GwrVPtysPW26WiX0b5-PteaCqyFRF9I,1525
+formit/templates/formit/fieldset.html,sha256=i5Knuj_OXvMyDddMxF-0o0RJsZdTbtW5uW9DSQgHsRg,445
+formit/templates/formit/form.html,sha256=uQo3X-FX3vEiAgIM1hiNYvQxLEbQ3PHXQrW_QtFlVnM,1139
+formit/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+formit/templatetags/formit_tags.py,sha256=_QugHfJZw8QKbUi89_1-XYDH5fCnbm62aQC-aGCZDDA,4926
