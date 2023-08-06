@@ -1,0 +1,9 @@
+.gitignore
+LICENSE
+setup.py
+python_derrick_springmvc_rigging.egg-info/PKG-INFO
+python_derrick_springmvc_rigging.egg-info/SOURCES.txt
+python_derrick_springmvc_rigging.egg-info/dependency_links.txt
+python_derrick_springmvc_rigging.egg-info/entry_points.txt
+python_derrick_springmvc_rigging.egg-info/requires.txt
+python_derrick_springmvc_rigging.egg-info/top_level.txt
