@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: pyramid-default-cors
+Version: 0.2.1
+Summary: Default wiring for CORS XHR
+Home-page: https://github.com/GoodRx/pyramid_default_cors
+Author: Mark Floyd
+Author-email: mark@goodrx.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: # pyramid_default_cors
+        Set up default handling of CORS XHR
+        
+Keywords: config web wsgi pyramid
+Platform: UNKNOWN
