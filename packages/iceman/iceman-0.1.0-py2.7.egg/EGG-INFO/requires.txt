@@ -1,0 +1,3 @@
+icecore
+cryptography
+scapy==2.3.2
