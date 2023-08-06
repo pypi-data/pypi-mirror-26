@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: dictable
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: https://github.com/otrabalhador/dictable/
+Author: Eryk Humberto Oliveira Alves
+Author-email: erykwho@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: dict table query dictable dictsql table row list dictionary
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
