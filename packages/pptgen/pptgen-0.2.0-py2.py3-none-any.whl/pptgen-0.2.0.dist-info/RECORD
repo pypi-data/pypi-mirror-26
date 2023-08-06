@@ -1,0 +1,15 @@
+pptgen/__init__.py,sha256=3FOR6j1ZgQxS4cMWSeToY4nvSCPO515JNEcZPIU8clE,9024
+pptgen/color.py,sha256=LpL0nb7np6C6GXoWnmGyYzOXfVngeEFFRKfZSj8ANDU,18772
+pptgen/colors.json,sha256=Y3Vmoy1-bqjOcom6CevRAYm-CAT-pbh7PcWSupADm2g,7779
+pptgen/commands.py,sha256=lTkBVjnSYW-zdUnhfDoRK8UgSFzE4ZB9e1EzIUqJUwo,50935
+pptgen/fonts.json,sha256=XNEwtUXTsJpo4O3Ho7SsrfMyhX9YQNENTMmPMcRE7eI,6351
+pptgen/fontwidth.py,sha256=hZfZS-9b6Zz6deOzneDdAD0sgBUQ2eHB4YJPbMi41xs,1356
+pptgen/release.json,sha256=NZmibB9S2DqqyIp152M5Rg73Fzz4Lk58C6PC62gVGPU,849
+pptgen/utils.py,sha256=Ad0AJWzCf6bZDQcoABGePR1mRkr9iM1lG7qbM2Kua28,22607
+pptgen-0.2.0.dist-info/DESCRIPTION.rst,sha256=6-PyD1MELBwzno_4VY2DljfvmH7UZYLnEOJxt-FzRTI,27814
+pptgen-0.2.0.dist-info/METADATA,sha256=Nhfx3_Qx_TAiBLOD7Ks0WUiLKKKVW3jaTXB9RrxnHHg,28813
+pptgen-0.2.0.dist-info/RECORD,,
+pptgen-0.2.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+pptgen-0.2.0.dist-info/entry_points.txt,sha256=ZrQyxDVivPhvbIRpT3j7sqJcfOW7z4orxsLWfouenL8,47
+pptgen-0.2.0.dist-info/metadata.json,sha256=0Qa4pMky-5YqUfRpt8Tit4w3KzrQO5itv_mtdHf4C4g,1287
+pptgen-0.2.0.dist-info/top_level.txt,sha256=ePl3O7s2pDFqb07rl40QsgH0feLF9TgucI3FIuiLTbI,7
