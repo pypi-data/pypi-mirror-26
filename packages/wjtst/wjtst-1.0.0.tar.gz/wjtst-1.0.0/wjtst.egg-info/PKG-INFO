@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wjtst
+Version: 1.0.0
+Summary: this is a test package for packing python liberaries tutorial.
+Home-page: https://pypi.python.org/pypi
+Author: wj
+Author-email: youremail@email.com
+License: free
+Description-Content-Type: UNKNOWN
+Description: 
+        greeting string
+        
+Keywords: wjtst test python package
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

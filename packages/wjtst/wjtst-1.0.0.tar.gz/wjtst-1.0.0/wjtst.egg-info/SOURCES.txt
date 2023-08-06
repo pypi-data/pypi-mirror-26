@@ -1,0 +1,9 @@
+README.rst
+setup.py
+wjtst/__init__.py
+wjtst/greeting.py
+wjtst.egg-info/PKG-INFO
+wjtst.egg-info/SOURCES.txt
+wjtst.egg-info/dependency_links.txt
+wjtst.egg-info/top_level.txt
+wjtst.egg-info/zip-safe
