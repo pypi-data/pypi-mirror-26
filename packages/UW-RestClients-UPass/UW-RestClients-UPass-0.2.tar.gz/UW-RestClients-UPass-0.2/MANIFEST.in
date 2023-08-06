@@ -1,0 +1,2 @@
+include uw_upass/VERSION
+recursive-include uw_upass *
