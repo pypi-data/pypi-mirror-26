@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: kinto-trello
+Version: 0.1.3
+Summary: Trello authentication plugin for Kinto
+Home-page: https://github.com/francois2metz/kinto-trello
+Author: François de Metz
+Author-email: francois@2metz.fr
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # Kinto for Trello
+        
+        This project implement an authentifcation policy for [Kinto][] using [Trello][] tokens.
+        
+        [kinto]: https://www.kinto-storage.org/
+        [trello]: http://trello.com/
+        
+        ## Install
+        
+            pip install kinto-trello
+        
+        ## Usage
+        
+        Update `kinto.includes` to add kinto_trello
+        
+            kinto.includes = kinto_trello
+        
+        Add to your config file:
+        
+            multiauth.policies = trello
+            multiauth.policy.trello.use = kinto_trello.authentication.TrelloAuthenticationPolicy
+            trello.apikey = 'YOUR_API_KEY' # FROM https://trello.com/app-key
+        
+        ## License
+        
+        MIT
+        
+Keywords: kinto trello
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
