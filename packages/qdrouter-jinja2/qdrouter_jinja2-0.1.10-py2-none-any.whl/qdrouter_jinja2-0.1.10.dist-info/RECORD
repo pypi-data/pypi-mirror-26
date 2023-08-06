@@ -1,0 +1,11 @@
+qdrouter_jinja2-0.1.10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+qdrouter_jinja2-0.1.10.dist-info/METADATA,sha256=7LH75Qn-WX986bm7YfMfFyKXucFdyyrUFC4bVLwSOH8,457
+qdrouter_jinja2-0.1.10.dist-info/RECORD,,
+qdrouter_jinja2-0.1.10.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+qdrouter_jinja2-0.1.10.dist-info/entry_points.txt,sha256=grvJXW9aNdS605iIRmxT_2HeJl0sRjjqJAAyEscCfZc,71
+qdrouter_jinja2-0.1.10.dist-info/metadata.json,sha256=Z67vH3BU_IwtPXTlZTXUJp5pKuJdakUd0L-CdIYLTC4,911
+qdrouter_jinja2-0.1.10.dist-info/top_level.txt,sha256=F0MJB3cYh8Tk5JWOikFpkMw7Ud4xhQtGFD6MwnOgh5Q,15
+qdrouterjinja2/Jinja2Writer.py,sha256=Ik1xm8TZpddBZyrYEdYnLek2mv7l7xgPDefofvq24XE,3044
+qdrouterjinja2/__init__.py,sha256=6K2_FeaAAAo7_i1bQ5mhCKLhnG7uDcoKR_snhSTGOAk,111
+qdrouterjinja2/__main__.py,sha256=wlLIK1E-pcl6b-QeOhd5lKiGoD8V4a3TeUwRJ1gH7yc,120
+qdrouterjinja2/qdrouterjinja2.py,sha256=XtLpVMtnqLDeeaSW6ARFilQcovmipvo4ifedDvW2oeo,687
