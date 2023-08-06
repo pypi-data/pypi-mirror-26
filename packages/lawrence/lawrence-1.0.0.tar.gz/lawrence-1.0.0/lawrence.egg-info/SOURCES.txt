@@ -1,0 +1,10 @@
+README.md
+setup.py
+lawrence/__init__.py
+lawrence.egg-info/PKG-INFO
+lawrence.egg-info/SOURCES.txt
+lawrence.egg-info/dependency_links.txt
+lawrence.egg-info/entry_points.txt
+lawrence.egg-info/not-zip-safe
+lawrence.egg-info/requires.txt
+lawrence.egg-info/top_level.txt
