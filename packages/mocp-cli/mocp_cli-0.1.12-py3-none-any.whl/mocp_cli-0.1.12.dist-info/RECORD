@@ -1,0 +1,11 @@
+mocp_cli/__init__.py,sha256=9O-ViADyynDVJFxuSjFfBMznHn9UI5tJzVrwv7czZ2s,600
+mocp_cli/player.py,sha256=1iCNvPA3YDjtNu8GptKYnkGtoqvwJh65VdIyCFuW8c8,12976
+mocp_cli/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mocp_cli/scripts/player.py,sha256=qtAFJ3CpLXCa6qNZ5VM0ybEEnIq5lBqNciz7JzxLLso,321
+mocp_cli-0.1.12.dist-info/DESCRIPTION.rst,sha256=pkAFkvEDX6pEj3tHY0rqQi8RUFqlIkgTnDEuDvjwyp4,5655
+mocp_cli-0.1.12.dist-info/METADATA,sha256=aC1o41fBei9ewDnsvhfijE2YNCI5_67kZeV76ZauZLk,6628
+mocp_cli-0.1.12.dist-info/RECORD,,
+mocp_cli-0.1.12.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mocp_cli-0.1.12.dist-info/entry_points.txt,sha256=3KrH25CP7o8pDY4nHDR00ouKmca9aTXgX7Ncl8qq_Wg,60
+mocp_cli-0.1.12.dist-info/metadata.json,sha256=0LVlsZXCPTYBxK5WBJjtO_cl8mtRUVfQl7MGKfgDWfg,1258
+mocp_cli-0.1.12.dist-info/top_level.txt,sha256=KMQ5_uZ7we2K15PG2QrrUcz6DH5d780qDe4GvGqa27o,9
