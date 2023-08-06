@@ -1,0 +1,5 @@
+# Include the license file
+include LICENSE.txt
+
+# Include the data files
+recursive-include pysam-0.5-py2.7-win-amd64 *
