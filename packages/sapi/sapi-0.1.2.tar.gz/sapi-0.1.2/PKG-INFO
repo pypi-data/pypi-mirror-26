@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: sapi
+Version: 0.1.2
+Summary: CERN Unified Storage API client
+Home-page: https://github.com/icot/sapi_client
+Author: Ignacio Coterillo
+Author-email: ignacio.coterillo@cern.ch
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: 
+            Client for the CERN IT-DB Storage API
+            
+Keywords: Swagger,CERN,SAPI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
