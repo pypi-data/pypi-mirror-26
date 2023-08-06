@@ -1,0 +1,6 @@
+six<=1.10.99999
+python-dateutil
+peewee
+peewee_async
+aiounittest
+aiopg

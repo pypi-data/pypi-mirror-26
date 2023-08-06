@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: eventsourcing_async
+Version: 0.0.1a0
+Summary: Event sourcing async in Python
+Home-page: https://github.com/laskoviymishka/cqrs-eventsource
+Author: John Bywater
+Author-email: andrei_tserakhau@epam.com
+License: UNKNOWN
+Description: 
+        This package provides generic support for async event sourcing in Python.
+        
+        `Please raise issues on GitHub <https://github.com/laskoviymishka/cqrs-eventsource/issues>`_.
+        
+Keywords: event sourcing,event store,async,domain driven design,ddd,cqrs,cqs
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
