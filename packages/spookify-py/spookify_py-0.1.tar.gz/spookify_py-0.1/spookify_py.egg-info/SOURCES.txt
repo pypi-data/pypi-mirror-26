@@ -1,0 +1,7 @@
+setup.py
+spookify/__init__.py
+spookify_py.egg-info/PKG-INFO
+spookify_py.egg-info/SOURCES.txt
+spookify_py.egg-info/dependency_links.txt
+spookify_py.egg-info/not-zip-safe
+spookify_py.egg-info/top_level.txt
