@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: STP-LB
+Version: 0.1.dev0
+Summary: simple tasks platform
+Home-page: https://github.com/libing7569/stp
+Author: libing
+Author-email: libing7569@hotmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: setuptools (>=36.6.0)
+Requires-Dist: prompt-toolkit (>=1.0.15)
+Requires-Dist: psutil (>=5.4.0)
+Requires-Dist: Flask (>=0.12.2)
+Requires-Dist: Flask-RESTful (>=0.3.6)
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: thrift (>=0.10.0)
+
+UNKNOWN
+
+

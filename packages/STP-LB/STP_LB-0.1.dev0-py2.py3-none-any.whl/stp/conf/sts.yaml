@@ -1,0 +1,20 @@
+pidfile: /tmp/logs/sts/stspid
+auth: mykey
+stat_refresh_interval: 5
+multicast_group: 224.1.1.1
+multicast_port: 9000
+multicast_ttl: 255
+#multicast_sip: 10.0.2.15
+#multicast_sport: 9001
+master:
+    listen_ip: 0.0.0.0
+    listen_port: 8888
+    task_listen_ip: 0.0.0.0
+    task_listen_port: 8889
+    api_ip: 0.0.0.0
+    api_port: 9999
+slaver:
+    listen_ip: 0.0.0.0
+    listen_port: 8996
+stdout: /tmp/logs/sts/sts_stdout.log
+stderr: /tmp/logs/sts/sts_stderr.log
