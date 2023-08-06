@@ -1,0 +1,171 @@
+{% block header_wrapper %}
+{% block header_account %}
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <a class="navbar-brand" href="{{ h.url_for('home') }}">
+          <img src="/img/red.png" alt="{{ g.site_title }}" title="{{ g.site_title }}" />
+        </a> -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu">
+        {% block header_account_container_content %}
+        {% if c.userobj %}
+        <div class="account avatar authed" data-module="me" data-me="{{ c.userobj.id }}">
+          <ul class="nav navbar-nav navbar-right">
+            {% block header_account_logged %}
+            {% if c.userobj.sysadmin %}
+            <li>
+              <a href="{{ h.url_for(controller='admin', action='index') }}" title="{{ _('Sysadmin settings') }}">
+                <i class="fa fa-gavel" aria-hidden="true"></i>
+                <span class="text">{{ _('Admin') }}</span>
+              </a>
+            </li>
+            {% endif %}
+            <li>
+              <a href="{{ h.url_for(controller='user', action='read', id=c.userobj.name) }}" class="image" title="{{ _('View profile') }}">
+                {{ h.gravatar((c.userobj.email_hash if c and c.userobj else ''), size=22) }}
+                <span class="username">{{ c.userobj.display_name }}</span>
+              </a>
+            </li>
+            {% set new_activities = h.new_activities() %}
+            <li class="notifications {% if new_activities > 0 %}notifications-important{% endif %}">
+              {% set notifications_tooltip = ngettext('Dashboard (%(num)d new item)', 'Dashboard (%(num)d new items)', new_activities) %}
+              <a href="{{ h.url_for(controller='user', action='dashboard') }}" title="{{ notifications_tooltip }}">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                <span class="text">{{ _('Dashboard') }}</span>
+                <span class="badge">{{ new_activities }}</span>
+              </a>
+            </li>
+            {% block header_account_settings_link %}
+            <li>
+              <a href="{{ h.url_for(controller='user', action='edit', id=c.userobj.name) }}" title="{{ _('Edit settings') }}">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <span class="text">{{ _('Settings') }}</span>
+              </a>
+            </li>
+            {% endblock %}
+            {% block header_account_log_out_link %}
+            <li>
+              <a href="{{ h.url_for('/user/_logout') }}" title="{{ _('Log out') }}">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <span class="text">{{ _('Log out') }}</span>
+              </a>
+            </li>
+            {% endblock %}
+            {% endblock %}
+          </ul>
+        </div>
+        {% else %}
+        <ul class="nav navbar-nav navbar-right">
+          {% block header_account_notlogged %}
+          <li>{% link_for _('Log in'), controller='user', action='login' %}</li>
+          {% if h.check_access('user_create') %}
+          <li>{% link_for _('Register'), controller='user', action='register', class_='sub' %}</li>
+          {% endif %}
+          {% endblock %}
+        </ul>
+        {% endif %}
+        {% endblock %}
+      </div>
+    </div>
+  </nav>
+</div>
+{% endblock %}
+
+
+<div class="container">
+  <div class="mainbar" style="padding-top: 30px;">
+    {% block header_debug %}
+    {% if g.debug and not g.debug_supress_header %}
+    <div class="debug">Controller : {{ c.controller }}<br/>Action : {{ c.action }}</div>
+    {% endif %}
+    {% endblock %}
+    <div class="col-sm-8">
+      <hgroup class="{{ g.header_class }}">
+        {% block header_logo %}
+        <a class="logo scalated" href="{{ h.url_for('home') }}"><img src="/img/minfin.png" alt="datosabiertos-logo" title="Ir a inicio" /></a>
+        {% endblock %}    
+      </hgroup>
+    </div>
+    <div class="col-sm-4">
+      <hgroup class="{{ g.header_class }}">
+        <a class="logo red" href="{{ h.url_for('home') }}"><img src="/img/red.jpg" alt="redciudadana-logo" /></a>
+      </hgroup>
+
+      <hgroup class="{{ g.header_class }}">
+        <a class="logo small" href="{{ h.url_for('home') }}"><img src="/img/gobierno.png" alt="minfin-logo" /></a>
+      </hgroup>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="img-background">
+    <div class="pseudo-black">
+      <div class="polygon"></div>
+      <div class="container gradient-container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="text-white">Consulta y analiza</h1>
+          </div>
+          <div class="col-md-6">
+            {% block header_site_search %}
+            <form class="form-inline pull-right" action="{% url_for controller='package', action='search' %}" method="get">
+              <div class="form-group form-group-lg">
+                <div class="input-group">
+                  <input class="form-control col-md-8" id="field-sitewide-search"
+                  type="text" name="q" placeholder="Buscar datos" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-lg btn-default" type="submit"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+              </div>
+            </form>
+            {% endblock %}
+          </div>
+        </div>
+
+        {% if h.current_url() == '/' %}
+        <div class="jumbotron">
+          <div class="container-fluid">
+            <div class="col-md-4 right-vertical-divisor">
+              <div class="showcase">
+                <a href="/dataset">
+                  <img src="/img/gauge.png"/>
+                  <p>Consulta</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="showcase">
+                <a href="#">
+                  <img src="/img/person.png"/>
+                  <p>Visualizaciones</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 left-vertical-divisor">
+              <div class="showcase">
+                <a href="#">
+                  <img src="/img/network.png"/>
+                  <p>Herramientas</p>
+                </a>
+              </div>
+            </div>
+          </div>  
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
