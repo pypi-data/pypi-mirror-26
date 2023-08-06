@@ -1,0 +1,11 @@
+mir/anidb/__init__.py,sha256=uejDZuzyuKtXkT4jxMJTolbKHZvR6WHzw7kSvhN_bdY,633
+mir/anidb/_xmlns.py,sha256=JnNwnz4nGfKBNeZpPiZGenDkT6yhAJcHlJ80QTNfJO8,659
+mir/anidb/anime.py,sha256=t_zdasS7Q7X-sH4elVjw8qKSMef6wyIf1CPx4BgsS08,4861
+mir/anidb/api.py,sha256=C2w7oXxwGcnOI-VVPQug9Y9OkF2777SKO19s7M5les4,2404
+mir/anidb/titles.py,sha256=wRkUxdRVJfSAfAghS8MKysyyrDdffun1keyfH0e23Sw,4380
+mir.anidb-1.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mir.anidb-1.1.0.dist-info/METADATA,sha256=2aBTumGbI-xzpRTC1Nv2paCYPdV3R78QSgWZfzD2ZQ4,526
+mir.anidb-1.1.0.dist-info/RECORD,,
+mir.anidb-1.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mir.anidb-1.1.0.dist-info/metadata.json,sha256=BSghUC6F3IBkBc40tVCJh4XWNO3DNRoHkjqoFuLx7B8,690
+mir.anidb-1.1.0.dist-info/top_level.txt,sha256=AncyDUeb-6naxuA6oqYf2DJvGk05FcF4Vs_3gvWePOI,4
