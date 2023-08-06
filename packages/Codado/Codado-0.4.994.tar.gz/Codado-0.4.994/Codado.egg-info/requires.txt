@@ -1,0 +1,11 @@
+attrs
+coverage
+ftfy==4.4.3
+jinja2
+mock
+pytest-flakes
+pytest-cov
+pytest-twisted
+pyyaml
+twine
+werkzeug
