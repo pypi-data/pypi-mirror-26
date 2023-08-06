@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pyMRA/__init__.py
+pyMRA.egg-info/PKG-INFO
+pyMRA.egg-info/SOURCES.txt
+pyMRA.egg-info/dependency_links.txt
+pyMRA.egg-info/top_level.txt
