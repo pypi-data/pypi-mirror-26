@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: dsh2
+Version: 2.0.0
+Summary: Autoload configuration from multiple sources. Autotranslate config into usable objects
+Home-page: https://github.com/flashashen/dsh2
+Author: flashashen
+Author-email: flashashen@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: # DSH  - the developer's shell
+        
+        Stuff the development universe into a command line 
+        
+        
+        - Automatic config detection
+        - Extensible with un-orthodox plugin approach
+        
+Keywords: shell console configuration yaml object registry
+Platform: osx
+Platform: linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
