@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: tulip-python
+Version: 5.1.0
+Summary: Large graphs analysis and drawing
+Home-page: http://tulip.labri.fr/
+Author: David Auber and the Tulip development team
+Author-email: tulipdev@labri.fr
+License: LGPLv2+
+Description-Content-Type: UNKNOWN
+
+`Package documentation <http://tulip.labri.fr/Documentation/current/tulip-python/html/index.html>`_
+
+
