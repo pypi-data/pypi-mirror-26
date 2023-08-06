@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: bitcoinprice
+Version: 1.0.2
+Summary: Retrieves the current Bitcoin Price
+Home-page: https://github.com/danjellesma/bitcoinprice
+Author: Dan Jellesma
+Author-email: danjellesma@googlegroups.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: bitcoin bitcoinapi
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
