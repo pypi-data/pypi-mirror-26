@@ -1,0 +1,11 @@
+pynlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynlp/__main__.py,sha256=lZXaZi8gDW9UMbIqWcxKpXg_kmrdENyc2bZ5z7c4n9k,643
+pynlp/client.py,sha256=qXz4IRlgGml34MYbXIYFkeHM8sL8-nm0Ejef1-G5NGQ,1642
+pynlp/config.py,sha256=cEQnsw2mI4tD1MKcCBIoajswJLTDuKwR6aDdFZPTTYU,239
+pynlp/wrapper.py,sha256=1UEWl4rP_1_xG1K-VhbsY0XxMeFY2-eXt2RCjRgvPDc,4025
+pynlp-0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pynlp-0.2.dist-info/METADATA,sha256=FY44rRBtzy9qEX_qg01jh9dRC7N-xG0a5BGbQrjiWfw,329
+pynlp-0.2.dist-info/RECORD,,
+pynlp-0.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pynlp-0.2.dist-info/metadata.json,sha256=kRgs2DOq3-5U_3pBNzCRYGk5-0qpwzwrlQdKVecRZUk,510
+pynlp-0.2.dist-info/top_level.txt,sha256=G-0GY1jVzMCOTqlBBV8C0l44-VDeqy6bnKHu-gv8GKM,6
