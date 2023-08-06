@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: archieml
+Version: 0.3.3
+Summary: Python parser for the Archie Markup Language (ArchieML)
+Home-page: https://www.github.com/brainkim/archieml-python
+Author: Brian Kim
+Author-email: briankimpossible@gmail.com
+License: Apache License 2.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
