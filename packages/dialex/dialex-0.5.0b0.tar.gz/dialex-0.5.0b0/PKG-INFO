@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: dialex
+Version: 0.5.0b0
+Summary: Python Client for HyperLab Dialex API
+Home-page: https://github.com/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python
+Author: Riyadh Al Nur
+Author-email: riyadh.alnur@hyperlab.xyz
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: Dialex SDK for Python
+        =====================
+        
+        Python Client for HyperLab Dialex API
+        
+        |Build Status| |Coverage Status|
+        
+        Install
+        -------
+        
+        .. code:: bash
+        
+            $ pip install -U dialex
+        
+        Quick Start
+        -----------
+        
+        .. code:: python
+        
+            from dialex import dialex
+            dial = dialex.Dialex('apiKey')
+        
+        .. |Build Status| image:: https://travis-ci.org/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python.svg?branch=master
+           :target: https://travis-ci.org/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python
+        .. |Coverage Status| image:: https://coveralls.io/repos/github/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python/badge.svg?branch=master
+           :target: https://coveralls.io/github/HyperLab-Solutions-Sdn-Bhd/dialex-sdk-python?branch=master
+        
+Keywords: hyperlab,python,sdk,nlp
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Development Status :: 4 - Beta
