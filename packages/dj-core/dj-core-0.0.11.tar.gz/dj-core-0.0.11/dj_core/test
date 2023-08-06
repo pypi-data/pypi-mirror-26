@@ -1,0 +1,27 @@
+# 1
+
+from dj_core.utils import Env
+
+
+defaults = {
+    'DATABASES': 'thoing',
+}
+env = Env(defaults)
+DATABASES['default'] = env.db()
+
+
+# 2
+from dj_core.config import BaseConfig
+
+
+class NewConf(BaseConfig):
+    defaults = BaseConfig.defaults.copy()
+    defaults.update({
+        'DATABASE_URL': '',
+    })
+
+
+DATABASES = {
+  'default': Env.db_url_config(conf_settings.DATABASE_URL)
+}
+SITE_ID = conf_settings['SITE_ID']
