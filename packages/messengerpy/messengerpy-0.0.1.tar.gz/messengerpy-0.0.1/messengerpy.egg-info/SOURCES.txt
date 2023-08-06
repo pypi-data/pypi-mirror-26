@@ -1,0 +1,6 @@
+setup.py
+messengerpy/__init__.py
+messengerpy.egg-info/PKG-INFO
+messengerpy.egg-info/SOURCES.txt
+messengerpy.egg-info/dependency_links.txt
+messengerpy.egg-info/top_level.txt
