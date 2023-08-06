@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Pysam_Win_AltAnalyze
+Version: 0.5
+Summary: Pysam for Windows Altanalyze installation
+Home-page: http://www.altanalyze.org
+Author: Nathan Salomonis
+Author-email: nathan.salomonis@cchmc.org
+License: Apache
+Description: Pysam-Win-AltAnalyze
+        =======================
+        
+        This version of pysam is for the windows installation of AltAnalyze only.
+        
+Keywords: bioinformatics,transcriptome analysis,gene expression
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
