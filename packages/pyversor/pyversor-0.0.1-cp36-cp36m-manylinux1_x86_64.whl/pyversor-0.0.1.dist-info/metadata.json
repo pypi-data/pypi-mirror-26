@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"email": "lars.tingelstad@ntnu.no", "name": "Lars Tingelstad", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "generator": "bdist_wheel (0.30.0)", "metadata_version": "2.0", "name": "pyversor", "summary": "Python bindings for the Versor Geometric Algebra", "version": "0.0.1"}

@@ -1,0 +1,13 @@
+__pyversor__.cpython-36m-x86_64-linux-gnu.so,sha256=ao9kO88nnfLhSGsGoCsGJS7277DKV-mis_Fo0YYAD00,1285592
+pyversor/__init__.py,sha256=n0tUd8twiWCQ_iqkaTjAuXwWYDYuf8Ozw14CFrvITag,61
+pyversor/cga/__init__.py,sha256=LI5KOZRNWRHW9R0Jf0ssvlXxAPWlGB9fyBDmu-ainD4,68
+pyversor/ega/__init__.py,sha256=MeYP0Pp7o-p7pavDIengDjOsEcSSscH8A0y4iQgR70s,31
+pyversor/ega/generate/__init__.py,sha256=ThmAUM6_DZiWbC1xCQ__o5Rd_Cl98ZNklgROUu6MzRE,40
+pyversor/visuals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyversor/visuals/gui.py,sha256=zcpGj-gWuC2w4nNSAWr7_YTKvsm8POjD3NAhhMd055A,2705
+pyversor-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyversor-0.0.1.dist-info/METADATA,sha256=4U8421yuWBrogDa5SWIjnUxtidlp8rBr5ucvyUFlAFE,237
+pyversor-0.0.1.dist-info/RECORD,,
+pyversor-0.0.1.dist-info/WHEEL,sha256=X8kVdBCq85ICewwfaE6btv5qKsFQfVq8NYJIXUK0i1A,104
+pyversor-0.0.1.dist-info/metadata.json,sha256=EGMiqNl1pzKLCFqPbsLZKIrTBZgh9ucShZzjs-4hsK0,354
+pyversor-0.0.1.dist-info/top_level.txt,sha256=ozCWm_Yk3BwaA0I773yP1uzem6gZtjV1L2B6pfonWrg,22
