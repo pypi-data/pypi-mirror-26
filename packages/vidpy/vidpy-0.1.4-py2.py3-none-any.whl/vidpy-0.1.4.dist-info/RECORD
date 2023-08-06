@@ -1,0 +1,15 @@
+vidpy/__init__.py,sha256=QaJOfVIs-A0j0C7xSbN-yDs5pfelKgA4CrOneDfVxhg,131
+vidpy/clip.py,sha256=YFoaMtAnQxw29wUwrMpWQ00GwLS8_iNjxOi6MVgoFhs,13570
+vidpy/color.py,sha256=vdNm2l8IJBBzWhBwZ3RuxW2Fsr0wqUO6mXSGwDBZo8E,148
+vidpy/composition.py,sha256=a671RvmF3bKVTJT7tHQ5G6Q7aw3U5aCu5aaEU5xUp_g,4618
+vidpy/config.py,sha256=4eyHy3XYCNod8nS0iFBAaycsJNF7OmfpKNF9Zf-gQNY,253
+vidpy/effects.py,sha256=ZkGd57KGpgoAQJ6d1IYvT73NgYmsS5YKFJHa5B3H6qU,119
+vidpy/text.py,sha256=u3QNqq_Yvu9XRBEkxUt4Ywl0egsKtbPrCYhnTslzDUg,1650
+vidpy/utils.py,sha256=kZY0gJEUHIKz1villOJyVYXk1dCWY_zX7EK7hEs_ebk,1679
+vidpy-0.1.4.dist-info/DESCRIPTION.rst,sha256=2DXQ4j07Cufxyh27m_2Z85_UjQebPsgL5vnuVtzi6oM,5782
+vidpy-0.1.4.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+vidpy-0.1.4.dist-info/METADATA,sha256=zj7O79rvemO-TCj3pZrg1lMIcE1cF0fz2N7kE_d1dQc,6068
+vidpy-0.1.4.dist-info/RECORD,,
+vidpy-0.1.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+vidpy-0.1.4.dist-info/metadata.json,sha256=17IvQplvwc53FZogRLADyiKhWVrwoBFsbOujDjMQbt8,539
+vidpy-0.1.4.dist-info/top_level.txt,sha256=BuywvW1T-xfaaGxYz4rKZWQqFSbxm26T-wLW1vxlAzo,6
