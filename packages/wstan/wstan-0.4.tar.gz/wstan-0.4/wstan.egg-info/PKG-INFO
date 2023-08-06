@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wstan
+Version: 0.4
+Summary: Tunneling TCP in WebSocket
+Home-page: https://github.com/krrr/wstan
+Author: krrr
+Author-email: guogaishiwo@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: proxy tunnel websocket
+Platform: UNKNOWN
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
