@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: juntagrico
+Version: 1.0.0
+Summary: juntagrico
+Home-page: https://www.juntagrico.org
+Author: Your Name
+Author-email: python@juntagrico.org
+License: GNU Lesser General Public License v3 (LGPLv3)
+Description: Juntagrico
+        =====
+        
+        .. image:: https://travis-ci.org/juntagrio/juntagrico.svg?branch=master
+            :target: https://travis-ci.org/juntagrico/juntagrico
+           
+        .. image:: https://img.shields.io/gemnasium/juntagrico/juntagrico.svg
+            :target: https://gemnasium.com/github.com/juntagrico/juntagrico
+        
+        .. image:: https://img.shields.io/codeclimate/github/juntagrico/juntagrico.svg
+            :target: https://codeclimate.com/github/juntagrico/juntagrico
+        
+        **the easy solution for cooperative vegetable growers**
+        
+        juntagrico is a platfom for commutnitiy gardens and vegetable cooperatives.
+        it provides the basic functionality to manage vegetable and extra subscriptions as well as management of shares for cooperatives,
+        billing and other aspects like delivery handling of the crops.
+        
+        Detailed documentation can be found here http://juntagrico.readthedocs.io
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
