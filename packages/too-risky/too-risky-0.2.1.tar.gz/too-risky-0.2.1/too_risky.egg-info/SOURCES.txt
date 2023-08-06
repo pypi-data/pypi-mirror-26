@@ -1,0 +1,5 @@
+setup.py
+too_risky.egg-info/PKG-INFO
+too_risky.egg-info/SOURCES.txt
+too_risky.egg-info/dependency_links.txt
+too_risky.egg-info/top_level.txt
