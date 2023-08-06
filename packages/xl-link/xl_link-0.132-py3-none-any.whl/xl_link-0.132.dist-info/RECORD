@@ -1,0 +1,13 @@
+xl_link/__init__.py,sha256=5e8nTEUZj9ZiAYKqHLiAIzkJalcGfOo3PNlnhC8CIiw,67
+xl_link/chart_wrapper.py,sha256=NNz43rS0h09ILsp_XeV_BBKwo8HcN14ddbH13YmHKqE,8007
+xl_link/mappers.py,sha256=vJaq56kX04LObSeR5fcsxcyEVkVPCQ1pmGUvuIQJv3o,19653
+xl_link/xl_types/__init__.py,sha256=R6vWlILcLiIKRF37PPsM65p8BvtfdkBpZqGViiDdgs4,50
+xl_link/xl_types/xl_types.py,sha256=aW8mEWcWoKWvkk_WLRXo5YHphc0CPX1oSq3m8575ReE,16737
+xl_link/xlsxwriter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xl_link/xlsxwriter/utility.py,sha256=zR5Ec2n3nfGkc3DPMiR5oK0T3BU2YGd0u1zvN2DaZGM,26060
+xl_link-0.132.dist-info/DESCRIPTION.rst,sha256=L8vkIgBFBrOHRBpRKEBhlK4zFYXB9BVfqvQyeekvaBw,4146
+xl_link-0.132.dist-info/METADATA,sha256=rB7YPheof8cp7SsklUVQAGCp0elfy1UVzXsc-Fyuhh0,4724
+xl_link-0.132.dist-info/RECORD,,
+xl_link-0.132.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+xl_link-0.132.dist-info/metadata.json,sha256=aTFpw_uuCe5tCv3EYU8ESwkG632A1TGniAXVvLr4di4,812
+xl_link-0.132.dist-info/top_level.txt,sha256=DSUn2G26c_mChpw98pKGrMzEYyfRa4_0UtOK2fLcAVo,8
