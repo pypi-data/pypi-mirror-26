@@ -1,0 +1,10 @@
+aio_standalone-0.1.0.dist-info/DESCRIPTION.rst,sha256=Bn6B3zfSjCJm2xJdI-cH7UoAYLcXzKkIsXDGjHlglmU,640
+aio_standalone-0.1.0.dist-info/METADATA,sha256=jjKB9wtitHp2USz4GBj12guWOdH90Tp3hYSYrDyCfnw,1357
+aio_standalone-0.1.0.dist-info/RECORD,,
+aio_standalone-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aio_standalone-0.1.0.dist-info/metadata.json,sha256=fqZ-rr-nUG9zAyoK7llWAg00ig5uqCelkV4ZVvV4Fhk,903
+aio_standalone-0.1.0.dist-info/top_level.txt,sha256=8Rw2qzU-OgH6cRFGt5cnYCqddF8gXZ4xzDTZRtTfYn0,14
+aiostandalone/__init__.py,sha256=SzPyE9MoHuQ3bsik8eJijFwSeUqKmIfJk85rvEppxjE,75
+aiostandalone/app.py,sha256=aLOAZ9Wktz9h25i4badqnJ4HQmcq1bi_6_LC_apcyuI,3409
+aiostandalone/log.py,sha256=4Vq2lhl_-b1PfSGxEONVWJfr8jP9q2Nz_weDOzIepV0,611
+aiostandalone/signal.py,sha256=PKIOQw0XduvENlvFWnTNvRXq1FJiw83p3xsB2vpexbk,669
