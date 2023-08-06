@@ -1,0 +1,68 @@
+CHANGES
+=======
+
+0.5.3
+-----
+
+* oui: put qtabs in toolbar
+* Fix object is not subscriptable
+* fix extra semicolon
+* flake8-docstrings
+* flake8-logging-format
+* make update
+* add Pipfile.lock
+* mypy checks
+* mypy cfgtree
+* add heading in isort imports
+* make mypy happy
+* generate annotation file on env var
+* fix pipfile -e 
+* mypy and pyannotate
+* rework front oui
+* enh makefile ln env
+* npm update
+* skip refresh of existing file
+* refresh episode on scanner
+* escape html in log ui
+* restrict scanner using mapping dst folder
+* disc scanner manual execution
+* hint in menu
+* Display when disc scanner is disabled
+* OUI show log loggers
+* Get log by reverse order
+* add feathub badge
+* make run uses config.json
+
+0.5.2
+-----
+
+* api/v1/config/dir\*s\*
+* clean log
+* update media info in db before background task
+* update README
+* add test vector for download and rename use case
+* remove useless new line
+* remove useless badges
+* Add discord badge
+* updating npm dependencies
+* try to clean more the docker img
+* remove app dir setting
+* Add Log page
+
+0.5.1
+-----
+
+* Conditionalize disc scanner by conf
+* Put sanic-transmute in prod
+* Disc scanner: filter video files
+* task status: active and started
+* simple disc scanner implementation
+
+0.5.0
+-----
+
+* change default main color
+* auto refresh in all pages
+* Status page
+* split config rest api
+* DirNameCfg stores absolute path
