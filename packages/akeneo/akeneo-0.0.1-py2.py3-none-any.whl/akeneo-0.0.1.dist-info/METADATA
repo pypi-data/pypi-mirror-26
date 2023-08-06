@@ -1,0 +1,79 @@
+Metadata-Version: 2.0
+Name: akeneo
+Version: 0.0.1
+Summary: A Python wrapper for the Akeneo REST API
+Home-page: https://github.com/AuguriaTeam/python-akeneo
+Author: Auguria
+Author-email: UNKNOWN
+License: LICENSE
+Description-Content-Type: UNKNOWN
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests-toolbelt
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+Akeneo API REST - Python Client
+===============================
+
+A Python wrapper for the Akeneo REST API. Easily interact with the Akeneo REST API using this library.
+
+
+Installation
+------------
+
+.. code-block:: bash
+
+    pip install akeneo
+
+
+Getting started
+---------------
+
+Generate API credentials (Consumer Key & Consumer Secret) following this instructions https://api.akeneo.com/getting-started-admin.html.
+
+Check out the Akeneo API endpoints and data that can be manipulated in https://api.akeneo.com/api-reference-index.html.
+
+
+Basic setup
+-----------
+
+Basic setup for the Akeneo REST API:
+
+.. code-block:: python
+
+    from akeneo import AkeneoAPI
+
+    akeneo = AkeneoAPI(
+        url="AKENEO_INSTANCE_URL",
+        client_id="YOUR_CLIENT_ID",
+        secret="YOUR_SECRET",
+        username="YOUR_USERNAME",
+        password="YOUR_PASSWORD",
+    )
+
+
+Response
+--------
+
+All methods will directly return the JSON response from the API.
+
+
+Changelog
+---------
+
+0.0.1
+~~~~~
+
+- Initial version: Every endpoint should be ok, except these ones for 'Media files'.
+
+
