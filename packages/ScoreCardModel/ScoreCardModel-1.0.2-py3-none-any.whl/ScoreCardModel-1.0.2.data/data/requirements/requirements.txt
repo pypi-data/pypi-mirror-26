@@ -1,0 +1,7 @@
+mkl
+numpy
+scipy
+scikit-learn
+pandas
+cython
+dill
