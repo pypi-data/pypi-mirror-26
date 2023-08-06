@@ -1,0 +1,17 @@
+pubpub/__init__.py,sha256=k7OQtK_mERXgho22GI4nYzI1MuKkcnsorOPGKcgd2Zw,27
+pubpub/utils.py,sha256=yuy0KG9WFdWa7uCzc4_-05neRIjsOfhmxpC8cWAukJw,86
+pubpub/cli/__init__.py,sha256=Y51abKc77F5zEUtQyehUC9c1SaSy4h9fiTfZAsEbwa4,18
+pubpub/cli/cli.py,sha256=b8zBF3cKUzcayVOEZySfVgZuNt8TmKWv0ZAxTURR4pg,199
+pubpub/cli/check/__init__.py,sha256=H8LVn6gfRMZ5_D3Ry_dBSIrzNnfm1MGkGSXm2n02uLo,18
+pubpub/cli/check/commands.py,sha256=1HJUThqHp97KNmGcNulzimSqUPoNj1zuki3Cb464x-A,909
+pubpub/cli/run/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubpub/cli/run/commands.py,sha256=XiY0ci5BZrbCaK4vtgvd2yfoHmB93DEhfo5YXsI81NM,993
+pubpub/cli/run/printer.py,sha256=hmx6yTs8mb0zdkPGrJkWUymfKlUEk6Y5w96Cfxl4ZG0,7556
+pubpub-0.0.8.dev2.dist-info/DESCRIPTION.rst,sha256=X90LF-_fCzL0hp-dXoHPyw2C0GE-uwtBxlonJVLS5s4,593
+pubpub-0.0.8.dev2.dist-info/METADATA,sha256=nG_KL_nBz5n4oMyrp7dS8eGJMfsHQBp93sDWx_6LWrU,914
+pubpub-0.0.8.dev2.dist-info/RECORD,,
+pubpub-0.0.8.dev2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pubpub-0.0.8.dev2.dist-info/entry_points.txt,sha256=wd1O-WupOMYKfR6xFq4uImL2zrgamDKHgEJRYMZu7yc,73
+pubpub-0.0.8.dev2.dist-info/metadata.json,sha256=lqTRsi7v2_MyRcePR3FoIt0SwF3KbNsVEei2NxHS2sw,601
+pubpub-0.0.8.dev2.dist-info/pbr.json,sha256=QvbDxNh1fEotVfL4XtQC3iRQvTyIBTqeG5gdnKbaWSA,47
+pubpub-0.0.8.dev2.dist-info/top_level.txt,sha256=2uDEWoMplh0jYDkgrn7crtc2of2MXjN5O_W3JVh1xX8,7
