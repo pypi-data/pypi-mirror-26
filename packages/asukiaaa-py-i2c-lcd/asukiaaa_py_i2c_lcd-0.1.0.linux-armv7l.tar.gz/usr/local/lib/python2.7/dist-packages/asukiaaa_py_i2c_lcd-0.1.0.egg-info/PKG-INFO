@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: asukiaaa-py-i2c-lcd
+Version: 0.1.0
+Summary: An i2c library to control AQM1602
+Home-page: https://github.com/asukiaaa/asukiaaa_py_i2c_lcd
+Author: Asuki Kono
+Author-email: asukiaaa@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: i2c lcd aqm1602 raspberry
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7

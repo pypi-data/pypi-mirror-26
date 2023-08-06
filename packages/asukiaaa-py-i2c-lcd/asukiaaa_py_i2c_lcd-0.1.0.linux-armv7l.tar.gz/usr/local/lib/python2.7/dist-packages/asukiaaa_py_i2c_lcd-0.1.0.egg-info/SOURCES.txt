@@ -1,0 +1,6 @@
+README.rst
+setup.py
+asukiaaa_py_i2c_lcd.egg-info/PKG-INFO
+asukiaaa_py_i2c_lcd.egg-info/SOURCES.txt
+asukiaaa_py_i2c_lcd.egg-info/dependency_links.txt
+asukiaaa_py_i2c_lcd.egg-info/top_level.txt
