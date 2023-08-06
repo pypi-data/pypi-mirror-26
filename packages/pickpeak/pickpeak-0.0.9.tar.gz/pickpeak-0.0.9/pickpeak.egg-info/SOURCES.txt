@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/data_file
+data/pickpeak.png
+pickpeak/__init__.py
+pickpeak/myindex.py
+pickpeak/pickpeak.py
+pickpeak.egg-info/PKG-INFO
+pickpeak.egg-info/SOURCES.txt
+pickpeak.egg-info/dependency_links.txt
+pickpeak.egg-info/entry_points.txt
+pickpeak.egg-info/requires.txt
+pickpeak.egg-info/top_level.txt

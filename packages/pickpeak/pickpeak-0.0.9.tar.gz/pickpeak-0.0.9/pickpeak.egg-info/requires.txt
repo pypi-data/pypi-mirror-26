@@ -1,0 +1,9 @@
+numpy
+pyqtgraph
+PyQt5
+
+[dev]
+check-manifest
+
+[test]
+coverage
