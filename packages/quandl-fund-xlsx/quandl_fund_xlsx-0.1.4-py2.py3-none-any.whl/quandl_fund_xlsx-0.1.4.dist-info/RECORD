@@ -1,0 +1,11 @@
+quandl_fund_xlsx/__init__.py,sha256=jp7-r4lLek7Q5RO0iep4X3EjtQJynutvyIfm6tcABkM,111
+quandl_fund_xlsx/api_key.py,sha256=Q59yMpZF0DlArW5tFJKMkiaEIHLKpE8lTG_MCJZeA4Q,168
+quandl_fund_xlsx/cli.py,sha256=9atG8a9JYkGxVGPU9wVrour0Qv7dGnEfUHQ8G8Oz6Aw,1815
+quandl_fund_xlsx/fundamentals.py,sha256=Y4ogOrwdwdnvAgbuQOVZ_Q1dK-PhlXlEJnYEWI-e8ww,28123
+quandl_fund_xlsx-0.1.4.dist-info/DESCRIPTION.rst,sha256=2-KPh42fyQQ6XvOt0OVmNDiTCXyKorvv08fAaa-Nimg,5886
+quandl_fund_xlsx-0.1.4.dist-info/METADATA,sha256=HdPu6rJ8pIFIKAQcn-y8g1QAyc2gY_ukFqdRP_DanNs,6850
+quandl_fund_xlsx-0.1.4.dist-info/RECORD,,
+quandl_fund_xlsx-0.1.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+quandl_fund_xlsx-0.1.4.dist-info/entry_points.txt,sha256=g6VYKgPRwa0Zg2HDeW5GO94YxA8bJIzNqqaUPDyWxCk,64
+quandl_fund_xlsx-0.1.4.dist-info/metadata.json,sha256=2sV1INNqcnaLAWxADakCyGTRip0XKvipMJjhe0XyF0U,1315
+quandl_fund_xlsx-0.1.4.dist-info/top_level.txt,sha256=fZFeShrrrBAwffCCxYNCslIN0X7s8vTCghupjj5ST3A,17
