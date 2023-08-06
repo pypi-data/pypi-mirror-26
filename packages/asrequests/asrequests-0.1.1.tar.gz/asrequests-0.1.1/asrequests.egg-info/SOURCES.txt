@@ -1,0 +1,8 @@
+asrequests.py
+setup.py
+asrequests.egg-info/PKG-INFO
+asrequests.egg-info/SOURCES.txt
+asrequests.egg-info/dependency_links.txt
+asrequests.egg-info/not-zip-safe
+asrequests.egg-info/requires.txt
+asrequests.egg-info/top_level.txt

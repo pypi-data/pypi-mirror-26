@@ -1,0 +1,66 @@
+Metadata-Version: 1.1
+Name: asrequests
+Version: 0.1.1
+Summary: Requests + asyncio
+Home-page: https://github.com/HuberTRoy/asrequests
+Author: cyrbuzz
+Author-email: cyrbuzz@foxmail.com
+License: MIT
+Description: 
+        This module contains an asynchronous method to send get and post http requests.
+        
+        Use 'AsRequests' to send them.
+        
+        Simple and effective.
+        :)
+        
+        Usage is simple:
+        
+        ```
+        from  asrequests import AsRequests
+        
+        urls = [
+            'http://nodomain/',
+            'https://github.com',
+            'https://www.python.org/'
+        ]
+        ```
+        
+        Send them all the same time.
+        
+        ```
+        >>> with AsRequests() as ar:
+                    for i in urls:
+                        ar.get(i)
+        ...
+        >>>print(ar.result)
+        [<Response [200]>, ErrorRequest(url='http://nodomain/', text='', ...), <Response [200]>]
+        ```
+        
+        Using like requests:
+        ```
+        from asrequests import asrequests
+        
+        async def get_http():
+                for i in urls:
+                    response = await asrequests.get(i)
+                    print(response)
+        
+        ....
+        asyncio.run_until_complete(get_http)
+        
+        ===
+        <Response [200]>
+        ErrorRequest(url='http://nodomain/', text='', ...)
+        <Response [200]>
+        ```
+        
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
