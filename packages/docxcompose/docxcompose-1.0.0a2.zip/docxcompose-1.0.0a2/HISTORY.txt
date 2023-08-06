@@ -1,0 +1,21 @@
+Changelog
+=========
+
+
+1.0.0a2 (2017-11-06)
+--------------------
+
+- Fix handling of footnotes containing hyperlinks.
+  [buchi]
+
+- Add functionality to deal with custom document properties. Properties can be
+  updated and fields containing properties can be removed. When appending or
+  inserting documents their custom document properties get removed automatically.
+  [buchi]
+
+
+1.0.0a1 (2017-09-13)
+--------------------
+
+- Initial release
+  [buchi]
