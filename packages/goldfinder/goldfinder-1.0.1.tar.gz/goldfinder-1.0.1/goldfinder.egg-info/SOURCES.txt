@@ -1,0 +1,10 @@
+README.rst
+setup.py
+goldfinder/__init__.py
+goldfinder/goldfinder.py
+goldfinder.egg-info/PKG-INFO
+goldfinder.egg-info/SOURCES.txt
+goldfinder.egg-info/dependency_links.txt
+goldfinder.egg-info/entry_points.txt
+goldfinder.egg-info/requires.txt
+goldfinder.egg-info/top_level.txt
