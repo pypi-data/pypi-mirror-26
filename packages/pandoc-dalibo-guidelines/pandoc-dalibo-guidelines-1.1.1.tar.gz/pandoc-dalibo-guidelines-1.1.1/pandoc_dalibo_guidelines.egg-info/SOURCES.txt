@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pandoc_dalibo_guidelines.py
+setup.cfg
+setup.py
+pandoc_dalibo_guidelines.egg-info/PKG-INFO
+pandoc_dalibo_guidelines.egg-info/SOURCES.txt
+pandoc_dalibo_guidelines.egg-info/dependency_links.txt
+pandoc_dalibo_guidelines.egg-info/entry_points.txt
+pandoc_dalibo_guidelines.egg-info/requires.txt
+pandoc_dalibo_guidelines.egg-info/top_level.txt

@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pandoc-dalibo-guidelines
+Version: 1.1.1
+Summary: A pandoc filter that enforces the Dalibo Writing Guidelines
+Home-page: https://github.com/daamien/pandoc-dalibo-guidelines
+Author: Damien Clochard
+Author-email: daamien@gmail.com
+License: BSD
+Download-URL: https://github.com/daamien/pandoc-dalibo-guidelines/archive/master.zip
+Description: UNKNOWN
+Keywords: pandoc,filters,syntax,headers
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
