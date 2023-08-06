@@ -1,0 +1,16 @@
+ipyearth/__init__.py,sha256=6cCV7hMprzmkhtT_sn3tPySwfi6sFOFhBdrHihepgrw,250
+ipyearth/_version.py,sha256=nZ27WLDG7iROxfHgBuVMdtfmxqkYw-ILLi_ci49Phpk,281
+ipyearth/earth.py,sha256=w71-e82hBdvkM3Pg3yiIVShimjZWsByIL0M3kzYijjg,3731
+ipyearth/simplify.py,sha256=sp7apT82pYCOo4orSUk-6TzS1MO4pAud8_xHQkLA1Vw,2591
+ipyearth/static/extension.js,sha256=b_4CEofCpxEOmxqTHy6bnCdwltPZzzsm8n8kRkNN5BY,3020
+ipyearth/static/index.js,sha256=PuwycOPRiEFklbesRiHoBAPUrd7PJlJNqIlH2nvrCYM,707059
+ipyearth/static/index.js.map,sha256=RUef8SoYQOwtOomICRa2ZOrmKFv3DADiB89uEjVCNPM,842170
+ipyearth-0.1.0a0.data/data/share/jupyter/nbextensions/ipyearth/extension.js,sha256=b_4CEofCpxEOmxqTHy6bnCdwltPZzzsm8n8kRkNN5BY,3020
+ipyearth-0.1.0a0.data/data/share/jupyter/nbextensions/ipyearth/index.js,sha256=PuwycOPRiEFklbesRiHoBAPUrd7PJlJNqIlH2nvrCYM,707059
+ipyearth-0.1.0a0.data/data/share/jupyter/nbextensions/ipyearth/index.js.map,sha256=RUef8SoYQOwtOomICRa2ZOrmKFv3DADiB89uEjVCNPM,842170
+ipyearth-0.1.0a0.dist-info/DESCRIPTION.rst,sha256=tAITVzPvPjjioDzHDd43_jVofij5ZxizwAFtz6iTg7w,35
+ipyearth-0.1.0a0.dist-info/METADATA,sha256=781vGq2YLz2CBwlg259LfMCp7--p8G3bG_lGgscUPRc,977
+ipyearth-0.1.0a0.dist-info/RECORD,,
+ipyearth-0.1.0a0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ipyearth-0.1.0a0.dist-info/metadata.json,sha256=ubnjpFgxSCD4pNBZ3S2CVg9JVGmQLq5KZwR2FekHbPI,1086
+ipyearth-0.1.0a0.dist-info/top_level.txt,sha256=FjB20McuV-y7k4W3wOyRowi2EzU_zXlzMyNk0Iu5pF4,9
