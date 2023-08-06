@@ -1,0 +1,7 @@
+appdirs
+aiopg
+colorama
+urwid
+
+[develop]
+pudb
