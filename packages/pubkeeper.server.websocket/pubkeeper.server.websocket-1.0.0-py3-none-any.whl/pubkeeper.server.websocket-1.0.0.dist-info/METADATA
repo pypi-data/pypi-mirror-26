@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: pubkeeper.server.websocket
+Version: 1.0.0
+Summary: Serve the brews
+Home-page: http://github.com/pubkeeper/python-server-websocket
+Author: n.io
+Author-email: info@n.io
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: pubkeeper,python-server-websocket
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: tornado
+Requires-Dist: ujson
+
+UNKNOWN
+
+
