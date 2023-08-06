@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+
+{% block meta_title %}{{ code }} - {{ message }}{% endblock %}
+
+
+{% block meta_keywords %}{% endblock %}
+
+
+{% block meta_description %}{% endblock %}
+
+
+{% block meta_robots %}noindex, nofollow{% endblock %}
+
+
+{% block wrapper %}
+    <div class="container">
+        <div class="row">
+            <div class="lg-margin"></div>
+
+            <div class="text-center md-margin">
+                <h1>{{ code }}</h1>
+
+                <p>{{ message }}</p>
+
+                <a href="{% url 'home' %}">
+                    <i class="fa fa-home"></i> {% trans 'Перейти на головну' %}
+                </a>
+            </div>
+
+            <div class="lg-margin"></div>
+        </div>
+	</div>
+{% endblock %}
