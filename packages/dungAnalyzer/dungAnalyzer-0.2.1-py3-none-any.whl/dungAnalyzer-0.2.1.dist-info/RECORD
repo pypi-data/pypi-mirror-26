@@ -1,0 +1,14 @@
+dungAnalyzer/__init__.py,sha256=JgGNtIg_gHJlVtJ-U69JvqK20gJbJb3mC4-ikEYLQJk,72
+dungAnalyzer/BanglaStemmer/BanglaStemmer.py,sha256=qTth_CfTbkjJd5Vc__RvdgENj5wyWi-Y9zjU6m0BtUY,1900
+dungAnalyzer/BanglaStemmer/__init__.py,sha256=uyjRgc6CKZrv69VpXKuLOkyCSLEcCjZPWK5z-_-ONNE,45
+dungAnalyzer/Stemmer/Stemmer.py,sha256=IoeDvDd9EWt_OlO4wNvj5eq0SRmWqfzrrIknx0ihTo0,2198
+dungAnalyzer/Stemmer/__init__.py,sha256=jTb0mcse_58iVnUgsUhpGdlzCxg7w6-Xm_8Bx_xNgzY,39
+dungAnalyzer/StopWordProcessor/StopWordProcessor.py,sha256=b8M8jXZXgKOsofZHhZfyqaPQTJhOUqmiMzM6fuOvUPo,1172
+dungAnalyzer/StopWordProcessor/__init__.py,sha256=Ra3PtYagX-xZTjgQccJX8xkeYcZD_XUS7FniFFnIk24,65
+dungAnalyzer/resources/stopwords-bn.txt,sha256=oTcoBWj00-FXBJG9WJ5tzTUYENk4I8pRA-_FQwTGT1U,5444
+dungAnalyzer-0.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dungAnalyzer-0.2.1.dist-info/METADATA,sha256=64GlvY-jkDuG8730_jAiDO8HOudy8Beym83duojmWsQ,701
+dungAnalyzer-0.2.1.dist-info/RECORD,,
+dungAnalyzer-0.2.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+dungAnalyzer-0.2.1.dist-info/metadata.json,sha256=QOQMr2-_Z1tzo6UlLX3l_uYrCroKx25YhzISlKs8kRE,803
+dungAnalyzer-0.2.1.dist-info/top_level.txt,sha256=NzcigoySr_m7BdVSFJxfYVRka38FQa-KhM56uVNcjGQ,13
