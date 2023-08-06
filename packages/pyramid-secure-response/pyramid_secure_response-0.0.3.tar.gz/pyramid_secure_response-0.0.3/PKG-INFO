@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: pyramid_secure_response
+Version: 0.0.3
+Summary: A library redirects non-http as https, sets hsts header.
+Home-page: https://gitlab.com/grauwoelfchen/pyramid_secure_response
+Author: Yasuhiro Asaka
+Author-email: yasuhiro.asaka@grauwoelfchen.net
+License: BSD-3-Clause
+Description-Content-Type: UNKNOWN
+Description: pyramid_secure_response
+        =======================
+        
+        Introduction
+        ------------
+        
+        ``pyramid_secure_response`` is a library built on top of the Pyramid Tween to
+        provide secure response (sets HTTP Strict Transport Security header, redirect non-ssl request as ssl).
+        
+        
+        09 Nov 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+        	* Bump version v0.0.2, v0.0.3
+        	* Update package description and classifiers
+        	* Enable HSTS Header only for ssl request
+        	* Add test case for X-Forwarded-Proto use
+        
+        08 Nov 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+        	* Covret README.adoc to README.rst
+        	* Add .gitlab-ci.yml
+        
+        07 Nov 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+        	* Initial commit ;)
+        
+Keywords: web wsgi pylons pyramid
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pyramid
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
