@@ -1,0 +1,8 @@
+astro_kittens
+numpy
+scipy
+astlib
+pyfits
+
+[venv]
+vext.pyqt4
