@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: info-generators
+Version: 0.0.6
+Summary: mock chinese info to test
+Home-page: https://github.com/jeremaihloo/info_generators
+Author: jeremaihloo
+Author-email: 1006397539@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
