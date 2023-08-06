@@ -1,0 +1,9 @@
+nose
+setuptools
+pillow
+scipy
+numpy
+future-fstrings
+
+[plot]
+matplotlib
