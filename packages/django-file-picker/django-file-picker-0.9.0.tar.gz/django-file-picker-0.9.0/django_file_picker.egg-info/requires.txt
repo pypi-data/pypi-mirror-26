@@ -1,0 +1,2 @@
+sorl-thumbnail>=12.4a1
+Pillow<4.0,>=3.1.0
