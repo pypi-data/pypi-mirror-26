@@ -1,0 +1,3 @@
+[console_scripts]
+charrnn = charrnn.__main__:main
+
