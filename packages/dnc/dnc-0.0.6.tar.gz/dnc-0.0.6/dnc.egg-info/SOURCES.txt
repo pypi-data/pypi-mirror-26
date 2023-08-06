@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+dnc/__init__.py
+dnc/dnc.py
+dnc/memory.py
+dnc/sparse_memory.py
+dnc/util.py
+dnc.egg-info/PKG-INFO
+dnc.egg-info/SOURCES.txt
+dnc.egg-info/dependency_links.txt
+dnc.egg-info/requires.txt
+dnc.egg-info/top_level.txt
+test/test_gru.py
+test/test_lstm.py
+test/test_rnn.py
+test/test_utils.py
