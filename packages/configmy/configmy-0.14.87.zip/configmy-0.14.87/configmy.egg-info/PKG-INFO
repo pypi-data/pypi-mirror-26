@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: configmy
+Version: 0.14.87
+Summary: Library provides very flexible config file loading
+Home-page: https://github.com/
+Author: Kevin Noel,  noelkev0 gmail
+Author-email: UNKNOWN
+License: MIT
+Description: 
+        configmy [#]_ is a `MIT licensed <http://opensource.org/licenses/MIT>`_
+        
+        Please refer to the author directly for details.
+        
+        - Home:  
+        - PyPI:  https://pypi.python.org/pypi/configmy
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
