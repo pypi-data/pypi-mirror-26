@@ -1,0 +1,3 @@
+[console_scripts]
+tcm = tcm.command:main
+

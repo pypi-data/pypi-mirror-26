@@ -1,0 +1,11 @@
+README.rst
+setup.py
+tacl_catalogue_manager.egg-info/PKG-INFO
+tacl_catalogue_manager.egg-info/SOURCES.txt
+tacl_catalogue_manager.egg-info/dependency_links.txt
+tacl_catalogue_manager.egg-info/entry_points.txt
+tacl_catalogue_manager.egg-info/top_level.txt
+tcm/__init__.py
+tcm/catalogue.py
+tcm/command.py
+tcm/controller.py
