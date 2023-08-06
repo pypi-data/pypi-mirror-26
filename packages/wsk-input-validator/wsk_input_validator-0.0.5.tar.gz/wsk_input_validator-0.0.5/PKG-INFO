@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: wsk_input_validator
+Version: 0.0.5
+Summary: validate input of openwhisk
+Home-page: UNKNOWN
+Author: Hieu Tran
+Author-email: hieutrantrung.it@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: wsk,openwhisk,validator
+Platform: UNKNOWN
