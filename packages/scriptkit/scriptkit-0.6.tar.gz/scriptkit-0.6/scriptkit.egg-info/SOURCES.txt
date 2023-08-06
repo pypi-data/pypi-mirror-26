@@ -1,0 +1,8 @@
+setup.py
+scriptkit/__init__.py
+scriptkit/pyshell.py
+scriptkit.egg-info/PKG-INFO
+scriptkit.egg-info/SOURCES.txt
+scriptkit.egg-info/dependency_links.txt
+scriptkit.egg-info/not-zip-safe
+scriptkit.egg-info/top_level.txt
