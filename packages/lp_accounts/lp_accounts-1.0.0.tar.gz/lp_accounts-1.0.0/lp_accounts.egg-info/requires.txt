@@ -1,0 +1,7 @@
+django
+django-rest-framework
+django-templated-email
+parameterized
+pyyaml
+rest-condition
+rest-framework-generic-relations
