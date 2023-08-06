@@ -1,0 +1,11 @@
+Netbase-0.1.23.dist-info/DESCRIPTION.rst,sha256=8e-lt-DFRgx8STt2PZl_nmRVknc3XOboLf6T7A8N7dM,19
+Netbase-0.1.23.dist-info/METADATA,sha256=SAm_kPwzCO0uPljMc1ckZc3mjDPWQXg3s1bJbakE0eA,275
+Netbase-0.1.23.dist-info/RECORD,,
+Netbase-0.1.23.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+Netbase-0.1.23.dist-info/dependency_links.txt,sha256=CVYxmBASZ2dQUwW5XGgZa4X_l7rVAuNYHsAmC1dtL88,52
+Netbase-0.1.23.dist-info/metadata.json,sha256=deELQjtw2lxyWk-1N4gKK1wEvGytLly9BXNWLxW3QoM,446
+Netbase-0.1.23.dist-info/top_level.txt,sha256=QdbCg8PdLwqUihTHllG4iTgDp_Z8cq6eWnx6coz6Vfg,8
+netbase/__init__.py,sha256=V9sldmVfALsOQ_ETG9QEaLwZI4C0YA8Vuc9g_PccjAk,576
+netbase/alle.py,sha256=cv54KH4Xywc7-M2Wv8frXs6zqdTt42RAlgQVYVKZFbo,248
+netbase/extensions.py,sha256=HQ9TbgEfTI5Kw8wzhaMKAlNlVwC2o8cugtHSTdSCleY,30897
+netbase/netbase.py,sha256=w7etj5WLm6M3Bd0j7BZx6rdXmle_hTeCu-raVaxf0d8,12948
