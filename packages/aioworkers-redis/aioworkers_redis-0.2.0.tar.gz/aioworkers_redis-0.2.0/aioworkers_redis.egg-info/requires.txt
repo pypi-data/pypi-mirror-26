@@ -1,0 +1,2 @@
+aioworkers>=0.7.0
+aioredis==0.3.4
