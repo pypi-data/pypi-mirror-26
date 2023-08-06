@@ -1,0 +1,16 @@
+aiohttp>=2.3.0
+
+[aiomcache]
+aiomcache>=0.5.2
+
+[aioredis]
+aioredis>=0.1.4
+
+[pycrypto]
+cryptography
+
+[pynacl]
+pynacl
+
+[secure]
+cryptography
