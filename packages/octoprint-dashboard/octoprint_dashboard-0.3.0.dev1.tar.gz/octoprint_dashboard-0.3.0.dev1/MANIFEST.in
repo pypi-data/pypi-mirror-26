@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+graft octoprint_dashboard/dist
+graft octoprint_dashboard/static
+graft octoprint_dashboard/model/migrations
