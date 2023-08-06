@@ -1,0 +1,10 @@
+whistle/__init__.py,sha256=jVtayJSCQueYnhIw93oJEdK3NJZVOXoeem_kQz5o1s4,190
+whistle/_version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+whistle/dispatcher.py,sha256=Hc_QvEBObuHfGT0BIFUUGE2jAiZIb_ejJc0mQB1u6cM,3447
+whistle/event.py,sha256=FAEix0_yBbcwbyhyP49QzVYpLANDwNSRICYHWhEJuO0,627
+whistle-1.0.0.dist-info/DESCRIPTION.rst,sha256=KWQ9ksThlwEBsKKqbCagPV1ea7vstFl05GLu71BNTMc,744
+whistle-1.0.0.dist-info/METADATA,sha256=RaiccxzsxA9cj_2LZUeBF3O1lFimlvh5YMUpko9o_ag,1374
+whistle-1.0.0.dist-info/RECORD,,
+whistle-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+whistle-1.0.0.dist-info/metadata.json,sha256=1GMEOyjgYXDHPkAXeiwdOI_fMr9iajHQxkhFslSs3gw,735
+whistle-1.0.0.dist-info/top_level.txt,sha256=rMl5Ofoj0nL6p30xCc9SWK4tG4NoYfUc2mi9A7MoUes,8
