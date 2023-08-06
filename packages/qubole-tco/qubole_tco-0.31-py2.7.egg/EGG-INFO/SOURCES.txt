@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+qubole_tco.egg-info/PKG-INFO
+qubole_tco.egg-info/SOURCES.txt
+qubole_tco.egg-info/dependency_links.txt
+qubole_tco.egg-info/requires.txt
+qubole_tco.egg-info/top_level.txt
