@@ -1,0 +1,5 @@
+dist/
+a2d_diary/__pycache__/
+.vscode/
+a2d_diary/build/
+t-env/
