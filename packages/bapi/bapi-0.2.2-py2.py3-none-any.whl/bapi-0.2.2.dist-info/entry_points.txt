@@ -1,0 +1,3 @@
+[console_scripts]
+bapi = bapi.app:main
+
