@@ -1,0 +1,11 @@
+points/__init__.py,sha256=W73X8n7ELd_5ppjfb8MVMkb4A8gaSysfRY_XjrbJI4U,107
+points/checks.py,sha256=29ZQKrYILGwGA2pWEs67st2DvwDiRkCHkqjSP6AEgU4,1094
+points/geometry.py,sha256=62Z6giXdlcRGxrhBahEPJtEUxRNRnsQA0vyEk8SLcYU,499
+points/matrices.py,sha256=8s2U9q9hGYlXQdb1cy7zIzLo9EdTxSdNsL20aBNaNvk,4804
+points/vectors.py,sha256=JdpLHd0aurwBVmxFLiyX5gFIRsftKJCmrKqW3MRnF0A,8397
+points-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+points-0.3.0.dist-info/METADATA,sha256=j4pDHIWntLAWCQkyzLztEXYCQkes-03DTGngHu-foHg,661
+points-0.3.0.dist-info/RECORD,,
+points-0.3.0.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+points-0.3.0.dist-info/metadata.json,sha256=-FEe1VtywOP-VwuU0a3BNyYMB4ddIptL8tzJNLbZPuI,813
+points-0.3.0.dist-info/top_level.txt,sha256=ecgDikgI9QB1Ohe0LSpqrMqt3Nm8KO3k9_9XZdAl28E,7
