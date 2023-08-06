@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pygenderbr/__init__.py
+pygenderbr/genderbrapitool.py
+pygenderbr.egg-info/PKG-INFO
+pygenderbr.egg-info/SOURCES.txt
+pygenderbr.egg-info/dependency_links.txt
+pygenderbr.egg-info/not-zip-safe
+pygenderbr.egg-info/requires.txt
+pygenderbr.egg-info/top_level.txt
