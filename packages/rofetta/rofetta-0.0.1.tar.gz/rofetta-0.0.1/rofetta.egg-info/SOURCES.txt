@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+rofetta.egg-info/PKG-INFO
+rofetta.egg-info/SOURCES.txt
+rofetta.egg-info/dependency_links.txt
+rofetta.egg-info/requires.txt
+rofetta.egg-info/top_level.txt
