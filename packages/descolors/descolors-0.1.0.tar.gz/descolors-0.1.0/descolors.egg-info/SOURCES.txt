@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.cfg
+setup.py
+versioneer.py
+descolors/__init__.py
+descolors/_version.py
+descolors.egg-info/PKG-INFO
+descolors.egg-info/SOURCES.txt
+descolors.egg-info/dependency_links.txt
+descolors.egg-info/top_level.txt
