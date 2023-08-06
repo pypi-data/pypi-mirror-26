@@ -1,0 +1,1098 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API documentation &mdash; pytac 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="pytac 1.0 documentation" href="index.html"/>
+        <link rel="prev" title="Examples" href="examples.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pytac
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Python Toolkit for Accelerator Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.cs">pytac.cs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.device">pytac.device module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.element">pytac.element module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.epics">pytac.epics module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.exceptions">pytac.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.lattice">pytac.lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.load_csv">pytac.load_csv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-pytac.units">pytac.units module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pytac</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pytac.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-pytac">
+<span id="api-documentation"></span><h1>API documentation<a class="headerlink" href="#module-pytac" title="Permalink to this headline">¶</a></h1>
+<p>Pytac: Python Toolkit for Accelerator Controls.</p>
+<div class="section" id="module-pytac.cs">
+<span id="pytac-cs-module"></span><h2>pytac.cs module<a class="headerlink" href="#module-pytac.cs" title="Permalink to this headline">¶</a></h2>
+<p>Class representing an abstract control system.</p>
+<dl class="class">
+<dt id="pytac.cs.ControlSystem">
+<em class="property">class </em><code class="descclassname">pytac.cs.</code><code class="descname">ControlSystem</code><a class="reference internal" href="_modules/pytac/cs.html#ControlSystem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.cs.ControlSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Abstract base class representing a control system.</p>
+<dl class="method">
+<dt id="pytac.cs.ControlSystem.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>pv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/cs.html#ControlSystem.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.cs.ControlSystem.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value of the given pv.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pv</strong> (<em>string</em>) – The pv to get the value of.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The numeric value of the pv.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Number</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.cs.ControlSystem.put">
+<code class="descname">put</code><span class="sig-paren">(</span><em>pv</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/cs.html#ControlSystem.put"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.cs.ControlSystem.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put the value of a given pv.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pv</strong> (<em>string</em>) – The pv to put the value for.</li>
+<li><strong>value</strong> (<em>Number</em>) – The value to be set.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.device">
+<span id="pytac-device-module"></span><h2>pytac.device module<a class="headerlink" href="#module-pytac.device" title="Permalink to this headline">¶</a></h2>
+<p>The device class used to represent a particular function of an accelerator element.</p>
+<p>A physical element in an accelerator may have multiple devices: an example at DLS
+is a sextupole magnet that contains also horizontal and vertical corrector magnets
+and a skew quadrupole.</p>
+<dl class="class">
+<dt id="pytac.device.Device">
+<em class="property">class </em><code class="descclassname">pytac.device.</code><code class="descname">Device</code><span class="sig-paren">(</span><em>name</em>, <em>cs</em>, <em>enabled=True</em>, <em>rb_suffix=None</em>, <em>sp_suffix=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.Device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A device attached to an element.</p>
+<p>Contains a control system, readback and setpoint pvs. A readback
+or setpoint pv is required when creating a device otherwise a
+PvException is raised. The device is enabled by default.</p>
+<dl class="method">
+<dt id="pytac.device.Device.get_cs">
+<code class="descname">get_cs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#Device.get_cs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.Device.get_cs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pytac.device.Device.get_pv_name">
+<code class="descname">get_pv_name</code><span class="sig-paren">(</span><em>handle</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#Device.get_pv_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.Device.get_pv_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a pv name on a specified handle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>handle</strong> (<em>string</em>) – The readback or setpoint handle to be returned.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A readback or setpoint pv.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.device.Device.get_value">
+<code class="descname">get_value</code><span class="sig-paren">(</span><em>handle</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#Device.get_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.Device.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the value of a readback or setpoint pv.</p>
+<p>If neither readback or setpoint pvs exist then a PvException is raised.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>handle</strong> (<em>string</em>) – Handle used to get the value off a readback or setpoint
+pv.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The value of the pv.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">PvException</span></code> – In case the requested pv doesn’t exist.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.device.Device.is_enabled">
+<code class="descname">is_enabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#Device.is_enabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.Device.is_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the device is enabled.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">whether the device is enabled</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.device.Device.put_value">
+<code class="descname">put_value</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#Device.put_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.Device.put_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the device value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>Number</em>) – The value to set on the pv.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">PvException</span></code> – An exception occured when no setpoint pv exists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pytac.device.PvEnabler">
+<em class="property">class </em><code class="descclassname">pytac.device.</code><code class="descname">PvEnabler</code><span class="sig-paren">(</span><em>pv</em>, <em>enabled_value</em>, <em>cs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/device.html#PvEnabler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.device.PvEnabler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.element">
+<span id="pytac-element-module"></span><h2>pytac.element module<a class="headerlink" href="#module-pytac.element" title="Permalink to this headline">¶</a></h2>
+<p>Module containing the element class.</p>
+<dl class="class">
+<dt id="pytac.element.Element">
+<em class="property">class </em><code class="descclassname">pytac.element.</code><code class="descname">Element</code><span class="sig-paren">(</span><em>name</em>, <em>length</em>, <em>element_type</em>, <em>cell=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class representing one physical element in an accelerator lattice.</p>
+<p>An element has zero or more devices (e.g. quadrupole magnet) associated
+with a field (‘b1’ for a quadrupole).</p>
+<dl class="attribute">
+<dt id="pytac.element.Element.name">
+<code class="descname">name</code><a class="headerlink" href="#pytac.element.Element.name" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – name identifying the element</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pytac.element.Element.type_">
+<code class="descname">type_</code><a class="headerlink" href="#pytac.element.Element.type_" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – type of the element</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pytac.element.Element.length">
+<code class="descname">length</code><a class="headerlink" href="#pytac.element.Element.length" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>number</em> – length of the element in metres</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pytac.element.Element.cell">
+<code class="descname">cell</code><a class="headerlink" href="#pytac.element.Element.cell" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>int</em> – the element’s cell within the lattice</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pytac.element.Element.families">
+<code class="descname">families</code><a class="headerlink" href="#pytac.element.Element.families" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>set</em> – the families this element is a member of</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.add_device">
+<code class="descname">add_device</code><span class="sig-paren">(</span><em>field</em>, <em>device</em>, <em>uc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.add_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.add_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add device and unit conversion objects to a given field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>field</strong> (<em>string</em>) – The key to store the unit conversion and device
+objects.</li>
+<li><strong>device</strong> (<a class="reference internal" href="#pytac.device.Device" title="pytac.device.Device"><em>Device</em></a>) – Represents a device stored on an element.</li>
+<li><strong>uc</strong> (<em>PolyUnitConv/PchipUnitConv</em>) – Represents a unit conversion object stored for a
+device.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.add_to_family">
+<code class="descname">add_to_family</code><span class="sig-paren">(</span><em>family</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.add_to_family"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.add_to_family" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the element to the specified family.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>family</strong> (<em>string</em>) – Represents the name of the family</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.get_cs">
+<code class="descname">get_cs</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.get_cs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.get_cs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.get_device">
+<code class="descname">get_device</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.get_device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.get_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the device for the given field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>field</strong> (<em>string</em>) – The lookup key to find the device on an element.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The device on the given field.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pytac.device.Device" title="pytac.device.Device">Device</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body">KeyError if no such device exists</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.get_fields">
+<code class="descname">get_fields</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.get_fields"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.get_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the fields defined on an element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A sequence of all the fields defined on an element.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.get_pv_name">
+<code class="descname">get_pv_name</code><span class="sig-paren">(</span><em>field</em>, <em>handle='*'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.get_pv_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.get_pv_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a pv name on a device.</p>
+<p>Can return the readback and setpoint pvs if no handle is specified.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>field</strong> (<em>string</em>) – Uniquely identifies a device.</li>
+<li><strong>handle</strong> (<em>string</em>) – Can be ‘readback’ or ‘setpoint’ to return each pv.
+If neither is specified then both pvs are returned.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A readback or setpoint pv associated with the identified device.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">PvException</span></code> – An exception occured accessing a field with</li>
+<li>no associated device.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.get_value">
+<code class="descname">get_value</code><span class="sig-paren">(</span><em>field</em>, <em>handle</em>, <em>unit='engineering'</em>, <em>model='live'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.get_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value for a field.</p>
+<p>Returns the value for a field on the element. This value is uniquely
+identified by a field and a handle. The returned value is either
+in engineering or physics units. The model flag returns either real
+or simulated values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>field</strong> (<em>string</em>) – Choose which device to use.</li>
+<li><strong>handle</strong> (<em>string</em>) – Can take as value either ‘setpoint’ or ‘readback’.</li>
+<li><strong>unit</strong> (<em>string</em>) – Specify either engineering or physics units to be
+returned.</li>
+<li><strong>model</strong> (<em>string</em>) – Set whether real or simulated values to be returned.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A number that corresponds to the value of the identified
+field.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">Number</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><code class="xref py py-exc docutils literal"><span class="pre">PvException</span></code> – When there is no associated device on the given field.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.set_model">
+<code class="descname">set_model</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.set_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.set_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pytac.element.Element.set_value">
+<code class="descname">set_value</code><span class="sig-paren">(</span><em>field</em>, <em>value</em>, <em>unit='engineering'</em>, <em>model='live'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/element.html#Element.set_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.element.Element.set_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value on a uniquely identified device.</p>
+<p>This value can be set on the machine or the simulation.
+A field is required to identify a device. Returned value
+can be engineering or physics.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>field</strong> (<em>string</em>) – The key used to identify a device.</li>
+<li><strong>value</strong> (<em>float</em>) – The value set on the device.</li>
+<li><strong>unit</strong> (<em>string</em>) – Can be engineering or physics units.</li>
+<li><strong>model</strong> (<em>string</em>) – The type of model: simulation or live</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">PvException</span></code> – An exception occured accessing a field with</li>
+<li>no associated device.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.epics">
+<span id="pytac-epics-module"></span><h2>pytac.epics module<a class="headerlink" href="#module-pytac.epics" title="Permalink to this headline">¶</a></h2>
+<p>Module to implement an EpicsControlSystem object which is used to get real-time data from the machine.</p>
+<dl class="class">
+<dt id="pytac.epics.EpicsControlSystem">
+<em class="property">class </em><code class="descclassname">pytac.epics.</code><code class="descname">EpicsControlSystem</code><a class="reference internal" href="_modules/pytac/epics.html#EpicsControlSystem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.epics.EpicsControlSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pytac.cs.ControlSystem" title="pytac.cs.ControlSystem"><code class="xref py py-class docutils literal"><span class="pre">pytac.cs.ControlSystem</span></code></a></p>
+<p>The EPICS control system.</p>
+<p>It is used to communicate over channel access with the hardware
+in the ring.</p>
+<dl class="method">
+<dt id="pytac.epics.EpicsControlSystem.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>pv</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/epics.html#EpicsControlSystem.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.epics.EpicsControlSystem.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value of a given pv.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pv</strong> (<em>string</em>) – The process variable given as a string. It can be
+a readback or a setpoint pv.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Represents the current value of the given pv.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.epics.EpicsControlSystem.put">
+<code class="descname">put</code><span class="sig-paren">(</span><em>pv</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/epics.html#EpicsControlSystem.put"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.epics.EpicsControlSystem.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value for a given.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pv</strong> (<em>string</em>) – The pv to set the value of. It must be a setpoint pv.</li>
+<li><strong>value</strong> (<em>Number</em>) – The value to set the pv to.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.exceptions">
+<span id="pytac-exceptions-module"></span><h2>pytac.exceptions module<a class="headerlink" href="#module-pytac.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>Module to represent existent exceptions in Pytac.</p>
+<dl class="exception">
+<dt id="pytac.exceptions.ElementNotFoundException">
+<em class="property">exception </em><code class="descclassname">pytac.exceptions.</code><code class="descname">ElementNotFoundException</code><a class="reference internal" href="_modules/pytac/exceptions.html#ElementNotFoundException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.exceptions.ElementNotFoundException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pytac.exceptions.PvException">
+<em class="property">exception </em><code class="descclassname">pytac.exceptions.</code><code class="descname">PvException</code><a class="reference internal" href="_modules/pytac/exceptions.html#PvException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.exceptions.PvException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="pytac.exceptions.UniqueSolutionException">
+<em class="property">exception </em><code class="descclassname">pytac.exceptions.</code><code class="descname">UniqueSolutionException</code><a class="reference internal" href="_modules/pytac/exceptions.html#UniqueSolutionException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.exceptions.UniqueSolutionException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.lattice">
+<span id="pytac-lattice-module"></span><h2>pytac.lattice module<a class="headerlink" href="#module-pytac.lattice" title="Permalink to this headline">¶</a></h2>
+<p>Representation of a lattice object which contains all the elements of the machine.</p>
+<dl class="class">
+<dt id="pytac.lattice.Lattice">
+<em class="property">class </em><code class="descclassname">pytac.lattice.</code><code class="descname">Lattice</code><span class="sig-paren">(</span><em>name</em>, <em>control_system</em>, <em>energy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pytac.lattice.Lattice.add_element">
+<code class="descname">add_element</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.add_element"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.add_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an element to the lattice.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> (<a class="reference internal" href="#pytac.element.Element" title="pytac.element.Element"><em>Element</em></a>) – The element to be inserted into the lattice.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_all_families">
+<code class="descname">get_all_families</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_all_families"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_all_families" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all available families of the lattice.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Contains all available families in the lattice.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">set(string)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_device_names">
+<code class="descname">get_device_names</code><span class="sig-paren">(</span><em>family</em>, <em>field</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_device_names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_device_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the names for devices attached to a specific field for elements in the specfied family.</p>
+<p>Typically all elements of a family will have devices associated with
+the same fields - for example, BPMs each have device for fields ‘x’ and ‘y’.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>family</strong> – family of elements</li>
+<li><strong>field</strong> – field specifying the devices</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">devices for specified family and field</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list(devices)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_devices">
+<code class="descname">get_devices</code><span class="sig-paren">(</span><em>family</em>, <em>field</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_devices"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_devices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get devices attached to a specific field for elements in the specfied family.</p>
+<p>Typically all elements of a family will have devices associated with
+the same fields - for example, BPMs each have device for fields ‘x’ and ‘y’.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>family</strong> – family of elements</li>
+<li><strong>field</strong> – field specifying the devices</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">devices for specified family and field</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list(devices)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_elements">
+<code class="descname">get_elements</code><span class="sig-paren">(</span><em>family=None</em>, <em>cell=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_elements"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_elements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the elements of a family from the lattice.</p>
+<p>If no family is specified it returns all elements.</p>
+<p>Elements are returned in the order they exist in the ring.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>family</strong> (<em>string</em>) – Restrict elements to those in this family</li>
+<li><strong>cell</strong> (<em>int</em>) – Restrict elements to those in the specified cell</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list that contains all elements of the specified family.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list(<a class="reference internal" href="#pytac.element.Element" title="pytac.element.Element">Element</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_energy">
+<code class="descname">get_energy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_energy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to get the total energy of the lattice.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The total energy of the lattice.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Number</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_family_s">
+<code class="descname">get_family_s</code><span class="sig-paren">(</span><em>family</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_family_s"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_family_s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the positions for a set of elements from the same family.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>family</strong> (<em>string</em>) – The family the positions are being asked for.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of floating point numbers that represent the positions
+for each element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list(float)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_length">
+<code class="descname">get_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_length"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the length of the lattice.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The length of the lattice.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_pv_names">
+<code class="descname">get_pv_names</code><span class="sig-paren">(</span><em>family</em>, <em>field</em>, <em>handle</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_pv_names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_pv_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all pv names for a specific family, field and handle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>family</strong> (<em>string</em>) – A specific family to requests elements of.</li>
+<li><strong>field</strong> (<em>string</em>) – The field to uniquely identify a device.</li>
+<li><strong>handle</strong> (<em>string</em>) – It is used to identify a readback or setpoint pv.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of readback or setpoint pvs from the device.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list(string)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_pv_values">
+<code class="descname">get_pv_values</code><span class="sig-paren">(</span><em>family</em>, <em>field</em>, <em>handle</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_pv_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_pv_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all pv values for a set of pvs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>family</strong> (<em>string</em>) – A specific family to requests the values of.</li>
+<li><strong>field</strong> (<em>string</em>) – The field to uniquely identify a device.</li>
+<li><strong>handle</strong> (<em>string</em>) – It is used to identify a readback or setpoint pv.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of readback or setpoint pv values from the device.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list(float)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.get_s">
+<code class="descname">get_s</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.get_s"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.get_s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the position of a given element in the lattice.</p>
+<p>Note that the given element must exist in the lattice.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>given_element</strong> – The element that the position is being asked for.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the position of the given element.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Raises</dt>
+<dd>ElementNotFoundException: An exception is raised in case the element
+doesn’t exist inside the lattice.</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.set_model">
+<code class="descname">set_model</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.set_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.set_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pytac.lattice.Lattice.set_pv_values">
+<code class="descname">set_pv_values</code><span class="sig-paren">(</span><em>family</em>, <em>field</em>, <em>values</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/lattice.html#Lattice.set_pv_values"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.lattice.Lattice.set_pv_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pv value of a given family of pvs.</p>
+<p>The pvs are determined by family and device. Note that only setpoint
+pvs can be modified.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>family</strong> (<em>string</em>) – A specific family to set the value of.</li>
+<li><strong>field</strong> (<em>string</em>) – The field to uniquely identify a device.</li>
+<li><strong>values</strong> (<em>list</em><em>(</em><em>float</em><em>)</em>) – A list of values to assign to the pvs.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">PvException</span></code> – An exception raised in case the given list of values</li>
+<li>doesn’t match the number of found pvs.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.load_csv">
+<span id="pytac-load-csv-module"></span><h2>pytac.load_csv module<a class="headerlink" href="#module-pytac.load_csv" title="Permalink to this headline">¶</a></h2>
+<p>Module to load the elements of the machine from multiple csv files stored in the same directory.</p>
+<dl class="function">
+<dt id="pytac.load_csv.get_div_rigidity">
+<code class="descclassname">pytac.load_csv.</code><code class="descname">get_div_rigidity</code><span class="sig-paren">(</span><em>energy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/load_csv.html#get_div_rigidity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.load_csv.get_div_rigidity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pytac.load_csv.get_mult_rigidity">
+<code class="descclassname">pytac.load_csv.</code><code class="descname">get_mult_rigidity</code><span class="sig-paren">(</span><em>energy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/load_csv.html#get_mult_rigidity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.load_csv.get_mult_rigidity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="pytac.load_csv.load">
+<code class="descclassname">pytac.load_csv.</code><code class="descname">load</code><span class="sig-paren">(</span><em>mode</em>, <em>control_system=None</em>, <em>directory=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/load_csv.html#load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.load_csv.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the elements of a lattice from a directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mode</strong> (<em>string</em>) – The name of the mode to be loaded.</li>
+<li><strong>control_system</strong> (<a class="reference internal" href="#pytac.cs.ControlSystem" title="pytac.cs.ControlSystem"><em>ControlSystem</em></a>) – The control system to be used. If none is provided
+an EpicsControlSystem will be created.</li>
+<li><strong>directory</strong> (<em>string</em>) – Directory where to load the files from. If no directory is given
+the data directory at the root of the repository is used.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The lattice containing all elements.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#pytac.lattice.Lattice" title="pytac.lattice.Lattice">Lattice</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pytac.load_csv.load_unitconv">
+<code class="descclassname">pytac.load_csv.</code><code class="descname">load_unitconv</code><span class="sig-paren">(</span><em>directory</em>, <em>mode</em>, <em>lattice</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/load_csv.html#load_unitconv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.load_csv.load_unitconv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the unit conversion objects from a file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>directory</strong> (<em>string</em>) – The directory where the data is stored.</li>
+<li><strong>mode</strong> (<em>string</em>) – The name of the mode that is used.</li>
+<li><strong>lattice</strong> (<a class="reference internal" href="#pytac.lattice.Lattice" title="pytac.lattice.Lattice"><em>Lattice</em></a>) – The lattice object that will be used.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pytac.units">
+<span id="pytac-units-module"></span><h2>pytac.units module<a class="headerlink" href="#module-pytac.units" title="Permalink to this headline">¶</a></h2>
+<p>An unit conversion object used to convert between physics and engineering units.</p>
+<dl class="class">
+<dt id="pytac.units.PchipUnitConv">
+<em class="property">class </em><code class="descclassname">pytac.units.</code><code class="descname">PchipUnitConv</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>post_eng_to_phys=&lt;function unit_function at 0x3ab96e0&gt;</em>, <em>pre_phys_to_eng=&lt;function unit_function at 0x3ab96e0&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/units.html#PchipUnitConv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.units.PchipUnitConv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pytac.units.UnitConv" title="pytac.units.UnitConv"><code class="xref py py-class docutils literal"><span class="pre">pytac.units.UnitConv</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pytac.units.PolyUnitConv">
+<em class="property">class </em><code class="descclassname">pytac.units.</code><code class="descname">PolyUnitConv</code><span class="sig-paren">(</span><em>coef</em>, <em>post_eng_to_phys=&lt;function unit_function at 0x3ab96e0&gt;</em>, <em>pre_phys_to_eng=&lt;function unit_function at 0x3ab96e0&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/units.html#PolyUnitConv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.units.PolyUnitConv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pytac.units.UnitConv" title="pytac.units.UnitConv"><code class="xref py py-class docutils literal"><span class="pre">pytac.units.UnitConv</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="pytac.units.UnitConv">
+<em class="property">class </em><code class="descclassname">pytac.units.</code><code class="descname">UnitConv</code><span class="sig-paren">(</span><em>post_eng_to_phys=&lt;function unit_function at 0x3ab96e0&gt;</em>, <em>pre_phys_to_eng=&lt;function unit_function at 0x3ab96e0&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/units.html#UnitConv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.units.UnitConv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="pytac.units.UnitConv.eng_to_phys">
+<code class="descname">eng_to_phys</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/units.html#UnitConv.eng_to_phys"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.units.UnitConv.eng_to_phys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that does the unit conversion.</p>
+<p>Conversion from engineering to physics units. An additional function may
+be casted on the initial conversion.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>Number</em>) – Value to be converted from engineering to physics units.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The result value.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">result(Number)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytac.units.UnitConv.phys_to_eng">
+<code class="descname">phys_to_eng</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/units.html#UnitConv.phys_to_eng"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.units.UnitConv.phys_to_eng" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that does the unit conversion.</p>
+<p>Conversion from physics to engineering units. An additional function may
+be casted on the initial conversion.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>Number</em>) – Value to be converted from physics to engineering units.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The result value.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">result(Number)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="pytac.units.unit_function">
+<code class="descclassname">pytac.units.</code><code class="descname">unit_function</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pytac/units.html#unit_function"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytac.units.unit_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default value for the pre and post functions used in unit conversion.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>Number</em>) – The value to be converted.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The result of the conversion.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">value(Number)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="examples.html" class="btn btn-neutral" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Will Rogers, Razvan Vasile.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
