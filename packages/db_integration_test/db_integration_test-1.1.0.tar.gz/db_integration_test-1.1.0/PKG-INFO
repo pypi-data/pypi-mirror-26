@@ -1,0 +1,71 @@
+Metadata-Version: 1.1
+Name: db_integration_test
+Version: 1.1.0
+Summary: Easily setup relational database fixtures and assert database contents in unittest.
+Home-page: https://github.com/flowpl/dbit
+Author: Florian Plattner
+Author-email: me@florianplattner.de
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: db_integration_test
+        ===================
+        
+        Easily setup relational database fixtures and assert database contents in unittest.
+        
+        
+        Install
+        -------
+        
+        .. code-block:: bash
+        
+            $ pip install db_integration_test
+        
+        
+        Usage
+        -----
+        
+        .. code-block:: python
+        
+            from dbit import DatabaseTestCase, fixture
+        
+            class SomeTest(DatabaseTestCase):
+        
+                def setUp(self):
+                    # the DB connection has to be created before the setUp is run.
+                    # DatabaseTestCase only ever creates a single connection. Multiple calls to connect are ignored.
+                    # to connect to a different DB, call self.disconnect(), then self.connect() with a different connection string.
+                    # uses SQLAlchemy under the hood
+                    self.connect('postgresql+psycopg2://user:pass@localhost/test_db')
+                    super().setUp()
+        
+                @fixture("table_name", [{'id': 1, 'value': 'abc'}, {'id': 2, 'value': 'def'}])
+                def test_something_with_your_database(self):
+                    # interact with the DB
+                    # self.engine contains the SQLAlchemy Engine
+                    # self.session contains the SQLAlchemy ORM session
+                    # self.base contains the automap base for the current database
+                    # self.disconnect() disconnects from the DB
+        
+                    # assert that the table contents match the fixture exactly
+                    self.assertMatchFixture("table_name", self.get_table_contents(self.base.classes.table_name))
+        
+                    # assert that some number of rows appear in the fixture
+                    self.assertAllInFixture("table_name", [{'id': 1, 'value': 'abc'}])
+        
+        
+Keywords: testing
+fixture
+test data
+database
+assertion
+integration
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,16 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.rst
+requirements-test.txt
+setup.cfg
+setup.py
+db_integration_test.egg-info/PKG-INFO
+db_integration_test.egg-info/SOURCES.txt
+db_integration_test.egg-info/dependency_links.txt
+db_integration_test.egg-info/not-zip-safe
+db_integration_test.egg-info/pbr.json
+db_integration_test.egg-info/top_level.txt
+dbit/__init__.py
+dbit/dbit.py
+dbit/dbit_test.py
