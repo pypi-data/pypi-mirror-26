@@ -1,0 +1,2 @@
+jsbeautifier>=1.6
+jsmin>=2.2
