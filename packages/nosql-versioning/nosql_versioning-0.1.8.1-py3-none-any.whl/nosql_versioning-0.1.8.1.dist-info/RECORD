@@ -1,0 +1,12 @@
+nosql_versioning/__init__.py,sha256=FSuZuETqt05CBNUWo3bSuSPz48qPBTgqbxBfo36hWPE,2309
+nosql_versioning-0.1.8.1.dist-info/DESCRIPTION.rst,sha256=BeaiInC3l5qphFsXwhFcWxrpsdQfOynfEMBE_lozTCc,3139
+nosql_versioning-0.1.8.1.dist-info/METADATA,sha256=w-5yw_ixS8bD2Tz3U34LgWepmTTeMikDpGIcCeeXTCY,3474
+nosql_versioning-0.1.8.1.dist-info/RECORD,,
+nosql_versioning-0.1.8.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+nosql_versioning-0.1.8.1.dist-info/metadata.json,sha256=xsEFDp6fmqqOdh-K0Wl4-r5GMsOWNXSLzdl5pJtNUiE,526
+nosql_versioning-0.1.8.1.dist-info/top_level.txt,sha256=B2hEuooFLE4HnEBNUSdIG5znBF7p4DMKv6flHFH_jbY,17
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=O7o5_LTU7SnMgPZxW67WPlkDHjfcZxihtkYZLBAnW_Y,193
+tests/test_basic_example.py,sha256=0huk5lVGwJOcdNQS88ozL6PMPgm75DoXxLuBGQEaBkw,4085
+tests/test_custom_decode.py,sha256=s5JmpWgS_4hcSRGPDUbLVqDTFVoseXpTHSV9-EYmKa4,2310
+tests/test_custom_key.py,sha256=elvcMB_XGcMaJmBdPyTEAuy4TCBBkYfaWAsJSmBEPZY,3056
