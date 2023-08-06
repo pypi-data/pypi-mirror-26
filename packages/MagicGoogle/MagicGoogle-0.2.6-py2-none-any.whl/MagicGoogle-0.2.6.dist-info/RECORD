@@ -1,0 +1,12 @@
+.DS_Store,sha256=yrvgC13VtIJ04w-qu8fMrFJbSYMvKFyn9mGBn-zotW8,6148
+MagicGoogle/__init__.py,sha256=6nkV_x210-O6x10vpfjKWnuePoR_laTZ_n2vZ3RACjI,38
+MagicGoogle/config.py,sha256=WYiPtTg2-Ows6R7nAoACVjuxlI64jRuuuHsov6CktXk,860
+MagicGoogle/magic_google.py,sha256=ccmdW4lrz30h-9JMeEIwD1Kl_FkzadUaIt6Q8RcAdYA,5386
+MagicGoogle/data/all_domain.txt,sha256=BRbWaQYbBfW6oWdxKovangfJ1CrIzBjIBKTADNM7B5Y,3007
+MagicGoogle/data/user_agents.txt,sha256=OL6EJomFRk9zlKmSF5aUeFm36V47fjp9-xtwcJmgZCY,95148
+MagicGoogle-0.2.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+MagicGoogle-0.2.6.dist-info/METADATA,sha256=fhQ_qOgLnhqtRiPLdYZ0vvvgsMK5OamlT8JT1382UKM,372
+MagicGoogle-0.2.6.dist-info/RECORD,,
+MagicGoogle-0.2.6.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+MagicGoogle-0.2.6.dist-info/metadata.json,sha256=ypZInKF_pvqwhFgb266ZX16bH9odMW9xZSE37H1yOL8,538
+MagicGoogle-0.2.6.dist-info/top_level.txt,sha256=udS7Gcp-ACcnaU2alb8inuQQXX2Y7NkUFGeU30uABGA,12
