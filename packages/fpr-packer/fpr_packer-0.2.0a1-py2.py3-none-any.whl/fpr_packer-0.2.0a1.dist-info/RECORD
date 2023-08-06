@@ -1,0 +1,11 @@
+fpr_packer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fpr_packer/packer.py,sha256=_uhDOKRlQWIs9ulISEx22HgpkuE8xNlF31dEGI6hkeE,2285
+fpr_packer/ppacker.py,sha256=aV-YMkPmr4vXTT9Uct_uMAz3nRi2w3_cA3SOqJqXrpA,477
+fpr_packer/scripts.py,sha256=jEn23HBWknPapYYm2m4MyR2RouJI7CLmXOXtqw8sdAY,1455
+fpr_packer-0.2.0a1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+fpr_packer-0.2.0a1.dist-info/METADATA,sha256=7enRBYu9-VXJzymbx4Z7EtgsDh6qYnUsyoq5vmIWtYU,407
+fpr_packer-0.2.0a1.dist-info/RECORD,,
+fpr_packer-0.2.0a1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+fpr_packer-0.2.0a1.dist-info/entry_points.txt,sha256=dLaSM5lvrYPDiqgUnQ9BLEpkjLXdAeCkpTE_sGcDexs,141
+fpr_packer-0.2.0a1.dist-info/metadata.json,sha256=PlJLwJm_TzvOrDt4J0kyplwOXRWFNYTvEZeKIeuBMUw,861
+fpr_packer-0.2.0a1.dist-info/top_level.txt,sha256=5abcLsJvQhJtdpCR4hsPtx2sxtMpKGsX1VSW2zI8EM8,11
