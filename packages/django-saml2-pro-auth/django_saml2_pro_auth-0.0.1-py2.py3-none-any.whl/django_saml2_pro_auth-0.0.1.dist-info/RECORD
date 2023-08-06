@@ -1,0 +1,12 @@
+django_saml2_pro_auth/__init__.py,sha256=vvQTlJ_wE2AejL014i2l-n98wb6DQfivtCtUV3fkDGI,234
+django_saml2_pro_auth/auth.py,sha256=2tbQodF-LyEoiA4qK0jaD2k_KUtkYpaxDFwJ7hDxdSQ,2007
+django_saml2_pro_auth/release.py,sha256=D4IS6VSsKmfTOvZxv8eDLjOfI6yUuMeE-hVDHKlU_ug,231
+django_saml2_pro_auth/urls.py,sha256=bjElAfJczhgEdzrbiRcpO3hO3OBDTDWAsd7pMBDUYBI,349
+django_saml2_pro_auth/utils.py,sha256=nIZEYxyweunVL8nfkLKVsXrW5suMMvN4dhz_3etTPNU,2255
+django_saml2_pro_auth/views.py,sha256=PLriwhKMhZHBEKcE39zu-bo2HDSEmYBfCCR5HhS7Qyw,2820
+django_saml2_pro_auth-0.0.1.dist-info/DESCRIPTION.rst,sha256=ES3AcXNnKKAOrL_PPzsOPFIkMtlfJQayzDfSaaPifs0,9837
+django_saml2_pro_auth-0.0.1.dist-info/METADATA,sha256=qHayhn6b4X4z7yrOI4XmR-6gkg3Db6-k8yhn7s_ygwQ,10990
+django_saml2_pro_auth-0.0.1.dist-info/RECORD,,
+django_saml2_pro_auth-0.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_saml2_pro_auth-0.0.1.dist-info/metadata.json,sha256=ThaHV92QT75kqIiiNKqtd7h1bGbCDFs3hlQp1-e6Dco,1397
+django_saml2_pro_auth-0.0.1.dist-info/top_level.txt,sha256=0um-rBQu79vrXJIvMwnno5aB1Ng26kIfb57iTneIw6M,22
