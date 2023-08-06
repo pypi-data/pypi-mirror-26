@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+superprompt/__init__.py
+superprompt/core.py
+superprompt/example.py
+superprompt.egg-info/PKG-INFO
+superprompt.egg-info/SOURCES.txt
+superprompt.egg-info/dependency_links.txt
+superprompt.egg-info/requires.txt
+superprompt.egg-info/top_level.txt
+test/test_missing.py
