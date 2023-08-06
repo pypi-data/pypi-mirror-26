@@ -1,0 +1,12 @@
+NBPy-0.1.0.dist-info/DESCRIPTION.rst,sha256=zTFxgkJKDmEcq0r48djau7JUGWZ1wmS4Y6I9ZbfgBdw,9656
+NBPy-0.1.0.dist-info/METADATA,sha256=HwDqbfV_MK-Etdnz1ldtPhHKxfn3Soms1zZKuDRhb4c,10733
+NBPy-0.1.0.dist-info/RECORD,,
+NBPy-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+NBPy-0.1.0.dist-info/metadata.json,sha256=2I_e_8w-fL9NwaPYb4yo_GRkeI9QGVJaTCamUaPTY8I,1154
+NBPy-0.1.0.dist-info/top_level.txt,sha256=i-A_rQta25b1YqMHX6RNk9_9d8b5jZy6PceTXLD80W8,5
+nbpy/__init__.py,sha256=K4f0_mfBn7mdDbwk8FTXW9_WJRAMKs513etearx_VcE,5827
+nbpy/currencies.py,sha256=SDYMrpcBuGv7gPCRukuVFoYs0k4RaVR4o76vnJhS9gs,11800
+nbpy/errors.py,sha256=UWHLMuS4sYGmLCNUEyK1C8s9_p9fhX0Yj0G23NNzf9w,648
+nbpy/exchange_rate.py,sha256=56AOWeGahWt8MLEFH8xNhkOU0q1Khl4CFvlV_LY12lI,3592
+nbpy/utils.py,sha256=z0xXol7dFlGUS0276J5Z_GehQhPsJvDMXkmnrhpW_zg,828
+nbpy/version.py,sha256=t71c4Uwek-d0rFNRzlaJEhKvBhxDmMsDz2gbZuOk2Dg,228
