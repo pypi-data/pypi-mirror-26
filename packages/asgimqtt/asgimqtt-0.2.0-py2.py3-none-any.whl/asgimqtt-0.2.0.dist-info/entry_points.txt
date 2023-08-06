@@ -1,0 +1,3 @@
+[console_scripts]
+asgimqtt = asgimqtt.cli:main
+
