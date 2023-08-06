@@ -1,0 +1,67 @@
+Metadata-Version: 1.1
+Name: vmprofit
+Version: 0.1.2
+Summary: vmprof helpers
+Home-page: https://github.com/lopuhin/vmprofit
+Author: Konstantin Lopuhin
+Author-email: kostia.lopuhin@gmail.com
+License: MIT license
+Description: vmprof it!
+        ----------
+        
+        .. image:: https://img.shields.io/pypi/v/vmprofit.svg
+           :target: https://pypi.python.org/pypi/vmprofit
+           :alt: PyPI Version
+        
+        These are some unofficial helpers that make using
+        `vmprof <https://vmprof.readthedocs.io/en/latest/>`_ more pleasant.
+        
+        For example you can do::
+        
+            import vmprofit
+        
+            @vmprofit.profile()
+            def fn(x):
+                do_stuff()
+        
+        
+        or::
+        
+            with vmprofit.profile():
+                do_stuff()
+        
+        
+        ``vmprofit.profile`` accepts ``web_url`` and ``auth`` arguments,
+        by default it uploads profile result of each run to https://vmprof.com
+        (this **WILL** change in the future to be more explicit).
+        
+        
+        0.1.2 (2017-11-22)
+        ------------------
+        
+        - fixed installation from PyPI
+        
+        
+        0.1.1 (2017-11-22)
+        ------------------
+        
+        - changelong and long description added
+        
+        
+        0.1.0 (2017-11-22)
+        ------------------
+        
+        - initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

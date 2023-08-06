@@ -1,0 +1,11 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+setup.py
+vmprofit/__init__.py
+vmprofit/_profile.py
+vmprofit.egg-info/PKG-INFO
+vmprofit.egg-info/SOURCES.txt
+vmprofit.egg-info/dependency_links.txt
+vmprofit.egg-info/requires.txt
+vmprofit.egg-info/top_level.txt
