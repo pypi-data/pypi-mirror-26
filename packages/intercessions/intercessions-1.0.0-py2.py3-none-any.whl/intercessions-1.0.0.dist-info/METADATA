@@ -1,0 +1,40 @@
+Metadata-Version: 2.0
+Name: intercessions
+Version: 1.0.0
+Summary: A blessings polyfill for the windows command line
+Home-page: https://github.com/Eeems/intercessions
+Author: Nathaniel van Diepen
+Author-email: eeems13@gmail.com
+License: MIT
+Keywords: terminal tty curses ncurses formatting style color console blessings blessed
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Terminals
+Requires-Dist: colorama
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+
+# intercessions
+A blessings polyfill for the windows command line
+
+Attempts to implement the full [blessings](https://pypi.python.org/pypi/blessings/) API in a format that will work on windows. Makes use of [colorama](https://pypi.python.org/pypi/colorama) to help with styling.
+
+# Known Issues
+1. Terminal.fullscreen will work, but will crash CMD/Powershell after exit. See [tartley/colorama#139](https://github.com/tartley/colorama/pull/139#issuecomment-340211264)
+2. The following will not work as they have no command codes entered
+   * standout
+   * no_standout
+   * subscript
+   * no_subscript
+   * superscript
+   * no_superscript
+
+
