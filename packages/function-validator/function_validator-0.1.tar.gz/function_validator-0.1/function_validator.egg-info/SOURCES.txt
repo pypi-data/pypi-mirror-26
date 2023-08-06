@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+function_validator/__init__.py
+function_validator.egg-info/PKG-INFO
+function_validator.egg-info/SOURCES.txt
+function_validator.egg-info/dependency_links.txt
+function_validator.egg-info/top_level.txt
