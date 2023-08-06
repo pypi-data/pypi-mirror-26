@@ -1,0 +1,6 @@
+bottle
+marshmallow
+apispec==0.25.4-algoo
+
+[test]
+pytest
