@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: marcolibrary
+Version: 0.0.4
+Summary: A simple library for ooeevv
+Home-page: http://www.ooeevv.com
+Author: marco domenichetti
+Author-email: marcodomenichetti@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: ooeevv simple privat
+Platform: UNKNOWN
+
+# prova10
+raspberry:
+==========
+
+    sudo apt-get install sqlite3
+
+
