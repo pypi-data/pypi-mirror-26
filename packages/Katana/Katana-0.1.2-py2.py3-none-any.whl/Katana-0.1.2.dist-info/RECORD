@@ -1,0 +1,14 @@
+Katana-0.1.2.dist-info/DESCRIPTION.rst,sha256=aixeVz_drOT-fSWTVH928V7-47U-zExCpc80MDDVWp4,5372
+Katana-0.1.2.dist-info/METADATA,sha256=zn0ps67G9SxMuZ6MDZRO9iAlqFbk0FNQrkUy6BNssCk,6184
+Katana-0.1.2.dist-info/RECORD,,
+Katana-0.1.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Katana-0.1.2.dist-info/entry_points.txt,sha256=OhGyPB6OJRndutFEm_xnd9SQAe4pNuM7kChJkMmJM24,48
+Katana-0.1.2.dist-info/metadata.json,sha256=1MFIYDuhg4YJ0F8tvgnNM9JN9MT5n94N2H8eWKeGat4,1213
+Katana-0.1.2.dist-info/top_level.txt,sha256=wp-8wplMoYwn-Ph6OTis2v35tmZVYr94ia-vGpMTUY0,7
+katana/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+katana/__main__.py,sha256=Tjbot00pjSAH3zGNrGZ2vuHHeKqGaXpLLjE4pmI1z-M,86
+katana/cigar.py,sha256=iUXfcfIXfDOnO1tsV6fes7YG9WgSd2sx1ht3ZJgRE1s,7157
+katana/clipper.py,sha256=m4dcDc9HBbBkSksps5mtJeR7Ly2hnhuAisuTaAgaFcE,9991
+katana/pysamadapter.py,sha256=g5bZEilgTKHPatUzFjf8Q5AT7EQGzvrro3dPwsLmJ0Q,1951
+katana/readhandler.py,sha256=89c9vX37R6Y3D9MybuK0vf9wZnxo38kBuiQm1Db0DZU,5176
+katana/util.py,sha256=XV1ZO05YAUO85he950qiszgKn3-dUSmNjywaUi2VJoU,10251
