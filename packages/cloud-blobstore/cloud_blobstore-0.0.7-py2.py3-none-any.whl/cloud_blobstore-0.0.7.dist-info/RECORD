@@ -1,0 +1,9 @@
+cloud_blobstore/__init__.py,sha256=YOqqnlSPWEyiLXsJ8w0Wfex0wVap02j474apnDjKDKc,4947
+cloud_blobstore/gs.py,sha256=7ge5-xNmMcvg_WkpP3wCeUmg7R0yJw5znYvNiQfU_Ng,6228
+cloud_blobstore/s3.py,sha256=EhzRf5h9pM8qThW38PmxpLvE9J3WEg3bx4NCmAMqp0Q,10666
+cloud_blobstore-0.0.7.dist-info/DESCRIPTION.rst,sha256=8OfIPIyFos8a-iJOyfYeAMv0bU7XvyP9vWU1Jcq8Yfc,1585
+cloud_blobstore-0.0.7.dist-info/METADATA,sha256=3CHVcwXofgiD7I_JxJBrMDNXq4eikbERRkOFe9vIAXw,2377
+cloud_blobstore-0.0.7.dist-info/RECORD,,
+cloud_blobstore-0.0.7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+cloud_blobstore-0.0.7.dist-info/metadata.json,sha256=BuPtQNShrS14hCjkGraITyOyVc9lZruPdzHFAX8FPtw,956
+cloud_blobstore-0.0.7.dist-info/top_level.txt,sha256=eRayb7z3fqvb_qCllsiUMxPkDdfCWt4SBRCmXEumWLA,16
