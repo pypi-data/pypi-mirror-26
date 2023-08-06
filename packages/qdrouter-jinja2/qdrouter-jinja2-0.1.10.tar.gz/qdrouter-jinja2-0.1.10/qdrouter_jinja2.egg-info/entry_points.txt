@@ -1,0 +1,3 @@
+[console_scripts]
+qdrouterjinja2 = qdrouterjinja2.qdrouterjinja2:main
+
