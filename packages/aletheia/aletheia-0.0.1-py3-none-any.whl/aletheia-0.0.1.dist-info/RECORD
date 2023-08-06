@@ -1,0 +1,11 @@
+aletheia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aletheia/aletheia.py,sha256=Wx3ffjRtFXnpgDMbsjxD1Xt-8StshSMIkG7EqVQKVS4,5865
+aletheia/utils.py,sha256=Jn66IOEiXhXS31eXEt8n172xTylne9ceWo2hyu13sgc,1324
+aletheia/version.py,sha256=96EO3m38_zQvY_Q5kB-xD_IRhv54bl6aa5Qo0KYGlt0,23
+aletheia-0.0.1.data/scripts/aletheia,sha256=yYzaWdmcDAqjqZcl19jA8aabIBgr3THBFZ7x3zjW7nE,2638
+aletheia-0.0.1.dist-info/DESCRIPTION.rst,sha256=WaLuqwIfkBV80J1oWSvCZRHvpnlraPcTF2M0EFw5JR0,4143
+aletheia-0.0.1.dist-info/METADATA,sha256=W8ovCVR0Lbapb9i7zbDSTRjVE7Mb0r7LbWhbczs1cLA,4905
+aletheia-0.0.1.dist-info/RECORD,,
+aletheia-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aletheia-0.0.1.dist-info/metadata.json,sha256=QasOPXro6Gat1GsKq1aVten6PS26R4EKBdGTH-C5ePw,971
+aletheia-0.0.1.dist-info/top_level.txt,sha256=FET9FwOvIT5gLgJ3NOkKC90IS3vFNyUDzqvKaiS6jhM,9
