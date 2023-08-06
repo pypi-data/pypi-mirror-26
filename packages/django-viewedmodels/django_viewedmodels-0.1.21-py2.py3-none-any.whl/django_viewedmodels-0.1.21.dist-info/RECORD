@@ -1,0 +1,13 @@
+django_viewedmodels-0.1.21.dist-info/DESCRIPTION.rst,sha256=o91AL-JeP_zHLIpEB89mGJUX13Wr2mWuq5ccUbv4w_A,3353
+django_viewedmodels-0.1.21.dist-info/METADATA,sha256=E14f2M3cQLiZ46Cr8eyXoN6K8KsW2WoW8Zs2UeHoXfU,4135
+django_viewedmodels-0.1.21.dist-info/RECORD,,
+django_viewedmodels-0.1.21.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_viewedmodels-0.1.21.dist-info/metadata.json,sha256=v2BEJ_7t3qZOuKJholJKglkB7k8TvJS92luHd5gbxa8,945
+django_viewedmodels-0.1.21.dist-info/top_level.txt,sha256=CmiR1YKBi3aLILA3ziwSLGtNRBN6kTpYjQkZOWzVWo0,13
+viewedmodels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viewedmodels/apps.py,sha256=u44G6AuabHbyqp3a798LEH7AmPhC6HYhEdVKwa1dvVI,99
+viewedmodels/helpers.py,sha256=pVxSexC8m1PeMDyVrevlAFq-944mgRQVzbr8vH4PQAo,1847
+viewedmodels/models.py,sha256=KzTUx_-uDuD7mEHOtAPwWU0ZbYYRgKS9vOh1WJs-Qus,9693
+viewedmodels/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viewedmodels/management/commands/recreate_viewed_models.py,sha256=A0bCLL5jDR1rjya8UNY---qWkrWq1qNvJ3ygGTKoxFo,561
+viewedmodels/management/commands/refresh_viewed_models.py,sha256=lB_C1xUTESZDSZUxgGhbjW3M1YNtu3XLkrnU-giK2t4,542
