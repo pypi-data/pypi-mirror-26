@@ -1,0 +1,168 @@
+# LP Schedule
+---
+-
+  day: 2018-03-19 # This will be converted by to "Monday, March 19"
+  timeslots:
+    - time: 10:55 - 11:40
+      title: "Session Block 1A"
+      sessions:
+        - title: "Advocate for Yourself at Work: Use More Free Software and Keep Contributing to the Community"
+          speakers:
+          room: 32-141
+          desc: >
+            "Your workplace can exert a lot of control over how much
+            free software you use, what you're allowed to work on in
+            your own time and what kinds of tools you become an expert
+            in. New employees don't always negotiate their contracts
+            to make sure they can continue contributing to free
+            software and current employees aren't always successful at
+            advocating for using free software tools, choosing free
+            software technologies or contributing changes back
+            upstream when they do rely on free software. We'll address
+            what's possible, what your legal department is likely to
+            be concerned about and how to be a smooth negotiator at
+            work. Many companies could benefit tremendously from using
+            Free and Open Source Software, but free software
+            enthusiasts and institutional gatekeepers are coming from
+            very different perspectives.
+
+            Free software developers and users tend to be most
+            familiar with free software's benefits when compared to
+            proprietary solutions; user freedom, reusing code, public
+            code review for bugs, increased project capacity and
+            cost. The uninitiated may -- unfortunately -- be most
+            familiar with the risks, some real and some
+            perceived. Employers also benefit from having workers who
+            are passionate about their work, are well-connected to the
+            free software community and are constantly learning about
+            new technologies from their peers outside the company, but
+            new employee contracts rarely recognize this unless you
+            ask. Conversations about contracts, choosing new
+            technologies and sharing an employee's work with another
+            entity are high stakes negotiations. With a solid
+            understanding of what worries and motivates the other
+            parties, you can become a savvy advocate for free software
+            at work."
+        - title: "Building new economies for open development and content"
+          speakers: "Paige Peterson, MaidSoft"
+          room:
+          desc:
+        - title: "Challenges and future growth in libre media and conference video production"
+          speakers: "George Chriss and others, Kat Walsh (moderator)"
+          room: 32-144
+          desc:
+    - time: 11:50 - 12:30
+      title: "Session Block 2A"
+      sessions:
+        - title: "A community take on the license compliance industry"
+          speakers:
+          room: 31-123
+          desc:
+        - title: "Community technology for solidarity economies"
+          speakers: "Andrew Seeder, Dudley Street Neighborhood Initiative"
+          room:
+          desc:
+        - title: "Effective outreach in four steps"
+          speakers: "Marina Zhurakhinskaya, Red Hat"
+          room: 31-123
+          desc:
+-
+  day: 2017-03-20
+  timeslots:
+    - time: 9:45 - 10:30
+      title: "Keynote: Access without empowerment"
+      speakers: "Benjamin Mako Hill"
+      room: 32-123
+    - time: 13:00 - 13:50
+      title: "Session Block 3A"
+      sessions:
+        - title: "Free software alternatives to dominant proprietary solutions: A review of French initiatives"
+          speakers: "Marianne Corvellec, April and Jonathan Le Lous, April"
+          room:
+          desc:
+        - title: "GNU/Linux and Chill: Free Software on a College Campus"
+          speakers: "Michaela R. Brown"
+          room: 42-042
+          desc: |
+            "Being a free software user isn't easy, especially when
+            you're a college student. I spent a year at a school that
+            taught Visual Basic as its primary programming language
+            for freshmen and sophomores, where \"Introduction to
+            Programming\" was an overview of the Windows OS, and where
+            most of the professors would only accept papers typed in
+            Times New Roman -- and I survived.
+
+            In this session, I'll give students tips for making it
+            through college while still adhering to the values we hold
+            as free software users -- including alternative fonts,
+            making a GNU/Linux live disk for use on public computers,
+            avoiding the \"Netflix and Chill\" dilemma, and most
+            importantly, ways to discuss free software with professors
+            and fellow students. After leaving this session, students
+            will feel empowered and able to hold their own as free
+            users in a proprietary campus."
+
+# LP Speakers
+---
+- name: Daniel Kahn Gillmor
+  photo: //static.fsf.org/nosvn/libreplanet/speaker-pics/dkg.jpg
+  bio: |
+    "Daniel Kahn Gillmor is a technologist with the ACLU's Speech,
+    Privacy and Technology Project, and a free software
+    developer. He's a Free Software Foundation member, a member of
+    Debian, a contributor to a wide range of free software projects,
+    and a participant in protocol development standards organizations
+    like the IETF, with an eye toward preserving and improving civil
+    liberties and civil rights through our shared
+    infrastructure. <span class=\"text-muted\">Photo license: This work
+    by Daniel Kahn Gillmor is licensed under a <a rel=\"license\"
+    href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Creative
+    Commons Attribution ShareAlike 4.0 International
+    License</a>.</span>"
+- name: Edward Snowden
+  photo: //static.fsf.org/nosvn/libreplanet/speaker-pics/snowden.jpg
+  bio: |
+    "Edward Snowden is a former intelligence officer who served the
+    CIA, NSA, and DIA for nearly a decade as a subject matter expert
+    on technology and cybersecurity. In 2013, he revealed the NSA was
+    unconstitutionally seizing the private records of billions of
+    individuals who had not been suspected of any wrongdoing,
+    resulting in the largest debate about reforms to US surveillance
+    policy since 1978. Today, he works on methods of enforcing human
+    rights through the application and development of new
+    technologies. He joined the board of Freedom of the Press
+    Foundation in February 2014. <span class=\"text-muted\">Photo
+    license: >Screenshot of a Citizen Four by Praxis Films. by Laura
+    Poitras is licensed under a <a rel=\"license\"
+    href=\"http://creativecommons.org/licenses/by/3.0/\">Creative
+    Commons Attribution 3.0</a></span>."
+- name: Richard Stallman
+  photo: //static.fsf.org/nosvn/libreplanet/speaker-pics/stallman.jpg
+  bio: |
+    "Richard is a software developer and software freedom activist. In
+    1983 he announced the project to develop the <a
+    href=\"https://gnu.org\">GNU operating system</a>, a Unix-like
+    operating system meant to be entirely free software, and has been
+    the project's leader ever since. With that announcement Richard
+    also launched the Free Software Movement. In October 1985 he
+    started the Free Software Foundation.
+
+    Since the mid-1990s, Richard has spent most of his time in
+    political advocacy for free software, and spreading the ethical
+    ideas of the movement, as well as campaigning against both
+    software patents and dangerous extension of copyright laws. Before
+    that, Richard developed a number of widely used software
+    components of GNU, including the original Emacs, the GNU Compiler
+    Collection, the GNU symbolic debugger (gdb), GNU Emacs, and
+    various other programs for the GNU operating system."
+- name: Ludovic Courtès
+  photo:
+  bio:
+- name: Marianne Corvellec, April
+  photo: //static.fsf.org/nosvn/libreplanet/speaker-pics/corvellec.jpg
+  bio: |
+    "Marianne Corvellec has been a Free Software activist with April
+    since 2011. April is an advocacy association which has been
+    promoting and defending Free Software in France and Europe since
+    1996. Marianne's focus has been on legal and institutional
+    issues."
