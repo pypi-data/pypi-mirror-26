@@ -1,0 +1,14 @@
+{% load cms_tags thumbnail %}
+
+<section class="cmsplugin-section {{ section.section_classes }}"
+    {% if section.anchor %}id="{{ section.anchor }}"{% endif %}
+    {% if section.background_image %}
+        style="background-image: url({% thumbnail section.background_image 1920x1080 crop %})"
+    {% endif %}
+>
+    <div class="{{ section.container_width.value }}">
+        {% include "cmsplugin_section_ai/includes/_section_title.html" %}
+        {% include "cmsplugin_section_ai/includes/_section_content.html" %}
+        {% include "cmsplugin_section_ai/includes/_section_button.html" %}
+    </div>
+</section>
