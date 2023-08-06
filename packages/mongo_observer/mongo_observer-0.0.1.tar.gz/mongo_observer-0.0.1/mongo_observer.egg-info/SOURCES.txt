@@ -1,0 +1,12 @@
+README.rst
+setup.py
+mongo_observer/__init__.py
+mongo_observer/__main__.py
+mongo_observer/conf.py
+mongo_observer/models.py
+mongo_observer/observer.py
+mongo_observer/operation_handlers.py
+mongo_observer.egg-info/PKG-INFO
+mongo_observer.egg-info/SOURCES.txt
+mongo_observer.egg-info/dependency_links.txt
+mongo_observer.egg-info/top_level.txt
