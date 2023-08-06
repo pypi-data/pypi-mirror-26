@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: funniest-bw
+Version: 0.1
+Summary: a simple python project
+Home-page: http://www.xxx.com
+Author: wb
+Author-email: biaowang_88@163.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+
+haha
+
+
