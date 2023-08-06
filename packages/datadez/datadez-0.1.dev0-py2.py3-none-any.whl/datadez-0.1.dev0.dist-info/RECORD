@@ -1,0 +1,12 @@
+datadez/__init__.py,sha256=efcDPjei4UU0A6wupb0x9diker2ksX2b3vLjD0M67UI,45
+datadez/columns.py,sha256=RwYHROoJiN-6iyopc3U4Yf-_q9eINvy5QZLy-7GoTjI,1213
+datadez/filter.py,sha256=-xWUbSaiieCUA9XFiUQltXtPkpaZsYceGrvLogi3Ok0,2505
+datadez/summarize.py,sha256=3yd_-W8XIKveNC-pYUgLO8qY69055OrI8zwuJxmMp2Y,832
+datadez/summary.py,sha256=TtdUpjwcENx-G2ObpIDnhAU2naDWSeadVZTbi8pxE7Y,2183
+datadez/transform.py,sha256=3qFzkhhWdpXCYIRUdwjXrINNSD27j0Iz5RLs2juls_4,146
+datadez-0.1.dev0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+datadez-0.1.dev0.dist-info/METADATA,sha256=DFIDLKdj0TpW_fgGnUQ--AuBGK-GZ5HilmEg8RO2ms0,477
+datadez-0.1.dev0.dist-info/RECORD,,
+datadez-0.1.dev0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+datadez-0.1.dev0.dist-info/metadata.json,sha256=C8E0r-7w-mwiWrS94mqBuW4H6LHD924JPDzku8lCpWE,691
+datadez-0.1.dev0.dist-info/top_level.txt,sha256=k3Ddx7EtBmXAbR3ZrVp1oCEnhHVWKm1oycmIoekXmFM,8
