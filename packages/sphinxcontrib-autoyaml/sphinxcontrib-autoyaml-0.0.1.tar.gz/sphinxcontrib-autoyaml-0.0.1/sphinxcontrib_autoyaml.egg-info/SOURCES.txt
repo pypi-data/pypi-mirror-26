@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sphinxcontrib_autoyaml.py
+sphinxcontrib_autoyaml.egg-info/PKG-INFO
+sphinxcontrib_autoyaml.egg-info/SOURCES.txt
+sphinxcontrib_autoyaml.egg-info/dependency_links.txt
+sphinxcontrib_autoyaml.egg-info/requires.txt
+sphinxcontrib_autoyaml.egg-info/top_level.txt
+test/test.py
