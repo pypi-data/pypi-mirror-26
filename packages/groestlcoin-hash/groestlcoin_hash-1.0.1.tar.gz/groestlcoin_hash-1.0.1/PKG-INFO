@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: groestlcoin_hash
+Version: 1.0.1
+Summary: Groestlcoin hash algorithm.
+Home-page: https://github.com/Groestlcoin/groestlcoin-hash-python
+Author: Kefkius
+Author-email: kefkius@mail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: groestlcoin,grs
+Platform: UNKNOWN
