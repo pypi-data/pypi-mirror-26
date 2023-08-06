@@ -1,0 +1,11 @@
+mastercard_currency_conversion-1.0.0.dist-info/DESCRIPTION.rst,sha256=FxFPKQ_bQUJ63edRYuIHmEPemLxnISPFfxQHVzVv-Rk,28
+mastercard_currency_conversion-1.0.0.dist-info/METADATA,sha256=PCz3iD26hMvGlLrRnltK7Y_yLHGcjycrA8X3fBfomQU,626
+mastercard_currency_conversion-1.0.0.dist-info/RECORD,,
+mastercard_currency_conversion-1.0.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+mastercard_currency_conversion-1.0.0.dist-info/metadata.json,sha256=INv7yYycmHaPIta6X8d-eyUfPFNejawyiTMureV7T20,840
+mastercard_currency_conversion-1.0.0.dist-info/top_level.txt,sha256=ZcmxUylhZgMU09uFfrAo6hvlNMU8MCPCe0kd0bG8amo,29
+mastercardcurrencyconversion/__init__.py,sha256=hLdIalpuU1ngq6rK1JxxJliZcz-lu2NNpGBRqYVTANs,332
+mastercardcurrencyconversion/conversionrate.py,sha256=F4_zQMaKnFzp7F6eOwSiwXFJeBXadrG4atyW7Q3Lu5w,2875
+mastercardcurrencyconversion/currencies.py,sha256=Mj89wEC4wuUhQj2SeM6ZHu-PdfF1hrE1u3c8goK8Bmc,2807
+mastercardcurrencyconversion/rateissued.py,sha256=pxU-AfoEGBkgMALQOVGeJjsPqmye3rwsRGAlK2Sx4es,2814
+mastercardcurrencyconversion/resourceconfig.py,sha256=Ze4RAauh3ejGKQw5pZTaRhEpXbV2S-FfD819M2im1XE,3171
