@@ -1,0 +1,13 @@
+azure/cli/command_modules/backup/__init__.py,sha256=oXwrvZJiS9u_kuxfBer-bcNXFsPZx2n7G1ukkwi-Tcc,689
+azure/cli/command_modules/backup/_client_factory.py,sha256=ZUNQoJuz05tS2vlc5fEY1xRV7F3juYN9OK7sbJh70Ko,3265
+azure/cli/command_modules/backup/_help.py,sha256=Ad5s9O27D9EW9f1NCroIVP9LT1zJiUKBkcLBzXvgVxg,7134
+azure/cli/command_modules/backup/_params.py,sha256=OkCOESeNDCPo4Mf0ImlhuPxgVLEAufZHYKqHJ3umgc0,7123
+azure/cli/command_modules/backup/_validators.py,sha256=r_gc-kp_9L2NhDQmev4Cpd5lJDhVEps3G7YJXyDJWmE,797
+azure/cli/command_modules/backup/commands.py,sha256=O-krd7ci5dBrKE9LM7pckkOvKfQAbSUDCQPU4aJbyig,7332
+azure/cli/command_modules/backup/custom.py,sha256=mpMjsBU1kTboE5XhWEXABpmB0W2L2UadUSoBP5Nie6k,34505
+azure_cli_backup-1.0.3.dist-info/DESCRIPTION.rst,sha256=To1jVRkp8v-Q9xIPvS4BKsZfKAAlPWV48XCK2BAfCuM,313
+azure_cli_backup-1.0.3.dist-info/METADATA,sha256=3AIyNspVBX7NF3ysNHdF8_LGHZJE831y6rBd8Nwymug,1274
+azure_cli_backup-1.0.3.dist-info/RECORD,,
+azure_cli_backup-1.0.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_backup-1.0.3.dist-info/metadata.json,sha256=_Ylhew-9qbBsaeeNhn2O32Xad9j91k0RFbjtdDFdVKE,1074
+azure_cli_backup-1.0.3.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
