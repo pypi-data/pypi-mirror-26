@@ -1,0 +1,15 @@
+hcam_widgets/__init__.py,sha256=s-NoBR701roz3xidXYHPAhoYYDdhqzzcc2DcVyWUmVk,246
+hcam_widgets/astro.py,sha256=R6-nFjZli2WoUZi7tdfPVnx1tJVt2UENWsd29beJ8CI,9143
+hcam_widgets/globals.py,sha256=kE2Z4MFNRc0ea5_It_rQbFlJ5WI6-vcDqqFDZskxO1A,5777
+hcam_widgets/hcam.py,sha256=wogqqxJQDhO9BT9tRF7-40sNilx1EUPip7ruCmmZfIg,59009
+hcam_widgets/logs.py,sha256=wOdfphNpZsH1mKerIOok2REc1qpPaFrO_M5_FJpdSV0,3965
+hcam_widgets/misc.py,sha256=CrDC_E37gvH526X6K_gw7C6uf9w5dbZ3M9BiVaZW-Q4,14229
+hcam_widgets/tcs.py,sha256=5XZrf8L7Z5uFGPBXuD1s7WkMWWBws3XseIccFso_yqE,1495
+hcam_widgets/tkutils.py,sha256=V5AAetRpEhT0tjZ8oyZx9PW9DR3gLSoULYMtIz7aqpE,1892
+hcam_widgets/widgets.py,sha256=vqaaltKf1jT_8xHh9cWoJlxCsOIPJO0kMcLWzWkovwo,135856
+hcam_widgets-0.2.3.dist-info/DESCRIPTION.rst,sha256=ZZk8kNqGCKXqRiUK8ikyXGur_5Qr7adEvnFbn132JMk,1484
+hcam_widgets-0.2.3.dist-info/METADATA,sha256=JaeftAHPGr5TdFrmsHE-2WbyFRx_94DFp44_wWMi77Q,2427
+hcam_widgets-0.2.3.dist-info/RECORD,,
+hcam_widgets-0.2.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+hcam_widgets-0.2.3.dist-info/metadata.json,sha256=ONpvBJBpOwKrHmdVxKnql46_xlKqoJAKSCzSJ5ISQkg,1137
+hcam_widgets-0.2.3.dist-info/top_level.txt,sha256=t3dbk_jPb3nv0JLhnX6c8V7lHRL05BxfDZ1yEF33t-I,13
