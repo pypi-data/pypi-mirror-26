@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: WunderWeather
+Version: 0.2.7
+Summary: Wrapper for Weather Underground API
+Home-page: https://github.com/T-Santos/WunderWeather
+Author: Tyler Santos
+Author-email: 1tsantos7+wunderweather@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: weather,wunderground
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
