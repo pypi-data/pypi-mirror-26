@@ -1,0 +1,138 @@
+Metadata-Version: 1.1
+Name: clinical-research-study-manager
+Version: 1.2.5.dev1
+Summary: Program to manage some common clinical research tasks from the command line
+Home-page: https://github.com/SethPitts/clinical_research_study_manager
+Author: Seth Pitts
+Author-email: sethpitts22@gmail.com
+License: MIT
+Description: Clinical Research Study Manager
+        ===============================
+        
+        Program to manage some common clinical research task from the command. Very much a work in progress
+        line
+        
+        Getting Started
+        ---------------
+        
+        This program requires python 3 and a few external packages. Strongly advise installing into a virtual environment as I'm
+        new at this!
+        
+        Prerequisites
+        ~~~~~~~~~~~~~
+        
+        Requires python and above
+        
+        ::
+        
+            $ python 3.5
+        
+        
+            $ pip install openpyxl
+            $ pip install pandas
+            $ pip install numpy
+            $ pip install matplotlib
+        
+        Installing
+        ~~~~~~~~~~
+        
+        ::
+        
+            $ pip install clinical_research_study_manager
+        
+        Get Help
+        
+        ::
+        
+            $ clinical_research_study_manager -h
+            optional arguments:
+              -h, --help            show this help message and exit
+              -create_project Project_Name
+                                    Creates a new project titled Project_Name in the
+                                    Projects directory
+              -load_project Project_Name
+                                    Loads Project Project_Name from the Projects directory
+                                    for study activities
+              -list_projects        List available projects to load
+        
+        Create New Project
+        
+        ::
+        
+            $ clinical_reseaerch_study_manager -create_project Testing
+            Creating new project titled Testing
+            Created patient_data[phi] for project Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing
+            Created patient_data[de_identified] for project Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing
+            Created logs for project Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing
+            Created logs/logs_with_phi for project Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing
+            Created data_visualization for project Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing
+            Created log files for project Testing
+            Created Screening_Log.xlsx log for Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing/logs/Screening_Log.xlsx
+            Created Master_Linking_Log.xlsx log for Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing/logs/logs_with_phi/Master_Linking_Log.xlsx
+            Created Follow_Up_Log.xlsx log for Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing/logs/Follow_Up_Log.xlsx
+            Created Enrollment_Log.xlsx log for Testing at /home/beliefs22/Clinical_Research_Manager_Projects/Projects/Testing/logs/Enrollment_Log.xl
+        
+        Load Specific Project
+        
+        ::
+        
+        
+            $ clinical_research_study_manager -load_project Testing
+            Opening Testing
+            1. Manage Logs
+            2. Query Logs
+            Please choose what actions you would like to take, q to quit.
+        
+        List Available Projects
+        
+        ::
+        
+            $ clinical_research_study_manager -list_projects
+            Current Projects are:
+            1 : Testing
+        
+        Running the tests
+        -----------------
+        
+        Coming Soon
+        
+        Break down into end to end tests
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        Explain what these tests test and why
+        
+        ::
+        
+            Coming Soon
+        
+        And coding style tests
+        ~~~~~~~~~~~~~~~~~~~~~~
+        
+        Coming Soon
+        
+        ::
+        
+            Coming Soon
+        
+        Authors
+        -------
+        
+        **Seth Pitts**
+        
+        License
+        -------
+        
+        This project is licensed under the MIT License - see the `LICENSE.txt`_
+        file for details
+        
+        .. _LICENSE.txt: LICENSE.txt
+Keywords: clinical research data management
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
