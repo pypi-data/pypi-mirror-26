@@ -1,0 +1,3 @@
+gameanalysis~=4.0.3
+egtaonlineapi~=0.2.4
+numpy~=1.13
