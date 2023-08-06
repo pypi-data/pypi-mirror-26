@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cyscore
+Version: 0.1.1
+Summary: score abstraction for csound written in python
+Home-page: https://github.com/inkeye/cyscore
+Author: Tim Pauli
+Author-email: tim.pauli@folkwang-uni.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
