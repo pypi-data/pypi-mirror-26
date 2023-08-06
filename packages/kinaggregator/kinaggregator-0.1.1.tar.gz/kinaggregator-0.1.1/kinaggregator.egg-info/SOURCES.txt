@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+kinaggregator/__init__.py
+kinaggregator/aggregator.py
+kinaggregator/deaggregator.py
+kinaggregator/kpl_pb2.py
+kinaggregator.egg-info/PKG-INFO
+kinaggregator.egg-info/SOURCES.txt
+kinaggregator.egg-info/dependency_links.txt
+kinaggregator.egg-info/requires.txt
+kinaggregator.egg-info/top_level.txt
