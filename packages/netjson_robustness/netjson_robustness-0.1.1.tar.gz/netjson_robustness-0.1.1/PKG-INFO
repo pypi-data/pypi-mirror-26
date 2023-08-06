@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: netjson_robustness
+Version: 0.1.1
+Summary: A library to perform some robustness analysis on NetJSON-defined graphs
+Home-page: https://github.com/netCommonsEU/netjson_robustness
+Author: Leonardo Maccari
+Author-email: maccari@disi.unitn.it
+License: UNKNOWN
+Download-URL: https://github.com/netCommonsEU/netjson_robustness/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: NetJSON,graph analysis,robustness
+Platform: UNKNOWN
