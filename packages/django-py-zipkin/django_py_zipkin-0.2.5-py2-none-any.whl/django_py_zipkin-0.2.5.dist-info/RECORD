@@ -1,0 +1,10 @@
+django_py_zipkin/__init__.py,sha256=bmsHqwAm7cseqbw8Ph0txqw2qf1bZWi0HAB47ol3b18,128
+django_py_zipkin/middleware.py,sha256=nfG-vVWZfbshovvbejbfKuzlCijbi_UkHkGeHPegtl8,7286
+django_py_zipkin/tasks.py,sha256=D6IRKnBNQypt1TzJvSj4eBDj_-cDc7z__vtC2AFG3bY,659
+django_py_zipkin/transport.py,sha256=ij53LPRmGh_kyimIknYdqsEVeWFkRaMMDvYjrQ7BHeA,1796
+django_py_zipkin-0.2.5.dist-info/DESCRIPTION.rst,sha256=-QI8NYCNi9tVNH9H5GwRuyV5QkRdZebXYKXpfhZXdTM,1241
+django_py_zipkin-0.2.5.dist-info/METADATA,sha256=81TQ0OZBHUfjeUukV5wSNvT12bdhlgkT27ZoeVgNebk,2072
+django_py_zipkin-0.2.5.dist-info/RECORD,,
+django_py_zipkin-0.2.5.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+django_py_zipkin-0.2.5.dist-info/metadata.json,sha256=SVXywpMdttYJb2vND0D1fO_4ZxULQjL5K3lbcXvcPkQ,832
+django_py_zipkin-0.2.5.dist-info/top_level.txt,sha256=CvZGAlheqwtk540Xe8OrscrR90zlohRQ0cMTtmRLqHU,17
