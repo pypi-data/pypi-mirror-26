@@ -1,0 +1,3 @@
+pyconfiglib==1.*
+pypandoc
+superprompt
