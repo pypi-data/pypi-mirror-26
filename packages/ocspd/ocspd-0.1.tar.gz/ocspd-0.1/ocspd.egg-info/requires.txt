@@ -1,0 +1,12 @@
+certvalidator>=0.11.1
+ocspbuilder>=0.10.2
+oscrypto>=0.17.2
+python-daemon>=1.5.5
+requests>=2.4.3
+future>=0.15.0
+configargparse>=0.10.0
+
+[docs]
+Sphinx>=1.0
+sphinx-argparse>=0.1.15
+sphinx_rtd_theme

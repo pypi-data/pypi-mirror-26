@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: ocspd
+Version: 0.1
+Summary: Daemon for updating OCSP staples
+Home-page: https://code.greenhost.net/open/ocspd
+Author: Greenhost BV
+Author-email: info@greenhost.nl
+License: MIT License
+Description: Update OCSP staples from CA's and store the result so they can be served to clients.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
