@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ctf-tool
+Version: 0.0.1
+Summary: A simple capture the flag tool.
+Home-page: https://github.com/jfarriagada/ctftool
+Author: Jose Francisco Arriagada A
+Author-email: jfarriagada91@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: ctc capture the flag tool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Topic :: Utilities
