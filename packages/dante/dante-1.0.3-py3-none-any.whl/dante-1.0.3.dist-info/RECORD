@@ -1,0 +1,14 @@
+dante/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dante/__main__.py,sha256=rzIx6h9Y5d9ZR7-nXM9lX-HiBnd34QJCX1_9kZH5r1s,2829
+dante/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dante/core/commands.py,sha256=_U7EMRva9v6zeNliNbSHn95rxw41dRZgyTuvoBICdM0,20373
+dante/core/printer.py,sha256=r9fOt-DvTYYisDCmQ92eaKS-ey9sDJM9fZzU4djYq5w,6453
+dante/core/utils.py,sha256=iomdR5PtzBBMz_heRRzdMF4mH3uYFU1nl_Mp5xhIyf4,1078
+dante-1.0.3.dist-info/DESCRIPTION.rst,sha256=XNvYlY6Ptchr1ZQ9ftAWZOSHsS5D9O8DKjhiCnoNYag,7889
+dante-1.0.3.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+dante-1.0.3.dist-info/METADATA,sha256=F6PUaArKvx9Kni1SwQltbLhh99WSvno9EqKbLkkuYzM,8727
+dante-1.0.3.dist-info/RECORD,,
+dante-1.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dante-1.0.3.dist-info/entry_points.txt,sha256=pKg8j0-hQrsOaTuUqSdVmBrhs8o4aZ8H_sAZX9wqlLA,47
+dante-1.0.3.dist-info/metadata.json,sha256=pzoQO6ex7QnmZky0M2RQtgxQDGpu5RcUszZDyYdZPy8,1183
+dante-1.0.3.dist-info/top_level.txt,sha256=icTlgNQtvqZpzu31fHvWr5YQcsDkirudbOkK4B-2P_U,6
