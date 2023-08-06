@@ -1,0 +1,4 @@
+[console_scripts]
+clinical_research_study_manager = clinical_research_study_manager.study_manager:main
+clinical_research_study_manager_test = clinical_research_study_manager.test.testing_input_types:main
+
