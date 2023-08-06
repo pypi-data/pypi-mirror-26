@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: hbi
+Version: 1.1.1
+Summary: Hosting Based Interfacing
+Home-page: https://github.com/complyue/hbipy
+Author: Compl Yue
+Author-email: UNKNOWN
+License: BSD
+Download-URL: https://pypi.python.org/pypi/hbi
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
