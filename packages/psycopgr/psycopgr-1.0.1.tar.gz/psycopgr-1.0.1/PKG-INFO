@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: psycopgr
+Version: 1.0.1
+Summary: A Python wrapper of pgRouting for routing from nodes to nodes on real map.
+Home-page: https://github.com/herrkaefer/psycopgr
+Author: Yang Liu
+Author-email: gloolar@gmail.com
+License: MIT
+Download-URL: https://github.com/herrkaefer/psycopgr/archive/v1.0.1.tar.gz
+Description: UNKNOWN
+Keywords: routing GIS PostgreSQL pgRouting PostGIS shortest path A* Dijkstra map
+Platform: UNKNOWN
