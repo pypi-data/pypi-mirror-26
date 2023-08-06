@@ -1,0 +1,12 @@
+eml_parser/__init__.py,sha256=plsAf5jneFSHC9uRHUGv4JvLzcwIQck7YGC139iGaB4,257
+eml_parser/decode.py,sha256=0HW5QwAPHFkVQWKImnPJ0kXZszxzYTh10WV3I4JIodk,8185
+eml_parser/eml_parser.py,sha256=OO05PQozmy2i7GgkYUhNDXLCLpiLp6B4Zlz88CT0JSQ,32832
+eml_parser/regex.py,sha256=2p1TGR1m6N7Ihw7YF6UEtTO44elAYYgOY15ZaI7TMyM,3504
+eml_parser/routing.py,sha256=OjE1AOMMzUWmp0TOHztQsJsX0xBm8WZSX_MlDS0pCWY,6240
+eml_parser-1.8.dist-info/DESCRIPTION.rst,sha256=ruAUWnbacbQBc1SZvjxpg7ikftu74COBawsTehmb-CY,3818
+eml_parser-1.8.dist-info/LICENSE.txt,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+eml_parser-1.8.dist-info/METADATA,sha256=aUuZq2YuqNk5ZfX1knJqFoTSBWWAc0RCFPnYNXU6sco,4685
+eml_parser-1.8.dist-info/RECORD,,
+eml_parser-1.8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+eml_parser-1.8.dist-info/metadata.json,sha256=4jtwTSMUh2T4ax5RnEkzXLbymxtgdftxOCvfcqUdXYY,1022
+eml_parser-1.8.dist-info/top_level.txt,sha256=dzynB55DisCaGvpo7p3RcTjbKaaUQ9OzNRJQur-rsaI,11
