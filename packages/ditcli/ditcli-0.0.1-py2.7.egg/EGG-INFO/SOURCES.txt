@@ -1,0 +1,9 @@
+README.md
+dit
+setup.py
+ditcli.egg-info/PKG-INFO
+ditcli.egg-info/SOURCES.txt
+ditcli.egg-info/dependency_links.txt
+ditcli.egg-info/not-zip-safe
+ditcli.egg-info/top_level.txt
+ditlib/__init__.py
