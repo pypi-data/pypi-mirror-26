@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: mdsconnector
+Version: 1.3
+Summary: Remote call to MDSplus objects
+Home-page: http://www.mdsplus.org
+Author: MDSplus Core Development Team
+Author-email: mdsplus_dev@psfc.mit.edu
+License: MIT
+Description: 
+        The mdsConnector class enables the connection to a remote system via
+        SSH to utilize the MDSplus python objects remotely on that system.
+Platform: POSIX
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Scientific/Engineering :: Physics
