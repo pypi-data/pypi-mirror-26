@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+RFIMasker/__init__.py
+RFIMasker/version.py
+RFIMasker.egg-info/PKG-INFO
+RFIMasker.egg-info/SOURCES.txt
+RFIMasker.egg-info/dependency_links.txt
+RFIMasker.egg-info/not-zip-safe
+RFIMasker.egg-info/requires.txt
+RFIMasker.egg-info/top_level.txt
+RFIMasker/scripts/mask_ms.py
