@@ -1,0 +1,40 @@
+Metadata-Version: 2.0
+Name: cedict-utils
+Version: 0.0.2
+Summary: A Python parser for the CC-CEDICT Chinese-English dictionary
+Home-page: https://github.com/marcanuy/cedict_utils
+Author: Marcelo Canina
+Author-email: me@marcanuy.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: cedict dictionary chinese cc-cedict
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+A Python parser for the CC-CEDICT Chinese-English dictionary
+============================================================
+
+.. image:: https://img.shields.io/travis/rust-lang/rust.svg
+	   :target: https://travis-ci.org/marcanuy/cedict_utils
+
+.. image:: https://img.shields.io/pypi/v/nine.svg
+	   :target: https://pypi.python.org/pypi/cedict-utils/0.0.1
+
+----
+
+A parser for the CC-CEDICT Chinese-English dictionary.
+
+
+
+
+
