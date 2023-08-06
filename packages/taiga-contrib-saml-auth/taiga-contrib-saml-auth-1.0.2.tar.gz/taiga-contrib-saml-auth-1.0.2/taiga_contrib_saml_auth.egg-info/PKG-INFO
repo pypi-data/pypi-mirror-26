@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: taiga-contrib-saml-auth
+Version: 1.0.2
+Summary: The Taiga plugin for SAML authentication
+Home-page: https://github.com/jgiannuzzi/taiga-contrib-saml-auth
+Author: Jonathan Giannuzzi
+Author-email: jonathan@giannuzzi.be
+License: AGPL
+Description: UNKNOWN
+Keywords: taiga,saml,auth,plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP

@@ -1,0 +1,12 @@
+setup.py
+taiga_contrib_saml_auth/__init__.py
+taiga_contrib_saml_auth/apps.py
+taiga_contrib_saml_auth/services.py
+taiga_contrib_saml_auth/settings.py
+taiga_contrib_saml_auth/urls.py
+taiga_contrib_saml_auth/views.py
+taiga_contrib_saml_auth.egg-info/PKG-INFO
+taiga_contrib_saml_auth.egg-info/SOURCES.txt
+taiga_contrib_saml_auth.egg-info/dependency_links.txt
+taiga_contrib_saml_auth.egg-info/requires.txt
+taiga_contrib_saml_auth.egg-info/top_level.txt
