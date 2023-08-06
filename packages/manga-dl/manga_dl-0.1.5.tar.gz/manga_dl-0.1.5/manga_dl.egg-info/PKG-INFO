@@ -1,0 +1,124 @@
+Metadata-Version: 1.1
+Name: manga-dl
+Version: 0.1.5
+Summary: A Manga Downloader
+Home-page: https://gitlab.namibsun.net/namboy94/manga-dl
+Author: Hermann Krumrey
+Author-email: hermann@krumreyh.com
+License: GNU GPL3
+Download-URL: https://gitlab.namibsun.net/namboy94/manga-dl/repository/archive.zip?ref=master
+Description-Content-Type: UNKNOWN
+Description: Manga Downloader
+        ================
+        
+        +------------------+------------------+
+        | master           | develop          |
+        +==================+==================+
+        | |build status|   | |build status|   |
+        +------------------+------------------+
+        
+        .. figure:: resources/logo/logo-readme.png
+           :alt: Logo
+        
+           Logo
+        
+        This is a Manga Downloader that can download managa series from various
+        sources.
+        
+        Currently supported are:
+        
+        -  `Mangafox <http://mangafox.me>`__
+        
+        Usage
+        -----
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        **Via pip**
+        
+        ::
+        
+            $ pip install manga_dl --user
+        
+        **From source**
+        
+        ::
+        
+            $ python setup.py install --user
+        
+        **Binary Files**
+        
+        If you would like to not install the program and instead use a single
+        binary file, you can download them from our `Github releases
+        page <https://github.com/namboy94/manga-dl/releases>`__.
+        
+        CLI
+        ~~~
+        
+        The program offers a simple wget-like CLI. To download a series, simply
+        enter:
+        
+        ::
+        
+            $ manga-dl <URL>
+        
+        This will create a new directory with the series name in the current
+        working directory and subsequently download all currently available
+        pages of the series
+        
+        The CLI does offer some configuration:
+        
+        -  ``--destination``, ``-d`` (type: string)
+        -  Specifies the directory in which the series will be stored
+        -  Defaults to the current working directory + the series name
+        -  ``--threads``, ``-t`` (type: integer)
+        -  Specifies how many threads the program may use. Using more threads
+           may speed up the parsing
+        -  Defaults to the amount of logical processors the system has
+        -  ``--verbose``, ``-v``
+        -  If set, the program will print it's progress to the console
+        -  ``--update``
+        -  If set, the program will only check for content that have not been
+           downloaded yet
+        -  ``--repair``
+        -  If set, the program will check each previously downloaded file for
+           errors
+        -  If errors are found, the file in question is re-downloaded
+        -  ``--zip-volumes``
+        -  Zips the series by volume after the download is completed
+        -  ``--zip-chapters``
+        -  Zips the series by chapter after the download is completed
+        
+        Further Information
+        -------------------
+        
+        -  `Changelog <https://gitlab.namibsun.net/namboy94/manga-dl/raw/master/CHANGELOG>`__
+        -  `License
+           (GPLv3) <https://gitlab.namibsun.net/namboy94/manga-dl/raw/master/LICENSE>`__
+        -  `Gitlab <https://gitlab.namibsun.net/namboy94/manga-dl>`__
+        -  `Github <https://github.com/namboy94/manga-dl>`__
+        -  `Python Package Index Site <https://pypi.python.org/pypi/manga_dl>`__
+        -  `Documentation(HTML) <https://docs.namibsun.net/html_docs/manga-dl/index.html>`__
+        -  `Documentation(PDF) <https://docs.namibsun.net/pdf_docs/manga-dl.pdf>`__
+        -  `Git Statistics
+           (gitstats) <https://gitstats.namibsun.net/gitstats/manga-dl/index.html>`__
+        -  `Git Statistics
+           (git\_stats) <https://gitstats.namibsun.net/git_stats/manga-dl/index.html>`__
+        -  `Test Coverage <https://coverage.namibsun.net/manga-dl/index.html>`__
+        
+        .. |build status| image:: https://gitlab.namibsun.net/namboy94/manga-dl/badges/master/build.svg
+           :target: https://gitlab.namibsun.net/namboy94/manga-dl/commits/master
+        .. |build status| image:: https://gitlab.namibsun.net/namboy94/manga-dl/badges/develop/build.svg
+           :target: https://gitlab.namibsun.net/namboy94/manga-dl/commits/develop
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Communications :: File Sharing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
