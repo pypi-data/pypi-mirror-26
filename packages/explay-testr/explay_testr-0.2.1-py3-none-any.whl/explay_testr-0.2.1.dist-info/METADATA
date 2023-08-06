@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: explay-testr
+Version: 0.2.1
+Summary: make excel jobs playful again
+Home-page: https://github.com/zealzel/explay
+Author: zealzel
+Author-email: zealzel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/zealzel/explay/tarball/v0.2.1
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: regex
+Requires-Dist: fire
+Requires-Dist: XlsxWriter
+Requires-Dist: numpy
+Requires-Dist: xlrd
+
+UNKNOWN
+
+
