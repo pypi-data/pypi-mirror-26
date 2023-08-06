@@ -1,0 +1,9 @@
+datapackage-pipelines<2.0,>=1.0
+ckan-datapackage-tools
+tableschema-ckan-datastore
+
+[develop]
+pylama
+tox
+mock
+requests_mock
