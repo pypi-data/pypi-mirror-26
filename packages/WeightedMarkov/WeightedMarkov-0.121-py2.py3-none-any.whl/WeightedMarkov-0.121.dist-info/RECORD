@@ -1,0 +1,10 @@
+WeightedMarkov/MarkovBase.py,sha256=6pFjXGOr8uT-GMdJLYpkoHAYIi3lWktw1l2Y2-7vQyY,2918
+WeightedMarkov/NaiveMarkov.py,sha256=j7g3uZejFs7gz_YGU4S6HVISvDgj6EvQZluRKnreL6Q,2004
+WeightedMarkov/WeightedHOMVMarkov.py,sha256=Fydd7UxsUMR-gvReAzOf34expDRiMyS5y7WF4ikcCbs,11599
+WeightedMarkov/WeightedMarkov.py,sha256=fI4Dk14eSJikuBCXB7LjlIcfSsGkxeTP92-sqVfNW84,7893
+WeightedMarkov-0.121.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+WeightedMarkov-0.121.dist-info/METADATA,sha256=Q7edbQ6f5m-w-9CApi7loAAuPV2DH3dwzezK_aQJCkU,696
+WeightedMarkov-0.121.dist-info/RECORD,,
+WeightedMarkov-0.121.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+WeightedMarkov-0.121.dist-info/metadata.json,sha256=jIgPKUH_RDD3e-Y_zwozgaGpcNLn77sQ6w3Z8DsDEcE,850
+WeightedMarkov-0.121.dist-info/top_level.txt,sha256=rFevRVrJGTMqFsqo42UT_PWTyaHcKHOhOBDGttNPMjI,15
