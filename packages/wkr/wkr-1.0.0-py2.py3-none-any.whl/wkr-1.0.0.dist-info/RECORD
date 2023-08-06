@@ -1,0 +1,11 @@
+wkr/__init__.py,sha256=qwUS6JHOd_revd_ZuvdR39c4FOgyXEnFKsZGA5u4pzg,2527
+wkr/compat.py,sha256=3zzGq33vlz7Pbi__BqnO1I2siyQ9UWhUwTl9SmqN9jI,509
+wkr/io.py,sha256=KYuDJCpFDQ4xBVYMpMK2HQknv1gg7SaB7YXddmYWkKA,3588
+wkr/os.py,sha256=Tv06n1MvJg162L6gYLhVCX_3GdSzngPqXojJsSmXiJY,3350
+wkr/pd.py,sha256=pHM1-UF3GqQD0Js7-t_FVxAIqUPuWLE6TbE3ctWwVd8,902
+wkr-1.0.0.dist-info/DESCRIPTION.rst,sha256=rF2MwBMc60_raQ3frNpuYw_2Bs41pdV4NvfsHaPk96c,1277
+wkr-1.0.0.dist-info/METADATA,sha256=2WLBiOb2lkSV-6tYeMnsRKGmcaGWK0g2cJ7nrYdFl2Q,2056
+wkr-1.0.0.dist-info/metadata.json,sha256=Ouo94hrFmDfpdwZwZfjuM2WzEmLFBv4thAaRpIvKVpA,985
+wkr-1.0.0.dist-info/RECORD,,
+wkr-1.0.0.dist-info/top_level.txt,sha256=e9P7hM-MSau5LF1atlPSdqqT2eTOLQs31EfZfoXKoLk,4
+wkr-1.0.0.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
