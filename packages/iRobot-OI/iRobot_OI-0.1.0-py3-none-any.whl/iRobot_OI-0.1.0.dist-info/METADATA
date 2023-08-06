@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: iRobot-OI
+Version: 0.1.0
+Summary: iRobot OI Python Interface
+Home-page: https://github.gatech.edu/VIP-Automotive-LiDAR-OE-Subgroup/iRobot_OI
+Author: Kevin Abraham
+Author-email: kev@gatech.edu
+License: Apache-2.0
+Description-Content-Type: UNKNOWN
+Keywords: iRobot Create Roomba OI Open Interface
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3, <4
+Requires-Dist: pyserial
+
+iRobot_OI
+=======================
+
+A Python interface for the iRobot Open Interface.
+
+----
+
+This is the README file for the project.
+
+
+
