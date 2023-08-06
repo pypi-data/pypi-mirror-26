@@ -1,0 +1,3 @@
+[console_scripts]
+gpwm = gpwm.cli:main
+

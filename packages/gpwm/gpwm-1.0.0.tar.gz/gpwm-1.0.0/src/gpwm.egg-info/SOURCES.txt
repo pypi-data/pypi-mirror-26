@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+src/gpwm/__init__.py
+src/gpwm/cli.py
+src/gpwm/utils.py
+src/gpwm.egg-info/PKG-INFO
+src/gpwm.egg-info/SOURCES.txt
+src/gpwm.egg-info/dependency_links.txt
+src/gpwm.egg-info/entry_points.txt
+src/gpwm.egg-info/requires.txt
+src/gpwm.egg-info/top_level.txt
+src/gpwm/stacks/__init__.py
+src/gpwm/stacks/aws.py
+src/gpwm/stacks/gcp.py
+src/gpwm/stacks/shell.py
