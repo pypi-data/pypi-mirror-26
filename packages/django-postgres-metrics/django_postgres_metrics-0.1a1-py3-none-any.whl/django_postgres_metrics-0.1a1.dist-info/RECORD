@@ -1,0 +1,16 @@
+django_postgres_metrics-0.1a1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_postgres_metrics-0.1a1.dist-info/METADATA,sha256=N520cRq0OCTJDzIYiUnuIG-v8Qyd8-yUDg5JXamuDdo,814
+django_postgres_metrics-0.1a1.dist-info/RECORD,,
+django_postgres_metrics-0.1a1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+django_postgres_metrics-0.1a1.dist-info/metadata.json,sha256=6pKkA7kFoaYRdP7nx1CEXlQ6naiwM6qKnzAKmUWuSB8,946
+django_postgres_metrics-0.1a1.dist-info/top_level.txt,sha256=Pv4eKcDbPijqekk9l1lSilxVx_CTTmw7WjMffczCLJE,17
+postgres_metrics/__init__.py,sha256=MgGmycNcdYIE8oUTawlIVtTLZAl1kws4YqF8YaF1_tQ,55
+postgres_metrics/apps.py,sha256=yGKR5FxkRDO6I-y1qFI6wQpVR9eI80AqHm3n1jRzWr4,199
+postgres_metrics/constants.py,sha256=zKXlBgaD_RWOFyQkekBHv86aCptxHfsuYGPhg4fqcMc,684
+postgres_metrics/urls.py,sha256=2Wsc1C0mDcv_-Q7j4fA92-Q-vedafyGSMaLkkmCH41Q,261
+postgres_metrics/views.py,sha256=w5H6RoeeN3w-OHgSgHTBjV78Z4mAyrpJ09UsVqbxaf4,1313
+postgres_metrics/static/postgres_metrics/css/base.css,sha256=_0pL7H7FMneZVl_G5Dyn755z1MDcs_lArltqdV64B04,328
+postgres_metrics/static/postgres_metrics/css/rtl.css,sha256=XyzCSo_3oCVBMFPW3gQxQ3lNBLsc988TmKyQaClCwWc,256
+postgres_metrics/templates/admin/index.html,sha256=PqoF_m1CfK_B9Kp7-P-3iMgdKPy-MEd9QzI61hy5_kk,1276
+postgres_metrics/templates/postgres_metrics/table.html,sha256=uDjNgMti4Gg9bxLumpFubtY2zPgbzt7SVT_PdGnej5A,1704
+postgres_metrics/templatetags/postgres_metrics.py,sha256=l2aVauz_6KaHBJD_SzYM0DHs-Q7_GILcbvd_0eEajAw,274
