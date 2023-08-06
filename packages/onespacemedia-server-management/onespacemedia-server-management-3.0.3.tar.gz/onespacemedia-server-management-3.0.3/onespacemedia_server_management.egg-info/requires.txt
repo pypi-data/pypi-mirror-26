@@ -1,0 +1,14 @@
+django
+fabric3
+requests
+fabric3-virtualenv
+
+[testing]
+coveralls
+pytest
+pytest-cov
+pytest-django
+pylint
+pylint-django
+pylint-mccabe
+isort
