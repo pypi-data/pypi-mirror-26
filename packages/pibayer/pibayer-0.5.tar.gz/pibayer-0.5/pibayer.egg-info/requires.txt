@@ -1,0 +1,9 @@
+picamera
+numpy
+
+[plot]
+matplotlib
+
+[write]
+tifffile
+h5py
