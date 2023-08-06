@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: lcpy
+Version: 0.1
+Summary: Unofficial Python Library for LendingClub API
+Home-page: https://github.com/Porkbutts/lendingclub-python
+Author: Adrian Teng-Amnuay
+Author-email: pumpadrian@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Porkbutts/lendingclub-python/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: lendingclub,lending,club,api,wrapper
+Platform: UNKNOWN
