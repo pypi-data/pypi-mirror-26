@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: hrelutils
+Version: 1.1
+Summary: Hrel utils
+Home-page: https://gitlab.com/hrel3/hrelutils/
+Author: Justin Barber
+Author-email: justin@hrel.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
