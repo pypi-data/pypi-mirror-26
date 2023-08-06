@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: pixelart
+Version: 0.1.1
+Summary: Match images to minecraft textures
+Home-page: https://github.com/lekro/pixelart
+Author: lekro
+Author-email: kapuraya@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ***************
+        pixelart-helper
+        ***************
+        
+        A simple pixel art helper for Minecraft, written in Python,
+        with a simple ``tkinter`` GUI.
+        
+        `GitHub <https://github.com/lekro/pixelart>`_ /
+        `PyPI <https://pypi.python.org/pypi/pixelart>`_
+        
+        Documentation/instructions are available on
+        `readthedocs.io <http://pixelart.readthedocs.io>`_.
+        
+Keywords: pixel,art,pixelart,minecraft
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.2
