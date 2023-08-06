@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: onap-dcae-dockering
+Version: 1.4.0
+Summary: Library used to manage Docker containers in DCAE
+Home-page: UNKNOWN
+Author: Michael Hwang
+Author-email: UNKNOWN
+License: Apache 2
+Platform: UNKNOWN
+Requires-Dist: docker-py (>=1.0.0,<2.0.0)
+Requires-Dist: six
+
+UNKNOWN
+
+
