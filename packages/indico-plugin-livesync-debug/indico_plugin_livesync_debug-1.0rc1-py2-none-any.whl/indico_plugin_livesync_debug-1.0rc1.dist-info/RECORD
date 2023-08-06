@@ -1,0 +1,10 @@
+indico_livesync_debug/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indico_livesync_debug/backend.py,sha256=ID5khodYlwI4DfUswmcC4xN_lzqxIhHD0u0uDzuayPQ,2897
+indico_livesync_debug/plugin.py,sha256=mlV1eDHYDmoX85AXg53tQLap5p7vOwH-j_jLQdF6ADo,1088
+indico_plugin_livesync_debug-1.0rc1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+indico_plugin_livesync_debug-1.0rc1.dist-info/METADATA,sha256=c4kESCOlwytTUHAPek48OtdH9G_xDq4w3YyVimPMARM,643
+indico_plugin_livesync_debug-1.0rc1.dist-info/RECORD,,
+indico_plugin_livesync_debug-1.0rc1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+indico_plugin_livesync_debug-1.0rc1.dist-info/entry_points.txt,sha256=ljjRWIjBbwV-yTB9koM4VgK7r7yhFmzp2j39mVStdek,84
+indico_plugin_livesync_debug-1.0rc1.dist-info/metadata.json,sha256=RjODYCe6qozCtY_ewXIH2AKEAvNYJMFXLteeJZl3GVk,939
+indico_plugin_livesync_debug-1.0rc1.dist-info/top_level.txt,sha256=3g7lCNQM2czQMT-h-rc9DKcqTEUiADmj0IrAbjntCrs,22
