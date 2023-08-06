@@ -1,0 +1,12 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+flake8_confusables.py
+setup.py
+flake8_confusables.egg-info/PKG-INFO
+flake8_confusables.egg-info/SOURCES.txt
+flake8_confusables.egg-info/dependency_links.txt
+flake8_confusables.egg-info/entry_points.txt
+flake8_confusables.egg-info/requires.txt
+flake8_confusables.egg-info/top_level.txt

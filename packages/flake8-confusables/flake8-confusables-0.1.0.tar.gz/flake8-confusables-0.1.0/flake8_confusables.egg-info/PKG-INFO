@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: flake8-confusables
+Version: 0.1.0
+Summary: A flake8 plugin to check for ambiguous identifiers
+Home-page: https://gitlab.com/dirn/flake8-confusables
+Author: Andy Dirnberger
+Author-email: andy@dirnberger.me
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: =================================
+        flake8-confusables |build status|
+        =================================
+        
+        .. |build status| image:: https://gitlab.com/dirn/flake8-confusables/badges/master/pipeline.svg
+           :target: https://gitlab.com/dirn/flake8-confusables/commits/master
+        
+        A module that adds a plugin for checking for ambiguous identifiers (using
+        confusables_) to flake8_.
+        
+        Install the extension::
+        
+            $ pip3 install flake8-confusables
+        
+        and run flake8.
+        
+        .. _confusables: https://pypi.org/project/confusables/
+        .. _flake8: https://gitlab.com/pycqa/flake8
+        
+Keywords: flake8,confusables,ambiguity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance

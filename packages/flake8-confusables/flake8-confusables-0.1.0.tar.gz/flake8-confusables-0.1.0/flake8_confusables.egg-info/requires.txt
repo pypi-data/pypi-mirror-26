@@ -1,0 +1,3 @@
+confusables
+cython
+flake8>3.0.0
