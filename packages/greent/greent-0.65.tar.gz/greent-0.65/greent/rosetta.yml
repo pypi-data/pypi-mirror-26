@@ -1,0 +1,124 @@
+#
+# Define transitions between types.
+#
+
+# This section is deprecated - ignore after switch to neo4j completed.
+'@concepts':
+  A:  [ "UBERON" ]
+  C:  [ "GO" ]
+  D:  [ "NAME", "NAME.DRUG", "NAME.DISEASE", "MESH.DISEASE", "PHAROS", "DOID" ]
+  G:  [ "UNIPROT", "HGNC.SYMBOL" ]
+  GC: [ "genetic_condition" ]
+  P:  [ "KEGG" ]
+  PH: [ "UBERON" ]
+  S:  [ "NAME", "DRUGBANK" ]
+
+# Use this section. Neo4J type graph is based on these mappings.
+'@concept' :
+  Anatomy            : [ 'UBERON' ]
+  Disease            : [ 'MESH.DISEASE', 'DOID', 'PHAROS', 'OMIM', 'MESH.DISEASE' ]
+  Substance          : [ 'DRUGBANK', 'DRUG.INTERACTION', 'INCHI', 'INCHIKEY', 'PUBCHEM', 'CHEMBL', 'CHEBI', 'PUBCHEM.COMPOUND', 'KEGG.COMPOUND', 'KEGG.DRUG' ]
+  Gene               : [ 'UNIPROT', 'HGNC', 'HGNC.SYMBOL', 'ENTREZ', 'NCBIGENE', 'ENSEMBL', 'ENSEMBL.TRANSCRIPT' ]
+  Phenotype          : [ 'GO' ]
+  Pathway            : [ 'KEGG', 'REACTOME', 'PHARMGKB.PATHWAYS', 'WIKIPATHWAYS', 'BIOCARTA.PATHWAY' ]
+  GeneticCondition   : [ 'GENETIC_CONDITION' ]
+
+'@curie':
+  DOID: doid
+  MESH.DISEASE: mesh
+
+# Only items decorated with semantic predicates will be considered.
+'@translator-semantics':
+  mygene.info:
+    http://identifiers.org/hgnc.symbol/:
+      http://identifiers.org/ncbigene/:
+        synonym
+  biolink:
+    http://identifiers.org/ncbigene/:
+      http://identifiers.org/doid/:
+        gene_to_disease
+
+# Defines transitions from one vocabulary domain to another including a predicate.
+'@transitions':
+  NAME.DISEASE:
+    DOID:
+      link: diseasename
+      op:   tkba.name_to_doid
+    MESH.DISEASE:
+      link: diseasename
+      op:   tkba.name_to_mesh_disease
+  NAME.DRUG:
+    DRUGBANK:
+      link: drugname
+      op:   tkba.name_to_drugbank
+  DOID:
+    MESH:
+      op: disease_ontology.graph_doid_to_mesh
+    PHAROS:
+      link: doid_to_pharos
+      op:   disease_ontology.doid_to_pharos
+    UBERON:
+      link: phenotype
+      op:   hetio.disease_to_phenotype
+  HGNC.SYMBOL:
+    GENETIC_CONDITION:
+      op: biolink.gene_get_genetic_condition
+    UBERON:
+      link: anatomy
+      op:   hetio.gene_to_anatomy
+    GO:
+      link: cellcomponent
+      op:   hetio.gene_to_cell
+    DOID:
+      link: gene_to_disease
+      op: hetio.gene_to_disease
+  DRUGBANK:
+    UNIPROT:
+      link: targets
+      op:   chembio.graph_drugbank_to_uniprot
+  DRUGBANK.NAME:
+    UNIPROT:
+#      link: ____none____
+      op: chembio.graph_drugname_to_gene_symbol
+  MESH.DISEASE:
+    UNIPROT:
+      link: diseaseid_to_uniprot
+      op: chembio.graph_diseaseid_to_uniprot
+  MESH:
+    ROOT:
+      op: oxo.mesh_to_other
+    DRUGBANK:
+      op: chembio.get_drugs_by_condition_graph
+    DOID:
+      link: mesh_to_doid
+#      op:   kba.______________________________
+  PHAROS:
+    HGNC.SYMBOL:
+      link: disease_gene
+      op:   pharos.disease_get_gene
+  UNIPROT:
+    MESH:
+      link: gene_disease
+ #     op:   chembio.__________________________
+    HGNC.SYMBOL:
+      link: synonym
+      op:   chembio.graph_uniprot_to_hgnc
+    KEGG:
+      link: gene_pathway
+      op:   chembio.graph_get_pathways_by_gene
+'@vocab':
+  DRUGBANK.NAME:     http://identifiers.org/drugbank/name
+  KEGG:              http://identifiers.org/kegg/pathway
+  NAME:              http://identifiers.org/name
+  NAME.DRUG:         http://identifiers.org/name
+  NAME.DISEASE:      http://identifiers.org/name
+  UNIPROT:           http://identifiers.org/uniprot
+  DOID:              http://identifiers.org/doid/
+  GENETIC_CONDITION: http://identifiers.org/mondo/gentic_condition
+  UBERON:            http://identifier.org/uberon
+  GO:                http://identifier.org/go
+  MESH:              http://identifiers.org/mesh
+  MESH.NAME:         http://identifiers.org/mesh/drug/name
+  MESH.DISEASE:      http://identifiers.org/mesh/disease/name
+  PHAROS:            http://pharos.nih.gov/identifier/
+  ROOT:              http://identifiers.org/doi
