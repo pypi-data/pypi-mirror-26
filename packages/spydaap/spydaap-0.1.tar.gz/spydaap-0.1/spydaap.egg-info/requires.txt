@@ -1,0 +1,2 @@
+mutagen>=1.2
+pybonjour>=1.1

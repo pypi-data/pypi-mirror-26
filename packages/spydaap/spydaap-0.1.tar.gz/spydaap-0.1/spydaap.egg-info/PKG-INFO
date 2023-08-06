@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: spydaap
+Version: 0.1
+Summary: A simple DAAP server
+Home-page: https://github.com/egh/spydaap
+Author: Erik Hetzner
+Author-email: egh@e6h.org
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: 
+        =========
+         spydaap
+        =========
+        
+        Spydaap is a media server supporting the DAAP protocol (aka iTunes
+        sharing). It is written in Python, uses the mutagen media metadata
+        library, and either the Avahi or pybonjour Zeroconf implementation.
+        
+        Features:
+        
+         - Runs on Unix-like systems (Linux, *BSD, Mac OS X).
+         - Can stream mp3s, ogg, flac, and Quicktime videos.
+         - Supports "smart" playlists written in Python.
+         - Written in 100 percent Python and easily modifiable.
+         - Caches almost everything for fast performance.
+         - Embeddable.
+        
+        Note: This pypi package is maintained by the Exaile project, but will be kept in
+        sync with the upstream spydaap project. 
+         
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: End Users/Desktop
