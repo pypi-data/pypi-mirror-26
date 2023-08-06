@@ -1,0 +1,17 @@
+MANIFEST.in
+README
+README.org
+setup.py
+bin/llvm--emulator
+llvm_emulator/__init__.py
+llvm_emulator/emulator.py
+llvm_emulator/ll.py
+llvm_emulator/parser.out
+llvm_emulator/parser.py
+llvm_emulator/parsetab.py
+llvm_emulator/stepper.py
+llvm_minusminus_emulator.egg-info/PKG-INFO
+llvm_minusminus_emulator.egg-info/SOURCES.txt
+llvm_minusminus_emulator.egg-info/dependency_links.txt
+llvm_minusminus_emulator.egg-info/requires.txt
+llvm_minusminus_emulator.egg-info/top_level.txt
