@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: djdb
+Version: 0.1.0
+Summary: a python databases api
+Home-page: https://github.com/HuangHongkai/pydb
+Author: dfsss
+Author-email: 2523272490@qq.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Django (>=1.1.1)
+
+UNKNOWN
+
+
