@@ -1,0 +1,52 @@
+CHANGES
+=======
+
+0.1.2
+-----
+
+* Fix pip installation: pbr: ModuleNotFoundError
+
+0.1.1
+-----
+
+* Remove system call in command: migrate
+* Add: pytest test suite initial commit
+* Fix ModuleNotFoundError in the shell
+
+0.1.0
+-----
+
+* Finalize initial release
+* Initial commit: bypass
+* Project restructure
+* Add: Mac support
+* Fixed font rendering
+* view command style changes
+* Add usage GIF to README
+* Add command: lock
+* Add: Windows support
+* Add support for spaces in KeePass migration
+* Misc pylint-driven changes
+* Add file extension global
+* Make TOTP an optional dependency
+* Move entry\_points from seutp.py to setup.cfg
+* Remove: webbrowser dependency
+* Add feature: shorthand credential entries
+* Add command: goto
+* General readability and documentation additions
+* Refactor: merge commands gen/add into separate function
+* Add submodule: uto.migrate
+* Add option: gen::force
+* Add config file parsing
+* Add command: qr
+* Add command: rm
+* Add protection for copying fields with no value
+* Add credential property: TOTP
+* Added command: view
+* Add command: gen
+* Add command: copy
+* Added command: view
+* Add version printing option
+* Add command: init
+* Refactor: package -> module, adopt pbr
+* Initial commit
