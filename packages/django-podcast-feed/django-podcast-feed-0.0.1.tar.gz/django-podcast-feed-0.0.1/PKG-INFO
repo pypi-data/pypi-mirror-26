@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: django-podcast-feed
+Version: 0.0.1
+Summary: Generate Apple Podcasts-compatible syndication feeds.
+Home-page: https://github.com/jeffbr13/xq
+Author: Ben Jeffrey
+Author-email: mail@benjeffrey.net
+License: MPL 2.0
+Description-Content-Type: UNKNOWN
+Description: django-podcast-feed
+        ===================
+        
+        Extra attributes to set on ``PodcastFeed``:
+        
+        - ``artwork_link``
+        - ``itunes_category``
+        - ``explicit``
+        - ``owner_name``
+        - ``owner_email``
+        
+Keywords: django podcast feed
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Framework :: Django
