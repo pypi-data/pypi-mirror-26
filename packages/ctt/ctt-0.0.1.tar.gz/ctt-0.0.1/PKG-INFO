@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: ctt
+Version: 0.0.1
+Summary: Interface to CTT ( Portuguese Postal Service )
+Home-page: UNKNOWN
+Author: Bruno Martins
+Author-email: bscmartins@gmail.com
+License: LICENSE
+Description: ctt
+        ===
+        
+        Interface to CTT ( Portuguese Postal Service )
+        
+        
+        >>> from ctt import get_package_status
+        >>> get_package_status('RG646364119CN')
+        
+Platform: any
