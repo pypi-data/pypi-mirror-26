@@ -1,0 +1,16 @@
+README.md
+setup.py
+dpcolors/__init__.py
+dpcolors/grammars/__init__.py
+dpcolors/grammars/dp.py
+dpcolors/grammars/irc.py
+python_dpcolors.egg-info/PKG-INFO
+python_dpcolors.egg-info/SOURCES.txt
+python_dpcolors.egg-info/dependency_links.txt
+python_dpcolors.egg-info/requires.txt
+python_dpcolors.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_conversion.py
+tests/test_dp.py
+tests/test_irc.py
