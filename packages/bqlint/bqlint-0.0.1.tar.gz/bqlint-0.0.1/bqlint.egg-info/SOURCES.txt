@@ -1,0 +1,7 @@
+setup.py
+bqlint.egg-info/PKG-INFO
+bqlint.egg-info/SOURCES.txt
+bqlint.egg-info/dependency_links.txt
+bqlint.egg-info/entry_points.txt
+bqlint.egg-info/requires.txt
+bqlint.egg-info/top_level.txt
