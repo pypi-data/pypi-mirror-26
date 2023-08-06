@@ -1,0 +1,16 @@
+README.md
+README.rst
+setup.cfg
+setup.py
+xl_link/__init__.py
+xl_link/chart_wrapper.py
+xl_link/mappers.py
+xl_link.egg-info/PKG-INFO
+xl_link.egg-info/SOURCES.txt
+xl_link.egg-info/dependency_links.txt
+xl_link.egg-info/requires.txt
+xl_link.egg-info/top_level.txt
+xl_link/xl_types/__init__.py
+xl_link/xl_types/xl_types.py
+xl_link/xlsxwriter/__init__.py
+xl_link/xlsxwriter/utility.py
