@@ -1,0 +1,12 @@
+fpr_packer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fpr_packer/pyinfra.py,sha256=KwMdeBu6SzSDAtOApJXnFc6MZJ0Z9NjXFpM4lYZDIk8,1372
+fpr_packer/scripts.py,sha256=GR9TCl1IukUZeWeNwBRMOv1RpOtJ0b8S8Rfmfn81Abs,1567
+fpr_packer/aws/__init__.py,sha256=qSUEB0WsstyH_JDim0GpQdzQ-qMP33W_1-3OPbAWrNQ,20
+fpr_packer/aws/aws.py,sha256=Fwt0fQMZgXurVWzV4U6otmRkVuridahpmsqpn-Jniwk,1830
+fpr_packer-0.2.2a10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+fpr_packer-0.2.2a10.dist-info/METADATA,sha256=9vC1fwOgu7AGs2xRpHKvpvszKyi3rU1e_VQwzi-C5cs,419
+fpr_packer-0.2.2a10.dist-info/RECORD,,
+fpr_packer-0.2.2a10.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+fpr_packer-0.2.2a10.dist-info/entry_points.txt,sha256=KWXHtY54fi8K73yML87t5g0Haje5F42-dmfFmuFQ2PI,53
+fpr_packer-0.2.2a10.dist-info/metadata.json,sha256=MsQ65BG1DtHL--mDe63uIIBf_w88jB27ZG45SoGy9SI,615
+fpr_packer-0.2.2a10.dist-info/top_level.txt,sha256=5abcLsJvQhJtdpCR4hsPtx2sxtMpKGsX1VSW2zI8EM8,11
