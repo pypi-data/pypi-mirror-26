@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "kartoffel"
+author = "Thomas Kluyver"
+author-email = "thomas@kluyver.me.uk"
+home-page = "https://gitlab.com/takluyver/kartoffel"
+description-file = "README.rst"
+requires-python = ">=3.5"
+requires = ["stdlib-list"]
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+
+[tool.flit.scripts]
+kartoffel = "kartoffel:main"

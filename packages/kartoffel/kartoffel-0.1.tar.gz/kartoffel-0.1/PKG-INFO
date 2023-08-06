@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: kartoffel
+Version: 0.1
+Summary: Identify modules used in a Python application by running it.
+Home-page: https://gitlab.com/takluyver/kartoffel
+Author: Thomas Kluyver
+Author-email: thomas@kluyver.me.uk
