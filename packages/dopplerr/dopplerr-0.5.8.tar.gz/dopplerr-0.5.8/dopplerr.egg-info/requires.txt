@@ -1,0 +1,11 @@
+aiofiles
+aiohttp
+apscheduler
+apsw
+colorlog
+pbr
+peewee
+sanic
+sanic-transmute
+setuptools!=36.0.0
+subliminal
