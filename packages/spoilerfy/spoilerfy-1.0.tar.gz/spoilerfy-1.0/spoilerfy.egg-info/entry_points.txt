@@ -1,0 +1,3 @@
+[console_scripts]
+spoilerfy = spoilerfy.command_line:main
+
