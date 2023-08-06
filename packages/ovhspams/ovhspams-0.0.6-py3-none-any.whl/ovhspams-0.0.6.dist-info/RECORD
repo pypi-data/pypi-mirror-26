@@ -1,0 +1,16 @@
+ovhspams/__init__.py,sha256=UHLQck8Jj7Ab5_sfBlc0eN79b5Dg59ANU3bSVNfba0Q,502
+ovhspams/domaines.py,sha256=TdO1Sf7WN-C2cQUYhLHm4TUCXDYki2HyH2PkMGEMcxU,1469
+ovhspams/tests.py,sha256=aqUoOEt0tvP7RYaKxSocnzZzOj6tAMHsugLFQ83ISAI,710
+ovhspams/views.py,sha256=0VFXYf92GHhi7x5WXCc62g_05ZPX35Sa7mbQNhinioM,3608
+ovhspams/static/pyramid-16x16.png,sha256=52DP5dX_2p74SElE8el4ZbY6OhjH0DOHjv2gS-TrzAA,1319
+ovhspams/static/pyramid.png,sha256=PImDmeDNeQY9cO8eUDFW8eri5RceItq0Sk6r0IiMVHQ,12901
+ovhspams/static/theme.css,sha256=PvRc_erO2SdCYFtPMA2S66RpaCc6lXen9hPv0SwwqUo,2934
+ovhspams/templates/layout.pt,sha256=hsj_9C4rozqEskllaPD1-yglVIbjYuuZKaYIsWnRbe8,2338
+ovhspams/templates/mytemplate.pt,sha256=e4ePdoYOj1WiWfuWLr_ImjGmB7FwAS-i7Yce_LExmJc,450
+ovhspams-0.0.6.dist-info/DESCRIPTION.rst,sha256=RxDT6ndP9FSrMLN-LbhIObTPD3UEwlWDWezifY4oD0E,1059
+ovhspams-0.0.6.dist-info/METADATA,sha256=lnWjOqDR_KAl93M0GijpRH02EN0DAK_hU5BdXSKIKUc,1925
+ovhspams-0.0.6.dist-info/RECORD,,
+ovhspams-0.0.6.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ovhspams-0.0.6.dist-info/entry_points.txt,sha256=OM8mOQmg4x-82zC9XdqBbVNxc2tEb6UCXhhUlXX_boQ,42
+ovhspams-0.0.6.dist-info/metadata.json,sha256=-3fvMWGYn4iZtX2tt6-CKtQE0hvf1xtB_gcsTW9RRkY,976
+ovhspams-0.0.6.dist-info/top_level.txt,sha256=MGuOorL0celbE5LqhkS802yCQ_SdB38zbnWL6B69CpA,9
