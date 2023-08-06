@@ -1,0 +1,3 @@
+[console_scripts]
+dbtrolls = dbtrolls.__main__:main
+
