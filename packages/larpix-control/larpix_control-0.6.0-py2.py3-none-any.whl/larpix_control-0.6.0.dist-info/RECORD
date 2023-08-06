@@ -1,0 +1,16 @@
+larpix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larpix/benchtest.py,sha256=metbquhxS841_GClxNU4hi2S-BTHn2FaZc8pqiE8m_w,15465
+larpix/larpix.py,sha256=WziFJb-qeHMcgANexBOp5ksxqOUeL93TuNssIP3ZmXg,36191
+larpix/larpix_control_demo.py,sha256=Q3HFYL8tFYnM5phiI4at9yFZRR8OvtyKWGMvBEn7imU,3194
+larpix/tasks.py,sha256=vcTRWcMFPP0Vr7nKxg9Y4vUV55EPNJCioB-gbSZz5mc,5160
+larpix/configs/__init__.py,sha256=I66QOu9W6sPo7JS28Ns4gPAZlQ-9jFigCYCjx4vRU88,660
+larpix_control-0.6.0.data/scripts/larpix-drivercheck-mac,sha256=7ufGnASL31D96pDMJD6m6ZJhUqW6OkvV0Hozbrw9Ils,2723
+larpix_control-0.6.0.data/scripts/larpix-drivercheck-ubuntu,sha256=61Z1jtPAvqXlDSZTzR9bGErmqpuPmikc7Hf7DARRo1A,3032
+larpix_control-0.6.0.data/scripts/larpix-find-device-mac,sha256=YjMhjYOuUKu3Cobs2A304lLdvpb6PHbSxvJuPoYt7s8,705
+larpix_control-0.6.0.data/scripts/larpix-find-device-ubuntu,sha256=8A772ZIX0lNydYkRDRBi5ur_NFYN34omrtUqGtehVx4,680
+larpix_control-0.6.0.dist-info/DESCRIPTION.rst,sha256=mz6KlmCzcKig8VCOuGCa8RSVfU40ekPjpABBHUnzqNA,9805
+larpix_control-0.6.0.dist-info/METADATA,sha256=dYrQ3J9B_oERIRW535Gy4zIKtTI462YOCbYfnFoULZo,10352
+larpix_control-0.6.0.dist-info/RECORD,,
+larpix_control-0.6.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+larpix_control-0.6.0.dist-info/metadata.json,sha256=c6k3WY_wO9YlvuRnoXjYOB-QXctmD8Y27MmigpVG1wY,719
+larpix_control-0.6.0.dist-info/top_level.txt,sha256=FyELOmr20oGHUyEMekD7fFaMHsbgn8oOCnYcx1zMygk,7
