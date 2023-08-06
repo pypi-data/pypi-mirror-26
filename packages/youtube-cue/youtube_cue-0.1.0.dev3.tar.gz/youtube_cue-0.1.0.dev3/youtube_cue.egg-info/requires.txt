@@ -1,0 +1,5 @@
+musicbrainzngs
+lxml
+requests
+youtube-dl
+cssselect

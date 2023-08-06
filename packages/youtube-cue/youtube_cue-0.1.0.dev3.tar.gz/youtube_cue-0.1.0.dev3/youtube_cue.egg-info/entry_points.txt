@@ -1,0 +1,3 @@
+[console_scripts]
+youtube-cue = youtube_cue:main
+
