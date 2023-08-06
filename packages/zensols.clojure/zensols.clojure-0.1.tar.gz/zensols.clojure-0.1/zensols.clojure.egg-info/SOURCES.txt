@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+zensols/__init__.py
+zensols/clojure.py
+zensols.clojure.egg-info/PKG-INFO
+zensols.clojure.egg-info/SOURCES.txt
+zensols.clojure.egg-info/dependency_links.txt
+zensols.clojure.egg-info/top_level.txt

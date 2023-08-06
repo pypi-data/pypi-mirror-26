@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: zensols.clojure
+Version: 0.1
+Summary: Python to Clojure Bridge using a Py4J Gateway
+Home-page: https://github.com/plandes/clj-py4j
+Author: Paul Landes
+Author-email: landes@mailc.net
+License: UNKNOWN
+Download-URL: https://github.com/plandes/clj-py4j/archive/py4jgw-0.1.zip
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: clojure,py4j,gateway
+Platform: UNKNOWN
