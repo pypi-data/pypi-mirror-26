@@ -1,0 +1,7 @@
+pandas
+munch
+numpy
+logzero
+xlrd
+xlwt
+numexpr
