@@ -1,0 +1,10 @@
+dispatchsdk/__init__.py,sha256=fua-QYkPypNaZZv85zbpPoFn-FBnlfnM1GbS5mlW_P0,99
+dispatchsdk/client.py,sha256=kSiqVwIwVRSuEQEgbdRuPGNekuHcHLHOfeuO605r5-8,13198
+dispatchsdk/errors.py,sha256=-P6bN0qcTcLk-RZGkVdQhX76bQOjbhuddf-4fxXlZaA,323
+dispatchsdk/hmac.py,sha256=X0m1RNwAbFFcoGUAiKg2Yvn21jW6uc3F1RQ0wBXcDQw,1580
+dispatchsdk-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dispatchsdk-0.1.1.dist-info/METADATA,sha256=lBevz8cUH6oBcEL7LwpQD18p6qL5ZvfrELQoHeT1Xj0,345
+dispatchsdk-0.1.1.dist-info/RECORD,,
+dispatchsdk-0.1.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dispatchsdk-0.1.1.dist-info/metadata.json,sha256=-c7LC4jaVo6EOyjkh3yCyd4rJIpMtPySidMyNwmBOGI,541
+dispatchsdk-0.1.1.dist-info/top_level.txt,sha256=PFDynw1YM7KG-K9kQ3LoXBwRbvoi-0KUBpZOOVbAyug,12
