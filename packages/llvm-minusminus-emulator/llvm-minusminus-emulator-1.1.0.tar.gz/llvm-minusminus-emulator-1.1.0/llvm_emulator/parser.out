@@ -1,0 +1,3580 @@
+Created by PLY version 3.10 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> top_decs
+Rule 2     top_decs -> tdec top_decs
+Rule 3     top_decs -> gdec top_decs
+Rule 4     top_decs -> fdec top_decs
+Rule 5     top_decs -> <empty>
+Rule 6     tdec -> PercentID ASSIGN TYPE ty
+Rule 7     ty -> VOID
+Rule 8     ty -> I1
+Rule 9     ty -> I8
+Rule 10    ty -> I32
+Rule 11    ty -> I64
+Rule 12    ty -> ty ASTERIX
+Rule 13    ty -> LBRACE ty_list RBRACE
+Rule 14    ty -> LBRACK INT ID ty RBRACK
+Rule 15    ty -> ty LPAREN ty_list RPAREN
+Rule 16    ty -> PercentID
+Rule 17    ty_list -> ty
+Rule 18    ty_list -> ty COMMA ty_list
+Rule 19    ty_list -> <empty>
+Rule 20    gdec -> AtID ASSIGN GLOBAL ty ginit
+Rule 21    ginit -> NULL
+Rule 22    ginit -> AtID
+Rule 23    ginit -> INT
+Rule 24    ginit -> STRING
+Rule 25    ginit -> LBRACK ty_ginit_list RBRACK
+Rule 26    ginit -> LBRACE ty_ginit_list RBRACE
+Rule 27    ty_ginit_list -> ty ginit
+Rule 28    ty_ginit_list -> ty ginit COMMA ty_ginit_list
+Rule 29    ty_ginit_list -> <empty>
+Rule 30    fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+Rule 31    ty_id_list -> ty PercentID
+Rule 32    ty_id_list -> ty PercentID COMMA ty_id_list
+Rule 33    ty_id_list -> <empty>
+Rule 34    fbody -> block named_block_list
+Rule 35    fbody -> block
+Rule 36    block -> insns terminator
+Rule 37    block -> terminator
+Rule 38    insns -> optionally_named_insn
+Rule 39    insns -> optionally_named_insn insns
+Rule 40    optionally_named_insn -> PercentID ASSIGN insn
+Rule 41    optionally_named_insn -> insn
+Rule 42    insn -> bop ty operand COMMA operand
+Rule 43    insn -> ALLOCA ty
+Rule 44    insn -> LOAD ty COMMA ty operand
+Rule 45    insn -> STORE ty operand COMMA ty operand
+Rule 46    insn -> ICMP cnd ty operand COMMA operand
+Rule 47    insn -> CALL ty operand LPAREN ty_operand_list RPAREN
+Rule 48    insn -> CALL ty operand LPAREN RPAREN
+Rule 49    insn -> BITCAST ty operand TO ty
+Rule 50    insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list
+Rule 51    insn -> GETELEMENTPTR ty COMMA ty operand
+Rule 52    insn -> ZEXT ty operand TO ty
+Rule 53    insn -> PTRTOINT ty ASTERIX operand TO ty
+Rule 54    bop -> ADD
+Rule 55    bop -> SUB
+Rule 56    bop -> MUL
+Rule 57    bop -> SHL
+Rule 58    bop -> LSHR
+Rule 59    bop -> ASHR
+Rule 60    bop -> AND
+Rule 61    bop -> OR
+Rule 62    bop -> XOR
+Rule 63    bop -> SDIV
+Rule 64    cnd -> EQ
+Rule 65    cnd -> NE
+Rule 66    cnd -> SLT
+Rule 67    cnd -> SLE
+Rule 68    cnd -> SGT
+Rule 69    cnd -> SGE
+Rule 70    ty_operand_list -> ty operand
+Rule 71    ty_operand_list -> ty operand COMMA ty_operand_list
+Rule 72    terminator -> RET VOID
+Rule 73    terminator -> RET ty operand
+Rule 74    terminator -> BR LABEL PercentID
+Rule 75    terminator -> BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID
+Rule 76    operand -> NULL
+Rule 77    operand -> INT
+Rule 78    operand -> AtID
+Rule 79    operand -> PercentID
+Rule 80    named_block_list -> ID COLON block
+Rule 81    named_block_list -> ID COLON block named_block_list
+
+Terminals, with rules where they appear
+
+ADD                  : 54
+ALLOCA               : 43
+AND                  : 60
+ASHR                 : 59
+ASSIGN               : 6 20 40
+ASTERIX              : 12 53
+AtID                 : 20 22 30 78
+BITCAST              : 49
+BR                   : 74 75
+CALL                 : 47 48
+COLON                : 80 81
+COMMA                : 18 28 32 42 44 45 46 50 50 51 71 75 75
+DEFINE               : 30
+EQ                   : 64
+GETELEMENTPTR        : 50 51
+GLOBAL               : 20
+I1                   : 8
+I32                  : 10
+I64                  : 11
+I8                   : 9
+ICMP                 : 46
+ID                   : 14 80 81
+INT                  : 14 23 77
+LABEL                : 74 75 75
+LBRACE               : 13 26 30
+LBRACK               : 14 25
+LOAD                 : 44
+LPAREN               : 15 30 47 48
+LSHR                 : 58
+MUL                  : 56
+NE                   : 65
+NULL                 : 21 76
+OR                   : 61
+PTRTOINT             : 53
+PercentID            : 6 16 31 32 40 74 75 75 79
+RBRACE               : 13 26 30
+RBRACK               : 14 25
+RET                  : 72 73
+RPAREN               : 15 30 47 48
+SDIV                 : 63
+SGE                  : 69
+SGT                  : 68
+SHL                  : 57
+SLE                  : 67
+SLT                  : 66
+STORE                : 45
+STRING               : 24
+SUB                  : 55
+TO                   : 49 52 53
+TYPE                 : 6
+VOID                 : 7 72
+XOR                  : 62
+ZEXT                 : 52
+error                : 
+
+Nonterminals, with rules where they appear
+
+block                : 34 35 80 81
+bop                  : 42
+cnd                  : 46
+fbody                : 30
+fdec                 : 4
+gdec                 : 3
+ginit                : 20 27 28
+insn                 : 40 41
+insns                : 36 39
+named_block_list     : 34 81
+operand              : 42 42 44 45 45 46 46 47 48 49 50 51 52 53 70 71 73 75
+optionally_named_insn : 38 39
+program              : 0
+tdec                 : 2
+terminator           : 36 37
+top_decs             : 1 2 3 4
+ty                   : 6 12 14 15 17 18 20 27 28 30 31 32 42 43 44 44 45 45 46 47 48 49 49 50 50 51 51 52 52 53 53 70 71 73 75
+ty_ginit_list        : 25 26 28
+ty_id_list           : 30 32
+ty_list              : 13 15 18
+ty_operand_list      : 47 50 71
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . program
+    (1) program -> . top_decs
+    (2) top_decs -> . tdec top_decs
+    (3) top_decs -> . gdec top_decs
+    (4) top_decs -> . fdec top_decs
+    (5) top_decs -> .
+    (6) tdec -> . PercentID ASSIGN TYPE ty
+    (20) gdec -> . AtID ASSIGN GLOBAL ty ginit
+    (30) fdec -> . DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+
+    $end            reduce using rule 5 (top_decs -> .)
+    PercentID       shift and go to state 6
+    AtID            shift and go to state 7
+    DEFINE          shift and go to state 8
+
+    program                        shift and go to state 1
+    top_decs                       shift and go to state 2
+    tdec                           shift and go to state 3
+    gdec                           shift and go to state 4
+    fdec                           shift and go to state 5
+
+state 1
+
+    (0) S' -> program .
+
+
+
+state 2
+
+    (1) program -> top_decs .
+
+    $end            reduce using rule 1 (program -> top_decs .)
+
+
+state 3
+
+    (2) top_decs -> tdec . top_decs
+    (2) top_decs -> . tdec top_decs
+    (3) top_decs -> . gdec top_decs
+    (4) top_decs -> . fdec top_decs
+    (5) top_decs -> .
+    (6) tdec -> . PercentID ASSIGN TYPE ty
+    (20) gdec -> . AtID ASSIGN GLOBAL ty ginit
+    (30) fdec -> . DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+
+    $end            reduce using rule 5 (top_decs -> .)
+    PercentID       shift and go to state 6
+    AtID            shift and go to state 7
+    DEFINE          shift and go to state 8
+
+    tdec                           shift and go to state 3
+    top_decs                       shift and go to state 9
+    gdec                           shift and go to state 4
+    fdec                           shift and go to state 5
+
+state 4
+
+    (3) top_decs -> gdec . top_decs
+    (2) top_decs -> . tdec top_decs
+    (3) top_decs -> . gdec top_decs
+    (4) top_decs -> . fdec top_decs
+    (5) top_decs -> .
+    (6) tdec -> . PercentID ASSIGN TYPE ty
+    (20) gdec -> . AtID ASSIGN GLOBAL ty ginit
+    (30) fdec -> . DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+
+    $end            reduce using rule 5 (top_decs -> .)
+    PercentID       shift and go to state 6
+    AtID            shift and go to state 7
+    DEFINE          shift and go to state 8
+
+    gdec                           shift and go to state 4
+    top_decs                       shift and go to state 10
+    tdec                           shift and go to state 3
+    fdec                           shift and go to state 5
+
+state 5
+
+    (4) top_decs -> fdec . top_decs
+    (2) top_decs -> . tdec top_decs
+    (3) top_decs -> . gdec top_decs
+    (4) top_decs -> . fdec top_decs
+    (5) top_decs -> .
+    (6) tdec -> . PercentID ASSIGN TYPE ty
+    (20) gdec -> . AtID ASSIGN GLOBAL ty ginit
+    (30) fdec -> . DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+
+    $end            reduce using rule 5 (top_decs -> .)
+    PercentID       shift and go to state 6
+    AtID            shift and go to state 7
+    DEFINE          shift and go to state 8
+
+    fdec                           shift and go to state 5
+    top_decs                       shift and go to state 11
+    tdec                           shift and go to state 3
+    gdec                           shift and go to state 4
+
+state 6
+
+    (6) tdec -> PercentID . ASSIGN TYPE ty
+
+    ASSIGN          shift and go to state 12
+
+
+state 7
+
+    (20) gdec -> AtID . ASSIGN GLOBAL ty ginit
+
+    ASSIGN          shift and go to state 13
+
+
+state 8
+
+    (30) fdec -> DEFINE . ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 14
+
+state 9
+
+    (2) top_decs -> tdec top_decs .
+
+    $end            reduce using rule 2 (top_decs -> tdec top_decs .)
+
+
+state 10
+
+    (3) top_decs -> gdec top_decs .
+
+    $end            reduce using rule 3 (top_decs -> gdec top_decs .)
+
+
+state 11
+
+    (4) top_decs -> fdec top_decs .
+
+    $end            reduce using rule 4 (top_decs -> fdec top_decs .)
+
+
+state 12
+
+    (6) tdec -> PercentID ASSIGN . TYPE ty
+
+    TYPE            shift and go to state 23
+
+
+state 13
+
+    (20) gdec -> AtID ASSIGN . GLOBAL ty ginit
+
+    GLOBAL          shift and go to state 24
+
+
+state 14
+
+    (30) fdec -> DEFINE ty . AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    AtID            shift and go to state 25
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 15
+
+    (13) ty -> LBRACE . ty_list RBRACE
+    (17) ty_list -> . ty
+    (18) ty_list -> . ty COMMA ty_list
+    (19) ty_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RBRACE          reduce using rule 19 (ty_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty_list                        shift and go to state 28
+    ty                             shift and go to state 29
+
+state 16
+
+    (7) ty -> VOID .
+
+    AtID            reduce using rule 7 (ty -> VOID .)
+    ASTERIX         reduce using rule 7 (ty -> VOID .)
+    LPAREN          reduce using rule 7 (ty -> VOID .)
+    COMMA           reduce using rule 7 (ty -> VOID .)
+    RBRACE          reduce using rule 7 (ty -> VOID .)
+    PercentID       reduce using rule 7 (ty -> VOID .)
+    DEFINE          reduce using rule 7 (ty -> VOID .)
+    $end            reduce using rule 7 (ty -> VOID .)
+    NULL            reduce using rule 7 (ty -> VOID .)
+    INT             reduce using rule 7 (ty -> VOID .)
+    STRING          reduce using rule 7 (ty -> VOID .)
+    LBRACK          reduce using rule 7 (ty -> VOID .)
+    LBRACE          reduce using rule 7 (ty -> VOID .)
+    RPAREN          reduce using rule 7 (ty -> VOID .)
+    RBRACK          reduce using rule 7 (ty -> VOID .)
+    ALLOCA          reduce using rule 7 (ty -> VOID .)
+    LOAD            reduce using rule 7 (ty -> VOID .)
+    STORE           reduce using rule 7 (ty -> VOID .)
+    ICMP            reduce using rule 7 (ty -> VOID .)
+    CALL            reduce using rule 7 (ty -> VOID .)
+    BITCAST         reduce using rule 7 (ty -> VOID .)
+    GETELEMENTPTR   reduce using rule 7 (ty -> VOID .)
+    ZEXT            reduce using rule 7 (ty -> VOID .)
+    PTRTOINT        reduce using rule 7 (ty -> VOID .)
+    ADD             reduce using rule 7 (ty -> VOID .)
+    SUB             reduce using rule 7 (ty -> VOID .)
+    MUL             reduce using rule 7 (ty -> VOID .)
+    SHL             reduce using rule 7 (ty -> VOID .)
+    LSHR            reduce using rule 7 (ty -> VOID .)
+    ASHR            reduce using rule 7 (ty -> VOID .)
+    AND             reduce using rule 7 (ty -> VOID .)
+    OR              reduce using rule 7 (ty -> VOID .)
+    XOR             reduce using rule 7 (ty -> VOID .)
+    SDIV            reduce using rule 7 (ty -> VOID .)
+    RET             reduce using rule 7 (ty -> VOID .)
+    BR              reduce using rule 7 (ty -> VOID .)
+
+
+state 17
+
+    (8) ty -> I1 .
+
+    AtID            reduce using rule 8 (ty -> I1 .)
+    ASTERIX         reduce using rule 8 (ty -> I1 .)
+    LPAREN          reduce using rule 8 (ty -> I1 .)
+    COMMA           reduce using rule 8 (ty -> I1 .)
+    RBRACE          reduce using rule 8 (ty -> I1 .)
+    PercentID       reduce using rule 8 (ty -> I1 .)
+    DEFINE          reduce using rule 8 (ty -> I1 .)
+    $end            reduce using rule 8 (ty -> I1 .)
+    NULL            reduce using rule 8 (ty -> I1 .)
+    INT             reduce using rule 8 (ty -> I1 .)
+    STRING          reduce using rule 8 (ty -> I1 .)
+    LBRACK          reduce using rule 8 (ty -> I1 .)
+    LBRACE          reduce using rule 8 (ty -> I1 .)
+    RPAREN          reduce using rule 8 (ty -> I1 .)
+    RBRACK          reduce using rule 8 (ty -> I1 .)
+    ALLOCA          reduce using rule 8 (ty -> I1 .)
+    LOAD            reduce using rule 8 (ty -> I1 .)
+    STORE           reduce using rule 8 (ty -> I1 .)
+    ICMP            reduce using rule 8 (ty -> I1 .)
+    CALL            reduce using rule 8 (ty -> I1 .)
+    BITCAST         reduce using rule 8 (ty -> I1 .)
+    GETELEMENTPTR   reduce using rule 8 (ty -> I1 .)
+    ZEXT            reduce using rule 8 (ty -> I1 .)
+    PTRTOINT        reduce using rule 8 (ty -> I1 .)
+    ADD             reduce using rule 8 (ty -> I1 .)
+    SUB             reduce using rule 8 (ty -> I1 .)
+    MUL             reduce using rule 8 (ty -> I1 .)
+    SHL             reduce using rule 8 (ty -> I1 .)
+    LSHR            reduce using rule 8 (ty -> I1 .)
+    ASHR            reduce using rule 8 (ty -> I1 .)
+    AND             reduce using rule 8 (ty -> I1 .)
+    OR              reduce using rule 8 (ty -> I1 .)
+    XOR             reduce using rule 8 (ty -> I1 .)
+    SDIV            reduce using rule 8 (ty -> I1 .)
+    RET             reduce using rule 8 (ty -> I1 .)
+    BR              reduce using rule 8 (ty -> I1 .)
+
+
+state 18
+
+    (9) ty -> I8 .
+
+    AtID            reduce using rule 9 (ty -> I8 .)
+    ASTERIX         reduce using rule 9 (ty -> I8 .)
+    LPAREN          reduce using rule 9 (ty -> I8 .)
+    COMMA           reduce using rule 9 (ty -> I8 .)
+    RBRACE          reduce using rule 9 (ty -> I8 .)
+    PercentID       reduce using rule 9 (ty -> I8 .)
+    DEFINE          reduce using rule 9 (ty -> I8 .)
+    $end            reduce using rule 9 (ty -> I8 .)
+    NULL            reduce using rule 9 (ty -> I8 .)
+    INT             reduce using rule 9 (ty -> I8 .)
+    STRING          reduce using rule 9 (ty -> I8 .)
+    LBRACK          reduce using rule 9 (ty -> I8 .)
+    LBRACE          reduce using rule 9 (ty -> I8 .)
+    RPAREN          reduce using rule 9 (ty -> I8 .)
+    RBRACK          reduce using rule 9 (ty -> I8 .)
+    ALLOCA          reduce using rule 9 (ty -> I8 .)
+    LOAD            reduce using rule 9 (ty -> I8 .)
+    STORE           reduce using rule 9 (ty -> I8 .)
+    ICMP            reduce using rule 9 (ty -> I8 .)
+    CALL            reduce using rule 9 (ty -> I8 .)
+    BITCAST         reduce using rule 9 (ty -> I8 .)
+    GETELEMENTPTR   reduce using rule 9 (ty -> I8 .)
+    ZEXT            reduce using rule 9 (ty -> I8 .)
+    PTRTOINT        reduce using rule 9 (ty -> I8 .)
+    ADD             reduce using rule 9 (ty -> I8 .)
+    SUB             reduce using rule 9 (ty -> I8 .)
+    MUL             reduce using rule 9 (ty -> I8 .)
+    SHL             reduce using rule 9 (ty -> I8 .)
+    LSHR            reduce using rule 9 (ty -> I8 .)
+    ASHR            reduce using rule 9 (ty -> I8 .)
+    AND             reduce using rule 9 (ty -> I8 .)
+    OR              reduce using rule 9 (ty -> I8 .)
+    XOR             reduce using rule 9 (ty -> I8 .)
+    SDIV            reduce using rule 9 (ty -> I8 .)
+    RET             reduce using rule 9 (ty -> I8 .)
+    BR              reduce using rule 9 (ty -> I8 .)
+
+
+state 19
+
+    (10) ty -> I32 .
+
+    AtID            reduce using rule 10 (ty -> I32 .)
+    ASTERIX         reduce using rule 10 (ty -> I32 .)
+    LPAREN          reduce using rule 10 (ty -> I32 .)
+    COMMA           reduce using rule 10 (ty -> I32 .)
+    RBRACE          reduce using rule 10 (ty -> I32 .)
+    PercentID       reduce using rule 10 (ty -> I32 .)
+    DEFINE          reduce using rule 10 (ty -> I32 .)
+    $end            reduce using rule 10 (ty -> I32 .)
+    NULL            reduce using rule 10 (ty -> I32 .)
+    INT             reduce using rule 10 (ty -> I32 .)
+    STRING          reduce using rule 10 (ty -> I32 .)
+    LBRACK          reduce using rule 10 (ty -> I32 .)
+    LBRACE          reduce using rule 10 (ty -> I32 .)
+    RPAREN          reduce using rule 10 (ty -> I32 .)
+    RBRACK          reduce using rule 10 (ty -> I32 .)
+    ALLOCA          reduce using rule 10 (ty -> I32 .)
+    LOAD            reduce using rule 10 (ty -> I32 .)
+    STORE           reduce using rule 10 (ty -> I32 .)
+    ICMP            reduce using rule 10 (ty -> I32 .)
+    CALL            reduce using rule 10 (ty -> I32 .)
+    BITCAST         reduce using rule 10 (ty -> I32 .)
+    GETELEMENTPTR   reduce using rule 10 (ty -> I32 .)
+    ZEXT            reduce using rule 10 (ty -> I32 .)
+    PTRTOINT        reduce using rule 10 (ty -> I32 .)
+    ADD             reduce using rule 10 (ty -> I32 .)
+    SUB             reduce using rule 10 (ty -> I32 .)
+    MUL             reduce using rule 10 (ty -> I32 .)
+    SHL             reduce using rule 10 (ty -> I32 .)
+    LSHR            reduce using rule 10 (ty -> I32 .)
+    ASHR            reduce using rule 10 (ty -> I32 .)
+    AND             reduce using rule 10 (ty -> I32 .)
+    OR              reduce using rule 10 (ty -> I32 .)
+    XOR             reduce using rule 10 (ty -> I32 .)
+    SDIV            reduce using rule 10 (ty -> I32 .)
+    RET             reduce using rule 10 (ty -> I32 .)
+    BR              reduce using rule 10 (ty -> I32 .)
+
+
+state 20
+
+    (11) ty -> I64 .
+
+    AtID            reduce using rule 11 (ty -> I64 .)
+    ASTERIX         reduce using rule 11 (ty -> I64 .)
+    LPAREN          reduce using rule 11 (ty -> I64 .)
+    COMMA           reduce using rule 11 (ty -> I64 .)
+    RBRACE          reduce using rule 11 (ty -> I64 .)
+    PercentID       reduce using rule 11 (ty -> I64 .)
+    DEFINE          reduce using rule 11 (ty -> I64 .)
+    $end            reduce using rule 11 (ty -> I64 .)
+    NULL            reduce using rule 11 (ty -> I64 .)
+    INT             reduce using rule 11 (ty -> I64 .)
+    STRING          reduce using rule 11 (ty -> I64 .)
+    LBRACK          reduce using rule 11 (ty -> I64 .)
+    LBRACE          reduce using rule 11 (ty -> I64 .)
+    RPAREN          reduce using rule 11 (ty -> I64 .)
+    RBRACK          reduce using rule 11 (ty -> I64 .)
+    ALLOCA          reduce using rule 11 (ty -> I64 .)
+    LOAD            reduce using rule 11 (ty -> I64 .)
+    STORE           reduce using rule 11 (ty -> I64 .)
+    ICMP            reduce using rule 11 (ty -> I64 .)
+    CALL            reduce using rule 11 (ty -> I64 .)
+    BITCAST         reduce using rule 11 (ty -> I64 .)
+    GETELEMENTPTR   reduce using rule 11 (ty -> I64 .)
+    ZEXT            reduce using rule 11 (ty -> I64 .)
+    PTRTOINT        reduce using rule 11 (ty -> I64 .)
+    ADD             reduce using rule 11 (ty -> I64 .)
+    SUB             reduce using rule 11 (ty -> I64 .)
+    MUL             reduce using rule 11 (ty -> I64 .)
+    SHL             reduce using rule 11 (ty -> I64 .)
+    LSHR            reduce using rule 11 (ty -> I64 .)
+    ASHR            reduce using rule 11 (ty -> I64 .)
+    AND             reduce using rule 11 (ty -> I64 .)
+    OR              reduce using rule 11 (ty -> I64 .)
+    XOR             reduce using rule 11 (ty -> I64 .)
+    SDIV            reduce using rule 11 (ty -> I64 .)
+    RET             reduce using rule 11 (ty -> I64 .)
+    BR              reduce using rule 11 (ty -> I64 .)
+
+
+state 21
+
+    (14) ty -> LBRACK . INT ID ty RBRACK
+
+    INT             shift and go to state 30
+
+
+state 22
+
+    (16) ty -> PercentID .
+
+    AtID            reduce using rule 16 (ty -> PercentID .)
+    ASTERIX         reduce using rule 16 (ty -> PercentID .)
+    LPAREN          reduce using rule 16 (ty -> PercentID .)
+    COMMA           reduce using rule 16 (ty -> PercentID .)
+    RBRACE          reduce using rule 16 (ty -> PercentID .)
+    PercentID       reduce using rule 16 (ty -> PercentID .)
+    DEFINE          reduce using rule 16 (ty -> PercentID .)
+    $end            reduce using rule 16 (ty -> PercentID .)
+    NULL            reduce using rule 16 (ty -> PercentID .)
+    INT             reduce using rule 16 (ty -> PercentID .)
+    STRING          reduce using rule 16 (ty -> PercentID .)
+    LBRACK          reduce using rule 16 (ty -> PercentID .)
+    LBRACE          reduce using rule 16 (ty -> PercentID .)
+    RPAREN          reduce using rule 16 (ty -> PercentID .)
+    RBRACK          reduce using rule 16 (ty -> PercentID .)
+    ALLOCA          reduce using rule 16 (ty -> PercentID .)
+    LOAD            reduce using rule 16 (ty -> PercentID .)
+    STORE           reduce using rule 16 (ty -> PercentID .)
+    ICMP            reduce using rule 16 (ty -> PercentID .)
+    CALL            reduce using rule 16 (ty -> PercentID .)
+    BITCAST         reduce using rule 16 (ty -> PercentID .)
+    GETELEMENTPTR   reduce using rule 16 (ty -> PercentID .)
+    ZEXT            reduce using rule 16 (ty -> PercentID .)
+    PTRTOINT        reduce using rule 16 (ty -> PercentID .)
+    ADD             reduce using rule 16 (ty -> PercentID .)
+    SUB             reduce using rule 16 (ty -> PercentID .)
+    MUL             reduce using rule 16 (ty -> PercentID .)
+    SHL             reduce using rule 16 (ty -> PercentID .)
+    LSHR            reduce using rule 16 (ty -> PercentID .)
+    ASHR            reduce using rule 16 (ty -> PercentID .)
+    AND             reduce using rule 16 (ty -> PercentID .)
+    OR              reduce using rule 16 (ty -> PercentID .)
+    XOR             reduce using rule 16 (ty -> PercentID .)
+    SDIV            reduce using rule 16 (ty -> PercentID .)
+    RET             reduce using rule 16 (ty -> PercentID .)
+    BR              reduce using rule 16 (ty -> PercentID .)
+
+
+state 23
+
+    (6) tdec -> PercentID ASSIGN TYPE . ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 31
+
+state 24
+
+    (20) gdec -> AtID ASSIGN GLOBAL . ty ginit
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 32
+
+state 25
+
+    (30) fdec -> DEFINE ty AtID . LPAREN ty_id_list RPAREN LBRACE fbody RBRACE
+
+    LPAREN          shift and go to state 33
+
+
+state 26
+
+    (15) ty -> ty LPAREN . ty_list RPAREN
+    (17) ty_list -> . ty
+    (18) ty_list -> . ty COMMA ty_list
+    (19) ty_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RPAREN          reduce using rule 19 (ty_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 29
+    ty_list                        shift and go to state 34
+
+state 27
+
+    (12) ty -> ty ASTERIX .
+
+    AtID            reduce using rule 12 (ty -> ty ASTERIX .)
+    ASTERIX         reduce using rule 12 (ty -> ty ASTERIX .)
+    LPAREN          reduce using rule 12 (ty -> ty ASTERIX .)
+    COMMA           reduce using rule 12 (ty -> ty ASTERIX .)
+    RBRACE          reduce using rule 12 (ty -> ty ASTERIX .)
+    PercentID       reduce using rule 12 (ty -> ty ASTERIX .)
+    DEFINE          reduce using rule 12 (ty -> ty ASTERIX .)
+    $end            reduce using rule 12 (ty -> ty ASTERIX .)
+    NULL            reduce using rule 12 (ty -> ty ASTERIX .)
+    INT             reduce using rule 12 (ty -> ty ASTERIX .)
+    STRING          reduce using rule 12 (ty -> ty ASTERIX .)
+    LBRACK          reduce using rule 12 (ty -> ty ASTERIX .)
+    LBRACE          reduce using rule 12 (ty -> ty ASTERIX .)
+    RPAREN          reduce using rule 12 (ty -> ty ASTERIX .)
+    RBRACK          reduce using rule 12 (ty -> ty ASTERIX .)
+    ALLOCA          reduce using rule 12 (ty -> ty ASTERIX .)
+    LOAD            reduce using rule 12 (ty -> ty ASTERIX .)
+    STORE           reduce using rule 12 (ty -> ty ASTERIX .)
+    ICMP            reduce using rule 12 (ty -> ty ASTERIX .)
+    CALL            reduce using rule 12 (ty -> ty ASTERIX .)
+    BITCAST         reduce using rule 12 (ty -> ty ASTERIX .)
+    GETELEMENTPTR   reduce using rule 12 (ty -> ty ASTERIX .)
+    ZEXT            reduce using rule 12 (ty -> ty ASTERIX .)
+    PTRTOINT        reduce using rule 12 (ty -> ty ASTERIX .)
+    ADD             reduce using rule 12 (ty -> ty ASTERIX .)
+    SUB             reduce using rule 12 (ty -> ty ASTERIX .)
+    MUL             reduce using rule 12 (ty -> ty ASTERIX .)
+    SHL             reduce using rule 12 (ty -> ty ASTERIX .)
+    LSHR            reduce using rule 12 (ty -> ty ASTERIX .)
+    ASHR            reduce using rule 12 (ty -> ty ASTERIX .)
+    AND             reduce using rule 12 (ty -> ty ASTERIX .)
+    OR              reduce using rule 12 (ty -> ty ASTERIX .)
+    XOR             reduce using rule 12 (ty -> ty ASTERIX .)
+    SDIV            reduce using rule 12 (ty -> ty ASTERIX .)
+    RET             reduce using rule 12 (ty -> ty ASTERIX .)
+    BR              reduce using rule 12 (ty -> ty ASTERIX .)
+
+
+state 28
+
+    (13) ty -> LBRACE ty_list . RBRACE
+
+    RBRACE          shift and go to state 35
+
+
+state 29
+
+    (17) ty_list -> ty .
+    (18) ty_list -> ty . COMMA ty_list
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    RBRACE          reduce using rule 17 (ty_list -> ty .)
+    RPAREN          reduce using rule 17 (ty_list -> ty .)
+    COMMA           shift and go to state 36
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 30
+
+    (14) ty -> LBRACK INT . ID ty RBRACK
+
+    ID              shift and go to state 37
+
+
+state 31
+
+    (6) tdec -> PercentID ASSIGN TYPE ty .
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    PercentID       reduce using rule 6 (tdec -> PercentID ASSIGN TYPE ty .)
+    AtID            reduce using rule 6 (tdec -> PercentID ASSIGN TYPE ty .)
+    DEFINE          reduce using rule 6 (tdec -> PercentID ASSIGN TYPE ty .)
+    $end            reduce using rule 6 (tdec -> PercentID ASSIGN TYPE ty .)
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 32
+
+    (20) gdec -> AtID ASSIGN GLOBAL ty . ginit
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (21) ginit -> . NULL
+    (22) ginit -> . AtID
+    (23) ginit -> . INT
+    (24) ginit -> . STRING
+    (25) ginit -> . LBRACK ty_ginit_list RBRACK
+    (26) ginit -> . LBRACE ty_ginit_list RBRACE
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 40
+    AtID            shift and go to state 38
+    INT             shift and go to state 41
+    STRING          shift and go to state 42
+    LBRACK          shift and go to state 43
+    LBRACE          shift and go to state 44
+
+    ginit                          shift and go to state 39
+
+state 33
+
+    (30) fdec -> DEFINE ty AtID LPAREN . ty_id_list RPAREN LBRACE fbody RBRACE
+    (31) ty_id_list -> . ty PercentID
+    (32) ty_id_list -> . ty PercentID COMMA ty_id_list
+    (33) ty_id_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RPAREN          reduce using rule 33 (ty_id_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 45
+    ty_id_list                     shift and go to state 46
+
+state 34
+
+    (15) ty -> ty LPAREN ty_list . RPAREN
+
+    RPAREN          shift and go to state 47
+
+
+state 35
+
+    (13) ty -> LBRACE ty_list RBRACE .
+
+    AtID            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    ASTERIX         reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    LPAREN          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    COMMA           reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    RBRACE          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    PercentID       reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    DEFINE          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    $end            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    NULL            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    INT             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    STRING          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    LBRACK          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    LBRACE          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    RPAREN          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    RBRACK          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    ALLOCA          reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    LOAD            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    STORE           reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    ICMP            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    CALL            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    BITCAST         reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    GETELEMENTPTR   reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    ZEXT            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    PTRTOINT        reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    ADD             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    SUB             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    MUL             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    SHL             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    LSHR            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    ASHR            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    AND             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    OR              reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    XOR             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    SDIV            reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    RET             reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+    BR              reduce using rule 13 (ty -> LBRACE ty_list RBRACE .)
+
+
+state 36
+
+    (18) ty_list -> ty COMMA . ty_list
+    (17) ty_list -> . ty
+    (18) ty_list -> . ty COMMA ty_list
+    (19) ty_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RBRACE          reduce using rule 19 (ty_list -> .)
+    RPAREN          reduce using rule 19 (ty_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 29
+    ty_list                        shift and go to state 48
+
+state 37
+
+    (14) ty -> LBRACK INT ID . ty RBRACK
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 49
+
+state 38
+
+    (22) ginit -> AtID .
+
+    PercentID       reduce using rule 22 (ginit -> AtID .)
+    AtID            reduce using rule 22 (ginit -> AtID .)
+    DEFINE          reduce using rule 22 (ginit -> AtID .)
+    $end            reduce using rule 22 (ginit -> AtID .)
+    COMMA           reduce using rule 22 (ginit -> AtID .)
+    RBRACK          reduce using rule 22 (ginit -> AtID .)
+    RBRACE          reduce using rule 22 (ginit -> AtID .)
+
+
+state 39
+
+    (20) gdec -> AtID ASSIGN GLOBAL ty ginit .
+
+    PercentID       reduce using rule 20 (gdec -> AtID ASSIGN GLOBAL ty ginit .)
+    AtID            reduce using rule 20 (gdec -> AtID ASSIGN GLOBAL ty ginit .)
+    DEFINE          reduce using rule 20 (gdec -> AtID ASSIGN GLOBAL ty ginit .)
+    $end            reduce using rule 20 (gdec -> AtID ASSIGN GLOBAL ty ginit .)
+
+
+state 40
+
+    (21) ginit -> NULL .
+
+    PercentID       reduce using rule 21 (ginit -> NULL .)
+    AtID            reduce using rule 21 (ginit -> NULL .)
+    DEFINE          reduce using rule 21 (ginit -> NULL .)
+    $end            reduce using rule 21 (ginit -> NULL .)
+    COMMA           reduce using rule 21 (ginit -> NULL .)
+    RBRACK          reduce using rule 21 (ginit -> NULL .)
+    RBRACE          reduce using rule 21 (ginit -> NULL .)
+
+
+state 41
+
+    (23) ginit -> INT .
+
+    PercentID       reduce using rule 23 (ginit -> INT .)
+    AtID            reduce using rule 23 (ginit -> INT .)
+    DEFINE          reduce using rule 23 (ginit -> INT .)
+    $end            reduce using rule 23 (ginit -> INT .)
+    COMMA           reduce using rule 23 (ginit -> INT .)
+    RBRACK          reduce using rule 23 (ginit -> INT .)
+    RBRACE          reduce using rule 23 (ginit -> INT .)
+
+
+state 42
+
+    (24) ginit -> STRING .
+
+    PercentID       reduce using rule 24 (ginit -> STRING .)
+    AtID            reduce using rule 24 (ginit -> STRING .)
+    DEFINE          reduce using rule 24 (ginit -> STRING .)
+    $end            reduce using rule 24 (ginit -> STRING .)
+    COMMA           reduce using rule 24 (ginit -> STRING .)
+    RBRACK          reduce using rule 24 (ginit -> STRING .)
+    RBRACE          reduce using rule 24 (ginit -> STRING .)
+
+
+state 43
+
+    (25) ginit -> LBRACK . ty_ginit_list RBRACK
+    (27) ty_ginit_list -> . ty ginit
+    (28) ty_ginit_list -> . ty ginit COMMA ty_ginit_list
+    (29) ty_ginit_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RBRACK          reduce using rule 29 (ty_ginit_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty_ginit_list                  shift and go to state 50
+    ty                             shift and go to state 51
+
+state 44
+
+    (26) ginit -> LBRACE . ty_ginit_list RBRACE
+    (27) ty_ginit_list -> . ty ginit
+    (28) ty_ginit_list -> . ty ginit COMMA ty_ginit_list
+    (29) ty_ginit_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RBRACE          reduce using rule 29 (ty_ginit_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty_ginit_list                  shift and go to state 52
+    ty                             shift and go to state 51
+
+state 45
+
+    (31) ty_id_list -> ty . PercentID
+    (32) ty_id_list -> ty . PercentID COMMA ty_id_list
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    PercentID       shift and go to state 53
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 46
+
+    (30) fdec -> DEFINE ty AtID LPAREN ty_id_list . RPAREN LBRACE fbody RBRACE
+
+    RPAREN          shift and go to state 54
+
+
+state 47
+
+    (15) ty -> ty LPAREN ty_list RPAREN .
+
+    AtID            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    ASTERIX         reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    LPAREN          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    COMMA           reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    RBRACE          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    PercentID       reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    DEFINE          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    $end            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    NULL            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    INT             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    STRING          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    LBRACK          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    LBRACE          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    RPAREN          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    RBRACK          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    ALLOCA          reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    LOAD            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    STORE           reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    ICMP            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    CALL            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    BITCAST         reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    GETELEMENTPTR   reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    ZEXT            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    PTRTOINT        reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    ADD             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    SUB             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    MUL             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    SHL             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    LSHR            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    ASHR            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    AND             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    OR              reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    XOR             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    SDIV            reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    RET             reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+    BR              reduce using rule 15 (ty -> ty LPAREN ty_list RPAREN .)
+
+
+state 48
+
+    (18) ty_list -> ty COMMA ty_list .
+
+    RBRACE          reduce using rule 18 (ty_list -> ty COMMA ty_list .)
+    RPAREN          reduce using rule 18 (ty_list -> ty COMMA ty_list .)
+
+
+state 49
+
+    (14) ty -> LBRACK INT ID ty . RBRACK
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    RBRACK          shift and go to state 55
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 50
+
+    (25) ginit -> LBRACK ty_ginit_list . RBRACK
+
+    RBRACK          shift and go to state 56
+
+
+state 51
+
+    (27) ty_ginit_list -> ty . ginit
+    (28) ty_ginit_list -> ty . ginit COMMA ty_ginit_list
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (21) ginit -> . NULL
+    (22) ginit -> . AtID
+    (23) ginit -> . INT
+    (24) ginit -> . STRING
+    (25) ginit -> . LBRACK ty_ginit_list RBRACK
+    (26) ginit -> . LBRACE ty_ginit_list RBRACE
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 40
+    AtID            shift and go to state 38
+    INT             shift and go to state 41
+    STRING          shift and go to state 42
+    LBRACK          shift and go to state 43
+    LBRACE          shift and go to state 44
+
+    ginit                          shift and go to state 57
+
+state 52
+
+    (26) ginit -> LBRACE ty_ginit_list . RBRACE
+
+    RBRACE          shift and go to state 58
+
+
+state 53
+
+    (31) ty_id_list -> ty PercentID .
+    (32) ty_id_list -> ty PercentID . COMMA ty_id_list
+
+    RPAREN          reduce using rule 31 (ty_id_list -> ty PercentID .)
+    COMMA           shift and go to state 59
+
+
+state 54
+
+    (30) fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN . LBRACE fbody RBRACE
+
+    LBRACE          shift and go to state 60
+
+
+state 55
+
+    (14) ty -> LBRACK INT ID ty RBRACK .
+
+    AtID            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    ASTERIX         reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    LPAREN          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    COMMA           reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    RBRACE          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    PercentID       reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    DEFINE          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    $end            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    NULL            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    INT             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    STRING          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    LBRACK          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    LBRACE          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    RPAREN          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    RBRACK          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    ALLOCA          reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    LOAD            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    STORE           reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    ICMP            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    CALL            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    BITCAST         reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    GETELEMENTPTR   reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    ZEXT            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    PTRTOINT        reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    ADD             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    SUB             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    MUL             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    SHL             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    LSHR            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    ASHR            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    AND             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    OR              reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    XOR             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    SDIV            reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    RET             reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+    BR              reduce using rule 14 (ty -> LBRACK INT ID ty RBRACK .)
+
+
+state 56
+
+    (25) ginit -> LBRACK ty_ginit_list RBRACK .
+
+    PercentID       reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+    AtID            reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+    DEFINE          reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+    $end            reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+    COMMA           reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+    RBRACK          reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+    RBRACE          reduce using rule 25 (ginit -> LBRACK ty_ginit_list RBRACK .)
+
+
+state 57
+
+    (27) ty_ginit_list -> ty ginit .
+    (28) ty_ginit_list -> ty ginit . COMMA ty_ginit_list
+
+    RBRACK          reduce using rule 27 (ty_ginit_list -> ty ginit .)
+    RBRACE          reduce using rule 27 (ty_ginit_list -> ty ginit .)
+    COMMA           shift and go to state 61
+
+
+state 58
+
+    (26) ginit -> LBRACE ty_ginit_list RBRACE .
+
+    PercentID       reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+    AtID            reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+    DEFINE          reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+    $end            reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+    COMMA           reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+    RBRACK          reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+    RBRACE          reduce using rule 26 (ginit -> LBRACE ty_ginit_list RBRACE .)
+
+
+state 59
+
+    (32) ty_id_list -> ty PercentID COMMA . ty_id_list
+    (31) ty_id_list -> . ty PercentID
+    (32) ty_id_list -> . ty PercentID COMMA ty_id_list
+    (33) ty_id_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RPAREN          reduce using rule 33 (ty_id_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 45
+    ty_id_list                     shift and go to state 62
+
+state 60
+
+    (30) fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE . fbody RBRACE
+    (34) fbody -> . block named_block_list
+    (35) fbody -> . block
+    (36) block -> . insns terminator
+    (37) block -> . terminator
+    (38) insns -> . optionally_named_insn
+    (39) insns -> . optionally_named_insn insns
+    (72) terminator -> . RET VOID
+    (73) terminator -> . RET ty operand
+    (74) terminator -> . BR LABEL PercentID
+    (75) terminator -> . BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID
+    (40) optionally_named_insn -> . PercentID ASSIGN insn
+    (41) optionally_named_insn -> . insn
+    (42) insn -> . bop ty operand COMMA operand
+    (43) insn -> . ALLOCA ty
+    (44) insn -> . LOAD ty COMMA ty operand
+    (45) insn -> . STORE ty operand COMMA ty operand
+    (46) insn -> . ICMP cnd ty operand COMMA operand
+    (47) insn -> . CALL ty operand LPAREN ty_operand_list RPAREN
+    (48) insn -> . CALL ty operand LPAREN RPAREN
+    (49) insn -> . BITCAST ty operand TO ty
+    (50) insn -> . GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list
+    (51) insn -> . GETELEMENTPTR ty COMMA ty operand
+    (52) insn -> . ZEXT ty operand TO ty
+    (53) insn -> . PTRTOINT ty ASTERIX operand TO ty
+    (54) bop -> . ADD
+    (55) bop -> . SUB
+    (56) bop -> . MUL
+    (57) bop -> . SHL
+    (58) bop -> . LSHR
+    (59) bop -> . ASHR
+    (60) bop -> . AND
+    (61) bop -> . OR
+    (62) bop -> . XOR
+    (63) bop -> . SDIV
+
+    RET             shift and go to state 68
+    BR              shift and go to state 69
+    PercentID       shift and go to state 70
+    ALLOCA          shift and go to state 73
+    LOAD            shift and go to state 74
+    STORE           shift and go to state 75
+    ICMP            shift and go to state 76
+    CALL            shift and go to state 77
+    BITCAST         shift and go to state 78
+    GETELEMENTPTR   shift and go to state 79
+    ZEXT            shift and go to state 80
+    PTRTOINT        shift and go to state 81
+    ADD             shift and go to state 82
+    SUB             shift and go to state 83
+    MUL             shift and go to state 84
+    SHL             shift and go to state 85
+    LSHR            shift and go to state 86
+    ASHR            shift and go to state 87
+    AND             shift and go to state 88
+    OR              shift and go to state 89
+    XOR             shift and go to state 90
+    SDIV            shift and go to state 91
+
+    fbody                          shift and go to state 63
+    block                          shift and go to state 64
+    insns                          shift and go to state 65
+    terminator                     shift and go to state 66
+    optionally_named_insn          shift and go to state 67
+    insn                           shift and go to state 71
+    bop                            shift and go to state 72
+
+state 61
+
+    (28) ty_ginit_list -> ty ginit COMMA . ty_ginit_list
+    (27) ty_ginit_list -> . ty ginit
+    (28) ty_ginit_list -> . ty ginit COMMA ty_ginit_list
+    (29) ty_ginit_list -> .
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RBRACK          reduce using rule 29 (ty_ginit_list -> .)
+    RBRACE          reduce using rule 29 (ty_ginit_list -> .)
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 51
+    ty_ginit_list                  shift and go to state 92
+
+state 62
+
+    (32) ty_id_list -> ty PercentID COMMA ty_id_list .
+
+    RPAREN          reduce using rule 32 (ty_id_list -> ty PercentID COMMA ty_id_list .)
+
+
+state 63
+
+    (30) fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody . RBRACE
+
+    RBRACE          shift and go to state 93
+
+
+state 64
+
+    (34) fbody -> block . named_block_list
+    (35) fbody -> block .
+    (80) named_block_list -> . ID COLON block
+    (81) named_block_list -> . ID COLON block named_block_list
+
+    RBRACE          reduce using rule 35 (fbody -> block .)
+    ID              shift and go to state 95
+
+    named_block_list               shift and go to state 94
+
+state 65
+
+    (36) block -> insns . terminator
+    (72) terminator -> . RET VOID
+    (73) terminator -> . RET ty operand
+    (74) terminator -> . BR LABEL PercentID
+    (75) terminator -> . BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID
+
+    RET             shift and go to state 68
+    BR              shift and go to state 69
+
+    terminator                     shift and go to state 96
+
+state 66
+
+    (37) block -> terminator .
+
+    ID              reduce using rule 37 (block -> terminator .)
+    RBRACE          reduce using rule 37 (block -> terminator .)
+
+
+state 67
+
+    (38) insns -> optionally_named_insn .
+    (39) insns -> optionally_named_insn . insns
+    (38) insns -> . optionally_named_insn
+    (39) insns -> . optionally_named_insn insns
+    (40) optionally_named_insn -> . PercentID ASSIGN insn
+    (41) optionally_named_insn -> . insn
+    (42) insn -> . bop ty operand COMMA operand
+    (43) insn -> . ALLOCA ty
+    (44) insn -> . LOAD ty COMMA ty operand
+    (45) insn -> . STORE ty operand COMMA ty operand
+    (46) insn -> . ICMP cnd ty operand COMMA operand
+    (47) insn -> . CALL ty operand LPAREN ty_operand_list RPAREN
+    (48) insn -> . CALL ty operand LPAREN RPAREN
+    (49) insn -> . BITCAST ty operand TO ty
+    (50) insn -> . GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list
+    (51) insn -> . GETELEMENTPTR ty COMMA ty operand
+    (52) insn -> . ZEXT ty operand TO ty
+    (53) insn -> . PTRTOINT ty ASTERIX operand TO ty
+    (54) bop -> . ADD
+    (55) bop -> . SUB
+    (56) bop -> . MUL
+    (57) bop -> . SHL
+    (58) bop -> . LSHR
+    (59) bop -> . ASHR
+    (60) bop -> . AND
+    (61) bop -> . OR
+    (62) bop -> . XOR
+    (63) bop -> . SDIV
+
+    RET             reduce using rule 38 (insns -> optionally_named_insn .)
+    BR              reduce using rule 38 (insns -> optionally_named_insn .)
+    PercentID       shift and go to state 70
+    ALLOCA          shift and go to state 73
+    LOAD            shift and go to state 74
+    STORE           shift and go to state 75
+    ICMP            shift and go to state 76
+    CALL            shift and go to state 77
+    BITCAST         shift and go to state 78
+    GETELEMENTPTR   shift and go to state 79
+    ZEXT            shift and go to state 80
+    PTRTOINT        shift and go to state 81
+    ADD             shift and go to state 82
+    SUB             shift and go to state 83
+    MUL             shift and go to state 84
+    SHL             shift and go to state 85
+    LSHR            shift and go to state 86
+    ASHR            shift and go to state 87
+    AND             shift and go to state 88
+    OR              shift and go to state 89
+    XOR             shift and go to state 90
+    SDIV            shift and go to state 91
+
+    optionally_named_insn          shift and go to state 67
+    insns                          shift and go to state 97
+    insn                           shift and go to state 71
+    bop                            shift and go to state 72
+
+state 68
+
+    (72) terminator -> RET . VOID
+    (73) terminator -> RET . ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 98
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 99
+
+state 69
+
+    (74) terminator -> BR . LABEL PercentID
+    (75) terminator -> BR . ty operand COMMA LABEL PercentID COMMA LABEL PercentID
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    LABEL           shift and go to state 100
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 101
+
+state 70
+
+    (40) optionally_named_insn -> PercentID . ASSIGN insn
+
+    ASSIGN          shift and go to state 102
+
+
+state 71
+
+    (41) optionally_named_insn -> insn .
+
+    PercentID       reduce using rule 41 (optionally_named_insn -> insn .)
+    ALLOCA          reduce using rule 41 (optionally_named_insn -> insn .)
+    LOAD            reduce using rule 41 (optionally_named_insn -> insn .)
+    STORE           reduce using rule 41 (optionally_named_insn -> insn .)
+    ICMP            reduce using rule 41 (optionally_named_insn -> insn .)
+    CALL            reduce using rule 41 (optionally_named_insn -> insn .)
+    BITCAST         reduce using rule 41 (optionally_named_insn -> insn .)
+    GETELEMENTPTR   reduce using rule 41 (optionally_named_insn -> insn .)
+    ZEXT            reduce using rule 41 (optionally_named_insn -> insn .)
+    PTRTOINT        reduce using rule 41 (optionally_named_insn -> insn .)
+    ADD             reduce using rule 41 (optionally_named_insn -> insn .)
+    SUB             reduce using rule 41 (optionally_named_insn -> insn .)
+    MUL             reduce using rule 41 (optionally_named_insn -> insn .)
+    SHL             reduce using rule 41 (optionally_named_insn -> insn .)
+    LSHR            reduce using rule 41 (optionally_named_insn -> insn .)
+    ASHR            reduce using rule 41 (optionally_named_insn -> insn .)
+    AND             reduce using rule 41 (optionally_named_insn -> insn .)
+    OR              reduce using rule 41 (optionally_named_insn -> insn .)
+    XOR             reduce using rule 41 (optionally_named_insn -> insn .)
+    SDIV            reduce using rule 41 (optionally_named_insn -> insn .)
+    RET             reduce using rule 41 (optionally_named_insn -> insn .)
+    BR              reduce using rule 41 (optionally_named_insn -> insn .)
+
+
+state 72
+
+    (42) insn -> bop . ty operand COMMA operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 103
+
+state 73
+
+    (43) insn -> ALLOCA . ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 104
+
+state 74
+
+    (44) insn -> LOAD . ty COMMA ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 105
+
+state 75
+
+    (45) insn -> STORE . ty operand COMMA ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 106
+
+state 76
+
+    (46) insn -> ICMP . cnd ty operand COMMA operand
+    (64) cnd -> . EQ
+    (65) cnd -> . NE
+    (66) cnd -> . SLT
+    (67) cnd -> . SLE
+    (68) cnd -> . SGT
+    (69) cnd -> . SGE
+
+    EQ              shift and go to state 108
+    NE              shift and go to state 109
+    SLT             shift and go to state 110
+    SLE             shift and go to state 111
+    SGT             shift and go to state 112
+    SGE             shift and go to state 113
+
+    cnd                            shift and go to state 107
+
+state 77
+
+    (47) insn -> CALL . ty operand LPAREN ty_operand_list RPAREN
+    (48) insn -> CALL . ty operand LPAREN RPAREN
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 114
+
+state 78
+
+    (49) insn -> BITCAST . ty operand TO ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 115
+
+state 79
+
+    (50) insn -> GETELEMENTPTR . ty COMMA ty operand COMMA ty_operand_list
+    (51) insn -> GETELEMENTPTR . ty COMMA ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 116
+
+state 80
+
+    (52) insn -> ZEXT . ty operand TO ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 117
+
+state 81
+
+    (53) insn -> PTRTOINT . ty ASTERIX operand TO ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 118
+
+state 82
+
+    (54) bop -> ADD .
+
+    VOID            reduce using rule 54 (bop -> ADD .)
+    I1              reduce using rule 54 (bop -> ADD .)
+    I8              reduce using rule 54 (bop -> ADD .)
+    I32             reduce using rule 54 (bop -> ADD .)
+    I64             reduce using rule 54 (bop -> ADD .)
+    LBRACE          reduce using rule 54 (bop -> ADD .)
+    LBRACK          reduce using rule 54 (bop -> ADD .)
+    PercentID       reduce using rule 54 (bop -> ADD .)
+
+
+state 83
+
+    (55) bop -> SUB .
+
+    VOID            reduce using rule 55 (bop -> SUB .)
+    I1              reduce using rule 55 (bop -> SUB .)
+    I8              reduce using rule 55 (bop -> SUB .)
+    I32             reduce using rule 55 (bop -> SUB .)
+    I64             reduce using rule 55 (bop -> SUB .)
+    LBRACE          reduce using rule 55 (bop -> SUB .)
+    LBRACK          reduce using rule 55 (bop -> SUB .)
+    PercentID       reduce using rule 55 (bop -> SUB .)
+
+
+state 84
+
+    (56) bop -> MUL .
+
+    VOID            reduce using rule 56 (bop -> MUL .)
+    I1              reduce using rule 56 (bop -> MUL .)
+    I8              reduce using rule 56 (bop -> MUL .)
+    I32             reduce using rule 56 (bop -> MUL .)
+    I64             reduce using rule 56 (bop -> MUL .)
+    LBRACE          reduce using rule 56 (bop -> MUL .)
+    LBRACK          reduce using rule 56 (bop -> MUL .)
+    PercentID       reduce using rule 56 (bop -> MUL .)
+
+
+state 85
+
+    (57) bop -> SHL .
+
+    VOID            reduce using rule 57 (bop -> SHL .)
+    I1              reduce using rule 57 (bop -> SHL .)
+    I8              reduce using rule 57 (bop -> SHL .)
+    I32             reduce using rule 57 (bop -> SHL .)
+    I64             reduce using rule 57 (bop -> SHL .)
+    LBRACE          reduce using rule 57 (bop -> SHL .)
+    LBRACK          reduce using rule 57 (bop -> SHL .)
+    PercentID       reduce using rule 57 (bop -> SHL .)
+
+
+state 86
+
+    (58) bop -> LSHR .
+
+    VOID            reduce using rule 58 (bop -> LSHR .)
+    I1              reduce using rule 58 (bop -> LSHR .)
+    I8              reduce using rule 58 (bop -> LSHR .)
+    I32             reduce using rule 58 (bop -> LSHR .)
+    I64             reduce using rule 58 (bop -> LSHR .)
+    LBRACE          reduce using rule 58 (bop -> LSHR .)
+    LBRACK          reduce using rule 58 (bop -> LSHR .)
+    PercentID       reduce using rule 58 (bop -> LSHR .)
+
+
+state 87
+
+    (59) bop -> ASHR .
+
+    VOID            reduce using rule 59 (bop -> ASHR .)
+    I1              reduce using rule 59 (bop -> ASHR .)
+    I8              reduce using rule 59 (bop -> ASHR .)
+    I32             reduce using rule 59 (bop -> ASHR .)
+    I64             reduce using rule 59 (bop -> ASHR .)
+    LBRACE          reduce using rule 59 (bop -> ASHR .)
+    LBRACK          reduce using rule 59 (bop -> ASHR .)
+    PercentID       reduce using rule 59 (bop -> ASHR .)
+
+
+state 88
+
+    (60) bop -> AND .
+
+    VOID            reduce using rule 60 (bop -> AND .)
+    I1              reduce using rule 60 (bop -> AND .)
+    I8              reduce using rule 60 (bop -> AND .)
+    I32             reduce using rule 60 (bop -> AND .)
+    I64             reduce using rule 60 (bop -> AND .)
+    LBRACE          reduce using rule 60 (bop -> AND .)
+    LBRACK          reduce using rule 60 (bop -> AND .)
+    PercentID       reduce using rule 60 (bop -> AND .)
+
+
+state 89
+
+    (61) bop -> OR .
+
+    VOID            reduce using rule 61 (bop -> OR .)
+    I1              reduce using rule 61 (bop -> OR .)
+    I8              reduce using rule 61 (bop -> OR .)
+    I32             reduce using rule 61 (bop -> OR .)
+    I64             reduce using rule 61 (bop -> OR .)
+    LBRACE          reduce using rule 61 (bop -> OR .)
+    LBRACK          reduce using rule 61 (bop -> OR .)
+    PercentID       reduce using rule 61 (bop -> OR .)
+
+
+state 90
+
+    (62) bop -> XOR .
+
+    VOID            reduce using rule 62 (bop -> XOR .)
+    I1              reduce using rule 62 (bop -> XOR .)
+    I8              reduce using rule 62 (bop -> XOR .)
+    I32             reduce using rule 62 (bop -> XOR .)
+    I64             reduce using rule 62 (bop -> XOR .)
+    LBRACE          reduce using rule 62 (bop -> XOR .)
+    LBRACK          reduce using rule 62 (bop -> XOR .)
+    PercentID       reduce using rule 62 (bop -> XOR .)
+
+
+state 91
+
+    (63) bop -> SDIV .
+
+    VOID            reduce using rule 63 (bop -> SDIV .)
+    I1              reduce using rule 63 (bop -> SDIV .)
+    I8              reduce using rule 63 (bop -> SDIV .)
+    I32             reduce using rule 63 (bop -> SDIV .)
+    I64             reduce using rule 63 (bop -> SDIV .)
+    LBRACE          reduce using rule 63 (bop -> SDIV .)
+    LBRACK          reduce using rule 63 (bop -> SDIV .)
+    PercentID       reduce using rule 63 (bop -> SDIV .)
+
+
+state 92
+
+    (28) ty_ginit_list -> ty ginit COMMA ty_ginit_list .
+
+    RBRACK          reduce using rule 28 (ty_ginit_list -> ty ginit COMMA ty_ginit_list .)
+    RBRACE          reduce using rule 28 (ty_ginit_list -> ty ginit COMMA ty_ginit_list .)
+
+
+state 93
+
+    (30) fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE .
+
+    PercentID       reduce using rule 30 (fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE .)
+    AtID            reduce using rule 30 (fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE .)
+    DEFINE          reduce using rule 30 (fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE .)
+    $end            reduce using rule 30 (fdec -> DEFINE ty AtID LPAREN ty_id_list RPAREN LBRACE fbody RBRACE .)
+
+
+state 94
+
+    (34) fbody -> block named_block_list .
+
+    RBRACE          reduce using rule 34 (fbody -> block named_block_list .)
+
+
+state 95
+
+    (80) named_block_list -> ID . COLON block
+    (81) named_block_list -> ID . COLON block named_block_list
+
+    COLON           shift and go to state 119
+
+
+state 96
+
+    (36) block -> insns terminator .
+
+    ID              reduce using rule 36 (block -> insns terminator .)
+    RBRACE          reduce using rule 36 (block -> insns terminator .)
+
+
+state 97
+
+    (39) insns -> optionally_named_insn insns .
+
+    RET             reduce using rule 39 (insns -> optionally_named_insn insns .)
+    BR              reduce using rule 39 (insns -> optionally_named_insn insns .)
+
+
+state 98
+
+    (72) terminator -> RET VOID .
+    (7) ty -> VOID .
+
+    ID              reduce using rule 72 (terminator -> RET VOID .)
+    RBRACE          reduce using rule 72 (terminator -> RET VOID .)
+    ASTERIX         reduce using rule 7 (ty -> VOID .)
+    LPAREN          reduce using rule 7 (ty -> VOID .)
+    NULL            reduce using rule 7 (ty -> VOID .)
+    INT             reduce using rule 7 (ty -> VOID .)
+    AtID            reduce using rule 7 (ty -> VOID .)
+    PercentID       reduce using rule 7 (ty -> VOID .)
+
+
+state 99
+
+    (73) terminator -> RET ty . operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 120
+
+state 100
+
+    (74) terminator -> BR LABEL . PercentID
+
+    PercentID       shift and go to state 125
+
+
+state 101
+
+    (75) terminator -> BR ty . operand COMMA LABEL PercentID COMMA LABEL PercentID
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 126
+
+state 102
+
+    (40) optionally_named_insn -> PercentID ASSIGN . insn
+    (42) insn -> . bop ty operand COMMA operand
+    (43) insn -> . ALLOCA ty
+    (44) insn -> . LOAD ty COMMA ty operand
+    (45) insn -> . STORE ty operand COMMA ty operand
+    (46) insn -> . ICMP cnd ty operand COMMA operand
+    (47) insn -> . CALL ty operand LPAREN ty_operand_list RPAREN
+    (48) insn -> . CALL ty operand LPAREN RPAREN
+    (49) insn -> . BITCAST ty operand TO ty
+    (50) insn -> . GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list
+    (51) insn -> . GETELEMENTPTR ty COMMA ty operand
+    (52) insn -> . ZEXT ty operand TO ty
+    (53) insn -> . PTRTOINT ty ASTERIX operand TO ty
+    (54) bop -> . ADD
+    (55) bop -> . SUB
+    (56) bop -> . MUL
+    (57) bop -> . SHL
+    (58) bop -> . LSHR
+    (59) bop -> . ASHR
+    (60) bop -> . AND
+    (61) bop -> . OR
+    (62) bop -> . XOR
+    (63) bop -> . SDIV
+
+    ALLOCA          shift and go to state 73
+    LOAD            shift and go to state 74
+    STORE           shift and go to state 75
+    ICMP            shift and go to state 76
+    CALL            shift and go to state 77
+    BITCAST         shift and go to state 78
+    GETELEMENTPTR   shift and go to state 79
+    ZEXT            shift and go to state 80
+    PTRTOINT        shift and go to state 81
+    ADD             shift and go to state 82
+    SUB             shift and go to state 83
+    MUL             shift and go to state 84
+    SHL             shift and go to state 85
+    LSHR            shift and go to state 86
+    ASHR            shift and go to state 87
+    AND             shift and go to state 88
+    OR              shift and go to state 89
+    XOR             shift and go to state 90
+    SDIV            shift and go to state 91
+
+    insn                           shift and go to state 127
+    bop                            shift and go to state 72
+
+state 103
+
+    (42) insn -> bop ty . operand COMMA operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 128
+
+state 104
+
+    (43) insn -> ALLOCA ty .
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    PercentID       reduce using rule 43 (insn -> ALLOCA ty .)
+    ALLOCA          reduce using rule 43 (insn -> ALLOCA ty .)
+    LOAD            reduce using rule 43 (insn -> ALLOCA ty .)
+    STORE           reduce using rule 43 (insn -> ALLOCA ty .)
+    ICMP            reduce using rule 43 (insn -> ALLOCA ty .)
+    CALL            reduce using rule 43 (insn -> ALLOCA ty .)
+    BITCAST         reduce using rule 43 (insn -> ALLOCA ty .)
+    GETELEMENTPTR   reduce using rule 43 (insn -> ALLOCA ty .)
+    ZEXT            reduce using rule 43 (insn -> ALLOCA ty .)
+    PTRTOINT        reduce using rule 43 (insn -> ALLOCA ty .)
+    ADD             reduce using rule 43 (insn -> ALLOCA ty .)
+    SUB             reduce using rule 43 (insn -> ALLOCA ty .)
+    MUL             reduce using rule 43 (insn -> ALLOCA ty .)
+    SHL             reduce using rule 43 (insn -> ALLOCA ty .)
+    LSHR            reduce using rule 43 (insn -> ALLOCA ty .)
+    ASHR            reduce using rule 43 (insn -> ALLOCA ty .)
+    AND             reduce using rule 43 (insn -> ALLOCA ty .)
+    OR              reduce using rule 43 (insn -> ALLOCA ty .)
+    XOR             reduce using rule 43 (insn -> ALLOCA ty .)
+    SDIV            reduce using rule 43 (insn -> ALLOCA ty .)
+    RET             reduce using rule 43 (insn -> ALLOCA ty .)
+    BR              reduce using rule 43 (insn -> ALLOCA ty .)
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 105
+
+    (44) insn -> LOAD ty . COMMA ty operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    COMMA           shift and go to state 129
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 106
+
+    (45) insn -> STORE ty . operand COMMA ty operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 130
+
+state 107
+
+    (46) insn -> ICMP cnd . ty operand COMMA operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 131
+
+state 108
+
+    (64) cnd -> EQ .
+
+    VOID            reduce using rule 64 (cnd -> EQ .)
+    I1              reduce using rule 64 (cnd -> EQ .)
+    I8              reduce using rule 64 (cnd -> EQ .)
+    I32             reduce using rule 64 (cnd -> EQ .)
+    I64             reduce using rule 64 (cnd -> EQ .)
+    LBRACE          reduce using rule 64 (cnd -> EQ .)
+    LBRACK          reduce using rule 64 (cnd -> EQ .)
+    PercentID       reduce using rule 64 (cnd -> EQ .)
+
+
+state 109
+
+    (65) cnd -> NE .
+
+    VOID            reduce using rule 65 (cnd -> NE .)
+    I1              reduce using rule 65 (cnd -> NE .)
+    I8              reduce using rule 65 (cnd -> NE .)
+    I32             reduce using rule 65 (cnd -> NE .)
+    I64             reduce using rule 65 (cnd -> NE .)
+    LBRACE          reduce using rule 65 (cnd -> NE .)
+    LBRACK          reduce using rule 65 (cnd -> NE .)
+    PercentID       reduce using rule 65 (cnd -> NE .)
+
+
+state 110
+
+    (66) cnd -> SLT .
+
+    VOID            reduce using rule 66 (cnd -> SLT .)
+    I1              reduce using rule 66 (cnd -> SLT .)
+    I8              reduce using rule 66 (cnd -> SLT .)
+    I32             reduce using rule 66 (cnd -> SLT .)
+    I64             reduce using rule 66 (cnd -> SLT .)
+    LBRACE          reduce using rule 66 (cnd -> SLT .)
+    LBRACK          reduce using rule 66 (cnd -> SLT .)
+    PercentID       reduce using rule 66 (cnd -> SLT .)
+
+
+state 111
+
+    (67) cnd -> SLE .
+
+    VOID            reduce using rule 67 (cnd -> SLE .)
+    I1              reduce using rule 67 (cnd -> SLE .)
+    I8              reduce using rule 67 (cnd -> SLE .)
+    I32             reduce using rule 67 (cnd -> SLE .)
+    I64             reduce using rule 67 (cnd -> SLE .)
+    LBRACE          reduce using rule 67 (cnd -> SLE .)
+    LBRACK          reduce using rule 67 (cnd -> SLE .)
+    PercentID       reduce using rule 67 (cnd -> SLE .)
+
+
+state 112
+
+    (68) cnd -> SGT .
+
+    VOID            reduce using rule 68 (cnd -> SGT .)
+    I1              reduce using rule 68 (cnd -> SGT .)
+    I8              reduce using rule 68 (cnd -> SGT .)
+    I32             reduce using rule 68 (cnd -> SGT .)
+    I64             reduce using rule 68 (cnd -> SGT .)
+    LBRACE          reduce using rule 68 (cnd -> SGT .)
+    LBRACK          reduce using rule 68 (cnd -> SGT .)
+    PercentID       reduce using rule 68 (cnd -> SGT .)
+
+
+state 113
+
+    (69) cnd -> SGE .
+
+    VOID            reduce using rule 69 (cnd -> SGE .)
+    I1              reduce using rule 69 (cnd -> SGE .)
+    I8              reduce using rule 69 (cnd -> SGE .)
+    I32             reduce using rule 69 (cnd -> SGE .)
+    I64             reduce using rule 69 (cnd -> SGE .)
+    LBRACE          reduce using rule 69 (cnd -> SGE .)
+    LBRACK          reduce using rule 69 (cnd -> SGE .)
+    PercentID       reduce using rule 69 (cnd -> SGE .)
+
+
+state 114
+
+    (47) insn -> CALL ty . operand LPAREN ty_operand_list RPAREN
+    (48) insn -> CALL ty . operand LPAREN RPAREN
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 132
+
+state 115
+
+    (49) insn -> BITCAST ty . operand TO ty
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 133
+
+state 116
+
+    (50) insn -> GETELEMENTPTR ty . COMMA ty operand COMMA ty_operand_list
+    (51) insn -> GETELEMENTPTR ty . COMMA ty operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    COMMA           shift and go to state 134
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 117
+
+    (52) insn -> ZEXT ty . operand TO ty
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 135
+
+state 118
+
+    (53) insn -> PTRTOINT ty . ASTERIX operand TO ty
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    ASTERIX         shift and go to state 136
+    LPAREN          shift and go to state 26
+
+
+state 119
+
+    (80) named_block_list -> ID COLON . block
+    (81) named_block_list -> ID COLON . block named_block_list
+    (36) block -> . insns terminator
+    (37) block -> . terminator
+    (38) insns -> . optionally_named_insn
+    (39) insns -> . optionally_named_insn insns
+    (72) terminator -> . RET VOID
+    (73) terminator -> . RET ty operand
+    (74) terminator -> . BR LABEL PercentID
+    (75) terminator -> . BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID
+    (40) optionally_named_insn -> . PercentID ASSIGN insn
+    (41) optionally_named_insn -> . insn
+    (42) insn -> . bop ty operand COMMA operand
+    (43) insn -> . ALLOCA ty
+    (44) insn -> . LOAD ty COMMA ty operand
+    (45) insn -> . STORE ty operand COMMA ty operand
+    (46) insn -> . ICMP cnd ty operand COMMA operand
+    (47) insn -> . CALL ty operand LPAREN ty_operand_list RPAREN
+    (48) insn -> . CALL ty operand LPAREN RPAREN
+    (49) insn -> . BITCAST ty operand TO ty
+    (50) insn -> . GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list
+    (51) insn -> . GETELEMENTPTR ty COMMA ty operand
+    (52) insn -> . ZEXT ty operand TO ty
+    (53) insn -> . PTRTOINT ty ASTERIX operand TO ty
+    (54) bop -> . ADD
+    (55) bop -> . SUB
+    (56) bop -> . MUL
+    (57) bop -> . SHL
+    (58) bop -> . LSHR
+    (59) bop -> . ASHR
+    (60) bop -> . AND
+    (61) bop -> . OR
+    (62) bop -> . XOR
+    (63) bop -> . SDIV
+
+    RET             shift and go to state 68
+    BR              shift and go to state 69
+    PercentID       shift and go to state 70
+    ALLOCA          shift and go to state 73
+    LOAD            shift and go to state 74
+    STORE           shift and go to state 75
+    ICMP            shift and go to state 76
+    CALL            shift and go to state 77
+    BITCAST         shift and go to state 78
+    GETELEMENTPTR   shift and go to state 79
+    ZEXT            shift and go to state 80
+    PTRTOINT        shift and go to state 81
+    ADD             shift and go to state 82
+    SUB             shift and go to state 83
+    MUL             shift and go to state 84
+    SHL             shift and go to state 85
+    LSHR            shift and go to state 86
+    ASHR            shift and go to state 87
+    AND             shift and go to state 88
+    OR              shift and go to state 89
+    XOR             shift and go to state 90
+    SDIV            shift and go to state 91
+
+    block                          shift and go to state 137
+    insns                          shift and go to state 65
+    terminator                     shift and go to state 66
+    optionally_named_insn          shift and go to state 67
+    insn                           shift and go to state 71
+    bop                            shift and go to state 72
+
+state 120
+
+    (73) terminator -> RET ty operand .
+
+    ID              reduce using rule 73 (terminator -> RET ty operand .)
+    RBRACE          reduce using rule 73 (terminator -> RET ty operand .)
+
+
+state 121
+
+    (76) operand -> NULL .
+
+    ID              reduce using rule 76 (operand -> NULL .)
+    RBRACE          reduce using rule 76 (operand -> NULL .)
+    COMMA           reduce using rule 76 (operand -> NULL .)
+    LPAREN          reduce using rule 76 (operand -> NULL .)
+    TO              reduce using rule 76 (operand -> NULL .)
+    PercentID       reduce using rule 76 (operand -> NULL .)
+    ALLOCA          reduce using rule 76 (operand -> NULL .)
+    LOAD            reduce using rule 76 (operand -> NULL .)
+    STORE           reduce using rule 76 (operand -> NULL .)
+    ICMP            reduce using rule 76 (operand -> NULL .)
+    CALL            reduce using rule 76 (operand -> NULL .)
+    BITCAST         reduce using rule 76 (operand -> NULL .)
+    GETELEMENTPTR   reduce using rule 76 (operand -> NULL .)
+    ZEXT            reduce using rule 76 (operand -> NULL .)
+    PTRTOINT        reduce using rule 76 (operand -> NULL .)
+    ADD             reduce using rule 76 (operand -> NULL .)
+    SUB             reduce using rule 76 (operand -> NULL .)
+    MUL             reduce using rule 76 (operand -> NULL .)
+    SHL             reduce using rule 76 (operand -> NULL .)
+    LSHR            reduce using rule 76 (operand -> NULL .)
+    ASHR            reduce using rule 76 (operand -> NULL .)
+    AND             reduce using rule 76 (operand -> NULL .)
+    OR              reduce using rule 76 (operand -> NULL .)
+    XOR             reduce using rule 76 (operand -> NULL .)
+    SDIV            reduce using rule 76 (operand -> NULL .)
+    RET             reduce using rule 76 (operand -> NULL .)
+    BR              reduce using rule 76 (operand -> NULL .)
+    RPAREN          reduce using rule 76 (operand -> NULL .)
+
+
+state 122
+
+    (77) operand -> INT .
+
+    ID              reduce using rule 77 (operand -> INT .)
+    RBRACE          reduce using rule 77 (operand -> INT .)
+    COMMA           reduce using rule 77 (operand -> INT .)
+    LPAREN          reduce using rule 77 (operand -> INT .)
+    TO              reduce using rule 77 (operand -> INT .)
+    PercentID       reduce using rule 77 (operand -> INT .)
+    ALLOCA          reduce using rule 77 (operand -> INT .)
+    LOAD            reduce using rule 77 (operand -> INT .)
+    STORE           reduce using rule 77 (operand -> INT .)
+    ICMP            reduce using rule 77 (operand -> INT .)
+    CALL            reduce using rule 77 (operand -> INT .)
+    BITCAST         reduce using rule 77 (operand -> INT .)
+    GETELEMENTPTR   reduce using rule 77 (operand -> INT .)
+    ZEXT            reduce using rule 77 (operand -> INT .)
+    PTRTOINT        reduce using rule 77 (operand -> INT .)
+    ADD             reduce using rule 77 (operand -> INT .)
+    SUB             reduce using rule 77 (operand -> INT .)
+    MUL             reduce using rule 77 (operand -> INT .)
+    SHL             reduce using rule 77 (operand -> INT .)
+    LSHR            reduce using rule 77 (operand -> INT .)
+    ASHR            reduce using rule 77 (operand -> INT .)
+    AND             reduce using rule 77 (operand -> INT .)
+    OR              reduce using rule 77 (operand -> INT .)
+    XOR             reduce using rule 77 (operand -> INT .)
+    SDIV            reduce using rule 77 (operand -> INT .)
+    RET             reduce using rule 77 (operand -> INT .)
+    BR              reduce using rule 77 (operand -> INT .)
+    RPAREN          reduce using rule 77 (operand -> INT .)
+
+
+state 123
+
+    (78) operand -> AtID .
+
+    ID              reduce using rule 78 (operand -> AtID .)
+    RBRACE          reduce using rule 78 (operand -> AtID .)
+    COMMA           reduce using rule 78 (operand -> AtID .)
+    LPAREN          reduce using rule 78 (operand -> AtID .)
+    TO              reduce using rule 78 (operand -> AtID .)
+    PercentID       reduce using rule 78 (operand -> AtID .)
+    ALLOCA          reduce using rule 78 (operand -> AtID .)
+    LOAD            reduce using rule 78 (operand -> AtID .)
+    STORE           reduce using rule 78 (operand -> AtID .)
+    ICMP            reduce using rule 78 (operand -> AtID .)
+    CALL            reduce using rule 78 (operand -> AtID .)
+    BITCAST         reduce using rule 78 (operand -> AtID .)
+    GETELEMENTPTR   reduce using rule 78 (operand -> AtID .)
+    ZEXT            reduce using rule 78 (operand -> AtID .)
+    PTRTOINT        reduce using rule 78 (operand -> AtID .)
+    ADD             reduce using rule 78 (operand -> AtID .)
+    SUB             reduce using rule 78 (operand -> AtID .)
+    MUL             reduce using rule 78 (operand -> AtID .)
+    SHL             reduce using rule 78 (operand -> AtID .)
+    LSHR            reduce using rule 78 (operand -> AtID .)
+    ASHR            reduce using rule 78 (operand -> AtID .)
+    AND             reduce using rule 78 (operand -> AtID .)
+    OR              reduce using rule 78 (operand -> AtID .)
+    XOR             reduce using rule 78 (operand -> AtID .)
+    SDIV            reduce using rule 78 (operand -> AtID .)
+    RET             reduce using rule 78 (operand -> AtID .)
+    BR              reduce using rule 78 (operand -> AtID .)
+    RPAREN          reduce using rule 78 (operand -> AtID .)
+
+
+state 124
+
+    (79) operand -> PercentID .
+
+    ID              reduce using rule 79 (operand -> PercentID .)
+    RBRACE          reduce using rule 79 (operand -> PercentID .)
+    COMMA           reduce using rule 79 (operand -> PercentID .)
+    LPAREN          reduce using rule 79 (operand -> PercentID .)
+    TO              reduce using rule 79 (operand -> PercentID .)
+    PercentID       reduce using rule 79 (operand -> PercentID .)
+    ALLOCA          reduce using rule 79 (operand -> PercentID .)
+    LOAD            reduce using rule 79 (operand -> PercentID .)
+    STORE           reduce using rule 79 (operand -> PercentID .)
+    ICMP            reduce using rule 79 (operand -> PercentID .)
+    CALL            reduce using rule 79 (operand -> PercentID .)
+    BITCAST         reduce using rule 79 (operand -> PercentID .)
+    GETELEMENTPTR   reduce using rule 79 (operand -> PercentID .)
+    ZEXT            reduce using rule 79 (operand -> PercentID .)
+    PTRTOINT        reduce using rule 79 (operand -> PercentID .)
+    ADD             reduce using rule 79 (operand -> PercentID .)
+    SUB             reduce using rule 79 (operand -> PercentID .)
+    MUL             reduce using rule 79 (operand -> PercentID .)
+    SHL             reduce using rule 79 (operand -> PercentID .)
+    LSHR            reduce using rule 79 (operand -> PercentID .)
+    ASHR            reduce using rule 79 (operand -> PercentID .)
+    AND             reduce using rule 79 (operand -> PercentID .)
+    OR              reduce using rule 79 (operand -> PercentID .)
+    XOR             reduce using rule 79 (operand -> PercentID .)
+    SDIV            reduce using rule 79 (operand -> PercentID .)
+    RET             reduce using rule 79 (operand -> PercentID .)
+    BR              reduce using rule 79 (operand -> PercentID .)
+    RPAREN          reduce using rule 79 (operand -> PercentID .)
+
+
+state 125
+
+    (74) terminator -> BR LABEL PercentID .
+
+    ID              reduce using rule 74 (terminator -> BR LABEL PercentID .)
+    RBRACE          reduce using rule 74 (terminator -> BR LABEL PercentID .)
+
+
+state 126
+
+    (75) terminator -> BR ty operand . COMMA LABEL PercentID COMMA LABEL PercentID
+
+    COMMA           shift and go to state 138
+
+
+state 127
+
+    (40) optionally_named_insn -> PercentID ASSIGN insn .
+
+    PercentID       reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    ALLOCA          reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    LOAD            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    STORE           reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    ICMP            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    CALL            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    BITCAST         reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    GETELEMENTPTR   reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    ZEXT            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    PTRTOINT        reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    ADD             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    SUB             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    MUL             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    SHL             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    LSHR            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    ASHR            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    AND             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    OR              reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    XOR             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    SDIV            reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    RET             reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+    BR              reduce using rule 40 (optionally_named_insn -> PercentID ASSIGN insn .)
+
+
+state 128
+
+    (42) insn -> bop ty operand . COMMA operand
+
+    COMMA           shift and go to state 139
+
+
+state 129
+
+    (44) insn -> LOAD ty COMMA . ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 140
+
+state 130
+
+    (45) insn -> STORE ty operand . COMMA ty operand
+
+    COMMA           shift and go to state 141
+
+
+state 131
+
+    (46) insn -> ICMP cnd ty . operand COMMA operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 142
+
+state 132
+
+    (47) insn -> CALL ty operand . LPAREN ty_operand_list RPAREN
+    (48) insn -> CALL ty operand . LPAREN RPAREN
+
+    LPAREN          shift and go to state 143
+
+
+state 133
+
+    (49) insn -> BITCAST ty operand . TO ty
+
+    TO              shift and go to state 144
+
+
+state 134
+
+    (50) insn -> GETELEMENTPTR ty COMMA . ty operand COMMA ty_operand_list
+    (51) insn -> GETELEMENTPTR ty COMMA . ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 145
+
+state 135
+
+    (52) insn -> ZEXT ty operand . TO ty
+
+    TO              shift and go to state 146
+
+
+state 136
+
+    (53) insn -> PTRTOINT ty ASTERIX . operand TO ty
+    (12) ty -> ty ASTERIX .
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         reduce using rule 12 (ty -> ty ASTERIX .)
+    LPAREN          reduce using rule 12 (ty -> ty ASTERIX .)
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 147
+
+state 137
+
+    (80) named_block_list -> ID COLON block .
+    (81) named_block_list -> ID COLON block . named_block_list
+    (80) named_block_list -> . ID COLON block
+    (81) named_block_list -> . ID COLON block named_block_list
+
+    RBRACE          reduce using rule 80 (named_block_list -> ID COLON block .)
+    ID              shift and go to state 95
+
+    named_block_list               shift and go to state 148
+
+state 138
+
+    (75) terminator -> BR ty operand COMMA . LABEL PercentID COMMA LABEL PercentID
+
+    LABEL           shift and go to state 149
+
+
+state 139
+
+    (42) insn -> bop ty operand COMMA . operand
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 150
+
+state 140
+
+    (44) insn -> LOAD ty COMMA ty . operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 151
+
+state 141
+
+    (45) insn -> STORE ty operand COMMA . ty operand
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 152
+
+state 142
+
+    (46) insn -> ICMP cnd ty operand . COMMA operand
+
+    COMMA           shift and go to state 153
+
+
+state 143
+
+    (47) insn -> CALL ty operand LPAREN . ty_operand_list RPAREN
+    (48) insn -> CALL ty operand LPAREN . RPAREN
+    (70) ty_operand_list -> . ty operand
+    (71) ty_operand_list -> . ty operand COMMA ty_operand_list
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    RPAREN          shift and go to state 156
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 154
+    ty_operand_list                shift and go to state 155
+
+state 144
+
+    (49) insn -> BITCAST ty operand TO . ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 157
+
+state 145
+
+    (50) insn -> GETELEMENTPTR ty COMMA ty . operand COMMA ty_operand_list
+    (51) insn -> GETELEMENTPTR ty COMMA ty . operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 158
+
+state 146
+
+    (52) insn -> ZEXT ty operand TO . ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 159
+
+state 147
+
+    (53) insn -> PTRTOINT ty ASTERIX operand . TO ty
+
+    TO              shift and go to state 160
+
+
+state 148
+
+    (81) named_block_list -> ID COLON block named_block_list .
+
+    RBRACE          reduce using rule 81 (named_block_list -> ID COLON block named_block_list .)
+
+
+state 149
+
+    (75) terminator -> BR ty operand COMMA LABEL . PercentID COMMA LABEL PercentID
+
+    PercentID       shift and go to state 161
+
+
+state 150
+
+    (42) insn -> bop ty operand COMMA operand .
+
+    PercentID       reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    ALLOCA          reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    LOAD            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    STORE           reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    ICMP            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    CALL            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    BITCAST         reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    GETELEMENTPTR   reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    ZEXT            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    PTRTOINT        reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    ADD             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    SUB             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    MUL             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    SHL             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    LSHR            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    ASHR            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    AND             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    OR              reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    XOR             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    SDIV            reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    RET             reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+    BR              reduce using rule 42 (insn -> bop ty operand COMMA operand .)
+
+
+state 151
+
+    (44) insn -> LOAD ty COMMA ty operand .
+
+    PercentID       reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    ALLOCA          reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    LOAD            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    STORE           reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    ICMP            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    CALL            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    BITCAST         reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    GETELEMENTPTR   reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    ZEXT            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    PTRTOINT        reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    ADD             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    SUB             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    MUL             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    SHL             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    LSHR            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    ASHR            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    AND             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    OR              reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    XOR             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    SDIV            reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    RET             reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+    BR              reduce using rule 44 (insn -> LOAD ty COMMA ty operand .)
+
+
+state 152
+
+    (45) insn -> STORE ty operand COMMA ty . operand
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 162
+
+state 153
+
+    (46) insn -> ICMP cnd ty operand COMMA . operand
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 163
+
+state 154
+
+    (70) ty_operand_list -> ty . operand
+    (71) ty_operand_list -> ty . operand COMMA ty_operand_list
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+    (76) operand -> . NULL
+    (77) operand -> . INT
+    (78) operand -> . AtID
+    (79) operand -> . PercentID
+
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+    NULL            shift and go to state 121
+    INT             shift and go to state 122
+    AtID            shift and go to state 123
+    PercentID       shift and go to state 124
+
+    operand                        shift and go to state 164
+
+state 155
+
+    (47) insn -> CALL ty operand LPAREN ty_operand_list . RPAREN
+
+    RPAREN          shift and go to state 165
+
+
+state 156
+
+    (48) insn -> CALL ty operand LPAREN RPAREN .
+
+    PercentID       reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    ALLOCA          reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    LOAD            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    STORE           reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    ICMP            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    CALL            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    BITCAST         reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    GETELEMENTPTR   reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    ZEXT            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    PTRTOINT        reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    ADD             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    SUB             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    MUL             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    SHL             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    LSHR            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    ASHR            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    AND             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    OR              reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    XOR             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    SDIV            reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    RET             reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+    BR              reduce using rule 48 (insn -> CALL ty operand LPAREN RPAREN .)
+
+
+state 157
+
+    (49) insn -> BITCAST ty operand TO ty .
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    PercentID       reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    ALLOCA          reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    LOAD            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    STORE           reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    ICMP            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    CALL            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    BITCAST         reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    GETELEMENTPTR   reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    ZEXT            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    PTRTOINT        reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    ADD             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    SUB             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    MUL             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    SHL             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    LSHR            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    ASHR            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    AND             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    OR              reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    XOR             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    SDIV            reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    RET             reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    BR              reduce using rule 49 (insn -> BITCAST ty operand TO ty .)
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 158
+
+    (50) insn -> GETELEMENTPTR ty COMMA ty operand . COMMA ty_operand_list
+    (51) insn -> GETELEMENTPTR ty COMMA ty operand .
+
+    COMMA           shift and go to state 166
+    PercentID       reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    ALLOCA          reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    LOAD            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    STORE           reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    ICMP            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    CALL            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    BITCAST         reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    GETELEMENTPTR   reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    ZEXT            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    PTRTOINT        reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    ADD             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    SUB             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    MUL             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    SHL             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    LSHR            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    ASHR            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    AND             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    OR              reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    XOR             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    SDIV            reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    RET             reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+    BR              reduce using rule 51 (insn -> GETELEMENTPTR ty COMMA ty operand .)
+
+
+state 159
+
+    (52) insn -> ZEXT ty operand TO ty .
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    PercentID       reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    ALLOCA          reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    LOAD            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    STORE           reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    ICMP            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    CALL            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    BITCAST         reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    GETELEMENTPTR   reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    ZEXT            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    PTRTOINT        reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    ADD             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    SUB             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    MUL             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    SHL             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    LSHR            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    ASHR            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    AND             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    OR              reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    XOR             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    SDIV            reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    RET             reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    BR              reduce using rule 52 (insn -> ZEXT ty operand TO ty .)
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 160
+
+    (53) insn -> PTRTOINT ty ASTERIX operand TO . ty
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 167
+
+state 161
+
+    (75) terminator -> BR ty operand COMMA LABEL PercentID . COMMA LABEL PercentID
+
+    COMMA           shift and go to state 168
+
+
+state 162
+
+    (45) insn -> STORE ty operand COMMA ty operand .
+
+    PercentID       reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    ALLOCA          reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    LOAD            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    STORE           reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    ICMP            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    CALL            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    BITCAST         reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    GETELEMENTPTR   reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    ZEXT            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    PTRTOINT        reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    ADD             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    SUB             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    MUL             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    SHL             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    LSHR            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    ASHR            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    AND             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    OR              reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    XOR             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    SDIV            reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    RET             reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+    BR              reduce using rule 45 (insn -> STORE ty operand COMMA ty operand .)
+
+
+state 163
+
+    (46) insn -> ICMP cnd ty operand COMMA operand .
+
+    PercentID       reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    ALLOCA          reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    LOAD            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    STORE           reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    ICMP            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    CALL            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    BITCAST         reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    GETELEMENTPTR   reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    ZEXT            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    PTRTOINT        reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    ADD             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    SUB             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    MUL             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    SHL             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    LSHR            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    ASHR            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    AND             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    OR              reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    XOR             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    SDIV            reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    RET             reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+    BR              reduce using rule 46 (insn -> ICMP cnd ty operand COMMA operand .)
+
+
+state 164
+
+    (70) ty_operand_list -> ty operand .
+    (71) ty_operand_list -> ty operand . COMMA ty_operand_list
+
+    RPAREN          reduce using rule 70 (ty_operand_list -> ty operand .)
+    PercentID       reduce using rule 70 (ty_operand_list -> ty operand .)
+    ALLOCA          reduce using rule 70 (ty_operand_list -> ty operand .)
+    LOAD            reduce using rule 70 (ty_operand_list -> ty operand .)
+    STORE           reduce using rule 70 (ty_operand_list -> ty operand .)
+    ICMP            reduce using rule 70 (ty_operand_list -> ty operand .)
+    CALL            reduce using rule 70 (ty_operand_list -> ty operand .)
+    BITCAST         reduce using rule 70 (ty_operand_list -> ty operand .)
+    GETELEMENTPTR   reduce using rule 70 (ty_operand_list -> ty operand .)
+    ZEXT            reduce using rule 70 (ty_operand_list -> ty operand .)
+    PTRTOINT        reduce using rule 70 (ty_operand_list -> ty operand .)
+    ADD             reduce using rule 70 (ty_operand_list -> ty operand .)
+    SUB             reduce using rule 70 (ty_operand_list -> ty operand .)
+    MUL             reduce using rule 70 (ty_operand_list -> ty operand .)
+    SHL             reduce using rule 70 (ty_operand_list -> ty operand .)
+    LSHR            reduce using rule 70 (ty_operand_list -> ty operand .)
+    ASHR            reduce using rule 70 (ty_operand_list -> ty operand .)
+    AND             reduce using rule 70 (ty_operand_list -> ty operand .)
+    OR              reduce using rule 70 (ty_operand_list -> ty operand .)
+    XOR             reduce using rule 70 (ty_operand_list -> ty operand .)
+    SDIV            reduce using rule 70 (ty_operand_list -> ty operand .)
+    RET             reduce using rule 70 (ty_operand_list -> ty operand .)
+    BR              reduce using rule 70 (ty_operand_list -> ty operand .)
+    COMMA           shift and go to state 169
+
+
+state 165
+
+    (47) insn -> CALL ty operand LPAREN ty_operand_list RPAREN .
+
+    PercentID       reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    ALLOCA          reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    LOAD            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    STORE           reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    ICMP            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    CALL            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    BITCAST         reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    GETELEMENTPTR   reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    ZEXT            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    PTRTOINT        reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    ADD             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    SUB             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    MUL             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    SHL             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    LSHR            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    ASHR            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    AND             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    OR              reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    XOR             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    SDIV            reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    RET             reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+    BR              reduce using rule 47 (insn -> CALL ty operand LPAREN ty_operand_list RPAREN .)
+
+
+state 166
+
+    (50) insn -> GETELEMENTPTR ty COMMA ty operand COMMA . ty_operand_list
+    (70) ty_operand_list -> . ty operand
+    (71) ty_operand_list -> . ty operand COMMA ty_operand_list
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 154
+    ty_operand_list                shift and go to state 170
+
+state 167
+
+    (53) insn -> PTRTOINT ty ASTERIX operand TO ty .
+    (12) ty -> ty . ASTERIX
+    (15) ty -> ty . LPAREN ty_list RPAREN
+
+    PercentID       reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    ALLOCA          reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    LOAD            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    STORE           reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    ICMP            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    CALL            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    BITCAST         reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    GETELEMENTPTR   reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    ZEXT            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    PTRTOINT        reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    ADD             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    SUB             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    MUL             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    SHL             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    LSHR            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    ASHR            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    AND             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    OR              reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    XOR             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    SDIV            reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    RET             reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    BR              reduce using rule 53 (insn -> PTRTOINT ty ASTERIX operand TO ty .)
+    ASTERIX         shift and go to state 27
+    LPAREN          shift and go to state 26
+
+
+state 168
+
+    (75) terminator -> BR ty operand COMMA LABEL PercentID COMMA . LABEL PercentID
+
+    LABEL           shift and go to state 171
+
+
+state 169
+
+    (71) ty_operand_list -> ty operand COMMA . ty_operand_list
+    (70) ty_operand_list -> . ty operand
+    (71) ty_operand_list -> . ty operand COMMA ty_operand_list
+    (7) ty -> . VOID
+    (8) ty -> . I1
+    (9) ty -> . I8
+    (10) ty -> . I32
+    (11) ty -> . I64
+    (12) ty -> . ty ASTERIX
+    (13) ty -> . LBRACE ty_list RBRACE
+    (14) ty -> . LBRACK INT ID ty RBRACK
+    (15) ty -> . ty LPAREN ty_list RPAREN
+    (16) ty -> . PercentID
+
+    VOID            shift and go to state 16
+    I1              shift and go to state 17
+    I8              shift and go to state 18
+    I32             shift and go to state 19
+    I64             shift and go to state 20
+    LBRACE          shift and go to state 15
+    LBRACK          shift and go to state 21
+    PercentID       shift and go to state 22
+
+    ty                             shift and go to state 154
+    ty_operand_list                shift and go to state 172
+
+state 170
+
+    (50) insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .
+
+    PercentID       reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    ALLOCA          reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    LOAD            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    STORE           reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    ICMP            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    CALL            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    BITCAST         reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    GETELEMENTPTR   reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    ZEXT            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    PTRTOINT        reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    ADD             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    SUB             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    MUL             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    SHL             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    LSHR            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    ASHR            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    AND             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    OR              reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    XOR             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    SDIV            reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    RET             reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+    BR              reduce using rule 50 (insn -> GETELEMENTPTR ty COMMA ty operand COMMA ty_operand_list .)
+
+
+state 171
+
+    (75) terminator -> BR ty operand COMMA LABEL PercentID COMMA LABEL . PercentID
+
+    PercentID       shift and go to state 173
+
+
+state 172
+
+    (71) ty_operand_list -> ty operand COMMA ty_operand_list .
+
+    RPAREN          reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    PercentID       reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    ALLOCA          reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    LOAD            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    STORE           reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    ICMP            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    CALL            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    BITCAST         reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    GETELEMENTPTR   reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    ZEXT            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    PTRTOINT        reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    ADD             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    SUB             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    MUL             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    SHL             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    LSHR            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    ASHR            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    AND             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    OR              reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    XOR             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    SDIV            reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    RET             reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+    BR              reduce using rule 71 (ty_operand_list -> ty operand COMMA ty_operand_list .)
+
+
+state 173
+
+    (75) terminator -> BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID .
+
+    ID              reduce using rule 75 (terminator -> BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID .)
+    RBRACE          reduce using rule 75 (terminator -> BR ty operand COMMA LABEL PercentID COMMA LABEL PercentID .)
+
