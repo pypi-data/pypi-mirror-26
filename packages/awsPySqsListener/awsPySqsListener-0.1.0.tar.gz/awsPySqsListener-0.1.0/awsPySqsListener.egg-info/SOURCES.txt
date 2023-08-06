@@ -1,0 +1,10 @@
+README.rst
+setup.py
+awsPySqsListener.egg-info/PKG-INFO
+awsPySqsListener.egg-info/SOURCES.txt
+awsPySqsListener.egg-info/dependency_links.txt
+awsPySqsListener.egg-info/requires.txt
+awsPySqsListener.egg-info/top_level.txt
+sqs_launcher/__init__.py
+sqs_listener/__init__.py
+sqs_listener/daemon.py
