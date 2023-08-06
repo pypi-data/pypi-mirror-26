@@ -1,0 +1,9 @@
+README.rst
+setup.py
+bar_chooser/__init__.py
+bar_chooser/ekaterinburg.py
+bar_chooser.egg-info/PKG-INFO
+bar_chooser.egg-info/SOURCES.txt
+bar_chooser.egg-info/dependency_links.txt
+bar_chooser.egg-info/entry_points.txt
+bar_chooser.egg-info/top_level.txt
