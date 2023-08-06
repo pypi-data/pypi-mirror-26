@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: smokey
+Version: 0.1
+Summary: smoke tests for nteract
+Home-page: https://github.com/nteract/smokey
+Author: nteract contributors
+Author-email: jupyter@googlegroups.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: # Smokey
+        
+        Smokey is a smoke tester for jupyter frontends
+        
+Keywords: smoke,jupyter,nteract
+Platform: UNKNOWN

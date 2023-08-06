@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+smokey/__init__.py
+smokey/_version.py
+smokey.egg-info/PKG-INFO
+smokey.egg-info/SOURCES.txt
+smokey.egg-info/dependency_links.txt
+smokey.egg-info/requires.txt
+smokey.egg-info/top_level.txt

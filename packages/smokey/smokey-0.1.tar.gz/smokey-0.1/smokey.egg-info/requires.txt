@@ -1,0 +1,7 @@
+ipython
+
+[all]
+pytest
+
+[tests]
+pytest
