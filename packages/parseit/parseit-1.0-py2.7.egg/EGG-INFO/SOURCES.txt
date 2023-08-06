@@ -1,0 +1,9 @@
+setup.py
+parseit/__init__.py
+parseit/parseit.py
+parseit/treeify.py
+parseit.egg-info/PKG-INFO
+parseit.egg-info/SOURCES.txt
+parseit.egg-info/dependency_links.txt
+parseit.egg-info/requires.txt
+parseit.egg-info/top_level.txt
