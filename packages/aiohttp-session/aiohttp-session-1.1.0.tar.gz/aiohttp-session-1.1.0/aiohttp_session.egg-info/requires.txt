@@ -1,0 +1,13 @@
+aiohttp>=2.3.0
+
+[aioredis]
+aioredis>=0.1.4
+
+[pycrypto]
+cryptography
+
+[pynacl]
+pynacl
+
+[secure]
+cryptography
