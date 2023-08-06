@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: oceanlib
+Version: 0.14
+Summary: Financial Library
+Home-page: https://github.com/ubersonam/ocean
+Author: Sonam Srivastava
+Author-email: sonaam1234@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
