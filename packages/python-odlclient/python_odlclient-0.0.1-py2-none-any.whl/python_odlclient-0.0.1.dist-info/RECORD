@@ -1,0 +1,13 @@
+odlclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odlclient/client.py,sha256=jh8PNMBflFZFEKt6iurHUgDn3S0wPZL86JCIFnUZUPM,9179
+odlclient/cmdutils.py,sha256=DY7S45OaCfwXIqqvfoCWWrg1w4SqGYlVPrMLJSoZCQ0,989
+odlclient/main.py,sha256=wdtVsygeHNRun9F8LOTAr3I8dlruohzH_WIZjqBGM-Q,7343
+odlclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_odlclient-0.0.1.dist-info/DESCRIPTION.rst,sha256=sj9kCcLGDIQUkMmuGo_7ceC4ietNcxngOzKxCo7lF2s,1775
+python_odlclient-0.0.1.dist-info/METADATA,sha256=FR7SEeVfLQMPAosRyUxf7WYTuCubbasllVjvi8eq1sc,2545
+python_odlclient-0.0.1.dist-info/RECORD,,
+python_odlclient-0.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+python_odlclient-0.0.1.dist-info/entry_points.txt,sha256=Ekz_nkRbPVqyE3BVk6GqGVXpcepjGivKo8AMigqm9Bc,45
+python_odlclient-0.0.1.dist-info/metadata.json,sha256=m-4wLBDQKZPA5ScQFpozR8wuIzHiGGad_jsLZd0zYPM,1091
+python_odlclient-0.0.1.dist-info/pbr.json,sha256=i6fsJQIf2woedwzqlk09MyVYR4GVk_Ko2mPNohqFtlY,47
+python_odlclient-0.0.1.dist-info/top_level.txt,sha256=YQ4OhT4ROXU1k78vohphP0cE4ecSWduoSKNku297HmU,10
