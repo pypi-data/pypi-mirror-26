@@ -1,0 +1,6 @@
+numpy
+scipy
+pyquil>=1.4.0
+mock
+networkx
+matplotlib
