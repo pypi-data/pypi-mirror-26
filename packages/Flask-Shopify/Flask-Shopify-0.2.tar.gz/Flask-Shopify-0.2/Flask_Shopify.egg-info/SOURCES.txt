@@ -1,0 +1,8 @@
+flask_shopify.py
+setup.py
+Flask_Shopify.egg-info/PKG-INFO
+Flask_Shopify.egg-info/SOURCES.txt
+Flask_Shopify.egg-info/dependency_links.txt
+Flask_Shopify.egg-info/not-zip-safe
+Flask_Shopify.egg-info/requires.txt
+Flask_Shopify.egg-info/top_level.txt
