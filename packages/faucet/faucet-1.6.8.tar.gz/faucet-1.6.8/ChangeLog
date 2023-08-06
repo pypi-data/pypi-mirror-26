@@ -1,0 +1,329 @@
+CHANGES
+=======
+
+1.6.8
+-----
+
+* Version bump for release
+* add release target to docs
+* fix environment variables for db and admin user
+* Permanent learn tests require hard\_timeout not present
+* ensure hard\_timeout set on eth\_src flows
+* hard/idle timeouts reversed on eth\_src flows
+* Fix flow\_timeout method call
+* add release target; closes #767
+* OVS 2.8.1 connections to controller unstable under heavy load. Will continue to troubleshoot
+* More relaxed OVS connect time to reduce test load
+* When cold starting dataplane, reset the host cache to cause routes etc to be re-resolved
+* fix extra / typo
+* add compose file for rpi
+* Re-attempt OVS upgrade to 2.8.1
+* Sync Aruba TFM to generic
+* VLAN table does not need eth\_src
+* Don't need catchall ICMP entry at all
+* Don't necessarily need to catch all ICMP
+* Specifically match echo request/reply to control plane
+* Sync Aruba TFM to generic
+* icmpv6\_type moves to VIP, eth\_src doesn't need ip\_proto and icmpv6\_type
+* sync Aruba TFM to generic
+* Move ip proto/icmpv6 matches to VIP from eth\_src
+* Move eth\_src matches from VLAN table to eth\_src table, so VLAN table doesn't need eth\_src
+* Allow configuration of BGP server addresses (available in Ryu 4.19)
+* Ryu 4.18
+* exabgp should attempt only one connection
+* Actually, don't look at hw\_src in NAs - might not be present and not worth believing if it is
+* Some IPv6 hosts can use a src IP from a different subnet to the one they're NA'ing for. Handle this situation and also verify NA'd hw\_src is the same as eth\_src
+* Move group flood bucket builder to valve\_of
+* LACP test shouldn't care about aggregator ID
+* Test that traffic over LAG works
+* Avoid loopback flood on LAG members
+* LAG list moved back to VLAN
+* Test connectivity before and after loop mitigation
+* OVS dumps should be .log so dumped first
+* Add dump-ports
+* More OVS diagnostics
+* dump OVS switch flows using nice ofctl utility
+* bgp log helper for IPv6
+* Use log helper for BGP
+* matching lines log helper, and try to capture only relevant OVS log lines
+* Use DP-centric LAGs
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* Concentrate more Ryu lib imports through valve\_of
+* Concentrate Ryu lib imports in valve\_of
+* Add quiet commands helper
+* Prometheus expire still flakey until load
+* Loop check should retry flood if loop is not yet ready
+* Loop test needs bridge tools
+* iproute2 needed for tc
+* Add trivial loop protection (typically for access ports)
+* whitespace
+* iperf can fail to start due to port conflict
+* Completely rewrite prometheus expiry test
+* Fix prom learn mac helper
+* Helper to check MAC present in Prometheus
+* Update example configurations for faucet/gauge to show newer features
+* Revert debug level change
+* flap port at beginning of FaucetSingleHostsTimeoutPrometheusTest to make more deterministic
+* Disable learning jitter for FaucetSingleHostsTimeoutPrometheusTest to make test deterministic
+* FaucetSingleHostsTimeoutPrometheusTest diags
+* Wrong arg order setting up for Prometheus timeout test
+* More diagnostics
+* Temporary debug log level
+* str() log levels
+* Yet more test logging
+* put back to single quotes
+* add FAUCET\_PREFIX for specifying paths of volumes
+* Order log dumps, more patient fping for Prometheus
+* add\_macvlan confused by another background ping
+* Add mac\_vlan confused by background ping
+* Change ofchannel debug log to txt so dumped last on failure
+* Verify MAC VLAN interfaces come up
+* Don't try to rate limit learning for Prometheus learning test
+* partner LACP port number does not matter
+* Dump YAML, then logs, then other files
+* Somewhat less disk space (don't cache mininet/pytype in layers)
+* Always update metrics on receiving a packet
+* Did not dump test files
+* Dump pcaps last
+* Make FaucetHostsTimeoutPrometheusTest less load dependant
+* gNMI, use new replace/update methods
+* Don't hardcode DP ports in LACP test
+* Remove erroneous second copy of check script
+* pylint
+* add update test for nsodbc poller
+* Move flow checks to outside of the class
+* fake couchdb server deletes docs associated with a deleted database
+* Add unit tests for gauge\_nsodbc
+* pylint
+* pylint
+* Change mock datapath attribute from id to dp\_id to match faucet.dp
+* pylint
+* pylint
+* pylint
+* Test 2-port LAG
+* Adding missing import
+* TODOs for LAGs
+* Implement LAG ID
+* Fix for hardware tests
+* Support multiple links per host (first user LACP)
+* Add multiple Update and Replace IETF JSON support to SET
+* Documentation
+* Increase test CPU oversubscription again
+* Move DP config change detection to DP class
+* pylint
+* pylint
+* test\_config has all kinds of bad config which other tests now catch
+* ACL parse check not robust enough
+* More config checks for ACLs (including bad match conditions)
+* More config parsing checks (including resolving VLAN names in routers, empty interface lists, enabling stacking and routing)
+* Test that an unknown router VLAN is rejected
+* Fix test
+* Move more stacking implementation out of valve.py
+* Move stacking implementation for flooding to own class, re-enable stacking tests
+* Indent
+* Update valve\_of.py
+* Update valve\_of.py
+* Move flood action list builders to valve\_of
+* Missed L3 True
+* pytype unhappy
+* Move learn banning implementation to host manager
+* Move flow-removed triggered host learning to own class. Move API call to render DP as dict, to DP class
+* Move VLAN expiry implementation to VLAN class
+* Simplify host learning functions
+* Remove use of json parsing of match in flow removed message
+* Incremental refactor for host cache
+* Simply host expiry
+* Try to make apt-get quieter
+* Explicitly expire all hosts learned on a port when port goes down. Don't skip deleting from VLAN table when VLAN deconfigured
+* Block/unblockl learning on port depending on LACP status
+* Send LACP down flows when LACP expires
+* Delete other port flows when lacp down executed, and ensure learning does not happen while LACP is down
+* Delete port flows when LACP down
+* Block traffic on port while lacp down
+* Add prom client to \_\_init\_\_ args so GaugeFlowTableDBLogger can be instantiated
+* pylint
+* Added unit tests for DatabaseCouch in nsodbc
+* Add functionality to couchdb server so that it adds and deletes docs and views
+* Break/fix
+* Fix pylint revealed by import cleanup
+* Only call update metrics if packet in handler returned some flows
+* Still too slow updating metrics on packet in
+* Remove old python2 imports
+* Allow old python2 imports to be removed
+* LACP expire log fix
+* Retry iperf stats when switch ports 0 traffic
+* Don't try to rate limit metric updates (makes tests slow)
+* Missed import
+* Better rate limit of metric update requests
+* Log LACP state changes
+* Make json comply with rfc7951
+* Incremental coverage improvement (ARP)
+* Make generic state expiry thread, and metric updates only in metric update thread rather than for every packet in
+* remove hardcoded port 1 from faucet\_mininet\_test\_unit.py, use self.port\_map[port\_1] instead
+* Can't use set yet
+* Incremental refacto towards sets of confs
+* Fix check for unknown VLAN, port status handlers should check for ignored ports
+* Conf objects now have finalize method
+* \_add\_vlan() shouldn't modify arg
+* Don't pass dp\_id to valve methods (faucet.py already validates it)
+* old DP reference
+* Simplify get\_native\_vlan()
+* Revert "Remove old python2 style python imports, and pylint."
+* Revert "Test fix."
+* Set Travis PYTHONPATH, clear ref to old Docker cache
+* Test fix
+* Remove old python2 style python imports, and pylint
+* Don't try to cache Docker image any more - we are only caching Ubuntu which is small and Travis is still occasionally running out of space
+* missing line in pipeline diagram
+* Keep last LACP packet on a port
+* Less redundant host cache data
+* cached\_hosts\_on\_port()
+* pylint
+* Move HostCache to VLAN
+* Revert flood/up filter
+* Update docker containers used for docker-compose
+* Add unit test for ConnectionCouch in nsodbc.py
+* Add a pretend http request handler for couchdb
+* Set LACP aggregation flag so port channel can come up with only one port
+* pylint
+* Faucet Testing with OVS on hardware
+* pylint
+* Less decisions for \_\_hash\_\_()
+* Refactor to reduce temporary list building
+* Bump setup.cfg ready for next release
+
+1.6.7
+-----
+
+* Bump version to 1.6.7
+* Add links to our build server
+* Add packaging files for our FAUCET VM
+* Add some files necessary for packaging faucet
+* Default to prometheus for port\_stats poller in example gauge config
+* Fix example faucet.yaml
+* Remove math module import
+* Use tempfile.mkstemp() to make a new temp file instead of tempfile.TemporaryFile(), so the file can be opened and closed
+* Refactoring the GaugeWatcherTest class  & pylint
+* Remove GaugeUpdateTest class since there are no tests in it, and make all methods within it into functions
+* Move the get\_stats method into parent class
+* Refactor creating ofp messages into another class
+* added unit tests for watcher.py
+* ffi-dev only
+* Add FFI
+* LACP test doesn't need to be serial
+* Make port up message clearer
+* Test FIB route expiry
+* dead FIB routes not actually deleted
+* Update gNMI README
+* Update gNMI updater
+* Update gNMI Get
+* Add gNMI Set
+* Add gNMI Capabilities
+* Update run\_target script
+* Update hostname in certificate generation
+* Update gNMI Dockerfile
+* Update FCTL test to use MAC address format
+* Suppress pytype warning for using python3 only feature
+* Add colons between octets in mac addresses
+* Update faucet prometheus exporter port
+* Fix UnboundLocalError when fctl has a connection error
+* Provide a console script for running FCTL
+* Pre vesion bump
+* pylint
+
+1.6.6
+-----
+
+* Add doc for profiling
+* Version bump
+* Disable profiling by default (expensive)
+* Mark DP finalized also
+* pylint
+* Use Ryu app close method
+* Cache \_\_hash\_\_ of Conf objects once they have been finalized
+* Reduce interval for gauge thread poller tests
+* refactor port stats poller & flow table poller tests
+* Make hash cheaper again
+* Added unit test for flow table poller
+* Add unit test for port stats poller class
+* Need sys import
+* Add cProfiling of all Ryu runs
+* Learn ban count is dynamic
+* conf\_keys() slightly cheaper
+* Make log level configurable for faucet and gauge
+* Add docstrings
+* Unit test arg
+* Revert "Revert "Upgrade Ryu to 4.17.""
+* Ethernet packet headers reparsed more than necessary
+* Revert "Upgrade Ryu to 4.17."
+* Handle LACP packet parse failure
+* Revert "Must never set idle timeout on eth\_dst flows by default."
+* Don't need to try another route manager once we've tried the appropriate one based on eth\_type
+* Missed port type change to \_port\_add\_acl()
+* Need to ensure port has LACP enabled before replying
+
+1.6.5
+-----
+
+* Make travis do pypi deploys on new tags
+* Version pre-bump
+* LACP is sent from wrong eth\_src and with a VLAN tag
+* Added unit tests for gauge poller
+* Version bump for release
+* ACLs referenced by instance now
+* Resolve ACLs by name at config parsing time
+* Ignore subconf sense wrong
+* Not yet ready for DP-level only config change detection
+* pylint
+* Detect DP level config changes
+* pylint
+* Don't sort VLANs update metrics
+* Don't sort port order
+* Remove min port age
+* Sort learned MACs output
+* Test port\_status\_handler()
+* Missing enumerate
+* VLAN method to count learned hosts
+* New common code to return hosts learned on a port
+* eth\_src\_table unneeded
+* Simplify port instance use
+* Fix reference to ACL VLAN table
+* Use common code to build a list of ACLs
+* Re-enable testing under python 3.6
+* 2.8.1 still not stable
+* Try 2.8.1 now we check port state for liveness
+* Downgrade to 2.7.3 because 2.8.1 shows port state 4
+* Upgrade to 2.8.1
+* Add comment for mirror flows
+* Don't delete flows referencing a down mirror port
+* Must never set idle timeout on eth\_dst flows by default
+* Mirrored ports did not handle state transition
+* Disable http\_proxy when actually running tests
+* Allow configuration of an http proxy:
+* Sanity test is more helpful describing switch state
+* Added some method docstrings
+* Added unit test to check influx flow logger
+* Revert to 2.7.3 for stability
+* Allow configuration of VLAN tag type. Don't try to find OVS logs if env variable not present
+* Try 2.8.1 now we have OVS logs to look at
+* shutil
+* Archive OVS logs
+* Switch to OVS 2.7.3
+* Upgrade OVS to 2.8.1
+* pylint
+* Add unit test for influx port stats
+* Move the file read to outside of the parse\_influx\_output method
+* Add a unit test for the influx port state update method
+* Make PretendInflux handler if the server has specified an output file
+* fix ports being an empty dict, and give the datapath a name
+* change import to include the whole ryu ofproto parser
+* Extreme patience for slow learning DPs
+* Increase host learning patience
+* expect script to send recommended config
