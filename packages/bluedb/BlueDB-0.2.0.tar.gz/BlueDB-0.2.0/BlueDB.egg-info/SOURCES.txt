@@ -1,0 +1,6 @@
+README.md
+setup.py
+BlueDB.egg-info/PKG-INFO
+BlueDB.egg-info/SOURCES.txt
+BlueDB.egg-info/dependency_links.txt
+BlueDB.egg-info/top_level.txt
