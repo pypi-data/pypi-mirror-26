@@ -1,0 +1,17 @@
+AUTHORS
+ChangeLog
+LICENSE.txt
+README.rst
+bypass.py
+requirements.txt
+setup.cfg
+setup.py
+test_bypass.py
+bypass.egg-info/PKG-INFO
+bypass.egg-info/SOURCES.txt
+bypass.egg-info/dependency_links.txt
+bypass.egg-info/entry_points.txt
+bypass.egg-info/not-zip-safe
+bypass.egg-info/pbr.json
+bypass.egg-info/requires.txt
+bypass.egg-info/top_level.txt
