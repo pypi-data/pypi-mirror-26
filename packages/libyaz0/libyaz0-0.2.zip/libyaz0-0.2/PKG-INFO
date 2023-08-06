@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: libyaz0
+Version: 0.2
+Summary: A library for compressing/decompressing Yaz0/1 compression formats
+Home-page: https://github.com/aboood40091/libyaz0
+Author: AboodXD
+Author-email: aboood40091@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/aboood40091/libyaz0/archive/v0.2.tar.gz
+Description: UNKNOWN
+Keywords: compress,decompress,yaz0,szs,yaz1
+Platform: UNKNOWN
