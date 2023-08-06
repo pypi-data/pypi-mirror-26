@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: elabtui
+Version: 0.2.1
+Summary: elabftw text user interface to manage experiments
+Home-page: https://github.com/elabftw/elabtui
+Author: Nicolas CARPi
+Author-email: nicolas.carpi@curie.fr
+License: GPL v3
+Description-Content-Type: UNKNOWN
+Description: This is a text user interface to eLabFTW.
+Platform: UNKNOWN
