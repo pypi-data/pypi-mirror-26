@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: aiohttp_remotes
+Version: 0.0.5
+Summary: Control remote side information.
+Home-page: https://github.com/wikibusiness/aiohttp-remotes
+License: UNKNOWN
+Author: Ocean S.A.
+Author-email: osf@wikibusiness.org
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Requires-Dist: aiohttp >= 2.3.0
+
+===============
+aiohttp-remotes
+===============
+
+aiohttp plugin
+
