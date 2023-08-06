@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: 2048
+Version: 0.1
+Summary: Quantum's version of the 2048 game, with multi-instance support,restored from an old high school project.
+Home-page: https://github.com/quantum5/2048
+Author: quantum
+Author-email: quantum2048@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Keywords: 2048 pygame
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Games/Entertainment
+Requires-Dist: pygame
+Requires-Dist: appdirs
+
+UNKNOWN
+
+
