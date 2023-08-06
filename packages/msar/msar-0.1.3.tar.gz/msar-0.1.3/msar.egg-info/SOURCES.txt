@@ -1,0 +1,15 @@
+README.rst
+setup.py
+msar/Singleton.py
+msar/__init__.py
+msar/__main__.py
+msar/argparser.py
+msar/command_line.py
+msar/define.py
+msar/framework.py
+msar/msar.py
+msar/output.py
+msar.egg-info/PKG-INFO
+msar.egg-info/SOURCES.txt
+msar.egg-info/dependency_links.txt
+msar.egg-info/top_level.txt
