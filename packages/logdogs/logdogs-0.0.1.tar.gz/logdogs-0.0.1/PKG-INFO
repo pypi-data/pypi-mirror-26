@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: logdogs
+Version: 0.0.1
+Summary: a multiple logs monitor, see Github README for details
+Home-page: https://github.com/yanxurui/logdog
+Author: Xurui Yan
+Author-email: yxr1993@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: log monitor
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
