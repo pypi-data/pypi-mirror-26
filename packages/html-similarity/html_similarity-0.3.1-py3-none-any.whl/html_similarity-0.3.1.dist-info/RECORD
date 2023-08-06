@@ -1,0 +1,10 @@
+html_similarity/__init__.py,sha256=mIrA1XIBaTLhbjNLQ_gQ3CljF6gS0NPW979SyR--AmE,256
+html_similarity/similarity.py,sha256=yQv0aGMwNE12xnaRx3viOYxWSBvHyDroSQfW-sDcQpQ,297
+html_similarity/structural_similarity.py,sha256=Xoruu7JC3Oyx9iwpcnMWmPTvoNG962ANeYkrxzbcCHw,836
+html_similarity/style_similarity.py,sha256=HH7qHmtWlTThcywlOnwCKi42_Dk0es4KCZEvQzsqwu8,1069
+html_similarity-0.3.1.dist-info/DESCRIPTION.rst,sha256=bZAhgFHTclP5E96P_-D62OZhWcWl1PGrav2g4a_oDCQ,1977
+html_similarity-0.3.1.dist-info/METADATA,sha256=mjUeKvwL_yC_TZc2WlAUnYNpfIyC68-NZT0Lf08IA6c,2487
+html_similarity-0.3.1.dist-info/RECORD,,
+html_similarity-0.3.1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+html_similarity-0.3.1.dist-info/metadata.json,sha256=QL5J27ZSndyAGvnrc6d4Q9IbZaOFlZ98xTbtuD8QonU,716
+html_similarity-0.3.1.dist-info/top_level.txt,sha256=T_BGfuKrMA7KBPXfpcP0GNNI0CT4k9AtkdGBSC8I0Y4,16
