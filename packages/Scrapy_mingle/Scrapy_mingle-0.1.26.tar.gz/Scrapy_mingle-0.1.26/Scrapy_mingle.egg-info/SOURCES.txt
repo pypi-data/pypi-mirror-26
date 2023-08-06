@@ -1,0 +1,16 @@
+README.rst
+setup.py
+Scrapy_mingle.egg-info/PKG-INFO
+Scrapy_mingle.egg-info/SOURCES.txt
+Scrapy_mingle.egg-info/dependency_links.txt
+Scrapy_mingle.egg-info/not-zip-safe
+Scrapy_mingle.egg-info/requires.txt
+Scrapy_mingle.egg-info/top_level.txt
+scrapy_mingle/__init__.py
+scrapy_mingle/common_middleware.py
+scrapy_mingle/defaults.py
+scrapy_mingle/error_counter.py
+scrapy_mingle/proxy_getter.py
+scrapy_mingle/redis_dupefilter.py
+scrapy_mingle/rediscluster_dupefilter.py
+scrapy_mingle/stats_extent.py
