@@ -1,0 +1,510 @@
+BIO42
+=====
+
+Bɪᴏ42 is a project that manipulates biological and genomic data as a graph-relational database stored in Nᴇᴏ4ᴊ.
+
+It supports importing data from biological datasets (FASTA, BLAST, GenBank, etc.) into Nᴇᴏ4ᴊ and embeds a variety of queries and applets to yield insight from that database.
+
+[](toc)
+
+Prerequisites
+-------------
+
+Please install and get these working first.
+None are particularly hard to install.
+
+* [Pʏᴛʜᴏɴ (3.6+)](https://www.python.org)
+* [Pʏᴛʜᴏɴ Pɪᴩ](https://pip.pypa.io/en/stable/installing/)
+* [Nᴇᴏ4ᴊ](https://neo4j.com)
+* [Gᴇᴩʜɪ](https://gephi.org/) (optional)
+
+Please follow the application's own installation instructions, but in particular ***please make sure that the Pʏᴛʜᴏɴ binaries are in your PATH environment variable***, i.e. on MᴀᴄOS with Pʏᴛʜᴏɴ 3.6 you'd need to edit your `~/.bash_profile` to include:
+
+```bash
+export PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/bin
+```
+
+
+Installation
+------------
+
+Bɪᴏ42 should be installed from Pʏᴩɪ using Pɪᴩ:
+
+```bash
+$   pip install bio42
+```
+
+Installation from source is the same as for any other Pʏᴛʜᴏɴ application and is beyond the scope of this document.
+
+Running
+-------
+
+Bɪᴏ42 uses the Iɴᴛᴇʀᴍᴀᴋᴇ library, which implicitly supports both command line, GUI and Python modes of operation.
+The [Iɴᴛᴇʀᴍᴀᴋᴇ](https://www.bitbucket.org/mjr129/intermake) library documentation provides more detailed on accessing the modes.
+
+Tutorial
+--------
+
+For this tutorial we will load our sample dataset into a Nᴇᴏ4ᴊ database and use this to extract some interesting information.
+
+
+### Starting Bɪᴏ42 ###
+
+To simplify explanation, we will be running Bɪᴏ42 from the command line. Start command-line Bɪᴏ42 simply by entering `bio42` at the command prompt. 
+
+```bash
+$   bio42
+```
+
+If Bɪᴏ42 doesn't start please see the troubleshooting section below!
+
+Assuming all goes well, basic help on using Bɪᴏ42 is provided by the application itself and is not repeated in this readme:
+
+```bash
+$   help
+```
+
+### Getting connected ###
+
+_This tutorial covers getting Bɪᴏ42 connected to your Nᴇᴏ4ᴊ database._
+_It assumes you have followed both the "Starting" guide above and have a basic familiarity in how to operate a CLI interface._
+
+Bɪᴏ42 uses the concept of "endpoints", which are points from which we can get and/or retrieve data.
+Make sure Bɪᴏ42 is running by typing `bio42` at the command prompt, if necessary, then type `connections` to list the current endpoints:
+
+```bash
+$   connections
+    ECO connections
+    ECO ls item=B42://Endpoints
+    INF ┌──────────────────────────────────────────────┐
+        │ B42://Endpoints                              │
+        │ endpoints           2 inbuilt endpoints      │
+        ├──────────────────────────────────────────────┤
+        │ name                Endpoints                │
+        │ comment             None                     │
+        ├──────────────────────────────────────────────┤
+        │ null                Maps I/O to null         │
+        │ echo                Maps I/O to echo         │
+        └──────────────────────────────────────────────┘
+```
+
+We see that there are two endpoints built into Bɪᴏ42, but these aren't particularly useful.
+Instead, create one for our database by executing the command below.
+You'll need to change the username, password and directory to match your own system. If you're using Windows, use `+windows` instead of `+unix`.
+
+```bash
+$   new.connection name=my.database driver=NEO4JV1 host=127.0.0.1 password=neo4j user=neo4j directory=/mnt/data/neo4j +unix 
+```
+
+This command names the new connection "`my.database`", you can enter `connections` again to confirm the connection is now available.
+
+```bash
+$   connections
+...
+        │ my.database         neo4j@127.0.0.1          │
+...
+```
+
+We can test our new connection by running a very simple [Cʏᴩʜᴇʀ](https://neo4j.com/developer/cypher-query-language/) query. For this we'll use the `cypher` command.
+We can see by typing `cypher?` that `cypher` takes three arguments, only one of which is required, and that's the script to run.
+Let's keep it simple for now, and use the script `"return 1"`. Remember the quotes because the space will otherwise will make your statement look like it has two arguments!
+
+```bash
+$   cypher "return 1"
+    ECO cypher endpoint=neo4j@127.0.0.1 output=ECHO_EP "code=return 1"
+    ECO user.script output=ECHO_EP database=neo4j@127.0.0.1
+    INF echo) DATA 1
+```
+
+The final line gives us the result, our script returned a piece of `DATA` with the value `1`. `DATA` just means it is a raw value, as opposed to something more complicated, like a path, node or relationship. 
+
+Note: If something went wrong, make sure you've configured Nᴇᴏ4ᴊ correctly, you can always use the `close` command to remove your `local.db` endpoint and recreate it.
+
+### Boilerplate database ###
+
+_This tutorial covers getting your Nᴇᴏ4ᴊ populated with some data._
+_You should have completed the previous tutorial "Getting connected" first, and have a working database connection called `my.database`._ 
+
+Bɪᴏ42 comprises three main modules: [Iɴᴛᴇʀᴍᴀᴋᴇ](https://www.bitbucket.org/mjr129/intermake), [NᴇᴏCᴏᴍᴍᴀɴᴅ](https://www.bitbucket.org/mjr129/neocommand) and the [Bɪᴏ42](https://www.bitbucket.org/mjr129/bio42) core.
+In the "getting started" guide above, we used the basic Iɴᴛᴇʀᴍᴀᴋᴇ library to interact with the CLI (we could have just launched `intermake` instead of `bio42`). In the "getting connected" guide, we used the NᴇᴏCᴏᴍᴍᴀɴᴅ library to interact with Nᴇᴏ4ᴊ (we could have launched `neocommand` instead of `bio42`). Now we'll use the actual `bio42` part to interact with some genomics data!
+
+The first thing we want to do is get the latest data, so download the following:
+*   The GO **core ontology** (`go.owl`) from [geneontology.org](http://www.geneontology.org/page/download-ontology).
+*   The NCBI **taxonomy database dump** (`taxdump.tar.gz`) from [NCBI](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/).
+    * Unpack the `tar.gz` before continuing
+
+Biological data tends to be big, granted the GO and Taxonomy data isn't that big, but for the sake of providing a reproducible tutorial, let's pretend it's big and add it to the database the same way we would for masses of sequence data.
+
+Moving lots of data into Nᴇᴏ4ᴊ via Cypher queries would be slow, so Bɪᴏ42 provides an intermediate solution, whereby your data is converted into a set of specially formatted CSV files that Nᴇᴏ4ᴊ can then import _much_ more quickly. The downside of this is that Bɪᴏ42 and Nᴇᴏ4ᴊ need to be running on the same machine.
+
+Like everything else, the set of CSV files is represented in Bɪᴏ42 as an "endpoint", called a "parcel", which is a better name than "a bunch of specially formatted CSV files", let's create a new "parcel" now:
+
+```bash
+$   new.parcel my.basic
+    ECO new.parcel name=my.data
+    INF New parcel created at </Users/martinrusilowicz/.intermake-data/b42/user_endpoints/my.data>.
+```
+
+We didn't specify a folder explicitly, so as we can see, Bɪᴏ42 created one for us.
+Let's put some data into our parcel. Type `cmdlist import` to see what sort of data Bɪᴏ42 can import:
+
+```bash
+$   cmdlist import
+...
+        ::                                               ::
+        ::  import.annotations   - Imports: 'CSV', 'TSV' ::
+        ::  import.blast         - Imports: 'BLAST'      ::
+        ::  import.csv           - Creates ... CSV file. ::
+        ::  import.go            - Imports: 'GO OWL'     ::
+        ::  import.sequences     - Imports: 'ABIF', ...  ::
+        ::  import.taxonomy      - Imports: 'nodes'      ::
+...
+```
+
+Taxonomy and GO form the boilerplate of most Genomic databases, so it makes sense to get these in first. Use the following commands, but remember to replace the paths with your own!
+
+```bash
+$   import.go my.basic /mnt/data/sample/go.owl
+...
+```
+
+```bash
+$   import.tax my.basic /mnt/data/sample/tax.tree /mnt/data/sample/tax.names
+...
+```
+
+Note that we can abbreviate anything that's unambiguous, hence `import.taxonomy` becomes `import.tax`.
+
+Neither GO nor Taxonomy depend on anything else, so we can pump this into the database now to have a look. This is much safer than waiting until the end only to realise something didn't import correctly at the beginning! We _could_ use the `transfer` command to transfer from one endpoint to another, but as we mentioned before, a bulk import of a large dataset is a faster option, so run `parcel.bulk` to transfer our to the database via a bulk import:
+
+```bash
+$   parcel.bulk my.basic my.database
+...
+```
+
+After issuing the commands Bɪᴏ42 will go to sleep, waiting for Nᴇᴏ4ᴊ to do it's stuff. Database insertion is a long operation, so you should probably go to sleep too.
+
+If you're impatient, check out the `parcel.db` command, which creates a new Nᴇᴏ4ᴊ database from scratch, it's a lot faster, since the database is locked into the single task, but it doesn't work if you need to preserve an existing database.
+
+Assuming everything went well with our import, we can now explore our data! We'll poke around with that a bit more later, for now, let's just confirm the data's in there.
+
+```bash
+$   cypher "match (n:Taxon) return count(n)"
+    ECO cypher "code=match (n:Taxon) return count(n)"
+    ECO user.script output=ECHO_EP database=neo4j@130.88.90.122
+    INF echo) DATA 1539349
+``` 
+
+So we have _1,539,349_ beautiful taxa in our database, cool. What about GO?
+
+```bash
+$   cypher "match (n:Go) return count(n)"
+    ECO cypher "code=match (n:Go) return count(n)"
+    ECO user.script output=ECHO_EP database=neo4j@130.88.90.122
+    INF echo) DATA 45997
+```
+
+We have _45,997_ GO terms, that's cool too.
+
+Explaining the Cypher syntax is beyond the scope of this tutorial, but how did we know that our nodes were called `Taxon` and `Go`?
+
+Well, for one thing Bɪᴏ42 is heavily documented, and typing `help import.go` or `help import.taxonomy` tells you, but we can also work it out ourselves.
+Use the following Cypher script to find out for yourself:
+
+```bash
+$   cypher "match (n) return distinct labels(n)"
+    ECO cypher "code=match (n) return distinct labels(n)"
+    ECO user.script output=ECHO_EP database=neo4j@130.88.90.122
+    PRG  │ User script          │ +00 00      ⏎
+    PRG  │ -Cypher: User script │ +00 02      ⏎
+    INF echo) DATA ['Taxon']
+        echo) DATA ['Go']
+```
+
+This concludes the "boilerplate" of our genomics data, see the next tutorial for adding your own sequence data!
+
+#### Summary of import commands ####
+
+* `new_connection` - connect to Nᴇᴏ4ᴊ
+* `new_parcel` - new bulk transfer parcel
+* `import_taxonomy` - import NCBI taxonomy
+* `import_go` - import Gene Ontology terms
+* `transfer` - transfer data across the network (slow, simple; for small datasets)
+* `parcel_bulk` - transfer data into the database via a CSV file (fast, data must be on the same machine; for medium datasets)
+* `parcel_db` - transfer data into a brand new database (very fast, creates a new database; for large datasets) 
+
+### Genomics ###
+
+Following on from the [Boilerplate database](#boilerplate-database) tutorial, we will now add some specific genomics data to our database.
+
+The procedure is the same, first create your parcel:
+
+```bash
+$   new.parcel my.data
+...
+``` 
+
+Now use an `import.xxx` command to import some data.
+
+```bash
+$   import.sequences /mnt/data/sample/sequences.gb my.data +include.record.sequence user.edges=_organism=Taxon taxonomy.file=/mnt/data/sample/tax.names record.label=Sequence
+... 
+```
+
+We set a few extra parameters there. We didn't have to, but these will save us a bit of time organising our database later. You can use `help import.sequences` to get full parameter help, but here's what we did:
+
+* `/mnt/data/sample/seq.gb` - This is the path to our Genbank file, containing our sequence data.
+* `my.data` - The parcel we just created, this is where the parsed output is sent.
+* `+include.record.sequence` - We're saying we want the full sequence data in the output. If we don't say this, only the meta-data gets put in the output. This line is the same as `include.record.sequence=True`.
+* `user.edges=_organism=Taxon` - We create a link between the `organism` field of the Genbank file and the `Taxon` nodes we created earlier.
+* `taxonomy.file=/mnt/data/sample/tax.names` - This tells us where to lookup the organism names mentioned in the previous parameter.
+* `record.label=Sequence` - Every Genbank file contains different things, some contain genes, while some contain whole chromosomes. This parameter tells us what we name our Genbank records. 
+
+The last three fields are entirely optional - we could accomplish the same thing by executing Cypher scripts once our data is inside the database, but for now, we'll choose to save a bit of time getting everything ready beforehand.
+
+We also want some BLAST data, no extra parameters this time, we'll stick with the defaults:
+
+```bash
+$   import.blast /mnt/data/sample/blast.tsv my.data
+...
+```
+
+That's it, just run `parcel.bulk` again to import our data.
+
+```bash
+$   parcel.bulk my.data
+...
+```
+
+You can use the same method as in the previous tutorial to check your data really is in the database!
+
+Note that we don't need our parcels anymore, we can remove them from Bɪᴏ42 via:
+
+```bash
+$   close my.data
+...
+$   close my.basic
+```
+
+This won't remove their contents from disk though, in the same way closing your database connection won't remove the database! You can manually delete the folders from disk if you want to free disk-space, or you can re-add the parcels to Bɪᴏ42 should you ever want to use them again.
+
+### Optimising your database ###
+
+All the entries in the Bɪᴏ42 database are given a special primary key called "uid", indexing the UIDs can help speed up database access. 
+Type this into Bɪᴏ42 to create the indexes for you:
+
+```bash
+$   optimise /endpoints/local.db
+...
+```
+  
+
+### Exploring your data ###
+
+_This tutorial assumes you have a database with data in it to explore!._
+
+Nᴇᴏ4ᴊ provides a fantastic web interface on [port 7474](http://127.0.0.1:7474) to visually explore your data.
+We'll give the commands here in Bɪᴏ42, but it's worth it to try out Nᴇᴏ4ᴊ's interface for some decent interactive visuals!
+
+Bɪᴏ42 has a library of inbuilt Cypher scriptlets you can use for data exploration. These aren't loaded by default, but you can load them:
+
+```bash
+$   import bio42_scripts
+    ECO import name=bio42_scripts
+$   show scripts
+    ECO show category=scripts
+    INF scripts is now shown
+```
+
+Now try showing the commands again:
+
+```bash
+$   cmdlist
+...
+        ::  test.find.escherichia.sequences       ... ::
+        ::  count.all.edges                       ... ::
+        ::  count.all.nodes                       ... ::
+        ::  find.composite.genes                  ... ::
+        ::  find.leaf.taxa                        ... ::
+        ::  find.links.between.organisms          ... ::
+        ::  find.links.between.plasmids           ... ::
+        ::  find.nodes.by.search.text.anywhere    ... ::
+        ::  find.non.transitive.chains.of.5       ... ::
+        ::  find.non.transitive.triplets          ... ::
+        ::  find.organism.links.between.sequences ... ::
+        ::  find.taxa.with.sequence.data          ... ::
+...
+```
+
+Let's see what taxa our dataset represent:
+
+```bash
+$   find.taxa.with.sequence.data local.db
+    INF echo) NODE ( Taxon «9» )
+        echo)            authority  = Buchnera aphidicola
+        echo)            embl_code  = BA
+        echo)            includes   = Acyrthosiphon pisum symbiont P
+...
+```
+
+You probably got bombarded with data, but we can see we have a nice bacterial dataset. Some of the provided Cypher scriptlets will only work with specific data, so you'll need to check out the documentation on them to know if they'll work or not:
+
+```bash
+$   find.taxa.with.sequence.data?
+    ECO help command_name=find.taxa.with.sequence.data
+    INF   _find.taxa.with.sequence.data_____________________________
+          Aliases: Find taxa with sequence data
+            Finds the set of taxa for which sequence data is present
+    
+            MATCH (taxon:Taxon)
+            WHERE (taxon)-[:Contains]->(:Sequence)
+            RETURN taxon
+```
+
+We can however see that the full Cypher script is given, so we can always tweak the script to match our needs.
+
+Let's try to find some non-transitive triplets by ourselves. A non-transitive-triplet represents a series of three genes (A, B, C), where A and B are similar, B and C are similar, but A and C are not alike. In Cypher, this is simple:
+
+```cypher
+MATCH triplet = (a:Sequence)-[:Like]-(b:Sequence)-[:Like]-(c:Sequence)
+WHERE NOT (a)-[:Like]-(c) AND a <> b AND b <> c AND a <> c
+RETURN triplet LIMIT 1
+```
+
+Try pasting this code into the Nᴇᴏ4ᴊ web browser.
+
+On a very large database, the above code might take longer than the average tea-break, which isn't very helpful if you're just in need of a quick peek, so try the following instead. It's a bit of a hack: subsetting our database by taxonomy would be a more useful option, but taking the first arbitrary thousand entries gives an approximation of the right idea: 
+  
+```bash
+MATCH (a:Sequence)
+WITH a LIMIT 1000
+MATCH triplet = (a)-[:Like]-(b:Sequence)-[:Like]-(c:Sequence)
+WHERE NOT (a)-[:Like]-(c) AND a <> b AND b <> c AND a <> c
+RETURN triplet LIMIT 1
+``` 
+
+ 
+### Visualising data ###
+
+So far, we've explored data in Bɪᴏ42's CLI interface, and Nᴇᴏ4ᴊ's [local web interface](http://127.0.0.1:7474). The first is ugly, the second can only handle small amounts of data. Fortunately, there's already a wealth of software out there for handling much larger visualisations of graph/network data. In this tutorial, we'll move data from your database to the graph visualisation software Gᴇᴩʜɪ. You can use another piece of software if you want instead, providing it imports GEXF files.
+
+Start by creating our Gᴇᴩʜɪ endpoint:
+
+```bash
+$   new.gephi my.gephi
+...
+```
+
+Now we need to write some data to it! Let's make a network of two bacteria and all the genes they share in common, the Cypher script is:
+
+```bash
+MATCH (taxon1:Taxon {scientific_name:"Yersinia pestis"})
+MATCH (taxon2:Taxon {scientific_name:"Helicobacter pylori"})
+MATCH path = (taxon1)-[:Contains]->(sequence1:Sequence)-[:Like]-(sequence2:Sequence)<-[:Contains]-(taxon2)
+RETURN path
+```
+
+We could put this in a "parcel" first, like before, but for this tutorial we'll send it straight to Gᴇᴩʜɪ.
+
+```bash
+$   cypher output=my.gephi "code=MATCH (taxon1:Taxon {scientific_name:\"Yersinia pestis\"}) MATCH (taxon2:Taxon {scientific_name:\"Helicobacter pylori\"}) MATCH path = (taxon1)-[:Contains]->(sequence1:Sequence)-[:Like]-(sequence2:Sequence)<-[:Contains]-(taxon2) RETURN path"
+```
+
+When that's done, you can close Bɪᴏ42. Open up Gᴇᴩʜɪ and import the "my.gephi.gexf" file we created. Have fun with your graph in Gᴇᴩʜɪ.
+
+
+
+Troubleshooting
+---------------
+
+### General errors ###
+
+Please see the [Iɴᴛᴇʀᴍᴀᴋᴇ](https://www.bitbucket.org/mjr129/intermake) troubleshooting section.
+
+
+### New-database tool fails to run ###
+
+User errors:
+
+* Problem: The new database tools require Nᴇᴏ4ᴊ to be installed on the local machine.
+    * Solution: Make sure Nᴇᴏ4ᴊ and Bɪᴏ42 reside on the same machine.
+    * Workaround: Use the `transfer` command, rather than `parcel.bulk` or `parcel.db`.
+    
+* Problem: The database directory isn't configured.
+    * Solution: Close your database connection with `close xxx` and recreate it, specify the directory argument this time. 
+
+On Mac:
+
+* Problem: At the time of writing there is a critical bug in the OSX version of Nᴇᴏ4ᴊ if installed using the installer (`.dmg`), whereby the command line tools fail to run.
+    * Solution: Please use the `.tar.gz` version of Nᴇᴏ4ᴊ instead.
+    
+On Windows or Mac:
+
+* No known problems 
+
+### Nᴇᴏ4ᴊ problems ###
+
+* See [neo4j.com](https://neo4j.com).
+
+### Nᴇᴏ4ᴊ speed ###
+
+User errors:
+
+* Problem: You're using a slow import mode. 
+    * Solution: Use `parcel.bulk` (fast) or `parcel.db` (fastest) instead of `transfer` (slowest).
+* Problem: The database isn't indexed.
+    * Solution: Index your nodes. See the `optimise` command.
+* See the [Nᴇᴏ4ᴊ problems](#Nᴇᴏ4ᴊ-problems) section also. 
+
+
+
+Developing
+----------
+
+Bɪᴏ42 is built upon the [Iɴᴛᴇʀᴍᴀᴋᴇ](https://www.bitbucket.org/mjr129/intermake) and [NᴇᴏCᴏᴍᴍᴀɴᴅ](https://www.bitbucket.org/mjr129/neocommand) libraries.
+All the code in these libraries is heavily commented.
+
+We touched upon importing a set of plugins from `bio42_scripts` in the tutorial earlier, if you want to write your own extensions, check out the documentation for these libraries, in particular the `readme` for Iɴᴛᴇʀᴍᴀᴋᴇ.
+You might also want to check out the `bio42/plugins` subfolder.
+
+Installation from source
+------------------------
+
+You will need to clone the following repositories using Git:
+
+```bash
+git clone https://www.bitbucket.org/mjr129/intermake.git
+git clone https://www.bitbucket.org/mjr129/neocommand.git
+git clone https://www.bitbucket.org/mjr129/bio42.git
+git clone https://www.bitbucket.org/mjr129/mhelper.git
+git clone https://www.bitbucket.org/mjr129/editorium.git
+git clone https://www.bitbucket.org/mjr129/progressivecsv.git
+git clone https://www.bitbucket.org/mjr129/stringcoercion.git
+```
+
+Install the root of each repository in development mode via:
+
+```bash
+pip install -e .
+```
+
+You will also need to download and install the `requirements.txt` listed in each repository:
+
+```bash
+pip install -r requirements.txt 
+```
+
+You should then be able to run the projects as normal.
+
+
+Meta-data
+---------
+
+```ini
+author=     Martin Rusilowicz
+language=   python3
+date=       2017
+keywords=   bioinformatics,neo4j,database,graph,intermake,neocommand,blast,fasta,genbank
+host=       bitbucket
+type=       application,application-cli,application-gui
+```
