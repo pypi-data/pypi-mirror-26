@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: freeopcua
+Version: 0.0
+Summary: Pure Python OPC-UA client and server library
+Home-page: https://pypi.python.org/pypi/opcua/
+Author: Olivier Roulet-Dubonnet
+Author-email: olivier.roulet@gmail.com
+License: UNKNOWN
+Platform: all
+Requires-Dist: opcua
+
+Use `opcua <https://pypi.python.org/pypi/opcua/>`_ instead.
+
+
