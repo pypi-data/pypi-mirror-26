@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: bonobo-selenium
+Version: 0.1.1
+Summary: Bonobo Selenium Extension
+Home-page: https://bonobo-project.org/with/selenium
+Author: Romain Dorgueil
+Author-email: romain@dorgueil.net
+License: Apache License, Version 2.0
+Download-URL: https://github.com/python-bonobo/bonobo-selenium/tarball/0.1.1
+Description-Content-Type: UNKNOWN
+Description: 
+        brew install geckodriver
+Platform: UNKNOWN
