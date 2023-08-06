@@ -1,0 +1,62 @@
+Metadata-Version: 2.0
+Name: waldur-mastermind
+Version: 2.8.0
+Summary: Waldur MasterMind is a hybrid cloud orchestrator.
+Home-page: http://waldur.com
+Author: OpenNode Team
+Author-email: info@opennodecloud.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: ansible-waldur-module (>=0.4.1)
+Requires-Dist: defusedxml (>=0.4.1)
+Requires-Dist: influxdb (>=4.1.0)
+Requires-Dist: jira (>=1.0.7)
+Requires-Dist: nodeconductor (>0.150.0)
+Requires-Dist: nodeconductor-auth-openid (>=0.8.5)
+Requires-Dist: nodeconductor-auth-social (>=0.7.4)
+Requires-Dist: nodeconductor-aws (>=0.10.0)
+Requires-Dist: nodeconductor-azure (>=0.3.0)
+Requires-Dist: nodeconductor-cost-planning (>=0.5.2)
+Requires-Dist: nodeconductor-digitalocean (>=0.9.0)
+Requires-Dist: nodeconductor-openstack (>=0.37.5)
+Requires-Dist: nodeconductor-saml2 (>=0.8.2)
+Requires-Dist: waldur-ansible (>=0.3.1)
+Requires-Dist: waldur-auth-valimo (>=0.3.0)
+Requires-Dist: waldur-freeipa (>=0.2.3)
+Requires-Dist: waldur-paypal (>=0.6.2)
+Requires-Dist: waldur-slurm (>=0.3.2)
+Provides-Extra: test
+Requires-Dist: ddt (<1.1.0,>=1.0.0); extra == 'test'
+Requires-Dist: factory-boy (==2.4.1); extra == 'test'
+Requires-Dist: freezegun (==0.3.7); extra == 'test'
+
+Waldur MasterMind
+=================
+
+Waldur MasterMind is part of the Waldur suite - https://waldur.com - for managing of hybrid cloud resources.
+It is used for building marketplaces, self-service portals and for managing in-house IT resources.
+
+License
+-------
+Waldur MasterMind is released under MIT license.
+
+Documentation
+-------------
+
+Please use `all-in-one bootstrap script <https://github.com/opennode/waldur-mastermind/blob/develop/docs/guide/bootstrap.sh>`_
+to install Waldur core and all plugins in development mode or update them to the latest versions.
+Also it is assumed that you've already activated virtual Python environment before running this script.
+
+Administration and usage guides can be found at http://docs.waldur.com .
+
+Support
+-------
+
+For professional support and integration services please contact info@opennodecloud.com.
+
+
