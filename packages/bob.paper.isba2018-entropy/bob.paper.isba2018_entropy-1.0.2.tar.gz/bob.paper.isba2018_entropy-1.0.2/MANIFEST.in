@@ -1,0 +1,1 @@
+include COPYING README.rst requirements.txt environment.yml
