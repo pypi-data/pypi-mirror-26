@@ -1,0 +1,11 @@
+
+include LICENSE
+include README.rst
+include tox.ini
+
+recursive-include django_field_editor/migrations *
+recursive-include django_field_editor/static *
+recursive-include django_field_editor/templates *
+
+global-exclude .DS_Store
+global-exclude *.pyc
