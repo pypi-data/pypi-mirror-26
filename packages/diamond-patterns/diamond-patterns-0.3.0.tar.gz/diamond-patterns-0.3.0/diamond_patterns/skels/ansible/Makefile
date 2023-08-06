@@ -1,0 +1,22 @@
+# ansible state (c) Ian Dennis Miller
+
+SHELL=/bin/bash
+
+dry-run:
+	ansible-playbook ./playbook.yaml -i ./inventory --forks=1 --verbose --check
+
+install:
+	ansible-playbook ./playbook.yaml -i ./inventory --forks=2 --verbose
+
+clean:
+	rm *.retry
+
+depends:
+	# apt-get -y install python-pip python3-pip
+	pip install ansible
+	# sudo -u admin ansible-galaxy install -r requirements.yaml
+
+ping:
+	ansible all -m ping
+
+.PHONY: dry-run install clean depends ping
