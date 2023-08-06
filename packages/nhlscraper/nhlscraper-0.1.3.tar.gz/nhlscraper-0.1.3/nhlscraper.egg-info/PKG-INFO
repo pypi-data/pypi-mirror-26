@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: nhlscraper
+Version: 0.1.3
+Summary: NHL Scraper API for Python
+Home-page: https://gitlab.com/hrel3/nhlscraper
+Author: Justin Barber
+Author-email: justin@hrel.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
