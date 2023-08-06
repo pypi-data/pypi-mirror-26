@@ -1,0 +1,8 @@
+numpy
+scipy
+astropy
+cython
+tqdm
+pymangle
+sklearn
+matplotlib
