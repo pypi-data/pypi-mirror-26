@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: wizi
+Version: 0.0.2
+Summary: Fast template generator for your project
+Home-page: https://github.com/MichaelYusko/wizi
+Author: Mike Yusko
+Author-email: freshjelly12@yahoo.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
