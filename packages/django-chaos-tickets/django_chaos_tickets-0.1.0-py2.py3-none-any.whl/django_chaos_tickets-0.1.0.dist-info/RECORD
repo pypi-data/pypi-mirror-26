@@ -1,0 +1,14 @@
+chaos_tickets/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+chaos_tickets/apps.py,sha256=575p5R2fkGdHhYjFXBs9sH91Gwx_lAZfxbFf3RrWtiA,120
+chaos_tickets/models.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+chaos_tickets/urls.py,sha256=0aE3OlS81ikQ8hbKC4E3xEkCVOgvWRCVmNy9TXLQg7w,210
+chaos_tickets/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chaos_tickets/static/css/chaos_tickets.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chaos_tickets/static/js/chaos_tickets.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chaos_tickets/templates/chaos_tickets/base.html,sha256=zzaUPjEgvwxg-Gn2rZ6gIMWphucmEGvAU_skUXJIcDA,661
+django_chaos_tickets-0.1.0.dist-info/DESCRIPTION.rst,sha256=EnOT4GGv50emUj0astULe8yFMN8MSuYUcD3t-vOnRIo,1674
+django_chaos_tickets-0.1.0.dist-info/METADATA,sha256=8Xrh7TWPsPsqfbaCk5WhJE6BImbs5L-q7uDfbh5T1Kc,2735
+django_chaos_tickets-0.1.0.dist-info/RECORD,,
+django_chaos_tickets-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_chaos_tickets-0.1.0.dist-info/metadata.json,sha256=GS3wsxk-vZjiEtNhacJlk3HKYOkEIyZuF3hldZG4JNM,1132
+django_chaos_tickets-0.1.0.dist-info/top_level.txt,sha256=JXtiSmWYjMibaucRIl3mRn_7uZfcyOOh06uHyru1Shs,14
