@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+cwsharp/__init__.py
+cwsharp/chunk.py
+cwsharp/cwsharp.dawg
+cwsharp/dawg.py
+cwsharp/tokenizer.py
+cwsharp.egg-info/PKG-INFO
+cwsharp.egg-info/SOURCES.txt
+cwsharp.egg-info/dependency_links.txt
+cwsharp.egg-info/requires.txt
+cwsharp.egg-info/top_level.txt
