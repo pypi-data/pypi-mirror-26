@@ -1,0 +1,17 @@
+mainframe/__init__.py,sha256=dcZJupwOjGwPyIrzMx441X03rgUYAjBQVoPPvEB0HD8,1623
+mainframe/array_type.py,sha256=hcLDg71qxV_qmD7RGYeCZNiBaqp13_0vdxgWwwEgl28,128
+mainframe/button_component.py,sha256=tmNcK3MPP9QZ6MCR8i50E34QqERoz2Ki9NW2FAxLxB8,3096
+mainframe/child_component.py,sha256=7GjRq9bw3aAmU96uU6d_q67h6MqJ7yiVbY7hlb5IwRY,129
+mainframe/client.py,sha256=5MUhveB5Z0UnB3SolRJK_2nsG6TJkpbamBw9MuYR65s,2403
+mainframe/component.py,sha256=rbpVyCz7Fx3mWOHu6bIDizSwtcQg_ov5jqvJADw1GF8,1648
+mainframe/form_component.py,sha256=Y0KWGaxAS78yZdwhTJ1E9xCuYvc0jaI-4ZQ_DxJqKew,5365
+mainframe/media_component.py,sha256=DJQo8gi0rBc22RFMxniADfT8WSKRKqqoOD9mKHyz__8,6432
+mainframe/response.py,sha256=76lUzQnm_RZLGoc9xYGJHwnjQQwcLl186mWMJjOzOOo,1646
+mainframe/root_component.py,sha256=qn2xwttl94wBk0SrTxgFtiy3hbbK5KH_hjVuerdNX6A,922
+mainframe/text_component.py,sha256=eSDyoyf-ZZ5Vm94CxDBa6CZ22c5pi6YaTZazDGzatNA,3766
+mainframe_bot_api-1.2.4.dist-info/DESCRIPTION.rst,sha256=BpgoUFSM6eGhGHV3IUNgB8MDI-rTAhadgWzuRaFWIH4,148
+mainframe_bot_api-1.2.4.dist-info/METADATA,sha256=zHqLLOiK1JDPN7wMKIJj5w5hoogMPdj2VqTwgW_M4go,1188
+mainframe_bot_api-1.2.4.dist-info/RECORD,,
+mainframe_bot_api-1.2.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+mainframe_bot_api-1.2.4.dist-info/metadata.json,sha256=vZ4eJeh9DYOF9drOduTv80w4YjcTB7jzcP7cW-8yFYM,1168
+mainframe_bot_api-1.2.4.dist-info/top_level.txt,sha256=LbxulWZAhD9kWoyhovYn4wIHdQLm6nogKg5NCtm0mhg,10
