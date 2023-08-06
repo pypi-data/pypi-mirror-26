@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: ibotcloud-python
+Version: 0.1.2
+Summary: xiaoi iBotCloud WebAPI Python SDK
+Home-page: https://github.com/tanbro/ibotcloud-python
+Author: liu xue yan
+Author-email: liu_xue_yan@foxmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Requires-Dist: requests
+Provides-Extra: develop
+Requires-Dist: setuptools; extra == 'develop'
+Requires-Dist: wheel; extra == 'develop'
+Requires-Dist: twine; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: Sphinx; extra == 'docs'
+Requires-Dist: sphinx-autobuild; extra == 'docs'
+
+iBotCloud Web API for Python
+============================
+
+小i机器人云平台，官方是有 Python_ SDK 的，但是没有发布到 pypi_ 。
+
+这个 SDK 是对官方版本的改进。
+
+.. _python: http://python.org/
+.. _pypi: http://pypi.org/
+
+
