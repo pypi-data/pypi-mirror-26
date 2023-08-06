@@ -1,0 +1,6 @@
+markdown
+premailer
+emails
+beautifulsoup4
+lxml
+six
