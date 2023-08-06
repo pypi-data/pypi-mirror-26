@@ -1,0 +1,3 @@
+[console_scripts]
+tfr = tfr.spectrogram_features:main
+
