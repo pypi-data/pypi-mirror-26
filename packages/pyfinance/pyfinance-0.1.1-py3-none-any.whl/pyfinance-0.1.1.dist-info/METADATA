@@ -1,0 +1,42 @@
+Metadata-Version: 2.0
+Name: pyfinance
+Version: 0.1.1
+Summary: Python package designed for general financial and security returns analysis.
+Home-page: https://github.com/bsolomon1124/pyfinance
+Author: Brad Solomon
+Author-email: brad.solomon.1124@gmail.com
+License: MIT
+Download-URL: https://github.com/bsolomon/pyfinance/archive/0.1.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: finance,investment,analysis,regression,options,securities,CAPM,machine learning,risk
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3
+Requires-Dist: Matplotlib (>=1.1)
+Requires-Dist: Numpy (>=0.7.0)
+Requires-Dist: Pandas (>=0.20.1)
+Requires-Dist: beautifulsoup4 (>=4.6.0)
+Requires-Dist: pandas-datareader (>=0.5.0)
+Requires-Dist: requests (>=2.11.1)
+Requires-Dist: scikit-learn (>=0.18)
+Requires-Dist: scipy (>=0.10.0)
+Requires-Dist: seaborn (>=0.8.0)
+Requires-Dist: selenium (>=3.5.0)
+Requires-Dist: statsmodels (>=0.6.0)
+Requires-Dist: xlrd (>=0.5.4)
+Requires-Dist: xmltodict (>=0.10.0)
+
+pyfinance
+=========
+
+Python package designed for general financial and security returns analysis.
+
+Work in progress; docs forthcoming. Feedback appreciated.
+
