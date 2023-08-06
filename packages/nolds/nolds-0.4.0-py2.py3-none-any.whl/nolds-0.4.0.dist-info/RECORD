@@ -1,0 +1,12 @@
+nolds/__init__.py,sha256=6jkQIiN3w9xtBuCnhkQuRDa_K7wZV9-lQiqchYTl-YI,225
+nolds/datasets.py,sha256=aNONI7RTzlrbs85XnH4GBcIRjvL9tmmV1k7C0AZStJs,7538
+nolds/examples.py,sha256=MX31Ck5f8HPTtbnyeE0EYpWYEMFbAskyyx_xSG6y4xU,8150
+nolds/measures.py,sha256=xp_CL-DD4-tkwduwd7a4Vrh3OSb7r0lkREdxRx8wzxM,58222
+nolds/test_measures.py,sha256=I4yGOYvBZ8TPpY5Y0Ad-cFNPqvZb1XPPf2hqrNl1Qmc,7874
+nolds/datasets/brown72.npy,sha256=vvlcvqnahSK5sSsiNQ6fI2_DhmEozhJngtDVso8O7hM,8272
+nolds-0.4.0.dist-info/DESCRIPTION.rst,sha256=AVy1af6zLqLyW7b1lzaiNvYrZjIAzauWTAD7-6WjBy4,3342
+nolds-0.4.0.dist-info/METADATA,sha256=Y86nl4d0QmquBGWWNzuB6gpzRxFPm_-ysCXCbA7du74,4500
+nolds-0.4.0.dist-info/RECORD,,
+nolds-0.4.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+nolds-0.4.0.dist-info/metadata.json,sha256=z5RBtzwrIIah7EwJibzF3Up6YWxeS0Rk6eOtEj12AWc,1362
+nolds-0.4.0.dist-info/top_level.txt,sha256=npAc0w4mF2Qz21TEWLJDCC6JyplnzgA3Hkks-cr-PbE,6
