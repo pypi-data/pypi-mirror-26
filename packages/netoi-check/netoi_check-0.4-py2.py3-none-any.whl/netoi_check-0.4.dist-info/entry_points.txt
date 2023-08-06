@@ -1,0 +1,3 @@
+[console_scripts]
+netoi-check = netoi_check:main
+
