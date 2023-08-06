@@ -1,0 +1,6 @@
+setup.py
+zerolib/__init__.py
+zerolib.egg-info/PKG-INFO
+zerolib.egg-info/SOURCES.txt
+zerolib.egg-info/dependency_links.txt
+zerolib.egg-info/top_level.txt
