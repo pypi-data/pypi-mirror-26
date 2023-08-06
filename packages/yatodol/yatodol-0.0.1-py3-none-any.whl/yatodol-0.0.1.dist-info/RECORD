@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_yatodol.py,sha256=u2C3ku9MPn3xUovWJGpuZ9YAMDrLsnc-U61kPYFu1CY,66
+yatodol/__init__.py,sha256=Mqa0hANE4_qXT90IcbFhrejkCERK9kxADeI47qSn7Rg,33
+yatodol-0.0.1.dist-info/DESCRIPTION.rst,sha256=oR91CAkKKF7-Db0XH8DNL4JqEwCd5g72NDhdPXE_Z24,71
+yatodol-0.0.1.dist-info/METADATA,sha256=voh-acJcHqRHuJIqvku1TH8y4rO4qmTknust5yEftYQ,427
+yatodol-0.0.1.dist-info/RECORD,,
+yatodol-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+yatodol-0.0.1.dist-info/entry_points.txt,sha256=wI3o_gGx-vyjSSJDvgth_FCa3p8XzGw3A4VomcOiEwQ,42
+yatodol-0.0.1.dist-info/metadata.json,sha256=nWc-JgsGV_4Mf1PV_OILqH_D-GAFNf4wjwe547u6TRA,683
+yatodol-0.0.1.dist-info/top_level.txt,sha256=8fyZVy6OCezuCJF5GrDgJ8OxoVDsJ3937EoPJjRfEcI,14

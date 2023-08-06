@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: yatodol
+Version: 0.0.1
+Summary: Yet another todo-list manager (command line interface)
+Home-page: https://github.com/yatodol/cli
+Author: Dimitri Merejkowsky
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: python-cli-ui
+
+yadotol cli
+============
+
+Command line interface for yadotol server.
+
+
