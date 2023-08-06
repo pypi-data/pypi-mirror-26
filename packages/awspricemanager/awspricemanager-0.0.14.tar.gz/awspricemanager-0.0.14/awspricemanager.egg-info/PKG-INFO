@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: awspricemanager
+Version: 0.0.14
+Summary: AWS Price Manager - Pulls pricing information from AWS Price List
+Home-page: https://bitbucket.org/tochininja/aws-price-api/overview
+Author: Adamson dela Cruz
+Author-email: adamson.delacruz@gmail.com
+License: BSD 3-Clause License
+Description: UNKNOWN
+Keywords: aws awspricing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

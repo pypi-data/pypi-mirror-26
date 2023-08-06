@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+awspricemanager/__init__.py
+awspricemanager/constants.py
+awspricemanager/pricemanager.py
+awspricemanager.egg-info/PKG-INFO
+awspricemanager.egg-info/SOURCES.txt
+awspricemanager.egg-info/dependency_links.txt
+awspricemanager.egg-info/top_level.txt
+offers/__init__.py
+offers/ec2.py
+offers/offer.py
