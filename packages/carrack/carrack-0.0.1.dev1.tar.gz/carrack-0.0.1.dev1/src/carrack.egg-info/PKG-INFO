@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: carrack
+Version: 0.0.1.dev1
+Summary: Airflow Carrack Sync Replicator Marketplace Client
+Home-page: https://gitlab.com/fluyt/carrack
+Author: Raymond Joseph Usher Roche
+Author-email: rjsuher+pypi@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/fluyt/carrack/repository/v0.0.1dev1/archive.tar.gz
+Description: UNKNOWN
+Keywords: airflow,sync,replication
+Platform: UNKNOWN
+Classifier: Framework :: IPython
+Classifier: Environment :: Console
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Terminals

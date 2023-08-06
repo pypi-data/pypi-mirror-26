@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+src/carrack/__init__.py
+src/carrack.egg-info/PKG-INFO
+src/carrack.egg-info/SOURCES.txt
+src/carrack.egg-info/dependency_links.txt
+src/carrack.egg-info/requires.txt
+src/carrack.egg-info/top_level.txt
