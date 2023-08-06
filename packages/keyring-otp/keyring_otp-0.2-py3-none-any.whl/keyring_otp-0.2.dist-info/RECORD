@@ -1,0 +1,12 @@
+keyring_otp-0.2.dist-info/DESCRIPTION.rst,sha256=y_2An8Lcsrd_UJFsmAK1c__5j1_CwSAZ2AFu8dGPHHo,4007
+keyring_otp-0.2.dist-info/METADATA,sha256=LKIYMXMhBEo7Z_5-_mE3gplkORhuyu1hJThmOGANvN4,4715
+keyring_otp-0.2.dist-info/RECORD,,
+keyring_otp-0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+keyring_otp-0.2.dist-info/entry_points.txt,sha256=WvBsKrMyRxmVEPWRvjKhFi46W7uVsMzxmkCJ7ZvGsDU,40
+keyring_otp-0.2.dist-info/metadata.json,sha256=abwvIrKRkpYTtvDkG-PRXEOviUIprXiF-3L-N3k5yjI,1008
+keyring_otp-0.2.dist-info/top_level.txt,sha256=D5U9sZb1peQgROUt4uxCYtCpXMrh8tkqjMKd0WEu3b8,5
+kotp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kotp/cli.py,sha256=p4MWl5qgo3hm23TAIr8k1x1GiCQgCI9o-AsKuKCws6Y,2546
+kotp/kotp.py,sha256=eSSAwS8mYTLuEKk6HFB9vmyBL40SJF8O6mkaZlADaMg,1183
+kotp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kotp/tests/test_kotp.py,sha256=X1VF5zq5Km2TKoOcFhlwq6S6efLcbg3V6c0P6EeEc34,191
