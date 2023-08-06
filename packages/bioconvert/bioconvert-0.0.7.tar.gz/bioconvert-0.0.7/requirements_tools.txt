@@ -1,0 +1,11 @@
+bamtools
+bcftools
+bedtools
+bioawk
+dsrc
+mawk
+pbzip2
+pigz
+sambamba
+samtools
+seqtk
