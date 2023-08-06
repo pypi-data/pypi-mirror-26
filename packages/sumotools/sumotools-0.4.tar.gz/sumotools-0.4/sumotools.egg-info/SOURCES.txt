@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+sumotools/__init__.py
+sumotools.egg-info/PKG-INFO
+sumotools.egg-info/SOURCES.txt
+sumotools.egg-info/dependency_links.txt
+sumotools.egg-info/top_level.txt
