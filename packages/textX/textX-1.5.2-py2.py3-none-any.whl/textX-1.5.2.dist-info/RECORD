@@ -1,0 +1,17 @@
+textX-1.5.2.dist-info/DESCRIPTION.rst,sha256=Rs_fazAXa6wiSWIJztizOJPW_XSCfIx5KoOuRJUA-lM,3685
+textX-1.5.2.dist-info/METADATA,sha256=908lyhkA8brfalrtlbecyvc2SlEqo9aXsLXVUcIxu40,4632
+textX-1.5.2.dist-info/RECORD,,
+textX-1.5.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+textX-1.5.2.dist-info/entry_points.txt,sha256=qdgCRPkQopenxSXRY_O7MAhnWyXQk0fWw_MsE9TidCk,56
+textX-1.5.2.dist-info/metadata.json,sha256=-m0JSQtTvc-ewIGs54Fh24LBl2sPrpYXJO8Z244PCXU,1282
+textX-1.5.2.dist-info/top_level.txt,sha256=jVIlKtdzvQ9qngFQzRKe5wU-kRA0hYOgiH1s5GULjsU,6
+textx/__init__.py,sha256=NLrkQ2LAsgJRVGHe-rDXXXW41i69D_hoSh1yM92AX5M,22
+textx/const.py,sha256=2lDpdN7o3wCPNodo5Bb_K54hpcX9L4XDhPqXaM0iueY,695
+textx/exceptions.py,sha256=Jf6Trn6CXt4tRzxGN3wWr4ka1NeX4c6kW1icwnXRQj8,297
+textx/export.py,sha256=5Ac6NB6rlAG1UrkuxDJ7noAgUrglgcIzWdMMj6j_q3c,8162
+textx/lang.py,sha256=WoOJ3-UfPwZS9iApu1rXQrPgfNFVlQd40dlZlSumBMA,1100
+textx/metamodel.py,sha256=cE3_1xOlYlnpy22i2q5F1x7Wq-0s2fQbmsC7a1AMrQ4,20068
+textx/model.py,sha256=q_XymqXF5De4cGjuyMde-eg-BkYy5dY4x4Uf4zopAYU,19858
+textx/textx.py,sha256=owMkxf9Pvg_njr_d6Mwb1rWiGDjz1TTcJ_t1JNOPJEo,35445
+textx/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textx/commands/console.py,sha256=0DJmV1x7LYkkPEj08k7KVExm2nd2upM3-Q4yuJEIrwY,2386
