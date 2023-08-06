@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: transmaths
+Version: 0.1.dev2
+Summary: A Python module which makes division by zero possible.
+Home-page: https://github.com/BenjaminEHowe/python-transmaths
+Author: Benjamin Howe
+Author-email: ben@bh96.uk
+License: MIT
+Keywords: transmathematics transcomputation nullity zero
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+A Python module which makes division by zero possible.
+
+
